@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: root-dir
+Version: 0.1.0
+Summary: Manage a hierarchy of directories - mostly for data storage and access
+Author-email: Nicolas Deutschmann <deu@zurich.ibm.com>
+Project-URL: repository, https://github.ibm.com/DEU/root_dir
+Requires-Python: <3.11,>=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: dev
+
+# Root Dir
+
+Some words about this project.
+
+## Environment
+Using a virtual environment for all commands in this guide is strongly recommended.
+
+## Installation
+
+### Package installation
+```sh
+# assuming you have an SSH key set up on GitHub
+pip install "git+ssh://git@github.ibm.com/DEU/root_dir.git@main"
+```
+
+### Suggested setup for development
+```sh
+pip install --upgrade pip setuptools wheel
+pip install -r requirements.txt
+pip install -r dev_requirements.txt
+pip install -e .
+pre-commit install
+```
+
+## Usage
+...
+
+## Contributing
+
+Check [CONTRIBUTING.md](.github/CONTRIBUTING.md).
+
+## Getting support
+
+Check [SUPPORT.md](.github/SUPPORT.md).
+
+## Credits
+This project was created using https://github.ibm.com/BiomedSciAI-Innersource/python-blueprint.
