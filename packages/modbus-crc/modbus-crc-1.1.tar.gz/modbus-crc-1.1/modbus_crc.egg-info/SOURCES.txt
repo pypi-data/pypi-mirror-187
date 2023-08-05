@@ -1,0 +1,10 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+modbus_crc.egg-info/PKG-INFO
+modbus_crc.egg-info/SOURCES.txt
+modbus_crc.egg-info/dependency_links.txt
+modbus_crc.egg-info/not-zip-safe
+modbus_crc.egg-info/top_level.txt
