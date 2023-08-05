@@ -1,0 +1,11 @@
+pyproject.toml
+setup.py
+src/sten/__init__.py
+src/sten/formats.py
+src/sten/patches.py
+src/sten/sten.py
+src/sten.egg-info/PKG-INFO
+src/sten.egg-info/SOURCES.txt
+src/sten.egg-info/dependency_links.txt
+src/sten.egg-info/requires.txt
+src/sten.egg-info/top_level.txt

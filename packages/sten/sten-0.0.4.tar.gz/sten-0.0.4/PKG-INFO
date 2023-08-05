@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: sten
+Version: 0.0.4
+Summary: STen: An Interface for Efficient Sparsity in PyTorch
+Project-URL: Homepage, https://github.com/spcl/sten
+Project-URL: Bug Tracker, https://github.com/spcl/sten/issues
