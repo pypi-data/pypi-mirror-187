@@ -1,0 +1,8 @@
+black
+hatch
+twine
+build
+mkdocs
+mkdocstrings-python
+markdown-katex
+pytest
