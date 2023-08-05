@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: msaexp
+Version: 0.3.13
+Summary: Manual extraction of JWST NIRSpec MSA spectra directly from the telescope exposures
+Home-page: https://github.com/gbrammer/msaexp
+Author: G. Brammer
+License: MIT
+Project-URL: Source, https://github.com/gbrammer/msaexp
+Project-URL: Tracker, https://github.com/gbrammer/msaexp/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: test
+
+# msaexp
+Manual extraction of JWST NIRSpec MSA spectra directly from the telescope exposures
