@@ -1,0 +1,20 @@
+changelog:
+  exclude:
+    labels:
+      - no releasenotes
+  categories:
+    - title: Breaking changes
+      labels:
+        - breaking
+    - title: New Features
+      labels:
+        - enhancement
+        - feature request
+    - title: Bugfixes
+      labels:
+        - bug
+    - title: Documentation
+        - docs
+    - title: Maintenance
+      labels:
+        - "*"

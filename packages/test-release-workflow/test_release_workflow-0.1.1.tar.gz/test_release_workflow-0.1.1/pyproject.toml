@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=62.6.0", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["test_release_workflow"]
+
+[tool.distutils.bdist_wheel]
+universal = true
+
+[project]
+name = "test_release_workflow"
+description = "A fake package that is only used to test pypi release automation"
+readme = "README.md"
+authors = [{ name = "Luciano Paz", email = "luciano.paz@pymc-labs.io" }]
+requires-python = ">=3.8"
+
+license = {file = "LICENSE"}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: The Unlicense (Unlicense)",
+    "Intended Audience :: Developers",
+    "Topic :: Education :: Testing",
+    "Operating System :: OS Independent"
+]
+
+dependencies = []
+
+dynamic = ["version"]
+
+[project.urls]
+
+repository = "https://github.com/lucianopaz/test_release_workflow"
+
+[tool.setuptools_scm]
+write_to = "test_release_workflow/_version.py"
