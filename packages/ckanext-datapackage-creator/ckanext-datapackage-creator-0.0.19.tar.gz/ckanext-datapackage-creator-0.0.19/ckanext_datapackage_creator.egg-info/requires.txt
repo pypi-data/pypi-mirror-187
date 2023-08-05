@@ -1,0 +1,5 @@
+frictionless==4.40.8
+jsonschema
+python-slugify
+frictionless_ckan_mapperopenpyxl
+xlrd
