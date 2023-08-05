@@ -1,0 +1,16 @@
+optree-0.5.1.dist-info/METADATA,sha256=2NlcHk6eYf0SHhTqYP0Rt5CrRfiPh3B6r4s2Xv1ktM8,75502
+optree-0.5.1.dist-info/WHEEL,sha256=lb6q83cSSjN97qvFUVTL3e2aOZEde7r_eqCDzXmlUgA,111
+optree-0.5.1.dist-info/RECORD,,
+optree-0.5.1.dist-info/top_level.txt,sha256=wxgWsTkpSlcz3dX9fMJb8ShwAlFdBUpvrlMRYE31_Po,7
+optree-0.5.1.dist-info/LICENSE,sha256=a7XY5ndtSgRd372SDjPphD3IDnDrcMPK0vCQHcIDT1A,11369
+optree/ops.py,sha256=9MqQNm5yeubCQLTzyGUVR1FBlMqmurUFc30tppC83Uk,50574
+optree/version.py,sha256=NgP59u47vngd2AaRw0V88CNczfMoVyg-Qh2my_hzWN0,1763
+optree/typing.py,sha256=JS4kewsUBlcSCIgVgHl-6O9Q2R4uS18a_NtqGfcB-_s,7572
+optree/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+optree/registry.py,sha256=tzzqTIJy5XoZTcWWrrpEjqaOqxKUzOnFOpxWs4_EMXo,22412
+optree/__init__.py,sha256=L2xsuKdN6SNeAStIcK8zR-2FA5NQSY-yESdcaxyTcBQ,2945
+optree/_C.pyi,sha256=CGYe4x-7AD8xLj4smhXeWdlrYrY4Yoj5VBWCUuXWdMc,2664
+optree/utils.py,sha256=KNoJ3IlrsXtfOuAtY5XyNmeJxsdMGMfrbvSzPE4JvYc,1548
+optree/_C.cpython-38-x86_64-linux-gnu.so,sha256=TG75Eiyh53xYSAR-Eu4nqDb8545RSwTN6EZbdAreB2M,512633
+optree.libs/libstdc++-a9383cce.so.6.0.28,sha256=Wy9UCdwS1rwI9GU5e7qE61S0AkRqqwti1q_adWSs-Rk,2447393
+optree.libs/libgcc_s-a04fdf82.so.1,sha256=YxqJNaesQMhDswHEQpXsiLnVvMBBbYO6KYMDZFPWKSM,81257
