@@ -1,0 +1,28 @@
+[build-system]
+requires = [
+    "setuptools>=61.0",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+# https://packaging.python.org/en/latest/tutorials/packaging-projects/#creating-pyproject-toml
+
+[project]
+name = "x3d.py_brutzman"
+version = "4.0.64.3"
+authors = [
+  { name="Don Brutzman", email="brutzman@nps.edu" },
+]
+description = "Python package support for Extensible 3D Graphics (X3D) International Standard (IS)"
+readme = "README.md"
+requires-python = ">=3.1"
+keywords = ['X3D', '3D', 'graphics', 'Web3D']
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://www.web3d.org/x3d/stylesheets/python/python.html"
+#"Bug Tracker" = "email"
