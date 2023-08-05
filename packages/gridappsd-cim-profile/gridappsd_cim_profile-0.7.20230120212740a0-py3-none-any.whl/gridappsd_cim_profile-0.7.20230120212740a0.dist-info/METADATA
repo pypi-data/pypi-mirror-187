@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: gridappsd-cim-profile
+Version: 0.7.20230120212740a0
+Summary: CIM models used within gridappsd.
+Author: C. Allwardt
+Author-email: 3979063+craig8@users.noreply.github.com
+Requires-Python: >=3.7.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: gridappsd
+Requires-Dist: SPARQLWrapper (>=2.0.0,<3.0.0)
+Requires-Dist: gridappsd-python (>=2.2.2,<3.0.0) ; extra == "gridappsd"
+Requires-Dist: xsdata (>=22.5,<23.0)
