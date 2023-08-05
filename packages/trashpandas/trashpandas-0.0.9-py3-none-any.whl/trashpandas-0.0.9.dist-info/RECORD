@@ -1,0 +1,14 @@
+trashpandas/__init__.py,sha256=jKowPjurLKHhcZAxtAA6IlpEfyuYLP44udeDyKioyeE,631
+trashpandas/conversion.py,sha256=ohnqpxzWXOFyaYkEeEDC4W7sKOZzT7dZK8H-3S4RuXc,6457
+trashpandas/csv.py,sha256=XSgVu1JjFuo21cVCLUhe6BFLipr2CMFNzAVKIaFy9aQ,5772
+trashpandas/hdf5.py,sha256=lxXElj8UfawklPXqboqBHxJ0HxdeGmfF5UUcQKihe0M,5950
+trashpandas/interfaces.py,sha256=QjjtkBLCbotDjRBuQs6JWJMtdvE8pW1ZY9V79GzH8xE,1451
+trashpandas/pickle.py,sha256=IhFSJX9aoCAJ6FwM5ub5vDPwhsHhHYfoG9sozIN5Mro,3751
+trashpandas/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trashpandas/sql.py,sha256=T8HkW03lHV2oTkxXysu8_7-afroXvIFCb3qB774gVEs,6602
+trashpandas/utils.py,sha256=JwEmVcMLxgpYjNyMfr7gnz5b76KC_2Tk0VQpIuT_j-w,1595
+trashpandas-0.0.9.dist-info/LICENSE,sha256=oFq9FEIyAGvzUW2asR4JnQiFiH0X7cNCLO4N_bhiZUk,1068
+trashpandas-0.0.9.dist-info/METADATA,sha256=3a5ckJk0hrIhioNkFRdFVqRNDEDsCzR376aKU7PpKng,935
+trashpandas-0.0.9.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+trashpandas-0.0.9.dist-info/top_level.txt,sha256=6dmGvv-Cf-p4a3_jpzabjOjSUrixhaI9PfxBkqQe7eo,12
+trashpandas-0.0.9.dist-info/RECORD,,
