@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+Topsis_Akshat/__init__.py
+Topsis_Akshat/topsis.py
+Topsis_Akshat_102017147.egg-info/PKG-INFO
+Topsis_Akshat_102017147.egg-info/SOURCES.txt
+Topsis_Akshat_102017147.egg-info/dependency_links.txt
+Topsis_Akshat_102017147.egg-info/entry_points.txt
+Topsis_Akshat_102017147.egg-info/requires.txt
+Topsis_Akshat_102017147.egg-info/top_level.txt
