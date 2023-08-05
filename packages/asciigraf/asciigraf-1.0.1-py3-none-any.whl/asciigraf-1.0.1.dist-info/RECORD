@@ -1,0 +1,9 @@
+asciigraf/VERSION,sha256=ROFh5ElcrCz3hYBD6eZBjpV58N3ProJvmjcmIpaM4GY,6
+asciigraf/__init__.py,sha256=Sj6wfcMK1bsgZk59QpTlILXPnJeXTAsgjE0NovjQTCY,835
+asciigraf/asciigraf.py,sha256=pz1yEsnsvXyNKjA-8rstdBgONUnLl96a1YNso2hlrG4,16699
+asciigraf/point.py,sha256=VvaMIOp1rU47lME8vD3Fb3e6BOKGB1so90cPBaEFyeo,1858
+asciigraf-1.0.1.dist-info/LICENSE.txt,sha256=rJWJdUBkoKn014NU0i3afWRhzXts_nikFJ1ATcF5590,1052
+asciigraf-1.0.1.dist-info/METADATA,sha256=5kKFHJTprwVK5cEW0uZcqq4TQG_AkKoTMVZC2pzSfYc,5837
+asciigraf-1.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+asciigraf-1.0.1.dist-info/top_level.txt,sha256=1DxBwWaPr3WtFwXXGAJO5k0uowPKvqJqYaFMeRabTIg,10
+asciigraf-1.0.1.dist-info/RECORD,,
