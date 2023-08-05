@@ -1,0 +1,10 @@
+warcscrape.py,sha256=aMxd3KcbDDuO9yPWAF7egdhFzWoZJV3L6rI_JhpQaS8,7257
+docs/conf.py,sha256=JMT8KtNc8hq2JSld50jAb9gZiQ-BgIQuw8HzSY8aabM,6958
+warc/__init__.py,sha256=AO19mPZ0gWpNsMuuEsaGJDc0ETCvSb65_5E-qe59_1s,1010
+warc/arc.py,sha256=H97j3FDsIF7MDhc9Bz5kEMJkEUbPaIyxaPeUvsB7b74,15651
+warc/utils.py,sha256=tnbfH_2ay7iMO_Eq4SCiHYj3wd-2yhHyYeqNPSvb4DE,2442
+warc/warc.py,sha256=vNO3M0LE8YiDwRCOT9Vj-4MnMP9Nj8fiXEI5xzrc1CY,13196
+warc_knot-0.2.4.dist-info/METADATA,sha256=04V4qRPdWHtWjxTitbhguvUn82rNpU8_2QOkeb6JU0w,2724
+warc_knot-0.2.4.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+warc_knot-0.2.4.dist-info/licenses/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+warc_knot-0.2.4.dist-info/RECORD,,
