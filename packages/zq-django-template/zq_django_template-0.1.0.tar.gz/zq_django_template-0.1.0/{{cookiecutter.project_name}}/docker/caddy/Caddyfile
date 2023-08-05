@@ -1,0 +1,49 @@
+http:// {
+	# Serve static files
+	handle_path /static/* {
+		# STATIC_ROOT
+		root * /etc/caddy/static
+
+		file_server {
+			# Staticfiles are pre-compressed in `start.sh`
+			precompressed br gzip
+		}
+	}
+
+{%- if cookiecutter.use_celery == 'y' %}
+	# Server Celery Flower
+	handle /flower* {
+		reverse_proxy flower:5555
+	}
+{%- endif %}
+
+	# Serve Django app
+	handle {
+		reverse_proxy django:8000
+	}
+
+	# Dynamically compress response with gzip when it makes sense.
+	# This setting is ignored for precompressed files.
+	encode gzip
+
+	# Logs:
+	log {
+		output stdout
+	}
+
+	log {
+		output file /etc/caddy/log/access.log {
+			roll_local_time
+			roll_size 50MB
+		}
+		level INFO
+	}
+
+	log {
+		output file /etc/caddy/log/error.log {
+			roll_local_time
+			roll_size 100MB
+		}
+		level ERROR
+	}
+}

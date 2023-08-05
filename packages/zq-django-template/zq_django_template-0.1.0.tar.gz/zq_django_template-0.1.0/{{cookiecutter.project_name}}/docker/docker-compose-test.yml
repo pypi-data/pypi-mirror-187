@@ -1,0 +1,74 @@
+version: "3.8"
+
+x-django: &django
+  image: registry.cn-hangzhou.aliyuncs.com/ziqiang_studio/{{cookiecutter.project_name}}:django-test
+  env_file: ./.env # ENV file
+  depends_on:
+    - redis
+  restart: always
+  networks:
+    - app-net
+
+services:
+  ### Caddy container #########################################
+  caddy:
+    image: registry.cn-hangzhou.aliyuncs.com/ziqiang_studio/{{cookiecutter.project_name}}:caddy-test
+    container_name: {{cookiecutter.project_name}}-caddy-test
+    restart: always
+    depends_on:
+      - django
+    networks:
+      - app-net
+      - traefik
+    labels:
+      traefik.enable: true
+      traefik.http.routers.template.rule: Host(`api.test.{{cookiecutter.project_name}}.ziqiang.net.cn`)
+      traefik.http.routers.template.entrypoints: websecure
+      traefik.http.services.template.loadbalancer.server.port: 80
+
+  ### Redis container ##########################################
+  redis:
+    image: registry.cn-hangzhou.aliyuncs.com/ziqiang_studio/redis:latest
+    container_name: {{cookiecutter.project_name}}-redis-test
+    restart: always
+    networks:
+      - app-net
+
+  ### Django container #########################################
+  django:
+    <<: *django
+    container_name: {{cookiecutter.project_name}}-django-test
+    volumes:
+      - ./log:/app/logs:rw
+
+  {%- if cookiecutter.use_celery == 'y' %}
+  ### Celery container ########################################
+  celeryworker:
+    <<: *django
+    container_name: {{cookiecutter.project_name}}-celeryworker-test
+    entrypoint: ./start-celeryworker.sh
+    healthcheck:
+      disable: true
+
+  celerybeat:
+    <<: *django
+    container_name: {{cookiecutter.project_name}}-celerybeat-test
+    entrypoint: ./start-celerybeat.sh
+    healthcheck:
+      disable: true
+
+  flower:
+    <<: *django
+    container_name: {{cookiecutter.project_name}}-flower-test
+    entrypoint: ./start-flower.sh
+    healthcheck:
+      disable: true
+    expose:
+      - 5555
+  {%- endif %}
+
+### Add Network Bridge info #########################################
+networks:
+  app-net: {}
+  traefik:
+    external: true
