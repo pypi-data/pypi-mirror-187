@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: flit_sch_test
+Version: 0.0.1
+Summary: this is my first package
+Author-email: "sch@ion.md" <sch@ion.md>
+Classifier: License :: OSI Approved :: Apache Software License
