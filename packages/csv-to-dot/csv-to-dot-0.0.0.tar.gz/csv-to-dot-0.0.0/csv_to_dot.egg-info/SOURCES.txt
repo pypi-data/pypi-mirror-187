@@ -1,0 +1,17 @@
+LICENCE
+MANIFEST.in
+README.md
+setup.py
+csv_to_dot/__init__.py
+csv_to_dot/csv_to_dot.py
+csv_to_dot.egg-info/PKG-INFO
+csv_to_dot.egg-info/SOURCES.txt
+csv_to_dot.egg-info/dependency_links.txt
+csv_to_dot.egg-info/entry_points.txt
+csv_to_dot.egg-info/not-zip-safe
+csv_to_dot.egg-info/requires.txt
+csv_to_dot.egg-info/top_level.txt
+csv_to_dot/resources/__init__.py
+csv_to_dot/resources/graf.dot.j2
+entry_points_csv_to_dot/__init__.py
+entry_points_csv_to_dot/csv_to_dot.py
