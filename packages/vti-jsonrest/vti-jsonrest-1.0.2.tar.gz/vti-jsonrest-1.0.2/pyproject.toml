@@ -1,0 +1,40 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vti-jsonrest"
+dynamic = ["version"]
+readme = "README.rst"
+requires-python = ">=2.7"
+authors = [
+    {name = "James Jurack", email = "james.jurack@ametek.com"},
+]
+description = "A client library for discoverable REST APIs using JSON payloads."
+classifiers = [
+  "Intended Audience :: Developers",
+  "Natural Language :: English",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: OS Independent",
+  "Development Status :: 5 - Production/Stable",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 2",
+  "Programming Language :: Python :: 2.7",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.6",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/VTI-Ametek/jsonrest"
+"Documentation" = "https://jsonrest.readthedocs.io/"
+
+[tool.setuptools.dynamic]
+version = {attr = "jsonrest.__version__"}

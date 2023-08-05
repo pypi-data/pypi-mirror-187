@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+src/jsonrest/__init__.py
+src/vti_jsonrest.egg-info/PKG-INFO
+src/vti_jsonrest.egg-info/SOURCES.txt
+src/vti_jsonrest.egg-info/dependency_links.txt
+src/vti_jsonrest.egg-info/requires.txt
+src/vti_jsonrest.egg-info/top_level.txt

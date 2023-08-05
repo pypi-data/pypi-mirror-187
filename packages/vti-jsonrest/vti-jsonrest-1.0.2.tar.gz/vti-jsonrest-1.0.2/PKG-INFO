@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: vti-jsonrest
+Version: 1.0.2
+Summary: A client library for discoverable REST APIs using JSON payloads.
+Author: James Jurack
+Author-email: James Jurack <james.jurack@ametek.com>
+Project-URL: Homepage, https://github.com/VTI-Ametek/jsonrest
+Project-URL: Documentation, https://jsonrest.readthedocs.io/
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=2.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+JSONREST
+========
+
+JSONREST is a client library for discoverable REST APIs using JSON payloads.
+
+.. code-block:: python
+
+    >>> import jsonrest
+    >>> j = jsonrest.JSONREST('http://example/')
+    >>> dir(j)
+    ['foo', 'bar', 'baz']
+    >>> j.foo
+    JSONREST('http://example/foo/', ['x', 'y', 'z'])
+    >>> j.foo.x = 42
+    >>> print(j.foo.x)
+    42
+
+
+JSONREST exposes the REST API as an object-oriented interface, with the object hierarchy mirroring the directory structure of the URLs. In order to make this work, it depends on the server responding to GET requests on directories with a JSON array containing all available API endpoints (or other directories) that reside there, with directories identified by a trailing forward-slash (/).
+
+Installing
+----------
+
+JSONREST is available on `PyPI <https://pypi.org/project/vti-jsonrest/>`_:
+
+.. code-block:: sh
+
+    $ python -m pip install vti-jsonrest
+
+Documentation
+-------------
+
+Full documentation is available at `jsonrest.readthedocs.io <https://jsonrest.readthedocs.io/>`_.
+
+Supported Versions
+------------------
+
+JSONREST officially supports Python 2.7 & 3.6+.
+
+Features
+--------
+* Makes REST APIs behave like a normal python object
+* Supports tab-completion in REPLs and Jupyter notebooks
+* Keep-Alive & Connection Pooling
