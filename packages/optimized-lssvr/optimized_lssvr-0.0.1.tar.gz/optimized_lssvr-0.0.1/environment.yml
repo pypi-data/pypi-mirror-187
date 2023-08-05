@@ -1,0 +1,5 @@
+name: optimized-lssvr
+dependencies:
+  - numpy
+  - scipy
+  - scikit-learn
