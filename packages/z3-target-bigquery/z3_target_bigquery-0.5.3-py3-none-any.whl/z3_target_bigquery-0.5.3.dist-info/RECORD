@@ -1,0 +1,13 @@
+target_bigquery/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+target_bigquery/batch_job.py,sha256=O6ZdFmH4yhcX6w1N7RMLK1q__xzcWXm3MITm4F2CPjE,3659
+target_bigquery/constants.py,sha256=cj0SkNjJHk4IImhXzu29dwWr_wrslV4wNzjGUbXGKJM,1824
+target_bigquery/core.py,sha256=AfCRe3MnN2sQdp6lJDPgHsMktKTleLiailSOqTihbGw,27002
+target_bigquery/gcs_stage.py,sha256=AFmiMlDbrTynOUZLaPKwvP2HcjfsxDOXzu_1vIy91fw,5917
+target_bigquery/proto_gen.py,sha256=a7fa8MropUrv5-_qLYg0fbNMiSqzaPkWpMLOqf0IYVA,4427
+target_bigquery/storage_write.py,sha256=uByzWWUKEpLTUnT_Iz_POqJ3U8r0C2vy-PUCbELHzTs,10598
+target_bigquery/streaming_insert.py,sha256=1wwV4jhweE4PTGxg8Px9esAjqC5adBAHWZFdRI-TBGo,3258
+target_bigquery/target.py,sha256=dY-erI9Qj5gpq-w0wVfomKP1VBTCB8oqeMk381CN-KM,15836
+z3_target_bigquery-0.5.3.dist-info/entry_points.txt,sha256=kumkd5XBrMuLWpeLDRm5THz27N7UyOy7QBStjc-Qor4,77
+z3_target_bigquery-0.5.3.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+z3_target_bigquery-0.5.3.dist-info/METADATA,sha256=HCMpjMsy_TArHrsOy5EJ3dF0Qu1nEW5jBHbI-bt5KQY,943
+z3_target_bigquery-0.5.3.dist-info/RECORD,,
