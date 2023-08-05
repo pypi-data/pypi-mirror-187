@@ -1,0 +1,18 @@
+[project]
+name = "tooltils"
+version = "1.0.0"
+authors = [
+  {name="feetbots", email="pheetbots@example.com"},
+]
+description = "A lightweight python utility library built on standard modules"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/feetbots/tooltils"
+"Bug Tracker" = "https://github.com/feetbots/tooltils/issues"
