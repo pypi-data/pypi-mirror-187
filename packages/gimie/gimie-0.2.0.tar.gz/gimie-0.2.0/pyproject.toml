@@ -1,0 +1,58 @@
+# Package description
+
+[tool.poetry]
+name = "gimie"
+version = "0.2.0"
+description = "Extract structured metadata from git repositories."
+authors = ["Swiss Data Science Center <contact@datascience.ch>"]
+license = "GPLv3"
+homepage = "https://github.com/SDSC-ORD/gimie"
+keywords = ["metadata", "git", "extraction", "linked-data"]
+readme = "README.md"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+# Dependency management
+
+[tool.poetry.dependencies]
+python = "^3.8"
+PyDriller = "^2.3"
+pyshacl = "^0.20.0"
+# temporarily disabled due to installation problems
+# scancode-toolkit = "^31.2.4"
+typer = "^0.7.0"
+calamus = "^0.4.1"
+requests = "^2.28.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.0"
+black = "^22.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+gimie = 'gimie.cli:app'
+
+
+# Tooling configuration
+
+[tool.black]
+line-length = 79
+target-version = ["py38", "py39"]
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules"
+testpaths = ["gimie", "tests"]
+
+[tool.pyright]
+reportMissingTypeStubs = false
+reportUntypedBaseClass = false
