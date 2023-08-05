@@ -1,0 +1,6 @@
+pyodbc
+pandas
+sqlalchemy
+python-dotenv
+ipykernel
+xlsxwriter
