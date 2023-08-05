@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+src/fa_models.egg-info/PKG-INFO
+src/fa_models.egg-info/SOURCES.txt
+src/fa_models.egg-info/dependency_links.txt
+src/fa_models.egg-info/requires.txt
+src/fa_models.egg-info/top_level.txt
