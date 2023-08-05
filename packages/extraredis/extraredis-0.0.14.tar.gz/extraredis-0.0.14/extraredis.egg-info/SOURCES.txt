@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+extraredis/__init__.py
+extraredis/base.py
+extraredis/util.py
+extraredis.egg-info/PKG-INFO
+extraredis.egg-info/SOURCES.txt
+extraredis.egg-info/dependency_links.txt
+extraredis.egg-info/requires.txt
+extraredis.egg-info/top_level.txt
+extraredis/_async/__init__.py
+extraredis/_sync/__init__.py

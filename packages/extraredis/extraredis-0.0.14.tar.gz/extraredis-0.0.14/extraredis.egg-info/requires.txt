@@ -1,0 +1,9 @@
+redis[hiredis]
+
+[dev]
+bumpver
+pre-commit
+pytest
+fakeredis
+pytest-asyncio
+python-dotenv

@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: extraredis
+Version: 0.0.14
+Summary: extra methods for redis
+Home-page: https://gitea.tandav.me/tandav/extraredis
+Author: Alexander Rodionov
+Author-email: tandav@tandav.me
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/tandav/extraredis)
+
+# extraredis
+
+Extra helper functions for python redis library. Containts both sync and async versions.
+
+## install
+### install from [pypi](https://pypi.org/project/extraredis/)
+```sh
+pip install extraredis
+```
+
+### development
+```sh
+pip install -e .[dev]
+```
