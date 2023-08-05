@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: tooltils
+Version: 1.0.0
+Summary: A lightweight python utility library built on standard modules
+Home-page: https://github.com/feetbots/tooltils
+Author: ebots
+Author-email: feetbots <pheetbots@example.com>
+License: MIT
+Project-URL: Homepage, https://github.com/feetbots/tooltils
+Project-URL: Bug Tracker, https://github.com/feetbots/tooltils/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# tooltils
+A lightweight python utility library built on standard modules.\
+\
+This is a very early project in heavy development so there may be some bugs.
+
+## Requirements
+Both are optional if you are not going to use the `miniCompiler`.
+```
+pip install PyInstaller
+https://ftp.gnu.org/gnu/gcc/
+```
+
+## Usage
+There are currently `6` different classes of functions:
+- Requests (Basic http interaction)
+- JSON (json file interaction)
+- Time (System clock and timer actions)
+- Logging (Basic terminal colours and events)
+- miniCompiler ([My other github project](https://github.com/feetbots/miniCompiler))
+- Interpereter (A small custom interpereter for python)
+
+## Planned Features
+- More support for Windows and Unix systems [0%]
+- Faster performance utilising Cython [0%]
+- POST method for http functions [25%]
+
+## Info
+Project maintained by ebots (repository owner)\
+You can contact me on [Discord](https://discord.com/) at `ebots#7424` or `ebots#6157`
+
+## License
+- [MIT](https://choosealicense.com/licenses/mit/)
