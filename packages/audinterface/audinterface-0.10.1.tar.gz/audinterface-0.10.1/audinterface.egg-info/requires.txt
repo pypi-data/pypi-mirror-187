@@ -1,0 +1,2 @@
+audformat<2.0.0,>=0.15.3
+audresample<2.0.0,>=1.1.0
