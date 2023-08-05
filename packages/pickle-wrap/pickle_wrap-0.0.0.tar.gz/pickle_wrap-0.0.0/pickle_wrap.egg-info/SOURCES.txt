@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+pickle_wrap/__init__.py
+pickle_wrap/pickle_wrap.py
+pickle_wrap.egg-info/PKG-INFO
+pickle_wrap.egg-info/SOURCES.txt
+pickle_wrap.egg-info/dependency_links.txt
+pickle_wrap.egg-info/top_level.txt
