@@ -1,0 +1,10 @@
+pudb
+loguru
+python-chrisclient
+plugin2cube
+
+[dev]
+pytest~=7.1
+pytest-mock~=3.8
+
+[none]
