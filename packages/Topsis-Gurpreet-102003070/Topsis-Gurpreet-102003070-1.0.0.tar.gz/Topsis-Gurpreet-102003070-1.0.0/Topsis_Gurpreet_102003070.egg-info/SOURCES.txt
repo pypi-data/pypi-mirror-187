@@ -1,0 +1,10 @@
+README.md
+setup.py
+Topsis_Gurpreet_102003070.egg-info/PKG-INFO
+Topsis_Gurpreet_102003070.egg-info/SOURCES.txt
+Topsis_Gurpreet_102003070.egg-info/dependency_links.txt
+Topsis_Gurpreet_102003070.egg-info/entry_points.txt
+Topsis_Gurpreet_102003070.egg-info/requires.txt
+Topsis_Gurpreet_102003070.egg-info/top_level.txt
+gurpreet/__init__.py
+gurpreet/__main__.py
