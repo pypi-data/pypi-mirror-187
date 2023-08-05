@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+mystjs/__init__.py
+mystjs/version.py
+mystjs.egg-info/PKG-INFO
+mystjs.egg-info/SOURCES.txt
+mystjs.egg-info/dependency_links.txt
+mystjs.egg-info/top_level.txt

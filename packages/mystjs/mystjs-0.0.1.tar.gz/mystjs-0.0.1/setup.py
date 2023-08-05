@@ -1,0 +1,34 @@
+import sys
+import os
+import setuptools
+
+sys.path[0:0] = ['mystjs']
+from version import __version__
+
+from pathlib import Path
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
+
+setuptools.setup(
+    name="mystjs",
+    description="Javascript based tool chain and command line for MyST",
+    long_description=long_description,
+    long_description_content_type='text/markdown',
+    classifiers=[
+        "Development Status :: 4 - Beta",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3.7",
+        "Topic :: Text Processing :: Markup",
+        "Intended Audience :: Education",
+        "Intended Audience :: Science/Research",
+        "Intended Audience :: Information Technology",
+    ],
+    url="https://myst.tools",
+    version=__version__,
+    author="Executable Books Project",
+    author_email="executablebooks@gmail.com",
+    packages=setuptools.find_packages(exclude=("tests",)),
+    include_package_data=True,
+    install_requires=[],
+    python_requires=">=3.7",
+)
