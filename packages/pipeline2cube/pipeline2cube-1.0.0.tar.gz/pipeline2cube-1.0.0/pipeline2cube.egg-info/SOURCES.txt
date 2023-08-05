@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+setup.py
+pipeline2cube/__init__.py
+pipeline2cube/__main__.py
+pipeline2cube/pipeline2cube.py
+pipeline2cube.egg-info/PKG-INFO
+pipeline2cube.egg-info/SOURCES.txt
+pipeline2cube.egg-info/dependency_links.txt
+pipeline2cube.egg-info/entry_points.txt
+pipeline2cube.egg-info/requires.txt
+pipeline2cube.egg-info/top_level.txt
