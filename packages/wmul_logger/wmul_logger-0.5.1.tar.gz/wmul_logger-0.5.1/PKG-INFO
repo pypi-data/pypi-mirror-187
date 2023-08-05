@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: wmul_logger
+Version: 0.5.1
+Summary: Logging Module for WMUL-FM Developed Projects
+Author-email: Michael Stanley <stanley50@marshall.edu>
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: System :: Logging
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: tox ; extra == "tox"
+Project-URL: Bug Tracker, https://github.com/MikeTheHammer/wmul_logger/issues
+Project-URL: Home, https://github.com/MikeTheHammer/wmul_logger
+Provides-Extra: test
+Provides-Extra: tox
+
+Logging wrapper.
+
