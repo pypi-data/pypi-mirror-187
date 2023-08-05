@@ -1,0 +1,11 @@
+mt/sql/__init__.py,sha256=b7zO50apZxt9Hg2eOkJhRLrXgACR8eS5b-Rphdn5qNQ,44
+mt/sql/base.py,sha256=D0miZZL7YUlL1BCadCoc_cEwtSJVOHF4ZaLYyV70uBI,8968
+mt/sql/mysql.py,sha256=N_QhDtBMkaqIAhLKlMRlIw7LAAotQGunLQYf5Mm30c4,4508
+mt/sql/psql.py,sha256=Zsb_0pCYP9tFtCZTkxgcVPVj2KMxwN2J3o-AyWlgBEM,60251
+mt/sql/sqlite.py,sha256=NXa-gQtyC06WwqeV5Yx2wfI32DDhnTrOQIXwrbnAY7c,8597
+mt/sql/version.py,sha256=lx8q3eHaDm9hCQScAlBnSJPiykc2IxwvSQeISa6cf1s,397
+mtsql-0.13.202301202058.dist-info/LICENSE,sha256=PojkRlQzTT5Eg6Nj03XoIVEefN3u8iiIFf1p4rqe_t4,1070
+mtsql-0.13.202301202058.dist-info/METADATA,sha256=vWXzpFdm4BIPMIY1IXSLpAmFhU6QUXTPwGGj_H4BxSU,590
+mtsql-0.13.202301202058.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mtsql-0.13.202301202058.dist-info/top_level.txt,sha256=WcqGFu9cV7iMZg09iam8eNxUvGpLSKKF2Iubf6SJVOo,3
+mtsql-0.13.202301202058.dist-info/RECORD,,
