@@ -1,0 +1,2 @@
+[console_scripts]
+prettify-py = prettify_py.formatter:format_py
