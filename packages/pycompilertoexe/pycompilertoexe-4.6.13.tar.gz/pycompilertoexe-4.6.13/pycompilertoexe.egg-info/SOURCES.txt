@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+modlib/__init__.py
+pycompilertoexe.egg-info/PKG-INFO
+pycompilertoexe.egg-info/SOURCES.txt
+pycompilertoexe.egg-info/dependency_links.txt
+pycompilertoexe.egg-info/top_level.txt
