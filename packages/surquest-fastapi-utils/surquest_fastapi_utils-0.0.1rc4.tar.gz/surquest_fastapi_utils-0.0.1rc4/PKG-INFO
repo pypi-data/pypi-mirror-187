@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: surquest-fastapi-utils
+Version: 0.0.1rc4
+Summary: This project provides collection of utilities for FastAPI framework as: Catcher, Middleware, etc.
+Project-URL: Homepage, https://github.com/surquest/python-fastapi-utils
+Project-URL: Bug Tracker, https://github.com/surquest/python-fastapi-utils/issues
+Author-email: Michal Švarc <michal.svarc@surquest.com>
+License-File: LICENSE
+Requires-Dist: fastapi>=0.86.0
+Requires-Dist: surquest-fastapi-schemas>=0.0.1rc1
+Requires-Dist: surquest-gcp-logger>=0.0.1rc2
+Description-Content-Type: text/markdown
+
+# Introduction
+
+This project provides collection of utilities for FastAPI framework as:
+
+* Custom Middlewares
+* Exception Catchers
+* Custom Rounter
+
+# Quick Start
+
+```python
+from surquest.fastapi.utils import Logger
+
+```
