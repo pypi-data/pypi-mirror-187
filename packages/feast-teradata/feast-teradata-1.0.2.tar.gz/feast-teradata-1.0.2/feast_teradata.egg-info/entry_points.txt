@@ -1,0 +1,3 @@
+[console_scripts]
+feast-td = feast_teradata.cli.cli:cli
+
