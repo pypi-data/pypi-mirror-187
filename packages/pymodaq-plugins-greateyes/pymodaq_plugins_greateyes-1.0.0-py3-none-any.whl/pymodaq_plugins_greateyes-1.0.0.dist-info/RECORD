@@ -1,0 +1,12 @@
+pymodaq_plugins_greateyes/VERSION,sha256=WYVJhIUxBN9cNT4vaBoV_HkkdC-aLkaMKa8kjc5FzgM,6
+pymodaq_plugins_greateyes/__init__.py,sha256=YD9lgRdnqZGxpz_FF2pKZNTKtO1YrJiS28Ri6gUF8uw,138
+pymodaq_plugins_greateyes/daq_viewer_plugins/__init__.py,sha256=ajz1GSNU9xYVrFEDSz6Xwg7amWQ_yvW75tQa1ZvRIWc,3
+pymodaq_plugins_greateyes/daq_viewer_plugins/plugins_2D/__init__.py,sha256=ImKMNjX1EKXh-lhcgALosH6kEKZ3byU3-r5aoHJL03o,488
+pymodaq_plugins_greateyes/daq_viewer_plugins/plugins_2D/daq_2Dviewer_GreateyesCCD.py,sha256=Y5XQVuYvTEajaluksJRTGfLOJus9ri0KsZcjavAwFh4,33901
+pymodaq_plugins_greateyes/hardware/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymodaq_plugins_greateyes-1.0.0.dist-info/LICENSE,sha256=JZ0FsAvt7hRTKixoNKCoHNqWfSzLHLXhbByq2MDd3jA,21395
+pymodaq_plugins_greateyes-1.0.0.dist-info/METADATA,sha256=uOyw240fafOpZ2q_pAmNpJK5T-f5EOoS5bfFk7RYiSg,2431
+pymodaq_plugins_greateyes-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pymodaq_plugins_greateyes-1.0.0.dist-info/entry_points.txt,sha256=eNcRuWG1oAatgq7H8mFUmGfT4ENzImfoqE0a9KG0A0Q,56
+pymodaq_plugins_greateyes-1.0.0.dist-info/top_level.txt,sha256=04tsWl-gZ1We2Gjl1tVJpUWp6FStc_4lwKI1uBwEAio,26
+pymodaq_plugins_greateyes-1.0.0.dist-info/RECORD,,
