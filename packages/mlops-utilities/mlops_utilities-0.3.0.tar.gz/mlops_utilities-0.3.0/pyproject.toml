@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "mlops-utilities"
+version = "0.3.0"
+description = ""
+authors = ["Provectus Team <mlops@provectus.com>"]
+readme = "README.md"
+packages = [{include = "mlops_utilities"}]
+classifiers = [
+    "Operating System :: OS Independent"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+sagemaker = "~2.129"
+boto3 = "~1.26"
+omegaconf = "~2.2"
+pytest = "7.2.0"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.15.9"
+pylint-junit = "^0.3.2"
+black = "^22.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pylint.'MESSAGES CONTROL']
+max-line-length = 120
+max-args = 8
