@@ -1,0 +1,15 @@
+optimized_lssvr/__init__.py,sha256=Nmf4CBYD1CoQC1IhjTopUhX9OXXeb5t2wtCXu16KU68,238
+optimized_lssvr/_bases.py,sha256=YlwR9hHNQnya-Q5MSK-GFY0rh5SAi2Lv7vi05KSyDLY,6595
+optimized_lssvr/_common.py,sha256=2U2cB-zJAfra_vLJe-_85j3HSkzfYy84CAH3sCeqzkw,220
+optimized_lssvr/_optimized_lssvr.py,sha256=ib18MNIfSwrma3XPJBXz7QY3bxqv2MNzB0IHRlPFW6k,3530
+optimized_lssvr/_sensitivity.py,sha256=QuAqSrNA4-21nzTe_-D8g5-s74yAvwtzLxuxLUuQv_Q,397
+optimized_lssvr/_simple_lssvr.py,sha256=JuDaZVfNgUBD7hOxy7O2X9TTQWmSa51ipaEDxgcKHSA,1008
+optimized_lssvr/_version.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+optimized_lssvr/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+optimized_lssvr/tests/test_common.py,sha256=COik8UqL_6xWeCivhT4iBv6KX7GTHDipS591GfzHbIk,299
+optimized_lssvr/tests/test_regressor.py,sha256=DbEym_rL-y52STB6Mn2w00pIf7zS5GpMVVBb8pVf-kk,536
+optimized_lssvr-0.0.2.dist-info/LICENSE,sha256=L4dEE_uq-OqI213Zv2gwgDVJabTnlwNeWfAI96yndgU,1069
+optimized_lssvr-0.0.2.dist-info/METADATA,sha256=gpYFU7lA5Qdz53T4ts_vApWyVXk1dr9jzvHAaCt7YIw,2555
+optimized_lssvr-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+optimized_lssvr-0.0.2.dist-info/top_level.txt,sha256=wDCZ1OIZNXBcmeGvHBbbAHvEaY9afia6Gv3JJ4nU2io,16
+optimized_lssvr-0.0.2.dist-info/RECORD,,
