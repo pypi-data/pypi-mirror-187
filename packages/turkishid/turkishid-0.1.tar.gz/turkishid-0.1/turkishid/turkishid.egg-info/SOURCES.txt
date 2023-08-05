@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+turkishid/turkishid.egg-info/PKG-INFO
+turkishid/turkishid.egg-info/SOURCES.txt
+turkishid/turkishid.egg-info/dependency_links.txt
+turkishid/turkishid.egg-info/top_level.txt
