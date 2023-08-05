@@ -1,0 +1,5 @@
+setup.py
+holabolalemon.egg-info/PKG-INFO
+holabolalemon.egg-info/SOURCES.txt
+holabolalemon.egg-info/dependency_links.txt
+holabolalemon.egg-info/top_level.txt
