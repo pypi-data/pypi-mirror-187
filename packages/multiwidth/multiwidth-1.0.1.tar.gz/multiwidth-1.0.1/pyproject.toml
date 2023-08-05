@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "multiwidth"
+version = "1.0.1"
+description = "A package for reading and writing mixed width tables"
+authors = ["John Carter <jfcarter2358@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/jfcarter2358/multiwidth"
+keywords = ["data", "table", "multiwidth"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+black = "^22.6.0"
+pylint = "^2.14.4"
+pytest-cov = "^3.0.0"
+pytest = "^7.1.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
