@@ -1,0 +1,11 @@
+teamscale_client/__init__.py,sha256=uBI3L3CG9nEOSZFsUddD1f2mC5DGsRQjULb4n73UKYA,132
+teamscale_client/client.py,sha256=DzvAiKMV6soV2Iz6lIvKMivBrahgf7nxQK9J_gvoHRY,38898
+teamscale_client/constants.py,sha256=sAWhLs6dVwTuqnFRFO9-J5DL3pP00mdOsvjuQ0mpMWE,3287
+teamscale_client/data.py,sha256=Yshay7bNxQEvnwc_i08El5-ZAfL4j-cYr4Fs7P5_3hE,28962
+teamscale_client/teamscale_client_config.py,sha256=IOEXBhBq7ARnQgr2Rtkaxg37ttnlZZJFLrh5cZu_7OQ,3385
+teamscale_client/utils.py,sha256=57pDWaPlL5SvzlHW10xR22Zx-vvCyMt60YMQnrfQ5C0,1083
+teamscale_client-8.5.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+teamscale_client-8.5.dist-info/METADATA,sha256=5iDeSFCBpC8RKINYlAqNCG-9qMCIXe98qK8qCndy5XA,526
+teamscale_client-8.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+teamscale_client-8.5.dist-info/top_level.txt,sha256=rR4DzR2Lrg_WhAn9dgEYPo9UHUq7quBB2RfmI2a6J4c,17
+teamscale_client-8.5.dist-info/RECORD,,
