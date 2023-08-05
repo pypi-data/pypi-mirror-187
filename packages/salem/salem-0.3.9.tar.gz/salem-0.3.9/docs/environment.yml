@@ -1,0 +1,25 @@
+name: salem-docs
+channels:
+  - conda-forge
+dependencies:
+  - bottleneck
+  - cartopy
+  - ipykernel
+  - ipython
+  - netcdf4
+  - numpy
+  - numpydoc
+  - pandas
+  - rasterio
+  - sphinx
+  - matplotlib
+  - joblib
+  - geopandas
+  - xarray
+  - sphinx-gallery
+  - scikit-image
+  - motionless
+  - pip
+  - pip:
+    # relative to this file. Needs to be editable to be accepted.
+    - -e ..
