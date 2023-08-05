@@ -1,0 +1,45 @@
+# lia
+
+[![Downloads](https://static.pepy.tech/personalized-badge/lia?period=total&units=international_system&left_color=black&right_color=orange&left_text=Downloads)](https://pepy.tech/project/carate)
+[![License: GPL v3](https://img.shields.io/badge/License-GPL_v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+![Python Versions](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10%20%7C%203.11%20%7C%20-blue) 
+![Style Black](https://warehouse-camo.ingress.cmh1.psfhosted.org/fbfdc7754183ecf079bc71ddeabaf88f6cbc5c00/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636f64652532307374796c652d626c61636b2d3030303030302e737667) 
+
+
+[![PyPI - Version](https://img.shields.io/pypi/v/lia.svg)](https://pypi.org/project/lia)
+
+
+![Lia Jpg](lia.jpg)
+
+-----
+
+**Table of Contents**
+
+- [Why?](#why)
+- [What?](#what)
+- [Installation](#installation)
+- [Usage](#usage)
+
+## Why? 
+
+Remember code is poetry. And we write out own story. And for this, we need a support.
+
+Without a support, all your efforts will fail. A support takes care we do all the necessary things we would not find time during battles. We need a support. So we asked `lia` to join us. 
+
+She protects us from malicious adversaries, and heals our organization by making our poetry better and thereby our story. 
+
+## What?
+
+`lia` is the best support you can hope for. She helps us to maintain our ship, fight enemies, and win customers. `lia` is all we could hope for. 
+
+## Installation
+
+```console
+pip install lia-cli
+```
+
+## Usage
+
+```console
+lia heal package_name
+```
