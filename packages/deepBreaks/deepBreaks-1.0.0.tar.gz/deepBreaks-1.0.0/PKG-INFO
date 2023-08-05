@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: deepBreaks
+Version: 1.0.0
+Summary: deepBreaks: Prioritizing important regions of sequencing data for function prediction
+Home-page: http://github.com/omicsEye/deepBreaks
+Author: Mahdi Baghbanzadeh
+Author-email: mbagh@gwu.edu
+License: MIT
+Keywords: machine learning,genomics,sequencing data
+Platform: Linux
+Platform: MacOS
+Platform: Windows
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+License-File: LICENSE.txt
+
+deepBreaks provides a generic method to identify important changes in association with the phenotype of interest using multi-alignment sequencing data from a population.
+
