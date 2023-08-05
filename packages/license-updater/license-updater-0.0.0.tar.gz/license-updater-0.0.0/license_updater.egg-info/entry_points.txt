@@ -1,0 +1,3 @@
+[console_scripts]
+license-updater = license_updater.client:run_license_updater
+

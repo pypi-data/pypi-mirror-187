@@ -1,0 +1,7 @@
+ruamel.yaml
+rich
+
+[all]
+ruamel.yaml
+rich
+pytest>=4.6.2
