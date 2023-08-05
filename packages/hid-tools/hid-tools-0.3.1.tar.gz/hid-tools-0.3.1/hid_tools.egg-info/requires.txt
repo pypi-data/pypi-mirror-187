@@ -1,0 +1,6 @@
+parse
+pyyaml
+click
+
+[uhid]
+pyudev
