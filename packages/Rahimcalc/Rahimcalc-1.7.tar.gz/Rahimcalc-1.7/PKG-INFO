@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: Rahimcalc
+Version: 1.7
+Summary: Student pass or fail package
+Home-page: https://pypi.org/user/AbdurRahim2003/
+Author: Abdurrahim
+Author-email: abdurrahim251103@gmail.com
+License: MIT
+Download-URL: https://pypi.org/project/Rahimcalc/0.3.2/#files
+Project-URL: Source Code, https://github.com/Abdurrahimgithub/Abdurrahim/blob/main/__init__.py
+Project-URL: Documentation, https://github.com/Abdurrahimgithub/Abdurrahim/blob/main/README.md
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: License.txt
+
+Sample of the programs
+
