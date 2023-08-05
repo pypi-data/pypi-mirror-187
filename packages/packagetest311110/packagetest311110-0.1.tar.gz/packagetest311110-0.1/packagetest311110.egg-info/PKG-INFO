@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: packagetest311110
+Version: 0.1
+Summary: This is test package
+Home-page: https://github.com/Dik17/PackageTest311110
+Download-URL: https://github.com/Dik17/PackageTest311110/archive/refs/tags/v_01.tar.gz
+Author: testuser
+Author-email: rodiksha218@gmail.com
+License: MIT
+Keywords: SOME,311110,TOPSIS
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE.txt

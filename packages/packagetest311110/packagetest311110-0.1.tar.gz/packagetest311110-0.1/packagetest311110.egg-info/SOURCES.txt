@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+packagetest311110/__init__.py
+packagetest311110/test.py
+packagetest311110.egg-info/PKG-INFO
+packagetest311110.egg-info/SOURCES.txt
+packagetest311110.egg-info/dependency_links.txt
+packagetest311110.egg-info/requires.txt
+packagetest311110.egg-info/top_level.txt
