@@ -1,0 +1,6 @@
+[console_scripts]
+configure_invokeai = ldm.invoke.configure_invokeai:main
+dream = ldm.invoke:CLI.main
+invoke = ldm.invoke:CLI.main
+load_models = ldm.invoke.configure_invokeai:main
+preload_models = ldm.invoke.configure_invokeai:main
