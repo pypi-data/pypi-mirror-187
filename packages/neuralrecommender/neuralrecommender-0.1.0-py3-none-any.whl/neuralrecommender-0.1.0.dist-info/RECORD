@@ -1,0 +1,8 @@
+neuralrecommender/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neuralrecommender/glocalk.py,sha256=gL_Xytk_G85mkFQZivJnpsgxw1kGfcdedGY9MWD97kE,8211
+neuralrecommender/model.py,sha256=HTglYbcWCYR4k1onrd1dhzQhKOEAcvy96fKPPIfmi7k,4151
+neuralrecommender-0.1.0.dist-info/LICENSE,sha256=eqS6zv7AmvL-5vXmGMQB4T2Vpwh3q1VT12eW8Iex7a0,1093
+neuralrecommender-0.1.0.dist-info/METADATA,sha256=qTvwN_DB0R4BGaHZdWxtbOS61yjMEfNxFwlksYTvX88,563
+neuralrecommender-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+neuralrecommender-0.1.0.dist-info/top_level.txt,sha256=qld9QI8EJmPk8tEdAEWdfSNI45mfn0Hszpu1VmSkVds,18
+neuralrecommender-0.1.0.dist-info/RECORD,,
