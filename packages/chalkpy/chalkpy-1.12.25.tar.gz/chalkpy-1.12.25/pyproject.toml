@@ -1,0 +1,101 @@
+[tool.isort]
+profile = "black"
+py_version=37
+line_length=120
+skip = ["chalk/feature_n/__init__.py"]
+
+[tool.black]
+target-version = ['py37']
+line-length = 120
+
+[tool.autoflake]
+check = true
+remove-duplicate-keys=true
+remove-all-unused-imports=true
+in-place=true
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "error"
+]
+asyncio_mode = "auto"
+env = [
+    "CHALK_ALLOW_REGISTRY_UPDATES=1",
+    "PYTHONASYNCIODEBUG=1",
+    "SQLALCHEMY_WARN_20=1",
+]
+log_cli = true
+addopts = "-n auto"
+
+[tool.pyright]
+typeCheckingMode = "basic"
+strictListInference = true
+strictDictionaryInference = true
+strictSetInference = true
+# strictParameterNoneValue
+# enableTypeIgnoreComments
+reportMissingModuleSource = "error"
+# reportMissingImports
+# reportUndefinedVariable
+# reportAssertAlwaysTrue
+# reportInvalidStringEscapeSequence
+reportInvalidTypeVarUse = "error"
+# reportMissingTypeStubs
+reportSelfClsParameterName = "error"
+reportUnsupportedDunderAll = "error"
+reportUnusedExpression = "error"
+reportWildcardImportFromLibrary = "error"
+# reportGeneralTypeIssues
+# reportOptionalSubscript
+# reportOptionalMemberAccess
+# reportOptionalCall
+# reportOptionalIterable
+# reportOptionalContextManager
+# reportOptionalOperand
+# reportTypedDictNotRequiredAccess
+# reportPrivateImportUsage
+# reportUnboundVariable
+# reportUnusedCoroutine
+reportConstantRedefinition = "error"
+reportDeprecated = "warning"
+reportDuplicateImport = "error"
+reportFunctionMemberAccess = "error"
+# reportImportCycles
+reportIncompatibleMethodOverride = "error"
+reportIncompatibleVariableOverride = "error"
+reportIncompleteStub = "error"
+reportInconsistentConstructor = "warning"
+reportInvalidStubStatement = "error"
+reportMatchNotExhaustive = "error"
+reportMissingParameterType = "error"
+# reportMissingTypeArgument
+reportOverlappingOverload = "error"
+reportPrivateUsage = "warning"
+reportTypeCommentUsage = "error"
+reportShadowedImports = "error"
+# reportUnknownArgumentType
+# reportUnknownLambdaType
+# reportUnknownMemberType
+# reportUnknownParameterType
+# reportUnknownVariableType
+reportUnnecessaryCast = "error"
+reportUnnecessaryComparison = "warning"
+reportUnnecessaryContains = "warning"
+reportUnnecessaryIsInstance = "warning"
+reportUnusedClass = "error"
+reportUnusedImport = "error"
+reportUnusedFunction = "error"
+reportUnusedVariable = "error"
+reportUntypedBaseClass = "error"
+reportUntypedClassDecorator = "error"
+reportUntypedFunctionDecorator = "error"
+reportUntypedNamedTuple = "error"
+reportCallInDefaultInitializer = "error"
+reportImplicitStringConcatenation = "error"
+# reportMissingSuperCall = "none"
+reportPropertyTypeMismatch = "warning"
+# reportUninitializedInstanceVariable = "none"
+reportUnnecessaryTypeIgnoreComment = "error"
+# reportUnusedCallResult
+include=["**/chalk/chalk/**", "**/chalk/tests/**"]
+exclude=["**/node_modules", "**/__pycache__", "**/.*", "**/chalk/feature_n/**"]
