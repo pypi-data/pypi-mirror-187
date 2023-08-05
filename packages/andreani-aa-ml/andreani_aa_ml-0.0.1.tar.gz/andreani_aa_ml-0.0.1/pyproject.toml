@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "andreani_aa_ml"
+version = "0.0.1"
+authors = [
+  {name = "Eloy Chang", email = "echang@andreani.com" }
+]
+maintainers = [
+  { name = "Ignacio Belogi", email = "ibelogi@andreani.com" },
+  { name = "Gabriel Aranda", email = "garanda@andreani.com" },
+  { name = "Mariana Liu", email = "mliu@andreani.com" },
+  { name = "Yasmin Ojeda", email = "yojeda@andreani.com" },
+  { name = "Ariel Fleiderman", email = "afleiderman@andreani.com" },
+  { name = "Daiana Alonso", email = "dalonso@andreani.com" },
+  { name = "Facundo Silvestre", email = "fsilvestre@andreani.com" },
+  { name = "Santiago Bergman", email = "sbergman@andreani.com" },
+  { name = "Matías Moyano", email = "matmoyano@andreani.com" },
+  { name = "Giuliana Vera", email = "gvera@andreani.com" },
+  { name = "Ezequiel Brodschi", email = "ebrodschi@andreani.com" },
+  { name = "Sol Cari", email = "scari@andreani.com" },
+]
+description = "Common functions for ML proyects used by the Andreani Advanced Analytics team"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+  "azureml",
+  "azureml-core",
+  "azure-storage-blob",
+  "azure-storage-file-datalake",
+  "andreani-aa-tools"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/eloychang/andreani_ml"
+"Bug Tracker" = "https://github.com/eloychang/andreani_ml/issues"

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/aa_ml/__init__.py
+src/aa_ml/aml_pipeline.py
+src/andreani_aa_ml.egg-info/PKG-INFO
+src/andreani_aa_ml.egg-info/SOURCES.txt
+src/andreani_aa_ml.egg-info/dependency_links.txt
+src/andreani_aa_ml.egg-info/requires.txt
+src/andreani_aa_ml.egg-info/top_level.txt

@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: andreani-aa-ml
+Version: 0.0.1
+Summary: Common functions for ML proyects used by the Andreani Advanced Analytics team
+Home-page: https://github.com/eloychang/andreani_ml
+Author-email: Eloy Chang <echang@andreani.com>
+Maintainer-email: Ignacio Belogi <ibelogi@andreani.com>, Gabriel Aranda <garanda@andreani.com>, Mariana Liu <mliu@andreani.com>, Yasmin Ojeda <yojeda@andreani.com>, Ariel Fleiderman <afleiderman@andreani.com>, Daiana Alonso <dalonso@andreani.com>, Facundo Silvestre <fsilvestre@andreani.com>, Santiago Bergman <sbergman@andreani.com>, Matías Moyano <matmoyano@andreani.com>, Giuliana Vera <gvera@andreani.com>, Ezequiel Brodschi <ebrodschi@andreani.com>, Sol Cari <scari@andreani.com>
+License: MIT License
+        
+        Copyright (c) 2023 Eloy Chang
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/eloychang/andreani_ml
+Project-URL: Bug Tracker, https://github.com/eloychang/andreani_ml/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Andreani Advanced Analytics tools
+
+## Instalar usando pip
+
+```
+
+pip install andreani-aa-ml
+
+```
+
+## Importación
+
+```
+
+import aa_ml
+
+```
+
+## Ejemplo de uso
+
+- AML Pipeline: Pipeline de ejecución de experimentos en Azure Machine Learning
+
+```
+
+from aa_tools import aml_pipeline, logger
+
+if __name__ == "__main__":
+
+    log = logger("test.py", "main")
+
+    # Not part of pipeline
+    aml_pipeline.create_train_template("test_file.py")
+    log.log_console("Template file created as test_file.py", "INFO")
+
+    tags = {
+      "scale" : "false",
+      "balanced" : "false",
+      "outliers" : "false",
+      "target" : "target"
+    }
+    log.log_console("Tags defined", "INFO")
+    try:
+      Pipeline = aml_pipeline.pipeline("aa_tools_test", "linear_regression", "regression", tags)
+    except Exception as e:
+      log.log_console(f"Exception initializing pipeline: {e}")
+      log.close()
+      raise e
+
+    try:
+      Pipeline.run("aml/azure.pkl", "aml/environment.yml", "aml", "train_template.py", log)
+    except Exception as e:
+      log.log_console(f"Exception running pipeline: {e}")
+      log.close()
+      raise e
+
+    log.close()
+
+```
