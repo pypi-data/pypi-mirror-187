@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: activity-tools
+Version: 0.0.3
+Summary: ActivityPub building blocks for Python
+Maintainer: Stefan Berggren
+Maintainer-email: pypi+activity-tools@enesge.eu
+Project-URL: homepage, https://github.com/nsg/activity-tools
+Project-URL: documentation, https://github.com/nsg/activity-tools
+Project-URL: repository, https://github.com/nsg/activity-tools.git
+Project-URL: changelog, https://github.com/nsg/activity-tools/blob/master/CHANGELOG.md
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: cryptography (>39.0.0)
+Provides-Extra: test
+Requires-Dist: pytest (>7.2.0) ; extra == 'test'
+
+# activity-tools
+
+This project contains building blocks that can be used to create ActivityPub applications.
+
+## Actor
+
+This generates basic actor that contains the needed bits to make Mastodon happy. 
+
+```python
+import activity-tools
+
+actor_domain = "example.com"
+actor_user = "alice"
+public_key = ...
+
+actor = activity-tools.actor.Actor(actor_domain, actor_user, public_key)
+
+actor_dict = actor.run()
+```
+
+A few values like inbox URL defaults to `https://{actor_domain}/users/{actor_user}/inbox`. You can change this easily:
+
+```
+actor.inbox = f"https://{self.domain}/actor/{self.username}/in"
+actor.outbox = f"https://{self.domain}/actor/{self.username}/out"
+actor_dict = actor.run()
+```
