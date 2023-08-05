@@ -1,0 +1,8 @@
+api_caller/__init__.py,sha256=IeKrQpo-9uws3T5X8xMqHBLRALH2ThOIBGClCqU-kD4,46
+api_caller/caller.py,sha256=TqtDe4odh4yBASxbV3lkkEw3ZX2mFRAPGc96Wk7t8zM,274
+lib/__init__.py,sha256=IeKrQpo-9uws3T5X8xMqHBLRALH2ThOIBGClCqU-kD4,46
+lib/caller.py,sha256=TqtDe4odh4yBASxbV3lkkEw3ZX2mFRAPGc96Wk7t8zM,274
+api_caller_pip_example-0.1.0.dist-info/METADATA,sha256=UxpzC9eV_QIgEbeyvecRe_ZKi-SUpJI3dQItEH0uYRo,146
+api_caller_pip_example-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+api_caller_pip_example-0.1.0.dist-info/top_level.txt,sha256=fJdmkkPBn8WaXWy1-gW97iJNxYZKkVh5bDP1GQOr6ro,11
+api_caller_pip_example-0.1.0.dist-info/RECORD,,
