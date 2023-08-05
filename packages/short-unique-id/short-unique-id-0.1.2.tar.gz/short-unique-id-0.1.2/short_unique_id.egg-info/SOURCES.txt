@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+short_id/__init__.py
+short_id/short_id.py
+short_id/snowflake.py
+short_unique_id.egg-info/PKG-INFO
+short_unique_id.egg-info/SOURCES.txt
+short_unique_id.egg-info/dependency_links.txt
+short_unique_id.egg-info/top_level.txt
