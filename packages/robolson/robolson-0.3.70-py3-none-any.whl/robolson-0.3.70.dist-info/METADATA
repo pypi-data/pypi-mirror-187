@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: robolson
+Version: 0.3.70
+Summary: My collection of utilty scripts
+Author: Rob L Olson
+Author-email: rob.louis@gmail.com
+Requires-Python: >=3.7,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: appdirs (>=1.4.4,<2.0.0)
+Requires-Dist: deal (>=4.23.2,<5.0.0)
+Requires-Dist: docopt (>=0.6.2,<0.7.0)
+Requires-Dist: openai (>=0.15.0,<0.16.0)
+Requires-Dist: praw (>=7.5.0,<8.0.0)
+Requires-Dist: pydub (==0.25.1)
+Requires-Dist: pytaglib (==1.5.0)
+Requires-Dist: redmail (>=0.4.0,<0.5.0)
+Requires-Dist: rich (>=11.2.0,<12.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
