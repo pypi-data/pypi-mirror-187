@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/main.py
+src/22BEE0040.egg-info/PKG-INFO
+src/22BEE0040.egg-info/SOURCES.txt
+src/22BEE0040.egg-info/dependency_links.txt
+src/22BEE0040.egg-info/top_level.txt
