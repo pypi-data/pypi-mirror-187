@@ -1,0 +1,5 @@
+numpy<1.22,>=1.21
+networkx>=3.0
+jinja2<3.0,>=2.11.3
+sympy>=1.7.1
+markupsafe<2.1,>=2.0.1
