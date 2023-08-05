@@ -1,0 +1,15 @@
+nimsmo.cpython-39-x86_64-linux-gnu.so,sha256=tKGGaJbj2rqHeTgAwlgm9kT_mMOxqcFgh9ONVd-OpRs,161984
+nimsmo/smooth_max.nim,sha256=yLTGkDNJ5N14x_Hpgxc6MutfqplvKHl2PHu4N03HofA,195
+nimsmo/nimsmo.nim,sha256=Yx29aWjiaJASkQkQfkyPdrFAiTPbMpXiN_xGY7WOWuw,3820
+nimsmo/smo.nim,sha256=96QFjpcxhAo-fSvvvOx3vfkVMHBwK0PtV7HIuj1CWOA,7518
+nimsmo/stub.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nimsmo/shrinking.nim,sha256=Nl3fp5GPR2J79RxfumYW1X-YWwQRsvHXmUpfnwaWRfA,899
+nimsmo/problem/classification.nim,sha256=AFmcK-RE297Wv_QHtCmAfXUnWNENOwknS8bkruxlHyU,2765
+nimsmo/problem/regression.nim,sha256=on87wDLu3K3VDJLxTpa4MXlnSSAvOgQMvDixcIyqlkU,3169
+nimsmo/kernel/lrucache.nim,sha256=xE1InS_ZSJkgZ_WmLWsgOsY6mStM09BcyH95Nfn9ofs,5776
+nimsmo/kernel/base.nim,sha256=i3HwwYZqfa4XrLEoXfCoAoW-B1PhG3VYX6d47U7uZZg,747
+nimsmo/kernel/cache.nim,sha256=nsQRX5jQYkBF6O-buh0ua02-_pnDfWBccuEGqjXJ-UA,1174
+nimsmo/kernel/gaussian.nim,sha256=lAv9MxJZdI6FMlPIaQptr9FxqInQVVExMFLSFIDD_qw,930
+nimsmo-0.1.6.dist-info/METADATA,sha256=FHTuHoxlyBaWQErlTluENINFU81Q9bwrmTZRalymQLM,856
+nimsmo-0.1.6.dist-info/WHEEL,sha256=ZEcymx7BIM8ytIK_PsXNUiRjF0ovqmps3wlo8WMR-80,149
+nimsmo-0.1.6.dist-info/RECORD,,
