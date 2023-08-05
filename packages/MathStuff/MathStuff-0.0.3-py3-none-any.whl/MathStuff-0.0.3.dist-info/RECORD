@@ -1,0 +1,13 @@
+MathStuff/__init__.py,sha256=hseu_d4KROLro2jz2ntwj7GMANXF4pA9u4Rq2mOPvh4,508
+MathStuff/calculus.py,sha256=c8gEq4kLK56nF2Wp0leOgkFqDkWl9P9tUlOx-sLNaOc,316
+MathStuff/fourier_series.py,sha256=vX80c_koPlqsPq4G0L_i3QKZXE53rQHe61C78iZ3Q4g,3582
+MathStuff/graph_2d.py,sha256=GVDDdR7bVuGGb5gHyE0KvYNuidQt91zdIHl2O179dFs,769
+MathStuff/helper.py,sha256=rJtHVRT1NhW9S5xGDlHsn0FZ_cjeRTGuPHX6NTYer_c,252
+MathStuff/logic.py,sha256=xfpVUw8rrj8Hx37L0PyK-zbR05FEgWGqTlL7yPU7o4c,23092
+MathStuff/main.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+MathStuff/taylor_series.py,sha256=EKXwJwYNRq3hQxxtwxfgnEsQdEAZk5uaPA3S2yfwJhQ,1988
+MathStuff-0.0.3.dist-info/LICENSE.md,sha256=3EzGDFpYeSYqSWuC3157fHyQ52Qw2c0DapAWlyN4PlA,1071
+MathStuff-0.0.3.dist-info/METADATA,sha256=BpJjOxHqRaw1pXdgrGeetUakAimp3IvpBfeb-QkNkoo,714
+MathStuff-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+MathStuff-0.0.3.dist-info/top_level.txt,sha256=mNkn1pOVJkQbAO1OHsHeemyvMkxkRPkZROYUn8fL_lw,10
+MathStuff-0.0.3.dist-info/RECORD,,
