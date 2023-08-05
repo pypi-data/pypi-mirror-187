@@ -1,0 +1,5 @@
+tensorflow
+keras
+pyproj==3.2.1
+protobuf==3.20.*
+GitPython
