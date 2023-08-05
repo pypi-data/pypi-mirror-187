@@ -1,0 +1,10 @@
+blacktex/__about__.py,sha256=S5bBAK8bL7bybaXGJQuNE98fa3H65zGjTASMiyKGJGw,22
+blacktex/__init__.py,sha256=D0v90f1CK95SSZ43GeTh78UdW9Qn1ohXDYbwOkLyqTw,194
+blacktex/_license_validation.py,sha256=FhByYtXWRd5vYFb14658OxUefoNmM4TVMimlxTfiXH8,1068
+blacktex/cli.py,sha256=653EJkfaO6GXRJrGS2fWgJnHSoNoI_ZiEJlYQ2koQ8A,1761
+blacktex/main.py,sha256=kFe_EJef6EMkgL3xb5dmWHtW6JHwpmsg_KofqV5sAkc,10552
+blacktex-0.8.8.dist-info/METADATA,sha256=sc-RhLvlHYnuWcDbHKtSBtFu1cYiF_LbljoBe7wq-Qk,2600
+blacktex-0.8.8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+blacktex-0.8.8.dist-info/entry_points.txt,sha256=IdA_vRXMhWdGQqqyYsSCARffy6uFK0BovHY8M6YJsyc,47
+blacktex-0.8.8.dist-info/top_level.txt,sha256=w1wErf7wUvNq52h9jihI6i056O9D4J3KB8KiuwlbkFU,9
+blacktex-0.8.8.dist-info/RECORD,,
