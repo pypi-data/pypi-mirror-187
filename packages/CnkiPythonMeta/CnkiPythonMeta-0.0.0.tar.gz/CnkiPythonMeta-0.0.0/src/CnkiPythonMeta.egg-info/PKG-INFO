@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: CnkiPythonMeta
+Version: 0.0.0
+Summary: This is a CnkiPythonMeta package for processing data from CNKI(https://www.cnki.net/), which the file type must be EXT format.
+Author: YANG Guixian
+Author-email: Ygxyoung@hotmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This is a CnkiPythonMeta package for processing data from CNKI(https://www.cnki.net/),
+which the file type must be EXT format. 
