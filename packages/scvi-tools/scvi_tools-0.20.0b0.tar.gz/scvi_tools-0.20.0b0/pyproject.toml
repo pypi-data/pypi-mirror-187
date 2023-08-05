@@ -1,0 +1,125 @@
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+
+[project]
+name = "scvi-tools"
+version = "0.20.0b0"
+description = "Deep probabilistic analysis of single-cell omics data."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+authors = [
+    {name = "The scvi-tools development team"},
+]
+maintainers = [
+    {name = "The scvi-tools development team", email = "adamgayoso@berkeley.edu"},
+]
+urls.Documentation = "https://scvi-tools.org"
+urls.Source = "https://github.com/scverse/scvi-tools"
+urls.Home-page = "https://scvi-tools.org"
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "Natural Language :: English",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Operating System :: MacOS :: MacOS X",
+  "Operating System :: Microsoft :: Windows",
+  "Operating System :: POSIX :: Linux",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = [
+    "anndata>=0.7.5",
+    "chex",
+    "docrep>=0.3.2",
+    "flax",
+    "jax>=0.3",
+    "jaxlib",
+    "optax",
+    "numpy>=1.17.0",
+    "pandas>=1.0",
+    "scipy",
+    "scikit-learn>=0.21.2",
+    "openpyxl>=3.0",
+    "rich>=9.1.0",
+    "h5py>=2.9.0",
+    "torch>=1.8.0",
+    "pytorch-lightning>=1.8.0,<1.9.0",
+    "torchmetrics>=0.6.0",
+    "pyro-ppl>=1.6.0",
+    "tqdm>=4.56.0",
+    "scikit-learn>=0.21.2",
+    "numpyro",
+    "ml-collections>=0.1.1",
+    "mudata>=0.1.2",
+]
+
+[project.optional-dependencies]
+dev = ["black", "pytest", "flake8", "codecov", "scanpy>=1.6", "loompy>=3.0.6", "jupyter", "nbformat", "nbconvert", "pre-commit", "isort", "pymde", "genomepy"]
+docs = [
+  "sphinx>=4.1",
+  "nbsphinx",
+  "ipython",
+  "furo",
+  "sphinx-autodoc-typehints<1.21.4",
+  "sphinx_copybutton",
+  "sphinx-design",
+  "sphinxext-opengraph",
+  "sphinx-hoverxref",
+  "sphinxcontrib-bibtex>=1.0.0",
+  "myst-parser",
+]
+autotune = [
+  "hyperopt>=0.2",
+  "ray[tune]>=2.2.0",
+  "ipython",
+  "scib-metrics>=0.1.1",
+]
+pymde = ["pymde"]
+tutorials = ["scanpy", "leidenalg", "python-igraph", "loompy", "scikit-misc", "pynndescent", "pymde", "huggingface_hub", "genomepy"]
+hub = ["huggingface_hub"]
+
+[tool.hatch.build.targets.wheel]
+packages = ['scvi']
+
+[tool.coverage.run]
+source = ["scvi"]
+omit = [
+    "**/test_*.py",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+xfail_strict = true
+
+[tool.isort]
+include_trailing_comma = true
+multi_line_output = 3
+profile = "black"
+skip_glob = ["docs/*", "scvi/__init__.py"]
+
+[tool.black]
+target-version = ['py38']
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      \.eggs
+    | \.git
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+)
+'''
+
+[tool.jupytext]
+formats = "ipynb,md"
