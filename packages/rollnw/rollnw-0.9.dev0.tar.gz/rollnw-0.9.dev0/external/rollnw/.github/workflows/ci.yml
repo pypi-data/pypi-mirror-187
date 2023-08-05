@@ -1,0 +1,184 @@
+name: ci
+
+on:
+  push:
+    paths-ignore:
+      - "**.md"
+      - "**.rst"
+      - "**.py"
+      - ".readthedocs.yaml"
+  pull_request:
+    paths-ignore:
+      - "**.md"
+      - "**.rst"
+      - "**.py"
+      - ".readthedocs.yaml"
+  release:
+    types:
+      - published
+
+env:
+  buildDir: "${{ github.workspace }}/build/"
+  vcpkg-tag: "2022.09.27"
+  VCPKG_ROOT: "${{ github.workspace }}/vcpkg/"
+  VCPKG_DEFAULT_BINARY_CACHE: "${{ github.workspace }}/vcpkg/.cache"
+  NWN_ROOT: "${{ github.workspace }}/nwn/"
+  CI_GITHUB_ACTIONS: "1"
+  MACOSX_DEPLOYMENT_TARGET: "10.15"
+  CCACHE_DIR: "${{ github.workspace }}/ccache/"
+  CCACHE_BASEDIR: "${{ github.workspace }}/ccache/"
+  SCCACHE_DIR: "${{ github.workspace }}/ccache/"
+  SCCACHE_BASEDIR: "${{ github.workspace }}/ccache/"
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-11, ubuntu-20.04, windows-2019]
+    runs-on: ${{ matrix.os }}
+    name: Build ${{ matrix.os }}
+
+    steps:
+      - name: Get current date
+        if: matrix.os != 'windows-2019'
+        run: |
+          echo "DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+
+      - name: Get current date
+        if: matrix.os == 'windows-2019'
+        run: |
+          echo "DATE=$(Get-Date -Format yyyy-MM-dd)" | Out-File -FilePath $env:GITHUB_ENV -Append
+
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
+
+      # Install latest CMake.
+      - uses: lukka/get-cmake@latest
+
+      # macOS Dependencies
+      - name: macOS - install non-vcpkg dependencies
+        if: matrix.os == 'macos-11'
+        env:
+          HOMEBREW_NO_ANALYTICS: "ON"
+          HOMEBREW_NO_AUTO_UPDATE: "ON"
+          HOMEBREW_NO_BOTTLE_SOURCE_FALLBACK: "ON"
+          HOMEBREW_NO_INSTALL_CLEANUP: "ON"
+        run: |
+          brew install pkg-config automake ninja libtool zlib llvm ccache
+          echo "CC=$(brew --prefix llvm)/bin/clang" >> $GITHUB_ENV
+          echo "CXX=$(brew --prefix llvm)/bin/clang++" >> $GITHUB_ENV
+          echo "PATH=/usr/local/opt/ccache/libexec:$PATH" >> $GITHUB_ENV
+
+      - name: macOS - check clang version
+        if: matrix.os == 'macos-11'
+        run: $CC --version
+
+      # Linux dependencies
+      - name: linux - install gcc
+        if: matrix.os == 'ubuntu-20.04'
+        run: |
+          sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+          sudo apt update
+          sudo apt install gcc-11 g++-11 ccache
+          sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 110 --slave /usr/bin/g++ g++ /usr/bin/g++-11 --slave /usr/bin/gcov gcov /usr/bin/gcov-11
+
+      # Windows dependencies
+      - name: windows - install dependencies
+        if: matrix.os == 'windows-2019'
+        run: |
+          choco install sccache ninja
+
+      - name: Set up ccache
+        if: matrix.os != 'windows-2019'
+        run: |
+          ccache --set-config=cache_dir=${{ github.workspace }}/ccache
+          ccache --set-config=max_size=500M
+          ccache --set-config=compression=true
+
+      # vcpkg
+      - name: all - download vcpkg
+        run: |
+          git clone https://github.com/microsoft/vcpkg ${{ github.workspace }}/vcpkg || true
+          pushd vcpkg
+          git checkout --force ${{ env.vcpkg-tag }}
+          popd
+
+      - name: all - cache vcpkg
+        id: cache-vcpkg
+        uses: actions/cache@v3
+        with:
+          path: |
+            ${{ github.workspace }}/vcpkg/.cache
+            ${{ github.workspace }}/ccache
+          key: ${{ runner.os }}-build-${{ env.vcpkg-tag }}-${{ env.DATE }}-${{ hashFiles('vcpkg.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-
+
+      - name: macOS|linux - bootstrap vcpkg
+        if: matrix.os != 'windows-2019'  && steps.cache-vcpkg.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p vcpkg/.cache
+          vcpkg/bootstrap-vcpkg.sh
+
+      - name: windows - bootstrap vcpkg
+        if: matrix.os == 'windows-2019' && steps.cache-vcpkg.outputs.cache-hit != 'true'
+        run:  |
+          md vcpkg/.cache -ea 0
+          vcpkg/bootstrap-vcpkg.bat
+
+      # nwn
+      - name: all - cache nwn
+        id: cache-nwn
+        uses: actions/cache@v3
+        with:
+          path: |
+            ${{ github.workspace }}/nwn/
+          key: cache-nwn-3e02cddcea5d0ae82111a3038f14aef6c14d05d9
+
+      - name: all - download nwn
+        if: steps.cache-nwn.outputs.cache-hit != 'true'
+        run: |
+          curl https://nwn.beamdog.net/downloads/nwnee-dedicated-8193.34.zip -O
+          unzip nwnee-dedicated-8193.34.zip -d ${{ github.workspace }}/nwn/
+          ls -l ${{ github.workspace }}/nwn/
+
+      # build the normal libraries
+      - name: macOS - configure
+        if: matrix.os == 'macos-11'
+        run: |
+          cmake --preset macos
+
+      - name: linux - configure
+        if: matrix.os == 'ubuntu-20.04'
+        run: |
+          cmake --preset linux
+
+      - name: windows - Visual Studio shell
+        if: matrix.os == 'windows-2019'
+        uses: egor-tensin/vs-shell@v2
+        with:
+          arch: x64
+
+      - name: windows - configure
+        if: matrix.os == 'windows-2019'
+        run: |
+          cmake --preset ci-windows
+
+      - name: all - build & test
+        run: |
+          cmake --build --preset default
+          ctest --preset default
+
+      - name: macOS|linux - delete cmakecache
+        if: matrix.os != 'windows-2019'
+        run: |
+          rm -rf ${{ github.workspace }}/build/CMakeFiles
+          rm ${{ github.workspace }}/build/CMakeCache.txt
+
+      - name: windows - delete cmakecache
+        if: matrix.os == 'windows-2019'
+        run: |
+          Remove-Item ${{ github.workspace }}/build/CMakeFiles -Recurse
+          Remove-Item ${{ github.workspace }}/build/CMakeCache.txt
