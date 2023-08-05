@@ -1,0 +1,41 @@
+[project]
+name = "chattypy"
+version = "0.1.2"
+authors = [
+  { name="LuisAFK", email="so.yl.a.fk@googlemail.com" },
+]
+description = "ChattyPy is a library made in Python for making Chatty bots."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: GNU AGPLv3",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/lafkpages/ChattyPy"
+"Bug Tracker" = "https://github.com/lafkpages/ChattyPy/issues"
+
+[tool.poetry]
+name = "chattypy"
+version = "0.1.2"
+description = "ChattyPy is a library made in Python for making Chatty bots."
+authors = ["LuisAFK <so.yl.a.fk@googlemail.com>"]
+packages = [
+  { include = "src/chattypy/" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8.0"
+websocket-client = "^1.4.2"
+build = "^0.10.0"
+twine = "^4.0.2"
+
+[tool.poetry.dev-dependencies]
+debugpy = "^1.6.2"
+replit-python-lsp-server = {extras = ["yapf", "rope", "pyflakes"], version = "^1.5.9"}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
