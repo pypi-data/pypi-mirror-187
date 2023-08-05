@@ -1,0 +1,5 @@
+[console_scripts]
+setenviroment_addpath = setenvironment.cli:addpath
+setenviroment_removepath = setenvironment.cli:removepath
+setenviroment_set = setenvironment.cli:setenv
+setenviroment_unset = setenvironment.cli:unsetenv

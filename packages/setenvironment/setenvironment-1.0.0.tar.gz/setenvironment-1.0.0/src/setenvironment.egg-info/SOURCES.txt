@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/setenvironment/__init__.py
+src/setenvironment/cli.py
+src/setenvironment/setenv_unix.py
+src/setenvironment/setenv_win32.py
+src/setenvironment/setenvironment.py
+src/setenvironment/util.py
+src/setenvironment.egg-info/PKG-INFO
+src/setenvironment.egg-info/SOURCES.txt
+src/setenvironment.egg-info/dependency_links.txt
+src/setenvironment.egg-info/entry_points.txt
+src/setenvironment.egg-info/requires.txt
+src/setenvironment.egg-info/top_level.txt
