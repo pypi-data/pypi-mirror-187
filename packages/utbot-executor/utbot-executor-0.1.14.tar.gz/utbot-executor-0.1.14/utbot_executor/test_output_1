@@ -1,0 +1,8 @@
+success
+[4, 5]
+[]
+{"objects": {"139881171910896": {"strategy": "repr", "kind": "builtins.int", "comparable": true, "value": "1"}, "139881171910928": {"strategy": "repr", "kind": "builtins.int", "comparable": true, "value": "2"}, "139881171910960": {"strategy": "repr", "kind": "builtins.int", "comparable": true, "value": "3"}, "139881171910992": {"strategy": "repr", "kind": "builtins.int", "comparable": true, "value": "4"}}}
+{"objects": {"139881171910896": {"strategy": "repr", "kind": "builtins.int", "comparable": true, "value": "1"}, "139881171910928": {"strategy": "repr", "kind": "builtins.int", "comparable": true, "value": "2"}, "139881171910960": {"strategy": "repr", "kind": "builtins.int", "comparable": true, "value": "3"}, "139881171910992": {"strategy": "repr", "kind": "builtins.int", "comparable": true, "value": "4"}, "139881171911184": {"strategy": "repr", "kind": "builtins.int", "comparable": true, "value": "10"}}}
+['139881171910896', '139881171910928']
+{'c': '139881171910960', 'd': '139881171910992'}
+139881171911184
