@@ -1,0 +1,13 @@
+numpy<2,>=1.21.6
+
+[example]
+scikit-learn
+matplotlib
+
+[py36]
+scikit-learn
+matplotlib
+pytest
+
+[scikit-learn]
+scikit-learn
