@@ -1,0 +1,4 @@
+[console_scripts]
+cpr-gen = cpr_generator:main_generator
+cpr-server = cpr_generator:main_server
+cpr-verify = cpr_generator:main_verifier
