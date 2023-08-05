@@ -1,0 +1,9 @@
+README.md
+setup.py
+EasyPyE/__init__.py
+EasyPyE/main.py
+EasyPyE.egg-info/PKG-INFO
+EasyPyE.egg-info/SOURCES.txt
+EasyPyE.egg-info/dependency_links.txt
+EasyPyE.egg-info/requires.txt
+EasyPyE.egg-info/top_level.txt
