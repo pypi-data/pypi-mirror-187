@@ -1,0 +1,10 @@
+py_netgames_server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py_netgames_server/__main__.py,sha256=CQIYusz509Mry2jePe75Cage0Yng0zyMMdlBDIogE1M,1159
+py_netgames_server/game_server.py,sha256=ow9H90qGdjjsR3y4ApEcFR2gA0Vzbc_1n7uKhXYFpB8,2919
+py_netgames_server/match.py,sha256=043zQyXNECU7btMAkDpQWd2dj0P1XuVJhsRjc_RHGIA,862
+py_netgames_server/websocket_server_builder.py,sha256=826m7HAqgDC8OphCSKdVIhOoHxXdK1Mtdl8_Y8XgN-I,1478
+py_netgames_server-0.0.4.dist-info/LICENSE.txt,sha256=GPY8fab0f53s2SkIzZozQdesjQfJ4W7zrgufE4G3Y6M,1079
+py_netgames_server-0.0.4.dist-info/METADATA,sha256=Qu1x_2Qy1mx6NYIZO6naRdD6ePwEOeuHikUc5-V0hwY,1498
+py_netgames_server-0.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+py_netgames_server-0.0.4.dist-info/top_level.txt,sha256=jh3jLgjhPr6FpLNTlvCwg5KORQTSrQZcN749MVVE8D4,19
+py_netgames_server-0.0.4.dist-info/RECORD,,
