@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+src/pymodaq_plugins_greateyes/VERSION
+src/pymodaq_plugins_greateyes/__init__.py
+src/pymodaq_plugins_greateyes.egg-info/PKG-INFO
+src/pymodaq_plugins_greateyes.egg-info/SOURCES.txt
+src/pymodaq_plugins_greateyes.egg-info/dependency_links.txt
+src/pymodaq_plugins_greateyes.egg-info/entry_points.txt
+src/pymodaq_plugins_greateyes.egg-info/requires.txt
+src/pymodaq_plugins_greateyes.egg-info/top_level.txt
+src/pymodaq_plugins_greateyes/daq_viewer_plugins/__init__.py
+src/pymodaq_plugins_greateyes/daq_viewer_plugins/plugins_2D/__init__.py
+src/pymodaq_plugins_greateyes/daq_viewer_plugins/plugins_2D/daq_2Dviewer_GreateyesCCD.py
+src/pymodaq_plugins_greateyes/hardware/__init__.py

@@ -1,0 +1,2 @@
+[pymodaq.plugins]
+greateyes = pymodaq_plugins_greateyes
