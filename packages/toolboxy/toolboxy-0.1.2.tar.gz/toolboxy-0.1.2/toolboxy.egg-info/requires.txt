@@ -1,0 +1,10 @@
+beautifulsoup4
+loguru
+openai
+pipreqs
+pyperclip
+python-dotenv
+requests
+setuptools
+snakeviz
+winotify
