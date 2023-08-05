@@ -1,0 +1,6 @@
+numpy
+scipy
+numquad
+
+[plotting]
+matplotlib
