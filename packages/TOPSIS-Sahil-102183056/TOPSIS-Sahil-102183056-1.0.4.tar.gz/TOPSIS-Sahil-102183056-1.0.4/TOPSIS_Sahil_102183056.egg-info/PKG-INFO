@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: TOPSIS-Sahil-102183056
+Version: 1.0.4
+Summary: A Topsis package that takes inputs as CSV and generates scores in results CSV!
+Home-page: https://github.com/SahilRo/TOPSIS-Sahil-102183056
+Author: Sahil
+Author-email: ssahil1_be20@thapar.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+Topsis-Sahil-102183056
