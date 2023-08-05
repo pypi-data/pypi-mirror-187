@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+pco_image/__init__.py
+pco_image/config.py
+pco_image/image.py
+pco_image.egg-info/PKG-INFO
+pco_image.egg-info/SOURCES.txt
+pco_image.egg-info/dependency_links.txt
+pco_image.egg-info/requires.txt
+pco_image.egg-info/top_level.txt
