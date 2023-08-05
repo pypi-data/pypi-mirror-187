@@ -1,0 +1,45 @@
+[tool.black]
+line-length = 79
+
+[tool.poetry]
+name = "timevec"
+version = "0.0.0"  # replace by poetry-dynamic-versioning
+description = ""
+authors = ["kitsuyui <kitsuyui@kitsuyui.com>"]
+readme = "README.md"
+packages = [{ include = "timevec", from = "./" }]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+numpy = "^1.24.1"
+[tool.poetry.group.dev.dependencies]
+black = "*"
+pytest = "*"
+isort = "*"
+pyupgrade = "*"
+pytest-cov = "*"
+flake8 = "*"
+mypy = "*"
+poethepoet = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.poetry-dynamic-versioning]
+enable = true
+
+[tool.poe.tasks]
+test = { shell = "python -m pytest" }
+coverage-xml = "python -m pytest --cov=timevec tests --doctest-modules --cov-report=xml"
+format = { shell = """
+isort timevec tests &&
+black timevec tests &&
+pyupgrade --py38-plus timevec/*.py tests/*.py
+""" }
+check = { shell = """
+isort --check-only --diff timevec tests &&
+black --check --diff timevec tests &&
+flake8 timevec tests &&
+mypy timevec tests
+""" }
