@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/typedict/__init__.py
+src/typedict/typedict.py
+src/typedict.egg-info/PKG-INFO
+src/typedict.egg-info/SOURCES.txt
+src/typedict.egg-info/dependency_links.txt
+src/typedict.egg-info/not-zip-safe
+src/typedict.egg-info/requires.txt
+src/typedict.egg-info/top_level.txt
