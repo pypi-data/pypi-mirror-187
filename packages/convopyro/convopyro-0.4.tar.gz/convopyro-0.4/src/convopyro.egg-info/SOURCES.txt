@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/convopyro/__init__.py
+src/convopyro.egg-info/PKG-INFO
+src/convopyro.egg-info/SOURCES.txt
+src/convopyro.egg-info/dependency_links.txt
+src/convopyro.egg-info/top_level.txt
