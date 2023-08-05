@@ -1,0 +1,3 @@
+[mkdocs.themes]
+bulma=mkdocs-bulma-theme
+

@@ -1,0 +1,51 @@
+@charset "utf-8"
+@import "./bulma/bulma.sass"
+@import "./fontawesome6/fontawesome.scss"
+@import "./fontawesome6/solid.scss"
+@import "./fontawesome6/brands.scss"
+
+.span3
+    @extend .column
+    @extend .is-one-quarter
+
+.span9
+    @extend .column
+    @extend .is-three-quarters
+
+div#TOC
+    div.well
+        position: sticky
+        top: 30px
+
+    div.toc
+        @extend .menu
+
+        a
+            @extend .menu-label
+
+        ul ul
+            @extend .menu-list
+
+    ul
+        list-style: circle
+
+        li
+            padding-left: 1em
+
+    ol
+        list-style: decimal
+
+        li
+            padding-left: 1em
+
+    dl
+        padding-left: 1em
+
+        dt
+            @extend .has-text-weight-semibold
+
+        dd
+            padding-left: 1em
+
+    p
+        padding: 0.5em 0
