@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+avish_distributions/Binomialdistribution.py
+avish_distributions/Gaussiandistribution.py
+avish_distributions/Generaldistribution.py
+avish_distributions/__init__.py
+avish_distributions.egg-info/PKG-INFO
+avish_distributions.egg-info/SOURCES.txt
+avish_distributions.egg-info/dependency_links.txt
+avish_distributions.egg-info/not-zip-safe
+avish_distributions.egg-info/top_level.txt
