@@ -1,0 +1,16 @@
+numpy
+tensorflow<2.11,>=2.10
+tensorflow-datasets
+psiz>=0.8
+
+[doc]
+sphinx-rtd-theme==1.0.0
+sphinx-last-updated-by-git
+myst-nb
+sphinxcontrib-bibtex
+
+[test]
+pytest>=6.2.4
+pytest-cov
+flake8
+pylint
