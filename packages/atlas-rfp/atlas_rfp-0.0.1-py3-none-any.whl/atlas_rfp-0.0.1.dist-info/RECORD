@@ -1,0 +1,9 @@
+atlas_rfp/__init__.py,sha256=9NJ0B0hVAuRUURMtp9QHMEOBpplu-o5JR3sc64p91Xk,1084
+atlas_rfp/__main__.py,sha256=zH237xLQti3fTUUFcGM5DWnXF3gcRxV6S8iz_wufePo,441
+atlas_rfp/atlas_parsing.py,sha256=jdmhFsxsK27WIPgFpOE1Ie2R8dh9WWGHF--HGJ6Pwj0,11266
+atlas_rfp/models.py,sha256=tudDMxWOTPvEon8JY9FUnPToCmiO7_sELM_ekYWc3s0,2947
+atlas_rfp-0.0.1.dist-info/LICENSE,sha256=kHVe1CX9HXoCK2GfMoPTJ2162Si97-HzgkXGc5PNwZk,1093
+atlas_rfp-0.0.1.dist-info/METADATA,sha256=KgLp9X4oHP-AR-63xsYwwA690eGsCZDkIdKfn1Ae1Kg,3530
+atlas_rfp-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+atlas_rfp-0.0.1.dist-info/top_level.txt,sha256=dZOsVtFRp8KgjEkz4vSvArnyG-knrtxHpng5G_rZ0sA,10
+atlas_rfp-0.0.1.dist-info/RECORD,,
