@@ -1,0 +1,7 @@
+[console_scripts]
+compile=compile_proxy:main
+
+[nile_plugins.nre]
+deploy_proxy=nile_upgrades.deploy_proxy.deploy_proxy
+upgrade_proxy=nile_upgrades.upgrade_proxy.upgrade_proxy
+
