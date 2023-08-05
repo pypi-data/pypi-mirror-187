@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ipyxturtle
+Version: 0.1.0a0
+Summary: A Jupyter Widget Library to simulate Logo language in python environment
+Home-page: https://github.com//ipyxturtle
+Author: Guilherme Silva
+Author-email: guilherme.francais@gmail.com
+Keywords: ipython,jupyter,widgets
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: IPython
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+Requires-Dist: ipywidgets (>=7.6.0)
+
+A Jupyter Widget Library to simulate Logo language in python environment
