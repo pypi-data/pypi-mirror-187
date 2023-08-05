@@ -1,0 +1,3 @@
+[console_scripts]
+bleach=csv_bleach.main:cli
+
