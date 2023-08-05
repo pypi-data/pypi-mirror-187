@@ -1,0 +1,3 @@
+[console_scripts]
+porkyddns=porkyddns.main:run
+

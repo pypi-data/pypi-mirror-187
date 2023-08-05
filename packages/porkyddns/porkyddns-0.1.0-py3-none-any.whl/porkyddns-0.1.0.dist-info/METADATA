@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: porkyddns
+Version: 0.1.0
+Summary: Simple Porkbun DDNS Client
+License: GPLv3
+Author: Michal S.
+Author-email: mchal_@tuta.io
+Requires-Python: >=3.9,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: requests (>=2.28.2,<3.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Requires-Dist: urllib3 (>=1.26.14,<2.0.0)
+Description-Content-Type: text/markdown
+
+# PorkyDDNS
+Simple Porkbun DDNS Client
+
+## 💡 Features
+
+- Support for multiple subdomains on multiple domains
+- Easily and quickly configurable, with cron-able error reporting
+
+
+## 💾 Installation
+
+**Install PorkyDDNS using `pip`**
+```bash
+  $ pip install porkyddns
+  $ porkyddns
+```
+
+## 🔨 Usage
+
+- Edit the values in `porkyddns.toml.example` as required
+- Copy `porkyddns.toml.example` to `/etc/porkyddns.toml`
+- Run the `porkyddns` script on a cron job or systemd timer however often you want!
+
+
+## 📜 License
+
+[GPLv3-only](https://choosealicense.com/licenses/gpl-3.0/)
+
+
