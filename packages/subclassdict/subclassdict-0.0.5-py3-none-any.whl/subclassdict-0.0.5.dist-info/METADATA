@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: subclassdict
+Version: 0.0.5
+Summary: A TypeDict (see python package typedict) that allows subclasses of type keys to be used as keys.
+Author: Odos Matthews
+License: MIT
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: win32
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: typedict (>=0.0.3)
+Provides-Extra: testing
+Requires-Dist: mypy (>=0.910) ; extra == 'testing'
+Requires-Dist: flake8 (>=3.9) ; extra == 'testing'
+Requires-Dist: tox (>=3.24) ; extra == 'testing'
+
