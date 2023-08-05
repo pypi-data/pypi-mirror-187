@@ -1,0 +1,8 @@
+README.md
+setup.py
+tfidftransformation/__init__.py
+tfidftransformation/main.py
+tfidftransformation.egg-info/PKG-INFO
+tfidftransformation.egg-info/SOURCES.txt
+tfidftransformation.egg-info/dependency_links.txt
+tfidftransformation.egg-info/top_level.txt
