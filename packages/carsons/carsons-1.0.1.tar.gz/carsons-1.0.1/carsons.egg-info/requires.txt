@@ -1,0 +1,8 @@
+numpy>=1.13.1
+
+[test]
+coveralls
+pint
+pre-commit
+pytest>=3.6
+pytest-cov
