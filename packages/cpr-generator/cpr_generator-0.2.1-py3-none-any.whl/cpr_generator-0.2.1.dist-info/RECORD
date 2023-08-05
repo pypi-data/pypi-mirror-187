@@ -1,0 +1,11 @@
+cpr_generator/__init__.py,sha256=bmNwZ0AdOs0YeuIN_hkGtP9j7psZWjMzF3_99PoCDEM,2938
+cpr_generator/cpr_number.py,sha256=vHvAc37NnTpEhX8zH4NoUaVcFoAYiqfmRU8PorYP9vM,309
+cpr_generator/cpr_verifier.py,sha256=vrV67jQTo0sZRtjJyY-qKdHSXNJFCf-m7qQcFLL17g0,1760
+cpr_generator/generator.py,sha256=pjOoT9fyLSOWJndIUN0Gm_8ydMT9UsBFXX-1yqIe_eI,5595
+cpr_generator/server.py,sha256=CNxa2Yr5IpWUAxJNKoyv_CI31LDFOn5fzowhz4-Rh20,2413
+cpr_generator-0.2.1.dist-info/LICENSE,sha256=5NbttlGGpghWNSnLWD2lExqZQVIYJGb5wId4luqYJ60,1059
+cpr_generator-0.2.1.dist-info/METADATA,sha256=dKw5_jWEJA5HCtWaSgY-KldT_drNhi_2vFgrGIWStz4,4554
+cpr_generator-0.2.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cpr_generator-0.2.1.dist-info/entry_points.txt,sha256=tTK4dnJl18jKJLffoLhWINU6RNS9xLqv44zQR4CCMdM,137
+cpr_generator-0.2.1.dist-info/top_level.txt,sha256=FubExwBMQxH54Hjk6ISAL7oqViQsaaCvANychOYb0HE,14
+cpr_generator-0.2.1.dist-info/RECORD,,
