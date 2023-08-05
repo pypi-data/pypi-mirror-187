@@ -1,0 +1,10 @@
+*.tex
+*.csv
+*.png
+*.pdf
+*.txt
+*.root
+*.orig
+EspressoCalibrations.py
+!ExampleCalibration.json
+!ExampleCalibration.xml
