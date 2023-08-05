@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: st_ant_tree
+Version: 0.0.2
+Summary: Streamlit Component for ANT Tree
+Home-page: UNKNOWN
+Author: 
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Streamlit MUI Dialog Component
+===
+
+This streamlit component adds ANT Tree Select to Streamlit Appis
+
+https://ant.design/components/tree-select/
+
+Installation
+-----------
+
+    pip install st-ant-tree
+
+
+
