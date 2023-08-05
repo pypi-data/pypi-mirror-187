@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: activity-tools
+Version: 0.0.1
+Summary: ActivityPub building blocks for Python
+Maintainer: Stefan Berggren
+Maintainer-email: pypi+activity-tools@enesge.eu
+Project-URL: homepage, https://github.com/nsg/activity-tools
+Project-URL: documentation, https://github.com/nsg/activity-tools
+Project-URL: repository, https://github.com/nsg/activity-tools.git
+Project-URL: changelog, https://github.com/nsg/activity-tools/blob/master/CHANGELOG.md
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: cryptography (>39.0.0)
+Provides-Extra: test
+Requires-Dist: pytest (>7.2.0) ; extra == 'test'
+
