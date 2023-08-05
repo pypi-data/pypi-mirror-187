@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: quick-django
+Version: 1.1
+Summary: quick-django save your time and increase your development speed in django project
+Home-page: UNKNOWN
+Author: Momin Iqbal (Pakistan Dedov)
+Author-email: <mefiz.com1214@gmail.com>
+License: UNKNOWN
+Description: 
+                # Quick-Django
+        
+                Create django project quickly single command with all necessary file like djnago app, urls.py, templates folder, static folder and add the default code in view.py,models.py,admin.py and create index.html
+        
+                # Install
+                ## Step 1
+                ```python
+                pip install quick-django
+                ```
+                ## Step 2
+        
+                open cmd in your porject folder and run this command
+                
+                ```python
+                python -m quick-django myproject myproject_app 
+                ```
+        
+                Check Our Site : https://mefiz.com 
+        
+                Gitup :  https://github.com/MominIqbal-1234/quick-start-django
+        
+        
+            
+Keywords: python,django,quick start django,quick django
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
