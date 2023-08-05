@@ -1,0 +1,17 @@
+qat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qat/__init__.so,sha256=PZ1i-TOseYlEq2_WT-lUP2JTTLznmXXxvoAgKTxicnE,76192
+qat/clinalg/__init__.so,sha256=cW4UJkFhFRp9geu84G8Yql97j6bgt0hu6WhZpqb9Kes,76400
+qat/clinalg/callback.so,sha256=D4PwnnpMlvl0Hhgp5zBqKYmVXrcHxKSZKOiXUStdK0E,118272
+qat/clinalg/circuitcontext.so,sha256=KNblNdLMetTyS72GKJ69yT1mTtYlVQIfzLkOoCKJh8M,274448
+qat/clinalg/libqatclinalg.so,sha256=Smq03sBYvfEV_mC8LViRoFhUFzZwSr-szPkMWO6dRlo,209344
+qat/clinalg/libqatclinalg_gpu.so,sha256=FDMNpuwDCQb3YmTSHFUO91on67lsIY-5DQcF7ibr8yk,34960
+qat/clinalg/qpu.so,sha256=y3XFlFK-SYTAPFgRkQDvmw6R0H0Gg5e7RiXa-6D42U0,254976
+qat/clinalg/utils.so,sha256=vtV54vKQ_ocBhCO77KKuoN3uTkN-3y0AEUf-7ZQRXI8,167328
+qat/clinalg/version.so,sha256=_BnAcQEUZN8HdrY0LxzOfXFuA15hS_e2NkX8MURPl1o,74736
+qat/clinalg/wrapper.so,sha256=gBMQz4-_UvR_7BtgKNI4kfq-Ql8sja0-Fecs0wEKyMo,501088
+qat/qpus/hook_clinalg.so,sha256=Z5ZwNh2VBLO_x0B4T5-9_jpztv-Sgvl4FVZWrRO8xys,75072
+myqlm_clinalg-0.0.5.dist-info/LICENSE.txt,sha256=Vl03FJBySK7FEYdw_Y0dV66UAVedEyIuqJTJxREyRgs,4752
+myqlm_clinalg-0.0.5.dist-info/METADATA,sha256=wiiRfLUwHCbG_GsjndnvFOVIUw7ANbW4Tvmar4E0d4E,1220
+myqlm_clinalg-0.0.5.dist-info/WHEEL,sha256=tP8poKOOG6wRb6U15_2f1Jpu76Jelq-wfdO_8FYowT4,109
+myqlm_clinalg-0.0.5.dist-info/top_level.txt,sha256=EtiE-lzXpV6tDPK3leIRADd9p6cOal7g6fxvqQ-u_yc,4
+myqlm_clinalg-0.0.5.dist-info/RECORD,,
