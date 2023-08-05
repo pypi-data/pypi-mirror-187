@@ -1,0 +1,12 @@
+chatbotsclient/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chatbotsclient/bot.py,sha256=xzEVIfPVYCwuiKVQ82U8l84mgcr-mZPhkXBhPVPAis8,611
+chatbotsclient/chatbot.py,sha256=sNZrFuKJH_vMgrT-QqzSY7R5zkR5cwTTVsNpybg4mbw,2786
+chatbotsclient/evaluate.py,sha256=hQYfHpwySteayDFC-xw36XrlD6k9NtRBmYHHg-0PdXM,8825
+chatbotsclient/message.py,sha256=UQ0hK4tGi-VhuHilDQ69JZs5LUEtlFmLfdsKl9WOcEA,3545
+chatbotsclient/moderator.py,sha256=EDdd56N5aTnSzQNbQuykPjkqw7WNnSOId-RQ7j5lCng,5960
+chatbotsclient/test.py,sha256=SWnUOFeWKlvuE1i-uh9XJ3arBgM7-xdlvsJllqiTN0o,1204
+chatbotsclient-1.0.6.dist-info/LICENCE,sha256=tGaKUmg_ZfvAUo9lkLoWDJxkyIwwK2JixQYmbrHTUYA,7
+chatbotsclient-1.0.6.dist-info/METADATA,sha256=FEeWWK-exLmfxtMAF-l8AeI1aPrXAjm1eH6QWZ3dDnk,264
+chatbotsclient-1.0.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+chatbotsclient-1.0.6.dist-info/top_level.txt,sha256=bbBo0bnURP5DgJMwNni8rN2XghYdw7dexX8sKvKZ6FI,15
+chatbotsclient-1.0.6.dist-info/RECORD,,

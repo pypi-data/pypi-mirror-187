@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: chatbotsclient
+Version: 1.0.6
+License-File: LICENCE
+Requires-Dist: pusher
+Requires-Dist: pysher
+Requires-Dist: spacy
+Requires-Dist: Flask
+Requires-Dist: Flask-Cors
+Requires-Dist: porter2stemmer
+Requires-Dist: ccpke
+Requires-Dist: nltk
+
