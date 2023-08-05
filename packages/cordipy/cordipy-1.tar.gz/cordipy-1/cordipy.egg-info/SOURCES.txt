@@ -1,0 +1,8 @@
+setup.py
+./sclighte/__init__.py
+./sclighte/__main__.py
+cordipy.egg-info/PKG-INFO
+cordipy.egg-info/SOURCES.txt
+cordipy.egg-info/dependency_links.txt
+cordipy.egg-info/requires.txt
+cordipy.egg-info/top_level.txt
