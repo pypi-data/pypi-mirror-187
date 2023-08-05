@@ -1,0 +1,8 @@
+networkx>=2.8
+pandas>=1.4.2
+argparse>=1.1
+os
+numpy>=1.22.3
+tqdm>=4.63.0
+itertools
+collections
