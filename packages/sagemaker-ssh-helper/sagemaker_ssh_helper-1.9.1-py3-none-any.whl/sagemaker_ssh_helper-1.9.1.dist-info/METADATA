@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: sagemaker-ssh-helper
+Version: 1.9.1
+Summary: A helper library to connect into Amazon SageMaker with AWS Systems Manager and SSH
+Home-page: https://github.com/aws-samples/sagemaker-ssh-helper
+Author: Amazon Web Services
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT No Attribution License (MIT-0)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: sagemaker (>=2.125.0)
+Provides-Extra: test
+Requires-Dist: black ; extra == 'test'
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: flake8 ; extra == 'test'
+Requires-Dist: mock ; extra == 'test'
+Requires-Dist: pydocstyle ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: sagemaker-pytorch-training ; extra == 'test'
+Requires-Dist: sagemaker-pytorch-inference ; extra == 'test'
+Requires-Dist: torch-model-archiver ; extra == 'test'
+Requires-Dist: tox ; extra == 'test'
+Requires-Dist: wheel ; extra == 'test'
+Requires-Dist: build ; extra == 'test'
+Requires-Dist: twine ; extra == 'test'
+Requires-Dist: pydevd-pycharm (~=213.6777.50) ; extra == 'test'
+Requires-Dist: scikit-learn ; extra == 'test'
+Provides-Extra: test-macos
+Requires-Dist: tensorflow-macos (==2.9.2) ; extra == 'test-macos'
+Requires-Dist: numpy (==1.22.4) ; extra == 'test-macos'
+
+SageMaker SSH Helper is a library that helps you to securely connect to Amazon SageMaker's training jobs, processing jobs, realtime inference endpoints, and SageMaker Studio notebook containers for fast interactive experimentation, remote debugging, and advanced troubleshooting.
+
+For the full description see [README.md](https://github.com/aws-samples/sagemaker-ssh-helper/blob/main/README.md).
