@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+strimilarity.py
+strimilarity.egg-info/PKG-INFO
+strimilarity.egg-info/SOURCES.txt
+strimilarity.egg-info/dependency_links.txt
+strimilarity.egg-info/top_level.txt
