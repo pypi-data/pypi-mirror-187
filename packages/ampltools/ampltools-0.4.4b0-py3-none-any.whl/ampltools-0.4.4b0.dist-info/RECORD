@@ -1,0 +1,13 @@
+ampltools/__init__.py,sha256=UFmrjnqYmKVIHc4y9heO8OyAjyqRqc5OgsXWiXs7lQQ,282
+ampltools/licenses.py,sha256=3gZw7nkXfNtfsOh7VofRcf4BhIhxNJw8qWkCRz3v4EY,2194
+ampltools/notebooks.py,sha256=P-8ZK7fX16xXNmD7HJPfnabD8HgMu0VXvdmFMRTBzh4,5892
+ampltools/utils.py,sha256=RgSdSW3R2e_qh-Xg4Fcf-lgOYWalO1omlWylbwdRQUE,2323
+ampltools/modules/__init__.py,sha256=5r60coA0i6Tj8zJ9AOXuQlFnObZE9NlGtkvl6_Sswwk,321
+ampltools/modules/__main__.py,sha256=GOki9ltQRxp1eHK3USPM4RSj1TnePGoCqTzUx_pIzU0,201
+ampltools/modules/amplpypi.py,sha256=TL7S5ZDv_sKqtY013BiAZrdrNOb4HfEUQkRdVCY3NRY,6100
+ampltools/modules/commands.py,sha256=LgfRjgWKbERlPs4xcfItRfcrupkHsS69KPa-7K_vQBU,1875
+ampltools-0.4.4b0.dist-info/LICENSE,sha256=dOwbb00xWOQYaT0jh5OU4yhmb8u7rUZQIzd1B7E0n_k,1522
+ampltools-0.4.4b0.dist-info/METADATA,sha256=25zJ4ZdSnbur8Drsu3pq-liSAbSYPvwBwf41nDvV5zY,1170
+ampltools-0.4.4b0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ampltools-0.4.4b0.dist-info/top_level.txt,sha256=ZcU9sHvt4BvgJ1NNT8fWTjwEmEqiogqTdQ-0LYrKH6Q,10
+ampltools-0.4.4b0.dist-info/RECORD,,
