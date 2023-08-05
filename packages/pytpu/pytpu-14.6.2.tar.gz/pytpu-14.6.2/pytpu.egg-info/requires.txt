@@ -1,0 +1,17 @@
+asyncio
+numpy
+tpu_tlm_is>=0.2.1.0,~=0.2.1
+
+[test]
+pytest
+pytest-xdist
+pytest-rerunfailures
+pytest-cov
+Pillow
+tpu_tlm[test]~=0.2.0
+iva_applications
+flake8
+mypy
+pycodestyle
+pydocstyle
+pylint
