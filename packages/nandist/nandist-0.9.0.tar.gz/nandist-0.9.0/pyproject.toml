@@ -1,0 +1,67 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "nandist"
+authors = [{name = "Wouter Donders", email = "wouter@42analytics.eu"}]
+dynamic = ["version", "description"]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+dependencies = [
+    "scipy>=1.9.0"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: BSD License",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+
+[project.urls]
+Homepage = "https://42analytics.eu"
+Source = "https://gitlab.com/42analytics1/public/nandist"
+Download = "https://gitlab.com/42analytics1/public/nandist/-/packages"
+Tracker = "https://gitlab.com/42analytics1/public/nandist/-/issues"
+
+[project.optional-dependencies]
+dev = [
+    "bump2version ~= 1.0",
+    "flit ~= 3.8",
+    "hypothesis[numpy] ~= 6.61.0",
+    "pre-commit ~= 2.20",
+    "pytest ~= 7.2",
+    "tox ~= 3.27",
+]
+build = [
+    "flit ~= 3.8",
+    "twine ~= 4.0",
+]
+test = [
+    "hypothesis[numpy] ~= 6.61.0",
+    "pytest ~= 7.2",
+    "tox ~= 3.27",
+]
+
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py38, py39, py310, py311
+isolated_build = True
+
+[testenv]
+deps = pytest >= 7.2, < 8
+       hypothesis[numpy] ~= 6.61.0
+commands = pytest
+"""
+
+[tool.ruff]
+line-length = 120

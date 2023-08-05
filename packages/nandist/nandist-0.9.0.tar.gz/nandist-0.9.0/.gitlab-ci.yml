@@ -1,0 +1,16 @@
+stages:
+  - build
+
+image: python:3.8
+
+build-and-publish-package:
+  stage: build
+  script:
+    - pip install .[build]
+    - flit build
+    # Publish locally
+    - TWINE_PASSWORD=${CI_JOB_TOKEN} TWINE_USERNAME=gitlab-ci-token python -m twine upload --repository-url ${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/pypi dist/*
+    # Publish to pypi
+    - python -m twine upload --username __token__ --password "${PYPI_UPLOAD_TOKEN}" --repository-url "https://upload.pypi.org/legacy/" dist/*
+  rules:
+    - if: $CI_COMMIT_TAG
