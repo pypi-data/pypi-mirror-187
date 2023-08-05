@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+GithubMaker/__init__.py
+GithubMaker/make.py
+GithubMaker.egg-info/PKG-INFO
+GithubMaker.egg-info/SOURCES.txt
+GithubMaker.egg-info/dependency_links.txt
+GithubMaker.egg-info/top_level.txt
