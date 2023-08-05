@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: smb3-item-tracker
+Version: 1.0.0
+Summary: UI to handle tracking inventory in SMB3
+Author: Jon Robison
+Author-email: narfman0@blastedstudios.com
+License: LICENSE
+Keywords: smb3-item-tracker
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
+
