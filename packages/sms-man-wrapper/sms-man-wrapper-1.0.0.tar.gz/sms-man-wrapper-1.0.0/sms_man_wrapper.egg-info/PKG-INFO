@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: sms-man-wrapper
+Version: 1.0.0
+Summary: A Python wrapper for the SMS-Man API
+Home-page: https://github.com/BaLaurent/sms-man-wrapper
+Author: Laurent Baaziz
+Author-email: laurent.baaziz@gmail.com
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
