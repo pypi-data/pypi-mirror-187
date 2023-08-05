@@ -1,0 +1,10 @@
+prpl/__init__.py,sha256=TqSGDlh8E2yl7LWayPd8pn9rh1PqH9SMTeCI7nUWSgY,784
+prpl/prpl.py,sha256=j_r6WiyOOvRBBYMLj0pzuLU4pBof3EQUHvFJ-9VZyrE,4435
+prpl/prpl_forl_loop_progress.py,sha256=nC20twsyY7qog0MhmRZS1DLCg2LyCqesT1rRKlI7a70,1831
+prpl/prpl_progress.py,sha256=9o53si8Kp3v-5eBGGytdHfBdQQcWh8n2BCTaZ6_6qlo,3739
+prpl/prpl_progress_simple.py,sha256=GjhXH_Gam3i-SwBQkGS2m3cS5zbIJ2DNrzAb-Rt6OlY,2383
+progress_parallel-3.1.1.dist-info/LICENSE,sha256=ccVxTQd9quPcgh6nGlL1z7GKk9XmA7HENxohQKpYS0s,1092
+progress_parallel-3.1.1.dist-info/METADATA,sha256=XJ4cDJ8kW7bj-NOSofDb8DJiBsU66gQmp-RIaP732lQ,12626
+progress_parallel-3.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+progress_parallel-3.1.1.dist-info/top_level.txt,sha256=M1FMust7nB3azwQIqTYLZgbMXsJIPErxd0agf_XJDlI,5
+progress_parallel-3.1.1.dist-info/RECORD,,
