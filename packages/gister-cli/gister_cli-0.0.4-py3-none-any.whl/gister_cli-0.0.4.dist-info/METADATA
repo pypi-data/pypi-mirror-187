@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: gister-cli
+Version: 0.0.4
+Summary: A awesome cli project.
+Author: Josh Andres
+Author-email: josh.an.bas@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: ruamel.yaml (==0.17.17)
+Requires-Dist: importlib ; python_version == "3.6"
+
+# Gister Cli
+
+**Gister CLI** es una herramienta creada para simplificar tareas recurrentes en un entorno de desarrollo en especifico.
+
+Por ahora estas son las features con las que cuenta:
+
+- [x] Manejo de diferentes entornos de git (**GITEnv**)
+
+> Nota: Se agregaran nuevas funcionalidades proximamente.
+
+### GITEnv
+
+Esta herramienta te permitira cambiar de entorno de manera rapida y sin complicadas configuraciones, podrás reducir tiempo y errores al cambiar entre entornos.
+
+Para configurar la herramienta es necesario crear el archivo de configuración dentro de la home mediante:
+
+```shell
+$ cd ~
+$ touch .gisterconfig
+```
+el contenido del archivo debe contener los entornos a configurar de la siguiente manera:
+
+```shell
+gitenv:
+  env:
+    work:
+      username: TestUser
+      email: testUser@email.com
+      ssh: true
+    me:
+      username: TestUser2
+      email: testUser2@email.com
+      ssh: false
+  active: me
+```
+#### Propiedades
+* `gitenv`: Configuración de la herramienta **gitenv**
+* `env`: Lista de entornos, es necesario que cuenten con los datos de **username**, **email**, **ssh**
+  * `username`: Nombre de usuario registrado
+  * `email`: Email registrado
+  * `ssh`: Colocar en **true** si la cuenta trabaja con repositorios privados, por ejemplo la cuenta de usuario de una organización.
+* `active`: Determina el entorno que se encuentra actualmente activo. Colocar el entorno preferido en la primera configuración posteriormente al usar el comando, este cambiará el entorno activo de forma automática.
+#### Comandos
+
+| Comando                           | Descripción |
+| ----------:                       |:-----------:|
+| `gister gitenv --env {entorno}`   | Cambia el entorno de ejecución dependiendo de <br> dependiendo de los entornos configurados|
