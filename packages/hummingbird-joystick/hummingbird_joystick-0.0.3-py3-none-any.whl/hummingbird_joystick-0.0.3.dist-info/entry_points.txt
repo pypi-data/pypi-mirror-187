@@ -1,0 +1,2 @@
+[console_scripts]
+hummingbird-joystick = hummingbird_joystick.cli:main
