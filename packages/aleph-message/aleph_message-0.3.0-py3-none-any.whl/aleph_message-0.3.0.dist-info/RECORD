@@ -1,0 +1,12 @@
+aleph_message/__init__.py,sha256=gx08epSeVpBdbUdvAmxtYFIDKufGnVj_9iexUlyrmK8,46
+aleph_message/exceptions.py,sha256=FtNjGjsw-kBNJtutiEUoSOgqifJsY1p-zgTGL2-zMv4,44
+aleph_message/utils.py,sha256=IgEe_no3KF12UJWeQySO4nn-J7yVISm2qFud3K_1Wd4,304
+aleph_message/models/__init__.py,sha256=4CwMpeaJYqin6Z8opgg8axI3ejYAoX0pylR9mcQaDPc,11562
+aleph_message/models/abstract.py,sha256=TRu4bEXSrqT1wu_sIGyscLQ_YVybmq_Yr1RQKwBBRqs,698
+aleph_message/models/item_hash.py,sha256=sUreEeeNIGhtBJ6jM8aDfSikaO339GP7SJnwKmFdwMo,1930
+aleph_message/models/program.py,sha256=6euC4rgC3MlbWbb08rT1tPnQooqY5XGUP4JNxs3FSd0,5020
+aleph_message-0.3.0.dist-info/LICENSE,sha256=NAuhuvs1zbnINwEKJKKWccOO5ZVOTKiflWD9_KLIgh4,1062
+aleph_message-0.3.0.dist-info/METADATA,sha256=v_C69hsD65xcHlG_P3XeJWBKJnN79ShloNaXxGOgu0Q,1473
+aleph_message-0.3.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aleph_message-0.3.0.dist-info/top_level.txt,sha256=tTpTP6Cnb19m3zoAfGKTICO8DCRSxtdh0JllLdKUZE8,14
+aleph_message-0.3.0.dist-info/RECORD,,
