@@ -1,0 +1,17 @@
+manganelo/__init__.py,sha256=McBhvn4skX5iLMBgPoD7kGwL0xn7agllgx8DtxBVlDU,394
+manganelo/chapterdownload.py,sha256=lNq8MEmU6V0_c5T6jFjPhpJmaJIZLseHwMEeJMB31ac,1575
+manganelo/errors.py,sha256=dF1jkAthpuA4KdShVcFoZdYIflU4Js0yTv5pg3hZrUw,93
+manganelo/hometooltips.py,sha256=dF5dp5-ldI-ueX-rj0IOojUpazmx9dFrvY4hgFucCWk,723
+manganelo/httpclient.py,sha256=vKSjeZDNgor2T_7tmk7QTOAdSeQTaLeDkNW-oAHP5sM,1907
+manganelo/storypage.py,sha256=jG4AYsCxBy-Co1DN_lkoe8Y2iIjawXB2c6vZ-ESAXKY,420
+manganelo/storysearch.py,sha256=kTTAVzHoTuOmpBCVwmNXEftjHw62sJe5ArbewMtTTHQ,632
+manganelo/models/__init__.py,sha256=4NmLt1eZHj5adrTAhTgqDZkFfy7IMcvoirK97mqaJeI,154
+manganelo/models/chapter.py,sha256=wPdjRH1hIrGZ-8XncGYmTJm4df8_CoLOPwDi1QAXjK4,1166
+manganelo/models/homestorytooltip.py,sha256=Y9zmkeh1o1bWNwEopcj6nH-1Rv7tEePtFBxR-3YLZgw,684
+manganelo/models/searchresult.py,sha256=M_ETQG9OuqqKhPCWdKuDGtmD-7Vpv-eyMrRK_Oq-ijI,2073
+manganelo/models/storypage.py,sha256=aB2QlvOHQ_TP4irJSC_2BDaYeptuoOi4dfu1RbuMM-g,2445
+manganelo-1.22.0.dist-info/LICENSE.txt,sha256=z6pLz9GNVAooBO7HvAPH_4VDDBCbHJdU3Zr2o39XW4g,1077
+manganelo-1.22.0.dist-info/METADATA,sha256=sfYpdBnQci1fTxDsd7wP6__RM4as2y64-eXEfRABC9I,1779
+manganelo-1.22.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+manganelo-1.22.0.dist-info/top_level.txt,sha256=MDLAO5yI4SFPc8enpIJvbH33cBDV6qyOlKz2eTEM9lY,10
+manganelo-1.22.0.dist-info/RECORD,,
