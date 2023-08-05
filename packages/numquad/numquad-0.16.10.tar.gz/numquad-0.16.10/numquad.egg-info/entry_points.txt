@@ -1,0 +1,2 @@
+[console_scripts]
+numquad-optimize = numquad._cli:main
