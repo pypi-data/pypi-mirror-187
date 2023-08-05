@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+pyphene/pyphene.egg-info/PKG-INFO
+pyphene/pyphene.egg-info/SOURCES.txt
+pyphene/pyphene.egg-info/dependency_links.txt
+pyphene/pyphene.egg-info/top_level.txt
