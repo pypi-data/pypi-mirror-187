@@ -1,0 +1,12 @@
+README.md
+setup.py
+src/cc_server/__init__.py
+src/cc_server/__main__.py
+src/cc_server/main.py
+src/cc_server/version.py
+src/cookiecutter_server.egg-info/PKG-INFO
+src/cookiecutter_server.egg-info/SOURCES.txt
+src/cookiecutter_server.egg-info/dependency_links.txt
+src/cookiecutter_server.egg-info/entry_points.txt
+src/cookiecutter_server.egg-info/requires.txt
+src/cookiecutter_server.egg-info/top_level.txt

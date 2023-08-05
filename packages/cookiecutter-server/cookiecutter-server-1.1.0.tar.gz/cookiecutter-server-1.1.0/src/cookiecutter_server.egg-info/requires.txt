@@ -1,0 +1,5 @@
+typer[all]<1.0,>=0.6
+cookiecutter>=1.7.2
+watchdog<3.0,>=2.2
+dirsync<3.0,>=2.2
+PyYAML<7.0,>=5.0
