@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/CnkiPythonMeta.py
+src/__init__.py
+src/CnkiPythonMeta.egg-info/PKG-INFO
+src/CnkiPythonMeta.egg-info/SOURCES.txt
+src/CnkiPythonMeta.egg-info/dependency_links.txt
+src/CnkiPythonMeta.egg-info/top_level.txt
