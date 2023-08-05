@@ -1,0 +1,13 @@
+airavata_mft_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airavata_mft_cli/base.py,sha256=MGj9FN4bKk6pMCa53JE7vZg7ZQEv2gd-jBk0cFsqsM8,418
+airavata_mft_cli/bootstrap.py,sha256=2NXaJxNL8SdLfX9J_IzoZBaV2bxULAD3fltj1aMdHWI,3698
+airavata_mft_cli/main.py,sha256=JjGmocGSvGpupvOXbAaf62LqE0aXpeTUNkC7m6jF3jk,205
+airavata_mft_cli/operations.py,sha256=RTEHfEhRe3SjOhqjmbVZSfx9G1bYcqpY9hMxKcCVpYs,8049
+airavata_mft_cli/storage/__init__.py,sha256=kZzMhQ6mOwgv_Pc3GkQY1iVenVQrg5eDcVJNEvXKba8,1940
+airavata_mft_cli/storage/azure.py,sha256=PUoLtOOvqMDU4qT4CET3WXfCx9PVLh8NBVvsc_c4TzU,3055
+airavata_mft_cli/storage/gcs.py,sha256=rwEZdPOPW0udZwbdSCRv6R812qfBqZnCs4cMA-reHY8,11743
+airavata_mft_cli/storage/s3.py,sha256=DmHmO7n006ErMLDhIRFzYgc1MBdczX2fMN4Gb3d9Qkw,5232
+airavata_mft_cli-0.1.5.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+airavata_mft_cli-0.1.5.dist-info/entry_points.txt,sha256=El2uiPVYeBf0AsDE26sqdqeduEQxvXw_5Ata2NU1xw0,49
+airavata_mft_cli-0.1.5.dist-info/METADATA,sha256=c8uo1rg16FBKh1TE6-tAEaE1zaD775HZ09CXtIFzStI,663
+airavata_mft_cli-0.1.5.dist-info/RECORD,,
