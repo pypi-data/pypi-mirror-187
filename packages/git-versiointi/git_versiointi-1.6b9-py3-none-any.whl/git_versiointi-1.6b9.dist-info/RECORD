@@ -1,0 +1,16 @@
+_versiointi_setuptools_build_meta.py,sha256=Z4ekZVykyOvYQmm1xeOGp0hntL9QkYMhXxj_jDRzpZQ,100
+versiointi/__init__.py,sha256=M96ojEiq_DednQ5hoJJ_EDlKfAPXiUihIAzk7ArnPxQ,4015
+versiointi/egg_info.py,sha256=iib9Zyd8PX-Az9hWF3JTYSWq2HPgylQG1X2oQpDNWq4,566
+versiointi/kaytanto.py,sha256=AcSjEZt9xt90z6mCBVisOab1_MuFKY7glb6Q_S90Am0,5174
+versiointi/oletus.py,sha256=EE5kS7ikAv_YF_FpFwzyohEsluKSg7Wxqkejs2m3xOY,1142
+versiointi/parametrit.py,sha256=3pNuk_LKYNmezFWDeTOsOGR6NKU6P7wB5ALAv9Kyn3o,1815
+versiointi/repo.py,sha256=HJ6aTMKXLbgxJybA_D5kh2VGUoTgnl-LBegQwwXLuVg,5491
+versiointi/tiedostot.py,sha256=CKC31eoEF6Td1pbxHW77cbYcDLSaGfw2oFwmtF7xDyc,2530
+versiointi/vaatimukset.py,sha256=RATGE0VHJ32TmoziUmePTc_7JGNGZ_or3l3XIBWEsmo,654
+versiointi/versiointi.py,sha256=SSyquelEzIoFTPjTov-O23KAJM-xy0bHxL9EO1OTbUA,3325
+git_versiointi-1.6b9.dist-info/METADATA,sha256=I_M2J7HLRmSzw5hCDdEsFXpRcBtI6Uas-Nq0h0YcIxM,6713
+git_versiointi-1.6b9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+git_versiointi-1.6b9.dist-info/entry_points.txt,sha256=ZzaXE0jKa50HJR8Y5SHI-GWnjVuMifojjEr2HQ6rHew,247
+git_versiointi-1.6b9.dist-info/historia.json,sha256=I6HwQ2ge7JW9M1roOidGh1ovazHPoy1d-jNNlgg1iG0,8994
+git_versiointi-1.6b9.dist-info/top_level.txt,sha256=KORXiJgNhP3qAjsjKs00ZAN0B-kVnBL6u1RB1bDeJYE,45
+git_versiointi-1.6b9.dist-info/RECORD,,
