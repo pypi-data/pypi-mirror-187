@@ -1,0 +1,69 @@
+#!/bin/bash
+# Build pkgcraft-c library for bundling with pkgcraft python wheels.
+
+set -e
+env
+
+doecho() {
+	echo "\$ $*"
+	"$@"
+}
+
+echo Building pkgcraft-c on ${OSTYPE} for ${HOSTTYPE}
+
+# install rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+doecho source "${HOME}"/.cargo/env
+
+# install required libs on linux
+install_pkgs() {
+	local -a packages=( clang git )
+	# non-native targets require openssl headers to compile cargo-c
+	if [[ ${HOSTTYPE} != "x86_64" ]]; then
+		packages+=( openssl-devel )
+	fi
+
+	if [[ ${OSTYPE} == "linux-gnu" ]]; then
+		doecho dnf makecache --refresh
+		doecho dnf -y install ${packages[@]}
+	elif [[ ${OSTYPE} == "linux-musl" ]]; then
+		doecho apk update
+		doecho apk add ${packages[@]}
+	fi
+}
+
+[[ ${OSTYPE} == "linux-"* ]] && install_pkgs
+
+# install binary cargo-c package if available
+if [[ ${OSTYPE} == "linux-"* ]]; then
+	if [[ ${HOSTTYPE} == "aarch64" ]]; then
+		curl -L https://github.com/lu-zero/cargo-c/releases/latest/download/cargo-c-aarch64-unknown-linux-musl.tar.gz | tar xvzf - -C "${HOME}"/.cargo/bin
+	elif [[ ${HOSTTYPE} == "x86_64" ]]; then
+		curl -L https://github.com/lu-zero/cargo-c/releases/latest/download/cargo-c-x86_64-unknown-linux-musl.tar.gz | tar xvzf - -C "${HOME}"/.cargo/bin
+	else
+		SOURCE_CARGO_C=true
+	fi
+elif [[ ${OSTYPE} == "darwin"* ]]; then
+	if [[ ${HOSTTYPE} == "x86_64" ]]; then
+		curl -L https://github.com/lu-zero/cargo-c/releases/latest/download/cargo-c-macos.zip > cargo-c.zip
+		unzip -o cargo-c.zip -d "${HOME}"/.cargo/bin
+		rm cargo-c.zip
+	else
+		SOURCE_CARGO_C=true
+	fi
+fi
+
+# clone the pkgcraft repo from a specific tag or branch
+doecho git clone -b ${PKGCRAFT_C_REF:-main} --recurse-submodules https://github.com/pkgcraft/pkgcraft.git
+
+if [[ -n ${SOURCE_CARGO_C} ]]; then
+	# avoid libgit2 usage due to memory problems when emulated under qemu
+	# https://users.rust-lang.org/t/cargo-uses-too-much-memory-being-run-in-qemu/76531
+	doecho cargo --config net.git-fetch-with-cli=true update --manifest-path pkgcraft/Cargo.toml
+
+	# manually build cargo-c for arches without native binaries
+	doecho cargo install cargo-c
+fi
+
+# build and install C library
+doecho cargo cinstall --manifest-path pkgcraft/Cargo.toml -p pkgcraft-c --profile bundled
