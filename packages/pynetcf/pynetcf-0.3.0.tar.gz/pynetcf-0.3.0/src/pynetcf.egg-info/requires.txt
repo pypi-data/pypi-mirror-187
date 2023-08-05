@@ -1,0 +1,12 @@
+importlib-metadata
+numpy
+scipy
+pandas
+netCDF4
+pygeogrids
+pygeobase
+
+[testing]
+setuptools
+pytest
+pytest-cov
