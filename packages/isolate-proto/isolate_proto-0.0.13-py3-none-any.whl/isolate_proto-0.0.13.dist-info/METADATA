@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: isolate-proto
+Version: 0.0.13
+Summary: (internal) gRPC definitions for Isolate Cloud
+Author: Features & Labels
+Author-email: hello@fal.ai
+Requires-Python: >=3.7,<4
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: grpcio (>=1.49)
+Requires-Dist: isolate[grpc] (==0.8.0)
+Requires-Dist: protobuf
+Description-Content-Type: text/markdown
+
+# gRPC definitions
+
+For regenerating definitions
+
+```
+$ python tools/regen_grpc.py src/isolate_proto/controller.proto <isolate version>
+```
+
