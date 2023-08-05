@@ -1,0 +1,15 @@
+aoe2netapi/__init__.py,sha256=HkLK8QTXmOSHkS5drasDnuzNaqu_S8HW5kjPC0CWBY0,1932
+aoe2netapi/aoe2.py,sha256=IF2OP_oIMEKy8ns2DRHAglP5EAjO5kZVuGAUWXAFYRc,16613
+aoe2netapi/constants/__init__.py,sha256=Y5EtapvyzOAKb89e9xqE9RqGYGb9H1I6fhefZkTeZzA,147
+aoe2netapi/constants/game.py,sha256=oLLgtv6fOsUUHI2v3tPCMGyAjkhoxAk241RYcUv-dWM,378
+aoe2netapi/constants/leaderboardid.py,sha256=uDxEoqMQf2uINj_CEq_A7o6ogzMyT7__CTeVG1djGZQ,2353
+aoe2netapi/models/__init__.py,sha256=zOfUrAxKXrpV-mh6Kp3oJlMUSykNfGtVWuT0OeaWNpQ,363
+aoe2netapi/models/leaderboard.py,sha256=lm3KaPZCqe8rzf5pmFCw5zKZGgKT6lZ3z6gS7WEfpGc,1329
+aoe2netapi/models/matchhistory.py,sha256=X5CX0ktb3A93Nab9xMgJRa7ygxjVbbpJp2JSBK8g-Uk,2280
+aoe2netapi/models/ratinghistory.py,sha256=knQbuTCJxFQi7GTJdyFQP_DBl51MN2u4pM_C_ztElvY,987
+aoe2netapi/models/strings.py,sha256=rQh2STJuCJT5ol4oep6Z6gGsb25V5AwfB_nugwuZdI4,729
+aoe2netapi_wrapper-2.0.0.dist-info/LICENSE,sha256=I3zDt6Q9uK5TjfEEzKuZ0SkZAtgKNGmqQErcUXrxNrE,1097
+aoe2netapi_wrapper-2.0.0.dist-info/METADATA,sha256=CBBsaObk5RxuZTAzhiz-lMK_OGmy_5LAtib3W48lLSk,3295
+aoe2netapi_wrapper-2.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aoe2netapi_wrapper-2.0.0.dist-info/top_level.txt,sha256=npUP41pcbfoHzibjFE_4nTvc6yHl9QleOZDQ2s3oVWs,11
+aoe2netapi_wrapper-2.0.0.dist-info/RECORD,,
