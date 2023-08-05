@@ -1,0 +1,365 @@
+Metadata-Version: 2.1
+Name: pyctcdecode
+Version: 0.5.0
+Summary: CTC beam search decoder for speech recognition.
+Author-email: "Kensho Technologies, LLC." <pyctcdecode-maintainer@kensho.com>
+License: 
+                                         Apache License
+                                   Version 2.0, January 2004
+                                http://www.apache.org/licenses/
+        
+           TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        
+           1. Definitions.
+        
+              "License" shall mean the terms and conditions for use, reproduction,
+              and distribution as defined by Sections 1 through 9 of this document.
+        
+              "Licensor" shall mean the copyright owner or entity authorized by
+              the copyright owner that is granting the License.
+        
+              "Legal Entity" shall mean the union of the acting entity and all
+              other entities that control, are controlled by, or are under common
+              control with that entity. For the purposes of this definition,
+              "control" means (i) the power, direct or indirect, to cause the
+              direction or management of such entity, whether by contract or
+              otherwise, or (ii) ownership of fifty percent (50%) or more of the
+              outstanding shares, or (iii) beneficial ownership of such entity.
+        
+              "You" (or "Your") shall mean an individual or Legal Entity
+              exercising permissions granted by this License.
+        
+              "Source" form shall mean the preferred form for making modifications,
+              including but not limited to software source code, documentation
+              source, and configuration files.
+        
+              "Object" form shall mean any form resulting from mechanical
+              transformation or translation of a Source form, including but
+              not limited to compiled object code, generated documentation,
+              and conversions to other media types.
+        
+              "Work" shall mean the work of authorship, whether in Source or
+              Object form, made available under the License, as indicated by a
+              copyright notice that is included in or attached to the work
+              (an example is provided in the Appendix below).
+        
+              "Derivative Works" shall mean any work, whether in Source or Object
+              form, that is based on (or derived from) the Work and for which the
+              editorial revisions, annotations, elaborations, or other modifications
+              represent, as a whole, an original work of authorship. For the purposes
+              of this License, Derivative Works shall not include works that remain
+              separable from, or merely link (or bind by name) to the interfaces of,
+              the Work and Derivative Works thereof.
+        
+              "Contribution" shall mean any work of authorship, including
+              the original version of the Work and any modifications or additions
+              to that Work or Derivative Works thereof, that is intentionally
+              submitted to Licensor for inclusion in the Work by the copyright owner
+              or by an individual or Legal Entity authorized to submit on behalf of
+              the copyright owner. For the purposes of this definition, "submitted"
+              means any form of electronic, verbal, or written communication sent
+              to the Licensor or its representatives, including but not limited to
+              communication on electronic mailing lists, source code control systems,
+              and issue tracking systems that are managed by, or on behalf of, the
+              Licensor for the purpose of discussing and improving the Work, but
+              excluding communication that is conspicuously marked or otherwise
+              designated in writing by the copyright owner as "Not a Contribution."
+        
+              "Contributor" shall mean Licensor and any individual or Legal Entity
+              on behalf of whom a Contribution has been received by Licensor and
+              subsequently incorporated within the Work.
+        
+           2. Grant of Copyright License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              copyright license to reproduce, prepare Derivative Works of,
+              publicly display, publicly perform, sublicense, and distribute the
+              Work and such Derivative Works in Source or Object form.
+        
+           3. Grant of Patent License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              (except as stated in this section) patent license to make, have made,
+              use, offer to sell, sell, import, and otherwise transfer the Work,
+              where such license applies only to those patent claims licensable
+              by such Contributor that are necessarily infringed by their
+              Contribution(s) alone or by combination of their Contribution(s)
+              with the Work to which such Contribution(s) was submitted. If You
+              institute patent litigation against any entity (including a
+              cross-claim or counterclaim in a lawsuit) alleging that the Work
+              or a Contribution incorporated within the Work constitutes direct
+              or contributory patent infringement, then any patent licenses
+              granted to You under this License for that Work shall terminate
+              as of the date such litigation is filed.
+        
+           4. Redistribution. You may reproduce and distribute copies of the
+              Work or Derivative Works thereof in any medium, with or without
+              modifications, and in Source or Object form, provided that You
+              meet the following conditions:
+        
+              (a) You must give any other recipients of the Work or
+                  Derivative Works a copy of this License; and
+        
+              (b) You must cause any modified files to carry prominent notices
+                  stating that You changed the files; and
+        
+              (c) You must retain, in the Source form of any Derivative Works
+                  that You distribute, all copyright, patent, trademark, and
+                  attribution notices from the Source form of the Work,
+                  excluding those notices that do not pertain to any part of
+                  the Derivative Works; and
+        
+              (d) If the Work includes a "NOTICE" text file as part of its
+                  distribution, then any Derivative Works that You distribute must
+                  include a readable copy of the attribution notices contained
+                  within such NOTICE file, excluding those notices that do not
+                  pertain to any part of the Derivative Works, in at least one
+                  of the following places: within a NOTICE text file distributed
+                  as part of the Derivative Works; within the Source form or
+                  documentation, if provided along with the Derivative Works; or,
+                  within a display generated by the Derivative Works, if and
+                  wherever such third-party notices normally appear. The contents
+                  of the NOTICE file are for informational purposes only and
+                  do not modify the License. You may add Your own attribution
+                  notices within Derivative Works that You distribute, alongside
+                  or as an addendum to the NOTICE text from the Work, provided
+                  that such additional attribution notices cannot be construed
+                  as modifying the License.
+        
+              You may add Your own copyright statement to Your modifications and
+              may provide additional or different license terms and conditions
+              for use, reproduction, or distribution of Your modifications, or
+              for any such Derivative Works as a whole, provided Your use,
+              reproduction, and distribution of the Work otherwise complies with
+              the conditions stated in this License.
+        
+           5. Submission of Contributions. Unless You explicitly state otherwise,
+              any Contribution intentionally submitted for inclusion in the Work
+              by You to the Licensor shall be under the terms and conditions of
+              this License, without any additional terms or conditions.
+              Notwithstanding the above, nothing herein shall supersede or modify
+              the terms of any separate license agreement you may have executed
+              with Licensor regarding such Contributions.
+        
+           6. Trademarks. This License does not grant permission to use the trade
+              names, trademarks, service marks, or product names of the Licensor,
+              except as required for reasonable and customary use in describing the
+              origin of the Work and reproducing the content of the NOTICE file.
+        
+           7. Disclaimer of Warranty. Unless required by applicable law or
+              agreed to in writing, Licensor provides the Work (and each
+              Contributor provides its Contributions) on an "AS IS" BASIS,
+              WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+              implied, including, without limitation, any warranties or conditions
+              of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+              PARTICULAR PURPOSE. You are solely responsible for determining the
+              appropriateness of using or redistributing the Work and assume any
+              risks associated with Your exercise of permissions under this License.
+        
+           8. Limitation of Liability. In no event and under no legal theory,
+              whether in tort (including negligence), contract, or otherwise,
+              unless required by applicable law (such as deliberate and grossly
+              negligent acts) or agreed to in writing, shall any Contributor be
+              liable to You for damages, including any direct, indirect, special,
+              incidental, or consequential damages of any character arising as a
+              result of this License or out of the use or inability to use the
+              Work (including but not limited to damages for loss of goodwill,
+              work stoppage, computer failure or malfunction, or any and all
+              other commercial damages or losses), even if such Contributor
+              has been advised of the possibility of such damages.
+        
+           9. Accepting Warranty or Additional Liability. While redistributing
+              the Work or Derivative Works thereof, You may choose to offer,
+              and charge a fee for, acceptance of support, warranty, indemnity,
+              or other liability obligations and/or rights consistent with this
+              License. However, in accepting such obligations, You may act only
+              on Your own behalf and on Your sole responsibility, not on behalf
+              of any other Contributor, and only if You agree to indemnify,
+              defend, and hold each Contributor harmless for any liability
+              incurred by, or claims asserted against, such Contributor by reason
+              of your accepting any such warranty or additional liability.
+        
+           END OF TERMS AND CONDITIONS
+        
+           APPENDIX: How to apply the Apache License to your work.
+        
+              To apply the Apache License to your work, attach the following
+              boilerplate notice, with the fields enclosed by brackets "[]"
+              replaced with your own identifying information. (Don't include
+              the brackets!)  The text should be enclosed in the appropriate
+              comment syntax for the file format. We also recommend that a
+              file or class name and description of purpose be included on the
+              same "printed page" as the copyright notice for easier
+              identification within third-party archives.
+        
+           Copyright 2021-present Kensho Technologies, LLC.
+        
+           Licensed under the Apache License, Version 2.0 (the "License");
+           you may not use this file except in compliance with the License.
+           You may obtain a copy of the License at
+        
+               http://www.apache.org/licenses/LICENSE-2.0
+        
+           Unless required by applicable law or agreed to in writing, software
+           distributed under the License is distributed on an "AS IS" BASIS,
+           WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+           See the License for the specific language governing permissions and
+           limitations under the License.
+        
+Project-URL: source, https://github.com/kensho-technologies/pyctcdecode
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.md
+Requires-Dist: numpy (<2.0.0,>=1.15.0)
+Requires-Dist: pygtrie (<3.0,>=2.1)
+Requires-Dist: hypothesis (<7,>=6.14)
+Requires-Dist: importlib-metadata (<5) ; python_version == "3.7"
+Provides-Extra: dev
+Requires-Dist: bandit ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: codecov ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: huggingface-hub ; extra == 'dev'
+Requires-Dist: isort (<6,>=5.0.0) ; extra == 'dev'
+Requires-Dist: jupyter ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: nbconvert ; extra == 'dev'
+Requires-Dist: nbformat ; extra == 'dev'
+Requires-Dist: pydocstyle ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+
+  <a href="https://github.com/kensho-technologies/pyctcdecode/actions?query=workflow%3A%22Tests+and+lint%22"><img src="https://github.com/kensho-technologies/pyctcdecode/workflows/Tests%20and%20lint/badge.svg" /></a>
+  <a href="https://codecov.io/gh/kensho-technologies/pyctcdecode"><img src="https://codecov.io/gh/kensho-technologies/pyctcdecode/branch/main/graph/badge.svg" /></a>
+  <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" /></a>
+  <a href="http://www.repostatus.org/#active"><img src="http://www.repostatus.org/badges/latest/active.svg" /></a>
+  <a href="https://github.com/psf/black"><img src="https://img.shields.io/badge/code%20style-black-000000.svg" /></a>
+
+## pyctcdecode
+
+A fast and feature-rich CTC beam search decoder for speech recognition written in Python, providing n-gram (kenlm) language model support similar to PaddlePaddle's decoder, but incorporating many new features such as byte pair encoding and real-time decoding to support models like Nvidia's [Conformer-CTC](tutorials/01_pipeline_nemo.ipynb) or Facebook's [Wav2Vec2](tutorials/02_pipeline_huggingface.ipynb).
+
+``` bash
+pip install pyctcdecode
+```
+
+### Main Features:
+
+- 🔥 hotword boosting
+- 🤖 handling of BPE vocabulary
+- 👥 multi-LM support for 2+ models
+- 🕒 stateful LM for real-time decoding
+- ✨ native frame index annotation of words
+- 💨 fast runtime, comparable to C++ implementation
+- 🐍 easy-to-modify Python code
+
+### Quick Start:
+
+``` python
+from pyctcdecode import build_ctcdecoder
+
+# specify alphabet labels as they appear in logits
+labels = [
+    " ", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
+    "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
+]
+
+# prepare decoder and decode logits via shallow fusion
+decoder = build_ctcdecoder(
+    labels,
+    kenlm_model_path="/my/dir/kenlm_model.arpa",  # either .arpa or .bin file
+    alpha=0.5,  # tuned on a val set
+    beta=1.0,  # tuned on a val set
+)
+text = decoder.decode(logits)
+```
+
+If the vocabulary is BPE-based, `pyctcdecode` will automatically recognize that and handled token merging automatically.
+
+_(Note: the LM itself has no notion of this and is still word-based.)_
+
+``` python
+labels = ["<unk>", "▁bug", "s", "▁bunny"]
+
+decoder = build_ctcdecoder(
+    labels,
+    kenlm_model_path,
+)
+text = decoder.decode(logits)
+```
+
+Improve domain specificity by adding important contextual words ("hotwords") during inference:
+
+``` python
+hotwords = ["looney tunes", "anthropomorphic"]
+text = decoder.decode(
+    logits,
+    hotwords=hotwords,
+    hotword_weight=10.0,
+)
+```
+
+_(Note: `pyctcdecode` contains several free hyperparameters
+that can strongly influence error rate and wall time.  Default values
+for these parameters were (merely) chosen in order to yield good
+performance for one particular use case.  For best results, especially
+when working with languages other than English, users are encouraged
+to perform a hyperparameter optimization study on their own data.)_
+
+Batch support via multiprocessing:
+
+``` python
+import multiprocessing
+
+with multiprocessing.get_context("fork").Pool() as pool:
+    text_list = decoder.decode_batch(pool, logits_list)
+```
+
+Use `pyctcdecode` for a pretrained Conformer-CTC model:
+
+``` python
+import nemo.collections.asr as nemo_asr
+
+asr_model = nemo_asr.models.EncDecCTCModelBPE.from_pretrained(
+  model_name='stt_en_conformer_ctc_small'
+)
+logits = asr_model.transcribe(["my_file.wav"], logprobs=True)[0]
+
+decoder = build_ctcdecoder(asr_model.decoder.vocabulary)
+decoder.decode(logits)
+```
+
+The tutorials folder contains many well documented notebook examples on how to run speech recognition using pretrained models from Nvidia's [NeMo](https://github.com/NVIDIA/NeMo) and Huggingface/Facebook's [Wav2Vec2](https://huggingface.co/transformers/model_doc/wav2vec2.html).
+
+For more details on how to use all of pyctcdecode's features, have a look at our [main tutorial](tutorials/00_basic_usage.ipynb).
+
+### Why pyctcdecode?
+
+In scientific computing, there’s often a tension between a language’s performance and its ease of use for prototyping and experimentation. Although C++ is the conventional choice for CTC decoders, we decided to try building one in Python. This choice allowed us to easily implement experimental features, while keeping runtime competitive through optimizations like caching and beam pruning. We compare the performance of `pyctcdecode` to an industry standard C++ decoder at various beam widths (shown as inline annotations), allowing us to visualize the trade-off of word error rate (y-axis) vs runtime (x-axis). For beam widths of 10 or greater, pyctcdecode yields strictly superior performance, with lower error rates in less time, see code [here](tutorials/03_eval_performance.ipynb).
+
+<p align="center"><img src="docs/images/performance.png"></p>
+
+The use of Python allows us to easily implement features like hotword support with only a few lines of code.
+
+<p align="center"><img width="800px" src="docs/images/hotwords.png"></p>
+
+`pyctcdecode` can return either a single transcript, or the full results of the beam search algorithm. The latter provides the language model state to enable real-time inference as well as word-based logit indices (frames) to enable word-based timing and confidence score calculations natively through the decoding process.
+
+<p align="center"><img width="450px" src="docs/images/beam_output.png"></p>
+
+Additional features such as BPE vocabulary, as well as examples of `pyctcdecode` as part of a full speech recognition pipeline, can be found in the [tutorials section](tutorials).
+
+### Resources:
+
+- [NeMo](https://github.com/NVIDIA/NeMo) and [Wav2Vec2](https://huggingface.co/transformers/model_doc/wav2vec2.html)
+- [CTC blog post](https://distill.pub/2017/ctc/)
+- [Beam search](https://www.youtube.com/watch?v=RLWuzLLSIgw) by Andrew Ng
+- Talks on beam search and pyctcdecode ([Longer talk](https://www.youtube.com/watch?v=CDuvVL0z_xk) and [Shorter talk](https://www.youtube.com/watch?v=mp7fHMTnK9A)) 
+
+### License:
+
+Licensed under the Apache 2.0 License. Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+Copyright 2021-present Kensho Technologies, LLC. The present date is determined by the timestamp of the most recent commit in the repository.
