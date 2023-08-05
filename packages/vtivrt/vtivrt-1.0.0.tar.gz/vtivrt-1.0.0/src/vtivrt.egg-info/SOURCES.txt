@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+src/vtivrt/__init__.py
+src/vtivrt/constants.py
+src/vtivrt/packet.py
+src/vtivrt/reader.py
+src/vtivrt.egg-info/PKG-INFO
+src/vtivrt.egg-info/SOURCES.txt
+src/vtivrt.egg-info/dependency_links.txt
+src/vtivrt.egg-info/requires.txt
+src/vtivrt.egg-info/top_level.txt
