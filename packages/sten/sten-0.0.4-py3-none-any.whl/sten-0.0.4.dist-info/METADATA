@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: sten
+Version: 0.0.4
+Summary: STen: An Interface for Efficient Sparsity in PyTorch
+Project-URL: Homepage, https://github.com/spcl/sten
+Project-URL: Bug Tracker, https://github.com/spcl/sten/issues
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pytest
+Requires-Dist: notebook
+Requires-Dist: transformers
+Requires-Dist: tqdm
+Requires-Dist: boto3
+Requires-Dist: requests
+Requires-Dist: regex
+Requires-Dist: sentencepiece
+Requires-Dist: sacremoses
+Requires-Dist: importlib-metadata
+Requires-Dist: tabulate
+Requires-Dist: black
+Requires-Dist: coverage
+Requires-Dist: pytest-cov
+Requires-Dist: pytest-xdist
+
