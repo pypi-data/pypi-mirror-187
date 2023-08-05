@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+cgir/__init__.py
+cgir/cli.py
+cgir/infrared.py
+cgir.egg-info/PKG-INFO
+cgir.egg-info/SOURCES.txt
+cgir.egg-info/dependency_links.txt
+cgir.egg-info/entry_points.txt
+cgir.egg-info/requires.txt
+cgir.egg-info/top_level.txt
