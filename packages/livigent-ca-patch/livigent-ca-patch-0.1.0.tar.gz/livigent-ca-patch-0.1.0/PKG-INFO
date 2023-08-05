@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: livigent-ca-patch
+Version: 0.1.0
+Summary: Make requests, pip and dependant packages work on devices with Livigent.
+Home-page: https://github.com/dickermoshe/livigent-ca-patch
+Author: Moshe Dicker
+Author-email: dickermoshe@gmail.com
+License: GNU General Public License v3.0
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# livigent-ca-patch
+Install:
+```
+pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org livigent_ca_patch
+```
+

@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+livigent_ca_patch/__init__.py
+livigent_ca_patch/allow_1024.py
+livigent_ca_patch.egg-info/PKG-INFO
+livigent_ca_patch.egg-info/SOURCES.txt
+livigent_ca_patch.egg-info/dependency_links.txt
+livigent_ca_patch.egg-info/requires.txt
+livigent_ca_patch.egg-info/top_level.txt
