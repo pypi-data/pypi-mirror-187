@@ -1,0 +1,10 @@
+cc_server/__init__.py,sha256=TOvnTGP9edZZUFd2tzcXsiW2Or0qH0GJs4Y6BXgCts4,218
+cc_server/__main__.py,sha256=-XDssfMGTR3QKdfKC2c7EuuAi1L3X28OZrIb5HsnqaY,59
+cc_server/main.py,sha256=MbuljlvGqTYTwGqbNI45imI0EDEsfOi5PWEnRLuwQXE,8639
+cc_server/version.py,sha256=b6-WiVk0Li5MaV2rBnHYl104TsouINojSWKqHDas0js,22
+cookiecutter_server-1.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+cookiecutter_server-1.1.0.dist-info/METADATA,sha256=a0LQLOLcTd_TIKrx30RUOs75rRWMak4OtGoZgMpKVBM,7560
+cookiecutter_server-1.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cookiecutter_server-1.1.0.dist-info/entry_points.txt,sha256=Jnm8DbvPiGfT6wW2v7lVdBqlXEGF6QUQpgFdTgqLd98,50
+cookiecutter_server-1.1.0.dist-info/top_level.txt,sha256=N__YufXrM2iDesklz2y0ibHU0vZsodViCv3829L6DZI,10
+cookiecutter_server-1.1.0.dist-info/RECORD,,
