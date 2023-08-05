@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: strimilarity
+Version: 1.0.0
+Summary: Package for calculating the similarity between a pair or multiple sentences. This class uses vectorization and tokenization, along cosine similarity to calculate the similarity.
+Author-email: Luis Diego Fernandez <luisdiegofv97@gmail.com>
+Project-URL: Homepage, https://github.com/LuisDiego19FV/Strimilarity
+Project-URL: Bug Tracker, https://github.com/LuisDiego19FV/Strimilarity/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Strimilarity
+Python package for calculating the similarity between a pair or multiple sentences. This class uses vectorization and tokenization, along cosine similarity to calculate the similarity.
