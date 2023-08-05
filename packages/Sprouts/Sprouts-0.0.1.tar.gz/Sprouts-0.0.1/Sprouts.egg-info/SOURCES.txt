@@ -1,0 +1,6 @@
+README.md
+setup.py
+Sprouts.egg-info/PKG-INFO
+Sprouts.egg-info/SOURCES.txt
+Sprouts.egg-info/dependency_links.txt
+Sprouts.egg-info/top_level.txt
