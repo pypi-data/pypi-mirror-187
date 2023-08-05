@@ -1,0 +1,93 @@
+[![CI Actions Status](https://github.com/microsoftgraph/msgraph-sdk-python-core/workflows/msgraph-sdk-python-core/badge.svg)](https://github.com/microsoftgraph/msgraph-sdk-python-core/actions)
+[![Downloads](https://pepy.tech/badge/msgraph-core)](https://pepy.tech/project/msgraph-core)
+## Microsoft Graph Core Python Client Library (preview).
+
+The Microsoft Graph Core Python Client Library contains core classes used by [Microsoft Graph Python Client Library](https://github.com/microsoftgraph/msgraph-sdk-python) to send native HTTP requests to [Microsoft Graph API](https://graph.microsoft.com).
+
+**Disclaimer**: Please, be aware that preview versions of `msgraph-core` package are for testing purpose only. Do not use them in a production environment.
+
+> NOTE:
+> This is a new major version of the Python Core library for Microsoft Graph based on the [Kiota](https://microsoft.github.io/kiota/) project. We recommend to use this library with the [full Python SDK](https://github.com/microsoftgraph/msgraph-sdk-python).
+> Upgrading to this version from the [previous version of the Python Core library](https://pypi.org/project/msgraph-core/0.2.2/) will introduce braking changes into your application.
+
+## Prerequisites
+
+    Python 3.6+ (this library doesn't support older versions of Python)
+
+## Getting started
+
+### 1. Register your application
+
+To call Microsoft Graph, your app must acquire an access token from the Microsoft identity platform. Learn more about this -
+
+-   [Authentication and authorization basics for Microsoft Graph](https://docs.microsoft.com/en-us/graph/auth/auth-concepts)
+-   [Register your app with the Microsoft identity platform](https://docs.microsoft.com/en-us/graph/auth-register-app-v2)
+
+
+### 2. Install the required packages
+
+msgraph-core is available on PyPI.
+
+```cmd
+python -m pip install msgraph-core
+python -m pip install azure-identity
+```
+
+### 3. Configure an Authentication Provider Object
+
+An instance of the `BaseGraphRequestAdapter` class handles building client. To create a new instance of this class, you need to provide an instance of `AuthenticationProvider`, which can authenticate requests to Microsoft Graph.
+
+> **Note**: This client library offers an asynchronous API by default. Async is a concurrency model that is far more efficient than multi-threading, and can provide significant performance benefits and enable the use of long-lived network connections such as WebSockets. We support popular python async envronments such as `asyncio`, `anyio` or `trio`. For authentication you need to use one of the async credential classes from `azure.identity`.
+
+```py
+# Using EnvironmentCredential for demonstration purposes.
+# There are many other options for getting an access token. See the following for more information.
+# https://pypi.org/project/azure-identity/#async-credentials
+from azure.identity.aio import EnvironmentCredential
+from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
+
+credential=EnvironmentCredential()
+auth_provider = AzureIdentityAuthenticationProvider(credential)
+```
+
+### 5. Pass the authentication provider object to the BaseGraphRequestAdapter constructor.
+
+```python
+from msgraph_core import BaseGraphRequestAdapter
+adapter = BaseGraphRequestAdapter(auth_provider)
+```
+
+### 6. Make a requests to the graph.
+
+After you have a `BaseGraphRequestAdapter` that is authenticated, you can begin making calls against the service.
+
+```python
+from kiota_abstractions.request_information import RequestInformation
+
+request_info = RequestInformation()
+request_info.url = 'https://graph.microsoft.com/v1.0/me'
+
+# User is your own type that implements Parsable or comes from the service library
+user = adapter.send_async(request_info, User)
+print(user.display_name)
+```
+
+## Telemetry Metadata
+
+This library captures metadata by default that provides insights into its usage and helps to improve the developer experience. This metadata includes the `SdkVersion`, `RuntimeEnvironment` and `HostOs` on which the client is running.
+
+## Issues
+
+View or log issues on the [Issues](https://github.com/microsoftgraph/msgraph-sdk-python-core/issues) tab in the repo.
+
+## Contributing
+
+Please see the [contributing guidelines](CONTRIBUTING.rst).
+
+## Copyright and license
+
+Copyright (c) Microsoft Corporation. All Rights Reserved. Licensed under the MIT [license](LICENSE).
+
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+
+
