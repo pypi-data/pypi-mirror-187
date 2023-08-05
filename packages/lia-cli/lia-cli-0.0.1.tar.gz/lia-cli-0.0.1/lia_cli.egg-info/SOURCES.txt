@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+lia_cli.egg-info/PKG-INFO
+lia_cli.egg-info/SOURCES.txt
+lia_cli.egg-info/dependency_links.txt
+lia_cli.egg-info/entry_points.txt
+lia_cli.egg-info/requires.txt
+lia_cli.egg-info/top_level.txt
