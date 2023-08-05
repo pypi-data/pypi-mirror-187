@@ -1,0 +1,7 @@
+coverage
+mock
+flake8
+tox
+codecov
+
+# Additional test requirements go here
