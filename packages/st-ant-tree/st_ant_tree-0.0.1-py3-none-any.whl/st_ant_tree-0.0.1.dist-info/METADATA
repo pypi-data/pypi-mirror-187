@@ -1,0 +1,128 @@
+Metadata-Version: 2.1
+Name: st-ant-tree
+Version: 0.0.1
+Summary: Streamlit Component for ANT Tree
+Home-page: UNKNOWN
+Author: 
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: streamlit (>=0.63)
+
+Streamlit MUI Dialog Component
+===
+
+This streamlit component adds a Dialog (Modal) with two buttons to Streamlit Apps. 
+
+It implements the MUI Alert Dialog: https://mui.com/material-ui/react-dialog/
+
+Installation
+-----------
+
+    $ pip install st-mui-dialog
+
+
+Usage
+------------
+
+### Import the Component
+
+    $ from st_mui_dialog import st_mui_dialog
+
+### Initialize an instant
+
+    $ answer = st_mui_dialog(title="Confirmation", content="Please confirm that you want to save the changes")
+
+
+![Example](images\image1.png)
+
+### Configuration Options
+
+#### Button Labels
+
+    #Open Button Label
+    st_mui_dialog(..., button_txt = "Open the Dialog")
+    
+    #Abort Button Label
+    st_mui_dialog(..., abortlabel = "DISAGREE")
+
+    #Agree Button Label
+    st_mui_dialog(..., abortlabel = "AGREE")
+
+#### Styling
+
+##### Dividers
+
+    st_mui_dialog(..., divider = True)
+
+![Example](images\image2.png)
+
+##### Open the Dialog in Fullscreen (whole iFrame)
+    #The open button will be hidden
+
+    st_mui_dialog(..., fullscreen = True)
+
+![Example](images\image3.png)
+
+##### Transition Modes 
+
+Currently not working
+
+    st_mui_dialog(..., transition_mode = "zoom")
+
+    #if the transition mode is 'slide' the paramater 'slide_direction' is needed
+    st_mui_dialog(..., transition_mode = "slide", slide_direction = "up")
+
+##### Width of the Dialog
+The width is always limited to the widht of the iframe
+
+    #Sets the max width to "xl"
+    st_mui_dialog(..., width_dialog = "xl")
+
+    #Always shows the max width of the dialog - If false the width will be dependent on the content.
+    st_mui_dialog(..., adapt_width_dialog = True)
+
+##### Button Styles
+
+    #Button Types
+
+    #Open Button
+    st_mui_dialog(..., button_open_type = "primary")
+
+    #Agree Button
+    st_mui_dialog(..., button_agree_type = "warning")
+
+    #Abort Button
+    st_mui_dialog(..., button_abort_type = "success")
+
+
+##### CSS Styles
+
+It is possible to apply CSS Styles to the different MUI Elements of the Dialog
+
+    st_mui_dialog(..., styling_dialog = """{"& .MuiModal-backdrop": {"backgroundColor": "red"},"& .MuiModal-container":{"backgroundColor" :"red"}""")
+    st_mui_dialog(..., styling_open_button = """{"backgroundColor" :"lightgreen"}""")
+    st_mui_dialog(..., styling_agree_button = """{"backgroundColor" :"yellow"}"""")
+    st_mui_dialog(..., styling_abort_button = """{"backgroundColor" :"blue"}""")
+    st_mui_dialog(..., styling_dialog_content = """{"backgroundColor" :"blue"}""")
+    st_mui_dialog(..., styling_dialog_title = """{"backgroundColor" :"blue"}""")
+    st_mui_dialog(..., styling_dialog_content_text = """{"backgroundColor" :"blue"}""")
+
+##### Event Handlers
+
+It is possible to execute JavaScript commands on Open, Close, Agree and Abort. 
+
+    st_mui_dialog(..., on_open = """console.log("Open")""")
+    st_mui_dialog(..., on_close = """console.log("Close")""")
+    st_mui_dialog(..., on_agree = """console.log("Agree")""")
+    st_mui_dialog(..., on_abort = """console.log("Abort")""")
+
+
+
+
+
+
+
+
