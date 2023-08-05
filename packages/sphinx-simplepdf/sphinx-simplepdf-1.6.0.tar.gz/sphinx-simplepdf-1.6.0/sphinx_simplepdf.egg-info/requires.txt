@@ -1,0 +1,4 @@
+sphinx
+weasyprint
+libsass
+beautifulsoup4
