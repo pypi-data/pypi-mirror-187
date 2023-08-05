@@ -1,0 +1,8 @@
+pymc>=5.0.0
+patsy
+aiohttp
+intake
+
+[test]
+pytest>5.0.0
+pytest-cov[all]
