@@ -1,0 +1,13 @@
+.DS_Store,sha256=T6fJ7BOIWNh0jOzAZSsP18kmGdKCQmTRpN4rhJi0hPI,6148
+homopy/__init__.py,sha256=TfXJ6PL2uRcP2hZaqtSdv543UBtt5kdr7r8ZTiQc2eE,52
+homopy/elasticity.py,sha256=ihw6Pzs980OnNf3_jluYscZrjbC9_f8FnXhTQzE8P-s,5353
+homopy/methods.py,sha256=_0J1hyMFJmd1cA5El8UXLPOVXBxufZnWV2nvnliGI1Q,18544
+homopy/mori_tanaka.py,sha256=yjrdBkpVlQxPbZ-DP8Jv5FH3aRe525rh57BCVpI42gE,2857
+homopy/stiffness.py,sha256=10gnMa9sQURy012av0HAfSg6PriWptU36WHgnKPTbtA,5112
+homopy/stiffness_plot.py,sha256=P2FqUPOGr4ThEFcVwsMCR1nh8rKrpfVntIaee02ZPq0,10729
+homopy/tensor.py,sha256=cYMZzhsCLPUUsErkbcegWZcEYjV1Cb7fOt7CEQd7ck0,7516
+homopy-1.0.4.dist-info/LICENSE,sha256=al23KKiL0Sw6cC2gGNcNw2ZeXSoGlCbia_EmMzCKbG0,1071
+homopy-1.0.4.dist-info/METADATA,sha256=peiP4E6VfEZ5G8SBVbSb9V8dLC_8zc1-RAkJxwxTS-Q,4989
+homopy-1.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+homopy-1.0.4.dist-info/top_level.txt,sha256=iseGdH1u8pqcgEisZdQ4_2OMhNtUl_O8k93l9pIiKpQ,7
+homopy-1.0.4.dist-info/RECORD,,
