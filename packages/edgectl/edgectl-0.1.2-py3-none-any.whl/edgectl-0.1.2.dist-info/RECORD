@@ -1,0 +1,11 @@
+edgectl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edgectl/__main__.py,sha256=PMCBl3vUg-rrfmVSBbUqIWAWTQmVB7urLM35wqhnxvI,47
+edgectl/auth.py,sha256=u1jlM2xknhndqwuZHL_yemZxqfr5A-oHEaImvO5kqHc,917
+edgectl/camera.py,sha256=fqA22HaRUzuqePw8Neie5doPhaPJLyUgJDo0duaBbEc,1049
+edgectl/device.py,sha256=IH302xm0zFhxmg-KpUK7Oc311nSgmJj59AWHuUEcuQQ,1059
+edgectl/main.py,sha256=SnnD9fCar2fEpiKt-BtQPb-6AOjok34u2j2Dk4XRb-U,1130
+edgectl/scenario.py,sha256=9bfrTWNLt3aYi88o0zbKFKn_RaKQR1rajeSD6b-gYkw,484
+edgectl-0.1.2.dist-info/entry_points.txt,sha256=iiuoOjejx_rRDBjmoojg2nyJqv5YeUOGr0zmWOM4wO4,44
+edgectl-0.1.2.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+edgectl-0.1.2.dist-info/METADATA,sha256=Xkwb-Bx15jO7SafRA-lYdiEkl6GQ_n9sBUfDxG8diAw,626
+edgectl-0.1.2.dist-info/RECORD,,
