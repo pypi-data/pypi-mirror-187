@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: chattypy
+Version: 0.1.2
+Summary: ChattyPy is a library made in Python for making Chatty bots.
+Author: LuisAFK
+Author-email: so.yl.a.fk@googlemail.com
+Requires-Python: >=3.8.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: build (>=0.10.0,<0.11.0)
+Requires-Dist: twine (>=4.0.2,<5.0.0)
+Requires-Dist: websocket-client (>=1.4.2,<2.0.0)
