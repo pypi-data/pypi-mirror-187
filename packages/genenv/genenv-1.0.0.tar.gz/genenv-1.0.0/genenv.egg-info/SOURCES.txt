@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+genenv.py
+setup.py
+genenv.egg-info/PKG-INFO
+genenv.egg-info/SOURCES.txt
+genenv.egg-info/dependency_links.txt
+genenv.egg-info/entry_points.txt
+genenv.egg-info/requires.txt
+genenv.egg-info/top_level.txt
