@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: TOPSIS-Samarjeet-102183052
+Version: 0.1
+Summary: Topsis Value Calculator- 'TOPSIS-Samarjeet-102183052' is a Python package implementing Multi-criteria decision making (MCDM) using Topsis. Topsis stands for Technique for Order of Preference by Similarity to Ideal Solution. Just provide your input attributes and it will give you the results 
+Home-page: https://github.com/Samar3007
+Author: Samarjeet Baliyan
+Author-email: jeetbaliyan.2002@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: topsis,Samarjeet,102183052
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
