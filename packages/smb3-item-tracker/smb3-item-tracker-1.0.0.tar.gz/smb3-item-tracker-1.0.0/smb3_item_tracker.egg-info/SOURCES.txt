@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+smb3_item_tracker.egg-info/PKG-INFO
+smb3_item_tracker.egg-info/SOURCES.txt
+smb3_item_tracker.egg-info/dependency_links.txt
+smb3_item_tracker.egg-info/top_level.txt
+smb3_item_tracker.egg-info/zip-safe
