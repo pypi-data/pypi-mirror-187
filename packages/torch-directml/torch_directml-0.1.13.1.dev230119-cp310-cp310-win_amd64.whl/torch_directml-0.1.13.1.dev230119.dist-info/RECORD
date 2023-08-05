@@ -1,0 +1,11 @@
+torch_directml_native.cp310-win_amd64.pyd,sha256=nlGG1eL0qKut8LXMGs7gsyAYOOMLkz-bM6TrJmFMFzs,1398272
+torch_directml/DirectML.dll,sha256=vDRFEq8PI6vrxiipnWAZ3AIcaLeLzBsuqpEpVs9-hYU,9677208
+torch_directml/__init__.py,sha256=4Os9AFoEAHfHNaKGgPy-ENnReRjCYQezn-msfKzYSAE,488
+torch_directml/device.py,sha256=t8o-awI41LDX2WctA1dQzIWxx9JmC7pRHNPnDIN6JXw,1818
+torch_directml/csrc/auto_gen_yaml.py,sha256=iic2zGQt83Ex2Tk2PMkTk1UfiAUXJIn5yryqkpeByrk,7670
+torch_directml-0.1.13.1.dev230119.dist-info/LICENSE,sha256=3qkmU0GCkALiwjpzcjk-su1uJghftiPzikugr4M_MKY,1183
+torch_directml-0.1.13.1.dev230119.dist-info/METADATA,sha256=DasQ_J3holzRTzCnQ0F2DXdjlcw7ale67I1VsKJjLzk,5984
+torch_directml-0.1.13.1.dev230119.dist-info/NOTICE,sha256=4uO665QNJMTrFu7L4zL6lMvFQtAMTDbS9GYOal1F3mY,52853
+torch_directml-0.1.13.1.dev230119.dist-info/WHEEL,sha256=W26pYN7HLsBT1jrDSL9udgf_mdNKJmYmL23sIP-FcgM,102
+torch_directml-0.1.13.1.dev230119.dist-info/top_level.txt,sha256=fh-ZIpP9HQt22AqW8TqQNRlz9mx43devjQy7IV9tGEw,68
+torch_directml-0.1.13.1.dev230119.dist-info/RECORD,,
