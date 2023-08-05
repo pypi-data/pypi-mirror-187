@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+finlay/__init__.py
+finlay/core.py
+finlay.egg-info/PKG-INFO
+finlay.egg-info/SOURCES.txt
+finlay.egg-info/dependency_links.txt
+finlay.egg-info/not-zip-safe
+finlay.egg-info/top_level.txt
