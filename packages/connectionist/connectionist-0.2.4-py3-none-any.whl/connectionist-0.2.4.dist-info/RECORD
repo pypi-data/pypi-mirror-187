@@ -1,0 +1,11 @@
+connectionist/__about__.py,sha256=SBl2EPFW-ltPvQ7vbVWItyAsz3aKYIpjO7vcfr84GkU,22
+connectionist/__init__.py,sha256=mWjvGbsrqTk0wV6Ey4MoIiTiTcgyM89uEWg3MAGCHhs,48
+connectionist/data.py,sha256=8_jhyA2NfuzD-zgWNGymce_BD7o9AYI3TtYpLCEAQQ8,1785
+connectionist/layers.py,sha256=JW04rWP3NpYxb6-PVHV2vh8AF_0UdY3cUooeQd_Xrx4,48533
+connectionist/losses.py,sha256=nCtyynb_4uVGl4nGradJVSI1Q_6i6_F8-zuQ8t1_Glw,2257
+connectionist/models.py,sha256=464hy8JO5DTdgu_5TBEicye9IlaT5Rt_8Fi5z6vpDjI,16998
+connectionist/surgery.py,sha256=0nUxGuisMtDl1NO2mW2OjEJzB_EKSocb_0yKFbXaaDk,10111
+connectionist-0.2.4.dist-info/METADATA,sha256=f5UO9I5oAzEkLYjg5YTRY0c5JNdSeHuFx-OiBw9X6VA,2108
+connectionist-0.2.4.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+connectionist-0.2.4.dist-info/licenses/LICENSE,sha256=R-ZY3w-VtYcmF3-R20dmKnEf81xjTWxJbqjOG4Fo_r0,1065
+connectionist-0.2.4.dist-info/RECORD,,
