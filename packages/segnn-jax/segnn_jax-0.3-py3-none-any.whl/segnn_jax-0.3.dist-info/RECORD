@@ -1,0 +1,10 @@
+segnn_jax/__init__.py,sha256=Vc8-4p2Z2F_Tjlops07vcmN_dJ6uo_LPkcuT9zDRSUM,407
+segnn_jax/blocks.py,sha256=NH2fgJ23aOXpgx5qa2lHD8oEcwIXlMp5JlNzflXmLvw,4652
+segnn_jax/graph_utils.py,sha256=lMk_GxiqSnH6ns0om3mna0zEtsWwoA9wyH_FAquPa34,1384
+segnn_jax/irreps_computer.py,sha256=vO2vU48nMYHd8NNcWo6ob5_GpLWkVqJX0WsafY4l_18,2014
+segnn_jax/segnn.py,sha256=_fgq-MwBUBn9oqD1IbHZ4ISIphlxgMx4ht-tlBuGsuo,8313
+segnn_jax-0.3.dist-info/LICENSE,sha256=y8hgsA6ZD8d4IpxZP02ONNG1oPizHGb28DxCnOBU5rk,1078
+segnn_jax-0.3.dist-info/METADATA,sha256=YgooyjtbuwNKcQ-CkYSbWMySnYNpiuvWrDdFS8dIEfY,3952
+segnn_jax-0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+segnn_jax-0.3.dist-info/top_level.txt,sha256=xu1rqOaQfzPfY6VbvDd6f1ToKHAvZ3Nm6tQVWGhYAi8,10
+segnn_jax-0.3.dist-info/RECORD,,
