@@ -1,0 +1,119 @@
+Metadata-Version: 2.1
+Name: nandist
+Version: 0.9.0
+Summary: Compute distances in numpy arrays with nans
+Author-email: Wouter Donders <wouter@42analytics.eu>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 3 - Alpha
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Dist: scipy>=1.9.0
+Requires-Dist: flit ~= 3.8 ; extra == "build"
+Requires-Dist: twine ~= 4.0 ; extra == "build"
+Requires-Dist: bump2version ~= 1.0 ; extra == "dev"
+Requires-Dist: flit ~= 3.8 ; extra == "dev"
+Requires-Dist: hypothesis[numpy] ~= 6.61.0 ; extra == "dev"
+Requires-Dist: pre-commit ~= 2.20 ; extra == "dev"
+Requires-Dist: pytest ~= 7.2 ; extra == "dev"
+Requires-Dist: tox ~= 3.27 ; extra == "dev"
+Requires-Dist: hypothesis[numpy] ~= 6.61.0 ; extra == "test"
+Requires-Dist: pytest ~= 7.2 ; extra == "test"
+Requires-Dist: tox ~= 3.27 ; extra == "test"
+Project-URL: Download, https://gitlab.com/42analytics1/public/nandist/-/packages
+Project-URL: Homepage, https://42analytics.eu
+Project-URL: Source, https://gitlab.com/42analytics1/public/nandist
+Project-URL: Tracker, https://gitlab.com/42analytics1/public/nandist/-/issues
+Provides-Extra: build
+Provides-Extra: dev
+Provides-Extra: test
+
+# Nandist: Calculating distances in arrays with missing values
+
+The python library `nandist` enables (fast) computation of various distances in numpy arrays containing missing (NaN) values.
+These distances are implemented as a drop-in replacement for distance functions in the `scipy.spatial.distance` module.
+
+The distance functions in `nandist` can be used as a drop-in replacement for the distance functions in `scipy.spatial.distance`.
+Currently, `nandist` offers the following distance functions:
+
+- `chebyshev`
+- `cityblock`
+- `cosine`
+- `euclidean`
+- `minkowski`
+
+It also provides drop-in replacements for `pdist` and `cdist`, which can be used for fast calculation of pairwise distances of arrays in matrices.
+
+- `cdist`
+- `pdist`
+
+These functions can be passed a distance metric (`metric`) and optional parameters such as a weight vector (`w`) and distance metric parameters such as Minkowski's `p` parameter.
+
+# Examples
+A simple example for calculating the cityblock distance between (0, 1) and (NaN, 0) is shown below.
+
+```python
+>>> import nandist
+>>> import scipy
+>>> import numpy as np
+>>>
+>>> # City-block distance between  (0, 1) and (NaN, 0)
+>>> u, v = np.array([0, 1]), np.array([np.nan, 0])
+>>> scipy.spatial.distance.cityblock(u, v)
+nan
+>>> nandist.cityblock(u, v)
+1.0
+```
+You can replace the function `cityblock` by any of the supported distance functions.
+
+You can get pairwise distances between arrays in two matrices using `cdist`.
+The NaNs do not need to be in the same component.
+
+```python
+>>> import nandist
+>>> import numpy as np
+
+>>> # City-block distances between vectors A = [(0, 0), (1, NaN)] and vectors B=[(1, NaN) and (1, 1)]
+>>> XA, XB = np.array([[0, 0], [1, np.nan]]), np.array([[1, np.nan], [1, 1]])
+>>> Y = nandist.cdist(XA, XB, metric="cityblock")
+array([[1., 2.],
+       [0., 0.]])
+```
+
+# How to install
+Using pip:
+```bash
+pip install nandist
+```
+
+# Supported metrics
+Supported distance metrics are:
+
+- Chebyshev: `chebyshev`, `metric="chebyshev"`
+- Cityblock: `cityblock`, `metric="cityblock"`
+- Cosine: `cosine`, `metric="cosine"`
+- Euclidean: `euclidean`, `metric="euclidean"`
+- Minkowski: `minkowski`, `metric="minkowski"`
+
+If you require support for additional distance metrics, please submit an Issue or Merge Request.
+
+# How does it work
+In `nandist`, the components where a vector is NaN will be ignored (interpreted as "any number") in the distance metric.
+This is achieved by replacing NaN values with zeros and correcting the resulting overestimated distance value.
+Under the hood, `nandist` calls functions from `scipy.spatial.distance` and then applies the corrections using `numpy` linear algebra.
+This ensures that the outcomes of `nandist` functions are equivalent to `scipy.spatial.distance` distance functions when arrays are passed without NaNs in them.
+In addition, all heavy computational lifting is done through `scipy`, requiring only the additional computational cost of applying the corrections.
+
+# Does it _always_ work?
+No. The package `nandist` performs a correction on an overestimation of the distances when missing values are imputed as zero.
+It is possible that this correction runs into the limits of floating point arithmetic.
+In that case, `nandist` will raise an appropriate error.
+However, you don't often run into these edge cases in typical usage.
+

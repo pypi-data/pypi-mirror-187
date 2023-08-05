@@ -1,0 +1,8 @@
+nandist/__init__.py,sha256=PZsRYCcDvkczc-5hl-FBUX3ikW4snRAP15TtIdIZJ6s,427
+nandist/cdist.py,sha256=Va5W3jGZyDu1Gqqffxqv6mnf5X7VqT3TpRFQznCtn_8,2552
+nandist/functions.py,sha256=LemEPtsiQGlDpLbwjx1yC07HgFGmKDx3-cUxmBW0HlA,3212
+nandist/pdist.py,sha256=a_NbuHmFXyFTP-Uwg5Lc6tx84IJSbnCPunyxsIV3Yyw,1458
+nandist-0.9.0.dist-info/LICENSE,sha256=E8h0gpphLf0pv4Ik-Zs8FvrWQKkoPj2pTeP_-naCHOg,1519
+nandist-0.9.0.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+nandist-0.9.0.dist-info/METADATA,sha256=GwcSL2HSc96dlChSo8jy-6zC2tZtYzjDvZzP4Kb09As,4946
+nandist-0.9.0.dist-info/RECORD,,
