@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: thehive4py
+Version: 2.0.0b4
+Summary: Python client for TheHive5
+Author-email: Szabolcs Antal <antalszabolcs01@gmail.com>
+License: AGPL-V3
+Keywords: thehive5,api,client
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (>=2.27)
+Provides-Extra: audit
+Requires-Dist: bandit ; extra == 'audit'
+Requires-Dist: pip-audit ; extra == 'audit'
+Provides-Extra: build
+Requires-Dist: build ; extra == 'build'
+Requires-Dist: twine ; extra == 'build'
+Provides-Extra: dev
+Requires-Dist: thehive4py[audit,build,lint,test] ; extra == 'dev'
+Provides-Extra: lint
+Requires-Dist: black ; extra == 'lint'
+Requires-Dist: flake8 ; extra == 'lint'
+Requires-Dist: mypy ; extra == 'lint'
+Requires-Dist: pre-commit ; extra == 'lint'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+<div>
+  <p align="center">
+    <img src="https://thehive-project.org/img/logo.png" width="700"/>  
+  </p>
+</div>
+<div>
+  <p align="center">
+    <a href="https://chat.thehive-project.org" target"_blank">
+      <img src="https://img.shields.io/discord/779945042039144498" alt="Discord">
+    </a>
+    <a href="./LICENSE" target"_blank">
+      <img src="https://img.shields.io/github/license/TheHive-Project/TheHive4py" alt="License">
+    </a>
+    <a href="https://pypi.org/project/thehive4py" target"_blank">
+      <img src="https://img.shields.io/pypi/dm/thehive4py" alt="Pypi page">
+    </a>
+    <a href="https://github.com/TheHive-Project/TheHive4py/actions/workflows/ci.yml" target"_blank">
+      <img src="https://github.com/TheHive-Project/TheHive4py/actions/workflows/ci.yml/badge.svg" alt="ci action badge">
+    </a>
+  </p>
+</div>
+
+
+# thehive4py
+
+    IMPORTANT: The library is still under development and is in beta phase. Use it with caution and expect breaking changes before the first stable release!
+
+Rebooted version of thehive4py for TheHive5! Stay tuned, more to come!
+
+## Development
+
+
+### Setting up a virtual environment (optional)
+
+You can setup a venv (see the [official docs for this](https://docs.python.org/3/tutorial/venv.html):
+
+```
+# Create and activate venv
+python3 -m venv <path_of_venv>
+source <path_of_venv>/bin/activate
+```
+
+### Install the package for development 
+
+To install the package with the dev dependencies one can run:
+
+```
+pip install -e '.[dev]'
+```
+
+### Run CI checks before pushing changes
+
+To check the integrity of changes made one can run:
+
+```
+python scripts/ci.py 
+```
+
+or to execute the checks automatically just install the pre-commit hooks come with the repo:
+
+```
+pre-commit install
+```
+
+### Run CD commands to build and publish
+
+To build the package one can run:
+
+```
+python scripts/cd.py build
+```
