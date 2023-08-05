@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: pyAya
+Version: 2.0.0
+Summary: pyAya - Telegram MTProto API Client Library for Python.
+Home-page: https://github.com/Onlymeriz/pyAya
+Author: onlymeriz
+Author-email: anandamahar084@gmail.com
+License: GNU Lesser General Public License v3.0 (LGPL-3.0)
+Project-URL: Bug Tracker, https://github.com/Onlymeriz/pyAya/issues
+Project-URL: Documentation, https://pyAya.tech
+Project-URL: Source Code, https://github.com/Onlymeriz/pyAya
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: NOTICE
+Requires-Dist: Pillow
+Requires-Dist: aiosqlite (<0.18.0,>=0.16.0)
+Requires-Dist: motor (==3.0.0)
+Requires-Dist: pyaes (==1.6.1)
+Requires-Dist: pysocks (==1.7.1)
+
+# GeezLibs Library
+
+Core library of [GeezLibs](https://github.com/Onlymeriz/geezlibs1), a Pyrogram And Telethon based for your userbot.
+
+
+[![PyPI - Version](https://img.shields.io/pypi/v/geezlibs?style=round)](https://pypi.org/project/geezlibs)    
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/geezlibs?label=DOWNLOADS&style=round)](https://pypi.org/project/geezlibs)    
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Onlymeriz/geezlibs1/graphs/commit-activity)
+[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/Onlymeriz/geezlibs1)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com)
+
+# Installation
+```bash
+pip3 install geezlibs
+```
+
+
+See more working plugins on [the offical repository](https://github.com/Onlymeriz/geezlibs1)!
+
+> Made with by [izzy](https://t.me/jasadeak).    
+
+
+# License
+[![License](https://www.gnu.org/graphics/agplv3-155x51.png)](LICENSE)   
+GeezLibs is licensed under [GNU Affero General Public License](https://www.gnu.org/licenses/agpl-3.0.en.html) v3 or later.
+
+
+
+
