@@ -1,0 +1,7 @@
+[console_scripts]
+aidee-living-docs=livingdocs.cli:main
+behave2sphinx=livingdocs.create_sphinx_feature_file_page:main
+behave2sphinx-all=livingdocs.create_sphinx_feature_file_page:process_files_in_current_directory
+createtracepage=livingdocs.create_trace_page:main
+userneeds2sphinx=livingdocs.create_userneeds_page:main
+
