@@ -1,0 +1,2 @@
+[console_scripts]
+bluetooth-clocks = bluetooth_clocks.__main__:run
