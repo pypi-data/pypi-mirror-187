@@ -1,0 +1,12 @@
+isolate_cloud/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+isolate_cloud/api.py,sha256=OmnrNGLfq3iEMnp-CnprvkV2X2pUgHzS8WETx8Ab1BY,3813
+isolate_cloud/auth/__init__.py,sha256=1j2llLJycTJNtp437U0yLXV1rq05Su2RM6cKA8t76Xo,1968
+isolate_cloud/auth/auth0.py,sha256=k5BwdVJ-hiugQQe718tEdLk__TNKq-VNnwUBgeIsoP0,3826
+isolate_cloud/auth/local.py,sha256=cneayFKWSQxGwwHRPlu5k3ZxrVgEgE33_w5WLCfbplM,1081
+isolate_cloud/cli.py,sha256=9QThxRrnDYriLu3h1r5YO-ZD4oAD8IqqIsquaSdMJV4,4269
+isolate_cloud/flags.py,sha256=mF2EIzJi8mOeJbA1tlA9uTW4O_DSaIl8T2j-wJqn6aQ,103
+isolate_cloud/sdk.py,sha256=4lWqFPirh8AsNrpeHU_h5PHinPeKuZgr7LW6EjnxMvs,9452
+isolate_cloud-0.6.15.dist-info/entry_points.txt,sha256=v5ZdYAuSF6ZElkjn1sX0IMLsxZNIrYFthIRC1iqMS8k,55
+isolate_cloud-0.6.15.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+isolate_cloud-0.6.15.dist-info/METADATA,sha256=2QK6esXsp_2yNdmCOlcaN4pNoC6KlZGYAtj0x2M6rBw,805
+isolate_cloud-0.6.15.dist-info/RECORD,,
