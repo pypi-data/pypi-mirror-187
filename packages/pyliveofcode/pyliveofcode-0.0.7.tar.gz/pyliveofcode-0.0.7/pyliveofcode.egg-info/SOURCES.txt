@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+pyliveofcode/__init__.py
+pyliveofcode.egg-info/PKG-INFO
+pyliveofcode.egg-info/SOURCES.txt
+pyliveofcode.egg-info/dependency_links.txt
+pyliveofcode.egg-info/requires.txt
+pyliveofcode.egg-info/top_level.txt
