@@ -1,0 +1,4 @@
+aardwolf>=0.2.5
+pyperclip
+pyqt5
+pyqt5-sip
