@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: booster-wrappers
+Version: 0.0.1
+Summary: Booster Wrappers
+Author: Wenmin Wu
+Author-email: wuwenmin1991@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: boto3 (>=1.21.33)
+Requires-Dist: catboost (>=1.1.1)
+Requires-Dist: colorlog (>=4.0.2)
+Requires-Dist: lightgbm (>=3.3.4)
+Requires-Dist: pyspark (>=2.4.5)
+Requires-Dist: xgboost (>=1.6.2)
+
+# boost-wrappers
+Wrappers for broadcasting lightgbm, xgboost, and catboost models and predict on spark
