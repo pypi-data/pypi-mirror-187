@@ -1,0 +1,8 @@
+sbrunner_pre_commit_hooks/__init__.py,sha256=LpL7gxkQ7MbpSwl669iGlPE8CWjJnuMn8CdYaxQ2NyY,24
+sbrunner_pre_commit_hooks/copyright.py,sha256=hx9q_miezILjybJoWuLMB-HyDnghNHXcdkBMysF8Lv8,4624
+sbrunner_pre_commit_hooks/run_in_dir.py,sha256=F0gwFXon6fgFI3K_qAGl9LAcCyKp9vIzz5dkXfxtGYw,1545
+sbrunner_pre_commit_hooks/workflow_timeout.py,sha256=nwvG3ATUhBMjeZ1ndAdys6n0iRYYv6tyUteIhrmikxQ,1028
+sbrunner_pre_commit_hooks-0.2.3.dist-info/METADATA,sha256=cK6t5PI1KiGJt5H7DPVA7RtrdJO34qUWNO7POv-d4kA,2615
+sbrunner_pre_commit_hooks-0.2.3.dist-info/entry_points.txt,sha256=IrjmlexdjiQQJjS-UsYNoAAp_CwWsNQiASeHB0ChpgA,221
+sbrunner_pre_commit_hooks-0.2.3.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+sbrunner_pre_commit_hooks-0.2.3.dist-info/RECORD,,

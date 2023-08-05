@@ -1,0 +1,5 @@
+[console_scripts]
+pre-commit-copyright=sbrunner_pre_commit_hooks.copyright:main
+pre-commit-run-in-dir=sbrunner_pre_commit_hooks.run_in_dir:main
+pre-commit-workflow-timeout=sbrunner_pre_commit_hooks.workflow_timeout:main
+
