@@ -1,0 +1,593 @@
+#!/usr/bin/env python3
+"""
+
+This is rebl - a simple regex based line-by-line linter.
+
+It's understood that line-based regex has limitations;
+this linter focuses mainly being easy to extend.
+
+The default config file is kept in (path of this file)/.rebl/config.py
+This path can be overridden with the --config=/path/to/config.py
+example config:
+
+patterns = {}
+patterns['.py'] = {
+   "HW0025": (
+       "No need for exc_info when using log.exception",
+       ["log.exception", "exc_info"],[],[]
+   ),
+}
+
+where
+
+- .py is the file extension to which the pattern applies
+- HW0025 is pattern key, must be unique for each pattern
+    Fist char is confidence (HML for High, Medium, Low)
+    Second char is error level (EWI for Error, Warning, Info)
+    Next set of digits is the rest of the pattern unique identifier
+- String given on the next line is the user friendly linter message, 1 line
+- next line has 3 lists, the "all of", "any of" and "none of" lists.
+
+  A line flags up when
+  - it matches all of the regexes in the "all of" list
+  - it matches any of the regexes in the "any of" list
+  - it matches none of the regexes in the "none of" list.
+
+  Regexes are automatically anchored.
+
+  This means that a pattern
+      hello
+  will match any line containing hello -
+  it is automatically rewritten to "^.*hello.*$".
+
+Advanced detection
+------------------
+All of, any of and none of lists can be combined.
+
+If that's not enough, If all three lists are empty, rebl will
+look for a function called
+detect_<ext>_<pattern key> accepting file name and line.
+
+def detect_py_HW0025(filename, line):
+    return True if 'hello' in line else False
+
+which will be called for each line and should
+  - return True on match; or
+  - return False on no match.
+
+Fixers
+------
+If a function fix_<ext>_<pattern key> exists this can be used to
+perform fixes in batch.
+for example,
+
+def fix_py_MW0049(filename, line):
+    return line.replace("import csv", "import unicodecsv as csv")
+
+would automatically be invoked if rebl is run with --fix and lines match
+the pattern as given for pattern key MW0049.
+
+Line hook/context collector
+---------------------------
+It is possible to define a line hook to collect context on every line, e.g.
+
+    def linehook_<ext>(filename, lines, linenum, context):
+
+This will be called on every line if defined - permits collecting state data
+such as current function name, errors found thusfar, whatever.
+
+As the linehook is called frequently, ideally it should be kept
+light; that is, try to avoid too many loops in here.
+
+State should be kept in dict `context` - this dict is reset each file.
+"""
+
+import os
+import sys
+import re
+import subprocess
+
+excludes = []
+
+
+def exclude_to_regex(exclude):
+    print("Exclude={}".format(exclude))
+    if exclude[0] == "^" and exclude[-1] == "$":
+        return exclude
+    regex = "^{}$".format(
+        exclude.replace(".", "[\.]").replace("*", ".*").replace("?", ".")
+    )
+    return regex
+
+
+def load_module(module_name, path_to_module):
+    my_path = os.path.dirname(os.path.realpath(__file__))
+    path_to_module = os.path.join(my_path, path_to_module)
+    path = list(sys.path)
+    sys.path.insert(0, path_to_module)
+    try:
+        module = __import__(module_name)
+        return module
+    except Exception as e:
+        raise RuntimeError(
+            "Cannot load configuration from file {}, bailing out.\n{}".format(
+                path_to_module, e
+            )
+        )
+    finally:
+        sys.path[:] = path
+
+
+def find_config_file():
+    """
+    We use this to find the configuration.
+    Config load priority is
+    - --config path given on command line
+    - `pwd`/.reblrc/config.py  (while not found, move up to parent dir until either ~ or / reached)
+    - ~/.reblrc/config.py (also as a natural consequence of the above)
+    - /etc/rebl/config.py
+    """
+    config_module_path = ""
+    printconfig = False
+    for arg in sys.argv:
+        if arg.startswith("--config="):
+            if arg == "--config=?":
+                printconfig = True
+            else:
+                config_module_path = arg[len("--config=") :]
+    if config_module_path:
+        if printconfig:
+            print("Using CLI config {}".format(config_module_path))
+        return config_module_path
+
+    file = os.path.realpath(".reblrc")
+    read_file = False
+    while True:
+        if os.path.exists(file) and os.path.isfile(file):
+            read_file = True
+            break
+        path, filename = os.path.split(file)
+
+        newfile = os.path.realpath(os.path.join(path, "..", filename))
+        if newfile == file:
+            break
+        file = newfile
+
+    if read_file:
+        with open(file, "r") as input_file:
+            lines = input_file.readlines()
+        if lines[0].startswith("--config="):
+            configfile = lines[0][len("--config=") :]
+            configfile = configfile.replace("\n", "").replace("\r", "")
+            path, __ = os.path.split(file)
+            configfile = os.path.join(path, configfile)
+            if printconfig:
+                print("Using config {} from {}".format(configfile, file))
+            return configfile
+        print("INVALID?")
+
+    file = os.path.realpath(".reblrc/config.py")
+    while True:
+        if os.path.exists(file):
+            if printconfig:
+                print("Using config {}".format(file))
+            return file
+        newfile = os.path.realpath(os.path.join("..", file))
+        if newfile == file:
+            break
+        file = newfile
+
+    file = os.path.join(
+        os.path.dirname(os.path.realpath(__file__)), ".reblrc", "config.py"
+    )
+    while True:
+        if os.path.exists(file):
+            if printconfig:
+                print("Using config {}".format(file))
+            return file
+        newfile = os.path.realpath(os.path.join("..", file))
+        if newfile == file:
+            break
+        file = newfile
+
+    if os.path.exists("/etc/rebl/config.py"):
+        file = "/etc/rebl/config.py"
+        if printconfig:
+            print("Using config {}".format(file))
+        return file
+    if printconfig:
+        print("No suitable config found.")
+    return None
+
+
+def files_in(start, extensions):
+    # start = directory name
+    # result = recursively listed files in dir
+    start = "."
+    result = []
+    for root, subs, files in os.walk(start):
+        for file in files:
+            filename = os.path.join(root, file)
+            for ext in extensions:
+                if filename.endswith(ext):
+                    result.append(filename)
+                    break
+        for dir in subs[:]:
+            if dir.startswith(".") or dir in ("venv", "__pycache__"):
+                subs.remove(dir)
+    return result
+
+
+# config loader
+config_module_path = find_config_file()
+if not config_module_path:
+    print("Cannot find config file, exiting.")
+    exit(2)
+
+thepath, thefile = os.path.split(config_module_path)
+__, theext = os.path.splitext(config_module_path)
+module = thefile[: -len(theext)]
+rebl_config = load_module(module, thepath)
+excludes = [exclude_to_regex(x) for x in getattr(rebl_config, "excludes", excludes)]
+
+
+def dummyhook(filename, lines, linenum, context):
+    # noop hook, should remain empty.
+    return
+
+
+def anchor(regex):
+    x = regex
+    if not x.startswith("^") and not x.startswith(".*"):
+        x = ".*{}".format(x)
+
+    if not x.endswith("$") and not x.endswith(".*"):
+        x = "{}.*".format(x)
+    return x
+
+
+def anchored(regex_list):
+    if not isinstance(regex_list, (list, tuple)):
+        return regex_list
+    return [anchor(regex) for regex in regex_list]
+
+
+def all_trigger(filename, line, all_of_list):
+    if not isinstance(all_of_list, (list, tuple)):
+        return all_of_list(filename, line)
+
+    if not bool(all_of_list):
+        # not filtering out
+        return True
+    return all([bool(re.match(regex, line)) for regex in all_of_list])
+
+
+def any_trigger(filename, line, any_of_list):
+    if not isinstance(any_of_list, (list, tuple)):
+        return any_of_list(filename, line)
+
+    if not bool(any_of_list):
+        # not filtering out
+        return True
+    return any(bool(re.match(regex, line)) for regex in any_of_list)
+
+
+def none_trigger(filename, line, none_of_list):
+    if not isinstance(none_of_list, (list, tuple)):
+        return none_of_list(filename, line)
+
+    if not bool(none_of_list):
+        # not filtering out
+        return True
+    return not (any(bool(re.match(regex, line)) for regex in none_of_list))
+
+
+def scan_for_patterns(filename, all_patterns, filtered_patterns, only_lines=None):
+    only_lines = only_lines or []
+    context = {}
+    results = {}
+    __, file_extension = os.path.splitext(filename)
+    patterns = all_patterns.get(file_extension)
+    if not patterns:
+        return file_extension, results
+    try:
+        with open(filename, "r") as input_file:
+            lines = input_file.readlines()
+    except IOError:
+        print("Issue loading file {}, skipping.".format(filename))
+        return file_extension, results
+    ext = file_extension.replace(".", "")
+    hook_name = "linehook_{}".format(ext)
+    linehook = getattr(rebl_config, hook_name, dummyhook)
+
+    for linenum, line in enumerate(lines, 1):
+        if only_lines:
+            # only parse the given lines in the file
+            if linenum != only_lines[0]:
+                continue
+            only_lines = only_lines[1:] or [-1]
+
+        linehook(filename, lines, linenum, context)
+        line = re.sub("\n$", "", line)
+        line = re.sub("\r$", "", line)
+        # call "line hook"
+        for pattern_key in filtered_patterns or patterns.keys():
+            pattern = patterns[pattern_key]
+            message, all_of_list, any_of_list, none_of_list = pattern
+            if not all_of_list and not any_of_list and not none_of_list:
+                detector_name = "detect_{}_{}".format(ext, pattern_key)
+                all_of_list = getattr(rebl_config, detector_name, [])
+            if (
+                all_trigger(filename, line, all_of_list)
+                and any_trigger(filename, line, any_of_list)
+                and none_trigger(filename, line, none_of_list)
+            ):
+                matches_thus_far_for_key = results.get(pattern_key) or []
+                to_append = [(filename, linenum, line)]
+                results[pattern_key] = matches_thus_far_for_key + to_append
+                matches_thus_far_for_key = results.get(pattern_key) or []
+    return file_extension, results
+
+
+def anchor_pattern(pattern):
+    message, list1, list2, list3 = pattern
+    return message, anchored(list1), anchored(list2), anchored(list3)
+
+
+def anchor_patterns(patterns):
+    anchored_pattern = {}
+    for pattern in patterns:
+        anchored_pattern[pattern] = anchor_pattern(patterns[pattern])
+    return anchored_pattern
+
+
+def get_fixer(rebl_config, language, pattern):
+    fixer_name = "fix_{}_{}".format(language.replace(".", ""), pattern)
+    fixer = getattr(rebl_config, fixer_name, None)
+    return fixer
+
+
+def parse_git_diff(gitdiff):
+    """
+    given a git diff log between two branches
+
+    e.g.
+
+    diff --git a/file/something.feature b/file/something.feature
+    index f60e04aa57..556b8d6db4 100644
+    --- a/features/retail/as-retailer-user/can-see-list-of-categories-on-add-product.feature
+    +++ b/features/retail/as-retailer-user/can-see-list-of-categories-on-add-product.feature
+    @@ -3,6 +3,7 @@ Feature: As retailer user I should be able to see a list of categories when addi
+         As retailer user when the supplier for which I add a new product doesn't have categories settings, then I should be able to see all categories that I have.
+
+         @dirty
+    +    @wip
+         @sanity
+         @testrail-C441067
+         Scenario: As retailer user when the supplier for which I add a new product has categories settings, then I should be able to see only those categories
+
+     returns a dict containing files and a list of changed lines in each file that exist in the new version.
+    """
+    result = {}
+    filename = ""
+    linenum = 0
+    for line in gitdiff.split("\n"):
+        if line.startswith("---"):
+            continue
+        if line.startswith("+++"):
+            filename = line[6:]
+            continue
+        if line.startswith("@@"):
+            sline = line.split("+")[1]
+            sline = sline.split("@")[0]
+            linenum, linecount = sline.split(",")
+            linenum = int(linenum)
+            continue
+        if line.startswith("+"):
+            curr_result = result.get(filename) or []
+            curr_result.append(linenum)
+            result[filename] = curr_result
+        linenum += 1
+    return result
+
+
+def usage():
+    print(
+        """
+rebl - an extensible regular expression based linter.
+
+usage: rebl [options] [file [...]]
+
+options:
+    --config=[file]
+                 Override to use [file] as configuration.
+                 --config=? displays the filename being used.
+    --help       shows this message
+    --list       shows known patterns
+    --pattern=x  only match pattern x. Several patterns can be matched using
+                 --pattern=x --pattern=y ...
+    --fix        fixes found instances of patterns, if a fixer exists.
+    --exclude    Specify a pattern of files to exclude. To exclude multiple
+                 patterns use multiple --exclude clauses:
+                 rebl . --exclude=pattern1 --exclude=pattern2
+    --gitdiff[=target..source]
+                 runs only on the "git diff".
+                 If no target/source specified, runs on uncommitted code.
+                 To run on added lines in unmerged code,
+                 try running with --gitdiff=master..HEAD
+
+For further documentation please consult the source of this file.
+    """
+    )
+
+
+"""
+regexes such as "else:" should really be ".*else:.*"
+so whenever start/end of line is not explicit we add those anchors.
+we do this in advance to avoid repeated anchoring.
+"""
+patterns = rebl_config.patterns
+extensions = [x for x in patterns]  # keys only
+pattern_keys = patterns.keys()
+for key in pattern_keys:
+    patterns[key] = anchor_patterns(patterns[key])
+
+# parse command line (skip config setting)
+args = sys.argv
+args.pop(0)
+filenames = []
+filtered_patterns = []
+interactive_fix = False
+target_source = None
+git = ""
+gitdiff = False
+for arg in args:
+    if arg.startswith("--gitdiff=") or arg == "--gitdiff":
+        gitdiff = True
+        target_source = arg[len("--gitdiff") :]
+        target_source = target_source[1:] if target_source else target_source
+        continue
+    if arg.startswith("--git="):
+        git_path = arg[len("--git=") :]
+    if arg.startswith("--exclude="):
+        exclude = arg[len("--exclude=") :]
+        excludes.append(exclude_to_regex(exclude))
+        continue
+    if arg.startswith("--config="):
+        continue
+    if arg.startswith("--help"):
+        usage()
+        continue
+    if arg.startswith("--list"):
+        for ext in patterns:
+            for pattern_key in patterns[ext]:
+                fixer = get_fixer(ext, pattern_key)
+                print(
+                    "-- {}{}: {}".format(
+                        pattern_key,
+                        " (*)" if fixer else "",
+                        patterns[ext][pattern_key][0],
+                    )
+                )
+        print("Patterns marked (*) can be fixed automatically.")
+        continue
+    if arg.startswith("--pattern="):
+        pkey = re.sub("--pattern=", "", arg)
+        filtered_patterns.append(pkey)
+        continue
+    if arg.startswith("--fix"):
+        interactive_fix = True
+        continue
+    if arg.startswith("--"):
+        print("Unknown option: {}".format(arg))
+        usage()
+        exit(1)
+    if os.path.isdir(arg):
+        filenames.extend(files_in(arg, extensions))
+        continue
+    filenames.append(arg)
+
+lines_to_cover = {}
+diffs = ""
+if gitdiff:
+    args = [git or "/usr/bin/git", "diff"]
+    if target_source:
+        args.append(target_source)
+
+    try:
+        gitdiff = str(subprocess.check_output(args + ["-1"]))
+    except Exception as e:
+        raise RuntimeError("Cannot generate git diff.\n{}".format(e))
+
+    lines_to_cover = parse_git_diff(gitdiff) or {}
+    # returns dict containing { filename: [line, line, line] }
+    for filename in lines_to_cover:
+        if filename not in filenames:
+            filenames.append(filename)
+
+# Grepping loop
+have_fixers = False
+reply = ""
+apply_matches = []
+
+if not filenames:
+    usage()
+    exit(0)
+
+have_errors = 0
+have_warnings = 0
+for filename in filenames:
+    skip_file = False
+    for exclude in excludes:
+        if re.search(exclude, filename):
+            skip_file = True
+    if skip_file:
+        continue
+
+    ext, results = scan_for_patterns(
+        filename, patterns, filtered_patterns, lines_to_cover.get(filename, [])
+    )
+    for pattern_key in results:
+        fixer = get_fixer(rebl_config, ext, pattern_key)
+        have_fixers = have_fixers or bool(fixer)
+        print(
+            "-- {}{}: {}".format(
+                pattern_key, " (*)" if fixer else "", patterns[ext][pattern_key][0]
+            )
+        )
+        if pattern_key[1] == "E":
+            have_errors = 1
+        if pattern_key[1] == "W":
+            have_warnings = 2
+        matches = results.get(pattern_key)
+        for match in matches:
+            filename, linenum, line = match
+            print("{}:{}:{} | {}".format(filename, linenum, pattern_key, line))
+            if fixer:
+                if interactive_fix:
+                    fix = fixer(filename, line)
+                    print("-- Suggest: {}".format(fix))
+                    if reply != "A":
+                        reply = input(
+                            "-- Apply suggestion? ([y]es/[N]o/apply [a]ll/[c]ancel)?"
+                        )
+                    reply = (reply or "N").upper()[0]
+                    if reply == "Y" or reply == "A":
+                        apply_matches.append((filename, linenum, fix))
+                    if reply == "C":
+                        exit()
+if have_fixers and not interactive_fix:
+    print(
+        "Note: Patterns marked (*) may be used in conjunction with the --fix argument"
+    )
+
+# Pattern fixing loop
+for filename in filenames:
+    try:
+        with open(filename, "r") as file_in:
+            infile = file_in.readlines()
+    except UnicodeDecodeError:
+        print("Skipping {}, UnicodeDecodeError".format(filename))
+    except FileNotFoundError:
+        print("Skipping {}, not found".format(filename))
+        continue
+    apply_for_file = [match for match in apply_matches if match[0] == filename]
+    if not apply_for_file:
+        continue
+    for (filename, linenum, new_line) in apply_for_file:
+        infile[linenum - 1] = new_line + "\n"
+    fixfilename = "{}.fix".format(filename)
+
+    try:
+        with open(fixfilename, "w") as file_out:
+            file_out.writelines(infile)
+    except PermissionError:
+        print("Cannot fix {}, permission denied".format(filename))
+        continue
+
+    # copy file mode flags
+    os.chmod(fixfilename, os.stat(filename).st_mode)
+
+    os.rename("{}.fix".format(filename), filename)
+
+exit(have_errors or have_warnings)
