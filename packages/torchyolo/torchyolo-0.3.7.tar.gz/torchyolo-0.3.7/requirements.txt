@@ -1,0 +1,9 @@
+easydict
+numpy
+opencv_python
+PyYAML
+torch
+#yolov5
+#yolov6detect
+#yolov7detect
+#ultralytics
