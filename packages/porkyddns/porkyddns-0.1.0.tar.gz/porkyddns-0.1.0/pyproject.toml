@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "porkyddns"
+version = "0.1.0"
+description = "Simple Porkbun DDNS Client"
+authors = ["Michal S. <mchal_@tuta.io>"]
+license = "GPLv3"
+readme = "README.md"
+
+[tool.poetry.scripts]
+porkyddns = "porkyddns.main:run"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.28.2"
+urllib3 = "^1.26.14"
+toml = "^0.10.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
