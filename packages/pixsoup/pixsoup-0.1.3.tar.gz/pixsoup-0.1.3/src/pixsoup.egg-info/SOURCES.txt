@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/pixsoup/__init__.py
+src/pixsoup/cli.py
+src/pixsoup.egg-info/PKG-INFO
+src/pixsoup.egg-info/SOURCES.txt
+src/pixsoup.egg-info/dependency_links.txt
+src/pixsoup.egg-info/entry_points.txt
+src/pixsoup.egg-info/requires.txt
+src/pixsoup.egg-info/top_level.txt
+src/pixsoup/api/__init__.py
+src/pixsoup/api/api.py
+src/pixsoup/api/data.py
+src/pixsoup/api/queries.py

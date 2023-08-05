@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pixsoup
+Version: 0.1.3
+Summary: Easy StableDiffusion fine-tuning using PixSoup API.
+Home-page: https://github.com/pixsoup/python
+Keywords: pixsoup,stablediffusion,dreambooth
+License-File: LICENSE.txt
