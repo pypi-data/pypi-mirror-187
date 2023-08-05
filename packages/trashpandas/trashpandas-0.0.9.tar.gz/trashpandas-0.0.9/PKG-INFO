@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: trashpandas
+Version: 0.0.9
+Summary: Persistent Pandas DataFrame storage and retrieval using a SQL database, HDF5, CSV files, or pickle files.
+Author: Odos Matthews
+License: MIT
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: win32
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Provides-Extra: testing
+License-File: LICENSE
