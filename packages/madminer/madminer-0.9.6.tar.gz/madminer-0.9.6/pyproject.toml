@@ -1,0 +1,26 @@
+# Black formatting options
+[tool.black]
+line-length = 120
+target-version = ['py38', 'py39', 'py310']
+include = '(\.py$|\.ipynb$)'
+exclude = '''
+(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | mg_processes
+)
+'''
+
+[tool.isort]
+force_single_line = true
+ignore_whitespace = true
+only_sections = true
+profile = "black"
