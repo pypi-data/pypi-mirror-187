@@ -1,0 +1,4 @@
+beautifulsoup4
+touchstone-auth>=0.3.0
+pydantic
+py-moneyed
