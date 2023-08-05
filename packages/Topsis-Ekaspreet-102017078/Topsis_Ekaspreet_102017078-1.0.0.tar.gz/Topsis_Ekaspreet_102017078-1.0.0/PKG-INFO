@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: Topsis_Ekaspreet_102017078
+Version: 1.0.0
+Summary: A Python package implementing TOPSIS for MCDM
+Home-page: https://github.com/Ekaspreet20/Topsis_Ekas_102017078
+Author: Ekaspreet kaur
+Author-email: ekaspreet0209@gmail.com
+License: MIT
+Download-URL: https://github.com/Ekaspreet20/Topsis_Ekas_102017078/archive/refs/tags/v_01.tar.gz
+Description: Topsis_Ekas_102017078
+        
+        # Topsis in Python  
+        Author: **Ekaspreet 102017078**  
+        ##TOPSIS: It is a for Multiple Criteria Decision Making,A Technique for Order Preference by Similarity to Ideal   
+        More details at [wikipedia](https://en.wikipedia.org/wiki/TOPSIS).  
+        <br>
+        ## How to use this package:  
+        Topsis_Ekas_101703325  
+        can be run as in the following example:  
+        ### In Command Prompt ``` >> topsis data.csv "1,1,1,1" "+,+,-,+" ``` 
+        <br>  
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
