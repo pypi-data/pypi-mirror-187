@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/ontoloviz/__init__.py
+src/ontoloviz/app.py
+src/ontoloviz.egg-info/PKG-INFO
+src/ontoloviz.egg-info/SOURCES.txt
+src/ontoloviz.egg-info/dependency_links.txt
+src/ontoloviz.egg-info/top_level.txt
+src/ontoloviz/core/__init__.py
+src/ontoloviz/core/core.py
