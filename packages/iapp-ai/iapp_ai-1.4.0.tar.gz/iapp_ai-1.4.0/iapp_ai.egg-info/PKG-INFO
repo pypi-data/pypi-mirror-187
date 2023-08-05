@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: iapp-ai
+Version: 1.4.0
+Summary: iApp AI API pip package
+Home-page: https://github.com/iapp-technology/iapp_ai
+Author: Kobkrit Viriyayudhakorn
+Author-email: kobkrit@iapp.co.th
+License: MIT license
+Keywords: iapp_ai
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+# iApp AI API pip package
+
+
+[![Pip](https://img.shields.io/pypi/v/iapp_ai.svg)](https://pypi.python.org/pypi/iapp_ai)
+
+## iApp AI API pip package
+
+* Free software: MIT license
+* Documentation: https://docs.iapp.co.th
+* Request API Key: https://ai.iapp.co.th
+
+
+Features
+--------
+
+* iApp Image Recognition Service
+  1. Thai National ID Card OCR (Support Card) [NEW]
+  1. Thai National ID Card OCR (Support Photocopied)[NEW]
+  1. Passport OCR [NEW]
+  1. Thai Vehicle License Plate
+  1. Book Bank OCR
+  1. Face Verification (Comparison)
+  1. Face Recognition
+  1. Face Detection
+  1. Face Passive Liveness Detection
+  1. Thai Document OCR [NEW]
+  1. Thai Driver License Card OCR [NEW]
+  1. Power Meter OCR
+  1. Water Meter OCR
+  1. Image Background Remover
+
+* iApp Thai NLP Service
+  1. Thai Auto Question Answering
+  1. Question Generator
+  1. Thai-English Machine Translation
+  1. Thai Text Parser
+  1. Thai Text Summarization
+
+* iApp Voice and Speech Service
+  1. Thai Automatic Speech Recognition (ASR) [NEW]
+  2. Thai Text to Speech (TTS)
+  3. Music Source Seperator
+  4. Noise Subtraction
+
+Running Unit Test
+-------
+Slient Test
+``$ pytest``
+
+Verbose Test
+``$ pytest -s``
+
+Filter Test
+``pytest -rP tests/test_thai_asr.py``
+
+Filter Test with specific method
+``pytest -rP tests/test_idcard.py::test_idcard_front``
+
+Credits
+-------
+
+* [Cookiecutter](https://github.com/audreyr/cookiecutter)
+* [`audreyr/cookiecutter-pypackage`](https://github.com/audreyr/cookiecutter-pypackage)
+
+
+=======
+History
+=======
+
+0.1.0 (2022-05-17)
+------------------
+
+* First release on PyPI.
