@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: psiz_datasets
+Version: 0.1.0
+Summary: Tools for managing and using PsiZ datasets.
+Home-page: https://github.com/psiz-org/psiz-datasets
+Author: Brett D. Roads
+Author-email: brett.roads@gmail.com
+License: Apache Licence 2.0
+Project-URL: Documentation, https://psiz.readthedocs.io/en/latest/
+Project-URL: Source, https://github.com/psiz-org/psiz-datasets
+Project-URL: Tracker, https://github.com/psiz-org/psiz-datasets/issues
+Keywords: psychology,cognitive science,datasets
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: <3.11,>=3.9
+Description-Content-Type: text/markdown; charset=UTF-8
+Provides-Extra: test
+Provides-Extra: doc
+License-File: LICENSE
+
+![PsiZ logo](docs/img/full_logo_300.png)
+
+# PsiZ Datasets
+
+---
+**WARNING:** This package is pre-release and the API is not stable. All APIs are subject to change and all releases are alpha.
+
+---
+
+## Purpose
+Provide pre-formatted TensorFlow Datasets for easy consumption by models.
+
+## Resources
+* Official Psiz Documentation: [psiz.readthedocs.io/en/latest](https://psiz.readthedocs.io/en/latest/)
+
+## Installation
+There are two different ways to install: PyPI or git.
+
+### Using PyPI
+```
+$ pip install psiz-datasets
+```
+
+### Using git
+```
+# Clone the repository from GitHub to your local machine.
+$ git clone https://github.com/psiz-org/psiz-datasets.git
+# Use `pip` to install the cloned repository.
+$ pip install /local/path/to/psiz-datasets
+```
+
+## Contribution Guidelines
+If you would like to contribute please see the [contributing guidelines](CONTRIBUTING.md).
+
+This project uses a [Code of Conduct](CODE.md) adapted from the [Contributor Covenant](https://www.contributor-covenant.org/)
+version 2.0, available at <https://www.contributor-covenant.org/version/2/0/code_of_conduct.html>.
+
+## Licence
+This project is licensed under the Apache Licence 2.0 - see LICENSE file for details.
