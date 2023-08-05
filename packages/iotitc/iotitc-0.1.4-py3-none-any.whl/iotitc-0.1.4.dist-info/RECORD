@@ -1,0 +1,8 @@
+iotitc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iotitc/bbddinflux/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iotitc/bbddinflux/toolsinflux.py,sha256=RINApmg2JjUCWT7O3egnOQvi--SvwfIcqfvPnWIWUQc,12600
+iotitc/raspberry/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iotitc/raspberry/toolsberry.py,sha256=3wHKSAEtueG_2YzlygTjqBuXCV9GSexoY2yGCTIoKro,4305
+iotitc-0.1.4.dist-info/METADATA,sha256=ZCMY6iXpCt7KWJTBnaTBLUMF3mwUfyHU218HONbj1zg,581
+iotitc-0.1.4.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+iotitc-0.1.4.dist-info/RECORD,,
