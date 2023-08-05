@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+README.rst
+setup.cfg
+setup.py
+src/turkishid/__init__.py
+src/turkishid/turkishid.py
+src/turkishid.egg-info/PKG-INFO
+src/turkishid.egg-info/SOURCES.txt
+src/turkishid.egg-info/dependency_links.txt
+src/turkishid.egg-info/top_level.txt

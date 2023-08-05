@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: turkishid
+Version: 0.2.2
+Summary: Republic of Turkey Identity Number Validator.
+Home-page: https://github.com/onurravli/turkishid
+Author: Onur Ravli
+Author-email: onur@ravli.co
+License: MIT
+Keywords: turkishid
+License-File: LICENSE.md

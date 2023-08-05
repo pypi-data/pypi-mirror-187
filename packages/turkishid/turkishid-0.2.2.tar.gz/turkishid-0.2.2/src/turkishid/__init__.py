@@ -1,0 +1,1 @@
+from turkishid import validate_id, digit, compute_final_checksum, compute_first_digit
