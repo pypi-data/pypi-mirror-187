@@ -1,0 +1,6 @@
+test_sys_executable_vs_capi/test_sys_executable.cpython-38-x86_64-linux-gnu.so,sha256=XOK3r4ooHVqIa3a-q6zrZ79rHCxGDWiLTAUhFwV07Ok,167288
+test_sys_executable_vs_capi/__init__.py,sha256=1i80R8zeE9WA6TEKZ_JGYalxSwrfyJ1B11RAYsplWGw,83
+test_sys_executable_vs_capi-0.1.2.dist-info/METADATA,sha256=ntknILoL_iUqi_d4rlQ_xBAdyUrdtm2JgrVQ7TrOUpU,296
+test_sys_executable_vs_capi-0.1.2.dist-info/WHEEL,sha256=3Le0lmZCxG7BlL4Vr-aEve9GSE-ubpNROHRR3Zn5s5I,217
+test_sys_executable_vs_capi-0.1.2.dist-info/RECORD,,
+test_sys_executable_vs_capi-0.1.2.dist-info/top_level.txt,sha256=hY727u1-6klLioEqd5oby5kwxM_plimEbrHrjAGcxbw,28
