@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: Topsis-Uday-102053008
+Version: 1.0.1
+Summary: The one stop tool to perform Multiple Criteria Decision Making(MCDM) using Topsis
+Home-page: https://github.com/uday-uppal
+Author: Uday Uppal
+Author-email: uuppal_be20@thapar.edu
+License: MIT
+Description: long desc
+Keywords: TOPSIS,MACHINE LEARNING,STATISTICS
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
