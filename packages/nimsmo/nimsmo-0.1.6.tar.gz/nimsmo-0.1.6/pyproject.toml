@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "nimsmo"
+version = "0.1.6"
+description = ""
+readme = "README.md"
+authors = ["Nico Strasdat <Nico.Strasdat@tu-dresden.de>"]
+build = "build_nim.py"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+nython = "^0.1.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = [
+  "setuptools>=52.0.0",
+  "poetry-core>=1.0.0",
+  "nython>=0.0.1",
+]
+build-backend = "poetry.core.masonry.api"

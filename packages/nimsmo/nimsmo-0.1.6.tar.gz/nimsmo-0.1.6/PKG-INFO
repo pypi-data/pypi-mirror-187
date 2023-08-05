@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: nimsmo
+Version: 0.1.6
+Summary: 
+Author: Nico Strasdat
+Author-email: Nico.Strasdat@tu-dresden.de
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: nython (>=0.1.1,<0.2.0)
+Description-Content-Type: text/markdown
+
+# Installation
+
+## Installation of nim package
+
+```
+nimble install
+```
+
+Run example:
+
+```
+nim r -d:release examples/smo_test.nim
+```
+
+## Installation of python module
+
+### from PyPi
+```
+pip install nimsmo
+```
+
+### from source
+First, install dependencies:
+```
+conda install poetry
+```
+
+
+```
+poetry shell
+poetry install
+```
+
+Run example:
+
+```
+python examples/smo_test.py
+```
+
