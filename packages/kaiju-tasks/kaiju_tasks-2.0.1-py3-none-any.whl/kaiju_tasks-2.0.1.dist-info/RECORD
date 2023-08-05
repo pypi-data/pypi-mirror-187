@@ -1,0 +1,13 @@
+kaiju_tasks/__init__.py,sha256=5RfDOLXWxRRb_SIrCiY-p2zQfFTiJxwTmf1_fomRtN0,151
+kaiju_tasks/etc.py,sha256=3SF8A5gosAWNduFZfsgXaEpFWq3hSDyvRDDeRZulb2E,4732
+kaiju_tasks/executor.py,sha256=_ov_y6yqEnc_IgHYa9kIXbiBAcdIADxOd_gp9PloGAA,7330
+kaiju_tasks/interface.py,sha256=Ywomm8GmFsgmPAyHBVyFLK1dXSDNwDKL0oQXCJDZAXo,6190
+kaiju_tasks/manager.py,sha256=f-WecxNdh7m0xDyjPOYqk4tik_iczeFyIWwC0s5-CnE,17083
+kaiju_tasks/notifications.py,sha256=-1G2xK0o88md-wV7RD2DlKrHVFTKx5QgQ1ArRImbqlA,1990
+kaiju_tasks/services.py,sha256=3oa6CxRcXE6FIwJBqGt2mHqaGnW9XV4kXlTEDuTMfQY,209
+kaiju_tasks/tables.py,sha256=7JMRD6oAYa1b4Fmo5aRtWvTsUQEryFJfhaTAPvOlVKc,4076
+kaiju_tasks-2.0.1.dist-info/LICENSE,sha256=XIlN2qA8UqpBDA-PteoYP4hTU0qBW0G9PRB__khO2zc,610
+kaiju_tasks-2.0.1.dist-info/METADATA,sha256=4kPLtsdhmyEIp9feXE2M3F3LtFWmWSi50zzAT3Y6B3U,2863
+kaiju_tasks-2.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+kaiju_tasks-2.0.1.dist-info/top_level.txt,sha256=QyLogqOVVajJlalq6RfikGx5VGn_lLeTANJEsfZZlM0,12
+kaiju_tasks-2.0.1.dist-info/RECORD,,
