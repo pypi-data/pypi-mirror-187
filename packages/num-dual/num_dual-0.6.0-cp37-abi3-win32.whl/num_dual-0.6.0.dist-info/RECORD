@@ -1,0 +1,5 @@
+num_dual-0.6.0.dist-info/METADATA,sha256=nZ5HXTE7phru_4rmgpghhvzF3WtVtX17ZT-i3HhzkuI,4747
+num_dual-0.6.0.dist-info/WHEEL,sha256=cwiSpfFkI8YFPzekZoaDuTceKZ7_RdOIHetFkL-fH8E,92
+num_dual/__init__.py,sha256=r5Nkkd7nx3-NVPtKPtfdPWm-TrTOhCqftCoBgTWBYNo,115
+num_dual/num_dual.pyd,sha256=I9s8cYjDpLJ9yf5YY5Yfe6CLugaG579EVqsDHdqOUoY,5887488
+num_dual-0.6.0.dist-info/RECORD,,
