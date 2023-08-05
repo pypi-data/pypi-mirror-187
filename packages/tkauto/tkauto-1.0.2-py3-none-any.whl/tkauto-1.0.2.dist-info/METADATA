@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: tkauto
+Version: 1.0.2
+Summary: Tenkafuma Auto Recruitment KOR
+Home-page: https://github.com/HappyDarling/tkfmAutoRecruitment
+Author: HappyDarling
+Requires-Python: ==3.7.*
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: editdistpy (==0.1.3)
+Requires-Dist: hangul-utils (==0.2)
+Requires-Dist: Jinja2 (==3.1.2)
+Requires-Dist: MarkupSafe (==2.1.1)
+Requires-Dist: numpy (==1.18.5)
+Requires-Dist: opencv-python (==4.6.0.66)
+Requires-Dist: packaging (==21.3)
+Requires-Dist: Pillow (==8.3.2)
+Requires-Dist: pypiwin32 (==223)
+Requires-Dist: PyQt5 (==5.15.7)
+Requires-Dist: PyQt5-Qt5 (==5.15.2)
+Requires-Dist: PyQt5-sip (==12.11.0)
+Requires-Dist: pytesseract (==0.3.10)
+Requires-Dist: pywin32 (==304)
+Requires-Dist: qt-material (==2.12)
+Requires-Dist: symspellpy (==6.7.7)
+
