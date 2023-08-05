@@ -1,0 +1,8 @@
+{
+  "jupyter.lab.shortcuts": [],
+  "title": "@datalayer/jupyter-copernicus",
+  "description": "@datalayer/jupyter-copernicus settings.",
+  "type": "object",
+  "properties": {},
+  "additionalProperties": false
+}
