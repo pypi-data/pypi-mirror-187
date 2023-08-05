@@ -1,0 +1,14 @@
+labelbase/__init__.py,sha256=CJbB2lZOzuTh0oy3OvO2g57Ep-Y2CF_HCzS1zx0U6gY,178
+labelbase/client.py,sha256=HqF2aAM3T17LX9LN83pRPgS-O67KptqsLF6iYjruIT8,19083
+labelbase/connector.py,sha256=7hRML8ppR2ysaGBbUcVhssG0qAPMgwcrKQZfblsroJY,6571
+labelbase/converters/__init__.py,sha256=aCAF5wtoITKsojeWfbRhyeEvy7mNTQkxa7pYk9bqiVQ,70
+labelbase/converters/coco.py,sha256=ApiZ0Jd7op8QIEGI4MH8Gt375pyfZtcCqvicesMZl_Q,15671
+labelbase/converters/ontology.py,sha256=KDEpGJPe1KYLQtrV0T_A2nnjHC35rkv7dI27xedXvCM,5489
+labelbase/uploaders/__init__.py,sha256=Urg8OhQnw6c7NOOmqOYDy8qaVUbS-gUuCrFvxgjlbB8,102
+labelbase/uploaders/batch_create_data_rows.py,sha256=a91AbtccaiV8ds0GGoxdq-2WN2q1NIzWSa5ClLpdD_o,5193
+labelbase/uploaders/batch_upload_annotations.py,sha256=8-XaGY7La52Wu9WVElarVU5F9bVlAL04m5-MqHqExtA,3527
+labelbase-0.0.46.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+labelbase-0.0.46.dist-info/METADATA,sha256=xxzJk-udm6nqigSRukPdzkbIJtDnJvm3FJnoAzTxXLc,795
+labelbase-0.0.46.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+labelbase-0.0.46.dist-info/top_level.txt,sha256=WgtO_32cys_o6rJBVM_jBtfOiChDUIToYrUklO4Y1lo,10
+labelbase-0.0.46.dist-info/RECORD,,
