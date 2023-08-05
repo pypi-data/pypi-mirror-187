@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: orthogonal
+Version: 1.1.8
+Summary: Orthogonal Graph Layout for Python 3
+Home-page: https://github.com/hasii2011/OrthogonalDrawing
+Maintainer: Humberto A. Sanchez II
+Maintainer-email: humberto.a.sanchez.ii@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/hasii2011/OrthogonalDrawing/tree/master.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/hasii2011/OrthogonalDrawing/tree/master)
+[![PyPI version](https://badge.fury.io/py/orthogonal.svg)](https://badge.fury.io/py/orthogonal)
+
+
+
+# Orthogonal Drawing Algorithm
+
+This project is a fork of [this project.](https://github.com/rawfh/orthogonal-drawing-algorithm)
+
