@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+otsunotificationfrequency/__init__.py
+otsunotificationfrequency/cfg.py
+otsunotificationfrequency/classes.py
+otsunotificationfrequency/validator.py
+otsunotificationfrequency.egg-info/PKG-INFO
+otsunotificationfrequency.egg-info/SOURCES.txt
+otsunotificationfrequency.egg-info/dependency_links.txt
+otsunotificationfrequency.egg-info/top_level.txt
