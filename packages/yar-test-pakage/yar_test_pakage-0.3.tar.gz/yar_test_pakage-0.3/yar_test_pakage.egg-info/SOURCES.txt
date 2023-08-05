@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+yar_test_pakage/__init__.py
+yar_test_pakage/core.py
+yar_test_pakage.egg-info/PKG-INFO
+yar_test_pakage.egg-info/SOURCES.txt
+yar_test_pakage.egg-info/dependency_links.txt
+yar_test_pakage.egg-info/requires.txt
+yar_test_pakage.egg-info/top_level.txt
