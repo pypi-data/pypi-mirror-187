@@ -1,0 +1,5 @@
+requests
+ruamel.yaml==0.17.17
+
+[:python_version == "3.6"]
+importlib
