@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "mp3cloud"
+version = "0.1.1"
+description = "Search and download any music from freemp3cloud.com"
+authors = ["Momo <lo3me@proton.me>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/rtcq/freemp3cloud-downloader"
+urls = { "Bug Tracker" = "https://github.com/rtcq/freemp3cloud-downloader/issues" }
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.28.1"
+bs4 = "^0.0.1"
+rich = "^12.6.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

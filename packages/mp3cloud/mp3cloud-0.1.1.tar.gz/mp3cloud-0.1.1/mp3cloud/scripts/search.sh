@@ -1,0 +1,21 @@
+
+curl 'https://wwv.freemp3cloud.com/' \
+  -H 'authority: wwv.freemp3cloud.com' \
+  -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' \
+  -H 'accept-language: en-US,en;q=0.9,fa;q=0.8' \
+  -H 'cache-control: max-age=0' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'cookie: __ddg2_=OoNQEIynYTMJoVwU; __ddg1_=9NZlynXQBBht02meCgQe; _ym_uid=1669227862874709378; _ym_isad=1; .AspNetCore.Antiforgery.2kyQ2nmXF04=CfDJ8JKPcoD1_8lEtTdrfYWqW-mvXWnlogkzwca0xIPdBiVSxvpd0kYcPRgECTqkOnM-zCtgz2hbBQVhSH1gWMqPX8zmmUiww6rM_6WT6Ug0YAGEI613xdB4LyF-fU62OI-74VhTr07qBgWsQIaXMlzF2vc' \
+  -H 'origin: https://wwv.freemp3cloud.com' \
+  -H 'referer: https://wwv.freemp3cloud.com/' \
+  -H 'sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: document' \
+  -H 'sec-fetch-mode: navigate' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'sec-fetch-user: ?1' \
+  -H 'upgrade-insecure-requests: 1' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36' \
+  --data-raw "searchSong=$1&__RequestVerificationToken=CfDJ8JKPcoD1_8lEtTdrfYWqW-msrmyO_zk6kXDuLOKZ_3hBeSEECGelTzxlZRnatDyAwPp_7E7tNF5bOO0q2Q7lJh02D-yYVE4oNANnEv-Y_93m0F_f167bHei7U6oabWuRBJ2--HAKY_k42RM6zhGpXPo" \
+  --compressed
