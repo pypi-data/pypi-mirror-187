@@ -1,0 +1,15 @@
+djcompiler/__init__.py,sha256=duuEAWPFANL8Rl-yRpLJUVjK0OQm0zaKlOXLn5TmqtU,81
+djcompiler/__main__.py,sha256=-U8yZ8-fechTzdsPtx-kDl3g8SktVrE1GMgkGXl_M4U,228
+djcompiler/compiler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djcompiler/compiler/djcompiler.py,sha256=2PFuZfm5gcm3dTrgtnWzZ_CzE1aSgPeaOG8bPxyQ8sw,6902
+djcompiler/management/__init__.py,sha256=TJyPCfrBAgi1EfKknPX67a92slLNli93vS4rL1Hbl2A,1584
+djcompiler/management/command/__init__.py,sha256=ZgpX_NN3UiOmrsyy8lDdU2A120NitZ6qGeEFhb2AoPw,151
+djcompiler/management/command/buildfile.py,sha256=t8gkHGSC5JnRmR6nWRZeh9-hKf2fDX8acsBITnkBLUw,886
+djcompiler/management/command/buildpy.py,sha256=V4rFNHvviqd6QRtXHSMs1YrqeihTo_wrSzsxEExoo-c,1090
+djcompiler/management/command/compile.py,sha256=ldqFIJZ7SGtrw0nvE7t4kfFiJeblGiDlxPl9BoIYA1g,1717
+djcompiler-0.0.4.dist-info/LICENSE,sha256=_fESh5JCyzE4pi3KKd-TtwLBQ2Z8LkGHPzCSZZ-aJXE,1519
+djcompiler-0.0.4.dist-info/METADATA,sha256=U5lWiDN92uqfR13qJuDfX8Bmgk07AcD7pfGoYQBzmc4,1752
+djcompiler-0.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+djcompiler-0.0.4.dist-info/entry_points.txt,sha256=IqNZEerSsUejrXxrxp4dirTHB06EbwbIyN7UcfRnIH4,79
+djcompiler-0.0.4.dist-info/top_level.txt,sha256=EdogMECPFH9TlcZ-86kOwfhixaOFf88A8Zjqi8bl3iU,11
+djcompiler-0.0.4.dist-info/RECORD,,

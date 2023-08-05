@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: djcompiler
+Version: 0.0.4
+Summary: django compiler that compiles django project to a C language using Cython project which gives more performance and more security since the original code is hidden.
+Home-page: https://github.com/abdoohossamm/djcompiler
+Author: Abdalrahman Hossam Eldin Mohamed
+Author-email: abdoohossamm@outlook.com
+License: BSD-3-Clause
+Project-URL: Source, https://github.com/abdoohossamm/djcompiler
+Project-URL: Tracker, https://github.com/abdoohossamm/djcompiler/issues
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: Cython (>=0.29.33)
+
+
+DjCompiler
+==========
+
+DjCompiler is a python package that compiles the django project to a C language project which gives more performance and more security since the original code is hidden.
+
+Compatibility
+-------------
+
+* Python:
+
+  - 3.8
+  - 3.9
+  - 3.10
+  - 3.11
+
+Installation
+------------
+
+``pip install djcompiler``
+
+Usage
+-----
+* run ``djcompiler help`` to see available commands.
+* run ``djcompiler compile`` to compile the django project.
+* run ``djcompiler buildfile`` to generate a config file.
+* run ``djcompiler buildpy`` to generate a python script that compiles the project when run.
+
