@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cgir
+Version: 1.2
+Summary: Libraries and command line tool to control infrared LEDs and receivers on Raspberry Pi
+Home-page: https://github.com/IndoorCorgi/cgir
+Author: Indoor Corgi
+Author-email: indoorcorgi@gmail.com
+License: Apache License 2.0
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: docopt
+Requires-Dist: pigpio
+
