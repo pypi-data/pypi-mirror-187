@@ -1,0 +1,99 @@
+#!/bin/bash
+
+function _silent_install() {
+  install_path="/usr/local/bin"
+
+  dir=$(dirname "$0")
+  script=$1
+  mod=$2
+
+  install -C -v "$dir"/"$script" "$install_path"/
+  if [ -n "$mod" ]; then
+    chmod "$mod" "$install_path"/"$script"
+  fi
+}
+
+function _install_helper_scripts() {
+  dir=$(dirname "$0")
+
+  # Scripts may not be available in PATH during bootstrap, so we manually copy scripts into /usr/local/bin/.
+  _silent_install sm-helper-functions
+  _silent_install sm-connect-ssh-proxy +x
+  _silent_install sm-wait +x
+  _silent_install sm-start-ssh +x
+  _silent_install sm-save-env +x
+  _silent_install sm-init-ssm +x
+  _silent_install sm-ssh-ide +x
+  _silent_install sm-local-start-ssh +x
+  _silent_install sm-local-ssh-ide +x
+  _silent_install sm-local-ssh-training +x
+}
+
+function _is_centos() {
+  command -v yum >/dev/null 2>&1
+}
+
+function _install_unzip() {
+  if _is_centos; then
+    yum install -y unzip
+  else
+    apt-get install -y --no-install-recommends unzip
+  fi
+}
+
+function _install_aws_cli() {
+  curl -sS "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "/tmp/awscliv2.zip"
+  unzip -o -q -d /tmp/ /tmp/awscliv2.zip
+  /tmp/aws/install --update
+}
+
+function _install_ssm_agent_ubuntu() {
+  CURRENT_REGION=$(aws configure get region || echo "$AWS_REGION")
+  curl -sS -o /tmp/amazon-ssm-agent.deb "https://s3.$CURRENT_REGION.amazonaws.com/amazon-ssm-$CURRENT_REGION/latest/debian_amd64/amazon-ssm-agent.deb"
+  dpkg -i /tmp/amazon-ssm-agent.deb
+}
+
+function _install_ssm_agent_centos() {
+  CURRENT_REGION=$(aws configure get region || echo "$AWS_REGION")
+  yum install -y "https://s3.$CURRENT_REGION.amazonaws.com/amazon-ssm-$CURRENT_REGION/latest/linux_amd64/amazon-ssm-agent.rpm"
+}
+
+function _install_ssm_agent() {
+  if _is_centos; then
+    _install_ssm_agent_centos
+  else
+    _install_ssm_agent_ubuntu
+  fi
+}
+
+function _install_curl_ubuntu() {
+  apt-get install -y --no-install-recommends curl
+}
+
+function _install_curl_centos() {
+  yum install -y curl
+}
+
+function _install_curl() {
+  if _is_centos; then
+    _install_curl_centos
+  else
+    _install_curl_ubuntu
+  fi
+}
+
+function _install_jq() {
+  if _is_centos; then
+    yum install -y jq
+  else
+    apt-get install -y --no-install-recommends jq
+  fi
+}
+
+function _install_sudo() {
+  if _is_centos; then
+    yum install -y sudo
+  else
+    apt-get install -y --no-install-recommends sudo
+  fi
+}
