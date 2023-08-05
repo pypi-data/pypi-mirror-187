@@ -1,0 +1,3 @@
+[console_scripts]
+raindroppy=raindroppy.cli.cli:main
+
