@@ -1,0 +1,17 @@
+tkauto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tkauto/main.py,sha256=zHDa4WypWDp_qHQN6E0XOaukFPDk49wPNvds9Lm4oJw,9263
+tkauto/tkfm_UI.ui,sha256=fRbhMxYOHIC2Xb1J3o7Cf_QEaGlpCpXbFU2fWRkDfB0,15991
+tkauto/data/CharacterInfo.json,sha256=BLPX_Hd7t5qoSRBPGQRsyA8pEjK7ZWHr_F_UtcD0S2U,6119
+tkauto/data/CharacterTag.json,sha256=TSjL2VL0ZaiPPAAaUPrklFMcGG12OurxaTYUoXpU7_Y,8589
+tkauto/data/KorInfo.json,sha256=kTwtLIkULh--rqpMgoCA-oY6jvXJrFdTFx8CGZpcQNA,5231
+tkauto/data/tags_dictionary.txt,sha256=0Px-nhRbdhOLz61eD8UqvR59rjcT9LQuHj4LNE6m0Xw,805
+tkauto/module/Capture.py,sha256=u-a4M9ah9lNcbamF9Qz5THvJLraD_9VGj-myWaBGzNI,713
+tkauto/module/FindCharacterByTag.py,sha256=dWYip3mYZwFkLuINLJMu37fDZTUrofluoevr-6JvUdU,9182
+tkauto/module/ImgProcessing.py,sha256=LdU1fHj2VphSLEpdOomX60BIvzrnt-C1QBiwfE88HD8,789
+tkauto/module/TesseractOCR.py,sha256=dw1kcv0cwdJUBylB-IBXvR1MmhM7POKw3PcfUY-EzSM,248
+tkauto/module/Util.py,sha256=WLiE1-kBOM548W0r2227cPBdndsK9GlVOkwgyXOW1aA,914
+tkauto-1.0.3.dist-info/LICENSE,sha256=HbcuB00OVurpeOO4APpXDcHDdACVx1oDQmr7mAs_Go0,1090
+tkauto-1.0.3.dist-info/METADATA,sha256=0_-_5r0_O1Et-Y3CVuco5xokXRAgsi68n8uxfEVT9v0,847
+tkauto-1.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tkauto-1.0.3.dist-info/top_level.txt,sha256=u0XPwT7Dyoji4_WbbzOPz6icouCY_5ceUfJl0OWDloE,7
+tkauto-1.0.3.dist-info/RECORD,,
