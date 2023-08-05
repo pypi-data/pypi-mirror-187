@@ -1,0 +1,89 @@
+Changelog
+=========
+
+4.3 - (2023-01-20)
+---------------------------
+* Feature: Send captcha data as bytes, add @captchaverify endpoints
+  [iulianpetchesi refs #157143]
+
+4.2 - (2023-01-12)
+---------------------------
+* Feature: Added friendlycaptcha settings + verify to be used with redmine
+  helpdesk block
+  [iulianpetchesi refs #157143]
+
+4.1 - (2022-11-25)
+---------------------------
+* Feature: Add contact_extra_actions: faqs and careers
+  [avoinea refs #151856]
+
+4.0 - (2022-11-18)
+---------------------------
+* Feature: New category actions: footer, social, copyright and contact
+  [avoinea refs #151856]
+
+3.1 - (2022-08-25)
+---------------------------
+* Feature: Add PATCH support for `@system` endpoint in order to be able to update frontend version
+  [avoinea refs #153334]
+
+3.0 - (2022-08-23)
+---------------------------
+* Feature: Added backend/frontend version registry records + automatically update the version on zope startup
+  [iulianpetchesi refs #153334]
+
+2.0 - (2022-06-13)
+---------------------------
+* Change: Release eea.coremetadata
+  [nileshgulia1]
+
+1.9 - (2022-06-13)
+---------------------------
+* Change: add eea.coremetadata dependency
+  [nileshgulia1]
+
+1.8 - (2022-03-18)
+---------------------------
+* Feature: added pas.plugins.oidc as dependency
+  [alecghica refs #137187]
+
+1.7 - (2022-02-17)
+---------------------------
+* Change: Add testing profile for cypress testing
+  [avoinea refs #146058]
+
+1.6 - (2022-02-15)
+---------------------------
+* Change: Add eea.banner dependency
+  [avoinea]
+
+1.5 - (2021-12-16)
+---------------------------
+* Change: Add eea.cache
+  [avoinea refs #139888]
+
+1.4 - (2021-11-23)
+---------------------------
+* Change: Removed eea.restapi from kitkat
+  [iulianpetchesi refs #139888]
+
+1.3 - (2021-11-22)
+---------------------------
+* Change: Added missing dependencies
+  [iulianpetchesi refs #139888]
+
+1.2 - (2021-11-11)
+---------------------------
+* Change: Fix python version requirement
+  [avoinea]
+
+1.1 - (2021-11-11)
+---------------------------
+* Change: Added plonesaas jenkins test
+  [iulianpetchesi refs #139888]
+
+1.0 - (2021-11-09)
+-----------------------
+
+* Initial release.
+  [eea]
