@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: TOPSIS-Brahmjot-102003736
+Version: 0.0.1
+Summary: TOPSIS-Ranking Algorithm for Multiple Criteria Decision Making
+Author: Brahmjot Kaur
+Author-email: <brahmjotkaur2002@gmail.com >
+Keywords: python,TOPSIS,MCDM,Ranking
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: python
+
+TOPSIS (Technique for order performance by similarity to ideal solution) is a useful technique in dealing with multi-attribute or multi-criteria decision making (MADM/MCDM) problems in the real world. The principle of compromise (of TOPSIS) for multiple criteria decision making is that the chosen solution should have the shortest distance from the positive ideal solution as well as the longest distance from the negative ideal solution.It compares a set of alternatives based on a pre-specified criterion. The method is used in the business across various industries, every time we need to make an analytical decision based on collected data. 
+ You input the data in a csv file and then assign weights and impacts of the columns. Applying the Topsis package you will be provded with topsis score and rank along with it.
