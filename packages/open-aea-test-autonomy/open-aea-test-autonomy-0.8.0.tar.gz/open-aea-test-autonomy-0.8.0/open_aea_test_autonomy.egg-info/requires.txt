@@ -1,0 +1,4 @@
+open-aea[all]<2.0.0,>=1.28.0.post1
+pytest==7.0.0
+open-aea-ledger-ethereum==1.28.0.post1
+docker==6.0.0
