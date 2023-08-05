@@ -1,0 +1,17 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+MathStuff/__init__.py
+MathStuff/calculus.py
+MathStuff/fourier_series.py
+MathStuff/graph_2d.py
+MathStuff/helper.py
+MathStuff/logic.py
+MathStuff/main.py
+MathStuff/taylor_series.py
+MathStuff.egg-info/PKG-INFO
+MathStuff.egg-info/SOURCES.txt
+MathStuff.egg-info/dependency_links.txt
+MathStuff.egg-info/requires.txt
+MathStuff.egg-info/top_level.txt
