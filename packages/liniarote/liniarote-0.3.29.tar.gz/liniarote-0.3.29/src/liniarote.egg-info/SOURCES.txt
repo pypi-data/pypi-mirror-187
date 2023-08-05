@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/liniarote/__init__.py
+src/liniarote/cli.py
+src/liniarote/config.py
+src/liniarote.egg-info/PKG-INFO
+src/liniarote.egg-info/SOURCES.txt
+src/liniarote.egg-info/dependency_links.txt
+src/liniarote.egg-info/entry_points.txt
+src/liniarote.egg-info/requires.txt
+src/liniarote.egg-info/top_level.txt

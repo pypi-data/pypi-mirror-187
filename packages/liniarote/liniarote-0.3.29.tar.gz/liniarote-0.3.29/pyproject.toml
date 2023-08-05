@@ -1,0 +1,21 @@
+[project]
+name = "liniarote"
+version = "0.3.29"
+authors = [
+	{ name="Matthew E. Gladden", email="matthew.gladden@neuraxenetica.com" },
+]
+maintainers = [
+	{ name="Matthew E. Gladden" },
+]
+description = "The Liniarote package is a command-line interface for the Liniarote programming language, for use in performing operations in transvalent mathematics (i.e., in which division by zero is permitted and generates predictable results, displayed with the aid of the transvalent number symbol “Ƿ”)."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+	"Programming Language :: Python :: 3",
+	"License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+	"Operating System :: Microsoft :: Windows",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/NeuraXenetica/liniarote"
+"Bug Tracker" = "https://github.com/NeuraXenetica/liniarote/issues"
