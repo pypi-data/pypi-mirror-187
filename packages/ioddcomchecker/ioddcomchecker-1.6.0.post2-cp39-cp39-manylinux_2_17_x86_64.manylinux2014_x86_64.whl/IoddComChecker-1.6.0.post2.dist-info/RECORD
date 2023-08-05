@@ -1,0 +1,9 @@
+IoddComChecker-1.6.0.post2.dist-info/RECORD,,
+IoddComChecker-1.6.0.post2.dist-info/LICENSE.txt,sha256=mjUk_O3YPxAZeoS61zCys2pyShGDxR4ghwb55ItZ0lg,732
+IoddComChecker-1.6.0.post2.dist-info/WHEEL,sha256=D79CBkaJekx7HMK1NaBe_KU1GVla4HlolbFXT3at6fg,148
+IoddComChecker-1.6.0.post2.dist-info/METADATA,sha256=1aY34QLTm_T3dJ_ew7yfg6FWZXh5ZTf6ULgizqTfhN4,4014
+IoddComChecker-1.6.0.post2.dist-info/top_level.txt,sha256=vIFg0bLkihbkHyuCZUdHmA-50LP8LvTwDknGWir0T5o,8
+siogeen/LICENSE.txt,sha256=mjUk_O3YPxAZeoS61zCys2pyShGDxR4ghwb55ItZ0lg,732
+siogeen/tools/IoddComChecker.cpython-39-x86_64-linux-gnu.so,sha256=SOnLY6O1qcwQIMTXJvKMKk3_5LT-0VSx1P_hcKHBHQk,182112
+siogeen/tools/__init__.py,sha256=CCpWoKGerJjGcTDaC48F6skWG4rDZuBzIKxBIZqL74w,462
+siogeen/tools/cli/IoddComChecker.py,sha256=055FuCrKYio4xKOlE-uncCtc95w7P_7jqZbGEmgSncY,1188
