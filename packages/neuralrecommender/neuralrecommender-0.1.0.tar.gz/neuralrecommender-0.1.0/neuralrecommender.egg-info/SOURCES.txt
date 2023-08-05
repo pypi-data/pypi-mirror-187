@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+neuralrecommender/__init__.py
+neuralrecommender/glocalk.py
+neuralrecommender/model.py
+neuralrecommender.egg-info/PKG-INFO
+neuralrecommender.egg-info/SOURCES.txt
+neuralrecommender.egg-info/dependency_links.txt
+neuralrecommender.egg-info/requires.txt
+neuralrecommender.egg-info/top_level.txt
