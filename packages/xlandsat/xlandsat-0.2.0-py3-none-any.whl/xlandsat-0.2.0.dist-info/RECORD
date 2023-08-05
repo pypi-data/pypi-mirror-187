@@ -1,0 +1,13 @@
+xlandsat/__init__.py,sha256=ficQhK7aehBGD0XXemV_m89qFCI3m97UtJGyjT5df0M,235
+xlandsat/_composite.py,sha256=EdkhrJY_FT8GnTAj5PC2vkw8CNBSo0Y93VQOFTY3Nsc,3051
+xlandsat/_io.py,sha256=fNZmP3-_7CseQ3tKkbW-Ms7D3gLsOSN8xWRScmF9iuM,15724
+xlandsat/_version.py,sha256=eT8VMbqR_AsdvClzOdaEhW7itPz9FMP4M-ju6w6mgH8,425
+xlandsat/_version_generated.py,sha256=dQUHa1PGpJsNE2x_SQFxtOX-jousEqplwH1bdsk6mnE,160
+xlandsat/tests/__init__.py,sha256=FDemHmI4lsYHkyjthJC5FZ_DV3HSyMQ5fUxe9SGVm8U,127
+xlandsat/tests/test_io.py,sha256=A0i7govt3W4XpZmeQuifP5MmT5xdPFGDv7TPZvmlhF0,7321
+xlandsat-0.2.0.dist-info/LICENSE.txt,sha256=_iFJ9PachMe3sot8OnhkzczrmEDyBc3EMWLFHPGx5gk,1071
+xlandsat-0.2.0.dist-info/METADATA,sha256=BD7jrD-9jKk5qTQQN97GXvVdgOr6QbammQ62-1O6jqI,5045
+xlandsat-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+xlandsat-0.2.0.dist-info/top_level.txt,sha256=IPYv3fUQrPmibWvFMl7geLFIbkcxxDUtmBK31eVTQ80,9
+xlandsat-0.2.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+xlandsat-0.2.0.dist-info/RECORD,,
