@@ -1,0 +1,41 @@
+name: build
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: ci-${{ github.ref }}
+      cancel-in-progress: true
+
+    defaults:
+      run:
+        shell: bash -l {0}
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: conda-incubator/setup-miniconda@v2
+      with:
+        miniconda-version: "latest"
+        environment-file: conda/dev.yaml
+        channels: conda-forge,nodefaults
+        activate-environment: containers-sugar
+        use-mamba: true
+        miniforge-variant: Mambaforge
+
+    - name: Install dependencies
+      run: poetry install
+
+    - name: Run tests
+      run: |
+        containers-sugar help
+        containers-sugar version
+        containers-sugar build --group group1 --services ""
+        containers-sugar build --group group2 --services ""
+        containers-sugar build --group group1
+
+    - name: Run style checks
+      if: success() || failure()
+      run: |
+        pre-commit install
