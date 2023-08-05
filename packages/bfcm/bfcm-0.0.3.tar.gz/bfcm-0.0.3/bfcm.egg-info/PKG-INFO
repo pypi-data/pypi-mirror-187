@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: bfcm
+Version: 0.0.3
+Summary: A library that quantifies implicit bias in tabular data with Fuzzy Cognitive Maps
+Author: L. Koutsoviti, G. Napoles
+License: MIT
+License-File: License.txt
+
+This python package includes the functions related to paper "Modeling Implicit Bias with Fuzzy Cognitive Maps" by Gonzalo Nápoles, Isel Grau, Leonardo Concepción, Lisa Koutsoviti Koumeri and João Paulo Papa (see here https://doi.org/10.1016/j.neucom.2022.01.070).
