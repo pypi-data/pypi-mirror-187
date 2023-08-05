@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+#
+# This file is part of Invenio.
+# Copyright (C) 2015-2022 CERN.
+#
+# Invenio is free software; you can redistribute it and/or modify it
+# under the terms of the MIT License; see LICENSE file for more details.
+
+include *.rst
+include *.sh
+include *.txt
+include .dockerignore
+include .editorconfig
+include .tx/config
+include .lgtm
+include LICENSE
+include MAINTAINERS
+include babel.ini
+include docs/requirements.txt
+include pytest.ini
+recursive-include docs *.bat *.py *.rst Makefile
+recursive-include examples *.py *.sh *.html
+recursive-include invenio_pages *.html
+recursive-include invenio_pages *.po *.pot *.mo *.py
+recursive-include tests *.py
+recursive-include .github/workflows *.yml
+include .git-blame-ignore-revs
