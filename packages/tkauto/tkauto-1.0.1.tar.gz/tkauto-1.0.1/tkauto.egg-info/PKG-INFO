@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: tkauto
+Version: 1.0.1
+Summary: Tenkafuma Auto Recruitment KOR
+Home-page: https://github.com/HappyDarling/tkfmAutoRecruitment
+Author: HappyDarling
+Requires-Python: ==3.7.*
+Description-Content-Type: text/markdown
+License-File: LICENSE
