@@ -1,0 +1,11 @@
+morphosamplers/__init__.py,sha256=a8C0rWtXynfPziZAjea0l9Fhnx_xrFQei7_reCenEMw,311
+morphosamplers/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+morphosamplers/sampler.py,sha256=g4j2BTP4o7ZEc0aVeVYk2UdWNpzWRUch2t99lfFE5ZI,10539
+morphosamplers/spline.py,sha256=oUHOdFtJ1TQ6xlfQYOBoZdKfGzn6983I43tFIZPP2fg,11100
+morphosamplers/surface_spline.py,sha256=lDH5gHgJWClkV5OEjzv-iDmY1_UlGRYHo1lHMqENW9o,16678
+morphosamplers/utils.py,sha256=lr-pAMj_-0r13zFhLFtoRhBarbvOIM1XS_el_VbsUNU,9172
+morphosamplers-0.0.4.dist-info/LICENSE,sha256=_Hf-TqnG5t-IGV63RQroQhStCoURJL5rAxaXT7GEF80,1513
+morphosamplers-0.0.4.dist-info/METADATA,sha256=SOkGmqGtofazeX32m79jgMDB_-9tyLBuVQnoHQ-wqck,2479
+morphosamplers-0.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+morphosamplers-0.0.4.dist-info/top_level.txt,sha256=Wz4bc5o6NLHMznNkEG7i_uAIHYRS2XEvaZb4X6ePYZ4,15
+morphosamplers-0.0.4.dist-info/RECORD,,
