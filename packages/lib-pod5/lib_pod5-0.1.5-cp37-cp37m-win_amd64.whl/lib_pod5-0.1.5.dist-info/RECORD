@@ -1,0 +1,9 @@
+lib_pod5/__init__.py,sha256=keX_dEvMf-ZarPN6_L1EhawiSdZgUwLYS_l91pc-9cY,964
+lib_pod5/_version.py,sha256=IR3a5UwIrXpaE7MJ0hSQxhZfGCe8PwDH1RnBriEZF5s,25
+lib_pod5/pod5_format_pybind.cp37-win_amd64.pyd,sha256=Fhb0c0ztHMmu92GhzGTyj6rrD0hz5wvUmBco0nddhv0,6761472
+lib_pod5/pod5_format_pybind.pyi,sha256=91uyEM910E6NBM6TYvmhOeLW_tvAZ4j7DHKgS1HrP9Y,7317
+lib_pod5/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lib_pod5-0.1.5.dist-info/METADATA,sha256=VrSPzSZxv-Fr-iHxLiEsoAobFnmPapDt7cRd7j9Xusc,1117
+lib_pod5-0.1.5.dist-info/WHEEL,sha256=eaY3ejwL19QEEyHRYuTgC3FZQgNYBpzCION1l_gJUb8,101
+lib_pod5-0.1.5.dist-info/top_level.txt,sha256=H_o3QXmKRCOntqerU_rOU37oQLw97bSlsPq5bw_1EfY,9
+lib_pod5-0.1.5.dist-info/RECORD,,
