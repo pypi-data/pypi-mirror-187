@@ -1,0 +1,12 @@
+SignalSnap/__init__.py,sha256=FsEaXeOJ6GHSav6ctng1yfkRXH2KYH7XkzBo6BZYP1M,1910
+SignalSnap/analysis.py,sha256=BTkTzS9AosGkEQ4apcUAyCDA6ujns-KsY1amuSAY6CI,74845
+SignalSnap/tests/.DS_Store,sha256=dzFoMoPiRSg1VnvXKVD_Q4INCs3pW4uSL_uA6v-gMrw,6148
+SignalSnap/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SignalSnap/tests/generate_test_data.ipynb,sha256=cLVCAhfsHfJpNrkrDu0J50OvRWgBekfxPn0J0xMGjek,61799
+SignalSnap/tests/test.ipynb,sha256=lE8YGj1gwX3hrMfm84_bmqOD4gfryOLqH6PSP7iPAN0,2689
+SignalSnap/tests/test_calc_spec.py,sha256=Akn_Jj69_e1nsYDksOs8FB4LTGei0X-Nu4fIFNZS9z0,1220
+SignalSnap/tests/data/data_for_test_calc_spec.pkl,sha256=R0bxAfPZj-XznV-VWJkSNijRMoNuaAZO8icsPIpUO2I,412111
+signalsnap-0.1.5.dist-info/METADATA,sha256=u0ezPJ1wHTuTS_jMtp4GVymfo5ugK3oXo52b11mV5zY,8148
+signalsnap-0.1.5.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+signalsnap-0.1.5.dist-info/licenses/LICENSE,sha256=YMg66NJwtQktBlJORd77LNq0cJ77n6n6yofrwX8wEEs,1536
+signalsnap-0.1.5.dist-info/RECORD,,
