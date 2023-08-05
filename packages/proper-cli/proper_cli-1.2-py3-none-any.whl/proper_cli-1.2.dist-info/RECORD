@@ -1,0 +1,12 @@
+proper_cli/__init__.py,sha256=RWBsmEiqTIO4i9bIYxiMOr-hMrUUG64PRhJVD5_uX1M,59
+proper_cli/helpers.py,sha256=RNLG_wJ1MeT4Ck9dCm73J4eBGp3_F1lScvApfd3hFzs,1915
+proper_cli/main.py,sha256=OUIrT24rIhIVwCPxlc8Rkjm_FLgogfn8XxO15EUuWSo,5618
+proper_cli/parser.py,sha256=UNLZe39UXVN5l-dgVHhl2Chwdu6pWw4kKgx_Fx17z7A,2124
+proper_cli/pastel/__init__.py,sha256=5o-JTSZxwqGwttoQJSdh0ETemKfVBzOCotgmT3kZmJk,2311
+proper_cli/pastel/pastel.py,sha256=us0dpfQOAEy9pCVKmVN_-MijYkzDFZDUvId9D9Q7FkM,5342
+proper_cli/pastel/stack.py,sha256=allP9A02yzvyq4yTy1smWRFY6pXxa1F5G4zEkwe69Wo,1919
+proper_cli/pastel/style.py,sha256=blptQyf9OUW9KNsE-u9WYw1Cr5oaOcVhMg7jDQ7XW2o,5018
+proper_cli/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+proper_cli-1.2.dist-info/METADATA,sha256=ly7Lt8GtCF1LVauMbrkMXE9OiMcGp_hh28dxQbO2EG4,6002
+proper_cli-1.2.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+proper_cli-1.2.dist-info/RECORD,,
