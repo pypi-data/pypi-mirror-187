@@ -1,0 +1,12 @@
+edabox/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edabox/core/__init__.py,sha256=m_pv3XQrhvspzNOBrlthDYvGL0N8YtlAsL7gJNL_Krc,490
+edabox/core/box.py,sha256=arlZb4Ua8MuoEeeqJOum1_hs5STsbe9a9mgDg40bfjs,1263
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_box.py,sha256=CngVEprxdDbexr71tNeA4M6JbBcQZE_VkztGpjvSoJw,435
+tests/test_process_frame.py,sha256=eE7vd39HoFwjMzOTg_woSxZVhNCV9VtO9PjSPa1SZh4,688
+tests/test_syntax.py,sha256=uk3j4kxEK0TzENsmAriMVZY0ssCGAQQZjRrpqbGe2Hw,67
+edabox-1.0.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+edabox-1.0.0.dist-info/METADATA,sha256=SYbLxDCwzg0Bi6zGbTqp1xdyUbAUvD2KzdEAjHT6YNk,317
+edabox-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+edabox-1.0.0.dist-info/top_level.txt,sha256=VrA_CSM6jOOxu-2ndBqCEUsnVyqXyNQ2cWURh914O4U,13
+edabox-1.0.0.dist-info/RECORD,,
