@@ -1,0 +1,2 @@
+[console_scripts]
+wudz-sgui = wuddz_search_gui.search_gui:gui_main
