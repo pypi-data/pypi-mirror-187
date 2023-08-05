@@ -1,0 +1,2 @@
+torch>=1.12
+vinplots>=0.0.75
