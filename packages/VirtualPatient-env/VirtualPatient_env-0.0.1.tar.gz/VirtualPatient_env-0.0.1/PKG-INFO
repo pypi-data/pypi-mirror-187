@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: VirtualPatient_env
+Version: 0.0.1
+Summary: A Gym Env for 'VirtualPatient' project
+Description-Content-Type: text/markdown
