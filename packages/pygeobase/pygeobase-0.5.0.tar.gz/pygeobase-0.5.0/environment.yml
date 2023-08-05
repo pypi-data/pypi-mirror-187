@@ -1,0 +1,11 @@
+name: pygeobase_env
+dependencies:
+- hdf5
+- numpy
+- netCDF4
+- pykdtree
+- pip
+- pip:
+  - pygeogrids
+  - pytest
+  - pytest-cov

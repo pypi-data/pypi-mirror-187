@@ -1,0 +1,6 @@
+numpy
+pygeogrids>=0.3.0
+
+[testing]
+pytest
+pytest-cov
