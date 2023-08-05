@@ -1,0 +1,8 @@
+pandas>=1.4.0
+nltk>3.6.1
+regex
+matplotlib
+matplotlib-inline
+plotnine
+wordcloud
+cleantext>=1.1.4
