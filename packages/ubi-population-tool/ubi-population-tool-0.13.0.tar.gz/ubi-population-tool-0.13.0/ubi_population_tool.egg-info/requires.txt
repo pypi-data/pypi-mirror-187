@@ -1,0 +1,10 @@
+requests
+more-executors>2.1.0
+ubi-config>=2.2.0
+rpm-py-installer
+pubtools-pulplib>=2.34.2
+attrs
+fastpurge
+
+[:python_version < "3"]
+pyrsistent<0.17
