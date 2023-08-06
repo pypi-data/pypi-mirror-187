@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: Topsis-Khushi-102183044
+Version: 0.0.5
+Summary: A package -> Calculates Topsis Score and Rank them accordingly
+Home-page: UNKNOWN
+Author: Khushi Prasad
+Author-email: khushipr01@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+
+# TOPSIS
+
+
