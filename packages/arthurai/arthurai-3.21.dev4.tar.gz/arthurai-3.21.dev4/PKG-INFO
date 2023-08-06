@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: arthurai
+Version: 3.21.dev4
+Summary: Arthur Python SDK
+Author-email: Arthur <info@arthur.ai>
+License: MIT
+Project-URL: Arthur Homepage, https://arthur.ai
+Project-URL: Documentation, https://docs.arthur.ai
+Keywords: api arthur ArthurAI sdk ml model monitoring
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
