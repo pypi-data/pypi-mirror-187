@@ -1,0 +1,5 @@
+setup.py
+csvfuncs.egg-info/PKG-INFO
+csvfuncs.egg-info/SOURCES.txt
+csvfuncs.egg-info/dependency_links.txt
+csvfuncs.egg-info/top_level.txt
