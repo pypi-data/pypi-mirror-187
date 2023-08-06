@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+wikdict_compound/__init__.py
+wikdict_compound/make_db.py
+wikdict_compound.egg-info/PKG-INFO
+wikdict_compound.egg-info/SOURCES.txt
+wikdict_compound.egg-info/dependency_links.txt
+wikdict_compound.egg-info/requires.txt
+wikdict_compound.egg-info/top_level.txt
