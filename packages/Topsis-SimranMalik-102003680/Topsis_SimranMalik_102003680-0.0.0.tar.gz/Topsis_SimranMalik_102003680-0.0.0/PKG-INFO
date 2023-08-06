@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: Topsis_SimranMalik_102003680
+Version: 0.0.0
+Summary: Topsis Implementation
+Home-page: https://github.com/Simran509/Topsis-SimranMalik-102003680
+Author: Simran Malik
+Author-email: smalik_be20@thapar.edu
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This package is implementation of multi-criteria decision analysis using topsis.
+This package will accept three arguments during file execution:
+1. dataset.csv //file which contains the models and parameters
+2. string of weights separated by commas(,)
+3. string of requirements (+/-) separated by commas(,)
+// important
+install pandas,sys,operator and math libraries before installing this
+//
+You can install this package using following command
+pip install Topsis_SimranMalik_102003680
