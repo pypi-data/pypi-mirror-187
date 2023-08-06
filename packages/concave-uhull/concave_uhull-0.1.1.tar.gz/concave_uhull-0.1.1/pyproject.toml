@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "concave_uhull"
+version = "0.1.1"
+description = "A simple (but not simpler) algorithm to obtain the concave hull using an alpha shape algorithm."
+readme = "README_pypi.rst"
+authors = ["Luan <llvdmoraes@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+numpy = "^1.24.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+isort = "^5.11.4"
+ipython = "^8.8.0"
+pytest-cov = "^4.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: concave-uhull
+Version: 0.1.1
+Summary: A simple (but not simpler) algorithm to obtain the concave hull using an alpha shape algorithm.
+Author: Luan
+Author-email: llvdmoraes@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: numpy (>=1.24.1,<2.0.0)
+Description-Content-Type: text/x-rst
+
+
+=================
+concave_uhull*
+=================
+
+A simple (but not simpler) algorithm to obtain the concave hull using an alpha shape algorithm.
+
+Installation
+============
+.. code:: bash
+
+  pip install concave_uhull
+
+Notes
+-----
+  * uhull! (Brazil) yeah! (expresses joy or celebration)
+
