@@ -1,0 +1,22 @@
+Metadata-Version: 1.2
+Name: infodeslib
+Version: 0.0.3
+Summary: Implementation of Dynamic Ensemble Selection methods for Late Fusion
+Home-page: https://github.com/fukashi-hatake/infodeslib
+Author: Firuz Juraev
+Author-email: f.i.juraev@gmail.com
+Maintainer: Firuz Juraev
+Maintainer-email: f.i.juraev@gmail.com
+License: BSD 3-clause "New" or "Revised License"
+Description: # infodeslib
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3
