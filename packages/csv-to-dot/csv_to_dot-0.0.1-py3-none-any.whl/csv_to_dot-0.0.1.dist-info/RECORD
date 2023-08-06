@@ -1,0 +1,12 @@
+csv_to_dot/__init__.py,sha256=3n3sg8zLOHZEs4rI-upzSeuExMwhJB8WNt06BVHidlg,737
+csv_to_dot/csv_to_dot.py,sha256=-RXFhLinmXMk128di5CD0hPOvNDzk6A2hKkHUrEOkdM,11147
+csv_to_dot/resources/__init__.py,sha256=BBvdNoaBeRSRlsb3IQK14j4YzewRqVq6Di0DKlbms54,737
+csv_to_dot/resources/graf.dot.j2,sha256=3Ku-yp2lRUa7Hh3scVO3EPDQ2l1sdrq4vOxK_uAdmm0,265
+entry_points_csv_to_dot/__init__.py,sha256=E0o3daXrlRKr8lokfmPIZNlPCbtz5R_gfXvj-ZaQkPk,714
+entry_points_csv_to_dot/csv_to_dot.py,sha256=4a_s-EMHStcKFLNvi5NuOJuMdrhFqul4bI0fa9RrSGY,3302
+csv_to_dot-0.0.1.dist-info/LICENCE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+csv_to_dot-0.0.1.dist-info/METADATA,sha256=VK_UbTxdYNxajUxFMRE1xy6LH3YBZUlt-WBJpai9AFI,1171
+csv_to_dot-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+csv_to_dot-0.0.1.dist-info/entry_points.txt,sha256=tIJ-Vuj2nQEZYvHDIPTLiEgIj2ZlTYpiefpIeOdfv4E,70
+csv_to_dot-0.0.1.dist-info/top_level.txt,sha256=7EFHKR4hGTjj3pammlp-7kZfVvEctyU2pzgii3-Hi9g,35
+csv_to_dot-0.0.1.dist-info/RECORD,,
