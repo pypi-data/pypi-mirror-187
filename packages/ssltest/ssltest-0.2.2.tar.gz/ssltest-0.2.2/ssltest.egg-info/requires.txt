@@ -1,0 +1,6 @@
+ptlibs
+cryptography
+pyOpenSSL
+python3-nmap
+requests
+urllib3

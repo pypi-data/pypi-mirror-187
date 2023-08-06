@@ -1,0 +1,2 @@
+[console_scripts]
+ssltest = ssltest.__main__:main
