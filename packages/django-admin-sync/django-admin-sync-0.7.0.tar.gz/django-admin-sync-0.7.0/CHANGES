@@ -1,0 +1,36 @@
+0.7.0
+-----
+* drop support django 2.x
+* fixes fetching multiple records
+* improves error handling and messages
+
+
+0.6.0
+-----
+* refactor Collector
+
+
+0.5.0
+-----
+* improves error handling on publish
+
+
+0.4.0
+-----
+* add inspect button
+* new Protocol for easier customization
+
+
+0.3.0
+-----
+* allow configuration to get credentials
+
+
+0.2.0
+-----
+* add PROTOCOL suppport
+
+
+0.1.0
+-----
+* Initial Release
