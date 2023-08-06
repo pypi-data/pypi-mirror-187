@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: Environ-Py
+Version: 0.0.1
+Summary: A Package made for you to make your project even BETTER!
+Project-URL: Homepage, https://github.com/MMXXII2022/Environ
+Project-URL: Bug Tracker, https://github.com/MMXXII2022/Environ/issues/choose
+Project-URL: Examples, https://github.com/MMXXII2022/Environ/tree/main/examples
+Project-URL: Guide, https://github.com/MMXXII20222/Environ/wiki/guide
+Author: Rayaan khan
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: pycolortools==0.0.1
+Description-Content-Type: text/markdown
+
+# Environ
+Environ is a **python** framework built for you to manage your project in a few clicks, it creates an integrated file environment so your project can be awesome, a shell called EnvironShell which you can use to manage your project ALL IN ONE!
+
+
+How to access environshell:
+` python -m environ shell `
+
+
+A few EnvironShell commands:
+` help `,
+` crfile [FILENAME] [CONTENTS] `
+"Contents can contain \n to declare newlines"
+
+
+SHORT CHANGELOG:
+*NO CHANGES OR UPDATES*
