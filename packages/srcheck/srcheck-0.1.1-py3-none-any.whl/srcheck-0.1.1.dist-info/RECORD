@@ -1,0 +1,9 @@
+srcheck/__init__.py,sha256=oYNWFveqMrAE_9EtiImNtthThkMl_CG8EpD4AQu4eAY,802
+srcheck/check.py,sha256=K6_ZQsyRI8xmfBhuj95pKrqutM0NHbSFl8S-mcyKx7Q,376
+srcheck/datasets.py,sha256=DlyqRYuqB6U6VuclFyHtO9aFOFnx4io5HY71x1eI9zI,19
+srcheck/utils.py,sha256=tbw2LJ6MBIWIn2pBLYGRnP8XAYgHvRRLVtqrW_IiRcw,4179
+srcheck-0.1.1.dist-info/LICENSE,sha256=guaQY1yXLzZ8rzo8aGRu2hBwQpF7i7DAyEsqeHy3CQg,1077
+srcheck-0.1.1.dist-info/METADATA,sha256=0_VRU9Ly9b_dh0XqiTj0UnG5uSWbTHLglxRcXLeIGLE,6108
+srcheck-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+srcheck-0.1.1.dist-info/top_level.txt,sha256=8rYf-17-ba7r6_eCAWN9TFYtMVMf6bXQ8MOv_0uU5m8,8
+srcheck-0.1.1.dist-info/RECORD,,
