@@ -1,0 +1,5 @@
+numpy>=1.13
+scikit-learn>=0.18
+pandas>=0.19
+sympy
+tqdm>=4.14
