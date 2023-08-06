@@ -1,0 +1,3 @@
+[console_scripts]
+jackett-indexerarr=jackett_indexerarr.cli:app
+
