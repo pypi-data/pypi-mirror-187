@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+Dataway/Dataway.py
+dataway.egg-info/PKG-INFO
+dataway.egg-info/SOURCES.txt
+dataway.egg-info/dependency_links.txt
+dataway.egg-info/requires.txt
+dataway.egg-info/top_level.txt
