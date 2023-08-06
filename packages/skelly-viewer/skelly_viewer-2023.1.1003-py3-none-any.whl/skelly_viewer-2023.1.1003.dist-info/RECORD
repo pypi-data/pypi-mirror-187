@@ -1,0 +1,12 @@
+skelly_viewer/__init__.py,sha256=SweH9TDAK9jILGsVB_0AkaY0vwicEVJFR5USi-D6-PE,956
+skelly_viewer/__main__.py,sha256=bCPRJncxPjSyNQRQIabLp0g3cT1eisLF3hEd4CP1wis,334
+skelly_viewer/skelly_viewer.py,sha256=Gwf-N8Gl_RKL6iIwVTJdO46cCkzP02OoUGYe09okBJg,80
+skelly_viewer/test_test.py,sha256=uSHUk4SOvlB6hXEwdbkvvIEpShChg4mKKQZ1ffez_Fo,134
+skelly_viewer/system/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+skelly_viewer/system/default_paths.py,sha256=Q37iWNnDMpsn5Ff9e3q7owNmvzbZM_xtvRFXpP0fV8c,1425
+skelly_viewer/system/logging_configuration.py,sha256=A0xVIM4EflfiFRRy_pbhUeKiBIk-HXrIb6dQegC2lbI,1406
+skelly_viewer-2023.1.1003.dist-info/entry_points.txt,sha256=ndYmVMC7Fiqo96kR53EV5393tbwfZosDzoIgBSVL6Vg,61
+skelly_viewer-2023.1.1003.dist-info/LICENSE,sha256=wdNCrN4q2xxvcVXbrf5BFMAR3rQrDPDwVUOf-xAw8C4,1067
+skelly_viewer-2023.1.1003.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+skelly_viewer-2023.1.1003.dist-info/METADATA,sha256=9m5ZI1cNltRa_bg4lrq_SvkCxkDtub9x-uQw7Cs933M,1540
+skelly_viewer-2023.1.1003.dist-info/RECORD,,
