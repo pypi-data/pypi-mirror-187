@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: Topsis-Aadil-102017047
+Version: 0.0.1
+Summary: Useful in solving MCDM problems
+Author: Aadil Singh
+Author-email: aadilsandhu7@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# Topsis-Aadil-102017047
+
+It displays the TOPSIS ranking order of the input models.
+
+## Installation
+
+`pip install Topsis-Aadil-101953016`
+
+## How to use it?
+
+Usage: topsis <input_filename.csv> <"Weights"> <"Impacts"> <output_filename.csv>
+
+## License
+
+This repository is licensed under the MIT license. See LICENSE for details.
