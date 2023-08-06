@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: filestostorage
+Version: 0.0.2.1
+Summary: package for file storage
+Author: ngit_kmit
+Author-email: devikarubir@gmail.com
+Keywords: ngitkmit,store files,database,store,file,ngit,mongo,kmit
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+### filestostorage
+
+##### required packages
+`$ pip install pymongo`
+
+`$ pip install gridfs-fuse`
+
+#### installation
+`$ pip install filestostorage`
+
+project is still under development  :)
+currently supported for mongodb
+
+####usage
+
+```
+import filestostorage as fstr
+ 
+db = fstr.mongo_conn()   #connect to database via url
+fstr.upload_file("file_path","file_name",db) #command to upload file
+fstr.download_file("download_location","file_name",db)#to download file
+
+```
