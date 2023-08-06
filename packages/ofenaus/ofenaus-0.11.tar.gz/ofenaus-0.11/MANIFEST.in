@@ -1,0 +1,4 @@
+include ofenaus/requirements.txt
+include ofenaus/thirdparty.json
+include ofenaus/README.MD
+include ofenaus/LICENSE

@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+ofenaus/LICENSE
+ofenaus/README.MD
+ofenaus/__init__.py
+ofenaus/requirements.txt
+ofenaus/thirdparty.json
+ofenaus.egg-info/PKG-INFO
+ofenaus.egg-info/SOURCES.txt
+ofenaus.egg-info/dependency_links.txt
+ofenaus.egg-info/requires.txt
+ofenaus.egg-info/top_level.txt
