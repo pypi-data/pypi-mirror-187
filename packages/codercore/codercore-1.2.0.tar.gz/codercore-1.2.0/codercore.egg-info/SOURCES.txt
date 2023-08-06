@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+codercore/__init__.py
+codercore.egg-info/PKG-INFO
+codercore.egg-info/SOURCES.txt
+codercore.egg-info/dependency_links.txt
+codercore.egg-info/requires.txt
+codercore.egg-info/top_level.txt
+codercore/db/__init__.py
+codercore/db/models.py
+codercore/lib/__init__.py
+codercore/lib/redis.py
+codercore/lib/settings.py
+codercore/lib/version.py
+codercore/test/__init__.py
+codercore/test/fixtures.py
