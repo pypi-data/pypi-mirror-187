@@ -1,0 +1,4 @@
+pysteamauth>=1.0.0
+aiofiles>=22.1.0
+cssselect>=1.1.0
+lxml>=4.9.1
