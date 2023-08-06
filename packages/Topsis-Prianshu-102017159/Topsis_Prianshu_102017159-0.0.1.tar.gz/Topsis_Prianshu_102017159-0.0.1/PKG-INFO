@@ -1,0 +1,46 @@
+Metadata-Version: 1.1
+Name: Topsis_Prianshu_102017159
+Version: 0.0.1
+Summary: ### Package Description
+## Package to calculate TOPSIS score on a given data in csv format
+This package is an implementation to calculate the topsis score on a given data. It only takes command line arguments
+
+
+## Installation through PIP
+```bash
+pip install Topsis_Prianshu_102017159
+```
+## Running through Command line or terminal
+
+```bash
+python topsis <weights> <impacts> <output_file>
+```
+The weights has to be entered in separated by a comma
+```bash
+'1,1,1,1,1'
+'+,+,-,+,-'
+```
+## Parameters/Arguments
+```bash
+topsis <input_file> <weights> <impacts> <output_file>
+```
+
+## Returns
+Returns a pandas data frame saved in csv format in the given output file
+
+
+Home-page: UNKNOWN
+Author: Prianshu Jha
+Author-email: pjha1_be20@thapar.edu
+License: MIT
+Description: UNKNOWN
+Keywords: SOME,MEANINGFULL,KEYWORDS
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
