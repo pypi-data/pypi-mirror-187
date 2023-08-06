@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: tha-terragrunt
+Version: 0.1.8
+Summary: Module to execute and obtain terragrunt state in order to perform further operation on services' resources through the AWS API.
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: objectpath
+Requires-Dist: boto3
+Requires-Dist: pyhcl
+Requires-Dist: python-hcl2 (==4.2.0)
+Provides-Extra: dev
+Requires-Dist: bumpver ; extra == 'dev'
+Requires-Dist: pip-tools ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+
+## Module to execute and obtain terragrunt state in order to perform further operation on services' resources through the AWS API.
