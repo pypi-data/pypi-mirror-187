@@ -1,0 +1,6 @@
+pyproject.toml
+aws_config_checks/__init__.py
+aws_config_checks.egg-info/PKG-INFO
+aws_config_checks.egg-info/SOURCES.txt
+aws_config_checks.egg-info/dependency_links.txt
+aws_config_checks.egg-info/top_level.txt
