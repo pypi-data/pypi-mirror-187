@@ -1,0 +1,5 @@
+doc_extractor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+doc_extractor/extract.py,sha256=aHQEhiMZ0l3v-eFtms1TBUGBHqnZ18gqlKVnJ2J8Z_E,3246
+doc_extractor-0.2.3.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+doc_extractor-0.2.3.dist-info/METADATA,sha256=Z-1am-T6n6RAR-_NNb1BoFXAfS3wZae13l0Sbkc1JbM,599
+doc_extractor-0.2.3.dist-info/RECORD,,
