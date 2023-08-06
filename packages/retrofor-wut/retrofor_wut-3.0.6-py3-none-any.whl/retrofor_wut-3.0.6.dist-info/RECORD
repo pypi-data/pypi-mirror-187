@@ -1,0 +1,11 @@
+retrofor_wut/__init__.py,sha256=7Gz4Eqbd7LzUYvMATqHEdpXDrkisME-EQsr2pEoXacA,64
+retrofor_wut/main.py,sha256=nGf54gBO0ozbb8tDdCtKqvhbWCghbPewFrcg0FVeXRs,22
+retrofor_wut/adapter/__init__.py,sha256=pld3zYPNIuUQ66nSvvUe0pI2EALfkk31sdoY5SGCSx0,21
+retrofor_wut/adapter/onebot/__init__.py,sha256=yVvhfQ9mKw7htBiSdBUsnVO_l_Z8-Vq-5P4JbCsOlxQ,55
+retrofor_wut/adapter/onebot/bot.py,sha256=4B76FAmT3Irkf_-Gu95Y7oO1wDjWP8fDk3M-5xYydsM,5057
+retrofor_wut/adapter/onebot/obj.py,sha256=zvrDK7oXviAGiSyWyVMnez-wwhBQOvXZrbu9N5G4owU,4880
+retrofor_wut-3.0.6.dist-info/LICENSE,sha256=F6QoWtpDqYV6uPhHHutTPi8MF_lRY6qm9nyAugdsSlI,1071
+retrofor_wut-3.0.6.dist-info/METADATA,sha256=kU-l3C92FD6s5S-rG13TRETykzVdH1s_PFFWsxfj4V8,3873
+retrofor_wut-3.0.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+retrofor_wut-3.0.6.dist-info/top_level.txt,sha256=pmvWnthiNcwgefAy9b6qQmHfTvRWnjxLy8kPTQvtdoY,13
+retrofor_wut-3.0.6.dist-info/RECORD,,
