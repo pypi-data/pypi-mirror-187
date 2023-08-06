@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: Topsis-Siddhant-102003299
+Version: 0.0.1
+Summary: This is a package for python where user has to input the csv file and weight and impacts and get the topsis ranking as a csv file output
+Home-page: https://github.com/Siddhant2512/102003299-siddhant-topsis
+Author: Siddhant Aggarwal
+Author-email: saggarwal3_be20@thapar.edu
+License: MIT
+Keywords: Topsis,Ranking
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE
+
+UNKNOWN
+

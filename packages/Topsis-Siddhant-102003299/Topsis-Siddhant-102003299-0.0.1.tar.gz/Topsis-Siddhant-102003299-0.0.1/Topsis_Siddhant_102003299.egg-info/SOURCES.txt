@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+Topsis-Siddhant-102003299/102003299.py
+Topsis_Siddhant_102003299.egg-info/PKG-INFO
+Topsis_Siddhant_102003299.egg-info/SOURCES.txt
+Topsis_Siddhant_102003299.egg-info/dependency_links.txt
+Topsis_Siddhant_102003299.egg-info/requires.txt
+Topsis_Siddhant_102003299.egg-info/top_level.txt
