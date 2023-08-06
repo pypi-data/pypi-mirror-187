@@ -1,0 +1,79 @@
+stages:
+- test
+- build
+- release
+- upload
+
+
+## https://cylab.be/blog/18/gitlab-automatically-testing-your-python-project
+test:pylint:
+  stage: test
+  image: python:3.10
+  script:
+  - pip install pylint --quiet
+  - pylint --fail-under=8  --ignored-classes=_socketobject src/dokos/*.py
+
+## https://cylab.be/blog/44/easy-testing-with-python-doctest-and-gitlab
+test:doctest:
+  stage: test
+  image: python:3.10
+  script:
+  - python -m doctest -v src/dokos/dokos.py
+
+build:
+  stage: build
+  image: python:3.10
+  rules:
+    - if: $CI_COMMIT_TAG
+  artifacts:
+    paths:
+      - pyproject.toml
+      - dist
+  before_script:
+    # install envsubst
+    # python:3.10 is based on debian bullseye
+    - apt-get update
+    - apt-get install -y gettext-base
+    - apt-get install -y python3-venv 
+    - python3 -m pip install --upgrade build
+    - python3 -m pip install --upgrade twine
+  script:
+    # write VERSION file
+    - echo $CI_COMMIT_TAG > src/dokos/VERSION
+    # create the new pyproject.toml
+    - envsubst < pyproject.tmpl > pyproject.toml
+    - python3 -m build
+    # upload to pypi
+    - python3 -m twine upload dist/*
+    # packages are readable only by root
+    # => causes curl error at upload :-/
+    - chmod -R a+r dist
+
+release:
+  stage: release
+  image: registry.gitlab.com/gitlab-org/release-cli:latest
+  rules:
+    - if: $CI_COMMIT_TAG                 # Run this job when a tag is created
+  script:
+    - echo "running release_job"
+  release:                               # See https://docs.gitlab.com/ee/ci/yaml/#release for available properties
+    tag_name: '$CI_COMMIT_TAG'
+    description: '$CI_COMMIT_TAG'
+
+upload:
+  stage: upload
+  image: curlimages/curl:latest
+  rules:
+    - if: $CI_COMMIT_TAG
+  # we use the files created by the 'build' job
+  dependencies: 
+    - build
+  script:
+    - WHL_FILE="dokos-$CI_COMMIT_TAG-py3-none-any.whl"
+    - WHL_FILE_PATH="dist/$WHL_FILE"
+    - UPLOAD_URL="${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/dokos/$CI_COMMIT_TAG/$WHL_FILE"
+    - echo $UPLOAD_URL
+    - 'curl --header "JOB-TOKEN: $CI_JOB_TOKEN" --upload-file "$WHL_FILE_PATH" "$UPLOAD_URL"'
+
+
+
