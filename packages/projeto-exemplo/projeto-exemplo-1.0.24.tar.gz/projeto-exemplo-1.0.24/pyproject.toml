@@ -1,0 +1,36 @@
+[tool.pdm.version]
+source = "scm"
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest>=7.2.1",
+]
+formatter = [
+    "black>=22.12.0",
+]
+lint = [
+    "pylama>=8.4.1",
+]
+
+[project]
+name = "projeto-exemplo"
+dynamic = []
+description = "Projeto criado para ser exemplo de python package com PDM"
+authors = [
+    { name = "Werliton Gomes Barroso", email = "werliton.barroso@primecontrol.com.br" },
+]
+dependencies = [
+    "hvac>=1.0.2",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+version = "1.0.24"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0",
+]
+build-backend = "pdm.pep517.api"
