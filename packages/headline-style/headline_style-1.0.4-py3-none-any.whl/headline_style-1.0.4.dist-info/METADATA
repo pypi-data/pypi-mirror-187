@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: headline-style
+Version: 1.0.4
+Summary: About This filter changes a given text to Title Caps, and attempts to be clever about SMALL words like a/an/the in the input. The list of SMALL words which are not capped comes from the New York Times Manual of Style, plus some others like 'vs' and 'v'.
+Home-page: https://github.com/vinodbaste/python_headline_style
+Download-URL: https://github.com/vinodbaste/python_headline_style/archive/refs/heads/main.zip
+Author: Vinod Baste
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: regex (>=2020.4.4)
+
+file: README.rst
