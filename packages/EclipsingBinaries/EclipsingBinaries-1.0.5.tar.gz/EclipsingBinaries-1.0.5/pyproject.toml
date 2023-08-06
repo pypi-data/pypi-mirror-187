@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "EclipsingBinaries"
+version = "1.0.5"
+authors = [
+  { name="Kyle Koeller"},
+]
+description = "A Python project for Ball State University's Variable Star Research Group"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "astropy>=5.1.1",
+  "astroquery>=0.4.6",
+  "ccdproc>=2.4.0",
+  "matplotlib>=3.3.1",
+  "numpy>=1.19.1",
+  "pandas>=1.1.0",
+  "PyAstronomy>=0.18.0",
+  "scipy>=1.5.2",
+  "statsmodels>=0.13.5",
+  "tqdm>=4.64.1",
+  "numba>=0.56.3",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/kjkoeller/Binary_Star_Research_Package"
+"Bug Tracker" = "https://github.com/kjkoeller/Binary_Star_Research_Package/issues"
