@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: Topsis-Karan-102003355
+Version: 1.0.8
+Summary: Calculates Topsis Score and Rank them accordingly
+Author: Karan Singla
+Author-email: karansingla2123@gmail.com
+License: MIT
+Keywords: TOPSIS
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
