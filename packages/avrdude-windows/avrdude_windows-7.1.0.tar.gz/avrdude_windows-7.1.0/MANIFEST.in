@@ -1,0 +1,6 @@
+recursive-exclude avrdude_windows/
+include avrdude_windows/__init__.py
+include avrdude_windows/avrdude_binaries/x32/avrdude.exe
+include avrdude_windows/avrdude_binaries/x32/avrdude.conf
+include avrdude_windows/avrdude_binaries/x64/avrdude.exe
+include avrdude_windows/avrdude_binaries/x64/avrdude.conf

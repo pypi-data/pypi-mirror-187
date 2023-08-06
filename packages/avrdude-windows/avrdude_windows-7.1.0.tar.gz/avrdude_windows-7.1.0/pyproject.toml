@@ -1,0 +1,20 @@
+[project]
+name = "avrdude_windows"
+version = "7.1.0"
+description = "A pypi package containing avrdude binaries for Windows"
+readme = "README.md"
+classifiers = [
+    "Operating System :: Microsoft :: Windows",
+    "Topic :: Software Development :: Embedded Systems",
+    "License :: OSI Approved :: MIT License"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jeremyherbert/avrdude_windows_pypi"
+
+[tool.setuptools]
+packages = [
+    "avrdude_windows",
+    "avrdude_windows.avrdude_binaries.x32",
+    "avrdude_windows.avrdude_binaries.x64"
+]
