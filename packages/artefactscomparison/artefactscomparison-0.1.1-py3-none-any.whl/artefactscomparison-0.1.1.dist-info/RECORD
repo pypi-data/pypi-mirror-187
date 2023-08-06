@@ -1,0 +1,16 @@
+artefactscomparison/__init__.py,sha256=CtbKNVE_kXNFLi_7GqoBMBnOGLO_-ke_Yx2QXHkmL4w,52
+artefactscomparison/__main__.py,sha256=xhvEiE444etpnpEzpLGJcKsKv58SaK4soHYufF-Ebks,170
+artefactscomparison/cli.py,sha256=B56LdqGn8Mp9tVVrFDB6qTM_2WXlHss3sPtRqgt6Edc,869
+artefactscomparison/compare.py,sha256=VwGd9MSrWWlr9edPoj_46Nu5HyH20F5DGjpgHqbg9DU,4003
+artefactscomparison/csv_parser.py,sha256=W7hQcZQ715oiLz_G2qJW6mbRTDi0LMQaYEdhDLaYLiE,924
+artefactscomparison/report.py,sha256=7Cfcl8-7blf4tHyNiFe1ckem_hQPiDDpUYSs2NNA1LI,3624
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_compare.py,sha256=mn_mk0Tf7m7CcN6WB_LZdN_q8nxMncIhBiLAPaWmnmU,7737
+tests/test_csv_parser.py,sha256=8z78yCVYUgXAIBl2rdl951tKGfLxPDjFJHNjE67KMmM,1191
+tests/test_report.py,sha256=IqrXYK0S2QOPx9ynJU9H0G8BfIVI6fjouDX0WXNA_cs,3118
+artefactscomparison-0.1.1.dist-info/LICENSE,sha256=su5Db51XgwcfQuDhP1MWDhfM1MjR7Ic9Oj6Gr1H82s8,1081
+artefactscomparison-0.1.1.dist-info/METADATA,sha256=lkTdzI9jTJbjg_hRFmU0UeF125fJCgguC6Eaq6rU0jk,4158
+artefactscomparison-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+artefactscomparison-0.1.1.dist-info/entry_points.txt,sha256=YDjgHWkR0zJUPAwphNyUToU0-CKzxPNai-3tAApGges,86
+artefactscomparison-0.1.1.dist-info/top_level.txt,sha256=vOgiUAiwLMykT8pZ_RA9OVHCsZ6gbhlTZGIr8xJ-Uyo,26
+artefactscomparison-0.1.1.dist-info/RECORD,,
