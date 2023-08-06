@@ -1,0 +1,113 @@
+Metadata-Version: 2.1
+Name: Topsis-Ananya-102016083
+Version: 1.1.0
+Summary: A python package to carry out MCDM using TOPSIS on a dataset with given weights, impacts
+Home-page: UNKNOWN
+Author: Ananya Singh
+Author-email: Asingh19_be20@thapar.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+# TOPSIS-Python
+
+Submitted By: **Ananya Singh** <br>
+Roll Number: **102016083** <br>
+Batch: **3CS8**
+
+***
+pypi: <https://pypi.org/project/Topsis-Ananya-102016083>
+***
+
+## Installation
+```pip install Topsis-Ananya-102016083```
+
+## What is TOPSIS
+
+TOPSIS or Technique for Order Preference by Similarity to Ideal Solution is a method of compensatory aggregation that compares a set of alternatives by identifying weights for each criterion, normalising scores for each criterion and calculating the geometric distance between each alternative and the ideal alternative, which is the best score in each criterion
+
+<br>
+
+## How to use this package:
+
+Topsis-Ananya-102016083  can be run as in the following example:
+
+### In Command Prompt
+```
+>> python 102016083.py inputfile.csv "1,1,1,1,1" "-,+,+,+,+" outputfile.csv
+```
+where 102016083.py contains code for topsis.
+<br>
+
+## Working and functions
+
+Technique for Order Preference by Similarity to Ideal Solution (TOPSIS) is a multi-criteria-based decision-making method. TOPSIS chooses the alternative of shortest the Euclidean distance from the ideal solution and greatest distance from the negative ideal solution. 
+
+This following package uses a function topsis_score with 4 parameters: input,weights,impact,output.
+It generates an output.csv file using the Input.csv and the parameters weights and impact.
+Function normalised normalises the input dataframe.
+Function weighted multiplies the weights.
+Function checkparameters checks for all conditions to be checked.
+Function best returns best ideal value for each column depending on impact sign.
+Function worst returns worst ideal value for each column depending on impact sign.
+Function euclidean_dist returns euclidean distance value.
+
+<br>
+
+## Dataset
+
+Consider an input.csv file  
+First column of file is removed since it is the object/variable name.
+File has 3 or more columns.
+2nd to last column contains numeric values only.
+
+### input:
+
+```python
+topsis inputfile.csv "1,1,1,1,1" "-,+,+,+,+" outputfile.csv
+```
+
+### output:
+
+output.csv file will contain the input data along with columns of topsis score and rank.
+
+Weights `w` will be multiplied and are normalised using normalized function in the code.
+
+Information of benefit positive(+) or negative(-) impact criteria should be provided by impact `i`.
+
+<br>
+
+The rankings are stored in a csv file, with the 1st rank offering us the best decision, and last rank offering the worst decision making, according to TOPSIS method.
+
+## Debugging and Exception Handling
+> The program checks for the following cases:
+1. Correct number of parameters.
+2. Appropriate message for wrong input.
+3. Handling filenotfound error
+4. Number of weights, impacts and columns are same
+5. Impacts are '-' or '+', separated by ','
+
+## License
+Copyright 2023 Ananya Singh
+<br>
+This repository is licensed under the MIT license.
+<br>
+See LICENSE for details.
+[MIT](https://choosealicense.com/licenses/mit/)
+
