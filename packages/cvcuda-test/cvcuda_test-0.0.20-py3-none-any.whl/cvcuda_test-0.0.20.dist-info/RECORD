@@ -1,0 +1,15 @@
+README.md,sha256=YdLljD4e4LQ0fTMso2kFfL_SE9hMCZGBoFtw42fzjgU,4828
+build-rel/lib/libcvcuda.so,sha256=OTUQagezCIdVcyaFWLSM4WchU3Y1W4qNaSaqWj8c7hM,33611904
+build-rel/lib/libcvcuda.so.0,sha256=OTUQagezCIdVcyaFWLSM4WchU3Y1W4qNaSaqWj8c7hM,33611904
+build-rel/lib/libcvcuda.so.0.2.0,sha256=OTUQagezCIdVcyaFWLSM4WchU3Y1W4qNaSaqWj8c7hM,33611904
+build-rel/lib/libgmock.a,sha256=wtciudPSC0h4e_jXD4yDFoGxCduwwqMbg6QMUstj6k4,225722
+build-rel/lib/libgtest.a,sha256=OX_XGmjwQhZrRRDO-5Enm4ZKlxz8_c3gvHAY0lPt4lg,996958
+build-rel/lib/libnvcv_types.so,sha256=9lsNQDV-siC6Je0FpwF9HoobBPzX7OMrdGwN1_auDmU,2023288
+build-rel/lib/libnvcv_types.so.0,sha256=9lsNQDV-siC6Je0FpwF9HoobBPzX7OMrdGwN1_auDmU,2023288
+build-rel/lib/libnvcv_types.so.0.2.0,sha256=9lsNQDV-siC6Je0FpwF9HoobBPzX7OMrdGwN1_auDmU,2023288
+cvcuda.cpython-310-x86_64-linux-gnu.so,sha256=gwRrlK70voixf-Ez7Gtc4vPEwaUh8J-1i_crqpArmEs,2220040
+nvcv.cpython-310-x86_64-linux-gnu.so,sha256=ROZdZoxfBIo5G_1Bgoi5QwOj0WdoDLSiCIu96GMVOec,2803048
+cvcuda_test-0.0.20.dist-info/WHEEL,sha256=_LDBqpgIVFNHZvvFOGbg2pvJOENq6RHAyT5px-HeX0U,87
+cvcuda_test-0.0.20.dist-info/METADATA,sha256=j9gZUEwAdS6tYNJe54Lzt5uSkJ6c9ZYrd4B8TfIzQ8Y,5168
+cvcuda_test-0.0.20.dist-info/licenses/LICENSE.md,sha256=4_Ro9MewY9aYVdMk3cNjpoxLSOg_OxwMYvhcdJ30am0,10279
+cvcuda_test-0.0.20.dist-info/RECORD,,
