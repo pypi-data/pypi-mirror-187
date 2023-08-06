@@ -1,0 +1,8 @@
+iotitc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iotitc/bases_de_datos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iotitc/bases_de_datos/tools_influx.py,sha256=6Dr6MtZDtaDx5FqWrdJ_75WB6Rt1qrS42tYg0d5SW9Y,12733
+iotitc/raspberry/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iotitc/raspberry/tools_raspberry.py,sha256=Q6jvuRm8Znl213NsEfu1vyaQU4jgx_ZR4-ggUKYElAU,4217
+iotitc-1.0.1.dist-info/METADATA,sha256=fUSdLT8EvZs_EtkXw3gzWT7k72IBMDpHLR2FH73XF78,581
+iotitc-1.0.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+iotitc-1.0.1.dist-info/RECORD,,
