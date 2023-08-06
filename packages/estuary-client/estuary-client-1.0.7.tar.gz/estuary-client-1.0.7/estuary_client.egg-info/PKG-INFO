@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: estuary-client
+Version: 1.0.7
+Summary: Estuary API
+Home-page: 
+Author-email: 
+Keywords: Swagger,Estuary API
+
+    This is the API for the Estuary application.  # noqa: E501
+    
