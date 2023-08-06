@@ -1,0 +1,13 @@
+gig/__init__.py,sha256=vNDT4bJEyqImSup9HpK8z0pV62cyKzgEAi2Pe3gZNFQ,150
+gig/core/Ent.py,sha256=PYnXtLfeW7vyrZHx5Cnagc8tVu86uy07n4zmSxDHP-w,3623
+gig/core/EntBase.py,sha256=wKEJq-8_fuUQjglKzfngbt3D0KY0UpMjxRFR_PbVW-I,514
+gig/core/EntType.py,sha256=gDnI9bOe1k_hfh8bJISuN0olesD5ILt4_ujDWw0Vnxs,2036
+gig/core/GIGTable.py,sha256=WjmYTTsQA9UVCdwOFbZ5ZnAIEYFQaaC8Z0nUQ19NxhI,1206
+gig/core/GIGTableRow.py,sha256=LgqIqBp7oQSJ2GI7ZnzvdoIHJt7XI2XfcYBjHK8l9yE,1129
+gig/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gig/core/_common.py,sha256=7eikVvtsCoSPuU9gXW3iYtV1mU8iNS4KbnkSscWNAho,110
+gig_nuuuwan-3.0.1.dist-info/LICENSE,sha256=DfIcv5mgPaPf0aSleXQh9n8i2rYdxtNVawdbmpk94bU,1064
+gig_nuuuwan-3.0.1.dist-info/METADATA,sha256=RoTtfcu7ehv9zmkD3Rq2ZDpGTqQZ7GqOHW03ev_WaDw,581
+gig_nuuuwan-3.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+gig_nuuuwan-3.0.1.dist-info/top_level.txt,sha256=Ym2TTFSjTMxDIhlT9Ow26xXNsA43PyoZv75XwlcdRtA,4
+gig_nuuuwan-3.0.1.dist-info/RECORD,,
