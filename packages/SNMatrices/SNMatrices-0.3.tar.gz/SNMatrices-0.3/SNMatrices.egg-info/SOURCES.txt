@@ -1,0 +1,9 @@
+License.txt
+README.md
+pyproject.toml
+SNMatrices/__init__.py
+SNMatrices/operations.py
+SNMatrices.egg-info/PKG-INFO
+SNMatrices.egg-info/SOURCES.txt
+SNMatrices.egg-info/dependency_links.txt
+SNMatrices.egg-info/top_level.txt
