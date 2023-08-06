@@ -1,0 +1,2 @@
+[console_scripts]
+pydbk = pydbk.pydbk_cli:pydbk_cli
