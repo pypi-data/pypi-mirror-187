@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: filetostorage
+Version: 0.0.1
+Summary: mongodb file storing
+Author: Sahil Apte
+Author-email: devikarubir@gmail.com
+Keywords: ngitkmit,store files,database,store,file,ngit,mongo,kmit
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+A package which can be used to store files on mongodb
