@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+paramfittorchdemo/__init__.py
+paramfittorchdemo/_modidx.py
+paramfittorchdemo/models.py
+paramfittorchdemo/training.py
+paramfittorchdemo.egg-info/PKG-INFO
+paramfittorchdemo.egg-info/SOURCES.txt
+paramfittorchdemo.egg-info/dependency_links.txt
+paramfittorchdemo.egg-info/entry_points.txt
+paramfittorchdemo.egg-info/not-zip-safe
+paramfittorchdemo.egg-info/requires.txt
+paramfittorchdemo.egg-info/top_level.txt

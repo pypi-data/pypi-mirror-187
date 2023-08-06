@@ -1,0 +1,8 @@
+fastcore
+torch
+torchdiffeq
+matplotlib
+numpy
+
+[dev]
+nbdev
