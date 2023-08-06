@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: tfrq
+Version: 2.0.2
+Summary: A library to parallelize the execution of a function in python
+Home-page: UNKNOWN
+Author: Foad Abo Dahood
+Author-email: Foad.ad5491@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: futures (==2.2.0)
+
+UNKNOWN
+
