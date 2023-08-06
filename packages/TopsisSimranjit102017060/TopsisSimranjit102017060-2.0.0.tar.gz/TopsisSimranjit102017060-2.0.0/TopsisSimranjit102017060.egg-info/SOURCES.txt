@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+TopsisSimranjit102017060/__init__.py
+TopsisSimranjit102017060/__main__.py
+TopsisSimranjit102017060.egg-info/PKG-INFO
+TopsisSimranjit102017060.egg-info/SOURCES.txt
+TopsisSimranjit102017060.egg-info/dependency_links.txt
+TopsisSimranjit102017060.egg-info/top_level.txt
