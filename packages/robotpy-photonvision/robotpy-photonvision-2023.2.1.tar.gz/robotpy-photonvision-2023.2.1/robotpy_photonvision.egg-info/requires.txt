@@ -1,0 +1,4 @@
+pyntcore<2024.0.0,>=2023.2.1
+robotpy-apriltag<2024.0.0,>=2023.2.1
+robotpy-wpimath<2024.0.0,>=2023.2.1
+wpilib<2024.0.0,>=2023.2.1
