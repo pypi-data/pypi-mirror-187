@@ -1,0 +1,7 @@
+retro_pkg_test/__init__.py,sha256=jn4aEIAemvBzSQv60O6uvUkti7TH9hECP3yfgM3PnyI,24
+retro_pkg_test/hello.py,sha256=6cQvcOpaIHAfgPPUgSqJ5gtQPvDM6jtz_kUN8QG6gKE,32
+retro_pkg_test-3.dist-info/LICENSE,sha256=Hi81vYACWWR8-Oft-ABlVg56cdhI3gHuvnlv1t5F08Q,1066
+retro_pkg_test-3.dist-info/METADATA,sha256=8GjPitFshImLY2B2rJNgcDG3AYAcvgIGlwLOZTbwZnk,466
+retro_pkg_test-3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+retro_pkg_test-3.dist-info/top_level.txt,sha256=flnHA63mTX1B28K7mN_0nNVgzAIc_M0gow-r4XqhEzY,15
+retro_pkg_test-3.dist-info/RECORD,,
