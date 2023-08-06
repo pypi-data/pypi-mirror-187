@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pydevmgr_ua"
+version = "0.6a4"
+description = "pydevmgr plugin to handle opc-ua communication"
+license = "CeCILL Free Software License Agreement v2.1"
+authors = ["Sylvain Guieu <sylvain.guieu@univ-grenoble-alpes.fr>"]
+readme = "README.md"
+packages = [{include = "pydevmgr_ua"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pydevmgr-core = ">=0.6.a4"
+cryptography = "^39.0.0"
+opcua = "^0.98.13"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
