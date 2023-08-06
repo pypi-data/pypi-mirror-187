@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "TMKTprocess"
+version = "1.0.1"
+description = "An easyful thread runner"
+authors = ["ladettanguy <sti2dlab.ladettanguy@gmail.com>"]
+license = "Apache 2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
