@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: Topsis-Simran-102003160
+Version: 0.1
+Summary: Package for Technique for Order of Preference by Similarity to Ideal Solution, a multi-criteria decision analysis method.
+Author: Simran Kaur
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
+
