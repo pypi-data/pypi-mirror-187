@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: range-css-compiler
+Version: 0.0.0
+Summary: More intuitive HTML placement and assignment tool than CSS.
+Home-page: https://github.co.jp/
+Author: le_lattelle
+Author-email: g.tiger.ml@gmail.com
+License: CC0 v1.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Description-Content-Type: text/markdown
+Requires-Dist: relpath
+Requires-Dist: ezpip
+Requires-Dist: sout
+Requires-Dist: fies
+Requires-Dist: tqdm
+Requires-Dist: equid
+Requires-Dist: indent-template
+Requires-Dist: ezptn
+
+# range-css-compiler
+
+下の方に日本語の説明があります
+
+## Overview
+- More intuitive HTML placement and assignment tool than CSS.
+- Intuitive HTML alignment instructions with "Specify by Range".
+- Works by equational handling of assignment mutual binding of upper and lower levels of hierarchy like CAD.
+- under construction
+
+## Usage
+```python
+
+```
+
+
+## 概略
+- CSSよりも直感的なHTMLの配置・割り付けツール
+- 「範囲による指定」でHTMLの配置を直感的に指示できる
+- 上位・下位階層の割り付け相互束縛をCADのように方程式的に取り扱うことで動作する。
+- 説明文は執筆中です
+
+## 利用例
+```python
+```
+
+
