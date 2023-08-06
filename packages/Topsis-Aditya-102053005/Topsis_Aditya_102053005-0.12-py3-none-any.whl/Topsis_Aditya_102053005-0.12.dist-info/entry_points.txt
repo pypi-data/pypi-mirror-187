@@ -1,0 +1,2 @@
+[console_scripts]
+102053005 = Topsis_Aditya_102053005.102053005:main
