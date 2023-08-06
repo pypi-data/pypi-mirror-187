@@ -1,0 +1,9 @@
+requests>=2.27.*
+
+[dev]
+black==22.12.0
+coverage-badge==1.1.0
+mypy==0.991
+ruff==0.0.228
+pytest==7.2.1
+pytest-cov==4.0.0

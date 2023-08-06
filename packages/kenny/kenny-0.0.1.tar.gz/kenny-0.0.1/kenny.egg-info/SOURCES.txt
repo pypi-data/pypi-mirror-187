@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+kenny/__init__.py
+kenny.egg-info/PKG-INFO
+kenny.egg-info/SOURCES.txt
+kenny.egg-info/dependency_links.txt
+kenny.egg-info/requires.txt
+kenny.egg-info/top_level.txt
+kenny.egg-info/zip-safe
