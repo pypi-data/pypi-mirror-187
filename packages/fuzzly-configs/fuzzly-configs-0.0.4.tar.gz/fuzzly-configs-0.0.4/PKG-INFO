@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: fuzzly-configs
+Version: 0.0.4
+Summary: configs library for fuzz.ly
+Home-page: https://github.com/kheina-com/configs
+Author: kheina
+License: Mozilla Public License 2.0
+Requires-Python: >=3.9.*
+Description-Content-Type: text/markdown
+Provides-Extra: build
+License-File: LICENSE
