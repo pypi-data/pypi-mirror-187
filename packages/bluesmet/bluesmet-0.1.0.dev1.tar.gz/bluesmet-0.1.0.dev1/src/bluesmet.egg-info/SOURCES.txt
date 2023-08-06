@@ -1,0 +1,6 @@
+setup.py
+src/bluesmet.egg-info/PKG-INFO
+src/bluesmet.egg-info/SOURCES.txt
+src/bluesmet.egg-info/dependency_links.txt
+src/bluesmet.egg-info/requires.txt
+src/bluesmet.egg-info/top_level.txt
