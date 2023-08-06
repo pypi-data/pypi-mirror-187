@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: mkdocs-twincat-doc-plugin
+Version: 0.0.15
+Summary: MkDocs plugin to import retrieve docstrings from TwinCAT project objects and add to docs
+Home-page: https://github.com/TobiasFreyermuth/mkdocs-twincat-doc-plugin
+Author: Tobias Freyermuth
+Author-email: Tobias.Freyermuth@posteo.net
+License: MIT
+Keywords: mkdocs twincat
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: lxml (>=4.0.0)
+Provides-Extra: dev
+Requires-Dist: pytest (>=3.7) ; extra == 'dev'
+
+# mkdocs-twincat-doc-plugin
+MkDocs plugin to import retrieve docstrings from TwinCAT project objects and add to docs.
+
+
+
+# Developing mkdocs-twincat-doc-plugin
+
+To install mkdocs-twincat-doc-plugin, along with the tools you
+need to develop and run tests, run the following in your virtualenv:
+
+```bash
+$ pip install -e . [dev]
+```
