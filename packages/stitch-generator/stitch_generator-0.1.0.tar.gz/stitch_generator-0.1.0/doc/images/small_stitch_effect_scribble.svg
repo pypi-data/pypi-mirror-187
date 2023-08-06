@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="15mm" version="1.1" viewBox="0,0,80,15" width="80mm">
+    <defs>
+        <style type="text/css"><![CDATA[
+.stitch_line {
+    stroke-width: 0.3;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    fill: none;
+}
+.path_center_line {
+    fill: none;
+    stroke:#808080;
+    stroke-width: 0.2;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
+.path_contour {
+    fill: #808080;
+    fill-opacity: 0.3;
+    stroke: #808080;
+    stroke-opacity: 1;
+    stroke-width: 0.3;
+}
+.text{
+    text-anchor: middle;
+    dominant-baseline: middle;
+    font-family: sans-serif;
+    font-size: 1.5mm;
+}
+.smalltext{
+    text-anchor: middle;
+    dominant-baseline: middle;
+    font-family: sans-serif;
+    font-size: 1mm;
+}
+.color_0 {
+    stroke:#3bb2d0;
+}
+.dot_0 {
+    marker-start:url(#dot_0);
+    marker-mid:url(#dot_0);
+    marker-end:url(#dot_0);
+}
+]]></style>
+        <marker id="dot_0" markerHeight="3.0" markerWidth="3.0" refX="1.5" refY="1.5">
+            <circle cx="1.5" cy="1.5" fill="#3bb2d0" r="1.5"/>
+        </marker>
+    </defs>
+    <g>
+        <path class="stitch_line color_0 dot_0" d="M 5.000, 7.500  L 7.000, 7.704  L 10.000, 8.006  L 13.000, 8.294  L 16.000, 8.562  L 19.000, 8.803  L 22.000, 9.012  L 25.000, 9.187  L 28.000, 9.332  L 31.000, 9.452  L 34.000, 9.556  L 37.000, 9.651  L 40.000, 9.744  L 43.000, 9.836  L 46.000, 9.931  L 49.000, 10.033  L 52.000, 10.133  L 55.000, 10.216  L 58.000, 10.266  L 61.000, 10.275  L 64.000, 10.245  L 67.000, 10.187  L 70.000, 10.121  L 73.000, 10.069  L 75.000, 10.053  L 71.000, 10.084  L 68.000, 10.161  L 65.000, 10.259  L 62.000, 10.385  L 59.000, 10.547  L 56.000, 10.730  L 53.000, 10.904  L 50.000, 11.035  L 47.000, 11.095  L 44.000, 11.071  L 41.000, 10.963  L 38.000, 10.783  L 35.000, 10.555  L 32.000, 10.305  L 29.000, 10.053  L 26.000, 9.805  L 23.000, 9.573  L 20.000, 9.383  L 17.000, 9.259  L 14.000, 9.213  L 11.000, 9.240  L 8.000, 9.322  L 5.000, 9.433  L 9.000, 9.581  L 12.000, 9.669  L 15.000, 9.729  L 18.000, 9.765  L 21.000, 9.784  L 24.000, 9.801  L 27.000, 9.853  L 30.000, 9.957  L 33.000, 10.115  L 36.000, 10.312  L 39.000, 10.528  L 42.000, 10.740  L 45.000, 10.928  L 48.000, 11.076  L 51.000, 11.175  L 54.000, 11.225  L 57.000, 11.229  L 60.000, 11.197  L 63.000, 11.137  L 66.000, 11.047  L 69.000, 10.907  L 72.000, 10.699  L 75.000, 10.407  L 73.000, 10.166  L 70.000, 9.750  L 67.000, 9.300  L 64.000, 8.863  L 61.000, 8.483  L 58.000, 8.190  L 55.000, 7.989  L 52.000, 7.861  L 49.000, 7.776  L 46.000, 7.694  L 43.000, 7.580  L 40.000, 7.420  L 37.000, 7.213  L 34.000, 6.971  L 31.000, 6.724  L 28.000, 6.499  L 25.000, 6.324  L 22.000, 6.222  L 19.000, 6.212  L 16.000, 6.300  L 13.000, 6.472  L 10.000, 6.683  L 7.000, 6.881  L 5.000, 6.990 "/>
+    </g>
+</svg>

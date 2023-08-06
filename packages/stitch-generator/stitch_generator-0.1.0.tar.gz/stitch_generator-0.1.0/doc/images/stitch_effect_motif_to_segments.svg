@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="full" height="50mm" version="1.1" viewBox="0,0,200,50" width="200mm">
+    <defs>
+        <style type="text/css"><![CDATA[
+.stitch_line {
+    stroke-width: 0.3;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    fill: none;
+}
+.path_center_line {
+    fill: none;
+    stroke:#808080;
+    stroke-width: 0.2;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
+.path_contour {
+    fill: #808080;
+    fill-opacity: 0.3;
+    stroke: #808080;
+    stroke-opacity: 1;
+    stroke-width: 0.3;
+}
+.text{
+    text-anchor: middle;
+    dominant-baseline: middle;
+    font-family: sans-serif;
+    font-size: 1.5mm;
+}
+.smalltext{
+    text-anchor: middle;
+    dominant-baseline: middle;
+    font-family: sans-serif;
+    font-size: 1mm;
+}
+.color_0 {
+    stroke:#3bb2d0;
+}
+.dot_0 {
+    marker-start:url(#dot_0);
+    marker-mid:url(#dot_0);
+    marker-end:url(#dot_0);
+}
+]]></style>
+        <marker id="dot_0" markerHeight="3.0" markerWidth="3.0" refX="1.5" refY="1.5">
+            <circle cx="1.5" cy="1.5" fill="#3bb2d0" r="1.5"/>
+        </marker>
+    </defs>
+    <g>
+        <path class="stitch_line color_0 dot_0" d="M 10.000, 25.000  L 12.910, 26.385  L 15.873, 27.655  L 18.884, 28.806  L 21.939, 29.834  L 25.033, 30.738  L 28.161, 31.517  L 29.063, 28.942  L 30.882, 26.909  L 33.341, 25.726  L 36.065, 25.574  L 38.639, 26.477  L 40.673, 28.296  L 41.855, 30.754  L 42.007, 33.478  L 45.089, 33.618  L 48.174, 33.660  L 51.258, 33.611  L 54.341, 33.477  L 54.578, 30.757  L 55.838, 28.335  L 57.929, 26.579  L 60.532, 25.758  L 63.252, 25.995  L 65.674, 27.255  L 67.430, 29.346  L 68.252, 31.949  L 71.295, 31.446  L 74.331, 30.895  L 77.359, 30.302  L 80.379, 29.672  L 80.289, 26.942  L 81.251, 24.386  L 83.117, 22.392  L 85.605, 21.265  L 88.334, 21.175  L 90.891, 22.136  L 92.885, 24.003  L 94.012, 26.490  L 97.007, 25.748  L 100.000, 25.000  L 102.993, 24.252  L 105.988, 23.510  L 105.898, 20.780  L 106.859, 18.224  L 108.726, 16.230  L 111.214, 15.102  L 113.943, 15.012  L 116.500, 15.974  L 118.493, 17.840  L 119.621, 20.328  L 122.641, 19.698  L 125.669, 19.105  L 128.705, 18.554  L 131.748, 18.051  L 131.986, 15.331  L 133.246, 12.909  L 135.337, 11.153  L 137.940, 10.331  L 140.660, 10.569  L 143.082, 11.829  L 144.838, 13.920  L 145.659, 16.523  L 148.742, 16.389  L 151.826, 16.340  L 154.911, 16.382  L 157.993, 16.522  L 158.895, 13.947  L 160.714, 11.913  L 163.173, 10.731  L 165.897, 10.579  L 168.472, 11.482  L 170.505, 13.301  L 171.688, 15.759  L 171.839, 18.483  L 174.967, 19.262  L 178.061, 20.166  L 181.116, 21.194  L 184.127, 22.345  L 187.090, 23.615  L 190.000, 25.000 "/>
+    </g>
+</svg>
