@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/passeo/__init__.py
+src/passeo/main.py
+src/passeo.egg-info/PKG-INFO
+src/passeo.egg-info/SOURCES.txt
+src/passeo.egg-info/dependency_links.txt
+src/passeo.egg-info/entry_points.txt
+src/passeo.egg-info/requires.txt
+src/passeo.egg-info/top_level.txt
