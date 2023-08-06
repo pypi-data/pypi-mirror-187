@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: serotiny
+Version: 1.0.2.dev202301250058
+Summary: A framework of tools to structure, configure and drive deep learning projects
+License: BSD-3
+Author-email: Guilherme Pires <guilherme.pires@alleninstitute.org>,Ryan Spangler <ryan.spangler@alleninstitute.org>,Ritvik Vasan <ritvik.vasan@alleninstitute.org>,Theo Knijnenburg <theo.knijnenburg@alleninstitute.org>,Nick Gomez <nick.gomez@alleninstitute.org>,Caleb Chan <caleb.chan@alleninstitute.org>
+Requires-Python: >=3.8,<4.0
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: dev
+Provides-Extra: docs
+Provides-Extra: modin
+Provides-Extra: test
+Project-URL: documentation, https://allencell.github.io/serotiny
+Project-URL: homepage, https://allencell.github.io/serotiny
+Project-URL: repository, https://github.com/AllenCell/serotiny
+Description-Content-Type: text/markdown
+
+# serotiny
+
+`serotiny` is a collection of deep learning related tools and primitives, loosely meant
+to be used in projects started from [lightning-hydra-template](https://github.com/ashleve/lightning-hydra-template)
+
+For more information, check our [documentation](https://allencell.github.io/serotiny).
+
+## Authors
+
+- Guilherme Pires @colobas
+- Ryan Spangler @prismofeverything
+- Ritvik Vasan @ritvikvasan
+- Caleb Chan @calebium
+- Theo Knijnenburg @tknijnen
+- Nick Gomez @gomeznick86
+
+## Citing
+
+If you find serotiny useful, please cite this repository as:
+
+```
+Serotiny Authors (2022). Serotiny: a framework of tools to structure, configure and drive deep learning projects [Computer software]. GitHub. https://github.com/AllenCellModeling/serotiny
+Free software: BSD-3-Clause
+```
+
