@@ -1,0 +1,9 @@
+LICENSE,sha256=niWttjv-fJgf2MfOw167MU8XPxzCdgguFqWqERn1fX8,1322
+README.md,sha256=aHWYXncxjJOL-5qYQhujwajkR0j_O5XqvttmAjQeO1Y,288
+bgpneiget/__init__.py,sha256=b6-WiVk0Li5MaV2rBnHYl104TsouINojSWKqHDas0js,22
+bgpneiget/cli.py,sha256=q1Qaesg71qA1pWidqseUPIv3bydd0Wk-oE-jlyBjp-c,11722
+bgpneiget-1.1.0.dist-info/LICENSE,sha256=niWttjv-fJgf2MfOw167MU8XPxzCdgguFqWqERn1fX8,1322
+bgpneiget-1.1.0.dist-info/METADATA,sha256=525H5xPNvZ9_l3Fvp0ipJqMlqrQHTBgmsW7hBEBlP90,973
+bgpneiget-1.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+bgpneiget-1.1.0.dist-info/entry_points.txt,sha256=supPFREkMiUr7XfRO5gB_3mmLrCSQkS2Bjzws2DzC44,47
+bgpneiget-1.1.0.dist-info/RECORD,,
