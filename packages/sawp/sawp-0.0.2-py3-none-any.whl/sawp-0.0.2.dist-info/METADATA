@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: sawp
+Version: 0.0.2
+Summary: A client used for interacting with the Sunbelt API.
+Author-email: Jacob Bayer <jacobbenjaminbayer@gmail.com>
+Project-URL: Homepage, https://github.com/jacob-bayer/SAWP
+Project-URL: Bug Tracker, https://github.com/jacob-bayer/SAWP/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.TXT
+
+# SAWP
+Sunbelt API Wrapper for Python
+
+To install, simply run
+
+```
+pip install sawp
+```
