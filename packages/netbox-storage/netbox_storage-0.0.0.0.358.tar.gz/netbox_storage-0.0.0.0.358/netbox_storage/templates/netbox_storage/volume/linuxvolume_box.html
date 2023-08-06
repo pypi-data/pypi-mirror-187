@@ -1,0 +1,37 @@
+<div class="card">
+    <h5 class="card-header">Linux Volumes</h5>
+    <div class="card-body">
+        {% if volumes %}
+        <table class="table table-hover">
+            <tr>
+                <td>LV Name</td>
+                <td>VG Name</td>
+                <td>Filesystem</td>
+                <td>Total Size</td>
+                <td>Drive Identifier</td>
+                <td>Drive Size / Allocated</td>
+                <td>Drive Cluster</td>
+                <td>Drive Description</td>
+                <td>Manage Drives</td>
+                <td>Manage Volume</td>
+            </tr>
+            {% for partition in partitions %}
+            <tr>
+                <td>{{ partition.drive }}</td>
+                <td>{{ partition.device }}</td>
+                <td>{{ partition.size }}</td>
+                <td>{{ partition.type }}</td>
+                <td>{{ partition.device }}</td>
+                <td>{{ partition.description }}</td>
+            </tr>
+        </table>
+        {% else %}
+        <div class="text-muted">None</div>
+        {% endif %}
+    </div>
+    <div class="card-footer text-end noprint">
+        <a href="{% url 'plugins:netbox_storage:windowsvolume_add' %}" class="btn btn-sm btn-primary">
+            <span class="mdi mdi-plus-thick" aria-hidden="true"></span> Add Volume
+        </a>
+    </div>
+</div>
