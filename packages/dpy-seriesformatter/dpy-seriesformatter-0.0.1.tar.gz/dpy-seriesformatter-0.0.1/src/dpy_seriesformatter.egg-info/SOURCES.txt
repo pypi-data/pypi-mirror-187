@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/dpy_seriesformatter.egg-info/PKG-INFO
+src/dpy_seriesformatter.egg-info/SOURCES.txt
+src/dpy_seriesformatter.egg-info/dependency_links.txt
+src/dpy_seriesformatter.egg-info/requires.txt
+src/dpy_seriesformatter.egg-info/top_level.txt
+src/dpyseriesformatter/__init__.py
