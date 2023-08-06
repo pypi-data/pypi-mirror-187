@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: shell-genie
+Version: 0.1.2
+Summary: 
+Author: Dylan Castillo
+Author-email: dylanjcastillo@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: openai (>=0.26.1,<0.27.0)
+Requires-Dist: python-dotenv (>=0.21.1,<0.22.0)
+Requires-Dist: typer[all] (>=0.7.0,<0.8.0)
+Description-Content-Type: text/markdown
+
+# 🧞‍♂️ Shell Genie
+
+_Your wishes are my commands._
+
+Shell Genie is a command line assistant that helps you to use the command line like a pro.
+
