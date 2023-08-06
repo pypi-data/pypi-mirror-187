@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: TOPSIS-INAYAT-102183050
+Version: 0.1
+Summary: A package -> Calculates Topsis Score and Rank them accordingly
+Home-page: https://github.com/inayat0203/TOPSIS_INAYAT_102183050
+Author: Inayat
+Author-email: inayat0203@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+Requires-Dist: pandas
+
+
+# TOPSIS
+
+Submitted By: **INAYAT**.
+
+Type: **Package**.
+
+Title: **TOPSIS method for multiple-criteria decision making (MCDM)**.
+
+Version: **0.1**.
+
+Date: **2023-01-21**.
+
+Author: **INAYAT**.
+
+Maintainer: **INAYAT <inayat0203@gmail.com>**.
+
+Description: **Evaluation of alternatives based on multiple criteria using TOPSIS method.**.
+
+---
+
+## What is TOPSIS?
+
+**T**echnique for **O**rder **P**reference by **S**imilarity to **I**deal **S**olution
+(TOPSIS) originated in the 1980s as a multi-criteria decision making method.
+TOPSIS chooses the alternative of shortest Euclidean distance from the ideal solution,
+and greatest distance from the negative-ideal solution.
+
+<br>
+
+## How to install this package:
+
+```
+>> pip install TOPSIS_INAYAT_102183050
+```
+
+### In Command Prompt
+
+```
+>> mytopsis inputdata.csv "1,1,1,1,1" "+,+,+,-,+" result.csv

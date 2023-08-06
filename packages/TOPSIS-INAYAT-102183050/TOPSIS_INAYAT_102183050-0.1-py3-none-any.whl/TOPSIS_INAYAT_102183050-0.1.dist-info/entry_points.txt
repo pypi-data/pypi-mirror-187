@@ -1,0 +1,2 @@
+[console_scripts]
+mytopsis = TOPSIS_INAYAT_102183050.mytopsis:main
