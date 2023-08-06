@@ -1,0 +1,8 @@
+gprint/__init__.py,sha256=f0LzzX7oV4W1iXAjqxCXjBoZ5lpoCcjJ4d0cbu39cYo,77
+gprint/gprint.py,sha256=Wgm4mNKDobNPd432ldyWBqTmD3T6fVxhJ8NI7D1vKpA,11508
+gprint/test_gprint.py,sha256=lcqeHcDGpW28zl1Yih7DYqNB8yscVJa8-V-PPxyL_Wg,887
+gprint-0.0.9.dist-info/LICENSE,sha256=DIMcMJOPd3-rhSJfUzDL-eblaU8y04TbOY2Q16AN7zs,1066
+gprint-0.0.9.dist-info/METADATA,sha256=emnOSkPdhZXeyclPdYxe6ljhT6FycRWlZPRQpgOAa9A,3073
+gprint-0.0.9.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+gprint-0.0.9.dist-info/top_level.txt,sha256=FvnFWkksIqeaQphD9fEP4iq1yMwxObYE8xhNbJUexjc,7
+gprint-0.0.9.dist-info/RECORD,,
