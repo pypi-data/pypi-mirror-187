@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: Suddhasattwa-Khan-102003687
+Version: 0.0.1
+Summary: A python package to implement topsis
+Home-page: UNKNOWN
+Author: Suddhasattwa Khan
+License: UNKNOWN
+Keywords: topsis_suddhasattwa_khan_102003687,topsis-suddhasattwa-102003687,topsis,Maths
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: logging
+Requires-Dist: numpy
+
+# Topsis implemented by Suddhasattwa Khan 102003687
+
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)  
+[![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
+
+## Functionality of the Package
+
+- Outputs the result(topsis score) and ranking of items in output.csv file you will mention in terminal or command promt
+- Inputs the file path of input csv file in terminal
+
+## Example
+
+```
+#test.py
+##
+type:
+from topsis_suddhasattwa_khan_102003687 import topsis
+n=len(sys.argv)
+inputFile= sys.argv[1]
+weight=sys.argv[2]
+impact=sys.argv[3]
+outputFile=sys.argv[4]
+# topsis(inputFile, weight, impact, outputFile)
+```
+
+## Usage
+
+- Make sure you have Python installed in your system.
+- Run Following command in the CMD.
+
+```
+ pip install topsis_suddhasattwa_khan_102003687
+```
+
+## Run the following Script.
+
+```
+ python setup.py <inputfile.csv> weight impact <outputfile.csv>
+```
+
+## Note
+
+- I have tried to implement all the functionality, it might have some bugs also. Ignore that or please try to solve that bug.
+
+
