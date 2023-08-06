@@ -1,0 +1,12 @@
+License.txt
+README.md
+pyproject.toml
+sam_games/Rock_Paper_Scissor.py
+sam_games/__init__.py
+sam_games/sam_games.__main__.py
+sam_games/snake.py
+sam_games/tict_tack_toe.py
+sam_games.egg-info/PKG-INFO
+sam_games.egg-info/SOURCES.txt
+sam_games.egg-info/dependency_links.txt
+sam_games.egg-info/top_level.txt
