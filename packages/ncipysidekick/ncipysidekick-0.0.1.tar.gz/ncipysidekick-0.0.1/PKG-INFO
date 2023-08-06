@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ncipysidekick
+Version: 0.0.1
+Summary: Empower AI python package for Advises
+Author-email: Empower AI <questions@empower.ai>
+Project-URL: Homepage, https://www.empower.ai/
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# ncipysidekick Package
+
+For questions contact questions@empower.ai

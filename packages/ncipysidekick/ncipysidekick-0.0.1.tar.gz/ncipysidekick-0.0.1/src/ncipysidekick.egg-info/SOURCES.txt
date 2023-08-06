@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/ncipysidekick/__init__.py
+src/ncipysidekick/example.py
+src/ncipysidekick.egg-info/PKG-INFO
+src/ncipysidekick.egg-info/SOURCES.txt
+src/ncipysidekick.egg-info/dependency_links.txt
+src/ncipysidekick.egg-info/top_level.txt
