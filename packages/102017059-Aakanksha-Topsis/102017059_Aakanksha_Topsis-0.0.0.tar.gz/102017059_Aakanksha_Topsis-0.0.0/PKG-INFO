@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: 102017059_Aakanksha_Topsis
+Version: 0.0.0
+Summary: Topsis Implementation
+Home-page: https://github.com/aakanksha-17/102017059_Aakanksha_Topsis.git
+Author: Aakanksha Pandey
+Author-email: apandey1_be20@thapar.edu
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# 102017059_Aakanksha_Topsis
+
+This package is implementation of multi-criteria decision analysis using topsis. This package will accept three arguments during file execution:
+
+dataset.csv //file which contains the models and parameters
+string of weights separated by commas(,)
+string of requirements (+/-) separated by commas(,) // important install pandas,sys,operator and math libraries before installing this // You can install this package using following command pip install 102017059_Aakanksha_Topsis
