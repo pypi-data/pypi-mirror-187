@@ -1,0 +1,52 @@
+{% extends 'layouts/app.html' %}
+
+{% from 'macros/user_interface.html' import floatingButton, activeButton, actionButton, actionModal %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="col s12 m10 offset-m1">
+            <div class="card rounded">
+                <div class="card-content">
+                    <span class="card-title center-align black-text">{{ title }}</span>
+                    {% if menu_categories %}
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Menu Type</th>
+                                <th>ShortName</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>Active</th>
+                                <th>Actions</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for menu_category in menu_categories|sort(attribute="menu_type.name")|sort(attribute="name") %}
+                                <tr>
+                                    <td>{{ menu_category.menu_type.name }}</td>
+                                    <td>{{ menu_category.short_name }}</td>
+                                    <td>{{ menu_category.name }}</td>
+                                    <td>{{ menu_category.description }}</td>
+                                    <td>
+                                        {{ activeButton(url_for('admin.menu.toggle_category', mc_id=menu_category.id), menu_category.active) }}
+                                    </td>
+                                    <td>
+                                        {{ actionButton(url_for('admin.menu.categories_edit', mc_id=menu_category.id), 'edit', 'blue') }}
+                                        {{ actionButton('#deleteMenuCategory'+menu_category.id|string, 'delete', 'red', for_modal=True) }}
+                                </tr>
+                                {{ actionModal('deleteMenuCategory'+menu_category.id|string, 'red', 'Delete '+menu_category.name, url_for('admin.menu.categories_delete', mc_id=menu_category.id)) }}
+                            {% endfor %}
+
+                            </tbody>
+                        </table>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{ floatingButton(url_for('admin.menu.categories_add'), 'add', 'yellow accent-4', 'black-text') }}
+
+
+{% endblock %}

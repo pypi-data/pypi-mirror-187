@@ -1,0 +1,53 @@
+{% extends 'layouts/app.html' %}
+
+{% from 'macros/user_interface.html' import clickableCard %}
+
+{% block content %}
+
+    <section class="options-window">
+        {% for menu_item in menu_items|sort(attribute='name') %}
+            {{ clickableCard('#quantityModal'+menu_item.name, menu_item.name, True) }}
+            <div id="quantityModal{{ menu_item.name }}"
+                 class="modal keypad-modal">
+                <div class="modal-content">
+                    <form class="number-keypad"
+                          action="{{ url_for('pos.order_add_item', order_id=order.id, menu_item_id=menu_item.id) }}"
+                          method="post" autocomplete="off">
+                        {{ form.hidden_tag() }}
+                        <div class="number-keypad-display">
+                            {{ form.quantity(id=menu_item.name + 'Quantity') }}
+                        </div>
+                        <div class="number-keypad-keys">
+                            <input type="button" value="7"
+                                   onclick="addNumber(this, '{{ menu_item.name + "Quantity" }}')">
+                            <input type="button" value="8"
+                                   onclick="addNumber(this, '{{ menu_item.name + "Quantity" }}')">
+                            <input type="button" value="9"
+                                   onclick="addNumber(this,'{{ menu_item.name + "Quantity" }}')">
+                            <input type="button" value="4"
+                                   onclick="addNumber(this,'{{ menu_item.name + "Quantity" }}')">
+                            <input type="button" value="5"
+                                   onclick="addNumber(this,'{{ menu_item.name + "Quantity" }}')">
+                            <input type="button" value="6"
+                                   onclick="addNumber(this,'{{ menu_item.name + "Quantity" }}')">
+                            <input type="button" value="1"
+                                   onclick="addNumber(this,'{{ menu_item.name + "Quantity" }}')">
+                            <input type="button" value="2"
+                                   onclick="addNumber(this,'{{ menu_item.name + "Quantity" }}')">
+                            <input type="button" value="3"
+                                   onclick="addNumber(this,'{{ menu_item.name + "Quantity" }}')">
+                            <button type="reset" class="red"><i class="material-icons">delete</i></button>
+                            <input type="button" value="0"
+                                   onclick="addNumber(this, '{{ menu_item.name + "Quantity" }}')">
+                            <button type="submit" class="green"><i class="material-icons">keyboard_return</i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        {% endfor %}
+    </section>
+
+
+
+{% endblock %}

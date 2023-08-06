@@ -1,0 +1,32 @@
+<div class="order-info grey lighten-2 hide-on-tablet">
+    <dl class="my0">
+        <dt>Sub-Total:</dt>
+        <dd class="mx0">{{ format_currency(order.order_subtotal()) }}</dd>
+        <dt>Discount:</dt>
+        <dd class="mx0">$0000.00</dd>
+        <dt>TAX(8.25%):</dt>
+        <dd class="mx0">{{ format_currency(order.order_tax_total()) }}</dd>
+    </dl>
+    {#    <ul class="my0">#}
+    {#        <li>#}
+    {#            <pre>Sub-Total:#}
+    {#                <span class="right">{{ format_currency(order.order_subtotal()) }}</span>#}
+    {#            </pre>#}
+    {#        </li>#}
+    {#        <li>#}
+    {#            <pre>Discount:#}
+    {#                <span class="right">0.00</span>#}
+    {#            </pre>#}
+    {#        </li>#}
+    {#        <li>#}
+    {#            <pre>Tax(8.25%):#}
+    {#                <span class="right">{{ format_currency(order.order_tax_total()) }}</span>#}
+    {#            </pre>#}
+    {#        </li>#}
+    {#                <li>#}
+    {#                    <pre class="my0">Total:#}
+    {#                        <span class="right">{{ format_currency(order.order_total()) }}</span>#}
+    {#                    </pre>#}
+    {#                </li>#}
+    {#    </ul>#}
+</div>

@@ -1,0 +1,55 @@
+{% extends 'layouts/app.html' %}
+
+{% from 'macros/user_interface.html' import activeButton, actionButton, floatingButton %}
+
+
+{% block content %}
+
+    <section>
+        <div class="row">
+            <div class="col s12 m6 offset-m3">
+                <div class="card rounded">
+                    <div class="card-content">
+                        <span class="card-title center-align">Ingredients</span>
+                        {% if ingredients %}
+                            <table class="centered">
+                                <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Active</th>
+                                    <th>Is Addon</th>
+                                    <th>Actions</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for ingredient in ingredients|sort(attribute='name') %}
+                                    <tr>
+                                        <td>{{ ingredient.name }}</td>
+                                        <td>
+                                            {{ activeButton(url_for('admin.menu.ingredients_active_toggle', ingredient_id=ingredient.id), ingredient.active) }}
+                                        </td>
+                                        <td>
+                                            {{ activeButton(url_for('admin.menu.ingredients_addon_toggle', ingredient_id=ingredient.id), ingredient.addon) }}
+                                        </td>
+                                        <td>
+                                            {{ actionButton(url_for('admin.menu.ingredients_delete', ingredient_id=ingredient.id), 'delete', 'red') }}
+                                            {{ actionButton(url_for('admin.menu.ingredients_edit', ingredient_id=ingredient.id), 'edit', 'blue') }}
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        {% else %}
+                            <p class="center-align">No Ingredients Available</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{ floatingButton(url_for('admin.menu.ingredients_add'), 'add') }}
+
+
+
+{% endblock %}

@@ -1,0 +1,49 @@
+<div class="order-settings">
+    <a href="#CustomerSearchModal"
+       class="btn-floating {{ 'grey darken-4' if order.has_customer() else 'blue' }} accent-4 my-small modal-trigger">
+        <i class="material-icons">contacts</i>
+    </a>
+    <a href="" class="btn-floating red accent-4 my-small">
+        <i class="material-icons">discount</i>
+    </a>
+    <a href="{{ url_for('pos.create_order_section', order_id=order.id) if last_order_section.has_items() else '' }}"
+       class="btn-floating my-small {{ 'blue-grey' if last_order_section.has_items() else 'grey darken-4' }}">
+        <i class="material-icons">new_label</i>
+    </a>
+    <div id="CustomerSearchModal"
+         class="modal keypad-modal">
+        <div class="modal-content white-text p0">
+            <form class="number-keypad"
+                  action="{{ url_for('pos.order_add_customer', order_id=order.id) }}"
+                  method="post" autocomplete="off">
+                {{ phone_search_form.hidden_tag() }}
+                <div class="number-keypad-display">
+                    {{ phone_search_form.phone(id='CustomerSearch') }}
+                </div>
+                <div class="number-keypad-keys">
+                    <input type="button" value="7"
+                           onclick="addNumber(this, 'CustomerSearch')">
+                    <input type="button" value="8"
+                           onclick="addNumber(this, 'CustomerSearch')">
+                    <input type="button" value="9"
+                           onclick="addNumber(this, 'CustomerSearch')">
+                    <input type="button" value="4"
+                           onclick="addNumber(this,'CustomerSearch')">
+                    <input type="button" value="5"
+                           onclick="addNumber(this,'CustomerSearch')">
+                    <input type="button" value="6"
+                           onclick="addNumber(this,'CustomerSearch')">
+                    <input type="button" value="1"
+                           onclick="addNumber(this,'CustomerSearch')">
+                    <input type="button" value="2"
+                           onclick="addNumber(this,'CustomerSearch')">
+                    <input type="button" value="3"
+                           onclick="addNumber(this,'CustomerSearch')">
+                    <button type="reset" class="red"><i class="material-icons">delete</i></button>
+                    <input type="button" value="0" onclick="addNumber(this, 'CustomerSearch')">
+                    <button type="submit" class="green"><i class="material-icons">keyboard_return</i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

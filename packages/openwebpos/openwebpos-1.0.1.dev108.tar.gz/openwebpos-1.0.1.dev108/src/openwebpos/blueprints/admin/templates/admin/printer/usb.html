@@ -1,0 +1,57 @@
+{% extends 'layouts/app.html' %}
+
+{% from 'macros/user_interface.html' import floatingButton, activeButton, actionButton %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="col s12 m10 offset-m1">
+            <div class="card rounded">
+                <div class="card-content">
+                    <span class="card-title center-align">{{ title }}</span>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Branch</th>
+                            <th>Name</th>
+                            <th>VendorID</th>
+                            <th>ProductID</th>
+                            <th>Timeout</th>
+                            <th>InEndpoint</th>
+                            <th>OutEndpoint</th>
+                            <th>Active</th>
+                            <th>Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for printer in printers %}
+                            <tr>
+                                <td>{{ printer.branch.name }}</td>
+                                <td>{{ printer.name }}</td>
+                                <td>{{ printer.idVendor }}</td>
+                                <td>{{ printer.idProduct }}</td>
+                                <td>{{ printer.timeout }}</td>
+                                <td>{{ printer.in_endpoint }}</td>
+                                <td>{{ printer.out_endpoint }}</td>
+                                <td>{{ activeButton(url_for('admin.printer.usb_toggle', p_id=printer.id), printer.active) }}</td>
+                                <td>
+                                    <a href="{{ url_for('admin.printer.usb_edit', p_id=printer.id) }}"
+                                       class="btn-floating btn-small waves-effect waves-light blue"><i
+                                            class="material-icons">edit</i></a>
+                                    <a href="{{ url_for('admin.printer.usb_delete', p_id=printer.id) }}"
+                                       class="btn-floating btn-small waves-effect waves-light red"><i
+                                            class="material-icons">delete</i></a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{ floatingButton(url_for('admin.printer.usb_add'), 'add') }}
+
+
+{% endblock %}

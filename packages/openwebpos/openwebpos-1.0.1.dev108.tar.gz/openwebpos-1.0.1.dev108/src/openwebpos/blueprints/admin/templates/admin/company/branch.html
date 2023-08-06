@@ -1,0 +1,70 @@
+{% extends 'layouts/app.html' %}
+
+
+{% block content %}
+
+    <div class="row">
+        <div class="col s12 m10 offset-m1">
+            <div class="card rounded">
+                <div class="card-content">
+                    <span class="card-title center-align">{{ branch.name }}</span>
+                    <form action="" method="POST">
+                        {{ branch_form.hidden_tag() }}
+                        <div class="row">
+                            <div class="col s12 m6 offset-m3 input-field">
+                                {{ branch_form.name.label }}
+                                {{ branch_form.name(class="validate") }}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 m4 input-field">
+                                {{ branch_form.address.label }}
+                                {{ branch_form.address(class="validate") }}
+                            </div>
+                            <div class="col s12 m3 input-field">
+                                {{ branch_form.city.label }}
+                                {{ branch_form.city(class="validate") }}
+                            </div>
+                            <div class="col s12 m1 input-field">
+                                {{ branch_form.state.label }}
+                                {{ branch_form.state(class="validate") }}
+                            </div>
+                            <div class="col s12 m2 input-field">
+                                {{ branch_form.zip_code.label }}
+                                {{ branch_form.zip_code(class="validate") }}
+                            </div>
+                            <div class="col s12 m2 input-field">
+                                {{ branch_form.country.label }}
+                                {{ branch_form.country(class="validate") }}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 m4 input-field">
+                                {{ branch_form.phone.label }}
+                                {{ branch_form.phone() }}
+                            </div>
+                            <div class="col s12 m4 input-field">
+                                {{ branch_form.fax.label }}
+                                {{ branch_form.fax() }}
+                            </div>
+                            <div class="col s12 m4 input-field">
+                                {{ branch_form.email.label }}
+                                {{ branch_form.email() }}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 m6 offset-m3 input-field">
+                                {{ branch_form.website.label }}
+                                {{ branch_form.website() }}
+                            </div>
+                        </div>
+                        <div class="center-align">
+                            {{ branch_form.submit(class="btn rounded yellow black-text btn-large waves-effect waves-light") }}
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
