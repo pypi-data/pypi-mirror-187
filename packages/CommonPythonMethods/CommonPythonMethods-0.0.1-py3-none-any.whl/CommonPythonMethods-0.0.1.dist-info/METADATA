@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: CommonPythonMethods
+Version: 0.0.1
+Summary: CommonPythonMethods
+Author: Ritika
+Author-email: ritika.kumar90@gmail.com
+Keywords: arithmetic,CommonKeywords,mathematics,python tutorial,Ritika kumar
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+A package for common methods
