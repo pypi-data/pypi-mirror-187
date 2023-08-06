@@ -1,0 +1,54 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+# pylint: disable=C0115,C0116
+
+
+"irc bot"
+
+
+import os
+import sys
+import termios
+import traceback
+
+
+from bot.command import *
+from bot.message import Event
+from bot.handler import Command, Handler
+from bot.modules import *
+from bot.objects import Wd, cdir
+from bot.runtime import Cfg, boot, command, wait, wrap
+from bot.scanner import scan, scanner, scanpkg
+from bot.service import irc, rss
+from bot.utility import privileges
+
+
+Wd.workdir = "/var/lib/botd/"
+
+
+scan(cmd)
+scan(irc)
+scan(rss)
+scan(thr)
+
+
+class CLI(Handler):
+
+    @staticmethod
+    def announce(txt):
+        pass
+
+    @staticmethod
+    def raw(txt):
+        print(txt)
+        sys.stdout.flush()
+
+
+
+def main():
+    privileges("botd")
+    cli = CLI()
+    command(" ".join(sys.argv[1:]), cli)
+    
+
+wrap(main)
