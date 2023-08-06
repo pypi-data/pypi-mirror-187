@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: avrdude-windows
+Version: 0.1.0
+Project-URL: Homepage, https://github.com/jeremyherbert/avrdude_windows_pypi
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Software Development :: Embedded Systems
+License-File: LICENSE
+
