@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+coldwavebook/__init__.py
+coldwavebook.egg-info/PKG-INFO
+coldwavebook.egg-info/SOURCES.txt
+coldwavebook.egg-info/dependency_links.txt
+coldwavebook.egg-info/requires.txt
+coldwavebook.egg-info/top_level.txt
