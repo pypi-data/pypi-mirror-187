@@ -1,0 +1,5 @@
+numpy
+pandas
+pandera
+sqlalchemy
+testing.postgresql
