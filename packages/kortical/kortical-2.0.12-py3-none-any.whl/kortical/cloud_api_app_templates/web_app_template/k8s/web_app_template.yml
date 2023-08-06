@@ -1,0 +1,62 @@
+kind: Service
+metadata:
+  name: web-app-template-svc
+spec:
+  type: ClusterIP
+  selector:
+    app: web-app-template
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: webapp
+---
+kind: StatefulSet
+metadata:
+  name: web-app-template
+  labels:
+    app: web-app-template
+spec:
+  selector:
+    matchLabels:
+      app: web-app-template
+  securityContext:
+    runAsUser: kortical
+  replicas: 1
+  podManagementPolicy: Parallel
+  template:
+    metadata:
+      labels:
+        app: web-app-template
+    spec:
+      terminationGracePeriodSeconds: 1
+      containers:
+        - name: web-app-template
+          image: eu.gcr.io/kloud-238615/module_placeholder:v29
+          imagePullPolicy: Always
+          command: [ "run-cmd.sh" ]
+          args: [ "uwsgi",
+                  "--lazy-apps",
+                  "--master",
+                  "--http", ":5000",
+                  "--http-keepalive",
+                  "--http-timeout", "1800000",
+                  "--die-on-term",
+                  "--buffer-size", "32768",
+                  "--reload-on-rss", "4096",
+                  "--mount", "/=module_placeholder.main:app",
+                  "--wsgi-disable-file-wrapper",
+                  "--enable-threads", ]
+          ports:
+            - containerPort: 5000
+              name: webapp
+              protocol: TCP
+          startupProbe:
+            httpGet:
+              path: /health
+              port: webapp
+              scheme: HTTP
+            initialDelaySeconds: 5
+            timeoutSeconds: 4
+            failureThreshold: 30
+            periodSeconds: 5
