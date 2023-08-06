@@ -1,0 +1,17 @@
+ccres_weather_station/__init__.py,sha256=CuCfT3KbRQFaFSj1rJgq9GddXXuFsXgto9QGaVfjAFQ,211
+ccres_weather_station/ccres_weather_station.py,sha256=h0hwdogXGFqerm-5ZPeT-irPn91pCcQRjiHThXsRzEk,19
+ccres_weather_station/types.py,sha256=7WEl4Hk-QXqb3pbesDj2lYGzH4OHWHmSVa_zIrKgBqU,79
+ccres_weather_station/cli/cli.py,sha256=gl23xFVc8vPc-3g-_xM1TS1Tbm6JlSfXOZnAv4GYWCc,298
+ccres_weather_station/config/config.py,sha256=20nvCFGJoPADoQsWf7pAv20PNPnxRHDsc9Lt-2O3KyE,1869
+ccres_weather_station/readers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ccres_weather_station/readers/base.py,sha256=xlSKZC3EhCjuot7VfLGR1mx0uImfl3dKpLB_Xwe_ewA,287
+ccres_weather_station/readers/constants.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ccres_weather_station/readers/register.py,sha256=rGBBhRosSJjIEaAX94ohw-P5c9ll34lxwuehw0mKEz0,407
+ccres_weather_station/readers/sirta.py,sha256=PBGa4aaYiuindSV3DYmcPLvlUWTJZ89kq8NDFJpBYSM,2764
+ccres_weather_station/writers/write.py,sha256=_QyKThTTHAyxTUUQBjG395oBmuj-REf5i7umBIwPNJg,2621
+ccres_weather_station-0.1.0.dev1.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+ccres_weather_station-0.1.0.dev1.dist-info/METADATA,sha256=KY5BUhu31_ZmNQxqd9CKqLykUqAD7pNg_oWmtxGFKec,43284
+ccres_weather_station-0.1.0.dev1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ccres_weather_station-0.1.0.dev1.dist-info/entry_points.txt,sha256=orUVt2JBr9ua1clPhOnmAMwIAW3h5lu7X-GxvZl9_qU,77
+ccres_weather_station-0.1.0.dev1.dist-info/top_level.txt,sha256=ph7sQWOWou1O4q-IXq5m5AxJtbb5fiZ6m6ILLsPhDPM,22
+ccres_weather_station-0.1.0.dev1.dist-info/RECORD,,

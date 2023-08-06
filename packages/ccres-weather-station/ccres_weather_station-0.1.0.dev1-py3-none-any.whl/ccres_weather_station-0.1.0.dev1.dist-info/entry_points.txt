@@ -1,0 +1,2 @@
+[console_scripts]
+ccres_weather_station = ccres_weather_station.cli.cli:main
