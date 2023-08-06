@@ -1,0 +1,14 @@
+checkedid/__init__.py,sha256=LmiORXOml7MJETqhV92eaZIcMWUuYXjwPtHqItCdKCw,76
+checkedid/client.py,sha256=RDfpmsJjjKGvSCaXme3NZ8ZNrTDtki_4Ofty9bd67DU,6554
+checkedid/endpoints.py,sha256=tws8pwPI7pfL4E7LJN6qFMDwhmOnjSrI4DlFVnAdimo,477
+checkedid/errors.py,sha256=NjGK0y6KhCesTj1Acl74BqA6lyf6q-qNo2mFAowIOVQ,611
+checkedid/models/__init__.py,sha256=ObKhstMsXCyaNcHQv8JbsR-Nz3kRuwkzX5L_6os69aY,503
+checkedid/models/base.py,sha256=u1VSsuFdSJOoECWL_li1Idmd2jSeAi809y5VrJUpHls,198
+checkedid/models/generated.py,sha256=4b3sYrkUpn_AR0BI_20ULG1itLIAscBNhvBo0-bqqH0,15154
+checkedid/models/missing.py,sha256=3sSqif-c15zt_WaZ8uo6AYCD3Dxr_5nOjd43JxF3y-0,147
+checkedid/models/renamed.py,sha256=svPPQ7-LBz2xxf5FAHUQ55tcQb3kKqOgdI_8koUyz88,152
+checkedid/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+checkedid-0.4.0.dist-info/METADATA,sha256=VESJuPni6me9JcqI-XR9dsYGcWK2MTHJ5pdC2Xn6B2Y,3820
+checkedid-0.4.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+checkedid-0.4.0.dist-info/LICENSE,sha256=sZdMHieNQOOepmmmzcb6PwegCgp3EuvYwwx9uYswXQ8,1071
+checkedid-0.4.0.dist-info/RECORD,,
