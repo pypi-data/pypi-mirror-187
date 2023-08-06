@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: koui
+Version: 1.1
+Summary: テキスト間の校異情報を扱うライプラリです。
+Home-page: https://github.com/ldasjp8/koui
+Author: nakamura196
+Author-email: na.kamura.1263@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+テキスト間の校異情報を扱うライプラリです。
