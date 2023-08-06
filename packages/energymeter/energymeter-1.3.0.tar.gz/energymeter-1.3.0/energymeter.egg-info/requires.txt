@@ -1,0 +1,3 @@
+pyserial
+minimalmodbus~=2.0
+tinysbus

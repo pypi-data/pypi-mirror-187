@@ -1,0 +1,9 @@
+README.md
+energymeter.py
+pyproject.toml
+setup.py
+energymeter.egg-info/PKG-INFO
+energymeter.egg-info/SOURCES.txt
+energymeter.egg-info/dependency_links.txt
+energymeter.egg-info/requires.txt
+energymeter.egg-info/top_level.txt
