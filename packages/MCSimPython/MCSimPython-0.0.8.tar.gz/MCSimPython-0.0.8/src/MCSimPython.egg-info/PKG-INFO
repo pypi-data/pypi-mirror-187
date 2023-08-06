@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: MCSimPython
+Version: 0.0.8
+Summary: Python vessel simulation environment
+Author-email: Jan-Erik Hygen <janereh@stud.ntnu.no>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# MCSimPython
+
+Vessel simulator used in master project and master thesis of M. Kongshaug, H. Mo and J. Hygen.
+
+The simulator contains a set of simulation models in addition to wave loads.
+
+The python package is not complete and there is no guarantee for the validity of the vessel models.
