@@ -1,0 +1,8 @@
+flask_request_data_normalizer/NormalizedRequest.py,sha256=kFeC1m8lPwRCJRAv0wjIu_Z9Mauy52635DZDf35OD8A,4217
+flask_request_data_normalizer/RequestDataNormalizer.py,sha256=b9yRcQlC_gDvCFAXpI3uclxrNeRusqW-gKVNTuShe5w,1154
+flask_request_data_normalizer/__init__.py,sha256=fgM5xuK4u2Lh5L7L7E1cDYIcz6HtW-XuE1npvPPhqfg,56
+Flask_RDN-1.0.0.dist-info/LICENSE,sha256=WWk51NlhDRV4-Hv8ODLYIA28PZ8fuM4xLETWcE6Qlyg,1500
+Flask_RDN-1.0.0.dist-info/METADATA,sha256=4T3muxB-tlzIxbLbKWe2R5mkm14nSjyDGYwC_Ga0zO8,4014
+Flask_RDN-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+Flask_RDN-1.0.0.dist-info/top_level.txt,sha256=7al87hFU6mmO01je8Nlh2URyq7CvaS9BNGiw2AjG8WY,30
+Flask_RDN-1.0.0.dist-info/RECORD,,
