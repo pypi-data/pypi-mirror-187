@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: wydyf
+Version: 0.1.0
+Summary: 未央书院答疑坊
+Home-page: https://liblaf.github.io/wydyf/
+License: MIT
+Author: Qin Li
+Author-email: liblaf@outlook.com
+Requires-Python: >=3.10,<3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: jinja2 (>=3.1.2,<4.0.0)
+Requires-Dist: matplotlib (>=3.6.3,<4.0.0)
+Requires-Dist: openpyxl (>=3.0.10,<4.0.0)
+Requires-Dist: pandas (>=1.5.2,<2.0.0)
+Requires-Dist: rich (>=13.0.1,<14.0.0)
+Project-URL: Documentation, https://liblaf.github.io/wydyf/
+Project-URL: Repository, https://github.com/liblaf/wydyf
+Description-Content-Type: text/markdown
+
+## 未央书院答疑坊
+
