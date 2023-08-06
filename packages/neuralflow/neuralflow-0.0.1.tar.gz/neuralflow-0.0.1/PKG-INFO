@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: neuralflow
+Version: 0.0.1
+Summary: Deep learning framework built with numpy (cupy)
+Home-page: https://github.com/augustinLib/neuralflow
+Author: Sangam Lee
+Author-email: 2bhambitious@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# NeuralFlow
+
+Deep learning framework built with numpy (cupy)  
+This version supports cuda 11.x ver
+
+## install
+```shell
+git clone https://github.com/augustinLib/neuralflow.git
+```
+or
+```
+pip install neuralflow
+```
+
+
+## Structure
+
+- neuralflow
+    - \_\_init\_\_.py
+    - data.py
+    - function.py
+    - function_class.py
+    - model.py
+    - optimizer.py
+    - trainer.py
+    - utils.py
+    - nlp
+      - utils.py
+    - epoch_notice
+
