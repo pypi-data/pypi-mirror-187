@@ -1,0 +1,4 @@
+pillow>=9.2.0
+scikit-learn>=1.1.1
+numpy>=1.23.1
+tqdm
