@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+sqlitescripting.egg-info/PKG-INFO
+sqlitescripting.egg-info/SOURCES.txt
+sqlitescripting.egg-info/dependency_links.txt
+sqlitescripting.egg-info/entry_points.txt
+sqlitescripting.egg-info/requires.txt
+sqlitescripting.egg-info/top_level.txt
