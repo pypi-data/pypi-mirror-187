@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: xbridge
+Version: 0.3.4
+Summary: Discoverable service in local networking
+License: MIT
+Author: yudingp
+Author-email: yudingp@163.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aiohttp (>=3.8.1,<4.0.0)
+Requires-Dist: cryptography (>=37.0.2,<38.0.0)
+Requires-Dist: progress (>=1.6,<2.0)
+Requires-Dist: pyOpenSSL (>=22.0.0,<23.0.0)
+Requires-Dist: pycryptodome (>=3.14.1,<4.0.0)
+Requires-Dist: qrcode (>=7.3.1,<8.0.0)
+Requires-Dist: rsa (>=4.8,<5.0)
+Requires-Dist: rsocket (>=0.3,<0.4)
+Requires-Dist: websockets (>=10.3,<11.0)
+Requires-Dist: zeroconf (>=0.38.5,<0.39.0)
