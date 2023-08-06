@@ -1,0 +1,12 @@
+aiohttp>=1.0.0
+attrs>=20.1
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[coverage]
+pytest-cov
+
+[testing]
+pytest
+pytest-asyncio
