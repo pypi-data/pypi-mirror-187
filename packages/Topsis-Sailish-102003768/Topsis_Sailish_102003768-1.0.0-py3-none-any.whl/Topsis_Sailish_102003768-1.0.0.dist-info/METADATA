@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: Topsis-Sailish-102003768
+Version: 1.0.0
+Summary: A TOPSIS calculator
+Home-page: 
+Author: Sailish Makkar
+Author-email: smakkar_be20@thapar.edu
+License: MIT
+Keywords: TOPSIS
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+## Project description
+
+This is a Python package implementing Topsis method sed for multi-criteria decision analysis. Topsis stands for Technique for Order of Preference by Similarity to Ideal Solution
+
+Just provide your input attributes and it will give you the results
+
+## Installation
+$ pip install Topsis-Sailish-102003768
+
+In the commandline, you can write as - $ topsis <input_data_file_name> <weights as strings> <impacts as strings> <result_file_name>
+
+E.g for input data file as data.csv, command will be like $ topsis data.csv "1,1,1,1,1" "+,+,+,+,+" output.csv
+
+This will print all the output attribute values along with the Rank column, in a tabular format in a csv file with given name
+
+License -> MIT
