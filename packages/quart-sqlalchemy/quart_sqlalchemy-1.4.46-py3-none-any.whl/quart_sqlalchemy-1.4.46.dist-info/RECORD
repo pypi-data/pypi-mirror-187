@@ -1,0 +1,15 @@
+quart_sqlalchemy/__init__.py,sha256=ARpWoYcEE6Vqx7WSPfaFa7SG1wZWo08EMUKPP_IFDwc,128
+quart_sqlalchemy/cli.py,sha256=a_HLRTkOi_akwKZn9_AVkOAqp-_t1ajUr7Qp3zyfl3c,484
+quart_sqlalchemy/extension.py,sha256=lbviaDv9pOKU0mEPEKE0l1YvjEXeYZSSCVAtJzDkLQE,33328
+quart_sqlalchemy/model.py,sha256=TeXwLBrTim8mTxrQsrWewFucEyVaZ5Z8_rn0afQ5Juk,6892
+quart_sqlalchemy/pagination.py,sha256=s0eKVAaSUXLayy5U12JV4QVqu5TmDfRFpJa-gKu_PGA,10953
+quart_sqlalchemy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quart_sqlalchemy/query.py,sha256=tZ3X8yYvemdyTminLW01NSv4lFnml_TlDT8BWQkIo6s,3752
+quart_sqlalchemy/record_queries.py,sha256=mJodpkmBuaMSd8ekSC1JKCjggBTDhc4vw9UKOXY59U4,3508
+quart_sqlalchemy/session.py,sha256=vd72tiAfld8bTdKKD3Xx-cfEZrRF27YlWFwuTqnRK78,2581
+quart_sqlalchemy/track_modifications.py,sha256=3vhJnM6Nh2mO0-SfJWaq8pFRvQZD9FvcAAl3-84o270,2724
+quart_sqlalchemy-1.4.46.dist-info/LICENSE.rst,sha256=SJqOEQhQntmKN7uYPhHg9-HTHwvY-Zp5yESOf_N9B-o,1475
+quart_sqlalchemy-1.4.46.dist-info/METADATA,sha256=Xr-AXH7Ku37JA2ru8w3nQwGis5D-GbSrsLyAcD9hmcc,2615
+quart_sqlalchemy-1.4.46.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+quart_sqlalchemy-1.4.46.dist-info/top_level.txt,sha256=-YIqO0Yh4mutPPv2ETSGsuwRdcKtHbXuBqL7d-bkBwI,17
+quart_sqlalchemy-1.4.46.dist-info/RECORD,,
