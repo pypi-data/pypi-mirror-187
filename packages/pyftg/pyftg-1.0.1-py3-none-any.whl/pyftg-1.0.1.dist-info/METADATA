@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pyftg
+Version: 1.0.1
+Summary: An interface for implementing python AI in DareFightingICE
+Home-page: https://github.com/Staciiaz/pyftg
+Author: Staciiaz
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: grpcio
+
+# pyftg
+
+```
+from pyftg.gateway import Gateway
+gateway = Gateway(port=50051)
+```
+
+```
+gateway.load_agent(["KickAI", "KickAI"])
+gateway.start_ai()
+gateway.close()
+```
+
+```
+agent = KickAI()
+gateway.register_ai("KickAI", agent)
+gateway.run_game(["ZEN", "ZEN"], ["KickAI", "MctsAi65"], 1)
+gateway.close()
+```
