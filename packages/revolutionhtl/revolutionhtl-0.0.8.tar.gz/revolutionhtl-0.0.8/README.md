@@ -1,0 +1,193 @@
+![REvolutionH-tl logo.](https://gitlab.com/jarr.tecn/revolutionh-tl/-/raw/master/docs/images/Logo_horizontal.png)
+
+Bioinformatics tool for the reconstruction of evolutionary histories. Input: best-match data, Output: event-labeled gene trees and reconciliations.
+
+[Bioinformatics & complex networks lab](https://ira.cinvestav.mx/ingenieriagenetica/dra-maribel-hernandez-rosales/bioinformatica-y-redes-complejas/)
+
+- José Antonio Ramírez-Rafael [jose.ramirezra@cinvestav.mx]
+- Maribel Hernandez-Rosales [maribel.hr@cinvestav.mx ]
+
+****
+
+REvolutionH-tl analyzes putative best matches for the inference of event-labeled gene trees. Moreover, the tool performs tree reconciliation if a species tree is provided.
+
+If you don't have best-match data, you can use [proteinortho](https://gitlab.com/paulklemm_PHD/proteinortho) and REvolutionH-tl for its generation.
+
+# Install
+
+`pip install --upgrade revolutionhtl` 
+
+
+# Usage
+
+```
+python -m revolutionhtl [-h] [-steps [STEPS ...]] [-prt_path PRT_PATH]
+                        [-gene_trees GENE_TREES]
+                        [-species_tree SPECIES_TREE] [-hit_list HIT_LIST]
+                        [-og ORTHOGROUP_COLUMN] [-o OUTPUT_PREFIX]
+                        [-rod RECON_OUTPUT_DIR] [-f F_VALUE]
+```
+
+## Arguments
+
+-  `-h`, `--help`            show this help message and exit.
+-  `-steps [STEPS ...]`    list of steps to run (default: 1 2 3).
+-  `-prt_path PRT_PATH`    path to a directory containing proteinortho output files.
+-  `-gene_trees GENE_TREES`
+                        .tsv file containing a .nhx for each line at column "tree"
+-  `-species_tree SPECIES_TREE`
+                        .nhx file containing a species tree.
+-  `-hit_list HIT_LIST`    .tsv file containing hits.
+-  `-og ORTHOGROUP_COLUMN`, `--orthogroup_column ORTHOGROUP_COLUMN`
+                        column in -hit_list and -gene_trees specifying orthogroups (default: OG).
+-  `-o OUTPUT_PREFIX`, `--output_prefix OUTPUT_PREFIX`
+                        prefix used for output files (default "tl_project").
+-  `-rod RECON_OUTPUT_DIR`, `--recon_output_dir RECON_OUTPUT_DIR`
+                        directory for reconciliation maps.
+-  `-f F_VALUE`, `--f_value F_VALUE`
+                        number between 0 and 1 used for the adaptative threshold for best matches selection (default 0.95, see proteinortho paper for a deep explanation).
+
+## Pipeline
+
+The methodology consists of 3 main steps, starting with best-hits data and a species tree. You can use proteinortho and step 0 for the generation of input data.
+
+0. **Convert proteinortho output to best-hit list**
+Required arguments: `-prt_path`
+Optional arguments: `-f`
+1. **Conver best hits to best match graphs (cBMGs)**
+Required arguments: `-hit_list`
+2. **Conver cBMGs to gene trees**
+Required arguments: `-hit_list`
+3. **Reconciliate gene trees and species tree**
+Required arguments: `-gene_trees`, `-species_tree`
+Optional arguments: `-rod`
+
+## Input data format
+
+### `-prt_path`
+A directory containing the output files of proteinortho:
+- `.proteinortho.tsv` file containing orthogroups **(\*)**.
+- `proteinortho_cache/` directory containing bidirectional pairwise BLAST-like analysis (hits).
+
+You can generate these files running proteinortho with the flags `-keep`, and `temp=<the directory used for output files (probably ./)>`
+
+**(\*)** An orthogroup is a set of co-orthologous genes.
+
+****
+
+### `-hit_list` 
+
+A hit is a relationship $x\rightarrow y$, where $x$ is the query accession and $y$ is the target accession. $x$ and $y$ are genes found in different species. Each hit relationship $x\rightarrow y$ is contained in one orthogroup.
+
+The argument `-hit_list` is a .tsv file containing the columns:
+- **OG** Orthogroup identifier.
+- **Query_accession** Gene identifier.
+- **Target_accession** Gene identifier.
+- **Query_species** Species of the query gene.
+- **Target_species** Species of the target gene.
+
+****
+
+### `-gene_trees`
+
+A .tsv file containing the columns:
+- **OG** Orthogroup identifier.
+- **tree** Tree in nhxx format (extended-extended-newick, [see here a descripton](https://gitlab.com/jarr.tecn/revolutionh-tl/-/blob/master/docs/nhxx.md)), where leaf names are gene identifiers, the name of inner nodes are evolutionary events (S for speciation, P for duplication), and leaves have the attribute "species".
+
+****
+
+### `-species_tree`
+
+A .nhxx file containing a single species tree in nhxx format (extended-extended-newick, [see here a descripton](https://gitlab.com/jarr.tecn/revolutionh-tl/-/blob/master/docs/nhxx.md)). The name of the leaves must include the species present in the gene tree attributes.
+
+# Example
+
+In the directory [test_set](https://gitlab.com/jarr.tecn/revolutionh-tl/-/tree/master/test_set) are three sets of simulated genomes (12noD, 3noD, 5noD).
+
+Let's run the analysis for 12 species:
+
+We will work in the same directory where the data is stored
+```bash
+$ cd 12noD
+```
+
+Use proteinortho for hits and orthogroups assignment.
+```bash
+$ proteinortho6.pl -project=D12 -temp=./ -keep -singles -p=diamond *fa
+```
+
+Create a directory for the storage of reconciliation maps.
+```bash
+$ mkdir recon_maps
+```
+
+Now run revolutionH-tl. Note that we are including step 0, which takes as input the files generate by proteinortho, and outputs a list of best hits.
+```bash
+$ python -m revolutionhtl -steps 0 1 2 3 -species_tree S12.pruned.tree -rod recon_maps
+
+REvolutionH-tl
+Running steps 0, 1, 2, 3
+
+Step 0: Convert proteinortho output to a best-hit list
+----------------------------------------------------
+Reading .proteinortho.tsv file and hits directory...
+Selecting best hits by dynamic threshold...
+Filtering best hits by orthogroup...
+Best hits were successfully written to tl_project.best_hits.tsv
+This file will be used as input for step 1.
+
+Step 1: Conver best-hit graphs to cBMGs
+---------------------------------------
+Reading hit graphs...
+Editing to best match graphs (cBMGs)...
+Best match graphs successfully written to tl_project.cBMGs.tsv
+This file will be used as input for step 2.
+
+Step 2: Reconstruct gene trees
+------------------------------
+Reading best match graphs...
+Reconstructing gene trees...
+Labeling gene tree nodes with evolutionary events...
+Gene trees were successfully written to tl_project.gene_trees.tsv
+This file will be used as input for step 3.
+
+Step 3: Reconciliation of gene species trees
+-------------------------------------------
+Reading trees...
+Reconciling trees...
+Resolved gene trees were successfully written to tl_project.resolved_trees.tsv
+Reconciliation maps were successfully written at recons/
+Indexed species tree successfully written to tl_project.labeled_species_tree.nhxx
+
+```
+
+In the case when you already have a best-hits list, you can omit step 0, and use the argument `-hit_list`.
+```bash
+$ python -m revolutionhtl -hit_list tl_project.best_hits.tsv -species_tree S12.pruned.tree -rod recon_maps
+
+REvolutionH-tl
+Running steps 1, 2, 3
+
+Step 1: Conver best-hit graphs to cBMGs
+---------------------------------------
+Reading hit graphs...
+Editing to best match graphs (cBMGs)...
+Best match graphs successfully written to tl_project.cBMGs.tsv
+This file will be used as input for step 2.
+
+Step 2: Reconstruct gene trees
+------------------------------
+Reading best match graphs...
+Reconstructing gene trees...
+Labeling gene tree nodes with evolutionary events...
+Gene trees were successfully written to tl_project.gene_trees.tsv
+This file will be used as input for step 3.
+
+Step 3: Reconciliation of gene species trees
+-------------------------------------------
+Reading trees...
+Reconciling trees...
+Resolved gene trees were successfully written to tl_project.resolved_trees.tsv
+Reconciliation maps were successfully written at recons/
+Indexed species tree successfully written to tl_project.labeled_species_tree.nhxx
+```
