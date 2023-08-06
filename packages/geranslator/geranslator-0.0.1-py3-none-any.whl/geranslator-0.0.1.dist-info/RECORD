@@ -1,0 +1,11 @@
+geranslator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geranslator/geranslator.py,sha256=OunxMBBamxyxuqk4GhsviGeA8wxQlxh84M3zlX-G7tQ,170
+geranslator/config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geranslator/config/config.py,sha256=I8DVnUKFk7m8_bqfBku1GY6q46IbPEsrXs0N3O2D89c,840
+geranslator/exceptions/ConfigKeyNotFound.py,sha256=2iJfND83pNgdluyQ3CeoIeeXX8xpimX303KRXnnwhQg,308
+geranslator/exceptions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geranslator-0.0.1.dist-info/LICENSE,sha256=TKnxZGa3fo-uMLeLFjLCUB2ExfOPeT9gQXyQDlWbqiI,1093
+geranslator-0.0.1.dist-info/METADATA,sha256=fVOJSZF-HHELuYHvDIsD0uLuV8ktmET9Y-X4zIL-dxM,1199
+geranslator-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+geranslator-0.0.1.dist-info/top_level.txt,sha256=Hyel09eLis3mqtcpyt3phrv8gr_HoDOwCNsGWAqqJHo,12
+geranslator-0.0.1.dist-info/RECORD,,

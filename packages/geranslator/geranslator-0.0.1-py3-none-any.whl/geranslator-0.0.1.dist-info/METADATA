@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: geranslator
+Version: 0.0.1
+Summary: Translate your translation files
+Home-page: https://github.com/faissaloux/geranslator
+Author: Faissal Wahabali
+Author-email: fwahabali@gmail.com
+License: MIT
+Keywords: translation,translation files,translate
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: <4,>=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyYAML (==6.0)
+Requires-Dist: types-PyYAML (==6.0)
+Requires-Dist: termspark (==1.1.0)
+Provides-Extra: dev
+Requires-Dist: pytest (==7.2.1) ; extra == 'dev'
+Requires-Dist: pytest-cov (==4.0.0) ; extra == 'dev'
+Requires-Dist: mypy (==0.991) ; extra == 'dev'
+Requires-Dist: pre-commit (==2.21.0) ; extra == 'dev'
+
+# Installation
+```bash
+    pip install geranslator
+```
