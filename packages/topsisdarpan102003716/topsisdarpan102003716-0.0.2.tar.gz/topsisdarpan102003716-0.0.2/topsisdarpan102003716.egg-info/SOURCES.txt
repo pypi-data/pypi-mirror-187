@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+topsisdarpan102003716/__init__.py
+topsisdarpan102003716/topsis_darpan_102003716.py
+topsisdarpan102003716.egg-info/PKG-INFO
+topsisdarpan102003716.egg-info/SOURCES.txt
+topsisdarpan102003716.egg-info/dependency_links.txt
+topsisdarpan102003716.egg-info/requires.txt
+topsisdarpan102003716.egg-info/top_level.txt
