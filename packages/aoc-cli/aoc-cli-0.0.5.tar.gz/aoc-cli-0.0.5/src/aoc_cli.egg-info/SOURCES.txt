@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/aoc_cli/__init__.py
+src/aoc_cli/__main__.py
+src/aoc_cli/utils.py
+src/aoc_cli/validations.py
+src/aoc_cli.egg-info/PKG-INFO
+src/aoc_cli.egg-info/SOURCES.txt
+src/aoc_cli.egg-info/dependency_links.txt
+src/aoc_cli.egg-info/entry_points.txt
+src/aoc_cli.egg-info/requires.txt
+src/aoc_cli.egg-info/top_level.txt
