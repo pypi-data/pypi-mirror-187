@@ -1,0 +1,13 @@
+maialib/__init__.py,sha256=ku5FJ1prG4Bc_SyXHfZIkU2NpiA38HVUfjKksPDFVTc,48
+maialib/setup.py,sha256=0aScLx999Jid23biSHovHxO8y1qEJwipqBjsZdi9egw,1426
+maialib/maiacore/__init__.py,sha256=0sK4fUTlwdUaieWSoGvL11TBkw6BebR2cd-MpYpJn1o,81
+maialib/maiacore/Release/maiacore.cp38-win_amd64.pyd,sha256=HZ5eoSAtO55X9QAnIQmvpxpgK_Rv4vNk_CCo_LsP8HE,3774976
+maialib/maiapy/__init__.py,sha256=Bl1VOROS0ljStZvoHmHjknJ0bpnpLXi85D5tnPuacss,44
+maialib/maiapy/other.py,sha256=5nLxl1r-_5RGO6_QevTk1eWd98ev_D02p9Wf9AJ_NSg,296
+maialib/maiapy/plots.py,sha256=0-z6DZMB3snjSfn8ORB1txrupim2yFqHGrCTcoN67DI,549
+maialib/xml-scores-examples/cello_suite_1_violin.xml,sha256=rK-jgpAQ5IbY2NOCXnPZiyHSW3s9wYYAx3VKAU1Qy1Q,251766
+maialib-0.0.18.19.dist-info/LICENSE.txt,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+maialib-0.0.18.19.dist-info/METADATA,sha256=6T5ilhETv9KQnlTAyz26t2YZfUe1hyKLFG26X6FXPTc,5410
+maialib-0.0.18.19.dist-info/WHEEL,sha256=b_PH-i_F2xFYDXcROE5vpDbWUcY020I0eLFvEIYA9Pc,100
+maialib-0.0.18.19.dist-info/top_level.txt,sha256=sZWQaa-Up2ba00WpAxBhOLKM6qQYTpUKJMXgSE0Nc48,17
+maialib-0.0.18.19.dist-info/RECORD,,
