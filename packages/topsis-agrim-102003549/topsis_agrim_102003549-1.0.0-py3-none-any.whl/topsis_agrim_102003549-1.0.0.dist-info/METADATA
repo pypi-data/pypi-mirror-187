@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: topsis-agrim-102003549
+Version: 1.0.0
+Summary: It takes input file and gives ranking based on topsis score
+Home-page: UNKNOWN
+Author: Agrim Sood
+Author-email: agrimsood0635@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+
+#Topsis Calculator
+It takes 4 inputs namely input file, weight vector, impact vector, output file
+
+##installation
+```pip install topsis-agrim-102003549```
+
+##License
+u"\u00A9" 2023 Agrim Sood
+
+This repository iss licensed under MIT License.
+See License for details.
+
