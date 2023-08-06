@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: aternos-client
+Version: 0.1.1
+Summary: A simple client to connect on Aternos server
+Author: qrillet
+Author-email: quentin.rillet@externe.covage.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: asyncio (>=3.4.3,<4.0.0)
+Requires-Dist: python-aternos (>=2.1.3,<3.0.0)
+Requires-Dist: typer[all] (>=0.7.0,<0.8.0)
+Description-Content-Type: text/markdown
+
+# Hi mineguys  👋
+
+
+## 🛠️ Install     
+```bash
+pip install aternos
+```
+
+## 🧑🏻‍💻 Usage
+```js
+aternos start
+aternos stop
+aternos info
+```
+
+## Contributing
+
+If you want participate project
+```bash
+poetry install
+```
+
+Depot coming soon
+if you don't have [poetry](https://python-poetry.org/docs/#installation)
+        
