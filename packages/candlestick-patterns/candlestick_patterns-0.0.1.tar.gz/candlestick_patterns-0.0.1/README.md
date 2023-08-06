@@ -1,0 +1,1 @@
+This is a better version of candlestick pattern
