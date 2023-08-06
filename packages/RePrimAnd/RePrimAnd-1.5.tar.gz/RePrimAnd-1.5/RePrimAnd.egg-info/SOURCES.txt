@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+pyreprimand.cpp
+setup.py
+RePrimAnd.egg-info/PKG-INFO
+RePrimAnd.egg-info/SOURCES.txt
+RePrimAnd.egg-info/dependency_links.txt
+RePrimAnd.egg-info/requires.txt
+RePrimAnd.egg-info/top_level.txt
