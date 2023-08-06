@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+sidra_helpers/__init__.py
+sidra_helpers/sidra_helpers.py
+sidra_helpers.egg-info/PKG-INFO
+sidra_helpers.egg-info/SOURCES.txt
+sidra_helpers.egg-info/dependency_links.txt
+sidra_helpers.egg-info/requires.txt
+sidra_helpers.egg-info/top_level.txt
