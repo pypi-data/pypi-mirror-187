@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+topsis/102003707.py
+topsis/__init__.py
+topsis_Siddharth_102003707.egg-info/PKG-INFO
+topsis_Siddharth_102003707.egg-info/SOURCES.txt
+topsis_Siddharth_102003707.egg-info/dependency_links.txt
+topsis_Siddharth_102003707.egg-info/top_level.txt
