@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+foliant/preprocessors/badges.py
+foliantcontrib.badges.egg-info/PKG-INFO
+foliantcontrib.badges.egg-info/SOURCES.txt
+foliantcontrib.badges.egg-info/dependency_links.txt
+foliantcontrib.badges.egg-info/requires.txt
+foliantcontrib.badges.egg-info/top_level.txt
