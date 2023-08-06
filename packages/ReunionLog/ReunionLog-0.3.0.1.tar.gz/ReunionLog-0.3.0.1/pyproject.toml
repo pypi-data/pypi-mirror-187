@@ -1,0 +1,8 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "graphql_query >= 1.0.0",
+    "sequence >= 0.3.4"
+]
+build-backend = "setuptools.build_meta"
