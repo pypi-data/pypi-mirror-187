@@ -1,0 +1,10 @@
+ultibi-0.1.0.dist-info/METADATA,sha256=tEEIl8RjUqRhDjiowU629LUFYIMypLIV3iIs5tlRp_I,1120
+ultibi-0.1.0.dist-info/WHEEL,sha256=uKlahECkUrl5UjM6XJKlsmlWgKbKtzrg7hYZHvCcgYU,105
+ultibi/__init__.py,sha256=4KKLJJVCjAiAsb5QbPKmkG3p2_Nud16Nng0TqLr--Xs,394
+ultibi/internals/agg_request.py,sha256=qn20iijZU6ZRqKQxuYiDjGpuXQx2-v6tWMEWSisFWHs,1607
+ultibi/internals/execute.py,sha256=t4Sk1k4ftKVMPSsqZEWzWDEpwXMOt4uks3loHGS-acc,781
+ultibi/internals/__init__.py,sha256=J5YddsAaX3SjH-FI3qfeGidcRI01vpN9dHb2ydxNoZo,628
+ultibi/internals/dataset.py,sha256=j-FyMCE9kWDXElrXNINZqgEHc8djQ7_EpEs7XsVtPN4,4747
+ultibi/rust_module/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ultibi/rust_module/ultima_pyengine.abi3.so,sha256=s_Xgv5Gk_6jA4P9FUERlVduCiAy9Bbmuhg8c2CGz32I,22826648
+ultibi-0.1.0.dist-info/RECORD,,
