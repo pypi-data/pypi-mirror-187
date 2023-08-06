@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: easy-download-setup
+Version: 1.0.0
+Summary: A easy to download.
+Home-page: UNKNOWN
+Author: liuzihao
+Author-email: liuzihao@qwcode.top
+License: MIT
+Project-URL: Source, https://github.com/liuzihaohao/liuzihaohao/blob/main/easy_download.py
+Platform: UNKNOWN
+Requires-Python: >=3
+Requires-Dist: retry
+Requires-Dist: tqdm
+Requires-Dist: requests
+Requires-Dist: multitasking
+
+UNKNOWN
+
+
