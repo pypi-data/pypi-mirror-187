@@ -1,0 +1,26 @@
+---
+% if title:
+title: ${title}
+% endif
+---
+% if group_by:
+<%!
+import itertools
+%>
+<%
+  grouped = itertools.groupby(entries, key=lambda x: x.path)
+%>
+
+% for key, value in grouped:
+${key}
+% for k in value:
+  ${k}
+% endfor
+% endfor
+
+% else:
+% for e in entries:
+- [${e}](${e.path})
+% endfor
+
+% endif
