@@ -1,0 +1,14 @@
+[batou.provisioners]
+fc-nixos-dev-container = batou.provision:FCDevContainer
+
+[console_scripts]
+batou = batou.main:main
+
+[zc.buildout]
+requirements = batou.buildout:Requirements
+
+[zest.releaser.postreleaser.after]
+update_requirements = batou.release:update_requirements
+
+[zest.releaser.prereleaser.after]
+update_requirements = batou.release:update_requirements
