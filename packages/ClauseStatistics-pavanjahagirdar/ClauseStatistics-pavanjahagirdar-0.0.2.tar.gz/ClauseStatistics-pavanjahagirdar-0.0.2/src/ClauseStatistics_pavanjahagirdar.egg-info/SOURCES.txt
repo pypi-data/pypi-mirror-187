@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/ClauseStat/__init__.py
+src/ClauseStat/sqlclausestat.py
+src/ClauseStatistics_pavanjahagirdar.egg-info/PKG-INFO
+src/ClauseStatistics_pavanjahagirdar.egg-info/SOURCES.txt
+src/ClauseStatistics_pavanjahagirdar.egg-info/dependency_links.txt
+src/ClauseStatistics_pavanjahagirdar.egg-info/requires.txt
+src/ClauseStatistics_pavanjahagirdar.egg-info/top_level.txt
