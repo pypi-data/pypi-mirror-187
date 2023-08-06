@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: qiplot
+Version: 1.0.9
+Summary: Graphs in 1D and 2D
+Maintainer: steche
+Maintainer-email: schecchi@gmx.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pyqtgraph
+Requires-Dist: PyQt5
+Requires-Dist: matplotlib
+Requires-Dist: h5py
+
+Checklist to update version:
+ 1) edit code
+ 2) edit setup.py (increase version number)
+ 3) cd to same level as setup.py
+ 4) python -m build
+ 5) twine upload dist/* --skip-existing
