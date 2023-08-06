@@ -1,0 +1,5 @@
+setup.py
+metamorf.egg-info/PKG-INFO
+metamorf.egg-info/SOURCES.txt
+metamorf.egg-info/dependency_links.txt
+metamorf.egg-info/top_level.txt
