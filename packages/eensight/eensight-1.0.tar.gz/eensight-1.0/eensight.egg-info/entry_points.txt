@@ -1,0 +1,2 @@
+[console_scripts]
+eensight = eensight.__main__:main
