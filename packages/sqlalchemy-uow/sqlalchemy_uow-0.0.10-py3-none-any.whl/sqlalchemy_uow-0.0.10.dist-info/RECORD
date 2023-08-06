@@ -1,0 +1,9 @@
+sqlalchemy_uow/__init__.py,sha256=09PA6h3P_6Z2-_IJXP36gPbql1e2Em2F9TObbXDTwwQ,197
+sqlalchemy_uow/repository.py,sha256=3zfd6m3YDX1Q8_px3n1iQvhfAsEDt-NtLd5Nf410xNQ,3274
+sqlalchemy_uow/settings.py,sha256=nQmjKrYAHfU4w9MfrhRbZaqz4MnbAVZuU9nB_D19jlg,352
+sqlalchemy_uow/unit_of_work.py,sha256=mrRu-2JFTtMThcilJrNS04TQjJ7fmWzXENcTDmzgDEo,1618
+sqlalchemy_uow/utils.py,sha256=MZ0nTFA5-WFTlJXHXuGw8ZNgkRpwPDUyWWQFOqzPJK8,379
+sqlalchemy_uow-0.0.10.dist-info/LICENSE,sha256=7GkP4oFEnlYsSlR33G0QoFZLTaopw-kjuRiO3RfrstY,1073
+sqlalchemy_uow-0.0.10.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+sqlalchemy_uow-0.0.10.dist-info/METADATA,sha256=QFJZieik1v66F3khMrwPuPnefi_Wjgf0cPsCAKdNDzM,3260
+sqlalchemy_uow-0.0.10.dist-info/RECORD,,
