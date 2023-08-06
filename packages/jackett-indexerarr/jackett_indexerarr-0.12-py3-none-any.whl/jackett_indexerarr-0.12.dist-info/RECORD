@@ -1,0 +1,8 @@
+jackett_indexerarr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jackett_indexerarr/cli.py,sha256=eZcczIwsQ3xIZIgX2OK9wrtMNYoTx30JOU7QBKvAtDQ,1407
+jackett_indexerarr/utils.py,sha256=-SzrHkhPfdRNTvHVKEeVFt8CcB9MkbZPgNbI3bS1iuI,7493
+jackett_indexerarr-0.12.dist-info/METADATA,sha256=FXj39RGtLf5r398g6jA4wTVv0lxjoetFwggvnwMYlvQ,1175
+jackett_indexerarr-0.12.dist-info/entry_points.txt,sha256=ukLyo198mYIa1e2uRWLTZJ1GZjZQzDxI1hrnObIqi6c,65
+jackett_indexerarr-0.12.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+jackett_indexerarr-0.12.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+jackett_indexerarr-0.12.dist-info/RECORD,,
