@@ -1,0 +1,13 @@
+codeforces_scraper/__init__.py,sha256=umb0kkxivSlohdLsHidYgrvON6hYJGyeyzsERFjX-I0,81
+codeforces_scraper/languages.py,sha256=wPLx5C-1fsgkaLRzPiRI7SJ4LdGszuct7PnM5EX55M4,1580
+codeforces_scraper/models.py,sha256=QDxC0O3d_v7IFOogsF-G0HMiWpTbhApdkyzDO8ihisM,4989
+codeforces_scraper/scraper.py,sha256=m6EWMftht29x08dD0N1tRcKf6DJvuKaXkZGWL3y3N10,8022
+codeforces_scraper/utils.py,sha256=dV8LCaaYK_4PsJW9qsO58IJyRwIX9QuQFhheYMQlNEI,836
+codeforces_scraper/assets/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+codeforces_scraper/assets/all_language_compilers.json,sha256=IIp2uLnfl2rWKotMPOATYy69RLnjUGFJRwy11aqyXQA,3505
+codeforces_scraper-0.1.0.dist-info/LICENSE,sha256=fhLl30uuEsshWBuhV87SDhmGoFCN0Q0Oikq5pM-U6Fw,1211
+codeforces_scraper-0.1.0.dist-info/METADATA,sha256=JVP397lWWpzxWLIw7p_cyHhMeY12QaX80kk18nkEncY,296
+codeforces_scraper-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+codeforces_scraper-0.1.0.dist-info/top_level.txt,sha256=pTK02HL4XJ_762ObUx-r5EcE7n081CLukdzoBDuDnXk,19
+codeforces_scraper-0.1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+codeforces_scraper-0.1.0.dist-info/RECORD,,

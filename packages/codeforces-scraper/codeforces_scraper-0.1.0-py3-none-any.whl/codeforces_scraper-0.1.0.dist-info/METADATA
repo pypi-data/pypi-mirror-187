@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: codeforces-scraper
+Version: 0.1.0
+Summary: Utility to do actions on codeforces
+Author: thematdev
+Author-email: thematdev@thematdev.org
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: bs4
+Requires-Dist: lxml
+Requires-Dist: pydantic
+Requires-Dist: requests
+
