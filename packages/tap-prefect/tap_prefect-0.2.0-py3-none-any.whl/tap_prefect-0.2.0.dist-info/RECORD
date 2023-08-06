@@ -1,0 +1,10 @@
+tap_prefect/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tap_prefect/client.py,sha256=SRnCjJ_G8paaO7MmY2kYG3YWiIwcsCJXXPkOUMViEX0,1565
+tap_prefect/streams.py,sha256=4Yt1yVfivzUE3JsDpF0n1Zxd0AUJRMMxjc8m7vFYBW0,3478
+tap_prefect/tap.py,sha256=PHpy74XR01vwdL0E2qj-eqj9Y04QQx4u28HwyGMfdSs,1547
+tap_prefect/tests/__init__.py,sha256=g85iYecFpUyW6MvQeXrO_KYAmgdWenDvmIA-2ae-UgY,34
+tap_prefect/tests/test_core.py,sha256=x5gb29VYt31f5ip-tVuHrlCXw-ZuhBOqUhsnm5vVOD8,639
+tap_prefect-0.2.0.dist-info/METADATA,sha256=QgUqGuiqOQB93B62Sg_-oMZrdEXMU6kVNQWTkQhzH3Y,697
+tap_prefect-0.2.0.dist-info/entry_points.txt,sha256=Ab2uzwrTfjZslOUIFjBrgE7kIKy6CfCYXmBrYdvQy8w,62
+tap_prefect-0.2.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+tap_prefect-0.2.0.dist-info/RECORD,,
