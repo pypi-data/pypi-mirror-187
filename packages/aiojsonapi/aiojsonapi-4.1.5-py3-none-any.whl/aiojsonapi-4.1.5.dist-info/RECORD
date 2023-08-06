@@ -1,0 +1,13 @@
+aiojsonapi/__init__.py,sha256=Q1txABzH_ZbC-83oRP7qlcbgB4bSXFsrPAiInj5fzlc,78
+aiojsonapi/client.py,sha256=m1tgi-_50tsVQffBOJnFbw3tO4qbpq9o6k95O3alAnY,3806
+aiojsonapi/config.py,sha256=2VsV3gcaN_u84LHZubKjT4JF6OFxkKjWBUr1iYqe0ZA,530
+aiojsonapi/dataclass.py,sha256=PhgyZZNmDti9ttmoD4HVfIoBXyzyV7aoa-GE-xnEcoY,6829
+aiojsonapi/exception.py,sha256=86EvFButJLLwQGLtFKlFykp48MY-QimA_gHlM_Dcga4,1253
+aiojsonapi/middleware.py,sha256=p59j9euxU-7nrLaND1O7u2ulGut6zOv65ivWC_Whwp0,933
+aiojsonapi/request.py,sha256=Y6j1eXFnTz7GZYy9GkgQFKD1PL9O926IM_AvVLRH4l0,243
+aiojsonapi/response.py,sha256=8D98mKhnyfZWXYcAZBqO0ctJopkeTJxPnYlJ7isaznA,861
+aiojsonapi/routes.py,sha256=HAVRS-6cKVPCRn6jepGmCJy1dx7OnqrZRyWn5Jb7-A8,2097
+aiojsonapi/template.py,sha256=SPs5XJWJt39jt79FO4CLjKiXAo_gUHOBtXOFdxJlEfA,1903
+aiojsonapi-4.1.5.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+aiojsonapi-4.1.5.dist-info/METADATA,sha256=X970dE0gcSz9r1Kf2yD6XEfdICyJWaOFKN0b2T1H42s,609
+aiojsonapi-4.1.5.dist-info/RECORD,,
