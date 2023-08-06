@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/nbmachine/__init__.py
+src/nbmachine/modular.py
+src/nbmachine.egg-info/PKG-INFO
+src/nbmachine.egg-info/SOURCES.txt
+src/nbmachine.egg-info/dependency_links.txt
+src/nbmachine.egg-info/requires.txt
+src/nbmachine.egg-info/top_level.txt
