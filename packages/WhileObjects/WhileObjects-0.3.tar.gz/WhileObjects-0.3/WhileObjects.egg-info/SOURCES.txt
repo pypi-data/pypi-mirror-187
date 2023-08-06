@@ -1,0 +1,6 @@
+README.md
+setup.py
+WhileObjects.egg-info/PKG-INFO
+WhileObjects.egg-info/SOURCES.txt
+WhileObjects.egg-info/dependency_links.txt
+WhileObjects.egg-info/top_level.txt
