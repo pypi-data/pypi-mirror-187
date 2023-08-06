@@ -1,0 +1,10 @@
+prefix=/var/folders/76/zy5ktkns50v6gt5g8r0sf6sc0000gn/T/cmeel-mdygrmpi/pfx/cmeel.prefix
+libdir=/var/folders/76/zy5ktkns50v6gt5g8r0sf6sc0000gn/T/cmeel-mdygrmpi/pfx/cmeel.prefix/lib
+includedir=/var/folders/76/zy5ktkns50v6gt5g8r0sf6sc0000gn/T/cmeel-mdygrmpi/pfx/cmeel.prefix/include
+
+Name: octomap
+Description: octomap
+Requires: 
+Version: 1.9.8
+Libs: -L${libdir}  -loctomap -loctomath
+Cflags: -I${includedir} 
