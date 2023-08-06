@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Topsis-Taranpreet-102017050
+Version: 0.2
+Summary: Topsis implementation
+Home-page: https://github.com/thetarandhiman/Topsis_Taranpreet_102017050
+Download-URL: https://github.com/thetarandhiman/Topsis_Taranpreet_102017050/archive/refs/tags/v.0.2.tar.gz
+Author: Taranpreet Kaur Dhiman
+Author-email: taranpreet391@gmail.com
+License: MIT
+Keywords: TOPSIS,RANKING,PERFORMANCE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE.txt
