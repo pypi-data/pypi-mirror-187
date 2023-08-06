@@ -1,0 +1,10 @@
+README.md
+setup.py
+PocketCRM.egg-info/PKG-INFO
+PocketCRM.egg-info/SOURCES.txt
+PocketCRM.egg-info/dependency_links.txt
+PocketCRM.egg-info/requires.txt
+PocketCRM.egg-info/top_level.txt
+crm_eng/__init__.py
+crm_eng/crm.py
+crm_eng/gui.py
