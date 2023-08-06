@@ -1,0 +1,200 @@
+{
+  "about": {
+    "about_aleksis": "About AlekSIS®",
+    "page_title": "About AlekSIS®",
+    "about_aleksis_1": "This platform is powered by AlekSIS®, a web-based school information system (SIS) which can be used to manage and/or publish organisational artifacts of educational institutions. AlekSIS is free software and can be used by anyone.",
+    "about_aleksis_2": "AlekSIS® is a registered trademark of the AlekSIS open source project, represented by Teckids e.V.",
+    "free_open_source_licence": "Free/Open Source Licence",
+    "free_software": "Free Software",
+    "full_licence_text": "Full Licence Text",
+    "licence_consists_of": "The licence consists of",
+    "licence_information": "Licence Information",
+    "licence_information_1": "The core and the official apps of AlekSIS are licenced under the EUPL, version 1.2 or later. For licence information from third-party apps, if installed, refer to the respective components below. The licences are marked like this:",
+    "licence_type": "Licence Type",
+    "licenced_under": "Licenced under",
+    "more_information_eupl": "More information about the EUPL",
+    "open_source": "Open Source",
+    "other_licence": "Other Licence",
+    "proprietary": "Proprietary",
+    "source_code": "Source Code",
+    "website_of_aleksis": "Website of AlekSIS",
+    "show_copyright": "Show copyright"
+  },
+  "accounts": {
+    "change_password": {
+      "menu_title": "Change Password"
+    },
+    "invitation": {
+      "accept_invitation": {
+        "menu_title": "Accept Invitation"
+      },
+      "invite_person": {
+        "menu_title": "Invite Person"
+      }
+    },
+    "login": {
+      "menu_title": "Login"
+    },
+    "logout": {
+      "menu_title": "Logout"
+    },
+    "signup": {
+      "menu_title": "Sign Up"
+    },
+    "social_connections": {
+      "menu_title": "Third-party Accounts"
+    },
+    "two_factor": {
+      "menu_title": "2FA"
+    }
+  },
+  "actions": {
+    "back": "Back",
+    "search": "Search",
+    "edit": "Edit",
+    "close": "Close"
+  },
+  "administration": {
+    "backend_admin": {
+      "menu_title": "Backend Admin"
+    },
+    "menu_title": "Administration",
+    "system_status": {
+      "menu_title": "System Status"
+    }
+  },
+  "alerts": {
+    "page_cached": "This page may contain outdated information since there is no internet connection."
+  },
+  "announcement": {
+    "menu_title": "Announcements",
+    "title": "Announcement",
+    "title_plural": "Announcements"
+  },
+  "base": {
+    "about_aleksis": "About AlekSIS® — The Free School Information System",
+    "imprint": "Imprint",
+    "person_is_dummy": "Your administrator account is not linked to any person. Therefore, a dummy person has been linked to your account.",
+    "privacy_policy": "Privacy Policy",
+    "user_not_linked_to_person": "Your user account is not linked to a person. This means you cannot access any school-related information. Please contact the managers of AlekSIS at your school.",
+    "no_permission": "You have no permission to view this page. Please login with an other account.",
+    "logo": "Logo"
+  },
+  "celery_progress": {
+    "error_message": "The operation couldn't be finished successfully.",
+    "progress_title": "Loading ...",
+    "running_tasks": "1 running task | {number} running tasks",
+    "success_message": "The operation has been finished successfully."
+  },
+  "download_pdf": {
+    "title": "Downloading PDF file ...",
+    "download": "Download",
+    "notice": "If the download does not start automatically, please click the button below."
+  },
+  "dashboard": {
+    "dashboard_widget": {
+      "menu_title": "Dashboard Widgets",
+      "title": "Dashboard Widget",
+      "title_plural": "Dashboard Widgets"
+    },
+    "menu_title": "Dashboard"
+  },
+  "data_check": {
+    "menu_title": "Data Checks"
+  },
+  "group": {
+    "additional_field": {
+      "menu_title": "Additional Fields",
+      "title": "Additional Field",
+      "title_plural": "Additional Fields"
+    },
+    "group_type": {
+      "menu_title": "Group Types",
+      "title": "Group Type",
+      "title_plural": "Group Types"
+    },
+    "groups_and_child_groups": "Groups and Child Groups",
+    "menu_title": "Groups",
+    "title": "Group",
+    "title_plural": "Groups",
+    "ownership": "Group ownership"
+  },
+  "ical_feed": {
+    "menu_title": "Calendar Feeds"
+  },
+  "notifications": {
+    "mark_as_read": "Mark as read",
+    "more_information": "More information",
+    "no_notifications": "You have no new notifications.",
+    "notifications": "Notifications"
+  },
+  "oauth": {
+    "application": {
+      "menu_title": "OAuth Applications",
+      "title": "OAuth Application",
+      "title_plural": "OAuth Applications"
+    },
+    "authorized_token": {
+      "menu_title": "Authorized Applications"
+    }
+  },
+  "people": "People",
+  "permissions": {
+    "manage": {
+      "menu_title": "Manage Permissions"
+    }
+  },
+  "person": {
+    "account_menu_title": "Account",
+    "avatar": "Avatar",
+    "additional_image": "Additional Image",
+    "no_additional_image": "The person didn't upload an additional Image",
+    "logged_in_as": "Logged in as",
+    "menu_title": "Persons",
+    "page_title": "Person",
+    "title": "Person",
+    "title_plural": "Persons",
+    "mobile": "mobile phone",
+    "home": "home phone",
+    "details": "Contact details",
+    "children": "Children",
+    "guardians": "Guardians / Parents",
+    "no_persons": "No Persons",
+    "delete": "Delete",
+    "impersonation": {
+      "impersonate": "Impersonate",
+      "stop": "Stop Impersonation",
+      "impersonating": "Impersonating"
+    },
+    "invite": "Invite"
+  },
+  "preferences": {
+    "person": {
+      "menu_title": "Preferences",
+      "change_preferences": "Preferences"
+    },
+    "site": {
+      "menu_title": "Configuration"
+    }
+  },
+  "school_term": {
+    "menu_title": "School Terms",
+    "title": "School Term",
+    "title_plural": "School Terms"
+  },
+  "network_errors": {
+    "error_404": "404",
+    "page_not_found": "The requested page or resource could not be found.",
+    "back_to_start": "Back to home page",
+    "snackbar_error_message": "A network error occurred. Please try again.",
+    "offline_notification": "You are offline. Some features may not work and some data may not be up to date."
+  },
+  "service_worker": {
+    "new_version_available": "A new version of the app is available",
+    "update": "Update",
+    "dismiss": "Dismiss"
+  },
+  "graphql": {
+    "snackbar_error_message": "There was an error retrieving the page data. Please try again."
+  }
+}
