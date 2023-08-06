@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: batspy
+Version: 0.1.3
+Summary: Testing framework for bash scripts
+Home-page: https://github.com/tomshabtay/batspy
+Author: Tom Shabtay
+Author-email: tomshabtay@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+
