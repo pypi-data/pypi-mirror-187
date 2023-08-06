@@ -1,0 +1,3 @@
+[console_scripts]
+scrapemove=scrapemove.cli:main
+
