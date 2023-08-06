@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+iro/iro.py
+iro/main.py
+toori_server.egg-info/PKG-INFO
+toori_server.egg-info/SOURCES.txt
+toori_server.egg-info/dependency_links.txt
+toori_server.egg-info/entry_points.txt
+toori_server.egg-info/not-zip-safe
+toori_server.egg-info/requires.txt
+toori_server.egg-info/top_level.txt
