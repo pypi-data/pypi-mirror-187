@@ -1,0 +1,41 @@
+[MASTER]
+
+# Add files or directories to the blacklist.
+ignore=kodi_addon_checker.egg-info,
+       LICENSE,
+       MANIFEST.in,
+       PUBLISH.md,
+       README.md,
+       requirements.txt,
+       script.test,
+
+
+[MESSAGES CONTROL]
+
+# Types of check we want to disable
+# format
+# disable=stuff-that-we-actually-want-ignored,
+#        stuff-that-we-actually-want-ignored2,
+#
+#        stuff-thats-only-ignored-for-now-and-will-be-addressed-in-a-pr,
+#        stuff-thats-only-ignored-for-now-and-will-be-addressed-in-a-pr2
+disable=import-error,
+        no-name-in-module,
+
+        missing-docstring,
+        too-few-public-methods,
+        invalid-name,
+        useless-else-on-loop,
+        too-many-nested-blocks,
+
+
+[FORMAT]
+
+# Maximum number of characters on a single line.
+max-line-length=120
+
+
+[SIMILARITIES]
+
+# Ignore imports when computing similarities.
+ignore-imports=yes

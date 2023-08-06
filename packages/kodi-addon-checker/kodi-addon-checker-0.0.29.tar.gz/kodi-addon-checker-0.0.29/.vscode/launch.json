@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug repo",
+            "type": "python",
+            "request": "launch",
+            "module": "kodi_addon_checker.__main__",
+            "args": [
+                "--branch=BRANCH_NAME",
+                "REPO_DIRECTORY",
+            ]
+        },
+        {
+            "name": "Debug single addon",
+            "type": "python",
+            "request": "launch",
+            "module": "kodi_addon_checker.__main__",
+            "args": [
+                "--branch=BRANCH_NAME",
+                "--PR",
+                "ADDON_DIR_TO_CHECK",
+            ]
+        }
+    ]
+}
