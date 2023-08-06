@@ -1,0 +1,5 @@
+#!python
+
+from alsa_ctl.cli import main
+
+main()
