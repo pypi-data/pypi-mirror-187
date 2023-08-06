@@ -1,0 +1,4 @@
+[console_scripts]
+random-http-requests=top.web.random_requests:main
+web-top=top.web.main:app
+
