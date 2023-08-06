@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "pycommonregex"
+version = "0.1.2"
+description = "A Python package for common regular expressions."
+authors = ["fadedreams7 <fadedreams7@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/fadedreams/pycommonregex"
+keywords = ["regex", "utilities"]
+classifiers = [
+  "Environment :: Console",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Utilities"
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pytest = "^7.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
