@@ -1,0 +1,3 @@
+[console_scripts]
+lyd=lidarr_youtube_downloader.lyd:app
+
