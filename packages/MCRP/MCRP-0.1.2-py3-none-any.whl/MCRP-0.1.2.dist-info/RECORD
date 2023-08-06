@@ -1,0 +1,11 @@
+MCRP/__init__.py,sha256=zZLBFWCdcWG8FZ0B9TKDruFR_j6agv8WGwlfjpMu4cU,61
+MCRP/mcrp.py,sha256=cZRUJO9Nth25qcHETiJowa1KKSem34vdEpu0yAZ75bk,8035
+MCRP/mcwp.py,sha256=OW0E_qBDOJG2QBmcZ6PX6bTeuI5Ux1_G0KnAy6GVZ38,4330
+MCRP/tcproxy.py,sha256=KasGjIN03f9dFRPFbkdrBAqRSYGQSTo1bdL5A0eNT-E,3669
+MCRP/util.py,sha256=QPWzVMO4ulHkSA9v3nPUqKfLecPa68uc03zz-rI-8MM,882
+MCRP-0.1.2.dist-info/LICENSE,sha256=5o3klq1LXYOQ7ZW15SETGFku4Z3oV9VOELnettdwfLU,35060
+MCRP-0.1.2.dist-info/METADATA,sha256=QRZWIBLQ0vT-HZBcyI1_-QhXcAmkqElDJwjPOCIucks,3222
+MCRP-0.1.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+MCRP-0.1.2.dist-info/entry_points.txt,sha256=8HjEjIsVMm6kdV9S1GqsjK9ICk_iAvrb3W6S2Zzfre4,41
+MCRP-0.1.2.dist-info/top_level.txt,sha256=kiBJB9iCobyqf3IxllWZAGupoBPqi7nHCNXQevMrEpc,5
+MCRP-0.1.2.dist-info/RECORD,,
