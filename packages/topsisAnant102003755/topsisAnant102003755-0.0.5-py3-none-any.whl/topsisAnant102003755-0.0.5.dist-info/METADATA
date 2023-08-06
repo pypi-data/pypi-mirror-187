@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: topsisAnant102003755
+Version: 0.0.5
+Summary: Topsis Score Calculator
+Home-page: https://github.com/amish-1729/Topsis-Anant-102003755
+Author: Anant Mishra
+Author-email: amishra_be20@thapar.edu
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: openpyxl
+Requires-Dist: tabulate
+
+Command line tool and python package to calculate topsis score of a dataset
