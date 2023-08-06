@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "rustga"
+version = "0.1.0"
+description = ""
+authors = ["{Your Name} <{your@example.com}>"]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.10"
+maturin = ">=0.14"
+
+[build-system]
+requires = ["maturin>=0.14"]
+build-backend = "maturin"
+
+[project]
+name = "rustga"
+requires-python = ">=3.9,<3.10"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
