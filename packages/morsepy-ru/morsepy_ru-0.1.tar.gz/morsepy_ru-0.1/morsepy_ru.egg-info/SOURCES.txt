@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+morsepy_ru/__init__.py
+morsepy_ru/morsepy.py
+morsepy_ru.egg-info/PKG-INFO
+morsepy_ru.egg-info/SOURCES.txt
+morsepy_ru.egg-info/dependency_links.txt
+morsepy_ru.egg-info/not-zip-safe
+morsepy_ru.egg-info/top_level.txt
