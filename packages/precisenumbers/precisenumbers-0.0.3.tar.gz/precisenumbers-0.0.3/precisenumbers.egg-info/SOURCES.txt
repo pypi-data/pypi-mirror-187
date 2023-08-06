@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+setup.py
+precisenumbers/__init__.py
+precisenumbers/coordinates.py
+precisenumbers.egg-info/PKG-INFO
+precisenumbers.egg-info/SOURCES.txt
+precisenumbers.egg-info/dependency_links.txt
+precisenumbers.egg-info/top_level.txt
+tests/__init__.py
+tests/test_coordinates.py
+tests/test_precisenumbers.py
