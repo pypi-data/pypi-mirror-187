@@ -1,0 +1,2 @@
+[console_scripts]
+test-socket-server = atfdb.tests.socket_server:server_program
