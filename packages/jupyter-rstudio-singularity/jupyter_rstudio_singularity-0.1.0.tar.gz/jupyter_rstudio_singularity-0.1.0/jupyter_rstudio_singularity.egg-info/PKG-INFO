@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: jupyter-rstudio-singularity
+Version: 0.1.0
+Summary: Launch RStudio with Singularity from the command line.
+Home-page: https://github.com/dabble-of-devops-bioanalyze/jupyter_rstudio_singularity
+Author: Jillian Rowe
+Author-email: jillian@dabbleofdevops.com
+License: Apache Software License 2.0
+Keywords: jupyter_rstudio_singularity
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+
+===========================
+jupyter-rstudio-singularity
+===========================
+
+
+.. image:: https://img.shields.io/pypi/v/jupyter_rstudio_singularity.svg
+        :target: https://pypi.python.org/pypi/jupyter_rstudio_singularity
+
+.. image:: https://img.shields.io/travis/dabble-of-devops-bioanalyze/jupyter_rstudio_singularity.svg
+        :target: https://travis-ci.com/dabble-of-devops-bioanalyze/jupyter_rstudio_singularity
+
+.. image:: https://readthedocs.org/projects/jupyter-rstudio-singularity/badge/?version=latest
+        :target: https://jupyter-rstudio-singularity.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+
+
+Launch RStudio with Singularity from the command line.
+
+
+* Free software: Apache Software License 2.0
+* Documentation: https://jupyter-rstudio-singularity.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2023-01-23)
+------------------
+
+* First release on PyPI.

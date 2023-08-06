@@ -1,0 +1,2 @@
+[console_scripts]
+launch-rstudio = jupyter_rstudio_singularity.cli:main

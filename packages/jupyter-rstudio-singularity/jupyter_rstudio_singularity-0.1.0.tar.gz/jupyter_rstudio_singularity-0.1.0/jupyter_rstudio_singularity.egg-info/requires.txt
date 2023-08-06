@@ -1,0 +1,5 @@
+Click>=7.0
+typer[all]
+prefect>2
+prefect-shell
+colorlog
