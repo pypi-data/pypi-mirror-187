@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: flake8-fastapi-route-case
+Version: 0.1.0
+Summary: Flake8 extension to check FastAPI routes all use the same case
+License: MIT
+Author: Harry Lees
+Author-email: harry.lees@gmail.com
+Requires-Python: >=3.8.1
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: importlib-metadata (>=6.0.0)
+Description-Content-Type: text/markdown
+
+# Flake8 FastAPI Route Case
+
+A Flake8 FastAPI plugin to ensure all FastAPI routes follow the same case.
+
+## Rationale
+
+In a project, you may have many FastAPI endpoints, this plugin will ensure
+all FastAPI routes follow the same case so you don't end up with mismatched
+case.
+
+```python
+@router.get("/users/user_info")
+def get_user_info():
+    ...
+
+# should be /users/user_info to follow naming convention
+@router.post("/users/userInfo")
+def post_user_info():
+    ...
+```
+
