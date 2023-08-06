@@ -1,0 +1,6 @@
+pyproject.toml
+src/__init__.py
+src/example_package_disco_disco_good_good_yehuda_dont_delete_it_its_me.egg-info/PKG-INFO
+src/example_package_disco_disco_good_good_yehuda_dont_delete_it_its_me.egg-info/SOURCES.txt
+src/example_package_disco_disco_good_good_yehuda_dont_delete_it_its_me.egg-info/dependency_links.txt
+src/example_package_disco_disco_good_good_yehuda_dont_delete_it_its_me.egg-info/top_level.txt
