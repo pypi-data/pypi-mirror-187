@@ -1,0 +1,12 @@
+LICENCE
+README.md
+setup.py
+pytest_expectdir/__init__.py
+pytest_expectdir/plugin.py
+pytest_expectdir.egg-info/PKG-INFO
+pytest_expectdir.egg-info/SOURCES.txt
+pytest_expectdir.egg-info/dependency_links.txt
+pytest_expectdir.egg-info/entry_points.txt
+pytest_expectdir.egg-info/not-zip-safe
+pytest_expectdir.egg-info/requires.txt
+pytest_expectdir.egg-info/top_level.txt
