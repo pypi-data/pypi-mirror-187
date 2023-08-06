@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pygeneral
+Version: 1.0.0
+Summary: Python package containing general classes and methods
+Project-URL: Homepage, https://github.com/sayyis5416/pygeneral
+Project-URL: Bug Tracker, https://github.com/sayyis5416/pygeneral/issues
+Author: sayyid5416
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# 🔰 pygeneral
+- Python package containing general classes and methods
+- Check [init file](/src/pygeneral/__init__.py) for list of all available classes and methods
