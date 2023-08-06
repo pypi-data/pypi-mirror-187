@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+vosk_cli.egg-info/PKG-INFO
+vosk_cli.egg-info/SOURCES.txt
+vosk_cli.egg-info/dependency_links.txt
+vosk_cli.egg-info/entry_points.txt
+vosk_cli.egg-info/requires.txt
+vosk_cli.egg-info/top_level.txt
+voskcli/__main__.py
+voskcli/transcribe.py
