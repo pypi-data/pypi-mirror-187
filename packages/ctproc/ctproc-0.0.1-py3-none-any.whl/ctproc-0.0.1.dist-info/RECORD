@@ -1,0 +1,15 @@
+ctproc/__init__.py,sha256=roWuYVqQM-HhNPb9rpM_obH62nV_Wz8yEK4DvzaWPjM,59
+ctproc/ctconfig.py,sha256=57w4muAwt91UKcx6Tjc1RXCEIjAeYG_jb_nu_iMDP2M,1327
+ctproc/ctdocument.py,sha256=qTdPCrlK7zjKkBDoRHV1NVs2lKk3DuRp7FSWav3eVVY,4821
+ctproc/eligibility.py,sha256=fKKtdh-tlrIJjdtN2Xn4j9aM2kFamX_GWXqt1MV5dqs,4093
+ctproc/proc.py,sha256=cLVTYADAHJvMS7nNbd1lLtudzM0xGMWAyNeOzeuzkDs,23014
+ctproc/regex_patterns.py,sha256=AUv0kng_IgZBANsHpM5mZ-R-g8LcV3ayOtBLrM-tuHk,678
+ctproc/stats.py,sha256=dirxlEwU_wL1PeberiUU5NxJDHNRMox7FgYXzIXUx6I,815
+ctproc/utils.py,sha256=10ur8nWVm3iqyropkNsZKg_spTdeIsvaZh4zqY26aNI,6802
+ctproc/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ctproc/tests/ctproc_tests.py,sha256=23iku4llq3S-vdnU3PxXnGR0zn94OzgkMZRitTpOfls,12127
+ctproc-0.0.1.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+ctproc-0.0.1.dist-info/METADATA,sha256=lvVBlEJCXjUhSqRUyeLatY4YNPCnGVVc4V9_blpWeOw,4382
+ctproc-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ctproc-0.0.1.dist-info/top_level.txt,sha256=zdxrQkG0Kwr_LOkaE_KBOCpwd_juSjzihHfhdz6o1ls,7
+ctproc-0.0.1.dist-info/RECORD,,
