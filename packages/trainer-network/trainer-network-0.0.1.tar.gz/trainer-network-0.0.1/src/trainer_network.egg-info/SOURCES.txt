@@ -1,0 +1,8 @@
+LICENSE
+pyproject.toml
+src/trainer-network/Client_1.py
+src/trainer-network/Server_1.py
+src/trainer_network.egg-info/PKG-INFO
+src/trainer_network.egg-info/SOURCES.txt
+src/trainer_network.egg-info/dependency_links.txt
+src/trainer_network.egg-info/top_level.txt
