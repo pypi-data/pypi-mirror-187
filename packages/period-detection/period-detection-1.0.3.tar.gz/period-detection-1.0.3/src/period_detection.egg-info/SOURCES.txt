@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/period_detection/__init__.py
+src/period_detection/auxiliary_funcs.py
+src/period_detection/find_period.py
+src/period_detection/plot_funcs.py
+src/period_detection.egg-info/PKG-INFO
+src/period_detection.egg-info/SOURCES.txt
+src/period_detection.egg-info/dependency_links.txt
+src/period_detection.egg-info/requires.txt
+src/period_detection.egg-info/top_level.txt
