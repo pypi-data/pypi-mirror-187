@@ -1,0 +1,6 @@
+SELECT * WHERE {
+    ?index mkdocs:isChildOf ?directory .
+    ?directory mkdocs:isParentOf ?adr_page .
+
+    ?adr_page mkdocs:about* / adr:number ?number .
+} ORDER BY DESC(?number)

@@ -1,0 +1,14 @@
+[console_scripts]
+iolanta=iolanta.cli:app
+
+[iolanta.graph]
+mkdocs_iolanta=mkdocs_iolanta:MkDocsIolantaGraphProvider
+
+[mkdocs.plugins]
+mkdocs-iolanta-tables=mkdocs_iolanta_tables.plugin:TablesPlugin
+octadocs-github=octadocs_github.plugin:GithubPlugin
+octadocs-ibis=octadocs_ibis.plugin:IbisPlugin
+octadocs-prov=octadocs_prov.plugin:ProvenancePlugin
+octadocs-telegram=octadocs_telegram.plugin:TelegramPlugin
+octadocs_adr=octadocs_adr.plugin:ADRPlugin
+
