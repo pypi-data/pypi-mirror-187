@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: beku-stackabletech
+Version: 0.0.5
+Summary: Test suite expander for Stackable Kuttl tests.
+Home-page: https://github.com/stackabletech/beku.py
+Author: Razvan Mihai
+Author-email: Razvan Mihai <razvan.mihai@stackable.tech>
+Project-URL: Homepage, https://github.com/stackabletech/beku.py
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# beku
+
+## Installation
+
+    pip install beku-stackabletech
+
+## Usage
+
+    cd <stackable operator directory>
+    rm -rf tests/_work && beku
+    cd tests/_work && kubectl kuttl test
+
+## Description
+
+Fast Kuttl tests expander for Stackable integration tests.
+
+    beku -i tests/test-definition.yaml -t tests/templates/kuttl -k tests/kuttl-test.yaml.jinja2 -o tests/_work
+
+## Build
+
+    python -m build --sdist --wheel .
+    twine upload dist/*
+
