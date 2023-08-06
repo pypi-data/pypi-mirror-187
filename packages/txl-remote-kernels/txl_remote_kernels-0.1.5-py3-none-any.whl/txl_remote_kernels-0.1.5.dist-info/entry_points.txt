@@ -1,0 +1,2 @@
+[txl_component]
+txl_remote_kernels = txl_remote_kernels.components
