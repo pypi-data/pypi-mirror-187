@@ -1,0 +1,7 @@
+OBP_logging/__init__.py,sha256=_yc9H7MWL_wB5IDa2ipNkBYNiEWa4pQ0aCfZxPy79FU,1607
+OBP_logging/cloudwatch.py,sha256=HEkqHuQKYhQl5ycHVXjRlIiY6wekOZ0y1OYNHvKYOho,4278
+OBP_logging/utils.py,sha256=twh_bZuANfkkiog6h6ThQfsu9Il_axKQpZhrkbqxCOU,1948
+OBP_logging-0.0.2.dist-info/METADATA,sha256=M2ebwe7qij59kQB0BzU3HvtsDfW5T6EHqnJ9zFsAmDY,372
+OBP_logging-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+OBP_logging-0.0.2.dist-info/top_level.txt,sha256=G4rEtUl6vVOYZ2DNRCszByjAUR7_qV5QrUYAJVI1MqE,12
+OBP_logging-0.0.2.dist-info/RECORD,,
