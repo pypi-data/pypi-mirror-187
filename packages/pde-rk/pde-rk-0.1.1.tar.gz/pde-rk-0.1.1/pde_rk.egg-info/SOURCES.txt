@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pde_rk/__init__.py
+pde_rk/pde.py
+pde_rk.egg-info/PKG-INFO
+pde_rk.egg-info/SOURCES.txt
+pde_rk.egg-info/dependency_links.txt
+pde_rk.egg-info/requires.txt
+pde_rk.egg-info/top_level.txt
