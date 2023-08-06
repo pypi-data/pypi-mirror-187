@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: toolkit_gm
+Version: 0.0.2
+Summary: A personal toolkit package
+Project-URL: Homepage, https://github.com/gaetanmuck/toolkit_gm
+Author-email: Gaétan Muck <gaetan.muck@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# My Toolkit
+
+This package is one that I made to ease my life with recurring function that I use and that I did not found (at the time of writing) a suitable equivalent.
