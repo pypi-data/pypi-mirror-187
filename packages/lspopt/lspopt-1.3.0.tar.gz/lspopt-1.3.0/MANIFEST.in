@@ -1,0 +1,8 @@
+include LICENSE
+include README.md
+include HISTORY.md
+include requirements.txt
+include Pipfile
+include CHANGELOG.md
+include lspopt/data/c.npy
+include lspopt/data/weights.npy
