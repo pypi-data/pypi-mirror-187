@@ -1,0 +1,11 @@
+aio_geojson_geonetnz_volcano/__init__.py,sha256=Qoh2c36yW4Dj83GfyEyAJ0pgqIyNYHGblS7UuUNufQo,153
+aio_geojson_geonetnz_volcano/__version__.py,sha256=iI6VtyYWX8EV32oiiG5uKQOVU-KP0KrWU2ThCByhL0E,53
+aio_geojson_geonetnz_volcano/consts.py,sha256=4fVAbf0JfPtgAO2VXFkP-FVbLKt1a7pds7-fQR_Yto4,304
+aio_geojson_geonetnz_volcano/feed.py,sha256=XtQj3EA-s2DYEusuTQfT4d9rIKnK5rKeILIgQeHhrDo,1480
+aio_geojson_geonetnz_volcano/feed_entry.py,sha256=u1CE0MEgsBveqSSflFlbzfLWrOu1TvQel0MlK21V-YQ,1518
+aio_geojson_geonetnz_volcano/feed_manager.py,sha256=ToZtQlQsRvsf6CDKYCsrWVoUJYMkvVqJ5JQESdy1YzE,1925
+aio_geojson_geonetnz_volcano-0.8.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+aio_geojson_geonetnz_volcano-0.8.dist-info/METADATA,sha256=HmIIW3xn0N5bG3EyVikIhYwfDf66A9wakFIyPgLTBLI,6154
+aio_geojson_geonetnz_volcano-0.8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aio_geojson_geonetnz_volcano-0.8.dist-info/top_level.txt,sha256=UHHnIq69MrkSTnpy_4NRx_li6_s1jY0j1Ma-x4PNb9o,29
+aio_geojson_geonetnz_volcano-0.8.dist-info/RECORD,,
