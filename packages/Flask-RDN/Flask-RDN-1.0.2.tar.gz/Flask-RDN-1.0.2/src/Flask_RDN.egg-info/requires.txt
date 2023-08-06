@@ -1,0 +1,2 @@
+Flask>=2.0.3
+Query-String-Manager>=1.0.9
