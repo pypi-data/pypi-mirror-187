@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: climetlab_google_drive_source
+Version: 0.1.5
+Summary: A source plugin for climetlab for the source google-drive
+Home-page: http://github.com/ecmwf-lab/climetlab-google-drive-source
+Author: Florian Pinault
+Author-email: Florian.Pinault@ecmwf.int
+License: Apache License Version 2.0
+Description: ## climetlab-google_drive_source
+        
+        A source plugin for climetlab for the source google-drive.
+        
+        
+        Features
+        --------
+        
+        In this README is a description of how to use the source provided by the python package google_drive_source.
+        
+        ## Source description
+        
+        Read a publicly accessible file from google drive as if it was local (i.e. cache the file locally).
+        
+        ## Using climetlab to access the data
+        
+        See the [demo notebooks](https://github.com/ecmwf-lab/climetlab-google-drive-source/tree/main/notebooks)
+        [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ecmwf-lab/climetlab-google-drive-source/main?urlpath=lab)
+        
+        
+        - [demo.ipynb](https://github.com/ecmwf-lab/climetlab-google-drive-source/tree/main/notebooks/demo.ipynb)
+        [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/github/ecmwf-lab/climetlab-google-drive-source/blob/main/notebooks/demo.ipynb) 
+        [![Open in colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ecmwf-lab/climetlab-google-drive-source/blob/main/notebooks/demo.ipynb) 
+        [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ecmwf-lab/climetlab-google-drive-source/main?filepath=notebooks/demo.ipynb)
+        [<img src="https://deepnote.com/buttons/launch-in-deepnote-small.svg">](https://deepnote.com/launch?name=MyProject&url=https://github.com/ecmwf-lab/climetlab-google-drive-source/tree/main/notebooks/demo.ipynb)
+        
+        
+        
+        The climetlab python package allows easy access to the data with a few lines of code such as:
+        ``` python
+        
+        !pip install climetlab climetlab-google-drive-source
+        import climetlab as cml
+        ds = cml.load_source("google-drive", file_id="...")
+        # use ds as you would use cml.load("file", filename)
+        ```
+        
+        Todo
+        ----
+        
+        Add authentification support. Perhaps using the package pydrive2?
+        
+        
+        Support and contributing
+        ------------------------
+        
+        Open a issue on github or a pull request.
+        
+        LICENSE
+        -------
+        
+        See the LICENSE file.
+        (C) Copyright 2022 European Centre for Medium-Range Weather Forecasts.
+        This software is licensed under the terms of the Apache Licence Version 2.0
+        which can be obtained at http://www.apache.org/licenses/LICENSE-2.0.
+        In applying this licence, ECMWF does not waive the privileges and immunities
+        granted to it by virtue of its status as an intergovernmental organisation
+        nor does it submit to any jurisdiction.
+        
+        Authors
+        -------
+        
+        Florian Pinault and al.
+        
+        See also the CONTRIBUTORS.md file.
+        
+Keywords: meteorology
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
