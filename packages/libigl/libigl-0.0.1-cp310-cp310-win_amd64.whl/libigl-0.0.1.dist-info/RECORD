@@ -1,0 +1,13 @@
+igl/helpers.py,sha256=bO4T9yhY0fE7Y_O_08kAzkkEpvCXxKPWhCjnzE3C1zs,2086
+igl/pyigl.cp310-win_amd64.pyd,sha256=6nzks2EzOvQpPIMBBYo8KDaVTNdShwDkUj_T0FMDj00,315904
+igl/pyigl_classes.cp310-win_amd64.pyd,sha256=htUs0hnfowUvXGAagesSXHxYCWFy6ueWwtLVJwzJSX8,665088
+igl/_version.py,sha256=ry5O5SW74ugwOUMKSV2_LbWjYa8B0IEvUm7S-lHPA2c,23
+igl/__init__.py,sha256=fRT4Ygr9aPFPwZotACrX8htKqO7xHFw_g5Ch3qmHfTo,585
+libigl-0.0.1.dist-info/DELVEWHEEL,sha256=PJvp4dT_td2HbtUtcTGEOxtcKztIrW-iAWEoJBqx3Cg,652
+libigl-0.0.1.dist-info/METADATA,sha256=_ZlByvirZokNNuu2soYeWfj_YygbvI0UqBbn8QoEF9U,2449
+libigl-0.0.1.dist-info/RECORD,,
+libigl-0.0.1.dist-info/top_level.txt,sha256=210Ot2-g5gXo3qYzQVWuNfKdSK5Lpy18bvW0WNArcAI,16
+libigl-0.0.1.dist-info/WHEEL,sha256=rneS2j8QNmAwdNKHN86s6-qP7AMcWZgqiEoH3bdbh_Y,102
+libigl.libs/msvcp140.dll,sha256=yzx01vzAkfTrfGfuXrX3bByXPeqLHGuFH8ymLCqdiqg,579920
+tests/test_basic.py,sha256=lnZRROSd_VR7XTEUgpN82Gr8yABAwBWmbOjyP0Eipes,94854
+tests/__init__.py,sha256=yeucCv2o5uzNBc99076Q2YDlEwZ5IXpsr5p-tGnhcSY,475
