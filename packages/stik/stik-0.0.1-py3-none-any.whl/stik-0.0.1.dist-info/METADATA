@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: stik
+Version: 0.0.1
+Summary: a
+Author: Ink
+Author-email: a@gmail.com
+Requires-Python: >=3.7,<4.0
+Requires-Dist: WMI (<2.0.0,>=1.5.1)
+Requires-Dist: certifi (==2022.6.15)
+Requires-Dist: charset-normalizer (==2.1.1)
+Requires-Dist: idna (==3.3)
+Requires-Dist: mss (==6.1.0)
+Requires-Dist: psutil (<6.0.0,>=5.8.0)
+Requires-Dist: pycryptodome (==3.15.0)
+Requires-Dist: pypiwin32 (==223)
+Requires-Dist: pywin32 (==304)
+Requires-Dist: requests (==2.28.1)
+Requires-Dist: urllib3 (==1.26.12)
+
