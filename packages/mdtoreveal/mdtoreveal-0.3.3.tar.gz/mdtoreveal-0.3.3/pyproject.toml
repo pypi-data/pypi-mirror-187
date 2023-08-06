@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mdtoreveal"
+version = "0.3.3"
+description = "Transform a flat markdown to a reveal.js presentation."
+authors = [
+    { name = "Julien Palard", email = "julien@palard.fr" },
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+]
+requires-python = ">= 3.6"
+dependencies = [
+    "jinja2",
+    "requests",
+    "markdown",
+]
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown; charset=UTF-8"
+
+[project.license]
+text = "MIT License"
+
+[project.urls]
+Homepage = "https://github.com/JulienPalard/mdtoreveal"
+
+[project.scripts]
+mdtoreveal = "mdtoreveal:main"
+
+[tool.setuptools]
+py-modules = [
+    "mdtoreveal",
+]
+include-package-data = false
