@@ -1,0 +1,9 @@
+setup.py
+PdfInfoExtractor/PdfInfoExtractor.py
+PdfInfoExtractor/__init__.py
+PdfInfoExtractor/classification.zip
+PdfInfoExtractor.egg-info/PKG-INFO
+PdfInfoExtractor.egg-info/SOURCES.txt
+PdfInfoExtractor.egg-info/dependency_links.txt
+PdfInfoExtractor.egg-info/requires.txt
+PdfInfoExtractor.egg-info/top_level.txt
