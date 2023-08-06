@@ -1,0 +1,9 @@
+README.rst
+setup.py
+ja_stopword_remover/__init__.py
+ja_stopword_remover/remover.py
+ja_stopword_remover/stop_words.py
+ja_stopword_remover.egg-info/PKG-INFO
+ja_stopword_remover.egg-info/SOURCES.txt
+ja_stopword_remover.egg-info/dependency_links.txt
+ja_stopword_remover.egg-info/top_level.txt

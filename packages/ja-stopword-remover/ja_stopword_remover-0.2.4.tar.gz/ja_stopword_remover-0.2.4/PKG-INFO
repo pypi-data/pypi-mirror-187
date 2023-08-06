@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: ja_stopword_remover
+Version: 0.2.4
+Summary: 形態素解析後の日本語の文のリストからストップワードを除去するためのモジュール
+Home-page: https://pickerlab.net/
+Author: picker.
+Author-email: picker@pickerlav.jp
+License: MIT
+Description: 形態素解析後の日本語の文のリストからストップワードを除去するためのモジュールです。
+        作者が使っていたプログラムをなんとなくpipに登録しただけですので、適当に使ってください。
+        ご意見はご要望はこのパッケージのgithubかhttps://pickerlab.net/2020/12/26/ja_stopword_remover/のコメント欄までお願いします。
+        
+Platform: UNKNOWN
