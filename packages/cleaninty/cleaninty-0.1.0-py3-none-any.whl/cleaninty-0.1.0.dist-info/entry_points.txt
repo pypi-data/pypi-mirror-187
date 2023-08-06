@@ -1,0 +1,4 @@
+[console_scripts]
+cleaninty = cleaninty._main:_main
+cleaninty_ctr = cleaninty.ctr._main:_main
+cleaninty_ktr = cleaninty.ctr._main:_main
