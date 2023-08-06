@@ -1,0 +1,17 @@
+feature_toggle_manager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+feature_toggle_manager/admin.py,sha256=p6xop1PuuDG2Uwv3G_aRfldxOfBzTRfMaoZmORVkqyU,66
+feature_toggle_manager/apps.py,sha256=BJEOvgb0yMk8is_u57yJC_oSX_6HwYn_N9qlyrRimY0,259
+feature_toggle_manager/consumers.py,sha256=QBikLHDeJKOSMH7cA5_Nmv0Av_5pDOdQPGoeLi9w8Gs,1251
+feature_toggle_manager/models.py,sha256=4OVMcDDx9fVgBEJ91B7dfMEG2Ni1LRSLJOKzIkVPsKo,60
+feature_toggle_manager/routing.py,sha256=hN1O95EVpiDQDFe0n2RT13c1xvR7mJ1myBHuirYi_30,173
+feature_toggle_manager/serializers.py,sha256=MhaizXLUzMP_it4EzinImXyMGQ6qFDKoeZsYARcMBUA,255
+feature_toggle_manager/signals.py,sha256=tag6pJhibbkdBe5ibnXghKeZ0DTkL6Bl7rgCN4cdgBg,571
+feature_toggle_manager/tests.py,sha256=2uDafv3Ns6f7Vy1ekUtgYxCZEi1KRyesZDTAFhYcX-E,63
+feature_toggle_manager/urls.py,sha256=UuWmnrsZsZiATfctgG_CkoLqFsUKYDjOvujJlWwHmY8,284
+feature_toggle_manager/views.py,sha256=Xxr9IB4AYqildKTvwJMBJykaL6Mfd3x-MTvBMIE825g,892
+feature_toggle_manager/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+feature_toggle_manager-0.0.1.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+feature_toggle_manager-0.0.1.dist-info/METADATA,sha256=8I1dMr15yFp4gAx-K0WV3TQZegt6N_3a7sqwge1O_Ns,724
+feature_toggle_manager-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+feature_toggle_manager-0.0.1.dist-info/top_level.txt,sha256=bVr-DsINn--OTFll3eh3vWTr81BDw2jX3Q2KRGxa2es,23
+feature_toggle_manager-0.0.1.dist-info/RECORD,,
