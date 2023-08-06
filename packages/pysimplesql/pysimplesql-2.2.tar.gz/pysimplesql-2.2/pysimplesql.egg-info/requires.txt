@@ -1,0 +1,2 @@
+PySimpleGUI
+update_checker

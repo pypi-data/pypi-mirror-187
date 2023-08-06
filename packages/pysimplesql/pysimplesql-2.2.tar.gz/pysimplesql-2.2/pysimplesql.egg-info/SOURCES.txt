@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pysimplesql/__init__.py
+pysimplesql/pysimplesql.py
+pysimplesql.egg-info/PKG-INFO
+pysimplesql.egg-info/SOURCES.txt
+pysimplesql.egg-info/dependency_links.txt
+pysimplesql.egg-info/requires.txt
+pysimplesql.egg-info/top_level.txt
