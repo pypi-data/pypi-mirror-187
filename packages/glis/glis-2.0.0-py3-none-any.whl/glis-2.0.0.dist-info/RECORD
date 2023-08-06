@@ -1,0 +1,8 @@
+glis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+glis/rbf.py,sha256=es1m7sPPTdvosb9xIUKehHKkwekGBeSfEHsdKg9BYr0,954
+glis/solvers.py,sha256=Azu6fEKNErXAKGEM9dfXtFXBHiiXxFr_7gjGT5FG__8,64160
+glis-2.0.0.dist-info/LICENSE.txt,sha256=gUXRlrhev-63r3XUdmwz06oPJCU5FJcluptjCNahxcg,11345
+glis-2.0.0.dist-info/METADATA,sha256=FI2vCIeEZHB5zzM9lBbHe7kDt8aXgv0uE_X2rWxAsFE,22122
+glis-2.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+glis-2.0.0.dist-info/top_level.txt,sha256=-yvG7Fiuy2ONw1QSzQFa4q4uadP_365p96kdptn3S2w,5
+glis-2.0.0.dist-info/RECORD,,
