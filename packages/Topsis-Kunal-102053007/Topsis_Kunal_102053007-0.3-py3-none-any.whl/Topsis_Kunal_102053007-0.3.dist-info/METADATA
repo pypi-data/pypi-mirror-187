@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: Topsis-Kunal-102053007
+Version: 0.3
+Summary: This is a topsis package of version 0.3
+Home-page: UNKNOWN
+Author: Kunal Madan
+Author-email: kmadan_bemba20@thapar.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+
+## Topsis_Kunal_102053007
+
+# TOPSIS
+
+Submitted By: Kunal Madan - 102053007.
+
+Type: Package.
+
+Title: *TOPSIS method for multiple-criteria decision making (MCDM)*.
+
+Version: 1.0.0.
+
+Date: 2022-01-22.
+
+Author: Kunal Madan.
+
+Maintainer: *Kunal Madan <kmadan_bemba20@thapar.edu>*.
+
+Description: *Evaluation of alternatives based on multiple criteria using TOPSIS method.*.
+
+---
+
+## What is TOPSIS?
+
+*Technique for **Order **Preference by **Similarity to **Ideal **S*olution
+(TOPSIS) originated in the 1980s as a multi-criteria decision making method.
+TOPSIS chooses the alternative of shortest Euclidean distance from the ideal solution,
+and greatest distance from the negative-ideal solution.
+
+<br>
+
+## How to install this package:
+
+
+>> pip install Topsis-Kunal-102053007
+
+
+### In Command Prompt
+
+
+>> topsis data.csv "1,1,1,1,1" "+,+,-,+,-" result.csv
+
+
+## Input file (data.csv)
+
+The decision matrix should be constructed with each row representing a Model alternative, and each column representing a criterion like Accuracy, R<sup>2</sup>, Root Mean Squared Error, Correlation, and many more.
+
+| Model |     P1      | P2 | P3 | P4 | P5 |
+| ----- | ----------- | ------------- | ---- | -------- | ---- |
+| M1    | 0.66       | 0.44        | 4.9 | 32.9    | 9.73 |
+| M2    | 0.65        | 0.42          | 5 | 44.5    | 12.64 |
+| M3    | 0.61       | 0.37          | 3.3 | 41.1    | 11.35 |
+| M4    | 0.62        | 0.38          | 6.5 | 64.1    | 17.9 |
+| M5    | 0.83        | 0.69          | 6.4  | 34.4    | 10.58 |
+| M6    | 0.88        | 0.77          | 6.7  | 34.8    | 10.79 |
+| M7    | 0.63        | 0.4          | 4.5  | 39.1    | 11.16 |
+| M8    | 0.8        | 0.64          | 4.4  | 45.7    | 12.89 |
+
+Weights (`weights`) is not already normalised will be normalised later in the code.
+
+Information of benefit positive(+) or negative(-) impact criteria should be provided in `impacts`.
+
+<br>
+
+## Output file (out.csv)
+
+| Model |     P1      | P2 | P3 | P4 | P5 | Topsis Score | Rank |
+| ----- | ----------- | ------------- | ---- | -------- | ---- |-----| ----|
+| M1    | 0.66       | 0.44        | 4.9 | 32.9    | 9.73 | 0.21189353869415917 | 6
+| M2    | 0.65        | 0.42          | 5 | 44.5    | 12.64 |0.3271776939542866|5
+| M3    | 0.61       | 0.37          | 3.3 | 41.1    | 11.35 |0.15153299377397803|8
+| M4    | 0.62        | 0.38          | 6.5 | 64.1    | 17.9 |0.5850881941527206|1
+| M5    | 0.83        | 0.69          | 6.4  | 34.4    | 10.58 |0.49092824102735394|3
+| M6    | 0.88        | 0.77          | 6.7  | 34.8    | 10.79 |0.5427136027309007|2
+| M7    | 0.63        | 0.4          | 4.5  | 39.1    | 11.16 |0.2008035122309426|7
+| M8    | 0.8        | 0.64          | 4.4  | 45.7    | 12.89 |0.48154813555267983|4
+
+<br>
+The output file contains columns of input file along with two additional columns having Topsis_scoreÂ andÂ Rank
+
