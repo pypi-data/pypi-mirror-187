@@ -1,0 +1,28 @@
+# http://tornado.readthedocs.org/en/latest/gen.html#tornado.gen.with_timeout
+tornado>=6.0.4
+
+# Used to parse out the JSON and validate its format.
+simplejson
+jsonschema
+jsonpickle
+
+# Used to parse CFN yaml, which has a few edge cases PyYaml doesn't parse by default
+cfn-flip
+
+# Colorize the log output!
+rainbow_logging_handler
+
+# kingpin.actors.aws.*
+boto3>=1.9.46
+
+# Used to turn snake_case into CamelCase
+inflection
+zipp
+configparser
+
+#
+# ND libraries
+#
+
+# tornado rest client
+tornado_rest_client==1.0.0
