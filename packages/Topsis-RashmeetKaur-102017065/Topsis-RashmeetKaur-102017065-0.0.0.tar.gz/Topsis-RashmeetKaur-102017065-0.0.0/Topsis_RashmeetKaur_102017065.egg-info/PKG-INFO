@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: Topsis-RashmeetKaur-102017065
+Version: 0.0.0
+Summary: Topsis Implementation
+Home-page: https://github.com/Rashmeet1-hub/Topsis-RashmeetKaur-102017065.git
+Author: Rashmeet Kaur
+Author-email: rkaur1_be20@thapar.edu
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This package is implementation of multi-criteria decision analysis using topsis.
+This package will accept three arguments during file execution:
+1. dataset.csv //file which contains the models and parameters
+2. string of weights separated by commas(,)
+3. string of requirements (+/-) separated by commas(,)
+// important
+install pandas,sys,operator and math libraries before installing this
+//
+You can install this package using following command
+pip install Topsis_RashmeetKaur_102017065
