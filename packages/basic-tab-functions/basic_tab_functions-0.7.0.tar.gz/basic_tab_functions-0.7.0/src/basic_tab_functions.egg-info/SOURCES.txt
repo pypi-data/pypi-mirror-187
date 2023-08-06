@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/basic_tab_functions/__init__.py
+src/basic_tab_functions/basic_tab_functions.py
+src/basic_tab_functions.egg-info/PKG-INFO
+src/basic_tab_functions.egg-info/SOURCES.txt
+src/basic_tab_functions.egg-info/dependency_links.txt
+src/basic_tab_functions.egg-info/top_level.txt

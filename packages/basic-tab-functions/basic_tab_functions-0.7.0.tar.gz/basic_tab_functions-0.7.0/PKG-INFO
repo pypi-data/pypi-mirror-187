@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: basic_tab_functions
+Version: 0.7.0
+Summary: A basic package for reading .txt files
+Author-email: Hallgrímur Eggertsson <HallgrimurV@gmail.com>
+Project-URL: Homepage, https://github.com/lord_hellgrim/basic_tab_functions
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This is a simple package for reading and writing .txt files to and from various python data structures.
