@@ -1,0 +1,9 @@
+README.md
+license.txt
+pyproject.toml
+matxop/MatrixOperations.py
+matxop/__init__.py
+matxop.egg-info/PKG-INFO
+matxop.egg-info/SOURCES.txt
+matxop.egg-info/dependency_links.txt
+matxop.egg-info/top_level.txt
