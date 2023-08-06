@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: FontCollector
+Version: 2.0.2
+Summary: FontCollector for Advanced SubStation Alpha file.
+Home-page: https://github.com/moi15moi/FontCollector/
+Author: moi15moi
+Author-email: moi15moismokerlolilol@gmail.com
+License: GNU LGPL 3.0 or later
+Project-URL: Source, https://github.com/moi15moi/FontCollector/
+Project-URL: Tracker, https://github.com/moi15moi/FontCollector/issues/
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Other Audience
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ass
+Requires-Dist: ass-tag-analyzer
+Requires-Dist: fontTools (>=4.38.0)
+Requires-Dist: freetype-py
+Requires-Dist: matplotlib (>=3.6)
+
