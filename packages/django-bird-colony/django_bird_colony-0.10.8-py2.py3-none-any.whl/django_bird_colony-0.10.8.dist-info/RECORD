@@ -1,0 +1,14 @@
+birds/__init__.py,sha256=hqqzsUtdrIY1rR80jxcT3TujxxLKTWOCpCsEZ1OgQPg,90
+birds/admin.py,sha256=u-KFgWU_AoQeTHLNJXnx1H4_O3YGE88YxYpTIta5Rpw,2340
+birds/forms.py,sha256=-MepNMjr0xQxbS0WVK_T4mLUUtY0tMqExRFzPlX5eds,15031
+birds/models.py,sha256=08AoJ5R-4iCgg7apNo2HXdLKuBBD3cT_BdRZohS4MiQ,18894
+birds/serializers.py,sha256=mKYkmhvCywH9hjmBDP1gzDsocNJh67CZlbv2qSEhROo,2853
+birds/tests.py,sha256=mw-F4yCikVnjoEJffLY-MVk8hmIb-KcuQKW1_dYYf0E,997
+birds/tools.py,sha256=YhcmVubFWtUSNqKqa7tBwsh2c2T2EAq_2IHQXMK3Cxg,2332
+birds/urls.py,sha256=mujezC2VYu8MYqQRt6ufZp40IZnY21WZ_lwS51t8ics,4399
+birds/views.py,sha256=rgnURUBTAknsXLZ_dLut8zkWVTfL88fUJoVRudFrFrM,33882
+django_bird_colony-0.10.8.dist-info/COPYING,sha256=wYsU8_a1HHiheBjNWkQ3dEvBLUrj3NnSikPvNMhYMMM,1461
+django_bird_colony-0.10.8.dist-info/METADATA,sha256=Un2PqOg9GSx3xVGQzGr2LHZKpuZh-7IC3Vk1EJhFwDQ,4682
+django_bird_colony-0.10.8.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+django_bird_colony-0.10.8.dist-info/top_level.txt,sha256=mCB-cgRAABwYDwjzw9j4GujKNWK0Dlc7D_rnltQGtEk,6
+django_bird_colony-0.10.8.dist-info/RECORD,,
