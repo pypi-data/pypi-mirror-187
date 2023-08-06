@@ -1,0 +1,2 @@
+OdooRPC>=0.9.0
+PyYaml>=5.4.1
