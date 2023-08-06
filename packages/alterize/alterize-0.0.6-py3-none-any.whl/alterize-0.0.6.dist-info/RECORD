@@ -1,0 +1,11 @@
+alterize/__init__.py,sha256=C3OlTmV-MXbUqfTXfWNCpiqtWQx2vFYrF2WnUOqs0EM,323
+alterize/alter.py,sha256=M1s3fKqaqevnN5eQMawYQwbUx_EA8v-Tj-5CDyAYDIg,6025
+alterize/alteration.py,sha256=XMoPlPkFMRdTD4DNZKRmH_s_U6rwLbV-7Y5jWbBjDFA,3766
+alterize/exceptions.py,sha256=GwAEJdeAFE_9RY2y93eU8r0vQMNhsPUMfQK2sVWGH2Y,36
+alterize/migration.py,sha256=MezfqFt90AvDzxoRHwZ_cF-LsC3GLx0B3_ExHryXgsg,3223
+alterize/update.py,sha256=iK_Hp8XgDLv0fZN6i3RpFX7NNESl1hAymEL58KZq8Wo,851
+alterize-0.0.6.dist-info/LICENSE,sha256=oFq9FEIyAGvzUW2asR4JnQiFiH0X7cNCLO4N_bhiZUk,1068
+alterize-0.0.6.dist-info/METADATA,sha256=ZaU2H5HjWBb6rh1S-OUr1eDLhZe1wBXZmrDb4g_HCi8,868
+alterize-0.0.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+alterize-0.0.6.dist-info/top_level.txt,sha256=pwP6W2dtpeWQBZG3fFbw2l13IMBM_BaeX2rlJ1zT7Cg,9
+alterize-0.0.6.dist-info/RECORD,,
