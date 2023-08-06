@@ -1,0 +1,16 @@
+mc_providers/__init__.py,sha256=wzD3PzOig7Qix94YeStujQGMjpGMMQRjd-BxNO1FNI0,3343
+mc_providers/exceptions.py,sha256=CDlWPJUltkkYz5L8Rqo33o01xfZ_h-ecxhiBb8cQDjo,611
+mc_providers/onlinenews.py,sha256=J6n0NteBvkfXNCdWOJDLnLObF9tteX6-3yIAgK2obHM,11035
+mc_providers/provider.py,sha256=zsFwoMT9bD2Kz3t1P4beHtGiaoFIUHXVayQ0kSOK3To,4699
+mc_providers/reddit.py,sha256=sglqNZdvu6_NnSTfWC6Cpat-qvRyAbmRLHUMSG9gWiA,6118
+mc_providers/twitter.py,sha256=GUUyPMYoaLSknK4aKbABVXcPcEukW1r98ilxPMK_Yvs,7170
+mc_providers/youtube.py,sha256=RMyiKQiGKNS7H4oSCceqfKHS-MJuVZ4cfHwqm0wbtCI,4407
+mc_providers/language/__init__.py,sha256=lxRf-xH8xoDrCDCYB4EujfCLaGh6cRdjplIRgH2mSTc,763
+mc_providers/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mc_providers/test/test_onlinenews.py,sha256=7BpJstUbdpuIs4ajkI4xpJq9K0DhkCFRFHjUWmJ1-7A,25927
+mc_providers/test/test_reddit.py,sha256=3sUd7LLGdwuvq1Ucil_3ejsBg6GKQL3AkSa-dsXsCwM,1752
+mc_providers/test/test_twitter.py,sha256=hqgx2NDLnzxOYMvzfOemPiuwgtUi68fSZcG422dwV0A,1618
+mc_providers/test/test_youtube.py,sha256=HfwzhSY2wglxtNM8FRFoPKn4NzHiilOK3UuQ4Ne7Ofg,1521
+mc_providers-0.1.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+mc_providers-0.1.dist-info/METADATA,sha256=fedALjDLgyRcJSxhE306RrrGkxt1RFT3QcgQ_Vm3ahg,1398
+mc_providers-0.1.dist-info/RECORD,,
