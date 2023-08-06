@@ -1,0 +1,12 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+.github/release.yml
+.github/workflows/release.yml
+test_release_workflow/__init__.py
+test_release_workflow/_version.py
+test_release_workflow.egg-info/PKG-INFO
+test_release_workflow.egg-info/SOURCES.txt
+test_release_workflow.egg-info/dependency_links.txt
+test_release_workflow.egg-info/top_level.txt
