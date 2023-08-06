@@ -1,0 +1,14 @@
+pytcc.cpython-310-x86_64-linux-gnu.so,sha256=tkn6mY9py3TgqP_9eY8hUBibXh5Zg7usfj0l76YKCF8,1692128
+pytcc-0.9.27.1.data/data/tcc-rtlib/libtcc1-64.a,sha256=nduVADVBD1MGypauEYbrFnDohpPwWMba3g0EkTUVke8,83382
+pytcc-0.9.27.1.data/data/tcc-rtlib/include/stdarg.h,sha256=kgegIRTRFaECdJLmRW3VHKUBcqbs2YWWxejzz7F9qmY,3146
+pytcc-0.9.27.1.data/data/tcc-rtlib/include/stdbool.h,sha256=UlKCQiXdxIawRgZ392XkFXr10-16zWWzEKQEXq-1avc,176
+pytcc-0.9.27.1.data/data/tcc-rtlib/include/stdalign.h,sha256=dhLUZXEJnMqnYWpRD3jxgMsekWcebl6SI6Lil7hLeJ0,354
+pytcc-0.9.27.1.data/data/tcc-rtlib/include/float.h,sha256=ybqqR447qFiXt4H3BlueFE-qzI6ByvpaZCtdSceENOs,1374
+pytcc-0.9.27.1.data/data/tcc-rtlib/include/stdnoreturn.h,sha256=7GTY-_f7LoAN-XhLLvygqZ_CWj616NpW5N8JiTf3h_I,125
+pytcc-0.9.27.1.data/data/tcc-rtlib/include/stddef.h,sha256=xrDX8h7NIPhiEN52b2HtjGzr5ZNO5wXdtOjEchs-K8o,1507
+pytcc-0.9.27.1.data/data/tcc-rtlib/include/varargs.h,sha256=B4WIV_Tu0KYd-UvrGp1ni1P8PWegsOiTYVX4XdvNHcw,355
+pytcc-0.9.27.1.dist-info/METADATA,sha256=5E_v76M-C6HPuPWTTyzofRiTvdjdIhKuZl3rPvFLN6c,5678
+pytcc-0.9.27.1.dist-info/WHEEL,sha256=nKSwEH5fkxvG0Vdj1Hx7vbuU-SGQ9Nxl4yFFsCilvhs,152
+pytcc-0.9.27.1.dist-info/top_level.txt,sha256=FkgyOn5Tu-X3kX5J7UHHh57N6TtxWXzZhM1695e_vQA,6
+pytcc-0.9.27.1.dist-info/RECORD,,
+pytcc-0.9.27.1.dist-info/LICENCE,sha256=pQzJjVBEp7vdq-YfwOxCqmccc79BTQxrUNqD6orgQcY,26426
