@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pyplanet-muffins
+Version: 1.1.0
+Summary: A muffins plugin for the Pyplanet Trackmania Dedicated Server controller
+Project-URL: Homepage, https://github.com/skybaks/pyplanet-muffins
+Project-URL: Bug Tracker, https://github.com/skybaks/pyplanet-muffins/issues
+Author-email: skybaks <tmflame@gmail.com>
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Games/Entertainment
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Muffins
+
+A plugin for [PyPlanet](https://pypla.net/).
+
+The Muffins plugin allows you to bake, give, and eat muffins.
+
+## Commands
+
+|Command|Description|
+|---|---|
+| //muffin <login or nickname> | Bakes a brand new muffin and gives it to the player specified by login or nickname. Only available to admins. |
+| /muffin eat | Eat one of your muffins. Available to all players |
+| /muffin brag | Show off one of your rarest muffins. Available to all players |
+| /muffin give <login or nickname> | Give one of your muffins to the player specified by login or nickname. Available to all players. |
