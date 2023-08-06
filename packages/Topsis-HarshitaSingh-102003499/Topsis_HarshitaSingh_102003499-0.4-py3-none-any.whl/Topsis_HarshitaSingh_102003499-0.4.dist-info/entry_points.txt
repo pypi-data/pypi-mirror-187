@@ -1,0 +1,3 @@
+[console_scripts]
+topsis = Topsis_HarshitaSingh_102003499.topsis:main
+
