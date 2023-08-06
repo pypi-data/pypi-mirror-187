@@ -1,0 +1,8 @@
+README.md
+setup.py
+error_visor/__init__.py
+error_visor/logger.py
+error_visor.egg-info/PKG-INFO
+error_visor.egg-info/SOURCES.txt
+error_visor.egg-info/dependency_links.txt
+error_visor.egg-info/top_level.txt
