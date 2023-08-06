@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: corpus-base
+Version: 0.1.8
+Summary: Add justice, decision, citation, voting, opinion, and segment tables to pre-existing corpus-pax database.
+Home-page: https://lawdata.xyz
+License: MIT
+Author: Marcelino G. Veloso III
+Author-email: mars@veloso.one
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Pydantic
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Legal Industry
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Requires-Dist: citation-utils (>=0.2.0,<0.3.0)
+Requires-Dist: corpus-pax (>=0.1.11,<0.2.0)
+Requires-Dist: markdownify (>=0.11.6,<0.12.0)
+Requires-Dist: unidecode (>=1.3.6,<2.0.0)
+Project-URL: Repository, https://github.com/justmars/corpus-base
+Description-Content-Type: text/markdown
+
+# corpus-base
+
+![Github CI](https://github.com/justmars/corpus-base/actions/workflows/main.yml/badge.svg)
+
+Decisions, segments, and justices utilized in the [LawSQL dataset](https://lawsql.com).
+
+## Documentation
+
+See [documentation](https://justmars.github.io/corpus-base).
+
+## Development
+
+Checkout code, create a new virtual environment:
+
+```sh
+poetry add corpus-base # python -m pip install corpus-base
+poetry update # install dependencies
+poetry shell
+```
+
+Run tests:
+
+```sh
+pytest
+```
+
