@@ -1,0 +1,16 @@
+License
+README.md
+pyproject.toml
+setup.cfg
+man/adsv.1.gz
+src/adsv/__init__.py
+src/adsv/dsv_library.py
+src/adsv/file_utilities.py
+src/adsv/main.py
+src/adsv/string_utilities.py
+src/pnu_adsv.egg-info/PKG-INFO
+src/pnu_adsv.egg-info/SOURCES.txt
+src/pnu_adsv.egg-info/dependency_links.txt
+src/pnu_adsv.egg-info/entry_points.txt
+src/pnu_adsv.egg-info/requires.txt
+src/pnu_adsv.egg-info/top_level.txt
