@@ -1,0 +1,16 @@
+MANIFEST.in
+setup.py
+../src/fragannot/__init__.py
+../src/fragannot/_version.py
+../src/fragannot/constant.py
+../src/fragannot/fragannot.py
+../src/fragannot/log_conf.json
+../src/fragannot/parser.py
+../src/fragannot/spectrumfile.py
+../src/fragannot/temp.py
+fragannot.egg-info/PKG-INFO
+fragannot.egg-info/SOURCES.txt
+fragannot.egg-info/dependency_links.txt
+fragannot.egg-info/entry_points.txt
+fragannot.egg-info/requires.txt
+fragannot.egg-info/top_level.txt
