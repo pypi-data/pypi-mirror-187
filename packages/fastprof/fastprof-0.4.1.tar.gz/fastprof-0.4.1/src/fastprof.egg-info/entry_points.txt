@@ -1,0 +1,22 @@
+[console_scripts]
+check_model.py = fastprof_utils.check_model:run
+collect_results.py = fastprof_utils.collect_results:run
+compute_fast_limits.py = fastprof_utils.compute_fast_limits:run
+compute_limits.py = fastprof_utils.compute_limits:run
+convert_pyhf.py = fastprof_import.convert_pyhf:run
+convert_pyhf_json.py = fastprof_import.convert_pyhf_json:run
+convert_ws.py = fastprof_import.convert_ws:run
+dump_samples.py = fastprof_utils.dump_samples:run
+fit_model.py = fastprof_utils.fit_model:run
+fit_ws.py = fastprof_import.fit_ws:run
+iterate.py = fastprof_utils.iterate:run
+make_inputs.py = fastprof_utils.make_inputs:run
+merge_channels.py = fastprof_utils.merge_channels:run
+merge_models.py = fastprof_utils.merge_models:run
+plot.py = fastprof_utils.plot:run
+plot_impacts.py = fastprof_utils.plot_impacts:run
+plot_valid.py = fastprof_utils.plot_valid:run
+poi_scan.py = fastprof_utils.poi_scan:run
+print_model.py = fastprof_utils.print_model:run
+prune_model.py = fastprof_utils.prune_model:run
+reparam_model.py = fastprof_utils.reparam_model:run
