@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+relatorio_ensalamento/Relatorio.py
+relatorio_ensalamento/Sugestao.py
+relatorio_ensalamento/__init__.py
+relatorio_ensalamento_package.egg-info/PKG-INFO
+relatorio_ensalamento_package.egg-info/SOURCES.txt
+relatorio_ensalamento_package.egg-info/dependency_links.txt
+relatorio_ensalamento_package.egg-info/top_level.txt

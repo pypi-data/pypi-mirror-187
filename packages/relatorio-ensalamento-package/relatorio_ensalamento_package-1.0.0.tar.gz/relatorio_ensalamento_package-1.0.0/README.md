@@ -1,0 +1,1 @@
+# Utlizado para a geração do relatorio ensalamento
