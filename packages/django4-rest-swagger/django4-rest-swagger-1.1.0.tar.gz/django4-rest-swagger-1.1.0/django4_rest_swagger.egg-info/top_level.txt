@@ -1,0 +1,1 @@
+django4_rest_swagger
