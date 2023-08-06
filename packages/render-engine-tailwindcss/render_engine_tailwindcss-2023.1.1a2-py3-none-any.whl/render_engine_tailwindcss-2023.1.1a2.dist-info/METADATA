@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: render-engine-tailwindcss
+Version: 2023.1.1a2
+Summary: tailwindcss-parser for Render Engine
+Project-URL: homepage, https://github.com/kjaymiller/render_engine/
+Project-URL: repository, https://github.com/kjaymiller/render_engine/
+Project-URL: documentation, https://render-engine.readthedocs.io/en/latest/
+Description-Content-Type: text/markdown
+Requires-Dist: render-engine (>=2023.1.3a1)
+Requires-Dist: pytailwindcss
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-mock ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: mkdocs ; extra == 'docs'
+Requires-Dist: mkdocs-material ; extra == 'docs'
+Requires-Dist: mkdocstrings[python] ; extra == 'docs'
+
