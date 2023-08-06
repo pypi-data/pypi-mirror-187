@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: kpx
+Version: 0.2.5
+Summary: CLI tool for AWS configuration files and quick interogations to AWS API
+Author: Bogdan Rizac
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: boto3 (>=1.26,<2.0)
+Requires-Dist: configparser (>=5.3.0,<6.0.0)
+Requires-Dist: prettytable (>=3.5.0,<4.0.0)
+Requires-Dist: typer (>=0.7.0,<0.8.0)
+Description-Content-Type: text/markdown
+
+[![pipeline status](https://gitlab.com/kisphp/python-cli-tool/badges/main/pipeline.svg)](https://gitlab.com/kisphp/python-cli-tool/-/commits/main)
+[![coverage report](https://gitlab.com/kisphp/python-cli-tool/badges/main/coverage.svg)](https://gitlab.com/kisphp/python-cli-tool/-/commits/main)
+[![Latest Release](https://gitlab.com/kisphp/python-cli-tool/-/badges/release.svg)](https://gitlab.com/kisphp/python-cli-tool/-/releases)
+
+## Install
+
+```bash
+# Install or update it from pip
+pip install -U kpx
+
+# Install or update it from gitlab
+pip install -U kpx --index-url https://gitlab.com/api/v4/projects/24038501/packages/pypi/simple
+```
+
+
+## Usage
+
+```bash
+# Configure profile region and output type
+kpx conf [profile-name] [aws-zone] [output-type]
+
+# Configure profile credentials
+kpx cred [profile-name] [access-key-id] [secret-access-key]
+
+# List route53 hosted zones
+kpx r53
+
+# List records in a hosted zone
+kpx r53 [zone-id]
+
+# List ec2 instances (without pagination)
+kpx ec2
+```
+
