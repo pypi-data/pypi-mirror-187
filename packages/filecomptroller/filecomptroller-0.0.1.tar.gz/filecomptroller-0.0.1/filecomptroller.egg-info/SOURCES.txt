@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+filecomptroller/__init__.py
+filecomptroller/split.py
+filecomptroller.egg-info/PKG-INFO
+filecomptroller.egg-info/SOURCES.txt
+filecomptroller.egg-info/dependency_links.txt
+filecomptroller.egg-info/top_level.txt

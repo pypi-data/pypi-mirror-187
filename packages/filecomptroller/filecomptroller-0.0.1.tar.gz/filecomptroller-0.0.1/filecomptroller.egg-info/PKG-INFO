@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: filecomptroller
+Version: 0.0.1
+Summary: Manage and modify your files
+Author: DevStrikerTech (Nishat)
+Author-email: 
+Keywords: split file,marge file,zip file,unzip file
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# filecomptroller
+
+Under construction! Not ready for use yet! Currently experimenting and planning!
+
+Developed by Nishat from DevStrikerTech (c) 2023
+
+## Examples of How To Use (Beta Version)
+
+Split File By Line Number
+
+```python
+from split import split_file
+
+# 'type', 'number of lines', 'file path'
+split_file('split', '50', 'directory/file.txt')
+```
+
+Check out: https://www.youtube.com/c/DevStriker
