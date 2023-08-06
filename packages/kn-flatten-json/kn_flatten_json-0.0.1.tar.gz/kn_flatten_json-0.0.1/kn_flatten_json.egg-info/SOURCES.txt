@@ -1,0 +1,8 @@
+README.md
+setup.py
+kn_flatten_json.egg-info/PKG-INFO
+kn_flatten_json.egg-info/SOURCES.txt
+kn_flatten_json.egg-info/dependency_links.txt
+kn_flatten_json.egg-info/top_level.txt
+kockpit_nucleus_flatten_json/__init__.py
+kockpit_nucleus_flatten_json/kockpitnucleus_flatten_json.py
