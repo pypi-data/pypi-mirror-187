@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: hera-pspec
+Version: 0.4.1
+Summary: HERA Power Spectrum Estimator Code
+Home-page: https://github.com/HERA-Team/hera_pspec
+Author: HERA Team
+License: BSD
+Project-URL: Documentation, https://hera-pspec.readthedocs.io/en/latest/
+Platform: OSX
+Platform: Linux
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Description-Content-Type: text/x-rst; charset=UTF-8
+Provides-Extra: docs
+Provides-Extra: tests
+Provides-Extra: dev
+License-File: LICENSE
