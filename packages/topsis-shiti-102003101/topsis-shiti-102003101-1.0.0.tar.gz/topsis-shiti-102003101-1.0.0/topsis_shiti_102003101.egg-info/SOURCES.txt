@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/topsis.py
+topsis_shiti_102003101.egg-info/PKG-INFO
+topsis_shiti_102003101.egg-info/SOURCES.txt
+topsis_shiti_102003101.egg-info/dependency_links.txt
+topsis_shiti_102003101.egg-info/entry_points.txt
+topsis_shiti_102003101.egg-info/requires.txt
+topsis_shiti_102003101.egg-info/top_level.txt
