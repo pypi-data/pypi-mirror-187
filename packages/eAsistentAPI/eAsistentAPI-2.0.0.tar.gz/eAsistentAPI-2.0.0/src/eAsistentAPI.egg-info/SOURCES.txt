@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/eAsisitentAPI/__init__.py
+src/eAsisitentAPI/pharser.py
+src/eAsisitentAPI/scraper.py
+src/eAsistentAPI.egg-info/PKG-INFO
+src/eAsistentAPI.egg-info/SOURCES.txt
+src/eAsistentAPI.egg-info/dependency_links.txt
+src/eAsistentAPI.egg-info/requires.txt
+src/eAsistentAPI.egg-info/top_level.txt
