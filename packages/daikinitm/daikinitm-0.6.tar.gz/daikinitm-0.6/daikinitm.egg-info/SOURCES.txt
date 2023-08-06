@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+daikinitm/__init__.py
+daikinitm/daikinitm.py
+daikinitm.egg-info/PKG-INFO
+daikinitm.egg-info/SOURCES.txt
+daikinitm.egg-info/dependency_links.txt
+daikinitm.egg-info/top_level.txt
