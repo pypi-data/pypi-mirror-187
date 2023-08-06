@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: markdowntweetembed
+Version: 0.1
+Summary: Markdown extension that make it easier to embed tweets
+Author: Colm Britton
+Author-email: <colmjude@gmail.com>
+Keywords: python,markdown,extension,twitter
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: markdown
+Requires-Dist: tweepy
+Provides-Extra: test
+Requires-Dist: flake8 ; extra == 'test'
+Requires-Dist: black ; extra == 'test'
+
+Markdown extension that make it easier to embed tweets
