@@ -1,0 +1,12 @@
+floral/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+floral/datasets.py,sha256=Rjd_v7-F1BKgAYoPetYjy-SkFwHJj-1_WX6L7nDS720,672
+floral/graph.py,sha256=AvtdI9kXO6X6Fypk143IamfQ6MoU0j4Qx2nYhDpCJkY,4121
+floral/loss.py,sha256=-pOBjpnDPelpk9uNyvNVw4-g3KZI87kdKeE1zntZ1Fg,816
+floral/nn.py,sha256=It5wFIbP_C7tisKupEE5kFUeqbWiBWIm5v2U8AojmFo,2186
+floral/optim.py,sha256=8-kZDvKcQAZnedejLlfLghX87CSoRkCyGHOE31e6-XQ,166
+floral/test.py,sha256=weRYN7RLTQo3OuANSJo3wMRHYuVZahSq4-FWAEe11dg,1169
+floral/visual.py,sha256=Em2OY-7f2O9MdKA5c_-L473NlQyzqByQM3Z1bkMPdVY,2705
+floral-1.0.2.dist-info/METADATA,sha256=JQz5CtlQWPXd0RmzUoqDjnvF6uXx3jBYHuB4bqLmnq0,896
+floral-1.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+floral-1.0.2.dist-info/top_level.txt,sha256=RHz0rKXt7np2G5KXX0MiKKmbeh8g9LlezLPREO9qJqM,7
+floral-1.0.2.dist-info/RECORD,,
