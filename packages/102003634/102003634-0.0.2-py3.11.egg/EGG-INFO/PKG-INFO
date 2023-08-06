@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: 102003634
+Version: 0.0.2
+Summary: Script implementing TOPSIS
+Author: Falguni Sharma
+Author-email: falguni7572@gmail.com
+Keywords: python,video,stream,video stream,camera stream,sockets
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.5
