@@ -1,0 +1,9 @@
+License.txt
+README.md
+pyproject.toml
+matSN/__init__.py
+matSN/operations.py
+matSN.egg-info/PKG-INFO
+matSN.egg-info/SOURCES.txt
+matSN.egg-info/dependency_links.txt
+matSN.egg-info/top_level.txt
