@@ -1,0 +1,10 @@
+flake8_debug/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flake8_debug/errors.py,sha256=RXEgpZ_pplZQIFbo2_zNt12MblyLBP_l40ujgb5DNto,585
+flake8_debug/meta.py,sha256=EoHz2TsodV0A670Da2wgXOLcR8swzxZYLNKN0SuUiLs,212
+flake8_debug/plugin.py,sha256=wZamJM4_B-qOqztpqzFJmkOnbBgqk0tLGecmbJ2yYj8,1285
+flake8_debug-0.2.0.dist-info/LICENSE.md,sha256=f0_lkHSRi2xkI10TssGy82h7z_fUVwLKtzOMDLP6Yg8,1074
+flake8_debug-0.2.0.dist-info/METADATA,sha256=mAHS_unY7sgzdDpsJsDcfoOS0a0UfJmlXhVSsUEk6NU,4901
+flake8_debug-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+flake8_debug-0.2.0.dist-info/entry_points.txt,sha256=qSXqP1gjKG_43LhLAHgLWz8N1O2mXEcyzGv-F8uUaWk,52
+flake8_debug-0.2.0.dist-info/top_level.txt,sha256=R5kG6tJQa1CSwB0hHCQRMZXO1MSnTZuU07JudgOkwcE,13
+flake8_debug-0.2.0.dist-info/RECORD,,
