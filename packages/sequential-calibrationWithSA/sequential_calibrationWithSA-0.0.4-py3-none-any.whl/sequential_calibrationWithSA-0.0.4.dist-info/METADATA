@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sequential-calibrationWithSA
+Version: 0.0.4
+Summary: algorithm for sequential calibration with variance based SA
+Home-page: https://github.com/MC1316663/seqCalibrationWithSA.git
+Author: Moongi Choi
+Author-email: u1316663@utah.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+
+UNKNOWN
+
+
