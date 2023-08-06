@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+Topsis_Sidharth_102003395.egg-info/PKG-INFO
+Topsis_Sidharth_102003395.egg-info/SOURCES.txt
+Topsis_Sidharth_102003395.egg-info/dependency_links.txt
+Topsis_Sidharth_102003395.egg-info/entry_points.txt
+Topsis_Sidharth_102003395.egg-info/requires.txt
+Topsis_Sidharth_102003395.egg-info/top_level.txt
+topsis/102003395.py
+topsis/__init.py
