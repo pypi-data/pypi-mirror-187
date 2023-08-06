@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: assaypy
+Version: 0.0.2
+Summary: package for analysis of experimental assay data
+Home-page: https://github.com/gnzng/
+Author: Damian Guenzing
+Author-email: gnzng@protonmail.ch
+License: MIT
+Keywords: assay
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10

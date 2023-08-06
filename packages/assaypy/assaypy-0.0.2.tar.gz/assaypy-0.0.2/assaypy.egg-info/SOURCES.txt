@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+assaypy/__init__.py
+assaypy/main.py
+assaypy.egg-info/PKG-INFO
+assaypy.egg-info/SOURCES.txt
+assaypy.egg-info/dependency_links.txt
+assaypy.egg-info/requires.txt
+assaypy.egg-info/top_level.txt
