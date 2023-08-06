@@ -1,0 +1,8 @@
+License.txt
+README.md
+pyproject.toml
+VMCalculator/__init__.py
+VMCalculator.egg-info/PKG-INFO
+VMCalculator.egg-info/SOURCES.txt
+VMCalculator.egg-info/dependency_links.txt
+VMCalculator.egg-info/top_level.txt
