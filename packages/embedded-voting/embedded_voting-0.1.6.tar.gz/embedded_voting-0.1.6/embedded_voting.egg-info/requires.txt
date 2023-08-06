@@ -1,0 +1,5 @@
+numpy
+matplotlib
+python-ternary
+scikit-learn
+tqdm
