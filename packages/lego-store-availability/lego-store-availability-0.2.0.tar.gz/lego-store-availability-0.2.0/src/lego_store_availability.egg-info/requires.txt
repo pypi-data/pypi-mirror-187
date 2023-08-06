@@ -1,0 +1,7 @@
+beautifulsoup4
+requests
+requests-cache
+PyYAML
+
+[cache_s3]
+boto3
