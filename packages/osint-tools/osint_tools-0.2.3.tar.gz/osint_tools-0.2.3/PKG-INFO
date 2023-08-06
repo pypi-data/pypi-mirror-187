@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: osint-tools
+Version: 0.2.3
+Summary: 
+Author: Alexander Slessor
+Author-email: alexjslessor@gmail.com.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: chardet (==4.0.0)
+Requires-Dist: deep-translator (==1.8.3)
+Requires-Dist: feedparser (>=6.0.8,<7.0.0)
+Requires-Dist: motor (>=3.0.0,<4.0.0)
+Requires-Dist: opencv-python (==4.5.5.64)
+Requires-Dist: pillow (==9.1.0)
+Requires-Dist: pydantic (>=1.10.1,<2.0.0)
+Requires-Dist: pytesseract (==0.3.9)
+Requires-Dist: python-jose (>=3.3.0,<4.0.0)
+Requires-Dist: python-multipart (>=0.0.5,<0.0.6)
+Requires-Dist: requests (>=2.11)
+Requires-Dist: strawberry-graphql[debug-server,fastapi] (>=0.139.0,<0.140.0)
+Description-Content-Type: text/markdown
+
+
+Tools for working with data.
+
+
+```
+cython
+fastapi==0.74.1
+required for web3?
+requests>=2.11
+python-multipart==0.0.5
+pydantic[email,dotenv]==1.9.0
+
+strawberry-graphql[debug-server,fastapi]
+uvicorn==0.17.5
+uvicorn[standard]
+
+gunicorn==20.1.0
+gunicorn[gthread]
+
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+pyserum
+solana
+web3==4.2.1
+motor==2.5.1
+redis==4.3.4
+deep-translator==1.8.3
+feedparser==6.0.8
+Pillow==9.1.0
+pytesseract==0.3.9
+chardet==4.0.0
+opencv-python==4.5.5.64
+```
