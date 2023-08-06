@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: idoit-api-client
+Version: 0.0.5
+Summary: i-doit API Client for Python. Translated from the original PHP source.
+Home-page: https://github.com/tschreiner/idoit_api
+Author: Tedd Schreiner
+Author-email: info@teddschreiner.de
+License: GNU General Public License v3
+Keywords: idoit_api_client
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
