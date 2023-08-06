@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: Topsis-Parush-102003404
+Version: 0.2
+Summary: Implements topsis on the given input data file and generates topsis score and ranks accordingly.
+Home-page: https://github.com/hsurap/Topsis-Parush-102003404
+Author: Parush
+Author-email: pparush_be20@thapar.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+
+Topsis-Parush-102003404 
+Topsis implementation in python. Used as a command line tool to generate topsis score and ranks of the given input data file along with weights and impacts. 
+## Installation 
+pip install Topsis-Parush-102003404 
+
+
