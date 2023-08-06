@@ -1,0 +1,161 @@
+#### black ####################################################################
+[tool.black]
+line-length = 80
+skip-magic-trailing-comma = true
+target-version = ["py39"]
+
+#### coverage #################################################################
+[tool.coverage.run]
+branch = true
+data_file = ".coverage/data"
+parallel = true
+
+[tool.coverage.report]
+exclude_lines = ["# pragma: no cover", "@overload"]
+fail_under = 100.0
+skip_covered = true
+skip_empty = true
+
+[tool.coverage.html]
+directory = ".coverage/html"
+
+#### hatch ####################################################################
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+sources = ["src"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dycw_nitpick"]
+
+[tool.hatch.version]
+path = "src/dycw_nitpick/__init__.py"
+
+#### nitpick ##################################################################
+[tool.nitpick]
+style = [
+  "styles/common.toml",
+  "styles/3.9.toml",
+  "styles/pip-compile-no-hashes.toml"
+]
+cache = "never"
+
+#### project ##################################################################
+[project]
+name = "dycw-nitpick"
+dynamic = ["version"]
+readme = "README.md"
+requires-python = ">= 3.9"
+authors = [{ name = "Derek Wan", email = "d.wan@icloud.com" }]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "black",
+  "bump2version",
+  "exceptiongroup",
+  "hatch",
+  "pip-tools",
+  "pytest",
+  "pytest-cov",
+  "pytest-xdist",
+  "ruff",
+]
+
+#### pyright ##################################################################
+[tool.pyright]
+include = ["src"]
+exclude = ["**/__pycache__", ".direnv", ".git", ".venv"]
+pythonVersion = "3.9"
+executionEnvironments = [{ root = "src" }]
+typeCheckingMode = "strict"
+reportMissingTypeStubs = false
+reportIncompatibleMethodOverride = false
+reportMissingTypeArgument = false
+reportPrivateUsage = false
+reportPrivateImportUsage = false
+reportUnknownArgumentType = false
+reportUnknownMemberType = false
+reportUnknownParameterType = false
+reportUnknownVariableType = false
+reportUntypedBaseClass = false
+reportMissingSuperCall = "error"
+reportPropertyTypeMismatch = "error"
+reportUnnecessaryTypeIgnoreComment = "error"
+reportUnusedCallResult = "error"
+
+#### pytest ###################################################################
+[tool.pytest.ini_options]
+addopts = [
+  "-rsxX",
+  "--color=auto",
+  "--cov=dycw_nitpick",
+  "--cov-config=pyproject.toml",
+  "--cov-report=html",
+  "--strict-markers",
+  "--tb=native"
+]
+filterwarnings = [
+  "error",
+  "ignore::DeprecationWarning",
+  "ignore:Implicitly cleaning up <TemporaryDirectory '.*'>:ResourceWarning",
+]
+minversion = "7.0"
+testpaths = ["src/tests"]
+xfail_strict = true
+
+#### ruff #####################################################################
+[tool.ruff]
+extend-ignore = [
+  "ANN101", # flake8-annotations, MissingTypeSelf
+  "ANN401", # flake8-annotations, DynamicallyTypedExpression
+  "D100", # pydocstyle, PublicModule
+  "D104", # pydocstyle, PublicPackage
+  "D105", # pydocstyle, MagicMethod
+  "D107", # pydocstyle, PublicInit
+  "D203", # pydocstyle, pep8
+  "D203", # pydocstyle, pep8
+  "D212", # pydocstyle, pep8
+  "D213", # pydocstyle, pep8
+  "D214", # pydocstyle, pep8
+  "D215", # pydocstyle, pep8
+  "D404", # pydocstyle, pep8
+  "D405", # pydocstyle, pep8
+  "D406", # pydocstyle, pep8
+  "D407", # pydocstyle, pep8
+  "D408", # pydocstyle, pep8
+  "D409", # pydocstyle, pep8
+  "D410", # pydocstyle, pep8
+  "D411", # pydocstyle, pep8
+  "D413", # pydocstyle, pep8
+  "D415", # pydocstyle, pep8
+  "D416", # pydocstyle, pep8
+  "D417", # pydocstyle, pep8
+  "PD", # pandas-vet
+  "PT013", # flake8-pytest-style, IncorrectPytestImport
+
+]
+extend-select = ["ALL"]
+line-length = 80
+src = ["src", "tests"]
+target-version = "py39"
+
+[tool.ruff.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[tool.ruff.isort]
+force-single-line = true
+
+[tool.ruff.per-file-ignores]
+"src/tests/**/*.py" = [
+  "D", # pydocstyle
+  "FBT001", # flake8-boolean-trap, BooleanPositionalArgInFunctionDefinition
+  "FBT003", # flake8-boolean-trap, BooleanPositionalValueInFunctionCall
+  "S101", # flake8-bandit, AssertUsed
+
+]
+
+[tool.ruff.pydocstyle]
+convention = "numpy"
