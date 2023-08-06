@@ -1,0 +1,7 @@
+LICENSE.txt
+setup.cfg
+setup.py
+rakesh.egg-info/PKG-INFO
+rakesh.egg-info/SOURCES.txt
+rakesh.egg-info/dependency_links.txt
+rakesh.egg-info/top_level.txt
