@@ -1,0 +1,2 @@
+[console_scripts]
+say = say.entry_points.run_say:run
