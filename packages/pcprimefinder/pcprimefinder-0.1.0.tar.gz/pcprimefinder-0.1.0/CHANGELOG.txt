@@ -1,0 +1,15 @@
+Change Log
+==========
+
+0.0.1 (23/01/2023)
+--------------------
+- First Release
+
+0.0.2 (24/01/2023)
+--------------------
+- Second Release
+- changed package structure
+
+0.0.3 (24/01/2023)
+--------------------
+- Added rule functions from notebook
