@@ -1,0 +1,15 @@
+sidewinder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sidewinder/client.py,sha256=qQP6C-lVAcixcMpYwCdMf3MR6_PU_qcyHuZumkwO8BI,8350
+sidewinder/config.py,sha256=9MfoyjNDpilxrKvzFDRCAM6UuADD_6WNJuXCq27__Ps,343
+sidewinder/constants.py,sha256=icZcBB8w7h8YkGm72sisSN2q7hFQgglJOnHE0VvPh9c,357
+sidewinder/server.py,sha256=da0bUutIwerAdmJf904yd0SAM9m_Ju95SzfQRggsIwo,22227
+sidewinder/utils.py,sha256=P0KNBk67xDNLa9UUhQb0enlisLet87rGnvApLyyIoN4,5289
+sidewinder/worker.py,sha256=XBqz_0R4hA47rzSvkzwcWzfkHlzGZ98skj63UkzT9a8,9968
+sidewinder/parser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sidewinder/parser/query.py,sha256=OWm8GyMgNzMtF3_ehe_qyu7kl1WGy0ZPTXOFeDAbWS4,5780
+sidewinder_db-0.0.2.dist-info/LICENSE,sha256=C5mtf-jHNE1Lw3WkIflhbETYp-dx24kWDXB-kgFplU0,1066
+sidewinder_db-0.0.2.dist-info/METADATA,sha256=buFd2CeZl65-pYfv91eO4dAdixhyS4hm2bAAfSTwGnI,6367
+sidewinder_db-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sidewinder_db-0.0.2.dist-info/entry_points.txt,sha256=X4G2stwXZ8MRpk4y55pC7gzOO-lxelrlT1HyNvpYGZk,147
+sidewinder_db-0.0.2.dist-info/top_level.txt,sha256=B8qJ4tHi-L3LVhYj7no0c_bNAQRmcx4d3KvXTNjtoss,11
+sidewinder_db-0.0.2.dist-info/RECORD,,
