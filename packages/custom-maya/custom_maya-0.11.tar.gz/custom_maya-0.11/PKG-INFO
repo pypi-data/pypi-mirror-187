@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: custom_maya
+Version: 0.11
+Summary: Maya的便利工具
+Author: qiao yuanzhen
+Author-email: narutozbjp@hotmail.com
+Requires-Python: >3.7

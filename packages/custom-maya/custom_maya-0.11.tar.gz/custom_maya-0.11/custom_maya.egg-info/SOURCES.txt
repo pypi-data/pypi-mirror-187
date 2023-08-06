@@ -1,0 +1,12 @@
+setup.py
+custom_maya/__init__.py
+custom_maya/functions.py
+custom_maya/test_open_scene.py
+custom_maya/test_temp.py
+custom_maya.egg-info/PKG-INFO
+custom_maya.egg-info/SOURCES.txt
+custom_maya.egg-info/dependency_links.txt
+custom_maya.egg-info/top_level.txt
+custom_maya/customclass/__init__.py
+custom_maya/customclass/base_class.py
+custom_maya/tools/__init__.py
