@@ -1,0 +1,10 @@
+state_interface/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+state_interface/io.py,sha256=eJkI22V6xeGPrna37zUMG_VKwR1Kr8zZ4QbZ_-t1xyY,8924
+state_interface/state.py,sha256=UQc2Bx6K-HDDtwe3kxAGmuESQCECwFAhmlXAxwtH0ak,4839
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=1Kaipk9QZgCHvL9aPtysk6gV5rb7sqjeUajldiO5xYk,484
+tests/test_read_state_input.py,sha256=Y99N7hcMkn5V98fC6qHR-i_MrnMQ3JRNz5xYv0dwBRs,497
+state_interface-1.1.0.dist-info/METADATA,sha256=BeMgNQeTpca3BdKcqGVWeOJhrgStgOWEeBLHuJD6d60,1642
+state_interface-1.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+state_interface-1.1.0.dist-info/top_level.txt,sha256=d4ajj6zqStbpw0hFFeGN87b6OPJ6RUalta2P73Bo6lg,22
+state_interface-1.1.0.dist-info/RECORD,,
