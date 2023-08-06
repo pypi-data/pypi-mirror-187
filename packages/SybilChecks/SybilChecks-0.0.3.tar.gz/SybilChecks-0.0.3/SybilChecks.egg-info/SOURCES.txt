@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+SybilChecks/__init__.py
+SybilChecks/checks.py
+SybilChecks.egg-info/PKG-INFO
+SybilChecks.egg-info/SOURCES.txt
+SybilChecks.egg-info/dependency_links.txt
+SybilChecks.egg-info/top_level.txt
