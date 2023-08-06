@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: Topsis-Rishu-102003725
+Version: 0.0.1
+Summary: Topsis Algorithm
+Home-page: UNKNOWN
+Author: Rishu Anand
+Author-email: <anand.rishu310@gmail.com>
+License: UNKNOWN
+Keywords: python,topsis,ranking algorithm,multiple criteria
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+Topsis package to calculate topsis score and rank when there are multiple critera involved
+
