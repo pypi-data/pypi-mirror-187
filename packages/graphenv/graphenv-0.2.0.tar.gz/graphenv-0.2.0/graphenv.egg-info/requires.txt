@@ -1,0 +1,15 @@
+gym
+networkx
+ray[rllib,tune]
+numpy<1.24.0
+
+[dev]
+torch
+tensorflow
+pytest
+
+[tensorflow]
+tensorflow
+
+[torch]
+torch
