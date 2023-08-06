@@ -1,0 +1,2 @@
+python-dotenv==0.21.0
+aoc-cli-python==0.0.2
