@@ -1,0 +1,23 @@
+{
+  "name": "ons",
+  "version": "0.2.2",
+  "description": "Ons Api client",
+  "repository": "git@bitbucket.org:terminalkitten/ons.git",
+  "author": "@all",
+  "license": "UNLICENSED",
+  "private": true,
+  "lint-staged": {
+    "*.py": [
+      "isort",
+      "black",
+      "flake8"
+    ]
+  },
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "husky": "8.0.1",
+    "lint-staged": "^13.0.3"
+  }
+}

@@ -1,0 +1,60 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[distutils]
+index-servers = ["pypi"]
+
+[pypi]
+repository = "https://upload.pypi.org/legacy/"
+username = "terminalkitten"
+
+[project]
+name = "ons"
+authors = [{ name = "DK", email = "tk@terminalkitten.com" }]
+readme = "README.md"
+license = { file = "LICENSE" }
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+dependencies = [
+    "typing-extensions",
+    "pydantic",
+    "click",
+    "httpx",
+    "uvicorn[standard]",
+    "devtools",
+    "pyfiglet",
+    "wasabi",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "ipdb",
+    "ipython",
+    "flit",
+    "flake8",
+    "pytest",
+    "mypy",
+    "isort",
+    "wheel",
+]
+doc = ["pdoc3"]
+
+[project.scripts]
+ons = "ons.cli:cli"
+
+[project.urls]
+Home = "https://github.com/terminalkitten/ons"
+
+[tool.black]
+line-length = 88
+skip-string-normalization = true
+target-version = ['py37', 'py38', 'py39']
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.pytest.ini_options]
+markers = ["integration"]

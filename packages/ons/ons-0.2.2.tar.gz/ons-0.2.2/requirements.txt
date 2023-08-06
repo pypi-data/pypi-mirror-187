@@ -1,0 +1,8 @@
+typing-extensions
+pydantic
+click
+httpx
+uvicorn[standard]
+devtools
+pyfiglet
+wasabi
