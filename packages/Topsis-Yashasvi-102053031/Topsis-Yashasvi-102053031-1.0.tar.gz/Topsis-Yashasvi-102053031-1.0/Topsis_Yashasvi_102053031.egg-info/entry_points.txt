@@ -1,0 +1,3 @@
+[console_scripts]
+Topsis-Yashasvi-102053031 = 102053031:main
+
