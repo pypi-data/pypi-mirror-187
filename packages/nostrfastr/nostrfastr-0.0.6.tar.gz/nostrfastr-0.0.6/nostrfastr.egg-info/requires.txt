@@ -1,0 +1,9 @@
+nostr
+appdirs
+pandas
+keyring
+fastcore
+
+[dev]
+notebook
+nostr-relay
