@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: fastxm
+Version: 0.1.1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: numpy>=1.21
+Summary: blazing fast cross-matching
+Author: Jeff Shen
+Author-email: shenjeff@princeton.edu
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: repository, https://github.com/al-jshen/fastxm
+
+# fastxm
+
