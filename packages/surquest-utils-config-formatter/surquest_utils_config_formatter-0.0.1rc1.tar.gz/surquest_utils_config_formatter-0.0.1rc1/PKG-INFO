@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: surquest-utils-config-formatter
+Version: 0.0.1rc1
+Summary: Standalone Loader class for simplification of loading configurations from YAML or JSON files.
+Project-URL: Homepage, https://github.com/surquest/python-utils-loader
+Project-URL: Bug Tracker, https://github.com/surquest/python-utils-loader/issues
+Author-email: Michal Švarc <michal.svarc@surquest.com>
+License-File: LICENSE
+Description-Content-Type: text/markdown
+
+# python-utils-config-formatter
+Configuration formatter helps you to bridge the gap between your application in python, terraform and documentation..
