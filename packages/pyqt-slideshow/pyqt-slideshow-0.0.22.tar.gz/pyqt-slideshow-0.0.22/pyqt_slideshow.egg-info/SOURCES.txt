@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+pyqt_slideshow/__init__.py
+pyqt_slideshow/slideShow.py
+pyqt_slideshow.egg-info/PKG-INFO
+pyqt_slideshow.egg-info/SOURCES.txt
+pyqt_slideshow.egg-info/dependency_links.txt
+pyqt_slideshow.egg-info/requires.txt
+pyqt_slideshow.egg-info/top_level.txt
+pyqt_slideshow/ico/__init__.py
+pyqt_slideshow/ico/next.svg
+pyqt_slideshow/ico/prev.svg
+pyqt_slideshow/widgets/__init__.py
+pyqt_slideshow/widgets/aniButton.py
+pyqt_slideshow/widgets/graphicsView.py
+pyqt_slideshow/widgets/svgButton.py
