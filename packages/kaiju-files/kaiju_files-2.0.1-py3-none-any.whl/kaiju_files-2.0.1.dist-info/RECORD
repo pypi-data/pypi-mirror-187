@@ -1,0 +1,16 @@
+kaiju_files/__init__.py,sha256=SuCFR5FfrRz0IUOe6x5DTZUh0jRNR0STbV7FML4fM4g,137
+kaiju_files/abc.py,sha256=K-amb1JtYZVFJr2W4jVW52vAKQbOhG3shXCNdLtfXiM,11909
+kaiju_files/converters.py,sha256=eQ4k1e_r6yvwHrluyXUXHzMMkl14czWU-7cz389146A,8657
+kaiju_files/etc.py,sha256=qhzJlV_nc5mRYxD77jgQETFSWqUopmNC4vQOMQCn6JA,165
+kaiju_files/files.py,sha256=_EEKgxOY-Onhsyy_WJDzqS50fqFHAIUziJsHnB2V8jA,10933
+kaiju_files/services.py,sha256=cSTDGUa0_cr7mNNNv8CPY_aRj0wFzGAFctEAdK5rYTw,88
+kaiju_files/tables.py,sha256=oODR2hS1gA2awsUQjKmVntS93DZV-K8eqYJ9eA9Qb8M,2423
+kaiju_files/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kaiju_files/tests/fixtures.py,sha256=-tnA9XcaHHDUuP_CYGuRDxgTxonGOsuN-zKy15H8P_E,703
+kaiju_files/tests/test_converters.py,sha256=63Kucljf-tEONsE0Fe3X1OXYR5YyfW5mEpFq6P6hKnI,2376
+kaiju_files/tests/test_files.py,sha256=Q10dmfpa20ljFEFdI2R1E1_AWYb6n7SPCExPpT-wt3E,1010
+kaiju_files-2.0.1.dist-info/LICENSE,sha256=XIlN2qA8UqpBDA-PteoYP4hTU0qBW0G9PRB__khO2zc,610
+kaiju_files-2.0.1.dist-info/METADATA,sha256=q5KWzm3AUWQzm7mi5rKJBqJ14O2MgnGZuKapCyWhjKA,2937
+kaiju_files-2.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+kaiju_files-2.0.1.dist-info/top_level.txt,sha256=SnVfqkSRIWJ7yYfmROjUcTT19yK_rWaO5lMJkMnM8fM,12
+kaiju_files-2.0.1.dist-info/RECORD,,
