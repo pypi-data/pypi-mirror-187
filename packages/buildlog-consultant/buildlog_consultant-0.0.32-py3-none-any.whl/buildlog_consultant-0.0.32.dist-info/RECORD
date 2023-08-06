@@ -1,0 +1,15 @@
+buildlog_consultant/__init__.py,sha256=uI-iXOtomkn3w91ZAYmb04wyozx9CCOgqfWhodhKeew,4367
+buildlog_consultant/__main__.py,sha256=d8rwFTmDEtJXdz1kNsHZgtO9GOSvgTh_0EvSlYUSdOk,1164
+buildlog_consultant/apt.py,sha256=H-9qxiZMX1d4CFUBgD4nHDv954X4kdTB8D-Du0xCEhs,13767
+buildlog_consultant/autopkgtest.py,sha256=MYbel2-W7ce51mefHOjLraJKwDoyqAUjocqgMsA8kt4,23206
+buildlog_consultant/chatgpt.py,sha256=bOkKSzUChzS5OYJR6HP-PMiJyh5i70azUjg4KI7pa6g,2106
+buildlog_consultant/common.py,sha256=xsOzvISjpIEl6pgss-IQqrK9mrSMyLCTFn6EUHzHe_Q,145325
+buildlog_consultant/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+buildlog_consultant/sbuild.py,sha256=s_0Y1TmS8YEUDbwU_HiTZpbeVPFcraUXCusqFPAztG4,35983
+buildlog_consultant-0.0.32.dist-info/AUTHORS,sha256=pUkJoIVWNIGQdC35njgLW7hRF81X492mpcKKHSpoxm4,35
+buildlog_consultant-0.0.32.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+buildlog_consultant-0.0.32.dist-info/METADATA,sha256=6XPQ27_XUigxpgEdRSpao6447fhBLlZhDzUuIwKFrME,731
+buildlog_consultant-0.0.32.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+buildlog_consultant-0.0.32.dist-info/entry_points.txt,sha256=MqbRvvtIyvtKJa9IwwL5eEuXi3y-REEwdhATKBzGRGA,186
+buildlog_consultant-0.0.32.dist-info/top_level.txt,sha256=WzEyaxKr0VIKfzw3R33l-qmMOnfxH773xYKA8UKExEE,20
+buildlog_consultant-0.0.32.dist-info/RECORD,,
