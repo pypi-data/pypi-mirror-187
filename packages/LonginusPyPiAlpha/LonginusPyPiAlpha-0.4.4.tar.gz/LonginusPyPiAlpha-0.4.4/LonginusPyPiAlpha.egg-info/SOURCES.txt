@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.py
+LonginusPyPiAlpha/LClient.py
+LonginusPyPiAlpha/LServer.py
+LonginusPyPiAlpha/LonginusP.py
+LonginusPyPiAlpha/Lshell.py
+LonginusPyPiAlpha/__init__.py
+LonginusPyPiAlpha.egg-info/PKG-INFO
+LonginusPyPiAlpha.egg-info/SOURCES.txt
+LonginusPyPiAlpha.egg-info/dependency_links.txt
+LonginusPyPiAlpha.egg-info/requires.txt
+LonginusPyPiAlpha.egg-info/top_level.txt
