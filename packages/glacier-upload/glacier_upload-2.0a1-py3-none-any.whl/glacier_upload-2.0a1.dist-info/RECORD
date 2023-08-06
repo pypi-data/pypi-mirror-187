@@ -1,0 +1,11 @@
+glacier_upload/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+glacier_upload/archives.py,sha256=p5gALYysjB3HpAZbmyf57KujhiRijsboT4gn_tK98Gc,3546
+glacier_upload/cli.py,sha256=OT26iWvZWOt4IpjMgFD6w6FGXogQ3TpBMyyyew-7IEU,4869
+glacier_upload/inventories.py,sha256=plInBhkOcPPpUfovdSjVIOCez8-k8uC6HkhFL1alTv8,2417
+glacier_upload/upload.py,sha256=iZv-NKnE5C7MmvteAvpnGQh6xcku4FbtGm22hN_kGh0,9828
+glacier_upload/utils/tree_hash.py,sha256=yPg2QdJ5zIyLBEbZKBrpYB3oTAt4nMbPUWxIXVpQyOo,1604
+glacier_upload-2.0a1.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+glacier_upload-2.0a1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+glacier_upload-2.0a1.dist-info/entry_points.txt,sha256=ZMCwhxuJ_OPodrVdGgi6e2Tl3PWrtnlAors9P8e0Ajw,58
+glacier_upload-2.0a1.dist-info/METADATA,sha256=g4vJvmBa0q3LNWx95m1Itjjrmz-bpB-YZOcECI-3qaM,5702
+glacier_upload-2.0a1.dist-info/RECORD,,
