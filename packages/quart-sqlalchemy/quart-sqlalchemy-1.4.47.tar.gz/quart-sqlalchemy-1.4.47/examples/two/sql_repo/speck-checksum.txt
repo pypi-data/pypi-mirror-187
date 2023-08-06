@@ -1,0 +1,28 @@
+SpeckCipher ciphertext: 84769424172177895061550359058805492431 hex: 0x3fc5ff4b001d8acaffa3e3b64c390acf len: 34
+SimonCipher ciphertext: 283542623376666139465956472983580793767 hex: 0xd55052a8bb031f1a5db75876af1b5ba7 len: 34
+SpeckCipher ciphertext: 257117637843484 hex: 0xe9d8dd781a1c len: 14
+decrypted 0
+
+SpeckCipher ciphertext: 188985952194781607611234279678196994428 hex: 0x8e2d5ed528aca7b5ac04a287a312517c len: 34
+SimonCipher ciphertext: 183321201857765751046187684279879965472 hex: 0x89ea6113e647e8af0ce8bc80e0839b20 len: 34
+SpeckCipher ciphertext: 166472582450134 hex: 0x9767eb244bd6 len: 14
+decrypted 12
+
+SpeckCipher ciphertext: 70273949126256840761958126749449008964 hex: 0x34de4531f0696fffffced5874bf93744 len: 34
+SimonCipher ciphertext: 55381648930786974124710543055836436892 hex: 0x29aa1e1b54ad1974b168f31e43f0599c len: 34
+SpeckCipher ciphertext: 272870388336452 hex: 0xf82c96910744 len: 14
+decrypted 123123
+
+SpeckCipher ciphertext: 76919426140741872737456868104707335576 hex: 0x39de248226c63b584bff42e87f2d6598 len: 34
+SimonCipher ciphertext: 254936418497672897204975523486965183968 hex: 0xbfcaf7ddeb04151b49d147dd58ec35e0 len: 34
+SpeckCipher ciphertext: 42756497818323 hex: 0x26e305dd42d3 len: 14
+decrypted 41324129349
+
+import base58check
+import binascii
+
+>>> base58check.b58encode(binascii.unhexlify('9767eb244bd6')).decode()
+'2JPxF43kR'
+
+len(...)
+9

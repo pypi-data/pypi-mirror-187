@@ -1,0 +1,42 @@
+[tool.pdm]
+[tool.pdm.dev-dependencies]
+dev = [
+    "ipython>=8.7.0",
+]
+
+[project]
+name = "two"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Joe Black", email = "me@joeblack.nyc"},
+]
+dependencies = [
+    "quart-sqlalchemy @ file:///${PROJECT_ROOT}/../../dist/quart_sqlalchemy-2.0.0-py3-none-any.whl",
+    "pydantic>=1.10.2",
+    "pydantic-appconfig>=1.0.0",
+    "cmake>=3.25.0",
+    "boto3[appconfigdata,kms]>=1.26.36",
+    "sitri[pyyaml,settings]>=0.10.4",
+    "boto3-stubs[appconfigdata,kms]>=1.26.36",
+    "pyyaml>=6.0",
+    "SQLAlchemy~=2.0.0b4",
+    "aiopg>=1.4.0",
+    "typing-inspect>=0.8.0",
+    "simonspeckciphers>=1.0.0",
+    "pycryptodome>=3.16.0",
+    "cryptography>=38.0.4",
+    "feistelcipher>=0.2.0",
+    "base58check>=1.0.2",
+    "reedsolo>=1.6.0",
+    "pybase62>=0.5.0",
+    "sqlalchemy-utils>=0.39.0",
+    "anyio>=3.6.2",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-pep517>=1.0"]
+build-backend = "pdm.pep517.api"
