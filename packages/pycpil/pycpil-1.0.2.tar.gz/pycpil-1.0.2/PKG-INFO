@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pycpil
+Version: 1.0.2
+Summary: PyCpil is a pip pkg to calculate isobaric heat capacity of ionic liquids and ionanofluids (nanofluids)
+Home-page: https://github.com/nirmalparmarphd/PyCpil
+Author: Nirmal Parmar
+Author-email: nirmalparmarphd@gmail.com
+License: MIT
+
+README.md

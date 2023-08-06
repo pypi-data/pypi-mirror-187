@@ -1,0 +1,10 @@
+README.md
+setup.py
+pycpil/__init__.py
+pycpil/cpil.py
+pycpil.egg-info/PKG-INFO
+pycpil.egg-info/SOURCES.txt
+pycpil.egg-info/dependency_links.txt
+pycpil.egg-info/not-zip-safe
+pycpil.egg-info/requires.txt
+pycpil.egg-info/top_level.txt
