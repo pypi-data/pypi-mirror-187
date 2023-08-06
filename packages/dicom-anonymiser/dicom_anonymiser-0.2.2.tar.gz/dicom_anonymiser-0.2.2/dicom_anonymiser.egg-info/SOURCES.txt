@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+dicom_anonymiser/__init__.py
+dicom_anonymiser/__main__.py
+dicom_anonymiser/tools.py
+dicom_anonymiser.egg-info/PKG-INFO
+dicom_anonymiser.egg-info/SOURCES.txt
+dicom_anonymiser.egg-info/dependency_links.txt
+dicom_anonymiser.egg-info/entry_points.txt
+dicom_anonymiser.egg-info/requires.txt
+dicom_anonymiser.egg-info/top_level.txt
