@@ -1,0 +1,14 @@
+dmenuplaylist/__init__.py,sha256=1oLL20yLB1GL9IbFiZD8OReDqiCpFr-yetIR6x1cNkI,23
+dmenuplaylist/__main__.py,sha256=Ua-sonoM3MWth1KNenv-YiA-JqSSmD1XbkrPtbfV0pA,1351
+dmenuplaylist/config.py,sha256=bYoLwZtgrldTm-Y-q6ersyVujUqp7kEXlSnFVt59WRU,1599
+dmenuplaylist/initial_setup.py,sha256=Sw7T9uBV-TZxbTI8MBOZcNr54PNaLtITDj8dMgngtX8,166
+dmenuplaylist/options.py,sha256=xQq4hj-ydF34ZWClpwFh9VwzVUOBzmfmI0vem1B3gi8,992
+dmenuplaylist/prompts.py,sha256=4DT4P9IEPevA08szPBXxm4VwGsTFl5NfnS78yEZpvHI,1612
+dmenuplaylist/system.py,sha256=KRSOdsCpO5ktMuBb1JXNdO6DSphroGsfgTJT73HYzJc,657
+dmenuplaylist/utils.py,sha256=p2uqSXl_bD0jdabh0YZTvNEyESjZ9kdDvHYrfMTDw2M,4365
+dmenuplaylist-0.0.0b3.dist-info/LICENSE,sha256=Rx1OxRoDHDUtHb9irAoYfjP-nTzy76pliCQWm6O-_gs,34742
+dmenuplaylist-0.0.0b3.dist-info/METADATA,sha256=CPco8-W8jCplStmeH549ovchqT--6KV4EG266-JXTu8,668
+dmenuplaylist-0.0.0b3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dmenuplaylist-0.0.0b3.dist-info/entry_points.txt,sha256=jBU2TP21dMH6uIT9LSMDB_vgL9h7sMCw7sSKD-Ihtoo,62
+dmenuplaylist-0.0.0b3.dist-info/top_level.txt,sha256=n_fADbcjn4y1a-q9GN6hilTPThqW0xzwprlq4k_nOlU,14
+dmenuplaylist-0.0.0b3.dist-info/RECORD,,
