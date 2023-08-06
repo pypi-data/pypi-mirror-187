@@ -1,0 +1,2 @@
+[console_scripts]
+topsis123 = Topsis_Riya_102003451.topsis:main
