@@ -1,0 +1,16 @@
+django==4.1.*
+djangorestframework==3.14.0
+drf-spectacular==0.24.*
+djangorestframework-simplejwt==5.2.*
+django-imagekit==4.1.*
+content-licencing
+anycluster
+rules==3.3
+django-el-pagination==3.3.0
+django-octicons==1.0.2
+django-countries==7.5
+django-cors-headers==3.13.0
+Pillow
+matplotlib
+django-taggit==3.1.0
+django-road
