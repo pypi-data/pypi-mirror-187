@@ -1,0 +1,2 @@
+[emsarray.formats]
+SMC = emsarray_smc:SMC
