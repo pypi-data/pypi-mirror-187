@@ -1,0 +1,2 @@
+[console_scripts]
+0x0 = nptr_cli.nptr:run
