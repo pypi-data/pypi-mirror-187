@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+cubat.egg-info/PKG-INFO
+cubat.egg-info/SOURCES.txt
+cubat.egg-info/dependency_links.txt
+cubat.egg-info/entry_points.txt
+cubat.egg-info/requires.txt
+cubat.egg-info/top_level.txt
