@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: wuddz-search-gui
+Version: 1.0.3
+Summary: Python File/Folder Explorer GUI Application, Search, Open, Save, Copy, Move, Rename, Delete, Parse & Archive (Encryption Optional)
+Project-URL: Homepage, https://github.com/wuddz-devs/Wuddz-Search-Gui
+Project-URL: Download, https://github.com/wuddz-devs/Wuddz-Search-Gui/releases/download/v1.0.3/wuddz-search-gui-1.0.3.zip
+Author-email: Wuddz-Devs <wuddz_devs@protonmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Wuddz-Devs
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Keywords: archive,copy,explorer,file,folder,gui,move,parse,search
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Requires-Dist: pyqt5>=5.15.7
+Description-Content-Type: text/markdown
+
+<h1 align="center">Wuddz Search Gui</h1>
+<p align="center">A Python File/Folder Explorer GUI Application, Search, Open, Save, Copy, Move, Rename, Delete, Parse & Archive (Encryption Optional).</p>
+<p align="center">
+    <img src="https://raw.githubusercontent.com/wuddz-devs/Wuddz-Search-Gui/main/screenshots/wsg.png" alt="Empty interface">
+</p>
+
+## Description
+ - Wuddz-Search-Gui Is An Update Of My Wuddz-Search Repository, As A More User Friendly & Eye Pleasing GUI Application.
+ 
+ - Search A Specific Folder/Entire OS Platform Root Folder For Files Containing Specified String And/Or File Extension.
+  
+ - Parse Searched Files For A Preconfigured Regex Pattern Or Enter Specific Regex Pattern.
+   
+ - Archive File(s) Or Folder(s) With Or Without Encryption, Using The Free & Open Source 7zip Software.
+ 
+ - Save Searched File List As Text In Specified Output Text File.
+ 
+ - Open Any File/Program On Your OS System With Adequate Permissions.
+
+## Prerequisites
+ - Install Free Open Source 7zip Application [7zip](https://www.7-zip.org/download.html)
+ 
+ - Add 7zip To Os Path i.e if you type '7z' anywhere in terminal/cmd/powershell it will launch 7zip Application
+ 
+ - Python : 3.7
+
+## Installation
+Install using [PyPI](https://pypi.org/project/wuddz-search-gui):
+```
+$ pip install wuddz-search-gui
+```
+Install locally by cloning or downloading and extracting the repo, then cd into 'dist' directory and execute:
+```
+$ pip install wuddz_search_gui-1.0.3.tar.gz
+```
+Then to run it, execute the following in the terminal:
+```
+$ wudz-sgui
+```
+
+## Usage
+ - Once Launched Follow Tooltips Provided.
+ 
+ - If You're Using Windows OS & Prefer Not To Install Python, Simply Download Latest Release, Extract & Run 'wudz-sgui.exe'
+ 
+ - You Can Create A Shortcut For 'wudz-sgui.exe' & Paste Anywhere To Launch Wuddz-Search-Gui With 1 Click.
+ 
+ - If You Prefer A Quicker, More Condensed Way To Search, Archive & Parse Files On Your OS, Then Look No Further.
+ 
+ - Execute OS Platform Tasks With Consumate Ease & Efficiency, Using This Cool Python Coded Application.
+ 
+ - It's Just An Awesome Way Of Doing Everyday OS Platform Tasks In A Much Quicker & Efficient Manner.
+
+ - To Close Opened Windows Simply Hit "Esc" Or "Ctrl+Q" To Close The Program.
+
+## Contact Info:
+ - Email:     wuddz_devs@protonmail.com
+ - Github:    https://github.com/wuddz-devs
+ - Reddit:    https://reddit.com/user/wuddz-devs
+ - Telegram:  https://t.me/wuddz_devs
+ - Youtube:   https://youtube.com/@wuddz-devs
+
+### Video:
+ - https://youtu.be/GTvM5_gxhsk (Edited No Restrictions)
+
+### If You're Feeling Generous & Appreciative, Buy Me A Coffee
+ - ERC20: 0x1F1C47dD653Af628D394eac7bAA9Ccf774fd784f
+
+### Peace & Love Always!!
