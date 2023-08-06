@@ -1,0 +1,17 @@
+rocketpy/AeroSurfaces.py,sha256=y47_5euxsKYABiFihO2C0Xj5RrDji1s-MerA5As7sGI,50325
+rocketpy/Environment.py,sha256=D7CgJIyc88GXbBX3v5PLy_PPc1gRB9VNrFrCksc5xx8,158652
+rocketpy/EnvironmentAnalysis.py,sha256=OEMj4wR-K2UN8KPjlt-6dAVB4tA48yXgA6Nw1jA_xF8,131966
+rocketpy/Flight.py,sha256=Wpxyu83G7ainARS4eYG-GHmB-lqSXAL419gXfDnjCwM,173241
+rocketpy/Function.py,sha256=IhURM4OxSnoEGuTbjU9BGEX5YyY4OEHDUiJmGEt_keI,100749
+rocketpy/Motor.py,sha256=sUTUOPzuzvzwPRppa2vSCjlvQBZoGff6Pukd5SWLGeM,60448
+rocketpy/Parachute.py,sha256=hSGe3yUBUIg8P1Mhr6jIUZqaxqcSw3wkwtj6ttr8HwM,4746
+rocketpy/Rocket.py,sha256=awLjUfE5AxuHOJQXGe0TDG4AFMxj4A8YDl73igGsv1g,39974
+rocketpy/__init__.py,sha256=SQ6zpCNTUQqdtI8bXW9ZakEg3Wb2rO1EfMXgrptxPZ8,1223
+rocketpy/tools.py,sha256=CPaVvTfqctVpVMPCvYvAbfQCAexI5Gb5Ojup3r4wzio,715
+rocketpy/units.py,sha256=DgkarrWSF-RhdltZLCspOaRF76jwx2rcYXPbEOun2DU,5095
+rocketpy/utilities.py,sha256=p92vhZOvxwyZFzsjzsfMvxtIba2uJMsKfIRyfBcegBE,8880
+rocketpy-0.13.0.dist-info/LICENSE,sha256=yW57cdzzKVxFFK-hmx40XzI86tgd3DNmluc5e4GTShM,1079
+rocketpy-0.13.0.dist-info/METADATA,sha256=QbP2yqxRSk402z9A7Q8wM14vOR_jMAsupllAf0h7e28,14239
+rocketpy-0.13.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+rocketpy-0.13.0.dist-info/top_level.txt,sha256=RnNaRRe3dIPwwuaamN5QLOgTRBe3nI84kiOvspb0wQE,9
+rocketpy-0.13.0.dist-info/RECORD,,
