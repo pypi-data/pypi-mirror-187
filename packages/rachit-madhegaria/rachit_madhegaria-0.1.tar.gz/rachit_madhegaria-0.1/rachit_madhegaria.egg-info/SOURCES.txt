@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+rachit_madhegaria/__init__.py
+rachit_madhegaria.egg-info/PKG-INFO
+rachit_madhegaria.egg-info/SOURCES.txt
+rachit_madhegaria.egg-info/dependency_links.txt
+rachit_madhegaria.egg-info/top_level.txt
