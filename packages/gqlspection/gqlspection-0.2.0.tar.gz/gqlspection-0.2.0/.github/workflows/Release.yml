@@ -1,0 +1,83 @@
+name: Create a new release
+
+# The release version is saved in an annotated tag, following semver (major.minor.patch
+# e.g. 5.0.7).
+#
+# The pull request title (or the last commit message in case of a direct push) should
+# indicate the release type: 'major', 'minor', 'patch', with default being 'patch'.
+
+on:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - main
+
+jobs:
+  coverage-badge:
+    name: "Update coverage badge for the Readme"
+    if: ${{ github.event.pull_request.merged == true }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dump GitHub context
+        run: echo '${{ toJSON(github) }}'
+
+      - uses: actions/checkout@v3
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install 'runme'
+        uses: ./.github/actions/install-runme
+        with:
+          version: 0.3.0
+
+      - name: Install dependencies
+        run: runme deps
+
+      - name: Calculate coverage
+        run: runme coverage.calculate
+
+      - name: Update the coverage badge
+        run: |
+          original=$(readlink -f $(pwd))
+
+          cp Runmefile.sh ..
+          cd ..
+          runme coverage.update_badge "$original"
+
+  release:
+    if: ${{ github.event.pull_request.merged == true }}
+    needs: coverage-badge
+    name: "Create a new release, upload it to PyPI and Github"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: '0'
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install 'runme'
+        uses: ./.github/actions/install-runme
+        with:
+          version: 0.3.0
+
+      - name: Create the release
+        run: |
+          echo "The pull request title is '$PULL_REQUEST_TITLE'"
+          
+          MESSAGE_TAG=$(echo "$PULL_REQUEST_TITLE" | egrep -io '#(major|minor)' || echo '#patch')
+          RELEASE_TYPE=$(echo "$MESSAGE_TAG" | tr -d '#')
+          echo "About to create new '$RELEASE_TYPE' release"
+
+          runme release $RELEASE_TYPE
+        env:
+          PULL_REQUEST_TITLE: ${{ github.event.pull_request.title }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
