@@ -1,0 +1,6 @@
+setup.py
+playgroundlocal.egg-info/PKG-INFO
+playgroundlocal.egg-info/SOURCES.txt
+playgroundlocal.egg-info/dependency_links.txt
+playgroundlocal.egg-info/requires.txt
+playgroundlocal.egg-info/top_level.txt
