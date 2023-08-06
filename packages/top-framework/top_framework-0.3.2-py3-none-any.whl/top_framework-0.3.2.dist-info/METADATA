@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: top-framework
+Version: 0.3.2
+Summary: Python framework for creating UNIX top like TUI applications easily
+Home-page: https://github.com/tradingstrategy-ai/top-framework
+License: MIT
+Keywords: cli,UNIX,TUI
+Author: Mikko Ohtamaa
+Author-email: mikko@opensourcehacker.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: docs
+Provides-Extra: gunicorn
+Requires-Dist: Sphinx (>=5.1.1,<6.0.0) ; extra == "docs"
+Requires-Dist: dataclasses-json (>=0.5.7,<0.6.0)
+Requires-Dist: emoji-country-flag (>=1.3.1,<2.0.0)
+Requires-Dist: furo (>=2022.6.21,<2023.0.0) ; extra == "docs"
+Requires-Dist: gunicorn (>=20.1.0,<21.0.0) ; extra == "gunicorn"
+Requires-Dist: iso8601 (>=1.0.2,<2.0.0)
+Requires-Dist: python-lorem (>=1.1.2,<2.0.0) ; extra == "gunicorn"
+Requires-Dist: redispy (>=3.0.0,<4.0.0)
+Requires-Dist: sphinx-autodoc-typehints (>=1.16.0,<2.0.0) ; extra == "docs"
+Requires-Dist: sphinx-sitemap (>=2.2.0,<3.0.0) ; extra == "docs"
+Requires-Dist: textual (>=0.1.18,<0.2.0)
+Requires-Dist: typer (>=0.6.1,<0.7.0)
+Project-URL: Repository, https://github.com/tradingstrategy-ai/top-framework
+Description-Content-Type: text/markdown
+
+[![Automated test suite](https://github.com/tradingstrategy-ai/top-framework/actions/workflows/test.yml/badge.svg)](https://github.com/tradingstrategy-ai/top-framework/actions/workflows/test.yml)
+
+[![Documentation Status](https://readthedocs.org/projects/top-framework/badge/?version=latest)](https://top-framework.readthedocs.io/en/latest/?badge=latest)
+
+Top Framework is a Python library for writing UNIX top like Text User Interface applications.
+
+It comes with [web-top](https://github.com/tradingstrategy-ai/web-top),
+a`top` like monitoring tool for HTTP requests and responses on any web server.
+
+![screenshot](https://raw.githubusercontent.com/tradingstrategy-ai/top-framework/master/docs/source/web-top/screenshot2.png)
+
+# Use cases
+
+The goal of Top Framework is to make is easy to roll out 
+custom live monitoring tools with text user interface quickly.
+Sometimes you just need to log in to your server and see what's going on.
+Top tools are is ideal for observing and catching issues when they happen.
+These tools are supplement for Application Performance Management (APM),
+metrics like statsd and Prometheus and logging.
+
+Monitoring use cases you might have include:
+
+- HTTP request/response trackers for web servers
+
+- Background job trackers for Cron, Celery and other background job managers
+
+# Documentation
+
+- [Browse documentation](https://top-framework.readthedocs.io/)
+
+# Community 
+
+- [Join Discord for any questions](https://tradingstrategy.ai/community)
+
+# Social media
+
+- [Follow on Twitter](https://twitter.com/TradingProtocol)
+- [Follow on Telegram](https://t.me/trading_protocol)
+- [Follow on LinkedIn](https://www.linkedin.com/company/trading-strategy/)
+
+# License
+
+MIT.
+
+[Developed and maintained by Trading Strategy](https://tradingstrategy.ai).
