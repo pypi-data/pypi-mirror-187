@@ -1,0 +1,13 @@
+{# Render an HTMX-enabled table with paginator #}
+{% load helpers %}
+{% load render_table from django_tables2 %}
+
+{% with preferences|get_key:"pagination.placement" as paginator_placement %}
+  {% if paginator_placement == 'top' or paginator_placement == 'both' %}
+    {% include 'netbox_portmanager/inc/paginator_htmx.html' with paginator=table.paginator page=table.page %}
+  {% endif %}
+  {% render_table table 'netbox_portmanager/inc/table_htmx.html' %}
+  {% if paginator_placement != 'top' %}
+    {% include 'netbox_portmanager/inc/paginator_htmx.html' with paginator=table.paginator page=table.page %}
+  {% endif %}
+{% endwith %}
