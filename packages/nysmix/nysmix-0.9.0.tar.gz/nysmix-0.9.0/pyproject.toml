@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "nysmix"
+version = "0.9.0"
+description = "pulling nys fuel mix data from nysiso"
+authors = ["Gautam Sisodia <gautam.sisodia@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+jupyter-book = {version = "^0.13.0", optional = true}
+jupytext = {version = "^1.14.0", optional = true}
+altair = {version = "^4.2.0", optional = true}
+pytest = {version = "^7.1.2", optional = true}
+pydantic = "^1.10.1"
+pandera = "^0.13.4"
+fs-gcsfs = {version = "^1.5.1", optional = true}
+sqlmodel = "^0.0.8"
+psycopg2 = {extras = ["binary"], version = "^2.9.5"}
+autodocsumm = {version = "^0.2.10", optional = true}
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+mypy = "^0.950"
+types-requests = "^2.27.28"
+isort = "^5.11.4"
+
+[tool.poetry.extras]
+google = ["fs-gcsfs"]
+book = ["jupyter-book", "jupytext", "altair", "autodocsumm"]
+test = ["pytest"]
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+line_length = 88
+profile = "black"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
