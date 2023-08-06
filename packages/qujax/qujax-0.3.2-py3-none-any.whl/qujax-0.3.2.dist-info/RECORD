@@ -1,0 +1,13 @@
+qujax/__init__.py,sha256=7-tXIw5wXKNqgpbMn7goTEBTfkzUwiCUGpM-Pg8cHB8,1631
+qujax/densitytensor.py,sha256=wnmGuK8jV_1_BB7iG1LKX42XNdNjj1BBCi91kRDoX60,8869
+qujax/densitytensor_observable.py,sha256=ZvzT-xhCliJu4yy2sCN6RNvoF-zalsGfwvpD6bzhvhM,7559
+qujax/gates.py,sha256=ebS1Tp1DYNTR9nhdL4k02xftkIad_x-vq7rt6VKcfEg,5296
+qujax/statetensor.py,sha256=drTwSOCa_5VNgqgW-7sz0mkEo5Bgrl78_gyvcJpF8z4,8831
+qujax/statetensor_observable.py,sha256=MBsRVBj6maXoGWdbwLbeDZ5Of2MH_Ko9V4NKIoXeUq0,7646
+qujax/utils.py,sha256=1sURqqNHUmIuKBh0yir8J-yUEGeuhA1TKR8S16bZ3KA,15443
+qujax/version.py,sha256=bqu4G7Is-8Were-hMi-SthEalL7QW-PAbKWGZ9pVB6U,22
+qujax-0.3.2.dist-info/LICENSE,sha256=WYmcYJG1QFgu1hfo7qrEkZ3Jhcz8NUWe6XUraZvlIFs,10172
+qujax-0.3.2.dist-info/METADATA,sha256=_og56fhm4NQQnSFwoYqdc6dJqd7nEaDOAarFmKsX-Pc,5831
+qujax-0.3.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+qujax-0.3.2.dist-info/top_level.txt,sha256=8BdYqzq4Ud10jZc25Otq3qqpZ7hT8N3bsR3_Zv0qrLo,6
+qujax-0.3.2.dist-info/RECORD,,
