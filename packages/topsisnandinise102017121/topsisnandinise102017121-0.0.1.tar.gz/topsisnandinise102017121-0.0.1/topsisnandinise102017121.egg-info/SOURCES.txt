@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/__init__.py
+src/__main__.py
+topsisnandinise102017121.egg-info/PKG-INFO
+topsisnandinise102017121.egg-info/SOURCES.txt
+topsisnandinise102017121.egg-info/dependency_links.txt
+topsisnandinise102017121.egg-info/entry_points.txt
+topsisnandinise102017121.egg-info/requires.txt
+topsisnandinise102017121.egg-info/top_level.txt
