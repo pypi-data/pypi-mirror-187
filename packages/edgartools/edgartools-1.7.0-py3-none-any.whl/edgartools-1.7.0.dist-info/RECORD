@@ -1,0 +1,17 @@
+edgar/__about__.py,sha256=ABajOgIHYVmtdYc3dQxcAY_Zq-Y9FCfYKHAkRSKVH2c,134
+edgar/__init__.py,sha256=OcTQBnioBg2_WECkQlgHZ1LtSOnTuNV-GwOxlfckxpc,788
+edgar/company.py,sha256=ulhdqkpi9Z8PAM84HVilctH5xSAt0qTh1_w519B5JeY,26882
+edgar/core.py,sha256=J6d-S5U9954IB9XMAPyaoNB7KxLRtxTO9R6jYzyECXc,14263
+edgar/effect.py,sha256=pLuPmWGLH0uTVIy4if7r2LXarMeitLRT3UpWxz-bF9Y,6371
+edgar/filing.py,sha256=OkkCGPwCK-tY2Pf6BCV2E1yIhYmS6fsSJUBElA4HgG0,30496
+edgar/form.py,sha256=Ie6LpZgRUMnENfqLkmLGu7kvtU4nhkGtZIEFPMF6qqc,3013
+edgar/gaap.py,sha256=eYnUI3QmfYLvrrYqtQNzGPHiSgFe0iciJr2RQsAYa2U,1378
+edgar/ownership.py,sha256=9g8iO67aEOiz31USEIQEFPQHDno0SY2gZ40OXfftaGo,27975
+edgar/shelf.py,sha256=MmKkp7usi2GbjiKW9__YSuguO27m3xeB5rNGuPeh7nU,366
+edgar/xbrl.py,sha256=dThcwVgMR2CAr01iSmp3216KOMgaWDiJ6Da5T_xfbSI,8215
+edgar/xml.py,sha256=QPAs6A2ioI_aL_DEaG3F8Qcn0ziOTUylqFH8nBwwr0s,2857
+edgar/data/GAAP_Taxonomy_2022.csv,sha256=Xc_JEUr7Eb2EOcMnqPhGaAaT4MxLttVPPNbSS3zFauI,1609032
+edgartools-1.7.0.dist-info/METADATA,sha256=dwZL9OnmvXNUP9oMgAg3GHmcBAUUb2MbIL3wzPWtPt8,16858
+edgartools-1.7.0.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+edgartools-1.7.0.dist-info/licenses/LICENSE.txt,sha256=3JK5gy0HugTKZ1lhd-QvDaaUvXCWgHqyEAor2UuECiE,1109
+edgartools-1.7.0.dist-info/RECORD,,
