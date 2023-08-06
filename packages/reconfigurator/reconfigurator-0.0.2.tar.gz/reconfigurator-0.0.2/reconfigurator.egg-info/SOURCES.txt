@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+reconfigurator/__init__.py
+reconfigurator/reconfigurator.py
+reconfigurator.egg-info/PKG-INFO
+reconfigurator.egg-info/SOURCES.txt
+reconfigurator.egg-info/dependency_links.txt
+reconfigurator.egg-info/top_level.txt
+reconfigurator/scripts/add_cli.sh
