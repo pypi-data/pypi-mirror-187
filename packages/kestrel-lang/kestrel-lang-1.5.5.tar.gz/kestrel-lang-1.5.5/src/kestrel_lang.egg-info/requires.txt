@@ -1,0 +1,11 @@
+pyyaml
+lxml
+pandas
+requests
+lark>=1.1.5
+pyarrow>=5.0.0
+docker>=5.0.0
+stix-shifter>=4.5.2
+stix-shifter-utils>=4.5.2
+firepit>=2.3.9
+typeguard
