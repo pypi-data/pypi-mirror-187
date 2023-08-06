@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: pytest-kasima
+Version: 0.1.1
+Summary: 
+Author: k4sima_0
+Author-email: 44926913+k4sima@users.noreply.github.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pytest (>=7.2.1,<8.0.0)
+Description-Content-Type: text/markdown
+
+[![PyPI version](https://badge.fury.io/py/pytest_k4sima.svg)](https://badge.fury.io/py/pytest_k4sima)
+[![Python Versions](https://img.shields.io/pypi/pyversions/pytest_k4sima.svg)](https://pypi.org/project/pytest_k4sima)
+
+# pytest-k4sima
+
+## install
+
+```
+pip install pytest-k4sima
+```
+
+## usage
+
+Display horizontal lines above and below the captured standard output for easy viewing.
+
+### options
+
+- `--kasima-skip` - disable
+
