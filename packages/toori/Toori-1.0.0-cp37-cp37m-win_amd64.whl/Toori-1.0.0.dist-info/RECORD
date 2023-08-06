@@ -1,0 +1,11 @@
+_toori.cp37-win_amd64.pyd,sha256=pfgnFuLHdwJv-Vv3d2d_FnAmlKMVFwFuT7C2889V2sE,113664
+Toori-1.0.0.data/data/WinDivert.dll,sha256=weBg7hlESiWbIWL4rw8_6MRCihxvaU3OIN4ZSsjX2aI,47616
+Toori-1.0.0.data/data/WinDivert64.sys,sha256=jaCFMyeCcI2HZ7ys5TJ6bscoPBfPuF5AsDzSMjqQ3cI,94144
+toori/Toori.py,sha256=Dz_e1MAG42lsw_SMksMagZvqIN3iq_ZR4B-p77laVmo,268
+toori/main.cpp,sha256=QUFZQPc7HWXFauvjf1EKU4GJWlMp7y7D52wtl_rrjQw,3198
+toori/main.py,sha256=k3vfXKjNzZFaenTG5g1U3LdEKeclyXsxqisBCMgrdnU,1496
+Toori-1.0.0.dist-info/METADATA,sha256=WbrK7DcyOnjAAD8tK9Ldqqg0GCDF2495IoN0Lmm9MuQ,941
+Toori-1.0.0.dist-info/WHEEL,sha256=eaY3ejwL19QEEyHRYuTgC3FZQgNYBpzCION1l_gJUb8,101
+Toori-1.0.0.dist-info/entry_points.txt,sha256=hn8QbS3Iavj8UWUISP0H-H3K2MbCQjiJ29PO90ul9EA,44
+Toori-1.0.0.dist-info/top_level.txt,sha256=4upyo5tCpIE5RonsGVo9Vpmu2jLzFUfB1k003txUmq4,13
+Toori-1.0.0.dist-info/RECORD,,
