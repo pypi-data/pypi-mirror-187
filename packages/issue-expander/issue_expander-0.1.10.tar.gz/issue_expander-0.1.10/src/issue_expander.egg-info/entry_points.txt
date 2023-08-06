@@ -1,0 +1,2 @@
+[console_scripts]
+issue-expander = issue_expander.issue_expander:cli

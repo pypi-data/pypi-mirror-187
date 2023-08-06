@@ -1,0 +1,72 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "issue_expander"
+version = "0.1.10"
+authors = [{name = "Adam Wolf", email = "adamwolf@feelslikeburning.com"}]
+license = {text = "MIT"}
+description = "Expand GitHub issue references into Markdown links"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Environment :: Console",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Text Processing :: Markup :: Markdown",
+    "Topic :: Utilities",
+    ]
+requires-python = ">=3.7"
+dependencies = [
+    "Click",
+    "requests",
+    ]
+dynamic = ["readme"]
+
+[project.urls]
+Homepage = "https://www.github.com/adamwolf/issue-expander"
+Issues = "https://www.github.com/adamwolf/issue-expander/issues"
+"Source code" = "https://www.github.com/adamwolf/issue-expander"
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.md"], content-type = "text/markdown"}
+
+[project.scripts]
+issue-expander = "issue_expander.issue_expander:cli"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 108
+
+[tool.coverage.run]
+parallel = true
+branch = true
+source = ["issue_expander"]
+
+[tool.coverage.paths]
+source = ["src", ".tox/py*/**/site-packages"]
+
+[tool.coverage.report]
+show_missing = true
+skip_empty = true
+fail_under = 100
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
+pythonpath = "src"
+
+# flake8 config is in tox.ini, as it can't yet be here

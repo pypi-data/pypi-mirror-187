@@ -1,0 +1,12 @@
+.
+LICENSE.txt
+README.md
+pyproject.toml
+src/issue_expander/__init__.py
+src/issue_expander/issue_expander.py
+src/issue_expander.egg-info/PKG-INFO
+src/issue_expander.egg-info/SOURCES.txt
+src/issue_expander.egg-info/dependency_links.txt
+src/issue_expander.egg-info/entry_points.txt
+src/issue_expander.egg-info/requires.txt
+src/issue_expander.egg-info/top_level.txt
