@@ -1,0 +1,9 @@
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+gradesG1/__init__.py
+gradesG1.egg-info/PKG-INFO
+gradesG1.egg-info/SOURCES.txt
+gradesG1.egg-info/dependency_links.txt
+gradesG1.egg-info/top_level.txt
