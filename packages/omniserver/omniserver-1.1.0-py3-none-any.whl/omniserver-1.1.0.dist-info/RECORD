@@ -1,0 +1,11 @@
+omniserver/__init__.py,sha256=zPdQA1vMKqAE8k6sUhbsMgnGiXdK2WybK25Xm0Q-9bM,92
+omniserver/certs.py,sha256=MnreAKEiSgP0Xjg7CLSLmOv20ySQ6a92iBMOTqyzAks,6842
+omniserver/clients.py,sha256=q3r_8ZwJFXOgT3JxSC2mWiu09caIZ9MnKzO5vyP2utg,17293
+omniserver/core.py,sha256=LQgAji_j950L_ZYNJAz6A-IOHziNwIzX5D52ddoMrU8,9595
+omniserver/servers.py,sha256=xctS8UQJvy0OLdJc5uSKWilMfsPkqfwxiijs71b05PM,23825
+omniserver/version.py,sha256=Abe150aXvpNgJW1OYZ0C9eGc-HdEK_QR4TSTWiOIbUY,98
+omniserver-1.1.0.dist-info/LICENSE,sha256=_YCaZGLqyI16jEQt6BhJPTBtZKhacNTZtnxQXJmkhwk,11537
+omniserver-1.1.0.dist-info/METADATA,sha256=f3fYY8KsJqCb0Cm0jtC7VvOkBjPkmuumUY23C9WpehE,7604
+omniserver-1.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+omniserver-1.1.0.dist-info/top_level.txt,sha256=TtHESnk1tkc_LaK_adp5QcSs9IW84wxsVd4-1JWBf-4,11
+omniserver-1.1.0.dist-info/RECORD,,
