@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/bh_apistatus/__init__.py
+src/bh_apistatus/result_data.py
+src/bh_apistatus/result_status.py
+src/bh_apistatus.egg-info/PKG-INFO
+src/bh_apistatus.egg-info/SOURCES.txt
+src/bh_apistatus.egg-info/dependency_links.txt
+src/bh_apistatus.egg-info/requires.txt
+src/bh_apistatus.egg-info/top_level.txt

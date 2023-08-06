@@ -1,0 +1,28 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bh-apistatus"
+version = "0.0.9"
+description = "API Status Result"
+
+readme = "README.md"
+authors = [{ name = "Van Be Hai Nguyen", email = "behai_nguyen@hotmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["api", "status", "result"]
+dependencies = ['tomli; python_version < "3.11"']
+requires-python = ">=3.7"
+
+[project.optional-dependencies]
+build = ["build", "twine"]
+dev   = ["pytest", "coverage", "sphinx", "myst-parser", "sphinx-rtd-theme", "m2r"]
+
+[project.urls]
+repository    = "https://github.com/behai-nguyen/bh_apistatus"
+documentation = "https://bh_apistatus.readthedocs.io/"
