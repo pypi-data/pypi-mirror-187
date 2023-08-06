@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+plinko/__init__.py
+plinko.egg-info/PKG-INFO
+plinko.egg-info/SOURCES.txt
+plinko.egg-info/dependency_links.txt
+plinko.egg-info/top_level.txt
