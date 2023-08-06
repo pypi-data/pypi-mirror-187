@@ -1,0 +1,4 @@
+[yt.frontends]
+IdefixDmpkDataset = yt_idefix.api:IdefixDmpDataset
+IdefixVtkDataset = yt_idefix.api:IdefixVtkDataset
+PlutoVtkDataset = yt_idefix.api:PlutoVtkDataset
