@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: mhlb
+Version: 0.15
+Summary: A Python implementation to estimate lower bounds on the geometric convergence rate for RWM Metropolis-Hastings from the pre-print arxiv.org/abs/2212.05955.
+Home-page: https://github.com/austindavidbrown/lower-bounds-for-Metropolis-Hastings
+Author: Austin Brown
+Author-email: austin.d.brown@warwick.ac.uk
+Keywords: Metropolis-Hastings,MCMC diagnostics
+License-File: LICENSE
