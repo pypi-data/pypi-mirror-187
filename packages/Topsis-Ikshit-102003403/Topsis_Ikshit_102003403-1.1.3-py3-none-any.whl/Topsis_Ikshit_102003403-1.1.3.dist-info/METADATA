@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: Topsis-Ikshit-102003403
+Version: 1.1.3
+Summary: Implements topsis on the given input data file and generates topsis score and ranks accordingly.
+Home-page: https://github.com/Ikshit2809/Topsis
+Author: Ikshit
+Author-email: iikshit_be20@thapar.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pandas
+Requires-Dist: sys
+Requires-Dist: os
+Requires-Dist: math
+
+# Topsis-Ikshit-102003403
+
+Used as a command line tool to generate topsis score and ranks of the given input data file along with weights and impacts.
+
+
+
+## Installation
+
+pip install Topsis-Ikshit-102003403
+
+
+## How to use it?
+1.Open the terminal / cmd
+2.Type topsis <input_filename.csv> <"Weights"> <"Impacts"> <output_filename.csv>
+
+For eg
+python 102003403.py 102003403-data.csv "2,2,3,3,4" "-,+,-,+,-" 102003403-result2.csv
+|Fund Name    |  	P1	    |   P2	  |  P3	 |   P4	     |   P5     | 
+| ----------- | :---------: | :-----: |:----:| :-------: |  -----:  |
+|    M1	      |     0.78	|   0.61  |	6.6	 |   59.7    |	16.92   |
+|    M2	      |     0.76	|   0.58  |	3.2	 |   53.5    |	14.51   |
+|    M3	      |     0.92	|   0.85  |	6.2	 |   30.9    |	9.72    |
+|    M4	      |     0.84	|   0.71  | 4.4	 |   66.6    |	18.14   |
+|    M5	      |     0.62	|   0.38  |	6.8	 |   66.6    |	18.6    |
+|    M6	      |     0.63	|   0.4	  |  5.3 |   40.6    |	11.73   |
+|    M7	      |     0.91	|   0.83  |	 5	 |   68.4    |	18.79   |
+|    M8	      |     0.84	|   0.71  |	 6	 |    62	 |   17.39  |
+
+gives output as
+
+|Fund Name |	   P1	    |        P2	       |         P3	      |      P4	       |        P5	      |    Topsis Score	  |     Rank    |
+| -------  |	:-------:   |    :---------:   |    :---------:   |  :---------:   |    :---------:   |    :---------:	  |    ------:  |    
+|    M1	   |  0.693984785	|    0.658498148   |    1.260022389	  |  1.101800492   | 	1.49138809	  |     0.391600818	  |      7      |
+|    M2	   |  0.676190304	|    0.626112993   |    0.610919946	  |  0.98737565	   |    1.278962245	  |     0.608431381	  |      1      |
+|    M3	   |  0.818546157	|    0.917579386   |	1.183657396	  |  0.570278647   | 	0.85675486	  |     0.504394509	  |      3      |
+|    M4	   |  0.74736823	|    0.766448664   |    0.840014926	  |  1.229144268   |	1.598923165	  |     0.51971065	  |      2      |
+|    M5	   |  0.551628932	|    0.410211961   |    1.298204886	  |  1.229144268   |	1.639469177	  |     0.38021749	  |      8      |
+|    M6	   |  0.560526173	|    0.431802064   |    1.011836161	  |  0.749298157   |	1.033923304	  |     0.475517399   | 	 5      |
+|    M7	   |  0.809648916	|    0.895989283   |    0.954562416	  |  1.262364383   |	1.656216443	  |     0.501336766   | 	 4      |
+|    M8	   |  0.74736823	|    0.766448664   |    1.145474899	  |  1.144248417   |	1.532815537	  |     0.438781833   | 	 6      |
+
+
+
+## License
+
+Â© 2023 Ikshit
+
+This repository is licensed under the MIT license. See LICENSE for details.
+
