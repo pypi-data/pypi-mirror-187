@@ -1,0 +1,15 @@
+main/__init__.py,sha256=OTXPOE7f-CsijGik8oGvZQKTw1m0ZhvF5jQuoUr9Ue8,211
+main/main.py,sha256=GU9dBFg3vSoiEA53a1bd63lNhyzMhDpQX9GObIEPxok,387
+project/__init__.py,sha256=mfWDxblUllMWwdEwPdWG2JoXndTfFuVf931X-S0mEjU,98
+project/config_utils.py,sha256=TFsppMqvj7f4nI9raQxScMhdRrkDC44s-45-YNxUrxE,54
+project/logger.py,sha256=0rLLgbORXaI2lZ68YkaEXsuP-cHUcmFGnaF2uzOB5Mo,3023
+project/config/__init__.py,sha256=mfWDxblUllMWwdEwPdWG2JoXndTfFuVf931X-S0mEjU,98
+project/config/env.py,sha256=T09LZYBh6yZAd8u_uTnDpNwawTb6JG4VbzecHrhlg8g,63
+project/model/__init__.py,sha256=mfWDxblUllMWwdEwPdWG2JoXndTfFuVf931X-S0mEjU,98
+project/model/project.py,sha256=uKccCrOmL3aUEbJBczBW3EpQlZ6OhCbyiL9pAmB6TnA,219
+siddhivinayak.sk.project1-0.0.0.dist-info/LICENSE,sha256=Mgm1pvLIR5VGHjnEO5d4F6tb_GYXYoavalZK0gbA2NY,1099
+siddhivinayak.sk.project1-0.0.0.dist-info/METADATA,sha256=MKoSz-dzNilXs6DYJmV_iUkqkADJUNw14lMXz2LLW8o,1140
+siddhivinayak.sk.project1-0.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+siddhivinayak.sk.project1-0.0.0.dist-info/entry_points.txt,sha256=ens5Mw2cRIpTD_NkPC2BT2a8bt6goVix1ZhfV32_NtA,39
+siddhivinayak.sk.project1-0.0.0.dist-info/top_level.txt,sha256=S3UlHnf5liQpgl-N1XvqjF1ESF810v-VsTDt8iFE0m4,13
+siddhivinayak.sk.project1-0.0.0.dist-info/RECORD,,
