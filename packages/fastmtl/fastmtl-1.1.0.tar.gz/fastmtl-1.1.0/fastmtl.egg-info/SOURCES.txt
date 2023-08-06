@@ -1,0 +1,16 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+fastmtl/__init__.py
+fastmtl/_nbdev.py
+fastmtl/loss.py
+fastmtl/metric.py
+fastmtl.egg-info/PKG-INFO
+fastmtl.egg-info/SOURCES.txt
+fastmtl.egg-info/dependency_links.txt
+fastmtl.egg-info/not-zip-safe
+fastmtl.egg-info/requires.txt
+fastmtl.egg-info/top_level.txt

@@ -1,0 +1,8 @@
+pip
+packaging
+fastai~=2.6.3
+
+[dev]
+nbdev~=1.2.11
+black
+flake8
