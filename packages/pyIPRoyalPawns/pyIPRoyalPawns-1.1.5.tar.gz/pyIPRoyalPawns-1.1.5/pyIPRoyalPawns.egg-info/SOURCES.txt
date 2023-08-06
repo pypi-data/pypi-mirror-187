@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pyIPRoyalPawns/__init__.py
+pyIPRoyalPawns/exceptions.py
+pyIPRoyalPawns/ipr.py
+pyIPRoyalPawns.egg-info/PKG-INFO
+pyIPRoyalPawns.egg-info/SOURCES.txt
+pyIPRoyalPawns.egg-info/dependency_links.txt
+pyIPRoyalPawns.egg-info/requires.txt
+pyIPRoyalPawns.egg-info/top_level.txt
