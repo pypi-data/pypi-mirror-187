@@ -1,0 +1,9 @@
+materialsml/__init__.py,sha256=qm8cMw2tQhtGqkuZ6WH5sP9C5Lp4tabiIkeTBudRBVg,98
+materialsml/main.py,sha256=2SCAD0PL1d-wnBlW-3zqR5L3U-B905QflFEHwdAdThg,13619
+materialsml/neuralnetwork/DGCNN.py,sha256=z9VjdUS1tBZKCEXWpkq1hqack6aHqy7fW-BjydGFnUs,1612
+materialsml/neuralnetwork/__init__.py,sha256=e1LEq3y9eCsMMF5Fh-qlIzRNxeIBaopXN21o09nXFRY,27
+materialsml/periph.py,sha256=lLQDDOJkdSSDdtNVZ91hJzEvf1Uh5mSCSZImuImdcvw,6564
+materialsml-0.2.0.dist-info/METADATA,sha256=veFc3zql_9BUkQS8c9WaDyCph3RXy4VWeuGkbbE8p9M,1993
+materialsml-0.2.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+materialsml-0.2.0.dist-info/LICENSE,sha256=uO2monGX4VByI3e1AcqvYW2lRGQ5dRw-qciuiTRIi0k,1080
+materialsml-0.2.0.dist-info/RECORD,,
