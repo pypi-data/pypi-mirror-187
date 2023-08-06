@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+graphletorbit/src/graphletorbit.py
+graphletorbit/src/graphletorbit.egg-info/PKG-INFO
+graphletorbit/src/graphletorbit.egg-info/SOURCES.txt
+graphletorbit/src/graphletorbit.egg-info/dependency_links.txt
+graphletorbit/src/graphletorbit.egg-info/requires.txt
+graphletorbit/src/graphletorbit.egg-info/top_level.txt
