@@ -1,0 +1,11 @@
+[console_scripts]
+netrics=netrics:main
+netrics-dev=netrics.measurement.dev:main
+netrics-dns-latency=netrics.measurement.dns_latency:main
+netrics-ndt7=netrics.measurement.ndt7:main
+netrics-ookla=netrics.measurement.ookla:main
+netrics-ping=netrics.measurement.ping:main
+netrics-traceroute=netrics.measurement.traceroute:main
+netrics.d=netrics:daemon
+netrics.s=netrics:serve
+
