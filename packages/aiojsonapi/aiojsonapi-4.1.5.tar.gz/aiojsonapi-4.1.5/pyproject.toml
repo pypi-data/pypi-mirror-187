@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "aiojsonapi"
+version = "4.1.5"
+description = "JSON aiohttp API constructor"
+authors = ["Yurzs <yury@yurzs.dev>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+aiohttp = "^3.8.3"
+pydantic = "^1.10.4"
+
+[tool.poetry.dev-dependencies]
+isort = "^5.10.1"
+black = "^22.3"
+pylint = "^2.12.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 99
+
+[tool.black]
+line_length = 99
+target_version = ["py37"]
+
+[tool.pylint.messages_control]
+max-line-length = 99
+disable = ["R0913", "W0613", "R0903"]
+
+
+[tool.pylint.similarities]
+min-similarity-lines=5
+ignore-comments="yes"
+ignore-docstrings="yes"
+ignore-imports="no"
