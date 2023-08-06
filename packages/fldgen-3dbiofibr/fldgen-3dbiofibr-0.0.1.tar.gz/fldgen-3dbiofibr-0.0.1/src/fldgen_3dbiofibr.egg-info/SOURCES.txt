@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/fldgen_3dbiofibr.egg-info/PKG-INFO
+src/fldgen_3dbiofibr.egg-info/SOURCES.txt
+src/fldgen_3dbiofibr.egg-info/dependency_links.txt
+src/fldgen_3dbiofibr.egg-info/top_level.txt
