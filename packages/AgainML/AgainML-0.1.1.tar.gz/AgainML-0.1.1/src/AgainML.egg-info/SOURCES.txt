@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/AgainML/KMeans.py
+src/AgainML/KNN.py
+src/AgainML/LinearRegression.py
+src/AgainML/__init__.py
+src/AgainML/mean_shift.py
+src/AgainML/svm.py
+src/AgainML.egg-info/PKG-INFO
+src/AgainML.egg-info/SOURCES.txt
+src/AgainML.egg-info/dependency_links.txt
+src/AgainML.egg-info/top_level.txt
