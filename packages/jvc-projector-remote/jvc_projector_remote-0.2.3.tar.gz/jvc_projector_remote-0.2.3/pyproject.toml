@@ -1,0 +1,43 @@
+[build-system]
+requires = [
+    "hatchling",
+    "hatch-vcs"
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "jvc_projector_remote"
+authors = [{name="bezmi"}]
+description = "A package to control JVC projectors over IP"
+readme = "README.md"
+licence = {file="LICENSE"}
+requires-python = ">=3.8"
+classifiers = [
+	
+	"Programming Language :: Python :: 3",
+	"License :: OSI Approved :: MIT License",
+	"Operating System :: OS Independent",
+]
+
+dynamic = [
+    "version",
+    "urls",
+]
+
+[tool.hatch.metadata.hooks.vcs.urls]
+"Homepage" = "https://github.com/bezmi/jvc_projector"
+"Bug tracker" = "https://github.com/bezmi/jvc_projector/issues"
+"Source archive" = "https://github.com/bezmi/jvc_projector/archive/{commit_hash}.zip"
+
+[tool.hatch.build]
+exclude = [
+    "/.*",
+    "/docs",
+    "/dist",
+]
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "_version.py"
