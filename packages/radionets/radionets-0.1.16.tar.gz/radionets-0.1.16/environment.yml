@@ -1,0 +1,14 @@
+---
+name: radionets
+channels:
+    - fastai
+    - pytorch
+    - defaults
+dependencies:
+  - python>=3.6
+  - pytorch>=1.6
+  - cudatoolkit
+  - cartopy
+  - pip
+  - pip:
+    - -e .
