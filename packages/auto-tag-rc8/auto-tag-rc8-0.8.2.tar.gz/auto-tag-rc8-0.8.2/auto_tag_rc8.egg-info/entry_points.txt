@@ -1,0 +1,2 @@
+[console_scripts]
+auto-tag = auto_tag.__main__:main
