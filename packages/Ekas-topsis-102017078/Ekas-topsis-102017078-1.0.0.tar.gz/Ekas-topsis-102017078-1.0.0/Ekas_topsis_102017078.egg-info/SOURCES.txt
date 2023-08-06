@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+Ekas_topsis_102017078.egg-info/PKG-INFO
+Ekas_topsis_102017078.egg-info/SOURCES.txt
+Ekas_topsis_102017078.egg-info/dependency_links.txt
+Ekas_topsis_102017078.egg-info/entry_points.txt
+Ekas_topsis_102017078.egg-info/requires.txt
+Ekas_topsis_102017078.egg-info/top_level.txt
