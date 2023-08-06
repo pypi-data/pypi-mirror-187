@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pubpypack-harmony-jan-vium
+Version: 0.0.4
+Summary: This is an initial package.
+Home-page: http://localhost
+Author: Jan Vium Enghoff
+Author-email: "Example" <test@example.com>
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: termcolor (<2,>=1.1.0)
+
+# packages
+
+
+## type checking
+check the types
+mypy
+
+## linting
+check for bad code, e.g. mutable default in function parameter
+
+## formatter
+black
+Format the code to adhere to code style
