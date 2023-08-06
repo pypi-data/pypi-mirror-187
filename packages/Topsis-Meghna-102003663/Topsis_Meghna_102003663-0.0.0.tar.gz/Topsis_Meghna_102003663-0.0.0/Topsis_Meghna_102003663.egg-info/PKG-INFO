@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: Topsis-Meghna-102003663
+Version: 0.0.0
+Summary: Topsis Implementation
+Home-page: https://github.com/meghna3107/Topsis-meghna-102003663.git
+Author: meghna
+Author-email: mmeghna_be20@thapar.edu
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Topsis-meghna-102003663
+This package is implementation of multi-criteria decision analysis using topsis.
+This package will accept three arguments during file execution:
+1. dataset.csv //file which contains the models and parameters
+2. string of weights separated by commas(,)
+3. string of requirements (+/-) separated by commas(,)
+// important
+install pandas,sys,operator and math libraries before installing this
+//
+You can install this package using following command
+pip install Topsis_Meghna_102003663
