@@ -1,0 +1,7 @@
+setup.py
+src/hellowpkg.egg-info/PKG-INFO
+src/hellowpkg.egg-info/SOURCES.txt
+src/hellowpkg.egg-info/dependency_links.txt
+src/hellowpkg.egg-info/top_level.txt
+src/test_average/__init__.py
+src/test_average/average.py
