@@ -1,0 +1,5 @@
+libnacl>1.8.0=
+pynacl>=1.4.0
+sympy
+base58
+starkbank-ecdsa
