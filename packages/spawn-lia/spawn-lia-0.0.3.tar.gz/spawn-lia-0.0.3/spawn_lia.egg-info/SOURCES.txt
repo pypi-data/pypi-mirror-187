@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+lia/__init__.py
+lia/main.py
+spawn_lia.egg-info/PKG-INFO
+spawn_lia.egg-info/SOURCES.txt
+spawn_lia.egg-info/dependency_links.txt
+spawn_lia.egg-info/entry_points.txt
+spawn_lia.egg-info/requires.txt
+spawn_lia.egg-info/top_level.txt
