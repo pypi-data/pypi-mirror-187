@@ -1,0 +1,9 @@
+fastcore
+loguru
+oceano-algos
+pandas
+plotly
+psycopg2-binary
+seaborn
+sqlalchemy
+sshtunnel
