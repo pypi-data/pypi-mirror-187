@@ -1,0 +1,11 @@
+pyCryptodome
+subprocess
+getpass
+asyncio
+argon2-cffi
+base64
+requests
+struct
+logging
+pickle
+multiprocessing
