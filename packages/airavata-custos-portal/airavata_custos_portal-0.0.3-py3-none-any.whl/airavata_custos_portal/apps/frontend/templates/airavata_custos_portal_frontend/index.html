@@ -1,0 +1,29 @@
+{% load static %}
+{% load render_bundle from webpack_loader %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <link rel="icon" href="{% static 'airavata_custos_portal_frontend/dist/custos-logo_custos-logomark-color.png' %}">
+    <title>Custos</title>
+    {% render_bundle 'chunk-vendors' 'css' 'FRONTEND' %}
+    {% render_bundle 'app' 'css' 'FRONTEND' %}
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but the Custos Portal doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <script>
+        {% autoescape off %}
+            window.serverConfig = {{ config | pprint }}
+        {% endautoescape %}
+    </script>
+    {% render_bundle 'chunk-vendors' 'js' 'FRONTEND' %}
+    {% render_bundle 'app' 'js' 'FRONTEND' %}
+  </body>
+</html>
