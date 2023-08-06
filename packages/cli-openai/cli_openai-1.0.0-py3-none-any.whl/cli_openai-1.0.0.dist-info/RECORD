@@ -1,0 +1,10 @@
+cli_openai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli_openai/cli.py,sha256=FkWUVOOClpBai0u-PZT-OR_5ELNaKjHiY2qG5JgiqqY,244
+cli_openai/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli_openai/commands/greet.py,sha256=fSAiWHRyCI2-TP7qYJNskSC5iUQw2oLI9tOhKlDugtU,562
+cli_openai/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli_openai/core/greet.py,sha256=rFhARBh5a_4WO3SKyWw0G5HaXk74dOcWQOrZmY_OT-s,83
+cli_openai-1.0.0.dist-info/entry_points.txt,sha256=FLSs0DFoklEAmH7XO01CTDqDYk2LNNNbnPIiKy47SRg,53
+cli_openai-1.0.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+cli_openai-1.0.0.dist-info/METADATA,sha256=leonw4iSNsZGgn6SHxBsRgOanPh6mrfaaOx73Jbp3L0,609
+cli_openai-1.0.0.dist-info/RECORD,,

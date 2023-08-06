@@ -1,0 +1,3 @@
+[console_scripts]
+openai=cli_openai.cli:entry_point
+
