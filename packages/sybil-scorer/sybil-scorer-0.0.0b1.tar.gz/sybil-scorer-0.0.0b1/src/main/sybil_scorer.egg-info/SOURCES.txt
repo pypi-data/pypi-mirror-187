@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+src/main/sybil_scorer.egg-info/PKG-INFO
+src/main/sybil_scorer.egg-info/SOURCES.txt
+src/main/sybil_scorer.egg-info/dependency_links.txt
+src/main/sybil_scorer.egg-info/top_level.txt
+src/main/sybil_scorer.egg-info/PKG-INFO
+src/main/sybil_scorer.egg-info/SOURCES.txt
+src/main/sybil_scorer.egg-info/dependency_links.txt
+src/main/sybil_scorer.egg-info/top_level.txt
