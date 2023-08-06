@@ -1,0 +1,15 @@
+versioneer
+wheel
+
+[docs]
+sphinx
+sphinx-rtd-theme
+myst-parser
+myst-nb
+sphinx-panels
+autodocs
+
+[tests]
+pytest
+codecov
+pytest-cov
