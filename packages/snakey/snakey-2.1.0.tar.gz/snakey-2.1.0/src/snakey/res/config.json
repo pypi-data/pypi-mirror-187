@@ -1,0 +1,16 @@
+{
+    "main_window_size": [640, 480],
+	"block_size": 10,
+    "refresh_rate": 100,
+    "num_snakes": 2,
+    "start_pos": [[300, 100],
+			   [300, 200],
+			   [300, 300],
+			   [300, 400]],
+    "keys": [["K_UP", "K_RIGHT", "K_DOWN", "K_LEFT"],
+		     ["K_w", "K_d", "K_s", "K_a"],
+		     ["K_t", "K_h", "K_g", "K_f"],
+		     ["K_i", "K_l", "K_k", "K_j"]],
+	"initial_snake_length": 10,
+	"num_cherries": 2
+}
