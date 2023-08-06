@@ -1,0 +1,3 @@
+[flake8.extension]
+FRC=flake8_fastapi_route_case:Plugin
+
