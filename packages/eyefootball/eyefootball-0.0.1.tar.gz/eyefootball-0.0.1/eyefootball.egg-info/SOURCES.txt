@@ -1,0 +1,10 @@
+README.md
+setup.py
+eyefootball/__init__.py
+eyefootball/command.py
+eyefootball/rss.py
+eyefootball.egg-info/PKG-INFO
+eyefootball.egg-info/SOURCES.txt
+eyefootball.egg-info/dependency_links.txt
+eyefootball.egg-info/requires.txt
+eyefootball.egg-info/top_level.txt
