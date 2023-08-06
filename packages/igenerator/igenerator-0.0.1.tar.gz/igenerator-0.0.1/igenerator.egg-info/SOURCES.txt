@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+igenerator/__init__.py
+igenerator/generate.py
+igenerator.egg-info/PKG-INFO
+igenerator.egg-info/SOURCES.txt
+igenerator.egg-info/dependency_links.txt
+igenerator.egg-info/requires.txt
+igenerator.egg-info/top_level.txt
