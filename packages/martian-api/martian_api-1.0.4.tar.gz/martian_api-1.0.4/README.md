@@ -1,0 +1,62 @@
+# Martian Node.js Library
+The martian python library allows developers to easily access the martian api.
+
+This package should only be used server-side. Using this package client-side would expose your secret key.
+
+## Installation
+```pip install martian_api```
+
+## Usage
+Martian allows you to easily access AI models and to log the outputs from AI models.
+
+Logging values:
+```python
+from martian_api import log_to_martian
+
+inputs = ["The", "inputs", "to", "your", "function"]
+outputs = "Your outputs"
+logToMartian(
+  {"api_key": YOUR_MARTIAN_API_KEY},
+  inputs,
+  outputs,
+  {"martian_name": "your_function"}
+)
+```
+
+Logging a function:
+```python
+from martian_api import with_martian
+
+@with_martian({"api_key": YOUR_MARTIAN_API_KEY})
+def your_function(args){
+  // your function definition
+}
+```
+
+Note that `with_martian` expects a pure function. So, when defining a function in a class
+which uses the `with_martian` decorator, only the arguments passed into the function are stored.
+```python
+from martian_api import with_martian
+
+class Example():
+    def __init__(self):
+        self.y = 1
+        
+    # This function does not use variables from self, so with_martian can be used
+    @with_martian({"api_key": YOUR_MARTIAN_API_KEY})
+    def pure_function(self, x):
+        return x + 1
+        
+    # This function does use variables from self, so with_martian cannot be used
+    def impure_function(self, x):
+        result = x + y
+        log_to_martian(
+            {"api_key": YOUR_MARTIAN_API_KEY},
+            [x, y],
+            result
+            {"martian_name": "impure_function"}
+        )
+        return result
+```
+
+[//]: # (Maybe add logging for functions belonging to objects)

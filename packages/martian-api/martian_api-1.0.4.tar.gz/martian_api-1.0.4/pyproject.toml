@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "martian_api"
+dynamic = ["version"]
+authors = [
+  { name="Shriyash Upadhyay", email="yash@withmartian.com" },
+  { name="Etan Ginsberg", email="etan@withmartian.com" }
+]
+description = "The martian python library allows developers to easily access the martian api."
+readme = "README.md"
+requires-python = ">=3.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies=[
+    "requests==2.28.1"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/withmartian/api"
+
+[tool.setuptools.dynamic]
+version = {attr = "martian_api.__version__"}
