@@ -1,0 +1,214 @@
+Metadata-Version: 2.1
+Name: unifs
+Version: 1.1.0
+Summary: Unified FS-like CLI for S3, GCS, ADLS, HDFS, SMB, Dropbox, Google Drive, and dozens of other file systems
+Author: candidtim
+License: BSD 3-Clause License
+        
+        Copyright (c) 2023 candidtim
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+        list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+        this list of conditions and the following disclaimer in the documentation
+        and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its contributors
+        may be used to endorse or promote products derived from this software without
+        specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+        ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+        WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Project-URL: Homepage, https://github.com/candidtim/unifs
+Project-URL: Repository, https://github.com/candidtim/unifs
+Project-URL: Documentation, https://github.com/candidtim/unifs/blob/main/README.md
+Project-URL: Issues, https://github.com/candidtim/unifs/issues
+Keywords: fs,shell
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Classifier: Topic :: Desktop Environment :: File Managers
+Classifier: Topic :: System :: Filesystems
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click (<9,>=8.1.3)
+Requires-Dist: fsspec (>=2022.11)
+Requires-Dist: tomli-w (<2,>=1)
+Requires-Dist: appdirs (<2,>=1.4.4)
+Requires-Dist: dacite (<2,>=1.7.0)
+Requires-Dist: tomli (<3,>=2.0.1) ; python_version < "3.11"
+Provides-Extra: dev
+Requires-Dist: pytest (<8,>=7) ; extra == 'dev'
+Requires-Dist: pytest-cov (<5,>=4) ; extra == 'dev'
+Requires-Dist: coverage (<8,>=7) ; extra == 'dev'
+Requires-Dist: flake8 (<5,>=4) ; extra == 'dev'
+Requires-Dist: black (<23,>=22.6.0) ; extra == 'dev'
+Requires-Dist: isort (<6,>=5.10.1) ; extra == 'dev'
+Requires-Dist: pyright (<2,>=1.1.286) ; extra == 'dev'
+
+# unifs
+
+Unified FS-like CLI for S3, GCS, ADLS, HDFS, SMB, Dropbox, Google Drive, and
+dozens of other "file systems".
+
+    unifs conf use my-s3-bucket
+    unifs ls -l /
+    unifs mv /foo.txt /bar.txt
+    unifs download /bar.txt ~/Downloads/local.copy.txt
+
+`unifs` uses the term "file system" in an open sense for anything that can be
+represented as a set of files and directories and be manipulated with the
+commands like `ls`, `cat`, `cp`, and `mv` for example (list is not exhaustive).
+`unifs` also allows data upload and download when working with remote back-ends
+(e.g., a cloud-based BLOB storage).
+
+`unifs` supports multiple back-ends, such as a local file system, (S)FTP,
+Google Drive, various blob storage such as S3, GCS, ADLS, and dozens of other
+implementations. Use `unifs impl list` to list supported protocols, but know
+that other protocols can be added, including any custom implementations users
+may provide.
+
+`unifs` is different from FUSE implementations in that it doesn't mount a file
+system. Instead, it provides a unified CLI that uses target back-end API to
+execute the issued commands.
+
+## Installation
+
+`unifs` is a Python package:
+
+    pip install unifs
+
+Default `unifs` installation only supports a few basic protocols (e.g., a local
+file system). To support other protocols you may need to install their
+implementation packages. Because there are too many, `unifs` doesn't install
+them for you by default, but it will tell which packages are missing if you
+attempt to use a protocol that is not supported out of the box.
+
+For example, to add the support for the GCS:
+
+    pip install gcsfs
+
+Make sure to install the additional packages to the same (virtual) environment
+where `unifs` is installed.
+
+To list known implementations and their prerequisites, use:
+
+    unifs impl list
+    unifs impl info NAME
+
+To avoid conflicts with other Python packages, it is recommended to install
+this application into a dedicated virtual environment. For example, you may use
+`pipx`, or create a virtual environment manually. At very least, install with a
+`--user` option (`pip install --user unifs`).
+
+## Quick start
+
+By default, `unifs` will use the local file system and will behave much like
+issuing the similar commands directly in the shell:
+
+    unifs ls -l /
+    unifs cat /tmp/foo.txt
+    unifs mv /tmp/foo.tx /tmp/bar.txt
+    unifs --help
+
+You need to configure `unifs` to let it know about other file systems you will
+use.
+
+## Configuration
+
+You may either modify the configuration file, or use `unifs conf` command to
+manipulate it.
+
+### Using `unifs conf`
+
+Get the list of configured file systems (currently active one is highlighted):
+
+    unifs conf list
+
+Set the active file system:
+
+    unifs conf use NAME
+
+### Configuration file
+
+`unifs` configuration is stored in the default OS configuration directory. You
+can obtain a configuration file path with:
+
+    unifs conf path
+
+Alternatively, you can pin the configuration file location with a
+`UNIFS_CONFIG_PATH` environment variable.
+
+If you didn't change your default OS settings, most likely it will
+be:
+
+    ~/.local/share/unifs/config.toml  # Linux
+    ~/Library/Application Support/unifs/config.toml  # MacOS
+    ~\AppData\Local\unifs\Config\config.toml # Windows
+
+Configuration file is a TOML file that consists of:
+
+ - a single `[unifs]` section where the currently active file system is set
+ - any number of `[unifs.fs.NAME]` sections that declare the file systems
+
+Example:
+
+    [unifs]
+    current = "local"
+
+    [unifs.fs.local]
+    protocol = "file"
+    auto_mkdir = false
+
+File system configuration is a set of key-value pairs. `protocol` key is
+mandatory and is used to select the implementation, all other values are passed
+to the specific implementation. Use `unifs impl info NAME` to the list of
+accepted parameters for any protocol.
+
+For example, for a GCS bucket:
+
+    [unifs.fs.my-gcs-bucket]
+    protocol = gcs
+    project = "my-gcp-project"
+    token = "/path/to/token.json"
+
+## Status
+
+Available `unifs` features are considered stable. `unifs` is being actively
+developed and more features are coming.
+
+## Error reporting
+
+If you happen to encounter an error ("An unexpected error" in the output),
+please, feel free to report it on the Issues page. In this case, you may find
+the detailed error message in the log file located in the same directory as the
+application configuration file.
+
+## Word of caution
+
+Beware that `unifs` may change (copy, move, remove, etc.) the data in a "file
+system" (as understood above). `unifs` is only a command-line layer between the
+user and the target "file system". `unifs` tries its best to prevent errors
+(e.g., uses interactive confirmations for some commands), but ultimately the
+user is responsible for the operations performed by this program.
+
+`unifs` is designed to be used in an interactive shell, not in headless mode.

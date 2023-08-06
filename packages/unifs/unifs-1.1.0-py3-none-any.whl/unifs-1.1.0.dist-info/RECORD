@@ -1,0 +1,16 @@
+unifs/config.py,sha256=8FmWGzOONifjfWkH8SZG20B2SpMtd9kzvWVxVmNi6I0,3511
+unifs/exceptions.py,sha256=kkhUtjMEBDH_avs76KbWLtdipyfIwpc8FM6N3m6-CmE,543
+unifs/file_system.py,sha256=77TjM_6WRcuocTkJlHGBlypvpdv1ncvIRT_tOTb-vDs,4108
+unifs/logging.py,sha256=qt9EJTyy3zEudC8xpvSyQHkf73WJv5sad8IAWCtvy-g,1109
+unifs/tui.py,sha256=UlAPPKSkgERIwl39Ji3Ygxy3veGsqATwKQDd05MoDGs,1804
+unifs/util.py,sha256=TNmEC5116I2MKpJ8Uo9ueDh86UYYhyHfPY3KCzOJc-o,1403
+unifs/cli/conf.py,sha256=DXGROcAwcOX9mm6LM0_Wj-FP-7jY_H19DpFW2qcrw3A,1020
+unifs/cli/fs.py,sha256=BGgoISqzRTyaCVgyUTiGaOtvRq-MDfHVggDHJT7MX4k,8102
+unifs/cli/impl.py,sha256=cFO9ckXJgHaRCiTSpONo-jva3gk0Rlv7UGiOB5dCAp4,2058
+unifs/cli/main.py,sha256=qZcxWxZPD_0oxUiYisbgzQZ89H58D94sXwjpDRDvQZU,1000
+unifs-1.1.0.dist-info/LICENSE,sha256=feOhBlv14YeeVHOlrcLHQ7B35XldwGxOxL3BX7PjZyU,1480
+unifs-1.1.0.dist-info/METADATA,sha256=Gj8gtcWTyNtNntEq7PJBEhNH-9PrGyy0EESnGpl1kEU,8207
+unifs-1.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+unifs-1.1.0.dist-info/entry_points.txt,sha256=wCgxzTUF4iRvSPmzs63TRrTWaWA3lD54X6IWj0W3Zxw,45
+unifs-1.1.0.dist-info/top_level.txt,sha256=50cib-9ljS8YXezDxQD1HSrpEKE7oe-gDcKtFqSHCq0,6
+unifs-1.1.0.dist-info/RECORD,,

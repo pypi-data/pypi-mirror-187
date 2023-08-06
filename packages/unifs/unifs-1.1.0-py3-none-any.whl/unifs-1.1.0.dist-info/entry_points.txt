@@ -1,0 +1,2 @@
+[console_scripts]
+unifs = unifs.cli.main:cli
