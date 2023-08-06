@@ -1,0 +1,6 @@
+toml
+pythonnet
+pywin32
+nicelib
+instrumental-lib
+pylablib
