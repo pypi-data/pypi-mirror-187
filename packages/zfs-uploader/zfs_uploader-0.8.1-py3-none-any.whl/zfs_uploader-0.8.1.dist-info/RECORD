@@ -1,0 +1,14 @@
+zfs_uploader/__init__.py,sha256=xr107h4NW2lIYbb-IV-WbINFh8AvBGkX5QqcabPtMOc,86
+zfs_uploader/__main__.py,sha256=Hbhd3TpThOHCYxKnDfOsKzvkbLW0dwTfkHWswlA84AY,4416
+zfs_uploader/backup_db.py,sha256=ZCdJ5rOWo5FO_at6DJJif-a2_ctS3-EuK-yKIoOShGI,8906
+zfs_uploader/config.py,sha256=2a3q1j_-0UwaYFAgzVMyecjztjKWsfpMtC4c6hABipI,3445
+zfs_uploader/job.py,sha256=kF6_vbuccC4TkQw-rCdITmL4mVur4xCsxL8aBBim1mo,23407
+zfs_uploader/snapshot_db.py,sha256=N_doKYMfW-KLzLAEQT-2J-NfUAFx8Whb-RezgDhcr-8,4072
+zfs_uploader/utils.py,sha256=BNckUvNcoc8MdnDGwXDDXX8ZUqUbAnp4lAE1bcMSFog,241
+zfs_uploader/zfs.py,sha256=U2qgTRInhB7Uygs6iEpimpgH3etgVZksy5FA1psaKk8,3598
+zfs_uploader-0.8.1.dist-info/LICENSE,sha256=kFl9UeYLLupUWd1GOePf2rd63-EYySXGk-vHiRStsK4,1069
+zfs_uploader-0.8.1.dist-info/METADATA,sha256=A9UHxRL8NNHT1MoYB9uhVmXQWB6RIZwd5BViFA8JTxE,5527
+zfs_uploader-0.8.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+zfs_uploader-0.8.1.dist-info/entry_points.txt,sha256=wIk-K9mypXLRfzgU1cOtEJpCiYVHkHXenp8EpzgSGuw,52
+zfs_uploader-0.8.1.dist-info/top_level.txt,sha256=7eHcd0-KVey8E7gQaeHpJyGZgxz9VnyFzY1TgN0cslI,13
+zfs_uploader-0.8.1.dist-info/RECORD,,
