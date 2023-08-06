@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: dynasty-dl
+Version: 0.1.0
+Summary: Download manga from dynasty-scans.com.
+License: MIT
+Author: Temujin Lampasa
+Author-email: temujinlampasa@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: bs4 (>=0.0.1,<0.0.2)
+Requires-Dist: requests
+Requires-Dist: tqdm (>=4.64.1,<5.0.0)
+Description-Content-Type: text/markdown
+
+# dynasty-dl
+Download manga from dynasty-scans.com. Written in Python.
+
