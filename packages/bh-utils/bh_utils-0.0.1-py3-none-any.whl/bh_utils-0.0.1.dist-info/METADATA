@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: bh-utils
+Version: 0.0.1
+Summary: Utility Functions Library.
+Author-email: Van Be Hai Nguyen <behai_nguyen@hotmail.com>
+Project-URL: repository, https://github.com/behai-nguyen/bh_utils
+Project-URL: documentation, https://bh-utils.readthedocs.io/
+Keywords: utility,functions,library
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: PyYAML
+Requires-Dist: simplejson
+Requires-Dist: tomli ; python_version < "3.11"
+Provides-Extra: builds
+Requires-Dist: build ; extra == 'builds'
+Requires-Dist: twine ; extra == 'builds'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: myst-parser ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: coverage ; extra == 'tests'
+
+# bh_utils
+
+Some Python helper functions. Work in progress.
+
+Pip installation:
+
+```
+pip install bh-utils
+```
+
+## Documentation
+
+[Full documentation](https://bh-utils.readthedocs.io/)
+
+## License
+
+[ MIT license ](http://www.opensource.org/licenses/mit-license.php)
