@@ -1,0 +1,71 @@
+{% extends 'generic/object.html' %}
+{% load helpers %}
+{% load plugins %}
+
+{% block title %}{{ object }}{% endblock %}
+
+{% block breadcrumbs %}
+
+{% endblock %}
+
+{# ObjectChange does not support the default add/edit/delete controls #}
+{% block controls %}{% endblock %}
+{% block subtitle %}{% endblock %}
+
+{% block content %}
+<div class="row mb-3">
+    <div class="col col-12 col-xl-6">
+        <div class="card">
+            <h5 class="card-header">
+                Change Log
+            </h5>
+            <div class="card-body">
+                <table class="table table-hover attr-table">
+                    <tr>
+                        <th scope="row">ID</th>
+                        <td>
+                            {{ object.id }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Date</th>
+                        <td>
+                            {{ object.date }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Interface</th>
+                        <td>
+                            {{ object.interface|placeholder }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Component</th>
+                        <td>
+                            {{ object.component|placeholder }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Before</th>
+                        <td>
+                            {{ object.before|placeholder }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">After</th>
+                        <td>
+                            {{ object.after|placeholder }}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="">
+        {% plugin_full_width_page object %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,5 @@
+include README.md
+include LICENSE
+recursive-include netbox_portmanager/templates *
+recursive-include netbox_portmanager/static *
+recursive-include netbox_portmanager/templatetags *
