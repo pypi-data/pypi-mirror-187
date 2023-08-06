@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: autohaus-updater
+Version: 0.0.5
+Summary: update server for autohaus server
+Project-URL: Homepage, https://github.com/Coimbra1984/autohaus-updater
+Project-URL: Bug Tracker, https://github.com/Coimbra1984/autohaus-updater/issues
+Author-email: Markus Proeller <markus.proeller@pieye.org>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: flask>=2
+Requires-Dist: gitpython>=3
+Requires-Dist: pip>=22.3
+Requires-Dist: requests>=2
+Provides-Extra: systemd
+Requires-Dist: systemd>=0.15; extra == 'systemd'
+Description-Content-Type: text/markdown
+
+# Autohaus updater
+
+following soon...
