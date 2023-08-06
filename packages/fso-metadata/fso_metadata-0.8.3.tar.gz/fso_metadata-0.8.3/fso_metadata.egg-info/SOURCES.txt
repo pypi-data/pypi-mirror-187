@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+fso_metadata/__init__.py
+fso_metadata/api_call.py
+fso_metadata/api_class.py
+fso_metadata/constants.py
+fso_metadata/format_request.py
+fso_metadata.egg-info/PKG-INFO
+fso_metadata.egg-info/SOURCES.txt
+fso_metadata.egg-info/dependency_links.txt
+fso_metadata.egg-info/requires.txt
+fso_metadata.egg-info/top_level.txt
+test/test_api_call.py
+test/test_constants.py
+test/test_fomat_request.py
