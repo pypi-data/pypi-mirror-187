@@ -1,0 +1,10 @@
+numpy>=1.4.0
+scipy
+astropy>=1.3
+matplotlib
+
+[all]
+emcee==3.0rc1
+h5py
+batman-package
+corner
