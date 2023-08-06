@@ -1,0 +1,3 @@
+[console_scripts]
+aternos=aternos.main:app
+
