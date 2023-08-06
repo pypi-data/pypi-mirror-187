@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: TOPSIS-TUSHAR-102003137
+Version: 0.1
+Summary: This package is implimentation of multi-criteria decision analysis using topsis
+Home-page: https://github.com/tushar200111/TOPSIS_TUSHAR_102003137
+Download-URL: https://github.com/tushar200111/TOPSIS_TUSHAR_102003137/archive/refs/tags/v_0.1.tar.gz
+Author: Tushar Singh
+Author-email: tusharsingh22112001@icloud.com
+License: MIT
+Keywords: topsis
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE.txt
