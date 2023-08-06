@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: ConfigJ
+Version: 1.0.0
+Summary: A json base config lib.
+Home-page: https://github.com/DancingSnow0517/ConfigJ
+Author: DancingSnow
+Author-email: 1121149616@qq.com
+Project-URL: Bug Tracker, https://github.com/DancingSnow0517/ConfigJ/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# ConfigJ
+
+A json base config lib.
+
+## Usage
+
+```python
+from configj import ConfigJ, AbstractConfig
+
+class ConfigData(AbstractConfig):
+    config1: str = 'Default Value'
+    config2: int = 166
+
+cj = ConfigJ('config.json', ConfigData)
+# Type hint
+config: ConfigData
+
+# when file not exists, create default config file and return it.
+config = cj.load()
+print(config.config1)  # Default Value
+
+config.config2 = 1  # set value
+cj.save(config)  # save config to file
+```
