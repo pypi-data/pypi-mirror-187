@@ -1,0 +1,8 @@
+README.md
+setup.py
+abork_path_analyser.egg-info/PKG-INFO
+abork_path_analyser.egg-info/SOURCES.txt
+abork_path_analyser.egg-info/dependency_links.txt
+abork_path_analyser.egg-info/top_level.txt
+path_analyser/__init__.py
+path_analyser/module.py
