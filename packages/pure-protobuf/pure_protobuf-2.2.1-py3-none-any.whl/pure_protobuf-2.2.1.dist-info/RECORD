@@ -1,0 +1,14 @@
+pure_protobuf/__init__.py,sha256=JUTxhHo8jJdwTSckC2fpjsmn4_hUwc1VOrKTVPaMfKc,235
+pure_protobuf/dataclasses_.py,sha256=iwEGcAkcIQ-zic3eW8z7XDiqOS6WrCKbCgxv33BKNC8,9153
+pure_protobuf/enums.py,sha256=MALR8KB824eudyee0JjjmVpjr50U96NArrnGQS08XmY,279
+pure_protobuf/fields.py,sha256=oH7Ywx5ck7QrbEvEu4XbEMSMSjtg21wh2wv_SP7g4kk,6765
+pure_protobuf/io_.py,sha256=-zqTp4Ga_hFCB-4iRLLhWXfSCNC-Bi7pvQLTlF5iha8,1030
+pure_protobuf/oneof.py,sha256=mz7OMlm9ydX-naTBMoqeiYSN59PBN1ZlLT0v0sA8ATg,2556
+pure_protobuf/serializers/__init__.py,sha256=_mZ9aJLG0PcRyxnuKJFNm_IP4b4W4Z9jEF1CgFG9m8Q,14767
+pure_protobuf/serializers/google.py,sha256=LMnM86P5SsPPRfY-YF5JRMYPTpyOK-jmPt4enZg2lyY,3428
+pure_protobuf/types/__init__.py,sha256=QKHDQFG7v2Iu1vWaoJK1KhQ0YEMafPppoYgg25n5ViU,755
+pure_protobuf/types/google.py,sha256=EI4impE5OZI5dt4io0IVC2ztIWAYKbRX89YetxPhhCc,1168
+pure_protobuf-2.2.1.dist-info/METADATA,sha256=mFkthIPiq9O3-5kVo6VNVAeZ6kxxImD7PV0TCHMn5oQ,11760
+pure_protobuf-2.2.1.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+pure_protobuf-2.2.1.dist-info/licenses/LICENSE,sha256=lLto_K8fON8VOb_2I8gWjzD3RQkRbFS418G3OwA4Oi4,1089
+pure_protobuf-2.2.1.dist-info/RECORD,,
