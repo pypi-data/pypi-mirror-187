@@ -1,0 +1,10 @@
+violetSpider/README.md,sha256=JVFEXkgDg2OrAyjXsVn1uDh9pyPeWQ7yEtgnJULhtIw,3772
+violetSpider/__init__.py,sha256=OgyU6EVKmaDhZ_4Ii2_tjFMUt7vZS9mhiqmlh5e3x30,1007
+violetSpider/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+violetSpider/core/error.py,sha256=OXDpYWEHVFELsw1jlQGfTGIYh3aacJR9jC6MCmZ8-TQ,93
+violetSpider/core/model.py,sha256=-BmBTPSB4UUT8ziisE-DbnKF-LxCsaAOn35_oBzEwuM,16053
+violetSpider-1.1.3.data/data/README.md,sha256=JVFEXkgDg2OrAyjXsVn1uDh9pyPeWQ7yEtgnJULhtIw,3772
+violetSpider-1.1.3.dist-info/METADATA,sha256=7U2Q8hYb5wOnJ_gRDjWX1bpmLfI8jvIVjlLdYX6BRRQ,3871
+violetSpider-1.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+violetSpider-1.1.3.dist-info/top_level.txt,sha256=El6Setq19nN3ht7em0iMKopKbtrAD9WyCjNrh6X-TFM,13
+violetSpider-1.1.3.dist-info/RECORD,,
