@@ -1,0 +1,13 @@
+imdb_rating_classifier/__init__.py,sha256=bvcSUpAp9MjhmTnCTNJ7VPHrjABO_VDM-0CfhGRWL9Q,76
+imdb_rating_classifier/generate.py,sha256=ptQwyLuSD8sau61VTKcYO8NO-ifn3GPUSPSTNZiTuK0,4257
+imdb_rating_classifier/penalizer.py,sha256=7eLXTRRCkKokUN7qTCp12XegXhSDju4C0OAFdX75reQ,3894
+imdb_rating_classifier/schema.py,sha256=NqEtFBavUccOCxsQbSpPc_lEk4lTGhkfJuqqjIGtdn8,2944
+imdb_rating_classifier/scraper.py,sha256=19crs4jh91112SMEnNDD91PEJjWd2TkmQUhM0U34h_s,5967
+imdb_rating_classifier/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+imdb_rating_classifier/util/unpack.py,sha256=qJ5TpybHnkJRQ8dWmvyXi-6m7ltgf9WElGnDf6Up7wg,1042
+imdb_rating_classifier-0.1.6.dist-info/LICENSE,sha256=4nLIun8l3tPb9WdrdvqPJeNdTYo_O7BtKOSPZNk_Avo,1074
+imdb_rating_classifier-0.1.6.dist-info/METADATA,sha256=HdhRyJOa0OXRgTbU1hZfxhrRw85aqRQS77n9BctVrnc,6599
+imdb_rating_classifier-0.1.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+imdb_rating_classifier-0.1.6.dist-info/entry_points.txt,sha256=5PEHkZ0c3-4FylmbsrFu450kLq5_fAXeRkdMaaWaQ1I,80
+imdb_rating_classifier-0.1.6.dist-info/top_level.txt,sha256=aCcpR4NhKQWP5QiiBF5gl4z7Mbeohtm7AevTHJi3blg,23
+imdb_rating_classifier-0.1.6.dist-info/RECORD,,
