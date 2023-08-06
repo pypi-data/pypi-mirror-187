@@ -1,0 +1,11 @@
+setup.py
+PyPi_Wrangler.egg-info/PKG-INFO
+PyPi_Wrangler.egg-info/SOURCES.txt
+PyPi_Wrangler.egg-info/dependency_links.txt
+PyPi_Wrangler.egg-info/top_level.txt
+pypi_wrangler/__init__.py
+pypi_wrangler/wrangle.py
+pypi_wrangler.egg-info/PKG-INFO
+pypi_wrangler.egg-info/SOURCES.txt
+pypi_wrangler.egg-info/dependency_links.txt
+pypi_wrangler.egg-info/top_level.txt
