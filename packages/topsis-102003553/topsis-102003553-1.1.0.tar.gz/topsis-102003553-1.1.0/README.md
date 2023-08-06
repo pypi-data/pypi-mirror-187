@@ -1,0 +1,66 @@
+Project description
+TOPSIS-ANALYSIS
+By: Sarvagy Jain
+
+What is TOPSIS?
+Technique for Order Preference by Similarity to Ideal Solution (TOPSIS) originated in the 1980s as a multi-criteria decision making method. TOPSIS chooses the alternative of shortest Euclidean distance from the ideal solution, and greatest distance from the negative-ideal solution.
+
+### Installation
+```bash
+pip install Topsis-SARVAGY-102003553    
+```
+
+
+### Usage
+
+Arguments Required:
+(Assumne we have 3 attributes in dataset.)
+
+You have to required one .csv file. (102003553-data.csv)
+Pass weights to each attribute. (e.g.: [1,1,1])
+Pass impacts to each attribute. (e.g.: [+,-,+])
+Pass the name of the file with you want to put on .csv file. (102003553-result.csv)
+
+
+Enter csv filename followed by .csv extentsion, then enter the weights string with values separated by commas, followed by the impacts string with comma separated signs (+,-) and name of file followed by -.csv- extension in which the user wants the output file
+
+## Example
+#### sample.csv
+```bash
+Fund Name	P1	    P2	    P3	    P4	    P5
+M1	        0.72	0.52	4.4	    66.6	18.06
+M2	        0.71	0.5	    4.9	    48.4	13.63
+M3      	0.82	0.67	6.1	    58.2	16.45
+M4	        0.67	0.45	4.3	    48.9	13.58
+M5	        0.75	0.56	3.3	    60.2	16.2
+M6	        0.76	0.58	6.4	    33.3	10.26
+M7	        0.85	0.72	3.2	    61.9	16.67
+M8	        0.73	0.53	5.8	    36.5	10.89
+
+```
+
+### INPUT
+```python
+topsis 102003553-data.csv 1,1,1,1,1 +,+,-,+,+ 102003553-result.csv
+```
+
+### OUTPUT
+
+```bash
+Fund Name	P1	    P2	    P3	    P4	    P5	    Topsis Score	Rank
+M1	        0.72	0.52	4.4	    66.6	18.06	0.607089574	    2
+M2	        0.71	0.5	    4.9	    48.4	13.63	0.424434575	    6
+M3	        0.82	0.67	6.1	    58.2	16.45	0.811786381	    1
+M4	        0.67	0.45	4.3	    48.9	13.58	0.346716421	    8
+M5	        0.75	0.56	3.3	    60.2	16.2	0.486990207	    4
+M6	        0.76	0.58	6.4	    33.3	10.26	0.446021381	    5
+M7	        0.85	0.72	3.2	    61.9	16.67	0.568789224	    3
+M8	        0.73	0.53	5.8	    36.5	10.89	0.397353478	    7
+
+```
+
+
+
+
+
+
