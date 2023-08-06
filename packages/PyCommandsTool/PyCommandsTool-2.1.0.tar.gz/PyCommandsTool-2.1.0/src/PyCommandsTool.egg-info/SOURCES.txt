@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+pyproject.toml
+src/PyCommandsTool/__init__.py
+src/PyCommandsTool/parser.py
+src/PyCommandsTool/pycommandstool.py
+src/PyCommandsTool.egg-info/PKG-INFO
+src/PyCommandsTool.egg-info/SOURCES.txt
+src/PyCommandsTool.egg-info/dependency_links.txt
+src/PyCommandsTool.egg-info/top_level.txt
