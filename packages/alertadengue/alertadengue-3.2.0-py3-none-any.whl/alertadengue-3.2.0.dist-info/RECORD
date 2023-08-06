@@ -1,0 +1,10 @@
+ad_main/__init__.py,sha256=xaOb4klI_86n_EZdcLup-LbObGJsffLwUmhLd3B7En8,177
+ad_main/celeryapp.py,sha256=jZDEQ1sp6ct56lJ9Gar9OXK9sRbsuhC0eQlUeYP4wk4,464
+ad_main/settings.py,sha256=K4ZnbeqXRrY07ZBJMoVPECc4mw1e-c0mHa0rOwL710U,13909
+ad_main/test_settings.py,sha256=pghUutk5bUKHusJfGc-d0OimbGQnn0yKaH4lpijKUOA,623
+ad_main/urls.py,sha256=mcF4FvM0FMxGfKpMbIO6MbFLdye8pIEFBPDc1N6icZM,687
+ad_main/wsgi.py,sha256=yZnqVkzH2SiEWv0aMfOZa3EKxqEg6okf-pW3ZkLo7k0,446
+alertadengue-3.2.0.dist-info/LICENSE,sha256=4cCtcomD2KVzNeUs8QZPGv_R1FQXPYzr0-2LSnK0hwQ,35121
+alertadengue-3.2.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+alertadengue-3.2.0.dist-info/METADATA,sha256=GtskjwIUF1nIhimEfrTQ-DmBM80OzbwkV-td8fIE0QM,5882
+alertadengue-3.2.0.dist-info/RECORD,,
