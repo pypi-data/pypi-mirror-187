@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: fastapi-docx
+Version: 0.1.0
+Summary: Extend a FastAPI OpenAPI spec to include all possible HTTPException or custom Exception response schemas.
+Home-page: https://github.com/Saran33/fastapi-docx
+License: MIT
+Author: Saran Connolly
+Author-email: saran@example.com
+Requires-Python: >=3.10.1,<4.0.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: fastapi (>=0.88.0,<0.89.0)
+Project-URL: Repository, https://github.com/Saran33/fastapi-docx
+Description-Content-Type: text/markdown
+
+# fastapi-docx
+Extend a FastAPI OpenAPI spec to include all possible HTTPException or custom Exception response schemas.
+
