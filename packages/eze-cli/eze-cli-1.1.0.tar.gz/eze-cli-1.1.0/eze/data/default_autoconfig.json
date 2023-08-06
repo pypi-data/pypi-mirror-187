@@ -1,0 +1,158 @@
+{
+  "_help_message": "more info in README-DEVELOPMENT.md",
+  "license": {
+    "license_mode": "PROPRIETARY"
+  },
+  "tools": {
+    "trufflehog": {
+      "enabled_always": true,
+      "enable_on_file": [],
+      "enable_on_file_ext": [],
+      "config": {
+        "USE_GIT_IGNORE": true,
+        "DISABLE_DEFAULT_IGNORES": false,
+        "NO_ENTROPY": true,
+        "INCLUDE_FULL_REASON": true,
+        "EXCLUDE": []
+      }
+    },
+    "semgrep": {
+      "enabled_always": true,
+      "enable_on_file": [],
+      "enable_on_file_ext": [],
+      "config": {
+        "USE_GIT_IGNORE": true,
+        "DISABLE_DEFAULT_IGNORES": false,
+        "PRINT_TIMING_INFO": false,
+        "EXCLUDE": []
+      }
+    },
+    "java-cyclonedx": {
+      "enabled_always": false,
+      "enable_on_file": [
+        "pom.xml"
+      ],
+      "enable_on_file_ext": [],
+      "config": {
+        "SCA_ENABLED": true
+      }
+    },
+    "python-cyclonedx": {
+      "enabled_always": false,
+      "enable_on_file": [
+        "requirements.txt",
+        "requirements-dev.txt",
+        "poetry.lock",
+        "Pipfile.lock"
+      ],
+      "enable_on_file_ext": [],
+      "config": {
+      }
+    },
+    "python-bandit": {
+      "enabled_always": false,
+      "enable_on_file": [],
+      "enable_on_file_ext": [
+        ".py"
+      ],
+      "config": {
+        "IGNORE_BELOW_SEVERITY": "medium"
+      }
+    },
+    "node-npmaudit": {
+      "enabled_always": false,
+      "enable_on_file": [
+        "package.json"
+      ],
+      "enable_on_file_ext": [],
+      "config": {
+      }
+    },
+    "node-npmoutdated": {
+      "enabled_always": false,
+      "enable_on_file": [
+        "package.json"
+      ],
+      "enable_on_file_ext": [],
+      "config": {
+      }
+    },
+    "node-cyclonedx": {
+      "enabled_always": false,
+      "enable_on_file": [
+        "package.json"
+      ],
+      "enable_on_file_ext": [],
+      "config": {
+      }
+    },
+    "dotnet-cyclonedx": {
+      "enabled_always": false,
+      "enable_on_file": [
+        "packages.config"
+      ],
+      "enable_on_file_ext": [
+        ".sln",
+        ".csproj"
+      ],
+      "config": {
+      }
+    },
+    "kics": {
+      "enabled_always": false,
+      "enable_on_file": [
+        "Dockerfile",
+        "main.tf"
+      ],
+      "enable_on_file_ext": [
+        ".dockerfile",
+        ".tfvars"
+      ],
+      "config": {
+        "EXCLUDE": []
+      }
+    },
+    "anchore-grype": {
+      "enabled_always": false,
+      "enable_on_file": [
+        "composer.json"
+      ],
+      "enable_on_file_ext": [
+      ],
+      "config": {
+        "EXCLUDE": []
+      }
+    },
+    "container-trivy": {},
+    "anchore-syft": {}
+  },
+  "reporters": {
+    "console": {
+      "config": {
+        "PRINT_SUMMARY_ONLY": false,
+        "PRINT_IGNORED": false,
+        "PRINT_TRANSITIVE_PACKAGES": false
+      }
+    },
+    "bom": {
+      "config": {
+      }
+    },
+    "json": {
+      "config": {
+      }
+    },
+    "sarif": {
+      "config": {
+      }
+    },
+    "markdown": {
+      "config": {
+      }
+    },
+    "html": {
+      "config": {
+      }
+    }
+  }
+}
