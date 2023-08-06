@@ -1,0 +1,15 @@
+footprint/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+footprint/__main__.py,sha256=1qz7gXUix8BghIXufOatafhlV_SmwOx__snRcpz3MrM,1604
+footprint/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+footprint/utils/config.py,sha256=gDdFtXYJXRa7cZ0wYgL3yBsLF0-PMr-n4YfNo5NKxYk,1397
+footprint/utils/emailVerif.py,sha256=unPxNGrV2NMQlutobBQXdi---aYOfMRKNiwXm5_Rv1k,1049
+footprint/utils/lookup.py,sha256=cdKyk62NEaiPyQHmLhKI_l2ue0_qdelXOQdZVU_vBys,1488
+footprint/utils/printFuncs.py,sha256=VjTqMo2mReImXZoHZtcauf9gROdvEM-NX85ZuX5kUZI,1058
+footprint/utils/social.py,sha256=J3lKdZRaviv0LeDFSatRSkz1cqkPFWx0a03jJV6HjuY,4913
+footprint/utils/table.py,sha256=umWSY53TUBBMlr0gxwRb7zWdRGXWI8jREvPKP7aVs0s,825
+footprint/utils/data/emails.blocklist,sha256=vLpDkPhGF2bROyu-jsRx32Y77vzPHAaZhAjBGB7w_d4,45417
+footprint_py-1.0.dist-info/METADATA,sha256=Q37uGodfpjSD_7tFGt7E6B1oT1RG22hrnECaTU4La_w,1222
+footprint_py-1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+footprint_py-1.0.dist-info/entry_points.txt,sha256=nNlDXWX-5C-I0gxME4NYKVK9NF_Km6a3D2Ia02Wy2nI,54
+footprint_py-1.0.dist-info/top_level.txt,sha256=otmvbxgwp0yoiQp7kpkYbRMU2ylAyuMWkmjkD9CSqtY,10
+footprint_py-1.0.dist-info/RECORD,,
