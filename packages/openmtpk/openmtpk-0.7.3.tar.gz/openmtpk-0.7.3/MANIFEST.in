@@ -1,0 +1,8 @@
+include pyproject.toml
+include *.md
+include LICENSE
+global-exclude __pycache__
+recursive-include modules *.cpp
+recursive-include include *.hpp
+
+
