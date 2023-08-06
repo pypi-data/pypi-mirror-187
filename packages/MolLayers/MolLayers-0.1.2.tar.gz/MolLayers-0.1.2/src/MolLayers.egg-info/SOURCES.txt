@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/MolLayers/__init__.py
+src/MolLayers/engine.py
+src/MolLayers.egg-info/PKG-INFO
+src/MolLayers.egg-info/SOURCES.txt
+src/MolLayers.egg-info/dependency_links.txt
+src/MolLayers.egg-info/requires.txt
+src/MolLayers.egg-info/top_level.txt
+src/MolLayers/modules/__init__.py
+src/MolLayers/modules/atom_selection_config.py
+src/MolLayers/modules/channels.py
+src/MolLayers/modules/input_file_parser.py
