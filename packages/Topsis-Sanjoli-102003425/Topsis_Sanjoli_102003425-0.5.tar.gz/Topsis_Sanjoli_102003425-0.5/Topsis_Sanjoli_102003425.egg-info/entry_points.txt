@@ -1,0 +1,3 @@
+[console_scripts]
+topsis = Topsis_Sanjoli_102003425.Sanjoli_102003425:main
+
