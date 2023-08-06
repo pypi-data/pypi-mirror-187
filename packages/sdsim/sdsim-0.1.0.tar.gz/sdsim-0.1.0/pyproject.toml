@@ -1,0 +1,80 @@
+[project]
+name = "sdsim"
+description = "a similarity calculatior for stable diffusion checkpoints"
+authors = [
+    { name = "dowon", email = "ks2515@naver.com" },
+]
+dependencies = [
+    "numpy",
+    "torch",
+    "safetensors",
+    "tqdm",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+dynamic = []
+version = "0.1.0"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+repository = "https://github.com/Bing-su/sdsim"
+
+[project.scripts]
+sdsim = "sdsim.__main__:main"
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0",
+]
+build-backend = "pdm.pep517.api"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "black",
+    "isort",
+    "mypy",
+    "ruff",
+    "ipywidgets",
+]
+
+[tool.pdm.version]
+source = "file"
+path = "sdsim/__version__.py"
+
+[tool.pdm.scripts]
+isort = "isort ."
+black = "black ."
+ruff = "ruff ."
+
+[tool.pdm.scripts.style]
+composite = [
+    "isort",
+    "black",
+]
+
+[tool.isort]
+profile = "black"
+
+[tool.ruff]
+select = [
+    "A",
+    "B",
+    "C4",
+    "E",
+    "F",
+    "I001",
+    "N",
+    "PT",
+    "UP",
+    "W",
+]
+ignore = [
+    "B008",
+    "B905",
+    "E501",
+]
+unfixable = [
+    "F401",
+]
