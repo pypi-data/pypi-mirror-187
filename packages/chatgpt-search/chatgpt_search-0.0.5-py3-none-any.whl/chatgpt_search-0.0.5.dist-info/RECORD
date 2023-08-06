@@ -1,0 +1,11 @@
+search/__init__.py,sha256=oziXOdgJvsQStKfKMDgRiS7PpBKIVr5V0XcCnzYbdrU,37
+search/__main__.py,sha256=I-IIT4IRiRsX_TfPWquGE19Dk2DWP5Ku79tYWnsQSVU,1014
+search/choices.py,sha256=YPQjd7OGBO0fcrviIfzPwDjL9aVvRPCt5GXpC_1BkKg,632
+search/decorator.py,sha256=1fp7-zvwdIwmE2e48Pf3BUy5VvRKVmZl65eU2brKNJM,412
+search/models.toml,sha256=cr-m9ZcuSNvvBQ8VWiTbdKMlhSpQDjtM2A7Acx0LtVA,705
+search/viewer.py,sha256=iUE5OwTMtC51FX7fE_v2PdWeSOFdmlr29LRbBi3e_JY,3806
+chatgpt_search-0.0.5.dist-info/METADATA,sha256=k-0KOlOVVMlcnG4ri7O55PiP4VAPPfUqday_kCMQ9Eg,2634
+chatgpt_search-0.0.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+chatgpt_search-0.0.5.dist-info/entry_points.txt,sha256=RqbsrQCMNdz1rvQBCASXMiYWWlCtAd3yCSN2p3KQUzU,52
+chatgpt_search-0.0.5.dist-info/top_level.txt,sha256=8fNSi62JXX6dtFRAgbUxwhJngYQ666-my-p8L5NYz4U,7
+chatgpt_search-0.0.5.dist-info/RECORD,,
