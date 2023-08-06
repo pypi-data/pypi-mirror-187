@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: race_report_2023
+Version: 0.0.3
+Summary: Command line tool, printing report
+Project-URL: Homepage, https://test.pypi.org/project/race-report-2023/
+Author-email: "r.kovtan" <r.kovtan@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Report of Monaco 2018 Racing
+
+Report of Monaco 2018 Racing
+
+## Installation
+
+    pip install -i https://test.pypi.org/simple/ race-report-2023
+
+## Using
+
+#### main usage
+
+    py main.py --folder './Log_Data/'
+
+    - command conteins name of API "main.py"
+    - argument --folder which indicates the location of files
+    - path to files in str format like './Log_Data/'
+
+#### options
+
+###### driver statistics
+
+    py main.py --folder './Log_Data/' --driver 'Carlos Sainz'
+
+    - --driver argument conteins string with name of racer
+        and return only driver statistic infomation
+
+###### desc sorting statistics
+
+    py main.py --folder './Log_Data/' --desc
+    - check-in statistics are displayed in reverse order
+
+## Somthing
+
+
+    Homepage: https://test.pypi.org/project/race-report-2023/
