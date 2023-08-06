@@ -1,0 +1,8 @@
+networkx
+
+[testing]
+pytest
+
+[visualize]
+pygraphviz
+matplotlib
