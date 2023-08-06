@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+typedload/__init__.py
+typedload/__init__.pyi
+typedload/datadumper.py
+typedload/dataloader.py
+typedload/exceptions.py
+typedload/helpers.py
+typedload/py.typed
+typedload/typechecks.py
+typedload.egg-info/PKG-INFO
+typedload.egg-info/SOURCES.txt
+typedload.egg-info/dependency_links.txt
+typedload.egg-info/top_level.txt
