@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0","requests"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "example_package_disco_disco_good_good_yehuda_dont_delete_it_its_me"
+version = "99.99.3"
+authors = [
+  { name="Example Author", email="author@example.com" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pypa/sampleproject"
+"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
