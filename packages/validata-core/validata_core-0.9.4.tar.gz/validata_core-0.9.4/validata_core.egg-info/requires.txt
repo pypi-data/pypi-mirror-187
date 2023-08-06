@@ -1,0 +1,12 @@
+ezodf
+frictionless[excel]==4.38.0
+importlib_resources
+openpyxl
+lxml
+requests
+tablib[pandas]
+toolz
+opening-hours-py==0.5.6
+phonenumbers
+python-stdnum
+shapely
