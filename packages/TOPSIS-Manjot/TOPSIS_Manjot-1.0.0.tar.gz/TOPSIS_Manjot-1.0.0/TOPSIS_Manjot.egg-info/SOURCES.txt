@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+TOPSIS/__init__.py
+TOPSIS/__main__.py
+TOPSIS_Manjot.egg-info/PKG-INFO
+TOPSIS_Manjot.egg-info/SOURCES.txt
+TOPSIS_Manjot.egg-info/dependency_links.txt
+TOPSIS_Manjot.egg-info/entry_points.txt
+TOPSIS_Manjot.egg-info/top_level.txt
