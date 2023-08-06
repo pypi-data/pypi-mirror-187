@@ -1,0 +1,23 @@
+{%- if children and children is iterable  %}
+{%- for child_taxon in children -%}
+
+### 🏷️ {{ child_taxon.label }}
+
+{{ child_taxon.description }}
+
+{% if child_taxon.options is defined %}
+*Options*
+
+This taxon has the following options:
+{% with options=child_taxon.options %}
+{% include 'options.jinja2' %}
+{% endwith %}
+{% endif %}
+
+{%- if child_taxon.children and child_taxon.children is iterable -%}
+{% with children=child_taxon.children %}
+{% include 'processing-taxon.jinja2' %}
+{% endwith %}
+{%- endif %}
+{% endfor %}
+{%- endif %}
