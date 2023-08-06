@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/Thisis6578myproject.egg-info/PKG-INFO
+src/Thisis6578myproject.egg-info/SOURCES.txt
+src/Thisis6578myproject.egg-info/dependency_links.txt
+src/Thisis6578myproject.egg-info/top_level.txt
+src/mypackage/__init__.py
+src/mypackage/main.py
