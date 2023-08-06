@@ -1,0 +1,9 @@
+README.md
+setup.py
+Modrinth_API.egg-info/PKG-INFO
+Modrinth_API.egg-info/SOURCES.txt
+Modrinth_API.egg-info/dependency_links.txt
+Modrinth_API.egg-info/requires.txt
+Modrinth_API.egg-info/top_level.txt
+modrinth/__init__.py
+modrinth/__main__.py
