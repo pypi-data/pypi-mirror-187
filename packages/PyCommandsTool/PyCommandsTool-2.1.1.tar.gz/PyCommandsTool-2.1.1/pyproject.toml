@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PyCommandsTool"
+version = "2.1.1"
+authors = [
+  { name="Haven Selph", email="havenselph@gmail.com" },
+]
+description = "A simple and easy-to-use module that streamlines the whole user-input side of your script."
+readme = "README.md"
+license = { file="LICENSE.md"}
+requires-python = ">=3.5"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Documentation" = "https://github.com/HavenSelph/PyCommands/wiki/Documentation"
+"Issues" = "https://github.com/HavenSelph/PyCommands/issues"
