@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+markdowntweetembed/__init__.py
+markdowntweetembed/tweetembed.py
+markdowntweetembed.egg-info/PKG-INFO
+markdowntweetembed.egg-info/SOURCES.txt
+markdowntweetembed.egg-info/dependency_links.txt
+markdowntweetembed.egg-info/requires.txt
+markdowntweetembed.egg-info/top_level.txt
