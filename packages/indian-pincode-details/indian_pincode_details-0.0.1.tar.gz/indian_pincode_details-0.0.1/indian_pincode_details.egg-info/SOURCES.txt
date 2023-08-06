@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+indian_pincode_details/__init__.py
+indian_pincode_details/pincodes.bz2
+indian_pincode_details/pincodes.json
+indian_pincode_details.egg-info/PKG-INFO
+indian_pincode_details.egg-info/SOURCES.txt
+indian_pincode_details.egg-info/dependency_links.txt
+indian_pincode_details.egg-info/top_level.txt
+indian_pincode_details/__pycache__/__init__.cpython-311.pyc
