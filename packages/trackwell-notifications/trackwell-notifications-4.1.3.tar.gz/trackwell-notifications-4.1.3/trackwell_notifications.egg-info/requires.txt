@@ -1,0 +1,6 @@
+Django
+djangorestframework
+django-filter
+django-modeltranslation
+Pillow
+firebase-admin<6,>=5
