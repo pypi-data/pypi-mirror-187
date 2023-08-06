@@ -1,0 +1,12 @@
+txl_local_kernels/__init__.py,sha256=YpKDcdV7CqL8n45u267wKtyloM13FSVbOdrqgNZnSLM,22
+txl_local_kernels/components.py,sha256=L8tlNA0Zo_HbfpFpiS4dA_kBwTh89LHZA2loq4Y2xCc,650
+txl_local_kernels/connect.py,sha256=j5mrqg5IEDiUJfxtm1-gYcVXRYprKwx0CcBsJAsIljs,2823
+txl_local_kernels/driver.py,sha256=whyNN7MhJZrwhgMuTMnC5aRvo6MfIo9T6azrr95nyWU,9369
+txl_local_kernels/kernelspec.py,sha256=89oXMw7SbI92rjo667Ooc6b8GONHha9Tp-spmSmLhyQ,1922
+txl_local_kernels/message.py,sha256=yQeMeg6WMa1mpspW_X8Hwm7vKscPlLlLFXWvbg2GMOI,4120
+txl_local_kernels/paths.py,sha256=P6oM5PKbR90-0AWm-NZSWpErvOjIvee4LNX32YdqEXM,2930
+txl_local_kernels-0.1.7.dist-info/METADATA,sha256=cnZnIDDfBBGhwQSWOHR_9PmCcT5w8bqwxju0wO0bBoc,975
+txl_local_kernels-0.1.7.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+txl_local_kernels-0.1.7.dist-info/entry_points.txt,sha256=6gNeeuIfs7-RwX78K2J8oo7eBl5p8-Sy7loCwoqQiCs,65
+txl_local_kernels-0.1.7.dist-info/licenses/LICENSE.txt,sha256=su0IgzSHZ9tMFeCQ_IaCji5Q4VrZSOqDsEFi7lPduc8,1106
+txl_local_kernels-0.1.7.dist-info/RECORD,,
