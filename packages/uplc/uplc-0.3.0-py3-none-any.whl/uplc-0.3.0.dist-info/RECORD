@@ -1,0 +1,13 @@
+uplc/__init__.py,sha256=83pS0XslKsVXo78AyX14Bz2jSeIlR7w6FYKGJeEJkTo,873
+uplc/ast.py,sha256=vqVcMTpAPCDkwje6wpRowL-ltEK6HqKlJzKYQrRBiG8,19982
+uplc/lexer.py,sha256=N3QdGwyO1qWGv-PWDk4SjnPfUVR9fhU06sO_PURPKac,872
+uplc/machine.py,sha256=q0gTS8v9R5wZEX-FT8Ywj7UAAVbyk39qSOp7OdVSPf4,3175
+uplc/parser.py,sha256=kjkjDW27HmwrKeuqsIoI0g3jBfNDPruKbjV5FhDd3ls,5366
+uplc/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uplc/tests/test_hypothesis.py,sha256=EVkOFWyMTmx_ON9TKHHFQ-8WIVHxjkf34GzNSKKXvUA,3488
+uplc/tests/test_misc.py,sha256=j0B4GLJIw0tP9mw4C31Uk2IwI99Wzj8EEtSPs-2Ge5s,221046
+uplc-0.3.0.dist-info/LICENSE.txt,sha256=hauengzzsrEjjlrE7QN0voZdEjUQlYh4N1RF28yZKR8,1077
+uplc-0.3.0.dist-info/METADATA,sha256=odpXBei97oQIlj1cMSABQXWTYIK-XHkrWUuBKgwZRyw,1853
+uplc-0.3.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+uplc-0.3.0.dist-info/top_level.txt,sha256=2eGAMY2_fDIRQlPse625AZfQAMq__J0lPhpRL7fnm5w,5
+uplc-0.3.0.dist-info/RECORD,,
