@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+logpandas/__init__.py
+logpandas/__main__.py
+logpandas/core.py
+logpandas.egg-info/PKG-INFO
+logpandas.egg-info/SOURCES.txt
+logpandas.egg-info/dependency_links.txt
+logpandas.egg-info/entry_points.txt
+logpandas.egg-info/requires.txt
+logpandas.egg-info/top_level.txt
