@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: aleph-sdk-python
+Version: 0.6.0b1
+Summary: Lightweight Python Client library for the Aleph.im network
+Home-page: https://github.com/aleph-im/aleph-sdk-python
+Author: Aleph.im Team
+Author-email: hello@aleph.im
+License: mit
+Project-URL: Documentation, https://aleph.im/
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/x-rst; charset=UTF-8
+License-File: LICENSE.txt
+License-File: AUTHORS.rst
+Requires-Dist: coincurve
+Requires-Dist: aiohttp (>=3.8.3)
+Requires-Dist: eciespy
+Requires-Dist: typing-extensions
+Requires-Dist: typer
+Requires-Dist: aleph-message (~=0.3.0)
+Requires-Dist: eth-account (>=0.4.0)
+Requires-Dist: python-magic
+Provides-Extra: cosmos
+Requires-Dist: cosmospy ; extra == 'cosmos'
+Provides-Extra: docs
+Requires-Dist: sphinxcontrib-plantuml ; extra == 'docs'
+Provides-Extra: ethereum
+Requires-Dist: eth-account (>=0.4.0) ; extra == 'ethereum'
+Provides-Extra: mqtt
+Requires-Dist: aiomqtt ; extra == 'mqtt'
+Requires-Dist: certifi ; extra == 'mqtt'
+Requires-Dist: Click ; extra == 'mqtt'
+Provides-Extra: nuls2
+Requires-Dist: nuls2-python ; extra == 'nuls2'
+Provides-Extra: polkadot
+Requires-Dist: substrate-interface (==1.3.4) ; extra == 'polkadot'
+Provides-Extra: solana
+Requires-Dist: pynacl ; extra == 'solana'
+Requires-Dist: base58 ; extra == 'solana'
+Provides-Extra: testing
+Requires-Dist: aiomqtt ; extra == 'testing'
+Requires-Dist: psutil ; extra == 'testing'
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+Requires-Dist: pytest-asyncio ; extra == 'testing'
+Requires-Dist: pytest-mock ; extra == 'testing'
+Requires-Dist: mypy ; extra == 'testing'
+Requires-Dist: secp256k1 ; extra == 'testing'
+Requires-Dist: pynacl ; extra == 'testing'
+Requires-Dist: base58 ; extra == 'testing'
+Requires-Dist: fastapi ; extra == 'testing'
+Requires-Dist: httpx ; extra == 'testing'
+Requires-Dist: requests ; extra == 'testing'
+Requires-Dist: aleph-pytezos (==0.1.0) ; extra == 'testing'
+Requires-Dist: types-certifi ; extra == 'testing'
+Requires-Dist: types-setuptools ; extra == 'testing'
+Requires-Dist: black ; extra == 'testing'
+Requires-Dist: isort ; extra == 'testing'
+Requires-Dist: flake8 ; extra == 'testing'
+Provides-Extra: tezos
+Requires-Dist: pynacl ; extra == 'tezos'
+Requires-Dist: aleph-pytezos (==0.1.0) ; extra == 'tezos'
+
