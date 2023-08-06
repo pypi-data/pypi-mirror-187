@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/bp_dependency/__init__.py
+src/bp_dependency/dependency.py
+src/bp_dependency.egg-info/PKG-INFO
+src/bp_dependency.egg-info/SOURCES.txt
+src/bp_dependency.egg-info/dependency_links.txt
+src/bp_dependency.egg-info/not-zip-safe
+src/bp_dependency.egg-info/requires.txt
+src/bp_dependency.egg-info/top_level.txt
