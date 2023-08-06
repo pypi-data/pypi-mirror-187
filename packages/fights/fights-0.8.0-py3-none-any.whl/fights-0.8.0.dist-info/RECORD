@@ -1,0 +1,15 @@
+fights/__init__.py,sha256=iPlYCcIzuzW7T2HKDkmYlMkRI51dBLfNRxPPiWrfw9U,22
+fights/base.py,sha256=IiXXQqxP-OUZU890FUaY6TIi8RODBLLpLTMaTdpYwGY,1992
+fights/envs/__init__.py,sha256=TGHxTAONNxufyf3JRUmIXmA-NkcfRTUQ7rXPN5p3_W8,865
+fights/envs/puoribor.py,sha256=Lk3DwCISqmZ-eTk1r6MEBfkaSilZSjtEt8LaCPLUx54,19832
+fights/envs/quoridor.py,sha256=412xI6quoa50OzxpDE4iRptMv0ojEwP9eo7EbSvI5fY,16435
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_puoribor_env.py,sha256=PgLszO3yLQVBTbKfgndq-2rp_Ty-0xfx6olM_ecxnOE,20848
+tests/test_puoribor_state.py,sha256=cnRQSVb5fhW9PgtPoc_v8NA-916Hg3d_LdR3ikuiWIw,1943
+tests/test_quoridor_env.py,sha256=SdZTJfbk4U_GmbKDP2Lmf-NVDqQCpU2srUPHbXPEGr8,5721
+tests/test_quoridor_state.py,sha256=1HsvALDeybiNjVKdo8koxIvNl2vc89gBXpemQaYllrU,1902
+fights-0.8.0.dist-info/LICENSE.txt,sha256=9TbErf2sg8ZmJXW9R-Q50pOmTJIbEBrFy1gccvFtg4w,1070
+fights-0.8.0.dist-info/METADATA,sha256=4yEuewivjAYD6BeV2b1tHAvhQASXBSpX8y8Mvy_Rzds,1954
+fights-0.8.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+fights-0.8.0.dist-info/top_level.txt,sha256=AgGK3O78ZXuONn0Vc1uvfT76kb7rdIUbXQL1Er5rXMg,13
+fights-0.8.0.dist-info/RECORD,,
