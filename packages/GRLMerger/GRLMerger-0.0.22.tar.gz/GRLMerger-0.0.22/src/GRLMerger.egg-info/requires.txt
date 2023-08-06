@@ -1,0 +1,5 @@
+pandas
+statistics
+neattext
+nltk
+sentence_transformers
