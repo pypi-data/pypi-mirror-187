@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Topsis-Diksha-102016116
+Version: 0.1
+Summary: TOPSIS method for multi-criteria decision making
+Home-page: https://github.com/Dik17/topsis_diksharani_102016116_1.1.0
+Download-URL: https://github.com/Dik17/topsis_diksharani_102016116_1.1.0/archive/refs/tags/v_01.tar.gz
+Author: Diksha Rani
+Author-email: rodiksha218@gmail.com
+License: MIT
+Keywords: TOPSIS,102016116,KEYWORDS
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE.txt
