@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: simple-google-scraper
+Version: 0.1.1
+Summary: A small python package for scraping google search results.
+Home-page: https://github.com/biswa-mohapatra/simple-google-scraper
+Author: biswa-mohapatra
+Author-email: jeetmohapatra98@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/biswa-mohapatra/simple-google-scraper/issues
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: testing
+License-File: LICENSE
+
+# A PYTHON PACKAGE FOR SCRAPING GOOGLE SEARCH RESULTS
