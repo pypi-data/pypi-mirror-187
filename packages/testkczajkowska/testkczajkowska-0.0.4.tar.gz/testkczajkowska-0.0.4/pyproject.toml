@@ -1,0 +1,14 @@
+[project]
+name = "testkczajkowska"
+version = "0.0.4"
+description = "My test package"
+keywords = ["testkczajkowska", "name", "surname", "age"]
+authors = [{name = "KC", email = "czajkowska.kamila@wp.pl"}]
+license = {file = "LICENSE.txt"}
+readme = "README.md"
+classifiers = [
+    "Framework :: IDLE",
+    "Framework :: Opps"
+]
+requires-python = ">=3.0"
+dependencies = ["python_version >= '3.0'", "numpy"]

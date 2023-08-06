@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+testkczajkowska/__init__.py
+testkczajkowska/m_mod_kczajkowska.py
+testkczajkowska.egg-info/PKG-INFO
+testkczajkowska.egg-info/SOURCES.txt
+testkczajkowska.egg-info/dependency_links.txt
+testkczajkowska.egg-info/requires.txt
+testkczajkowska.egg-info/top_level.txt
