@@ -1,0 +1,5 @@
+numpy>1.20
+scipy>1.9
+pyedflib>=0.1.28
+pymatreader
+traces>=0.5.1
