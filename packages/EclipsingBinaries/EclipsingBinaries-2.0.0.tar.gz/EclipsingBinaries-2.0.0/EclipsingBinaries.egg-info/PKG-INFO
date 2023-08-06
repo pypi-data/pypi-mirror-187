@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: EclipsingBinaries
+Version: 2.0.0
+Summary: Binary Star Package for Ball State University's Astronomy Research Group
+Home-page: https://github.com/kjkoeller/Binary_Star_Research_Package
+Author: Kyle Koeller
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+License-File: LICENSE
