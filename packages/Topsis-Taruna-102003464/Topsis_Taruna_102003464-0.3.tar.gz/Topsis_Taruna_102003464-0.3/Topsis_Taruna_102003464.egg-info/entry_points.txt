@@ -1,0 +1,3 @@
+[console_scripts]
+topsis123 = Topsis_Taruna_102003464.topsis:main
+
