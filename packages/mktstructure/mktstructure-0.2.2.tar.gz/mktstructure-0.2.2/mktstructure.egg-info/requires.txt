@@ -1,0 +1,4 @@
+requests
+numba
+pandas
+numpy
