@@ -1,0 +1,17 @@
+connectome<1.0.0,>=0.3.1
+bev<1.0.0,>=0.5.3
+tarn<1.0.0,>=0.2.0
+numpy
+nibabel
+more-itertools
+dicom-csv
+tqdm
+pandas
+pylidc
+pyyaml
+requests
+mdai
+SimpleITK
+joblib
+deli
+typer<1.0.0
