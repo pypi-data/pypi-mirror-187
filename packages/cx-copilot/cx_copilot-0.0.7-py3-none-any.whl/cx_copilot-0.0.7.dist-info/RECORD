@@ -1,0 +1,14 @@
+cx_copilot/LICENSE,sha256=UQEpw8JO45M6JQY7o3QnMetXiXNVM-EPWWO7wbelK0g,1135
+cx_copilot/__init__.py,sha256=DnVN9oNabUkeirPy5nd2TG6RDPNQJomXq3xOMNzA0J8,375
+cx_copilot/blocks/cache.py,sha256=_n7ytYqOVk7lhbROMjj7CyimXAru8XXCmu8mN_QbrkY,624
+cx_copilot/blocks/cleaner.py,sha256=cHbyCyLMNnjLdQcgnRRFEJkvmL4QXGdmOlXYK3mLPk8,487
+cx_copilot/blocks/completion.py,sha256=x29LPmg09Siy_lfCXq7UqCHc9gl1_Vvx_nDFEYpJN6Y,1035
+cx_copilot/blocks/embedding.py,sha256=sL7sNHA0gImRbli6rbae2tuBSxVp4_zAA_MZsH3DJQM,1114
+cx_copilot/blocks/tickets.py,sha256=V5E3_kV36Lxas52JDp00nlPaFLTvapzOgLKEx20DpBg,4766
+cx_copilot/blocks/vectordb.py,sha256=Tfbhx6QP4MckmGQDOd2j1oXGJF5PiW2lyWSWVHLoLP4,1833
+cx_copilot/compound/compound.py,sha256=yXmQkTHthM_8GqXUSZ9UQ0E1jOD88J0UbVfzywB9LRQ,6444
+cx_copilot/exceptions/exceptions.py,sha256=D62nnfEPUuGpRpyPUSNP3OvVFGGwfvaKwD3wvv1hjwo,113
+cx_copilot-0.0.7.dist-info/LICENSE,sha256=UQEpw8JO45M6JQY7o3QnMetXiXNVM-EPWWO7wbelK0g,1135
+cx_copilot-0.0.7.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+cx_copilot-0.0.7.dist-info/METADATA,sha256=IjjyyYwUjJ7S9uT2DhoOrzFTET3hED92UgW5LLrXmG0,6732
+cx_copilot-0.0.7.dist-info/RECORD,,
