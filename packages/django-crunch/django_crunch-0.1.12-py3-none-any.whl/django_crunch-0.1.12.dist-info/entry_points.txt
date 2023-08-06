@@ -1,0 +1,4 @@
+[console_scripts]
+crunch=crunch.client.main:app
+crunchsite=crunch.django.proj.manage:main
+
