@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: quantnet_controller
+Version: 0.1.0
+Summary: Controller of Quant-Net by ESnet
+Home-page: https://github.com/lzhang9/quantnet_controller
+Author: Liang Zhang
+Author-email: lzhang9@es.net
+License: MIT license
+Keywords: quantnet_controller
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+===================
+quant-net server
+===================
+
+
+.. image:: https://img.shields.io/pypi/v/quantnet_controller.svg
+        :target: https://pypi.python.org/pypi/quantnet_controller
+
+.. image:: https://img.shields.io/travis/lzhang9/quantnet_controller.svg
+        :target: https://travis-ci.com/lzhang9/quantnet_controller
+
+.. image:: https://readthedocs.org/projects/quantnet-controller/badge/?version=latest
+        :target: https://quantnet-controller.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+
+
+The server controlling Quant-Net by ESnet
+
+
+* Free software: MIT license
+* Documentation: https://quantnet-controller.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2022-11-22)
+------------------
+
+* First release on PyPI.
