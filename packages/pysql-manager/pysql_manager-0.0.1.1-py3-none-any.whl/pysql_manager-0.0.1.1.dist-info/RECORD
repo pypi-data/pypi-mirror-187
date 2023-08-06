@@ -1,0 +1,8 @@
+pysql_manager/__init__.py,sha256=J-yMbZ-cBysLGnkba7eBeSng1AmvtP3gPygNXv9ACpA,2234
+pysql_manager/bases.py,sha256=YheF-KKftdYv5TrPgzABumUgresLHIiNmxfQLG4-z3k,3633
+pysql_manager/errors.py,sha256=TQzc_ldVKpMcAPm0wy2jJNlC_RLhat2AQwcx2S7N9dE,636
+pysql_manager/types.py,sha256=WF78rrsUqQfp3cEqmHezcxgjQwm7NQW_88YuhJbKqgA,359
+pysql_manager-0.0.1.1.dist-info/METADATA,sha256=Jk8QqX4LSlFP1D-e4VKELgpjE5iLbgENj6OXoy3fL8I,4573
+pysql_manager-0.0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pysql_manager-0.0.1.1.dist-info/top_level.txt,sha256=3Fn1TYM01JibidOTVD2UbxXASPrQrz65P4zP3ALECSA,14
+pysql_manager-0.0.1.1.dist-info/RECORD,,
