@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=66.1.1", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "datamizer"
+version = "0.0.1"
+description = "Simple package that takes a CSV file and changes sensitive data for fake one."
+readme = "README.md"
+authors = [{ name = "Nicolas Repetto", email = "nicolasre011@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "pandas >= 1.5.3",
+    "Faker >= 16.6.0",
+]
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/whosgriffith/datamizer"

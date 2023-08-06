@@ -1,0 +1,5 @@
+pandas>=1.5.3
+Faker>=16.6.0
+
+[dev]
+pytest
