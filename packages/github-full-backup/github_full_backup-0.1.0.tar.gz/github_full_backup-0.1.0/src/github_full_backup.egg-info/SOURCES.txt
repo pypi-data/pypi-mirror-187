@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+src/github_full_backup/__init__.py
+src/github_full_backup/github_full_backup.py
+src/github_full_backup.egg-info/PKG-INFO
+src/github_full_backup.egg-info/SOURCES.txt
+src/github_full_backup.egg-info/dependency_links.txt
+src/github_full_backup.egg-info/entry_points.txt
+src/github_full_backup.egg-info/not-zip-safe
+src/github_full_backup.egg-info/requires.txt
+src/github_full_backup.egg-info/top_level.txt

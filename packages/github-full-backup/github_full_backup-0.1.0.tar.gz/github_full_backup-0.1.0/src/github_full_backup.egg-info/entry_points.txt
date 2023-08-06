@@ -1,0 +1,3 @@
+[console_scripts]
+githubbackup = github_full_backup.github_full_backup:main
+
