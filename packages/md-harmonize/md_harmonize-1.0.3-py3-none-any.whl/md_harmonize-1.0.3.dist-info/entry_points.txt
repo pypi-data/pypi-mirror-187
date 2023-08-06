@@ -1,0 +1,2 @@
+[console_scripts]
+md_harmonize = md_harmonize.__main__:main
