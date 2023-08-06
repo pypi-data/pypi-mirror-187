@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: Topsis-Gurneet-Kaur-102003494
+Version: 1.0
+Summary: Topsis
+Home-page: UNKNOWN
+Author: Gurneet Kaur
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Title:Multiple Criteria Decision Making using TOPSIS
+
+## What is TOPSIS:
+TOPSIS is an acronym that stands for 'Technique of Order Preference Similarity to the Ideal Solution' and is a pretty straightforward MCDA method. It is a multi-criteria decision analysis method, which was originally developed by Ching-Lai Hwang and Yoon in 1981 with further developments by Yoon in 1987, and Hwang, Lai and Liu in 1993.
+
+## How to get output?
+output is taken by running the command on terminal as : python "sourcefile.py" "input.csv" "weights(separateed by ',')" "impact(separated by ','))" use impact as '+' for maximizing the feature and '-' for minimizing. On your terminal run the command:
+python source_file_name.py input_file.csv "1,1,0,1" "+,-,+,+" output_file_name.csv Output will be stored in your present working directory as a csv file.
+
+## Constraints
+Number of columns in input file(other than the name of the entity) should be equal to length of impacts and length of weights.
+
+Input file should not have blank values
+
+Number of Columns in Input files should not be less than 3
+
+There should not be any csv file with same name as your output file in present directory
+
+Number of Arguments should be equal to the number as specified above
+
+## INPUT FILE(EXAMPLE:DATA.CSV):
+Argument used to pass the path of the input file which conatins a dataset having different fields and to perform the topsis mathematical operations
+
+## WEIGHTS(EXAMPLE:"0.25,0.25,0.25,0.25")
+The weights to assigned to the different parameters in the dataset should be passed in the argument.It must be seperated by ','.
+
+## IMPACTS(EXAMPLE:"-,+,+,+"):
+The impacts are passed to consider which parameters have a positive impact on the decision and which one have the negative impact.Only '+' and '-' values should be passed and should be seperated with ',' only
+
+## OUTPUT FILE(EXAMPLE:RESULT.CSV):
+This argument is used to pass the path of the result file where we want the rank and score to be stored
+
