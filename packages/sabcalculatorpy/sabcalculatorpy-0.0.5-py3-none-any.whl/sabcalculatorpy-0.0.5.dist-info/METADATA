@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: sabcalculatorpy
+Version: 0.0.5
+Summary: helps to solve/assist small calculations and conversion 
+Author: Sabarishkanna
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+License-File: LICENSE.txt
+Requires-Dist: numpy
+
+## README
+## Usage
+## -- make sure you have the current version of the python interpreter
+## --Run the following command in cmd
+
+
+## pip install sabcalculatorpy
+
+## Example 2
+## import sabcalculatorpy as calc
+## calc.add(3,8)
+
+## Output
+## 11
+
+## Example 2
+## import sabcalculatorpy as calc
+
+## calc.det()
+
+## enter the no of rows/columns 3
+## enter the value 1
+## enter the value 2
+## enter the value 3
+## enter the value 4
+## enter the value 5
+## enter the value 6
+## enter the value 7
+## enter the value 8
+## enter the value 9
+
+## output
+## 0
+
+## example 3
+
+## import sabcalculatorpy as cal
+
+## cal.solve2()
+
+## enter the a1 value in a1*x + b1*y= c1
+## 1
+## enter the b1 value in a1*x + b1*y= c1
+## 2
+## enter the c1 value in a1*x + b1*y= c1
+## 3
+## enter the a2 value in a2*x + b2*y= c2
+## 4
+## enter the b2 value in a2*x + b2*y= c2
+## 5
+## enter the c2 value in a2*x + b2*y= c2
+## 8
+## output
+## x= 0.3333333333333333
+## y=1.3333333333333333
