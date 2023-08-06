@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: footprint-py
+Version: 1.1
+Summary: A python OSINT tool to discover and analyze the digital footprint of a targets email or username across millions of sites.
+Home-page: https://github.com/Frikallo/footprint
+Author: Noah Kay
+Author-email: contact@noahkay.dev
+License: Apache
+Keywords: cli,email,osint
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+UNKNOWN
+
