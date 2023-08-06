@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: fanchart
+Version: 1.0.3
+Summary: Library to create Fan Charts as introduced by the Bank of England in 1996.
+Project-URL: Homepage, https://github.com/quantgirluk/fanchart
+Project-URL: Bug Tracker, https://github.com/quantgirluk/fanchart/issues
+Author-email: Dialid Santiago <d.santiago@outlook.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: <3.11,>=3.8
+Requires-Dist: matplotlib>=3.6.2
+Requires-Dist: numpy>=1.23.5
+Requires-Dist: pandas>=1.5.3
+Requires-Dist: twopiece>=1.3.1
+Description-Content-Type: text/markdown
+
+# *fanchart* 
+
+
+[![PyPI version fury.io](https://badge.fury.io/py/fanchart.svg)](https://pypi.python.org/pypi/fanchart/)
+![PyPI license](https://img.shields.io/pypi/l/fanchart.svg)
+
+- [Git Homepage](https://github.com/quantgirluk/fanchart)
+- [Pip Repository](https://pypi.org/project/fanchart/)
+
+## Overview
+
+The **_fanchart_** library provides functionality to create fan charts in [Python](https://www.python.org/).
+
+
+The term **fan chart** was coined by the [Bank of England](https://www.bankofengland.co.uk/) in 1996. Since then, the  BoE 
+has used these charts to illustrate its forecasts for inflation.
+
+The BoE introduced the fan charts aiming to communicate a more accurate representation of their forecast for medium term inflation. In particular, the charts have two key objectives:
+
+- To convey the uncertainty in their forecasts. This is, to focus attention on  the forecast distribution, rather than only on small changes to the central projection.
+- To promote discussion of the risks to the economic outlook, and thus contribute to a wider debate about economic policy. Fan charts help to make it clear that monetary policy is about making decisions instead of knowing the exact rate of inflation in two years time.
+
+For more details on the history of fan charts visit [Fan Charts](https://quantgirl.blog/fan-charts/)
+
+## Quick Start
+This library provides two main functions
+
+- The `fan` function illustrates the distribution of all the forecasts available; and it has the option to display the historical values for reference.
+
+![](https://raw.githubusercontent.com/quantgirluk/fanchart/master/docs/source/_static/fan01.png)
+
+
+- The `fan_single` function illustrates the pdf/cdf of one forecast distribution
+
+![](https://raw.githubusercontent.com/quantgirluk/fanchart/master/docs/source/_static/fan04.png)
+
+![](https://raw.githubusercontent.com/quantgirluk/fanchart/master/docs/source/_static/fan05.png)
