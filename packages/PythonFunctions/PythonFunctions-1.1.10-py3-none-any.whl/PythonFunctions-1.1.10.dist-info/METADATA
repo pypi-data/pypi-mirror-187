@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: PythonFunctions
+Version: 1.1.10
+Summary: A list of functions ready to install and use.
+Author: Dragmine149
+Project-URL: Homepage, https://github.com/FunAndHelpfulDragon/python-Functions/
+Project-URL: Bug Tracker, https://github.com/FunAndHelpfulDragon/python-Functions/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: cryptography (>=38.0.3)
+Requires-Dist: colorama (>=0.4.5)
+Requires-Dist: readchar (>=4.0.3)
+Requires-Dist: requests (>=2.28.1)
+Provides-Extra: google
+Requires-Dist: google-api-python-client (>=2.73.0) ; extra == 'google'
+Requires-Dist: google-auth-httplib2 (>=0.1.0) ; extra == 'google'
+Requires-Dist: google-autho-oauthlib (>=0.8.0) ; extra == 'google'
+Requires-Dist: google-api-core (!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0dev,>=1.31.5) ; extra == 'google'
+Requires-Dist: google-autho (<3.0.0dev,>=1.19.0) ; extra == 'google'
+Requires-Dist: uritemplate (<5,>=3.0.1) ; extra == 'google'
+Requires-Dist: httplib2 (<1dev,>=0.15.0) ; extra == 'google'
+Requires-Dist: six (>=1.16.0) ; extra == 'google'
+Requires-Dist: googleapis-common-protos (<2.0dev,>1.56.2) ; extra == 'google'
+Requires-Dist: cachetools (<6.0,>=2.0.0) ; extra == 'google'
+Requires-Dist: rsa (<5,>3.1.4) ; extra == 'google'
+Requires-Dist: pyasn1-modules (>=0.2.1) ; extra == 'google'
+Requires-Dist: pyparsing (!=3.0.0,!=3.0.1,!=3.0.2,!=3.0.3,<4,>=2.4.2) ; extra == 'google'
+Requires-Dist: oauthlib (>=3.0.0) ; extra == 'google'
+Requires-Dist: pyasn1 (<0.5.0,>=0.4.6) ; extra == 'google'
+Requires-Dist: charset-normalizer (<4,>=2) ; extra == 'google'
+Requires-Dist: urllib3 (<1.27,>=1.21.1) ; extra == 'google'
+Provides-Extra: linter
+Requires-Dist: pylint (>=2.15.5) ; extra == 'linter'
+Provides-Extra: test
+Requires-Dist: pytest (>=7.2.0) ; extra == 'test'
+Requires-Dist: pytest-repeat (>=0.9.1) ; extra == 'test'
+
+# Functions
+
+This is a gigantic folder, with multiple functions for multiple use cases. The only folder that you will need, is [PythonFunctions](./src/PythonFunctions/).
+
+## Documentation
+
+Every file has it own documentation, which can be found here: [Documentation](https://python-functions.readthedocs.io/en/latest/).
+
+## Expanding
+
+This file is still in development and more is to come! If you want to contribute, follow the same file structure and submit a pull request.
+What you see now is not the final version.
+
+## Contributing
+
+Please read [Contributing.md](Contribution.md)
+
+## Update Log
+
+### 1.1.10
+
+- Updated `Version.py` to not do anything if the setting says it should be muted.
+
+### 1.1.9
+
+- Updated tests
+- Fixed an issue with `None` or `''` being passed into os.makedirs in `src/PythonFunctions/SaveModules/NORMAL.py`
+- Added `__main__.py` with `-s` and `-v` arguments. (`-s` generates `PyFuncSet.json` file, `-v` prints the module version)
+- Updated `Version.py` to not run at start (the out of data check) unless mainally called.
+- Updated `__init__.py` to accomodate for `Version.py` changes
+- Added `CreateStringVar` to `ui.py` for easy creation of string variables (without having to also import tk into your module)
+- Updated documentation
+- Removed old documentation (A: online is more up to date. B: If you have the source code, you can view the online version even if offline)
+- Updated contributing information
+
+Updates before 1.1.9 are in [Updatelog.md](Updatelog.md)
+
+## Credits
+
+This project uses functions and modules from other people to run. Most of the modules have been auto imported (and kept up to date) but some require you to manually install them (check that module infomation).
+
+### Colourama
+
+[Github](https://github.com/tartley/colorama)
+Brings colours to the terminal
+
+### Readchar
+
+[Github](https://github.com/magmax/python-readchar)
+Taking an input straight away, instead of getting the user to press enter afterwards
+
+### Cryptography
+
+[Github](https://github.com/pyca/cryptography)
+Encrypting and decrypting data. Quick and simple
+
+### Requests
+
+[Github](https://github.com/psf/requests)
+Checking if you have the latest version
