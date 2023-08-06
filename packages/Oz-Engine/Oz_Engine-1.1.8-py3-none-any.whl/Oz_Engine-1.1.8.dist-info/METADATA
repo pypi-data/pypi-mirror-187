@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: Oz-Engine
+Version: 1.1.8
+Summary: A module for text based games
+Author: SplatCraft#5972
+License: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.1
+Description-Content-Type: text/markdown
+
+## ALL CREDITS GO TO **MENITOON**
