@@ -1,0 +1,7 @@
+setup.py
+geobox/__init__.py
+geobox.egg-info/PKG-INFO
+geobox.egg-info/SOURCES.txt
+geobox.egg-info/dependency_links.txt
+geobox.egg-info/requires.txt
+geobox.egg-info/top_level.txt
