@@ -1,0 +1,12 @@
+georgstage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+georgstage/cli.py,sha256=jaKGEtOam5f-zmBlM5JGpcIwVItue92O35o9pF8H-sg,193
+georgstage/controller.py,sha256=Air96i1eXx-mOfP1QiF4CZKhHY7gV6fdp2htl1TTbOI,7528
+georgstage/model.py,sha256=rcoxSGLoW-6Vt-9EP_6bpvNGwFnrv4u1V8lU4_xca9E,3645
+georgstage/view.py,sha256=VXbv6vLLhJ5RKxlZSY2UV118tKQH82MW40GSlHVeJSQ,17795
+georgstage/autofill/__init__.py,sha256=WG8kWz7p9S92XeO6TL1uYy6pPQbDHLwEwea_ainvrWc,1368
+georgstage/autofill/lp.py,sha256=SnnMM35V_ic-Jj2rAVK6yeoCA_-goeqQ09jrf-A5ivM,4021
+georgstage-0.2.15.dist-info/LICENCE.txt,sha256=BsvIlaHPsf_NIr8SyI5SuOfTO5lrTBrVa3xc2dtPM6o,1084
+georgstage-0.2.15.dist-info/METADATA,sha256=nF2M_sKXi79Z5JOAzkC2_KTxzu379fJ-r_ktrAZsRLw,4725
+georgstage-0.2.15.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+georgstage-0.2.15.dist-info/top_level.txt,sha256=NyVLAOcI0fe5sfx4TVxgL47gBDwvH9TeBRkYb47tvjo,11
+georgstage-0.2.15.dist-info/RECORD,,
