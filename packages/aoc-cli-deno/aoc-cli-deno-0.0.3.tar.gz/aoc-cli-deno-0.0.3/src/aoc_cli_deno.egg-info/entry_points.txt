@@ -1,0 +1,2 @@
+[aoc_cli.plugins]
+deno = aoc_cli_deno
