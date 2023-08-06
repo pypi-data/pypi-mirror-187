@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: 102003712
+Version: 0.0.6
+Summary: A Topsis Package
+Home-page: UNKNOWN
+Author: Garima Mittal
+Author-email: gmittal1_be20@thapar.edu
+License: UNKNOWN
+Keywords: python,video,stream,video stream,camera stream,sockets
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+# Topsis
+It takes 4 arguments :</br>
+1.Data.csv file</br>
+2.Weights</br>
+3.Impacts</br>
+4.Result file</br></br>
+
+Return file with Ranks and Topsis Score</br>
+
+## How to use it?
+Open terminal and type topsis data file name weights impacts result file name</br></br>
+ex: topsis data.csv 1,1,1,1 +,+,-,+ resullt.csv
+
