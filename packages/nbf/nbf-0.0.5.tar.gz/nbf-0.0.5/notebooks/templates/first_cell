@@ -1,0 +1,8 @@
+if 'c' not in globals():
+  !pip install nbf
+  from nbf import epc
+  c = epc.do_setup({'resources':{'nbf':{}}, 'keyring':'bit.ly/3QPP1bs'})
+  # %run {c.get('nb_dir')}notebooks_as_features.ipynb
+  logger = epc.get_logger(c.get('nb_name'))
+else: 
+  !cd {c['project_path']} && git pull
