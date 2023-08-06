@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: prototrade
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Scott Parker
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >3.7
+Requires-Dist: alpaca-trade-api
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+UNKNOWN
+
+
