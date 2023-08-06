@@ -1,0 +1,5 @@
+[
+  "authenticate.py::test_authentication",
+  "authenticate_test.py::test_authentication",
+  "authenticate_test.py::test_true"
+]

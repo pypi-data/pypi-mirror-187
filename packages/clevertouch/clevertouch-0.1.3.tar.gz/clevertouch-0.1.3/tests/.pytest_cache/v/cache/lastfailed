@@ -1,0 +1,4 @@
+{
+  "authenticate.py::test_authentication": true,
+  "authenticate_test.py::test_authentication": true
+}
