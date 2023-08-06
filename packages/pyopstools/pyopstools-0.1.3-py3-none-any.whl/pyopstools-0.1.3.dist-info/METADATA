@@ -1,0 +1,121 @@
+Metadata-Version: 2.1
+Name: pyopstools
+Version: 0.1.3
+Summary: DevOps CLI tools
+Home-page: https://github.com/adeotek/pyopstools
+Author: George Benjamin-Schonberger
+Author-email: <george.benjamin@gmail.com>
+Keywords: ops,api,tester,tools
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colorama
+Requires-Dist: termcolor
+Requires-Dist: requests
+Requires-Dist: click
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+
+# Python DevOps Tools
+
+## Description
+
+A collection of DevOps CLI tools written in Python
+
+## Available tools
+
+- `apitester` - A simple API tester where the requests are configured in a JSON file (see `configuration.sample.json` sample configuration)
+
+## Setup
+
+### Install `venv` module
+
+```powershell
+pip3.9 install virtualenv
+```
+
+### Create environment
+
+```powershell
+# cd project_path
+python3.9 -m venv env
+```
+
+### Activate environment
+
+#### Windows
+
+```powershell
+.\env\Scripts\Activate.ps1
+```
+
+#### Linux
+
+```bash
+source env/bin/activate
+```
+
+### Upgrade `pip`
+
+```powershell
+python -m pip install --upgrade pip
+```
+
+### Deactivate environment
+
+```powershell
+deactivate
+```
+
+## Install tool from source
+
+### For development
+
+```powershell
+python -m pip install --editable .
+```
+
+### For usage only
+
+```powershell
+python -m pip install .
+```
+
+## Publish to PyPi.org
+
+### Prerequisite
+
+```powershell
+python -m pip install build twine
+```
+
+### Build
+
+```powershell
+python -m build
+```
+
+### Check
+
+```powershell
+twine check dist/*
+```
+
+### Upload
+
+```powershell
+twine upload dist/*
+```
