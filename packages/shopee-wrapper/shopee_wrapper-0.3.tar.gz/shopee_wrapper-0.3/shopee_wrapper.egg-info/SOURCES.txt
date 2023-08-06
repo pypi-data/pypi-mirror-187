@@ -1,0 +1,13 @@
+README.md
+setup.py
+shopee_wrapper/__init__.py
+shopee_wrapper/base.py
+shopee_wrapper/product.py
+shopee_wrapper/review.py
+shopee_wrapper/shop.py
+shopee_wrapper/type.py
+shopee_wrapper.egg-info/PKG-INFO
+shopee_wrapper.egg-info/SOURCES.txt
+shopee_wrapper.egg-info/dependency_links.txt
+shopee_wrapper.egg-info/not-zip-safe
+shopee_wrapper.egg-info/top_level.txt
