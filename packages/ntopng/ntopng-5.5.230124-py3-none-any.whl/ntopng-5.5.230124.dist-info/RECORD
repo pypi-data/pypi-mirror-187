@@ -1,0 +1,8 @@
+ntopng/historical.py,sha256=5YQBPxADcjDPDIviZSEfZCnadavc3WEk_PJZ_-FvSb0,21738
+ntopng/host.py,sha256=WytJK2PcIKV91gE4zePLmj22IaFNaNKLcaZ-J574YqQ,3731
+ntopng/interface.py,sha256=Orh9sqZYqSgA-tjbFWpiAn7AqpWAEdIi67nHIj0Fyik,7434
+ntopng/ntopng.py,sha256=lyMvOniTh0iUAG7oeDNzqWrA7QKpBpJp5l4c3f5P2xA,6528
+ntopng-5.5.230124.dist-info/METADATA,sha256=8W5ragz-1VhLFhE5psiZk8BF3boinPdknoHHtid9sPc,237
+ntopng-5.5.230124.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ntopng-5.5.230124.dist-info/top_level.txt,sha256=1KNRAAMZHs1aTuZ3SFkwjPrREN-bp_iv-ZEMeDinreo,7
+ntopng-5.5.230124.dist-info/RECORD,,
