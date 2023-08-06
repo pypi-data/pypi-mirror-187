@@ -1,0 +1,3 @@
+[console_scripts]
+cis-json = cispliceai.console:json
+cis-vcf = cispliceai.console:vcf
