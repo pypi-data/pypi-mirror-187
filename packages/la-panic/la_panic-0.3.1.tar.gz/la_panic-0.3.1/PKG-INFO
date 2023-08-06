@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: la_panic
+Version: 0.3.1
+Summary: iPhone kernel panic parser
+Home-page: https://gitlab.com/yanivhasbanidev/la_panic
+Author: LoboAlpha
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# iOS Panic Parser
+
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contribution)
+
+# Description
+
+`la_panic` is a tool for working with iPhone crash reports.
+
+# Installation
+```shell
+python3 -m pip install --user -U la_panic
+```
+
+Or install the latest version from sources:
+
+```shell
+git clone git@gitlab.com:yanivhasbanidev/la_panic.git
+cd la_panic
+python3 -m pip install --user -U -e .
+```
+
+# Usage
+```shell
+la_panic parser parse <IPS_FILE>
+```
+
+# Contribution
+See [CONTRIBUTING](CONTRIBUTING.md).
