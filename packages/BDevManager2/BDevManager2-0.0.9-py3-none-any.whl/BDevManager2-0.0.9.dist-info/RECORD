@@ -1,0 +1,13 @@
+bdm_eng/TodayTarget.py,sha256=K-hnqs3D6TxeW18X4Ab52XqEhtuIT5-A3O0jD9aF2nA,295
+bdm_eng/__init__.py,sha256=E9HBGs8ae-Tu77dWtyU7HC2hz9g9ZkOA8GxUOs0tIr8,437
+bdm_eng/bant.py,sha256=kg-yEKMbJHAgJlIOm-vKSzr3xFOPYQs_Mcps7e2m49A,896
+bdm_eng/game_loop.py,sha256=AXKkEKkzss13wLf2-6QUq2U4ICVm-_qYL7_XkDkEZTo,1186
+bdm_eng/leadlist.py,sha256=4ZLAmO0rTlRSTBB5SeQ4F1AVIr-tzazHf7D9OiX082o,435
+bdm_eng/leadsource.py,sha256=wqG-BpYQRcmCJSAaA1HZ31eHqR64ZeY6t5r5X7-Qa3o,740
+bdm_eng/todaysactivity.py,sha256=B9TaK2hyORuE2KRJh4rOWfQQyn6Ku3jVRyB-8mQBkbE,267
+bdm_eng/top100prospectleads.py,sha256=4DK9oUkmUABNQYt6d1Zj91OiTZM0YCEBvjz9P5JSlvQ,231
+bdm_eng/top10targetsfortheweek.py,sha256=y6f7fufmCnCmfH6qbH7LuqykGJ_6Uao259O3kWxV_jw,228
+BDevManager2-0.0.9.dist-info/METADATA,sha256=Yz9o-B5YOFqGKi6mC2p-_zt-Rg3KDTrsJLPToQm0l10,4308
+BDevManager2-0.0.9.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+BDevManager2-0.0.9.dist-info/top_level.txt,sha256=i7rSYkJ4opqWLIVZf_pmveztJkO5sc9N10PNQd9uad0,8
+BDevManager2-0.0.9.dist-info/RECORD,,
