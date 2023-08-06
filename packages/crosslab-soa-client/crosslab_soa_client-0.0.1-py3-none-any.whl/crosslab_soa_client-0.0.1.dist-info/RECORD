@@ -1,0 +1,15 @@
+crosslab/soa_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crosslab/soa_client/connection.py,sha256=u4TmQZqVoEUMLQSeVEigtQC61MSJvcLxQiXj1P72uyA,1548
+crosslab/soa_client/connection_webrtc.py,sha256=WpoCqB0JpzZM30IG34rsNA4_i5AT0Ht-eMeiJ5A1hJY,9547
+crosslab/soa_client/device_handler.py,sha256=bInFRJjwsarbCuU3ouHvSycSQFqbdS9vXoz7fpaMhI4,6356
+crosslab/soa_client/message_handling.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crosslab/soa_client/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crosslab/soa_client/schemas.py,sha256=MUuEqSOVxFb0wnyNAdhgF8ApGMMpgDEBvEvPARKpWAM,34343
+crosslab/soa_client/service.py,sha256=BeOJZKuVH3eT_kXha3ZjJcXVZAegRGD9qxV8RSjR5Sw,495
+crosslab/soa_client/media/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crosslab/soa_client/media/gst_track.py,sha256=6J_lFawkY8aP31v9kNNUUHKyVg8vMFmI5HR-TqgqX3g,395
+crosslab/soa_client/media/udp_track.py,sha256=AGg7FMY91EYpcfS6u3ZxlK6Gy7J80xWg6ZD-n0aADvM,557
+crosslab_soa_client-0.0.1.dist-info/METADATA,sha256=gkDNKXjozDB880fz5JbrG7A9AIK6BuOqDehzTy5s_kk,398
+crosslab_soa_client-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+crosslab_soa_client-0.0.1.dist-info/top_level.txt,sha256=SWmen7fuDUD3dGiEWT7Kc_0g_xxm92qyYw8dPPLCmVE,9
+crosslab_soa_client-0.0.1.dist-info/RECORD,,
