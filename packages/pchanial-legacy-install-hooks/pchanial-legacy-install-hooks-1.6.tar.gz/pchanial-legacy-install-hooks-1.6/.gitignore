@@ -1,0 +1,8 @@
+__pycache__/
+.coverage
+.idea/
+.vscode/
+build/
+dist/
+venv*/
+*.egg-info/

@@ -1,0 +1,28 @@
+[build-system]
+requires = [
+    "setuptools>=61",
+    "setuptools_scm[toml]>=6.2",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pchanial-legacy-install-hooks"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+description = "Provides installation hooks."
+requires-python = ">=3.6"
+dependencies = [
+    "numpy",
+    "setuptools",
+    'typing-extensions; python_version < "3.8"',
+]
+dynamic = ["version"]
+
+[tool.setuptools]
+py-modules = ["hooks"]
+
+[tool.setuptools_scm]
+version_scheme = "post-release"
+fallback_version = "0.0.0"

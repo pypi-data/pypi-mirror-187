@@ -1,0 +1,11 @@
+.gitignore
+LICENCE_FR
+LICENSE
+README.md
+hooks.py
+pyproject.toml
+pchanial_legacy_install_hooks.egg-info/PKG-INFO
+pchanial_legacy_install_hooks.egg-info/SOURCES.txt
+pchanial_legacy_install_hooks.egg-info/dependency_links.txt
+pchanial_legacy_install_hooks.egg-info/requires.txt
+pchanial_legacy_install_hooks.egg-info/top_level.txt
