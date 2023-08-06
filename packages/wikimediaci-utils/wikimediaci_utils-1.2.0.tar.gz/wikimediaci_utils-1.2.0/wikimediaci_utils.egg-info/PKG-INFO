@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: wikimediaci-utils
+Version: 1.2.0
+Summary: Common utility functions for tools related to Wikimedia CI
+Home-page: https://gerrit.wikimedia.org/g/integration/utils
+Author: Kunal Mehta
+Author-email: legoktm@debian.org
+License: GPL-3.0-or-later
+Requires-Python: >=3.5
+Description-Content-Type: text/x-rst
+License-File: COPYING
+
+wikimediaci_utils
+=================
+
+A collection of utility functions that are commonly used in tools that
+assist with Wikimedia Continuous Integration.
+
+
+License
+-------
+Copyright 2016-2020 Kunal Mehta under the GPL v3 or any later version.
