@@ -1,0 +1,3 @@
+gitpython
+manim
+opencv-python-headless
