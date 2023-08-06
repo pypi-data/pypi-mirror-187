@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "awsuse"
+version = "0.1.2"
+description = "CLI to switch the aws cli default profile quickly"
+authors = ["Andre Lopes <afsalopes@gmail.com>"]
+readme = "README.md"
+packages = [{include = "awsuse"}]
+homepage = "https://github.com/aflopes/awsuse"
+repository = "https://github.com/aflopes/awsuse"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.3"
+boto3 = "^1.26.56"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+black = "^22.12.0"
+isort = "^5.11.4"
+flake8 = "^6.0.0"
+bandit = "^1.7.4"
+
+[tool.poetry.scripts]
+awsuse = 'awsuse.cli:run'
+
+[tool.isort]
+profile = "black"
+src_paths = ["awsuse", "tests"]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
