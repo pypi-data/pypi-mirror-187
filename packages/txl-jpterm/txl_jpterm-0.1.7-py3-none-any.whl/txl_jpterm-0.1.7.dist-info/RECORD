@@ -1,0 +1,11 @@
+txl_jpterm/__init__.py,sha256=YpKDcdV7CqL8n45u267wKtyloM13FSVbOdrqgNZnSLM,22
+txl_jpterm/components.py,sha256=trSw_RKCu8QCaOKD5D3Zk5Tsc54KuXfRzB6mJV5Xj8o,2516
+txl_jpterm/footer.py,sha256=knV0ezVEXVmAr47iZTttbPOJLIN8kYJ1lHotfeB9hxI,4162
+txl_jpterm/header.py,sha256=68Is1xEJ6TiTA7gjmEg0tgfbX6SGQjWiGCBzAWZz9i4,249
+txl_jpterm/jpterm.css,sha256=sqgX88dM-PcBhwp8btBsNPwxc6vbV8QXwC8QOXh7SEM,327
+txl_jpterm/main_area.py,sha256=4AnrN_zULOUCORkXtiNDYd3g8L80ZkAdfxGRNuV6fF4,612
+txl_jpterm-0.1.7.dist-info/METADATA,sha256=KUgGxhSyDzctA8nIdXMnrIV3NbgajB9ptipDGVjXQhc,928
+txl_jpterm-0.1.7.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+txl_jpterm-0.1.7.dist-info/entry_points.txt,sha256=3HZEAcVDHUGrCb3zikvLkzX5On6jfoXy6BU9leYOtdQ,51
+txl_jpterm-0.1.7.dist-info/licenses/LICENSE.txt,sha256=su0IgzSHZ9tMFeCQ_IaCji5Q4VrZSOqDsEFi7lPduc8,1106
+txl_jpterm-0.1.7.dist-info/RECORD,,
