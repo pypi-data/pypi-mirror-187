@@ -1,0 +1,3 @@
+[console_scripts]
+boardman=boardman.cli:cli
+
