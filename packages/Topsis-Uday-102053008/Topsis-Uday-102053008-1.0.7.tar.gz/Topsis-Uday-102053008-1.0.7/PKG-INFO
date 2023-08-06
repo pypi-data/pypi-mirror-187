@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: Topsis-Uday-102053008
+Version: 1.0.7
+Summary: The one stop tool to perform Multiple Criteria Decision Making(MCDM) using Topsis
+Home-page: https://github.com/uday-uppal
+Author: Uday Uppal
+Author-email: uuppal_be20@thapar.edu
+License: MIT
+Description: # TOPSIS-Uday-102053008   The package enables you to perform TOPSIS Multi Criteria Decision Making on the input csv file. The package outputs the csv file containing additional 2 columns, the TOPSIS SCORE and RANK assigned by the Topsis algorithm.   ### How to INSTALL  - pip install TOPSIS-Uday-102053008   - TOPSIS-Uday-102053008 <InputDataFile> <Weights> <Impacts> <ResultFileName>   - ✨Magic ✨ ### Example  - topsis '102053008-data.csv' '1,1,1,1,1' '+,-,+,+,+' '102053008-result.csv'   ### Application    - The algorithm could be used to rank different choices according to its impact and weight associated with each columns. The output is the rank of each choice with numerically lower rank is the preferred option and vice versa.  ### License  #  MIT
+Keywords: TOPSIS,MACHINE LEARNING,STATISTICS
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
