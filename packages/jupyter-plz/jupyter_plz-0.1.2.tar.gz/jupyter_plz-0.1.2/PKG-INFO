@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: jupyter_plz
+Version: 0.1.2
+Summary: A ChatGPT front-end for Jupyter notebooks (Copilot for Jupyter notebooks).
+Home-page: https://github.com/akramz/jupyter_plz
+Author: Akram Zaytar
+Author-email: zaytarakram@gmail.com
+License: MIT license
+Keywords: jupyter_plz
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+# Copilot, for your Jupyter Notebook
+
+`%plz` is a Jupyter magic command that generates programs from human-readable descriptions in Jupyter notebooks.
+
+
+https://user-images.githubusercontent.com/11509740/210084133-61f2cb2d-9968-4b01-8a67-85fcb92eb312.mov
+
+
+## Installation
+
+You can install `plz` in your Python virtual environment by running the following command in your terminal:
+
+```bash
+pip install plz
+```
+
+## Usage
+
+`plz` uses [GPT-3](https://beta.openai.com/). To use it, you'll need to:
+
+- Activate billing on your OpenAI [account](https://beta.openai.com/account/billing/overview).
+- Grab an API key from [your dashboard](https://beta.openai.com/).
+- Save the key as an environment variable named `OPENAI_API_KEY`.
+  - *Note*: you can also save it in your `bash/zsh profile` files for persistence between sessions.
+
+```bash
+export OPENAI_API_KEY='sk-XXXXXXXX'
+```
+
+Once you have configured your environment, run `plz` followed by (optionally, the desired output format) and what you want to do. Example:
+
+```bash
+%plz "create a function that generates a random walk in the form of an array."
+```
+
+Or markdown guides:
+
+```bash
+%plz --markdown "Provide a step-by-step guide on how to identify anomalies in a list of numbers."
+```
+
+## Credit
+
+This tool is inspired by [plz-cli](https://github.com/m1guelpf/plz-cli) (designed for the command line).
+
+## License
+
+This project is open-sourced under the MIT license. See [the License file](LICENSE) for more information.
+
+
+=======
+History
+=======
+
+0.1.0 (2022-12-30)
+------------------
+
+* First release on PyPI.
