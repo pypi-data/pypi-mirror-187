@@ -1,0 +1,13 @@
+kweb/Makefile,sha256=UA_gG3fQf0eq-PSJlTs7aa7-_0fmV25ZUPn0WSvK0iM,33
+kweb/__init__.py,sha256=bvDsEg5bL3CBr4FhfcvLE8xdtqhmJPNjebCTOmDDMII,48
+kweb/main.py,sha256=c20LPfkN7eRDLkiT4tdoPmlI9WWzQiHAIa8mzQkYwAg,1164
+kweb/server.py,sha256=KPf31AgewbHOIgGuDtexNYmyB7ynTDdpkgs2gGU-WuU,6127
+kweb/gds_files/wg.gds,sha256=TDe2Jp9iTkKUJNyb5b5QD40OzpsAKft3znQw-U0X4_g,182
+kweb/static/client.css,sha256=XJgaDMLY0CjOgHWgFjU5-ByOEtMKGLmQhJLCaZEyYNU,1183
+kweb/static/client.js,sha256=OP4zpmUL0mha5Z4y57A1HJ2OcRH2EQQj4bbLR_DHA_g,9067
+kweb/templates/client.html,sha256=pjPCIodVfBsB6U7dkprkQOIk-ffmh92cmDcMIL9zY6I,820
+kweb-0.0.3.dist-info/LICENSE,sha256=ZCGOtEh-a7hPPYylcCRQgsNhPbDEvnD5BVGixV0zpx0,1067
+kweb-0.0.3.dist-info/METADATA,sha256=Acz5esCTg4bMMBC_tyyojSEdSNp8BtbR8sepDwhuCLU,1978
+kweb-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+kweb-0.0.3.dist-info/top_level.txt,sha256=wHqGoIwTXJTmwQiuSHw8dRbn-96ezFW72k_VyI54oYs,5
+kweb-0.0.3.dist-info/RECORD,,
