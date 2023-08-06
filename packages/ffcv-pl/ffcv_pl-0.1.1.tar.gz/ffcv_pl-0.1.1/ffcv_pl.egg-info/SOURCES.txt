@@ -1,0 +1,13 @@
+setup.py
+ffcv_pl/__init__.py
+ffcv_pl.egg-info/PKG-INFO
+ffcv_pl.egg-info/SOURCES.txt
+ffcv_pl.egg-info/dependency_links.txt
+ffcv_pl.egg-info/not-zip-safe
+ffcv_pl.egg-info/top_level.txt
+ffcv_pl/datasets/__init__.py
+ffcv_pl/datasets/image.py
+ffcv_pl/datasets/image_label.py
+ffcv_pl/ffcv_utils/__init__.py
+ffcv_pl/ffcv_utils/custom_augmentations.py
+ffcv_pl/ffcv_utils/generate_dataset.py
