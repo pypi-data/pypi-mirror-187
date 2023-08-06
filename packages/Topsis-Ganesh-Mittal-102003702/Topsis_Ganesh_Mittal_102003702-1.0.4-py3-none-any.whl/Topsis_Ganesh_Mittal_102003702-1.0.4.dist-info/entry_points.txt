@@ -1,0 +1,3 @@
+[console_scripts]
+topsis = Topsis_Ganesh_Mittal.topsis:main
+
