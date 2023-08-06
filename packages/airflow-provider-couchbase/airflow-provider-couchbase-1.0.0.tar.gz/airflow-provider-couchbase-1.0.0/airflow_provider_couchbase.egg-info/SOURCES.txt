@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.py
+airflow/providers/couchbase/__init__.py
+airflow/providers/couchbase/get_provider_info.py
+airflow/providers/couchbase/hooks/__init__.py
+airflow/providers/couchbase/hooks/couchbase.py
+airflow/providers/couchbase/operators/__init__.py
+airflow/providers/couchbase/operators/couchbase.py
+airflow_provider_couchbase.egg-info/PKG-INFO
+airflow_provider_couchbase.egg-info/SOURCES.txt
+airflow_provider_couchbase.egg-info/dependency_links.txt
+airflow_provider_couchbase.egg-info/top_level.txt
