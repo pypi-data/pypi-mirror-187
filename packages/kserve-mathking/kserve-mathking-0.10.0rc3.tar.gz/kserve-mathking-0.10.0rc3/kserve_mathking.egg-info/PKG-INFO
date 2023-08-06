@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: kserve-mathking
+Version: 0.10.0rc3
+Summary: KServe Python SDK
+Home-page: https://github.com/kserve/kserve/tree/master/python/kserve
+Author: teamturing
+Author-email: admin-developers@teamturing.com
+License: Apache License Version 2.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Provides-Extra: test
+
+Python SDK for KServe Server and Client.
