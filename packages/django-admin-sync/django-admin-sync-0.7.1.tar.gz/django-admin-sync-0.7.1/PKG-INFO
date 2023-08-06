@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: django-admin-sync
+Version: 0.7.1
+Home-page: https://github.com/saxix/django-admin-sync
+Download-URL: https://github.com/saxix/django-admin-sync
+Author: sax
+Author-email: s.apostolico@gmail.com
+License: MIT
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: dev
+Provides-Extra: docs
+Provides-Extra: constance
+License-File: LICENSE
+
+django-admin-sync
+=================
+
+
+## Use cases
+
+
+1. Publishing Content 
+
+
+2. Fetching data 
