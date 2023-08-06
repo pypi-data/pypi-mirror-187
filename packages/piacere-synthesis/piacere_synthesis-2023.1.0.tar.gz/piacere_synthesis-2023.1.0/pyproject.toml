@@ -1,0 +1,27 @@
+[project]
+name = "piacere-synthesis"
+version = "2023.1.0"
+description = "Synthetize DOML from user requirements"
+license = {text = "MIT License"}
+authors = [
+  {name = "Andrea Franchini", email = "hello@andreafranchini.com"}
+]
+keywords = ["z3", "synthesis", "doml", "piacere"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+dependencies = [
+  "PyYAML",
+  "z3-solver",
+]
+
+[project.urls]
+homepage = "https://github.com/andreafra/piacere-synthesis"
+documentation = "https://piacere-model-checker.readthedocs.org"
+repository = "https://github.com/andreafra/piacere-synthesis.git"
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
