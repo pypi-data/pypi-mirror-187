@@ -1,0 +1,50 @@
+# Document Information
+
+SPDXVersion: SPDX-1.2
+DataLicense: CC0-1.0
+DocumentName: requests-toolbelt-0.10.1
+SPDXID: SPDXRef-DOCUMENT
+DocumentNamespace: http://spdx.org/spdxdocs/requests-toolbelt-0.10.1-45c31870-0c7b-8e60-7469-b80d5fca9f07
+DocumentComment: <text>This document was created automatically using available information from python packages.</text>
+
+
+# Creation Info
+
+Creator: Person: Ian Cordasco, Cory Benfield (graffatcolmingov@gmail.com)
+Creator: Tool: mbed-spdx-generator
+Created: 2023-01-25T19:09:09Z
+
+
+# Package
+
+PackageName: requests-toolbelt
+SPDXID: SPDXRef-requests-toolbelt
+PackageVersion: 0.10.1
+PackageDownloadLocation: NONE
+PackageSummary: <text>A utility belt for advanced users of python-requests</text>
+PackageFileName: requests-toolbelt
+PackageOriginator: Person: Ian Cordasco, Cory Benfield (graffatcolmingov@gmail.com)
+PackageChecksum: SHA1: NOASSERTION
+PackageVerificationCode: NOASSERTION
+PackageDescription: <text>NOASSERTION</text>
+PackageLicenseDeclared: Apache-2.0
+PackageLicenseConcluded: Apache-2.0
+PackageLicenseInfoFromFiles: Apache-2.0
+PackageCopyrightText: NOASSERTION
+PackageHomePage: https://toolbelt.readthedocs.io/
+
+
+# File
+
+FileName: UNKNOWN
+SPDXID: SPDXRef-ad921d60-4863-6625-8809-553a3db49a4a
+FileType: SOURCE
+FileChecksum: SHA1: 0
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: Apache-2.0
+FileCopyrightText: NONE
+FileComment: <text>NONE</text>
+
+
+# Extracted Licenses
+

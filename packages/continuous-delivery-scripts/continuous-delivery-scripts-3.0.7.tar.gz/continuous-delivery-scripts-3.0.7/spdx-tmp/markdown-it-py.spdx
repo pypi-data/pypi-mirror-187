@@ -1,0 +1,50 @@
+# Document Information
+
+SPDXVersion: SPDX-1.2
+DataLicense: CC0-1.0
+DocumentName: markdown-it-py-2.1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentNamespace: http://spdx.org/spdxdocs/markdown-it-py-2.1.0-0ab419c0-2108-7834-b378-28fbb594c336
+DocumentComment: <text>This document was created automatically using available information from python packages.</text>
+
+
+# Creation Info
+
+Creator: Tool: mbed-spdx-generator
+Creator: Person: unknown (Chris Sewell <chrisj_sewell@hotmail.com>)
+Created: 2023-01-25T19:08:42Z
+
+
+# Package
+
+PackageName: markdown-it-py
+SPDXID: SPDXRef-markdown-it-py
+PackageVersion: 2.1.0
+PackageDownloadLocation: NONE
+PackageSummary: <text>Python port of markdown-it. Markdown parsing, done right!</text>
+PackageFileName: markdown-it-py
+PackageOriginator: Person: UNKNOWN (Chris Sewell <chrisj_sewell@hotmail.com>)
+PackageChecksum: SHA1: NOASSERTION
+PackageVerificationCode: NOASSERTION
+PackageDescription: <text>NOASSERTION</text>
+PackageLicenseDeclared: Unknown
+PackageLicenseConcluded: Unknown
+PackageLicenseInfoFromFiles: Unknown
+PackageCopyrightText: NOASSERTION
+PackageHomePage: None
+
+
+# File
+
+FileName: UNKNOWN
+SPDXID: SPDXRef-ad921d60-4863-6625-8809-553a3db49a4a
+FileType: SOURCE
+FileChecksum: SHA1: 0
+LicenseConcluded: Unknown
+LicenseInfoInFile: Unknown
+FileCopyrightText: NONE
+FileComment: <text>NONE</text>
+
+
+# Extracted Licenses
+

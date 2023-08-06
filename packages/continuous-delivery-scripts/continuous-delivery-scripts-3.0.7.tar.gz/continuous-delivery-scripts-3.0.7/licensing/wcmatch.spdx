@@ -1,0 +1,50 @@
+# Document Information
+
+SPDXVersion: SPDX-1.2
+DataLicense: CC0-1.0
+DocumentName: wcmatch-8.4.1
+SPDXID: SPDXRef-DOCUMENT
+DocumentNamespace: http://spdx.org/spdxdocs/wcmatch-8.4.1-6fc8b953-65bb-9064-ee1c-5cc1b1faa87d
+DocumentComment: <text>This document was created automatically using available information from python packages.</text>
+
+
+# Creation Info
+
+Creator: Tool: mbed-spdx-generator
+Creator: Person: unknown (Isaac Muse <Isaac.Muse@gmail.com>)
+Created: 2023-01-25T19:09:09Z
+
+
+# Package
+
+PackageName: wcmatch
+SPDXID: SPDXRef-wcmatch
+PackageVersion: 8.4.1
+PackageDownloadLocation: NONE
+PackageSummary: <text>Wildcard/glob file name matcher.</text>
+PackageFileName: wcmatch
+PackageOriginator: Person: UNKNOWN (Isaac Muse <Isaac.Muse@gmail.com>)
+PackageChecksum: SHA1: NOASSERTION
+PackageVerificationCode: NOASSERTION
+PackageDescription: <text>NOASSERTION</text>
+PackageLicenseDeclared: Unknown
+PackageLicenseConcluded: Unknown
+PackageLicenseInfoFromFiles: Unknown
+PackageCopyrightText: NOASSERTION
+PackageHomePage: None
+
+
+# File
+
+FileName: UNKNOWN
+SPDXID: SPDXRef-ad921d60-4863-6625-8809-553a3db49a4a
+FileType: SOURCE
+FileChecksum: SHA1: 0
+LicenseConcluded: Unknown
+LicenseInfoInFile: Unknown
+FileCopyrightText: NONE
+FileComment: <text>NONE</text>
+
+
+# Extracted Licenses
+

@@ -1,0 +1,50 @@
+# Document Information
+
+SPDXVersion: SPDX-1.2
+DataLicense: CC0-1.0
+DocumentName: cryptography-39.0.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentNamespace: http://spdx.org/spdxdocs/cryptography-39.0.0-cb7753de-34cd-159a-8861-e8f504b278b1
+DocumentComment: <text>This document was created automatically using available information from python packages.</text>
+
+
+# Creation Info
+
+Creator: Person: The Python Cryptographic Authority and individual contributors (cryptography-dev@python.org)
+Creator: Tool: mbed-spdx-generator
+Created: 2023-01-25T19:08:42Z
+
+
+# Package
+
+PackageName: cryptography
+SPDXID: SPDXRef-cryptography
+PackageVersion: 39.0.0
+PackageDownloadLocation: NONE
+PackageSummary: <text>cryptography is a package which provides cryptographic recipes and primitives to Python developers.</text>
+PackageFileName: cryptography
+PackageOriginator: Person: The Python Cryptographic Authority and individual contributors (cryptography-dev@python.org)
+PackageChecksum: SHA1: NOASSERTION
+PackageVerificationCode: NOASSERTION
+PackageDescription: <text>NOASSERTION</text>
+PackageLicenseDeclared: APSL-2.0 AND (Apache-2.0 OR BSD-3-Clause)
+PackageLicenseConcluded: APSL-2.0 AND (Apache-2.0 OR BSD-3-Clause)
+PackageLicenseInfoFromFiles: APSL-2.0 AND (Apache-2.0 OR BSD-3-Clause)
+PackageCopyrightText: NOASSERTION
+PackageHomePage: https://github.com/pyca/cryptography
+
+
+# File
+
+FileName: UNKNOWN
+SPDXID: SPDXRef-ad921d60-4863-6625-8809-553a3db49a4a
+FileType: SOURCE
+FileChecksum: SHA1: 0
+LicenseConcluded: APSL-2.0 AND (Apache-2.0 OR BSD-3-Clause)
+LicenseInfoInFile: APSL-2.0 AND (Apache-2.0 OR BSD-3-Clause)
+FileCopyrightText: NONE
+FileComment: <text>NONE</text>
+
+
+# Extracted Licenses
+

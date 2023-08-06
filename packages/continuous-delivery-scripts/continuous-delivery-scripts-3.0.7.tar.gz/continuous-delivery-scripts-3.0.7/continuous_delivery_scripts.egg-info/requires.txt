@@ -1,0 +1,20 @@
+gitpython
+towncrier==22.12.0
+pyautoversion~=1.2.0
+pdoc3==0.10.0
+toml
+semver~=2.13.0
+python-dotenv
+twine
+boto3
+packaging
+licenseheaders<0.8.9
+spdx-tools==0.6.1
+license-expression
+wcmatch
+jellyfish
+jinja2==2.11.3
+markupsafe==2.0.1
+
+[:python_version < "3.7"]
+dataclasses

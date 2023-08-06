@@ -1,0 +1,50 @@
+# Document Information
+
+SPDXVersion: SPDX-1.2
+DataLicense: CC0-1.0
+DocumentName: pyparsing-3.0.9
+SPDXID: SPDXRef-DOCUMENT
+DocumentNamespace: http://spdx.org/spdxdocs/pyparsing-3.0.9-9b5dfb5d-0ac2-2bf7-47a2-e6f949057013
+DocumentComment: <text>This document was created automatically using available information from python packages.</text>
+
+
+# Creation Info
+
+Creator: Tool: mbed-spdx-generator
+Creator: Person: unknown (Paul McGuire <ptmcg.gm+pyparsing@gmail.com>)
+Created: 2023-01-25T19:08:42Z
+
+
+# Package
+
+PackageName: pyparsing
+SPDXID: SPDXRef-pyparsing
+PackageVersion: 3.0.9
+PackageDownloadLocation: NONE
+PackageSummary: <text>pyparsing module - Classes and methods to define and execute parsing grammars</text>
+PackageFileName: pyparsing
+PackageOriginator: Person: UNKNOWN (Paul McGuire <ptmcg.gm+pyparsing@gmail.com>)
+PackageChecksum: SHA1: NOASSERTION
+PackageVerificationCode: NOASSERTION
+PackageDescription: <text>NOASSERTION</text>
+PackageLicenseDeclared: Unknown
+PackageLicenseConcluded: Unknown
+PackageLicenseInfoFromFiles: Unknown
+PackageCopyrightText: NOASSERTION
+PackageHomePage: None
+
+
+# File
+
+FileName: UNKNOWN
+SPDXID: SPDXRef-ad921d60-4863-6625-8809-553a3db49a4a
+FileType: SOURCE
+FileChecksum: SHA1: 0
+LicenseConcluded: Unknown
+LicenseInfoInFile: Unknown
+FileCopyrightText: NONE
+FileComment: <text>NONE</text>
+
+
+# Extracted Licenses
+
