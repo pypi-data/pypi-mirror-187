@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: jito-searcher-client
+Version: 0.0.2
+Summary: Jito Labs Python Searcher Client
+Author: Jito Labs
+Author-email: support@jito.wtf
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: grpcio (>=1.51.1,<2.0.0)
+Requires-Dist: protobuf (>=4.21.12,<5.0.0)
+Requires-Dist: solana (>=0.29.0,<0.30.0)
+Requires-Dist: solders (>=0.14.2,<0.15.0)
+Description-Content-Type: text/markdown
+
+# About
+This library contains tooling to interact with Jito Lab's Block Engine as a searcher.
+
+# Tooling
+
+Install pip
+```bash
+$ curl -sSL https://bootstrap.pypa.io/get-pip.py | python 3 -
+```
+
+Install poetry
+```bash
+$ curl -sSL https://install.python-poetry.org | python3 -
+```
+
+Setup environment and build protobufs
+```bash
+$ poetry install
+$ poetry protoc
+$ poetry shell
+```
+
+Publishing package
+```bash
+$ poetry protoc
+$ poetry build
+$ poetry publish
+```
+
