@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: chattypy
+Version: 0.1.3
+Summary: ChattyPy is a library made in Python for making Chatty bots.
+Home-page: https://github.com/lafkpages/ChattyPy
+Author: LuisAFK
+Author-email: so.yl.a.fk@googlemail.com
+License: UNKNOWN
+Project-URL: Documentation, https://github.com/lafkpages/ChattyPy
+Project-URL: Source Code, https://github.com/lafkpages/ChattyPy
+Project-URL: Bug Tracker, https://github.com/lafkpages/ChattyPy/issues
+Project-URL: Discussions, https://github.com/lafkpages/ChattyPy/discussions
+Description: # Chatty.py
+        
+        Chatty.py is a library made in Python for making Chatty bots.
+        
+        # Example
+        For a simple example, see [example.py](src/chatty.py/example.py).
+        An even simpler example is shown bellow:
+        
+        ```python
+        import chatty
+        
+        bot = chatty.Bot(name='example-bot', channel='hangout')
+        
+        @bot.on_ready
+        def on_ready():
+          print('Bot ready!')
+        
+        @bot.on_message
+        def on_message(msg):
+          print('User', msg.author, 'sent message:', msg)
+        
+        @bot.on_command
+        def on_command(cmd):
+          print('User', cmd.author, 'sent slash command:', cmd)
+        
+          if cmd.cmd == 'help':
+            bot.send_msg(f'Help requested by @{cmd.author.name}')
+        
+        bot.run()
+        ```
+Keywords: chatty,bot,api,python,chattypy
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

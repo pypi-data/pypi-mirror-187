@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/chattypy/__init__.py
+src/chattypy/bot.py
+src/chattypy.egg-info/PKG-INFO
+src/chattypy.egg-info/SOURCES.txt
+src/chattypy.egg-info/dependency_links.txt
+src/chattypy.egg-info/requires.txt
+src/chattypy.egg-info/top_level.txt
