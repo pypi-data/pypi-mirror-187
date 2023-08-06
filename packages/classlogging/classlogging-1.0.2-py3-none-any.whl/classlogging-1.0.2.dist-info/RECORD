@@ -1,0 +1,13 @@
+classlogging/__init__.py,sha256=ffIsJqUIuAWWVD1sXVqMkEJAH1Y84jI5_8PRKUS302Y,207
+classlogging/configuration.py,sha256=_C54pi_lmuDCNSv0sp0nUR6l-NDyF9SRBKNfpovNAd0,2995
+classlogging/constants.py,sha256=bABP-ceVt92syuPygEvaaarbbobdTNJXrC98nCJd4fU,561
+classlogging/extensions.py,sha256=KH8C3hcuO4ji9AYWOI6Y57eGvB3p0tU7lMzJGkYzkVc,1389
+classlogging/facility.py,sha256=HMzTzuDJqpxoatTXwXl0-ZtDVx1n5_EC203NCcvg9cw,802
+classlogging/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+classlogging/service.py,sha256=V39vJ8dGVp95BPdtO0HoXtUbo6VlMbR8GFOLQWfnrSw,353
+classlogging/storage.py,sha256=yniF2TdBcpy-LhBDGkd-pL0F0I8hQ4FNZZT7qZMltFE,190
+classlogging/version.py,sha256=HDkBHTrFIMKo_PNWGUvuJPY9WIU8KGKefAAnoOpGAq0,328
+classlogging-1.0.2.dist-info/LICENSE,sha256=UeHLSyOl4Ou8x8IgaKDPcuWO8JSWw-0W0TDYyyx3VAQ,1057
+classlogging-1.0.2.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+classlogging-1.0.2.dist-info/METADATA,sha256=X48yriSveVqI4Kjat8C7hA8WMU9lmidK-98v-Fkr1Ak,1201
+classlogging-1.0.2.dist-info/RECORD,,
