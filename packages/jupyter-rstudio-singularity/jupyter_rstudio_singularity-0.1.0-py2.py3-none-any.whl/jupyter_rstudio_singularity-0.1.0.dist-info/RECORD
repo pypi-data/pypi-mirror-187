@@ -1,0 +1,11 @@
+jupyter_rstudio_singularity/__init__.py,sha256=wGyiGR5TD0B3kCF78YcsKDtJ7Mz0OvJL8jgWRVEDsmE,153
+jupyter_rstudio_singularity/cli.py,sha256=ioro24F0iSnyoBfJMmb1NEoRqddg-0s1Ztxfe9d-leI,8531
+jupyter_rstudio_singularity/jupyter_rstudio_singularity.py,sha256=h0hwdogXGFqerm-5ZPeT-irPn91pCcQRjiHThXsRzEk,19
+jupyter_rstudio_singularity/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jupyter_rstudio_singularity/utils/logging.py,sha256=JB9pwm82WnMsPDZGVv8o9GMQyFKIcGd6KBpD1mBj-ZM,1688
+jupyter_rstudio_singularity-0.1.0.dist-info/LICENSE,sha256=lyiOXVsMegQtDv_1pvThKxH4iZlnh3922ls9C9H6v2w,584
+jupyter_rstudio_singularity-0.1.0.dist-info/METADATA,sha256=KYPER0g5zbBmE4RNzHzeZhR1s_5viXZcDFjy7-zBtm8,2150
+jupyter_rstudio_singularity-0.1.0.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+jupyter_rstudio_singularity-0.1.0.dist-info/entry_points.txt,sha256=90cQH1u8en3sQynOIoI1mhbu07JLlGNu5VNoxcTeeBQ,72
+jupyter_rstudio_singularity-0.1.0.dist-info/top_level.txt,sha256=Cu2Bywv5lpBka4sEeHC07QkJFV94haB9KJEgPYlFlQI,28
+jupyter_rstudio_singularity-0.1.0.dist-info/RECORD,,
