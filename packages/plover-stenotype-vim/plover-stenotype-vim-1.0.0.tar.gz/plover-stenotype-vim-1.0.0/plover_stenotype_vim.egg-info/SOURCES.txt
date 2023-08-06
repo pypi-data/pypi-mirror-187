@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+stenotype_vim.py
+plover_stenotype_vim.egg-info/PKG-INFO
+plover_stenotype_vim.egg-info/SOURCES.txt
+plover_stenotype_vim.egg-info/dependency_links.txt
+plover_stenotype_vim.egg-info/entry_points.txt
+plover_stenotype_vim.egg-info/requires.txt
+plover_stenotype_vim.egg-info/top_level.txt
+plover_stenotype_vim.egg-info/zip-safe
