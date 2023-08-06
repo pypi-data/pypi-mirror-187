@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: BOWDN
+Version: 2.0.0
+Summary: BOWDN makes it easy to define commands that can be run from string inputs.
+Author: Alex Kumpula
+License-File: LICENSE
+Requires-Python: >=3.7
