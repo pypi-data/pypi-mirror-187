@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: topsisdarpan102003716
+Version: 0.0.2
+Summary: This is a Python Package implementing TOPSIS used for multi-criteria decision analysis method
+Author: Darpan Kumar Mittal
+Author-email: dmittal_be20@thapar.edu
+License: MIT
+Keywords: topsis,mcda,UCS654,TIET
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+with open('README.md') as f:
+    long_description = f.readlines()
