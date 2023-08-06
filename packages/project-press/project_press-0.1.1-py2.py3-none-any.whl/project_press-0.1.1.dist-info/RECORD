@@ -1,0 +1,14 @@
+project_press/__init__.py,sha256=da1PTClDMl-IBkrSvq6JC1lnS-K_BASzCvxVhNxN5Ls,13
+project_press/__main__.py,sha256=3W-1n9-YYHcew7k2QmQBidRAinmi9qfWD_2GoO6Dma4,160
+project_press/cli.py,sha256=qyNsflcQE8eFh0FMLVZA6SUZC5rwqMhoJo_inqbbfpE,1032
+project_press/clone.py,sha256=kdByix57RGh9ylf96AEWdCbt7JQu0xiM25aiAk6zYVU,6054
+project_press/template.py,sha256=vGH2cuuwXBQ6RC03b8W1yCHRR0xZ85jtOdGRLSbhh9g,1272
+project_press/utils.py,sha256=Hn5QLQGY5M1zDG0r9r91c45bXHdYwNZn_Q_rbdejgNk,403
+project_press/validate.py,sha256=xS3W3btlTn6it0OJ75DBuM2beJfCy0xFVPTGgY3ueLE,1966
+project_press-0.1.1.dist-info/LICENSE,sha256=rnNT6g1a17QL6947eHNCfdnFv-HnljrDFyfy0F18Djs,1086
+project_press-0.1.1.dist-info/METADATA,sha256=08617r0MZzDwpYmX5frknQVS07VvkAujieE1Vq42xtI,1699
+project_press-0.1.1.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+project_press-0.1.1.dist-info/entry_points.txt,sha256=iFYgcu6p7jujKdp5qvXpCdO18PWcqP2k3xNZK_mICXk,62
+project_press-0.1.1.dist-info/top_level.txt,sha256=lgI6jAEejWhCDp3PxgAaQ3oVMorq_XwxNYK9ca4pv_I,14
+project_press-0.1.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+project_press-0.1.1.dist-info/RECORD,,

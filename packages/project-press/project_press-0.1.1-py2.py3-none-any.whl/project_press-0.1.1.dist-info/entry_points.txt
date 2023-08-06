@@ -1,0 +1,2 @@
+[console_scripts]
+project-press = project_press.__main__:main
