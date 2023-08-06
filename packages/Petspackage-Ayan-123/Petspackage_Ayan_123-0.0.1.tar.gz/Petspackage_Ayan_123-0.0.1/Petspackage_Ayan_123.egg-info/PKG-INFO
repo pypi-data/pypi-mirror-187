@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: Petspackage-Ayan-123
+Version: 0.0.1
+Summary: It helps the user to classify according to their breeds and types
+Author-email: Ayan <ayan.mukherjee2022@vitstudent.ac.in>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# Petspackage_Ayan_123
+
+It helps the user to classify according to their breeds and types
+
+## Installing the package
+
+pip Install
+
+## Using the package
+
+```import Petspackage_Ayan_123 as cute```
+
+User has to input all the seven attributes and it returns all the information about the pet.
+
+## Function used
+
+fun(cuddle)
