@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: Topsis-Aditi-102003380
+Version: 0.1
+Summary: A Python package to find TOPSIS for multi-criteria decision analysis method
+Home-page: https://github.com/aditinirwan/Topsis-Aditi-102003380
+Author: ADITI NIRWAN
+Author-email: anirwan_be20@thapar.edu
+License: MIT
+Download-URL: https://github.com/aditinirwan/Topsis-Aditi-102003380/archive/refs/tags/v_01.tar.gz
+Description: UNKNOWN
+Keywords: Topsis,Data Science,UCS654
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.9
