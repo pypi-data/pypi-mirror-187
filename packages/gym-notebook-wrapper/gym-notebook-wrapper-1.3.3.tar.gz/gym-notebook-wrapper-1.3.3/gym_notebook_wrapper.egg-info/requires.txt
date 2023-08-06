@@ -1,0 +1,8 @@
+gym
+matplotlib
+pyvirtualdisplay
+ipython
+moviepy
+
+[test]
+brax
