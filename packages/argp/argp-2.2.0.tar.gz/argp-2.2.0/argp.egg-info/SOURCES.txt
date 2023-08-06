@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+argp/__init__.py
+argp/argp.py
+argp/py.typed
+argp/setup.py
+argp.egg-info/PKG-INFO
+argp.egg-info/SOURCES.txt
+argp.egg-info/dependency_links.txt
+argp.egg-info/top_level.txt

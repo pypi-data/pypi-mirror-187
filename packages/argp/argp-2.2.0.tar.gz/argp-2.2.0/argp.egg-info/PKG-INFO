@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: argp
+Version: 2.2.0
+Summary: Minimal wrapper for initializing argparse
+Home-page: https://github.com/vivainio/argp
+Author: Ville M. Vainio
+Author-email: ville.vainio@basware.com
+License-File: LICENSE
