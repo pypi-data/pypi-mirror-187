@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: Topsis-Himanshu-102003596
+Version: 1.0.0
+Summary: Calculating topsis score and finding rank
+Home-page: UNKNOWN
+Author: Himanshu
+Author-email: hhimanshu1_be20@thapar.edu
+License: MIT
+Description: ## TOPSIS-Himanshu-102003596
+        
+        ## To Install 
+        
+        ```
+        
+        pip install Topsis-Himanshu-102003596
+        
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
