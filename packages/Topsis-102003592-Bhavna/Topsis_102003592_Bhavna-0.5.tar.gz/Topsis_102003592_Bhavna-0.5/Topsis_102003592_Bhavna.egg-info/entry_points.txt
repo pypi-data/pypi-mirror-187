@@ -1,0 +1,3 @@
+[console_scripts]
+topsisbhav = Topsis_102003592_Bhavna.Bhavna_102003592:main
+
