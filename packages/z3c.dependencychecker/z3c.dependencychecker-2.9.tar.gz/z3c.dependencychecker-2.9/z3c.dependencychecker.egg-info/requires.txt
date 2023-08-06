@@ -1,0 +1,9 @@
+setuptools
+cached-property
+toml
+
+[:python_version < "3.10"]
+stdlib-list
+
+[test]
+pytest
