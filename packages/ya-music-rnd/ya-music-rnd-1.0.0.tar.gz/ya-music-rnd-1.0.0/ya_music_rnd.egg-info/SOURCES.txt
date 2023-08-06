@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ya_music_rnd/__init__.py
+ya_music_rnd.egg-info/PKG-INFO
+ya_music_rnd.egg-info/SOURCES.txt
+ya_music_rnd.egg-info/dependency_links.txt
+ya_music_rnd.egg-info/top_level.txt
