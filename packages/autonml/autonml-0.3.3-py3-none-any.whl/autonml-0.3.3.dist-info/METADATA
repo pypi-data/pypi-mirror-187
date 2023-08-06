@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: autonml
+Version: 0.3.3
+Summary: AutonML : CMU's AutoML System
+Home-page: https://gitlab.com/autonlab/d3m/autonml/-/tree/dev
+Author: Saswati Ray, Andrew Williams, Vedant Sanil
+Maintainer: Andrew Williams, Vedant Sanil
+Maintainer-email: awillia2@andrew.cmu.edu, vsanil@andrew.cmu.edu
+License: Apache-2.0
+Keywords: datadrivendiscovery,automl,d3m,ta2,cmu
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: NOTICE.md
+Requires-Dist: Cython
+Requires-Dist: SQLAlchemy (<1.4,>=1.2)
+Requires-Dist: datamart-materialize (<0.10,>=0.9)
+Requires-Dist: datamart-profiler (<0.10,>=0.9)
+Requires-Dist: nltk
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: smac (<0.14,>=0.13)
+Requires-Dist: ConfigSpace (<0.5,>=0.4.19)
+Requires-Dist: scikit-learn (==0.22.2.post1)
+Requires-Dist: scikit-image (==0.17.2)
+Requires-Dist: torch (>=1.7)
+Requires-Dist: PyYAML
+Requires-Dist: mxnet
+Requires-Dist: opencv-python
+Requires-Dist: d3m
+Requires-Dist: d3m-automl-rpc
+
+<img src="https://gitlab.com/sray/cmu-ta2/-/raw/master/docs/img/AutonML_logo.png?inline=false" width=30%>
+
+
+# CMU TA2 (Built using DARPA D3M ecosystem)
+
+**Taking your machine learning capacity to the nth power.**
+
+Auto<sup>n</sup>ML is an automated machine learning system developed by CMU Auton Lab 
+to power data scientists with efficient model discovery and advanced data analytics. It is designed to be the first step in exploratory data science. Auto<sup>n</sup>ML leverages powerful methods in machine learning to solve an enriched array of tasks on different data modalities.
+
+Auto<sup>n</sup>ML is Carnegie Mellon University's implementation of the [Data Driven Discovery program (D3M)](https://datadrivendiscovery.org/).
+
+[Documentation is available here](https://autonml.readthedocs.io/en/latest/)
