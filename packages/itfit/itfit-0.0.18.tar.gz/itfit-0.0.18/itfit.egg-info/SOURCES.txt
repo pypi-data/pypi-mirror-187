@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+itfit/__init__.py
+itfit/fitter_app.py
+itfit/function_constructor.py
