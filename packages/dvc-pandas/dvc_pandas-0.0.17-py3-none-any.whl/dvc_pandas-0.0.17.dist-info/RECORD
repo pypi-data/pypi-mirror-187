@@ -1,0 +1,10 @@
+dvc_pandas/__init__.py,sha256=_CrfMCTWQUQ54-_TZjZzXoInCh4waR0-ORVhGez3MJg,154
+dvc_pandas/dataset.py,sha256=pIVP_ebU4Jrdj-3-oSbIHqDHqRUEtdW_fop3qBLTX9I,3727
+dvc_pandas/dvc.py,sha256=MskBmvUt2WcxAyE2atDYg_fucEPL6eEDppE4kG9d_Tg,352
+dvc_pandas/git.py,sha256=LLdxI4ujAPSaWYD5QdvWtTcKLFwN8tc21bqmRbQaGDM,2470
+dvc_pandas/repository.py,sha256=DzcA7aNUbArat0TDqhqt2ufQdgONRm3NIIKyC2SpDsU,11892
+dvc_pandas-0.0.17.dist-info/LICENSE,sha256=B_2B_JpzY6kpVZZv88y1hFKvWpka7_qnFATXGkli8JQ,1068
+dvc_pandas-0.0.17.dist-info/METADATA,sha256=OttqCDTlsTPFTLm-u2Xeze5znIkA5Rs2nrIxGs_CBes,836
+dvc_pandas-0.0.17.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dvc_pandas-0.0.17.dist-info/top_level.txt,sha256=dgvbYsQKPfRU4iD6wDFI0XrGt1cJx2f1DfarkJT9Ju0,11
+dvc_pandas-0.0.17.dist-info/RECORD,,
