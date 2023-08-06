@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: thumbnails
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/pysnippet/thumbnails
+Author: Artyom Vancyan
+Author-email: artyom@pysnippet.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+
+UNKNOWN
+

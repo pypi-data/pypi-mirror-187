@@ -1,0 +1,6 @@
+setup.py
+thumbnails/__init__.py
+thumbnails.egg-info/PKG-INFO
+thumbnails.egg-info/SOURCES.txt
+thumbnails.egg-info/dependency_links.txt
+thumbnails.egg-info/top_level.txt
