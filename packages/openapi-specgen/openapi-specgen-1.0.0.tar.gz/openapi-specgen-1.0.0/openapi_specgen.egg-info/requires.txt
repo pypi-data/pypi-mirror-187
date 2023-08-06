@@ -1,0 +1,3 @@
+
+[marshmallow]
+marshmallow>=3.0.0
