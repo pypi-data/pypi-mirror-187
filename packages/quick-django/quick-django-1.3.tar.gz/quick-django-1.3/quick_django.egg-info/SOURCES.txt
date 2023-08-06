@@ -1,0 +1,8 @@
+setup.py
+quick-django/__init__.py
+quick-django/__main__.py
+quick_django.egg-info/PKG-INFO
+quick_django.egg-info/SOURCES.txt
+quick_django.egg-info/dependency_links.txt
+quick_django.egg-info/requires.txt
+quick_django.egg-info/top_level.txt
