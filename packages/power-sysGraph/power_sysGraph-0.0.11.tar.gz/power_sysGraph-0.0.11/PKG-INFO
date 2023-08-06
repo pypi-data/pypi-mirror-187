@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: power_sysGraph
+Version: 0.0.11
+Summary: Relations of power in graphs
+Home-page: UNKNOWN
+Author: Daniele De Luca
+Author-email: <prof.daniele.deluca@gmail.com>
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: power,system of power,cooperation
+Platform: UNKNOWN
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
