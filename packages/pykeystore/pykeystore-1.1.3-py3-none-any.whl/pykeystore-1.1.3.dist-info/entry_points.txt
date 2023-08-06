@@ -1,0 +1,2 @@
+[console_scripts]
+python-keystore = pykeystore.__main__:main
