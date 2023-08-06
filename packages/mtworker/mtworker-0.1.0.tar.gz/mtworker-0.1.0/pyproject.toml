@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "mtworker"
+version = "0.1.0"
+description = ""
+authors = ["a <a@a.com>"]
+readme = "README.md"
+packages = [{include = "my_package2"},{include = "mtworker"}]
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+
+[project.scripts]
+mtworker = "mtworker.main:cli"
