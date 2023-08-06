@@ -1,0 +1,17 @@
+README.md
+setup.py
+goldpirate/__init__.py
+goldpirate/config.json
+goldpirate/goldpirate.py
+goldpirate.egg-info/PKG-INFO
+goldpirate.egg-info/SOURCES.txt
+goldpirate.egg-info/dependency_links.txt
+goldpirate.egg-info/entry_points.txt
+goldpirate.egg-info/requires.txt
+goldpirate.egg-info/top_level.txt
+goldpirate/torrents/__init__.py
+goldpirate/torrents/corsaronero.py
+goldpirate/torrents/limetorrents.py
+goldpirate/torrents/torlock.py
+goldpirate/torrents/torrentdownloads.py
+goldpirate/torrents/x1337.py
