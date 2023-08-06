@@ -1,0 +1,11 @@
+boto3
+gretel-client
+gretel-synthetics[utils]
+pandas
+pydantic==1.9.0
+scikit-learn
+typing-extensions
+sqlalchemy
+networkx
+smart-open
+jinja2
