@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: libx-alwaysprep
+Version: 0.2.0
+Summary: A small example package
+Home-page: https://github.com/alwaysprep/BazelDemo
+Author: alwaysprep
+Author-email: alwaysprep@gmail.com
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: core-alwaysprep (==0.1.0)
+Requires-Dist: numpy (==1.24.1)
+Provides-Extra: dev
+Requires-Dist: flake8 (~=3.7.9) ; extra == 'dev'
+Requires-Dist: pylint (~=2.4.4) ; extra == 'dev'
+
