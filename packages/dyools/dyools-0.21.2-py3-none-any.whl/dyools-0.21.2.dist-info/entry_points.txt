@@ -1,0 +1,12 @@
+[console_scripts]
+deploy = dyools:cli_deploy
+dhelp = dyools:cli_help
+etl = dyools:cli_etl
+job = dyools:cli_job
+po = dyools:cli_po
+rpc = dyools:cli_rpc
+sign = dyools:cli_sign
+todo = dyools:cli_todo
+tool = dyools:cli_tool
+ws_agent = dyools:cli_ws_agent
+xml = dyools:cli_xml

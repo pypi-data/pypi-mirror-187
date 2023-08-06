@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: dyools
+Version: 0.21.2
+Summary: dyools
+Home-page: https://example.org
+Author: Mohamed CHERKAOUI
+Author-email: chermed@gmail.com
+License: LGPL v3
+Keywords: dyools
+Requires-Dist: click
+Requires-Dist: future
+Requires-Dist: pyaml
+Requires-Dist: odoorpc
+Requires-Dist: python-dateutil
+Requires-Dist: prettytable
+Requires-Dist: xlsxwriter
+Requires-Dist: xlrd
+Requires-Dist: requests
+Requires-Dist: psutil
+Requires-Dist: faker
+Requires-Dist: lxml
+Requires-Dist: polib
+Requires-Dist: terminaltables
+Requires-Dist: colorclass
+Requires-Dist: dateparser
+Requires-Dist: paramiko
+
+dyools
