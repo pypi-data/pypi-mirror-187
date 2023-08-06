@@ -1,0 +1,17 @@
+test.py,sha256=25duDMNHztoK_X10bV6DmsDab8EUSRfEN3LMTtd-3q4,1704
+ObjectWithEvents/ObjectWithEvents.py,sha256=82zNSjY9TUiDYGLlJ9VepvyAavH5fCVun6Zvpdu_3rU,1041
+api_openiap/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+api_openiap/client.py,sha256=Up7eroeidSrlqfXRCS3YLrmgU0-RFCxw59o4x6p3kvg,4605
+proto/base_pb2.py,sha256=kFsXFRNkP4lqjm-4aHSSNVSOj559vBQLLWx3qGjKjQY,5991
+proto/base_pb2_grpc.py,sha256=2ZwBCTDb67QrOS6ZNb2PkmzRMfs-Y6liifq_21lkTUM,3831
+proto/querys_pb2.py,sha256=8lg2CJjAblgou0n7qKpcBNFYjW3uuQ2TD8kF5dq8ijY,6683
+proto/querys_pb2_grpc.py,sha256=1oboBPFxaTEXt9Aw7EAj8gXHDCNMhZD2VXqocC9l_gk,159
+proto/queues_pb2.py,sha256=eewOGUGDoFtilPm7t4vSJ7q7IxatPxv6t2z6OReYO_4,2867
+proto/queues_pb2_grpc.py,sha256=1oboBPFxaTEXt9Aw7EAj8gXHDCNMhZD2VXqocC9l_gk,159
+proto/workitems_pb2.py,sha256=paFPwYBsY1hlvX6v6u4XHxtL5azDn1GzRY38SWzInu8,6316
+proto/workitems_pb2_grpc.py,sha256=1oboBPFxaTEXt9Aw7EAj8gXHDCNMhZD2VXqocC9l_gk,159
+openiap-0.0.3.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+openiap-0.0.3.dist-info/METADATA,sha256=b-2uzHZddKylEsbU6De5GEW792xLFu8vy7mJ4fdCXlA,652
+openiap-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+openiap-0.0.3.dist-info/top_level.txt,sha256=qZhMe9jeNdPvVmg5Z5Yvc4ssEn7u2W-bYlRPwudaZAM,40
+openiap-0.0.3.dist-info/RECORD,,
