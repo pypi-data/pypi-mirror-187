@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: aardev-money
+Version: 0.0.1
+Summary: Money management api
+Home-page: 
+Author: Anton Raevsky
+Author-email: anton.raevsky.dev@gmail.com
+Classifier: Programming Language :: Python :: 3.10

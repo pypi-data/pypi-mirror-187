@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+aardev-money/__init__.py
+aardev-money/main.py
+aardev_money.egg-info/PKG-INFO
+aardev_money.egg-info/SOURCES.txt
+aardev_money.egg-info/dependency_links.txt
+aardev_money.egg-info/top_level.txt
