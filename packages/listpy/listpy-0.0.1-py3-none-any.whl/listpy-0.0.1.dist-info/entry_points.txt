@@ -1,0 +1,2 @@
+[console_scripts]
+listpy = listpy:run

@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: listpy
+Version: 0.0.1
+Summary: List the python packages on a pypi index
+Home-page: https://gitlab.com/inorton/listpy
+Author: Ian Norton
+Author-email: inorton@gmail.com
+License: License :: OSI Approved :: MIT License
+License-File: LICENSE
+Requires-Dist: pypi-simple (>=1.0.0)
+
