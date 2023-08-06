@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: xfsystem
+Version: 0.0.1
+Summary: A package containing reusable functionalities for the mamba-spark project
+Home-page: https://github.com/GwamakaCharles/ucsf_xfsystem
+Author: Gwamaka Mwamwaja
+Author-email: gwamaka.mwamwaja@ucglobalprograms.org
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+

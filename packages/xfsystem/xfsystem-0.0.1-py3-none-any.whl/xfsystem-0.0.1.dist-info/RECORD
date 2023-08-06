@@ -1,0 +1,14 @@
+xfsystem/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xfsystem/dataframe_transformers.py,sha256=n3IeUtd6PbsnYfC3jPiLp99v3B8SGs1BG68QV-MyJgI,1329
+xfsystem/date_helper.py,sha256=9Ccb8SIlyTfsROKNzdJVyqeDW_dFc0C-2A14IiwH1F8,3318
+xfsystem/dateframe_util.py,sha256=fu9lmXF67FFc3i81kmaXvr_VFK56CKQaNfGwL5H_d3g,431
+xfsystem/odk_api_connector.py,sha256=u77aV4G2iXv8aPx-f-ClGhJB_GLo7M87fEo4UejkQS8,1279
+xfsystem/pandas_to_pyspark.py,sha256=PyfjAmyJg_jCMXrkMj1glcrQP0dofWs3-GJOUJHoTxs,1452
+xfsystem/postgres_helper.py,sha256=QINJTPXRXEg6u1MqmBpE1uWPeeAusLTiVmkm9mcYAIg,3139
+xfsystem/spark_helper.py,sha256=UEVQA4bBzey15rO7fLH1FrZzEGed9g9Ok59ppZ9RiUw,1053
+xfsystem/sqlserver_helper.py,sha256=_HmDg3py8xWPLGf64VTHma4XO5TfABSC6shKyzxN8gw,2635
+xfsystem-0.0.1.dist-info/LICENSE,sha256=F9Ke1sZihI0lZMyhmd7bw4R_7JWPcW-jYFGcve3uYas,1423
+xfsystem-0.0.1.dist-info/METADATA,sha256=pQ6MLyKbEdiHBIM51irJs0INYc-dkalj31HP_8zyV1g,440
+xfsystem-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+xfsystem-0.0.1.dist-info/top_level.txt,sha256=VQTZWBQWNENyg2SdvGE57XAQZNV3YNzBdFCSC8nstC8,9
+xfsystem-0.0.1.dist-info/RECORD,,
