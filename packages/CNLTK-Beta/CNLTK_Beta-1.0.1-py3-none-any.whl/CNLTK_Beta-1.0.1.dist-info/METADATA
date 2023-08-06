@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: CNLTK-Beta
+Version: 1.0.1
+Summary: Beta version of the CNLTK library
+Home-page: https://github.com/AG0nzales
+Author: Joshua Gonzales
+Author-email: jgonzales_190000001387@uic.edu.ph
+License: MIT
+Keywords: NLP
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This is a BETA version of the CNLTK Library version 1.1
+
