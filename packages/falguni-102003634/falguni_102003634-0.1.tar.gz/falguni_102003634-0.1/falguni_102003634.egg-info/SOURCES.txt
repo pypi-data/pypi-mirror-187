@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+falguni_102003634/TOPSIS102003634.py
+falguni_102003634.egg-info/PKG-INFO
+falguni_102003634.egg-info/SOURCES.txt
+falguni_102003634.egg-info/dependency_links.txt
+falguni_102003634.egg-info/top_level.txt
