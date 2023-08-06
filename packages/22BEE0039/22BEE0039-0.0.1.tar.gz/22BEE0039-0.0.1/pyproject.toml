@@ -1,0 +1,14 @@
+[project]
+name = "22BEE0039"
+version = "0.0.1"
+authors = [
+  { name="Sameer Bisht", email="sameer.bisht2022@vitstudent.ac.in" },
+]
+description = "A sample package from Sameer Bisht."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]

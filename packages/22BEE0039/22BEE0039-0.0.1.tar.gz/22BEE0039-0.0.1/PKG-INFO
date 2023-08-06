@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: 22BEE0039
+Version: 0.0.1
+Summary: A sample package from Sameer Bisht.
+Author-email: Sameer Bisht <sameer.bisht2022@vitstudent.ac.in>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+#Hello world
+
+This is an example project created by Sameer Bisht VIT Vellore. 22BEE0039
+This contains two modules.
+One module contains functions. and the other uses the functions from the first.
+
+## Installation
+Run the following to install:
+'''python
+pip install sameer22BEE0039
+'''
