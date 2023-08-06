@@ -1,0 +1,3 @@
+[console_scripts]
+meuip = meuip.command_line:main
+
