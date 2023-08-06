@@ -1,0 +1,5 @@
+setup.py
+crawling_gagip.egg-info/PKG-INFO
+crawling_gagip.egg-info/SOURCES.txt
+crawling_gagip.egg-info/dependency_links.txt
+crawling_gagip.egg-info/top_level.txt
