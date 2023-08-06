@@ -1,0 +1,66 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "block-scopes"
+description = "Block scopes in Python? Whaaaaaat?!"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+version = "0.2.3"
+
+keywords = [
+  "scoping", "variables", "memory", "cursed", "hack",
+]
+authors = [
+  { name = "Joe Carpinelli", email = "jdcarpinelli@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+  "Typing :: Typed",
+]
+dependencies = [
+  "module-hygiene>=0.3.4",
+]
+
+[project.urls]
+Documentation = "https://github.com/cadojo/block-scopes#readme"
+Issues = "https://github.com/cadojo/block-scopes/issues"
+Source = "https://github.com/cadojo/block-scopes"
+
+[tool.hatch.build]
+sources = ["src"]
+include = ["*.py", "*.typed"]
+exclude = ["tests"]
+
+[tool.hatch.envs.default]
+dependencies = [
+  "pytest",
+  "pytest-cov",
+]
+
+[tool.hatch.envs.default.scripts]
+cov = "pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=src/local_scopes --cov=tests {args}"
+no-cov = "cov --no-cov {args}"
+
+[[tool.hatch.envs.test.matrix]]
+python = ["37", "38", "39", "310", "311"]
+
+[tool.coverage.run]
+branch = true
+parallel = true
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
