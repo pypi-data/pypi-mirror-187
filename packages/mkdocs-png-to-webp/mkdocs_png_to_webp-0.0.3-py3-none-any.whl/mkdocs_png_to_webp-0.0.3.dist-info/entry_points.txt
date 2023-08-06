@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+mkdocs-png-to-webp = mkdocs_png_to_webp:ConvertPngToWebp
