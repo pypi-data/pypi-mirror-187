@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pypi-wrangler
+Version: 1.0.0
+Summary: PyPi Wrangler is a tool to assist in the packaging of python dependencies..
+Home-page: https://github.com/Millerlm012/PyPiWrangler
+Author: Landon Miller
+Author-email: millerlm012@email.com
+Keywords: python,pypi,wrangler
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3.9
+
+PyPi Wrangler is a tool to assist in the packaging of python dependenices for people who are wanting to self host the packages.
