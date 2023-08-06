@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cerc_hub
+Version: 0.1.0
+Summary: CERC Hub consist in a set of classes (Central data model), importers and exporters to help researchers to create better and sustainable cities
+Author-email: Guillermo Gutierrez <Guillermo.GutierrezMorote@concordia.ca>
+Project-URL: Homepage, https://rs-loy-gitlab.concordia.ca/Guille/hub
+Keywords: city,hub,cerc
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: dev

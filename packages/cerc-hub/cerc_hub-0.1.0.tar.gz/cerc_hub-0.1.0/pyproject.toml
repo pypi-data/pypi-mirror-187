@@ -1,0 +1,52 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cerc_hub"
+version = "0.1.0"
+description = "CERC Hub consist in a set of classes (Central data model), importers and exporters to help researchers to create better and sustainable cities"
+readme = "README.md"
+authors = [{ name = "Guillermo Gutierrez", email = "Guillermo.GutierrezMorote@concordia.ca" }]
+license = { file = "LICENSE.md" }
+classifiers = [
+    "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["city", "hub", "cerc"]
+dependencies = [
+	"xmltodict",
+	"numpy",
+	"trimesh",
+	"pyproj",
+	"pandas",
+	"requests",
+	"esoreader",
+	"geomeppy",
+	"PyWavefront",
+	"xlrd",
+	"openpyxl",
+	"networkx",
+	"parseidf==1.0.0",
+	"ply",
+	"rhino3dm==7.7.0",
+	"scipy",
+	"PyYAML",
+	"pyecore==0.12.2",
+	"python-dotenv",
+	"SQLAlchemy",
+	"bcrypt==4.0.1",
+	"shapely",
+	"geopandas",
+	"triangle"
+]
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+dev = ["pip-tools", "pytest"]
+
+[project.urls]
+Homepage = "https://rs-loy-gitlab.concordia.ca/Guille/hub"
