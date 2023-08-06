@@ -1,0 +1,8 @@
+net_and_server_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+net_and_server_utils/handling_programs_remotely.py,sha256=sMi-W59vp2xQtVekd5_aFy7ud33A3wjORM42AMQqANQ,2981
+net_and_server_utils/ipaddress_handling.py,sha256=zI9s0N3EwtP8SrWkaXOhId8rqCapUriBKQEYlnaK10Q,7134
+net_and_server_utils/socketserver_creation.py,sha256=Trjhn3B-mZvAQg6I27N7_zLGAIbcRAPgSdAXJ6IqRUI,9372
+net_and_server_utils-0.0.1.dist-info/METADATA,sha256=fIlSx71tw3kaaHUVEyo53Lx5Rh9v3ZJZRrRnmaosSys,65
+net_and_server_utils-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+net_and_server_utils-0.0.1.dist-info/top_level.txt,sha256=9Oa5s9GrFxMU7gjBhptlAiTTEe74yFNBzKrOCS9BB3U,21
+net_and_server_utils-0.0.1.dist-info/RECORD,,
