@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: Topsis_102003658
+Version: 0.1
+Summary: Calculate Topsis score and save it in a csv file
+Home-page: https://github.com/anirudhchadha02/TOPSIS-102003658.git
+Download-URL: 
+Author: Anirudh Chadha
+Author-email: anirudhchadhab2@gmail.com
+License: MIT
+Keywords: TOPSISSCORE,RANK,DATAFRAME
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+
+UNKNOWN
+
