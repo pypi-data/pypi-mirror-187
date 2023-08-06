@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mkdocs-png-to-webp
+Version: 0.0.1
+Summary: A package to convert your mkdocs images from png to webp
+Home-page: https://github.com/mur4d1n-lib/mkdocs-png-to-webp/
+Author: mur4d1n
+Author-email: mur4d1n@yandex.ru
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# mkdocs-png-to-webp
+РљРѕРЅРІРµСЂС‚РµСЂ png РІ webp РґР»СЏ mkdocs
