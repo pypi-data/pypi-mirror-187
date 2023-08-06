@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: datafuncs
+Version: 0.1.1
+Summary: Functions for Data Processing
+Project-URL: Homepage, https://github.com/Liam-Leonard/Data-Funcs
+Project-URL: Bug Tracker, https://github.com/Liam-Leonard/Data-Funcs/issues
+Author-email: Liam Leonard <liamleonard@outlook.ie>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Data Funcs
+
+Functions for Data Processing
