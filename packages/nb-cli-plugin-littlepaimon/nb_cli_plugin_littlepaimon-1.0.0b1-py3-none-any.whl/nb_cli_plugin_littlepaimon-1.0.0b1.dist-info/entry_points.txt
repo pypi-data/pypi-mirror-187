@@ -1,0 +1,3 @@
+[nb]
+paimon=nb_cli_plugin_littlepaimon.plugin:main
+

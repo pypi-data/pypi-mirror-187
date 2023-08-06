@@ -1,0 +1,13 @@
+nb_cli_plugin_littlepaimon/__init__.py,sha256=DR_IwSD9U13eo_46Qwpwj-PMZWECjvjvuqIPBqfok_8,235
+nb_cli_plugin_littlepaimon/cli.py,sha256=VU5EYuQhxWTaQN1c11i3mPoNq2bY9mehCillRsaqRzI,1947
+nb_cli_plugin_littlepaimon/config.yml,sha256=CzXoiP9Li33nB8k4ZT9kYqVEHoogv9gMlkgm00zBxz0,3239
+nb_cli_plugin_littlepaimon/create.py,sha256=ChtgKBj3Sf3k_4pztrGPhtZOTJY8IFbXMk9XjnUP7Js,10346
+nb_cli_plugin_littlepaimon/gocq.py,sha256=HRPeUv4oYXqXQg9OP57VS3v-PMqo4wTGoOgJPx4h0Po,1607
+nb_cli_plugin_littlepaimon/handler.py,sha256=HFMSg_QiiI8aSZnuwXVu-WBRch_QUul19E8hVgs52jA,1886
+nb_cli_plugin_littlepaimon/meta.py,sha256=I4h38GcDy6ibpAEyo7RzytHpya7_lPRIpl7UGGLH74k,1443
+nb_cli_plugin_littlepaimon/plugin.py,sha256=0f0lwACeOniujbTev4k31TZG0PzV0wK3gfF2YWw1Vvg,220
+nb_cli_plugin_littlepaimon-1.0.0b1.dist-info/METADATA,sha256=VCHXcuy9wnru2NTFfiq8Jk5v7KqKzpCRVQ9rQfYaBck,1474
+nb_cli_plugin_littlepaimon-1.0.0b1.dist-info/entry_points.txt,sha256=qTHIcNvXkljgfn7Odl-BA_nMMqASuWf9NNdEKnbJV5g,52
+nb_cli_plugin_littlepaimon-1.0.0b1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+nb_cli_plugin_littlepaimon-1.0.0b1.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+nb_cli_plugin_littlepaimon-1.0.0b1.dist-info/RECORD,,
