@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: Octra
+Version: 1.0.3
+Summary: Elegant, modern and asynchronous Telegram MTProto Ai framework in Python for users and bots
+Home-page: https://github.com/Octra
+Author: Akash
+Author-email: Akash@Octra.org
+License: LGPLv3
+Download-URL: https://github.com/Octra/Octra/releases/latest
+Project-URL: Tracker, https://github.com/Octra/Octra/issues
+Project-URL: Community, https://t.me/Octra
+Project-URL: Source, https://github.com/Octra/Octra
+Project-URL: Documentation, https://docs.Octra.org
+Keywords: telegram chat messenger mtproto Ai client library python
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Internet
+Classifier: Topic :: Communications
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+License-File: NOTICE
+Requires-Dist: pyaes (==1.6.1)
+Requires-Dist: pysocks (==1.7.1)
+Requires-Dist: TgCrypto
+Requires-Dist: pyRiZoeLX
+
+<p align="center">
+   <a href="https://github.com/Octra">
+   </a>
+</p>
+<h1 align="center">
+   <b> Octra Telegram Library </b> <br>  
+
+</h1>
+
+ * [![PyPI - Version](https://img.shields.io/pypi/v/Octra?style=round)](https://pypi.org/project/Octra) 
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/Octra?label=DOWNLOADS&style=round)](https://pypi.org/project/Octra) 
+
+----
+
+<b>About:</b> Octra is a Telegram Python Library mainly used for users and bots
+
+<h4> Installation </h4>
+
+```python
+pip3 install Octra
+```
+
+<h4> Import functions </h4>
+
+``` python
+from Octra import <functions name>
+```
+
+
+<h4> Example </h4>
+
+```python
+from Octra import Veteran, Flow
+
+app = Veteran("my_account")
+
+
+@app.on_message(Flow.private)
+async def hello(client, m):
+    await m.reply("Hello from Octra.")
+
+
+app.run()
+```
+ > [Click Here](https://github.com/Octra/Octra/tree/main/Octra/functions#-functions-available-) </b>
+
