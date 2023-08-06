@@ -1,0 +1,310 @@
+version: 2.1
+
+# Define executors that various packaging jobs need.  This lets us make one
+# packaging job that accepts an executor parameter and avoids duplicating the
+# packaging steps.
+executors:
+  manylinux-2014-x86_64:
+    docker:
+      - image: "quay.io/pypa/manylinux2014_x86_64"
+  manylinux_2_24-x86_64:
+    docker:
+      - image: "quay.io/pypa/manylinux_2_24_x86_64"
+
+# Define some custom commands that we can use as elements of `steps` in job
+# definitions.
+commands:
+  build-wheel:
+    description: "Build a Python wheel"
+
+    parameters:
+      python:
+        description: "The path to the Python executable to use"
+        type: "string"
+        default: "python3"
+
+      audit-wheel:
+        description: "A boolean controlling whether the auditwheel tool is used to fix up the wheel"
+        type: "boolean"
+
+    steps:
+      - "checkout"
+      - run:
+          # And the rest of it.
+          name: "Finish checking out source"
+          command: |
+            git submodule init
+            git submodule update
+            git fetch --tags
+
+      - run:
+          name: "Install Rust Build Toolchain"
+          command: |
+            curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs > /tmp/rustup-init
+            for i in $(seq 10); do
+                if sh /tmp/rustup-init -y --default-toolchain stable; then
+                    break
+                else
+                    sleep 1
+                fi
+            done
+            echo '. "$HOME"/.cargo/env' >> $BASH_ENV
+
+      - run:
+          name: "Get Python Build/Package Dependencies"
+          command: |
+            # Make sure we have a pip that's aware of Python version constraints
+            << parameters.python >> -m pip install --upgrade pip
+            # Pre-install these two setup_depends using pip so we don't have
+            # to rely on whatever resolution logic setuptools would apply.
+            << parameters.python >> -m pip install --upgrade milksnake setuptools_scm
+            # And get these so we can build, fix, and upload a wheel.
+            << parameters.python >> -m pip install build auditwheel twine
+
+      - run:
+          name: "Build Packages"
+          command: |
+            << parameters.python >> -m build --sdist --wheel
+
+      - when:
+          condition: << parameters.audit-wheel >>
+          steps:
+            - run:
+                name: "Audix / Fix Wheel"
+                command: |
+                  # Since both macOS and Linux jobs re-use this step, make
+                  # sure we only try to use auditwheel on the appropriate
+                  # platform.  That is, only on Linux.
+                  << parameters.python >> -m auditwheel repair dist/python_challenge_bypass_ristretto*.whl
+
+                  # Get rid of the original wheel.
+                  rm dist/python_challenge_bypass_ristretto*.whl
+
+                  # Move the fixed wheel to the original location for
+                  # consistency with the non-manylinux case.
+                  mv wheelhouse/python_challenge_bypass_ristretto*.whl ./dist/
+
+      - run:
+          name: "Upload Wheel"
+          environment:
+            # PyPI authentication configuration for twine so we can upload
+            # packages.  TWINE_PASSWORD is set in the CircleCI private
+            # configuration section.  In the CircleCI web app:
+            #
+            #    Project Settings ->
+            #    Environment Variables ->
+            #    Add Environment Variable ->
+            #    Name: TWINE_PASSWORD
+            #    Value: <a token issued by PyPI>
+            #
+            # The PyPI token is issued in the PyPI web app:
+            #
+            #    Manage ->
+            #    Settings ->
+            #    Create a token for ... ->
+            #    Permissions: Upload
+            #    Scope: Project: python-challenge-bypass-ristretto
+            TWINE_USERNAME: "__token__"
+
+          command: |
+            if [[ "$CIRCLE_TAG" == v* ]]; then
+              # We're building a release tag so we should probably really
+              # release it!
+              repo="pypi"
+            else
+              # We're building anything else.  Exercise as much of the release
+              # code as possible - but send it to the "test" package index,
+              # not the "real" one.
+              repo="testpypi"
+              TWINE_PASSWORD="$TWINE_TESTPYPI_PASSWORD"
+            fi
+            << parameters.python >> -m twine upload --repository $repo \
+              dist/python_challenge_bypass_ristretto*.whl \
+              dist/python-challenge-bypass-ristretto*.tar.gz
+
+# Define the actual jobs that will be available to run in a workflow.
+jobs:
+
+  # Build a manylinux wheel.
+  package-manylinux:
+    parameters:
+      executor:
+        # note the name comes from the `executors` section above
+        description: "the name of the executor to use to run this job"
+        type: "executor"
+
+      pre-command:
+        description: |
+          a command to run first which resolves any inconsistencies between
+          the chosen executor and the requirements of this job
+        type: "string"
+        default: ""
+
+      python:
+        description: "the path to the Python executable to use"
+        type: "string"
+
+
+    executor: "<< parameters.executor >>"
+
+    steps:
+      - run:
+          name: "Prepare Execution Environment"
+          command: |
+            << parameters.pre-command >>
+
+      - "build-wheel":
+          python: "<< parameters.python >>"
+          audit-wheel: true
+
+  package-macos:
+    parameters:
+      xcode-version:
+        type: "string"
+
+    macos:
+      xcode: "<< parameters.xcode-version >>"
+
+    steps:
+      - "build-wheel":
+          audit-wheel: false
+
+
+  nix-template: &NIX_TEMPLATE
+    docker:
+      # Run in a highly Nix-capable environment.
+      - image: "nixos/nix:2.9.2"
+
+    environment:
+      # Let us use features marked "experimental".  For example, most/all of
+      # the `nix <subcommand>` forms.
+      NIX_CONFIG: "experimental-features = nix-command flakes"
+
+      # Pin a NixOS 21.11 revision.  flake evaluation is pure by default so we
+      # don't have to worry about supplying it with a nixpkgs.  A few things
+      # need to work before we get that far though.  This pin is for those
+      # things.  This pin has no particular bearing on what version of our
+      # dependencies we are testing against, what version of Python we
+      # support, etc.  It is part of CI infrastructure.
+      NIXPKGS: "https://github.com/NixOS/nixpkgs/archive/28abc4e43a24d28729509e2d83f5c4f3b3418189.tar.gz"
+
+      # CACHIX_AUTH_TOKEN is manually set in the CircleCI web UI and allows us
+      # to push to CACHIX_NAME.
+      CACHIX_NAME: "privatestorage-opensource"
+
+    steps:
+      - run: &SETUP_CACHIX
+          name: "Set up Cachix"
+          command: |
+            # Install cachix, the Nix-friendly caching tool.
+            nix-env -f $NIXPKGS -iA cachix bash
+            # Activate it for "binary substitution".  This sets up
+            # configuration that lets Nix download something from the cache
+            # instead of building it locally, if possible.
+            cachix use "${CACHIX_NAME}"
+
+  build-native:
+    <<: *NIX_TEMPLATE
+
+    parameters:
+      python-version:
+        type: "string"
+
+    steps:
+      - run:
+          <<: *SETUP_CACHIX
+
+      # Get *our* source code.
+      - "checkout"
+
+      - run:
+          name: "Build"
+          command: |
+            cachix watch-exec "${CACHIX_NAME}" -- \
+              nix build ".#<< parameters.python-version >>-challenge-bypass-ristretto"
+
+  build-aarch64-android:
+    <<: *NIX_TEMPLATE
+
+    steps:
+      - run:
+          <<: *SETUP_CACHIX
+
+      # Get *our* source code.
+      - "checkout"
+
+      - run:
+          name: "Cross-Build"
+          command: |
+            cachix watch-exec "${CACHIX_NAME}" -- \
+              nix build '.#pkgsCross.aarch64-android.libchallenge_bypass_ristretto_ffi'
+
+  check:
+    <<: *NIX_TEMPLATE
+
+    steps:
+      - run:
+          <<: *SETUP_CACHIX
+
+      # Get *our* source code.
+      - "checkout"
+
+      - run:
+          name: "Check"
+          command: |
+            cachix watch-exec "${CACHIX_NAME}" -- \
+              nix flake check
+
+
+workflows:
+  version: 2
+  all-tests:
+    jobs:
+      - "check"
+      - "build-aarch64-android"
+      - "build-native":
+          matrix:
+            parameters:
+              python-version:
+                - "python38"
+                - "python39"
+                - "python310"
+
+      - "package-manylinux":
+          name: "package-manylinux-2014_x86_64"
+          executor: "manylinux-2014-x86_64"
+          # The image this executor uses comes with no ssh client.  CircleCI
+          # rewrites our git configuration to fetch sources over ssh.  Then it
+          # fails if we don't have any ssh client.
+          pre-command: "yum install -y openssh-clients"
+          python: "/opt/python/cp37-cp37m/bin/python"
+      - "package-manylinux":
+          name: "package-manylinux_2_24-x86_64"
+          executor: "manylinux_2_24-x86_64"
+          # Similar to the manylinux-2014_x86_64 case.
+          pre-command: "apt-get update -y && apt-get install -y openssh-client"
+          python: "/opt/python/cp37-cp37m/bin/python"
+
+      - "package-macos":
+          matrix:
+            parameters:
+              # https://circleci.com/docs/2.0/testing-ios/#supported-xcode-versions
+              xcode-version:
+                # Latest macOS 10.15.x
+                - "11.7.0"
+                # Latest macOS 11.x
+                - "13.2.1"
+                # A macOS 12.x
+                - "14.1.0"
+          filters:
+            # CircleCI does not run workflows for tags unless you explicitly
+            # specify tag filters. Additionally, if a job requires any other
+            # jobs (directly or indirectly), you must specify tag filters for
+            # those jobs.
+            # https://circleci.com/docs/2.0/configuration-reference/?section=configuration#tags
+            branches:
+              # Keep running on all branches
+              only: "/.*/"
+            tags:
+              # Run on all release tags too
+              only: "/v.*/"

@@ -1,0 +1,6 @@
+cffi
+attrs
+
+[tests]
+testtools
+hypothesis
