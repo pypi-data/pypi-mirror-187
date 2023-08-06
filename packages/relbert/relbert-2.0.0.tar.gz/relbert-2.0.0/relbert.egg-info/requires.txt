@@ -1,0 +1,17 @@
+torch
+tqdm
+pandas
+numpy==1.23.5
+transformers<=4.21.2
+huggingface-hub<=0.9.1
+sentencepiece
+scikit-learn
+datasets
+PySocks!=1.5.7
+charset-normalizer<3.0,>=2.0
+
+[visualization]
+umap-learn
+hdbscan
+seaborn
+gensim==3.8.1
