@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+consolec/__init__.py
+consolec/asynchat.py
+consolec/color.py
+consolec/table.py
+consolec.egg-info/PKG-INFO
+consolec.egg-info/SOURCES.txt
+consolec.egg-info/dependency_links.txt
+consolec.egg-info/requires.txt
+consolec.egg-info/top_level.txt

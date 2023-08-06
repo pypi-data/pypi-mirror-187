@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: consolec
+Version: 0.0.1
+Summary: Python module for work in consoleTwo It 2022
+Home-page: https://github.com/TwoIt202/Consolec
+Download-URL: https://github.com/TwoIt202/Consolec/raw/6d7c5fe31c881bf59619e9e2879cbf83fb4504e4/consolec.zip
+Author: two-it2022
+Author-email: kodland.group@gmail.com
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+
+
+Consolec
+Created for create tables, colors and more in console.
