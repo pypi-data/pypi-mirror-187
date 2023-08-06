@@ -1,0 +1,50 @@
+sourceUrl = "git@github.com:nharada1/moonshine.git"
+destinationUrl = "git@github.com:moonshinelabs-ai/image_tiles.git"
+
+core.workflow(
+    name = "export",
+    origin = git.origin(
+        url = sourceUrl,
+        ref = "main",
+    ),
+    destination = git.destination(
+        url = destinationUrl,
+        fetch = "main",
+        push = "main",
+    ),
+
+    authoring = authoring.pass_thru("Moonshine Gardener <image_tiles@moonshinelabs.ai>"),
+    
+    # Copy everything but don't include this file itself.
+    origin_files = glob(["src/public/image_tiles/**"], exclude = ["src/public/image_tiles/copy.bara.sky"]),
+
+    transformations = [
+	    core.move("src/public/image_tiles", ""),
+    ],
+)
+
+core.workflow(
+    name = "import",
+    origin = git.origin(
+        url = destinationUrl,
+        ref = "main",
+    ),
+    destination = git.github_pr_destination(
+        url = sourceUrl,
+        destination_ref = "main",
+        pr_branch = "copybara_branch",
+        title = "Copybara Import",
+        body = "",
+        integrates = [],
+    ),
+
+    authoring = authoring.pass_thru("Moonshine Gardener <image_tiles@moonshinelabs.ai>"),
+
+    origin_files = glob(["**"]),
+
+    destination_files = glob(["src/public/image_tiles/**"], exclude=["src/public/image_tiles/copy.bara.sky"]),
+
+    transformations = [
+	    core.move("", "src/public/image_tiles"),
+    ],
+)
