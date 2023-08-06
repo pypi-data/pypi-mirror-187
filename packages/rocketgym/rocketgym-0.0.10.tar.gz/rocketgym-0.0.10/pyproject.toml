@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "rocketgym"
+version = "0.0.10"
+authors = [
+  { name="Franciszek Szewczyk", email="szewczyk.franciszek02@gmail.com" },
+]
+description = "OpenAI Gym for vertical rocket landing. Features full 2D physics engine and works like any other gym."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "gym==0.26.2",
+    "matplotlib==3.6.0",
+    "numpy==1.23.3",
+    "opencv_python==4.6.0.66",
+    "pandas==1.5.0"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/fszewczyk/rocket-landing-rl"
+"Bug Tracker" = "https://github.com/fszewczyk/rocket-landing-rl/issues"
