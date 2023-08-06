@@ -1,0 +1,15 @@
+jarn.viewdoc-2.6-py3.9-nspkg.pth,sha256=w3BJdA4LzVJcO1L8MWmDNsAD34gs7MnmCDx01y41x7Q,529
+jarn/viewdoc/__init__.py,sha256=UbUkt7Wa2Wklmxgga1-cuU0JowH371_KBDDO45MLnXI,5
+jarn/viewdoc/__main__.py,sha256=X2QTMcS3hvAjGpSAunRigXF_-TuY9cAO5Gct3X6XwJA,155
+jarn/viewdoc/colors.py,sha256=O6pLu0Ow4OGG0bR_cQAdbqh2BYqCLwPfSu1PWgOrxCE,544
+jarn/viewdoc/configparser.py,sha256=Ki8TxMG49lgs1VyWP89QbRuh9H436UzARaKC98PK3T4,6696
+jarn/viewdoc/setup.py,sha256=KMlLOUaPHAe6rOBKx4rukxW3u6GPeBgD-cXaoU9hhrs,1544
+jarn/viewdoc/testing.py,sha256=_axpsBcFf6eFIF6_2fWHB5ZhnjqgLPjD2rst8BFjGtk,1845
+jarn/viewdoc/viewdoc.py,sha256=q_haXHd73zF_RlY1t-SlsuH55W9pkh-etT1upCXDfJQ,19856
+jarn.viewdoc-2.6.dist-info/LICENSE,sha256=uQ0mcWzcZv0CopT3qIM_I_jaolE4I13ORzAsitdnNrg,1288
+jarn.viewdoc-2.6.dist-info/METADATA,sha256=qyCUHYhkmhF-VFHHc3GFH_Ac_upyJcJtfhEb4wVHUw8,5621
+jarn.viewdoc-2.6.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+jarn.viewdoc-2.6.dist-info/entry_points.txt,sha256=UKQ5JJrifOUZ1yZbZ7-6Zr5jS4WHXmTh2OEuLmm04LA,54
+jarn.viewdoc-2.6.dist-info/namespace_packages.txt,sha256=8QQRwpDzqT9FldIk1-TqA4N8Sg22mKJe4Ca-Oukhtxw,5
+jarn.viewdoc-2.6.dist-info/top_level.txt,sha256=8QQRwpDzqT9FldIk1-TqA4N8Sg22mKJe4Ca-Oukhtxw,5
+jarn.viewdoc-2.6.dist-info/RECORD,,
