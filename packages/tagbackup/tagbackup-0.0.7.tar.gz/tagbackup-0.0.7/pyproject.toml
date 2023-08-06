@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "tagbackup"
+version = "0.0.7"
+description = ""
+authors = ["TagBackup <hello@tagbackup.com>"]
+readme = "README.md"
+exclude = ["tagbackup/development.py", "tagbackup/README.md"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pyyaml = "^6.0"
+appdirs = "^1.4.4"
+boto3 = "^1.26.48"
+humanize = "^4.4.0"
+py-machineid = "^0.2.1"
+requests = "^2.28.1"
+
+[tool.poetry.scripts]
+tagbackup = "tagbackup.main:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
