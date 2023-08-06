@@ -1,0 +1,9 @@
+torch>=1.8.1
+transformers==4.23.1
+appdirs
+overrides==3.1.0
+jsonpickle
+filelock
+h5py
+spacy
+nltk
