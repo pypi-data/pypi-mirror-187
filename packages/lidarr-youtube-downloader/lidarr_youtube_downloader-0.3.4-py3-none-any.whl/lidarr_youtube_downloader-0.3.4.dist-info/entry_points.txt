@@ -1,0 +1,3 @@
+[console_scripts]
+gep=lidarr_youtube_downloader.cli:app
+
