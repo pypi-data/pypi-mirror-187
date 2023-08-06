@@ -1,0 +1,11 @@
+coderfastapi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coderfastapi/handlers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coderfastapi/handlers/version.py,sha256=qCwR4h1SaYvBpV_PuvfLy4w1oBlX4M24Q9ylui5GSc4,334
+coderfastapi/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coderfastapi/lib/validation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coderfastapi/lib/validation/schemas/__init__.py,sha256=GjsQa3rEY25axs9c46J-K21nxXxdIk2CuvtjM5VV2rc,78
+coderfastapi/lib/validation/schemas/version.py,sha256=WplgVRvCaJ9t8XIq7pP6_mF3Q48iWGvncfaYruBRO10,82
+coderfastapi-0.5.0.dist-info/METADATA,sha256=PmqijS2TrznLEwcmSl9qqKHS_QeC5gyT-wUJSiSEzgE,549
+coderfastapi-0.5.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+coderfastapi-0.5.0.dist-info/top_level.txt,sha256=j6FlVhpaDnILnxBRbFnQU3IARL9riELhOhOkEq9_hZc,13
+coderfastapi-0.5.0.dist-info/RECORD,,
