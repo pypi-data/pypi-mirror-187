@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: dicom-anonymiser
+Version: 0.2.2
+Summary: dicom_anonymiser anonymises dicom files and folders with user customisable tags.
+Home-page: https://github.com/ericpace/dicom_anonymiser
+Author: Eric Pace
+Author-email: ericpace@pm.me
+License: GNU GPLv3
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.8
+License-File: LICENSE.txt
+Requires-Dist: pydicom
+
+dicom_anonymiser anonymises dicom files and folders with user customisable tags.
