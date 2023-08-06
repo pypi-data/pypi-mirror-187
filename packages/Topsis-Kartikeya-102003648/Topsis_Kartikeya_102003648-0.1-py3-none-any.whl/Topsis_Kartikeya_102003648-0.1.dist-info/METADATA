@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: Topsis-Kartikeya-102003648
+Version: 0.1
+Summary: Python program using TOPSIS to calculate ranks based on data, weights and impacts
+Author: Kartikeya Kumar
+Author-email: kartikeyakumar25@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
