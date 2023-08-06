@@ -1,0 +1,9 @@
+timevec/__init__.py,sha256=gsDCnX633Yggr-KIsHSejZJ7EmC6vu06ZZVmiWGDhh8,663
+timevec/_version.py,sha256=iyxbHkgS1yJGtIeySh-gmqzwOuLbVveAe9CoQYWfZ0c,160
+timevec/builtin_math.py,sha256=g7Q4ZngSTx72W5JqedJIdb-FzqZli_VIFUrDZActuaI,2267
+timevec/numpy.py,sha256=_2afa8rLRgHLJ1ophwvXyTrhHQpsatxyPdCTryjrQhg,2565
+timevec-0.1.0.dist-info/LICENSE,sha256=ua-3l1OUSkswfaHooCJ70gmwNgFGpOrb5Z-EDwTWReg,1454
+timevec-0.1.0.dist-info/METADATA,sha256=zO23fwACCxzKRwOPbFW9R_jGNBLXNDXOxuDM_Yythvk,3183
+timevec-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+timevec-0.1.0.dist-info/top_level.txt,sha256=M6GUumHlRuV5xJJAqSnJ674kZroA77KY-uPdfzV7SBY,8
+timevec-0.1.0.dist-info/RECORD,,
