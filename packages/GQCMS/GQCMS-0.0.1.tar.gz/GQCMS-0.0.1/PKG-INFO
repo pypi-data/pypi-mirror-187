@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: GQCMS
+Version: 0.0.1
+Summary: A computational chemistry package
+Home-page: UNKNOWN
+Author: ruvdsti and xwieme
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >= 3.6
