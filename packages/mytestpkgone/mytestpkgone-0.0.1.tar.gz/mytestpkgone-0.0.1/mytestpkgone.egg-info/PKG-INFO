@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: mytestpkgone
+Version: 0.0.1
+Summary: Streaming video data via networks
+Author: NeuralNine (Florian Dedov)
+Author-email: <mail@neuralnine.com>
+License-File: Licence.txt

@@ -1,0 +1,7 @@
+Licence.txt
+setup.py
+mytestpkgone/__init__.py
+mytestpkgone.egg-info/PKG-INFO
+mytestpkgone.egg-info/SOURCES.txt
+mytestpkgone.egg-info/dependency_links.txt
+mytestpkgone.egg-info/top_level.txt
