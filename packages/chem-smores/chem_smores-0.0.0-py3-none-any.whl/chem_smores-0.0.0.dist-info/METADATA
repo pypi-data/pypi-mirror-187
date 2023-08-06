@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: chem-smores
+Version: 0.0.0
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: rdkit
+Requires-Dist: stk
+Requires-Dist: ase
+Requires-Dist: dbstep
+Requires-Dist: streusel
+Requires-Dist: morfeus-ml
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-lazy-fixture ; extra == 'dev'
+Requires-Dist: types-pytest-lazy-fixture ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: furo ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: pip-tools ; extra == 'dev'
+Requires-Dist: scikit-learn ; extra == 'dev'
+Requires-Dist: types-Pygments ; extra == 'dev'
+
