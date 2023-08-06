@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: topsis_aryamank_102003099
+Version: 0.1
+Summary: This package is implimentation of multi-criteria decision analysis using topsis
+Home-page: https://github.com/AryamanKalia/topsis_aryamank_102003099
+Download-URL: https://github.com/AryamanKalia/topsis_aryamank_102003099/archive/refs/tags/v_0.1.tar.gz
+Author: Aryaman Kalia
+Author-email: akalia1_be20@thapar.edu
+License: MIT
+Keywords: topsis
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE.txt
+
+UNKNOWN
+
