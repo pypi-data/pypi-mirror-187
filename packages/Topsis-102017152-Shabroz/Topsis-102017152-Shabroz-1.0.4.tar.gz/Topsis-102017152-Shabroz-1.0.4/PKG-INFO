@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: Topsis-102017152-Shabroz
+Version: 1.0.4
+Summary: A package -> Calculates Topsis Score and Rank them accordingly
+Author: Shabroz Kaur
+Author-email: skaur2_be20@thapar.edu
+License: MIT
+Keywords: python package ShabrozKaur
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+#TOPSIS
+
+Submitted By: Shabroz Kaur - 102017152.
+
+Type: Package.
+
+Title: TOPSIS method for multiple-criteria decision making (MCDM).
+
+Version: 1.0.4.
+
+Date: 2023-01-22.
+
+Author: Shabroz Kaur.
+
+Maintainer: Shabroz Kaur skaur2_be20@thapar.edu.
+
+Description: Evaluation of alternatives based on multiple criteria using TOPSIS method..
