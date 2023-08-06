@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: imsosorry
+Version: 1.0.0
+Summary: Sometimes it can be necessary to call upon the ancient arts...
+Author-email: Bradley Reynolds <bradley.reynolds@darbia.dev>
+License: MIT
+Project-URL: repository, https://github.com/letsbuilda/imsosorry/
+Project-URL: documentation, https://projects.letsbuilda.dev/imsosorry/
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: tests
+Provides-Extra: docs
+License-File: LICENSE
+
+# I'm so sorry
+
+Sometimes it can be necessary to call upon the ancient arts...
