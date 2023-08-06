@@ -1,0 +1,11 @@
+starbear/__init__.py,sha256=dBsfttChOZQhvGycQAPJehm4Y4Acwm--FaueEWWsyhY,95
+starbear/base-lib.js,sha256=a1T5mWtKGVXaRgUyRI1T2_5Jl8F_o05DVWtfHx_OrJ0,5039
+starbear/base-template.html,sha256=s32xmz3JGNB0tQaJbcmCkTLxHFZO_RhNwVCFKmkftPM,552
+starbear/page.py,sha256=aeKweN8MP8FJcRqwhibI-kp75imYXqUvtYsRpxBY8yM,4709
+starbear/repr.py,sha256=4X_CFTUCvdIoocVyzY1A2WOmg7anTslEfkNVvhJ_tyc,6759
+starbear/serve.py,sha256=F7-u9b86nF2G-ZSgFCk7SCC9BthghZ6zMFrE9fttUnM,8976
+starbear/utils.py,sha256=ymnuxXRpQENraZeie0-CJorwAj5tAZg64AmuBDU4fW8,2525
+starbear/version.py,sha256=zWVHf3DqIS6sYe780DU38lmTH_EXQUcBK32nOsBO7ao,18
+starbear-0.0.2.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+starbear-0.0.2.dist-info/METADATA,sha256=iLV3PCNNlpCd1-8AZ18E_uvq1nlUYnKrYop_kxyt_1A,628
+starbear-0.0.2.dist-info/RECORD,,
