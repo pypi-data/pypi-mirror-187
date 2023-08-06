@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pigauth
+Version: 0.3.0
+Summary: Authorization Helper for Python projects
+Home-page: https://github.com/ivangeorgiev/pigauth
+Author: Ivan Georgiev
+Author-email: ivan.georgiev@gmail.com
+License: BSD license
+Keywords: pigauth
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: Click (>=7.0)
+
+<_io.TextIOWrapper name='README.rst' mode='r' encoding='cp1252'>
+
