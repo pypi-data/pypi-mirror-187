@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "healthcheck_pinger"
+version = "0.0.4"
+authors = [{ name = "Gregorek85", email = "grerad@gmail.com" }]
+description = "easily ping HealthCheck server"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Gregorek85/HealthCheck_Pinger"
+"Bug Tracker" = "https://github.com/Gregorek85/HealthCheck_Pinger/issues"
