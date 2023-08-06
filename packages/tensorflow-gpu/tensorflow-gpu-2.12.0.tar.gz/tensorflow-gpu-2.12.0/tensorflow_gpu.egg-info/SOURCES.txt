@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+tensorflow_gpu.egg-info/PKG-INFO
+tensorflow_gpu.egg-info/SOURCES.txt
+tensorflow_gpu.egg-info/dependency_links.txt
+tensorflow_gpu.egg-info/requires.txt
+tensorflow_gpu.egg-info/top_level.txt
