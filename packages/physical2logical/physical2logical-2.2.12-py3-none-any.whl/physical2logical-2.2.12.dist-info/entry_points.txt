@@ -1,0 +1,3 @@
+[console_scripts]
+css2logical = physical2logical.__main__:cli
+physical2logical = physical2logical.__main__:cli
