@@ -1,0 +1,3 @@
+[console_scripts]
+basic_repo_template=basic_repo_template.__main__:main
+

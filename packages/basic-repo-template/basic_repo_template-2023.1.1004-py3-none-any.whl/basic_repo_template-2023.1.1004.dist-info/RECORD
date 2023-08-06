@@ -1,0 +1,12 @@
+basic_repo_template/__init__.py,sha256=EweBt4wAR2WrN5jXRL6hVZEUkYVLch4THcuAJ-6tR34,974
+basic_repo_template/__main__.py,sha256=BJ0uFokW2vnjV0Jzo0kC7Sq5yFD13jHUcVr58aDXI2U,346
+basic_repo_template/basic_repo_template.py,sha256=Gwf-N8Gl_RKL6iIwVTJdO46cCkzP02OoUGYe09okBJg,80
+basic_repo_template/test_test.py,sha256=uSHUk4SOvlB6hXEwdbkvvIEpShChg4mKKQZ1ffez_Fo,134
+basic_repo_template/system/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+basic_repo_template/system/default_paths.py,sha256=IEOEIN7rOSCzEutBdSMmps6yzudu9wrqW0xs5MbWXws,1431
+basic_repo_template/system/logging_configuration.py,sha256=A0xVIM4EflfiFRRy_pbhUeKiBIk-HXrIb6dQegC2lbI,1406
+basic_repo_template-2023.1.1004.dist-info/entry_points.txt,sha256=GPtNtCPK0ElHOzIvRYmvu4LQiA4zyZJTFDXSIgVlY54,73
+basic_repo_template-2023.1.1004.dist-info/LICENSE,sha256=wdNCrN4q2xxvcVXbrf5BFMAR3rQrDPDwVUOf-xAw8C4,1067
+basic_repo_template-2023.1.1004.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+basic_repo_template-2023.1.1004.dist-info/METADATA,sha256=FwYzt0gEhLY67wJOz7ZG6ZxEM3v5jbk5vqW4VBs_UwY,1576
+basic_repo_template-2023.1.1004.dist-info/RECORD,,
