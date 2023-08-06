@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+constancy/__init__.py
+constancy/core.py
+constancy.egg-info/PKG-INFO
+constancy.egg-info/SOURCES.txt
+constancy.egg-info/dependency_links.txt
+constancy.egg-info/requires.txt
+constancy.egg-info/top_level.txt
