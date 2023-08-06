@@ -1,0 +1,9 @@
+LICENSE
+pyproject.toml
+setup.cfg
+src/topsis/__init__.py
+src/topsis/__main__.py
+src/topsis_Akshit_102183035.egg-info/PKG-INFO
+src/topsis_Akshit_102183035.egg-info/SOURCES.txt
+src/topsis_Akshit_102183035.egg-info/dependency_links.txt
+src/topsis_Akshit_102183035.egg-info/top_level.txt
