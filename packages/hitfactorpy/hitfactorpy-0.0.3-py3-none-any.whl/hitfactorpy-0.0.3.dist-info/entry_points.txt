@@ -1,0 +1,3 @@
+[console_scripts]
+hitfactorpy=hitfactorpy.cli:cli
+
