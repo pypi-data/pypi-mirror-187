@@ -1,0 +1,8 @@
+nbdev<2
+numpy
+fisx
+mendeleev
+scipy
+pandas
+matplotlib
+seaborn
