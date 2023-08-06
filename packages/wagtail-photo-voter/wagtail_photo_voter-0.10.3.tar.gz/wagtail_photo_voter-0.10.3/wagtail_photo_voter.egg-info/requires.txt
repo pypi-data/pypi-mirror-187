@@ -1,0 +1,4 @@
+Django>=4.1
+wagtail>=4.1
+django-bootstrap4
+django-exiffield
