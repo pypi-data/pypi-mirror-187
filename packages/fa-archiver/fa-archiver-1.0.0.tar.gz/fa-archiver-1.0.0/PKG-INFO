@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: fa-archiver
+Version: 1.0.0
+Summary: Python 3 version of FA archiver.
+Home-page: https://github.com/DiamondLightSource/fa-archiver-py3
+Author: Diamond Light Source - High Level Applications Team
+Author-email: diamhighlvlapps@diamond.ac.uk
+License: Apache 2.0
+License-File: LICENSE

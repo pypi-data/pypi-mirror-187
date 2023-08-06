@@ -1,0 +1,8 @@
+cothread>=2.15
+pygelf
+scipy
+numpy
+PyQt5
+PythonQwt
+guidata
+guiqwt

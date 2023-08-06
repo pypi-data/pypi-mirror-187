@@ -1,0 +1,3 @@
+[console_scripts]
+fa-audio = fa.audio.audio:main
+fa_viewer = fa.viewer.fa_viewer:main
