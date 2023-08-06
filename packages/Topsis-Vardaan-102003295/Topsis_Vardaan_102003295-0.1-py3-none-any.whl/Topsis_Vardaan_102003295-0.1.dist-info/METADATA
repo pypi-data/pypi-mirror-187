@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: Topsis-Vardaan-102003295
+Version: 0.1
+Summary: This Python package is to be used for the implementation of Technique for Order Preference by Similarity to Ideal Solution (TOPSIS) 
+Author: Vardaan Khosla
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+UNKNOWN
+
