@@ -1,0 +1,3 @@
+[console_scripts]
+typer-cloup=typer_cloup_cli.main:main
+
