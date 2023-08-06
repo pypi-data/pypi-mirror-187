@@ -1,0 +1,10 @@
+tensorflowjs>=1.5.2
+
+[:platform_machine == "arm64"]
+tensorflow-metal>=2.3
+
+[:platform_system == "Darwin"]
+tensorflow-macos>=2.3
+
+[test]
+Pillow>=8.0.0
