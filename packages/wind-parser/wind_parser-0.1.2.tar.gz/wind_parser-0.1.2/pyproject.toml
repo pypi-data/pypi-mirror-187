@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "wind-parser"
+version = "0.1.2"
+description = "Python wind parser is a parser used to retrieve arguments for command line interfaces and turn them into python dictionary"
+authors = ["Anthony Rafidison <benjaraf006@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+packages = [{include = "wind_parser"}]
+repository = "https://github.com/anthonyraf/wind-parser"
+keywords = ["cli", "parser"]
+
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
