@@ -1,0 +1,6 @@
+include .editorconfig
+include CHANGELOG.md
+recursive-include nix *.nix *.sh
+recursive-include requirements *.txt
+include tox.ini
+recursive-include unit_tests *.py

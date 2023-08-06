@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools >= 61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "parse_stages"
+description = "Parse an expression for selecting stages and tags"
+readme = "README.md"
+requires-python = ">= 3.7"
+dynamic = ["dependencies", "version"]
+
+[[project.authors]]
+name = "Peter Pentchev"
+email = "roam@ringlet.net"
+
+[project.urls]
+Homepage = "https://gitlab.com/ppentchev/parse-stages"
+Changes = "https://gitlab.com/ppentchev/parse-stages/-/blob/main/CHANGELOG.md"
+"Issue Tracker" = "https://gitlab.com/ppentchev/parse-stages/-/issues"
+"Source Code" = "https://gitlab.com/ppentchev/parse-stages"
+
+[tool.setuptools]
+zip-safe = true
+package-dir = {"" = "src"}
+packages = ["parse_stages"]
+
+[tool.setuptools.package-data]
+parse_stages = ["py.typed"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = "requirements/install.txt"}
+version = {attr = "parse_stages.defs.VERSION"}
+
+[tool.black]
+line-length = 100
+
+[tool.mypy]
+strict = true
+python_version = "3.7"
+
+[tool.ruff]
+line-length = 100
+target-version = "py37"
