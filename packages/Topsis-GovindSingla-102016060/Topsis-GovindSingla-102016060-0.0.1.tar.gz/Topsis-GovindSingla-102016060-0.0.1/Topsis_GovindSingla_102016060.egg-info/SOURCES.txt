@@ -1,0 +1,8 @@
+setup.py
+102016060/102016060-topsis.py
+102016060/__init__.py
+Topsis_GovindSingla_102016060.egg-info/PKG-INFO
+Topsis_GovindSingla_102016060.egg-info/SOURCES.txt
+Topsis_GovindSingla_102016060.egg-info/dependency_links.txt
+Topsis_GovindSingla_102016060.egg-info/requires.txt
+Topsis_GovindSingla_102016060.egg-info/top_level.txt
