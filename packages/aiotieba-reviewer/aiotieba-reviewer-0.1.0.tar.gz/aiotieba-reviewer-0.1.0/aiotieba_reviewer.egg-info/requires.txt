@@ -1,0 +1,2 @@
+aiotieba[img,speedup]<4.0,>=2.10.3
+aiomysql<0.2,>=0.1.0
