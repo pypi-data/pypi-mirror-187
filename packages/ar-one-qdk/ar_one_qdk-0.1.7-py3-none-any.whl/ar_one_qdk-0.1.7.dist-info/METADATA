@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: ar-one-qdk
+Version: 0.1.7
+Author: PunchyArchy
+Author-email: ksmdrmvscthny@gmail.com
+License-File: LICENSE
+Requires-Dist: qodex-dk (==0.27)
+
+QDK для взаимодействия с WServer.
