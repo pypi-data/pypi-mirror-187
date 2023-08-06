@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rabbitmq_consume"
+version = "1.0.0"
+description = "Consumes XML messages from a RabbitMQ queue using a user defined class."
+readme = "README.md"
+authors = [
+    { "name"="Simon Patton", "email" ="sjpatton@lbl.gov"}
+]
+license = { text = "BSD-3-Clause-LBNL" }
+classifiers=[  # Optional
+    "Development Status :: 1 - Planning ",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering",
+    "Programming Language :: Python :: 3.8",
+]
+keywords=["rabbitmq", "rabbitmq_consume"]  # Optional
+dependencies = [ # Optional
+    "pika >= 1.3"
+]
+requires-python = ">=3.10, <4"
+
+[project.scripts]
+rmq-consume = "rabbitmq_consume.rmq_consume:main"
+rmq-push = "rabbitmq_consume.rmq_push:main"
+
+# Note the quotes around drip.rmq_consume.consumption in order to escape the dot.
+[project.entry-points."rmq_consume.consumption"]
+null_consumption = "rabbitmq_consume:NullConsumption"
+print_consumption = "rabbitmq_consume:PrintConsumption"
+
+[tool.setuptools.packages.find]
+# All the following settings are optional:
+where = ["src/main/python/consumer_pkg"]  # ["."] by default
+# include = # ["*"] by default
+# exclude = # [] by default
+
+[tool.setuptools]
+py-modules = ["rmq_consume"]
+
+[tool.setuptools.package-data]
+mypkg = ["py.typed"]
