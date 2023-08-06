@@ -1,0 +1,10 @@
+cubat/__init__.py,sha256=JMD28FXYHc_TM03visyUSd3UA9FZAaJMRStnfZoq50Y,21
+cubat/__main__.py,sha256=OxkpRhslpbR_cVjP0RCquKr1oJmKncR34BFLyQNUm1I,32
+cubat/cli.py,sha256=J77zzgrRA2nIykUeUJZeNzqnBp8AMGVNkWIMN2Jyhl0,6071
+cubat/core.py,sha256=n_Y9irbpRRW6iZKp89ssxWyA2mJw_OmDJKaABJNNbpE,32855
+cubat-0.1.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+cubat-0.1.5.dist-info/METADATA,sha256=z9fp8MhEmO76mUwZIQRWlzGKmSk2EPfiycTPRZdglCU,414
+cubat-0.1.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cubat-0.1.5.dist-info/entry_points.txt,sha256=T4ahRUESSd7lr2Qs4GjZpNiR7Z4_tz1812MRHdfztWg,45
+cubat-0.1.5.dist-info/top_level.txt,sha256=MhK0Wdlv_S4qhslUrMa7qdcRhDHyPgrGVOdLFNwNbGI,6
+cubat-0.1.5.dist-info/RECORD,,
