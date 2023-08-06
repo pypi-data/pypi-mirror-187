@@ -1,0 +1,3 @@
+[console_scripts]
+gluetube = gluetube.gluetube:Gluetube
+gt = gluetube.gluetube:Gluetube
