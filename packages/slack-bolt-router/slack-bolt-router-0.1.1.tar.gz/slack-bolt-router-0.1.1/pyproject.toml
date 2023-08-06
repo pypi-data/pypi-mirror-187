@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "slack-bolt-router"
+version = "0.1.1"
+description = "Slack Bolt Router"
+authors = ["Dmytro Hoi <code@dmytrohoi.com>"]
+license = "MIT"
+
+readme = "README.md"
+repository = "https://github.com/dmytrohoi/slack-bolt-router/"
+homepage = "https://dmytrohoi.github.io/slack-bolt-router/"
+
+keywords = [
+    "slack",
+    "slack-bolt",
+    "slack-bolt plugin",
+    "slack-bolt router",
+]
+
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Operating System :: OS Independent",
+    "Topic :: Communications",
+    "Topic :: Communications :: Chat",
+    "Topic :: Software Development",
+    "Topic :: Utilities",
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.11.1"
+slack-bolt = "^1.10.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
