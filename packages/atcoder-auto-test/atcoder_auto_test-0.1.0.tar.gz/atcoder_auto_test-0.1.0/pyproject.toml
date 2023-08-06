@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "atcoder_auto_test"
+version = "0.1.0"
+description = ""
+authors = ["Kaji Keisuke <kei.kyazikyazi@icloud.com>"]
+readme = "README.md"
+packages = [
+    { include = "atcoder_auto_test" },
+]
+
+[tool.poetry.dependencies]
+python = "3.8.*"
+pillow = "*"
+google-cloud-vision = "*"
+online-judge-tools = "*"
+numpy = "^1.24.1"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+isort = "*"
+flake8 = "*"
+mypy = "*"
+
+[tool.poetry.scripts]
+t = "atcoder_auto_test.main:test"
+s = "atcoder_auto_test.main:submit"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
