@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "visionai"
+version = "0.1.7"
+description = "Vision AI toolkit"
+authors = ["Harsh Murari <hmurari@visionify.ai>"]
+readme = "README.md"
+license = "GPL-3.0-only"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+typer = {extras = ["all"], version = "^0.7.0"}
+requests = "^2.28.2"
+pytest = "^7.2.1"
+
+[tool.poetry.scripts]
+visionai = "visionai.main:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
