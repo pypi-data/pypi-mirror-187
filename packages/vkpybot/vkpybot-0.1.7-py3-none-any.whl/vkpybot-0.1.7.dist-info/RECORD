@@ -1,0 +1,11 @@
+vkpybot/__init__.py,sha256=7JtlvIkz9_UywrETxLLNtTYQ8XEtSfNX7Z9cGhJ0jLU,176
+vkpybot/bot.py,sha256=fNda3O9T_FjGXNKgZTiNfnCbaQazQAp-A_iyx4xK7gA,14306
+vkpybot/events.py,sha256=sB1hMBfqDCjalpDKfvQfzgeP80ah7LNfP694uCJR-dI,6172
+vkpybot/servers.py,sha256=EQcUr0K9rCXUmuR6BYIG1xOZIw3DZi49C1-_J3O6oxU,5564
+vkpybot/sessions.py,sha256=vn4yprTCOn88U4XAbavSdFQiSRY2fW0U9G1Tazrkc_8,13500
+vkpybot/types.py,sha256=nvQbDqZHTvIdEJdTT-ctGEgKgT0hDwTBqVy2Fi2OAAo,2276
+vkpybot/utils.py,sha256=vxahD9aG0PqJgoUHg5UYbT0v9YxwLG0AogAyFuKqGWA,248
+vkpybot-0.1.7.dist-info/LICENSE.txt,sha256=oO50YGSwbQnKsHaBFuwmX9DUUmHUCHya0saYoHx6rA4,35803
+vkpybot-0.1.7.dist-info/METADATA,sha256=r9M0_gUz8iF7lqQReOb6VR_swhqt0kxIPq5HF2udJBs,3040
+vkpybot-0.1.7.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+vkpybot-0.1.7.dist-info/RECORD,,
