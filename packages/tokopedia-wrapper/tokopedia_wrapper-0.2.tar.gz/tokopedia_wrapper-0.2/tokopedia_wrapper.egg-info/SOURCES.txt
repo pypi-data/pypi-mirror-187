@@ -1,0 +1,11 @@
+README.md
+setup.py
+tokopedia_wrapper/__init__.py
+tokopedia_wrapper/base.py
+tokopedia_wrapper/product.py
+tokopedia_wrapper/query.py
+tokopedia_wrapper.egg-info/PKG-INFO
+tokopedia_wrapper.egg-info/SOURCES.txt
+tokopedia_wrapper.egg-info/dependency_links.txt
+tokopedia_wrapper.egg-info/not-zip-safe
+tokopedia_wrapper.egg-info/top_level.txt
