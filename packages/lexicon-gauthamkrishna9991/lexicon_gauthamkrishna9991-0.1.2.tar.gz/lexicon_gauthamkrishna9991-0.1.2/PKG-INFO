@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: lexicon-gauthamkrishna9991
+Version: 0.1.2
+Summary: A Verilog Project Management Tool
+Author: Goutham Krishna K V
+Author-email: gauthamkrishna9991@live.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: PyYAML (==5.4.1)
+Requires-Dist: blessed (>=1.19.1,<2.0.0)
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: inquirer (>=3.1.2,<4.0.0)
+Requires-Dist: six (==1.15.0)
+Requires-Dist: wcwidth (==0.2.5)
+Description-Content-Type: text/markdown
+
+# Lexicon
+
+This is a Verilog Project Manager.
+
+This documentation consists of different parts. To go to one click one of the following:
+
+- [`Project Specification`](Project/README.md)
+
+    This descrbes the project specification of the project-manager.
+
+## Installation
+
+For Install Instructions, Click [here](INSTALL.md)
+
+## License
+
+Copyright (c) 2021 Goutham Krishna K V
+
+All rights reserved, as per defined by [MIT License](../LICENSE)
+
