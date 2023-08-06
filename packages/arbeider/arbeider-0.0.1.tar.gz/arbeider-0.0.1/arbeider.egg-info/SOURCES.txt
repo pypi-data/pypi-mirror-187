@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+versioneer.py
+arbeider.egg-info/PKG-INFO
+arbeider.egg-info/SOURCES.txt
+arbeider.egg-info/dependency_links.txt
+arbeider.egg-info/top_level.txt
+arbeider.egg-info/zip-safe
+src/arbeider/_version.py
