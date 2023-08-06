@@ -1,0 +1,2 @@
+[aoc_cli.plugins]
+python = aoc_cli_python

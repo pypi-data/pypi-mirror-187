@@ -1,0 +1,14 @@
+aoc_cli_python/__init__.py,sha256=mOKnWKCPhX4Z5lCy9X6mH45k5iSGnYR5P4b1p1EJs_w,340
+aoc_cli_python/getter.py,sha256=K5FiRBiFg13zd6zc7gcs-PZn0CTyT5lteMyBW_df6Fw,880
+aoc_cli_python/initialiser.py,sha256=YZnlYf__9CIEXYnv4GqMHygxCwpQ3TWGRAReo_YNokc,1687
+aoc_cli_python/language.py,sha256=nyAmkoXTd0Aeci7I2yiAy0-03_OjeAG4IIWwl9sjvLs,23
+aoc_cli_python/local_validations.py,sha256=BXxU9GWO3uAOEkDV_9tUFnr4EGVvaYvOoMu3Do5775k,120
+aoc_cli_python/opener.py,sha256=sfILaU28KvofqLp1d61Pt4apvGWDeKiW62K08pQ3Gj0,741
+aoc_cli_python/runner.py,sha256=BH-7dbrwc4z_TqJV2FGuefdoESTO6SWLroTf5_dKxhY,756
+aoc_cli_python/submitter.py,sha256=nGJhBonlgQ-vTNDLxxBHIEhl8LCBz-6tOAn9RLI-DvY,1624
+aoc_cli_python-0.0.2.dist-info/LICENSE,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+aoc_cli_python-0.0.2.dist-info/METADATA,sha256=8ezgl2MU_vmqVjOJCQU-oIDD9tWNM70i8isN5SHdANQ,1476
+aoc_cli_python-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aoc_cli_python-0.0.2.dist-info/entry_points.txt,sha256=-DvQ2BhVEQAUJPdZ7SbAH_JK9DdDhg6h4K7Gs1-yvHA,42
+aoc_cli_python-0.0.2.dist-info/top_level.txt,sha256=TePkoYYdx4UJ-mTjnT7O8XF0EHxnJC48fHwhuG0bWas,15
+aoc_cli_python-0.0.2.dist-info/RECORD,,
