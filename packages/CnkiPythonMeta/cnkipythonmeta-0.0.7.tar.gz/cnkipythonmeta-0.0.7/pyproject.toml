@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "CnkiPythonMeta"
+version = "0.0.7"
+authors = [
+  { name="YANG Guixian", email="Ygxyoung@hotmail.com" },
+]
+description = "This is a CnkiPythonMeta package for processing data from CNKI(https://www.cnki.net/), which the file type must be TXT format."
+readme = "README.md"
+requires-python = ">=3.7"
+install_requires=['scipy', 'xlrd', 'xlwt', 'matplotlib']
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
