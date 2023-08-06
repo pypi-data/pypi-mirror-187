@@ -1,0 +1,11 @@
+citation_date/__init__.py,sha256=W62c4usIzGf7d_qlrHzd8AqaH8CM1cgjccxXdxPlP8A,70
+citation_date/base/__init__.py,sha256=yGCE1EInGRZxnjtLOsw_NTc5E5uuqw5J9Jtk_s6rs4E,69
+citation_date/base/day.py,sha256=mdgtLmpL2OkvYrISKG1Z4K_IGj8dgrAcN25gbgII8T0,292
+citation_date/base/month.py,sha256=T6vrdHTwb3KUrA66mn1P5zSAYCt1-k6LmWLEIHf2mzU,338
+citation_date/base/report.py,sha256=C_idMAuEJ1JaA15iUXQbTuK2l6qZ5gt0VpMkNMzva9s,859
+citation_date/base/us_uk.py,sha256=TbUiqoeGeUOqPwBTPYUzzPMH5anvpO-65uEKRYYmXrk,435
+citation_date/base/year.py,sha256=wfUN-VuQOMa39K-L2G18d925XFKrp3WY7wOB6kVeawI,475
+citation_date/decoder.py,sha256=nm7noPNY8bGt1tJp1g7SDXPvfNPUToC3w6zX5AZ71VQ,4501
+citation_date-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+citation_date-0.1.0.dist-info/METADATA,sha256=SasxlAT97ef1fP49AW8wI5Bqfhpl_ZBQNImvQ4WsJ5I,1394
+citation_date-0.1.0.dist-info/RECORD,,
