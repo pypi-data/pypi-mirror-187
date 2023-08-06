@@ -1,0 +1,8 @@
+setup.py
+TransformerModelDI/TransformerModel.py
+TransformerModelDI/__init__.py
+TransformerModels.egg-info/PKG-INFO
+TransformerModels.egg-info/SOURCES.txt
+TransformerModels.egg-info/dependency_links.txt
+TransformerModels.egg-info/requires.txt
+TransformerModels.egg-info/top_level.txt
