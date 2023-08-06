@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/alterize/__init__.py
+src/alterize/alter.py
+src/alterize/alteration.py
+src/alterize/exceptions.py
+src/alterize/migration.py
+src/alterize/update.py
+src/alterize.egg-info/PKG-INFO
+src/alterize.egg-info/SOURCES.txt
+src/alterize.egg-info/dependency_links.txt
+src/alterize.egg-info/not-zip-safe
+src/alterize.egg-info/requires.txt
+src/alterize.egg-info/top_level.txt
