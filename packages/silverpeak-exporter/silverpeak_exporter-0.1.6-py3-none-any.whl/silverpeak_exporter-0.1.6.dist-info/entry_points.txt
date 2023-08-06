@@ -1,0 +1,3 @@
+[console_scripts]
+spexporter=silverpeak_exporter.main:main
+
