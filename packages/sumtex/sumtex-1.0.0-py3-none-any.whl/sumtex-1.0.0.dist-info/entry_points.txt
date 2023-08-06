@@ -1,0 +1,2 @@
+[console_scripts]
+sumtex = sumtex.__main__:main

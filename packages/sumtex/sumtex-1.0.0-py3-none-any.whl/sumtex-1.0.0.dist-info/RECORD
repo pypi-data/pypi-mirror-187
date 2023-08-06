@@ -1,0 +1,11 @@
+sumtex/__init__.py,sha256=Jzb_RfgvXCrm_SQ4AfeGVi1N36YybxnM5mpyxrnihgI,33
+sumtex/__main__.py,sha256=sJ_jp8-iC2vtpBetjI87I5Nv7x_eh1DDMIDqcdCH_rU,1041
+sumtex/latex.py,sha256=HVrj03bZ9TzFkTvTP61q7v6IZAQLMTAmX5tQrFWCTN8,2243
+sumtex/requests.py,sha256=bnEvrKZDr3Vk9QQ6njdaloHQ9DcULbs-hXQnbmJVmg4,1354
+sumtex/version.py,sha256=J-j-u0itpEFT6irdmWmixQqYMadNl1X91TxUmoiLHMI,22
+sumtex-1.0.0.dist-info/LICENSE,sha256=IX--d5PjYfwMDRkltbv8VksWa3M9mpN0gpW56-N2JqM,1070
+sumtex-1.0.0.dist-info/METADATA,sha256=qMGN5-UEcUP2gaGlOFwb4KKp34_vv7aZeaXciumMSxw,725
+sumtex-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sumtex-1.0.0.dist-info/entry_points.txt,sha256=mrsgPCDrj1esVaEo2Hff40OE8eVgek9_ZCNqXsrgsWY,48
+sumtex-1.0.0.dist-info/top_level.txt,sha256=Cn5P4PZ4tZhiWTj0z2Kbv7xtARpPXv2VlHtLKSfubTs,7
+sumtex-1.0.0.dist-info/RECORD,,

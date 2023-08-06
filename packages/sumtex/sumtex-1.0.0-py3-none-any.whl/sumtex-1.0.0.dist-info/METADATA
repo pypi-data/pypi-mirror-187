@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: sumtex
+Version: 1.0.0
+Summary: My package description
+Author-email: Fabian Joswig <fabian.joswig@ed.ac.uk>
+License: MIT
+Keywords: GPT,latex,summarize
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai
+
+# sumtex
+
+Summarizes a LaTeX file using the openai API and helps you with writing more concise texts.
+
+## Usage
+Install `sumtex` via pip
+```
+pip install sumtex
+```
+
+Add you openai API key as environment variable (you can generate an API key [here](https://beta.openai.com/account/api-keys))
+```
+export OPENAI_API_KEY=sk-er34*****
+```
+
+Run `sumtex` on a LaTeX file
+```
+sumtex my_file.tex
+```
