@@ -1,0 +1,10 @@
+diamond4py/__init__.py,sha256=QkwuRKrtFRyq8On8hPKwXW2z8E4mKLc-bkUzaBe1YTE,5076
+diamond4py/libarch_avx2.so,sha256=GdX3vQB19qxQdW3PigJtWZv868uTiCtH77dDaIKMlDY,1485688
+diamond4py/libarch_generic.so,sha256=_pzmrDbDZpGOLmf6ZzV4LtlTY-7dmU1AnFMGDrFKX88,1091656
+diamond4py/libarch_sse4_1.so,sha256=tjPQCpcjPm3Q01IYRoiomqeBmN-8Dpm6UOrqouW41bs,1632912
+diamond4py/libdiamond.cpython-39-x86_64-linux-gnu.so,sha256=IE5sLam9DTvAUp0h53Ni4p-de8INFPkxykzGvrd4Tvc,7551232
+diamond4py-0.0.2rc1.dist-info/LICENSE,sha256=Y_zDMUosI56de95GVglpC19GilDg_0qu5kgmy4XiwKE,33092
+diamond4py-0.0.2rc1.dist-info/METADATA,sha256=w7M1YgDF55HRIWW0RV-bVlB-QMbI9baaXk8m5b-monY,38635
+diamond4py-0.0.2rc1.dist-info/WHEEL,sha256=98BUJXah0SKewUvl2jZzJSQrLY7YQDNRB__SycfDc70,97
+diamond4py-0.0.2rc1.dist-info/top_level.txt,sha256=P3TaLblLb2bfvDmq-7xsWDA2IuZ60XaYndHvpxrBbO0,11
+diamond4py-0.0.2rc1.dist-info/RECORD,,
