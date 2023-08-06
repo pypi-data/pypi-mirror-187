@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+sumtex/__init__.py
+sumtex/__main__.py
+sumtex/latex.py
+sumtex/requests.py
+sumtex/version.py
+sumtex.egg-info/PKG-INFO
+sumtex.egg-info/SOURCES.txt
+sumtex.egg-info/dependency_links.txt
+sumtex.egg-info/entry_points.txt
+sumtex.egg-info/requires.txt
+sumtex.egg-info/top_level.txt
