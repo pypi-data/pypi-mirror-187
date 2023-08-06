@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+helloworld_apar/__init__.py
+helloworld_apar/helloworld.py
+helloworld_apar_pkg.egg-info/PKG-INFO
+helloworld_apar_pkg.egg-info/SOURCES.txt
+helloworld_apar_pkg.egg-info/dependency_links.txt
+helloworld_apar_pkg.egg-info/requires.txt
+helloworld_apar_pkg.egg-info/top_level.txt
