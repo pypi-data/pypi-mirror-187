@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+flores/__init__.py
+flores/__main__.py
+flores/exceptions.py
+flores/generator.py
+flores/logger.py
+flores/server.py
+flores.egg-info/PKG-INFO
+flores.egg-info/SOURCES.txt
+flores.egg-info/dependency_links.txt
+flores.egg-info/entry_points.txt
+flores.egg-info/requires.txt
+flores.egg-info/top_level.txt

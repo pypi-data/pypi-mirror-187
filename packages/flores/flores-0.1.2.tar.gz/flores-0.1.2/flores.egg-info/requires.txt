@@ -1,0 +1,14 @@
+Jinja2
+libsass
+pyyaml
+Markdown
+pymdown-extensions
+Pillow
+Pygments
+
+[test]
+nox
+pre-commit
+pytest
+pytest-cov
+requests
