@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+src/pyPath/__init__.py
+src/pyPathLinux.egg-info/PKG-INFO
+src/pyPathLinux.egg-info/SOURCES.txt
+src/pyPathLinux.egg-info/dependency_links.txt
+src/pyPathLinux.egg-info/top_level.txt
