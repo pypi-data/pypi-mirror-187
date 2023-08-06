@@ -1,0 +1,15 @@
+dvc
+fsspec[http]
+aiohttp-retry>=2.5.0
+
+[tests]
+dvc[testing]
+pytest==6.2.5
+pytest-cov==3.0.0
+pytest-xdist==2.4.0
+pytest-mock==3.6.1
+flaky==3.7.0
+rangehttpserver==1.2.0
+pylint==2.15.9
+mypy==0.910
+types-requests==2.25.11
