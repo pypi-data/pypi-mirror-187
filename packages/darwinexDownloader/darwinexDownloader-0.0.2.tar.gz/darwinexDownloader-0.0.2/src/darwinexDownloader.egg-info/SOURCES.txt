@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/DarwinexDownloader.py
+src/__init__.py
+src/darwinexDownloader.egg-info/PKG-INFO
+src/darwinexDownloader.egg-info/SOURCES.txt
+src/darwinexDownloader.egg-info/dependency_links.txt
+src/darwinexDownloader.egg-info/top_level.txt
