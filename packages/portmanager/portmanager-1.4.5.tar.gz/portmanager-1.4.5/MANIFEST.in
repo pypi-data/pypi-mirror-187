@@ -1,0 +1,5 @@
+include README.md
+include LICENSE
+recursive-include portmanager/templates *
+recursive-include portmanager/static *
+recursive-include portmanager/templatetags *

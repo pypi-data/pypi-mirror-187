@@ -1,0 +1,70 @@
+{% extends 'portmanager/generic/object.html' %}
+{% load render_table from django_tables2 %}
+{% load buttons %}
+{% load static %}
+{% load helpers %}
+{% load plugins %}
+
+{% block content %}
+    <div class="row mb-3">
+        <div class="col col-12 col-xl-6">
+            <div class="card">
+                <h5 class="card-header">
+                    Device Group
+                </h5>
+                <div class="card-body">
+                    <table class="table table-hover attr-table">
+                        <tr>
+                            <th scope="row">Name</th>
+                            <td>
+                                {{ object.name }}
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Description</th>
+                            <td>
+                                {% if object.description|length %}
+                                    {{ object.description }}
+                                {% else %}
+                                —
+                                {% endif %}
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">VLANS</th>
+                            <td>
+                                {{ object.vlans }}
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Portsec max</th>
+                            <td>
+                                {{ object.portsec_max }}
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col col-md-12">
+            <div class="card">
+                <h5 class="card-header">
+                    Devices
+                </h5>
+                <div class="card-body table-responsive" id="object_list">
+                {% include 'htmx/table.html' %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="">
+            {% plugin_full_width_page object %}
+        </div>
+    </div>
+{% endblock %}
+{% block modals %}
+  {% table_config_form table table_name="ObjectTable" %}
+{% endblock modals %}

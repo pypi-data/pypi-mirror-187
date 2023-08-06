@@ -1,0 +1,178 @@
+{% extends 'portmanager/device_object.html' %}
+{% load render_table from django_tables2 %}
+{% load static %}
+{% load helpers %}
+{% load plugins %}
+
+{% block content %}
+<div class="row mb-3">
+    <div class="col col-12 col-xl-6">
+        <div class="card">
+            <h5 class="card-header">
+                Device
+            </h5>
+            <div class="card-body">
+                <table class="table table-hover attr-table">
+                    <tr>
+                        <th scope="row">Name</th>
+                        <td>
+                            {{ object|linkify }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Device Type</th>
+                        <td>
+                            {{ object.device_type }} ({{ object.device_type.u_height|floatformat }}U)
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Serial Number</th>
+                        <td class="font-monospace">{{ object.serial|placeholder }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Asset Tag</th>
+                        <td class="font-monospace">{{ object.asset_tag|placeholder }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Comments</th>
+                        <td class="font-monospace">{{ object.comments|placeholder }}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col col-12 col-xl-6">
+        <div class="card">
+            <h5 class="card-header">
+                Organization
+            </h5>
+            <div class="card-body">
+                <table class="table table-hover attr-table">
+                    <tr>
+                        <th scope="row">Region</th>
+                        <td>
+                            {% if object.site.region %}
+                                {% for region in object.site.region.get_ancestors %}
+                                    {{ region|linkify }} /
+                                {% endfor %}
+                                {{ object.site.region|linkify }}
+                            {% else %}
+                                {{ ''|placeholder }}
+                            {% endif %}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Site</th>
+                        <td>{{ object.site|linkify }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Location</th>
+                        <td>
+                        {% if object.location %}
+                            {% for location in object.location.get_ancestors %}
+                                {{ location|linkify }} /
+                            {% endfor %}
+                            {{ object.location|linkify }}
+                        {% else %}
+                            {{ ''|placeholder }}
+                        {% endif %}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Rack</th>
+                        <td class="position-relative">
+                            {% if object.rack %}
+                                {{ object.rack|linkify }}
+                                <div class="position-absolute top-50 end-0 translate-middle-y noprint">
+                                  <a href="{{ object.rack.get_absolute_url }}?device={{ object.pk }}" class="btn btn-primary btn-sm" title="Highlight device">
+                                    <i class="mdi mdi-view-day-outline"></i>
+                                  </a>
+                                </div>
+                            {% else %}
+                                {{ ''|placeholder }}
+                            {% endif %}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Position</th>
+                        <td>
+                            {% if object.parent_bay %}
+                                {% with object.parent_bay.device as parent %}
+                                    {{ parent|linkify }} / {{ object.parent_bay }}
+                                    {% if parent.position %}
+                                        (U{{ parent.position|floatformat }} / {{ parent.get_face_display }})
+                                    {% endif %}
+                                {% endwith %}
+                            {% elif object.rack and object.position %}
+                                <span>U{{ object.position|floatformat }} / {{ object.get_face_display }}</span>
+                            {% elif object.rack and object.device_type.u_height %}
+                                <span class="badge bg-warning">Not racked</span>
+                            {% else %}
+                                {{ ''|placeholder }}
+                            {% endif %}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tenant</th>
+                        <td>
+                            {% if object.tenant.group %}
+                                {{ object.tenant.group|linkify }} /
+                            {% endif %}
+                            {{ object.tenant|linkify|placeholder }}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row mb-3">
+    <div class="col col-md-12">
+      <form method="post" class="form form-horizontal">
+        {% csrf_token %}
+        <input type="hidden" name="return_url" value="{% if return_url %}{{ return_url }}{% else %}{{ request.path }}{% if request.GET %}?{{ request.GET.urlencode }}{% endif %}{% endif %}" />
+
+        <div class="controls">
+            <div class="control-group"> 
+                {% if deploy_perms %}
+                <div >
+                    <button type="submit" name="_deploy" formaction="{% url 'plugins:portmanager:device' pk=devicegroup.pk pk2=object.pk %}" class="btn btn-warning btn-sm">Deploy changes</button>
+                </div>
+                {% endif %}
+                <div >
+                    <button type="submit" name="_reload" formaction="" class="btn btn-info btn-sm">Reload device</button>
+                </div>
+            </div>
+        </div>
+
+        {# Object table #}
+        
+        <div class="card">
+          <div class="card-body" id="object_list">
+            {% include 'portmanager/htmx/table.html' %}
+          </div>
+        </div>
+        
+        <div class="controls">
+            <div class="control-group"> 
+                {% if deploy_perms %}
+                <div >
+                    <button type="submit" name="_deploy" formaction="{% url 'plugins:portmanager:device' pk=devicegroup.pk pk2=object.pk %}" class="btn btn-warning btn-sm">Deploy changes</button>
+                </div>
+                {% endif %}
+                <div >
+                    <button type="submit" name="_reload" formaction="{% url 'plugins:portmanager:device' pk=devicegroup.pk pk2=object.pk %}" class="btn btn-info btn-sm">Reload device</button>
+                </div>
+            </div>
+        </div>
+      </form>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="">
+        {% plugin_full_width_page object %}
+    </div>
+</div>
+{% endblock %}

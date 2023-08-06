@@ -1,0 +1,53 @@
+{% extends 'base/layout.html' %}
+{% load plugins %}
+
+{% block content %}
+<div class="row mb-3">
+    <div class="col col-12 col-xl-6">
+        <div class="card">
+            <h5 class="card-header">
+                MAC addresses
+            </h5>
+            <div class="card-body">
+                <table class="table table-hover attr-table">
+                    <tr>
+                        <th scope="row">Device</th>
+                        <td>
+                            {{ object }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Interface</th>
+                        <td>
+                            {{ interface }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">VLAN</th>
+                        <td>
+                            {{ vlan }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Mac addresses:</th>
+                        <td></td>
+                    </tr>
+                    {% for mac in macs %}
+                    <tr>
+                        <th scope="row"></th>
+                        <td>
+                            {{ mac }}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="">
+        {% plugin_full_width_page object %}
+    </div>
+</div>
+{% endblock %}
