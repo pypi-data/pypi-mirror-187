@@ -1,0 +1,2 @@
+[console_scripts]
+ph4-con-mon = upsmonit.conn:main
