@@ -1,0 +1,3 @@
+[console_scripts]
+textual-bee=textual_bee:run_app
+
