@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+src/pyMicroCode/__init__.py
+src/pyMicroCode.egg-info/PKG-INFO
+src/pyMicroCode.egg-info/SOURCES.txt
+src/pyMicroCode.egg-info/dependency_links.txt
+src/pyMicroCode.egg-info/top_level.txt
