@@ -1,0 +1,11 @@
+bokeh<3.0
+panel<1.0
+
+[dev]
+awesome-panel-cli[dev]
+
+[examples]
+awesome-panel-cli
+hvplot
+notebook
+pandas
