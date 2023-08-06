@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+datret/__init__.py
+datret/datret.py
+datret.egg-info/PKG-INFO
+datret.egg-info/SOURCES.txt
+datret.egg-info/dependency_links.txt
+datret.egg-info/top_level.txt
