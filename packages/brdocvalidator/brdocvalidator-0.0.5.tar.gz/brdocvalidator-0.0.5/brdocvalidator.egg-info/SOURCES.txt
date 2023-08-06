@@ -1,0 +1,9 @@
+README.md
+setup.py
+brdocvalidator/__init__.py
+brdocvalidator/validation.py
+brdocvalidator.egg-info/PKG-INFO
+brdocvalidator.egg-info/SOURCES.txt
+brdocvalidator.egg-info/dependency_links.txt
+brdocvalidator.egg-info/requires.txt
+brdocvalidator.egg-info/top_level.txt

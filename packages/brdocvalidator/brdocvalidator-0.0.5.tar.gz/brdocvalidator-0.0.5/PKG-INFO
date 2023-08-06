@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: brdocvalidator
+Version: 0.0.5
+Summary: Library to validate brazilians documents, email, birthDate and others
+Home-page: UNKNOWN
+Author: rafaelscone (Rafael Schneider)
+Author-email: <pipbrvalidator@impaire.com>
+License: UNKNOWN
+Keywords: python,validation,cpf,cnpj
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+## About this package
+
+This package is available on https://pypi.org/project/brdocvalidator/ , you can easily validate brazilians documents like CPF and CNPJ. Also some functions to help validate email, birth date, and new functionalities will appear soo
+
+Code on github
+https://github.com/rafaelscone/brdocvalidator
+
+## How to use
+
+```bash
+pip3 install brdocvalidator
+```
+
+In your python file
+```py
+import brdocvalidator
+
+cpf = '111.111.111-11'
+cnpj = '11.111.111/1111-11'
+birthDay = "26/07/2010"
+my_password ='JtR55$$_'
+my_email = "email@email.com"
+
+# return date format %d-%m-%Y or False
+print(brdocvalidator.check_birth_date(birthDay))
+
+# Return just CPF number or False
+# check_doc check CPF or CNPJ
+print(brdocvalidator.check_doc(cpf))
+print(brdocvalidator.check_cpf(cpf))
+
+# Return just CNPJ number or False
+print(brdocvalidator.check_doc(cnpj))
+print(brdocvalidator.check_cnpj(cnpj))
+
+# Encode your password
+encoded_password= brdocvalidator.encodePass(my_password)
+print(encoded_password)
+
+# Check if password match
+test = brdocvalidator.comparePass(encoded_password,my_password)
+print("Result pass:", test)
+
+# Check email 
+myemail =  brdocvalidator.check_email(my_email)
+print(myemail)
+```
+
+### Feel free to send me news, bugs and suggestions to this package
+Rafael Schneider - rafaelscone
+
+
+
+
