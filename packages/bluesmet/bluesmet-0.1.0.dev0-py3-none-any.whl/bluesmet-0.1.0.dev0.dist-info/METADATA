@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: bluesmet
+Version: 0.1.0.dev0
+Author: SINTEF Ocean
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (==2.27.1)
+Requires-Dist: tqdm (==4.64.0)
+Requires-Dist: dmtpy (==0.3.0)
+Requires-Dist: netCDF4 (==1.5.2)
+Requires-Dist: numpy (==1.23)
+Requires-Dist: scipy (==1.9.0)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: windrose (==1.8.1)
+Provides-Extra: dev
+Requires-Dist: pylint ; extra == 'dev'
+
+# SFIBlues Metocean library
+
+Illustrates fetching data from different sources. 
+Necessary dependencies installed using
+
+pip install -r requirements.txt
+
+Development dependencies installed using
+
+pip install -r requirements-dev.txt
+
+Developed for use with the  [SFI Blues Metocean portal](https://sfiblues-portal.azurewebsites.net/met)
