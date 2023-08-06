@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: robin_sd_upload
+Version: 0.1.22
+Summary: Package to upload files to the Robin Radar API
+Home-page: https://bitbucket.org/robin-radar-systems/sd-api-upload-pip-package.git
+Author: Robin Radar Systems
+Author-email: tivadar.kamondy@robinradar.com
+License: MIT
+Description: # Package to upload files to the Robin Radar API
+        
+        - new version notifcation -> force user to update
+        
+        - check version of package API and compare to version of package installed on user's machine
+        
+        - if version of package API is greater than version of package installed on user's machine, then force user to update
+        
+        - if version of package API is less than or equal to version of package installed on user's machine, then continue
+        
+Keywords: python,robin,radar,download,software,sd
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
