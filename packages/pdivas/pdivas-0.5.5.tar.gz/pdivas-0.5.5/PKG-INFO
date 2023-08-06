@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: pdivas
+Version: 0.5.5
+Summary: PDIVAS: Pathogenicity predictor of Deep-Intronic Variants causing Aberrant Splicing
+Home-page: http://github.com/account/repository
+Author: Ryo Kurosawa
+Author-email: a0160561@yahoo.co.jp
+Description-Content-Type: text/markdown
+
+#conda activate PDIVAS_env.yml
+#To reproduce the results in the reported paper, follow the procedure described in ./bash_script/README.txt
+#To perform PDIVAS prediction on your environment, there are two options.
+
+#1.Refer to the PDIVAS-precomputed files (SNV+ short indels(1~4nt))
+#File link to the PDIVAS-precomputed files
+#To annotate your VCF file with the precomputed file, please run the command below,for example.
+
+
+#2.Peform individual feature annotation and PDIVAS prediction for your VCF 
+
+#Preprocessing (resolve the mullti-allelic site to single sites)
+$ bcftools norm 
+
+#To add gene annotations, MaxEntScan scores and ConSplice scores with VEP, please run the command below.
+$ vep \
+--cache --offline --cache_version 107 --assembly GRCh38 --hgvs --pick_allele_gene \
+--fasta ../../reference/hg38.fa.gz --vcf --force \
+--custom ../../reference_output/ConSplice.50bp_region.inverse_proportion_refor.bed.gz,ConSplice,bed,overlap,0 \
+--plugin MaxEntScan,../../reference/MaxEntScan/fordownload,SWA,NCSS \
+--fields "Consequence,SYMBOL,Gene,INTRON,HGVSc,STRAND,ConSplice,MES-SWA_acceptor_diff,MES-SWA_acceptor_alt,MES-SWA_donor_diff,MES-SWA_donor_alt" \
+--compress_output bgzip
+-i ../../input/ex_inp.vcf.gz -o ../../data_output/ex_inp_vep.vcf.gz
+
+#To annotate output-customed SpliceAI scores, please run the command below.
+$ spliceai -I ../../data_output/ex_inp_vep.vcf.gz -O ../../data_output/ex_inp_vep_AI.vcf -R ../../reference/hg38.fa -A grch38 -D 300 -M 1
+$ bgzip ../../data_output/ex_inp_vep_AI.vcf
+
+#To perform the detection of deep-intronic varaint and PDIVAS prediction, please run the command below.
+$ pdivas -I ../data_output/ex_inp_vep_AI.vcf -O ../data_output/ex_inp_vep_AI_PD.vcf
+
+
+
