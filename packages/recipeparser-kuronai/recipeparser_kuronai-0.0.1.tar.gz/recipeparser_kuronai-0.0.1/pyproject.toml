@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling", "BeautifulSoup4"]
+build-backend = "hatchling.build"
+
+[project]
+name = "recipeparser_kuronai"
+version = "0.0.1"
+authors = [
+  { name="Andrew Deeley", email="adeeley98@gmail.com" },
+]
+description = "A utility package to parse URLs into recipes."
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
