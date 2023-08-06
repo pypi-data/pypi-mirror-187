@@ -1,0 +1,27 @@
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
+
+[tool.isort]
+profile = "black"
+
+[tool.poetry]
+authors = ["Qin Li <liblaf@outlook.com>"]
+description = "My Helpers"
+license = "MIT"
+name = "ihelper"
+readme = "README.md"
+repository = "https://github.com/liblaf/ihelper"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+click = "^8.1.3"
+ishutils = "^0.1.2"
+python = ">=3.11,<3.12"
+python-slugify = "^7.0.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+isort = "^5.11.4"
+poetry = "^1.3.2"
+pyinstaller = "^5.7.0"
