@@ -1,0 +1,8 @@
+einops
+huggingface-hub
+numpy
+opencv-python
+Pillow
+timm
+torch>=1.8.1
+tqdm
