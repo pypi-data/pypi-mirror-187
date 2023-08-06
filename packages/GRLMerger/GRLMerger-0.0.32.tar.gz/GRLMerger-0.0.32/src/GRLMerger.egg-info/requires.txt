@@ -1,0 +1,8 @@
+pandas
+numpy
+statistics
+neattext
+nltk
+sentence_transformers
+openpyxl
+xlsxwriter
