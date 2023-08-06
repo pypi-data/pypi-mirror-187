@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+Topsis_Sahil_102067006.egg-info/PKG-INFO
+Topsis_Sahil_102067006.egg-info/SOURCES.txt
+Topsis_Sahil_102067006.egg-info/dependency_links.txt
+Topsis_Sahil_102067006.egg-info/entry_points.txt
+Topsis_Sahil_102067006.egg-info/top_level.txt
+topsis/__init__.py
+topsis/topsis.py
