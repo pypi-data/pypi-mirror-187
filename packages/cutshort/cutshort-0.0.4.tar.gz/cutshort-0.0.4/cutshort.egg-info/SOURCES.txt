@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+cutshort/__init__.py
+cutshort/core.py
+cutshort.egg-info/PKG-INFO
+cutshort.egg-info/SOURCES.txt
+cutshort.egg-info/dependency_links.txt
+cutshort.egg-info/not-zip-safe
+cutshort.egg-info/requires.txt
+cutshort.egg-info/top_level.txt
