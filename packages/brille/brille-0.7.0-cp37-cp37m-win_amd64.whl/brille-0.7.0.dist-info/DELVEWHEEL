@@ -1,0 +1,2 @@
+Version: 1.2.0
+Arguments: ['C:\\Users\\runneradmin\\micromamba-root\\envs\\windows-2022\\Scripts\\delvewheel', 'repair', '-w', 'dist', '-v', 'wheelhouse/brille-0.7.0-cp37-cp37m-win_amd64.whl']
