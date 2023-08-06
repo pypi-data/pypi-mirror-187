@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: Topsis_Aayush_102003745
+Version: 0.0.1
+Summary: Streaming video data via networks
+Author: Aayush Asrey
+Author-email: aasrey_be20@thapar.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+Project description
+
+TOPSIS
+
+Author: Aayush Asrey.
+
+Type: Package.
+
+Title: TOPSIS method for multiple-criteria decision making (MCDM).
+
+Version: 0.0.1
+
+Date: 2022-1-23
+
+Maintainer: Aayush Asrey aasrey_be20@thapar.edu.
+
+Description: Evaluation of alternatives based on multiple criteria using TOPSIS method
+
+What is TOPSIS?
+
+Technique for Order Preference by Similarity to Ideal Solution.
+
+TOPSIS chooses the alternative of shortest Euclidean distance from the ideal solution,
+
+and greatest distance from the negative-ideal solution.
+
+In Command Prompt
+
+python topsis.py data.csv “1,1,1,1,1” “+,-,+,-,+” result.csv
+
