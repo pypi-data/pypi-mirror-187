@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: dnn-cool-activations
+Version: 0.1.2
+Summary: dnn_cool_activations: Simple Numpy activation functions
+Home-page: https://github.com/microlib-org/dnn_cool_activations
+Author: Hristo Vrigazov
+Author-email: hvrigazov@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# dnn_cool_activations
+
+Simple numpy actions, currently just sigmoid and softmax.
+
+
+```python
+import numpy as np
+
+from dnn_cool_activations.base import sigmoid
+
+sigmoid(np.array([0., -23, 51.]))
+# array([0.5, 0. , 1. ])
+```
+
