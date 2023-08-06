@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: libsimba
+Version: 0.1.13
+Summary: libsimba is a library simplifying the use of SIMBAChain Blocks APIs.
+Author: SIMBA Chain Inc.
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: httpx (==0.23.0)
+Requires-Dist: pydantic[dotenv] (==1.10.2)
