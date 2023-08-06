@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+src/argparser_adapter/__init__.py
+src/argparser_adapter/implementation.py
+src/argparser_adapter.egg-info/PKG-INFO
+src/argparser_adapter.egg-info/SOURCES.txt
+src/argparser_adapter.egg-info/dependency_links.txt
+src/argparser_adapter.egg-info/top_level.txt
