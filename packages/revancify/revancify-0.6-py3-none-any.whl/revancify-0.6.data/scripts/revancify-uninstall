@@ -1,0 +1,9 @@
+#!/bin/bash
+cd $HOME
+rm -rvf Revancify
+rm /data/data/com.termux/files/usr/bin/revancify
+rm /data/data/com.termux/files/usr/bin/revancify/revanced-installer.sh
+rm /data/data/com.termux/files/usr/bin/revancify-uninstall
+clear
+echo
+echo "Revancify Removed Successfully !"
