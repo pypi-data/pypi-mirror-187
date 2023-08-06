@@ -1,0 +1,10 @@
+pdi/__init__.py,sha256=_HGM-dyBdnHPjWrGorC4Q3R9vp_DytFw_GvXFph6mGc,20179
+pdi/categoricals.py,sha256=C6D9wBHXg52mCxr2zDn87N5d_g1_6n66-R21Gr3Tq4w,8997
+pdi/drop.py,sha256=dbWCemxB0qHF6uExOMjlUYqZAb9kN_QpnC-vh6fSy_c,3184
+pdi/levels.py,sha256=HZin2HhNQR8WJPIgTi8veISXUd6mDTTyNvCPkJLHo2I,18179
+pdi/testing.py,sha256=qOL-PCsyVxY8-RMaQyiD0vdKjxq2JeS2aJ1WPxUgewI,1745
+pdi/visuals.py,sha256=f2YpnGsKAS0EJeb9602eSxsaBDNFWdX86Cno3kZ84nw,4236
+pandas_illustrated-0.2.dist-info/METADATA,sha256=estCbwyk0lBGqWtmOVcYW3VUKdnnc-MO2bQynqnnToo,3761
+pandas_illustrated-0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pandas_illustrated-0.2.dist-info/top_level.txt,sha256=CEzm6CqBRLMoGqu3tgy5ASbKaOpwbXI593hN7UEMYKA,4
+pandas_illustrated-0.2.dist-info/RECORD,,
