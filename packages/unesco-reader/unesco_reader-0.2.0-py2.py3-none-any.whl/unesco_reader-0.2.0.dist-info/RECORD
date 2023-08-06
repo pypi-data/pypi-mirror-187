@@ -1,0 +1,11 @@
+unesco_reader/__init__.py,sha256=IH1xXfeiGS9n0eqBijZ3uwrkTq2ziGYgac4EWX_dsVg,129
+unesco_reader/common.py,sha256=fErXYdRX44oAfiYwh3oVrABvXLA9nePxbmkBzys-580,2797
+unesco_reader/config.py,sha256=tUftshWjTbAwFmQHIzuMyEbva0QPYxaAO4JMi_YTfPM,980
+unesco_reader/uis.py,sha256=sutIMZVQ9NVamtlAzU-EpA-u8Vou29Z5GzpGkwxpy_k,13873
+unesco_reader/glossaries/uis_datasets.csv,sha256=O4S5y586Ws1eMmWqZkYNnpEtZc3Uyzgw-N9DbClxNmc,305
+unesco_reader-0.2.0.dist-info/LICENSE,sha256=JHm01tSOkbkLkbBUG4Q42wKOweyk4g2kHV6cXtg8Gh8,1069
+unesco_reader-0.2.0.dist-info/METADATA,sha256=0d57VFvRUjdgRYR4PTjVmrJizceoiNs5z_dMdFIz0A0,6455
+unesco_reader-0.2.0.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+unesco_reader-0.2.0.dist-info/dependency_links.txt,sha256=CxIiUXHcAQY2q6rqsNjwfnsQxYJjm4qLnMzsQopbYUU,36
+unesco_reader-0.2.0.dist-info/top_level.txt,sha256=O49OO5W8yE-QN80fvFqlpa_JNSB-5lRz9F15iMB4qf0,14
+unesco_reader-0.2.0.dist-info/RECORD,,
