@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+src/mysystemmonitor/__init__.py
+src/mysystemmonitor/mysystemmonitor.py
+src/mysystemmonitor.egg-info/PKG-INFO
+src/mysystemmonitor.egg-info/SOURCES.txt
+src/mysystemmonitor.egg-info/dependency_links.txt
+src/mysystemmonitor.egg-info/entry_points.txt
+src/mysystemmonitor.egg-info/not-zip-safe
+src/mysystemmonitor.egg-info/requires.txt
+src/mysystemmonitor.egg-info/top_level.txt
