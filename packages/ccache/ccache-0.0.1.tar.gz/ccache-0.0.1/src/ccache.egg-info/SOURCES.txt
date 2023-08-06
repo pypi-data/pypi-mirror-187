@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+data/data_file
+src/ccache.egg-info/PKG-INFO
+src/ccache.egg-info/SOURCES.txt
+src/ccache.egg-info/dependency_links.txt
+src/ccache.egg-info/entry_points.txt
+src/ccache.egg-info/requires.txt
+src/ccache.egg-info/top_level.txt
