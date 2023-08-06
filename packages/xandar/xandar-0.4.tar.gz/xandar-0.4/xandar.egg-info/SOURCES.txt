@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+xandar/__init__.py
+xandar.egg-info/PKG-INFO
+xandar.egg-info/SOURCES.txt
+xandar.egg-info/dependency_links.txt
+xandar.egg-info/top_level.txt
