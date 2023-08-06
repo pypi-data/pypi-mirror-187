@@ -1,0 +1,11 @@
+MANIFEST.in
+setup.py
+TfIdfTransformer.egg-info/PKG-INFO
+TfIdfTransformer.egg-info/SOURCES.txt
+TfIdfTransformer.egg-info/dependency_links.txt
+TfIdfTransformer.egg-info/requires.txt
+TfIdfTransformer.egg-info/top_level.txt
+src/TfIdfTransformer.py
+src/__init__.py
+test/test_01.py
+test/__pycache__/test_01.cpython-39.pyc
