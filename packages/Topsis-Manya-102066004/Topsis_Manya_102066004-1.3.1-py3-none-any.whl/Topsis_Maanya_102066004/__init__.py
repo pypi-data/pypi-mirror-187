@@ -1,0 +1,1 @@
+from Topsis_Manya_102066004.topsis import topsis_score
