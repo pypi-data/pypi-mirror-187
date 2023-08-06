@@ -1,0 +1,17 @@
+tornado_rest_client/__init__.py,sha256=cDJe_4uiUKAIL26jaqt4RHQg3nxZjNk7Gnt4rvryHiw,577
+tornado_rest_client/api.py,sha256=bhOIWk3iUe1BAP7gfhuzs0KTh42LyX6DFbv5wrqiVEA,21927
+tornado_rest_client/exceptions.py,sha256=Zd5_KN709OZhON7UiflZqKikUD5_jnePZjnbg3FecU4,577
+tornado_rest_client/utils.py,sha256=1God8dTOH7v9XQRYmkQCqJlNjCEHdAZjAARLIu8D0-Y,2064
+tornado_rest_client/version.py,sha256=7HZCFnFO2lSGimzYV8gheSUmDqjsdYt8Hb1l43fzIhY,73
+tornado_rest_client/clients/__init__.py,sha256=cDJe_4uiUKAIL26jaqt4RHQg3nxZjNk7Gnt4rvryHiw,577
+tornado_rest_client/clients/slack.py,sha256=6UuMw08mw8VwBtX01v5-vY9SY2vLQmQ1Yq6RIPFHylk,3722
+tornado_rest_client/test/__init__.py,sha256=cDJe_4uiUKAIL26jaqt4RHQg3nxZjNk7Gnt4rvryHiw,577
+tornado_rest_client/test/integration_api.py,sha256=pG328Q_2N4Dc-dmXg4CIYl275WluQaxd7brhI3y0CLg,5351
+tornado_rest_client/test/test_api.py,sha256=w3UshSqWXc9BsbLlGzKyuDmE0zZbxn-ua1eDFcDxzYk,13619
+tornado_rest_client/test/test_utils.py,sha256=Q4fshQG3jVIwQJIOazA0JAVv3nXZKVyvFCVg5Vn3FTM,2318
+tornado_rest_client/test/test_version.py,sha256=s1f7zXj6g6NCQl9N2pX2QlW5OeWBG_4Mn1qQlownIUw,260
+tornado_rest_client-2.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tornado_rest_client-2.0.1.dist-info/METADATA,sha256=KXYrAXL_w1IHLuX6ge4jyseVxzGhFMLdPcof8nIHmT0,1907
+tornado_rest_client-2.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tornado_rest_client-2.0.1.dist-info/top_level.txt,sha256=EXTl3uiIMdpBMgRC2GxU-N8SEIw35zEHRHgmXpVFrdo,20
+tornado_rest_client-2.0.1.dist-info/RECORD,,
