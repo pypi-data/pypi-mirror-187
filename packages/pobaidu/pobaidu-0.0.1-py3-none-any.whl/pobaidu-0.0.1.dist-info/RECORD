@@ -1,0 +1,14 @@
+pobaidu/__init__.py,sha256=jSShrRzxa-MtiynVW0cZUmAITTEnQpDZ0gwzX5AzFhY,38
+pobaidu/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pobaidu/api/imageprocess.py,sha256=0wBEU8dwQswn11mQiRdQObUMYSumfdOX8cPTzNxlcN0,242
+pobaidu/core/ImageProcess.py,sha256=wcMvqBZFycZTpULktTern2Oziy4Ga0DAnhnPg_Mf6XE,3661
+pobaidu/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pobaidu/lib/__init__.py,sha256=rPd1b3Jy3FDQhpgwQfCKjebUePBE4RQKtgBQU3AOSOM,32
+pobaidu/lib/get_toml.py,sha256=gsqWHWtSL-9riJgBRI4zyY_tHVwGVYZS9e83oXAloyw,189
+tests/__init__.py,sha256=NJ_V91dcu8IAhEdp-1ZirEQjL4-IgCJS7oDFghrhLVg,183
+tests/test_baidu.py,sha256=dc_GBjawEnitiUXFmx6sNyf0FggtCvjpONT0b8g0xbU,307
+pobaidu-0.0.1.dist-info/LICENSE,sha256=GQ6XaGbsxl2OlUBlk1jLBtkHC8U1p6Bw9E1P1XqYAlU,1093
+pobaidu-0.0.1.dist-info/METADATA,sha256=oIcttW5a87-m_CHvXVF6vzcfsdgU_okjm2o9CnCVfMU,6154
+pobaidu-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pobaidu-0.0.1.dist-info/top_level.txt,sha256=qYbIzWXWKl4kAeIpt6ZuzPexvJhARde-R0WbMXdPURk,14
+pobaidu-0.0.1.dist-info/RECORD,,
