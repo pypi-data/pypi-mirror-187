@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: Topsis-Sukhmanjit-102003484
+Version: 0.0.1
+Summary: topsis
+Home-page: UNKNOWN
+Author: Sukhmanjit Singh
+Author-email: ssingh19_be20@thapar.edu
+License: MIT
+Keywords: topsis
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+This is a package for TOPSIS created by me. References are given in the code if want to understand it
+Run the program through command line as:
+Usages: python <program.py> <InputDataFile> <Weights> <Impacts> <ResultFileName>
+Example: python 101556.py 101556-data.csv “1,1,1,2” “+,+,-,+” 101556-result.csv
+Program contains the following checkers:
+• Correct number of parameters (inputFileName, Weights, Impacts, resultFileName).
+• Show the appropriate message for wrong inputs.
+• Handling of “File not Found” exception
+• Input file must contain three or more columns.
+• From 2nd to last columns must contain numeric values only (Handling of non-numeric values)
+• Number of weights, number of impacts and number of columns (from 2nd to last columns) must
+be same.
+• Impacts must be either +ve or -ve.
+• Impacts and weights must be separated by ‘,’ (comma).
+
+Change Log
+==========
+
+0.0.1 (22/01/2023)
+-------------------
+- First Release
+

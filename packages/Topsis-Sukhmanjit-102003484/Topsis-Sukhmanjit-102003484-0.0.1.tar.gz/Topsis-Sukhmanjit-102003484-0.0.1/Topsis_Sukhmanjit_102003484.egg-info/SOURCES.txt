@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+Topsis-Sukhmanjit-102003484/__init__.py
+Topsis_Sukhmanjit_102003484.egg-info/PKG-INFO
+Topsis_Sukhmanjit_102003484.egg-info/SOURCES.txt
+Topsis_Sukhmanjit_102003484.egg-info/dependency_links.txt
+Topsis_Sukhmanjit_102003484.egg-info/requires.txt
+Topsis_Sukhmanjit_102003484.egg-info/top_level.txt
