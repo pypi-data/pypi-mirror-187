@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: cutshort
+Version: 0.0.3
+Summary: Yet another, experimental utility to write wsgi REST API apps using python functions, Mostly.
+Home-page: https://github.com/sabbiramin113008/cutshort
+Author: Sabbir Amin
+Author-email: sabbiramin.cse11ruet@gmail.com
+License: MIT
+Keywords: python,wsgi,RESTAPI,function-to-rest-endpoint
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+Requires-Dist: WebOb
+Requires-Dist: Werkzeug
+Requires-Dist: parse
+
+# CutShort
+Yet another, experimental utility to write wsgi REST API apps using python functions, Mostly. 
+
