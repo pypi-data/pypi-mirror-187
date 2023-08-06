@@ -1,0 +1,34 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+scikit-build = "*"
+Sphinx = "*"
+sphinx-rtd-theme = "*"
+pytest = "*"
+flake8 = "*"
+black = "*"
+flake8-black = "*"
+matplotlib = "*"
+gmsh = "*"
+scipy = "*"
+opencv-contrib-python = "*"
+pyside6 = "*"
+alive-progress = "*"
+opencv-python = "*"
+colorlog = "*"
+notebook = "*"
+json-numpy = "*"
+numpyencoder = "*"
+
+[dev-packages]
+ipykernel = "*"
+geopyv = {editable = true, path = "."}
+
+[requires]
+python_version = "3"
+
+[pipenv]
+allow_prereleases = true
