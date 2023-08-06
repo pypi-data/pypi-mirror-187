@@ -1,0 +1,3 @@
+[console_scripts]
+beibootctl=cli.__main__:main
+
