@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+TinyTinyDebugger/LICENSE
+TinyTinyDebugger/README.MD
+TinyTinyDebugger/__init__.py
+TinyTinyDebugger/requirements.txt
+TinyTinyDebugger/thirdparty.json
+TinyTinyDebugger.egg-info/PKG-INFO
+TinyTinyDebugger.egg-info/SOURCES.txt
+TinyTinyDebugger.egg-info/dependency_links.txt
+TinyTinyDebugger.egg-info/requires.txt
+TinyTinyDebugger.egg-info/top_level.txt
