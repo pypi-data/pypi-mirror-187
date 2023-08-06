@@ -1,0 +1,120 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "sqlalchemy-filterset"
+version = "1.0.1"
+description = "An easy way to filter, sort, paginate SQLAlchemy queries"
+readme = "README.md"
+license = "MIT"
+authors = [
+    "Andrey Matveev <ra1ze.matveev@yandex.ru>",
+    "Artem Titorenko <ya.titorenko7@yandex.ru>",
+    "Ivan Moiseev <imoiseev.work@gmail.com>",
+    "Yuri Mezentsev <yurmezence@gmail.com>"
+]
+
+[project.urls]
+Homepage = "https://github.com/sqlalchemy-filterset/sqlalchemy-filterset"
+Documentation = "https://sqlalchemy-filterset.github.io/sqlalchemy-filterset/"
+
+[tool.poetry.dependencies]
+python = ">=3.7,<4.0.0"
+SQLAlchemy = { version = ">=1.4,<2", extras = ["asyncio"] }
+
+[tool.poetry.dev-dependencies]
+SQLAlchemy = { version = ">=1.4,<2", extras = ["asyncio", "mypy"] }
+greenlet = ">=1.1.2"
+
+# Documentation
+mkdocs-material = {version = "^9.0.2"}
+
+SQLAlchemy-Utils = "^0.38.3"
+commitizen = "^2.20.5"
+asyncpg = ">=0.26.0"
+psycopg2-binary = ">=2.0.0"
+
+# Typehinting
+mypy = ">=0.940"
+mypy-extensions = ">=0.4.3"
+
+# Tests
+pytest = ">=7.0.1"
+pytest-asyncio = ">=0.18.1"
+pytest-xdist = ">=2.5.0"
+pytest-cov = "^4.0.0"
+factory-boy = ">=3.2.1"
+pydantic = "^1.10.2"
+
+# Formatting
+black = "~22.8.0"
+isort = "~5.10.1"
+
+# Stubs
+sqlalchemy2-stubs = ">=0.0.2-alpha.25"
+pytest-dotenv = "^0.5.2"
+
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "1.0.1"
+version_files = [
+    "sqlalchemy_filterset/__init__.py",
+    "pyproject.toml:version"
+]
+
+[tool.black]
+line-length = 100
+
+[tool.isort]
+multi_line_output = 3
+line_length = 100
+include_trailing_comma = true
+
+[tool.mypy]
+allow_redefinition = false
+check_untyped_defs = true
+disallow_untyped_decorators = true
+disallow_any_explicit = false
+disallow_any_generics = false
+disallow_untyped_calls = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+ignore_errors = false
+ignore_missing_imports = false
+local_partial_types = true
+strict_optional = true
+strict_equality = true
+no_implicit_optional = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+warn_unused_configs = true
+warn_unreachable = true
+warn_no_return = true
+exclude = [
+    "^docs_src.*",
+]
+plugins = ["sqlalchemy.ext.mypy.plugin"]
+
+[[tool.mypy.overrides]]
+module = [
+    "factory.*",
+    "sqlalchemy_utils.*",
+    "sqlalchemy.testing.*",
+    "itsdangerous.*",
+    "pytest_async_sqlalchemy.*",
+]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore::UserWarning"
+]
+asyncio_mode = "auto"
