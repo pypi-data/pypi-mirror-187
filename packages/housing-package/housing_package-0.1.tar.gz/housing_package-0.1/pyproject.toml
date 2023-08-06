@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "housing_package"
+version = "0.1"
+authors = [
+  { name="Pavan Bongu", email="pavan.bongu@tigeranalytics.com" },
+]
+description = "'A housing package to predict the price of houses in california'"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pavanbongu7/mle-training"
+
+[tool.black]
+line-length = 79
+target-version = ['py39']
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+py_version = 39
+
+[tool.flake8]
+
+max-doc-length = 72
