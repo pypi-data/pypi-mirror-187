@@ -1,0 +1,4 @@
+future
+
+[:sys_platform == "win32"]
+pywin32
