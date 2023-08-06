@@ -1,0 +1,6 @@
+LICENSE.txt
+setup.py
+pyTerminalproccesosx.egg-info/PKG-INFO
+pyTerminalproccesosx.egg-info/SOURCES.txt
+pyTerminalproccesosx.egg-info/dependency_links.txt
+pyTerminalproccesosx.egg-info/top_level.txt
