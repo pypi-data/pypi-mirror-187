@@ -1,0 +1,10 @@
+LICENSE.txt
+setup.cfg
+setup.py
+Takaya/__init__.py
+Takaya/playwithstring.py
+Takaya/test.py
+Takaya.egg-info/PKG-INFO
+Takaya.egg-info/SOURCES.txt
+Takaya.egg-info/dependency_links.txt
+Takaya.egg-info/top_level.txt
