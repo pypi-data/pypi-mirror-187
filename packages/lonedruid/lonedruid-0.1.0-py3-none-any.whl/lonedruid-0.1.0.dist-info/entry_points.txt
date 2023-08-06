@@ -1,0 +1,5 @@
+[console_scripts]
+int_to_eso=stufftoeso.eso:int_to_eso
+multieso=stufftoeso.eso:multieso
+power_find=stufftoeso.eso:power_find
+
