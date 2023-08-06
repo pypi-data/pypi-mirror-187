@@ -1,0 +1,76 @@
+name: Publish to Anaconda.org
+
+on:
+  release:
+    types:
+      - published
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+      tags:
+        description: 'manual run'
+
+jobs:
+
+  publish_to_anaconda:
+    name: Publish to Anaconda.org
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: False
+      matrix:
+        python-version: [3.9, '3.10']
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+    steps:
+      - name: configure Pagefile
+        if: runner.os == 'Windows'
+        uses: al-cheb/configure-pagefile-action@v1.2
+        with:
+          minimum-size: 16GB
+
+      - name: Checkout source
+        uses: actions/checkout@v2
+
+      - name: Setup Mamba
+        uses: conda-incubator/setup-miniconda@v2
+        # https://github.com/conda-incubator/setup-miniconda
+        with:
+          python-version: ${{ matrix.python-version }}
+          mamba-version: "*"
+          channels: conda-forge,ncb
+          use-only-tar-bz2: true # IMPORTANT: This needs to be set for caching to work properly!
+          use-mamba: true
+
+      - name: Install build dependencies (win)
+        if: runner.os == 'Windows'
+        shell: cmd /C CALL {0}
+        run: |
+          mamba install -y -n base -c conda-forge boa anaconda-client conda-build conda-verify
+          conda config --set anaconda_upload yes
+          conda config --set always_yes yes --set changeps1 no
+
+      - name: Install build dependencies (*x)
+        if: runner.os != 'Windows'
+        shell: bash -l {0}
+        run: |
+          mamba install -y -n base -c conda-forge boa anaconda-client conda-build conda-verify
+          conda config --set anaconda_upload yes
+          conda config --set always_yes yes --set changeps1 no
+
+      - name: Build gui and upload to anaconda (win)
+        if: runner.os == 'Windows'
+        shell: cmd /C CALL {0}
+        run: |
+          conda mambabuild conda/xarray-behave -c conda-forge -c ncb -c anaconda --python ${{ matrix.python-version }} --user ncb --token %ANACONDA_TOKEN%
+        env:
+          ANACONDA_TOKEN: ${{ secrets.ANACONDA_TOKEN }}
+
+      - name: Build gui and upload to anaconda (*x)
+        if: runner.os != 'Windows'
+        shell: bash -l {0}
+        run: |
+          conda mambabuild conda/xarray-behave -c conda-forge -c ncb -c anaconda --python ${{ matrix.python-version }} --user ncb --token $ANACONDA_TOKEN
+        env:
+          ANACONDA_TOKEN: ${{ secrets.ANACONDA_TOKEN }}
