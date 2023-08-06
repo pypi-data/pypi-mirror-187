@@ -1,0 +1,14 @@
+[package]
+name = "i1d"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "i1d"
+crate-type = ["cdylib"]
+
+[dependencies]
+numpy = "0.18.0"
+pyo3 = { version = "0.18.0", features = ["extension-module"] }
+rayon = "1.6.1"
