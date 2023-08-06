@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: compel
+Version: 0.1.0
+Summary: A prompting enhancement library for transformers-type text embedding systems
+Author-email: Damian Stewart <null@damianstewart.com>
+Project-URL: Homepage, https://github.com/damian0815/compel
+Project-URL: Bug Tracker, https://github.com/damian0815/compel/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# incite
+A prompting enhancement library for transformers-type text embedding systems
