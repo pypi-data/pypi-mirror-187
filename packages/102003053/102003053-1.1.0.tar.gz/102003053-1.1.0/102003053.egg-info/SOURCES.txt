@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+102003053/102003053.py
+102003053.egg-info/PKG-INFO
+102003053.egg-info/SOURCES.txt
+102003053.egg-info/dependency_links.txt
+102003053.egg-info/entry_points.txt
+102003053.egg-info/requires.txt
+102003053.egg-info/top_level.txt

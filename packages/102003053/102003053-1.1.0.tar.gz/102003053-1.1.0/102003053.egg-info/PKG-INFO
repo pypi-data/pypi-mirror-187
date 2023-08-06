@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: 102003053
+Version: 1.1.0
+Summary: It finds topsis for the given data in csv file
+Home-page: UNKNOWN
+Author: Amit Kumar
+Author-email: akumar9_be20@thapar.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## 102003053
+### It calculates topsis for a given data in csv file.
+
+### Installation
+## pip install 102003053
+
+
+
+## License
+### Â© 2023 Amit Kumar
+
+### This repository is licensed under the MIT license. See LICENSE for details.
+
