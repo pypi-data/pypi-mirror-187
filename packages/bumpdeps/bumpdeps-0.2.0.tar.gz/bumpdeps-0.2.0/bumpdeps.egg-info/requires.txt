@@ -1,0 +1,6 @@
+packaging
+requests
+tomlkit
+
+[tests]
+responses
