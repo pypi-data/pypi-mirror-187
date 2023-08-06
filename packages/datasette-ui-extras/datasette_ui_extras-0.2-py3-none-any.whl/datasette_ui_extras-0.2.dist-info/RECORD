@@ -1,0 +1,9 @@
+datasette_ui_extras/__init__.py,sha256=fBk98ClTqXIaFTcvy24Nv-GPh9aZBxtK-pX8EZ4vwTs,357
+datasette_ui_extras/static/facet-treatment.css,sha256=W4Xw3U9nOSeD4BD417DIIfjDqCl1tOX3CSvhpa3OgrU,783
+datasette_ui_extras/static/sticky-table-headers.js,sha256=Fg41iNwbm0XaCcamAML8cUy5E25suB3AGRf--fzNJFA,840
+datasette_ui_extras-0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+datasette_ui_extras-0.2.dist-info/METADATA,sha256=1jv-XrxYL8_SrzGCErRMrZKKHvBVGjArQou66jQWjI0,2758
+datasette_ui_extras-0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+datasette_ui_extras-0.2.dist-info/entry_points.txt,sha256=g930RFvL4W2B4qnKVcJkM14q8RozF6UZ_DZlL-aJK9Q,44
+datasette_ui_extras-0.2.dist-info/top_level.txt,sha256=Ss0qM40gLCX5nlN8DiRyHvguxYAr6jRXOazrK7TUCGY,20
+datasette_ui_extras-0.2.dist-info/RECORD,,

@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: datasette-ui-extras
+Version: 0.2
+Summary: Add a few flourishes to the Datasette UI
+Home-page: https://github.com/cldellow/datasette-ui-extras
+Author: Colin Dellow
+License: Apache License, Version 2.0
+Project-URL: Issues, https://github.com/cldellow/datasette-ui-extras/issues
+Project-URL: CI, https://github.com/cldellow/datasette-ui-extras/actions
+Project-URL: Changelog, https://github.com/cldellow/datasette-ui-extras/releases
+Classifier: Framework :: Datasette
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: datasette
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-asyncio ; extra == 'test'
+Requires-Dist: pytest-watch ; extra == 'test'
+
+# datasette-ui-extras
+
+[![PyPI](https://img.shields.io/pypi/v/datasette-ui-extras.svg)](https://pypi.org/project/datasette-ui-extras/)
+[![Changelog](https://img.shields.io/github/v/release/cldellow/datasette-ui-extras?include_prereleases&label=changelog)](https://github.com/cldellow/datasette-ui-extras/releases)
+[![Tests](https://github.com/cldellow/datasette-ui-extras/workflows/Test/badge.svg)](https://github.com/cldellow/datasette-ui-extras/actions?query=workflow%3ATest)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/cldellow/datasette-ui-extras/blob/main/LICENSE)
+
+Add a few flourishes to the Datasette UI.
+
+This plugin collects UI tweaks that people have proposed for Datasette.
+
+Compared to core Datasette, this plugin is more willing:
+
+- to use features that require more modern browsers
+- to add features that require storing state (e.g., a visitor's
+  preferences about how to view a table)
+- to require JavaScript
+- to release UI changes
+
+I think these are generally reasonable tradeoffs -- as a plugin that users opt-in
+to, we have the luxury of being more aggressive in our minimum requirements
+and release cadence.
+
+If Datasette makes a breaking change, the plugin may stop working. In that case,
+you can uninstall the plugin while waiting for a fix.
+
+OK, that's enough disclaimers.
+
+## Installation
+
+Install this plugin in the same environment as Datasette.
+
+    datasette install datasette-ui-extras
+
+## Usage
+
+TBD
+
+## Features
+
+- facets are re-styled (inspired by [datasette#1159](https://github.com/simonw/datasette/pull/1159))
+- tables have "sticky" headers (
+
+## Development
+
+To set up this plugin locally, first checkout the code. Then create a new virtual environment:
+
+    cd datasette-ui-extras
+    python3 -m venv venv
+    source venv/bin/activate
+
+Now install the dependencies and test dependencies:
+
+    pip install -e '.[test]'
+
+To run the tests:
+
+    pytest
