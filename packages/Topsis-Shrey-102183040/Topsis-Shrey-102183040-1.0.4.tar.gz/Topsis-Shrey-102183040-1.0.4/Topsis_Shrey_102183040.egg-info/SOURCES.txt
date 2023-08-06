@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+Topsis-Shrey-102183040/__init__.py
+Topsis-Shrey-102183040/__main__.py
+Topsis_Shrey_102183040.egg-info/PKG-INFO
+Topsis_Shrey_102183040.egg-info/SOURCES.txt
+Topsis_Shrey_102183040.egg-info/dependency_links.txt
+Topsis_Shrey_102183040.egg-info/entry_points.txt
+Topsis_Shrey_102183040.egg-info/requires.txt
+Topsis_Shrey_102183040.egg-info/top_level.txt
