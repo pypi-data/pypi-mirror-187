@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+site2hdd/LICENSE
+site2hdd/README.MD
+site2hdd/__init__.py
+site2hdd/requirements.txt
+site2hdd/thirdparty.json
+site2hdd.egg-info/PKG-INFO
+site2hdd.egg-info/SOURCES.txt
+site2hdd.egg-info/dependency_links.txt
+site2hdd.egg-info/requires.txt
+site2hdd.egg-info/top_level.txt
