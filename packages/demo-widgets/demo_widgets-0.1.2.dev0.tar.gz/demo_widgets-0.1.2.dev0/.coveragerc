@@ -1,0 +1,2 @@
+[run]
+omit = demo_widgets/tests/*
