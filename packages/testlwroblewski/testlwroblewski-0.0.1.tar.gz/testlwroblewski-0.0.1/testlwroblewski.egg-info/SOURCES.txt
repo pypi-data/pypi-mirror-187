@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+license.txt
+pyproject.toml
+testlwroblewski/__init__.py
+testlwroblewski/m_mod_lwroblewski.py
+testlwroblewski.egg-info/PKG-INFO
+testlwroblewski.egg-info/SOURCES.txt
+testlwroblewski.egg-info/dependency_links.txt
+testlwroblewski.egg-info/requires.txt
+testlwroblewski.egg-info/top_level.txt
