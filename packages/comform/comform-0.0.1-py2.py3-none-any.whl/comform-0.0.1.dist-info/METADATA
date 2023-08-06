@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: comform
+Version: 0.0.1
+Summary: Python Comment Conformity Formatter
+Project-URL: Homepage, https://j-hil@github.com/j-hil/comform
+Author-email: j-hil <92876062+j-hil@users.noreply.github.com>
+License: GNU General Public License v3 (GPLv3)
+License-File: LICENSE
+Keywords: tools,utilities,utils
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: mdformat<1,>=0.7.16
+Provides-Extra: dev
+Requires-Dist: autoflake<2,>=1.7.7; extra == 'dev'
+Requires-Dist: black<23,>=22.10.0; extra == 'dev'
+Requires-Dist: build<1,>=0.9.0; extra == 'dev'
+Requires-Dist: coverage[toml]<7,>=6.5.0; extra == 'dev'
+Requires-Dist: flake8-pyproject<2,>=1.2.0; extra == 'dev'
+Requires-Dist: ipykernel<7,>=6.17.0; extra == 'dev'
+Requires-Dist: ipython<9,>=8.8.0; extra == 'dev'
+Requires-Dist: isort<6,>=5.10.1; extra == 'dev'
+Requires-Dist: mypy<1,>=0.971; extra == 'dev'
+Requires-Dist: pre-commit<3,>=2.20.0; extra == 'dev'
+Requires-Dist: pydocstringformatter<1,>=0.7.2; extra == 'dev'
+Requires-Dist: pydocstyle[toml]<7,>=6.1.1; extra == 'dev'
+Requires-Dist: pylint<3,>=2.15.2; extra == 'dev'
+Requires-Dist: pytest<8,>=7.2.0; extra == 'dev'
+Requires-Dist: twine<5,>=4.0.1; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# ComForm: Python Comment Conformity Formatter
+
+An auto-formatter for pretty and readable comment formatting in python.
+
+## Usage
+
+Cannot be used - still in development. See [plan.md](./docs/plan.md).
+
+## Development
+
+Create a virtual environment and then run `pip install -e .[dev]` and
+`pre-commit install` from the root directory of the repository.
