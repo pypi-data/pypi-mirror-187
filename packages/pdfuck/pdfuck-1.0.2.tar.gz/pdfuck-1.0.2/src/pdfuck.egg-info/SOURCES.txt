@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/pdfuck/__init__.py
+src/pdfuck.egg-info/PKG-INFO
+src/pdfuck.egg-info/SOURCES.txt
+src/pdfuck.egg-info/dependency_links.txt
+src/pdfuck.egg-info/entry_points.txt
+src/pdfuck.egg-info/requires.txt
+src/pdfuck.egg-info/top_level.txt
