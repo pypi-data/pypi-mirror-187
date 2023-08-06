@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: topsis-neeraj-102003710
+Version: 0.0.2
+Summary: This is a Python Package implementing TOPSIS used for multi-criteria decision analysis method
+Author: Neeraj Sandal
+Author-email: neerajsandal379@gmail.com
+License: MIT
+Keywords: topsis,mcda,UCS654,TIET
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+with open('README.md') as f:
+    long_description = f.readlines()
