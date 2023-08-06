@@ -1,0 +1,8 @@
+LICENSE
+pyproject.toml
+setup.cfg
+src/rishabh_api_interactions/__init__.py
+src/rishabh_api_interactions.egg-info/PKG-INFO
+src/rishabh_api_interactions.egg-info/SOURCES.txt
+src/rishabh_api_interactions.egg-info/dependency_links.txt
+src/rishabh_api_interactions.egg-info/top_level.txt
