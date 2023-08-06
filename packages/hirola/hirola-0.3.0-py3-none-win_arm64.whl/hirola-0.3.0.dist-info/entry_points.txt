@@ -1,0 +1,2 @@
+[pyinstaller40]
+hook-dirs = hirola:_PyInstaller_hook_dir
