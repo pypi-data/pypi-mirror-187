@@ -1,0 +1,9 @@
+onnx2json/__init__.py,sha256=VobXsok3jG-XM0E91g9V7nwlj9bAw1S4a7jR4UxmhPA,69
+onnx2json/__main__.py,sha256=2RSCQ7d4lc6CwD-rlGn9UicPFg-P5du7ZD_yh-kuBEU,57
+onnx2json/onnx2json.py,sha256=2-W9KfIeuoiXp66BLA6CsMCgqAp7qSLvVkrvZst9V84,3446
+onnx2json-2.0.4.dist-info/LICENSE,sha256=heZVlann4DgNufjP0smk5Iqpi96Setg8MXw__f6AZgw,1070
+onnx2json-2.0.4.dist-info/METADATA,sha256=KwNGvOwmt9dtXL1NUZ07H0Kz6uz1cGQjb1P3Gz33Tqs,3505
+onnx2json-2.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+onnx2json-2.0.4.dist-info/entry_points.txt,sha256=CxbbzWjaDeHJdR6iCZKlwKbkKE1-Bf4uv4qj3wB0TrE,45
+onnx2json-2.0.4.dist-info/top_level.txt,sha256=9_-b03tTeNXC0IbGaXBHvfy1eANtvfgfsVufMFnbqK4,10
+onnx2json-2.0.4.dist-info/RECORD,,
