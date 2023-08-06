@@ -1,0 +1,1 @@
+include aws_config_checks/aws-config-conformance-packs/*.yaml
