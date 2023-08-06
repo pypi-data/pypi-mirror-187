@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: sympy-add
+Version: 1.2
+Summary: Addition for sympy
+Home-page: https://github.com/DaSh-More/SympyAdd
+Author: DaSh-More
+Author-email: danila-763@yandex.ru
+License: MIT
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SympyAdd
+Расширение возможностей sympy
+
+## Класс I - единичная матрица
+
+Разложение на элементарные
+``` python
+from sympy import Matrix
+from sympy_add import *
+
+M = Matrix([
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+    ])
+I.decompose(M)
+```

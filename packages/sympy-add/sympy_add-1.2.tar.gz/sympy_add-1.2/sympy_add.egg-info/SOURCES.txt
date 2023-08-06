@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+sympy_add/__init__.py
+sympy_add.egg-info/PKG-INFO
+sympy_add.egg-info/SOURCES.txt
+sympy_add.egg-info/dependency_links.txt
+sympy_add.egg-info/not-zip-safe
+sympy_add.egg-info/requires.txt
+sympy_add.egg-info/top_level.txt
+sympy_add/matrices/I.py
+sympy_add/matrices/__init__.py
+sympy_add/theory/Q.py
+sympy_add/theory/__init__.py
