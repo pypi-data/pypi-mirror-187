@@ -1,0 +1,16 @@
+[package]
+name = "bevy_adapter"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "bevy_adapter"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.17.3", features = ["extension-module"] }
+bevy_reflect = "0.9.1"
+bevy_transform = "0.9.1"
+glam = "0.22.0"
+ron = "0.8.0"
