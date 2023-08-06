@@ -1,0 +1,2 @@
+numpy
+dnn_cool_activations

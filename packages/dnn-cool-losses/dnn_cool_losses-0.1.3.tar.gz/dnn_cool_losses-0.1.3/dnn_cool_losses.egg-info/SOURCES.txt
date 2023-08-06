@@ -1,0 +1,12 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+dnn_cool_losses/__init__.py
+dnn_cool_losses/base.py
+dnn_cool_losses.egg-info/PKG-INFO
+dnn_cool_losses.egg-info/SOURCES.txt
+dnn_cool_losses.egg-info/dependency_links.txt
+dnn_cool_losses.egg-info/requires.txt
+dnn_cool_losses.egg-info/top_level.txt
+tests/test_numpy.py
