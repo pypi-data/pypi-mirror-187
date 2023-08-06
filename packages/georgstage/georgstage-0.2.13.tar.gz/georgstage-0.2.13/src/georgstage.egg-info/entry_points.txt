@@ -1,0 +1,3 @@
+[console_scripts]
+georgstage = georgstage.cli:main
+
