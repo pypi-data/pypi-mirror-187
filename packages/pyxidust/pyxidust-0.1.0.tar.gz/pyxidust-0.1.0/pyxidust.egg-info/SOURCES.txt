@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+pyxidust.egg-info/PKG-INFO
+pyxidust.egg-info/SOURCES.txt
+pyxidust.egg-info/dependency_links.txt
+pyxidust.egg-info/top_level.txt
