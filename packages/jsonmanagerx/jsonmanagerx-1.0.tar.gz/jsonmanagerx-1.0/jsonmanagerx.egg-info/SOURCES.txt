@@ -1,0 +1,6 @@
+setup.py
+jsonmanagerx/code.py
+jsonmanagerx.egg-info/PKG-INFO
+jsonmanagerx.egg-info/SOURCES.txt
+jsonmanagerx.egg-info/dependency_links.txt
+jsonmanagerx.egg-info/top_level.txt
