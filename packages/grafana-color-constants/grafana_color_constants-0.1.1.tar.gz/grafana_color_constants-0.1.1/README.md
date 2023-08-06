@@ -1,0 +1,52 @@
+# Grafana Color Constants
+
+Use this package to easily get Grafana HEX color values in your code: 
+![grafana-colors.png](grafana-colors.png)
+
+It also provides an easy way to iterate over these colors allowing for fast and flexible looping
+without hard-coding the colors in your code.
+
+Install :
+```shell
+pip install grafana-color-constants
+```
+
+Example:
+
+```python
+from grafana_color_constants import GrafanaColor
+
+GrafanaColor.RED
+>>> '#E02F44'
+GrafanaColor.RED.normal
+>>> '#E02F44'
+GrafanaColor.RED.lighter
+>>> '#FF7383'
+GrafanaColor.PURPLE.darker
+>>> '#7C2EA3'
+```
+
+You can use it as an iterator with th `GrafanaColor.iterator` property:
+
+```python
+from grafana_color_constants import GrafanaColor
+from matplotlib import pyplot as plt
+
+color = GrafanaColor.iterator
+
+for i in range(60):
+    plt.bar([i+1], [1.05**i], color=next(color))
+plt.show()
+```
+This will output a graph like so:
+![graph-example.png](graph-example.png)
+
+There are 6 colors: [`RED`, `ORANGE`, `YELLOW`, `GREEN`, `BLUE`, `PURPLE`],
+each with 5 shades [`darker`, `dark`, `normal`, `light`, `lighter`] for a total of 30 colors.
+
+Hope it's useful to you! 
+
+## \#TODOs for next iterations:
+ - rgb and rgba conversions
+ - different iteration orders
+ - custom color sets
