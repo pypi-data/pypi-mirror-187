@@ -1,0 +1,11 @@
+CSG_test.egg-info/PKG-INFO
+CSG_test.egg-info/SOURCES.txt
+CSG_test.egg-info/dependency_links.txt
+CSG_test.egg-info/requires.txt
+CSG_test.egg-info/top_level.txt
+clientAPI/__init__.py
+clientAPI/base.py
+clientAPI/client.py
+clientAPI/mixin.py
+clientAPI/setup.py
+clientAPI/utils.py
