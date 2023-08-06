@@ -1,0 +1,7 @@
+easy_download.py
+setup.py
+easy_download_setup.egg-info/PKG-INFO
+easy_download_setup.egg-info/SOURCES.txt
+easy_download_setup.egg-info/dependency_links.txt
+easy_download_setup.egg-info/requires.txt
+easy_download_setup.egg-info/top_level.txt
