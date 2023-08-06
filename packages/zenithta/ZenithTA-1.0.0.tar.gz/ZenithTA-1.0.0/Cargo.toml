@@ -1,0 +1,12 @@
+[package]
+name = "ZenithTA"
+version = "1.0.0"
+edition = "2021"
+
+[lib]
+name = "ZenithTA"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.15.1", features = ["abi3-py36", "extension-module"] }
+numpy = "0.15"
