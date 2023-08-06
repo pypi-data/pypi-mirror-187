@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/maacore/__init__.py
+src/maacore/example.py
+src/maazore.egg-info/PKG-INFO
+src/maazore.egg-info/SOURCES.txt
+src/maazore.egg-info/dependency_links.txt
+src/maazore.egg-info/top_level.txt
