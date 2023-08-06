@@ -1,0 +1,7 @@
+Licence.txt
+setup.py
+wrapperpkg/__init__.py
+wrapperpkg.egg-info/PKG-INFO
+wrapperpkg.egg-info/SOURCES.txt
+wrapperpkg.egg-info/dependency_links.txt
+wrapperpkg.egg-info/top_level.txt
