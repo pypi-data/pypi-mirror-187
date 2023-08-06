@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: ontopic
+Version: 0.1.0
+Summary: 
+Home-page: https://github.com/GiveMeMoreData/ontopic
+License: MIT
+Author: GiveMeMoreData
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: numpy (>=1.24.1,<2.0.0)
+Requires-Dist: pandas (>=1.5.3,<2.0.0)
+Requires-Dist: rdflib (>=6.2.0,<7.0.0)
+Requires-Dist: scipy (>=1.10.0,<2.0.0); python_version >= "3.9" and python_version < "3.12"
+Requires-Dist: torch (>=1.13.1,<2.0.0)
+Requires-Dist: transformers (>=4.25.1,<5.0.0)
+Project-URL: Repository, https://github.com/GiveMeMoreData/ontopic
+Description-Content-Type: text/markdown
+
+# Example workflow
+
+
+## Load ontology
+via github link or local directory
+
+```python
+import ontopics as ot
+onthology = ot.load_onthology("https://github.com/OpenCS-ontology/OpenCS")
+
+# or 
+
+onthology = ot.load_onthology("onthologies/OpenCS", objects = "", descriptions = "")
+```
+
+## Prepare topics for classification
+
+```python
+# topics is a 
+topics = onthology.prepare_topics()
+
+```
+
+## Classify text to ontologies
+
+```python
+from ontopic.models import TopicalClassifier
+
+text = "In this paper we introduce novel NLP NER machine learning model"
+model = TopicalClassifier()
+
+# to get top 10 topics, 5 is by default
+topics = model.predict(text, top=10)
+
+# to get topics which are above given threshold of 'probability'
+topics = model.predict(text, threshold=0.2)
+
+# to get topics and also probabilities
+topics, proba = model.predict(text, proba=True)
+```
+
