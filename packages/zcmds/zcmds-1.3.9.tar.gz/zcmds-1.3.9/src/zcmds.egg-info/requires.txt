@@ -1,0 +1,13 @@
+ytclip
+pdf2image
+ffmpeg-normalize
+appdirs
+PyQt6==6.3.1
+jsoncomment
+pyserial
+openai
+inputimeout
+pyserial
+
+[:platform_system == "Windows"]
+zcmds_win32>=1.0.2
