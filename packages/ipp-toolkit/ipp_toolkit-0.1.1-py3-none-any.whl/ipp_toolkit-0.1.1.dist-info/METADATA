@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: ipp-toolkit
+Version: 0.1.1
+Summary: A general framework for informative path planning experiments, with a focus on wrapping datasets, sensors, planners, and visualization in a modular manner
+License: MIT
+Author: David Russell
+Author-email: davidrussell327@gmail.com
+Requires-Python: >=3.9,<3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: imagecodecs (>=2022.9.26,<2023.0.0)
+Requires-Dist: imitation (>=0.3.2,<0.4.0)
+Requires-Dist: ipykernel (>=6.20.1,<7.0.0)
+Requires-Dist: matplotlib (>=3.5.3,<4.0.0)
+Requires-Dist: numpy (>=1.23.2,<2.0.0)
+Requires-Dist: planetary-computer (>=0.4.9,<0.5.0)
+Requires-Dist: platypus-opt (>=1.1.0,<2.0.0)
+Requires-Dist: pymongo (>=4.2.0,<5.0.0)
+Requires-Dist: pystac (>=1.6.1,<2.0.0)
+Requires-Dist: python-tsp (>=0.3.1,<0.4.0)
+Requires-Dist: rioxarray (>=0.13.3,<0.14.0)
+Requires-Dist: sacred[mongodb] (>=0.8.2,<0.9.0)
+Requires-Dist: scikit-image (>=0.19.3,<0.20.0)
+Requires-Dist: scikit-learn (>=1.2.1,<2.0.0)
+Requires-Dist: scipy (>=1.9.0,<2.0.0)
+Requires-Dist: ubelt (>=1.2.1,<2.0.0)
