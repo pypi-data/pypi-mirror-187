@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: ktemplate
+Version: 0.1.1
+Summary: a minimalist python html template lib
+Home-page: https://hoishing.github.io/kTemplate
+License: MIT
+Keywords: template,html,jinja
+Author: Kelvin Ng
+Author-email: hoishing@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: FastAPI
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Project-URL: Repository, https://github.com/hoishing/kTemplate
+Description-Content-Type: text/markdown
+
+# kTemplate
+
+[![CI][ci-badge]][ci-url] [![Coverage][coverage-badge]][coverage-url] [![GitHub][MIT-badge]][MIT-url]
+
+> a minimalist python html template
+
+## Quick Start
+
+### Installation
+
+`pip install kTemplate`
+
+### Example
+
+```python
+from kTemplate import (
+  div, img, # common html elements
+  element   # for creating custom element
+)
+
+# create common html element
+# `class` represents by `cls` due to python keyword
+html_str = div(img(src='url'), cls='bar')
+# -> <div class="bar"><img src="url"/></div>
+
+# create custom element
+my_element = element(tag="MyElement", content="foo" props="bar")
+# -> <MyElement props="ar">foo</MyElement>
+```
+
+## Documentation
+
+Please refer the [docs](https://hoishing.github.io/kTemplate) for more about:
+
+- why creating this package
+- usage details
+- function references
+- contributing guideline
+- testing
+- changelog
+
+## Need Help?
+
+Open a [github issue](https://github.com/hoishing/kTemplate/issues) or ping me on [Twitter](https://twitter.com/hoishing) ![](https://api.iconify.design/logos/twitter.svg?width=20)
+
+[ci-badge]: https://github.com/hoishing/kTemplate/actions/workflows/ci.yml/badge.svg
+[ci-url]: https://github.com/hoishing/kTemplate/actions/workflows/ci.yml
+[coverage-badge]: https://hoishing.github.io/kTemplate/assets/coverage-badge.svg
+[coverage-url]: https://hoishing.github.io/kTemplate/assets/coverage/
+[MIT-badge]: https://img.shields.io/github/license/hoishing/kTemplate
+[MIT-url]: https://opensource.org/licenses/MIT
+
