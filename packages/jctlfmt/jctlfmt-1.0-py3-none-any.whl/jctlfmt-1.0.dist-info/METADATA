@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: jctlfmt
+Version: 1.0
+Summary: Python Journalctl parsing and formatting library
+Home-page: https://github.com/dmotte/jctlfmt
+Author: dmotte
+License: MIT
+Keywords: fmt journal parsing log text formatting systemd format logs msg message journald messages filtering journalctl systemd-journald jctl
+Classifier: Intended Audience :: System Administrators
+Classifier: Environment :: Console
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Requires-Python: >=3.9.1
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+[![PyPI](https://img.shields.io/pypi/v/jctlfmt?logo=python&style=flat-square)](https://pypi.org/project/jctlfmt/)
+
+Python **Journalctl parsing** and **formatting** library.
+
+Please refer to the [GitHub repository](https://github.com/dmotte/jctlfmt) for more information.
