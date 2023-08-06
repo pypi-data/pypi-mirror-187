@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: lazymux
+Version: 0.1
+Summary: termux tool installer
+Home-page: https://github.com/Bhai4You/
+Author: Parixit Sutariya
+Author-email: parixit1337@gmail.com
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+<!--
+https://pypi.org/project/lazymux/
+https://pypi.org/project/lazymux/
+-->
+
+[![](https://img.shields.io/pypi/pyversions/readme-generator.svg?longCache=True)](https://pypi.org/project/readme-generator/)
+
+#### Installation
+```
+$ pip install lazymux
+```
+
+#### Features
++   **`lazymux`**, **termux tool installer ;)**
+
+
+#### How it works
+```
+$ lazymux
+```
+
+#### How to Remove ?
+```
+$ pip uninstall lazymux
+```
+
+#### About Us
+```
+Created by Parixit Sutariya
+Github : github.com/Bhai4You
+Blog : bhai4you.blogspot.com
+Youtube : youtube.com/BullAnonymous
+```
+
+<p align="center">
+    <a href="https://pypi.org/project/revancify/">Revancify</a>
+</p>

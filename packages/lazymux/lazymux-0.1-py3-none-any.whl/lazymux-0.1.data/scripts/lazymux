@@ -1,0 +1,4 @@
+#!/bin/bash
+cd /data/data/com.termux/files/usr/bin
+chmod +x lazymux-installer.sh
+bash lazymux-installer.sh
