@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "CnkiPythonMeta"
+version = "0.0.8"
+authors = [
+  { name="YANG Guixian", email="Ygxyoung@hotmail.com" },
+]
+description = "怎么说，甲鱼还是海底捞？睡了没有？这谁顶得住。"
+readme = "README.md"
+requires-python = ">=3.7"
+install_requires=['scipy', 'xlrd', 'xlwt', 'matplotlib']
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
