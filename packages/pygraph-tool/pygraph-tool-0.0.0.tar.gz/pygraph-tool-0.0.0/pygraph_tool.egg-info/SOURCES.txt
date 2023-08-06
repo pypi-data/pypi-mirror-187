@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+pygraph_tool/__init__.py
+pygraph_tool/edge.py
+pygraph_tool/exceptions.py
+pygraph_tool/graph.py
+pygraph_tool/node.py
+pygraph_tool.egg-info/PKG-INFO
+pygraph_tool.egg-info/SOURCES.txt
+pygraph_tool.egg-info/dependency_links.txt
+pygraph_tool.egg-info/top_level.txt
