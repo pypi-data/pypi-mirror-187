@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: neon-homeassistant-skill
+Version: 0.0.1
+Summary: A Neon AI Skill for Home Assistant, which integrates with ovos-PHAL-plugin-homeassistant.
+License: BSD-3
+Author: Mike Gray
+Author-email: mike@graywind.org
+Requires-Python: >=3.7,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# Home Assistant Neon Skill
+
+Uses [PHAL Home Assistant plugin](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-homeassistant)
+
+Still a work in progress - please don't expect it to work yet :)
+
