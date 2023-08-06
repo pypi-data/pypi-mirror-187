@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: profiles-rudderstack
+Version: 0.2.7
+Home-page: https://github.com/rudderlabs/wht
+Author: rudderstack
+Author-email: kuldeep@rudderstack.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: MacOS
+License-File: LICENSE
+
