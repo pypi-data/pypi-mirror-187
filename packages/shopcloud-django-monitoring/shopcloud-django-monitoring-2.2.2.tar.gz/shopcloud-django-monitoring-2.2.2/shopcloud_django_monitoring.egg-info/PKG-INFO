@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: shopcloud-django-monitoring
+Version: 2.2.2
+Summary: A Module for create site reliable engineering
+Home-page: https://github.com/Talk-Point/shopcloud-django-monitoring
+Author: Konstantin Stoldt
+Author-email: konstantin.stoldt@talk-point.de
+License: MIT-License
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.8
+License-File: LICENSE
