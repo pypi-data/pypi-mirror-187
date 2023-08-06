@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: nemollm
+Version: 0.2.0
+Summary: NVIDIA NeMo LLM service
+Home-page: https://pypi.org/project/nemollm
+Author: NVIDIA NeMo LLM
+Author-email: nvidia-nemollm@nvidia.com
+License: UNKNOWN
+Keywords: NVIDIA NeMo LLM service
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE.md
+Requires-Dist: python-dateutil
+Requires-Dist: urllib3 (>=1.25.3)
+
+    # Introduction NeMo LLM Service offers state-of-the-art LLMs that were pre-trained on internet-scale text corpora. &lt;/br&gt; With NeMo LLM Service API users can invoke the services from within their application code. &lt;/br&gt; These models can be flexibly adapted to solve almost any language processing task for your use cases. You can conveniently and quickly try them out, and via an API that you can easily integrate into your applications. &lt;/br&gt; Further, the NeMo LLM Service also offers customization capabilities, where the models can be effectively adapted to new tasks, using your own uploaded data. ### Models: The NeMo LLM Service is powered by a set of large language models of varying sizes and capabilities. Generally, larger models extend the capabilities of what smaller models can do with text. - Large models, such as the 530B, are excellent for complex tasks that require a deep understanding of human languages and all their nuances, such as text summarization, creative writing, or chatbot applications. - Medium models, such as the 20B, are faster than the large models. They are sufficiently good for many tasks such as writing emails and factual question answering. - Small models, such as the 5B, are the fastest and can perform many simple language tasks, such as text classification and spelling correction. &lt;/br&gt;&lt;/br&gt; Each model can be used for \&quot;Completion\&quot; or text generation with One/Few-Shot Learning as well as \&quot;Customization\&quot; with your custom dataset. &lt;/br&gt;&lt;/br&gt; ### The NeMo LLM Service API  comprises the following features:   - Text Completion. With one of the available and pre-trained model the LLM service responds to an input prompt by generating an extension to the provided intut text, that is, a completion. This technique can be used for solving multiple NLP tasks using Zero/Few-shot learning techniques.   - Model Customization. With which you can finetune an existing model on your own custom data in the form of prompt+completion pairs. This enhances the model’s ability to adapt to your use cases by ingesting hundreds to thousands of domain-specific examples.   Please **[submit NVBug](https://nvbugswb.nvidia.com/NvBugs5/SWBug.aspx?bugid&#x3D;3682160&amp;cmtNo&#x3D;)** (by cloning and submitting) if discovered any issues.   # noqa: E501
+    
+
