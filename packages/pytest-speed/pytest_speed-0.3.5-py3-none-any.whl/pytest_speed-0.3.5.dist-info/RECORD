@@ -1,0 +1,9 @@
+pytest_speed/__init__.py,sha256=6p7TiFeBpbmpIfczrJ5EJCyn5mmEv0zsSvC7jp9wDKo,3900
+pytest_speed/benchmark.py,sha256=U70jG85fsu98gqWpU18_l3ElsoFNMMrVkdkC1H-iTAM,12491
+pytest_speed/cli.py,sha256=rX2xRAMt-auoLsSLIjiDGOlLAhZZDTj8tNV5d03ABYU,2361
+pytest_speed/save.py,sha256=IrJi_y6uJ8W8ubo4pOh-SS-ef8n2KBJxUMraKYjejzM,2208
+pytest_speed/utils.py,sha256=N2wAN9xCfjhk38b_g0HO5NDzh7p0nR8ZmA9HN665X7A,3311
+pytest_speed-0.3.5.dist-info/METADATA,sha256=e731SslsdHf5Dk35lOzdg__cGBdjy620k27-vWMiBYc,1628
+pytest_speed-0.3.5.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+pytest_speed-0.3.5.dist-info/entry_points.txt,sha256=Gbxzi6mfWxUwFOelcy4h7G9Ugq1XS6lKPteuCRcOEiU,87
+pytest_speed-0.3.5.dist-info/RECORD,,
