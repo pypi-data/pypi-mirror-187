@@ -1,0 +1,14 @@
+floral/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+floral/datasets.py,sha256=RjYbuFo0_YUzJw72nE6V_81NCB9fgzw1dNXyBPMxCHU,752
+floral/graph.py,sha256=hVHUAHN_dE8kOW7kgGITl0HT2uS_mW_5Tfa1lm9Ao24,4195
+floral/loss.py,sha256=-pOBjpnDPelpk9uNyvNVw4-g3KZI87kdKeE1zntZ1Fg,816
+floral/nn.py,sha256=It5wFIbP_C7tisKupEE5kFUeqbWiBWIm5v2U8AojmFo,2186
+floral/optim.py,sha256=8-kZDvKcQAZnedejLlfLghX87CSoRkCyGHOE31e6-XQ,166
+floral/visual.py,sha256=Em2OY-7f2O9MdKA5c_-L473NlQyzqByQM3Z1bkMPdVY,2705
+floral/data/mnist_labels_uint8,sha256=VNu8LKsAUIxa3jaoB_SLyD0O4yhbvriuJTd6qhKyJQw,650000
+floral/data/mnist_sprite.png,sha256=SYt_Z4nvDdVgbXfX_H9FAvSvc9cb9apowJW6vhN6dJE,10689542
+floral-1.0.3.dist-info/METADATA,sha256=WLIThzBxPzCOhH6pR6Lkv2NiImnUOh6W9pUC0_uwI6M,5408
+floral-1.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+floral-1.0.3.dist-info/top_level.txt,sha256=RHz0rKXt7np2G5KXX0MiKKmbeh8g9LlezLPREO9qJqM,7
+floral-1.0.3.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+floral-1.0.3.dist-info/RECORD,,
