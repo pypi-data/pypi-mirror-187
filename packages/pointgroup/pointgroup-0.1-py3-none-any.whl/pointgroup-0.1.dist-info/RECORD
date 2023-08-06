@@ -1,0 +1,8 @@
+pointgroup/__init__.py,sha256=w8hiTGasnF54LFwLGhU_6xLX-AKzOnOBtbaKWWDoD50,12461
+pointgroup/element_data.py,sha256=Dsr-WTRpBtOhJrH35eFRg8U4QS3MCfsqNkoNgYVp9IA,6808
+pointgroup/operations.py,sha256=yn0Yx0JEOytX3NWMBZI6O8esO1kMpsxonCsKfPnWYi4,1143
+pointgroup/sym_tools.py,sha256=6VGjs2jiimC7WryKxaV5GBRAYaXTKxWJ1ziL0ctW0dw,1590
+pointgroup-0.1.dist-info/METADATA,sha256=B3YA3L1Sw1xRDoLQZcQmXe6INYnYbI51Y2UFcJ_6DGE,1448
+pointgroup-0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pointgroup-0.1.dist-info/top_level.txt,sha256=FG9EWy7VYGkqCVrDS_SwP4p9NBmPkjcIPEU2mpQ406c,11
+pointgroup-0.1.dist-info/RECORD,,
