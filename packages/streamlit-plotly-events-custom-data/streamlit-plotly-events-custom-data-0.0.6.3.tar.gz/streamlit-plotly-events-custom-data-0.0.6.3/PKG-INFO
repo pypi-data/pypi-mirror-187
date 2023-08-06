@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: streamlit-plotly-events-custom-data
+Version: 0.0.6.3
+Summary: Plotly chart component for Streamlit that also allows for events to bubble back up to Streamlit. This is a fork that allows the user to specify custom_data in the plot.
+Home-page: https://github.com/Aimino-Tech/streamlit-plotly-events
+Author: Zafir Stojanovski
+Author-email: zafir.stojanovski@aimino.de
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+License-File: LICENSE
+
+Plotly chart component for Streamlit that also allows for events to bubble back up to Streamlit. This is a fork that allows the user to specify custom_data in the plot.
