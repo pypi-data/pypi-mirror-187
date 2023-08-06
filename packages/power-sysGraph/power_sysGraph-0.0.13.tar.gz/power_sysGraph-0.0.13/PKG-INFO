@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: power_sysGraph
+Version: 0.0.13
+Summary: Relations of power in graphs
+Home-page: UNKNOWN
+Author: Daniele De Luca
+Author-email: <prof.daniele.deluca@gmail.com>
+License: UNKNOWN
+Description: Given a directed graph, this Python package calculates the colonization matrix and properties such as hierarchy and mutualism.
+Keywords: power,system of power,cooperation
+Platform: UNKNOWN
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
