@@ -1,0 +1,10 @@
+cjm_pytorch_utils/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+cjm_pytorch_utils/_modidx.py,sha256=0yxwfST3bXKrIynRMy8Ze9M9ECmeypEQEWSTHkcrzZs,1112
+cjm_pytorch_utils/core.py,sha256=BVo5ZClvG5_EDQezNvnKPiudvAhiTr4eBWD0eYy1vDY,1605
+cjm_pytorch_utils/pytorch_utils.py,sha256=f5DxzUDr_L3kJlb9e6OUjD3gGmz3INPYA0-qEGYKNtQ,1628
+cjm_pytorch_utils-0.0.1.dist-info/LICENSE,sha256=oTCv7WI-xHYj6MIBPnlkLQwi5oTm1xoI3kKeFZIzBwE,1075
+cjm_pytorch_utils-0.0.1.dist-info/METADATA,sha256=8txkYI7lmmfINTJF25O3Br4rTPP7hSgxztLPIDzhweU,1799
+cjm_pytorch_utils-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cjm_pytorch_utils-0.0.1.dist-info/entry_points.txt,sha256=7cLWp9hBRugFXQW7abSwX0Sg8F3ZVt5L6nEUBHsVqvo,56
+cjm_pytorch_utils-0.0.1.dist-info/top_level.txt,sha256=xeFpXnGlo3LvA7o_UcFVHQcsuzh1NUKDUOXSZekbMeY,18
+cjm_pytorch_utils-0.0.1.dist-info/RECORD,,
