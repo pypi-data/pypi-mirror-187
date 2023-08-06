@@ -1,0 +1,1 @@
+from mi_band_data_extract.get_data import get_data
