@@ -1,0 +1,9 @@
+CHANGELOG.md
+LICENSE.md
+MANIFEST.in
+README.md
+setup.py
+requestsx.egg-info/PKG-INFO
+requestsx.egg-info/SOURCES.txt
+requestsx.egg-info/dependency_links.txt
+requestsx.egg-info/top_level.txt
