@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: revancify
+Version: 0.2
+Summary: A simple and direct Revanced Installer script.
+Home-page: https://github.com/decipher3114/Revancify
+Author: Parixit Sutariya
+Author-email: parixit1337@gmail.com
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+<!--
+https://pypi.org/project/revancify/
+https://pypi.org/project/revancify/
+-->
+
+[![](https://img.shields.io/pypi/pyversions/readme-generator.svg?longCache=True)](https://pypi.org/project/readme-generator/)
+
+#### Installation
+```
+$ pip install revancify
+```
+
+#### Features
++   **`revancify`**, **A simple and direct Revanced Installer script.**
+
+
+#### How it works
+```
+$ revancify
+
+Created by Parixit Sutariya
+Script Credit : github.com/decipher3114
+Owner Credit : github.com/revanced
+Github : github.com/Bhai4You
+Youtube : youtube.com/BullAnonymous
+
+```
+
+<p align="center">
+    <a href="https://pypi.org/project/revancify/">Revancify</a>
+</p>
