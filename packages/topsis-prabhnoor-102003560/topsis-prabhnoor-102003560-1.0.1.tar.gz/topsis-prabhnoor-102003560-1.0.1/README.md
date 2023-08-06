@@ -1,0 +1,66 @@
+Project description
+TOPSIS-ANALYSIS
+By: Prabhnoor Singh Ghotra
+
+What is TOPSIS?
+Technique for Order Preference by Similarity to Ideal Solution (TOPSIS) originated in the 1980s as a multi-criteria decision making method. TOPSIS chooses the alternative of shortest Euclidean distance from the ideal solution, and greatest distance from the negative-ideal solution.
+
+### Installation
+```bash
+pip install topsis-prabhnoor-102003560==1.0.0
+```
+
+
+### Usage
+
+Arguments Required:
+(Assumne we have 3 attributes in dataset.)
+
+You have to required one .csv file. (102003560-data.csv)
+Pass weights to each attribute. (e.g.: [1,1,1,1,1])
+Pass impacts to each attribute. (e.g.: [+,-,+,-,+])
+Pass the name of the file with you want to put on .csv file. (102003560-result-1.csv)
+
+
+Enter csv filename followed by .csv extension, then enter the weights string with values separated by commas, followed by the impacts string with comma separated signs (+,-) and name of file followed by -.csv- extension in which the user wants the output file
+
+## Example
+#### sample.csv
+```bash
+Fund Name	P1	    P2  	P3	    P4	    P5
+M1	        0.84	0.71	6.7	    42.1	12.59
+M2	        0.91	0.83	7	    31.7	10.11
+M3	        0.79	0.62	4.8	    46.7	13.23
+M4	        0.78	0.61	6.4	    42.4	12.55
+M5	        0.94	0.88	3.6	    62.2	16.91
+M6	        0.88	0.77	6.5	    51.5	14.91
+M7	        0.66	0.44	5.3	    48.9	13.83
+M8	        0.93	0.86	3.4	    37	    10.55
+
+```
+
+### INPUT
+```python
+topsis 102003560-data.csv 1,1,1,1,1 +,-,+,-,+ 102003560-result-1.csv
+```
+
+### OUTPUT
+
+```bash
+Fund Name	P1	        P2	        P3	        P4	        P5	    Topsis Score	Rank
+M1	    0.351077437	0.344400588	0.421433661	0.322539084	0.335992288	0.594551725	    2
+M2	    0.380333891	0.402609138	0.440303825	0.24286197	0.269807945	0.566246179	    3
+M3	    0.330179971	0.300744175	0.301922623	0.357780884	0.353072118	0.485394123	    6
+M4	    0.326000478	0.295893463	0.402563497	0.324837462	0.334924798	0.612775882	    1
+M5	    0.39287237	0.4268627	0.226441967	0.476530428	0.451281142	0.361550918	    8
+M6	    0.367795411	0.373504863	0.408853551	0.394554936	0.397906673	0.538764066	    5
+M7	    0.275846558	0.21343135	0.333372896	0.374635658	0.369084459	0.560458621	    4
+M8	    0.388692877	0.417161275	0.213861858	0.283466653	0.281550328	0.38966293	    7
+
+```
+
+
+
+
+
+
