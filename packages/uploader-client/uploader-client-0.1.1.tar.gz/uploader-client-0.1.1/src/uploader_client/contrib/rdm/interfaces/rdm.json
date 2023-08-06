@@ -1,0 +1,91 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Regional Data Mart Upload Service REST API Documentation",
+    "version": "1.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8090",
+      "description": "Generated server url"
+    }
+  ],
+  "tags": [
+    {
+      "name": "API для загрузки данных из ЭЖД"
+    }
+  ],
+  "paths": {
+    "/{version}/datamarts/{datamart_name}/tables/{table_name}/upload ": {
+      "parameters": [
+        {
+          "in": "header",
+          "name": "Authorization",
+          "example": "Bearer AbCdEf123456",
+          "schema": {
+            "type": "string"
+          },
+          "required": true
+        },
+        {
+          "in": "path",
+          "name": "version",
+          "schema": {
+            "type": "string"
+          },
+          "required": true
+        },
+        {
+          "in": "path",
+          "name": "datamart_name",
+          "schema": {
+            "type": "string"
+          },
+          "required": true
+        }
+      ],
+      "post": {
+        "tags": [
+          "API для загрузки данных из ЭЖД"
+        ],
+        "summary": "Загрузить сведения одним файлом.",
+        "operationId": "upload",
+        "parameters": [
+          {
+            "name": "table_name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/octet-stream": {
+              "schema": {
+                "type": "string"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно."
+          },
+          "400": {
+            "description": "Ошибка входных данных."
+          },
+          "401": {
+            "description": "Идентификатор Системы-источника не допустимый или подпись ошибочная."
+          },
+          "500": {
+            "description": "Внутренняя ошибка."
+          }
+        }
+      }
+    }
+  },
+  "components": {}
+}
