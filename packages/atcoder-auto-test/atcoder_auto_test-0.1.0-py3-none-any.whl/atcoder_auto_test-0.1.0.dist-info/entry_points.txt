@@ -1,0 +1,4 @@
+[console_scripts]
+s=atcoder_auto_test.main:submit
+t=atcoder_auto_test.main:test
+
