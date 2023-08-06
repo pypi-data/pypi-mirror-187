@@ -1,0 +1,11 @@
+README.md
+setup.py
+resl/__init__.py
+resl/cli.py
+resl/colorful.py
+resl.egg-info/PKG-INFO
+resl.egg-info/SOURCES.txt
+resl.egg-info/dependency_links.txt
+resl.egg-info/entry_points.txt
+resl.egg-info/requires.txt
+resl.egg-info/top_level.txt
