@@ -1,0 +1,8 @@
+README.md
+setup.py
+brand_new_fancy_logger.egg-info/PKG-INFO
+brand_new_fancy_logger.egg-info/SOURCES.txt
+brand_new_fancy_logger.egg-info/dependency_links.txt
+brand_new_fancy_logger.egg-info/top_level.txt
+logger/__init__.py
+logger/fancy_logger.py
