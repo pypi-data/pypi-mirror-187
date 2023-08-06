@@ -1,0 +1,3 @@
+[console_scripts]
+topsis = Topsis_AbhishekVohra_102003439.102003439:main
+
