@@ -1,0 +1,17 @@
+anndata
+attrs>=22.1
+numpy
+pandas
+pyarrow>=9.0.0
+scanpy
+scipy
+somacore==0.0.0a5
+tiledb>=0.20.0
+typing-extensions
+
+[dev]
+black
+flake8-bugbear
+isort
+pytest
+typeguard
