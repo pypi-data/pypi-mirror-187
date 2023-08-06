@@ -1,0 +1,6 @@
+pandas
+random
+statistics
+neattext
+nltk
+sentence_transformers
