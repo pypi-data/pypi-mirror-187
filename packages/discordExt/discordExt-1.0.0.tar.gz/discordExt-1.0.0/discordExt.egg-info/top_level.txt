@@ -1,0 +1,8 @@
+discordExt
+discordExt\com
+discordExt\com\bot
+discordExt\com\embed
+discordExt\funcs
+discordExt\utils
+discordExt\utils\json
+discordExt\utils\store
