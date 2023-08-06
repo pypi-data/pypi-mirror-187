@@ -1,0 +1,3 @@
+[console_scripts]
+robin-sd-upload = robin_sd_upload.__main__:main
+
