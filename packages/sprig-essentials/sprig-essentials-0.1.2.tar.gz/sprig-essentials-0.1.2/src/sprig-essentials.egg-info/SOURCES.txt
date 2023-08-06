@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/sprig-essentials/__init__.py
+src/sprig-essentials/audio.py
+src/sprig-essentials/display.py
+src/sprig-essentials.egg-info/PKG-INFO
+src/sprig-essentials.egg-info/SOURCES.txt
+src/sprig-essentials.egg-info/dependency_links.txt
+src/sprig-essentials.egg-info/top_level.txt
