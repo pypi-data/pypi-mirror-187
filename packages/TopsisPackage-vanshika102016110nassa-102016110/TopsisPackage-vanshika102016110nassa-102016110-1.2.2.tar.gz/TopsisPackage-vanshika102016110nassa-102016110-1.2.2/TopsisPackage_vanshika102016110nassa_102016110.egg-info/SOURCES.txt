@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+TopsisPackage_vanshika102016110nassa_102016110/__init__.py
+TopsisPackage_vanshika102016110nassa_102016110/topsis.py
+TopsisPackage_vanshika102016110nassa_102016110.egg-info/PKG-INFO
+TopsisPackage_vanshika102016110nassa_102016110.egg-info/SOURCES.txt
+TopsisPackage_vanshika102016110nassa_102016110.egg-info/dependency_links.txt
+TopsisPackage_vanshika102016110nassa_102016110.egg-info/requires.txt
+TopsisPackage_vanshika102016110nassa_102016110.egg-info/top_level.txt
