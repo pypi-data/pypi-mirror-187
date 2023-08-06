@@ -1,0 +1,12 @@
+wagtail_draftail_anchors/__init__.py,sha256=cl6roS_s0RlkJfC2cczMHBFoeXH__oa9a_yUn24jjmM,85
+wagtail_draftail_anchors/apps.py,sha256=XZsoM_3MVW3HVyYNMUjJyrzzr394LPa7n2OvZPoGiHk,266
+wagtail_draftail_anchors/rich_text.py,sha256=jXSmICfJaZNHg7soVOD3ziPOR5Y9lACZgEoFzr_GUS4,3698
+wagtail_draftail_anchors/wagtail_hooks.py,sha256=g7WMYLIDIIEPPjXsN7eGNNW9qYWIlkg-ytIhZThXp8Q,4071
+wagtail_draftail_anchors/static/wagtaildraftailanchors/css/wagtail-draftail-anchor.css,sha256=S21CJ2lCirabCaRp_RbUsW_AYpDKsMwQSSQKTxSlVas,269
+wagtail_draftail_anchors/static/wagtaildraftailanchors/fonts/wagtail-draftail-anchor.woff,sha256=S8XK7rgIYMUb7YP0ZMBwDentNm4cYWhR48qh6Y1KPrY,1396
+wagtail_draftail_anchors/static/wagtaildraftailanchors/js/wagtail-draftail-anchor.js,sha256=1j4taehhI7d5oFJb8s7JUHfJ6EZonmd_87TCgdt-aZM,13404
+wagtail_draftail_anchors/templates/wagtaildraftailanchors/icons/anchor.svg,sha256=KHvsq26nAq1CGPIa9Tp6eWbfdBSqEeCe36UQnoZV-Ps,899
+wagtail_draftail_anchors-0.5.0.dist-info/METADATA,sha256=wW0vMtrkN_asuoEmSJmsU__C-CKEAX1uRQ6nge-YS7k,2536
+wagtail_draftail_anchors-0.5.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+wagtail_draftail_anchors-0.5.0.dist-info/top_level.txt,sha256=X6HfDnVG27tVWfdTyHG-67mkuPOPG7mra4nKyjqmqhM,25
+wagtail_draftail_anchors-0.5.0.dist-info/RECORD,,
