@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: hypixel.py-data
+Version: 1.0.1
+Summary: A Python package for optional, extra data used with the hypixel.py library
+Home-page: https://github.com/duhby/hypixel.py-data
+Author: duhby
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# hypixel.py-data
+PyPI package for optional, extra data used with the hypixel.py library.
