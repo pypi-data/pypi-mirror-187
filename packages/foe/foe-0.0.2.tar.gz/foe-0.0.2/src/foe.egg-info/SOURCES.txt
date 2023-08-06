@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/foe/__init__.py
+src/foe.egg-info/PKG-INFO
+src/foe.egg-info/SOURCES.txt
+src/foe.egg-info/dependency_links.txt
+src/foe.egg-info/top_level.txt
