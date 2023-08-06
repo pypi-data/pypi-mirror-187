@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: python-openet
+Version: 0.1.0
+Summary: 
+Author: Denver Noell
+Author-email: dnoell@ppeng.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: arrow (>=1.2.3,<2.0.0)
+Requires-Dist: geopandas (>=0.12.2,<0.13.0)
+Requires-Dist: pandas (>=1.5.3,<2.0.0)
+Requires-Dist: requests (>=2.28.2,<3.0.0)
