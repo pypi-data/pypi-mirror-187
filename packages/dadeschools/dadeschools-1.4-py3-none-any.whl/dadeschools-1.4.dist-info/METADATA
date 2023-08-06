@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: dadeschools
+Version: 1.4
+Summary: The Ultimate Dadeschools CLI
+License: MIT
+Author: BananaApache
+Author-email: daniel.miami2005@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# dadeschools
+
+## Installation
+`pip install dadeschools`
+
+## Usage
+Run 'dadeschools' in the terminal
+
+`dadeschools`
+
+Then enter your ID number to get grades from dadeschools.net
+
