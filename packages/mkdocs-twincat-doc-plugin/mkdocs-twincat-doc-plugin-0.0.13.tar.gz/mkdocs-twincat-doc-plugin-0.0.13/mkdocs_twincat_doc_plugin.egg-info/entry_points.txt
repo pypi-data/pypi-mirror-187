@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+twincat_doc = twincat_doc.plugin:TwinCatDoc
