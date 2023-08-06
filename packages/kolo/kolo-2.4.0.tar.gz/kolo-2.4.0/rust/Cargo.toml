@@ -1,0 +1,20 @@
+[package]
+name = "_kolo"
+version = "2.4.0"
+edition = "2021"
+
+[package.metadata.maturin]
+name = "kolo._kolo"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "_kolo"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.17.3", features = ["extension-module"] }
+serde_json = { version = "1.0.91", features = ["preserve_order"] }
+ulid = "1.0.0"
+
+[build-dependencies]
+pyo3-build-config = { version = "0.17.3", features = ["resolve-config"] }
