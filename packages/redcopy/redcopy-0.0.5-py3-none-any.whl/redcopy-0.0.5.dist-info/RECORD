@@ -1,0 +1,10 @@
+redcopy/__init__.py,sha256=O7yhTzC9R4REFc9FcyDqwJy7qL4gigpoqdB0J8b45-Y,94
+redcopy/core.py,sha256=FyYbtWQPueF--xvIAIln3FJLH-ht5QVAwBGGkDIXvO8,1722
+redcopy/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+redcopy/utils/data_io.py,sha256=zA0semRYd1unGuRbH6q1SYYvKJ3nRCBCHZ2X1ZYtmac,1637
+redcopy/utils/get_ddl.py,sha256=c57O6Sh7cuk4BQNZ6GGjtD9vTKGjN3-LeaMYmzj47pA,607
+redcopy-0.0.5.dist-info/LICENSE,sha256=pq8tQk4-tmdpwqi8xjZiTF2F-hHPrKDQ2Yd50LbIhA0,1066
+redcopy-0.0.5.dist-info/METADATA,sha256=00_b0kzG9ybx3QOoLlI8mafa9VA267qjaXwvxTcFftk,2286
+redcopy-0.0.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+redcopy-0.0.5.dist-info/top_level.txt,sha256=_iffkcYU8psirG_7ssi2lrVnf7FUflmLfMso9bdiTvU,8
+redcopy-0.0.5.dist-info/RECORD,,
