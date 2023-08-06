@@ -1,0 +1,5 @@
+__pycache__/
+fgc.svg
+build_and_upload
+dist/
+.secrets/
