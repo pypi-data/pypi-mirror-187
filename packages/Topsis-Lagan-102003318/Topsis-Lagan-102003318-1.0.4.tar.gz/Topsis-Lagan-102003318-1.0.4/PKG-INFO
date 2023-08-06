@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: Topsis-Lagan-102003318
+Version: 1.0.4
+Summary: A package -> Calculates Topsis Score and Rank them accordingly
+Home-page: https://github.com/lagangarg/Topsis-Lagan-102003318
+Author: Lagan Garg
+Author-email: lgarg_be20@thapar.edu
+License: MIT
+Download-URL: https://github.com/lagangarg/Topsis-Lagan-102003318/archive/refs/tags/1.0.4.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
