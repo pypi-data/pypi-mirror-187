@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+scia/__init__.py
+scia/config.py
+scia/getLogger.py
+scia.egg-info/PKG-INFO
+scia.egg-info/SOURCES.txt
+scia.egg-info/dependency_links.txt
+scia.egg-info/top_level.txt
+scia/handlers/__init__.py
+scia/handlers/timedRotatingFileHandler.py
