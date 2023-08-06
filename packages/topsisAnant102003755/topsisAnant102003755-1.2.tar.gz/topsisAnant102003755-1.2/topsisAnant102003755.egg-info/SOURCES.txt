@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.py
+test/test.py
+topsis/__init__.py
+topsis/topsis.py
+topsisAnant102003755.egg-info/PKG-INFO
+topsisAnant102003755.egg-info/SOURCES.txt
+topsisAnant102003755.egg-info/dependency_links.txt
+topsisAnant102003755.egg-info/entry_points.txt
+topsisAnant102003755.egg-info/not-zip-safe
+topsisAnant102003755.egg-info/requires.txt
+topsisAnant102003755.egg-info/top_level.txt
