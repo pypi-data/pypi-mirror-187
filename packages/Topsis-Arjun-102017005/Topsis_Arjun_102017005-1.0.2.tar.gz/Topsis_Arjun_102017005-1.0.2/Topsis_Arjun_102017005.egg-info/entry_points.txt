@@ -1,0 +1,2 @@
+[console_scripts]
+Topsis-Arjun-10207005 = Topsis_Arjun_102017005.__init__:main
