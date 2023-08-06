@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+mul_div/__init__.py
+shubham_MUL_DIV.egg-info/PKG-INFO
+shubham_MUL_DIV.egg-info/SOURCES.txt
+shubham_MUL_DIV.egg-info/dependency_links.txt
+shubham_MUL_DIV.egg-info/top_level.txt
