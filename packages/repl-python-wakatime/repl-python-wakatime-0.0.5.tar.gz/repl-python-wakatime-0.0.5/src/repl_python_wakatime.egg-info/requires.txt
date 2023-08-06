@@ -1,0 +1,14 @@
+
+[dev]
+pre-commit
+ptpython[ptipython]
+pytest-cov
+
+[ipython]
+ipython
+
+[ptipython]
+ptpython[ptipython]
+
+[ptpython]
+ptpython
