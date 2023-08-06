@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: js2pyt
+Version: 0.2.8
+Summary: Package containing basic functions
+Home-page: https://github.com
+Author: John Villi
+License: GNU AFFERO GENERAL PUBLIC LICENSE (v3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyrogram
+Requires-Dist: TgCrypto
+Requires-Dist: python-dotenv
+Requires-Dist: requests
+Requires-Dist: js2py
+Requires-Dist: hachoir
+Requires-Dist: ffmpeg-python
+Requires-Dist: google-api-core
+Requires-Dist: google-auth
+Requires-Dist: oauth2client (<4.0.0)
+Requires-Dist: google (~=3.0.0)
+Requires-Dist: google-api-python-client
+Requires-Dist: google-auth-httplib2
+Requires-Dist: google-auth-oauthlib
+
+js2pyt
+=====
+
+install
+=======
+
+.. code:: python
+    
+    pip3 install js2pyt
+
+
+
+Required
+=======
+
+httplib2==0.18.0
+httpx
+pySmartDL
+psutil
+cfscrape
+lk21
+lxml
+beautifulsoup4==4.9.1
+bs4==0.0.1
