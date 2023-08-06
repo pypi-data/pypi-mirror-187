@@ -1,0 +1,13 @@
+api_task/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+api_task/http_api.py,sha256=3oaTvG3qUkOkIDAT3M5s3eqhDrmSDYRTmb2dtkioMK4,1472
+api_task/ip_generator.py,sha256=A1B24jKGkArDybYs1--c4JkJYTgYWK6-tzf_VZ6CfdA,787
+api_task/main.py,sha256=O3IUPaAGzjz_M0CfJIi5-5gI0bV6dH2sxU5WqLpTuKw,2166
+api_task/tcp_server_code.py,sha256=ez5rDJpA073SNveNa4qe8xfzDtkzYUolzPjLmyfitao,1962
+api_task/udp_client.py,sha256=z5stYnBPdMzhmgWWSU3DBCHfbdJ0DD-K4Qf5QvOC37A,742
+api_task/udp_server_code.py,sha256=EnrHCxO8S1MJrVqcBbP1yaFE0lcMLO1USwcb0EAHRPU,942
+api_task/xmlrpc_client_code.py,sha256=4C7c8uUToR7Nfd-xQ9cneAdEGBJ1cdTHZZe_7G7lC54,667
+api_task/xmlrpc_server_code.py,sha256=DecddDS_cdAH_DjMOXSzM1aBNmBNMNIJNaWMUjDVqbM,718
+api_task-0.0.1.dist-info/METADATA,sha256=w6zkbG9zGFyhsVrKC7a1gOantVXjO-4YeN7Rj-27s-U,53
+api_task-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+api_task-0.0.1.dist-info/top_level.txt,sha256=yCTgMKaUSO6ddsxpf3l-2pHYANyI4Cf3iLyNU2BriaY,9
+api_task-0.0.1.dist-info/RECORD,,
