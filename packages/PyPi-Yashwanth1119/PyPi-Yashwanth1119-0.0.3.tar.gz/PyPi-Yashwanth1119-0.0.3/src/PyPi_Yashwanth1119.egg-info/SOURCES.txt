@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/PyPi_Yashwanth1119.egg-info/PKG-INFO
+src/PyPi_Yashwanth1119.egg-info/SOURCES.txt
+src/PyPi_Yashwanth1119.egg-info/dependency_links.txt
+src/PyPi_Yashwanth1119.egg-info/requires.txt
+src/PyPi_Yashwanth1119.egg-info/top_level.txt
+src/oneNeuron/__init__.py
+src/oneNeuron/perceptron.py
