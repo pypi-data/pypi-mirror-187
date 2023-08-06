@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: kodra
+Version: 0.0.7
+Summary: Kodra Python Client
+Author-email: Kodra Technologies <support@kodra.ai>
+Project-URL: Homepage, https://www.kodra.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Kodra Clients
+API Clients that can be used to interact easily and securely with the Kodra backend.
