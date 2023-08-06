@@ -1,0 +1,1344 @@
+{
+    "event_id": 107,
+    "event_date": "19/12/2022",
+    "event_time": "17:30",
+    "favourites": 0,
+    "trainer": null,
+    "additional": [
+        {
+            "id": "2",
+            "note": "Тест"
+        },
+        {
+            "id": "3",
+            "note": "1/3"
+        },
+        {
+            "id": "1",
+            "note": "Среднее"
+        }
+    ],
+    "objectives": [
+        "Тестовая цель тренировки",
+        "Задача 1",
+        "Задача 2"
+    ],
+    "field_size": "1/3",
+    "load_type": "Высокая",
+    "keywords_1": "Тестовое ключевое слово 1",
+    "keywords_2": "",
+    "exercises_info": [
+        {
+            "id": 178,
+            "training_id": 107,
+            "exercise_id": 70,
+            "exercise_name": {
+                "ru": "Игра (4 маленьких ворот) (2 +1) v (2 + 1) + 1N "
+            },
+            "exercise_scheme": {
+                "scheme_1": "<svg class=\"d-block bg-success mx-auto\" height=\"100%\" id=\"block\" preserveaspectratio=\"none\" style=\"\" viewbox=\"0 0 600 400\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<marker fill=\"#000000\" id=\"arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffffff\" id=\"ffffffarrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffff00\" id=\"ffff00arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ff0000\" id=\"ff0000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#000000\" id=\"000000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<filter height=\"200%\" id=\"f3\" width=\"200%\" x=\"0\" y=\"0\"><feoffset dx=\"5\" dy=\"5\" in=\"SourceAlpha\" result=\"offOut\"></feoffset><fegaussianblur in=\"offOut\" result=\"blurOut\" stddeviation=\"3\"></fegaussianblur><feblend in=\"SourceGraphic\" in2=\"blurOut\" mode=\"normal\"></feblend></filter>\n</defs>\n<image data-height=\"400\" data-width=\"600\" height=\"100%\" href=\"/static/schemeDrawer/img/plane/f30.svg\" id=\"plane\" width=\"100%\" x=\"0\" y=\"0\"/>\n<g id=\"selects\"></g>\n<g id=\"figures\"></g>\n<g id=\"lines\"></g>\n<g id=\"objects\"><image class=\"\" data-group=\"gateSmall\" data-height=\"100\" data-scale=\"60\" data-width=\"100\" height=\"60\" href=\"/static/schemeDrawer/img/gate/2/gt09.svg\" id=\"element-1614933036960\" style=\"\" transform=\"rotate(0 210 25)\" width=\"60\" x=\"180\" y=\"-5\"/><image class=\"\" data-group=\"gateSmall\" data-height=\"100\" data-scale=\"60\" data-width=\"100\" height=\"60\" href=\"/static/schemeDrawer/img/gate/2/gt10.svg\" id=\"element-1614933192978\" style=\"\" transform=\"rotate(0 168 338)\" width=\"60\" x=\"138\" y=\"308\"/><image class=\"\" data-group=\"gateSmall\" data-height=\"100\" data-scale=\"60\" data-width=\"100\" height=\"60\" href=\"/static/schemeDrawer/img/gate/2/gt09.svg\" id=\"element-1614933196538\" style=\"\" transform=\"rotate(0 404 24)\" width=\"60\" x=\"374\" y=\"-6\"/><image class=\"\" data-group=\"gateSmall\" data-height=\"100\" data-scale=\"60\" data-width=\"100\" height=\"60\" href=\"/static/schemeDrawer/img/gate/2/gt10.svg\" id=\"element-1614933194958\" style=\"\" transform=\"rotate(0 428 337)\" width=\"60\" x=\"398\" y=\"307\"/><image class=\"\" data-group=\"label3\" data-height=\"100\" data-scale=\"45\" data-width=\"100\" height=\"45\" href=\"/static/schemeDrawer/img/labels/letters-new/hexagon/grey/z_z_z_6_g.svg\" id=\"element-1614933198819\" style=\"\" transform=\"rotate(0 305 28)\" width=\"45\" x=\"288\" y=\"11\"/><image class=\"\" data-group=\"label3\" data-height=\"100\" data-scale=\"45\" data-width=\"100\" height=\"45\" href=\"/static/schemeDrawer/img/labels/letters-new/hexagon/black/z_z_z_6_b.svg\" id=\"element-1614933284412\" style=\"\" transform=\"rotate(180 312 350)\" width=\"45\" x=\"295\" y=\"333\"/><image class=\"\" data-group=\"label3\" data-height=\"100\" data-scale=\"45\" data-width=\"100\" height=\"45\" href=\"/static/schemeDrawer/img/labels/letters-new/hexagon/black/z_z_z_6_b.svg\" id=\"element-1614933301076\" style=\"\" transform=\"rotate(0 204.5 82.5)\" width=\"45\" x=\"187\" y=\"100\"/><image class=\"\" data-group=\"label3\" data-height=\"100\" data-scale=\"45\" data-width=\"100\" height=\"45\" href=\"/static/schemeDrawer/img/labels/letters-new/hexagon/black/z_z_z_6_b.svg\" id=\"element-1614933346925\" style=\"\" transform=\"rotate(0 410 116)\" width=\"45\" x=\"393\" y=\"99\"/><image class=\"\" data-group=\"ball\" data-height=\"100\" data-scale=\"15\" data-select=\"0\" data-width=\"100\" height=\"15\" href=\"/static/schemeDrawer/img/equipment/ball/b1.svg\" id=\"element-1614933435626\" style=\"\" transform=\"rotate(0 203 179)\" width=\"15\" x=\"196\" y=\"172\"/><image class=\"\" data-group=\"label2\" data-height=\"100\" data-scale=\"20\" data-width=\"100\" height=\"20\" href=\"/static/schemeDrawer/img/labels/letters-new/yellow-bright/N_yell.svg\" id=\"element-1627374106688\" style=\"\" transform=\"rotate(0 308 159)\" width=\"20\" x=\"298\" y=\"149\"/><image class=\"\" data-group=\"label3\" data-height=\"100\" data-scale=\"45\" data-width=\"100\" height=\"45\" href=\"/static/schemeDrawer/img/labels/letters-new/hexagon/grey/z_z_z_6_g.svg\" id=\"element-1614933278179\" style=\"\" transform=\"rotate(180 428 200)\" width=\"45\" x=\"408\" y=\"180\"/><text data-scale=\"50\" height=\"26\" id=\"element-1627374296854\" style=\"font-size: 20px; fill: rgb(255, 255, 255); font-weight: 500;\" transform=\"rotate(0 84 12)\" width=\"142\" x=\"12\" y=\"25\">2+1 v 2 v 1 + 1N</text><image class=\"\" data-group=\"label3\" data-height=\"100\" data-scale=\"45\" data-width=\"100\" height=\"45\" href=\"/static/schemeDrawer/img/labels/letters-new/hexagon/grey/z_z_z_6_g.svg\" id=\"element-1614933265479\" style=\"\" transform=\"rotate(180 197 208)\" width=\"45\" x=\"175\" y=\"186\"/></g>\n<g id=\"dots\"></g>\n<line id=\"xLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-1\" x2=\"-1\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1\" y2=\"-1\"></line>\n<line id=\"xLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-2400\" x2=\"-2400\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1600\" y2=\"-1600\"></line>\n</svg>",
+                "scheme_2": "<svg class=\"d-block bg-success mx-auto\" height=\"100%\" id=\"block\" preserveaspectratio=\"none\" style=\"\" viewbox=\"0 0 600 400\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<marker fill=\"#000000\" id=\"arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffffff\" id=\"ffffffarrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffff00\" id=\"ffff00arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ff0000\" id=\"ff0000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#000000\" id=\"000000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<filter height=\"200%\" id=\"f3\" width=\"200%\" x=\"0\" y=\"0\"><feoffset dx=\"5\" dy=\"5\" in=\"SourceAlpha\" result=\"offOut\"></feoffset><fegaussianblur in=\"offOut\" result=\"blurOut\" stddeviation=\"3\"></fegaussianblur><feblend in=\"SourceGraphic\" in2=\"blurOut\" mode=\"normal\"></feblend></filter>\n</defs>\n<image data-height=\"400\" data-width=\"600\" height=\"100%\" href=\"/static/schemeDrawer/img/plane/f01.svg\" id=\"plane\" width=\"100%\" x=\"0\" y=\"0\"/>\n<g id=\"selects\"></g>\n<g id=\"figures\"></g>\n<g id=\"lines\"></g>\n<g id=\"objects\"></g>\n<g id=\"dots\"></g>\n<line id=\"xLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-1\" x2=\"-1\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1\" y2=\"-1\"></line>\n<line id=\"xLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-2400\" x2=\"-2400\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1600\" y2=\"-1600\"></line>\n</svg>"
+            },
+            "group": 1,
+            "duration": 15,
+            "order": 0,
+            "description": "тест",
+            "additional": [
+                {
+                    "id": 64,
+                    "additional_name": {
+                        "en": "Series / pauses",
+                        "ru": "Серии / паузы"
+                    },
+                    "training_exercise_id": 178,
+                    "additional_id": 1,
+                    "note": ""
+                },
+                {
+                    "id": 65,
+                    "additional_name": {
+                        "en": "Organization (space)",
+                        "ru": "Организация (пространство)"
+                    },
+                    "training_exercise_id": 178,
+                    "additional_id": 4,
+                    "note": ""
+                },
+                {
+                    "id": 66,
+                    "additional_name": {
+                        "en": "Number of groups / players",
+                        "ru": "Количество групп / игроков"
+                    },
+                    "training_exercise_id": 178,
+                    "additional_id": 3,
+                    "note": null
+                },
+                {
+                    "id": 431,
+                    "additional_name": {
+                        "en": "Time (minutes)",
+                        "ru": "Время (минуты)"
+                    },
+                    "training_exercise_id": 178,
+                    "additional_id": 2,
+                    "note": null
+                }
+            ],
+            "exercise_data": {
+                "id": 70,
+                "user": 2,
+                "field_task": null,
+                "title": {
+                    "ru": "Игра (4 маленьких ворот) (2 +1) v (2 + 1) + 1N "
+                },
+                "videos": [
+                    {
+                        "id": 6762,
+                        "name": "Игра (4 маленьких ворот) (2 +1) v (2 + 1) + 1N",
+                        "duration": "00:02:51",
+                        "language": "none",
+                        "music": false,
+                        "links": {
+                            "nftv": "1654865941165",
+                            "youtube": "2Jy2yd5Hiuk"
+                        },
+                        "upload_date": "03/12/2022",
+                        "note": null
+                    }
+                ],
+                "description": {
+                    "ru": "<p style=\"margin-left:40px;\"><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);\"><strong>Организация:</strong>&nbsp;(2 +1 v 2+1) + 1N</span><br><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);\"><strong>Описание:&nbsp;</strong> две команды. Задача: забить гол в маленькие ворота. Игроки, находящиеся за воротами играют всегда за атакующих, не заходят в основную зону и играют только через пас.&nbsp;</span><br><strong>Дополнительные условия:</strong><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);\">&nbsp;игровое время, паузы, размеры игровых зон, количество нейтральных, количество касаний мяча, ввод мяча, смена по группам - определяет тренер в зависимости от возраста, уровня игроков и необходимого уровня интенсивности.</span><br><span style=\"color:rgb(51,51,51);\"><strong>Важные моменты:</strong></span></p><ul><li>Активно идти в обводку.</li><li><span style=\"color:rgb(51,51,51);\">Постоянно искать линию паса.&nbsp;</span></li><li><span style=\"color:rgb(51,51,51);\">Придавать необходимую скорость полёта мяча.&nbsp;</span></li><li><span style=\"color:rgb(51,51,51);\">Не подстраиваться под сильную ногу.</span></li><li><span style=\"color:rgb(51,51,51);\">Быстрое ментальное переключение атака/оборона и наоборот.</span></li><li><span style=\"color:rgb(51,51,51);\">Поиск свободных зон.</span></li><li><span style=\"color:rgb(51,51,51);\">Создание ломанных линий при владении мячом: W, ромбы, треугольник.</span></li><li><span style=\"color:rgb(51,51,51);\">Создание численного преимущества в зоне владения мячом.</span></li><li><span style=\"color:rgb(51,51,51);\">Быстрая смена направления атаки.</span><br><span style=\"color:rgb(51,51,51);\"><strong>Направленность упражнения:</strong></span></li><li><span style=\"color:rgb(51,51,51);\">ведение силовых единоборств. Отбор / обыгрыш.</span></li><li><span style=\"color:rgb(51,51,51);\">улучшение качества паса на короткие расстояния, быстрота и точность работы с мячом.</span></li><li><span style=\"color:rgb(51,51,51);\">открывание, выбор свободных зон.&nbsp;</span></li><li><span style=\"color:rgb(51,51,51);\">совершенствование процесса принятия решений на ограниченном пространстве.</span><br><span style=\"color:rgb(51,51,51);\"><strong>Примечания:</strong></span></li><li><span style=\"color:rgb(51,51,51);\">Упражнение выполняется в основной части тренировки.</span></li><li><span style=\"color:rgb(51,51,51);\">Сбалансированно распределять группы/команды по уровню игроков.</span></li></ul>"
+                }
+            }
+        },
+        {
+            "id": 179,
+            "training_id": 107,
+            "exercise_id": 88,
+            "exercise_name": {
+                "ru": "Гибкость. Статическая растяжка."
+            },
+            "exercise_scheme": {
+                "scheme_1": "<svg class=\"d-block bg-success mx-auto\" height=\"100%\" id=\"block\" preserveaspectratio=\"none\" style=\"\" viewbox=\"0 0 600 400\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<marker fill=\"#000000\" id=\"arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffffff\" id=\"ffffffarrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffff00\" id=\"ffff00arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ff0000\" id=\"ff0000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#000000\" id=\"000000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<filter height=\"200%\" id=\"f3\" width=\"200%\" x=\"0\" y=\"0\"><feoffset dx=\"5\" dy=\"5\" in=\"SourceAlpha\" result=\"offOut\"></feoffset><fegaussianblur in=\"offOut\" result=\"blurOut\" stddeviation=\"3\"></fegaussianblur><feblend in=\"SourceGraphic\" in2=\"blurOut\" mode=\"normal\"></feblend></filter>\n</defs>\n<image data-height=\"400\" data-width=\"600\" height=\"100%\" href=\"/static/schemeDrawer/img/plane/f01.svg\" id=\"plane\" width=\"100%\" x=\"0\" y=\"0\"/>\n<g id=\"selects\"></g>\n<g id=\"figures\"></g>\n<g id=\"lines\"></g>\n<g id=\"objects\"></g>\n<g id=\"dots\"></g>\n<line id=\"xLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-1\" x2=\"-1\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1\" y2=\"-1\"></line>\n<line id=\"xLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-2400\" x2=\"-2400\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1600\" y2=\"-1600\"></line>\n</svg>",
+                "scheme_2": "<svg class=\"d-block bg-success mx-auto\" height=\"100%\" id=\"block\" preserveaspectratio=\"none\" style=\"\" viewbox=\"0 0 600 400\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<marker fill=\"#000000\" id=\"arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffffff\" id=\"ffffffarrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffff00\" id=\"ffff00arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ff0000\" id=\"ff0000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#000000\" id=\"000000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<filter height=\"200%\" id=\"f3\" width=\"200%\" x=\"0\" y=\"0\"><feoffset dx=\"5\" dy=\"5\" in=\"SourceAlpha\" result=\"offOut\"></feoffset><fegaussianblur in=\"offOut\" result=\"blurOut\" stddeviation=\"3\"></fegaussianblur><feblend in=\"SourceGraphic\" in2=\"blurOut\" mode=\"normal\"></feblend></filter>\n</defs>\n<image data-height=\"400\" data-width=\"600\" height=\"100%\" href=\"/static/schemeDrawer/img/plane/f01.svg\" id=\"plane\" width=\"100%\" x=\"0\" y=\"0\"/>\n<g id=\"selects\"></g>\n<g id=\"figures\"></g>\n<g id=\"lines\"></g>\n<g id=\"objects\"></g>\n<g id=\"dots\"></g>\n<line id=\"xLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-1\" x2=\"-1\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1\" y2=\"-1\"></line>\n<line id=\"xLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-2400\" x2=\"-2400\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1600\" y2=\"-1600\"></line>\n</svg>"
+            },
+            "group": 1,
+            "duration": 10,
+            "order": 1,
+            "description": null,
+            "additional": [
+                {
+                    "id": 228,
+                    "additional_name": {
+                        "en": "Repetition / pauses",
+                        "ru": "Повторение / паузы"
+                    },
+                    "training_exercise_id": 179,
+                    "additional_id": 8,
+                    "note": ""
+                },
+                {
+                    "id": 229,
+                    "additional_name": {
+                        "en": "Number of groups / players",
+                        "ru": "Количество групп / игроков"
+                    },
+                    "training_exercise_id": 179,
+                    "additional_id": 3,
+                    "note": null
+                },
+                {
+                    "id": 432,
+                    "additional_name": {
+                        "en": "Time (minutes)",
+                        "ru": "Время (минуты)"
+                    },
+                    "training_exercise_id": 179,
+                    "additional_id": 2,
+                    "note": null
+                },
+                {
+                    "id": 433,
+                    "additional_name": {
+                        "en": "Time (minutes)",
+                        "ru": "Время (минуты)"
+                    },
+                    "training_exercise_id": 179,
+                    "additional_id": 2,
+                    "note": null
+                }
+            ],
+            "exercise_data": {
+                "id": 88,
+                "user": 2,
+                "field_task": null,
+                "title": {
+                    "ru": "Гибкость. Статическая растяжка."
+                },
+                "videos": [
+                    {
+                        "id": 6165,
+                        "name": "Гибкость. Статическая растяжка.",
+                        "duration": "00:05:55",
+                        "language": "none",
+                        "music": false,
+                        "links": {
+                            "nftv": "1654865941498",
+                            "youtube": "Hxks9KHcUKk"
+                        },
+                        "upload_date": "04/12/2022",
+                        "note": null
+                    }
+                ],
+                "description": {
+                    "ru": "<p><span style=\"color:#262626;\"><strong>Статическая растяжка (Static Stretching)</strong></span><br><span style=\"color:#262626;\"><strong>Описание:</strong></span></p><ul><li><span style=\"color:#262626;\">Удержание растягивающего положения вы тянитесь, насколько можете, а затем некоторое время (20-30 секунд) удерживаете занятую позицию.</span></li><li><span style=\"color:#262626;\">Во время растяжения следует предельно фокусироваться на правильном выполнении упражнения, которое должно сопровождаться ощущением мягкого вытягивания в мышцах под воздействием собственного веса, без усилий и, внимание, без рывков и резкой боли, с минимальным дискомфортом.&nbsp;</span></li><li><span style=\"color:#262626;\">Правильная техника данного вида растяжки предполагает, что вы расслаблены и не пытаетесь влиять на амплитуду движения, сохраняя пассивно-статическое положение.</span><br><span style=\"color:#262626;\"><strong>Тренировочный эффект:</strong></span></li><li>Снижают напряжение в мышцах и облегчают болезненные ощущения после тренировки с высоким уровнем нагрузки.</li><li>Уменьшается риск получения травмы.</li><li>Увеличивает диапазон подвижности суставов.</li><li><span style=\"color:#262626;\">Расширяет диапазон доступных движений.&nbsp;</span></li><li>Стретчинг поднимает порог выносливости.</li><li>Способствует росту показателей мышечной силы и общей эффективности при физической активности.</li><li>Способствует прогрессу в наборе мышечной массы.</li><li>Способствует ментальному расслаблению.</li><li>Улучшает питание тканей мышц и суставов.</li><li>Улучшает работу системы кровообращения.</li></ul><p><span style=\"color:#262626;\"><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Рекомендации:</strong></span></p><ul><li><i><u>Упражнения для разминки:</u></i> подбирать &nbsp;комплекс упражнений стоя на ногах.</li><li><i><u>Упражнения на восстановление:</u></i> подбирать комплекс упражнений сидя и лёжа.</li><li>Упражнения детям 12 лет рекомендуется включать в тренировку на 3-5 минут. Дополнительная задача научить правильно выполнять упражнения.</li><li>Упражнения детям с 14 лет рекомендуется включать в тренировку на 3-5 минут после тренировочного занятия на восстановление или рекомендовать проводить индивидуально в домашних условиях на 5-10 минут в день.</li></ul>"
+                }
+            }
+        },
+        {
+            "id": 187,
+            "training_id": 107,
+            "exercise_id": 99,
+            "exercise_name": {
+                "ru": "Игровые ситуации (3 v 1) > ( 2 v 2)"
+            },
+            "exercise_scheme": {
+                "scheme_1": "<svg class=\"d-block bg-success mx-auto\" height=\"100%\" id=\"block\" preserveaspectratio=\"none\" style=\"\" viewbox=\"0 0 600 400\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<marker fill=\"#ffffff\" id=\"arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffffff\" id=\"ffffffarrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffff00\" id=\"ffff00arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ff0000\" id=\"ff0000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#000000\" id=\"000000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<filter height=\"200%\" id=\"f3\" width=\"200%\" x=\"0\" y=\"0\"><feoffset dx=\"5\" dy=\"5\" in=\"SourceAlpha\" result=\"offOut\"></feoffset><fegaussianblur in=\"offOut\" result=\"blurOut\" stddeviation=\"3\"></fegaussianblur><feblend in=\"SourceGraphic\" in2=\"blurOut\" mode=\"normal\"></feblend></filter>\n</defs>\n<image data-height=\"400\" data-width=\"600\" height=\"100%\" href=\"/static/schemeDrawer/img/plane/f28.svg\" id=\"plane\" width=\"100%\" x=\"0\" y=\"0\"/>\n<g id=\"selects\"></g>\n<g id=\"figures\"></g>\n<g id=\"lines\"><path d=\"M 71 93 L 526 91\" id=\"element-1608737533169\" marker-end=\"none\" stroke=\"#ffffff\" stroke-dasharray=\"0\" stroke-width=\"1\" style=\"fill:transparent;\"></path><path d=\"M 71 93 L 526 91\" id=\"element-1608737533169-opt\" marker-end=\"\" stroke=\"transparent\" stroke-dasharray=\"0\" stroke-width=\"20\" style=\"fill:transparent;\"></path><path d=\"M 23 274 L 575 272\" id=\"element-1608737605446\" marker-end=\"none\" stroke=\"#ffffff\" stroke-dasharray=\"0\" stroke-width=\"1\" style=\"fill:transparent;\"></path><path d=\"M 23 274 L 575 272\" id=\"element-1608737605446-opt\" marker-end=\"\" stroke=\"transparent\" stroke-dasharray=\"0\" stroke-width=\"20\" style=\"fill:transparent;\"></path></g>\n<g id=\"objects\"><image class=\"\" data-group=\"player\" data-height=\"100\" data-scale=\"55\" data-width=\"100\" height=\"55\" href=\"/static/schemeDrawer/img/player/adults/6/front/zd06.svg\" id=\"element-1608737745125\" style=\"\" transform=\"rotate(0 293 57)\" width=\"55\" x=\"268\" y=\"32\"/><image class=\"\" data-group=\"gateSmall\" data-height=\"100\" data-scale=\"45\" data-width=\"100\" height=\"45\" href=\"/static/schemeDrawer/img/gate/2/gt12.svg\" id=\"element-1608737734715\" style=\"\" transform=\"rotate(0 572 215)\" width=\"45\" x=\"550\" y=\"193\"/><image class=\"\" data-group=\"gateSmall\" data-height=\"100\" data-scale=\"45\" data-width=\"100\" height=\"45\" href=\"/static/schemeDrawer/img/gate/2/gt12.svg\" id=\"element-1608737743852\" style=\"\" transform=\"rotate(0 545 121)\" width=\"45\" x=\"523\" y=\"99\"/><image class=\"\" data-group=\"player\" data-height=\"100\" data-scale=\"55\" data-width=\"100\" height=\"55\" href=\"/static/schemeDrawer/img/player/adults/6/right/zp06.svg\" id=\"element-1608737912117\" style=\"\" transform=\"rotate(0 66 152)\" width=\"55\" x=\"41\" y=\"127\"/><image class=\"\" data-group=\"ball\" data-height=\"100\" data-scale=\"15\" data-width=\"100\" height=\"15\" href=\"/static/schemeDrawer/img/equipment/ball/b1.svg\" id=\"element-1608737979047\" style=\"\" transform=\"rotate(0 99 171)\" width=\"15\" x=\"92\" y=\"164\"/><image class=\"\" data-group=\"player\" data-height=\"100\" data-scale=\"55\" data-select=\"0\" data-width=\"100\" height=\"55\" href=\"/static/schemeDrawer/img/player/adults/2/left/02.svg\" id=\"element-1608738291969\" style=\"\" transform=\"rotate(0 183 155)\" width=\"55\" x=\"158\" y=\"130\"/><image class=\"\" data-group=\"player\" data-height=\"100\" data-scale=\"55\" data-width=\"100\" height=\"55\" href=\"/static/schemeDrawer/img/player/adults/6/back/O06.svg\" id=\"element-1608737857429\" style=\"\" transform=\"rotate(0 266 283)\" width=\"55\" x=\"241\" y=\"258\"/></g>\n<g id=\"dots\"></g>\n<line id=\"xLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-1\" x2=\"-1\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1\" y2=\"-1\"></line>\n<line id=\"xLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-2400\" x2=\"-2400\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1600\" y2=\"-1600\"></line>\n</svg>",
+                "scheme_2": "<svg class=\"d-block bg-success mx-auto\" height=\"100%\" id=\"block\" preserveaspectratio=\"none\" style=\"\" viewbox=\"0 0 600 400\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<marker fill=\"#ffffff\" id=\"arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffffff\" id=\"ffffffarrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffff00\" id=\"ffff00arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ff0000\" id=\"ff0000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#000000\" id=\"000000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<filter height=\"200%\" id=\"f3\" width=\"200%\" x=\"0\" y=\"0\"><feoffset dx=\"5\" dy=\"5\" in=\"SourceAlpha\" result=\"offOut\"></feoffset><fegaussianblur in=\"offOut\" result=\"blurOut\" stddeviation=\"3\"></fegaussianblur><feblend in=\"SourceGraphic\" in2=\"blurOut\" mode=\"normal\"></feblend></filter>\n</defs>\n<image data-height=\"400\" data-width=\"600\" height=\"100%\" href=\"/static/schemeDrawer/img/plane/f28.svg\" id=\"plane\" width=\"100%\" x=\"0\" y=\"0\"/>\n<g id=\"selects\"></g>\n<g id=\"figures\"></g>\n<g id=\"lines\"><path d=\"M 71 93 L 526 91\" id=\"element-1608737533169\" marker-end=\"none\" stroke=\"#ffffff\" stroke-dasharray=\"0\" stroke-width=\"1\" style=\"fill:transparent;\"></path><path d=\"M 71 93 L 526 91\" id=\"element-1608737533169-opt\" marker-end=\"\" stroke=\"transparent\" stroke-dasharray=\"0\" stroke-width=\"20\" style=\"fill:transparent;\"></path><path d=\"M 23 274 L 575 272\" id=\"element-1608737605446\" marker-end=\"none\" stroke=\"#ffffff\" stroke-dasharray=\"0\" stroke-width=\"1\" style=\"fill:transparent;\"></path><path d=\"M 23 274 L 575 272\" id=\"element-1608737605446-opt\" marker-end=\"\" stroke=\"transparent\" stroke-dasharray=\"0\" stroke-width=\"20\" style=\"fill:transparent;\"></path></g>\n<g id=\"objects\"><image class=\"\" data-group=\"gateSmall\" data-height=\"100\" data-scale=\"50\" data-width=\"100\" height=\"50\" href=\"/static/schemeDrawer/img/gate/2/gt12.svg\" id=\"element-1608737734715\" style=\"\" transform=\"rotate(0 572 215)\" width=\"50\" x=\"550\" y=\"193\"/><image class=\"\" data-group=\"player\" data-height=\"100\" data-scale=\"55\" data-width=\"100\" height=\"55\" href=\"/static/schemeDrawer/img/player/adults/6/right/zp06.svg\" id=\"element-1608737912117\" style=\"\" transform=\"rotate(0 79 141)\" width=\"55\" x=\"54\" y=\"116\"/><image class=\"\" data-group=\"ball\" data-height=\"100\" data-scale=\"10\" data-width=\"100\" height=\"10\" href=\"/static/schemeDrawer/img/equipment/ball/b1.svg\" id=\"element-1608737979047\" style=\"\" transform=\"rotate(0 100 167)\" width=\"10\" x=\"93\" y=\"160\"/><image class=\"\" data-group=\"player\" data-height=\"100\" data-scale=\"55\" data-width=\"100\" height=\"55\" href=\"/static/schemeDrawer/img/player/adults/2/left/%D0%A7%D0%B002.svg\" id=\"element-1608738809778\" style=\"\" transform=\"rotate(0 173 207)\" width=\"55\" x=\"148\" y=\"182\"/><image class=\"\" data-group=\"player\" data-height=\"100\" data-scale=\"55\" data-width=\"100\" height=\"55\" href=\"/static/schemeDrawer/img/player/adults/6/back/ze06.svg\" id=\"element-1608738860598\" style=\"\" transform=\"rotate(0 89 214)\" width=\"55\" x=\"64\" y=\"189\"/><image class=\"\" data-group=\"player\" data-height=\"100\" data-scale=\"55\" data-width=\"100\" height=\"55\" href=\"/static/schemeDrawer/img/player/adults/2/left/%D0%A7%D0%B002.svg\" id=\"element-1608738857689\" style=\"\" transform=\"rotate(0 186 125)\" width=\"55\" x=\"159\" y=\"98\"/><image class=\"\" data-group=\"gateSmall\" data-height=\"100\" data-scale=\"50\" data-width=\"100\" height=\"50\" href=\"/static/schemeDrawer/img/gate/2/gt12.svg\" id=\"element-1608737743852\" style=\"\" transform=\"rotate(0 549 122)\" width=\"50\" x=\"524\" y=\"97\"/><text data-scale=\"50\" height=\"26\" id=\"element-1608738999049\" style=\"font-size:20px;fill:rgb(255, 255, 255);font-weight:500;\" transform=\"rotate(0 45 60)\" width=\"43\" x=\"23\" y=\"73\">2 v 2</text><image class=\"\" data-group=\"number\" data-height=\"100\" data-scale=\"30\" data-select=\"0\" data-width=\"100\" height=\"30\" href=\"/static/schemeDrawer/img/numbers/red/02_r.svg\" id=\"element-1608739052210\" style=\"\" transform=\"rotate(0 48 24)\" width=\"30\" x=\"33\" y=\"9\"/></g>\n<g id=\"dots\"></g>\n<line id=\"xLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-1\" x2=\"-1\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1\" y2=\"-1\"></line>\n<line id=\"xLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-2400\" x2=\"-2400\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1600\" y2=\"-1600\"></line>\n</svg>"
+            },
+            "group": 1,
+            "duration": 20,
+            "order": 2,
+            "description": null,
+            "additional": [
+                {
+                    "id": 345,
+                    "additional_name": {
+                        "en": "Series / pauses",
+                        "ru": "Серии / паузы"
+                    },
+                    "training_exercise_id": 187,
+                    "additional_id": 1,
+                    "note": null
+                },
+                {
+                    "id": 346,
+                    "additional_name": {
+                        "en": "Time (minutes)",
+                        "ru": "Время (минуты)"
+                    },
+                    "training_exercise_id": 187,
+                    "additional_id": 2,
+                    "note": null
+                },
+                {
+                    "id": 347,
+                    "additional_name": {
+                        "en": "Number of groups / players",
+                        "ru": "Количество групп / игроков"
+                    },
+                    "training_exercise_id": 187,
+                    "additional_id": 3,
+                    "note": null
+                },
+                {
+                    "id": 348,
+                    "additional_name": {
+                        "en": "Organization (space)",
+                        "ru": "Организация (пространство)"
+                    },
+                    "training_exercise_id": 187,
+                    "additional_id": 4,
+                    "note": null
+                },
+                {
+                    "id": 349,
+                    "additional_name": {
+                        "en": "Zone (part of the field)",
+                        "ru": "Зона (часть поля)"
+                    },
+                    "training_exercise_id": 187,
+                    "additional_id": 5,
+                    "note": "35 х 25"
+                },
+                {
+                    "id": 350,
+                    "additional_name": {
+                        "en": "The structure of the game in attack",
+                        "ru": "Структура игры в атаке"
+                    },
+                    "training_exercise_id": 187,
+                    "additional_id": 6,
+                    "note": null
+                },
+                {
+                    "id": 351,
+                    "additional_name": {
+                        "en": "Defensive structure",
+                        "ru": "Структура игры в обороне"
+                    },
+                    "training_exercise_id": 187,
+                    "additional_id": 7,
+                    "note": null
+                },
+                {
+                    "id": 352,
+                    "additional_name": {
+                        "en": "Repetition / pauses",
+                        "ru": "Повторение / паузы"
+                    },
+                    "training_exercise_id": 187,
+                    "additional_id": 8,
+                    "note": null
+                },
+                {
+                    "id": 353,
+                    "additional_name": {
+                        "en": "Pulse",
+                        "ru": "Пульс"
+                    },
+                    "training_exercise_id": 187,
+                    "additional_id": 9,
+                    "note": null
+                },
+                {
+                    "id": 354,
+                    "additional_name": {
+                        "en": "Entering the ball",
+                        "ru": "Ввод мяча"
+                    },
+                    "training_exercise_id": 187,
+                    "additional_id": 10,
+                    "note": null
+                },
+                {
+                    "id": 355,
+                    "additional_name": {
+                        "en": "Ball touches",
+                        "ru": "Касания мяча"
+                    },
+                    "training_exercise_id": 187,
+                    "additional_id": 11,
+                    "note": null
+                },
+                {
+                    "id": 356,
+                    "additional_name": {
+                        "en": "Neutral",
+                        "ru": "Нейтральные"
+                    },
+                    "training_exercise_id": 187,
+                    "additional_id": 12,
+                    "note": null
+                },
+                {
+                    "id": 357,
+                    "additional_name": {
+                        "en": "Coach location",
+                        "ru": "Расположение тренера"
+                    },
+                    "training_exercise_id": 187,
+                    "additional_id": 13,
+                    "note": null
+                }
+            ],
+            "exercise_data": {
+                "id": 99,
+                "user": 2,
+                "field_task": null,
+                "title": {
+                    "ru": "Игровые ситуации (3 v 1) > ( 2 v 2)"
+                },
+                "videos": [
+                    {
+                        "id": 6537,
+                        "name": "Игровые ситуации (3 v 1) > ( 2 v 2)",
+                        "duration": "00:01:13",
+                        "language": "none",
+                        "music": false,
+                        "links": {
+                            "nftv": "1654865941981",
+                            "youtube": "YvvzxC1wHYg"
+                        },
+                        "upload_date": "03/12/2022",
+                        "note": null
+                    }
+                ],
+                "description": {
+                    "ru": "<p style=\"margin-left:40px;\"><strong>Организация:&nbsp;</strong>1 v 1 + 2<br><strong>Описание:&nbsp;</strong>1 v 1 + 2. Задача: пройти соперника за счёт игры в стенку с партнёром и забить в маленькие ворота.<br><strong>Варианты:&nbsp;</strong>обозначить ворота конусами. Задача обыграть и пройти между конусами.<br><span style=\"color:rgb(51,51,51);\"><strong>Дополнительные условия:</strong></span><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);\">&nbsp;игровое время, паузы, размеры игровых зон, ввод мяча, смена команд - определяет тренер в зависимости от возраста и необходимого уровня интенсивности.&nbsp;</span><span style=\"color:rgb(51,51,51);\">&nbsp;</span><br><span style=\"color:rgb(51,51,51);\"><strong>Важные моменты:</strong></span></p><ul><li>Активно идти в обводку.</li><li><span style=\"color:rgb(51,51,51);\">Быстрое ментальное переключение атака/оборона и наоборот.</span></li><li><span style=\"color:rgb(51,51,51);\">Поиск свободных зон.</span></li><li><span style=\"color:rgb(51,51,51);\">Быстрая смена направления атаки.</span><br><span style=\"color:rgb(51,51,51);\"><strong>Направленность упражнения:</strong></span></li><li><span style=\"color:rgb(51,51,51);\">ведение силовых единоборств. Отбор / обыгрыш.</span></li><li><span style=\"color:rgb(51,51,51);\">быстрота и точность работы с мячом.</span></li><li><span style=\"color:rgb(51,51,51);\">открывание, выбор свободных зон.&nbsp;</span></li><li><span style=\"color:rgb(51,51,51);\">совершенствование процесса принятия решений на ограниченном пространстве.</span><br><span style=\"color:rgb(51,51,51);\"><strong>Примечания:</strong></span></li><li><span style=\"color:rgb(51,51,51);\">Упражнение выполняется в основной части тренировки.</span></li><li><span style=\"color:rgb(51,51,51);\">Сбалансированно распределять группы/команды по уровню игроков.</span></li></ul>"
+                }
+            }
+        },
+        {
+            "id": 188,
+            "training_id": 107,
+            "exercise_id": 110,
+            "exercise_name": {
+                "ru": "Игровая ситуация 2 v 2 ( 2G )"
+            },
+            "exercise_scheme": {
+                "scheme_1": "\n\n                                <svg id=\"block\" class=\"d-block bg-success mx-auto\" viewBox=\"0 0 600 400\" height=\"100%\" width=\"100%\" preserveAspectRatio=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                                    <defs>\n                                        <marker id=\"arrow\" markerWidth=\"15\" markerHeight=\"12\" refX=\"1\" refY=\"6\" orient=\"auto\" markerUnits=\"userSpaceOnUse\" fill=\"#000000\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n                                        <marker id=\"ffffffarrow\" markerWidth=\"15\" markerHeight=\"12\" refX=\"1\" refY=\"6\" orient=\"auto\" markerUnits=\"userSpaceOnUse\" fill=\"#ffffff\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n                                        <marker id=\"ffff00arrow\" markerWidth=\"15\" markerHeight=\"12\" refX=\"1\" refY=\"6\" orient=\"auto\" markerUnits=\"userSpaceOnUse\" fill=\"#ffff00\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n                                        <marker id=\"ff0000arrow\" markerWidth=\"15\" markerHeight=\"12\" refX=\"1\" refY=\"6\" orient=\"auto\" markerUnits=\"userSpaceOnUse\" fill=\"#ff0000\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n                                        <marker id=\"000000arrow\" markerWidth=\"15\" markerHeight=\"12\" refX=\"1\" refY=\"6\" orient=\"auto\" markerUnits=\"userSpaceOnUse\" fill=\"#000000\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n                                        <filter id=\"f3\" x=\"0\" y=\"0\" width=\"200%\" height=\"200%\"><feOffset result=\"offOut\" in=\"SourceAlpha\" dx=\"5\" dy=\"5\"></feOffset><feGaussianBlur result=\"blurOut\" in=\"offOut\" stdDeviation=\"3\"></feGaussianBlur><feBlend in=\"SourceGraphic\" in2=\"blurOut\" mode=\"normal\"></feBlend></filter>\n                                    </defs>\n                                    <image id=\"plane\" x=\"0\" y=\"0\" data-width=\"600\" data-height=\"400\" width=\"100%\" height=\"100%\" href=\"/static/exercises/img/field.svg\"></image>\n                                    <g id=\"selects\"></g>\n                                    <g id=\"figures\"></g>\n                                    <g id=\"lines\"></g>\n                                    <g id=\"objects\"></g>\n                                    <g id=\"dots\"></g>\n                                    <line id=\"xLine\" x1=\"-1\" y1=\"0\" x2=\"-1\" y2=\"1600\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\"></line>\n                                    <line id=\"yLine\" x1=\"0\" y1=\"-1\" x2=\"2400\" y2=\"-1\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\"></line>\n                                    <line id=\"xLine2\" x1=\"-2400\" y1=\"0\" x2=\"-2400\" y2=\"1600\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\"></line>\n                                    <line id=\"yLine2\" x1=\"0\" y1=\"-1600\" x2=\"2400\" y2=\"-1600\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\"></line>\n                                </svg>\n",
+                "scheme_2": "\n\n                                <svg id=\"block\" class=\"d-block bg-success mx-auto\" viewBox=\"0 0 600 400\" height=\"100%\" width=\"100%\" preserveAspectRatio=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                                    <defs>\n                                        <marker id=\"arrow\" markerWidth=\"15\" markerHeight=\"12\" refX=\"1\" refY=\"6\" orient=\"auto\" markerUnits=\"userSpaceOnUse\" fill=\"#000000\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n                                        <marker id=\"ffffffarrow\" markerWidth=\"15\" markerHeight=\"12\" refX=\"1\" refY=\"6\" orient=\"auto\" markerUnits=\"userSpaceOnUse\" fill=\"#ffffff\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n                                        <marker id=\"ffff00arrow\" markerWidth=\"15\" markerHeight=\"12\" refX=\"1\" refY=\"6\" orient=\"auto\" markerUnits=\"userSpaceOnUse\" fill=\"#ffff00\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n                                        <marker id=\"ff0000arrow\" markerWidth=\"15\" markerHeight=\"12\" refX=\"1\" refY=\"6\" orient=\"auto\" markerUnits=\"userSpaceOnUse\" fill=\"#ff0000\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n                                        <marker id=\"000000arrow\" markerWidth=\"15\" markerHeight=\"12\" refX=\"1\" refY=\"6\" orient=\"auto\" markerUnits=\"userSpaceOnUse\" fill=\"#000000\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n                                        <filter id=\"f3\" x=\"0\" y=\"0\" width=\"200%\" height=\"200%\"><feOffset result=\"offOut\" in=\"SourceAlpha\" dx=\"5\" dy=\"5\"></feOffset><feGaussianBlur result=\"blurOut\" in=\"offOut\" stdDeviation=\"3\"></feGaussianBlur><feBlend in=\"SourceGraphic\" in2=\"blurOut\" mode=\"normal\"></feBlend></filter>\n                                    </defs>\n                                    <image id=\"plane\" x=\"0\" y=\"0\" data-width=\"600\" data-height=\"400\" width=\"100%\" height=\"100%\" href=\"/static/exercises/img/field.svg\"></image>\n                                    <g id=\"selects\"></g>\n                                    <g id=\"figures\"></g>\n                                    <g id=\"lines\"></g>\n                                    <g id=\"objects\"></g>\n                                    <g id=\"dots\"></g>\n                                    <line id=\"xLine\" x1=\"-1\" y1=\"0\" x2=\"-1\" y2=\"1600\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\"></line>\n                                    <line id=\"yLine\" x1=\"0\" y1=\"-1\" x2=\"2400\" y2=\"-1\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\"></line>\n                                    <line id=\"xLine2\" x1=\"-2400\" y1=\"0\" x2=\"-2400\" y2=\"1600\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\"></line>\n                                    <line id=\"yLine2\" x1=\"0\" y1=\"-1600\" x2=\"2400\" y2=\"-1600\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\"></line>\n                                </svg>\n"
+            },
+            "group": 1,
+            "duration": 0,
+            "order": 3,
+            "description": null,
+            "additional": [
+                {
+                    "id": 513,
+                    "additional_name": {
+                        "en": "Repetition / pauses",
+                        "ru": "Повторение / паузы"
+                    },
+                    "training_exercise_id": 188,
+                    "additional_id": 8,
+                    "note": "35 х 25"
+                }
+            ],
+            "exercise_data": {
+                "id": 110,
+                "user": 2,
+                "field_task": null,
+                "title": {
+                    "ru": "Игровая ситуация 2 v 2 ( 2G )"
+                },
+                "videos": [
+                    {
+                        "id": 15792,
+                        "name": "Игровая ситуация 2 v 2 ( 2G )",
+                        "duration": "00:01:40",
+                        "language": "none",
+                        "music": false,
+                        "links": {
+                            "nftv": "1669986557672",
+                            "youtube": "kntXE8eTZs0"
+                        },
+                        "upload_date": "12/12/2022",
+                        "note": {
+                            "video": true,
+                            "animation": false
+                        }
+                    }
+                ],
+                "description": {
+                    "ru": ""
+                }
+            }
+        },
+        {
+            "id": 189,
+            "training_id": 107,
+            "exercise_id": 100,
+            "exercise_name": {
+                "ru": "Игровые ситуации 1 v 1 / 2 v 2"
+            },
+            "exercise_scheme": {
+                "scheme_1": "<svg class=\"d-block bg-success mx-auto\" height=\"100%\" id=\"block\" preserveaspectratio=\"none\" style=\"\" viewbox=\"0 0 600 400\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<marker fill=\"#ffffff\" id=\"arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffffff\" id=\"ffffffarrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffff00\" id=\"ffff00arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ff0000\" id=\"ff0000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#000000\" id=\"000000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<filter height=\"200%\" id=\"f3\" width=\"200%\" x=\"0\" y=\"0\"><feoffset dx=\"5\" dy=\"5\" in=\"SourceAlpha\" result=\"offOut\"></feoffset><fegaussianblur in=\"offOut\" result=\"blurOut\" stddeviation=\"3\"></fegaussianblur><feblend in=\"SourceGraphic\" in2=\"blurOut\" mode=\"normal\"></feblend></filter>\n</defs>\n<image data-height=\"400\" data-width=\"600\" height=\"100%\" href=\"/static/schemeDrawer/img/plane/f31.svg\" id=\"plane\" width=\"100%\" x=\"0\" y=\"0\"/>\n<g id=\"selects\"></g>\n<g id=\"figures\"></g>\n<g id=\"lines\"><path d=\"M 218 38 L 168 363\" id=\"element-1629174788835\" marker-end=\"none\" stroke=\"#ffffff\" stroke-dasharray=\"10\" stroke-width=\"1\" style=\"fill:transparent;\"></path><path d=\"M 218 38 L 168 363\" id=\"element-1629174788835-opt\" marker-end=\"\" stroke=\"transparent\" stroke-dasharray=\"10\" stroke-width=\"20\" style=\"fill:transparent;\"></path><path d=\"M 304 38 L 310 362\" id=\"element-1629174914843\" marker-end=\"none\" stroke=\"#ffffff\" stroke-dasharray=\"0\" stroke-width=\"1\" style=\"fill:transparent;\"></path><path d=\"M 304 38 L 310 362\" id=\"element-1629174914843-opt\" marker-end=\"\" stroke=\"transparent\" stroke-dasharray=\"0\" stroke-width=\"20\" style=\"fill:transparent;\"></path><path d=\"M 395 42 L 437 363\" id=\"element-1629174952956\" marker-end=\"none\" stroke=\"#ffffff\" stroke-dasharray=\"10\" stroke-width=\"1\" style=\"fill:transparent;\"></path><path d=\"M 395 42 L 437 363\" id=\"element-1629174952956-opt\" marker-end=\"\" stroke=\"transparent\" stroke-dasharray=\"10\" stroke-width=\"20\" style=\"fill:transparent;\"></path></g>\n<g id=\"objects\"><image class=\"\" data-group=\"player\" data-height=\"100\" data-scale=\"50\" data-width=\"100\" height=\"50\" href=\"/static/schemeDrawer/img/player/child/6/right/Ag06.svg\" id=\"element-1629175526042\" style=\"\" transform=\"rotate(0 361 146)\" width=\"50\" x=\"336\" y=\"121\"/><image class=\"\" data-group=\"ball\" data-height=\"100\" data-scale=\"10\" data-width=\"100\" height=\"10\" href=\"/static/schemeDrawer/img/equipment/ball/b1.svg\" id=\"element-1629175703634\" style=\"\" transform=\"rotate(0 388.5 146.5)\" width=\"10\" x=\"381\" y=\"154\"/><image class=\"\" data-group=\"player\" data-height=\"100\" data-scale=\"50\" data-width=\"100\" height=\"50\" href=\"/static/schemeDrawer/img/player/child/4/left/zd04.svg\" id=\"element-1629175650314\" style=\"\" transform=\"rotate(0 469 149)\" width=\"50\" x=\"447\" y=\"127\"/><image class=\"\" data-group=\"player\" data-height=\"100\" data-scale=\"50\" data-width=\"100\" height=\"50\" href=\"/static/schemeDrawer/img/player/child/6/left/zd06.svg\" id=\"element-1629175022993\" style=\"\" transform=\"rotate(0 252 123)\" width=\"50\" x=\"230\" y=\"101\"/><image class=\"\" data-group=\"ball\" data-height=\"100\" data-scale=\"10\" data-width=\"100\" height=\"10\" href=\"/static/schemeDrawer/img/equipment/ball/b1.svg\" id=\"element-1629175682116\" style=\"\" transform=\"rotate(0 224 147)\" width=\"10\" x=\"219\" y=\"142\"/><image class=\"\" data-group=\"gateSmall\" data-height=\"100\" data-scale=\"50\" data-width=\"100\" height=\"50\" href=\"/static/schemeDrawer/img/gate/2/gt11.svg\" id=\"element-1629174717550\" style=\"\" transform=\"rotate(0 100 109)\" width=\"50\" x=\"78\" y=\"87\"/><image class=\"\" data-group=\"gateSmall\" data-height=\"100\" data-scale=\"50\" data-width=\"100\" height=\"50\" href=\"/static/schemeDrawer/img/gate/2/gt11.svg\" id=\"element-1629174782923\" style=\"\" transform=\"rotate(0 65 228)\" width=\"50\" x=\"43\" y=\"206\"/><image class=\"\" data-group=\"gateSmall\" data-height=\"100\" data-scale=\"50\" data-width=\"100\" height=\"50\" href=\"/static/schemeDrawer/img/gate/2/gt12.svg\" id=\"element-1629174785061\" style=\"\" transform=\"rotate(0 508 109)\" width=\"50\" x=\"486\" y=\"87\"/><image class=\"\" data-group=\"gateSmall\" data-height=\"100\" data-scale=\"50\" data-width=\"100\" height=\"50\" href=\"/static/schemeDrawer/img/gate/2/gt12.svg\" id=\"element-1629174786976\" style=\"\" transform=\"rotate(0 540 227)\" width=\"50\" x=\"518\" y=\"205\"/><image class=\"\" data-group=\"player\" data-height=\"100\" data-scale=\"50\" data-select=\"0\" data-width=\"100\" height=\"50\" href=\"/static/schemeDrawer/img/player/child/4/right/Ag04.svg\" id=\"element-1629175639469\" style=\"\" transform=\"rotate(0 158 143)\" width=\"50\" x=\"136\" y=\"121\"/><image class=\"\" data-group=\"label2\" data-height=\"100\" data-scale=\"20\" data-width=\"100\" height=\"20\" href=\"/static/schemeDrawer/img/labels/letters-new/red/A_r.svg\" id=\"element-1629175957350\" style=\"\" transform=\"rotate(0 179 21)\" width=\"20\" x=\"169\" y=\"11\"/><image class=\"\" data-group=\"label2\" data-height=\"100\" data-scale=\"20\" data-width=\"100\" height=\"20\" href=\"/static/schemeDrawer/img/labels/letters-new/red/B_r.svg\" id=\"element-1629176176946\" style=\"\" transform=\"rotate(0 261 21)\" width=\"20\" x=\"251\" y=\"11\"/><image class=\"\" data-group=\"label2\" data-height=\"100\" data-scale=\"20\" data-width=\"100\" height=\"20\" href=\"/static/schemeDrawer/img/labels/letters-new/red/A_r.svg\" id=\"element-1629176191749\" style=\"\" transform=\"rotate(0 347 20)\" width=\"20\" x=\"337\" y=\"10\"/><image class=\"\" data-group=\"label2\" data-height=\"100\" data-scale=\"20\" data-width=\"100\" height=\"20\" href=\"/static/schemeDrawer/img/labels/letters-new/red/B_r.svg\" id=\"element-1629176200660\" style=\"\" transform=\"rotate(0 424 20)\" width=\"20\" x=\"414\" y=\"10\"/><text data-scale=\"50\" height=\"26\" id=\"element-1629176205389\" style=\"font-size:20px;fill:rgb(255, 255, 255);font-weight:500;\" transform=\"rotate(0 52 19)\" width=\"37\" x=\"34\" y=\"33\">1 v 1</text></g>\n<g id=\"dots\"></g>\n<line id=\"xLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-1\" x2=\"-1\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1\" y2=\"-1\"></line>\n<line id=\"xLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-2400\" x2=\"-2400\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1600\" y2=\"-1600\"></line>\n</svg>",
+                "scheme_2": "<svg class=\"d-block bg-success mx-auto\" height=\"100%\" id=\"block\" preserveaspectratio=\"none\" style=\"\" viewbox=\"0 0 600 400\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<marker fill=\"#ffffff\" id=\"arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffffff\" id=\"ffffffarrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffff00\" id=\"ffff00arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ff0000\" id=\"ff0000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#000000\" id=\"000000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<filter height=\"200%\" id=\"f3\" width=\"200%\" x=\"0\" y=\"0\"><feoffset dx=\"5\" dy=\"5\" in=\"SourceAlpha\" result=\"offOut\"></feoffset><fegaussianblur in=\"offOut\" result=\"blurOut\" stddeviation=\"3\"></fegaussianblur><feblend in=\"SourceGraphic\" in2=\"blurOut\" mode=\"normal\"></feblend></filter>\n</defs>\n<image data-height=\"400\" data-width=\"600\" height=\"100%\" href=\"/static/schemeDrawer/img/plane/f31.svg\" id=\"plane\" width=\"100%\" x=\"0\" y=\"0\"/>\n<g id=\"selects\"></g>\n<g id=\"figures\"></g>\n<g id=\"lines\"><path d=\"M 234 42 L 180 363\" id=\"element-1629174788835\" marker-end=\"none\" stroke=\"#ffffff\" stroke-dasharray=\"10\" stroke-width=\"1\" style=\"fill:transparent;\"></path><path d=\"M 234 42 L 180 363\" id=\"element-1629174788835-opt\" marker-end=\"\" stroke=\"transparent\" stroke-dasharray=\"10\" stroke-width=\"20\" style=\"fill:transparent;\"></path><path d=\"M 304 38 L 310 362\" id=\"element-1629174914843-opt\" marker-end=\"\" stroke=\"transparent\" stroke-dasharray=\"0\" stroke-width=\"20\" style=\"fill:transparent;\"></path><path d=\"M 376 41 L 429 363\" id=\"element-1629174952956\" marker-end=\"none\" stroke=\"#ffffff\" stroke-dasharray=\"10\" stroke-width=\"1\" style=\"fill:transparent;\"></path><path d=\"M 376 41 L 429 363\" id=\"element-1629174952956-opt\" marker-end=\"\" stroke=\"transparent\" stroke-dasharray=\"10\" stroke-width=\"20\" style=\"fill:transparent;\"></path></g>\n<g id=\"objects\"><image class=\"\" data-group=\"gateSmall\" data-height=\"100\" data-scale=\"55\" data-width=\"100\" height=\"55\" href=\"/static/schemeDrawer/img/gate/2/gt12.svg\" id=\"element-1629174785061\" style=\"\" transform=\"rotate(0 508 109)\" width=\"55\" x=\"486\" y=\"87\"/><image class=\"\" data-group=\"gateSmall\" data-height=\"100\" data-scale=\"55\" data-select=\"0\" data-width=\"100\" height=\"55\" href=\"/static/schemeDrawer/img/gate/2/gt12.svg\" id=\"element-1629174786976\" style=\"\" transform=\"rotate(0 540 227)\" width=\"55\" x=\"518\" y=\"205\"/><image class=\"\" data-group=\"label2\" data-height=\"100\" data-scale=\"20\" data-width=\"100\" height=\"20\" href=\"/static/schemeDrawer/img/labels/letters-new/red/A_r.svg\" id=\"element-1629175957350\" style=\"\" transform=\"rotate(0 179 21)\" width=\"20\" x=\"169\" y=\"11\"/><text data-scale=\"50\" height=\"26\" id=\"element-1629176386006\" style=\"font-size:20px;fill:rgb(255, 255, 255);font-weight:500;\" transform=\"rotate(0 0 0)\" width=\"43\" x=\"37\" y=\"37\">2 v 2</text><image class=\"\" data-group=\"player\" data-height=\"100\" data-scale=\"50\" data-width=\"100\" height=\"50\" href=\"/static/schemeDrawer/img/player/child/4/left/zd04.svg\" id=\"element-1629175650314\" style=\"\" transform=\"rotate(0 432 128)\" width=\"50\" x=\"410\" y=\"106\"/><image class=\"\" data-group=\"player\" data-height=\"100\" data-scale=\"50\" data-width=\"100\" height=\"50\" href=\"/static/schemeDrawer/img/player/child/6/right/Ag06.svg\" id=\"element-1629175526042\" style=\"\" transform=\"rotate(0 326 104)\" width=\"50\" x=\"304\" y=\"82\"/><image class=\"\" data-group=\"ball\" data-height=\"100\" data-scale=\"10\" data-width=\"100\" height=\"10\" href=\"/static/schemeDrawer/img/equipment/ball/b1.svg\" id=\"element-1629175703634\" style=\"\" transform=\"rotate(0 344 129)\" width=\"10\" x=\"339\" y=\"124\"/><image class=\"\" data-group=\"player\" data-height=\"100\" data-scale=\"50\" data-width=\"100\" height=\"50\" href=\"/static/schemeDrawer/img/player/child/4/right/Ag04.svg\" id=\"element-1629175639469\" style=\"\" transform=\"rotate(0 184 147)\" width=\"50\" x=\"162\" y=\"125\"/><image class=\"\" data-group=\"label2\" data-height=\"100\" data-scale=\"20\" data-width=\"100\" height=\"20\" href=\"/static/schemeDrawer/img/labels/letters-new/red/A_r.svg\" id=\"element-1629176191749\" style=\"\" transform=\"rotate(0 412 17)\" width=\"20\" x=\"402\" y=\"7\"/><image class=\"\" data-group=\"label2\" data-height=\"100\" data-scale=\"20\" data-width=\"100\" height=\"20\" href=\"/static/schemeDrawer/img/labels/letters-new/red/B_r.svg\" id=\"element-1629176176946\" style=\"\" transform=\"rotate(0 301 18)\" width=\"20\" x=\"291\" y=\"8\"/><image class=\"\" data-group=\"player\" data-height=\"100\" data-scale=\"50\" data-width=\"100\" height=\"50\" href=\"/static/schemeDrawer/img/player/child/6/back/%D0%A506.svg\" id=\"element-1629176643839\" style=\"\" transform=\"rotate(0 318 193)\" width=\"50\" x=\"296\" y=\"171\"/><image class=\"\" data-group=\"gateSmall\" data-height=\"100\" data-scale=\"55\" data-width=\"100\" height=\"55\" href=\"/static/schemeDrawer/img/gate/2/gt11.svg\" id=\"element-1629174717550\" style=\"\" transform=\"rotate(0 101 114)\" width=\"55\" x=\"74\" y=\"87\"/><image class=\"\" data-group=\"gateSmall\" data-height=\"100\" data-scale=\"55\" data-width=\"100\" height=\"55\" href=\"/static/schemeDrawer/img/gate/2/gt11.svg\" id=\"element-1629174782923\" style=\"\" transform=\"rotate(0 63 234)\" width=\"55\" x=\"36\" y=\"207\"/></g>\n<g id=\"dots\"></g>\n<line id=\"xLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-1\" x2=\"-1\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1\" y2=\"-1\"></line>\n<line id=\"xLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-2400\" x2=\"-2400\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1600\" y2=\"-1600\"></line>\n</svg>"
+            },
+            "group": 1,
+            "duration": 0,
+            "order": 4,
+            "description": null,
+            "additional": [],
+            "exercise_data": {
+                "id": 100,
+                "user": 2,
+                "field_task": null,
+                "title": {
+                    "ru": "Игровые ситуации 1 v 1 / 2 v 2"
+                },
+                "videos": [
+                    {
+                        "id": 6788,
+                        "name": "Игровые ситуации 1 v 1 / 2 v 2",
+                        "duration": "00:01:40",
+                        "language": "none",
+                        "music": false,
+                        "links": {
+                            "nftv": "1654865941799",
+                            "youtube": "sS_seE_5v0U"
+                        },
+                        "upload_date": "03/12/2022",
+                        "note": null
+                    }
+                ],
+                "description": {
+                    "ru": "<p style=\"margin-left:40px;\"><strong>Организация:&nbsp;</strong>1 v 1 / 2 v 2.&nbsp;<br><strong>Игровая зона:&nbsp;</strong>определяет тренер.<br><strong>Вариант 1:&nbsp;</strong> ситуация 1 v 1. (2 ворот). Эпизод стартует по первому касанию мяча игроком атаки. Задача за счёт обманных движений найти возможность забить гол в маленькие ворота. Игроки не имеют право заходить в чужие зоны.&nbsp; На атаку не более 10\" секунд.<br><strong>Вариант 2:&nbsp;</strong> ситуация 2 v 2. (4 ворот). Эпизод стартует по первому касанию мяча игроком атаки. Задача за счёт обманных движений найти возможность забить гол в маленькие ворота. Игроки не имеют право заходить в чужие зоны. На атаку не более 10\" секунд.<br><span style=\"color:rgb(51,51,51);\"><strong>Важные моменты:</strong></span></p><ul><li>Активно идти в обводку.</li><li><span style=\"color:rgb(51,51,51);\">Быстрое ментальное переключение атака/оборона и наоборот.</span></li><li><span style=\"color:rgb(51,51,51);\">Поиск свободных зон.</span></li><li><span style=\"color:rgb(51,51,51);\">Быстрая смена направления атаки.</span><br><span style=\"color:rgb(51,51,51);\"><strong>Направленность упражнения:</strong></span></li><li><span style=\"color:rgb(51,51,51);\">ведение силовых единоборств. Отбор / обыгрыш.</span></li><li><span style=\"color:rgb(51,51,51);\">быстрота и точность работы с мячом.</span></li><li><span style=\"color:rgb(51,51,51);\">открывание, выбор свободных зон.&nbsp;</span></li><li><span style=\"color:rgb(51,51,51);\">совершенствование процесса принятия решений на ограниченном пространстве.</span><br><span style=\"color:rgb(51,51,51);\"><strong>Примечания:</strong></span></li><li><span style=\"color:rgb(51,51,51);\">Упражнение выполняется в основной части тренировки.</span></li><li><span style=\"color:rgb(51,51,51);\">Сбалансированно распределять группы/команды по уровню игроков.</span></li></ul>"
+                }
+            }
+        },
+        {
+            "id": 180,
+            "training_id": 107,
+            "exercise_id": 98,
+            "exercise_name": {
+                "ru": "Квадрат 2 v 2 + 3N"
+            },
+            "exercise_scheme": {
+                "scheme_1": "<svg class=\"d-block bg-success mx-auto\" height=\"100%\" id=\"block\" preserveaspectratio=\"none\" style=\"\" viewbox=\"0 0 600 400\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<marker fill=\"#000000\" id=\"arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffffff\" id=\"ffffffarrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffff00\" id=\"ffff00arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ff0000\" id=\"ff0000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#000000\" id=\"000000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<filter height=\"200%\" id=\"f3\" width=\"200%\" x=\"0\" y=\"0\"><feoffset dx=\"5\" dy=\"5\" in=\"SourceAlpha\" result=\"offOut\"></feoffset><fegaussianblur in=\"offOut\" result=\"blurOut\" stddeviation=\"3\"></fegaussianblur><feblend in=\"SourceGraphic\" in2=\"blurOut\" mode=\"normal\"></feblend></filter>\n</defs>\n<image data-height=\"400\" data-width=\"600\" height=\"100%\" href=\"/static/schemeDrawer/img/plane/f31.svg\" id=\"plane\" width=\"100%\" x=\"0\" y=\"0\"/>\n<g id=\"selects\"></g>\n<g id=\"figures\"></g>\n<g id=\"lines\"></g>\n<g id=\"objects\"><image class=\"\" data-group=\"label3\" data-height=\"100\" data-scale=\"50\" data-width=\"100\" height=\"50\" href=\"/static/schemeDrawer/img/labels/letters-new/hexagon/yellow-bright/z_z_z_6_y-br.svg\" id=\"element-1625654989513\" style=\"\" transform=\"rotate(0 304 13)\" width=\"50\" x=\"279\" y=\"38\"/><image class=\"\" data-group=\"label3\" data-height=\"100\" data-scale=\"50\" data-width=\"100\" height=\"50\" href=\"/static/schemeDrawer/img/labels/letters-new/hexagon/yellow-bright/z_z_z_6_y-br.svg\" id=\"element-1625655004685\" style=\"\" transform=\"rotate(180 305 340)\" width=\"50\" x=\"280\" y=\"315\"/><image class=\"\" data-group=\"label3\" data-height=\"100\" data-scale=\"50\" data-select=\"0\" data-width=\"100\" height=\"50\" href=\"/static/schemeDrawer/img/labels/letters-new/hexagon/grey/z_z_z_6_g.svg\" id=\"element-1625654986241\" style=\"\" transform=\"rotate(45 493 190)\" width=\"50\" x=\"468\" y=\"165\"/><image class=\"\" data-group=\"label3\" data-height=\"100\" data-scale=\"50\" data-width=\"100\" height=\"50\" href=\"/static/schemeDrawer/img/labels/letters-new/hexagon/grey/z_z_z_6_g.svg\" id=\"element-1625654963955\" style=\"\" transform=\"rotate(-45 111 203)\" width=\"50\" x=\"86\" y=\"178\"/><image class=\"\" data-group=\"label3\" data-height=\"100\" data-scale=\"50\" data-width=\"100\" height=\"50\" href=\"/static/schemeDrawer/img/labels/letters-new/hexagon/black/z_z_z_6_b.svg\" id=\"element-1625655014763\" style=\"\" transform=\"rotate(0 403 187)\" width=\"50\" x=\"378\" y=\"162\"/><image class=\"\" data-group=\"label3\" data-height=\"100\" data-scale=\"50\" data-width=\"100\" height=\"50\" href=\"/static/schemeDrawer/img/labels/letters-new/hexagon/yellow-bright/z_z_z_6_y-br.svg\" id=\"element-1625655001175\" style=\"\" transform=\"rotate(0 313 186)\" width=\"50\" x=\"288\" y=\"161\"/><image class=\"\" data-group=\"label3\" data-height=\"100\" data-scale=\"50\" data-width=\"100\" height=\"50\" href=\"/static/schemeDrawer/img/labels/letters-new/hexagon/black/z_z_z_6_b.svg\" id=\"element-1625655007805\" style=\"\" transform=\"rotate(0 212 192)\" width=\"50\" x=\"187\" y=\"167\"/><image class=\"\" data-group=\"ball\" data-height=\"100\" data-scale=\"20\" data-width=\"100\" height=\"20\" href=\"/static/schemeDrawer/img/equipment/ball/b1.svg\" id=\"element-1625655016883\" style=\"\" transform=\"rotate(0 305 304)\" width=\"20\" x=\"295\" y=\"294\"/><text data-scale=\"50\" height=\"26\" id=\"element-1625655023920\" style=\"font-size:20px;fill:rgb(255, 255, 255);font-weight:500;\" transform=\"rotate(0 75 21)\" width=\"94\" x=\"28\" y=\"35\">2 v 2 + 3N</text></g>\n<g id=\"dots\"></g>\n<line id=\"xLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-1\" x2=\"-1\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1\" y2=\"-1\"></line>\n<line id=\"xLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-2400\" x2=\"-2400\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1600\" y2=\"-1600\"></line>\n</svg>",
+                "scheme_2": "<svg class=\"d-block bg-success mx-auto\" height=\"100%\" id=\"block\" preserveaspectratio=\"none\" style=\"\" viewbox=\"0 0 600 400\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<marker fill=\"#000000\" id=\"arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffffff\" id=\"ffffffarrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffff00\" id=\"ffff00arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ff0000\" id=\"ff0000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#000000\" id=\"000000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<filter height=\"200%\" id=\"f3\" width=\"200%\" x=\"0\" y=\"0\"><feoffset dx=\"5\" dy=\"5\" in=\"SourceAlpha\" result=\"offOut\"></feoffset><fegaussianblur in=\"offOut\" result=\"blurOut\" stddeviation=\"3\"></fegaussianblur><feblend in=\"SourceGraphic\" in2=\"blurOut\" mode=\"normal\"></feblend></filter>\n</defs>\n<image data-height=\"400\" data-width=\"600\" height=\"100%\" href=\"/static/schemeDrawer/img/plane/f01.svg\" id=\"plane\" width=\"100%\" x=\"0\" y=\"0\"/>\n<g id=\"selects\"></g>\n<g id=\"figures\"></g>\n<g id=\"lines\"></g>\n<g id=\"objects\"></g>\n<g id=\"dots\"></g>\n<line id=\"xLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-1\" x2=\"-1\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1\" y2=\"-1\"></line>\n<line id=\"xLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-2400\" x2=\"-2400\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1600\" y2=\"-1600\"></line>\n</svg>"
+            },
+            "group": 2,
+            "duration": 10,
+            "order": 0,
+            "description": null,
+            "additional": [
+                {
+                    "id": 387,
+                    "additional_name": {
+                        "en": "Series / pauses",
+                        "ru": "Серии / паузы"
+                    },
+                    "training_exercise_id": 180,
+                    "additional_id": 1,
+                    "note": null
+                },
+                {
+                    "id": 388,
+                    "additional_name": {
+                        "en": "Time (minutes)",
+                        "ru": "Время (минуты)"
+                    },
+                    "training_exercise_id": 180,
+                    "additional_id": 2,
+                    "note": null
+                },
+                {
+                    "id": 389,
+                    "additional_name": {
+                        "en": "Number of groups / players",
+                        "ru": "Количество групп / игроков"
+                    },
+                    "training_exercise_id": 180,
+                    "additional_id": 3,
+                    "note": null
+                },
+                {
+                    "id": 390,
+                    "additional_name": {
+                        "en": "Organization (space)",
+                        "ru": "Организация (пространство)"
+                    },
+                    "training_exercise_id": 180,
+                    "additional_id": 4,
+                    "note": null
+                },
+                {
+                    "id": 391,
+                    "additional_name": {
+                        "en": "Zone (part of the field)",
+                        "ru": "Зона (часть поля)"
+                    },
+                    "training_exercise_id": 180,
+                    "additional_id": 5,
+                    "note": null
+                },
+                {
+                    "id": 392,
+                    "additional_name": {
+                        "en": "The structure of the game in attack",
+                        "ru": "Структура игры в атаке"
+                    },
+                    "training_exercise_id": 180,
+                    "additional_id": 6,
+                    "note": null
+                },
+                {
+                    "id": 393,
+                    "additional_name": {
+                        "en": "Defensive structure",
+                        "ru": "Структура игры в обороне"
+                    },
+                    "training_exercise_id": 180,
+                    "additional_id": 7,
+                    "note": null
+                },
+                {
+                    "id": 394,
+                    "additional_name": {
+                        "en": "Repetition / pauses",
+                        "ru": "Повторение / паузы"
+                    },
+                    "training_exercise_id": 180,
+                    "additional_id": 8,
+                    "note": null
+                },
+                {
+                    "id": 395,
+                    "additional_name": {
+                        "en": "Pulse",
+                        "ru": "Пульс"
+                    },
+                    "training_exercise_id": 180,
+                    "additional_id": 9,
+                    "note": null
+                },
+                {
+                    "id": 396,
+                    "additional_name": {
+                        "en": "Entering the ball",
+                        "ru": "Ввод мяча"
+                    },
+                    "training_exercise_id": 180,
+                    "additional_id": 10,
+                    "note": null
+                },
+                {
+                    "id": 397,
+                    "additional_name": {
+                        "en": "Ball touches",
+                        "ru": "Касания мяча"
+                    },
+                    "training_exercise_id": 180,
+                    "additional_id": 11,
+                    "note": null
+                },
+                {
+                    "id": 398,
+                    "additional_name": {
+                        "en": "Neutral",
+                        "ru": "Нейтральные"
+                    },
+                    "training_exercise_id": 180,
+                    "additional_id": 12,
+                    "note": null
+                },
+                {
+                    "id": 399,
+                    "additional_name": {
+                        "en": "Coach location",
+                        "ru": "Расположение тренера"
+                    },
+                    "training_exercise_id": 180,
+                    "additional_id": 13,
+                    "note": null
+                },
+                {
+                    "id": 400,
+                    "additional_name": {
+                        "en": "Vylalie winner",
+                        "ru": "Вылаление победителя"
+                    },
+                    "training_exercise_id": 180,
+                    "additional_id": 14,
+                    "note": null
+                }
+            ],
+            "exercise_data": {
+                "id": 98,
+                "user": 2,
+                "field_task": null,
+                "title": {
+                    "ru": "Квадрат 2 v 2 + 3N"
+                },
+                "videos": [
+                    {
+                        "id": 6728,
+                        "name": "Квадрат 2 v 2 + 3N",
+                        "duration": "00:00:12",
+                        "language": "none",
+                        "music": false,
+                        "links": {
+                            "nftv": "1654865941491",
+                            "youtube": "hPww0O_txvU"
+                        },
+                        "upload_date": "03/12/2022",
+                        "note": null
+                    }
+                ],
+                "description": {
+                    "ru": "<p style=\"margin-left:0px;\"><span style=\"color:rgb(51,51,51);\"><strong>Организация:</strong> 2 v 2 + 3N. (7 игроков).</span><br><span style=\"color:rgb(51,51,51);\"><strong>Игровая зона: </strong>определяет тренер.</span><br><span style=\"color:rgb(51,51,51);\"><strong>Описание:&nbsp; </strong></span>контроль мяча в игровой зоне. Постоянная смена ролей по парам - контроль мяча /отбор.&nbsp;Смена нейтральных игроков определяет тренер во время паузы.<br><strong>Дополнительные условия:</strong><span style=\"background-color:rgb(255,255,255);color:rgb(51,51,51);\">&nbsp;время активной работы, паузы, размеры игровых зон, количество нейтральных, количество касаний мяча, ввод мяча, смена по группам - определяет тренер в зависимости от возраста, уровня игроков и необходимого уровня интенсивности.&nbsp;</span><br><span style=\"color:rgb(51,51,51);\"><strong>Важные моменты:</strong></span></p><ul><li><span style=\"color:rgb(51,51,51);\">Оценка игровой ситуации до получения паса: мяч, партнёры, соперник.</span></li><li><span style=\"color:rgb(51,51,51);\">Направление корпуса при приёме мяча в сторону последующего действия.</span></li><li><span style=\"color:rgb(51,51,51);\">Постоянно искать линию паса. Создание ломаных линий: ромбы, треугольники,&nbsp;W.</span></li><li><span style=\"color:rgb(51,51,51);\">Создавать численное преимущество в зоне нахождения мяча.</span></li><li><span style=\"color:rgb(51,51,51);\">Придавать необходимую скорость полёта мяча<strong> .</strong></span></li><li><span style=\"color:rgb(51,51,51);\">Не подстраиваться под сильную ногу.</span></li><li><span style=\"color:rgb(51,51,51);\">Максимально использовать пространство (без смещений в середину).</span></li><li><span style=\"color:rgb(51,51,51);\">Приоритет игра &nbsp;на третьего.</span></li><li><span style=\"color:rgb(51,51,51);\">Быстрый вывод мяча из зоны отбора.</span></li><li><span style=\"color:rgb(51,51,51);\">Быстрое ментальное переключение атака/оборона и наоборот.</span></li><li><span style=\"color:rgb(51,51,51);\">Активный подсказ партнёрам.</span><br><span style=\"color:rgb(51,51,51);\"><strong>Направленность упражнения:</strong></span></li><li><span style=\"color:rgb(51,51,51);\">Отбор, ведение силовых единоборств. </span>Активный прессинг в зоне потери.</li><li><span style=\"color:rgb(51,51,51);\">Улучшение качества паса на короткие расстояния, быстрота и точность работы с мячом, обводка</span></li><li><span style=\"color:rgb(51,51,51);\">Открывание, выбор свободных зон.&nbsp;</span></li><li><span style=\"color:rgb(51,51,51);\">Совершенствование процесса принятия решений на ограниченном пространстве.</span><br><span style=\"color:rgb(51,51,51);\"><strong>Примечания:</strong></span></li><li><span style=\"color:rgb(51,51,51);\">Упражнение выполняется в основной части тренировки.</span></li><li><span style=\"color:rgb(51,51,51);\">Не проводить упражнение в течении двух дней после игры, а так же с игроками имеющих большое количество общего игрового времени или снизить время активной работы до 2 минут с паузой на восстановление. Упражнение находится в зоне высокой нагрузки.</span></li><li><span style=\"color:rgb(51,51,51);\">Следить за равномерностью нагрузки на игроков: смена по парам с нейтральными игроками.</span></li><li><span style=\"color:rgb(51,51,51);\">Сбалансированно распределять группы/команды по уровню игроков.</span></li><li><span style=\"color:rgb(51,51,51);\">Необходимый ритм будет поддерживаться, если игроки владеющие мячом выполняют 8-10 передач подряд.</span></li></ul>"
+                }
+            }
+        }
+    ],
+    "protocol_info": [
+        {
+            "id": 500,
+            "training_id": 107,
+            "player_id": 9,
+            "full_name": "Алексеев Иван",
+            "estimation": 0,
+            "status": null,
+            "status_info": null,
+            "training_exercise_check": [
+                178,
+                179,
+                187,
+                180
+            ],
+            "position": "В.",
+            "player_info": {
+                "id": 9,
+                "full_name": "Алексеев Иван",
+                "card": {
+                    "id": 193,
+                    "ref_position": {
+                        "id": 3,
+                        "translation_names": null,
+                        "short_name": "В.",
+                        "name": "Вратарь"
+                    }
+                }
+            }
+        },
+        {
+            "id": 499,
+            "training_id": 107,
+            "player_id": 8,
+            "full_name": "Александров Сергей",
+            "estimation": 0,
+            "status": null,
+            "status_info": null,
+            "training_exercise_check": [
+                178,
+                179,
+                187
+            ],
+            "position": "В.",
+            "player_info": {
+                "id": 8,
+                "full_name": "Александров Сергей",
+                "card": {
+                    "id": 156,
+                    "ref_position": {
+                        "id": 3,
+                        "translation_names": null,
+                        "short_name": "В.",
+                        "name": "Вратарь"
+                    }
+                }
+            }
+        },
+        {
+            "id": 501,
+            "training_id": 107,
+            "player_id": 10,
+            "full_name": "Антонов Михаил",
+            "estimation": 0,
+            "status": null,
+            "status_info": null,
+            "training_exercise_check": [
+                178,
+                179,
+                187,
+                180
+            ],
+            "position": "З.",
+            "player_info": {
+                "id": 10,
+                "full_name": "Антонов Михаил",
+                "card": {
+                    "id": 195,
+                    "ref_position": {
+                        "id": 1,
+                        "translation_names": {
+                            "en": "Position 1",
+                            "ru": "Защитник"
+                        },
+                        "short_name": "З.",
+                        "name": "Защитник"
+                    }
+                }
+            }
+        },
+        {
+            "id": 502,
+            "training_id": 107,
+            "player_id": 11,
+            "full_name": "Бобров Вадим",
+            "estimation": 0,
+            "status": null,
+            "status_info": null,
+            "training_exercise_check": [
+                178,
+                179
+            ],
+            "position": "З.",
+            "player_info": {
+                "id": 11,
+                "full_name": "Бобров Вадим",
+                "card": {
+                    "id": 145,
+                    "ref_position": {
+                        "id": 1,
+                        "translation_names": {
+                            "en": "Position 1",
+                            "ru": "Защитник"
+                        },
+                        "short_name": "З.",
+                        "name": "Защитник"
+                    }
+                }
+            }
+        },
+        {
+            "id": 503,
+            "training_id": 107,
+            "player_id": 12,
+            "full_name": "Боровой Дмитрий",
+            "estimation": 0,
+            "status": null,
+            "status_info": null,
+            "training_exercise_check": [
+                178,
+                179,
+                187,
+                180
+            ],
+            "position": "З.",
+            "player_info": {
+                "id": 12,
+                "full_name": "Боровой Дмитрий",
+                "card": {
+                    "id": 189,
+                    "ref_position": {
+                        "id": 1,
+                        "translation_names": {
+                            "en": "Position 1",
+                            "ru": "Защитник"
+                        },
+                        "short_name": "З.",
+                        "name": "Защитник"
+                    }
+                }
+            }
+        },
+        {
+            "id": 504,
+            "training_id": 107,
+            "player_id": 13,
+            "full_name": "Боровских Роман",
+            "estimation": 0,
+            "status": null,
+            "status_info": null,
+            "training_exercise_check": [
+                178,
+                179,
+                180
+            ],
+            "position": "З.",
+            "player_info": {
+                "id": 13,
+                "full_name": "Боровских Роман",
+                "card": {
+                    "id": 192,
+                    "ref_position": {
+                        "id": 1,
+                        "translation_names": {
+                            "en": "Position 1",
+                            "ru": "Защитник"
+                        },
+                        "short_name": "З.",
+                        "name": "Защитник"
+                    }
+                }
+            }
+        },
+        {
+            "id": 505,
+            "training_id": 107,
+            "player_id": 14,
+            "full_name": "Бородинский Даниил",
+            "estimation": 0,
+            "status": null,
+            "status_info": null,
+            "training_exercise_check": [
+                178,
+                179,
+                187,
+                180
+            ],
+            "position": "З.",
+            "player_info": {
+                "id": 14,
+                "full_name": "Бородинский Даниил",
+                "card": {
+                    "id": 150,
+                    "ref_position": {
+                        "id": 1,
+                        "translation_names": {
+                            "en": "Position 1",
+                            "ru": "Защитник"
+                        },
+                        "short_name": "З.",
+                        "name": "Защитник"
+                    }
+                }
+            }
+        },
+        {
+            "id": 506,
+            "training_id": 107,
+            "player_id": 15,
+            "full_name": "Ботвинский Сергей",
+            "estimation": 0,
+            "status": null,
+            "status_info": null,
+            "training_exercise_check": [
+                178,
+                179,
+                187,
+                180
+            ],
+            "position": "З.",
+            "player_info": {
+                "id": 15,
+                "full_name": "Ботвинский Сергей",
+                "card": {
+                    "id": 144,
+                    "ref_position": {
+                        "id": 1,
+                        "translation_names": {
+                            "en": "Position 1",
+                            "ru": "Защитник"
+                        },
+                        "short_name": "З.",
+                        "name": "Защитник"
+                    }
+                }
+            }
+        },
+        {
+            "id": 509,
+            "training_id": 107,
+            "player_id": 18,
+            "full_name": "Громов Михаил",
+            "estimation": 0,
+            "status": null,
+            "status_info": null,
+            "training_exercise_check": [
+                178,
+                179,
+                187,
+                180
+            ],
+            "position": "ПЗ.",
+            "player_info": {
+                "id": 18,
+                "full_name": "Громов Михаил",
+                "card": {
+                    "id": 129,
+                    "ref_position": {
+                        "id": 2,
+                        "translation_names": {
+                            "en": "Position 2",
+                            "ru": "Полузащитник"
+                        },
+                        "short_name": "ПЗ.",
+                        "name": "Полузащитник"
+                    }
+                }
+            }
+        },
+        {
+            "id": 514,
+            "training_id": 107,
+            "player_id": 23,
+            "full_name": "Пантелеев Эльдар",
+            "estimation": 0,
+            "status": null,
+            "status_info": null,
+            "training_exercise_check": [
+                178,
+                179,
+                187,
+                180
+            ],
+            "position": "ПЗ.",
+            "player_info": {
+                "id": 23,
+                "full_name": "Пантелеев Эльдар",
+                "card": {
+                    "id": 134,
+                    "ref_position": {
+                        "id": 2,
+                        "translation_names": {
+                            "en": "Position 2",
+                            "ru": "Полузащитник"
+                        },
+                        "short_name": "ПЗ.",
+                        "name": "Полузащитник"
+                    }
+                }
+            }
+        },
+        {
+            "id": 512,
+            "training_id": 107,
+            "player_id": 21,
+            "full_name": "Калиниченко Андрей",
+            "estimation": 0,
+            "status": null,
+            "status_info": null,
+            "training_exercise_check": [
+                178,
+                179,
+                187,
+                180
+            ],
+            "position": "ПЗ.",
+            "player_info": {
+                "id": 21,
+                "full_name": "Калиниченко Андрей",
+                "card": {
+                    "id": 132,
+                    "ref_position": {
+                        "id": 2,
+                        "translation_names": {
+                            "en": "Position 2",
+                            "ru": "Полузащитник"
+                        },
+                        "short_name": "ПЗ.",
+                        "name": "Полузащитник"
+                    }
+                }
+            }
+        },
+        {
+            "id": 511,
+            "training_id": 107,
+            "player_id": 19,
+            "full_name": "Иванов Иван",
+            "estimation": 0,
+            "status": null,
+            "status_info": null,
+            "training_exercise_check": [
+                178,
+                179,
+                187,
+                180
+            ],
+            "position": "ПЗ.",
+            "player_info": {
+                "id": 19,
+                "full_name": "Иванов Иван",
+                "card": {
+                    "id": 149,
+                    "ref_position": {
+                        "id": 2,
+                        "translation_names": {
+                            "en": "Position 2",
+                            "ru": "Полузащитник"
+                        },
+                        "short_name": "ПЗ.",
+                        "name": "Полузащитник"
+                    }
+                }
+            }
+        },
+        {
+            "id": 510,
+            "training_id": 107,
+            "player_id": 20,
+            "full_name": "Иванов Андрей",
+            "estimation": 0,
+            "status": null,
+            "status_info": null,
+            "training_exercise_check": [
+                178,
+                179,
+                187,
+                180
+            ],
+            "position": "ПЗ.",
+            "player_info": {
+                "id": 20,
+                "full_name": "Иванов Андрей",
+                "card": {
+                    "id": 143,
+                    "ref_position": {
+                        "id": 2,
+                        "translation_names": {
+                            "en": "Position 2",
+                            "ru": "Полузащитник"
+                        },
+                        "short_name": "ПЗ.",
+                        "name": "Полузащитник"
+                    }
+                }
+            }
+        },
+        {
+            "id": 508,
+            "training_id": 107,
+            "player_id": 17,
+            "full_name": "Городов Максим",
+            "estimation": 0,
+            "status": null,
+            "status_info": null,
+            "training_exercise_check": [
+                178,
+                179,
+                187,
+                180
+            ],
+            "position": "ПЗ.",
+            "player_info": {
+                "id": 17,
+                "full_name": "Городов Максим",
+                "card": {
+                    "id": 128,
+                    "ref_position": {
+                        "id": 2,
+                        "translation_names": {
+                            "en": "Position 2",
+                            "ru": "Полузащитник"
+                        },
+                        "short_name": "ПЗ.",
+                        "name": "Полузащитник"
+                    }
+                }
+            }
+        },
+        {
+            "id": 515,
+            "training_id": 107,
+            "player_id": 24,
+            "full_name": "Пестряков Вениамин",
+            "estimation": 0,
+            "status": null,
+            "status_info": null,
+            "training_exercise_check": [
+                178,
+                179,
+                187,
+                180
+            ],
+            "position": "Н.",
+            "player_info": {
+                "id": 24,
+                "full_name": "Пестряков Вениамин",
+                "card": {
+                    "id": 135,
+                    "ref_position": {
+                        "id": 4,
+                        "translation_names": null,
+                        "short_name": "Н.",
+                        "name": "Нападающий"
+                    }
+                }
+            }
+        },
+        {
+            "id": 516,
+            "training_id": 107,
+            "player_id": 25,
+            "full_name": "Приходько Филипп",
+            "estimation": 0,
+            "status": null,
+            "status_info": null,
+            "training_exercise_check": [
+                178,
+                179,
+                187,
+                180
+            ],
+            "position": "Н.",
+            "player_info": {
+                "id": 25,
+                "full_name": "Приходько Филипп",
+                "card": {
+                    "id": 136,
+                    "ref_position": {
+                        "id": 4,
+                        "translation_names": null,
+                        "short_name": "Н.",
+                        "name": "Нападающий"
+                    }
+                }
+            }
+        },
+        {
+            "id": 517,
+            "training_id": 107,
+            "player_id": 26,
+            "full_name": "Саморуков Виктор",
+            "estimation": 0,
+            "status": null,
+            "status_info": null,
+            "training_exercise_check": [
+                178,
+                179,
+                187,
+                180
+            ],
+            "position": "Н.",
+            "player_info": {
+                "id": 26,
+                "full_name": "Саморуков Виктор",
+                "card": {
+                    "id": 138,
+                    "ref_position": {
+                        "id": 4,
+                        "translation_names": null,
+                        "short_name": "Н.",
+                        "name": "Нападающий"
+                    }
+                }
+            }
+        },
+        {
+            "id": 518,
+            "training_id": 107,
+            "player_id": 27,
+            "full_name": "Феоктистов Дмитрий",
+            "estimation": 0,
+            "status": null,
+            "status_info": null,
+            "training_exercise_check": [
+                178,
+                179,
+                187,
+                180
+            ],
+            "position": "Н.",
+            "player_info": {
+                "id": 27,
+                "full_name": "Феоктистов Дмитрий",
+                "card": {
+                    "id": 139,
+                    "ref_position": {
+                        "id": 4,
+                        "translation_names": null,
+                        "short_name": "Н.",
+                        "name": "Нападающий"
+                    }
+                }
+            }
+        },
+        {
+            "id": 519,
+            "training_id": 107,
+            "player_id": 28,
+            "full_name": "Шкловский Илья",
+            "estimation": 0,
+            "status": null,
+            "status_info": null,
+            "training_exercise_check": [
+                178,
+                179,
+                187,
+                180
+            ],
+            "position": "Н.",
+            "player_info": {
+                "id": 28,
+                "full_name": "Шкловский Илья",
+                "card": {
+                    "id": 140,
+                    "ref_position": {
+                        "id": 4,
+                        "translation_names": null,
+                        "short_name": "Н.",
+                        "name": "Нападающий"
+                    }
+                }
+            }
+        },
+        {
+            "id": 507,
+            "training_id": 107,
+            "player_id": 16,
+            "full_name": "Волков Борис",
+            "estimation": 0,
+            "status": 2,
+            "status_info": {
+                "id": 2,
+                "translation_names": {
+                    "en": "Ill",
+                    "ru": "Болен"
+                },
+                "short_name": "-",
+                "tags": {
+                    "matches": 1,
+                    "medicine": 1,
+                    "type_ill": 1,
+                    "analytics": 0,
+                    "trainings": 1,
+                    "matches_red": 1,
+                    "matches_reset": 1,
+                    "trainings_red": 1,
+                    "trainings_reset": 1
+                }
+            },
+            "training_exercise_check": [],
+            "position": "З.",
+            "player_info": {
+                "id": 16,
+                "full_name": "Волков Борис",
+                "card": {
+                    "id": 83,
+                    "ref_position": {
+                        "id": 1,
+                        "translation_names": {
+                            "en": "Position 1",
+                            "ru": "Защитник"
+                        },
+                        "short_name": "З.",
+                        "name": "Защитник"
+                    }
+                }
+            }
+        },
+        {
+            "id": 513,
+            "training_id": 107,
+            "player_id": 22,
+            "full_name": "Матвеев Владимир",
+            "estimation": 0,
+            "status": 3,
+            "status_info": {
+                "id": 3,
+                "translation_names": {
+                    "en": "Injury",
+                    "ru": "Травма"
+                },
+                "short_name": "-",
+                "tags": {
+                    "matches": 1,
+                    "medicine": 1,
+                    "analytics": 0,
+                    "trainings": 1,
+                    "matches_red": 1,
+                    "type_injury": 1,
+                    "matches_reset": 1,
+                    "trainings_red": 1,
+                    "trainings_reset": 1
+                }
+            },
+            "training_exercise_check": [],
+            "position": "ПЗ.",
+            "player_info": {
+                "id": 22,
+                "full_name": "Матвеев Владимир",
+                "card": {
+                    "id": 133,
+                    "ref_position": {
+                        "id": 2,
+                        "translation_names": {
+                            "en": "Position 2",
+                            "ru": "Полузащитник"
+                        },
+                        "short_name": "ПЗ.",
+                        "name": "Полузащитник"
+                    }
+                }
+            }
+        }
+    ],
+    "team_info": {
+        "id": 1,
+        "name": "F.C. NanoFootball 2004",
+        "short_name": "nf_2004",
+        "ref_team_status": 1,
+        "team_status_info": {
+            "id": 1,
+            "name": "None",
+            "short_name": "Empty"
+        }
+    }
+}
