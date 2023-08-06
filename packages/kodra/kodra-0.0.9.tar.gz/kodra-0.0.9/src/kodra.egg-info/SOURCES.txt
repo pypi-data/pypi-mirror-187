@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/kodra/__init__.py
+src/kodra/client.py
+src/kodra.egg-info/PKG-INFO
+src/kodra.egg-info/SOURCES.txt
+src/kodra.egg-info/dependency_links.txt
+src/kodra.egg-info/requires.txt
+src/kodra.egg-info/top_level.txt
+src/kodra/test/__init__.py
+src/kodra/test/test_kodra.py
