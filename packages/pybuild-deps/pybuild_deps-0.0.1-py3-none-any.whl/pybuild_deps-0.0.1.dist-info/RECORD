@@ -1,0 +1,8 @@
+pybuild_deps/__init__.py,sha256=6hlWDTGKWerI4B7MbZKYI8yznNW9AtLIud0U0Xk67a0,20
+pybuild_deps/__main__.py,sha256=tgw5CEMrWvY_f83dGB-ks592X4ZuJdRU2ZSJZjV78Zk,229
+pybuild_deps/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pybuild_deps-0.0.1.dist-info/LICENSE,sha256=EaCdza7-gXZbopefK275AkFPv9qPYWwTQv7dq0OO0kA,35887
+pybuild_deps-0.0.1.dist-info/METADATA,sha256=krVmE_4hyLHtOGrqRNEFpePJ8Xe5aytpYMXm_r8_cr0,3353
+pybuild_deps-0.0.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+pybuild_deps-0.0.1.dist-info/entry_points.txt,sha256=uO1QIT0wvPCu_CbfkVdZ1KYVvkgN2WnPx33QCpDPlkI,59
+pybuild_deps-0.0.1.dist-info/RECORD,,
