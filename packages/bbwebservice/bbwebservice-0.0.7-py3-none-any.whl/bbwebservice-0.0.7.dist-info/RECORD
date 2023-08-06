@@ -1,0 +1,10 @@
+bbwebservice/__init__.py,sha256=gHvE3LDdxTSHd2c1qaa_zZwpA_r6nA4128Ru_C54Aow,2160
+bbwebservice/config_loader.py,sha256=dU3O3CrokoaX2fth7ZpilfrPoJHeMIjzxIrnpsTXUNA,1949
+bbwebservice/core.py,sha256=lHKknxcWYAG6GuXEdTK309EnAhRgQZFMpE_JyhuB1U4,3490
+bbwebservice/http_parser.py,sha256=3A3_OQTO3vJV4eQp5NdpncQiZ9XWyZF9J3hj-YsXpgA,7361
+bbwebservice/webserver.py,sha256=isESe5kBGwVJdw4OfoykeokKH2xH8yaq_SfdkgWmgKI,5914
+bbwebservice-0.0.7.dist-info/LICENSE,sha256=22jZx_qd6lXubpLGIzbHdIAGPC3ypVMbAj4RI2bAcQA,1092
+bbwebservice-0.0.7.dist-info/METADATA,sha256=WC-FkeiQCXeVDOoV7z2yx_L8k-OjWZAZgfOPaHi5SEk,698
+bbwebservice-0.0.7.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+bbwebservice-0.0.7.dist-info/top_level.txt,sha256=Lfu9c6-xuxineXpe6lYCh0sv5N6fxcpj8jimNOcmflc,13
+bbwebservice-0.0.7.dist-info/RECORD,,
