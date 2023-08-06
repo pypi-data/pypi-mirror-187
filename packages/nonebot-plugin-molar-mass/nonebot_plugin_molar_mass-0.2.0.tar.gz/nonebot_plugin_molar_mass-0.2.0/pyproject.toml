@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "nonebot-plugin-molar-mass"
+version = "0.2.0"
+description = "A tool to calculate molar mass for middle school students."
+authors = ["kifuan <kifuan@foxmail.com>"]
+readme = "README.md"
+repository = "https://github.com/kifuan/nonebot-plugin-molar-mass"
+keywords = ["nonebot", "chemistry", "molar-mass"]
+packages = [
+    { include = "nonebot_plugin_molar_mass" }
+]
+include = ["elements.json"]
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+rply = "^0.7.8"
+nonebot2 = {extras = ["fastapi"], version = "^2.0.0rc3"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
