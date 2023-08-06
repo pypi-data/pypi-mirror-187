@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: pathcrawler
+Version: 1.0.0
+Summary: I got tired of typing more than one line to get a recursive list of pathlib.Path objects for a given directory.
+Project-URL: Homepage, https://github.com/matt-manes/pathcrawler
+Project-URL: Documentation, https://github.com/matt-manes/pathcrawler/tree/main/docs
+Project-URL: Source code, https://github.com/matt-manes/pathcrawler/tree/main/src/pathcrawler
+Author: Matt Manes
+License-File: LICENSE.txt
+Keywords: directory
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: printbuddies~=1.0.0
+Description-Content-Type: text/markdown
+
+# pathcrawler
+Small utility because I got tired of typing more than one line to get a recursive list of pathlib.Path objects for a directory.<br>
+Install using:
+<pre>pip install pathcrawler</pre>
+<br>
+pathcrawler contains just three functions: crawl, get_directory_size, and format_size.<br>
+crawl takes a starting directory and returns a recursive list of pathlib.Path objects for all files in the starting directory and its sub folders.<br>
+get_directory_size takes a directory and returns the total size in bytes of the contents of the directory.<br>
+format_size takes a number (presumed to be bytes) and returns it as a string rounded to two decimal places with the appropriate unit suffix.<br>
+i.e. 
+<pre>
+>>>import pathcrawler
+>>> pathcrawler.format_size(132458)
+'132.46 kb'
+</pre>
