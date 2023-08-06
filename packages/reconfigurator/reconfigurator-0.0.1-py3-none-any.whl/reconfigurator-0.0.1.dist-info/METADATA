@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: reconfigurator
+Version: 0.0.1
+Summary: The purpose of this project is to provide an interface for nested dictionaries with unknown structures
+Author-email: "Jared J. Beard" <jbeard6@mix.wvu.edu>
+Project-URL: Homepage, https://github.com/jaredjbeard/reconfigurator
+Project-URL: Documentation, https://reconfigurator.readthedocs.io/en/latest/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# reconfigurator
+This package provides tools for reconfiguring files, markdown for sampling and generating configuration files. 
+
+
+Please see our [Documentation](https://reconfigurator.readthedocs.io/en/latest/intro.html), 
+[Github source code](https://github.com/jaredjbeard/reconfigurator), 
+and install from [PyPi](https://pypi.org/project/reconfigurator/)
+
+Citation
+--------
+If you are using this in your work, please cite as
+
+```
+@misc{beard2022irl_gym,
+    author = {Beard, Jared J.},
+    title = {reconfigurator: A tool for configuration files},
+    year = {2022},
+    publisher = {GitHub},
+    journal = {GitHub repository},
+    howpublished = {\url{https://github.com/jaredjbeard/reconfigurator}},
+}
+```
