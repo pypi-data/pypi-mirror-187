@@ -1,0 +1,35 @@
+{
+  "language": "fr",
+  "intents": {
+    "HassClimateSetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "(mets | changes | ajustes) la température à <temperature>",
+            "(mets | changes | ajustes) la température à <temperature> <dans> <area>",
+            "(mets | changes | ajustes) la température <dans> <area> à <temperature>"
+          ]
+        }
+      ]
+    },
+    "HassClimateGetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "Quelle est la température [<dans> <area>]"
+          ]
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassClimateSetTemperature": {
+        "default": "Température réglée sur {{ slots.temperature }} degrés"
+      },
+      "HassClimateGetTemperature": {
+        "default": "{{ state.state }} degrés"
+      }
+    }
+  }
+}

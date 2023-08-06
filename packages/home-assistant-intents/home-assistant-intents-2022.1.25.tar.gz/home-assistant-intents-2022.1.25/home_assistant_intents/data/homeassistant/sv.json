@@ -1,0 +1,281 @@
+{
+  "language": "sv",
+  "intents": {
+    "HassTurnOff": {
+      "data": [
+        {
+          "sentences": [
+            "<slå_av> [alla] (fläkten | fläktar | fläktarna) <i_på> <area>"
+          ],
+          "slots": {
+            "domain": "fan",
+            "name": "all"
+          }
+        },
+        {
+          "sentences": [
+            "<slå_av> <name>"
+          ]
+        },
+        {
+          "sentences": [
+            "<stäng_gardiner> <name>"
+          ],
+          "response": "cover"
+        },
+        {
+          "sentences": [
+            "(regla | <stäng_gardiner>) garagedörren"
+          ],
+          "response": "cover",
+          "slots": {
+            "device_class": "garage",
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "<stäng_gardiner> <gardiner> <i_på> <area>",
+            "<stäng_gardiner> [<alla>] <area>[s]<gardiner>",
+            "<stäng_gardiner> [<alla>] <area> <gardiner>"
+          ],
+          "response": "cover_area",
+          "slots": {
+            "device_class": [
+              "blind",
+              "curtain",
+              "shutter"
+            ],
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "<slå_av> [<alla>] <ljuskällor> <i_på> <area>",
+            "<slå_av> [<alla>] <area> <ljuskällor>",
+            "<slå_av> <area> [<alla>] <ljuskällor>",
+            "<slå_av> [<alla>] <area>[s]<ljuskällor>"
+          ],
+          "slots": {
+            "domain": "light"
+          }
+        },
+        {
+          "sentences": [
+            "<slå_av> <ljuskällor> <name>"
+          ],
+          "slots": {
+            "domain": "light"
+          }
+        }
+      ]
+    },
+    "HassTurnOn": {
+      "data": [
+        {
+          "sentences": [
+            "<slå_på> [<alla>] <ljuskällor> <i_på> <area>",
+            "<slå_på> [<alla>] <area> <ljuskällor>",
+            "<slå_på>  <area> [<alla>] <ljuskällor>",
+            "<slå_på> [<alla>] <area>[s]<ljuskällor>"
+          ],
+          "slots": {
+            "domain": "light"
+          }
+        },
+        {
+          "sentences": [
+            "<slå_på> <ljuskällor> <name>"
+          ],
+          "slots": {
+            "domain": "light"
+          }
+        },
+        {
+          "sentences": [
+            "<slå_på> [alla] (fläkten | fläktar | fläktarna) <i_på> <area>"
+          ],
+          "slots": {
+            "domain": "fan",
+            "name": "all"
+          }
+        },
+        {
+          "sentences": [
+            "<slå_på> <name>"
+          ]
+        },
+        {
+          "sentences": [
+            "<öppna_gardiner> <name>"
+          ],
+          "response": "cover"
+        },
+        {
+          "sentences": [
+            "<öppna_gardiner> garagedörren"
+          ],
+          "response": "cover",
+          "slots": {
+            "device_class": "garage",
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "<öppna_gardiner> <gardiner> <i_på> <area>",
+            "<öppna_gardiner> [<alla>] <area>[s]<gardiner>",
+            "<öppna_gardiner> [<alla>] <area> <gardiner>"
+          ],
+          "response": "cover_area",
+          "slots": {
+            "device_class": [
+              "blind",
+              "curtain",
+              "shutter"
+            ],
+            "domain": "cover"
+          }
+        }
+      ]
+    }
+  },
+  "responses": {
+    "errors": {
+      "no_intent": "Ursäkta, jag förstår inte",
+      "no_area": "Inget område med namnet {{ area }} kunde hittas",
+      "no_domain": "{{ area }} har inga {{ domain }}",
+      "no_device_class": "{{ area }} har ingen {{ device_class }}",
+      "no_entity": "Det finns ingen enhet eller entitet som heter {{ entity }}",
+      "handle_error": "Ett oväntat fel inträffade under utförandet av avsikten"
+    },
+    "intents": {
+      "HassTurnOff": {
+        "default": "Stängde av {{ slots.name }}",
+        "lights_area": "Stängde av lamporna i {{ slots.area }}",
+        "fans_area": "Stängde av fläktarna i {{ slots.area }}",
+        "cover": "Stängde {{ slots.name }}",
+        "cover_area": "Stängde {{ slots.area }}"
+      },
+      "HassTurnOn": {
+        "default": "Slog på {{ slots.name }}",
+        "lights_area": "Slog på lamporna i {{ slots.area }}",
+        "fans_area": "Slog på fläktarna i {{ slots.area }}",
+        "cover": "Öppnade {{ slots.name }}",
+        "cover_area": "Öppnade {{ slots.area }}"
+      }
+    }
+  },
+  "lists": {
+    "color": {
+      "values": [
+        {
+          "in": "(vit | vitt)",
+          "out": "white"
+        },
+        {
+          "in": "svart",
+          "out": "black"
+        },
+        {
+          "in": "(röd | rött)",
+          "out": "red"
+        },
+        {
+          "in": "orange",
+          "out": "orange"
+        },
+        {
+          "in": "(gul | gult)",
+          "out": "yellow"
+        },
+        {
+          "in": "(grön | grönt)",
+          "out": "green"
+        },
+        {
+          "in": "(blå | blått)",
+          "out": "blue"
+        },
+        {
+          "in": "(lila | violett)",
+          "out": "purple"
+        },
+        {
+          "in": "(brun | brunt)",
+          "out": "brown"
+        }
+      ]
+    },
+    "brightness": {
+      "range": {
+        "type": "percentage",
+        "from": 0,
+        "to": 100
+      }
+    },
+    "brightness_level": {
+      "values": [
+        {
+          "in": "<maximal>",
+          "out": 100
+        },
+        {
+          "in": "<minimal>",
+          "out": 1
+        }
+      ]
+    },
+    "temperature": {
+      "range": {
+        "type": "temperature",
+        "from": 0,
+        "to": 100
+      }
+    },
+    "temperature_unit": {
+      "values": [
+        "celsius",
+        {
+          "in": "c",
+          "out": "celsius"
+        },
+        "fahrenheit",
+        {
+          "in": "f",
+          "out": "fahrenheit"
+        }
+      ]
+    }
+  },
+  "expansion_rules": {
+    "name": "{name}[s | n | ns | en ]",
+    "area": "{area}[e | me][t | n ][s]",
+    "vad": "(vad är | vad är det | vad är det för | vilken)",
+    "är": "(är det | är)",
+    "brightness": "{brightness} [percent]",
+    "slå_på": "(tänd | sätt (på | igång | fart på) | slå (på | till) | starta)",
+    "slå_av": "(slå (av | från | ifrån) | släck | stäng [av] | stoppa)",
+    "i_på": "(i | på | vid | bredvid)",
+    "ändra": "(ställ in | sätt | justera | ändra | vrid (upp | ner))",
+    "temp": "(temperatur)",
+    "alla": "(all | alla | allt)",
+    "ljusintensitet": "(ljusstyrka | intensitet | styrka | nivå | effekt)",
+    "ljuskällor": "(ljuskällor[na] | ljus[en | et] | [glöd|led|diod]lamp[ a | an | or | orna] | lysrör[en| et] | belysning[en])",
+    "dimra": "(sätt | vrid | dra [på] | skruva [på] | dimra | dimma | ställ [in] | höj | sänk)",
+    "möjliga": "(möjlig[a] | tillgänglig[a])",
+    "maximal": "(maximal | max[imum] | högsta | starkaste | intensivaste | full[t])",
+    "minimal": "(minimal | minimum | minsta | lägsta | svagaste)",
+    "gardiner": "([rull | motor]gardin[er | erna | en] | persienn[er | erna | en] | spjälgardin[er | erna | en] | draperi[er | erna | en]) | förhänge[n | na]",
+    "stäng_gardiner": "(stäng [igen | till]| dra (ner | igen | för | till ) | hissa ner | veckla (ner | igen) | tillslut) | slå (igen |ihop | för)",
+    "öppna_gardiner": "(öppna [upp] | dra (upp | bort | isär | undan) | hissa upp | veckla upp)",
+    "varmt_kallt": "(varmt | varm | kallt | kall | het | svalt )",
+    "temperature": "{temperature} [grader] [{temperature_unit}]"
+  },
+  "skip_words": [
+    "snälla",
+    "tack",
+    "vänligen",
+    "kan du"
+  ]
+}

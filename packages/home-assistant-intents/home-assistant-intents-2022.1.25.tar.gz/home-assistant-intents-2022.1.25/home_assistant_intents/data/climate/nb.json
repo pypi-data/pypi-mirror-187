@@ -1,0 +1,13 @@
+{
+  "language": "nb",
+  "responses": {
+    "intents": {
+      "HassClimateSetTemperature": {
+        "default": "Temperaturen er satt til {{ slots.temperature }} grader"
+      },
+      "HassClimateGetTemperature": {
+        "default": "{{ state.state }} grader"
+      }
+    }
+  }
+}

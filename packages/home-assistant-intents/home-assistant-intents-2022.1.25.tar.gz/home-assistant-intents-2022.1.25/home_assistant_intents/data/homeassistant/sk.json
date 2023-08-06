@@ -1,0 +1,293 @@
+{
+  "language": "sk",
+  "intents": {
+    "HassTurnOff": {
+      "data": [
+        {
+          "sentences": [
+            "<turn_off> (ventilátor | vetrák ) [(v | vo )] <area>"
+          ],
+          "slots": {
+            "name": "fan.ceiling",
+            "domain": "fan"
+          },
+          "response": "fan"
+        },
+        {
+          "sentences": [
+            "<turn_off> ( ventiláciu | vetranie ) [(v | vo )] <area>"
+          ],
+          "slots": {
+            "domain": "fan",
+            "name": "all"
+          },
+          "response": "fans_ventilation"
+        },
+        {
+          "sentences": [
+            "<turn_off> [(všetky | všetko)] (ventilátory | vetráky | ventiláciu | vetranie ) [(v | vo )] <area>"
+          ],
+          "slots": {
+            "domain": "fan",
+            "name": "all"
+          },
+          "response": "fans_area"
+        },
+        {
+          "sentences": [
+            "<turn_off> <name>"
+          ]
+        },
+        {
+          "sentences": [
+            "<close> {name}"
+          ],
+          "response": "cover"
+        },
+        {
+          "sentences": [
+            "<close> {name} [v | vo | na | pred | za | pod | pred] {area}"
+          ],
+          "response": "cover_area"
+        },
+        {
+          "sentences": [
+            "<close> garáž",
+            "<close> garážovú bránu"
+          ],
+          "response": "cover",
+          "slots": {
+            "device_class": "garage",
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "<close> (rolety | žalúzie | záves[y] | záclon(u|y)) [v | na] {area}"
+          ],
+          "response": "cover_area",
+          "slots": {
+            "device_class": [
+              "blind",
+              "curtain",
+              "shutter"
+            ],
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "(<turn_off> | <turn_off_light>) [(všetky | všetko)] [(svetlo | svetlá | osvetlenie | lampu | lampy)] [(v | vo | na | pred | pod | pri)] <area>"
+          ],
+          "slots": {
+            "domain": "light"
+          }
+        }
+      ]
+    },
+    "HassTurnOn": {
+      "data": [
+        {
+          "sentences": [
+            "(<turn_on> | <turn_on_light>) [(všetky | všetko)] [(svetlo | svetlá | osvetlenie | lampu | lampy)] [(v | vo | na | pred | pod | pri)] <area>"
+          ],
+          "slots": {
+            "domain": "light"
+          }
+        },
+        {
+          "sentences": [
+            "<turn_on> (ventilátor | vetrák ) [(v | vo )] <area>"
+          ],
+          "slots": {
+            "domain": "fan"
+          },
+          "response": "fan"
+        },
+        {
+          "sentences": [
+            "<turn_on> ( ventiláciu | vetranie ) [(v | vo )] <area>"
+          ],
+          "slots": {
+            "domain": "fan",
+            "name": "all"
+          },
+          "response": "fans_ventilation"
+        },
+        {
+          "sentences": [
+            "<turn_on> [(všetky | všetko)] (ventilátory | vetráky | ventiláciu | vetranie ) [(v | vo )] <area>"
+          ],
+          "slots": {
+            "domain": "fan",
+            "name": "all"
+          },
+          "response": "fans_area"
+        },
+        {
+          "sentences": [
+            "<turn_on> <name>"
+          ]
+        },
+        {
+          "sentences": [
+            "<open> {name}"
+          ],
+          "response": "cover"
+        },
+        {
+          "sentences": [
+            "<open> {name} [v | vo | na | pred | za | pod | pred] {area}"
+          ],
+          "response": "cover_area"
+        },
+        {
+          "sentences": [
+            "<open> garáž",
+            "<open> garážovú bránu"
+          ],
+          "response": "cover",
+          "slots": {
+            "device_class": "garage",
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "<open> (rolety | žalúzie | záves[y] | záclon(u|y)) [v | na] {area}"
+          ],
+          "response": "cover_area",
+          "slots": {
+            "device_class": [
+              "blind",
+              "curtain",
+              "shutter"
+            ],
+            "domain": "cover"
+          }
+        }
+      ]
+    }
+  },
+  "responses": {
+    "errors": {
+      "no_intent": "Prepáč, nerozumel som tomu",
+      "no_area": "Žiadna oblasť s názvom {{ area }}",
+      "no_domain": "{{ area }} neobsahuje {{ domain }}",
+      "no_device_class": "{{ area }} neobsahuje {{ device_class }}",
+      "no_entity": "Žiadne zariadenie alebo entita s názvom {{ entity }}",
+      "handle_error": "Pri spracovaní došlo k neočakávanej chybe"
+    },
+    "intents": {
+      "HassTurnOff": {
+        "default": "Vypínam {{ slots.name }}",
+        "lights_area": "Svetlá v {{ slots.area }} boli zhasnuté",
+        "fan": "Ventilátor {{ slots.name }} bol vypnutý",
+        "fans_ventilation": "Vetranie {{ slots.area }} bolo ukončené",
+        "fans_area": "Ventilátory v {{ slots.area }} boli vypnuté",
+        "cover": "Zatváram {{ slots.name }}",
+        "cover_area": "Zatváram {{ slots.area }}",
+        "garage": "Zatváram {{ slots.name }}"
+      },
+      "HassTurnOn": {
+        "default": "Zapínam {{ slots.name }}",
+        "lights_area": "Svetlá v {{ slots.area }} boli rozsvietené",
+        "fan": "Ventilátor {{ slots.name }} bol zapnutý",
+        "fans_ventilation": "Vetranie {{ slots.area }} bolo spustené",
+        "fans_area": "Ventilátory v {{ slots.area }} boli zapnuté",
+        "cover": "Otváram {{ slots.name }}",
+        "cover_area": "Otváram {{ slots.area }}",
+        "garage": "Otváram {{ slots.name }}"
+      }
+    }
+  },
+  "lists": {
+    "color": {
+      "values": [
+        {
+          "in": "biel(a|e|y|o|u)",
+          "out": "white"
+        },
+        {
+          "in": "čiern(a|e|y|o|u)",
+          "out": "black"
+        },
+        {
+          "in": "červen(á|é|ý|o|ú)",
+          "out": "red"
+        },
+        {
+          "in": "oranžov(á|é|ý|o|ú)",
+          "out": "orange"
+        },
+        {
+          "in": "žlt(á|é|ý|o|ú)",
+          "out": "yellow"
+        },
+        {
+          "in": "zelen(á|é|ý|o|ú)",
+          "out": "green"
+        },
+        {
+          "in": "modr(á|é|ý|o|ú)",
+          "out": "blue"
+        },
+        {
+          "in": "fialov(á|é|ý|o|ú)",
+          "out": "purple"
+        },
+        {
+          "in": "hned(á|é|ý|o|ú)",
+          "out": "brown"
+        }
+      ]
+    },
+    "brightness": {
+      "range": {
+        "type": "percentage",
+        "from": 0,
+        "to": 100
+      }
+    },
+    "temperature": {
+      "range": {
+        "type": "temperature",
+        "from": 0,
+        "to": 100
+      }
+    },
+    "temperature_unit": {
+      "values": [
+        "celsius",
+        {
+          "in": "c | Celzia",
+          "out": "Celsius"
+        },
+        "fahrenheit",
+        {
+          "in": "f | Fahrenheita",
+          "out": "Fahrenheit"
+        }
+      ]
+    }
+  },
+  "expansion_rules": {
+    "name": "{name}",
+    "area": "{area}",
+    "what_is": "ak(á|é|ý|o) [je]",
+    "how_many": "koľko [je]",
+    "brightness": "{brightness} [percent]",
+    "temp": "teplot(a|u)",
+    "temperature": "{temperature} [stupňov] [{temperature_unit}]",
+    "turn_on": "zapni",
+    "turn_off": "vypni",
+    "turn_on_light": "(zasvieť | zažni | rozžni | rozsvieť)",
+    "turn_off_light": "(zahas | zhasni)",
+    "set": "(nastav | prestav | zmeň)",
+    "open": "(otvor | odostri | (roz|vy)tiahni)",
+    "close": "(zatvor | zavri | zastri | (s|za)tiahni)"
+  },
+  "skip_words": [
+    "prosím"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "language": "gl",
+  "intents": {
+    "HassClimateSetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "pon <temp> a <temperature>",
+            "pon <temp> <area> a <temperature>",
+            "pon <area> <temp> a <temperature>"
+          ]
+        }
+      ]
+    },
+    "HassClimateGetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "cal é [a] <temp>",
+            "qué <temp> fai",
+            "qué <temp> vai",
+            "cal é [a] <temp> <area>",
+            "qué <temp> fai (en | na | no) <area>",
+            "qué <temp> vai (en | na | no) <area>"
+          ]
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassClimateSetTemperature": {
+        "default": "Temperature set to {{ slots.temperature }} degrees"
+      },
+      "HassClimateGetTemperature": {
+        "default": "{{ state.state }} graos"
+      }
+    }
+  }
+}
