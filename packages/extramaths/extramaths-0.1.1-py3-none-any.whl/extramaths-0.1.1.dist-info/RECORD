@@ -1,0 +1,11 @@
+extramaths/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+extramaths/area_solver.py,sha256=b-0SuXUhU2RdstlECPXkstRBdpCRnGnTjAR6rH2gm20,734
+extramaths/fibonacci_solver.py,sha256=RuZWljivovozP2RW681rqDj9lq8x9TbE6t45sA1MoaE,149
+extramaths/quad_solver.py,sha256=EGuhardUpDGNBj8uIs7Zu1TRgJJWyqmU_vrjU6OWxCI,241
+extramaths/trigsolver_in-progress.py,sha256=lNfiKZgDjxujot8bhmxV2DOu1AIPXipDR24hTs7TW0E,333
+extramaths/volume_solver.py,sha256=EPOA1KkRHasftqXt7rijZSkayPnaHWDMcbzGV19yx-A,547
+extramaths-0.1.1.dist-info/LICENSE.TXT,sha256=V7i0JhuWeCRPkdw8p9LcqAUoo0dCfb9PzrdO68qG0GE,1075
+extramaths-0.1.1.dist-info/METADATA,sha256=L5sVFuPMfa-gQVR5oxg1ZliUu_jmZUrmVK6o9Z8bS9A,2191
+extramaths-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+extramaths-0.1.1.dist-info/top_level.txt,sha256=UYPk__0urujVHBVG3SgfH5nAXKMpjEGmp25WI-dNegM,11
+extramaths-0.1.1.dist-info/RECORD,,
