@@ -1,0 +1,4 @@
+django
+docxtpl
+docx2pdf
+pillow
