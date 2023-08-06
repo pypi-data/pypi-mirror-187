@@ -1,0 +1,6 @@
+sklearn==0.0
+python-crfsuite
+texta-embedding
+
+[mlp]
+texta-mlp
