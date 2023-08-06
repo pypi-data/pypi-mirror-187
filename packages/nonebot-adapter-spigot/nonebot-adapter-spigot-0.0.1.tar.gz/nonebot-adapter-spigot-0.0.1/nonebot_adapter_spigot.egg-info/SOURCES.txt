@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+nonebot_adapter_spigot.egg-info/PKG-INFO
+nonebot_adapter_spigot.egg-info/SOURCES.txt
+nonebot_adapter_spigot.egg-info/dependency_links.txt
+nonebot_adapter_spigot.egg-info/requires.txt
+nonebot_adapter_spigot.egg-info/top_level.txt
