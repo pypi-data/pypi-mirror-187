@@ -1,0 +1,6 @@
+data_file_name: "bbc_small.csv"
+api_key: changeme
+model_name: "document_tagging"
+target: "category"
+logo_image_url: 'static/images/k-logo.svg'
+app_title: 'ML Document Tagging'
