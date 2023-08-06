@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-report-manager
+Version: 0.1.0
+Summary: 群员通过Bot对话超管
+Home-page: https://github.com/Hiroshi12138/nonebot_plugin_report_manager
+Author: Hiroshi
+Author-email: yhk1122@qq.com
+License: MIT License
+Platform: all
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: nonebot2 (<3.0.0,>=2.0.0rc1)
+Requires-Dist: nonebot-adapter-onebot (>=2.1.5)
+
+# nonebot_plugin_report_manager
+
+## 指令
+
+```
+反馈开发者+内容
+```
+
+例如``反馈开发者 xx功能有xx错误``
+
+
+
