@@ -1,0 +1,8 @@
+from orm_collector import NetworkGroup
+from sqlalchemy.schema import CreateTable
+from orm_collector.db_session import SessionCollector
+
+
+sql = CreateTable(NetworkGroup.__table__)
+print(sql, type(sql))
+
