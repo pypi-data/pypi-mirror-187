@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: fiktivna
+Version: 0.0.9
+Summary: Fiktivna paket
+Home-page: https://example.com
+Author: Laerte Pereira
+Project-URL: Changelog, https://keepachangelog.com
+Project-URL: Documentation, https://readthedocs.io
+Project-URL: Source, https://github.com/Laerte/fiktivna
+Project-URL: Tracker, https://github.com/Laerte/fiktivna/issues
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+
+========
+Fiktivna
+========
+
+Fiktivna paket
