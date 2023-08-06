@@ -1,0 +1,11 @@
+twspace_dl/__init__.py,sha256=Ty9mTNx0sHacbP8kteV_hrHf3aNFPAbsHX3SyfL4XyI,259
+twspace_dl/__main__.py,sha256=uXhQwhB0PyotrZQyTRzIVQDL4uEM81Zd7Qq1M3b50vs,7952
+twspace_dl/login.py,sha256=BxS-xJxwbXcufInw9soODda-Zltyi-BpEf980X4uXm4,10508
+twspace_dl/twitter.py,sha256=ck93twd1T_5FFZPNvFPm5T0DD2De5BXT7PSbHyi2ARQ,1581
+twspace_dl/twspace.py,sha256=tq9ka4IIm_1WUX2l5IXOZ5UCJANFqR_kUkke4nCrDIc,10104
+twspace_dl/twspace_dl.py,sha256=SH1w2hGEbjPED9mUd8FOnDmpovv06vZJpkC_WvoA4WU,6774
+twspace_dl-2023.1.22.0.dist-info/METADATA,sha256=d_8gDyCt58CSo2FnGK1JBSUSFtVvYOPaatAau6KZoSI,6819
+twspace_dl-2023.1.22.0.dist-info/entry_points.txt,sha256=gDNLqQ7VSfZ0FveKXZjVUIAhJ2Ihq7VlB1j0GSJlcts,55
+twspace_dl-2023.1.22.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+twspace_dl-2023.1.22.0.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+twspace_dl-2023.1.22.0.dist-info/RECORD,,
