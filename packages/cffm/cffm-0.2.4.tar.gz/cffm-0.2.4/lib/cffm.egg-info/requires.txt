@@ -1,0 +1,11 @@
+
+[click]
+click
+
+[node]
+anytree
+
+[testing]
+setuptools
+pytest
+pytest-cov
