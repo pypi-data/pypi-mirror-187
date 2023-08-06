@@ -1,0 +1,14 @@
+ghga-service-chassis-lib[s3]==0.17.2
+httpyexpect==0.2.4
+typer==0.7.0
+crypt4gh==1.6
+
+[all]
+ghga-service-chassis-lib[dev]==0.17.2
+fastapi==0.89.1
+uvicorn[standard]==0.20.0
+
+[dev]
+ghga-service-chassis-lib[dev]==0.17.2
+fastapi==0.89.1
+uvicorn[standard]==0.20.0
