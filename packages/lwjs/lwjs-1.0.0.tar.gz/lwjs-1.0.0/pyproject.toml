@@ -1,0 +1,23 @@
+[build-system]
+requires = [ "hatchling" ]
+build-backend = "hatchling.build"
+
+[project]
+name = "lwjs"
+version = "1.0.0"
+authors = [ { name="Andrei Hes", email="andrei.hes@ya.ru" } ]
+description = "Light Weight JSON Shell"
+readme = "README.pypi.md"
+license = "WTFPL"
+requires-python = ">=3.10"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/andreihes/lwjs"
+"Bug Tracker" = "https://github.com/andreihes/lwjs/issues"
+
+[tool.hatch.build.targets.wheel]
+only-include = [ "lwjs" ]
