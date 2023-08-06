@@ -1,0 +1,4 @@
+include gimagedownload/requirements.txt
+include gimagedownload/thirdparty.json
+include gimagedownload/README.MD
+include gimagedownload/LICENSE

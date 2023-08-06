@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+gimagedownload/LICENSE
+gimagedownload/README.MD
+gimagedownload/__init__.py
+gimagedownload/requirements.txt
+gimagedownload/thirdparty.json
+gimagedownload.egg-info/PKG-INFO
+gimagedownload.egg-info/SOURCES.txt
+gimagedownload.egg-info/dependency_links.txt
+gimagedownload.egg-info/requires.txt
+gimagedownload.egg-info/top_level.txt
