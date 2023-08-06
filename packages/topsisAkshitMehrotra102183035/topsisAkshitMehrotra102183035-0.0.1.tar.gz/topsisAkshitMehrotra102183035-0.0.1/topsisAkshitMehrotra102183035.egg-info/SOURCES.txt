@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+topsisAkshitMehrotra102183035.egg-info/PKG-INFO
+topsisAkshitMehrotra102183035.egg-info/SOURCES.txt
+topsisAkshitMehrotra102183035.egg-info/dependency_links.txt
+topsisAkshitMehrotra102183035.egg-info/requires.txt
+topsisAkshitMehrotra102183035.egg-info/top_level.txt
