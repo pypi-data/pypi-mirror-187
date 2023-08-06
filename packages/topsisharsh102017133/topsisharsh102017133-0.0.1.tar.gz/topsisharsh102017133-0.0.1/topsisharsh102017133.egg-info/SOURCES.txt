@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+topsisharsh102017133.egg-info/PKG-INFO
+topsisharsh102017133.egg-info/SOURCES.txt
+topsisharsh102017133.egg-info/dependency_links.txt
+topsisharsh102017133.egg-info/entry_points.txt
+topsisharsh102017133.egg-info/requires.txt
+topsisharsh102017133.egg-info/top_level.txt
