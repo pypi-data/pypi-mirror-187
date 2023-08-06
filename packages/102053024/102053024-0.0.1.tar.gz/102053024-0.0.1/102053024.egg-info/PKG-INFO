@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: 102053024
+Version: 0.0.1
+Summary: Topsis Code
+Home-page: 
+Author: Khushi Bathla
+Author-email: kbathla_be20@thapar.edu
+Keywords: topsis
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Programming Language :: Python :: 3
+
+python code of topsis..
+
+
+Change Log
+==========
+
+0.0.1 (19/04/2020)
+-------------------
+- First Release
