@@ -1,0 +1,97 @@
+# HSLayers-NG map widget for Wagtail CodeRed CMS
+
+Note: Has npm dependency on [HSLayers-NG](https://www.npmjs.com/package/hslayers-ng-app) that gets automatically installed into static files. `python manage.py collectstatic` must be executed for the module to correctly locate the HSLayers bundles.
+
+
+## Instalation
+1. Copy whole codered-hslayers to the Wagtail root to a new folder named 'hslayers'
+
+2. Add 'hslayers' to the INSTALLED_APPS list in the settings/base.py
+```
+INSTALLED_APPS = [
+    # This project
+    'website',
+    
+    # CodeRed CMS
+    'coderedcms',
+    'bootstrap4',
+    ...
+    
+    'crx_hslayers'
+]
+```
+
+3. You have three options now:
+    * Keep existing CodeRed 'Web Page', 'Article Landing Page' and 'Article Page' untouched and add a new page type 'Web Page Extended', 'Article Landing Page Extended' and 'Article Page Extended' with new widgets of crx_hslayers
+        * Run crx_hslayers migrations
+        ```
+        $ python3 manage.py makemigrations crx_hslayers
+        ```
+        * Go to point 4
+
+    * Modify existing CodeRed 'Web Page' and/or 'Article Landing Page' and/or 'Article Page' type and add crx_hslayers widgets to it
+        * Edit Wagtail's models.py file
+            * Add those imports at the top
+            ```
+            from coderedcms.blocks import (
+              CONTENT_STREAMBLOCKS,
+              LAYOUT_STREAMBLOCKS,
+              GridBlock,
+              HeroBlock,
+              CardGridBlock,
+              CardBlock
+            )
+
+            from django.utils.translation import gettext_lazy as _
+            from crx_hslayers import blocks
+            from wagtail.core.fields import StreamField
+            from wagtail.core.blocks import RawHTMLBlock
+            ```
+
+            * Replace code of WebPage and/or ArticleIndexPage and/or ArticlePage function with the WebPage2 and/or ArticleIndexPageExtended and/or ArticlePageExtended function code from the crx_hslayers/models.py file
+
+        * Delete WebPage2 and/or ArticleIndexPageExtended and/or ArticlePageExtended method in the crx_hslayers/models.py file
+        * In case of ArticleIndexPage and ArticlePage overriding, don't forget to modify ```subpage_types``` and ```parent_page_types``` to your needs. In this particular case delete 'crx_hslayers.ArticlePageExtended' and 'crx_hslayers.ArticleIndexPageExtended' from the code
+        ```
+        parent_page_types = ['website.ArticleIndexPage', 'crx_hslayers.ArticleIndexPageExtended']
+        ...
+        subpage_types = ['website.ArticlePage', 'crx_hslayers.ArticlePageExtended']
+        ```
+        * Go to point 4
+
+    * Use crx_hslayers widgets in any other Wagtail models
+        * Take the code of WebPage2 and/or ArticleIndexPageExtended the crx_hslayers/models.py file and modify it as you wish or use the widgets anywhere else
+        * Go to point 4
+
+4. Install HSLayers app package from npm
+```
+cd ./static/hslayers
+npm install
+```
+
+5. Update Wagtail migrations
+```
+$ python3 manage.py makemigrations
+$ python3 manage.py migrate
+$ python3 manage.py collectstatic
+```
+
+6. Restart Wagtail
+
+7. New HSLayers blocks are added to the CMS
+    * HSLayers map
+    * Clima map
+
+
+## Development
+Update semantic version of the package
+
+Run test update without commiting
+```
+$ bumpver update --patch(--minor|--major) --dry
+```
+
+Run update and commit the changes to the repo
+```
+$ bumpver update --patch(--minor|--major)
+```
