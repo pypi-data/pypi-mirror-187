@@ -1,0 +1,2 @@
+[console_scripts]
+lume = lume.src.application.cli.lume:main
