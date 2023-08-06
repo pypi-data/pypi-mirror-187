@@ -1,0 +1,10 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+
+[tool.pyright]
+include = ["xdsl"]
+reportImportCycles = false
+reportUnnecessaryIsInstance = false
