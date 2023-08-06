@@ -1,0 +1,13 @@
+numpy
+magicgui
+qtpy
+pooch
+
+[testing]
+tox
+pytest
+pytest-cov
+pytest-qt
+pre-commit
+napari
+pyqt5
