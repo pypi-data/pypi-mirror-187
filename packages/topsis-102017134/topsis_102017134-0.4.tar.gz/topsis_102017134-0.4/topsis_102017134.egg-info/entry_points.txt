@@ -1,0 +1,3 @@
+[console_scripts]
+topsisSolve = topsis_102017134.topsis:main
+
