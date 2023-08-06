@@ -1,0 +1,7 @@
+qcs_sdk_python-0.5.0rc0.dist-info/METADATA,sha256=ANdR1YrwPh0pZzwIX0j2kVcO_-wKWpmGNqej7SjLz7Y,1398
+qcs_sdk_python-0.5.0rc0.dist-info/WHEEL,sha256=rigYaTATR-5OJK2lUngxc40Qyi5EukAy0OVoJ8U7sq4,130
+qcs_sdk/__init__.py,sha256=ToeqDOsUhe-yECOZMFnHIYaqVYOwl4natNefIyG6wnU,111
+qcs_sdk/__init__.pyi,sha256=vsaBvk3OyYEXJ7B1aeI9aZSeJbvu0q6m6TGzm4eb-So,5299
+qcs_sdk/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qcs_sdk/qcs_sdk.cpython-310-x86_64-linux-gnu.so,sha256=8QD_LDzskfKJbN32awUtfp44Sn-vZU543ovlPxThsSM,19442424
+qcs_sdk_python-0.5.0rc0.dist-info/RECORD,,
