@@ -1,0 +1,35 @@
+# 102003037 TOPSIS PACKAGE HIMANGI SHARMA
+Roll Number : 102003037 <br>
+Subgroup : 3COE18 <br>
+The program takes csv file containing our data to be ranked, weights and impacts in the form of "+" or "-", seperated by commas as inputs and then outputs a resultant csv file with two additional columns of performance score and Ranks.
+
+# What is TOPSIS
+TOPSIS, Technique of Order Preference Similarity to the Ideal Solution, is a multi-criteria decision analysis method (MCDA). <br>
+It chooses the alternative of shortest the Euclidean distance from the ideal solution and greatest distance from the negative ideal solution. <br>
+
+## Installation
+### How to install the TOPSIS package <br>
+using pip install:-<br>
+``` pip install 102003037-topsis-Himangi ```
+
+## For Calculating the TOPSIS Score
+Open terminal and type <br>
+``` 102003037 102003037-data.csv "1,1,1,1" "+,+,-,+" 102003037-output.csv ```
+
+The output will then be saved in a newly created CSV file whose name will be provided in the command line by the user.
+
+## Input File [102003037-data.csv]:
+Topsis mathematical operations to be performed on the input file which contains a dataset having different fields.
+
+## Weights ["1,1,1,1"]
+The weights to assigned to the different parameters in the dataset should be passed in the argument, seperated by commas.
+
+## Impacts ["+,+,-,+"]:
+The impacts are passed to consider which parameters have a positive impact on the decision and which one have the negative impact. Only '+' and '-' values should be passed and should be seperated with ',' only.
+
+## Output File [102003037-output.csv]:
+This argument is used to pass the path of the result file where we want the rank and performance score to be stored.
+
+
+
+
