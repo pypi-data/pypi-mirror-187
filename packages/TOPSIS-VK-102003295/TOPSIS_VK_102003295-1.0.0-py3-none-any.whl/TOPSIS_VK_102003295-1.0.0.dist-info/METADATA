@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: TOPSIS-VK-102003295
+Version: 1.0.0
+Summary: A Python package implementing TOPSIS technique used to solve the multi criteria decision making problems.
+Home-page: 
+Author: Vardaan Khosla
+Author-email: khoslavardaan1@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+# TOPSIS-Python
+
+**Assignment 1 : UCS654 Predictive Analysis using Statistics**
+
+**Author - Vardaan Khosla(102003295), TIET Patiala**
+
+## What is TOPSIS
+
+**T**echnique for **O**rder **P**reference by **S**imilarity to **I**deal
+**S**olution (TOPSIS) originated in the 1980s as a multi-criteria decision
+making method. TOPSIS chooses the alternative of shortest Euclidean distance
+from the ideal solution, and greatest distance from the negative-ideal
+solution.
+
+<br>
+
+## This is how we can use the developed package:
+
+Topsis-VardaanKhosla-102003295 package can be run as follows:
+
+### In the Command Prompt type:
+
+```
+>> topsis input_data.csv "0.25,0.25,0.25,0.25" "+,+,-,+" output_data.csv
+```
+
+## Sample dataset
+
+The decision matrix (`a`) should be constructed with each row representing a Model alternative, and each column representing a criterion like Accuracy, R<sup>2</sup>, Root Mean Squared Error, Correlation, and many more.The number of entries in the impacts and weights column must be equal to the number of columns starting from the 2nd column in the input dataset. For example, in this case there are 4 columns consisting of parameters which affect the decision making procedure. Each column will have an according weight and impact associated to it.
+
+| Model | Correlation | R<sup>2</sup> | RMSE | Accuracy |
+| ----- | ----------- | ------------- | ---- | -------- |
+| M1    | 0.79        | 0.62          | 1.25 | 60.89    |
+| M2    | 0.66        | 0.44          | 2.89 | 63.07    |
+| M3    | 0.56        | 0.31          | 1.57 | 62.87    |
+| M4    | 0.82        | 0.67          | 2.68 | 70.19    |
+| M5    | 0.75        | 0.56          | 1.3  | 80.39    |
+
+Weights (`w`) is not already normalised will be normalised later in the code.
+
+Information of benefit positive(+) or negative(-) impact criteria should be provided in `I`.
+
+<br>
+
+## Output
+
+The output will consist of the original csv file along with two additional columns Topsis Score and Rank.
+
+```
+Model  Topsis Score    Rank
+-----  ------------    ----
+  1    0.77221          2
+  2    0.225599         5
+  3    0.438897         4
+  4    0.523878         3
+  5    0.811389         1 
+```
+
+<br>
+
+
