@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+Topsis_102003701_Akshit_0.2.egg-info/PKG-INFO
+Topsis_102003701_Akshit_0.2.egg-info/SOURCES.txt
+Topsis_102003701_Akshit_0.2.egg-info/dependency_links.txt
+Topsis_102003701_Akshit_0.2.egg-info/entry_points.txt
+Topsis_102003701_Akshit_0.2.egg-info/requires.txt
+Topsis_102003701_Akshit_0.2.egg-info/top_level.txt
+src/102003701.py
