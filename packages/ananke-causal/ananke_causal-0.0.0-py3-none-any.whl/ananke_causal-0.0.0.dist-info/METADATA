@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: ananke-causal
+Version: 0.0.0
+Summary: Ananke, named for the Greek primordial goddess of necessity and causality, is a python package for causal inference using the language of graphical models.
+Home-page: https://gitlab.com/causal/ananke
+License: GPLv3
+Author: Ananke community
+Author-email: rbhatta8@jhu.edu
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: graphviz (>=0.20,<0.21)
+Requires-Dist: numpy (>=1.23.0,<2.0.0)
+Requires-Dist: pandas (>=1.4.3,<2.0.0)
+Requires-Dist: scipy (>=1.8.1,<2.0.0)
+Requires-Dist: statsmodels (>=0.13.2,<0.14.0)
+Project-URL: Documentation, https://ananke.readthedocs.io/en/latest/index.html
+Project-URL: Repository, https://gitlab.com/causal/ananke
+Description-Content-Type: text/markdown
+
+# Ananke
+
+Visit the [website](https://ananke.readthedocs.io) to find out more.
+
+[Ananke](https://en.wikipedia.org/wiki/Ananke), named for the Greek
+primordial goddess of necessity and causality, is a python package for
+causal inference using the language of graphical models
+
+## Contributors
+
+* Rohit Bhattacharya 
+* Jaron Lee
+* Razieh Nabi 
+* Preethi Prakash
+* Ranjani Srinivasan
+
+Interested contributors should check out the [CONTRIBUTING.md](CONTRIBUTING.md) for further details.
+
+## Installation
+
+### Install graphviz
+
+If graphing support is required, it is necessary to install [graphviz](https://www.graphviz.org/download/).
+
+Ubuntu:
+```shell script
+sudo apt install graphviz libgraphviz-dev pkg-config
+```
+
+Mac ([Homebrew](https://brew.sh/)):
+```shell script
+brew install graphviz
+```
+
+If on M1 see this [issue](https://github.com/pygraphviz/pygraphviz/issues/398). The fix is to run the following before installing:
+```shell script
+brew install graphviz
+python -m pip install \
+    --global-option=build_ext \
+    --global-option="-I$(brew --prefix graphviz)/include/" \
+    --global-option="-L$(brew --prefix graphviz)/lib/" \
+    pygraphviz
+```
+
+Fedora:
+```shell script
+sudo yum install graphviz
+```
+
+### Install ananke
+Requires python3.7+. To install, run
+
+```shell script
+pip3 install ananke-causal
+```
+
+
+
