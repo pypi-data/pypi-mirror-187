@@ -1,0 +1,9 @@
+tricky/__init__.py,sha256=ns77DbnLOZvSwcWOlvrDnQzyREFkYV5ca28IjkmZVYU,72
+tricky/iterables.py,sha256=5-CpBprvWcVWfYGuvrWhZYzSxNWC91VQNWhphxU4cdg,352
+tricky/pydantic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tricky/pydantic/types.py,sha256=w3dYJ2COarv3WXBN6j1VibF-fRDF-26fp61x4yeLgbU,646
+tricky/typing.py,sha256=Wwp7N1RHHlmNdIO6fPGbvhRTW_oxhs0ySSsRM7yZUQA,666
+tricky-0.0.6.dist-info/METADATA,sha256=D-nzONhE_hqROISXibY4YipswmkSovAF4zqkzrkY88g,1887
+tricky-0.0.6.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+tricky-0.0.6.dist-info/LICENSE,sha256=wUqICPHje-HIiKP-2ZEnS4C6QqiCY87BUlfachoTgCY,1078
+tricky-0.0.6.dist-info/RECORD,,
