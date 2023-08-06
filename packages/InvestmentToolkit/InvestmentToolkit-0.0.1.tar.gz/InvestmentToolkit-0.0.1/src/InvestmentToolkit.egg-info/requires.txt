@@ -1,0 +1,10 @@
+numpy>=1.21.6
+pandas>=1.3.5
+tqdm==4.64.1
+IPython>=7.9.0
+matplotlib<=3.6.3,>=3.2.2
+seaborn>=0.11.2
+scikit-learn>=1.0.2
+scipy<=1.10.0,>=1.7.3
+statsmodels>=0.12.2
+investsai==0.0.10

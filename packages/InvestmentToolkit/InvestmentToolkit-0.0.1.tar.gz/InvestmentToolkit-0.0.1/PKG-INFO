@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: InvestmentToolkit
+Version: 0.0.1
+Summary: a toolkit to run investment simulations
+Home-page: https://github.com/danphilps/InvestmentToolkit/
+Author: Dan Philps
+Author-email: danphilps@hotmail.com
+Project-URL: Bug Tracker, https://github.com/danphilps/InvestmentToolkit/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## The `InvestmentToolkit` package hosts tools to run investment simulations
+

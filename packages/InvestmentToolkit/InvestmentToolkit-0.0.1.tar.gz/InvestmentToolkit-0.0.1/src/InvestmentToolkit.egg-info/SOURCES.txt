@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/InvestmentToolkit.egg-info/PKG-INFO
+src/InvestmentToolkit.egg-info/SOURCES.txt
+src/InvestmentToolkit.egg-info/dependency_links.txt
+src/InvestmentToolkit.egg-info/requires.txt
+src/InvestmentToolkit.egg-info/top_level.txt
+src/investsai/InvestmentToolkit.py
+src/investsai/__init__.py
