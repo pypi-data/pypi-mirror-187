@@ -1,0 +1,6 @@
+arthurai
+build
+dist
+docs
+publish
+tests
