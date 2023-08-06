@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: avrofastapi
+Version: 0.0.2
+Summary: Automatic avro wire protocol support for FastAPI
+Home-page: https://github.com/kheina-com/avrofastapi
+Author: kheina
+License: Mozilla Public License 2.0
+Requires-Python: >=3.7.*
+Description-Content-Type: text/markdown
+Provides-Extra: build
+License-File: LICENSE

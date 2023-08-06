@@ -1,0 +1,15 @@
+LICENSE
+setup.py
+avrofastapi/__init__.py
+avrofastapi/gateway.py
+avrofastapi/handshake.py
+avrofastapi/models.py
+avrofastapi/repo.py
+avrofastapi/routing.py
+avrofastapi/schema.py
+avrofastapi/serialization.py
+avrofastapi.egg-info/PKG-INFO
+avrofastapi.egg-info/SOURCES.txt
+avrofastapi.egg-info/dependency_links.txt
+avrofastapi.egg-info/requires.txt
+avrofastapi.egg-info/top_level.txt
