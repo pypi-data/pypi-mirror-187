@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: cloudera-airflow-provider
+Version: 2.0.1
+Summary: Cloudera CDP Airflow Plugins
+Home-page: UNKNOWN
+Author: Cloudera
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Requires-Dist: apache-airflow
+Requires-Dist: apache-airflow-providers-apache-hive
+Requires-Dist: cryptography (>=3.3.2)
+Requires-Dist: tenacity
+Requires-Dist: requests
+Requires-Dist: cloudera-cde-sdk (>=1.0.1)
+
+UNKNOWN
+
+
