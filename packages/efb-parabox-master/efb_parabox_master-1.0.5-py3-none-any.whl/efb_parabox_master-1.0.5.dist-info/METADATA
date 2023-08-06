@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: efb-parabox-master
+Version: 1.0.5
+Summary: Parabox Master Channel for EH Forwarder Bot.
+Author: Ojhdt
+License: AGPLv3+
+Keywords: ehforwarderbot,EH Forwarder Bot,EH Forwarder Bot Master Channel,Parabox
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: ehforwarderbot (>=2.0.0)
+Requires-Dist: requests
+Requires-Dist: pillow
+Requires-Dist: peewee
+Requires-Dist: retrying
+Requires-Dist: bullet (>=2.2.0)
+Requires-Dist: cjkwrap
+Requires-Dist: typing-extensions (>=3.7.4.1)
+Requires-Dist: websockets (>=10.4)
+Requires-Dist: nest-asyncio
+Requires-Dist: typing
+Requires-Dist: cos-python-sdk-v5 (==1.9.22)
+Requires-Dist: qiniu (>=7.9.0)
+
