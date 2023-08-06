@@ -1,0 +1,10 @@
+pyobs_flipro/__init__.py,sha256=v1PiP56vFzNDVDcptlLUPW4JtfrX6x337nT2IjB05A4,39
+pyobs_flipro/fliprocamera.py,sha256=DdE6NYMzTSAOlFUS0dxL4sH0kd4QeBmGFW8jETI6D44,10319
+pyobs_flipro/fliprodriver.c,sha256=woGH7meaQUkvVV1BLoj12xK-j3IZWR89mwlNJpD8swQ,626288
+pyobs_flipro/fliprodriver.cpp,sha256=XGe8qjJu98oBvVbr-JXaZ6JV3t1WlfljXASxm1L5Z-w,402420
+pyobs_flipro/fliprodriver.cpython-39-x86_64-linux-gnu.so,sha256=zjIL7jut5VN0HfwojVNAv2YkdYzsVLMvcbO4kLnM0go,633624
+pyobs_flipro/fliprodriver.pyx,sha256=kjVbvu_y5azD87eLMXQMXFTbf91NctBxjwtO5qw8w_c,8661
+pyobs_flipro/libflipro.pxd,sha256=KgugAqAjN3-sT2ilWFSoxH7vkLVqbIPOHTTebJLxiXY,5812
+pyobs_flipro-0.20.0.dist-info/WHEEL,sha256=Saq_lZu9fQYXrdaxJZQZ0WR7I-HEO0_s27Gc4lwq4eM,103
+pyobs_flipro-0.20.0.dist-info/METADATA,sha256=3GjxHEsfMi6_phL8cDkPtvyYyi3I3Y7LQpXsDX3t5eg,514
+pyobs_flipro-0.20.0.dist-info/RECORD,,
