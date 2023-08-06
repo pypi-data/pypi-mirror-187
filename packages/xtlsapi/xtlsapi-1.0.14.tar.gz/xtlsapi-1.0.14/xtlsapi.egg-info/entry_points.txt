@@ -1,0 +1,2 @@
+[console_scripts]
+xtlsapi = xtlsapi.__main__:main
