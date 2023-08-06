@@ -1,0 +1,15 @@
+pandas
+pandera
+faker
+
+[dev]
+black
+isort
+autoflake
+mypy
+pre-commit
+
+[test]
+pytest
+pytest-cov
+pytest-xdist
