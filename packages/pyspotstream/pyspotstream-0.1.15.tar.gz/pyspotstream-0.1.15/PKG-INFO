@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pyspotstream
+Version: 0.1.15
+Summary: A package for the experimental analysis of BML and OML algorithms.
+Author-email: Aleksandr Subbotin <aleksandr.subbotin@th-koeln.de>, Noah Puetz <noah.c.puetz@gmail.com>, Olaf Mersmann <olafm@p-value.net>, "T. Bartz-Beielstein" <tbb@bartzundbartz.de>
+License: AGPL-3.0-or-later
+Project-URL: Homepage, https://www.spotseven.de
+Project-URL: Issues, https://github.com/bartzbeielstein/pyspotstream/issues
+Project-URL: Repository, https://github.com/bartzbeielstein/pyspotstream
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# pyspotstream

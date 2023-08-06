@@ -1,0 +1,44 @@
+[build-system]
+requires = [
+  "setuptools >=61.0",
+  "setuptools_scm[toml]"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyspotstream"
+authors = [
+  {name="Aleksandr Subbotin", email="aleksandr.subbotin@th-koeln.de"},
+  {name="Noah Puetz", email="noah.c.puetz@gmail.com"},
+  {name="Olaf Mersmann", email="olafm@p-value.net"},
+  {name="T. Bartz-Beielstein", email="tbb@bartzundbartz.de" },
+]
+description = "A package for the experimental analysis of BML and OML algorithms."
+readme = "README.md"
+license = { text="AGPL-3.0-or-later" }
+requires-python = ">=3.10"
+classifiers = [
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  "matplotlib >=3.6.0",
+  "numpy >=1.23.0",
+  "pandas >=1.5.0",
+  "river >=0.14.0",
+  "scikit-learn >=1.2.0",
+]
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://www.spotseven.de"
+Issues = "https://github.com/bartzbeielstein/pyspotstream/issues"
+Repository = "https://github.com/bartzbeielstein/pyspotstream"
+
+[tool.setuptools]
+packages = ["pyspotstream"]
+
+[tool.setuptools_scm]
+write_to = "pyspotstream/_version.py"
