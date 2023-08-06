@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: finspect
+Version: 0.0.0
+Project-URL: Documentation, https://github.com/Bobronium/finspect#readme
+Project-URL: Issues, https://github.com/Bobronium/finspect/issues
+Project-URL: Source, https://github.com/Bobronium/finspect
+Author-email: Bobronium <appkiller16@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# finspect
+
+Fast implementation inspect module for python that we deserve
+
+[![PyPI - Version](https://img.shields.io/pypi/v/finspect.svg)](https://pypi.org/project/finspect)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/finspect.svg)](https://pypi.org/project/finspect)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install finspect
+```
+
+## License
+
+`finspect` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
