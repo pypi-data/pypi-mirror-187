@@ -1,0 +1,24 @@
+{
+  "language": "fi",
+  "intents": {
+    "HassClimateGetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "<mikä> <temp>"
+          ]
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassClimateSetTemperature": {
+        "default": "Temperature set to {{ slots.temperature }} degrees"
+      },
+      "HassClimateGetTemperature": {
+        "default": "{{ state.state }} astetta"
+      }
+    }
+  }
+}

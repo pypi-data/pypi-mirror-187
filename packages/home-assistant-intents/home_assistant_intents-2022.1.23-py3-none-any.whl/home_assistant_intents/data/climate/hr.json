@@ -1,0 +1,37 @@
+{
+  "language": "hr",
+  "intents": {
+    "HassClimateSetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "<promijeni> <temp> [na] <temperature> [<stupanj>]",
+            "<promijeni> <temp> [u | na] <area> [na] <temperature> [<stupanj>]",
+            "<promijeni> <area> <temp> [na] <temperature> [<stupanj>]"
+          ]
+        }
+      ]
+    },
+    "HassClimateGetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "<koja_je> <temp> [[u|na] <area>]",
+            "je li (toplo | hladno | vruće) [[u|na] <area>]",
+            "<koja_je> <area> <temp>"
+          ]
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassClimateSetTemperature": {
+        "default": "Temperature set to {{ slots.temperature }} degrees"
+      },
+      "HassClimateGetTemperature": {
+        "default": "{{ state.state }} degrees"
+      }
+    }
+  }
+}

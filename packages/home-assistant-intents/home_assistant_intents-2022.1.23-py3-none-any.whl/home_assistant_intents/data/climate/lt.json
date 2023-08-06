@@ -1,0 +1,35 @@
+{
+  "language": "lt",
+  "intents": {
+    "HassClimateSetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "<set> [<temp>] [iki] <temperature> [<area>]",
+            "<set> [iki] <temperature> <temp> <area>",
+            "<set> [<temp>] <area> [iki] <temperature>"
+          ]
+        }
+      ]
+    },
+    "HassClimateGetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "(<what_is>|<how_many_is>) [laipsnių] <temp> [<area>]"
+          ]
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassClimateSetTemperature": {
+        "default": "Temperatūra nustatyta iki {{ slots.temperature }} laipsnių"
+      },
+      "HassClimateGetTemperature": {
+        "default": "{{ state.state }} laipsnių"
+      }
+    }
+  }
+}

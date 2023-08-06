@@ -1,0 +1,38 @@
+{
+  "language": "ml",
+  "intents": {
+    "HassClimateSetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "<set> <temp> <temperature> [<to>]",
+            "<temp> <temperature> <to> <set>",
+            "<set> <temp> <area><in> <temperature> [<to>]",
+            "<temperature> <to> <temp> <set>"
+          ]
+        }
+      ]
+    },
+    "HassClimateGetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "<what_is> [<area>[<in>]] <temp>",
+            "<area>[<in>] <temp> <what_is>",
+            "<what_is> <temp> [<area><in>]"
+          ]
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassClimateSetTemperature": {
+        "default": "താപനില {{ slots.temperature }} ഡിഗ്രികൾ ആയി ക്രമീകരിച്ചു"
+      },
+      "HassClimateGetTemperature": {
+        "default": "{{ state.state }} ഡിഗ്രികൾ"
+      }
+    }
+  }
+}

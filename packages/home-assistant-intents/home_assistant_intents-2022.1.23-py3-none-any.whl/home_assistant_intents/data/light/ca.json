@@ -1,0 +1,26 @@
+{
+  "language": "ca",
+  "intents": {
+    "HassLightSet": {
+      "data": [
+        {
+          "sentences": [
+            "<configura> la llum (<area> | <name>) al <lluentor>",
+            "<engega> la llum (<area> | <name>) al <lluentor>"
+          ],
+          "response": "brightness_area"
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassLightSet": {
+        "brightness": "{{ slots.name }} brightness set to {{ slots.brightness }}",
+        "brightness_area": "Brightness in {{ slots.area }} set to {{ slots.brightness }}",
+        "color": "{{ slots.name }} color set to {{ slots.color }}",
+        "color_area": "Color in {{ slots.area }} set to {{ slots.color }}"
+      }
+    }
+  }
+}
