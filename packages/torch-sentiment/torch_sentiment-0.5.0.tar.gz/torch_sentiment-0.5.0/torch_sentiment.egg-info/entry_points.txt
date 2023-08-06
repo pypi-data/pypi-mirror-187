@@ -1,0 +1,2 @@
+[console_scripts]
+train = torch_sentiment.workflows.driver:main
