@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: pochas-geoutils
+Version: 0.0.2
+Summary: A Python package includes geo-utils for PoCHAS project
+Home-page: https://github.com/behzad89/pochas-geoutils
+Author: Behzad Valipour Sh.
+Author-email: behzad.valipour@swisstph.ch
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: geopandas
+Requires-Dist: shapely
+Requires-Dist: pandas
+Requires-Dist: xarray
+Requires-Dist: rioxarray
+Requires-Dist: rasterio
+Requires-Dist: netcdf4
+Requires-Dist: requests
+Requires-Dist: sklearn
+Requires-Dist: xlsxwriter
+Requires-Dist: coloredlogs
+
+[![Documentation Status](https://readthedocs.org/projects/pochas-geoutils/badge/?version=latest)](https://pochas-geoutils.readthedocs.io/en/latest/?badge=latest)
+[![image](https://img.shields.io/pypi/v/pochas-geoutils)](https://pypi.org/project/pochas-geoutils/)
+[![image](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# pochas-geoutils Python Package
+
+A Python package is offering tools for spatial data handling to feed to machine learning Algorithms. All functionalities was applied or user-friendly geo data processing in [**POCHAS project**](https://www.swisstph.ch/en/projects/project-detail/project-action/detail/project-controller/Projects/project/effects-of-airborne-pollen-on-cardiorespiratory-health-and-allergic-symptoms/)
+
+# Documentation
+
+A description of pochas-geoutils's functionality can be found [here](https://pochas-geoutils.readthedocs.io/en/latest/?badge=latest#).
+
+# Installation
+
+- _GitHUB_:
+  `pip install git+https://github.com/behzad89/pochas-geoutils.git`
+- _pip_:
+  `pip install pochas-geoutils`
+
+# Tutorial
+
+A jupyter notebook and test data are available [here](https://github.com/behzad89/pochas-geoutils/tree/main/Tutorials).
+
+# Dockerfile
+
+The Dockerimage to setup the **python container** is provided on the **ubuntu:20.04** environment [here](https://github.com/behzad89/pochas-geoutils/tree/main/src).
