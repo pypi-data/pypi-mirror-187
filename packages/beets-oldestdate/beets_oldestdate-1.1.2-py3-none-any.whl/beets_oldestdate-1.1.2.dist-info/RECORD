@@ -1,0 +1,7 @@
+setup.py,sha256=QFh7hWY24ZwGjlKxerr1pmxgfNHcoOKI4CCrAZvysOs,133
+src/beetsplug/__init__.py,sha256=eeWE7vaW-3Yk4bKTjacMWIA-d2G5LEHJZ2yPpLdQ3Hw,97
+src/beetsplug/oldestdate.py,sha256=ukMbsE9LnYFHdlD2eYRbjEMStdxaWqCi5I_Me_XREe4,18564
+beets_oldestdate-1.1.2.dist-info/METADATA,sha256=DKyYEPJaoPR3JR_hG7zPX5YULlg0EIRXhC56kG5V5h8,6112
+beets_oldestdate-1.1.2.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+beets_oldestdate-1.1.2.dist-info/licenses/LICENSE,sha256=8sN3sFl5lKlWjAZZu3zwj8fpBarjxhKh1hXqvdA7D_E,1065
+beets_oldestdate-1.1.2.dist-info/RECORD,,
