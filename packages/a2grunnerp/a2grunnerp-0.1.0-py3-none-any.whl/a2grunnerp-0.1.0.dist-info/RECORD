@@ -1,0 +1,13 @@
+a2grunnerp/__init__.py,sha256=c_kUZhTqXXlATn-jE75q8arDdX6yfguqItYvIcVBR8w,1420
+a2grunnerp/localrunner.py,sha256=wHW8AclgyvgfPQ25ks_0G-F9xvxoPKcRYLrrWw0VFv0,37587
+a2grunnerp/qmanager.py,sha256=sIqlWAKylztgHVq1iDyNe1gFSpndxXHJUOGA5jgCSqI,14747
+a2grunnerp/run_manager.py,sha256=L6WCpzUaJQIwXaGF4DJkjHCK3NO5TQ0_ttVblV3MyKo,180
+a2grunnerp/stdouts_redirects.py,sha256=DLIN1ZBEUAm2zs6JyI1ySsbKLEfozGwtdurcJo9kTxk,54711
+a2grunnerp/pytransform/__init__.py,sha256=OAwIt1kGBC0Y5zsNJlTrAwQwmJhMqierRUVI_ZOjqgg,13587
+a2grunnerp/pytransform/_pytransform.dll,sha256=vKg9uzQmTufOpWRdf5gRpBPJffC8WAqoEUEGjbMgOLc,1165824
+a2grunnerp-0.1.0.data/data/pytransform/__init__.py,sha256=OAwIt1kGBC0Y5zsNJlTrAwQwmJhMqierRUVI_ZOjqgg,13587
+a2grunnerp-0.1.0.data/data/pytransform/_pytransform.dll,sha256=vKg9uzQmTufOpWRdf5gRpBPJffC8WAqoEUEGjbMgOLc,1165824
+a2grunnerp-0.1.0.dist-info/METADATA,sha256=OWMVRK2MOdLcnqh3Tu6kG6-hoAMqUCLU2ylZNin8n0Q,5319
+a2grunnerp-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+a2grunnerp-0.1.0.dist-info/top_level.txt,sha256=-xORZD0E9G-WO_GVXAZebjPAkGNSpMm-0rhpd_Ga_tU,11
+a2grunnerp-0.1.0.dist-info/RECORD,,
