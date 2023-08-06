@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: plinko
+Version: 0.0.1
+Summary: Python equivalent to the internal R library, klink, for establishing remote connections to data sources
+Home-page: UNKNOWN
+Author: Nat Hawkins, Mike Chappelow
+Author-email: nat.hawkins@kellogg.com, michael.chappelow@kellogg.com
+License: LICENSE.txt
+Platform: UNKNOWN
+License-File: LICENSE.txt
+
+# Python Link Operations with `plinko`
+
+https://packaging.python.org/en/latest/tutorials/packaging-projects/
+https://python-packaging-tutorial.readthedocs.io/en/latest/setup_py.html
+http://pythonchb.github.io/PythonTopics/where_to_put_tests.html
+
