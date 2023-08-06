@@ -1,0 +1,45 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bh-utils"
+version = "0.0.1"
+description = "Utility Functions Library."
+
+readme = "README.md"
+authors = [{ name = "Van Be Hai Nguyen", email = "behai_nguyen@hotmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["utility", "functions", "library"]
+
+dependencies = [
+    'tomli; python_version < "3.11"',
+    'PyYAML', 
+    'simplejson'
+]
+
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+tests = [
+  "pytest",
+  "coverage"
+]
+builds = [
+    "build", 
+    "twine"
+]
+docs = [
+    "sphinx",
+    "myst-parser",
+    "sphinx-rtd-theme"
+]
+
+[project.urls]
+repository = "https://github.com/behai-nguyen/bh_utils"
+documentation = "https://bh-utils.readthedocs.io/"

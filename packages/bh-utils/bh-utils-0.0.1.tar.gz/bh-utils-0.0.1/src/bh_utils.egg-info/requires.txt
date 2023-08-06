@@ -1,0 +1,18 @@
+PyYAML
+simplejson
+
+[:python_version < "3.11"]
+tomli
+
+[builds]
+build
+twine
+
+[docs]
+sphinx
+myst-parser
+sphinx-rtd-theme
+
+[tests]
+pytest
+coverage
