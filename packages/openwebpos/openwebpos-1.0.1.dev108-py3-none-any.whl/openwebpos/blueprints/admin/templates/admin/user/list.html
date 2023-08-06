@@ -1,0 +1,102 @@
+{% extends 'layouts/app.html' %}
+
+{% from 'macros/user_interface.html' import activeButton, floatingButton %}
+
+{% block content %}
+
+    <section>
+        <div class="row">
+            <div class="col s12">
+                <div class="card rounded">
+                    <div class="card-content">
+                        <span class="card-title center-align black-text">Users</span>
+                        <table class="centered">
+                            <thead>
+                            <tr>
+                                <th>Username</th>
+                                <th>Email</th>
+                                <th>Is Staff</th>
+                                <th>Is Active</th>
+                                <th>Profile</th>
+                                <th>Activity</th>
+                                <th>Actions</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for user in users %}
+                                <tr>
+                                    <td>{{ user.username }}</td>
+                                    <td>{{ user.email }}</td>
+                                    <td>{{ activeButton(url_for('admin.user.toggle_staff_view', user_id=user.id), user.staff) }}</td>
+                                    <td>{{ activeButton(url_for('admin.user.toggle_active_view', user_id=user.id), user.active) }}</td>
+                                    <td>
+                                        <a href="{{ url_for('admin.user.profile_view', user_id=user.id) }}"
+                                           class="btn-floating btn-small blue accent-4">
+                                            <i class="material-icons">contact_page</i>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="{{ url_for('admin.user.activity_view', user_id=user.id) }}"
+                                           class="btn-floating btn-small blue accent-4">
+                                            <i class="material-icons">calendar_month</i>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="{{ url_for('admin.user.delete_view', user_id=user.id) }}"
+                                           class="btn-floating btn-small red">
+                                            <i class="material-icons">delete</i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    {{ floatingButton('#addUserModal', 'add', trigger=True) }}
+
+    <div id="addUserModal" class="modal extended">
+        <div class="modal-content">
+            <h4 class="center-align">Add User</h4>
+            <form action="" method="POST">
+                {{ form.hidden_tag() }}
+                <div class="row">
+                    <div class="col s12 m6 offset-m3 input-field">
+                        {{ form.role.label(class_='active') }}
+                        {{ form.role(class_='browser-default') }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 input-field">
+                        {{ form.username.label() }}
+                        {{ form.username(class_='validate') }}
+                    </div>
+                    <div class="col s12 m6 input-field">
+                        {{ form.email.label() }}
+                        {{ form.email(class_='validate') }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 input-field">
+                        {{ form.password.label() }}
+                        {{ form.password(class_='validate') }}
+                    </div>
+                    <div class="col s12 m6 input-field">
+                        {{ form.confirm_password.label() }}
+                        {{ form.confirm_password(class_='validate') }}
+                    </div>
+                </div>
+                <div class="center-align">
+                    {{ form.submit(class_='btn blue accent-4') }}
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

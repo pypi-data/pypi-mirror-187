@@ -1,0 +1,18 @@
+{% extends 'layouts/app.html' %}
+
+{% from 'macros/user_interface.html' import clickableCard %}
+
+
+{% block content %}
+
+    <section>
+        <div class="options-window">
+
+            {% for addon in addons %}
+                {{ clickableCard(url_for('pos.order_add_order_item_option', order_item_id=order_item_id, ingredient_id=addon.id), addon.name) }}
+            {% endfor %}
+
+        </div>
+    </section>
+
+{% endblock %}

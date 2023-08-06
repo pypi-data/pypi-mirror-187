@@ -1,0 +1,30 @@
+{% extends 'layouts/app.html' %}
+
+
+{% block content %}
+
+
+    <div class="row">
+        <div class="col s12 m10 offset-m1">
+            <div class="card rounded">
+                <div class="card-content">
+                    <span class="card-title center-align">ADD Ingredients for {{ mi.menu_category.name }} - {{ mi.name }}</span>
+                    <form action="" method="POST">
+                        {{ form.hidden_tag() }}
+                        <div class="row mb0">
+                            <div class="col s12 m8 input-field">
+                                {{ form.ingredient_id.label(class="active") }}
+                                {{ form.ingredient_id(class="browser-default") }}
+                            </div>
+                            <div class="col s12 m4 center-align">
+                                {{ form.submit(class="btn") }}
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

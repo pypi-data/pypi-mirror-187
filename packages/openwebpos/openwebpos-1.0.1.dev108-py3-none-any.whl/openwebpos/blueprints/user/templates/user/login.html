@@ -1,0 +1,34 @@
+{% extends 'layouts/app.html' %}
+
+{% block content %}
+
+    <section class="login-section">
+        <div class="card rounded">
+            <div class="card-content">
+                <div class="center-align">
+                    <img src="{{ url_for('static', filename='img/default.png') }}" alt="OpenWebPOS" height="80px">
+                </div>
+                <span class="card-title center">Login</span>
+                <form action="{{ url_for('user.login_post') }}" method="POST">
+                    {{ form.hidden_tag() }}
+                    <div class="row mb0">
+                        <div class="col s12 input-field my0">
+                            {{ form.username.label }}
+                            {{ form.username(class="validate") }}
+                        </div>
+                    </div>
+                    <div class="row mb0">
+                        <div class="col s12 input-field my0">
+                            {{ form.password.label }}
+                            {{ form.password(class="validate") }}
+                        </div>
+                    </div>
+                    <div class="center-align mt1">
+                        {{ form.submit(class="btn full") }}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

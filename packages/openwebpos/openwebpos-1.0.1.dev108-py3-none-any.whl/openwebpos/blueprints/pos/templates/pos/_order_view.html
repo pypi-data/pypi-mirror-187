@@ -1,0 +1,184 @@
+<div class="ordered-items">
+    {% if order.has_customer() %}
+        <div class="center-align green accent-4 white-text">
+            <span class="black-text text-bold">{{ format_phone_number(order.customer.phone) }}</span>
+        </div>
+    {% endif %}
+    <table class="highlight">
+        <thead class="grey darken-4 white-text">
+        <tr>
+            <th class="left-align">&nbsp;QT</th>
+            <th class="center-align">Item</th>
+            <th class="center-align">Edit&nbsp;</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        {% for order_section in order_sections %}
+            {% for order_item in order_items %}
+                {% if order_item.order_section_id == order_section.id %}
+                    <tr>
+                        <td class="left-align">
+                            <a href="#quantityModal{{ order_item.id }}"
+                               class="modal-trigger btn rounded grey darken-3">{{ order_item.quantity }}</a>
+                            <div id="quantityModal{{ order_item.id }}" class="modal keypad-modal">
+                                <div class="modal-content">
+                                    <form class="number-keypad"
+                                          action="{{ url_for('pos.update_quantity', order_item_id=order_item.id) }}"
+                                          method="post" autocomplete="off">
+                                        {{ form.hidden_tag() }}
+                                        <div class="number-keypad-display">
+                                            {{ form.quantity(id=order_item.id|string + 'Quantity') }}
+                                        </div>
+                                        <div class="number-keypad-keys">
+                                            <input type="button" value="7"
+                                                   onclick="addNumber(this, '{{ order_item.id|string + "Quantity" }}')">
+                                            <input type="button" value="8"
+                                                   onclick="addNumber(this, '{{ order_item.id|string + "Quantity" }}')">
+                                            <input type="button" value="9"
+                                                   onclick="addNumber(this,'{{ order_item.id|string + "Quantity" }}')">
+                                            <input type="button" value="4"
+                                                   onclick="addNumber(this,'{{ order_item.id|string + "Quantity" }}')">
+                                            <input type="button" value="5"
+                                                   onclick="addNumber(this,'{{ order_item.id|string + "Quantity" }}')">
+                                            <input type="button" value="6"
+                                                   onclick="addNumber(this,'{{ order_item.id|string + "Quantity" }}')">
+                                            <input type="button" value="1"
+                                                   onclick="addNumber(this,'{{ order_item.id|string + "Quantity" }}')">
+                                            <input type="button" value="2"
+                                                   onclick="addNumber(this,'{{ order_item.id|string + "Quantity" }}')">
+                                            <input type="button" value="3"
+                                                   onclick="addNumber(this,'{{ order_item.id|string + "Quantity" }}')">
+                                            <button type="reset" class="red"><i
+                                                    class="material-icons">delete</i></button>
+                                            <input type="button" value="0"
+                                                   onclick="addNumber(this, '{{ order_item.id|string + "Quantity" }}')">
+                                            <button type="submit" class="green"><i class="material-icons">keyboard_return</i>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="left-align flow-text pl1">
+                            <a {{ 'href=#orderItemModal'+order_item.id|string if order_item.menu_item.has_ingredients() }}
+                                    class="black-text {{ 'modal-trigger' if order_item.menu_item.has_ingredients() }}">
+                                {{ order_item.menu_item.menu_category.name }}
+                                - {{ order_item.menu_item.name }}
+                                {% if order_item.has_order_item_options() %}
+                                    <ul class="m0">
+                                        {% for order_item_option in order_item.order_item_options %}
+                                            <li>
+                                                {{ order_item_option.option_type }} {{ order_item_option.ingredient.name }}
+                                                {% if order_item_option.price > 0 %}
+                                                    <span class="green-text">&plus;{{ format_currency(order_item_option.price) }}</span>
+                                                {% endif %}
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                {% endif %}
+                            </a>
+
+                            <div id="orderItemModal{{ order_item.id }}" class="modal extended">
+                                <div class="modal-content">
+                                    <h4 class="center-align">
+                                        Options for {{ order_item.menu_item.menu_category.name }}
+                                        - {{ order_item.menu_item.name }}
+                                    </h4>
+                                    {% if order_item.menu_item.has_ingredients() %}
+                                        <div class="row">
+                                            <div class="col s12 m6">
+                                                <a href="#removeItemIngredient{{ order_item.id }}"
+                                                   class="btn-large btn-block rounded yellow accent-4 black-text modal-trigger">
+                                                    REMOVE INGREDIENT
+                                                </a>
+                                                <div id="removeItemIngredient{{ order_item.id }}"
+                                                     class="modal extended">
+                                                    <div class="modal-content">
+                                                        <h4 class="center-align">Remove Ingredients</h4>
+                                                        <div class="options-window">
+                                                            {% for menu_item_ingredient in menu_item_ingredients %}
+                                                                {% if menu_item_ingredient.menu_item_id == order_item.menu_item.id %}
+                                                                    {{ clickableCard(url_for('pos.order_add_order_item_option', order_item_id=order_item.id, ingredient_id=menu_item_ingredient.ingredient.id, option_type='No', option_price="0.00"), menu_item_ingredient.ingredient.name) }}
+                                                                {% endif %}
+                                                            {% endfor %}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col s12 m6">
+                                                <a href="#addItemIngredient{{ order_item.id }}"
+                                                   class="btn-large btn-block rounded green accent-4 black-text modal-trigger">
+                                                    EXTRA INGREDIENT
+                                                </a>
+                                                <div id="addItemIngredient{{ order_item.id }}"
+                                                     class="modal extended rounded">
+                                                    <div class="modal-content">
+                                                        <h4 class="center-align">Extra Ingredient</h4>
+                                                        <div class="options-window">
+                                                            {% for menu_item_ingredient in menu_item_ingredients %}
+                                                                {% if menu_item_ingredient.menu_item_id == order_item.menu_item.id %}
+                                                                    {{ clickableCard(url_for('pos.order_add_order_item_option', order_item_id=order_item.id, ingredient_id=menu_item_ingredient.ingredient.id, option_type='Extra', option_price="0.00"), menu_item_ingredient.ingredient.name) }}
+                                                                {% endif %}
+                                                            {% endfor %}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                    {% if order_item.menu_item.has_addons() %}
+                                        <div class="row mb0">
+                                            <div class="col s12">
+                                                <a href="#addOnIngredient{{ order_item.id }}"
+                                                   class="btn-large btn-block rounded deep-purple modal-trigger">
+                                                    ADD ON's
+                                                </a>
+                                                <div id="addOnIngredient{{ order_item.id }}"
+                                                     class="modal extended">
+                                                    <div class="modal-content">
+                                                        <h4 class="center-align">Add-On Ingredient</h4>
+                                                        <div class="options-window">
+                                                            {% for menu_item_addon in menu_item_addons %}
+                                                                {% if menu_item_addon.menu_item_id == order_item.menu_item.id %}
+                                                                    {{ clickableCard(url_for('pos.order_add_order_item_option', order_item_id=order_item.id, ingredient_id=menu_item_addon.ingredient.id, option_type='Add', option_price=menu_item_addon.price), menu_item_addon.ingredient.name) }}
+                                                                {% endif %}
+                                                            {% endfor %}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="#deleteOrderItem{{ order_item.id }}"
+                               class="btn btn-small red accent-4 modal-trigger w100 h100 rounded">
+                                <i class="tiny material-icons">delete</i>
+                            </a>
+                            {{ actionModal('deleteOrderItem'+order_item.id|string, 'red', 'Delete Item:'+order_item.menu_item.name, url_for('pos.order_remove_item', order_item_id=order_item.id)) }}
+                        </td>
+                    </tr>
+                {% endif %}
+            {% endfor %}
+            {% if order_sections|length > 1 %}
+                {% if order_section in order_sections %}
+                    <tr>
+                        {% if not loop.last %}
+                            <td class="grey darken-4"></td>
+                            <td class="grey darken-4 white-text">********************</td>
+                            <td class="grey darken-4 white-text">{{ format_currency(order_section.get_order_section_total()) }}</td>
+                        {% else %}
+                            {% if not order_section.has_items() %}
+                                <td colspan="3" class="center-align">New Section</td>
+                            {% endif %}
+                        {% endif %}
+                    </tr>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+        </tbody>
+    </table>
+</div>

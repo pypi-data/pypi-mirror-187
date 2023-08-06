@@ -1,0 +1,14 @@
+{% extends 'layouts/app.html' %}
+
+{% from 'macros/user_interface.html' import clickableCard %}
+
+{% block content %}
+
+    <section>
+        <div class="options-window">
+            {{ clickableCard(url_for('admin.printer.usb_view'), 'USB') }}
+            {{ clickableCard(url_for('admin.printer.network_view'), 'Network') }}
+        </div>
+    </section>
+
+{% endblock %}
