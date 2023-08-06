@@ -1,0 +1,9 @@
+fuzzly_configs/__init__.py,sha256=vV1t5s4PCBbr3JdXZGu7Cxg1fUy0BM1OrqXGX20CEU4,27
+fuzzly_configs/api.py,sha256=MpNG2tSqkOWIhHpVUKR7sLhR8upZ9Q7UJixPYAcZAo8,702
+fuzzly_configs/constants.py,sha256=hDaW3qV23mr4O2PsPabI6LYgYjrWSXbL01OlUZIzITA,365
+fuzzly_configs/models.py,sha256=wS9LTDsLkmTzGc3L4dLKHmP-_V8F_fYKo7zrZldPjxU,3046
+fuzzly_configs-0.0.4.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+fuzzly_configs-0.0.4.dist-info/METADATA,sha256=LGjanBfgfa4BgHBFStrrUosOHCRaQSkRL6YZEfpQhS0,624
+fuzzly_configs-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fuzzly_configs-0.0.4.dist-info/top_level.txt,sha256=2jXZL3EQCLGB2W2vhHYnLhmHj5xWusXbOpAo-WTJhOE,15
+fuzzly_configs-0.0.4.dist-info/RECORD,,

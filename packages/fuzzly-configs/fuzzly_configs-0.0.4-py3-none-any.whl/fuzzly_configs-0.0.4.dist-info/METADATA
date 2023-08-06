@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: fuzzly-configs
+Version: 0.0.4
+Summary: configs library for fuzz.ly
+Home-page: https://github.com/kheina-com/configs
+Author: kheina
+License: Mozilla Public License 2.0
+Requires-Python: >=3.9.*
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: kh-common[aerospike,auth,logging,sql] (~=0.6.7)
+Requires-Dist: gunicorn (~=20.1.0)
+Requires-Dist: patreon (~=0.5.0)
+Requires-Dist: avrofastapi (~=0.0.2)
+Provides-Extra: build
+Requires-Dist: wheel (~=0.36.2) ; extra == 'build'
+Requires-Dist: twine (~=3.4.1) ; extra == 'build'
+Requires-Dist: isort (~=5.8.0) ; extra == 'build'
+
