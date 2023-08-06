@@ -1,0 +1,7 @@
+backoff
+joblib
+jupyter
+openai
+pandas
+spacy
+regex
