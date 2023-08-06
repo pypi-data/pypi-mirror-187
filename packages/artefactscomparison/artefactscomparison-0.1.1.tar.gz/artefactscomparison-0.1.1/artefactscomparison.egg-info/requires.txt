@@ -1,0 +1,13 @@
+click>=7.0
+
+[dev]
+build
+black
+flake8
+pre-commit
+pylint
+twine
+
+[test]
+pytest
+pytest-cov
