@@ -1,0 +1,98 @@
+{
+  "kex_algorithm": {
+    "1": "ECDHE,DHE",
+    "2": "ECDH,DH,RSA",
+    "3": "",
+    "4": ""
+  },
+  "cert_sign_algorithm": {
+    "1": "EC,RSA,ECDSA,DSA,DSS,EdDSA",
+    "2": "",
+    "3": "",
+    "4": ""
+  },
+  "kex_algorithm_mod": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "EXPORT"
+  },
+  "sym_enc_algorithm": {
+    "1": "AES,CAMELLIA,SEED",
+    "2": "",
+    "3": "DES,IDEA,3DES",
+    "4": "SKIPJACK,RC4,RC2,DES40"
+  },
+  "sym_enc_algorithm_mod": {
+    "1": "",
+    "2": "",
+    "3": "EDE3,EDE",
+    "4": "EXPORT40"
+  },
+  "sym_enc_algorithm_key_length": {
+    "1": "AES,>=128,CAMELLIA,>=128,SEED,>=128",
+    "2": "",
+    "3": "DES,>=192,IDEA,>=128",
+    "4": "AES,<<128,RC4,>=0,DES,<<192,RC2,>=0,CAMELLIA,<<128,SEED,<<128"
+  },
+  "sym_enc_algorithm_block_mode": {
+    "1": "GCM,CCM",
+    "2": "CBC",
+    "3": "",
+    "4": "ECB"
+  },
+  "sym_ecn_algorithm_block_mode_number": {
+    "1": "",
+    "2": "CCM,==8",
+    "3": "",
+    "4": ""
+  },
+  "hash_function": {
+    "1": "SHA223,SHA256,SHA384,SHA512",
+    "2": "SHA,SHA1",
+    "3": "",
+    "4": "MD5"
+  },
+  "hmac_function": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": ""
+  },
+  "protocol": {
+    "1": "TLSv1.3,TLSv1.2",
+    "2": "TLSv1.1,TLSv1.0",
+    "3": "",
+    "4": "SSLv3,SSLv2"
+  },
+  "no_protocol": {
+    "1": "SSLv3,SSLv2,TLSv1.0,TLSv1.1",
+    "2": "TLSv1.3",
+    "3": "",
+    "4": "TLSv1.2"
+  },
+  "cert_sign_algorithm_hash_function": {
+    "1": "SHA223,SHA256,SHA384,SHA512",
+    "2": "SHA,SHA1",
+    "3": "",
+    "4": "MD5"
+  },
+  "cert_pub_key_length": {
+    "1": "RSA,>=2048,ECDSA,>=224,EC,>=224",
+    "2": "",
+    "3": "ECDSA,>=160,RSA,>=1024,EC,>=160",
+    "4": "ECDSA,<<160,RSA,<<1024,EC,<<160"
+  },
+  "cert_pub_key_algorithm": {
+    "1": "EC,RSA,ECDSA",
+    "2": "DSA,DSS",
+    "3": "",
+    "4": "anon,KRB5,PSK"
+  },
+  "cert_verified": {
+    "1": "True",
+    "2": "",
+    "3": "",
+    "4": "False"
+  }
+}
