@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+panther_detections/__init__.py
+panther_detections/py.typed
+panther_detections.egg-info/PKG-INFO
+panther_detections.egg-info/SOURCES.txt
+panther_detections.egg-info/dependency_links.txt
+panther_detections.egg-info/top_level.txt
