@@ -1,0 +1,7 @@
+README.md
+setup.py
+ycolor/__init__.py
+ycolor.egg-info/PKG-INFO
+ycolor.egg-info/SOURCES.txt
+ycolor.egg-info/dependency_links.txt
+ycolor.egg-info/top_level.txt
