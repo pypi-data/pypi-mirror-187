@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: yolov3-minimal
+Version: 0.1.2
+Home-page: https://github.com/diyoon3080/yolov3-minimal
+Author: Do Il Yoon
+Author-email: diyoon@mz.co.kr 
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: tensorflow
+Requires-Dist: opencv-python-headless
+
