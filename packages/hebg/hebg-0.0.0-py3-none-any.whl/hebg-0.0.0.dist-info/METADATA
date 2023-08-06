@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: hebg
+Version: 0.0.0
+Summary: HEBG: Hierarchial Explainations of Behavior as Graph
+Author: Mathïs Fédérico
+Author-email: Mathïs Fédérico <mathfederico@gmail.com>
+License: GPLv3 license
+Project-URL: repository, https://github.com/IRLL/HEB_graphs
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: networkx (>=2.5.1)
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: tqdm
+Requires-Dist: scipy
+
