@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "dadeschools"
+version = "1.4"
+description = "The Ultimate Dadeschools CLI"
+authors = ["BananaApache <daniel.miami2005@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+dadeschools = 'dadeschools:main'
