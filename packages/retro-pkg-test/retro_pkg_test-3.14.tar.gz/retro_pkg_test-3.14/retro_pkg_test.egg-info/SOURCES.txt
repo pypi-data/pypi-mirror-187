@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+retro_pkg_test/__init__.py
+retro_pkg_test/hello.py
+retro_pkg_test.egg-info/PKG-INFO
+retro_pkg_test.egg-info/SOURCES.txt
+retro_pkg_test.egg-info/dependency_links.txt
+retro_pkg_test.egg-info/top_level.txt
