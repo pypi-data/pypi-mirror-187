@@ -1,0 +1,14 @@
+robin_sd_download/arg_parse.py,sha256=shXuG4oPdSPgNZ-JbPLBsHxoSg5FIhC8Z-Srj6AY16Q,1568
+robin_sd_download/create_config.py,sha256=F42WL6v_faP8-PByjMDF5vpF3dX4Hhuf3eoeRQyFYnA,986
+robin_sd_download/ensure_hook.py,sha256=E51goiGIz9ut3J7g7EIrs8kYWF6O0nLpOWNhr6lyYA8,1103
+robin_sd_download/ensure_local_repo.py,sha256=adz4rTmL8bSxSre_9K2rXNtWv64q-d77TwC8Ft64KCY,973
+robin_sd_download/get_bearer_token.py,sha256=MdqhcxZQrz6KeIJGAVvOXhGaaS7H3wwPuqggPaVznsE,579
+robin_sd_download/get_software.py,sha256=VFl3kuK4RmyYzR0hpC-KKyd1QXYbROkX0HA12fBSfJQ,1420
+robin_sd_download/main.py,sha256=CYNQ96Y_9UwD2j2WTB9Vq06VGqpv2RhEP-1e23rOHKg,261
+robin_sd_download/module_1.py,sha256=vLY6EJxO7eYeRPHRC208TdkaXXWcZ9okSbZxrTU1irY,220
+robin_sd_download/parse_config.py,sha256=hvbxsYSnnw09bXyo5ey-1OmDS2pdQpWR8nENT8aHqSk,1049
+robin_sd_download-0.2.11.dist-info/METADATA,sha256=36EAW6075mBJFLFL5XDgNZW8FVDAm582gB6qDoGOyUw,2277
+robin_sd_download-0.2.11.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+robin_sd_download-0.2.11.dist-info/entry_points.txt,sha256=osBgFsN3C6DhYBOrmYkeeh9BRlg9YHc4q2WII5XS9v0,62
+robin_sd_download-0.2.11.dist-info/top_level.txt,sha256=9FGDQ1ekU7QAEL1HQrqO1Ng7Ygt3vk96RzksLCcwHhw,18
+robin_sd_download-0.2.11.dist-info/RECORD,,
