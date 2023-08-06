@@ -1,0 +1,40 @@
+{% extends 'netbox_storage/physicalvolume/base.html' %}
+{% load helpers %}
+{% load render_table from django_tables2 %}
+{% load view_helpers %}
+
+{% block content %}
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <h5 class="card-header">Physical Volume</h5>
+            <div class="card-body">
+                <table class="table table-hover attr-table">
+                    <tr>
+                        <th scope="row">Partition</th>
+                        <td>{{ object.partition|linkify|placeholder }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">PV Name</th>
+                        <td>{{ object.pv_name }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">VG Name</th>
+                        <td>{{ object.vg|linkify|placeholder }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Drive</th>
+                        <td>{{ object.vg|linkify|placeholder }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Description</th>
+                        <td>{{ object.description }}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        {% include 'inc/panels/custom_fields.html' %}
+    </div>
+</div>
+
+{% endblock %}
