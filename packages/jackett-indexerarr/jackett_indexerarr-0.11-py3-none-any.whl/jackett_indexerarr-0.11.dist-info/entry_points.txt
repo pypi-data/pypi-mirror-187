@@ -1,0 +1,3 @@
+[console_scripts]
+gep=jackett_indexerarr.cli:app
+
