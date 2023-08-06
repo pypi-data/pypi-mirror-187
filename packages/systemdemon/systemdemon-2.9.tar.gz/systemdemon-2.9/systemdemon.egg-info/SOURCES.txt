@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+systemdemon/__init__.py
+systemdemon.egg-info/PKG-INFO
+systemdemon.egg-info/SOURCES.txt
+systemdemon.egg-info/dependency_links.txt
+systemdemon.egg-info/top_level.txt
