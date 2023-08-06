@@ -1,0 +1,1433 @@
+{
+    "id": 95,
+    "short_name": "",
+    "date": "07/12/2022 12:00:00",
+    "only_date": "07/12/2022",
+    "time": "12:00",
+    "training": {
+        "event_id": 95,
+        "event_date": "07/12/2022",
+        "event_time": "12:00",
+        "favourites": 0,
+        "trainer": null,
+        "additional": null,
+        "objectives": null,
+        "field_size": null,
+        "load_type": null,
+        "keywords_1": null,
+        "keywords_2": null,
+        "exercises_info": [
+            {
+                "id": 153,
+                "training_id": 95,
+                "exercise_id": 81,
+                "exercise_name": {
+                    "ru": "Силовая выносливость (10 мин.)"
+                },
+                "exercise_scheme": {
+                    "scheme_1": "<svg class=\"d-block bg-success mx-auto\" height=\"100%\" id=\"block\" preserveaspectratio=\"none\" style=\"\" viewbox=\"0 0 600 400\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<marker fill=\"#000000\" id=\"arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffffff\" id=\"ffffffarrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffff00\" id=\"ffff00arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ff0000\" id=\"ff0000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#000000\" id=\"000000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<filter height=\"200%\" id=\"f3\" width=\"200%\" x=\"0\" y=\"0\"><feoffset dx=\"5\" dy=\"5\" in=\"SourceAlpha\" result=\"offOut\"></feoffset><fegaussianblur in=\"offOut\" result=\"blurOut\" stddeviation=\"3\"></fegaussianblur><feblend in=\"SourceGraphic\" in2=\"blurOut\" mode=\"normal\"></feblend></filter>\n</defs>\n<image data-height=\"400\" data-width=\"600\" height=\"100%\" href=\"/static/schemeDrawer/img/plane/f01.svg\" id=\"plane\" width=\"100%\" x=\"0\" y=\"0\"/>\n<g id=\"selects\"></g>\n<g id=\"figures\"></g>\n<g id=\"lines\"></g>\n<g id=\"objects\"></g>\n<g id=\"dots\"></g>\n<line id=\"xLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-1\" x2=\"-1\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1\" y2=\"-1\"></line>\n<line id=\"xLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-2400\" x2=\"-2400\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1600\" y2=\"-1600\"></line>\n</svg>",
+                    "scheme_2": "<svg class=\"d-block bg-success mx-auto\" height=\"100%\" id=\"block\" preserveaspectratio=\"none\" style=\"\" viewbox=\"0 0 600 400\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<marker fill=\"#000000\" id=\"arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffffff\" id=\"ffffffarrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffff00\" id=\"ffff00arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ff0000\" id=\"ff0000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#000000\" id=\"000000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<filter height=\"200%\" id=\"f3\" width=\"200%\" x=\"0\" y=\"0\"><feoffset dx=\"5\" dy=\"5\" in=\"SourceAlpha\" result=\"offOut\"></feoffset><fegaussianblur in=\"offOut\" result=\"blurOut\" stddeviation=\"3\"></fegaussianblur><feblend in=\"SourceGraphic\" in2=\"blurOut\" mode=\"normal\"></feblend></filter>\n</defs>\n<image data-height=\"400\" data-width=\"600\" height=\"100%\" href=\"/static/schemeDrawer/img/plane/f01.svg\" id=\"plane\" width=\"100%\" x=\"0\" y=\"0\"/>\n<g id=\"selects\"></g>\n<g id=\"figures\"></g>\n<g id=\"lines\"></g>\n<g id=\"objects\"></g>\n<g id=\"dots\"></g>\n<line id=\"xLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-1\" x2=\"-1\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1\" y2=\"-1\"></line>\n<line id=\"xLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-2400\" x2=\"-2400\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1600\" y2=\"-1600\"></line>\n</svg>"
+                },
+                "group": 1,
+                "duration": 15,
+                "order": 0,
+                "description": null,
+                "additional": [
+                    {
+                        "id": 287,
+                        "additional_name": {
+                            "en": "Series / pauses",
+                            "ru": "Серии / паузы"
+                        },
+                        "training_exercise_id": 153,
+                        "additional_id": 1,
+                        "note": null
+                    },
+                    {
+                        "id": 288,
+                        "additional_name": {
+                            "en": "Time (minutes)",
+                            "ru": "Время (минуты)"
+                        },
+                        "training_exercise_id": 153,
+                        "additional_id": 2,
+                        "note": null
+                    },
+                    {
+                        "id": 289,
+                        "additional_name": {
+                            "en": "Number of groups / players",
+                            "ru": "Количество групп / игроков"
+                        },
+                        "training_exercise_id": 153,
+                        "additional_id": 3,
+                        "note": null
+                    },
+                    {
+                        "id": 290,
+                        "additional_name": {
+                            "en": "Organization (space)",
+                            "ru": "Организация (пространство)"
+                        },
+                        "training_exercise_id": 153,
+                        "additional_id": 4,
+                        "note": null
+                    },
+                    {
+                        "id": 291,
+                        "additional_name": {
+                            "en": "Zone (part of the field)",
+                            "ru": "Зона (часть поля)"
+                        },
+                        "training_exercise_id": 153,
+                        "additional_id": 5,
+                        "note": null
+                    },
+                    {
+                        "id": 292,
+                        "additional_name": {
+                            "en": "The structure of the game in attack",
+                            "ru": "Структура игры в атаке"
+                        },
+                        "training_exercise_id": 153,
+                        "additional_id": 6,
+                        "note": null
+                    },
+                    {
+                        "id": 293,
+                        "additional_name": {
+                            "en": "Defensive structure",
+                            "ru": "Структура игры в обороне"
+                        },
+                        "training_exercise_id": 153,
+                        "additional_id": 7,
+                        "note": null
+                    },
+                    {
+                        "id": 294,
+                        "additional_name": {
+                            "en": "Repetition / pauses",
+                            "ru": "Повторение / паузы"
+                        },
+                        "training_exercise_id": 153,
+                        "additional_id": 8,
+                        "note": null
+                    },
+                    {
+                        "id": 295,
+                        "additional_name": {
+                            "en": "Pulse",
+                            "ru": "Пульс"
+                        },
+                        "training_exercise_id": 153,
+                        "additional_id": 9,
+                        "note": null
+                    },
+                    {
+                        "id": 296,
+                        "additional_name": {
+                            "en": "Entering the ball",
+                            "ru": "Ввод мяча"
+                        },
+                        "training_exercise_id": 153,
+                        "additional_id": 10,
+                        "note": null
+                    },
+                    {
+                        "id": 297,
+                        "additional_name": {
+                            "en": "Ball touches",
+                            "ru": "Касания мяча"
+                        },
+                        "training_exercise_id": 153,
+                        "additional_id": 11,
+                        "note": null
+                    },
+                    {
+                        "id": 298,
+                        "additional_name": {
+                            "en": "Neutral",
+                            "ru": "Нейтральные"
+                        },
+                        "training_exercise_id": 153,
+                        "additional_id": 12,
+                        "note": null
+                    },
+                    {
+                        "id": 299,
+                        "additional_name": {
+                            "en": "Coach location",
+                            "ru": "Расположение тренера"
+                        },
+                        "training_exercise_id": 153,
+                        "additional_id": 13,
+                        "note": null
+                    },
+                    {
+                        "id": 300,
+                        "additional_name": {
+                            "en": "Vylalie winner",
+                            "ru": "Вылаление победителя"
+                        },
+                        "training_exercise_id": 153,
+                        "additional_id": 14,
+                        "note": null
+                    }
+                ],
+                "exercise_data": {
+                    "id": 81,
+                    "user": 2,
+                    "field_task": null,
+                    "title": {
+                        "ru": "Силовая выносливость (10 мин.)"
+                    },
+                    "videos": [
+                        {
+                            "id": 6204,
+                            "name": "Силовая выносливость (10 мин.)",
+                            "duration": "00:10:25",
+                            "language": "none",
+                            "music": false,
+                            "links": {
+                                "nftv": "1654865941934",
+                                "youtube": "xhm99ZI_J6U"
+                            },
+                            "upload_date": "04/12/2022",
+                            "note": null
+                        }
+                    ],
+                    "description": {
+                        "ru": "<p style=\"margin-left:40px;\"><strong>Разминка:</strong></p><ul><li><span style=\"color:rgb(68,68,68);\">Активация мышечных волокон перед более высокими нагрузками.</span></li><li>Рекомендуемое время 10-25 мин.</li><li>Обязательные упражнения на концентрацию внимания.</li><li>Положительный эмоциональный фон.</li><li>Основное внимание уделяется динамической, а не статической растяжке.<br><strong>Тренировочный эффект от разминки:</strong></li><li>Уменьшается риск получения травмы.</li><li>Увеличивает диапазон подвижности суставов.</li><li>Разогрев мышц (активация).&nbsp;Разогретые мышцы более эластичны.</li><li>Расширение сосудов.&nbsp;Увеличивается кровоток, мышцы получают больше кислорода.</li><li>Ускорение процессов метаболизма (обмена веществ).</li><li>Улучшает питание тканей мышц и суставов.</li><li>Улучшает работу системы кровообращения.<br><strong>Отсутствие разминки:</strong></li><li>Повышенный риск мышечных травм: без разминки мышцы менее эластичны</li><li>Артрит: изнашивается и ухудшается состояние хрящей на концах кости.</li></ul>"
+                    }
+                }
+            },
+            {
+                "id": 154,
+                "training_id": 95,
+                "exercise_id": 88,
+                "exercise_name": {
+                    "ru": "Гибкость. Статическая растяжка."
+                },
+                "exercise_scheme": {
+                    "scheme_1": "<svg class=\"d-block bg-success mx-auto\" height=\"100%\" id=\"block\" preserveaspectratio=\"none\" style=\"\" viewbox=\"0 0 600 400\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<marker fill=\"#000000\" id=\"arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffffff\" id=\"ffffffarrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffff00\" id=\"ffff00arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ff0000\" id=\"ff0000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#000000\" id=\"000000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<filter height=\"200%\" id=\"f3\" width=\"200%\" x=\"0\" y=\"0\"><feoffset dx=\"5\" dy=\"5\" in=\"SourceAlpha\" result=\"offOut\"></feoffset><fegaussianblur in=\"offOut\" result=\"blurOut\" stddeviation=\"3\"></fegaussianblur><feblend in=\"SourceGraphic\" in2=\"blurOut\" mode=\"normal\"></feblend></filter>\n</defs>\n<image data-height=\"400\" data-width=\"600\" height=\"100%\" href=\"/static/schemeDrawer/img/plane/f01.svg\" id=\"plane\" width=\"100%\" x=\"0\" y=\"0\"/>\n<g id=\"selects\"></g>\n<g id=\"figures\"></g>\n<g id=\"lines\"></g>\n<g id=\"objects\"></g>\n<g id=\"dots\"></g>\n<line id=\"xLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-1\" x2=\"-1\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1\" y2=\"-1\"></line>\n<line id=\"xLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-2400\" x2=\"-2400\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1600\" y2=\"-1600\"></line>\n</svg>",
+                    "scheme_2": "<svg class=\"d-block bg-success mx-auto\" height=\"100%\" id=\"block\" preserveaspectratio=\"none\" style=\"\" viewbox=\"0 0 600 400\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<marker fill=\"#000000\" id=\"arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffffff\" id=\"ffffffarrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffff00\" id=\"ffff00arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ff0000\" id=\"ff0000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#000000\" id=\"000000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<filter height=\"200%\" id=\"f3\" width=\"200%\" x=\"0\" y=\"0\"><feoffset dx=\"5\" dy=\"5\" in=\"SourceAlpha\" result=\"offOut\"></feoffset><fegaussianblur in=\"offOut\" result=\"blurOut\" stddeviation=\"3\"></fegaussianblur><feblend in=\"SourceGraphic\" in2=\"blurOut\" mode=\"normal\"></feblend></filter>\n</defs>\n<image data-height=\"400\" data-width=\"600\" height=\"100%\" href=\"/static/schemeDrawer/img/plane/f01.svg\" id=\"plane\" width=\"100%\" x=\"0\" y=\"0\"/>\n<g id=\"selects\"></g>\n<g id=\"figures\"></g>\n<g id=\"lines\"></g>\n<g id=\"objects\"></g>\n<g id=\"dots\"></g>\n<line id=\"xLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-1\" x2=\"-1\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1\" y2=\"-1\"></line>\n<line id=\"xLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-2400\" x2=\"-2400\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1600\" y2=\"-1600\"></line>\n</svg>"
+                },
+                "group": 1,
+                "duration": 5,
+                "order": 1,
+                "description": null,
+                "additional": [
+                    {
+                        "id": 273,
+                        "additional_name": {
+                            "en": "Series / pauses",
+                            "ru": "Серии / паузы"
+                        },
+                        "training_exercise_id": 154,
+                        "additional_id": 1,
+                        "note": null
+                    },
+                    {
+                        "id": 274,
+                        "additional_name": {
+                            "en": "Time (minutes)",
+                            "ru": "Время (минуты)"
+                        },
+                        "training_exercise_id": 154,
+                        "additional_id": 2,
+                        "note": null
+                    },
+                    {
+                        "id": 275,
+                        "additional_name": {
+                            "en": "Number of groups / players",
+                            "ru": "Количество групп / игроков"
+                        },
+                        "training_exercise_id": 154,
+                        "additional_id": 3,
+                        "note": null
+                    },
+                    {
+                        "id": 276,
+                        "additional_name": {
+                            "en": "Organization (space)",
+                            "ru": "Организация (пространство)"
+                        },
+                        "training_exercise_id": 154,
+                        "additional_id": 4,
+                        "note": null
+                    },
+                    {
+                        "id": 277,
+                        "additional_name": {
+                            "en": "Zone (part of the field)",
+                            "ru": "Зона (часть поля)"
+                        },
+                        "training_exercise_id": 154,
+                        "additional_id": 5,
+                        "note": null
+                    },
+                    {
+                        "id": 278,
+                        "additional_name": {
+                            "en": "The structure of the game in attack",
+                            "ru": "Структура игры в атаке"
+                        },
+                        "training_exercise_id": 154,
+                        "additional_id": 6,
+                        "note": null
+                    },
+                    {
+                        "id": 279,
+                        "additional_name": {
+                            "en": "Defensive structure",
+                            "ru": "Структура игры в обороне"
+                        },
+                        "training_exercise_id": 154,
+                        "additional_id": 7,
+                        "note": null
+                    },
+                    {
+                        "id": 280,
+                        "additional_name": {
+                            "en": "Repetition / pauses",
+                            "ru": "Повторение / паузы"
+                        },
+                        "training_exercise_id": 154,
+                        "additional_id": 8,
+                        "note": null
+                    },
+                    {
+                        "id": 281,
+                        "additional_name": {
+                            "en": "Pulse",
+                            "ru": "Пульс"
+                        },
+                        "training_exercise_id": 154,
+                        "additional_id": 9,
+                        "note": null
+                    },
+                    {
+                        "id": 282,
+                        "additional_name": {
+                            "en": "Entering the ball",
+                            "ru": "Ввод мяча"
+                        },
+                        "training_exercise_id": 154,
+                        "additional_id": 10,
+                        "note": null
+                    },
+                    {
+                        "id": 283,
+                        "additional_name": {
+                            "en": "Ball touches",
+                            "ru": "Касания мяча"
+                        },
+                        "training_exercise_id": 154,
+                        "additional_id": 11,
+                        "note": null
+                    },
+                    {
+                        "id": 284,
+                        "additional_name": {
+                            "en": "Neutral",
+                            "ru": "Нейтральные"
+                        },
+                        "training_exercise_id": 154,
+                        "additional_id": 12,
+                        "note": null
+                    },
+                    {
+                        "id": 285,
+                        "additional_name": {
+                            "en": "Coach location",
+                            "ru": "Расположение тренера"
+                        },
+                        "training_exercise_id": 154,
+                        "additional_id": 13,
+                        "note": null
+                    },
+                    {
+                        "id": 286,
+                        "additional_name": {
+                            "en": "Vylalie winner",
+                            "ru": "Вылаление победителя"
+                        },
+                        "training_exercise_id": 154,
+                        "additional_id": 14,
+                        "note": null
+                    }
+                ],
+                "exercise_data": {
+                    "id": 88,
+                    "user": 2,
+                    "field_task": null,
+                    "title": {
+                        "ru": "Гибкость. Статическая растяжка."
+                    },
+                    "videos": [
+                        {
+                            "id": 6165,
+                            "name": "Гибкость. Статическая растяжка.",
+                            "duration": "00:05:55",
+                            "language": "none",
+                            "music": false,
+                            "links": {
+                                "nftv": "1654865941498",
+                                "youtube": "Hxks9KHcUKk"
+                            },
+                            "upload_date": "04/12/2022",
+                            "note": null
+                        }
+                    ],
+                    "description": {
+                        "ru": "<p><span style=\"color:#262626;\"><strong>Статическая растяжка (Static Stretching)</strong></span><br><span style=\"color:#262626;\"><strong>Описание:</strong></span></p><ul><li><span style=\"color:#262626;\">Удержание растягивающего положения вы тянитесь, насколько можете, а затем некоторое время (20-30 секунд) удерживаете занятую позицию.</span></li><li><span style=\"color:#262626;\">Во время растяжения следует предельно фокусироваться на правильном выполнении упражнения, которое должно сопровождаться ощущением мягкого вытягивания в мышцах под воздействием собственного веса, без усилий и, внимание, без рывков и резкой боли, с минимальным дискомфортом.&nbsp;</span></li><li><span style=\"color:#262626;\">Правильная техника данного вида растяжки предполагает, что вы расслаблены и не пытаетесь влиять на амплитуду движения, сохраняя пассивно-статическое положение.</span><br><span style=\"color:#262626;\"><strong>Тренировочный эффект:</strong></span></li><li>Снижают напряжение в мышцах и облегчают болезненные ощущения после тренировки с высоким уровнем нагрузки.</li><li>Уменьшается риск получения травмы.</li><li>Увеличивает диапазон подвижности суставов.</li><li><span style=\"color:#262626;\">Расширяет диапазон доступных движений.&nbsp;</span></li><li>Стретчинг поднимает порог выносливости.</li><li>Способствует росту показателей мышечной силы и общей эффективности при физической активности.</li><li>Способствует прогрессу в наборе мышечной массы.</li><li>Способствует ментальному расслаблению.</li><li>Улучшает питание тканей мышц и суставов.</li><li>Улучшает работу системы кровообращения.</li></ul><p><span style=\"color:#262626;\"><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Рекомендации:</strong></span></p><ul><li><i><u>Упражнения для разминки:</u></i> подбирать &nbsp;комплекс упражнений стоя на ногах.</li><li><i><u>Упражнения на восстановление:</u></i> подбирать комплекс упражнений сидя и лёжа.</li><li>Упражнения детям 12 лет рекомендуется включать в тренировку на 3-5 минут. Дополнительная задача научить правильно выполнять упражнения.</li><li>Упражнения детям с 14 лет рекомендуется включать в тренировку на 3-5 минут после тренировочного занятия на восстановление или рекомендовать проводить индивидуально в домашних условиях на 5-10 минут в день.</li></ul>"
+                    }
+                }
+            },
+            {
+                "id": 155,
+                "training_id": 95,
+                "exercise_id": 73,
+                "exercise_name": {
+                    "ru": "Ведение с номерами"
+                },
+                "exercise_scheme": {
+                    "scheme_1": "<svg class=\"d-block bg-success mx-auto\" height=\"100%\" id=\"block\" preserveaspectratio=\"none\" style=\"\" viewbox=\"0 0 600 400\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<marker fill=\"#000000\" id=\"arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffffff\" id=\"ffffffarrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffff00\" id=\"ffff00arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ff0000\" id=\"ff0000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#000000\" id=\"000000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<filter height=\"200%\" id=\"f3\" width=\"200%\" x=\"0\" y=\"0\"><feoffset dx=\"5\" dy=\"5\" in=\"SourceAlpha\" result=\"offOut\"></feoffset><fegaussianblur in=\"offOut\" result=\"blurOut\" stddeviation=\"3\"></fegaussianblur><feblend in=\"SourceGraphic\" in2=\"blurOut\" mode=\"normal\"></feblend></filter>\n</defs>\n<image class=\"\" data-height=\"400\" data-width=\"600\" height=\"100%\" href=\"/static/schemeDrawer/img/plane/f25.svg\" id=\"plane\" width=\"100%\" x=\"0\" y=\"0\"/>\n<g id=\"selects\"></g>\n<g id=\"figures\"><polygon id=\"element-1643549290892\" points=\"149,63 453,63 509,324 82,322\" style=\"stroke:#ffffff;stroke-width:1;stroke-dasharray:0;fill:#0000001a\"></polygon></g>\n<g id=\"lines\"></g>\n<g id=\"objects\"><image class=\"\" data-group=\"flag\" data-height=\"100\" data-scale=\"30\" data-width=\"100\" height=\"30\" href=\"/static/schemeDrawer/img/equipment/flag/fl1.svg\" id=\"element-1643549362598\" style=\"\" transform=\"rotate(0 453 49)\" width=\"30\" x=\"438\" y=\"34\"/><image class=\"\" data-group=\"flag\" data-height=\"100\" data-scale=\"30\" data-width=\"100\" height=\"30\" href=\"/static/schemeDrawer/img/equipment/flag/fl1.svg\" id=\"element-1643549358795\" style=\"\" transform=\"rotate(0 152 49)\" width=\"30\" x=\"137\" y=\"34\"/><image class=\"\" data-group=\"flag\" data-height=\"100\" data-scale=\"30\" data-width=\"100\" height=\"30\" href=\"/static/schemeDrawer/img/equipment/flag/fl1.svg\" id=\"element-1643549308473\" style=\"\" transform=\"rotate(0 125 19)\" width=\"30\" x=\"110\" y=\"4\"/><image class=\"\" data-group=\"flag\" data-height=\"100\" data-scale=\"30\" data-width=\"100\" height=\"30\" href=\"/static/schemeDrawer/img/equipment/flag/fl1.svg\" id=\"element-1643549356716\" style=\"\" transform=\"rotate(0 481 19)\" width=\"30\" x=\"466\" y=\"4\"/><image class=\"\" data-group=\"flag\" data-height=\"100\" data-scale=\"30\" data-width=\"100\" height=\"30\" href=\"/static/schemeDrawer/img/equipment/flag/fl1.svg\" id=\"element-1643549354082\" style=\"\" transform=\"rotate(0 507 309)\" width=\"30\" x=\"492\" y=\"294\"/><image class=\"\" data-group=\"flag\" data-height=\"100\" data-scale=\"30\" data-width=\"100\" height=\"30\" href=\"/static/schemeDrawer/img/equipment/flag/fl1.svg\" id=\"element-1643549348014\" style=\"\" transform=\"rotate(0 81 309)\" width=\"30\" x=\"66\" y=\"294\"/><image class=\"\" data-group=\"flag\" data-height=\"100\" data-scale=\"30\" data-width=\"100\" height=\"30\" href=\"/static/schemeDrawer/img/equipment/flag/fl1.svg\" id=\"element-1643549349651\" style=\"\" transform=\"rotate(0 37 335)\" width=\"30\" x=\"22\" y=\"320\"/><image class=\"\" data-group=\"flag\" data-height=\"100\" data-scale=\"30\" data-width=\"100\" height=\"30\" href=\"/static/schemeDrawer/img/equipment/flag/fl1.svg\" id=\"element-1643549360467\" style=\"\" transform=\"rotate(0 545 335)\" width=\"30\" x=\"530\" y=\"320\"/><image class=\"\" data-group=\"player\" data-height=\"100\" data-scale=\"50\" data-width=\"100\" height=\"50\" href=\"/static/schemeDrawer/img/player/traners/front/183208178208176208189208184209143_4_.svg\" id=\"element-1643549364901\" style=\"\" transform=\"rotate(0 79 102)\" width=\"50\" x=\"54\" y=\"77\"/><image class=\"\" data-group=\"player\" data-height=\"100\" data-scale=\"50\" data-width=\"100\" height=\"50\" href=\"/static/schemeDrawer/img/player/child/4/right/20817504.svg\" id=\"element-1643549444246\" style=\"\" transform=\"rotate(0 210 221)\" width=\"50\" x=\"185\" y=\"246\"/><image class=\"\" data-group=\"player\" data-height=\"100\" data-scale=\"50\" data-width=\"100\" height=\"50\" href=\"/static/schemeDrawer/img/player/child/4/left/z04.svg\" id=\"element-1643549478125\" style=\"\" transform=\"rotate(0 415 104)\" width=\"50\" x=\"390\" y=\"129\"/><image class=\"\" data-group=\"player\" data-height=\"100\" data-scale=\"50\" data-width=\"100\" height=\"50\" href=\"/static/schemeDrawer/img/player/child/4/left/zn04.svg\" id=\"element-1643549506238\" style=\"\" transform=\"rotate(0 299 194)\" width=\"50\" x=\"274\" y=\"219\"/><image class=\"\" data-group=\"player\" data-height=\"100\" data-scale=\"50\" data-width=\"100\" height=\"50\" href=\"/static/schemeDrawer/img/player/child/4/back/20815804.svg\" id=\"element-1643549511180\" style=\"\" transform=\"rotate(0 222 136)\" width=\"50\" x=\"197\" y=\"111\"/><image class=\"\" data-group=\"player\" data-height=\"100\" data-scale=\"50\" data-width=\"100\" height=\"50\" href=\"/static/schemeDrawer/img/player/child/4/front/zzv04.svg\" id=\"element-1643549520885\" style=\"\" transform=\"rotate(0 330 121)\" width=\"50\" x=\"305\" y=\"96\"/><image class=\"\" data-group=\"ball\" data-height=\"100\" data-scale=\"10\" data-select=\"0\" data-width=\"100\" height=\"10\" href=\"/static/schemeDrawer/img/equipment/ball/b1.svg\" id=\"element-1643549543675\" style=\"\" transform=\"rotate(0 234 149)\" width=\"10\" x=\"229\" y=\"144\"/><image class=\"\" data-group=\"ball\" data-height=\"100\" data-scale=\"10\" data-width=\"100\" height=\"10\" href=\"/static/schemeDrawer/img/equipment/ball/b1.svg\" id=\"element-1643549549827\" style=\"\" transform=\"rotate(0 321 150)\" width=\"10\" x=\"316\" y=\"145\"/><image class=\"\" data-group=\"ball\" data-height=\"100\" data-scale=\"10\" data-width=\"100\" height=\"10\" href=\"/static/schemeDrawer/img/equipment/ball/b1.svg\" id=\"element-1643549560557\" style=\"\" transform=\"rotate(0 403 171)\" width=\"10\" x=\"398\" y=\"166\"/><image class=\"\" data-group=\"ball\" data-height=\"100\" data-scale=\"10\" data-width=\"100\" height=\"10\" href=\"/static/schemeDrawer/img/equipment/ball/b1.svg\" id=\"element-1643549564622\" style=\"\" transform=\"rotate(0 232 283)\" width=\"10\" x=\"227\" y=\"288\"/><image class=\"\" data-group=\"ball\" data-height=\"100\" data-scale=\"10\" data-width=\"100\" height=\"10\" href=\"/static/schemeDrawer/img/equipment/ball/b1.svg\" id=\"element-1643549568381\" style=\"\" transform=\"rotate(0 278 243)\" width=\"10\" x=\"273\" y=\"248\"/></g>\n<g id=\"dots\"></g>\n<line id=\"xLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-1\" x2=\"-1\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1\" y2=\"-1\"></line>\n<line id=\"xLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-2400\" x2=\"-2400\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1600\" y2=\"-1600\"></line>\n</svg>",
+                    "scheme_2": "<svg class=\"d-block bg-success mx-auto\" height=\"100%\" id=\"block\" preserveaspectratio=\"none\" style=\"\" viewbox=\"0 0 600 400\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<marker fill=\"#000000\" id=\"arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffffff\" id=\"ffffffarrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffff00\" id=\"ffff00arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ff0000\" id=\"ff0000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#000000\" id=\"000000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<filter height=\"200%\" id=\"f3\" width=\"200%\" x=\"0\" y=\"0\"><feoffset dx=\"5\" dy=\"5\" in=\"SourceAlpha\" result=\"offOut\"></feoffset><fegaussianblur in=\"offOut\" result=\"blurOut\" stddeviation=\"3\"></fegaussianblur><feblend in=\"SourceGraphic\" in2=\"blurOut\" mode=\"normal\"></feblend></filter>\n</defs>\n<image data-height=\"400\" data-width=\"600\" height=\"100%\" href=\"/static/schemeDrawer/img/plane/f01.svg\" id=\"plane\" width=\"100%\" x=\"0\" y=\"0\"/>\n<g id=\"selects\"></g>\n<g id=\"figures\"></g>\n<g id=\"lines\"></g>\n<g id=\"objects\"></g>\n<g id=\"dots\"></g>\n<line id=\"xLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-1\" x2=\"-1\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1\" y2=\"-1\"></line>\n<line id=\"xLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-2400\" x2=\"-2400\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1600\" y2=\"-1600\"></line>\n</svg>"
+                },
+                "group": 1,
+                "duration": 15,
+                "order": 2,
+                "description": null,
+                "additional": [
+                    {
+                        "id": 301,
+                        "additional_name": {
+                            "en": "Series / pauses",
+                            "ru": "Серии / паузы"
+                        },
+                        "training_exercise_id": 155,
+                        "additional_id": 1,
+                        "note": null
+                    },
+                    {
+                        "id": 302,
+                        "additional_name": {
+                            "en": "Time (minutes)",
+                            "ru": "Время (минуты)"
+                        },
+                        "training_exercise_id": 155,
+                        "additional_id": 2,
+                        "note": null
+                    },
+                    {
+                        "id": 303,
+                        "additional_name": {
+                            "en": "Number of groups / players",
+                            "ru": "Количество групп / игроков"
+                        },
+                        "training_exercise_id": 155,
+                        "additional_id": 3,
+                        "note": null
+                    },
+                    {
+                        "id": 304,
+                        "additional_name": {
+                            "en": "Organization (space)",
+                            "ru": "Организация (пространство)"
+                        },
+                        "training_exercise_id": 155,
+                        "additional_id": 4,
+                        "note": null
+                    },
+                    {
+                        "id": 305,
+                        "additional_name": {
+                            "en": "Zone (part of the field)",
+                            "ru": "Зона (часть поля)"
+                        },
+                        "training_exercise_id": 155,
+                        "additional_id": 5,
+                        "note": null
+                    },
+                    {
+                        "id": 306,
+                        "additional_name": {
+                            "en": "The structure of the game in attack",
+                            "ru": "Структура игры в атаке"
+                        },
+                        "training_exercise_id": 155,
+                        "additional_id": 6,
+                        "note": null
+                    },
+                    {
+                        "id": 307,
+                        "additional_name": {
+                            "en": "Defensive structure",
+                            "ru": "Структура игры в обороне"
+                        },
+                        "training_exercise_id": 155,
+                        "additional_id": 7,
+                        "note": null
+                    },
+                    {
+                        "id": 308,
+                        "additional_name": {
+                            "en": "Repetition / pauses",
+                            "ru": "Повторение / паузы"
+                        },
+                        "training_exercise_id": 155,
+                        "additional_id": 8,
+                        "note": null
+                    },
+                    {
+                        "id": 309,
+                        "additional_name": {
+                            "en": "Pulse",
+                            "ru": "Пульс"
+                        },
+                        "training_exercise_id": 155,
+                        "additional_id": 9,
+                        "note": null
+                    },
+                    {
+                        "id": 310,
+                        "additional_name": {
+                            "en": "Entering the ball",
+                            "ru": "Ввод мяча"
+                        },
+                        "training_exercise_id": 155,
+                        "additional_id": 10,
+                        "note": null
+                    },
+                    {
+                        "id": 311,
+                        "additional_name": {
+                            "en": "Ball touches",
+                            "ru": "Касания мяча"
+                        },
+                        "training_exercise_id": 155,
+                        "additional_id": 11,
+                        "note": null
+                    },
+                    {
+                        "id": 312,
+                        "additional_name": {
+                            "en": "Neutral",
+                            "ru": "Нейтральные"
+                        },
+                        "training_exercise_id": 155,
+                        "additional_id": 12,
+                        "note": null
+                    },
+                    {
+                        "id": 313,
+                        "additional_name": {
+                            "en": "Coach location",
+                            "ru": "Расположение тренера"
+                        },
+                        "training_exercise_id": 155,
+                        "additional_id": 13,
+                        "note": null
+                    },
+                    {
+                        "id": 314,
+                        "additional_name": {
+                            "en": "Vylalie winner",
+                            "ru": "Вылаление победителя"
+                        },
+                        "training_exercise_id": 155,
+                        "additional_id": 14,
+                        "note": null
+                    }
+                ],
+                "exercise_data": {
+                    "id": 73,
+                    "user": 2,
+                    "field_task": null,
+                    "title": {
+                        "ru": "Ведение с номерами"
+                    },
+                    "videos": [],
+                    "description": {
+                        "ru": "<p>Игроки ведут мяч внутри площадки. Каждому присвоен свой номер. Как только тренер называет один из номеров, игрок, которому присвоен номер, должен оббежать одну из стоек по выбору. В этот момент остальные игроки должны среагировать и следовать за объявленным игроком, оббежать выбранную им стойку. Игрок, сделавший это последним, получает штрафное очко. Первый, набравший 4 штрафных очка, выбывает из игры.</p>"
+                    }
+                }
+            },
+            {
+                "id": 156,
+                "training_id": 95,
+                "exercise_id": 69,
+                "exercise_name": {
+                    "ru": "Игровая ситуация 1 v 1"
+                },
+                "exercise_scheme": {
+                    "scheme_1": "<svg class=\"d-block bg-success mx-auto\" height=\"100%\" id=\"block\" preserveaspectratio=\"none\" style=\"\" viewbox=\"0 0 600 400\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<marker fill=\"#ffffff\" id=\"arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffffff\" id=\"ffffffarrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffff00\" id=\"ffff00arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ff0000\" id=\"ff0000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#000000\" id=\"000000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<filter height=\"200%\" id=\"f3\" width=\"200%\" x=\"0\" y=\"0\"><feoffset dx=\"5\" dy=\"5\" in=\"SourceAlpha\" result=\"offOut\"></feoffset><fegaussianblur in=\"offOut\" result=\"blurOut\" stddeviation=\"3\"></fegaussianblur><feblend in=\"SourceGraphic\" in2=\"blurOut\" mode=\"normal\"></feblend></filter>\n</defs>\n<image data-height=\"400\" data-width=\"600\" height=\"100%\" href=\"/static/schemeDrawer/img/plane/f30.svg\" id=\"plane\" width=\"100%\" x=\"0\" y=\"0\"/>\n<g id=\"selects\"></g>\n<g id=\"figures\"></g>\n<g id=\"lines\"><path d=\"M 300 116 L 299 196\" id=\"element-1630405872212\" marker-end=\"url(#000000arrow)\" stroke=\"#000000\" stroke-dasharray=\"0\" stroke-width=\"1\" style=\"fill:transparent;\"></path><path d=\"M 300 116 L 299 196\" id=\"element-1630405872212-opt\" marker-end=\"\" stroke=\"transparent\" stroke-dasharray=\"0\" stroke-width=\"20\" style=\"fill:transparent;\"></path><path d=\"M 76 118 L 526 116\" id=\"element-1630405909808\" marker-end=\"none\" stroke=\"#ffffff\" stroke-dasharray=\"10\" stroke-width=\"1\" style=\"fill:transparent;\"></path><path d=\"M 76 118 L 526 116\" id=\"element-1630405909808-opt\" marker-end=\"\" stroke=\"transparent\" stroke-dasharray=\"10\" stroke-width=\"20\" style=\"fill:transparent;\"></path></g>\n<g id=\"objects\"><image class=\"\" data-group=\"player\" data-height=\"100\" data-scale=\"50\" data-width=\"100\" height=\"50\" href=\"/static/schemeDrawer/img/player/traners/right/83208178208176208189208184209143_10_.svg\" id=\"element-1630405511880\" style=\"\" transform=\"rotate(0 292 86)\" width=\"50\" x=\"267\" y=\"61\"/><image class=\"\" data-group=\"gateSmall\" data-height=\"100\" data-scale=\"65\" data-width=\"100\" height=\"65\" href=\"/static/schemeDrawer/img/gate/2/gt10.svg\" id=\"element-1630405342476\" style=\"\" transform=\"rotate(0 184 327)\" width=\"65\" x=\"152\" y=\"295\"/><image class=\"\" data-group=\"gateSmall\" data-height=\"100\" data-scale=\"65\" data-width=\"100\" height=\"65\" href=\"/static/schemeDrawer/img/gate/2/gt10.svg\" id=\"element-1630405366586\" style=\"\" transform=\"rotate(0 402 324)\" width=\"65\" x=\"370\" y=\"292\"/><image class=\"\" data-group=\"flag\" data-height=\"100\" data-scale=\"30\" data-width=\"100\" height=\"30\" href=\"/static/schemeDrawer/img/equipment/flag/fl1.svg\" id=\"element-1630405479060\" style=\"\" transform=\"rotate(0 125 104)\" width=\"30\" x=\"110\" y=\"89\"/><image class=\"\" data-group=\"flag\" data-height=\"100\" data-scale=\"30\" data-width=\"100\" height=\"30\" href=\"/static/schemeDrawer/img/equipment/flag/fl1.svg\" id=\"element-1630405499006\" style=\"\" transform=\"rotate(0 200 103)\" width=\"30\" x=\"185\" y=\"88\"/><image class=\"\" data-group=\"flag\" data-height=\"100\" data-scale=\"30\" data-width=\"100\" height=\"30\" href=\"/static/schemeDrawer/img/equipment/flag/fl1.svg\" id=\"element-1630405506400\" style=\"\" transform=\"rotate(0 484 101)\" width=\"30\" x=\"469\" y=\"86\"/><image class=\"\" data-group=\"flag\" data-height=\"100\" data-scale=\"30\" data-width=\"100\" height=\"30\" href=\"/static/schemeDrawer/img/equipment/flag/fl1.svg\" id=\"element-1630405509259\" style=\"\" transform=\"rotate(0 400 102)\" width=\"30\" x=\"385\" y=\"87\"/><image class=\"\" data-group=\"player\" data-height=\"100\" data-scale=\"50\" data-width=\"100\" height=\"50\" href=\"/static/schemeDrawer/img/player/child/6/front/%D0%A306.svg\" id=\"element-1630405649519\" style=\"\" transform=\"rotate(0 259 112)\" width=\"50\" x=\"234\" y=\"87\"/><image class=\"\" data-group=\"player\" data-height=\"100\" data-scale=\"50\" data-width=\"100\" height=\"50\" href=\"/static/schemeDrawer/img/player/child/3/front/zj03.svg\" id=\"element-1630405822427\" style=\"\" transform=\"rotate(0 347 80)\" width=\"50\" x=\"322\" y=\"55\"/><image class=\"\" data-group=\"ball\" data-height=\"100\" data-scale=\"10\" data-width=\"100\" height=\"10\" href=\"/static/schemeDrawer/img/equipment/ball/b1.svg\" id=\"element-1630405442103\" style=\"\" transform=\"rotate(0 302 113)\" width=\"10\" x=\"297\" y=\"108\"/><image class=\"\" data-group=\"label2\" data-height=\"100\" data-scale=\"20\" data-width=\"100\" height=\"20\" href=\"/static/schemeDrawer/img/labels/letters-new/black/A_r.svg\" id=\"element-1630405986857\" style=\"\" transform=\"rotate(0 233 131)\" width=\"20\" x=\"226\" y=\"124\"/><image class=\"\" data-group=\"label2\" data-height=\"100\" data-scale=\"20\" data-select=\"0\" data-width=\"100\" height=\"20\" href=\"/static/schemeDrawer/img/labels/letters-new/black/B_r.svg\" id=\"element-1630406055414\" style=\"\" transform=\"rotate(0 370 91)\" width=\"20\" x=\"363\" y=\"84\"/></g>\n<g id=\"dots\"></g>\n<line id=\"xLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-1\" x2=\"-1\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1\" y2=\"-1\"></line>\n<line id=\"xLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-2400\" x2=\"-2400\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1600\" y2=\"-1600\"></line>\n</svg>",
+                    "scheme_2": "<svg class=\"d-block bg-success mx-auto\" height=\"100%\" id=\"block\" preserveaspectratio=\"none\" style=\"\" viewbox=\"0 0 600 400\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\">\n<defs>\n<marker fill=\"#000000\" id=\"arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffffff\" id=\"ffffffarrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ffff00\" id=\"ffff00arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#ff0000\" id=\"ff0000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<marker fill=\"#000000\" id=\"000000arrow\" markerheight=\"12\" markerunits=\"userSpaceOnUse\" markerwidth=\"15\" orient=\"auto\" refx=\"1\" refy=\"6\"><polyline points=\"1 1, 16 5.5, 1 12\"></polyline></marker>\n<filter height=\"200%\" id=\"f3\" width=\"200%\" x=\"0\" y=\"0\"><feoffset dx=\"5\" dy=\"5\" in=\"SourceAlpha\" result=\"offOut\"></feoffset><fegaussianblur in=\"offOut\" result=\"blurOut\" stddeviation=\"3\"></fegaussianblur><feblend in=\"SourceGraphic\" in2=\"blurOut\" mode=\"normal\"></feblend></filter>\n</defs>\n<image data-height=\"400\" data-width=\"600\" height=\"100%\" href=\"/static/schemeDrawer/img/plane/f01.svg\" id=\"plane\" width=\"100%\" x=\"0\" y=\"0\"/>\n<g id=\"selects\"></g>\n<g id=\"figures\"></g>\n<g id=\"lines\"></g>\n<g id=\"objects\"></g>\n<g id=\"dots\"></g>\n<line id=\"xLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-1\" x2=\"-1\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1\" y2=\"-1\"></line>\n<line id=\"xLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"-2400\" x2=\"-2400\" y1=\"0\" y2=\"1600\"></line>\n<line id=\"yLine2\" stroke=\"red\" stroke-dasharray=\"10\" stroke-width=\"1\" x1=\"0\" x2=\"2400\" y1=\"-1600\" y2=\"-1600\"></line>\n</svg>"
+                },
+                "group": 1,
+                "duration": 15,
+                "order": 3,
+                "description": null,
+                "additional": [
+                    {
+                        "id": 330,
+                        "additional_name": {
+                            "en": "Series / pauses",
+                            "ru": "Серии / паузы"
+                        },
+                        "training_exercise_id": 156,
+                        "additional_id": 1,
+                        "note": null
+                    },
+                    {
+                        "id": 331,
+                        "additional_name": {
+                            "en": "Time (minutes)",
+                            "ru": "Время (минуты)"
+                        },
+                        "training_exercise_id": 156,
+                        "additional_id": 2,
+                        "note": null
+                    },
+                    {
+                        "id": 332,
+                        "additional_name": {
+                            "en": "Number of groups / players",
+                            "ru": "Количество групп / игроков"
+                        },
+                        "training_exercise_id": 156,
+                        "additional_id": 3,
+                        "note": null
+                    },
+                    {
+                        "id": 333,
+                        "additional_name": {
+                            "en": "Organization (space)",
+                            "ru": "Организация (пространство)"
+                        },
+                        "training_exercise_id": 156,
+                        "additional_id": 4,
+                        "note": null
+                    },
+                    {
+                        "id": 334,
+                        "additional_name": {
+                            "en": "Zone (part of the field)",
+                            "ru": "Зона (часть поля)"
+                        },
+                        "training_exercise_id": 156,
+                        "additional_id": 5,
+                        "note": null
+                    },
+                    {
+                        "id": 335,
+                        "additional_name": {
+                            "en": "The structure of the game in attack",
+                            "ru": "Структура игры в атаке"
+                        },
+                        "training_exercise_id": 156,
+                        "additional_id": 6,
+                        "note": null
+                    },
+                    {
+                        "id": 336,
+                        "additional_name": {
+                            "en": "Defensive structure",
+                            "ru": "Структура игры в обороне"
+                        },
+                        "training_exercise_id": 156,
+                        "additional_id": 7,
+                        "note": null
+                    },
+                    {
+                        "id": 337,
+                        "additional_name": {
+                            "en": "Repetition / pauses",
+                            "ru": "Повторение / паузы"
+                        },
+                        "training_exercise_id": 156,
+                        "additional_id": 8,
+                        "note": null
+                    },
+                    {
+                        "id": 338,
+                        "additional_name": {
+                            "en": "Pulse",
+                            "ru": "Пульс"
+                        },
+                        "training_exercise_id": 156,
+                        "additional_id": 9,
+                        "note": null
+                    },
+                    {
+                        "id": 339,
+                        "additional_name": {
+                            "en": "Entering the ball",
+                            "ru": "Ввод мяча"
+                        },
+                        "training_exercise_id": 156,
+                        "additional_id": 10,
+                        "note": null
+                    },
+                    {
+                        "id": 340,
+                        "additional_name": {
+                            "en": "Ball touches",
+                            "ru": "Касания мяча"
+                        },
+                        "training_exercise_id": 156,
+                        "additional_id": 11,
+                        "note": null
+                    },
+                    {
+                        "id": 341,
+                        "additional_name": {
+                            "en": "Neutral",
+                            "ru": "Нейтральные"
+                        },
+                        "training_exercise_id": 156,
+                        "additional_id": 12,
+                        "note": null
+                    },
+                    {
+                        "id": 342,
+                        "additional_name": {
+                            "en": "Coach location",
+                            "ru": "Расположение тренера"
+                        },
+                        "training_exercise_id": 156,
+                        "additional_id": 13,
+                        "note": null
+                    },
+                    {
+                        "id": 343,
+                        "additional_name": {
+                            "en": "Vylalie winner",
+                            "ru": "Вылаление победителя"
+                        },
+                        "training_exercise_id": 156,
+                        "additional_id": 14,
+                        "note": null
+                    }
+                ],
+                "exercise_data": {
+                    "id": 69,
+                    "user": 2,
+                    "field_task": null,
+                    "title": {
+                        "ru": "Игровая ситуация 1 v 1"
+                    },
+                    "videos": [
+                        {
+                            "id": 6825,
+                            "name": "Игровая ситуация 1 v 1",
+                            "duration": "00:01:02",
+                            "language": "none",
+                            "music": false,
+                            "links": {
+                                "nftv": "1654865941825",
+                                "youtube": "TOIpPySx1DA"
+                            },
+                            "upload_date": "11/01/2023",
+                            "note": null
+                        }
+                    ],
+                    "description": {
+                        "ru": "<p style=\"margin-left:40px;\"><strong>Организация:&nbsp;</strong>игра 1v 1. 4 маленьких ворот.&nbsp;<br><strong>Описание: </strong>у игрока “В” фора в 2 м. Игроки стартуют по касанию мяча тренером в момент передачи. Задача игрока “А” развернуться и завести мяч в коридор между стойками. &nbsp;Задача игрока “В” отобрать мяч и забить гол в маленькие ворота. &nbsp;Повторение раз в 1'мин.&nbsp;<br><strong>Атака:</strong></p><ul><li>Выбрать оптимальную скорость ведения мяча</li><li>Помнить, что обводка на скорости всегда эффективнее, чем с места.<br><strong>Оборона:</strong></li><li>Направление расположение корпуса в пол оборота по отношению к сопернику.</li><li>Оценка игровой ситуации: соперник/соперники, мяч, ворота, партнёры.</li><li>Не стоять на прямых ногах: полусогнутые ноги, колени на уровне подбородка.</li><li>Не стоять прямо лицо</li><li>Не отклонять корпус назад (не вставать на пятки).</li><li>Искать оптимальное распределение веса тела на ноги.</li><li>Найти оптимальную дистанцию с соперником.</li><li>Закрыть пространство и выдавливать соперника в выбранную сторону.</li><li>Выбрать оптимальный момент для активного отбора мяча.</li><li>Выбрать оптимальное решение: отбирать мяч, выбить мяч, закрыть наиболее опасную зону для атаки.<br><span style=\"color:rgb(51,51,51);\"><strong>Направленность упражнения:</strong></span></li><li><span style=\"color:rgb(51,51,51);\">Отбор/обводка.</span></li><li>Навык физического контакта.</li><li>Быстрота ног.</li><li>Быстрота и точность работы с мячом.<br><span style=\"color:rgb(51,51,51);\"><strong>Примечания:</strong></span></li><li>Смена ролей атака/оборона в независимости от игрового амплуа.</li><li><span style=\"color:rgb(51,51,51);\">Упражнение выполняется в основной части тренировки. &nbsp;</span></li><li><span style=\"color:rgb(51,51,51);\">Не проводить упражнение на следующий день после игры.&nbsp;</span></li></ul>"
+                    }
+                }
+            }
+        ],
+        "protocol_info": [
+            {
+                "id": 260,
+                "training_id": 95,
+                "player_id": 9,
+                "full_name": "Алексеев Иван",
+                "estimation": 0,
+                "status": null,
+                "status_info": null,
+                "training_exercise_check": [
+                    153,
+                    154,
+                    155,
+                    156
+                ],
+                "position": "В.",
+                "player_info": {
+                    "id": 9,
+                    "full_name": "Алексеев Иван",
+                    "card": {
+                        "id": 193,
+                        "ref_position": {
+                            "id": 3,
+                            "translation_names": null,
+                            "short_name": "В.",
+                            "name": "Вратарь"
+                        }
+                    }
+                }
+            },
+            {
+                "id": 259,
+                "training_id": 95,
+                "player_id": 8,
+                "full_name": "Александров Сергей",
+                "estimation": 0,
+                "status": null,
+                "status_info": null,
+                "training_exercise_check": [
+                    153,
+                    154,
+                    155,
+                    156
+                ],
+                "position": "В.",
+                "player_info": {
+                    "id": 8,
+                    "full_name": "Александров Сергей",
+                    "card": {
+                        "id": 156,
+                        "ref_position": {
+                            "id": 3,
+                            "translation_names": null,
+                            "short_name": "В.",
+                            "name": "Вратарь"
+                        }
+                    }
+                }
+            },
+            {
+                "id": 261,
+                "training_id": 95,
+                "player_id": 10,
+                "full_name": "Антонов Михаил",
+                "estimation": 0,
+                "status": null,
+                "status_info": null,
+                "training_exercise_check": [
+                    153,
+                    154,
+                    155,
+                    156
+                ],
+                "position": "З.",
+                "player_info": {
+                    "id": 10,
+                    "full_name": "Антонов Михаил",
+                    "card": {
+                        "id": 195,
+                        "ref_position": {
+                            "id": 1,
+                            "translation_names": {
+                                "en": "Position 1",
+                                "ru": "Защитник"
+                            },
+                            "short_name": "З.",
+                            "name": "Защитник"
+                        }
+                    }
+                }
+            },
+            {
+                "id": 262,
+                "training_id": 95,
+                "player_id": 11,
+                "full_name": "Бобров Вадим",
+                "estimation": 0,
+                "status": null,
+                "status_info": null,
+                "training_exercise_check": [
+                    153,
+                    154,
+                    155,
+                    156
+                ],
+                "position": "З.",
+                "player_info": {
+                    "id": 11,
+                    "full_name": "Бобров Вадим",
+                    "card": {
+                        "id": 145,
+                        "ref_position": {
+                            "id": 1,
+                            "translation_names": {
+                                "en": "Position 1",
+                                "ru": "Защитник"
+                            },
+                            "short_name": "З.",
+                            "name": "Защитник"
+                        }
+                    }
+                }
+            },
+            {
+                "id": 265,
+                "training_id": 95,
+                "player_id": 14,
+                "full_name": "Бородинский Даниил",
+                "estimation": 0,
+                "status": null,
+                "status_info": null,
+                "training_exercise_check": [
+                    153,
+                    154,
+                    155,
+                    156
+                ],
+                "position": "З.",
+                "player_info": {
+                    "id": 14,
+                    "full_name": "Бородинский Даниил",
+                    "card": {
+                        "id": 150,
+                        "ref_position": {
+                            "id": 1,
+                            "translation_names": {
+                                "en": "Position 1",
+                                "ru": "Защитник"
+                            },
+                            "short_name": "З.",
+                            "name": "Защитник"
+                        }
+                    }
+                }
+            },
+            {
+                "id": 266,
+                "training_id": 95,
+                "player_id": 15,
+                "full_name": "Ботвинский Сергей",
+                "estimation": 0,
+                "status": null,
+                "status_info": null,
+                "training_exercise_check": [
+                    153,
+                    154,
+                    155,
+                    156
+                ],
+                "position": "З.",
+                "player_info": {
+                    "id": 15,
+                    "full_name": "Ботвинский Сергей",
+                    "card": {
+                        "id": 144,
+                        "ref_position": {
+                            "id": 1,
+                            "translation_names": {
+                                "en": "Position 1",
+                                "ru": "Защитник"
+                            },
+                            "short_name": "З.",
+                            "name": "Защитник"
+                        }
+                    }
+                }
+            },
+            {
+                "id": 267,
+                "training_id": 95,
+                "player_id": 16,
+                "full_name": "Волков Борис",
+                "estimation": 0,
+                "status": null,
+                "status_info": null,
+                "training_exercise_check": [
+                    153,
+                    154,
+                    155,
+                    156
+                ],
+                "position": "З.",
+                "player_info": {
+                    "id": 16,
+                    "full_name": "Волков Борис",
+                    "card": {
+                        "id": 83,
+                        "ref_position": {
+                            "id": 1,
+                            "translation_names": {
+                                "en": "Position 1",
+                                "ru": "Защитник"
+                            },
+                            "short_name": "З.",
+                            "name": "Защитник"
+                        }
+                    }
+                }
+            },
+            {
+                "id": 269,
+                "training_id": 95,
+                "player_id": 18,
+                "full_name": "Громов Михаил",
+                "estimation": 0,
+                "status": null,
+                "status_info": null,
+                "training_exercise_check": [
+                    153,
+                    154,
+                    155,
+                    156
+                ],
+                "position": "ПЗ.",
+                "player_info": {
+                    "id": 18,
+                    "full_name": "Громов Михаил",
+                    "card": {
+                        "id": 129,
+                        "ref_position": {
+                            "id": 2,
+                            "translation_names": {
+                                "en": "Position 2",
+                                "ru": "Полузащитник"
+                            },
+                            "short_name": "ПЗ.",
+                            "name": "Полузащитник"
+                        }
+                    }
+                }
+            },
+            {
+                "id": 274,
+                "training_id": 95,
+                "player_id": 23,
+                "full_name": "Пантелеев Эльдар",
+                "estimation": 0,
+                "status": null,
+                "status_info": null,
+                "training_exercise_check": [
+                    153,
+                    154,
+                    155,
+                    156
+                ],
+                "position": "ПЗ.",
+                "player_info": {
+                    "id": 23,
+                    "full_name": "Пантелеев Эльдар",
+                    "card": {
+                        "id": 134,
+                        "ref_position": {
+                            "id": 2,
+                            "translation_names": {
+                                "en": "Position 2",
+                                "ru": "Полузащитник"
+                            },
+                            "short_name": "ПЗ.",
+                            "name": "Полузащитник"
+                        }
+                    }
+                }
+            },
+            {
+                "id": 273,
+                "training_id": 95,
+                "player_id": 22,
+                "full_name": "Матвеев Владимир",
+                "estimation": 0,
+                "status": null,
+                "status_info": null,
+                "training_exercise_check": [
+                    153,
+                    154,
+                    155,
+                    156
+                ],
+                "position": "ПЗ.",
+                "player_info": {
+                    "id": 22,
+                    "full_name": "Матвеев Владимир",
+                    "card": {
+                        "id": 133,
+                        "ref_position": {
+                            "id": 2,
+                            "translation_names": {
+                                "en": "Position 2",
+                                "ru": "Полузащитник"
+                            },
+                            "short_name": "ПЗ.",
+                            "name": "Полузащитник"
+                        }
+                    }
+                }
+            },
+            {
+                "id": 272,
+                "training_id": 95,
+                "player_id": 21,
+                "full_name": "Калиниченко Андрей",
+                "estimation": 0,
+                "status": null,
+                "status_info": null,
+                "training_exercise_check": [
+                    153,
+                    154,
+                    155,
+                    156
+                ],
+                "position": "ПЗ.",
+                "player_info": {
+                    "id": 21,
+                    "full_name": "Калиниченко Андрей",
+                    "card": {
+                        "id": 132,
+                        "ref_position": {
+                            "id": 2,
+                            "translation_names": {
+                                "en": "Position 2",
+                                "ru": "Полузащитник"
+                            },
+                            "short_name": "ПЗ.",
+                            "name": "Полузащитник"
+                        }
+                    }
+                }
+            },
+            {
+                "id": 271,
+                "training_id": 95,
+                "player_id": 19,
+                "full_name": "Иванов Иван",
+                "estimation": 2,
+                "status": null,
+                "status_info": null,
+                "training_exercise_check": [
+                    153,
+                    154,
+                    155,
+                    156
+                ],
+                "position": "ПЗ.",
+                "player_info": {
+                    "id": 19,
+                    "full_name": "Иванов Иван",
+                    "card": {
+                        "id": 149,
+                        "ref_position": {
+                            "id": 2,
+                            "translation_names": {
+                                "en": "Position 2",
+                                "ru": "Полузащитник"
+                            },
+                            "short_name": "ПЗ.",
+                            "name": "Полузащитник"
+                        }
+                    }
+                }
+            },
+            {
+                "id": 270,
+                "training_id": 95,
+                "player_id": 20,
+                "full_name": "Иванов Андрей",
+                "estimation": 0,
+                "status": null,
+                "status_info": null,
+                "training_exercise_check": [
+                    153,
+                    154,
+                    155,
+                    156
+                ],
+                "position": "ПЗ.",
+                "player_info": {
+                    "id": 20,
+                    "full_name": "Иванов Андрей",
+                    "card": {
+                        "id": 143,
+                        "ref_position": {
+                            "id": 2,
+                            "translation_names": {
+                                "en": "Position 2",
+                                "ru": "Полузащитник"
+                            },
+                            "short_name": "ПЗ.",
+                            "name": "Полузащитник"
+                        }
+                    }
+                }
+            },
+            {
+                "id": 268,
+                "training_id": 95,
+                "player_id": 17,
+                "full_name": "Городов Максим",
+                "estimation": 0,
+                "status": null,
+                "status_info": null,
+                "training_exercise_check": [
+                    153,
+                    154,
+                    155,
+                    156
+                ],
+                "position": "ПЗ.",
+                "player_info": {
+                    "id": 17,
+                    "full_name": "Городов Максим",
+                    "card": {
+                        "id": 128,
+                        "ref_position": {
+                            "id": 2,
+                            "translation_names": {
+                                "en": "Position 2",
+                                "ru": "Полузащитник"
+                            },
+                            "short_name": "ПЗ.",
+                            "name": "Полузащитник"
+                        }
+                    }
+                }
+            },
+            {
+                "id": 275,
+                "training_id": 95,
+                "player_id": 24,
+                "full_name": "Пестряков Вениамин",
+                "estimation": 0,
+                "status": null,
+                "status_info": null,
+                "training_exercise_check": [
+                    153,
+                    154,
+                    155,
+                    156
+                ],
+                "position": "Н.",
+                "player_info": {
+                    "id": 24,
+                    "full_name": "Пестряков Вениамин",
+                    "card": {
+                        "id": 135,
+                        "ref_position": {
+                            "id": 4,
+                            "translation_names": null,
+                            "short_name": "Н.",
+                            "name": "Нападающий"
+                        }
+                    }
+                }
+            },
+            {
+                "id": 276,
+                "training_id": 95,
+                "player_id": 25,
+                "full_name": "Приходько Филипп",
+                "estimation": 0,
+                "status": null,
+                "status_info": null,
+                "training_exercise_check": [
+                    153,
+                    154,
+                    155,
+                    156
+                ],
+                "position": "Н.",
+                "player_info": {
+                    "id": 25,
+                    "full_name": "Приходько Филипп",
+                    "card": {
+                        "id": 136,
+                        "ref_position": {
+                            "id": 4,
+                            "translation_names": null,
+                            "short_name": "Н.",
+                            "name": "Нападающий"
+                        }
+                    }
+                }
+            },
+            {
+                "id": 277,
+                "training_id": 95,
+                "player_id": 26,
+                "full_name": "Саморуков Виктор",
+                "estimation": 0,
+                "status": null,
+                "status_info": null,
+                "training_exercise_check": [
+                    153,
+                    154,
+                    155,
+                    156
+                ],
+                "position": "Н.",
+                "player_info": {
+                    "id": 26,
+                    "full_name": "Саморуков Виктор",
+                    "card": {
+                        "id": 138,
+                        "ref_position": {
+                            "id": 4,
+                            "translation_names": null,
+                            "short_name": "Н.",
+                            "name": "Нападающий"
+                        }
+                    }
+                }
+            },
+            {
+                "id": 278,
+                "training_id": 95,
+                "player_id": 27,
+                "full_name": "Феоктистов Дмитрий",
+                "estimation": 0,
+                "status": null,
+                "status_info": null,
+                "training_exercise_check": [
+                    153,
+                    154
+                ],
+                "position": "Н.",
+                "player_info": {
+                    "id": 27,
+                    "full_name": "Феоктистов Дмитрий",
+                    "card": {
+                        "id": 139,
+                        "ref_position": {
+                            "id": 4,
+                            "translation_names": null,
+                            "short_name": "Н.",
+                            "name": "Нападающий"
+                        }
+                    }
+                }
+            },
+            {
+                "id": 279,
+                "training_id": 95,
+                "player_id": 28,
+                "full_name": "Шкловский Илья",
+                "estimation": 0,
+                "status": null,
+                "status_info": null,
+                "training_exercise_check": [
+                    153,
+                    154,
+                    155,
+                    156
+                ],
+                "position": "Н.",
+                "player_info": {
+                    "id": 28,
+                    "full_name": "Шкловский Илья",
+                    "card": {
+                        "id": 140,
+                        "ref_position": {
+                            "id": 4,
+                            "translation_names": null,
+                            "short_name": "Н.",
+                            "name": "Нападающий"
+                        }
+                    }
+                }
+            },
+            {
+                "id": 264,
+                "training_id": 95,
+                "player_id": 13,
+                "full_name": "Боровских Роман",
+                "estimation": 0,
+                "status": 2,
+                "status_info": {
+                    "id": 2,
+                    "translation_names": {
+                        "en": "Ill",
+                        "ru": "Болен"
+                    },
+                    "short_name": "-",
+                    "tags": {
+                        "matches": 1,
+                        "medicine": 1,
+                        "type_ill": 1,
+                        "analytics": 0,
+                        "trainings": 1,
+                        "matches_red": 1,
+                        "matches_reset": 1,
+                        "trainings_red": 1,
+                        "trainings_reset": 1
+                    }
+                },
+                "training_exercise_check": [],
+                "position": "З.",
+                "player_info": {
+                    "id": 13,
+                    "full_name": "Боровских Роман",
+                    "card": {
+                        "id": 192,
+                        "ref_position": {
+                            "id": 1,
+                            "translation_names": {
+                                "en": "Position 1",
+                                "ru": "Защитник"
+                            },
+                            "short_name": "З.",
+                            "name": "Защитник"
+                        }
+                    }
+                }
+            },
+            {
+                "id": 263,
+                "training_id": 95,
+                "player_id": 12,
+                "full_name": "Боровой Дмитрий",
+                "estimation": 0,
+                "status": 3,
+                "status_info": {
+                    "id": 3,
+                    "translation_names": {
+                        "en": "Injury",
+                        "ru": "Травма"
+                    },
+                    "short_name": "-",
+                    "tags": {
+                        "matches": 1,
+                        "medicine": 1,
+                        "analytics": 0,
+                        "trainings": 1,
+                        "matches_red": 1,
+                        "type_injury": 1,
+                        "matches_reset": 1,
+                        "trainings_red": 1,
+                        "trainings_reset": 1
+                    }
+                },
+                "training_exercise_check": [],
+                "position": "З.",
+                "player_info": {
+                    "id": 12,
+                    "full_name": "Боровой Дмитрий",
+                    "card": {
+                        "id": 189,
+                        "ref_position": {
+                            "id": 1,
+                            "translation_names": {
+                                "en": "Position 1",
+                                "ru": "Защитник"
+                            },
+                            "short_name": "З.",
+                            "name": "Защитник"
+                        }
+                    }
+                }
+            }
+        ],
+        "team_info": {
+            "id": 1,
+            "name": "F.C. NanoFootball 2004",
+            "short_name": "nf_2004",
+            "ref_team_status": 1,
+            "team_status_info": {
+                "id": 1,
+                "name": "None",
+                "short_name": "Empty"
+            }
+        }
+    },
+    "match": null
+}
