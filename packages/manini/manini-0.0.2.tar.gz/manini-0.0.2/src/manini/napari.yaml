@@ -1,0 +1,10 @@
+name: manini
+display_name: Manini
+contributions:
+  commands:
+    - id: manini.manini_widget
+      python_name: manini._widget:ManiniWidget
+      title: Manini Widget
+  widgets:
+    - command: manini.manini_widget
+      display_name: Manini

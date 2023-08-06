@@ -1,0 +1,2 @@
+[napari.manifest]
+manini = manini:napari.yaml
