@@ -1,0 +1,3 @@
+[console_scripts]
+cloudcheck=cloudcheck.__main__:main
+
