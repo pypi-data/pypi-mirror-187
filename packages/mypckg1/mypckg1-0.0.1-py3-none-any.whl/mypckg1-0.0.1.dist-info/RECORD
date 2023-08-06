@@ -1,0 +1,6 @@
+mypckg1/__init__.py,sha256=JwwFjJ5IGLiqDgnbVD02iX1bRxv-LcVT0DC-ga-_5ME,22
+mypckg1/app.py,sha256=9NxbBiKsRWLUHjCTTWeoqxD4pvegvJklrmjBms8FGoY,31
+mypckg1-0.0.1.dist-info/METADATA,sha256=cY1tkX7W-F5y6LOQmiipbEOauPBdwu5a6lNNJZWoFZQ,177
+mypckg1-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mypckg1-0.0.1.dist-info/top_level.txt,sha256=FwcV_NDYd8w2tNiBkSTUHN0kFHz6DYHtg5y-etDm6co,8
+mypckg1-0.0.1.dist-info/RECORD,,
