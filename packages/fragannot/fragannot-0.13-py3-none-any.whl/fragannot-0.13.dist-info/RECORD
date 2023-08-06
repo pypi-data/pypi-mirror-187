@@ -1,0 +1,13 @@
+fragannot/__init__.py,sha256=euE4H5q1JUhNF0N1wYs6QO2gMVuN4vSRes8YzBTIgk8,136
+fragannot/_version.py,sha256=eb7nMbbvaHd_ooQasDNS_5yoMUNo95SuvynKs8BbcwQ,21
+fragannot/constant.py,sha256=QWL0VlXwzc2FUhs_0Ftk5WaEy0hcqfXG3YidKyDAaro,1437
+fragannot/fragannot.py,sha256=ozxaaeIaOskDCQMQ5x19vb55HGbjRGSsYQ4d7-ta-C4,14519
+fragannot/log_conf.json,sha256=8iSYJY_WG3sqCSTQa0pHvH3cx9Ugm4yV9FWYzutVlP0,767
+fragannot/parser.py,sha256=79pjJQo67HzSyiDKOw0z1K9f4FgJRt7x_qJqGEJHesU,10931
+fragannot/spectrumfile.py,sha256=QgYdLssTVRgZMzlFIu5qoRi2IyFaa0mrTUikoViZTQI,4622
+fragannot/temp.py,sha256=6zc_jZtKH2IRbZsE_H6U_V8REBs7x1H4WFVRw2haQKY,9288
+fragannot-0.13.dist-info/METADATA,sha256=k9yVuRLIgIQTAsWIe6w1_gP9AFAaKf7IG-p5xrccWFo,4967
+fragannot-0.13.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fragannot-0.13.dist-info/entry_points.txt,sha256=LPDq7gw_DM8bhyhbOskWRJ3qw2rRfj63iH8X6ewZQOM,45
+fragannot-0.13.dist-info/top_level.txt,sha256=csUmHf3mWm52cMlShOGkk5zzEejVcdYoreD5cdIapPw,10
+fragannot-0.13.dist-info/RECORD,,
