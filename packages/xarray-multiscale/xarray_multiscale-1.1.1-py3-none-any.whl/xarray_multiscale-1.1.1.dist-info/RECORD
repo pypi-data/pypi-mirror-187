@@ -1,0 +1,9 @@
+xarray_multiscale/__init__.py,sha256=oA-AINcPAY8bjSAGVWbaGyBjjkkEDF8O2vJd_fwZ3J4,196
+xarray_multiscale/chunks.py,sha256=-9Zf1b8lw4DMkGqal1daTAWC4DILiCZdOxmbjpkUtEE,2131
+xarray_multiscale/multiscale.py,sha256=2qBQMnZOJqyavv6W_PHHyp3pTZBgwGpb84020MxDsq8,8938
+xarray_multiscale/reducers.py,sha256=iHBVf6vyntUdb2mW4-7BDn8tHEyO86wKwON0rOKn0Io,12235
+xarray_multiscale/util.py,sha256=AAd8fs20oRhvM7wCNrpbFTzhzaVKMRhMcaIy46HCBI8,2418
+xarray_multiscale-1.1.1.dist-info/LICENSE,sha256=xqgxejjxZo3PVAOK9lAhvnNPDuaMcChcK23rFR9tMLc,1539
+xarray_multiscale-1.1.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+xarray_multiscale-1.1.1.dist-info/METADATA,sha256=f5jw5XhHoxbwJGSykE3Vg7dFgcClm_dtXtSzHc9k1dU,451
+xarray_multiscale-1.1.1.dist-info/RECORD,,
