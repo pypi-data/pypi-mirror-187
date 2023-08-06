@@ -1,0 +1,1 @@
+round(people_vaccinated * 0.5, 0)

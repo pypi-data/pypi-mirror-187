@@ -1,0 +1,63 @@
+# defailt configuration values for pandem data source module
+pandem:
+  source:
+    app:
+      port: 8001
+    pipeline:
+      jobs-to-keep: 10 
+    api:
+      port: 8000
+    nlp:
+      active: True
+      models_path:  ""
+      evaluation_steps:
+        - ["aspect_stitched_unmasked.class"]
+        - ["aspect_stitched_unmasked.class", "aspect_stitched_unmasked.entity"]
+        - ["aspect_stitched_unmasked.class", "aspect_stitched_unmasked.entity", "suggestion"]
+        - ["aspect_stitched_unmasked.class", "emotion_classification_multi"]
+        - ["aspect_stitched_unmasked.class", "sentiment_classification"]
+      models:
+        emotion_classification_multi:
+          alias: emotion
+          source: tf_server
+          categories:
+            - anger
+            - anticipation
+            - disgust
+            - fear
+            - joy
+            - sadness
+            - surprise
+            - trust
+          languages: ["en"]
+        sentiment_classification: 
+          alias: sentiment
+          source: tf_server
+          categories:
+            - negative
+            - neutral
+            - positive
+          languages: ["en"]
+        aspect_stitched_unmasked:
+          alias: 
+            class: aspect
+            entity: sub-topic
+          source: tf_server
+          bio:
+            token: string_lookup_1
+            class: string_lookup_2
+          languages: ["en"]
+        suggestion:
+          alias: suggestion
+          source: script
+          script:
+            name: rule_based_suggestion_extraction
+            function: annotate
+            type: python
+          languages: ["en"]
+      use_sudo: false
+      chunk_size: 500
+      tensorflow_server_host:  "localhost"
+      tensorflow_server_port:  8501
+      tensorflow_server_protocol:  "http"
+      tensorflow_server_version:  "2.8.0"

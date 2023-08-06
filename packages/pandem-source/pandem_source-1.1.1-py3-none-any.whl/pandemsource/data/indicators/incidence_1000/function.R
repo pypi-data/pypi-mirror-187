@@ -1,0 +1,1 @@
+1000*confirmed_cases/population

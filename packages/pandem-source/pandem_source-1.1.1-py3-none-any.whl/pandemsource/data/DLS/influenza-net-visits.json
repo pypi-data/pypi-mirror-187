@@ -1,0 +1,62 @@
+{
+    "scope":{
+      "source":"influenza-net-visits",
+      "source_description":"From http://www.influenzanet.info/\n. Influenzanet is a Europe-wide network to monitor the activity of influenza-like-illness (ILI) with the aid of volunteers via the internet. It is operational in nine countries. In contrast with the traditional system of sentinel networks of mainly primary care physicians, Influenzanet obtains its data directly from the population. This creates a fast and flexible monitoring system whose uniformity allows for direct comparison of ILI rates between countries.",
+      "tags":["Influenza net"],
+      "data_quality":"Cohort",
+      "frequency":"daily",
+      "frequency_start_hour":4,
+      "frequency_end_hour":4,
+      "reference_user":"Influenza net http://influenzanet.info",
+      "reporting_email":"",
+      "globals":[
+        {"variable":"pathogen_name", "value":"Influenza due to certain identified influenza viruses"}
+      ],
+      "update_scope":[
+        {"variable":"source"},
+        {"variable":"geo_code"}
+      ]
+    },
+    "acquisition":{
+      "channel":{
+        "name":"url",
+        "url": [
+          "https://influweb.api.datainterfaces.org/data/metadata/indicators/DK_visits_cumulated.csv",
+          "https://influweb.api.datainterfaces.org/data/metadata/indicators/FR_visits_cumulated.csv",
+          "https://influweb.api.datainterfaces.org/data/metadata/indicators/IE_visits_cumulated.csv",
+          "https://influweb.api.datainterfaces.org/data/metadata/indicators/IT_visits_cumulated.csv",
+          "https://influweb.api.datainterfaces.org/data/metadata/indicators/PT_visits_cumulated.csv",
+          "https://influweb.api.datainterfaces.org/data/metadata/indicators/ES_visits_cumulated.csv",
+          "https://influweb.api.datainterfaces.org/data/metadata/indicators/UK_visits_cumulated.csv"
+        ]
+      },
+      "format": {
+        "name":"csv",
+        "decimal_sign":".",
+        "thousands_separator":"",
+        "date_format":"isoweek",
+        "encoding":"UTF-8"
+      }
+    },
+    "columns":[
+      {"name":"yw", "variable":"reporting_week"}, 
+      {"name":"variable", "variable":"visit_type_code"},
+      {"name":"syndrome", "variable":"pathogen_alias"},
+      {"name":"season"},
+      {"name":"prop_raw"},
+      {"name":"prop_adj"},
+      {"name":"prop_adj_low"},
+      {"name":"prop_adj_up"},
+      {"name":"cum_prop_raw"},
+      {"name":"cum_prop_adj", "variable":"number_of_visits_per_100"},
+      {"name":"cum_prop_adj_low", "variable":"number_of_visits_per_100_low_ci"},
+      {"name":"cum_prop_adj_up", "variable":"number_of_visits_per_100_high_ci"},
+      {"name":"n_total"},
+      {"name":"n_adj", "variable":"number_of_visits"},
+      {"name":"n_weight"},
+      {"name":"n_missing"},
+      {"name":"total_adj"},
+      {"name":"total_weight"},
+      {"name":"country", "variable":"geo_code"}
+    ]
+}
