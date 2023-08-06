@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: aranya_calc
+Version: 1.0.0
+Summary: A simple calculator package
+Author-email: Aranya Pal <palaranya04@gmail.com>
+License-File: LICENCE.txt
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# aranya_calc
+
+## A simple calculator package
+
+---
+
+# Use the package in your project
+
+### Install the package
+
+```
+pip install aranya-calc
+```
+
+### Using the package
+
+```
+import aranya_calc.calc as calc
+
+calc.add(1, 2)
+```
+
+---
+
+Aranya Pal © 2023
+
+> **Note**
+> This is for a university project. Might not be maintained in future.
