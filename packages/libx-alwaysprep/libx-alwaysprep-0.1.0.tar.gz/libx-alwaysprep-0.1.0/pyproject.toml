@@ -1,0 +1,34 @@
+# [build-system]
+# requires = ["setuptools"]
+# build-backend = "setuptools.build_meta"
+
+# [project]
+# name = "libx-alwaysprep"
+# version = "0.1"
+# authors = [
+#   { name="alwaysprep", email="alwaysprep@gmail.com" },
+# ]
+# description = "A small example package"
+# readme = "README.md"
+# requires-python = ">=3.8"
+# classifiers = [
+#     "Programming Language :: Python :: 3",
+#     "License :: OSI Approved :: MIT License",
+#     "Operating System :: OS Independent",
+# ]
+# dependencies = [
+#   'Flask==2.0.0',
+#   'numpy==1.23'
+# ]
+
+# [project.urls]
+# "Homepage" = "https://github.com/alwaysprep/BazelDemo"
+# "Bug Tracker" = "https://github.com/alwaysprep/BazelDemo/issues"
+
+
+# [project.optional-dependencies]
+# dev = [
+# ]
+
+# [tool.setuptools.packages.find]
+# where = ["src"]

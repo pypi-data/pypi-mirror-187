@@ -1,0 +1,6 @@
+core-alwaysprep==0.1.0
+numpy==1.23
+
+[dev]
+flake8~=3.7.9
+pylint~=2.4.4
