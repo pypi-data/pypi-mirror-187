@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: Topsis-Khushi-102183044
+Version: 0.0.3
+Summary: Topsis code
+Home-page: UNKNOWN
+Author: Khushi Prasad
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pandas
+
+This is a very simple code
+
