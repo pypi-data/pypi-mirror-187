@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: fununit
+Version: 2.0.0
+Summary: a functional, declarative, unit-testing library for testing pure functions
+Home-page: https://github.com/johnmpost/fununit
+Author: John Post
+Author-email: muffinpost1@gmail.com
+License: WTFPL
+Keywords: unit testing,testing,functional programming,declarative,pure functions,testing boilerplate,parameterized testing
+Classifier: License :: Freely Distributable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Testing :: Unit
+Requires-Python: >=3.9
+License-File: LICENSE
+
+Find the documentation at the project's homepage: https://github.com/johnmpost/fununit/
