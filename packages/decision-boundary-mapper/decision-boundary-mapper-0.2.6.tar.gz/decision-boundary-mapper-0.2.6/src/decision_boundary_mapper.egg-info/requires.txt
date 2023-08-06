@@ -1,0 +1,8 @@
+Pillow
+PySimpleGUI
+keras
+matplotlib
+numpy
+scikit_learn
+tensorflow
+termcolor
