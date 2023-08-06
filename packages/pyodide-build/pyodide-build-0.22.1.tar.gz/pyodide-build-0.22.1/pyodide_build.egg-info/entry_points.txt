@@ -1,0 +1,10 @@
+[console_scripts]
+_pywasmcross = pyodide_build.pywasmcross:compiler_main
+pyodide-build = pyodide_build.__main__:main
+
+[pyodide.cli]
+build = pyodide_build.cli.build:main
+build-recipes = pyodide_build.cli.build_recipes:recipe
+config = pyodide_build.cli.config:app
+skeleton = pyodide_build.cli.skeleton:app
+venv = pyodide_build.cli.venv:main
