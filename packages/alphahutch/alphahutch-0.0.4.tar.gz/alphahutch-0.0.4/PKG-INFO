@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: alphahutch
+Version: 0.0.4
+Summary: Common packages that will be used for alphahutch
+Home-page: https://github.com/HutchNunez/alphahutch
+Author: Andy Hutchinson
+
+Common packages used for developing in Alpha Hutch.
