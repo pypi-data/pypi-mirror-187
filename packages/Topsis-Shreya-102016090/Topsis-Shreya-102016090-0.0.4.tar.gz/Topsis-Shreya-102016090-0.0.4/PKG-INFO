@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: Topsis-Shreya-102016090
+Version: 0.0.4
+Summary: Topsis package for MCDM problems
+Home-page: https://pypi.python.org/pypi/Topsis-Shreya-102016090
+Author: Shreya Saxena
+Author-email: shreyasaxena410@gmail.com
+License: MIT
+Keywords: python,TOPSIS,MCDM,MCDA,statistics,prescriptive analytics,cli
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE.txt
