@@ -1,0 +1,3 @@
+[console_scripts]
+Topsis-Uday-102053008 = topsisModule:main
+
