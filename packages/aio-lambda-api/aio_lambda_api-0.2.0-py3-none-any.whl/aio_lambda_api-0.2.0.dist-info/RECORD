@@ -1,0 +1,16 @@
+aio_lambda_api/__init__.py,sha256=UDQy-uxEoIxZsABZ2wAqYcS1som6WGQrWvjhiJQzzD4,601
+aio_lambda_api/backends/__init__.py,sha256=xDCDd9WlS-tk9agkSy5cMN3jGwPj9c6iypIvNKHACzA,1594
+aio_lambda_api/backends/aws_lambda.py,sha256=y1j_nByNQEXC0WETfIBYs7tH5cSeobrbe1IwO-O5D8Y,8393
+aio_lambda_api/core.py,sha256=fUBbsaxqzSznItPpGrLad-NikrhFISziutPiiHwFuxk,13018
+aio_lambda_api/exceptions.py,sha256=qFCJ4EBGemo1man0BtYLr3DCkaBdVQxCsyv5329OcAI,1759
+aio_lambda_api/json.py,sha256=mbUkse6JKWfXVaYyHtnoxtRI5-3XIK3domrUR_NhLTQ,1061
+aio_lambda_api/logging.py,sha256=lIZn59UKhV_dO0uI-BSEN9bl6nWQYNmCvojH4W_Acvo,1360
+aio_lambda_api/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aio_lambda_api/requests.py,sha256=yX79fHbOHOq8eRVxIgO1o_4DtW5GsLFptiV1wWwq8uY,2287
+aio_lambda_api/responses.py,sha256=BNqbN6SzuqXTpMHgT53qsSB1NjhXLQRmx7j_mAvAlNs,3329
+aio_lambda_api/settings.py,sha256=-p04mGG_KgxGq_93jV3iisl_QlzJUq0OdQ_lUvxsv4I,331
+aio_lambda_api/status.py,sha256=UiFkr4HX0IhrUywY5l2Wwj1V3GamGZb47PZ1Y-ArPcA,2739
+aio_lambda_api-0.2.0.dist-info/METADATA,sha256=OhUD2EMdw7Q_UvxIclhzlj5WXir4lWwlpIpZuEKOid8,11130
+aio_lambda_api-0.2.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+aio_lambda_api-0.2.0.dist-info/LICENSE,sha256=L2N7a3CNFvLq29K6HI4dmX5XO-tUbYPXvun580X0Nbs,1261
+aio_lambda_api-0.2.0.dist-info/RECORD,,
