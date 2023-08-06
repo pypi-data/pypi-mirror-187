@@ -1,0 +1,3 @@
+[console_scripts]
+tqi = qiplot.plotdada:main
+tqi2 = qiplot.imageroi:main
