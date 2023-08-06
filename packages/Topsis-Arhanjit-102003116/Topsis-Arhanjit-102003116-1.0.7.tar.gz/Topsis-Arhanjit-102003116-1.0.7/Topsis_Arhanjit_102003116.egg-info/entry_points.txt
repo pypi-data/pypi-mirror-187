@@ -1,0 +1,2 @@
+[console_scripts]
+topsis = Topsis_Arhanjit_102003116.topsis:main
