@@ -1,0 +1,7 @@
+dvml/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dvml/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dvml/models/model.py,sha256=5fFN6Helxk1W_EJlprHzvAImzJcfmjA9ufyXG4ANrq4,722
+dvml-0.1.0.dist-info/LICENSE,sha256=RYzfPe-kyAPwDamib-jIvqXwcBaupB6q1P1KXDBpZmc,1087
+dvml-0.1.0.dist-info/METADATA,sha256=Onxy3WN4cUSXsbylZQ2U-NwaK1C3aPZ5uOGiLlhfHgE,423
+dvml-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+dvml-0.1.0.dist-info/RECORD,,
