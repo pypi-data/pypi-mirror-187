@@ -1,0 +1,9 @@
+ontopic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ontopic/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ontopic/models/pretrained/.keep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ontopic/models/TopicEmbedder.py,sha256=5pKgqxNZHYhVBS8MCkADqQdjeDgJY6DDI2Etnw6-84Y,1757
+ontopic/models/utils.py,sha256=pIAytPpV5_KPWXchnG-9lqC-YwxV6Pf6swcSP4pVsi8,1520
+ontopic/utils.py,sha256=IdUtfZtQo9Z_bGK2btGNrvJFnPBcDMX78Rib40QJcKk,3383
+ontopic-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+ontopic-0.1.0.dist-info/METADATA,sha256=NDA8muk6oc9laaLyEcSUhAUkdgyjRICCbAcXiVaYta4,1685
+ontopic-0.1.0.dist-info/RECORD,,
