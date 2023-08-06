@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: dadeschools
+Version: 1.0
+Summary: The Ultimate Dadeschools CLI
+Home-page: https://github.com/BananaApache/dadeschools
+Author: Daniel Li
+Author-email: daniel.miami2005@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: bs4
+
+# dadeschools
+
+## Installation
+`pip install dadeschools`
+
+
