@@ -1,0 +1,10 @@
+SNMatOperations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SNMatOperations/input_matrix.py,sha256=sJJrQsNm5c1Ygm2fJH4zXxndBsoNq5FRKS9mzi7cSJU,369
+SNMatOperations/mat_addition.py,sha256=FGmLH5fK4cY5DoJ0yJgyu1vaagMC9C3q9reJRWZSjdw,456
+SNMatOperations/mat_multiplication.py,sha256=3pJwm_6CZe3m8iJGPvxaXsgkWl0XIjnoU2Jo0ChAi0c,519
+SNMatOperations/mat_subraction.py,sha256=3LQN1jM7GLJbPY9lWx0do-9FNRMeXnV8Ran5qGCxegc,474
+SNMatrixOperations-0.1.dist-info/LICENCE.txt,sha256=LTyk9EtQ5ZTL8ST8UxwosQIuWWweT-ZE6UIXrcqXz7Q,1062
+SNMatrixOperations-0.1.dist-info/METADATA,sha256=r7wClDrnGK26cKJN2ftkSdItAwCpx6lnsC_tgUzhDOs,358
+SNMatrixOperations-0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+SNMatrixOperations-0.1.dist-info/top_level.txt,sha256=Sgl7wP35u99jMYi8GQiiQvPl8D2pvA5maJQ1jUJSU84,16
+SNMatrixOperations-0.1.dist-info/RECORD,,

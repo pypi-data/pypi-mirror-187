@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: SNMatrixOperations
+Version: 0.1
+Summary: Basic Matrix Operations for square matrices
+Author: Shanmuga Nathan V
+Author-email: Shanmu2224@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENCE.txt
+
