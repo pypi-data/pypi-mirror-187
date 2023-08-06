@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: Topsis-Jashan-102017034
+Version: 0.1
+Summary: This python package helps to implement a multiple criteria decision analysis process called TOPSIS
+Home-page: https://github.com/JashanveerKaur/Topsis_Jashan_102017034
+Author: Jashanveer Kaur Dhillon
+Author-email: jdhillon1_be20@thapar.edu
+License: MIT
+Download-URL: https://github.com/user/reponame/archive/v_01.tar.gz
+Keywords: TOPSIS,MCDM,102017034
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE.txt
+
+UNKNOWN
+
