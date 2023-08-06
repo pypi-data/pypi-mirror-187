@@ -1,0 +1,18 @@
+[build-system]
+requires = [
+  "setuptools", 
+  "wheel",
+  "cmake", 
+  "pip",
+  "scikit-build",
+  "numpy"
+]
+
+[tool.cibuildwheel.macos]
+before-build= "brew install eigen"
+
+[tool.cibuildwheel.windows]
+before-build = "choco install eigen"
+
+[tool.cibuildwheel.linux]
+before-build = "yum install -y eigen3-devel"
