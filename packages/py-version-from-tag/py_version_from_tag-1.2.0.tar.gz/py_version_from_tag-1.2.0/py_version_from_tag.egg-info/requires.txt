@@ -1,0 +1,13 @@
+toml
+
+[dev]
+pytest
+pylint
+pre-commit
+black[d]
+mypy
+tox
+types-toml
+
+[test]
+pytest
