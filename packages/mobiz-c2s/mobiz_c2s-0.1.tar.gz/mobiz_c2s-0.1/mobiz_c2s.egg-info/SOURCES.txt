@@ -1,0 +1,7 @@
+README.md
+setup.py
+mobiz_c2s.egg-info/PKG-INFO
+mobiz_c2s.egg-info/SOURCES.txt
+mobiz_c2s.egg-info/dependency_links.txt
+mobiz_c2s.egg-info/requires.txt
+mobiz_c2s.egg-info/top_level.txt
