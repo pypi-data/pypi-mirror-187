@@ -1,0 +1,19 @@
+include *.txt
+include *.md
+include *.pkl
+recursive-include ./fraud_analysis/*
+
+include fraud_analysis/datasets/raw/creditcard.csv
+include fraud_analysis/datasets/test/X_test.csv
+include fraud_analysis/datasets/test/y_test.csv
+include fraud_analysis/trained_models/*.pkl
+include fraud_analysis/VERSION
+include fraud_analysis/config.yml
+
+include ./requirements/requirements.txt
+include ./requirements/test_requirements.txt
+exclude *.log
+exclude *.cfg
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]

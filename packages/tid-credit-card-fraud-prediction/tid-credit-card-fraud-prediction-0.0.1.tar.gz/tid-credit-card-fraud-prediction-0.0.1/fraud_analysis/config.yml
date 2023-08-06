@@ -1,0 +1,61 @@
+# App level config ---------------------------
+
+# Package Overview
+package_name: fraud_analysis
+
+# Data Files
+raw_data_file: "creditcard.csv"
+
+# pipeline saved file name
+saved_pipeline_filename: fraud_pipeline_v
+
+# Model config ------------------------------
+
+# Dependent variable
+DV: Class
+
+# Selected features from featurewiz
+SELECTED_FEATURES:
+  - V14
+  - V8
+  - V13
+  - V7
+  - Amount
+  - V19
+  - V23
+  - V6
+  - V26
+  - V25
+  - V28
+
+# set train/test split
+TEST_SIZE: 0.2
+
+# Number of CV folds
+NFOLDS: 5
+
+# to set the random seed
+RANDOM_STATE: 10
+
+# evaluation metric
+SCORING: f1_macro # recall_macro, precision_macro
+
+# Pipeline hyperparameters ---------------------------
+DROP_NZV_TOL: 0.75
+
+# variables to standardize
+VARS_TO_STD:
+  - Amount
+
+OVERSAMPLING_STRATEGY: 0.1
+UNDERSAMPLING_STRATEGY: 0.5
+
+# Random Forest hyperparameters
+CLF__N_ESTIMATORS: 100
+CLF__MAX_FEATURES: sqrt
+CLF__MIN_SAMPLES_SPLIT: 2
+
+# Debug ------------------------------------------
+# debug pipeline mode
+DEBUG_PIPELINE: False
+SAVED_COL_NAME_FILE: "saved_col_names.pkl"
