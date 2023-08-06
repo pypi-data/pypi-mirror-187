@@ -1,0 +1,3 @@
+[pytest11]
+markdown_pytest=markdown_pytest
+
