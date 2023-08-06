@@ -1,0 +1,14 @@
+linked_roles/__init__.py,sha256=Q6IE46gl0q-3Xh0tccNHwtVwGqY-UvTzhS3BXiJBwr8,473
+linked_roles/client.py,sha256=jUCw0c0ckDp-nlY76QQMdMJDgxPN1PCPZpFTtA1Wb74,5459
+linked_roles/enums.py,sha256=rBm9zGNfN7tPDpX9NIiaggmOuqeYOAFLZLKj9Zkuhdc,1229
+linked_roles/errors.py,sha256=e2MqpSHIojuGaR5I7GWhdqKvcpSLNV4ULcONbZMrKX8,1548
+linked_roles/http.py,sha256=AcPQK9cMjE4c8pMJFjwWsHZrhFvoBGnDBFiA0R1YKbY,8872
+linked_roles/oauth2.py,sha256=CWqoxerPP8v56Is1FwtPsnTXnw90kB9aedJhiR-fyMc,1241
+linked_roles/role.py,sha256=WP_Nm3UoGrW3pqVqBmtGaj0jbHXnHaGOgr4scXDPqS0,6598
+linked_roles/user.py,sha256=s9Ef1RrEhneiW9I_0gi7DgbpyIs3FNT1WkpbJYdUl28,3586
+linked_roles/utils.py,sha256=JSqpNTurhguntanK3OJQDn-sr_4LdlHvkW09lY7Uihc,752
+linked_roles-1.0.0rc1.dist-info/LICENSE,sha256=SVx3KmHztT2ONDCzhS9LVHqCX3cLjwatuubkCjj5Kis,1085
+linked_roles-1.0.0rc1.dist-info/METADATA,sha256=Y49ib3Dk55E5c5rf8dbybwJBUyeAkYKxalPw1b3igd4,6408
+linked_roles-1.0.0rc1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+linked_roles-1.0.0rc1.dist-info/top_level.txt,sha256=Kq0KVoCeesrSbgqPsKU41XBZ5awx0rXjm5mGahvfHf0,13
+linked_roles-1.0.0rc1.dist-info/RECORD,,
