@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "orm-collector"
+version = "2.0.3"
+description = "ORM api for collector projects, include a REST API to expose some keys functions"
+authors = ["David Pineda <dahalpi@gmail.com>"]
+license = "GPLv3"
+readme = "README.md"
+packages = [{include = "orm_collector"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+networktools = "^1.6.0"
+basic_logtools = "^0.1.7"
+validators = "^0.11.0"
+shapely="^2.0.0"
+psycopg2="^2.9.5"
+sqlalchemy=">=1.4.46"
+geoalchemy2="^0.13.1"
+ujson="^5.7.0"
+fastapi="^0.89.1"
+fastapi-cache2={extras = ["memcache"], version = "^0.2.0"}
+click="^8.1.0"
+rich="^13.2.0"
+dacite="^1.7.0"
+aiomcache = "^0.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+orm_create_db = "orm_collector.scripts.create_db:run_crear_schema"
+orm_load_data = "orm_collector.scripts.load_data:load_data_orm"
+orm_vars = "orm_collector.scripts.create_db:show_envvars"
+orm_show_data = "orm_collector.scripts.show_data:show_data"
