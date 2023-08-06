@@ -1,0 +1,17 @@
+compact/MCL_clustering.py,sha256=XkRHEO-6Lc2UhyHh7EKLHLWHBi6t3Ze5S1Z7B83WtVU,32183
+compact/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+compact/cluster_annotation.py,sha256=2IEszaJQoCUr2r0Cz5D1chYyKYDsW-FWj5WJRz_TiEc,3857
+compact/evaluation.py,sha256=PmZcRcpq9HkzFjvDSt1sCxlAE3eUcPrjEM3bfmxwn44,8774
+compact/main.py,sha256=6pbpEfglShSyE1JIqyLE61r48VBf7qeDacaNx5ebwT8,30400
+compact/member_selection.py,sha256=YwZsSjSHeKKx7-_lNqY1-fUwcBPcOAEs8fiIjoq54-4,4763
+compact/pairwise_scoring.py,sha256=utNbZEuq9vzwcaO2HdUxVW8itgy0tLDzGm1rKhdPbg8,15097
+compact/process_data.py,sha256=b3nOsv7r9xn9Wq_t7ahAjfAaRjcWZWf_-TMx-aHPK8k,17003
+compact/reciprocal_hits.py,sha256=FEjLovFABPkFhBQvfO33Z1JBpq1F4ng7SNs0hdVdZnk,4574
+compact/run_compact.py,sha256=VTzDOZfxzs8C5PZzRvbteq_kNzw20qG33lT8NjnoSR0,7995
+compact/utils.py,sha256=R0dOhguOKFH7-MHJE5sSKh9P3mmrTqRBjmfDkSy2jI8,8028
+compact_bio-0.1.0.dist-info/LICENCE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+compact_bio-0.1.0.dist-info/METADATA,sha256=nF4SE4OCS_L7y2cvv6uM1AfuqBJVGvl29a1IOgxfqCU,18316
+compact_bio-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+compact_bio-0.1.0.dist-info/entry_points.txt,sha256=dJVGX84GrjSQjhJHzXQq3A6fgnN__CtbfZ67XDGIpnc,52
+compact_bio-0.1.0.dist-info/top_level.txt,sha256=K8SKZBkQ4goAXvcSk1HjpTQeP_1rUUt73C8AsW-cXwo,8
+compact_bio-0.1.0.dist-info/RECORD,,
