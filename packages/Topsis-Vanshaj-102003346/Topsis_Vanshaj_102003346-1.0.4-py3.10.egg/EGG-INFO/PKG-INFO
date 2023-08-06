@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Topsis-Vanshaj-102003346
+Version: 1.0.4
+Summary: Calculates Topsis Score and Rank them accordingly
+Home-page: https://github.com/vanshajsingla/Topsis-Vanshaj-102003346
+Author: Vanshaj Singla
+Author-email: vanshajrnv2002@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: License.txt
+
+Topsis python package
+
