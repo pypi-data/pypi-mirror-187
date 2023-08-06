@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: rwkvstic
+Version: 0.0.4
+Summary: A package for loading rwkv on a larger range of devices
+Project-URL: Homepage, https://github.com/harrisonvanderbyl/rwkvstic
+Project-URL: Bug Tracker, https://github.com/harrisonvanderbyl/rwkvstic/issues
+Author-email: Harrison Vanderbyl <harrison.vanderbyl@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
