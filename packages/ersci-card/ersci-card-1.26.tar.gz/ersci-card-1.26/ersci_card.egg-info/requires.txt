@@ -1,0 +1,6 @@
+django
+docxtpl
+pillow
+
+[:platform_system == "Windows"]
+docx2pdf
