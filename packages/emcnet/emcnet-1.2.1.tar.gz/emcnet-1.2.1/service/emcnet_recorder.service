@@ -1,0 +1,19 @@
+[Unit]
+# Human readable name of the unit
+Description=EMCNET Recorder - streams MQTT data to InfluxDB
+
+# Start after InfluxDB is up
+After=network.target 
+After=influxdb.service
+
+[Service]
+# Environment Variables
+Environment="EMCNET_DIR=/etc/emcnet"
+# Command to execute when the service is started
+ExecStart=/bin/sh -c 'emcnet_recorder'
+# Disable the buffering of STDOUT and STDERR
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target
+

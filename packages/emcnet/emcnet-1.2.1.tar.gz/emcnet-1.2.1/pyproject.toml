@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "emcnet"
+description = "Infrastructure for recording and dashboarding distributed device data with intermittent connectivity"
+authors = [
+  {email = "jmfife@gmail.com"},
+  {name = "J. M. Fife"}
+]
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+
+dependencies = [
+    'pandas >= 1.2.3', 
+    'python-dotenv >= 0.15.0',
+    'codetiming >= 1.3.0', 
+    'influxdb-client[ciso]',
+    'paho-mqtt',
+    'python-dotenv',
+    'fieldday',
+    'vedirect_jmfife',
+    'fifeutil',
+#    'fieldday @ git+ssh://git@github.com/jmfife/fieldday.git',
+#    'fifeutil @ git+ssh://git@github.com/jmfife/fifeutil.git',
+#    'vedirect @ git+ssh://git@github.com/jmfife/vedirect.git',
+]
+
+# let setuptools_scm get the version from git tags
+dynamic = ["version"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+emcnet_data_store = "emcnet.emcnet_data_store:main"
+emcnet_data_publisher = "emcnet.emcnet_data_publisher:main"
+emcnet_vmppt_store = "emcnet.device.vmppt_store:main"
+emcnet_device_vmppt_publish = "emcnet.device.vmppt_publish:main"
+emcnet_device_vmppt = "emcnet.device.vmppt:main"
+emcnet_recorder = "emcnet.emcnet_recorder:main"
+
+[tool.setuptools_scm]
+
+[tool.setuptools]
+packages = ["emcnet"]
+
+[tool.setuptools.package-dir]
+mypkg = "emcnet"
+
+
+
+
+# [tool.setuptools.dynamic]
+# version = {attr = "emcnet.VERSION"}
+# readme = {file = "README.md"}
+
+# ... see the following for other project metadata fields:
+#     https://packaging.python.org/en/latest/specifications/declaring-project-metadata/

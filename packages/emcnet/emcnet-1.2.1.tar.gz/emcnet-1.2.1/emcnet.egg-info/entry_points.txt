@@ -1,0 +1,7 @@
+[console_scripts]
+emcnet_data_publisher = emcnet.emcnet_data_publisher:main
+emcnet_data_store = emcnet.emcnet_data_store:main
+emcnet_device_vmppt = emcnet.device.vmppt:main
+emcnet_device_vmppt_publish = emcnet.device.vmppt_publish:main
+emcnet_recorder = emcnet.emcnet_recorder:main
+emcnet_vmppt_store = emcnet.device.vmppt_store:main

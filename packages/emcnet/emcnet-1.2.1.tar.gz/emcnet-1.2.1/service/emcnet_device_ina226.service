@@ -1,0 +1,20 @@
+[Unit]
+# Human readable name of the unit
+Description=Bigbird INA226 device data collector
+
+# Start after InfluxDB is up
+After=network.target 
+After=influxdb.service
+After=mosquitto.service
+
+[Service]
+# Environment Variables
+Environment="EMCNET_DIR=/etc/emcnet"
+# Command to execute when the service is started
+ExecStart=/bin/sh -c '/home/jmfife/projects/rpi-ina226/ina226_monitor --sph=360 | emcnet_data_publisher ina226 --id=0001'
+# Disable the buffering of STDOUT and STDERR
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target
+
