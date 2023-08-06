@@ -1,0 +1,14 @@
+pupil_labs/dynamic_content_on_rim/__init__.py,sha256=mD-H0pXSwUs1Oc91F7KvyrL88U5PXcFYo9gi-kdmlS8,480
+pupil_labs/dynamic_content_on_rim/dynamic_rim.py,sha256=Bjj2fDIqkTb0JX0AZ7jLbA-vSSjiLXr2PaNdqt-T6uQ,27532
+pupil_labs/dynamic_content_on_rim/recording/recording.py,sha256=iHcH3am5f2mPdGFnR_lrr8W-fn0Uif-E6qpjQuWK5qQ,3699
+pupil_labs/dynamic_content_on_rim/uitools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pupil_labs/dynamic_content_on_rim/uitools/get_corners.py,sha256=QKfUVd3E6K-C7Km1JdPTF24tnNZMKC8yvUfkfIPiNTs,3462
+pupil_labs/dynamic_content_on_rim/uitools/ui_tools.py,sha256=tzx-Bts7jv4ThNnHudr4Ha7fud7wFIAyC-ag0tHGIDE,2615
+pupil_labs/dynamic_content_on_rim/video/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pupil_labs/dynamic_content_on_rim/video/read.py,sha256=R2TOHqY7chOUzhAbB8U0PQqVpl6VRK_5qYMoTQkIinI,3485
+pupil_labs_dynamic_rim-1.0.3.dist-info/LICENSE,sha256=wtb5plYhxUZhtyA7N_6MmgEQhejBzgq_pORYgbA4jQA,1050
+pupil_labs_dynamic_rim-1.0.3.dist-info/METADATA,sha256=VV8dQzoBe6dNFAqZMEkCq0OokoPT2G9oxf3pjADHN90,3120
+pupil_labs_dynamic_rim-1.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pupil_labs_dynamic_rim-1.0.3.dist-info/entry_points.txt,sha256=PVtsJDV6OxM9xFksu5wBkNI5s_KRRaiB7NWndd9GOV4,86
+pupil_labs_dynamic_rim-1.0.3.dist-info/top_level.txt,sha256=0sAYqydhZ3GsxyCFKlrGo7LwoXKMZJPsvgI_edVx2a0,11
+pupil_labs_dynamic_rim-1.0.3.dist-info/RECORD,,
