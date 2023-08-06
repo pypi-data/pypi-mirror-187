@@ -1,0 +1,9 @@
+apispec_plugins/__init__.py,sha256=m0o5Dfz9Y5Io2JIyevaWnJAipm2lGTZYTFlAOqfWomM,278
+apispec_plugins/types.py,sha256=iclXbdrcEPjNz0jezjygyYrPCCFcX52lbslcvYw6EMc,415
+apispec_plugins/utils.py,sha256=zfJqK-Jez8cdC_lSQr2ivsS9XgwoCWAe0cBPo47-BLA,3284
+apispec_plugins/webframeworks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apispec_plugins/webframeworks/flask.py,sha256=OtJXEI2dKYPAy2XXQplC0tdcZQW7IZ-_nh0bJE1-AL8,3504
+apispec_plugins-0.2.0.dist-info/LICENSE,sha256=GG-mxB6kCEf3BoYi-MRUFnP1c0RKPhc47elhkO2MCKs,1070
+apispec_plugins-0.2.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+apispec_plugins-0.2.0.dist-info/METADATA,sha256=32atjagpdjzRmxzq8W90o0By7I6-K9uCNIdT-swB-Tw,5734
+apispec_plugins-0.2.0.dist-info/RECORD,,
