@@ -1,0 +1,44 @@
+{
+  "language": "nl",
+  "intents": {
+    "HassClimateSetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "<doe> [de] temperatuur <naar> <temperature> [graden]",
+            "<doe> [de] temperatuur <naar> <temperature> [graden] in <area>",
+            "<doe> <area> temperatuur <naar> <temperature> [graden]",
+            "<doe> <name> [temperatuur] <naar> <temperature> graden",
+            "<doe> <name> temperatuur <naar> <temperature> [graden]",
+            "<doe> de temperatuur van <name> <naar> <temperature> [graden]"
+          ]
+        }
+      ]
+    },
+    "HassClimateGetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "hoe <warm> is het",
+            "Wat is de temperatuur",
+            "hoe <warm> is [het in] <area>",
+            "Wat is de temperatuur in <area>",
+            "Wat is <area> temperatuur",
+            "Hoe <warm> staat <name> [ingesteld]",
+            "Op hoeveel graden staat <name> [ingesteld]"
+          ]
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassClimateSetTemperature": {
+        "default": "Temperatuur ingesteld op {{ slots.temperature }} graden"
+      },
+      "HassClimateGetTemperature": {
+        "default": "{{ state.state }} graden"
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "language": "tr",
+  "intents": {
+    "HassClimateSetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "<temperature> dereceye ayarla",
+            "<area> <temperature> dereceye ayarla",
+            "<temperature> dereceye <area> ayarla"
+          ]
+        }
+      ]
+    },
+    "HassClimateGetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "Sıcaklık kaç derece",
+            "Sıcaklık ne kadar",
+            "<area> kaç derece",
+            "<area> (sıcak | soğuk) (mu | mı)",
+            "<area> sıcaklığı (kaç derece | ne kadar | nedir)",
+            "<area> sıcaklık (ne kadar | kaç derece)"
+          ]
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassClimateSetTemperature": {
+        "default": "Temperature set to {{ slots.temperature }} degrees"
+      },
+      "HassClimateGetTemperature": {
+        "default": "{{ state.state }} derece"
+      }
+    }
+  }
+}

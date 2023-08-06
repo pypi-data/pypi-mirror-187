@@ -1,0 +1,296 @@
+{
+  "language": "nl",
+  "intents": {
+    "HassTurnOff": {
+      "data": [
+        {
+          "sentences": [
+            "<doe> [alle] <ventilator> [<naar>] uit in <area>",
+            "<doe> [alle] <ventilator> in <area> [<naar>] uit",
+            "<doe> (alle | in) <area> <ventilator> [<naar>] uit"
+          ],
+          "slots": {
+            "domain": "fan",
+            "name": "all"
+          }
+        },
+        {
+          "sentences": [
+            "<doe> (overal | alle) <ventilator> uit",
+            "<doe> <ventilator> overal uit"
+          ],
+          "slots": {
+            "domain": "fan",
+            "area": "all"
+          }
+        },
+        {
+          "sentences": [
+            "<doe> <name> [<naar>] uit"
+          ]
+        },
+        {
+          "sentences": [
+            "sluit <name>",
+            "[doe | maak] <name> dicht"
+          ],
+          "response": "cover"
+        },
+        {
+          "sentences": [
+            "sluit <name> in <area>",
+            "[doe | maak] <name> in <area> dicht"
+          ],
+          "response": "cover_area"
+        },
+        {
+          "sentences": [
+            "sluit de garage [deur]",
+            "(doe | mag) de garage [deur] dicht"
+          ],
+          "response": "cover",
+          "slots": {
+            "device_class": "garage",
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "sluit [de | het] (gordijn | gordijnen | luxaflex | rolluik | rolluiken | screen |screens) in <area>",
+            "(doe | mogen) [de] (gordijnen | rolluiken | screens) dicht in <area>",
+            "(doe | mogen) [de] (gordijnen | rolluiken | screens) in <area> dicht",
+            "(doe | mag) [de | het] (gordijn | luxaflex | rolluik | screen) dicht in <area>",
+            "(doe | mag) [de | het] (gordijn | luxaflex | rolluik | screen) in <area> dicht"
+          ],
+          "response": "cover_area",
+          "slots": {
+            "device_class": [
+              "blind",
+              "curtain",
+              "shutter"
+            ],
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "<doe> [alle] <lamp> [<naar>] uit in <area>",
+            "<doe> [alle] <lamp> in <area> [<naar>] uit",
+            "<doe> (alle | in) <area> <lamp> [<naar>] uit"
+          ],
+          "slots": {
+            "domain": "light",
+            "name": "all"
+          }
+        },
+        {
+          "sentences": [
+            "<doe> (overal | alle) <lamp> uit",
+            "<doe> <lamp> overal uit"
+          ],
+          "slots": {
+            "domain": "light",
+            "area": "all"
+          }
+        }
+      ]
+    },
+    "HassTurnOn": {
+      "data": [
+        {
+          "sentences": [
+            "<doe> [alle] <lamp> [<naar>] aan in <area>",
+            "Schakel [alle] <lamp> [<naar>] in in <area>",
+            "<doe> [alle] <lamp> [in] <area> [<naar>] aan",
+            "Schakel [alle] <lamp> [in] <area> in",
+            "<doe> (alle | in) <area> <lamp> aan",
+            "Schakel (alle | in) <area> <lamp> in"
+          ],
+          "slots": {
+            "domain": "light",
+            "name": "all"
+          }
+        },
+        {
+          "sentences": [
+            "<doe> [alle] <ventilator> [<naar>] aan in <area>",
+            "Schakel [alle] <ventilator> [<naar>] in in <area>",
+            "<doe> [alle] <ventilator> [in] <area> [<naar>] aan",
+            "Schakel [alle] <ventilator> [in] <area> [<naar>] in",
+            "<doe> (alle | in) <area> <ventilator> [<naar>] aan",
+            "Schakel (alle | in) <area> <ventilator> [<naar>] in"
+          ],
+          "slots": {
+            "domain": "fan",
+            "name": "all"
+          }
+        },
+        {
+          "sentences": [
+            "<doe> <name> [<naar>] aan"
+          ]
+        },
+        {
+          "sentences": [
+            "open <name>",
+            "[doe | maak] <name> open"
+          ],
+          "response": "cover"
+        },
+        {
+          "sentences": [
+            "open <name> in <area>",
+            "[doe | maak] <name> in <area> open"
+          ],
+          "response": "cover_area"
+        },
+        {
+          "sentences": [
+            "open [de] garage [deur]",
+            "(mag | doe) [de] garage [deur] open"
+          ],
+          "response": "cover",
+          "slots": {
+            "device_class": "garage",
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "open [de | het] (gordijn | gordijnen | luxaflex | rolluik | rolluiken | screen | screens) in <area>",
+            "(doe | mogen) [de] (gordijnen | rolluiken | screens) open in <area>",
+            "(doe | mogen) [de] (gordijnen | rolluiken | screens) in <area> open",
+            "(doe | mag) [de | het] (gordijn | luxaflex | rolluik | screen) open in <area>",
+            "(doe | mag) [de | het] (gordijn | luxaflex | rolluik | screen) in <area> open"
+          ],
+          "response": "cover_area",
+          "slots": {
+            "device_class": [
+              "blind",
+              "curtain",
+              "shutter"
+            ],
+            "domain": "cover"
+          }
+        }
+      ]
+    }
+  },
+  "responses": {
+    "errors": {
+      "no_intent": "Sorry, ik snap het niet",
+      "no_area": "Kan geen {{ area }} vinden",
+      "no_domain": "{{ area }} heeft geen {{ domain }}",
+      "no_device_class": "{{ area }} heeft geen {{ device_class }}",
+      "no_entity": "Kan {{ entity }} niet vinden",
+      "handle_error": "Er is iets misgegaan"
+    },
+    "intents": {
+      "HassTurnOff": {
+        "default": "{{ slots.name }} uitgezet",
+        "lights_area": "De lampen in {{ slots.area }} zijn uitgezet",
+        "fans_area": "De ventilatoren in {{ slots.area }} zijn uitgezet",
+        "cover": "{{ slots.name }} gesloten",
+        "cover_area": "{{ slots.area }} gesloten"
+      },
+      "HassTurnOn": {
+        "default": "{{ slots.name }} aangezet",
+        "lights_area": "De lampen in {{ slots.area }} zijn aangezet",
+        "fans_area": "De ventilatoren in {{ slots.area }} zijn aangezet",
+        "cover": "{{ slots.name }} geopend",
+        "cover_area": "{{ slots.area }} geopend"
+      }
+    }
+  },
+  "lists": {
+    "brightness": {
+      "range": {
+        "type": "percentage",
+        "from": 0,
+        "to": 100
+      }
+    },
+    "color": {
+      "values": [
+        {
+          "in": "wit",
+          "out": "white"
+        },
+        {
+          "in": "zwart",
+          "out": "black"
+        },
+        {
+          "in": "rood",
+          "out": "red"
+        },
+        {
+          "in": "oranje",
+          "out": "orange"
+        },
+        {
+          "in": "geel",
+          "out": "yellow"
+        },
+        {
+          "in": "groen",
+          "out": "green"
+        },
+        {
+          "in": "blauw",
+          "out": "blue"
+        },
+        {
+          "in": "paars",
+          "out": "purple"
+        },
+        {
+          "in": "bruin",
+          "out": "brown"
+        },
+        {
+          "in": "roze",
+          "out": "pink"
+        }
+      ]
+    },
+    "temperature": {
+      "range": {
+        "type": "temperature",
+        "from": 0,
+        "to": 100
+      }
+    },
+    "temperature_unit": {
+      "values": [
+        "celsius",
+        {
+          "in": "c",
+          "out": "celsius"
+        },
+        "fahrenheit",
+        {
+          "in": "f",
+          "out": "fahrenheit"
+        }
+      ]
+    }
+  },
+  "expansion_rules": {
+    "lamp": "[de | het] (lamp  | lampen | licht | lichten | verlichting)",
+    "ventilator": "[de] (ventilator | ventilators | ventilatoren)",
+    "name": "[de | het] {name}",
+    "area": "[de | het] {area}",
+    "doe": "(zet | mag | mogen | doe | verander | maak | schakel)",
+    "naar": "(naar | op)",
+    "helderheid": "(helderheid | felheid | intensiteit)",
+    "brightness": "{brightness} [procent]",
+    "temperature": "{temperature} [graden] [{temperature_unit}]",
+    "warm": "(warm | heet | koud | koel)"
+  },
+  "skip_words": [
+    "alstublieft",
+    "alsjeblieft",
+    "aub"
+  ]
+}

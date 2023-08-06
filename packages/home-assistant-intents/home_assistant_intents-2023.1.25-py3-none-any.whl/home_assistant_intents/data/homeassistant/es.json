@@ -1,0 +1,271 @@
+{
+  "language": "es",
+  "intents": {
+    "HassTurnOff": {
+      "data": [
+        {
+          "sentences": [
+            "<apaga> [todos] [los] ventiladores <area>"
+          ],
+          "slots": {
+            "domain": "fan",
+            "name": "all"
+          }
+        },
+        {
+          "sentences": [
+            "<apaga> <name>",
+            "<apaga> <name> <area>"
+          ]
+        },
+        {
+          "sentences": [
+            "<cierra> <name> [<area>]"
+          ],
+          "response": "cover_area"
+        },
+        {
+          "sentences": [
+            "<cierra> <puerta> [(del|de|de la)] (garaje|cochera)"
+          ],
+          "response": "cover",
+          "slots": {
+            "device_class": "garage",
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "<cierra> <puerta> [<area>]"
+          ],
+          "response": "cover_area",
+          "slots": {
+            "device_class": "gate",
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "<cierra> [ la | las ] (cortinas|persianas) [<area>]"
+          ],
+          "response": "cover_area",
+          "slots": {
+            "device_class": [
+              "blind",
+              "curtain",
+              "shutter"
+            ],
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "<apaga> [(la|las)] (luz | luces) <area>",
+            "<apaga> todas las luces <area>"
+          ],
+          "slots": {
+            "domain": "light",
+            "name": "all"
+          }
+        }
+      ]
+    },
+    "HassTurnOn": {
+      "data": [
+        {
+          "sentences": [
+            "<enciende> ([la] luz | [las] luces) <area>",
+            "<enciende> todas las luces <area>"
+          ],
+          "slots": {
+            "domain": "light"
+          }
+        },
+        {
+          "sentences": [
+            "<enciende> [todos] [los] ventiladores <area>"
+          ],
+          "slots": {
+            "domain": "fan",
+            "name": "all"
+          }
+        },
+        {
+          "sentences": [
+            "<enciende> <name>",
+            "<enciende> <name> <area>"
+          ]
+        },
+        {
+          "sentences": [
+            "<abre> <name>"
+          ],
+          "response": "cover"
+        },
+        {
+          "sentences": [
+            "<abre> <name> <area>"
+          ],
+          "response": "cover_area"
+        },
+        {
+          "sentences": [
+            "<abre> <puerta> [(del|de|de la)] (garaje|cochera)"
+          ],
+          "response": "cover",
+          "slots": {
+            "device_class": "garage",
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "<abre> <puerta> [<area>]"
+          ],
+          "response": "cover_area",
+          "slots": {
+            "device_class": "gate",
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "<abre> [la | las] (cortinas | persianas) <area>"
+          ],
+          "response": "cover_area",
+          "slots": {
+            "device_class": [
+              "blind",
+              "curtain",
+              "shutter"
+            ],
+            "domain": "cover"
+          }
+        }
+      ]
+    }
+  },
+  "responses": {
+    "errors": {
+      "no_intent": "Lo siento, no he entendido",
+      "no_area": "No existe ningún área llamada {{ area }}",
+      "no_domain": "No hay ningún elemento de tipo {{ domain }} en el área {{ area }}",
+      "no_device_class": "No hay ningún elemento de clase {{ device_class }} en el área {{ area }}",
+      "no_entity": "No existe ningún dispositivo o entidad llamado {{ entity }}",
+      "handle_error": "Se ha producido un error inesperado al procesar la instrucción"
+    },
+    "intents": {
+      "HassTurnOff": {
+        "default": "Apagado de {{ slots.name }} realizado",
+        "lights_area": "Luces en {{ slots.area }} apagadas",
+        "fans_area": "Ventiladores en {{ slots.area }} apagados",
+        "cover": "Cierre de {{ slots.name }} completado",
+        "cover_area": "Cierre en {{ slots.area }} completado"
+      },
+      "HassTurnOn": {
+        "default": "Conexión de {{ slots.name }} completada",
+        "lights_area": "Luces en {{ slots.area }} encendidas",
+        "fans_area": "Ventiladores en {{ slots.area }} encendidos",
+        "cover": "Apertura de {{ slots.name }} completada",
+        "cover_area": "Apertura en {{ slots.area }} completada"
+      }
+    }
+  },
+  "lists": {
+    "color": {
+      "values": [
+        {
+          "in": "blanco",
+          "out": "white"
+        },
+        {
+          "in": "negro",
+          "out": "black"
+        },
+        {
+          "in": "rojo",
+          "out": "red"
+        },
+        {
+          "in": "naranja",
+          "out": "orange"
+        },
+        {
+          "in": "amarillo",
+          "out": "yellow"
+        },
+        {
+          "in": "verde",
+          "out": "green"
+        },
+        {
+          "in": "azul",
+          "out": "blue"
+        },
+        {
+          "in": "(lila|morado|púrpura)",
+          "out": "purple"
+        },
+        {
+          "in": "marrón",
+          "out": "brown"
+        }
+      ]
+    },
+    "brightness": {
+      "range": {
+        "type": "percentage",
+        "from": 0,
+        "to": 100
+      }
+    },
+    "temperature": {
+      "range": {
+        "type": "temperature",
+        "from": 0,
+        "to": 100
+      }
+    },
+    "temperature_unit": {
+      "values": [
+        "celsius",
+        {
+          "in": "c",
+          "out": "celsius"
+        },
+        {
+          "in": "centígrados",
+          "out": "celsius"
+        },
+        "fahrenheit",
+        {
+          "in": "f",
+          "out": "fahrenheit"
+        }
+      ]
+    }
+  },
+  "expansion_rules": {
+    "abre": "( abre | abrir | sube | subir )",
+    "apaga": "( apaga | apagar | desconecta | desconectar | desactiva | desactivar )",
+    "area": "[en | en el | en la | la | de la | del | de | el] {area}",
+    "brightness": "{brightness} [porciento]",
+    "cierra": "( cierra | cerrar | baja | bajar )",
+    "enciende": "(enciende | encender | conecta | conectar | activa | activar | prende | prender )",
+    "establece": "(pon | poner | establece | establecer | ajusta | ajustar | configura | configurar )",
+    "establece_sube_baja": "(pon | poner | establece | establecer | ajusta | ajustar | configura | configurar | sube | subir | baja | bajar )",
+    "name": "[el | la] {name}",
+    "puerta": "[el | la] (puerta | portón | cancela | verja | reja | compuerta)",
+    "temp": "[el|la] (temperatura|calor|grados)",
+    "temperature": "{temperature} [grados] [{temperature_unit}]"
+  },
+  "skip_words": [
+    "por favor",
+    "porfa",
+    "gracias",
+    "podrías",
+    "puedes",
+    "te importaría",
+    "te importa"
+  ]
+}

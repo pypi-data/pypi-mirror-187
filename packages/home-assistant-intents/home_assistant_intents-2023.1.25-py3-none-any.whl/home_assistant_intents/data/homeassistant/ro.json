@@ -1,0 +1,331 @@
+{
+  "language": "ro",
+  "intents": {
+    "HassTurnOff": {
+      "data": [
+        {
+          "sentences": [
+            "<opreste> [toate] <ventilatorul> [<din>] <area>",
+            "<opreste> [<din>] <area> [toate] <ventilatorul>"
+          ],
+          "slots": {
+            "domain": "fan"
+          },
+          "response": "fans_area"
+        },
+        {
+          "sentences": [
+            "<opreste> <name>"
+          ],
+          "excludes_context": {
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "<inchide> <name>",
+            "<inchide> <name> [<din>] <area>"
+          ],
+          "requires_context": {
+            "domain": "cover"
+          },
+          "slots": {
+            "domain": "cover"
+          },
+          "response": "cover"
+        },
+        {
+          "sentences": [
+            "<inchide> [toate] <usa> [<din>] <area>"
+          ],
+          "slots": {
+            "device_class": "door",
+            "domain": "cover"
+          },
+          "response": "doors_area"
+        },
+        {
+          "sentences": [
+            "<inchide> [toate] <fereastra> [<din>] <area>"
+          ],
+          "slots": {
+            "device_class": "window",
+            "domain": "cover"
+          },
+          "response": "windows_area"
+        },
+        {
+          "sentences": [
+            "<inchide> [toate] <jaluzelele> [<din>] <area>"
+          ],
+          "slots": {
+            "device_class": [
+              "blind",
+              "curtain",
+              "shutter",
+              "shade"
+            ],
+            "domain": "cover"
+          },
+          "response": "covers_area"
+        },
+        {
+          "sentences": [
+            "<inchide> [toate] <poarta> [<din>] <area>"
+          ],
+          "slots": {
+            "device_class": "gate",
+            "domain": "cover"
+          },
+          "response": "gates_area"
+        },
+        {
+          "sentences": [
+            "<opreste> [toate] <lumina> [<din>] <area>",
+            "<opreste> [<din>] <area> [toate] <lumina>"
+          ],
+          "slots": {
+            "domain": "light"
+          },
+          "response": "lights_area"
+        }
+      ]
+    },
+    "HassTurnOn": {
+      "data": [
+        {
+          "sentences": [
+            "<porneste> [toate] <lumina> [<din>] <area>",
+            "<porneste> [<din>] <area> [toate] <lumina>"
+          ],
+          "slots": {
+            "domain": "light"
+          },
+          "response": "lights_area"
+        },
+        {
+          "sentences": [
+            "<porneste> [toate] <ventilatorul> [<din>] <area>",
+            "<porneste> [<din>] <area> [toate] <ventilatorul>"
+          ],
+          "slots": {
+            "domain": "fan"
+          },
+          "response": "fans_area"
+        },
+        {
+          "sentences": [
+            "<porneste> <name>"
+          ],
+          "excludes_context": {
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "<deschide> <name>",
+            "<deschide> <name> [<din>] <area>"
+          ],
+          "requires_context": {
+            "domain": "cover"
+          },
+          "slots": {
+            "domain": "cover"
+          },
+          "response": "cover"
+        },
+        {
+          "sentences": [
+            "<deschide> [toate] <usa> [<din>] <area>"
+          ],
+          "slots": {
+            "device_class": "door",
+            "domain": "cover"
+          },
+          "response": "doors_area"
+        },
+        {
+          "sentences": [
+            "<deschide> [toate] <fereastra> [<din>] <area>"
+          ],
+          "slots": {
+            "device_class": "window",
+            "domain": "cover"
+          },
+          "response": "windows_area"
+        },
+        {
+          "sentences": [
+            "<deschide> [toate] <jaluzelele> [<din>] <area>"
+          ],
+          "slots": {
+            "device_class": [
+              "blind",
+              "curtain",
+              "shutter",
+              "shade"
+            ],
+            "domain": "cover"
+          },
+          "response": "covers_area"
+        },
+        {
+          "sentences": [
+            "<deschide> [toate] <poarta> [<din>] <area>"
+          ],
+          "slots": {
+            "device_class": "gate",
+            "domain": "cover"
+          },
+          "response": "gates_area"
+        }
+      ]
+    }
+  },
+  "responses": {
+    "errors": {
+      "no_intent": "Îmi pare rău, nu am înțeles cererea. Poți, te rog, să repeți?",
+      "no_area": "Îmi pare rău, nu este nici o zonă numită {{ area }}",
+      "no_domain": "Îmi pare rău, în {{ area }} nu este {{ domain }}",
+      "no_device_class": "Îmi pare rău, zona {{ area }} nu conține {{ device_class }}",
+      "no_entity": "Îmi pare rău, nu am găsit niciun dispozitiv sau entitate cu numele {{ entity }}",
+      "handle_error": "Îmi pare rău, a intervenit o eroare în timpul procesării cererii"
+    },
+    "intents": {
+      "HassTurnOff": {
+        "default": "Am oprit {{ slots.name }}",
+        "lights_area": "Am oprit luminile din {{ slots.area }}",
+        "fans_area": "Am oprit ventilatoarele din {{ slots.area }}",
+        "cover": "Am închis {{ slots.name }}",
+        "covers_area": "Am acoperit în {{ slots.area }}",
+        "doors_area": "Am închis ușile de la {{ slots.area }}",
+        "windows_area": "Am închis ferestrele de la {{ slots.area }}",
+        "gates_area": "Am închis porțile de la {{ slots.area }}"
+      },
+      "HassTurnOn": {
+        "default": "Am pornit {{ slots.name }}",
+        "lights_area": "Am pornit luminile din {{ slots.area }}",
+        "fans_area": "Am pornit ventilatoarele din {{ slots.area }}",
+        "cover": "Am deschis {{ slots.name }}",
+        "covers_area": "Am deschis în {{ slots.area }}",
+        "doors_area": "Am deschis ușile de la {{ slots.area }}",
+        "windows_area": "Am deschis ferestrele de la {{ slots.area }}",
+        "gates_area": "Am deschis porțile de la {{ slots.area }}"
+      }
+    }
+  },
+  "lists": {
+    "color": {
+      "values": [
+        {
+          "in": "alb",
+          "out": "white"
+        },
+        {
+          "in": "negru",
+          "out": "black"
+        },
+        {
+          "in": "(roșu | rosu)",
+          "out": "red"
+        },
+        {
+          "in": "(portocaliu | oranj)",
+          "out": "orange"
+        },
+        {
+          "in": "galben",
+          "out": "yellow"
+        },
+        {
+          "in": "verde",
+          "out": "green"
+        },
+        {
+          "in": "(albastru | bleu)",
+          "out": "blue"
+        },
+        {
+          "in": "(lila | violet | purpuriu | mov)",
+          "out": "purple"
+        },
+        {
+          "in": "maro",
+          "out": "brown"
+        }
+      ]
+    },
+    "brightness": {
+      "range": {
+        "type": "percentage",
+        "from": 0,
+        "to": 100
+      }
+    },
+    "brightness_min_max": {
+      "values": [
+        {
+          "in": "<maximum>",
+          "out": 100
+        },
+        {
+          "in": "<minimum>",
+          "out": 1
+        }
+      ]
+    },
+    "temperature": {
+      "range": {
+        "type": "temperature",
+        "from": -100,
+        "to": 100
+      }
+    },
+    "temperature_unit": {
+      "values": [
+        "celsius",
+        {
+          "in": "c",
+          "out": "celsius"
+        },
+        "fahrenheit",
+        {
+          "in": "f",
+          "out": "fahrenheit"
+        }
+      ]
+    }
+  },
+  "expansion_rules": {
+    "area": "[(zon(ă|a) | regiune[a])] {area}",
+    "brightness": "{brightness} [(la sut(ă|a) | % | [de] procente)]",
+    "temperature": "{temperature} [[de] grad[e]] [{temperature_unit}]",
+    "name": "({name}[(ul|a)])",
+    "maximum": "(maxim[(a|um)] [posibil[a]])",
+    "minimum": "(minim[(a|um)] [posibil[a]])",
+    "este": "(e | este)",
+    "cat": "((c((â|a|î|i)t[e]))",
+    "in": "((î|i)n)",
+    "din": "(din | (î|i)n | pentru | [de] la | [de] pe | de )",
+    "porneste": "(start | porne(ș|s)te | deschide | aprinde | activeaz(ă|a))",
+    "opreste": "(stop | opre(ș|s)te | (î|i)nchide | stinge | dezactiveaz(ă|a))",
+    "seteaza": "(seteaz(ă|a) | pune | adjusteaz(ă|a) | schimb(ă|a) | modific(ă|a))",
+    "lumina": "(luminile | lumina | becul | becurile)",
+    "luminozitatea": "(luminozitate[a])",
+    "culoarea": "(culoare[a])",
+    "temperatura": "(temperatur(ă|a))",
+    "deschide": "(deschide | ridic(ă|a))",
+    "inchide": "((î|i)nchide | coboar(ă|a))",
+    "fereastra": "(fereastra | ferestrele | geamul | geamurile)",
+    "usa": "(u(ș|s)a | u(ș|s)ile)",
+    "jaluzelele": "(jaluzeaua | jaluzelele | draperia | draperiile | perdeaua | perdelele)",
+    "poarta": "(poarta | gardul)",
+    "ventilatorul": "(ventilatorul | ventilatoarele | aerisirea | aerisirile)"
+  },
+  "skip_words": [
+    "mulțumesc",
+    "multumesc",
+    "te rog",
+    "mer[c|s]i"
+  ]
+}

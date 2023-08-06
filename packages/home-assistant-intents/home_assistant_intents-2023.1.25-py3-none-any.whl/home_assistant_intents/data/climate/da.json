@@ -1,0 +1,39 @@
+{
+  "language": "da",
+  "intents": {
+    "HassClimateSetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "(sæt | ændr | juster) temperatur[en] til <temperatur>",
+            "(sæt | ændr | juster) temperatur[en] <i_på> <område> til <temperatur>",
+            "(sæt | ændr | juster) <område>[s] temperatur til <temperatur>"
+          ]
+        }
+      ]
+    },
+    "HassClimateGetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "hvad er temperatur[en] [<i_på> <område>]",
+            "hvor <koldt_varmt> er <område>",
+            "hvor <koldt_varmt> er (der | det) [<i_på> <område>]",
+            "er (der | det) <koldt_varmt> [<i_på> <område>]",
+            "hvad er <område>[s] temperatur"
+          ]
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassClimateSetTemperature": {
+        "default": "Temperatur sat til {{ slots.temperature }} grader"
+      },
+      "HassClimateGetTemperature": {
+        "default": "{{ state.state }} grader"
+      }
+    }
+  }
+}
