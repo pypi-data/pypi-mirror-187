@@ -1,0 +1,11 @@
+numpy
+zarr
+fsspec
+tqdm
+dask
+paramiko
+scp
+requests
+deprecation
+numcodecs
+GitPython

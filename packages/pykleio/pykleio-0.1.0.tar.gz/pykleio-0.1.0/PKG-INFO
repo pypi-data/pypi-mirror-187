@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: pykleio
+Version: 0.1.0
+Summary: Versioned Storage Python SDK - enable version management for nd data
+Home-page: https://github.com/JaneliaSciComp/KLEIO-Python-SDK
+Author: Marwan Zouinkhi
+Author-email: zouinkhi.marwan@gmail.com
+Project-URL: Bug Tracker, https://github.com/JaneliaSciComp/KLEIO-Python-SDK/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+### Versioned Storage Python SDK 
+| [JAVA SDK IS HERE](https://github.com/JaneliaSciComp/VersionedN5)
+
+
+----
+#### Proposed solution:
+To enable block-based data versioning for nd data, a mix is created of:
+- Version block index using [Zarr](https://zarr.readthedocs.io/en/stable/) + [Git](https://git-scm.com/)
+- A key value store: using [N5](https://github.com/saalfeldlab/n5) for now
+
+
+### Features:
+- Multiple branches
+- Multiple collaborators
+- Can jump anytime to any historical point
+- Data is not replicated and no extra reading writing cost
+
+
+Every change is a now commit:
+
+![solution](img/architecture.jpeg "Proposed solution")
+
+![Commits](img/commits.png)
+
+
+
