@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: Leetease
+Version: 0.2.0
+Summary: This makes LeetCode Interview programs easy
+Author: SaatwikCodz
+
+This Python Package Helps Python Programmers Crack LeetCode programs with comparatively less lines of code
