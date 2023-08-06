@@ -1,0 +1,7 @@
+setup.py
+CV/__init__.py
+scikit_geo.egg-info/PKG-INFO
+scikit_geo.egg-info/SOURCES.txt
+scikit_geo.egg-info/dependency_links.txt
+scikit_geo.egg-info/requires.txt
+scikit_geo.egg-info/top_level.txt
