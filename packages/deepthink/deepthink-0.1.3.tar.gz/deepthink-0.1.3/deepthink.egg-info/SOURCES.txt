@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+deepthink/__init__.py
+deepthink/activations.py
+deepthink/history.py
+deepthink/layers.py
+deepthink/loss.py
+deepthink/metrics.py
+deepthink/model.py
+deepthink/optimizers.py
+deepthink/utils.py
+deepthink.egg-info/PKG-INFO
+deepthink.egg-info/SOURCES.txt
+deepthink.egg-info/dependency_links.txt
+deepthink.egg-info/requires.txt
+deepthink.egg-info/top_level.txt
