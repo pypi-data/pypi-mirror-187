@@ -1,0 +1,14 @@
+mydatapreprocessing==2.0.10
+mylogging==3.0.12
+mypythontools==0.0.78
+numpy
+pandas
+eel
+scipy
+statsmodels
+sklearn
+tabulate
+matplotlib
+seaborn
+IPython
+typing_extensions
