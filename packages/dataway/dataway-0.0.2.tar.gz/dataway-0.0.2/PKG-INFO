@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: dataway
+Version: 0.0.2
+Summary: Biblioteca para de apoio para realização de webscraping em tabelas
+Author: Anselmo Oliveira
+Author-email: anselmo.oliveira@dataway.info
+License: MIT License
+Keywords: analytics dataway atlas
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Biblioteca para de apoio para realizaÃ§Ã£o de webscraping em tabelas
