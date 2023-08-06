@@ -1,0 +1,11 @@
+{
+    "menu_name": "{{name}}",
+    "menu_items": [
+        {
+            "name": "{{name}}",
+            "system": "cmd.exe",
+            "scriptarguments": ["/c start /min cmd.exe /c \"${PREFIX}/Scripts/activate.bat && my_notebook\""],
+            "icon": "${MENU_DIR}/widgetron_icon.ico"
+        }
+    ]
+}
