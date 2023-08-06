@@ -1,0 +1,8 @@
+textual_bee/__init__.py,sha256=kGPdg8OgbLa8jfwBuZUgxC4Ab43iaLo3hIoraeU4MjU,20155
+textual_bee/app.css,sha256=IK07apczna39ncbQApPgnOuWJd404jRgOxVa7n9uPTs,3295
+textual_bee/word_list.json,sha256=4Z_k8yYFYo5GjwNd5XokAkuy3PcBxdNzTyQSiIKr_n4,885033
+textual_bee/words_utils.py,sha256=J_DvjqkC-5vvrdlzD5gi-nM-2IVaLLp-028WtL7e-_I,3777
+textual_bee-1.0.0.dist-info/entry_points.txt,sha256=DNZsc-eVlT9GhfZUc9_oH4dblHMRUNp4BObYnZNzAnU,51
+textual_bee-1.0.0.dist-info/METADATA,sha256=jHuTMlIi2MG-KHdnVNI9M3Ct3ej0n2fojOrMs4AW7KU,1529
+textual_bee-1.0.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+textual_bee-1.0.0.dist-info/RECORD,,
