@@ -1,0 +1,9 @@
+tabulize/__init__.py,sha256=dcPNjYZD3uzVxk_BleM7wJUT4gRIlaJjZWbPDaFAotk,61
+tabulize/records.py,sha256=HH1LxlLmjh-nvn7-WTylf1lu_oat14ptHFo_FDgJ6E0,5617
+tabulize/sqltable.py,sha256=uodk2o7fm7qP62D6PAWltmUyS7w-IfA57QUkmYteE3I,4949
+tabulize/to_sql.py,sha256=pfNlhs9Oer1PHWcarymKQs35HEquHcQmqa44pEPXgyI,987
+tabulize-0.1.1.dist-info/LICENSE,sha256=oFq9FEIyAGvzUW2asR4JnQiFiH0X7cNCLO4N_bhiZUk,1068
+tabulize-0.1.1.dist-info/METADATA,sha256=LhSEsVE6AYD6YLly8paPSgta2KfQyYzXnRJBHCMX6BQ,1012
+tabulize-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tabulize-0.1.1.dist-info/top_level.txt,sha256=hH0nLEFPnGTRpZsJr_xagrnoDk9axAjFnbLzydjU0AE,9
+tabulize-0.1.1.dist-info/RECORD,,
