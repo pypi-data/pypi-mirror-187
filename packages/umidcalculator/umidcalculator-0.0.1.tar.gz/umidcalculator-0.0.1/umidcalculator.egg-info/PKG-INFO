@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: umidcalculator
+Version: 0.0.1
+Summary: Basic calculator
+Home-page: 
+Author: Umidyor
+Author-email: actualnew001@gmail.com
+License: MIT
+Keywords: calculator
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+Bu juda oddiy calculator kutubxona
+
+from umidcalculator.calculator import add_numb,sub_numb,mult_numb,div_numb
+print(add_numb(10,10))
+
+
+Change Log
+==========
+
+0.0.1 (23/01/2023)
+-------------------
+- Second Release
