@@ -1,0 +1,13 @@
+kenzy_image/VERSION,sha256=HUY_4TUbpjsqBz2Y9juRlgnHwOgnGKAQ7iGXf4mQ9tg,5
+kenzy_image/__init__.py,sha256=x57ibUJnPnzEIHfWivwdRUbrI1iNj-etaYJd5Il1LoI,593
+kenzy_image/__main__.py,sha256=fnk5gqqKV5Df_i8zTSV9PWV69vqTpa2cISoBKbF-Mnw,7113
+kenzy_image/core.py,sha256=yQWXFyVRqRWRZES7UXzkT1UhfdTjOgQyLg4yYxKp1I0,14461
+kenzy_image/resources/frozen_inference_graph.pb,sha256=PJXnIO7Ru68mQEirj75nZeWzpk-v5kAgzVPs0UzPLFg,13448454
+kenzy_image/resources/labels.txt,sha256=gj3Tk45wdohOwIer6PCqvn4TYdAcW02Pa2KBq_bzlcE,792
+kenzy_image/resources/ssd_mobilenet_v3_large_coco_2020_01_14.pbtxt,sha256=Z1eHQI9_tyI-4g6viTk9biLYwtBatZqv7c6Vs8fkoh0,190575
+kenzy_image-0.0.4.dist-info/LICENSE,sha256=1K0bi4smK2VXxIj03rhYaszQl20VD-vE2fThU8C8xk0,1064
+kenzy_image-0.0.4.dist-info/METADATA,sha256=wR1ME5gK4Xz9O6L3rL6ViftlTFeKMQp5EFomgcQd9Y4,1635
+kenzy_image-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+kenzy_image-0.0.4.dist-info/top_level.txt,sha256=Bjwycw2idaRx0_2_LZAjt-e_GDrpRd3OEe7rxiFkqRc,12
+kenzy_image-0.0.4.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+kenzy_image-0.0.4.dist-info/RECORD,,
