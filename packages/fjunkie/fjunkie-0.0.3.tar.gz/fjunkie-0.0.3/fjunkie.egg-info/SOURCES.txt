@@ -1,0 +1,12 @@
+setup.py
+fjunkie/CssFile.py
+fjunkie/File.py
+fjunkie/HtmlFile.py
+fjunkie/PyFile.py
+fjunkie/Reader.py
+fjunkie/Writer.py
+fjunkie/__init__.py
+fjunkie.egg-info/PKG-INFO
+fjunkie.egg-info/SOURCES.txt
+fjunkie.egg-info/dependency_links.txt
+fjunkie.egg-info/top_level.txt
