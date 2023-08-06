@@ -1,0 +1,11 @@
+shinytext/__init__.py,sha256=FGkS0d44GcElu7Du2pigZS3zP_Po-6IGXJ-GdMgrYyg,127
+shinytext/cleandata.py,sha256=GjkXF8rYdsQknlmEmIOYSK9TJu3WJ02PXeL2IhjgQv0,696
+shinytext/cleantext.py,sha256=c-Z6LnrzFFfoNxOEiMMnAi6AnBFsWK44qnBLaMr9wq4,6936
+shinytext/utils/chats.py,sha256=1H2oJThxDCp0fsGXi9k_19c4wfCQ-HMbBh-dMQDED3w,1423
+shinytext/utils/emoticons.py,sha256=z30tJo_gtoV0rh0LbRpGTwVR7AgaMqb0ipwoCAUd0IM,308776
+shinytext/utils/spacy_loader.py,sha256=E-psWlTvpgwKVRsdas655VUgCM6kiQK_atTtC6S_A5c,748
+shinytext-0.0.3.dist-info/LICENSE,sha256=T3bzBtPq9SvmlAwg7OZTaLXGV8ID77ZS5HOzW8U9bVs,1064
+shinytext-0.0.3.dist-info/METADATA,sha256=y3GL5P0euSapvsGmPXYZtJ2yD9kpD8hhpKtksFUEhGI,3335
+shinytext-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+shinytext-0.0.3.dist-info/top_level.txt,sha256=6xvmJjcle9ml-UGBbgS4AvANvwrsqBNIh_ZWZvyR_ic,10
+shinytext-0.0.3.dist-info/RECORD,,
