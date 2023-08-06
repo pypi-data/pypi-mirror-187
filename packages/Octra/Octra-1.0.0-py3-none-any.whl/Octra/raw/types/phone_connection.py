@@ -1,0 +1,94 @@
+# t.me/TheVenomXD  Octra - Telegram MTProto API Client Library for Python
+# t.me/TheVenomXD  Copyright (C) 2017-present Akash <https://github.com/DesiNobita>
+# t.me/TheVenomXD
+# t.me/TheVenomXD  This file is part of Octra.
+# t.me/TheVenomXD
+# t.me/TheVenomXD  Octra is free software: you can redistribute it and/or modify
+# t.me/TheVenomXD  it under the terms of the GNU Lesser General Public License as published
+# t.me/TheVenomXD  by the Free Software Foundation, either version 3 of the License, or
+# t.me/TheVenomXD  (at your option) any later version.
+# t.me/TheVenomXD
+# t.me/TheVenomXD  Octra is distributed in the hope that it will be useful,
+# t.me/TheVenomXD  but WITHOUT ANY WARRANTY; without even the implied warranty of
+# t.me/TheVenomXD  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# t.me/TheVenomXD  GNU Lesser General Public License for more details.
+# t.me/TheVenomXD
+# t.me/TheVenomXD  You should have received a copy of the GNU Lesser General Public License
+# t.me/TheVenomXD  along with Octra.  If not, see <http://www.gnu.org/licenses/>.
+
+from io import BytesIO
+
+from Octra.raw.core.primitives import Int, Long, Int128, Int256, Bool, Bytes, String, Double, Vector
+from Octra.raw.core import TLObject
+from Octra import raw
+from typing import List, Optional, Any
+
+# t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD
+# t.me/TheVenomXD               !!! WARNING !!!               # t.me/TheVenomXD
+# t.me/TheVenomXD          This is a generated file!          # t.me/TheVenomXD
+# t.me/TheVenomXD All changes made in this file will be lost! # t.me/TheVenomXD
+# t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD # t.me/TheVenomXD
+
+
+class PhoneConnection(TLObject):  # t.me/TheVenomXD type: ignore
+    """Telegram API type.
+
+    Constructor of :obj:`~Octra.raw.base.PhoneConnection`.
+
+    Details:
+        - Layer: ``151``
+        - ID: ``9CC123C7``
+
+    Parameters:
+        flags (:obj:`# t.me/TheVenomXD tcp <Octra.raw.base.# t.me/TheVenomXD tcp>`):
+            N/A
+
+        id (:obj:`long ip <Octra.raw.base.long ip>`):
+            N/A
+
+        ipv6 (:obj:`string port <Octra.raw.base.string port>`):
+            N/A
+
+        peer_tag (:obj:`bytes  <Octra.raw.base.bytes >`):
+            N/A
+
+    """
+
+    __slots__: List[str] = ["flags", "id", "ipv6", "peer_tag"]
+
+    ID = 0x9cc123c7
+    QUALNAME = "types.PhoneConnection"
+
+    def __init__(self, *, flags: "raw.base.# t.me/TheVenomXD tcp", id: "raw.base.long ip", ipv6: "raw.base.string port", peer_tag: "raw.base.bytes ") -> None:
+        self.flags = flags  # t.me/TheVenomXD # t.me/TheVenomXD tcp
+        self.id = id  # t.me/TheVenomXD long ip
+        self.ipv6 = ipv6  # t.me/TheVenomXD string port
+        self.peer_tag = peer_tag  # t.me/TheVenomXD bytes 
+
+    @staticmethod
+    def read(b: BytesIO, *args: Any) -> "PhoneConnection":
+        
+        flags = TLObject.read(b)
+        
+        id = TLObject.read(b)
+        
+        ipv6 = TLObject.read(b)
+        
+        peer_tag = TLObject.read(b)
+        
+        return PhoneConnection(flags=flags, id=id, ipv6=ipv6, peer_tag=peer_tag)
+
+    def write(self, *args) -> bytes:
+        b = BytesIO()
+        b.write(Int(self.ID, False))
+
+        
+        b.write(self.flags.write())
+        
+        b.write(self.id.write())
+        
+        b.write(self.ipv6.write())
+        
+        b.write(self.peer_tag.write())
+        
+        return b.getvalue()
