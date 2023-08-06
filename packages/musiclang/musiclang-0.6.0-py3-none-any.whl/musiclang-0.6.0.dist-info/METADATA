@@ -1,0 +1,115 @@
+Metadata-Version: 2.1
+Name: musiclang
+Version: 0.6.0
+Summary: A python package for music notation and generation
+Home-page: UNKNOWN
+Author: Florian GARDIN
+Author-email: fgardin.pro@gmail.com
+License: UNKNOWN
+Project-URL: Documentation, https://musiclang.readthedocs.io/en/latest/
+Project-URL: Source, https://github.com/MusicLang/musiclang/
+Project-URL: Tracker, https://github.com/MusicLang/musiclang/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Cython (==0.29.32)
+Requires-Dist: grpcio (==1.50.0)
+Requires-Dist: h5py (==3.7.0)
+Requires-Dist: idna (==3.3)
+Requires-Dist: lxml (==4.9.1)
+Requires-Dist: miditok (==1.3.1)
+Requires-Dist: miditoolkit (==0.1.16)
+Requires-Dist: mido (==1.2.10)
+Requires-Dist: mlflow (==2.0.1)
+Requires-Dist: music21 (==8.1.0)
+Requires-Dist: networkx (==2.8.7)
+Requires-Dist: numpy (==1.23.4)
+Requires-Dist: pandas (==1.5.1)
+Requires-Dist: partitura (==1.1.1)
+Requires-Dist: pytest (==7.2.0)
+Requires-Dist: scikit-learn (==1.1.3)
+Requires-Dist: scipy (==1.9.3)
+Requires-Dist: tensorflow (==2.11.0)
+Requires-Dist: tensorflow-estimator (==2.11.0)
+Requires-Dist: tensorflow-io-gcs-filesystem (==0.28.0)
+Requires-Dist: toml (==0.10.2)
+Requires-Dist: tomli (==2.0.1)
+Requires-Dist: tornado (==6.2)
+Requires-Dist: tqdm (==4.64.1)
+Requires-Dist: traitlets (==5.5.0)
+Requires-Dist: typing-extensions (==4.4.0)
+Requires-Dist: urllib3 (==1.26.13)
+Requires-Dist: wcwidth (==0.2.5)
+Requires-Dist: webcolors (==1.12)
+Requires-Dist: webencodings (==0.6.0)
+Requires-Dist: websocket-client (==1.4.2)
+Requires-Dist: Werkzeug (==2.2.2)
+Requires-Dist: widgetsnbextension (==4.0.3)
+Requires-Dist: wrapt (==1.14.1)
+Requires-Dist: xmlschema (==2.1.1)
+Requires-Dist: zipp (==3.11.0)
+Requires-Dist: torch (==1.13.0)
+Requires-Dist: torchdata (==0.6.0)
+Requires-Dist: torchtext (==0.14.0)
+
+Musiclang
+=========
+
+![MusicLang logo](https://github.com/MusicLang/musiclang/blob/main/documentation/images/MusicLang.png?raw=true "MusicLang")
+
+
+[![Documentation Status](https://readthedocs.org/projects/musiclang/badge/?version=latest)](https://musiclang.readthedocs.io/en/latest/?badge=latest)
+
+The Python framework to write, analyze, transform and predict music.
+
+
+What is MusicLang ?
+--------------------
+
+MusicLang which simply stands for "music language" is a Python framework
+that allows composers to write symbolic music in a condensed and high level manner.
+The way one write music with this tool should be close to how one create music
+in practice. This framework is not only another notation software but also
+an assistant that is able to automate some tasks that would normally be tedious for a composer.
+It is naturally good at analyzing and manipulating existing
+pieces of music in musicxml or midi format.
+
+[Read our documentation](https://musiclang.readthedocs.io/en/latest).
+
+
+How to install
+-------------
+
+MusicLang is available on Pypi :
+
+```
+pip install musiclang
+```
+
+Or use this repo for the latest version :
+
+```
+pip install git+https://github.com/MusicLang/musiclang
+```
+
+
+Example
+-------
+
+Here is a simple example to write a C-major chord in musiclang and save it to midi :
+
+```python
+from musiclang.library import *
+
+# Write A C major chord
+score = (I % I.M)(piano__0=s0, piano__1=s2, piano__3=s4)
+
+# Store it to midi
+score.to_midi('c_major.mid')
+```
+
+
+
