@@ -1,0 +1,25 @@
+image: jdrouet/docker-with-buildx:stable
+
+variables:
+  DOCKER_HOST: tcp://docker:2375/
+  DOCKER_DRIVER: overlay2
+
+services:
+  - docker:dind
+
+build:
+  script:
+    - docker build --file ci/build.dockerfile .
+
+integration:
+  script:
+    - docker build --file ci/e2e.dockerfile .
+
+pages:
+  before_script:
+    - docker buildx create --use
+  script:
+    - docker buildx build --file ci/docs.dockerfile --output type=local,dest=public .
+  artifacts:
+    paths:
+      - public
