@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+request_cli/__init__.py
+request_cli/_base_httpclient.py
+request_cli/_httpclient.py
+request_cli/_httpclient_utils.py
+request_cli.egg-info/PKG-INFO
+request_cli.egg-info/SOURCES.txt
+request_cli.egg-info/dependency_links.txt
+request_cli.egg-info/requires.txt
+request_cli.egg-info/top_level.txt
