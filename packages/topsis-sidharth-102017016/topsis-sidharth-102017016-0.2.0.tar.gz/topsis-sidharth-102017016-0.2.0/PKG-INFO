@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: topsis-sidharth-102017016
+Version: 0.2.0
+Summary: It finds topsis for the given data in csv file
+Home-page: https://github.com/sidB67/topsis-sidharth-102017016.git
+Author: Sidharth Bahl
+Author-email: bahlsidharth@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Topsis-Sidharth-102017016
+### It calculates topsis for a given data in csv file.
+
+### Installation
+## pip install topsis-sidharth-102017016
+
+## How to use
+### Sample command : topsis input.csv "1,1,1,1,1" "+,-,+,-,+" output.csv
+
+
+## License
+### © 2023 Sidharth Bahl
+
+### This repository is licensed under the MIT license. See LICENSE for details.
+
