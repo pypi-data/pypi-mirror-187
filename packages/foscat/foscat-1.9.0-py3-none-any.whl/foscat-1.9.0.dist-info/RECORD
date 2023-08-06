@@ -1,0 +1,10 @@
+foscat/FoCUS.py,sha256=nGJlulIqOIRo6DD7K43hGdwNls2ZisoV9-WWKPcTZiQ,25425
+foscat/Synthesis.py,sha256=gVtcQWx_0kwzepBTop1iEhkPxjT1vSYbY3-sKnSZqEU,3779
+foscat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+foscat/build_demo.py,sha256=Zw3rFUFvS-qjlUWaSQjcP2v7q8FE6TKAFNSAK6jq3E8,53863
+foscat/scat.py,sha256=GhDxLSq1R7ZvIzRESAULC0OnRZ2FQJ8kAggG7xl8iAg,10362
+foscat/scat_cov.py,sha256=SznNlicF0eH9hSJccu7bP9hrHujZF2qWRnoMXzBP9ns,29611
+foscat-1.9.0.dist-info/METADATA,sha256=n2hxH8rd0s8Ylwv1t5XvDOUBTFORfa4kB_stTTz2mUg,1115
+foscat-1.9.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+foscat-1.9.0.dist-info/top_level.txt,sha256=AGySXBBAlJgb8Tj8af6m_F-aiNg2zNTcybCUPVOKjAg,7
+foscat-1.9.0.dist-info/RECORD,,
