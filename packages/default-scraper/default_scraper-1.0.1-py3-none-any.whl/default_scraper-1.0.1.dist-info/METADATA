@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: default-scraper
+Version: 1.0.1
+Summary: Web Scraper
+Home-page: https://github.com/bigpicture-kr/default-scraper
+Author: Seongbum Seo
+Author-email: sbumseo@bigpicture.team
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: async-generator (==1.10)
+Requires-Dist: attrs (==22.1.0)
+Requires-Dist: certifi (==2022.6.15)
+Requires-Dist: cffi (==1.15.1)
+Requires-Dist: charset-normalizer (==2.1.0)
+Requires-Dist: cryptography (==37.0.4)
+Requires-Dist: h11 (==0.13.0)
+Requires-Dist: idna (==3.3)
+Requires-Dist: numpy (==1.23.1)
+Requires-Dist: outcome (==1.2.0)
+Requires-Dist: pandas (==1.4.3)
+Requires-Dist: pycparser (==2.21)
+Requires-Dist: pyOpenSSL (==22.0.0)
+Requires-Dist: PySocks (==1.7.1)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: pytz (==2022.1)
+Requires-Dist: requests (==2.28.1)
+Requires-Dist: selenium (==4.3.0)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: sniffio (==1.2.0)
+Requires-Dist: sortedcontainers (==2.4.0)
+Requires-Dist: trio (==0.21.0)
+Requires-Dist: trio-websocket (==0.9.2)
+Requires-Dist: urllib3 (==1.26.11)
+Requires-Dist: wsproto (==1.1.0)
+
+# default-scraper
+
+Python Web Scraper
+
+## Features
+
+- Scrap all search results for a keyword entered as an argument.
+- Can be saved as `.csv` and `.json`.
+- Also collect user data who uploaded contents included in search results.
+
+## Usage
+
+### Install
+
+```bash
+pip install git+https://github.com/Seongbuming/crawler.git
+```
+
+### Scrap Instagram contents in python script
+
+```python
+from default_scraper.instagram.parser import InstagramParser
+USERNAME = ""
+PASSWORD = ""
+KEYWORD = ""
+parser = InstagramParser(USERNAME, PASSWORD, KEYWORD, False)
+parser.run()
+```
+
+### Scrap Instagram contents using bash command
+
+Run following command to scrap contents from Instagram:
+
+```bash
+python main.py --platform instagram --keyword {KEYWORD} [--output_file OUTPUT_FILE] [--all]
+```
+
+Use `--all` or `-a` option to also scrap unstructured fields.
+
+## Data description
+
+### Instagram
+
+- Structured fields
+  - `pk`
+  - `id`
+  - `taken_at`
+  - `media_type`
+  - `code`
+  - `comment_count`
+  - `user`
+  - `like_count`
+  - `caption`
+  - `accessibility_caption`
+  - `original_width`
+  - `original_height`
+  - `images`
+- Some fields may be missing depending on Instagram's response data.
+
+## Future works
+
+- Will support scraping from more platform services.
+
+
