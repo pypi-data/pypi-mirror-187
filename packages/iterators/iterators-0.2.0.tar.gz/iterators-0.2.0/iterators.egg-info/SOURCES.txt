@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+iterators/__init__.py
+iterators/iterator_pipe.py
+iterators/timeout_iterator.py
+iterators.egg-info/PKG-INFO
+iterators.egg-info/SOURCES.txt
+iterators.egg-info/dependency_links.txt
+iterators.egg-info/top_level.txt
