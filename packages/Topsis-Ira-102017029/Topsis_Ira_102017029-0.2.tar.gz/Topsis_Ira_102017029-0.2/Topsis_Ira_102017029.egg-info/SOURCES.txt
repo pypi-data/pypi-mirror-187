@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+Topsis_Ira_102017029/topsis.py
+Topsis_Ira_102017029.egg-info/PKG-INFO
+Topsis_Ira_102017029.egg-info/SOURCES.txt
+Topsis_Ira_102017029.egg-info/dependency_links.txt
+Topsis_Ira_102017029.egg-info/requires.txt
+Topsis_Ira_102017029.egg-info/top_level.txt
