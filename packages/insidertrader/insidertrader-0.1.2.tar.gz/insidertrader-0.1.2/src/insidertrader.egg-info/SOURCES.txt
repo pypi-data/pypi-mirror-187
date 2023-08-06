@@ -1,0 +1,13 @@
+LICENSE.md
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/insider_eda/__init__.py
+src/insider_eda/eda_base.py
+src/insidertrader.egg-info/PKG-INFO
+src/insidertrader.egg-info/SOURCES.txt
+src/insidertrader.egg-info/dependency_links.txt
+src/insidertrader.egg-info/not-zip-safe
+src/insidertrader.egg-info/requires.txt
+src/insidertrader.egg-info/top_level.txt
