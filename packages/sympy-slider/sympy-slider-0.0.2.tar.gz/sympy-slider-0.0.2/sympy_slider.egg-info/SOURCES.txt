@@ -1,0 +1,10 @@
+LICENSE.TXT
+README.md
+setup.py
+sympy_slider/__init__.py
+sympy_slider/slider.py
+sympy_slider.egg-info/PKG-INFO
+sympy_slider.egg-info/SOURCES.txt
+sympy_slider.egg-info/dependency_links.txt
+sympy_slider.egg-info/requires.txt
+sympy_slider.egg-info/top_level.txt
