@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: corpus-x
+Version: 0.0.2
+Summary: Add codification and statute tables to pre-existing corpus-base database.
+Home-page: https://lawsql.com
+Author: Marcelino G. Veloso III
+Author-email: mars@veloso.one
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Pydantic
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Legal Industry
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Requires-Dist: corpus-base (>=0.1.10,<0.2.0)
+Requires-Dist: statute-trees (>=0.1.0,<0.2.0)
+Project-URL: Documentation, https://justmars.github.io/corpus-x
+Project-URL: Repository, https://github.com/justmars/corpus-x
+Description-Content-Type: text/markdown
+
+# corpus-x
+
+![Github CI](https://github.com/justmars/corpus-x/actions/workflows/main.yml/badge.svg)
+
+Create the `x.db` sqlite database for lawdata; utilized in the [LawSQL dataset](https://lawsql.com).
+
+## Documentation
+
+See [documentation](https://justmars.github.io/corpus-x), building on top of [corpus-base](https://justmars.github.io/corpus-base)
+
+## Development
+
+Checkout code, create a new virtual environment:
+
+```sh
+poetry add corpus-x # python -m pip install corpus-x
+poetry update # install dependencies
+poetry shell
+```
+
+Run tests:
+
+```sh
+pytest
+```
+
