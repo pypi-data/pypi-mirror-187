@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: batspy
+Version: 0.1
+Summary: A simple library that prints "Hello, world!"
+Home-page: https://github.com/tomshabtay/batspy
+Author: Tom Shabtay
+Author-email: tomshabtay@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
