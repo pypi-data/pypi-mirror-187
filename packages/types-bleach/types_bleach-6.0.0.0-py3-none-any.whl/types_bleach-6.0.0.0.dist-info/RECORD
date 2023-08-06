@@ -1,0 +1,11 @@
+bleach-stubs/METADATA.toml,sha256=5f7DQX0zWDJJE00-pQLcXWUH_JVTmed6cAXodBIGCxQ,18
+bleach-stubs/__init__.pyi,sha256=mFXPtUmG_qCqAenkTNQSthaUdQaDdr_3fVX7ld6fhU8,957
+bleach-stubs/callbacks.pyi,sha256=uabi8NmzSsfZ5YrJXVBDoZfYORnYslt55H7EiK6Yd7U,464
+bleach-stubs/css_sanitizer.pyi,sha256=MHkQS3ACg4Yk6yf4jGaaaGRip-eRkhnE8cwqimo_-c0,404
+bleach-stubs/html5lib_shim.pyi,sha256=s3GuCCTca-CqXrJ56Q3n3ij4zPPBCanaYah3mQ1VhME,1073
+bleach-stubs/linkifier.pyi,sha256=Qh9RAz_0eF9PcEIQKcW-4AyhEy-5mge0W_MUbD-DMxE,1673
+bleach-stubs/sanitizer.pyi,sha256=7G6EaDMfeFHGNdkjWLc9Ps1aYZpeDH8kwHFTt6_e3Yo,3035
+types_bleach-6.0.0.0.dist-info/METADATA,sha256=jxAySu5gkS8UozgKwRJBoq5a3tm0FHmkT-Rlg7qkY-I,1287
+types_bleach-6.0.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+types_bleach-6.0.0.0.dist-info/top_level.txt,sha256=i35XvpbZOd5KVUXCnlNU8Sf-xYUgSbl9ODccsTQOvjk,13
+types_bleach-6.0.0.0.dist-info/RECORD,,
