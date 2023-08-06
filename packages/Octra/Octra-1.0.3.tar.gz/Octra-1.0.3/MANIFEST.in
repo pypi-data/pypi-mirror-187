@@ -1,0 +1,11 @@
+# t.me/TheVenomXD# t.me/TheVenomXD Include
+include README.md COPYING COPYING.lesser NOTICE requirements.txt
+recursive-include compiler *.py *.tl *.tsv *.txt
+recursive-include example *.py
+
+# t.me/TheVenomXD# t.me/TheVenomXD Exclude
+prune Octra/errors/exceptions
+prune Octra/raw/functions
+prune Octra/raw/types
+prune Octra/raw/base
+exclude Octra/raw/all.py
