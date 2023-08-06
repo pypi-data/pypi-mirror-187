@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "dvml"
+version = "0.1.0"
+description = ""
+authors = ["Daniel Viegas <viegasdll@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.24.1"
+
+
+[tool.poetry.group.dev.dependencies]
+scriv = {extras = ["toml"], version = "^1.2.0"}
+
+[tool.scriv]
+format = "md"
+version = "literal: extendedjson/__init__.py: __version__"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
