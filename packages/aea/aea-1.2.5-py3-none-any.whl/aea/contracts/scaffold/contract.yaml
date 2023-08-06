@@ -1,0 +1,14 @@
+name: scaffold
+author: fetchai
+version: 0.1.0
+type: contract
+description: The scaffold contract scaffolds a contract to be implemented by the developer.
+license: Apache-2.0
+aea_version: '>=1.0.0, <2.0.0'
+fingerprint:
+  __init__.py: QmbqCg6ZKdTA5kLdmaMKpLtuTDhkwNZTSfyH9c8AUA2GCy
+  contract.py: QmUvREspzKHP81G3u5xgu98dz4a1J8vGYL4xjrf2kv9nGB
+fingerprint_ignore_patterns: []
+class_name: MyScaffoldContract
+contract_interface_paths: {}
+dependencies: {}
