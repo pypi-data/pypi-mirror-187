@@ -1,0 +1,11 @@
+homepage2vec/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+homepage2vec/data_collection.py,sha256=2eabW7Ob-wID53M6IHiHGnlzStNU8GaI5bKVysRkLDw,3935
+homepage2vec/model.py,sha256=ZpkmvcLJ-MYzk3vM28gEdAUO9avwR4d9pNXpknPUaJk,5981
+homepage2vec/model_loader.py,sha256=u77PdvEEMVM2G9LXxidvWzn18r1GcCAdQC9JNuBATnI,1101
+homepage2vec/textual_extractor.py,sha256=ysjy-BtOIe-G-QBFOK-UhqX7PUMeaqpBVesoL17Uqog,7647
+homepage2vec/visual_extractor.py,sha256=AM-ETMaDszq0IV4UJRHmTZt9NNQnOz2bhlIVVHbr4zk,2426
+homepage2vec-0.0.3rc1.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+homepage2vec-0.0.3rc1.dist-info/METADATA,sha256=UzPi1O0lHK-h1qMmuTvw3nEAvsoGTHwnDEERC7i1AHk,7166
+homepage2vec-0.0.3rc1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+homepage2vec-0.0.3rc1.dist-info/top_level.txt,sha256=kP0ZIpf6tn_dCLns-pKmt2BvQ7-bhJZn-DwCeS7gdh4,13
+homepage2vec-0.0.3rc1.dist-info/RECORD,,
