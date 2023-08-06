@@ -1,0 +1,6 @@
+sortedcontainers
+scipy
+
+[dev]
+pytest
+loguru
