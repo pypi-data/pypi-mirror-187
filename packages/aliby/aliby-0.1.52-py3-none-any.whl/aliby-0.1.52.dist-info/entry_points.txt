@@ -1,0 +1,3 @@
+[console_scripts]
+aliby-run=aliby.bin.run:run
+
