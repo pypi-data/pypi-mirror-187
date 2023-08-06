@@ -1,0 +1,10 @@
+aws_prototyping_sdk/nx_monorepo/__init__.py,sha256=YRAb-x6MrxwjQUJI6CLuMauyO5ukyThas3pEdWA5-Rg,224212
+aws_prototyping_sdk/nx_monorepo/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_prototyping_sdk/nx_monorepo/_jsii/__init__.py,sha256=op4-tKuh_mQg0giTDgdrKK6f8zrWNV2DIRI4-pA5sPU,400
+aws_prototyping_sdk/nx_monorepo/_jsii/nx-monorepo@0.13.1.jsii.tgz,sha256=ewzqfVjWmsQsIJBIR5ibItRInccz4vKTHS-9E6btkZE,190322
+aws_prototyping_sdk/nx_monorepo/nx/__init__.py,sha256=92CngDzRxT93JAAkZjJOEauHe7FueWhcR3P_5VXVY7s,22235
+aws_prototyping_sdk.nx_monorepo-0.13.1.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+aws_prototyping_sdk.nx_monorepo-0.13.1.dist-info/METADATA,sha256=Ccvc_DTBhvNHp6mwxe5f5SG5sqZREnHtko7vF9oE4OA,8266
+aws_prototyping_sdk.nx_monorepo-0.13.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aws_prototyping_sdk.nx_monorepo-0.13.1.dist-info/top_level.txt,sha256=GI4X33MSLMhT7o3n6FDj9jqf2xWUdJ3qEo1cWYKXylw,20
+aws_prototyping_sdk.nx_monorepo-0.13.1.dist-info/RECORD,,
