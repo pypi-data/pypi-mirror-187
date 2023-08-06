@@ -1,0 +1,4 @@
+jwt
+requests
+flask-executor
+flask

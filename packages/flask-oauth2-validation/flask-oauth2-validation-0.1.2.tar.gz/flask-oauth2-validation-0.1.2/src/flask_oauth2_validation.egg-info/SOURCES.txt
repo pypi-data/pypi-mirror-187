@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/flask_oauth2_validation/__init__.py
+src/flask_oauth2_validation/decorator.py
+src/flask_oauth2_validation/exceptions.py
+src/flask_oauth2_validation.egg-info/PKG-INFO
+src/flask_oauth2_validation.egg-info/SOURCES.txt
+src/flask_oauth2_validation.egg-info/dependency_links.txt
+src/flask_oauth2_validation.egg-info/requires.txt
+src/flask_oauth2_validation.egg-info/top_level.txt
