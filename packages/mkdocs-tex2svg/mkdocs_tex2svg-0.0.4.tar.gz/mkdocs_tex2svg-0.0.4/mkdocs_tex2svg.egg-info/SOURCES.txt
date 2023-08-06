@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+mkdocs-tex2svg/__init__.py
+mkdocs-tex2svg/htmlColors.py
+mkdocs-tex2svg/mkdocs_tex2svg.py
+mkdocs_tex2svg.egg-info/PKG-INFO
+mkdocs_tex2svg.egg-info/SOURCES.txt
+mkdocs_tex2svg.egg-info/dependency_links.txt
+mkdocs_tex2svg.egg-info/requires.txt
+mkdocs_tex2svg.egg-info/top_level.txt
