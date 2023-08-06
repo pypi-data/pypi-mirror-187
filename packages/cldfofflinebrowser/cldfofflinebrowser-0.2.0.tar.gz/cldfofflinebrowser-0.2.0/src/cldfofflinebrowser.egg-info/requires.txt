@@ -1,0 +1,17 @@
+rfc3986
+cldfbench
+tqdm
+jinja2
+
+[dev]
+tox
+flake8
+wheel>=0.36
+build
+twine
+
+[test]
+pytest>=5
+pytest-mock
+pytest-cov
+coverage>=4.2

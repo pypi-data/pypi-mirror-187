@@ -1,0 +1,36 @@
+.navbar-brand{
+  width: 75%;
+}
+
+.leaflet-tooltip {
+  padding: 1px 3px 1px 3px;
+}
+
+.popup-audio {
+  width: 140px;
+  height: 24px;
+  margin-top: 10px;
+}
+
+.table-audio {
+  height: 24px;
+  min-width: 140px;
+  max-width: 260px;
+  width: 100%;
+}
+
+.table td, .table th {
+  vertical-align: middle;
+  padding: .35rem;
+}
+
+.btn-ctrl-img {
+  margin-bottom: 2px;
+}
+
+.truncate {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
