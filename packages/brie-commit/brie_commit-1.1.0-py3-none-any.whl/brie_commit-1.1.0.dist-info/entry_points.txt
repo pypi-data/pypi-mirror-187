@@ -1,0 +1,3 @@
+[console_scripts]
+good2gouda=brie_commit.gouda:main
+
