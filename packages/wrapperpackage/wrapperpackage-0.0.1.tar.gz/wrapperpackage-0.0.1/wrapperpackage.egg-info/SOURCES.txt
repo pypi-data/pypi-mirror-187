@@ -1,0 +1,8 @@
+Licence.txt
+setup.py
+wrapperpackage/__init__.py
+wrapperpackage/wrapperfunctest.py
+wrapperpackage.egg-info/PKG-INFO
+wrapperpackage.egg-info/SOURCES.txt
+wrapperpackage.egg-info/dependency_links.txt
+wrapperpackage.egg-info/top_level.txt
