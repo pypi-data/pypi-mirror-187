@@ -1,0 +1,15 @@
+spicypy/__init__.py,sha256=IMgUBzSBBHLSAiI_ASSBnGShKnFn2PNoblqDo6vneZ0,479
+spicypy/control/__init__.py,sha256=AHjA6zSn9MbWjE75UWk7Hn9eAV0Rt7NGkSgsMdTR5KY,177
+spicypy/control/system.py,sha256=TqB0Vtw1FRbwDZLjtt1wpTdLjXihxSyRGmCGK0IMt_4,2355
+spicypy/signal/__init__.py,sha256=t49HK2ullJdArz0SrbFB4x9jQJBl1lBgBSm-DXqcjOk,279
+spicypy/signal/coherent_subtraction.py,sha256=uf9aCli9b0Kp2t42H62VR06R0izRTP5rWqsh2KMWUpg,12276
+spicypy/signal/frequency_series.py,sha256=0hODuWRseIsxhtXOPiTLhMiIHizykjQyTN2BguU-iJ8,389
+spicypy/signal/spectral/__init__.py,sha256=3p8C68iCh_IJXnJwDgqGoOBUi_SxKr2Jx1uohi13dPM,290
+spicypy/signal/spectral/_csd_daniell.py,sha256=Pln6bVCUAQTN40jESLfG4_5s-kyun2yg0k-oZ5Qb4o4,18823
+spicypy/signal/spectral/_lpsd.py,sha256=GF3GYzedjbJOQIQ0aYrwgbFrcpV0iRQGHOBtq5cCZ4M,4246
+spicypy/signal/time_series.py,sha256=0-bMHpQ312qf7i3dkR07_pd3pvsPIC7bkMm3ezCh_io,19823
+spicypy/signal/transfer_function.py,sha256=tbKOkO8uuHxrg6pg69wgt0EaTb3--fhtLWarDQnUX_Q,6695
+spicypy-0.5.dist-info/METADATA,sha256=wvlVMDWpsaa8To2EHDYxthj_3GQj108sV3VtjCqB93g,3042
+spicypy-0.5.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+spicypy-0.5.dist-info/LICENSE.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+spicypy-0.5.dist-info/RECORD,,
