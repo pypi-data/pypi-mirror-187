@@ -1,0 +1,9 @@
+fastcore
+tqdm
+torch
+torchvision
+diffusers
+transformers
+accelerate
+
+[dev]
