@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: play_num_pkg
+Version: 0.0.1
+Summary: Suming numbers and Probabilities
+Author-email: Spandan Dutta <spandan2003dutta@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# play_num_pkg
+### Sum of numbers and probabilities
+```
+import play_num_pkg.play_num_pkg as pnp
+
+pnp.roll_dice()
+```
