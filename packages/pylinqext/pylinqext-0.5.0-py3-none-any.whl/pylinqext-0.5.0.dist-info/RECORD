@@ -1,0 +1,9 @@
+pylinqext/__init__.py,sha256=tL2vFRVvnEfOKPOzhFORhjuXAObmYhcAqSuBVD6Dkw0,47
+pylinqext/__main__.py,sha256=VrQqCiKDR08DApzYDbZSeHAJz9vlj91HBhhiYqyD77k,92
+pylinqext/cli.py,sha256=lBrgEk9XZ-JJbRDNbAMNf-d0tTZ1tUaa930b2Iel79o,29
+pylinqext/pylinqext.py,sha256=iXzq6X8mChn_zBShlIc2ay_XQUMcasY6dimXajQinh0,11449
+pylinqext-0.5.0.dist-info/LICENSE,sha256=QYNIDtMvLjMxChorAWbSOtURvkBk5EPdTTV6Nj-gAzA,1090
+pylinqext-0.5.0.dist-info/METADATA,sha256=VawbeyzmM78qqv2bc0x1tSvv7TPvg-_zZ3fNRb7y3Eg,2620
+pylinqext-0.5.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pylinqext-0.5.0.dist-info/top_level.txt,sha256=Btlx8wkieP-k_NaGppufH7_UHQ5g1NeCJ0o076W68Vs,10
+pylinqext-0.5.0.dist-info/RECORD,,
