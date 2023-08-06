@@ -1,0 +1,3 @@
+[pytest11]
+k4sima=pytest_kasima
+
