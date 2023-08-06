@@ -1,0 +1,11 @@
+README.md
+setup.py
+CommentGPT/__init__.py
+CommentGPT/chatgpt_interface_wrapper.py
+CommentGPT/commenter.py
+CommentGPT/main.py
+CommentGPT.egg-info/PKG-INFO
+CommentGPT.egg-info/SOURCES.txt
+CommentGPT.egg-info/dependency_links.txt
+CommentGPT.egg-info/not-zip-safe
+CommentGPT.egg-info/top_level.txt
