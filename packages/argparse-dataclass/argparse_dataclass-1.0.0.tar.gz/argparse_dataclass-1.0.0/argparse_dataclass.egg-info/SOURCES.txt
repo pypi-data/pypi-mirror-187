@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.rst
+argparse_dataclass.py
+setup.py
+argparse_dataclass.egg-info/PKG-INFO
+argparse_dataclass.egg-info/SOURCES.txt
+argparse_dataclass.egg-info/dependency_links.txt
+argparse_dataclass.egg-info/requires.txt
+argparse_dataclass.egg-info/top_level.txt
