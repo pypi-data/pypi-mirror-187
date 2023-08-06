@@ -1,0 +1,10 @@
+fso_metadata/__init__.py,sha256=b03M2Stn8RLV-Q0oWVTxSFvc6sdWC44Jc1-6m5Q09X8,150
+fso_metadata/api_call.py,sha256=jJDkWhFFa_YUhfRVg6s12rNQadSNj-by5BDW3y0M4IA,5539
+fso_metadata/api_class.py,sha256=qmUpauLiCrwp-X277bmAtEwRxEXUoiQfifl_2sagSpA,2771
+fso_metadata/constants.py,sha256=wsiQ59-U3Rz_6ecyWyGOn6Z8Bh2Eqbfo4R6n2HjFcjk,307
+fso_metadata/format_request.py,sha256=EvQGdqwDEr743-bKlpDC4buzBQIe0ZbMSNvcXkmfE_w,1899
+fso_metadata-0.8.3.dist-info/LICENSE.txt,sha256=S1pJL407BwTTXzZK0BQPNM7ZZs57uj1pTSfVZ8Whx30,1061
+fso_metadata-0.8.3.dist-info/METADATA,sha256=0dhhdGGe5p0O6witn0F9LpkJpxHyJf2ArpsCpX_Kvsg,5393
+fso_metadata-0.8.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fso_metadata-0.8.3.dist-info/top_level.txt,sha256=tzerP1TyPTIqdpWTaobgV9RcWWLvkCKA8UsaygxOekE,13
+fso_metadata-0.8.3.dist-info/RECORD,,
