@@ -1,0 +1,13 @@
+feed_manager/__init__.py,sha256=kVe-lphnlfXUA6lrQ9UV1DP3KOYAhcgUJ5DuOSofAn4,777
+feed_manager/consumer.py,sha256=zjwxXoe5ypLrBoF7bCodD_qvEHyepJChb5S03jlB42I,11596
+feed_manager/generator.py,sha256=VjY25N13SRHMD_IVW6b-wx7JB_qIrzGOc_2cfSFscw8,13602
+feed_manager/storage.py,sha256=pg73CeprA4emecJASfccWAWmrUN2rp1gLTwPvabLXUc,8600
+feed_manager/translator.py,sha256=ERzBzHBiGJbd3L6OcchjbqSZm5MrVfZEWS0i2VlLytY,13155
+misp_feed_manager-0.2.0.data/scripts/consume_feed.py,sha256=R4_31tsBUyRCUDKa2Sxb814FEFcGBqyKy8pkWsSjALE,4057
+misp_feed_manager-0.2.0.data/scripts/generate_feed.py,sha256=SVQc1dBRBcdzWCwctmqcytVD73rXqComnvqoim0uTdc,4918
+misp_feed_manager-0.2.0.dist-info/LICENSE,sha256=cUtDxxOLcNCIbx6mpHTxUYh2_ir6GID88kvctyUFFBU,1471
+misp_feed_manager-0.2.0.dist-info/METADATA,sha256=KVCdvAkMrFqhZZc4glE12ULBcoNyNLRLCrPw5gnujUs,6450
+misp_feed_manager-0.2.0.dist-info/NOTICE,sha256=e1NyOUaVJrs1leIuRpkc1lSM1nxfQExd2_Zrg9A-kJk,403
+misp_feed_manager-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+misp_feed_manager-0.2.0.dist-info/top_level.txt,sha256=20GWYxNkPnXF2BCQF49QfrWHHARDT93YNd1c9-ljxmI,13
+misp_feed_manager-0.2.0.dist-info/RECORD,,
