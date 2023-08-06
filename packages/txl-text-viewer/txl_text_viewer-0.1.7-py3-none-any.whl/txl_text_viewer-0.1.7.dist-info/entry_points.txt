@@ -1,0 +1,2 @@
+[txl_component]
+txl_text_viewer = txl_text_viewer.components
