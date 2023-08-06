@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: aoc-cli
+Version: 0.0.3
+Summary: Advent of Code scaffolding CLI
+Author-email: Emil Kloeden <emilkloeden@gmail.com>
+Project-URL: Homepage, https://github.com/emilkloeden/aoc-cli
+Project-URL: Bug Tracker, https://github.com/emilkloeden/aoc-cli/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-dotenv (==0.21.0)
+Requires-Dist: aoc-cli-python (==0.0.1)
+
+# aoc-cli
+
+An opinionated scaffolder for Advent of Code
+
+## Installation
+
+`pip install aoc-cli`
+
+Optionally install language-specific plugins such as `pip install aoc-cli-deno`.
+
+## Usage
+
+Scaffold a project with
+`aoc init --language <python> --year <current year if december, else previous year> --location .`
+
+All other subcommands are directory aware:
+
+\*Note: plugins (specified with the --language flag) may alter the functionality below but in general...
+
+`aoc get` downloads the input for the day
+`aoc run <part>` executes the function specified in <part> (1 or 2) file for the day
+`aoc submit <part>` executes the function specified in <part> (1 or 2) file for the day, then submits the answer to the form
+`aoc open` opens the current day in the browser
