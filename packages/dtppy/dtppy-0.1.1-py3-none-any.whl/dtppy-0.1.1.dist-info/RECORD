@@ -1,0 +1,9 @@
+dtppy/__init__.py,sha256=NYtbCefjcWjrwxMybq1NBZbuGRUZxt4DuzCmBdBwwDw,102
+dtppy/client.py,sha256=omIbZdRY52bgYMBpLfdRwfXaVpQbBipQ1V00WTuCpyw,6755
+dtppy/crypto.py,sha256=brXsNk-CDiyVu2nPcjiGszVFUlAm5eba5alVZubv0u4,1576
+dtppy/server.py,sha256=6ChZvt0dLSYJhVB2evWRCgdFwi2s2YT6RC9cWRtgFfk,10683
+dtppy/util.py,sha256=jM44t7sg9V4NZ-z5xfXp6ejNI5Guti_Ryt8a7oJ3l7E,1378
+dtppy-0.1.1.dist-info/METADATA,sha256=8U0hlvHzcmTxOajc0sI86kTD6mf115pJPX-UlYzuorg,2888
+dtppy-0.1.1.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+dtppy-0.1.1.dist-info/licenses/LICENSE,sha256=mu79VHaw8KbOmbRBBQlukvNjzADbUJrdbnkdJlvsDcg,1067
+dtppy-0.1.1.dist-info/RECORD,,
