@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ishutils
+Version: 0.2.0
+Summary: My Shell Utils
+Home-page: https://liblaf.github.io/ishutils/
+License: MIT
+Author: Qin Li
+Author-email: liblaf@outlook.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: httpie (>=3.2.1,<4.0.0)
+Requires-Dist: questionary (>=1.10.0,<2.0.0)
+Requires-Dist: rich (>=13.2.0,<14.0.0)
+Project-URL: Documentation, https://liblaf.github.io/ishutils/
+Project-URL: Repository, https://github.com/liblaf/ishutils
+Description-Content-Type: text/markdown
+
+# ishutils
+
+My Shell Utils
+

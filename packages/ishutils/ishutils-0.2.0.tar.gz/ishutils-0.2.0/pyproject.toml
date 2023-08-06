@@ -1,0 +1,28 @@
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
+
+[tool.isort]
+profile = "black"
+
+[tool.poetry]
+authors = ["Qin Li <liblaf@outlook.com>"]
+description = "My Shell Utils"
+documentation = "https://liblaf.github.io/ishutils/"
+homepage = "https://liblaf.github.io/ishutils/"
+license = "MIT"
+name = "ishutils"
+readme = "README.md"
+repository = "https://github.com/liblaf/ishutils"
+version = "0.2.0"
+
+[tool.poetry.dependencies]
+httpie = "^3.2.1"
+python = "^3.11"
+questionary = "^1.10.0"
+rich = "^13.2.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+isort = "^5.11.4"
+poetry = "^1.3.2"
