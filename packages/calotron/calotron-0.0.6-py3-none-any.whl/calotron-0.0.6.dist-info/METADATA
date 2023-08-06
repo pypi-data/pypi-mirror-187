@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: calotron
+Version: 0.0.6
+Summary: Transformer-based model to fast-simulate the LHCb ECAL detector
+Author-email: Matteo Barbetti <matteo.barbetti@fi.infn.it>, Lucio Anderlini <lucio.anderlini@fi.infn.it>
+License: MIT License
+Project-URL: repository, https://github.com/mbarbetti/calotron
+Keywords: tensorflow,machine learning,deep learning,transformer,lhcb experiment,lamarr,ultra-fast simulation,calorimeter
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: <=3.10,>=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tensorflow (>=2.11)
+Provides-Extra: advanced
+Requires-Dist: numpy ; extra == 'advanced'
+Requires-Dist: pandas ; extra == 'advanced'
+Requires-Dist: uproot ; extra == 'advanced'
+Requires-Dist: matplotlib ; extra == 'advanced'
+Requires-Dist: scikit-learn ; extra == 'advanced'
+Requires-Dist: html-reports (>=0.2) ; extra == 'advanced'
+Provides-Extra: standard
+Requires-Dist: numpy ; extra == 'standard'
+Requires-Dist: pandas ; extra == 'standard'
+Requires-Dist: uproot ; extra == 'standard'
+Requires-Dist: matplotlib ; extra == 'standard'
+Requires-Dist: scikit-learn ; extra == 'standard'
+Provides-Extra: style
+Requires-Dist: black ; extra == 'style'
+Requires-Dist: flake8 ; extra == 'style'
+Requires-Dist: isort[colors] ; extra == 'style'
+Provides-Extra: tests
+Requires-Dist: pytest (>=6.0) ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+
+# calotron
+
+[![TensorFlow versions](https://img.shields.io/badge/tensorflow-2.11-f57000?style=flat)](https://www.tensorflow.org/versions)
+[![PyPI - Python versions](https://img.shields.io/pypi/pyversions/calotron)](https://pypi.python.org/pypi/calotron)
+[![PyPI - Version](https://img.shields.io/pypi/v/calotron)](https://pypi.python.org/pypi/calotron)
+[![GitHub - Style](https://github.com/mbarbetti/calotron/actions/workflows/style.yml/badge.svg?branch=main)](https://github.com/mbarbetti/calotron/actions/workflows/style.yml)
+[![GitHub - Tests](https://github.com/mbarbetti/calotron/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/mbarbetti/calotron/actions/workflows/tests.yml)
+[![Codecov](https://codecov.io/gh/mbarbetti/calotron/branch/main/graph/badge.svg?token=DRG8BWC9RR)](https://codecov.io/gh/mbarbetti/calotron)
