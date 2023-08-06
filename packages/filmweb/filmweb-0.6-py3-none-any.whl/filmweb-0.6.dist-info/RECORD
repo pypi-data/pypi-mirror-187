@@ -1,0 +1,10 @@
+filmweb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+filmweb/getter.py,sha256=bxqJlrOScPMR_206j6_tj9ASlz5US8uDxc3Oa1brdfM,2842
+filmweb/main.py,sha256=pu1v0zkHPJeY858d5oqSHg7LMse_mLPbkP-V8ZBwVac,2965
+filmweb/parser.py,sha256=F-rPX3TU6_bmSslFiSsZSVhgvayKgT1_xKpROMG9pRI,2696
+filmweb-0.6.dist-info/LICENSE,sha256=o_HuBPF6CoSdbxdC_yuPW2V6_Wz1APgvRp2eKjCwcVw,1070
+filmweb-0.6.dist-info/METADATA,sha256=6L2PbfZbbDNXEBVGOte3s4T8XwOjnIlnRmeaIRsbydE,6582
+filmweb-0.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+filmweb-0.6.dist-info/entry_points.txt,sha256=R-goMO3lEPZP-6IzekJ69UKbqHUuAJHMl8ASE15saZw,46
+filmweb-0.6.dist-info/top_level.txt,sha256=p5Q2kbgoUNOZHVsDxr7ePMy1s98ZJxa1yhk1Zgtmju4,8
+filmweb-0.6.dist-info/RECORD,,
