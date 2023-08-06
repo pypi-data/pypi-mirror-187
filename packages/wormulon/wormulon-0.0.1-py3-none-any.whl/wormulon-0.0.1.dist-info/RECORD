@@ -1,0 +1,8 @@
+wormulon/__init__.py,sha256=80UC9nibD2HnfZqfewLcoMFyW3PguPJXqREtIFSAtZs,128
+wormulon/job.py,sha256=OkCyAn0lPe-r8gb9KK8hopORd8iOQXPHIONoeD5mntI,2086
+wormulon/jobspec.py,sha256=lbQMaKVkpF3MgmmCGVDYN4j7j2X4dz0mnCdLPEa1ESg,1427
+wormulon/session.py,sha256=a-5epqYmKeVM8P2AD3D1zuAwE00qbhAHaWTty6nnNTg,2901
+wormulon/slurm.py,sha256=GqleFnqmc2fGbZgsRHAGdS_N4FZGdaQsJ-bLJiSIS98,2569
+wormulon-0.0.1.dist-info/METADATA,sha256=sGB5yMtYNMGda4qgRV9HRsFbOuRYRqMop28QaSFTq18,283
+wormulon-0.0.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+wormulon-0.0.1.dist-info/RECORD,,
