@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+rapid_email/__init__.py
+rapid_email/config.py
+rapid_email/rapid_email.py
+rapid_email_2.egg-info/PKG-INFO
+rapid_email_2.egg-info/SOURCES.txt
+rapid_email_2.egg-info/dependency_links.txt
+rapid_email_2.egg-info/not-zip-safe
+rapid_email_2.egg-info/top_level.txt
