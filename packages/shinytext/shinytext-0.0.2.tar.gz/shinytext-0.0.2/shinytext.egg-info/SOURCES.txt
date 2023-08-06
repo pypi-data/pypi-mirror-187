@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+shinytext/__init__.py
+shinytext/basic_cleaner.py
+shinytext/clean_func.py
+shinytext/info_cleaner.py
+shinytext/syntax_semantics_checker.py
+shinytext.egg-info/PKG-INFO
+shinytext.egg-info/SOURCES.txt
+shinytext.egg-info/dependency_links.txt
+shinytext.egg-info/requires.txt
+shinytext.egg-info/top_level.txt
+shinytext/utils/chats.py
+shinytext/utils/emoticons.py
+shinytext/utils/patterns.py
+shinytext/utils/spacy_loader.py
