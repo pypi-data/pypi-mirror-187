@@ -1,0 +1,7 @@
+pandas
+numpy
+os
+sys
+requests
+math
+csv
