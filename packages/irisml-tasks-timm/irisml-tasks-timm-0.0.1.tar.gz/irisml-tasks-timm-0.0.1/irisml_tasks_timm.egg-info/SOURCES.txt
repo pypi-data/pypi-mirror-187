@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+irisml/tasks/create_timm_model.py
+irisml/tasks/create_timm_transform.py
+irisml_tasks_timm.egg-info/PKG-INFO
+irisml_tasks_timm.egg-info/SOURCES.txt
+irisml_tasks_timm.egg-info/dependency_links.txt
+irisml_tasks_timm.egg-info/requires.txt
+irisml_tasks_timm.egg-info/top_level.txt
+test/test_create_timm_model.py
+test/test_create_timm_transform.py

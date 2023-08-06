@@ -1,0 +1,33 @@
+# irisml-tasks-timm
+
+Timm-related tasks for IrisML pipeline.
+
+Please visit [IrisML repository](https://github.com/microsoft/irisml) for the details.
+
+## Installation
+```bash
+pip install irisml-tasks-timm
+```
+
+## Tasks
+### create_timm_model
+Create a timm model. Please use timm.list_models() method to find available model names.
+
+```python
+class Config:
+    name: str
+    num_classes: int
+    pretrained: bool = False
+    task_type: typing.Literal['multiclass_classification', 'multilabel_classification'] = 'multiclass_classification'
+```
+
+
+### create_timm_transform
+Create a timm transform. The task output contains train_transform and val_transform.
+
+```python
+class Config:
+    input_size: int
+    crop_pct: float = 0.875  # Center crop the image with this ratio.
+    interpolation: typing.Literal['bilinear', 'bicubic'] = 'bilinear'
+```
