@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: cloudshell-calix
+Version: 0.2.2
+Summary: QualiSystems networking Calix specific package
+Home-page: http://www.qualisystems.com/
+Author: QualiSystems
+Author-email: info@qualisystems.com
+Requires-Python: ~=3.7
+
+QualiSystems networking Calix specific package
