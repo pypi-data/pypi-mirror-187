@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/geostream/__init__.py
+src/geostream/wfs.py
+src/geostream.egg-info/PKG-INFO
+src/geostream.egg-info/SOURCES.txt
+src/geostream.egg-info/dependency_links.txt
+src/geostream.egg-info/requires.txt
+src/geostream.egg-info/top_level.txt
