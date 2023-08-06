@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: a2grunnerp
+Version: 0.1.1
+Summary: A2G Runner for Local Workflow
+Author: Carlos Alvarado
+Author-email: <carlos@alert2gain.com>
+Keywords: python,a2g base-a2grunner
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+
+Package that enables users to run user_fx on a local environment as it was run on A2G.IO

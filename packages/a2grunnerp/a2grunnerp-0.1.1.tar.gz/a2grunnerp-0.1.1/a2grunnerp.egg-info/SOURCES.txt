@@ -1,0 +1,13 @@
+setup.py
+a2grunnerp/__init__.py
+a2grunnerp/localrunner.py
+a2grunnerp/qmanager.py
+a2grunnerp/run_manager.py
+a2grunnerp/stdouts_redirects.py
+a2grunnerp.egg-info/PKG-INFO
+a2grunnerp.egg-info/SOURCES.txt
+a2grunnerp.egg-info/dependency_links.txt
+a2grunnerp.egg-info/requires.txt
+a2grunnerp.egg-info/top_level.txt
+a2grunnerp/pytransform/__init__.py
+a2grunnerp/pytransform/_pytransform.dll
