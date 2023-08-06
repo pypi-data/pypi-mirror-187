@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: Topsis_Harshita_Saxena_102003497
+Version: 0.3
+Summary: Given package has the code for topsis, which is one of the techniques used for multiple criteria decision making. It chooses the Euclidean distance from the ideal solution and greatest distance from the negative ideal solution. 
+Home-page: UNKNOWN
+Author: Harshita Saxena
+License: UNKNOWN
+Description: ## Topsis_Harshita_Saxena
+        
+        # TOPSIS
+        
+        **Submitted By**: Harshita Saxena - 102003497.
+        
+        Description: **Evaluation of alternatives based on multiple criteria using TOPSIS method.**.
+        
+        ---
+        
+        ## How to install this package:
+        
+        ```
+        >> pip install Topsis_Harshita_Saxena_102003497
+        ```
+        
+        ### In Command Prompt
+        
+        ```
+        >> python <program.py> <InputDataFile> <Weights> <Impacts> <ResultFileName>
+        ```
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
