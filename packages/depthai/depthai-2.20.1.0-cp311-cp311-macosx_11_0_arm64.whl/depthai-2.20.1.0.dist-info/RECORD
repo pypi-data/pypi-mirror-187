@@ -1,0 +1,10 @@
+depthai.cpython-311-darwin.so,sha256=xErxTw9X7-H-NNgCAN5UO--FqJXsZft3y4s67kuN6XY,13288416
+depthai-2.20.1.0.dist-info/RECORD,,
+depthai-2.20.1.0.dist-info/LICENSE,sha256=X-bU7Cqk4igULucQhNHIv-pHQjj-6NSb0Q6MvQtErOE,1068
+depthai-2.20.1.0.dist-info/WHEEL,sha256=V4MgOdL8hB0MONNzyEXkjqg6fCQ0i-MT-UIIis4fuKU,110
+depthai-2.20.1.0.dist-info/top_level.txt,sha256=39NG_7OEgvQ5PKU-ilUsp81cr2azecT6E-c1oCTbufM,8
+depthai-2.20.1.0.dist-info/METADATA,sha256=8i5Z34uv3Rr5-LsxD_-fzpCCTYHX_Ns7L79OA9yFA6o,8682
+depthai/node.pyi,sha256=TIsT2ApAmtIW7En5YD5Hg4j3B9tB9ng2wk5Yc_3rARM,45508
+depthai/__init__.pyi,sha256=cO_wJfADSpsQwz-s5CYXNnJbbWIvknwdS-PaBo8i_Sw,167290
+depthai/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+depthai.dylibs/libusb-1.0.dylib,sha256=Krk7WbjwjITHfcZXaedwZmI2d4dZMu8ZqGYoRrqhIJw,168016
