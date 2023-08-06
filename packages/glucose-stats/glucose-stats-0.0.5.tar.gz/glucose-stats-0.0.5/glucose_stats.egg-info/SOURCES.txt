@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+bin/run.py
+glucose_stats.egg-info/PKG-INFO
+glucose_stats.egg-info/SOURCES.txt
+glucose_stats.egg-info/dependency_links.txt
+glucose_stats.egg-info/not-zip-safe
+glucose_stats.egg-info/requires.txt
+glucose_stats.egg-info/top_level.txt
+glucosestats/__init__.py
+glucosestats/constants.py
+glucosestats/error.py
+glucosestats/stats.py
+glucosestats/visualize.py
