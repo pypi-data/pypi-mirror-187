@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: shopee-wrapper
+Version: 0.3
+Summary: Library that wrap shopee.co.id api using http.client
+Author: Hariz Sufyan Munawar
+Author-email: munawarhariz@gmail.com
+License: Apache License
+Description-Content-Type: text/markdown
+
