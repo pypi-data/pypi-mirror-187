@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: piacere-doml-synthesis
+Version: 2023.1.1
+Summary: Synthetize DOML from user requirements
+Author-email: Andrea Franchini <hello@andreafranchini.com>
+License: MIT License
+Project-URL: homepage, https://github.com/andreafra/piacere-synthesis
+Project-URL: documentation, https://piacere-model-checker.readthedocs.org
+Project-URL: repository, https://github.com/andreafra/piacere-synthesis.git
+Keywords: z3,synthesis,doml,piacere
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+
+# PIACERE DOML Synthesis
+
+This package provides experimental syntesis of a model
+starting from an existing model (a DOMLX file, to be precise)
+and user requirements (a list of functions that receive the `State` object)
+using the [Z3](https://github.com/Z3Prover/z3) solver.
+
+This package is intended to work with [PIACERE Model Checker](https://github.com/andreafra/piacere-model-checker).
