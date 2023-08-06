@@ -1,0 +1,6 @@
+[console_scripts]
+fastkafka = fastkafka._cli:_app
+
+[nbdev]
+fastkafka = fastkafka._modidx:d
+
