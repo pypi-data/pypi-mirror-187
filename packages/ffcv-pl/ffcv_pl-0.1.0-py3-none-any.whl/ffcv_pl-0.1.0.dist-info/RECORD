@@ -1,0 +1,11 @@
+ffcv_pl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ffcv_pl/datasets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ffcv_pl/datasets/image.py,sha256=27ihe-uUW44moxvnw_k-4BSYoqqdpT2Pt0HGvYE_PxE,3200
+ffcv_pl/datasets/image_label.py,sha256=vzB-EZYGMsMMSAiMt_YHHcGKpWIIwboOQe8NWIPqENo,3827
+ffcv_pl/ffcv_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ffcv_pl/ffcv_utils/custom_augmentations.py,sha256=aItfD-whjbdZdjI5_86Dr4k6bc8JUqwRpw7UhFvGpqM,1083
+ffcv_pl/ffcv_utils/generate_dataset.py,sha256=islaxDcLaS9eeGg6smraFCZnkvPLNy_yl93ma3_7dX8,2559
+ffcv_pl-0.1.0.dist-info/METADATA,sha256=-gZBE81U4s-MKEpwMgtKqCEORsDWAdO7UmYPiL-z7ow,3019
+ffcv_pl-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ffcv_pl-0.1.0.dist-info/top_level.txt,sha256=XQoRnNMW3_Bnynqy2JSFr2DqRSO8zvN3QNiH9trW_zM,8
+ffcv_pl-0.1.0.dist-info/RECORD,,
