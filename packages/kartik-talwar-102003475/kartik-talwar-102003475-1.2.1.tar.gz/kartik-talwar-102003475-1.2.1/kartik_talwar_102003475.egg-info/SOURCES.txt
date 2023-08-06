@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+kartik_talwar_102003475.egg-info/PKG-INFO
+kartik_talwar_102003475.egg-info/SOURCES.txt
+kartik_talwar_102003475.egg-info/dependency_links.txt
+kartik_talwar_102003475.egg-info/entry_points.txt
+kartik_talwar_102003475.egg-info/requires.txt
+kartik_talwar_102003475.egg-info/top_level.txt
+topsis/102003475.py
