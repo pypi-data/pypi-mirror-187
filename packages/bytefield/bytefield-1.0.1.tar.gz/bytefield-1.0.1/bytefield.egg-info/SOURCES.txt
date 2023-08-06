@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+bytefield/__init__.py
+bytefield/array_proxy.py
+bytefield/base.py
+bytefield/fields.py
+bytefield/format.py
+bytefield.egg-info/PKG-INFO
+bytefield.egg-info/SOURCES.txt
+bytefield.egg-info/dependency_links.txt
+bytefield.egg-info/requires.txt
+bytefield.egg-info/top_level.txt
