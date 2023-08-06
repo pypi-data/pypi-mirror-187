@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: foe
+Version: 0.0.3
+Summary: A saturation based theorem prover with proof search directed by a learned embedding.
+Author-email: Alexander Pluska <alexander.plusla@example.com>
+Project-URL: Homepage, https://github.com/lexpk/foe
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: lark (>=1.0)
+Provides-Extra: experiments
+Requires-Dist: ipykernel (>=6.20.2) ; extra == 'experiments'
+Provides-Extra: test
+Requires-Dist: pytest (>=6.2.5) ; extra == 'test'
+
