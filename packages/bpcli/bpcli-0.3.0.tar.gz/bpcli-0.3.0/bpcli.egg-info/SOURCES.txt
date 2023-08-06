@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+bpcli/__init__.py
+bpcli/bpcli.py
+bpcli.egg-info/PKG-INFO
+bpcli.egg-info/SOURCES.txt
+bpcli.egg-info/dependency_links.txt
+bpcli.egg-info/entry_points.txt
+bpcli.egg-info/requires.txt
+bpcli.egg-info/top_level.txt
