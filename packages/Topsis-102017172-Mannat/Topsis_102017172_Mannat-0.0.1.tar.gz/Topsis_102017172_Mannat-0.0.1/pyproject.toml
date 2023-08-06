@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Topsis_102017172_Mannat"
+version = "0.0.1"
+authors = [
+  { name="Mannat", email="mannat7873@gmail.com" },
+]
+description = "Topsis score calculator"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Mannat7/Topsis_102017172"
