@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: example_package_disco_disco_good_good_yehuda_dont_delete_it_its_me
+Version: 99.99.4
+Summary: A small example package
+Author: marshmellowproject
+Author-email: Example Author <author@example.com>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
