@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: sensi
+Version: 1.0.3
+Summary: analisis sentimen bahasa Indonesia menggunakan Naive-Bayes
+Home-page: https://github.com/GazDuckington/nbc-sentimen
+License: MIT
+Author: GazDuckington
+Author-email: dianghazy@protonmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: SQLAlchemy[asyncio] (>=1.4.45,<2.0.0)
+Requires-Dist: Sastrawi (>=1.0.1,<2.0.0)
+Requires-Dist: aiosqlite (>=0.18.0,<0.19.0)
+Requires-Dist: nltk (>=3.8,<4.0)
+Requires-Dist: numpy (>=1.24.1,<2.0.0)
+Requires-Dist: pandas (>=1.5.2,<2.0.0)
+Project-URL: Repository, https://github.com/GazDuckington/nbc-sentimen
+Description-Content-Type: text/markdown
+
+<p align=center><i>Library</i> analisis sentiment teks Bahasa Indonesia, menggunakan Klasifikasi Naive-Bayes</p>
+
+## Dependensi
+
+```python
+sastrawi nltk numpy pandas sqlalchemy
+```
+
+## Instalasai
+
+```bash
+pip install sensi
+```
+
+## Penggunaan
+
+- [WIKI](https://github.com/GazDuckington/nbc-sentimen/wiki)
+- Contoh penerapan dapat dilihat pada directory 'apis' pada repository [flask-sk](https://github.com/GazDuckington/flask-sk)
+
+- Baca ```resources/predictor.py``` untuk berbagai contoh lainnya.
+
+## Lisensi
+[MIT](./LICENSE)
+
