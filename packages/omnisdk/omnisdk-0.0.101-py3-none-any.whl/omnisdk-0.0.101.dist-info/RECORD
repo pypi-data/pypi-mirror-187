@@ -1,0 +1,12 @@
+omnisdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+omnisdk/api_endpoint.py,sha256=Q-YiOHG1ocQ7E_ZXllcQ2xy4YqzxwGZbjcvFVIGFC58,9240
+omnisdk/base_client.py,sha256=b6CUuosHxgu8DK3XvLOcRduXogpPgYoxH7yYoKGuIM8,1753
+omnisdk/exceptions.py,sha256=kIHn4rfIQEfWVjGhk4cjGcGECVKm0HmI1gaS1Lue5sE,436
+omnisdk/omnitron/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+omnisdk/omnitron/client.py,sha256=-PCVYOaQq2soR04l4DSOWj3_RBpSCOfOX9iYBI5OWUs,152
+omnisdk/omnitron/endpoints.py,sha256=TsvXmwWjo22LKRAKrlv7H9CzH-LZH907-t92bNCg-EY,11667
+omnisdk/omnitron/models.py,sha256=ti8JyzFitIUNVnBzIoh4BTaKpghlkqyPIp8XnLBNv6g,5339
+omnisdk-0.0.101.dist-info/METADATA,sha256=MpWDXp_8qdtN6q8wa2qJ60m3zkZwpkwQ5B8ig1LH6EA,5791
+omnisdk-0.0.101.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+omnisdk-0.0.101.dist-info/top_level.txt,sha256=dj2h0h_EqkYD21AWwIy7EQcJ92M5sALcWa0pfTNlFb0,8
+omnisdk-0.0.101.dist-info/RECORD,,
