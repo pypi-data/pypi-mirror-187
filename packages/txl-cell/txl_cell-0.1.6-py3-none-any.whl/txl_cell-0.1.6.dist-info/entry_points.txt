@@ -1,0 +1,2 @@
+[txl_component]
+txl_cell = txl_cell.components
