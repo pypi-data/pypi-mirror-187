@@ -1,0 +1,2 @@
+[console_scripts]
+pdfuck = pdfuck:main
