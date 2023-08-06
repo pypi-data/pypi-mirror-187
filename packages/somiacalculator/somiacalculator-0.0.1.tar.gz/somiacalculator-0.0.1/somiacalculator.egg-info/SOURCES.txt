@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+somiacalculator/__init__.py
+somiacalculator.egg-info/PKG-INFO
+somiacalculator.egg-info/SOURCES.txt
+somiacalculator.egg-info/dependency_links.txt
+somiacalculator.egg-info/top_level.txt
