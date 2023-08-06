@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: Topsis-Saumya-102017036
+Version: 0.1
+Summary: Topsis
+Home-page: https://github.com/Sg30148/TopsisSaumya
+Author: Saumya Gupta
+Author-email: sgupta4_be20@thapar.edu
+License: MIT
+Download-URL: https://github.com/Sg30148/TopsisSaumya/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: Topsis,Package
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
