@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: passeo
+Version: 1.0.7
+Summary: 🔓 Generate a Password with multiple options
+Home-page: https://github.com/ArjunSharda/Passeo
+Author: Arjun Sharda
+Author-email: Arjun Sharda <sharda.aj17@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2022-present Arjun Sharda
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/ArjunSharda/Passeo
+Project-URL: Bug Tracker, https://github.com/ArjunSharda/Passeo/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: passeo
+Requires-Dist: click
+Requires-Dist: hashlib
+Requires-Dist: string
+Requires-Dist: requests
+
+# Passeo
+<div style="text-align: center; display: grid; justify-content: center;"><img style="margin: auto; margin-bottom: 1rem; border-radius: 30%;" height="150" width="150" src="https://raw.githubusercontent.com/ArjunSharda/Passeo/main/ext/passeo.jpg"/></div>
+
+"🔓 Generate a Password with multiple options"
+
+# What is Passeo?
+
+Passeo is a python password generator developed by [Arjun Sharda](https://github.com/ArjunSharda), under the [MIT License](https://github.com/ArjunSharda/Passeo/blob/main/LICENSE).
+
+<br>
+Passeo is used for checking your password through our strength check (includes Pwned, Length, and Case) and generate a password with multiple options.
+</br>
+
+# Why use Passeo?
+
+Passeo is a upcoming password generator project, with massive plans in the future, such as generation of a password and strength checker via CLI/terminal. Passeo is also completely safe to use and is open source for the community to know how the codebase works and learn from how the password generator.
+
+
+-----------------
+
+# Quickstart
+
+```python
+import passes
+print(passeo().generate(length=10, numbers=True, symbols=True, uppercase=True, lowercase=false, space=True, save=True))
+```
+
+# v1.0.7 changes
+- **[SECURITY]** Added more security to the quickgenerate CLI version and normal version to ensure Passeo is secure.
+
+
+<hr>
+<h6 align="center">© Arjun Sharda 2022-present 
+<br>
+All Rights Reserved</h6>
