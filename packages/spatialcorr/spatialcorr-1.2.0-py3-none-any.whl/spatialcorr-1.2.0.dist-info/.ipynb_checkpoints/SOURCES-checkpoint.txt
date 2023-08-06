@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+spatialcorr/__init__.py
+spatialcorr/load_data.py
+spatialcorr/plot.py
+spatialcorr/statistical_test.py
+spatialcorr/utils.py
+spatialcorr/wrappers.py
+spatialcorr.egg-info/PKG-INFO
+spatialcorr.egg-info/SOURCES.txt
+spatialcorr.egg-info/dependency_links.txt
+spatialcorr.egg-info/requires.txt
+spatialcorr.egg-info/top_level.txt
+spatialcorr.egg-info/zip-safe
