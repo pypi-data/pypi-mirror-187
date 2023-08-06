@@ -1,0 +1,5 @@
+{
+  "load_extensions": {
+    "faerun-notebook/extension": true
+  }
+}
