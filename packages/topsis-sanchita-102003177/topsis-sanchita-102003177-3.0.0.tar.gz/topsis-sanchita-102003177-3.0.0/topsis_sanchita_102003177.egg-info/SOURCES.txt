@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+topsis-sanchita-102003177/102003177.py
+topsis-sanchita-102003177/__init__.py
+topsis_sanchita_102003177.egg-info/PKG-INFO
+topsis_sanchita_102003177.egg-info/SOURCES.txt
+topsis_sanchita_102003177.egg-info/dependency_links.txt
+topsis_sanchita_102003177.egg-info/top_level.txt

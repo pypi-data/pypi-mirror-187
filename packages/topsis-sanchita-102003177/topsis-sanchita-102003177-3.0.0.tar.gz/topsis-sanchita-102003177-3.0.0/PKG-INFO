@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: topsis-sanchita-102003177
+Version: 3.0.0
+Summary: It finds the topsis and rank of an input file
+Home-page: https://github.com/SanchitaBora/topsis-102003177
+Author: Sanchita Bora
+Author-email: sbora_be20@thapar.edu
+License: MIT
+Description: # Topsis-Sanchita-102003177
+        
+        ## Installation
+        ```pip install topsis-sanchita-102003177```
+        
+        ## How to use it?
+        Open terminal and type topsis-sanchita-102003177 and then input
+        ```topsis-sanchita-102003177 <script_name> <input_data_file_name> <wt> <imp> <result_file_name>```
+        
+        ## License
+        This repository is licensed under the MIT license. 
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
