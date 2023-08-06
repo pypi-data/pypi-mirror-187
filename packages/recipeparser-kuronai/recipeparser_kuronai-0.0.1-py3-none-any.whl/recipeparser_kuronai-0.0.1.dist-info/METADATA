@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: recipeparser_kuronai
+Version: 0.0.1
+Summary: A utility package to parse URLs into recipes.
+Author-email: Andrew Deeley <adeeley98@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+This will eventually host the **documentation** for the utility. 
