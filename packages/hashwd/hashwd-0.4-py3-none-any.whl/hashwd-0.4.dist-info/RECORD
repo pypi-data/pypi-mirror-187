@@ -1,0 +1,10 @@
+hashwd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hashwd/__main__.py,sha256=YT0oL8FGCNhcOLl_HXGI0TrhZ6tUUrcLNy9QANc3oQQ,9596
+hashwd/defaults.py,sha256=-rmtVmIMKWuc6R3Sg_3eXLTXbBjdK37Bob9O2bkbG4M,642
+hashwd/dictionary.py,sha256=yvLE5HMuFI5cwLG7RILlX_tfgfbpYMXPNUee-LP2R8c,12645
+hashwd/hashwd.py,sha256=SGMT3rkS0ed0fG_di8bpW2ZG6fOloDo_PccdAqx_1e4,2207
+hashwd-0.4.dist-info/entry_points.txt,sha256=ZenB2x-3bdd1sQfXh7npfdcHh48xPs-NfqpKiyG0-nM,38
+hashwd-0.4.dist-info/LICENSE,sha256=LoV48WtuomVBIWbotLHaBF_MEfKNsD1mSQhBASSi8B4,35801
+hashwd-0.4.dist-info/METADATA,sha256=0uyOye-CMNDG3wT0JYofR56cbJTCO-RXnx56K9TBZzc,2831
+hashwd-0.4.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+hashwd-0.4.dist-info/RECORD,,
