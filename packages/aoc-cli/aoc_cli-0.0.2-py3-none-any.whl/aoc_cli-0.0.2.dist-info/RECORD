@@ -1,0 +1,10 @@
+aoc_cli/__init__.py,sha256=xy5icTVL_-T_uZleOq5SPoLjDLVLWIK0U8whN-ij6kI,21
+aoc_cli/__main__.py,sha256=AWdQnnRUpS6VfmIOF8TXt_aWgN4ZSUbniL2VBCxs-hI,4579
+aoc_cli/utils.py,sha256=0cXrAvzIqmvT2lUucIQzZ9Ku6Y33ix1HlksNyPX1Iqs,676
+aoc_cli/validations.py,sha256=W9PrJ4Iwj57PgnY1gqnfCiZlzEZ96V7-oviy6ElLWEg,363
+aoc_cli-0.0.2.dist-info/LICENSE,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+aoc_cli-0.0.2.dist-info/METADATA,sha256=WTfqF5exngWtz-4XuKSGwrpR5bjMg_LAHED3KMU1AGU,1390
+aoc_cli-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aoc_cli-0.0.2.dist-info/entry_points.txt,sha256=Okg5_F8L4RF18pfKcqYvxYUuKmWSoVR9oc4wAMiGJi4,46
+aoc_cli-0.0.2.dist-info/top_level.txt,sha256=Rnxe5Wh7nfVtx1WDAAXiAyXU5E8plqmZKUANwx89K5o,8
+aoc_cli-0.0.2.dist-info/RECORD,,
