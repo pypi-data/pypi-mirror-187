@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.py
+Toori.egg-info/PKG-INFO
+Toori.egg-info/SOURCES.txt
+Toori.egg-info/dependency_links.txt
+Toori.egg-info/entry_points.txt
+Toori.egg-info/not-zip-safe
+Toori.egg-info/requires.txt
+Toori.egg-info/top_level.txt
+external/WinDivert-2.2.2-A/x64/WinDivert.dll
+external/WinDivert-2.2.2-A/x64/WinDivert64.sys
+toori/Toori.py
+toori/main.cpp
+toori/main.py
