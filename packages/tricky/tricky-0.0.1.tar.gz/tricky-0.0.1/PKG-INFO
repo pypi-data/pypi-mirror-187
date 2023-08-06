@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: tricky
+Version: 0.0.1
+Summary: A set of useful features to make working with your code easier.
+Home-page: https://github.com/Walther-s-Engineering/tricky
+License: MIT
+Keywords: tools
+Author: Alexander Walther
+Author-email: alexander.walther.engineering@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+
+# tricky
