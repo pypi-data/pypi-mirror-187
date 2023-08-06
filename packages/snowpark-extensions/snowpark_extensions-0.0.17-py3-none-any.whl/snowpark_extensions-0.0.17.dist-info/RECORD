@@ -1,0 +1,13 @@
+snowpark_extensions/__init__.py,sha256=tOhQnGQn5TiXTBiFF-Mke0qrE7P53Jt9gkM-6YZxGTQ,2854
+snowpark_extensions/column_extensions.py,sha256=ASYsSmVdMDHlGBhmUzCT96P4q_cSQgGtcIsgzk_Xoxc,334
+snowpark_extensions/dataframe_extensions.py,sha256=8EAd9f8nyuzVL8g9ZGgGe0yZM283i1Odb7k9QH5-l38,22462
+snowpark_extensions/functions_extensions.py,sha256=OwJpNW4I8GvLCnmrD0Btn6KQydFEj5HMtHWShQjNlGM,12433
+snowpark_extensions/session_builder_extensions.py,sha256=L9WwJ8JgbTMABqxIWz48vm5ZHC4hSUwPMVUtIimRz9M,4674
+snowpark_extensions/types_extensions.py,sha256=gXL5AFCcKzjKtzWwygmHyT_x_5xDxDJmtxRjOg8R038,487
+snowpark_extensions/utils.py,sha256=nbQocMyRpx140ptf_E8ap-UFnFTeTUXnaK_gkP2ODTE,5031
+snowpark_extensions-0.0.17.data/scripts/runner,sha256=DcGO0I4XAaLNonjViCWJ42VjhMDYichhW6pkQtIwU3k,10897
+snowpark_extensions-0.0.17.data/scripts/runner.bat,sha256=bQHVds3hsDaWn11zLtVb7qqFsC1o2NvAWRiH1h2JDR8,181
+snowpark_extensions-0.0.17.dist-info/METADATA,sha256=_ZEYXg4xF5vUl_SrHvXCmqvN9Y8lTXlZzirdRFlV5Hg,15918
+snowpark_extensions-0.0.17.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+snowpark_extensions-0.0.17.dist-info/top_level.txt,sha256=gk1oX6mezSlj9QWZ0V4OrzPlxEybwHveoDJaoDQQNJw,20
+snowpark_extensions-0.0.17.dist-info/RECORD,,
