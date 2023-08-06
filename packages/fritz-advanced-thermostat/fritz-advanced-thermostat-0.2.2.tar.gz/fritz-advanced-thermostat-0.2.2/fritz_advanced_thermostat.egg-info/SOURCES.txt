@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+fritz_advanced_thermostat/__init__.py
+fritz_advanced_thermostat/errors.py
+fritz_advanced_thermostat/fritz_advanced_thermostat.py
+fritz_advanced_thermostat.egg-info/PKG-INFO
+fritz_advanced_thermostat.egg-info/SOURCES.txt
+fritz_advanced_thermostat.egg-info/dependency_links.txt
+fritz_advanced_thermostat.egg-info/requires.txt
+fritz_advanced_thermostat.egg-info/top_level.txt
