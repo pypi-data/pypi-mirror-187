@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+elifearticle/__init__.py
+elifearticle/article.py
+elifearticle/parse.py
+elifearticle/utils.py
+elifearticle.egg-info/PKG-INFO
+elifearticle.egg-info/SOURCES.txt
+elifearticle.egg-info/dependency_links.txt
+elifearticle.egg-info/requires.txt
+elifearticle.egg-info/top_level.txt
