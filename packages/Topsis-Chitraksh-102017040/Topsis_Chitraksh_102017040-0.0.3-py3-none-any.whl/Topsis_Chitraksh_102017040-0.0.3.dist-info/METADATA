@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: Topsis-Chitraksh-102017040
+Version: 0.0.3
+Summary: This library is used to run TOPSIS on given data to rank items
+Home-page: https://github.com/Chitru4/Topsis-Chitraksh-102017040
+Download-URL: https://github.com/Chitru4/Topsis-Chitraksh-102017040/archive/refs/tags/v_0.1.tar.gz
+Author: Chitraksh Kumar
+Author-email: chitraksh24@gmail.com
+License: MIT
+Keywords: TOPSIS,RANKING,PROJECT,UCS654
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+# TOPSIS Module by Chitraksh Kumar
+
+## Roll No. 102017040
+
+## Requirements
+``` 
+pip install pandas
+pip install numpy
+```
+
+## Install
+Download the code using pip
+```
+pip install pip install Topsis-Chitraksh-102017040
+```
+
+## Running the code
+```
+102017040 102017040.py 102017040-data.csv "1,1,1,1,1" "+,-,+,-,+" 102017040-result-1.csv 
+```
