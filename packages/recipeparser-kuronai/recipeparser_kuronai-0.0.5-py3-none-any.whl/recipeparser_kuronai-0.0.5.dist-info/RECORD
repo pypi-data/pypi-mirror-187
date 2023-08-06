@@ -1,0 +1,8 @@
+recipeparser_kuronai/Recipe.py,sha256=JLaPPEEBlLbizANG74_uJVXLytycxDAWK1BYlUuScKA,608
+recipeparser_kuronai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+recipeparser_kuronai/recipeutils.py,sha256=8gXG9A-vOM0VqvZxHH4vcdrd9DQTsHFMxniecRqy8oc,879
+recipeparser_kuronai/urlutils.py,sha256=GMtarsoifRbcnXR17kuOEgP-X-YJfSP4L2Oln1QRU4I,1566
+recipeparser_kuronai-0.0.5.dist-info/METADATA,sha256=HUrddGey92Y3kBwisXy5fVYt4L-5JtrrhML_DVhv0a0,467
+recipeparser_kuronai-0.0.5.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+recipeparser_kuronai-0.0.5.dist-info/licenses/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+recipeparser_kuronai-0.0.5.dist-info/RECORD,,
