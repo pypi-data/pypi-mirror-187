@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: Topsis_Aryan_102003586
+Version: 1.1
+Summary: TYPE YOUR DESCRIPTION HERE
+Home-page: https://github.com/aryan678/Topsis-Aryan-102003586.git
+Author: Aryan Gupta
+Author-email: agupta4_be20@thapar.edu
+License: MIT
+Download-URL: https://github.com/aryan678/Topsis-Aryan-102003586/archive/refs/tags/1.1.tar.gz
+Description: UNKNOWN
+Keywords: TOPSIS
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
