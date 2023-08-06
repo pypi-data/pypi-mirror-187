@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: seleniumuser
+Version: 1.0.0
+Summary: Selenium wrapper to streamline usage.
+Project-URL: Homepage, https://github.com/matt-manes/seleniumuser
+Project-URL: Documentation, https://github.com/matt-manes/seleniumuser/tree/main/docs
+Project-URL: Source code, https://github.com/matt-manes/seleniumuser/tree/main/src/seleniumuser
+Author: Matt Manes
+License-File: LICENSE.txt
+Keywords: automation,selenium,webscraping
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: bs4~=0.0.1
+Requires-Dist: noiftimer~=1.0.1
+Requires-Dist: selenium~=4.5.0
+Requires-Dist: voxscribe~=1.0.0
+Requires-Dist: whosyouragent~=1.0.3
