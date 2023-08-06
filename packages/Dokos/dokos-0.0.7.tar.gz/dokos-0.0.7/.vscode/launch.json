@@ -1,0 +1,17 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "args": ["-P", "10-million-password-list-top-1000.txt", "-l", "jane.doe@example.com", "-t", "32", "http://ip172-18-0-7-cf3rsue3tccg00dh92gg-8000.direct.labs.play-with-docker.com/"],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}

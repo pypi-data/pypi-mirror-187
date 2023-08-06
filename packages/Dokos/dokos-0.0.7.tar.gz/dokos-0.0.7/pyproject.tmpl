@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "Dokos"
+version = "$CI_COMMIT_TAG"
+authors = [
+  { name="Thibault Debatty", email="t.debatty@cylab.be" },
+]
+description = "HTTP login cracker"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://gitlab.cylab.be/cylab/dokos"
+"Bug Tracker" = "https://gitlab.cylab.be/cylab/dokos/-/issues"
+
+[project.scripts]
+dokos = "dokos.dokos:main"
