@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: GMMA
+Version: 1.0.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scikit-learn
+Requires-Dist: pyproj
+
+*GaMMA*: *Ga*ussian *M*ixture *M*odel *A*ssociation
