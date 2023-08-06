@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aoc-cli"
+version = "0.0.6"
+authors = [
+  { name="Emil Kloeden", email="emilkloeden@gmail.com" },
+]
+description = "Advent of Code scaffolding CLI"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "python-dotenv == 0.21.0",
+    "aoc-cli-python == 0.0.3"
+]
+
+
+[project.urls]
+"Homepage" = "https://github.com/emilkloeden/aoc-cli"
+"Bug Tracker" = "https://github.com/emilkloeden/aoc-cli/issues"
+
+
+
+[project.scripts]
+aoc = "aoc_cli.__main__:main"
