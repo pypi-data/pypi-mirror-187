@@ -1,0 +1,15 @@
+palletjack/__init__.py,sha256=w45IvFHqnHPEQ9V2EQM9xqBBm1BHwtYXN4jmR2P7O4k,339
+palletjack/boilerplate.py,sha256=thCyTwWIVxaOaZpY8VxpsNP0NYcTWZ7R5nNmd3CSM_A,6597
+palletjack/loaders.py,sha256=O-Diq_NDpfsmh2ie9LPB-5fJVirALd0MbvwK_l7Az78,22064
+palletjack/models.py,sha256=pZn-vbXmCdYCkmp472UhrD8nfCUxvIDumIZiWMfVG2o,19838
+palletjack/testing.py,sha256=9qVxt4V1cFoXK_lUkQfzQ394Bdw9Zv1f6xRzdYge3Xg,292
+palletjack/transform.py,sha256=E9tO5txf402GUdXHWZSELrsXgzxGW25GQbfVFLy5VOA,3650
+palletjack/updaters.py,sha256=IXT9iuBDH5tkopVD8yzBliQWeXer92RZ8pOXtkmb8O4,40199
+palletjack/utils.py,sha256=JAGZiN5Wfl5eO4j4DB8PXzagdUOF8ifRPzgqHpNgN90,13932
+ugrc_palletjack-2.7.3.dist-info/LICENSE,sha256=NuN3zax8IrDMHKG8T7auEmF8CR42U2vzGKO9hnW__Vs,1082
+ugrc_palletjack-2.7.3.dist-info/METADATA,sha256=SlqzBXbG_U3G-T0UALqsNIw2UlQe8s87RH4cHbzRsG8,1333
+ugrc_palletjack-2.7.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ugrc_palletjack-2.7.3.dist-info/entry_points.txt,sha256=cFWyeY6OevmfY_K4dFUWYP1jLojLlB9IyKwUVy5nDxY,58
+ugrc_palletjack-2.7.3.dist-info/top_level.txt,sha256=YNUveproyFeyOcUwfDVZzW8eHQC69PHFPPTIPRWxUv0,11
+ugrc_palletjack-2.7.3.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+ugrc_palletjack-2.7.3.dist-info/RECORD,,
