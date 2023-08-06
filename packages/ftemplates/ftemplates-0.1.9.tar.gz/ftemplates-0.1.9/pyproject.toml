@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "ftemplates"
+version = "0.1.9"
+description = "CLI app to create files with templates."
+authors = ["smv7 <smv7.github@gmail.com>"]
+readme = "README.md"
+packages = [
+  {include = "ftemplates"},
+]
+repository = "https://github.com/smv7/ftemplates"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.3"
+
+[tool.poetry.scripts]
+ftemp = "ftemplates.cli:ftemp"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
