@@ -1,0 +1,8 @@
+tusserver/__init__.py,sha256=crlYURA_2Ujkpz7iVPHovvxZRtvt4QBXF5AAFJzRfz0,23
+tusserver/metadata.py,sha256=LhlN4NonaXyj0cgcmq9dKTcE0GGAfD5M1l3ke43AvHI,770
+tusserver/tus.py,sha256=_08xAZu8vL1ZS5fYOpPEVlg911kfY-gnO9Ubuq6rWQo,10040
+tuspyserver-1.1.0.dist-info/LICENSE,sha256=XawwUREzfvuugUESXRVF7OZmWuRdfU4x0_FUpBIV_UY,1107
+tuspyserver-1.1.0.dist-info/METADATA,sha256=Cw8ARictpyV0eca_s7K2cGxDe8Si-uNbmoGOuSEAP5M,1821
+tuspyserver-1.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tuspyserver-1.1.0.dist-info/top_level.txt,sha256=NeAq4BNega9jSKEa-fFSZDqrFx2olhDYCI_Yj3oESvA,10
+tuspyserver-1.1.0.dist-info/RECORD,,
