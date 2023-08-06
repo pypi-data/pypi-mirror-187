@@ -1,0 +1,2 @@
+[console_scripts]
+extract-method = callscript.cli:main
