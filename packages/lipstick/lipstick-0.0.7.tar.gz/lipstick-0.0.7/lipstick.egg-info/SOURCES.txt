@@ -1,0 +1,11 @@
+README.md
+setup.py
+lipstick/__init__.py
+lipstick/animations.py
+lipstick/bar_plots.py
+lipstick/scatter_plots.py
+lipstick.egg-info/PKG-INFO
+lipstick.egg-info/SOURCES.txt
+lipstick.egg-info/dependency_links.txt
+lipstick.egg-info/requires.txt
+lipstick.egg-info/top_level.txt
