@@ -1,0 +1,3 @@
+[console_scripts]
+footprint = footprint.__main__:run
+
