@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Source shared helper scripts
+{% include "helpers.sh" %}
+
+# Defaults - these are in the config but left here for information
+FORCE_CLUSTER="{% if setup.force_cluster %}true{% else %}false{% endif %}"
+
+is_installed minikube
+is_installed yes
+
+# Check if it already exists
+minikube status
+retval=$?
+if [[ "${retval}" != "0" ]]; then
+    print_blue "There is no MiniKube cluster running."
+    echo
+    exit 0
+fi
+
+# No force option here
+run_echo minikube delete

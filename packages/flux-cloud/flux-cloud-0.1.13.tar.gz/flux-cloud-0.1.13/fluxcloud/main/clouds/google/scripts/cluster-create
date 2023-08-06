@@ -1,0 +1,79 @@
+#!/bin/bash
+
+# Source shared helper scripts
+{% include "helpers.sh" %}
+
+# Defaults - these are in the config but left here for information
+CLUSTER_NAME="{% if experiment.cluster_name %}{{ experiment.cluster_name }}{% else %}flux{% endif %}"
+ZONE="{% if zone %}{{ zone }}{% else %}us-central1-a{% endif %}"
+CLUSTER_VERSION="{% if experiment.kubernetes_version %}{{ experiment.kubernetes_version }}{% else %}1.23{% endif %}"
+MACHINE_TYPE="{% if experiment.machine %}{{ experiment.machine }}{% else %}n1-standard-1{% endif %}"
+FORCE_CLUSTER="{% if setup.force_cluster %}true{% else %}false{% endif %}"
+SIZE={% if experiment.size %}{{ experiment.size }}{% else %}4{% endif %}
+TAGS="{% if tags %}{{ tags }}{% else %}flux-cluster{% endif %}"
+REPOSITORY="{% if experiment.operator_repository %}{{ experiment.operator_repository }}{% else %}flux-framework/flux-operator{% endif %}"
+BRANCH="{% if experiment.operator_branch %}{{ experiment.operator_branch }}{% else %}main{% endif %}"
+GOOGLE_PROJECT="{{ project }}"
+SCRIPT_DIR="{{ experiment.script_dir }}"
+
+# Required arguments
+if [ -z ${GOOGLE_PROJECT+x} ]; then
+    echo "Missing Google Project template variable as GOOGLE_PROJECT";
+    exit 1
+fi
+
+if [ -z ${ZONE+x} ]; then
+    echo "Missing Google Cloud zone template variable as ZONE";
+    exit 1
+fi
+
+if [ -z ${MACHINE_TYPE+x} ]; then
+    echo "Missing Google Cloud machine type template variable as MACHINE_TYPE";
+    exit 1
+fi
+
+print_magenta "   cluster  : ${CLUSTER_NAME}"
+print_magenta "    version : ${CLUSTER_VERSION}"
+print_magenta "  project   : ${GOOGLE_PROJECT}"
+print_magenta "  machine   : ${MACHINE_TYPE}"
+print_magenta "     zone   : ${ZONE}"
+print_magenta "     tags   : ${TAGS}"
+print_magenta "     size   : ${SIZE}"
+print_magenta "repository  : ${REPOSITORY}"
+print_magenta "     branch : ${BRANCH}"
+
+is_installed kubectl
+is_installed gcloud
+is_installed wget
+
+# Check if it already exists
+gcloud container clusters list --zone ${ZONE} | grep ${CLUSTER_NAME}
+retval=$?
+if [[ "${retval}" == "0" ]]; then
+    print_blue "${CLUSTER_NAME} in ${ZONE} already exists."
+    echo
+    exit 0
+fi
+
+if [[ "${FORCE_CLUSTER}" != "true" ]]; then
+    prompt "Do you want to create this cluster?"
+fi
+
+# Create the cluster
+run_echo gcloud container clusters create ${CLUSTER_NAME} --project $GOOGLE_PROJECT \
+    --zone ${ZONE} --cluster-version ${CLUSTER_VERSION} --machine-type ${MACHINE_TYPE} \
+    --num-nodes=${SIZE} --enable-network-policy --tags=${TAGS} --enable-intra-node-visibility
+
+# Get credentials so kubectl will work
+run_echo gcloud container clusters get-credentials ${CLUSTER_NAME} --zone ${ZONE} --project $GOOGLE_PROJECT
+run_echo kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-admin --user $(gcloud config get-value core/account)
+
+# Show nodes
+run_echo kubectl get nodes
+
+# Deploy the operator
+mkdir -p ${SCRIPT_DIR}
+install_operator ${SCRIPT_DIR} ${REPOSITORY} ${BRANCH}
+
+run_echo kubectl get namespace
+run_echo kubectl describe namespace operator-system

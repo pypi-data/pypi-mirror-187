@@ -1,0 +1,71 @@
+#!/bin/bash
+
+# Source shared helper scripts
+{% include "helpers.sh" %}
+
+# Defaults - these are in the config but left here for information
+CLUSTER_NAME="{% if experiment.cluster_name %}{{ experiment.cluster_name }}{% else %}flux-cluster{% endif %}"
+REGION="{% if region %}{{ region }}{% else %}us-east-1{% endif %}"
+CLUSTER_VERSION="{% if experiment.kubernetes_version %}{{ experiment.kubernetes_version }}{% else %}1.23{% endif %}"
+MACHINE_TYPE="{% if experiment.machine %}{{ experiment.machine }}{% else %}m5.large{% endif %}"
+FORCE_CLUSTER="{% if setup.force_cluster %}true{% else %}false{% endif %}"
+SIZE={% if experiment.size %}{{ experiment.size }}{% else %}4{% endif %}
+TAGS="{% if tags %}{{ tags }}{% else %}creator=flux-cloud{% endif %}"
+REPOSITORY="{% if experiment.operator_repository %}{{ experiment.operator_repository }}{% else %}flux-framework/flux-operator{% endif %}"
+BRANCH="{% if experiment.operator_branch %}{{ experiment.operator_branch }}{% else %}main{% endif %}"
+CONFIG_FILE="{{ config_file }}"
+SCRIPT_DIR="{{ experiment.script_dir }}"
+{% if ssh_key %}SSH_KEY="{{ ssh_key }}"{% endif %}
+
+# Required arguments
+if [ -z ${REGION+x} ]; then
+    echo "Missing AWS region as REGION in template";
+    exit 1
+fi
+
+if [ -z ${CONFIG_FILE+x} ]; then
+    echo "Missing AWS cluster config as CONFIG_FILE in template";
+    exit 1
+fi
+
+if [ -z ${MACHINE_TYPE+x} ]; then
+    echo "Missing AWS EKS machine type as MACHINE_TYPE in template";
+    exit 1
+fi
+
+print_magenta "           cluster  : ${CLUSTER_NAME}"
+print_magenta "            version : ${CLUSTER_VERSION}"
+print_magenta "          machine   : ${MACHINE_TYPE}"
+print_magenta "           region   : ${REGION}"
+print_magenta "             tags   : ${TAGS}"
+print_magenta "             size   : ${SIZE}"
+print_magenta "        repository  : ${REPOSITORY}"
+print_magenta "             branch : ${BRANCH}"
+{% if ssh_key %}print_magenta "           ssh-key  : ${SSH_KEY}"{% endif %}
+
+is_installed kubectl
+is_installed eksctl
+is_installed wget
+
+# Check if it already exists
+eksctl get clusters --name ${CLUSTER_NAME} --region ${REGION} --color fabulous
+retval=$?
+if [[ "${retval}" == "0" ]]; then
+    print_blue "${CLUSTER_NAME} in ${REGION} already exists."
+    echo
+    exit 0
+fi
+
+if [[ "${FORCE_CLUSTER}" != "true" ]]; then
+    prompt "Do you want to create this cluster?"
+fi
+
+run_echo eksctl create cluster -f ${CONFIG_FILE}
+
+# Show nodes
+run_echo kubectl get nodes
+
+# Deploy the operator TODO should be variables here
+install_operator ${SCRIPT_DIR} ${REPOSITORY} ${BRANCH}
+run_echo kubectl get namespace
+run_echo kubectl describe namespace operator-system
