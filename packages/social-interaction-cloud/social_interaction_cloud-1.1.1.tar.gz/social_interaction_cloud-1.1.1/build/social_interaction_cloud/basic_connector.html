@@ -1,0 +1,2099 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>social_interaction_cloud.basic_connector API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>social_interaction_cloud.basic_connector</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">from enum import Enum
+from functools import partial
+from threading import Condition, Event, Thread
+from time import sleep
+
+from social_interaction_cloud.abstract_connector import AbstractSICConnector
+
+
+class RobotPosture(Enum):
+    &#34;&#34;&#34;Enumeration of available postures on the Nao and Pepper robot.&#34;&#34;&#34;
+    STAND = &#39;Stand&#39;
+    STANDINIT = &#39;StandInit&#39;
+    STANDZERO = &#39;StandZero&#39;
+    CROUCH = &#39;Crouch&#39;
+    SIT = &#39;Sit&#39;  # only for Nao
+    SITONCHAIR = &#39;SitOnChair&#39;  # only for Nao
+    SITRELAX = &#39;SitRelax&#39;  # only for Nao
+    LYINGBELLY = &#39;LyingBelly&#39;  # only for Nao
+    LYINGBACK = &#39;LyingBack&#39;  # only for Nao
+    UNKNOWN = &#39;Unknown&#39;  # this is not a valid posture
+
+
+class VisionType(Enum):
+    &#34;&#34;&#34;Enumeration of the available vision events.&#34;&#34;&#34;
+    FACE = &#39;onFaceRecognized&#39;
+    PEOPLE = &#39;onPersonDetected&#39;
+    EMOTION = &#39;onEmotionDetected&#39;
+    CORONA = &#39;onCoronaCheckPassed&#39;
+    OBJECT = &#39;onObjectDetected&#39;
+    DEPTH = &#39;onDepthEstimated&#39;
+    TRACKING = &#39;onObjectTracked&#39;
+
+    def as_service(self):
+        &#34;&#34;&#34;Returns the service that generates the vision events.&#34;&#34;&#34;
+        if self == VisionType.FACE:
+            return &#39;face_recognition&#39;
+        elif self == VisionType.PEOPLE:
+            return &#39;people_detection&#39;
+        elif self == VisionType.EMOTION:
+            return &#39;emotion_detection&#39;
+        elif self == VisionType.CORONA:
+            return &#39;corona_checker&#39;
+        elif self == VisionType.OBJECT:
+            return &#39;object_detection&#39;
+        elif self == VisionType.DEPTH:
+            return &#39;depth_estimation&#39;
+        elif self == VisionType.TRACKING:
+            return &#39;object_tracking&#39;
+
+
+class NoCallbackException(Exception):
+    &#34;&#34;&#34;Exception raised when a required callback function is not provided&#34;&#34;&#34;
+    pass
+
+
+class Action:
+    &#34;&#34;&#34;
+    Encapsulation class for callables.
+
+    The callable is executed when the perform() method is called. For synchronous calls,
+    a threading.Event() object should be provided as lock.
+    &#34;&#34;&#34;
+
+    def __init__(self, action: callable, *args, lock: Event = None):
+        &#34;&#34;&#34;
+
+        :param action: a callable.
+        :param args: optional input arguments for the callable
+        :param lock: optional lock to force synchronicity.
+        &#34;&#34;&#34;
+        self.action = action
+        self.args = args
+        self.lock = lock
+
+    def perform(self) -&gt; Event:
+        &#34;&#34;&#34;
+        Calls the action callable.
+        :return: the lock
+        &#34;&#34;&#34;
+        self.action(*self.args)
+        return self.lock
+
+
+class BasicSICConnector(AbstractSICConnector):
+    &#34;&#34;&#34;
+    Basic implementation of AbstractSICConnector.
+
+    It serves a connector to the Social Interaction Cloud.
+    The base mechanism is that a callback function can be registered for each robot action. When the action returns a
+    result (e.g. a ActionDone event) the callback is called once and removed. Only for touch and vision events a
+    persistent callback can be registered.
+
+    Each action can be run synchronously (main thread waits for result) and asynchronously (main thread continues).
+    &#34;&#34;&#34;
+
+    def __init__(self, server_ip: str, dialogflow_language: str = None,
+                 dialogflow_key_file: str = None, dialogflow_agent_id: str = None, tts_key_file: str = None,
+                 tts_voice: str = None, sentiment: bool = False, stereo_camera: bool = False):
+        &#34;&#34;&#34;
+        :param server_ip: IP address of Social Interaction Cloud server
+        :param dialogflow_language: the full language key to use in Dialogflow (e.g. en-US)
+        :param dialogflow_key_file: path to Google&#39;s Dialogflow key file (JSON)
+        :param dialogflow_agent_id: ID number of Dialogflow agent to be used (project ID)
+        :param tts_key_file: path to Google&#39;s TTS key file (JSON)
+        :param tts_voice: ID number of TTS voice to be used
+        :param sentiment: use of sentiment analysis
+        :param stereo_camera: use of stereo_camera
+        &#34;&#34;&#34;
+        self.__action_listeners = {}
+        self.__vision_listeners = {}
+        self.__event_listeners = {}
+        self.__conditions = []
+        self.__loaded_actions = []
+        self.robot_state = {&#39;posture&#39;: RobotPosture.UNKNOWN,
+                            &#39;is_awake&#39;: False,
+                            &#39;battery_charge&#39;: 100,
+                            &#39;is_charging&#39;: False,
+                            &#39;hot_devices&#39;: []}
+        self.stereo_camera = stereo_camera
+
+        super(BasicSICConnector, self).__init__(server_ip=server_ip)
+
+        if sentiment:
+            self.enable_service(&#39;sentiment_analysis&#39;)
+        self.sentiment_enabled = sentiment
+        
+        if dialogflow_language and dialogflow_key_file and dialogflow_agent_id:
+            self.enable_service(&#39;intent_detection&#39;)
+            sleep(1)  # give the service some time to load
+            self.set_dialogflow_language(dialogflow_language)
+            self.set_dialogflow_key(dialogflow_key_file)
+            self.set_dialogflow_agent(dialogflow_agent_id)
+
+        if tts_voice:
+            self.enable_service(&#39;text_to_speech&#39;)
+            sleep(1)
+
+            if not tts_key_file:
+                tts_key_file = dialogflow_key_file
+
+            self.set_tts_key(tts_key_file)
+            self.set_tts_voice(tts_voice)
+
+    ###########################
+    # Event handlers          #
+    ###########################
+
+    def on_event(self, event: str) -&gt; None:
+        self.__notify_action_listeners(event)
+        self.__notify_event_listeners(event)
+
+    def on_posture_changed(self, posture: str) -&gt; None:
+        self.__notify_action_listeners(&#39;onPostureChanged&#39;, posture)
+        self.robot_state[&#39;posture&#39;] = RobotPosture[posture.upper()]
+
+    def on_awake_changed(self, is_awake: bool) -&gt; None:
+        self.__notify_action_listeners(&#39;onAwakeChanged&#39;, is_awake)
+        self.robot_state[&#39;is_awake&#39;] = is_awake
+
+    def on_audio_language(self, language_key: str) -&gt; None:
+        self.__notify_action_listeners(&#39;onAudioLanguage&#39;, language_key)
+
+    def on_audio_intent(self, detection_result: dict) -&gt; None:
+        self.__notify_action_listeners(&#39;onAudioIntent&#39;, detection_result)
+
+    def on_text_transcript(self, transcript: str) -&gt; None:
+        self.__notify_action_listeners(&#39;onTextTranscript&#39;, transcript)
+
+    def on_text_sentiment(self, sentiment: str) -&gt; None:
+        self.__notify_action_listeners(&#39;onTextSentiment&#39;, sentiment)
+
+    def on_new_audio_file(self, audio_file: str) -&gt; None:
+        self.__notify_action_listeners(&#39;onNewAudioFile&#39;, audio_file)
+
+    def on_new_picture_file(self, picture_file: str) -&gt; None:
+        self.__notify_action_listeners(&#39;onNewPictureFile&#39;, picture_file)
+
+    def on_person_detected(self, x: int, y: int) -&gt; None:
+        self.__notify_vision_listeners(&#39;onPersonDetected&#39;, x, y)
+
+    def on_face_recognized(self, identifier: str) -&gt; None:
+        self.__notify_vision_listeners(&#39;onFaceRecognized&#39;, identifier)
+
+    def on_emotion_detected(self, emotion: str) -&gt; None:
+        self.__notify_vision_listeners(&#39;onEmotionDetected&#39;, emotion)
+
+    def on_corona_check_passed(self) -&gt; None:
+        self.__notify_vision_listeners(&#39;onCoronaCheckPassed&#39;)
+
+    def on_object_detected(self, centroid_x: int, centroid_y: int) -&gt; None:
+        self.__notify_vision_listeners(&#39;onObjectDetected&#39;, centroid_x, centroid_y)
+
+    def on_depth_estimated(self, estimation: int, std_dev: int) -&gt; None:
+        self.__notify_vision_listeners(&#39;onDepthEstimated&#39;, estimation, std_dev)
+
+    def on_object_tracked(self, obj_id: int, distance_cm: int, centroid_x: int, centroid_y: int, in_frame_ms: int,
+                          speed_cmps: int) -&gt; None:
+        self.__notify_vision_listeners(&#39;onObjectTracked&#39;, obj_id, distance_cm, centroid_x, centroid_y, in_frame_ms,
+                                       speed_cmps)
+
+    def on_battery_charge_changed(self, percentage: int) -&gt; None:
+        self.__notify_action_listeners(&#39;onBatteryChargeChanged&#39;, percentage)
+        self.robot_state[&#39;battery_charge&#39;] = percentage
+
+    def on_charging_changed(self, is_charging: bool) -&gt; None:
+        self.__notify_action_listeners(&#39;onChargingChanged&#39;, is_charging)
+        self.robot_state[&#39;is_charging&#39;] = is_charging
+
+    def on_hot_device_detected(self, hot_devices: list) -&gt; None:
+        self.__notify_action_listeners(&#39;onHotDeviceDetected&#39;, hot_devices)
+        self.robot_state[&#39;hot_devices&#39;] = hot_devices
+
+    def on_robot_motion_recording(self, motion: str) -&gt; None:
+        self.__notify_action_listeners(&#39;onRobotMotionRecording&#39;, motion)
+
+    def on_browser_button(self, button: str) -&gt; None:
+        self.__notify_action_listeners(&#39;onBrowserButton&#39;, button)
+
+    ###########################
+    # Speech Recognition      #
+    ###########################
+
+    def speech_recognition(self, context: str, max_duration: int, callback: callable = None,
+                           sentiment_callback: callable = None, sync: bool = True) -&gt; None:
+        &#34;&#34;&#34;
+        Initiate a speech recognition attempt using Google&#39;s Dialogflow using a context.
+        For more information on contexts see: https://cloud.google.com/dialogflow/docs/contexts-overview
+
+        The robot will stream audio for at most max_duraction seconds to Dialogflow to recognize something.
+        The result (or a &#39;fail&#39;) is returned via the callback function.
+
+        :param context: Google&#39;s Dialogflow context label (str)
+        :param max_duration: maximum time to listen in seconds (int)
+        :param callback: callback function that will be called when a result (or fail) becomes available
+        :param sync: lets main thread wait on this action
+        &#34;&#34;&#34;
+        inner_callback = callback
+        lock = None
+        if sync:
+            inner_callback, lock = self.__build_sync_callback(inner_callback)
+
+        enhanced_callback, fail_callback, listen_lock = self.__build_speech_recording_callback(inner_callback)
+        self.__register_action_listener(&#39;onAudioIntent&#39;, enhanced_callback)
+        self.__register_action_listener(&#39;IntentDetectionDone&#39;, fail_callback)
+
+        if self.sentiment_enabled and sentiment_callback:
+            self.__register_action_listener(&#39;onTextSentiment&#39;, sentiment_callback)
+
+        Thread(target=self.__recognizing, args=(context, listen_lock, max_duration)).start()
+
+        if lock:
+            lock.wait()
+
+    def record_audio(self, duration: int, callback: callable = None, sync: bool = True) -&gt; None:
+        &#34;&#34;&#34;
+        Records audio for a number of duration seconds. The location of the audio is returned via the callback function.
+
+        :param duration: number of second of audio that will be recorded.
+        :param callback: callback function that will be called when the audio is recorded.
+        :param sync: lets main thread wait on this action
+        &#34;&#34;&#34;
+        inner_callback = callback
+        lock = None
+        if sync:
+            inner_callback, lock = self.__build_sync_callback(inner_callback)
+
+        success_callback, _, listen_lock = self.__build_speech_recording_callback(callback)
+        self.__register_action_listener(&#39;onNewAudioFile&#39;, success_callback)
+        Thread(target=self.__recording, args=(listen_lock, duration)).start()
+
+        if lock:
+            lock.wait()
+
+    def __recognizing(self, context: str, lock: Event, max_duration: int) -&gt; None:
+        self.stop_listening()
+        self.set_dialogflow_context(context)
+        self.start_listening(max_duration)
+        lock.wait()
+        self.__unregister_action_listener(&#39;onAudioIntent&#39;)
+        self.__unregister_action_listener(&#39;IntentDetectionDone&#39;)
+
+    def __recording(self, lock: Event, max_duration: int) -&gt; None:
+        self.stop_listening()
+        self.set_record_audio(True)
+        self.start_listening(max_duration)
+        lock.wait()
+        self.set_record_audio(False)
+        self.__unregister_action_listener(&#39;onNewAudioFile&#39;)
+
+    @staticmethod
+    def __build_speech_recording_callback(embedded_callback: callable = None):
+        lock = Event()
+
+        def success_callback(*args):
+            lock.set()
+            if embedded_callback:
+                embedded_callback(*args)
+
+        def fail_callback():
+            if not lock.is_set():
+                lock.set()
+                if embedded_callback:
+                    embedded_callback(None)
+
+        return success_callback, fail_callback, lock
+
+    ###########################
+    # Vision                  #
+    ###########################
+
+    def take_picture(self, callback: callable = None, sync: bool = True, load: bool = False) -&gt; None:
+        &#34;&#34;&#34;
+        Take a picture. Location of the stored picture is returned via callback.
+
+        :param callback:
+        :param sync:
+        :param load:
+        :return:
+        &#34;&#34;&#34;
+        self.__process_action(super(BasicSICConnector, self).take_picture,
+                              callback=callback, event=&#39;onNewPictureFile&#39;, sync=sync, load=load)
+
+    def subscribe_vision_listener(self, vision_type: VisionType, callback: callable = None, continuous: bool = False,
+                                  sync: bool = True, load: bool = False) -&gt; None:
+        &#34;&#34;&#34;
+        Subscribe a
+        :param vision_type:
+        :param callback:
+        :param continuous:
+        :param sync:
+        :param load:
+        &#34;&#34;&#34;
+
+        inner_callback = callback
+        lock = None
+
+        if not continuous:
+            inner_callback = self.__build_vision_stopping_callback(vision_type, inner_callback)
+
+        if sync:
+            inner_callback, lock = self.__build_sync_callback(inner_callback)
+
+        if not inner_callback:
+            raise NoCallbackException(&#39;A vision listener requires a callback&#39;)
+
+        if load:
+            self.enable_service(vision_type.as_service())
+            sleep(1)  # give the service some time to load
+            self.__loaded_actions.append(Action(self.__start_vision_recognition, str(vision_type.value), inner_callback,
+                                         continuous, lock=lock))
+        else:
+            self.enable_service(vision_type.as_service())
+            sleep(1)  # give the service some time to load
+            self.__start_vision_recognition(str(vision_type.value), inner_callback, continuous)
+            if lock:
+                lock.wait()
+
+    def unsubscribe_vision_listener(self, vision_type: VisionType):
+        &#34;&#34;&#34;
+
+        :param vision_type:
+        &#34;&#34;&#34;
+        self.__stop_vision_recognition(str(vision_type.value))
+
+    def __build_vision_stopping_callback(self, vision_type: VisionType, original_callback: callable = None):
+        def callback(*args):
+            if original_callback:
+                original_callback(*args)
+            self.__stop_vision_recognition(str(vision_type.value))
+
+        return callback
+
+    def __start_vision_recognition(self, event: str, callback: callable = None, continuous: bool = False) -&gt; None:
+        had_listeners = len(self.__vision_listeners) &gt; 0
+        self.__register_vision_listener(event, callback)
+        if not had_listeners and not continuous:
+            self.stop_looking()
+            self.start_looking(seconds=0, channels=(2 if self.stereo_camera else 1))
+
+    def __stop_vision_recognition(self, event: str) -&gt; None:
+        self.__unregister_vision_listener(event)
+        if not self.__vision_listeners:
+            self.stop_looking()
+
+    ###########################
+    # Event Listeners         #
+    ###########################
+
+    def subscribe_event_listener(self, event: str, callback: callable, continuous: bool = False,
+                                 sync: bool = True, load: bool = False) -&gt; None:
+        &#34;&#34;&#34;Subscribe an event listener.
+
+        :param event: any event.
+        :param callback: The callback function to be called when the event becomes available.
+        :param continuous: when true the callback will be triggered every time, when false the callback will be
+        triggered only once.
+        :param sync: lets main thread wait on this action
+        :param load: does not subscribe the event listeners, but loads it instead.
+        See run_loaded_actions() for subscribing loaded listeners.
+        &#34;&#34;&#34;
+        # not continuous stops after one hit, continuous continues
+        # synch wait until (first) hit
+        # load wait until any or all (first) hit
+        inner_callback = callback
+        lock = None
+
+        if not continuous:
+            inner_callback = self.__build_event_stopping_callback(event, inner_callback)
+
+        if sync:
+            inner_callback, lock = self.__build_sync_callback(inner_callback)
+
+        if not inner_callback:
+            raise NoCallbackException(&#39;An event listener requires a callback&#39;)
+
+        if load:
+            self.__loaded_actions.append(Action(self.__register_event_listener, event, inner_callback, lock=lock))
+        else:
+            self.__register_event_listener(event, inner_callback)
+            if lock:
+                lock.wait()
+
+    def unsubscribe_event_listener(self, event: str) -&gt; None:
+        &#34;&#34;&#34;
+        Unsubscribe event listener.
+
+        :param event:
+        &#34;&#34;&#34;
+        self.__unregister_event_listener(event)
+
+    def __build_event_stopping_callback(self, event, original_callback):
+        def callback(*args):
+            if original_callback:
+                original_callback(*args)
+            self.unsubscribe_event_listener(event)
+
+        return callback
+
+    ###########################
+    # Robot actions           #
+    ###########################
+
+    def say_text_to_speech(self, text: str, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).say_text_to_speech, text,
+                              callback=callback, event=&#39;PlayAudioDone&#39;, sync=sync, load=load)
+
+    def set_language(self, language_key: str, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).set_language, language_key,
+                              callback=callback, event=&#39;LanguageChanged&#39;, sync=sync, load=load)
+
+    def set_idle(self, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).set_idle,
+                              callback=callback, event=&#39;SetIdle&#39;, sync=sync, load=load)
+
+    def set_non_idle(self, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).set_non_idle,
+                              callback=callback, event=&#39;SetNonIdle&#39;, sync=sync, load=load)
+
+    def start_looking(self, seconds: int, channels: int = 1, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).start_looking, seconds, channels,
+                              callback=callback, event=&#39;WatchingStarted&#39;, sync=sync, load=load)
+
+    def stop_looking(self, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).stop_looking,
+                              callback=callback, event=&#39;WatchingDone&#39;, sync=sync, load=load)
+
+    def say(self, text: str, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).say, text,
+                              callback=callback, event=&#39;TextDone&#39;, sync=sync, load=load)
+
+    def say_animated(self, text: str, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).say_animated, text,
+                              callback=callback, event=&#39;TextDone&#39;, sync=sync, load=load)
+
+    def stop_talking(self, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).stop_talking,
+                              callback=callback, event=&#39;TextDone&#39;, sync=sync, load=load)
+
+    def do_gesture(self, gesture: str, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).do_gesture, gesture,
+                              callback=callback, event=&#39;GestureDone&#39;, sync=sync, load=load)
+
+    def load_audio(self, audio_file: str, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).load_audio, audio_file,
+                              callback=callback, event=&#39;LoadAudioDone&#39;, sync=sync, load=load)
+
+    def play_audio(self, audio_file: str, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).play_audio, audio_file,
+                              callback=callback, event=&#39;PlayAudioDone&#39;, sync=sync, load=load)
+
+    def play_loaded_audio(self, audio_identifier: int, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).play_loaded_audio, audio_identifier,
+                              callback=callback, event=&#39;PlayAudioDone&#39;, sync=sync, load=load)
+
+    def clear_loaded_audio(self, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).clear_loaded_audio,
+                              callback=callback, event=&#39;ClearLoadedAudioDone&#39;, sync=sync, load=load)
+
+    def set_eye_color(self, color: str, callback: callable = None, sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).set_eye_color, color,
+                              callback=callback, event=&#39;EyeColourDone&#39;, sync=sync, load=load)
+
+    def set_ear_color(self, color: str, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).set_ear_color, color,
+                              callback=callback, event=&#39;EarColourDone&#39;, sync=sync, load=load)
+
+    def set_head_color(self, color: str, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).set_head_color, color,
+                              callback=callback, event=&#39;HeadColourDone&#39;, sync=sync, load=load)
+
+    def set_led_color(self, leds: list, colors: list, duration: int = 0, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).set_led_color, leds, colors, duration,
+                              callback=callback, event=&#39;LedColorDone&#39;, sync=sync, load=load)
+    
+    def start_led_animation(self, led_group: str, anim_type: str, colors: list, speed: int,
+                            real_blink=False, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).start_led_animation, led_group, anim_type, colors, speed, real_blink,
+                              callback=callback, event=&#39;LedAnimationDone&#39;, sync=sync, load=load)
+
+    def stop_led_animation(self, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).stop_led_animation,
+                              callback=None, event=&#39;&#39;, sync=sync, load=load)
+
+    def turn(self, degrees: int, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).turn, degrees,
+                              callback=callback, event=&#39;TurnDone&#39;, sync=sync, load=load)
+
+    def wake_up(self, callback: callable = None, sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).wake_up,
+                              callback=callback, event=&#39;WakeUpDone&#39;, sync=sync, load=load)
+
+    def rest(self, callback: callable = None, sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).rest,
+                              callback=callback, event=&#39;RestDone&#39;, sync=sync, load=load)
+
+    def set_breathing(self, enable: bool, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).set_breathing, enable,
+                              callback=callback, event=&#39;Breathing&#39; + (&#39;Enabled&#39; if enable else &#39;Disabled&#39;), sync=sync, load=load)
+
+    def go_to_posture(self, posture: Enum, speed: int = 100, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).go_to_posture, posture.value, speed,
+                              callback=partial(self.__posture_callback,
+                                               target_posture=posture,
+                                               embedded_callback=callback),
+                              event=&#39;GoToPostureDone&#39;, sync=sync, load=load)
+
+    def __posture_callback(self, target_posture: str, embedded_callback: callable) -&gt; None:
+        if self.robot_state[&#39;posture&#39;] == target_posture:  # if posture was successfully reached
+            embedded_callback(True)  # call the listener to signal a success
+        else:  # if the posture was not reached
+            embedded_callback(False)  # call the listener to signal a failure
+
+    def set_stiffness(self, joints: list, stiffness: int, duration: int = 1000, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).set_stiffness, joints, stiffness, duration,
+                              callback=callback, event=&#39;SetStiffnessDone&#39;, sync=sync, load=load)
+
+    def play_motion(self, motion: str, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).play_motion, motion,
+                              callback=callback, event=&#39;PlayMotionDone&#39;, sync=sync, load=load)
+
+    def start_record_motion(self, joint_chains: list, framerate: int = 5, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).start_record_motion, joint_chains, framerate,
+                              callback=callback, event=&#39;RecordMotionStarted&#39;, sync=sync, load=load)
+
+    def stop_record_motion(self, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).stop_record_motion,
+                              callback=callback, event=&#39;onRobotMotionRecording&#39;, sync=sync, load=load)
+
+    def browser_show(self, html: str, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).browser_show, html,
+                              callback=None, event=&#39;&#39;, sync=sync, load=load)
+
+    ###########################
+    # Listeners Management  #
+    ###########################
+    def __register_action_listener(self, event: str, callback: callable) -&gt; None:
+        self.__action_listeners[event] = callback
+
+    def __unregister_action_listener(self, event: str) -&gt; None:
+        del self.__action_listeners[event]
+
+    def __register_vision_listener(self, event: str, callback: callable) -&gt; None:
+        self.__vision_listeners[event] = callback
+
+    def __unregister_vision_listener(self, event: str) -&gt; None:
+        del self.__vision_listeners[event]
+
+    def __register_event_listener(self, event: str, callback: callable):
+        self.__event_listeners[event] = callback
+
+    def __unregister_event_listener(self, event: str) -&gt; None:
+        del self.__event_listeners[event]
+
+    def __register_condition(self, condition: Condition) -&gt; None:
+        &#34;&#34;&#34;
+        Subscribe a threading.Condition object that will be notified each time a registered callback is called.
+
+        :param condition: Condition object that will be notified
+        :return:
+        &#34;&#34;&#34;
+        self.__conditions.append(condition)
+
+    def __unregister_condition(self, condition: Condition) -&gt; None:
+        &#34;&#34;&#34;
+        Unsubscribe the threading.Condition object.
+
+        :param condition: Condition object to unsubscribe
+        :return:
+        &#34;&#34;&#34;
+        if condition in self.__conditions:
+            self.__conditions.remove(condition)
+
+    def __notify_action_listeners(self, event: str, *args) -&gt; None:
+        if event in self.__action_listeners:
+            listener = self.__action_listeners[event]
+            listener(*args)
+            self.__notify_conditions()
+
+    def __notify_vision_listeners(self, event: str, *args) -&gt; None:
+        if event in self.__vision_listeners:
+            listener = self.__vision_listeners[event]
+            listener(*args)
+            self.__notify_conditions()
+
+    def __notify_event_listeners(self, event: str, *args) -&gt; None:
+        if event in self.__event_listeners:
+            listener = self.__event_listeners[event]
+            listener(*args)
+            self.__notify_conditions()
+
+    def __notify_conditions(self) -&gt; None:
+        for condition in self.__conditions:
+            with condition:
+                condition.notify()
+
+    @staticmethod
+    def __build_sync_callback(additional_callback: callable = None):
+        lock = Event()
+
+        def callback(*args):
+            if additional_callback:
+                additional_callback(*args)
+            lock.set()
+
+        return callback, lock
+
+    def __process_action(self, action: callable, *args, callback: callable, event: str, sync: bool, load: bool):
+        inner_callback = callback
+        lock = None
+
+        if sync:
+            inner_callback, lock = self.__build_sync_callback(callback)
+
+        if inner_callback:
+            self.__register_action_listener(event, inner_callback)
+
+        if load:
+            self.__loaded_actions.append(Action(action, *args, lock=lock))
+        else:
+            action(*args)
+            if lock:
+                lock.wait()
+
+    def run_loaded_actions(self, wait_for_any=False):
+        &#34;&#34;&#34;
+        Runs all the loaded actions and activates all loaded listeners in parallel.
+
+        :param wait_for_any: when true locks the main thread until any one of the &#39;synced&#39; actions are completed.
+        When false waits for *all* of the &#39;synced&#39; actions to complete.
+        &#34;&#34;&#34;
+        locks = []
+        for action in self.__loaded_actions:
+            lock = action.perform()
+            if lock:
+                locks.append(lock)
+
+        if locks:
+            condition = Condition()
+            self.__register_condition(condition)
+            with condition:
+                if wait_for_any:
+                    condition.wait_for(lambda: any([_lock.is_set() for _lock in locks]))
+                else:
+                    condition.wait_for(lambda: all([_lock.is_set() for _lock in locks]))
+            self.__unregister_condition(condition)
+
+        self.__loaded_actions = []
+
+    ###########################
+    # Management              #
+    ###########################
+
+    def start(self) -&gt; None:
+        self.__clear_listeners()
+        super(BasicSICConnector, self).start()
+
+    def stop(self) -&gt; None:
+        self.__clear_listeners()
+        super(BasicSICConnector, self).stop()
+
+    def __clear_listeners(self) -&gt; None:
+        self.__action_listeners = {}
+        self.__conditions = []
+        self.__vision_listeners = {}
+        self.__event_listeners = {}</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="social_interaction_cloud.basic_connector.Action"><code class="flex name class">
+<span>class <span class="ident">Action</span></span>
+<span>(</span><span>action: <built-in function callable>, *args, lock: threading.Event = None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Encapsulation class for callables.</p>
+<p>The callable is executed when the perform() method is called. For synchronous calls,
+a threading.Event() object should be provided as lock.</p>
+<p>:param action: a callable.
+:param args: optional input arguments for the callable
+:param lock: optional lock to force synchronicity.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Action:
+    &#34;&#34;&#34;
+    Encapsulation class for callables.
+
+    The callable is executed when the perform() method is called. For synchronous calls,
+    a threading.Event() object should be provided as lock.
+    &#34;&#34;&#34;
+
+    def __init__(self, action: callable, *args, lock: Event = None):
+        &#34;&#34;&#34;
+
+        :param action: a callable.
+        :param args: optional input arguments for the callable
+        :param lock: optional lock to force synchronicity.
+        &#34;&#34;&#34;
+        self.action = action
+        self.args = args
+        self.lock = lock
+
+    def perform(self) -&gt; Event:
+        &#34;&#34;&#34;
+        Calls the action callable.
+        :return: the lock
+        &#34;&#34;&#34;
+        self.action(*self.args)
+        return self.lock</code></pre>
+</details>
+<h3>Methods</h3>
+<dl>
+<dt id="social_interaction_cloud.basic_connector.Action.perform"><code class="name flex">
+<span>def <span class="ident">perform</span></span>(<span>self) ‑> threading.Event</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Calls the action callable.
+:return: the lock</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def perform(self) -&gt; Event:
+    &#34;&#34;&#34;
+    Calls the action callable.
+    :return: the lock
+    &#34;&#34;&#34;
+    self.action(*self.args)
+    return self.lock</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="social_interaction_cloud.basic_connector.BasicSICConnector"><code class="flex name class">
+<span>class <span class="ident">BasicSICConnector</span></span>
+<span>(</span><span>server_ip: str, dialogflow_language: str = None, dialogflow_key_file: str = None, dialogflow_agent_id: str = None, tts_key_file: str = None, tts_voice: str = None, sentiment: bool = False, stereo_camera: bool = False)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Basic implementation of AbstractSICConnector.</p>
+<p>It serves a connector to the Social Interaction Cloud.
+The base mechanism is that a callback function can be registered for each robot action. When the action returns a
+result (e.g. a ActionDone event) the callback is called once and removed. Only for touch and vision events a
+persistent callback can be registered.</p>
+<p>Each action can be run synchronously (main thread waits for result) and asynchronously (main thread continues).</p>
+<p>:param server_ip: IP address of Social Interaction Cloud server
+:param dialogflow_language: the full language key to use in Dialogflow (e.g. en-US)
+:param dialogflow_key_file: path to Google's Dialogflow key file (JSON)
+:param dialogflow_agent_id: ID number of Dialogflow agent to be used (project ID)
+:param tts_key_file: path to Google's TTS key file (JSON)
+:param tts_voice: ID number of TTS voice to be used
+:param sentiment: use of sentiment analysis
+:param stereo_camera: use of stereo_camera</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class BasicSICConnector(AbstractSICConnector):
+    &#34;&#34;&#34;
+    Basic implementation of AbstractSICConnector.
+
+    It serves a connector to the Social Interaction Cloud.
+    The base mechanism is that a callback function can be registered for each robot action. When the action returns a
+    result (e.g. a ActionDone event) the callback is called once and removed. Only for touch and vision events a
+    persistent callback can be registered.
+
+    Each action can be run synchronously (main thread waits for result) and asynchronously (main thread continues).
+    &#34;&#34;&#34;
+
+    def __init__(self, server_ip: str, dialogflow_language: str = None,
+                 dialogflow_key_file: str = None, dialogflow_agent_id: str = None, tts_key_file: str = None,
+                 tts_voice: str = None, sentiment: bool = False, stereo_camera: bool = False):
+        &#34;&#34;&#34;
+        :param server_ip: IP address of Social Interaction Cloud server
+        :param dialogflow_language: the full language key to use in Dialogflow (e.g. en-US)
+        :param dialogflow_key_file: path to Google&#39;s Dialogflow key file (JSON)
+        :param dialogflow_agent_id: ID number of Dialogflow agent to be used (project ID)
+        :param tts_key_file: path to Google&#39;s TTS key file (JSON)
+        :param tts_voice: ID number of TTS voice to be used
+        :param sentiment: use of sentiment analysis
+        :param stereo_camera: use of stereo_camera
+        &#34;&#34;&#34;
+        self.__action_listeners = {}
+        self.__vision_listeners = {}
+        self.__event_listeners = {}
+        self.__conditions = []
+        self.__loaded_actions = []
+        self.robot_state = {&#39;posture&#39;: RobotPosture.UNKNOWN,
+                            &#39;is_awake&#39;: False,
+                            &#39;battery_charge&#39;: 100,
+                            &#39;is_charging&#39;: False,
+                            &#39;hot_devices&#39;: []}
+        self.stereo_camera = stereo_camera
+
+        super(BasicSICConnector, self).__init__(server_ip=server_ip)
+
+        if sentiment:
+            self.enable_service(&#39;sentiment_analysis&#39;)
+        self.sentiment_enabled = sentiment
+        
+        if dialogflow_language and dialogflow_key_file and dialogflow_agent_id:
+            self.enable_service(&#39;intent_detection&#39;)
+            sleep(1)  # give the service some time to load
+            self.set_dialogflow_language(dialogflow_language)
+            self.set_dialogflow_key(dialogflow_key_file)
+            self.set_dialogflow_agent(dialogflow_agent_id)
+
+        if tts_voice:
+            self.enable_service(&#39;text_to_speech&#39;)
+            sleep(1)
+
+            if not tts_key_file:
+                tts_key_file = dialogflow_key_file
+
+            self.set_tts_key(tts_key_file)
+            self.set_tts_voice(tts_voice)
+
+    ###########################
+    # Event handlers          #
+    ###########################
+
+    def on_event(self, event: str) -&gt; None:
+        self.__notify_action_listeners(event)
+        self.__notify_event_listeners(event)
+
+    def on_posture_changed(self, posture: str) -&gt; None:
+        self.__notify_action_listeners(&#39;onPostureChanged&#39;, posture)
+        self.robot_state[&#39;posture&#39;] = RobotPosture[posture.upper()]
+
+    def on_awake_changed(self, is_awake: bool) -&gt; None:
+        self.__notify_action_listeners(&#39;onAwakeChanged&#39;, is_awake)
+        self.robot_state[&#39;is_awake&#39;] = is_awake
+
+    def on_audio_language(self, language_key: str) -&gt; None:
+        self.__notify_action_listeners(&#39;onAudioLanguage&#39;, language_key)
+
+    def on_audio_intent(self, detection_result: dict) -&gt; None:
+        self.__notify_action_listeners(&#39;onAudioIntent&#39;, detection_result)
+
+    def on_text_transcript(self, transcript: str) -&gt; None:
+        self.__notify_action_listeners(&#39;onTextTranscript&#39;, transcript)
+
+    def on_text_sentiment(self, sentiment: str) -&gt; None:
+        self.__notify_action_listeners(&#39;onTextSentiment&#39;, sentiment)
+
+    def on_new_audio_file(self, audio_file: str) -&gt; None:
+        self.__notify_action_listeners(&#39;onNewAudioFile&#39;, audio_file)
+
+    def on_new_picture_file(self, picture_file: str) -&gt; None:
+        self.__notify_action_listeners(&#39;onNewPictureFile&#39;, picture_file)
+
+    def on_person_detected(self, x: int, y: int) -&gt; None:
+        self.__notify_vision_listeners(&#39;onPersonDetected&#39;, x, y)
+
+    def on_face_recognized(self, identifier: str) -&gt; None:
+        self.__notify_vision_listeners(&#39;onFaceRecognized&#39;, identifier)
+
+    def on_emotion_detected(self, emotion: str) -&gt; None:
+        self.__notify_vision_listeners(&#39;onEmotionDetected&#39;, emotion)
+
+    def on_corona_check_passed(self) -&gt; None:
+        self.__notify_vision_listeners(&#39;onCoronaCheckPassed&#39;)
+
+    def on_object_detected(self, centroid_x: int, centroid_y: int) -&gt; None:
+        self.__notify_vision_listeners(&#39;onObjectDetected&#39;, centroid_x, centroid_y)
+
+    def on_depth_estimated(self, estimation: int, std_dev: int) -&gt; None:
+        self.__notify_vision_listeners(&#39;onDepthEstimated&#39;, estimation, std_dev)
+
+    def on_object_tracked(self, obj_id: int, distance_cm: int, centroid_x: int, centroid_y: int, in_frame_ms: int,
+                          speed_cmps: int) -&gt; None:
+        self.__notify_vision_listeners(&#39;onObjectTracked&#39;, obj_id, distance_cm, centroid_x, centroid_y, in_frame_ms,
+                                       speed_cmps)
+
+    def on_battery_charge_changed(self, percentage: int) -&gt; None:
+        self.__notify_action_listeners(&#39;onBatteryChargeChanged&#39;, percentage)
+        self.robot_state[&#39;battery_charge&#39;] = percentage
+
+    def on_charging_changed(self, is_charging: bool) -&gt; None:
+        self.__notify_action_listeners(&#39;onChargingChanged&#39;, is_charging)
+        self.robot_state[&#39;is_charging&#39;] = is_charging
+
+    def on_hot_device_detected(self, hot_devices: list) -&gt; None:
+        self.__notify_action_listeners(&#39;onHotDeviceDetected&#39;, hot_devices)
+        self.robot_state[&#39;hot_devices&#39;] = hot_devices
+
+    def on_robot_motion_recording(self, motion: str) -&gt; None:
+        self.__notify_action_listeners(&#39;onRobotMotionRecording&#39;, motion)
+
+    def on_browser_button(self, button: str) -&gt; None:
+        self.__notify_action_listeners(&#39;onBrowserButton&#39;, button)
+
+    ###########################
+    # Speech Recognition      #
+    ###########################
+
+    def speech_recognition(self, context: str, max_duration: int, callback: callable = None,
+                           sentiment_callback: callable = None, sync: bool = True) -&gt; None:
+        &#34;&#34;&#34;
+        Initiate a speech recognition attempt using Google&#39;s Dialogflow using a context.
+        For more information on contexts see: https://cloud.google.com/dialogflow/docs/contexts-overview
+
+        The robot will stream audio for at most max_duraction seconds to Dialogflow to recognize something.
+        The result (or a &#39;fail&#39;) is returned via the callback function.
+
+        :param context: Google&#39;s Dialogflow context label (str)
+        :param max_duration: maximum time to listen in seconds (int)
+        :param callback: callback function that will be called when a result (or fail) becomes available
+        :param sync: lets main thread wait on this action
+        &#34;&#34;&#34;
+        inner_callback = callback
+        lock = None
+        if sync:
+            inner_callback, lock = self.__build_sync_callback(inner_callback)
+
+        enhanced_callback, fail_callback, listen_lock = self.__build_speech_recording_callback(inner_callback)
+        self.__register_action_listener(&#39;onAudioIntent&#39;, enhanced_callback)
+        self.__register_action_listener(&#39;IntentDetectionDone&#39;, fail_callback)
+
+        if self.sentiment_enabled and sentiment_callback:
+            self.__register_action_listener(&#39;onTextSentiment&#39;, sentiment_callback)
+
+        Thread(target=self.__recognizing, args=(context, listen_lock, max_duration)).start()
+
+        if lock:
+            lock.wait()
+
+    def record_audio(self, duration: int, callback: callable = None, sync: bool = True) -&gt; None:
+        &#34;&#34;&#34;
+        Records audio for a number of duration seconds. The location of the audio is returned via the callback function.
+
+        :param duration: number of second of audio that will be recorded.
+        :param callback: callback function that will be called when the audio is recorded.
+        :param sync: lets main thread wait on this action
+        &#34;&#34;&#34;
+        inner_callback = callback
+        lock = None
+        if sync:
+            inner_callback, lock = self.__build_sync_callback(inner_callback)
+
+        success_callback, _, listen_lock = self.__build_speech_recording_callback(callback)
+        self.__register_action_listener(&#39;onNewAudioFile&#39;, success_callback)
+        Thread(target=self.__recording, args=(listen_lock, duration)).start()
+
+        if lock:
+            lock.wait()
+
+    def __recognizing(self, context: str, lock: Event, max_duration: int) -&gt; None:
+        self.stop_listening()
+        self.set_dialogflow_context(context)
+        self.start_listening(max_duration)
+        lock.wait()
+        self.__unregister_action_listener(&#39;onAudioIntent&#39;)
+        self.__unregister_action_listener(&#39;IntentDetectionDone&#39;)
+
+    def __recording(self, lock: Event, max_duration: int) -&gt; None:
+        self.stop_listening()
+        self.set_record_audio(True)
+        self.start_listening(max_duration)
+        lock.wait()
+        self.set_record_audio(False)
+        self.__unregister_action_listener(&#39;onNewAudioFile&#39;)
+
+    @staticmethod
+    def __build_speech_recording_callback(embedded_callback: callable = None):
+        lock = Event()
+
+        def success_callback(*args):
+            lock.set()
+            if embedded_callback:
+                embedded_callback(*args)
+
+        def fail_callback():
+            if not lock.is_set():
+                lock.set()
+                if embedded_callback:
+                    embedded_callback(None)
+
+        return success_callback, fail_callback, lock
+
+    ###########################
+    # Vision                  #
+    ###########################
+
+    def take_picture(self, callback: callable = None, sync: bool = True, load: bool = False) -&gt; None:
+        &#34;&#34;&#34;
+        Take a picture. Location of the stored picture is returned via callback.
+
+        :param callback:
+        :param sync:
+        :param load:
+        :return:
+        &#34;&#34;&#34;
+        self.__process_action(super(BasicSICConnector, self).take_picture,
+                              callback=callback, event=&#39;onNewPictureFile&#39;, sync=sync, load=load)
+
+    def subscribe_vision_listener(self, vision_type: VisionType, callback: callable = None, continuous: bool = False,
+                                  sync: bool = True, load: bool = False) -&gt; None:
+        &#34;&#34;&#34;
+        Subscribe a
+        :param vision_type:
+        :param callback:
+        :param continuous:
+        :param sync:
+        :param load:
+        &#34;&#34;&#34;
+
+        inner_callback = callback
+        lock = None
+
+        if not continuous:
+            inner_callback = self.__build_vision_stopping_callback(vision_type, inner_callback)
+
+        if sync:
+            inner_callback, lock = self.__build_sync_callback(inner_callback)
+
+        if not inner_callback:
+            raise NoCallbackException(&#39;A vision listener requires a callback&#39;)
+
+        if load:
+            self.enable_service(vision_type.as_service())
+            sleep(1)  # give the service some time to load
+            self.__loaded_actions.append(Action(self.__start_vision_recognition, str(vision_type.value), inner_callback,
+                                         continuous, lock=lock))
+        else:
+            self.enable_service(vision_type.as_service())
+            sleep(1)  # give the service some time to load
+            self.__start_vision_recognition(str(vision_type.value), inner_callback, continuous)
+            if lock:
+                lock.wait()
+
+    def unsubscribe_vision_listener(self, vision_type: VisionType):
+        &#34;&#34;&#34;
+
+        :param vision_type:
+        &#34;&#34;&#34;
+        self.__stop_vision_recognition(str(vision_type.value))
+
+    def __build_vision_stopping_callback(self, vision_type: VisionType, original_callback: callable = None):
+        def callback(*args):
+            if original_callback:
+                original_callback(*args)
+            self.__stop_vision_recognition(str(vision_type.value))
+
+        return callback
+
+    def __start_vision_recognition(self, event: str, callback: callable = None, continuous: bool = False) -&gt; None:
+        had_listeners = len(self.__vision_listeners) &gt; 0
+        self.__register_vision_listener(event, callback)
+        if not had_listeners and not continuous:
+            self.stop_looking()
+            self.start_looking(seconds=0, channels=(2 if self.stereo_camera else 1))
+
+    def __stop_vision_recognition(self, event: str) -&gt; None:
+        self.__unregister_vision_listener(event)
+        if not self.__vision_listeners:
+            self.stop_looking()
+
+    ###########################
+    # Event Listeners         #
+    ###########################
+
+    def subscribe_event_listener(self, event: str, callback: callable, continuous: bool = False,
+                                 sync: bool = True, load: bool = False) -&gt; None:
+        &#34;&#34;&#34;Subscribe an event listener.
+
+        :param event: any event.
+        :param callback: The callback function to be called when the event becomes available.
+        :param continuous: when true the callback will be triggered every time, when false the callback will be
+        triggered only once.
+        :param sync: lets main thread wait on this action
+        :param load: does not subscribe the event listeners, but loads it instead.
+        See run_loaded_actions() for subscribing loaded listeners.
+        &#34;&#34;&#34;
+        # not continuous stops after one hit, continuous continues
+        # synch wait until (first) hit
+        # load wait until any or all (first) hit
+        inner_callback = callback
+        lock = None
+
+        if not continuous:
+            inner_callback = self.__build_event_stopping_callback(event, inner_callback)
+
+        if sync:
+            inner_callback, lock = self.__build_sync_callback(inner_callback)
+
+        if not inner_callback:
+            raise NoCallbackException(&#39;An event listener requires a callback&#39;)
+
+        if load:
+            self.__loaded_actions.append(Action(self.__register_event_listener, event, inner_callback, lock=lock))
+        else:
+            self.__register_event_listener(event, inner_callback)
+            if lock:
+                lock.wait()
+
+    def unsubscribe_event_listener(self, event: str) -&gt; None:
+        &#34;&#34;&#34;
+        Unsubscribe event listener.
+
+        :param event:
+        &#34;&#34;&#34;
+        self.__unregister_event_listener(event)
+
+    def __build_event_stopping_callback(self, event, original_callback):
+        def callback(*args):
+            if original_callback:
+                original_callback(*args)
+            self.unsubscribe_event_listener(event)
+
+        return callback
+
+    ###########################
+    # Robot actions           #
+    ###########################
+
+    def say_text_to_speech(self, text: str, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).say_text_to_speech, text,
+                              callback=callback, event=&#39;PlayAudioDone&#39;, sync=sync, load=load)
+
+    def set_language(self, language_key: str, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).set_language, language_key,
+                              callback=callback, event=&#39;LanguageChanged&#39;, sync=sync, load=load)
+
+    def set_idle(self, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).set_idle,
+                              callback=callback, event=&#39;SetIdle&#39;, sync=sync, load=load)
+
+    def set_non_idle(self, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).set_non_idle,
+                              callback=callback, event=&#39;SetNonIdle&#39;, sync=sync, load=load)
+
+    def start_looking(self, seconds: int, channels: int = 1, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).start_looking, seconds, channels,
+                              callback=callback, event=&#39;WatchingStarted&#39;, sync=sync, load=load)
+
+    def stop_looking(self, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).stop_looking,
+                              callback=callback, event=&#39;WatchingDone&#39;, sync=sync, load=load)
+
+    def say(self, text: str, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).say, text,
+                              callback=callback, event=&#39;TextDone&#39;, sync=sync, load=load)
+
+    def say_animated(self, text: str, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).say_animated, text,
+                              callback=callback, event=&#39;TextDone&#39;, sync=sync, load=load)
+
+    def stop_talking(self, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).stop_talking,
+                              callback=callback, event=&#39;TextDone&#39;, sync=sync, load=load)
+
+    def do_gesture(self, gesture: str, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).do_gesture, gesture,
+                              callback=callback, event=&#39;GestureDone&#39;, sync=sync, load=load)
+
+    def load_audio(self, audio_file: str, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).load_audio, audio_file,
+                              callback=callback, event=&#39;LoadAudioDone&#39;, sync=sync, load=load)
+
+    def play_audio(self, audio_file: str, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).play_audio, audio_file,
+                              callback=callback, event=&#39;PlayAudioDone&#39;, sync=sync, load=load)
+
+    def play_loaded_audio(self, audio_identifier: int, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).play_loaded_audio, audio_identifier,
+                              callback=callback, event=&#39;PlayAudioDone&#39;, sync=sync, load=load)
+
+    def clear_loaded_audio(self, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).clear_loaded_audio,
+                              callback=callback, event=&#39;ClearLoadedAudioDone&#39;, sync=sync, load=load)
+
+    def set_eye_color(self, color: str, callback: callable = None, sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).set_eye_color, color,
+                              callback=callback, event=&#39;EyeColourDone&#39;, sync=sync, load=load)
+
+    def set_ear_color(self, color: str, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).set_ear_color, color,
+                              callback=callback, event=&#39;EarColourDone&#39;, sync=sync, load=load)
+
+    def set_head_color(self, color: str, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).set_head_color, color,
+                              callback=callback, event=&#39;HeadColourDone&#39;, sync=sync, load=load)
+
+    def set_led_color(self, leds: list, colors: list, duration: int = 0, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).set_led_color, leds, colors, duration,
+                              callback=callback, event=&#39;LedColorDone&#39;, sync=sync, load=load)
+    
+    def start_led_animation(self, led_group: str, anim_type: str, colors: list, speed: int,
+                            real_blink=False, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).start_led_animation, led_group, anim_type, colors, speed, real_blink,
+                              callback=callback, event=&#39;LedAnimationDone&#39;, sync=sync, load=load)
+
+    def stop_led_animation(self, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).stop_led_animation,
+                              callback=None, event=&#39;&#39;, sync=sync, load=load)
+
+    def turn(self, degrees: int, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).turn, degrees,
+                              callback=callback, event=&#39;TurnDone&#39;, sync=sync, load=load)
+
+    def wake_up(self, callback: callable = None, sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).wake_up,
+                              callback=callback, event=&#39;WakeUpDone&#39;, sync=sync, load=load)
+
+    def rest(self, callback: callable = None, sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).rest,
+                              callback=callback, event=&#39;RestDone&#39;, sync=sync, load=load)
+
+    def set_breathing(self, enable: bool, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).set_breathing, enable,
+                              callback=callback, event=&#39;Breathing&#39; + (&#39;Enabled&#39; if enable else &#39;Disabled&#39;), sync=sync, load=load)
+
+    def go_to_posture(self, posture: Enum, speed: int = 100, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).go_to_posture, posture.value, speed,
+                              callback=partial(self.__posture_callback,
+                                               target_posture=posture,
+                                               embedded_callback=callback),
+                              event=&#39;GoToPostureDone&#39;, sync=sync, load=load)
+
+    def __posture_callback(self, target_posture: str, embedded_callback: callable) -&gt; None:
+        if self.robot_state[&#39;posture&#39;] == target_posture:  # if posture was successfully reached
+            embedded_callback(True)  # call the listener to signal a success
+        else:  # if the posture was not reached
+            embedded_callback(False)  # call the listener to signal a failure
+
+    def set_stiffness(self, joints: list, stiffness: int, duration: int = 1000, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).set_stiffness, joints, stiffness, duration,
+                              callback=callback, event=&#39;SetStiffnessDone&#39;, sync=sync, load=load)
+
+    def play_motion(self, motion: str, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).play_motion, motion,
+                              callback=callback, event=&#39;PlayMotionDone&#39;, sync=sync, load=load)
+
+    def start_record_motion(self, joint_chains: list, framerate: int = 5, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).start_record_motion, joint_chains, framerate,
+                              callback=callback, event=&#39;RecordMotionStarted&#39;, sync=sync, load=load)
+
+    def stop_record_motion(self, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).stop_record_motion,
+                              callback=callback, event=&#39;onRobotMotionRecording&#39;, sync=sync, load=load)
+
+    def browser_show(self, html: str, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+        self.__process_action(super(BasicSICConnector, self).browser_show, html,
+                              callback=None, event=&#39;&#39;, sync=sync, load=load)
+
+    ###########################
+    # Listeners Management  #
+    ###########################
+    def __register_action_listener(self, event: str, callback: callable) -&gt; None:
+        self.__action_listeners[event] = callback
+
+    def __unregister_action_listener(self, event: str) -&gt; None:
+        del self.__action_listeners[event]
+
+    def __register_vision_listener(self, event: str, callback: callable) -&gt; None:
+        self.__vision_listeners[event] = callback
+
+    def __unregister_vision_listener(self, event: str) -&gt; None:
+        del self.__vision_listeners[event]
+
+    def __register_event_listener(self, event: str, callback: callable):
+        self.__event_listeners[event] = callback
+
+    def __unregister_event_listener(self, event: str) -&gt; None:
+        del self.__event_listeners[event]
+
+    def __register_condition(self, condition: Condition) -&gt; None:
+        &#34;&#34;&#34;
+        Subscribe a threading.Condition object that will be notified each time a registered callback is called.
+
+        :param condition: Condition object that will be notified
+        :return:
+        &#34;&#34;&#34;
+        self.__conditions.append(condition)
+
+    def __unregister_condition(self, condition: Condition) -&gt; None:
+        &#34;&#34;&#34;
+        Unsubscribe the threading.Condition object.
+
+        :param condition: Condition object to unsubscribe
+        :return:
+        &#34;&#34;&#34;
+        if condition in self.__conditions:
+            self.__conditions.remove(condition)
+
+    def __notify_action_listeners(self, event: str, *args) -&gt; None:
+        if event in self.__action_listeners:
+            listener = self.__action_listeners[event]
+            listener(*args)
+            self.__notify_conditions()
+
+    def __notify_vision_listeners(self, event: str, *args) -&gt; None:
+        if event in self.__vision_listeners:
+            listener = self.__vision_listeners[event]
+            listener(*args)
+            self.__notify_conditions()
+
+    def __notify_event_listeners(self, event: str, *args) -&gt; None:
+        if event in self.__event_listeners:
+            listener = self.__event_listeners[event]
+            listener(*args)
+            self.__notify_conditions()
+
+    def __notify_conditions(self) -&gt; None:
+        for condition in self.__conditions:
+            with condition:
+                condition.notify()
+
+    @staticmethod
+    def __build_sync_callback(additional_callback: callable = None):
+        lock = Event()
+
+        def callback(*args):
+            if additional_callback:
+                additional_callback(*args)
+            lock.set()
+
+        return callback, lock
+
+    def __process_action(self, action: callable, *args, callback: callable, event: str, sync: bool, load: bool):
+        inner_callback = callback
+        lock = None
+
+        if sync:
+            inner_callback, lock = self.__build_sync_callback(callback)
+
+        if inner_callback:
+            self.__register_action_listener(event, inner_callback)
+
+        if load:
+            self.__loaded_actions.append(Action(action, *args, lock=lock))
+        else:
+            action(*args)
+            if lock:
+                lock.wait()
+
+    def run_loaded_actions(self, wait_for_any=False):
+        &#34;&#34;&#34;
+        Runs all the loaded actions and activates all loaded listeners in parallel.
+
+        :param wait_for_any: when true locks the main thread until any one of the &#39;synced&#39; actions are completed.
+        When false waits for *all* of the &#39;synced&#39; actions to complete.
+        &#34;&#34;&#34;
+        locks = []
+        for action in self.__loaded_actions:
+            lock = action.perform()
+            if lock:
+                locks.append(lock)
+
+        if locks:
+            condition = Condition()
+            self.__register_condition(condition)
+            with condition:
+                if wait_for_any:
+                    condition.wait_for(lambda: any([_lock.is_set() for _lock in locks]))
+                else:
+                    condition.wait_for(lambda: all([_lock.is_set() for _lock in locks]))
+            self.__unregister_condition(condition)
+
+        self.__loaded_actions = []
+
+    ###########################
+    # Management              #
+    ###########################
+
+    def start(self) -&gt; None:
+        self.__clear_listeners()
+        super(BasicSICConnector, self).start()
+
+    def stop(self) -&gt; None:
+        self.__clear_listeners()
+        super(BasicSICConnector, self).stop()
+
+    def __clear_listeners(self) -&gt; None:
+        self.__action_listeners = {}
+        self.__conditions = []
+        self.__vision_listeners = {}
+        self.__event_listeners = {}</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector">AbstractSICConnector</a></li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="social_interaction_cloud.basic_connector.BasicSICConnector.record_audio"><code class="name flex">
+<span>def <span class="ident">record_audio</span></span>(<span>self, duration: int, callback: <built-in function callable> = None, sync: bool = True) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Records audio for a number of duration seconds. The location of the audio is returned via the callback function.</p>
+<p>:param duration: number of second of audio that will be recorded.
+:param callback: callback function that will be called when the audio is recorded.
+:param sync: lets main thread wait on this action</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def record_audio(self, duration: int, callback: callable = None, sync: bool = True) -&gt; None:
+    &#34;&#34;&#34;
+    Records audio for a number of duration seconds. The location of the audio is returned via the callback function.
+
+    :param duration: number of second of audio that will be recorded.
+    :param callback: callback function that will be called when the audio is recorded.
+    :param sync: lets main thread wait on this action
+    &#34;&#34;&#34;
+    inner_callback = callback
+    lock = None
+    if sync:
+        inner_callback, lock = self.__build_sync_callback(inner_callback)
+
+    success_callback, _, listen_lock = self.__build_speech_recording_callback(callback)
+    self.__register_action_listener(&#39;onNewAudioFile&#39;, success_callback)
+    Thread(target=self.__recording, args=(listen_lock, duration)).start()
+
+    if lock:
+        lock.wait()</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.basic_connector.BasicSICConnector.run_loaded_actions"><code class="name flex">
+<span>def <span class="ident">run_loaded_actions</span></span>(<span>self, wait_for_any=False)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Runs all the loaded actions and activates all loaded listeners in parallel.</p>
+<p>:param wait_for_any: when true locks the main thread until any one of the 'synced' actions are completed.
+When false waits for <em>all</em> of the 'synced' actions to complete.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def run_loaded_actions(self, wait_for_any=False):
+    &#34;&#34;&#34;
+    Runs all the loaded actions and activates all loaded listeners in parallel.
+
+    :param wait_for_any: when true locks the main thread until any one of the &#39;synced&#39; actions are completed.
+    When false waits for *all* of the &#39;synced&#39; actions to complete.
+    &#34;&#34;&#34;
+    locks = []
+    for action in self.__loaded_actions:
+        lock = action.perform()
+        if lock:
+            locks.append(lock)
+
+    if locks:
+        condition = Condition()
+        self.__register_condition(condition)
+        with condition:
+            if wait_for_any:
+                condition.wait_for(lambda: any([_lock.is_set() for _lock in locks]))
+            else:
+                condition.wait_for(lambda: all([_lock.is_set() for _lock in locks]))
+        self.__unregister_condition(condition)
+
+    self.__loaded_actions = []</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.basic_connector.BasicSICConnector.say_text_to_speech"><code class="name flex">
+<span>def <span class="ident">say_text_to_speech</span></span>(<span>self, text: str, callback: <built-in function callable> = None, sync: bool = True, load: bool = False) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def say_text_to_speech(self, text: str, callback: callable = None,  sync: bool = True, load: bool = False) -&gt; None:
+    self.__process_action(super(BasicSICConnector, self).say_text_to_speech, text,
+                          callback=callback, event=&#39;PlayAudioDone&#39;, sync=sync, load=load)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.basic_connector.BasicSICConnector.speech_recognition"><code class="name flex">
+<span>def <span class="ident">speech_recognition</span></span>(<span>self, context: str, max_duration: int, callback: <built-in function callable> = None, sentiment_callback: <built-in function callable> = None, sync: bool = True) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Initiate a speech recognition attempt using Google's Dialogflow using a context.
+For more information on contexts see: <a href="https://cloud.google.com/dialogflow/docs/contexts-overview">https://cloud.google.com/dialogflow/docs/contexts-overview</a></p>
+<p>The robot will stream audio for at most max_duraction seconds to Dialogflow to recognize something.
+The result (or a 'fail') is returned via the callback function.</p>
+<p>:param context: Google's Dialogflow context label (str)
+:param max_duration: maximum time to listen in seconds (int)
+:param callback: callback function that will be called when a result (or fail) becomes available
+:param sync: lets main thread wait on this action</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def speech_recognition(self, context: str, max_duration: int, callback: callable = None,
+                       sentiment_callback: callable = None, sync: bool = True) -&gt; None:
+    &#34;&#34;&#34;
+    Initiate a speech recognition attempt using Google&#39;s Dialogflow using a context.
+    For more information on contexts see: https://cloud.google.com/dialogflow/docs/contexts-overview
+
+    The robot will stream audio for at most max_duraction seconds to Dialogflow to recognize something.
+    The result (or a &#39;fail&#39;) is returned via the callback function.
+
+    :param context: Google&#39;s Dialogflow context label (str)
+    :param max_duration: maximum time to listen in seconds (int)
+    :param callback: callback function that will be called when a result (or fail) becomes available
+    :param sync: lets main thread wait on this action
+    &#34;&#34;&#34;
+    inner_callback = callback
+    lock = None
+    if sync:
+        inner_callback, lock = self.__build_sync_callback(inner_callback)
+
+    enhanced_callback, fail_callback, listen_lock = self.__build_speech_recording_callback(inner_callback)
+    self.__register_action_listener(&#39;onAudioIntent&#39;, enhanced_callback)
+    self.__register_action_listener(&#39;IntentDetectionDone&#39;, fail_callback)
+
+    if self.sentiment_enabled and sentiment_callback:
+        self.__register_action_listener(&#39;onTextSentiment&#39;, sentiment_callback)
+
+    Thread(target=self.__recognizing, args=(context, listen_lock, max_duration)).start()
+
+    if lock:
+        lock.wait()</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.basic_connector.BasicSICConnector.subscribe_event_listener"><code class="name flex">
+<span>def <span class="ident">subscribe_event_listener</span></span>(<span>self, event: str, callback: <built-in function callable>, continuous: bool = False, sync: bool = True, load: bool = False) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Subscribe an event listener.</p>
+<p>:param event: any event.
+:param callback: The callback function to be called when the event becomes available.
+:param continuous: when true the callback will be triggered every time, when false the callback will be
+triggered only once.
+:param sync: lets main thread wait on this action
+:param load: does not subscribe the event listeners, but loads it instead.
+See run_loaded_actions() for subscribing loaded listeners.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def subscribe_event_listener(self, event: str, callback: callable, continuous: bool = False,
+                             sync: bool = True, load: bool = False) -&gt; None:
+    &#34;&#34;&#34;Subscribe an event listener.
+
+    :param event: any event.
+    :param callback: The callback function to be called when the event becomes available.
+    :param continuous: when true the callback will be triggered every time, when false the callback will be
+    triggered only once.
+    :param sync: lets main thread wait on this action
+    :param load: does not subscribe the event listeners, but loads it instead.
+    See run_loaded_actions() for subscribing loaded listeners.
+    &#34;&#34;&#34;
+    # not continuous stops after one hit, continuous continues
+    # synch wait until (first) hit
+    # load wait until any or all (first) hit
+    inner_callback = callback
+    lock = None
+
+    if not continuous:
+        inner_callback = self.__build_event_stopping_callback(event, inner_callback)
+
+    if sync:
+        inner_callback, lock = self.__build_sync_callback(inner_callback)
+
+    if not inner_callback:
+        raise NoCallbackException(&#39;An event listener requires a callback&#39;)
+
+    if load:
+        self.__loaded_actions.append(Action(self.__register_event_listener, event, inner_callback, lock=lock))
+    else:
+        self.__register_event_listener(event, inner_callback)
+        if lock:
+            lock.wait()</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.basic_connector.BasicSICConnector.subscribe_vision_listener"><code class="name flex">
+<span>def <span class="ident">subscribe_vision_listener</span></span>(<span>self, vision_type: <a title="social_interaction_cloud.basic_connector.VisionType" href="#social_interaction_cloud.basic_connector.VisionType">VisionType</a>, callback: <built-in function callable> = None, continuous: bool = False, sync: bool = True, load: bool = False) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Subscribe a
+:param vision_type:
+:param callback:
+:param continuous:
+:param sync:
+:param load:</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def subscribe_vision_listener(self, vision_type: VisionType, callback: callable = None, continuous: bool = False,
+                              sync: bool = True, load: bool = False) -&gt; None:
+    &#34;&#34;&#34;
+    Subscribe a
+    :param vision_type:
+    :param callback:
+    :param continuous:
+    :param sync:
+    :param load:
+    &#34;&#34;&#34;
+
+    inner_callback = callback
+    lock = None
+
+    if not continuous:
+        inner_callback = self.__build_vision_stopping_callback(vision_type, inner_callback)
+
+    if sync:
+        inner_callback, lock = self.__build_sync_callback(inner_callback)
+
+    if not inner_callback:
+        raise NoCallbackException(&#39;A vision listener requires a callback&#39;)
+
+    if load:
+        self.enable_service(vision_type.as_service())
+        sleep(1)  # give the service some time to load
+        self.__loaded_actions.append(Action(self.__start_vision_recognition, str(vision_type.value), inner_callback,
+                                     continuous, lock=lock))
+    else:
+        self.enable_service(vision_type.as_service())
+        sleep(1)  # give the service some time to load
+        self.__start_vision_recognition(str(vision_type.value), inner_callback, continuous)
+        if lock:
+            lock.wait()</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.basic_connector.BasicSICConnector.take_picture"><code class="name flex">
+<span>def <span class="ident">take_picture</span></span>(<span>self, callback: <built-in function callable> = None, sync: bool = True, load: bool = False) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Take a picture. Location of the stored picture is returned via callback.</p>
+<p>:param callback:
+:param sync:
+:param load:
+:return:</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def take_picture(self, callback: callable = None, sync: bool = True, load: bool = False) -&gt; None:
+    &#34;&#34;&#34;
+    Take a picture. Location of the stored picture is returned via callback.
+
+    :param callback:
+    :param sync:
+    :param load:
+    :return:
+    &#34;&#34;&#34;
+    self.__process_action(super(BasicSICConnector, self).take_picture,
+                          callback=callback, event=&#39;onNewPictureFile&#39;, sync=sync, load=load)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.basic_connector.BasicSICConnector.unsubscribe_event_listener"><code class="name flex">
+<span>def <span class="ident">unsubscribe_event_listener</span></span>(<span>self, event: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Unsubscribe event listener.</p>
+<p>:param event:</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def unsubscribe_event_listener(self, event: str) -&gt; None:
+    &#34;&#34;&#34;
+    Unsubscribe event listener.
+
+    :param event:
+    &#34;&#34;&#34;
+    self.__unregister_event_listener(event)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.basic_connector.BasicSICConnector.unsubscribe_vision_listener"><code class="name flex">
+<span>def <span class="ident">unsubscribe_vision_listener</span></span>(<span>self, vision_type: <a title="social_interaction_cloud.basic_connector.VisionType" href="#social_interaction_cloud.basic_connector.VisionType">VisionType</a>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>:param vision_type:</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def unsubscribe_vision_listener(self, vision_type: VisionType):
+    &#34;&#34;&#34;
+
+    :param vision_type:
+    &#34;&#34;&#34;
+    self.__stop_vision_recognition(str(vision_type.value))</code></pre>
+</details>
+</dd>
+</dl>
+<h3>Inherited members</h3>
+<ul class="hlist">
+<li><code><b><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector">AbstractSICConnector</a></b></code>:
+<ul class="hlist">
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.browser_show" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.browser_show">browser_show</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.clear_loaded_audio" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.clear_loaded_audio">clear_loaded_audio</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.do_gesture" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.do_gesture">do_gesture</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.enable_service" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.enable_service">enable_service</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.go_to_posture" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.go_to_posture">go_to_posture</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.load_audio" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.load_audio">load_audio</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_audio_intent" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_audio_intent">on_audio_intent</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_audio_language" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_audio_language">on_audio_language</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_audio_loaded" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_audio_loaded">on_audio_loaded</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_awake_changed" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_awake_changed">on_awake_changed</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_battery_charge_changed" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_battery_charge_changed">on_battery_charge_changed</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_browser_button" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_browser_button">on_browser_button</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_charging_changed" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_charging_changed">on_charging_changed</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_corona_check_passed" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_corona_check_passed">on_corona_check_passed</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_depth_estimated" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_depth_estimated">on_depth_estimated</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_emotion_detected" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_emotion_detected">on_emotion_detected</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_event" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_event">on_event</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_face_recognized" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_face_recognized">on_face_recognized</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_hot_device_detected" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_hot_device_detected">on_hot_device_detected</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_new_audio_file" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_new_audio_file">on_new_audio_file</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_new_picture_file" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_new_picture_file">on_new_picture_file</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_object_detected" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_object_detected">on_object_detected</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_object_tracked" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_object_tracked">on_object_tracked</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_person_detected" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_person_detected">on_person_detected</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_posture_changed" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_posture_changed">on_posture_changed</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_robot_motion_recording" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_robot_motion_recording">on_robot_motion_recording</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_text_sentiment" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_text_sentiment">on_text_sentiment</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_text_transcript" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_text_transcript">on_text_transcript</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.play_audio" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.play_audio">play_audio</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.play_loaded_audio" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.play_loaded_audio">play_loaded_audio</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.play_motion" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.play_motion">play_motion</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.rest" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.rest">rest</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.say" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.say">say</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.say_animated" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.say_animated">say_animated</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_breathing" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.set_breathing">set_breathing</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_dialogflow_agent" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.set_dialogflow_agent">set_dialogflow_agent</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_dialogflow_context" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.set_dialogflow_context">set_dialogflow_context</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_dialogflow_key" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.set_dialogflow_key">set_dialogflow_key</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_dialogflow_language" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.set_dialogflow_language">set_dialogflow_language</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_ear_color" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.set_ear_color">set_ear_color</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_eye_color" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.set_eye_color">set_eye_color</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_head_color" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.set_head_color">set_head_color</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_idle" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.set_idle">set_idle</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_language" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.set_language">set_language</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_led_color" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.set_led_color">set_led_color</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_non_idle" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.set_non_idle">set_non_idle</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_record_audio" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.set_record_audio">set_record_audio</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_stiffness" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.set_stiffness">set_stiffness</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_tts_key" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.set_tts_key">set_tts_key</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_tts_voice" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.set_tts_voice">set_tts_voice</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.start" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.start">start</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.start_led_animation" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.start_led_animation">start_led_animation</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.start_listening" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.start_listening">start_listening</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.start_looking" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.start_looking">start_looking</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.start_record_motion" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.start_record_motion">start_record_motion</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.stop" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.stop">stop</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.stop_led_animation" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.stop_led_animation">stop_led_animation</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.stop_listening" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.stop_listening">stop_listening</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.stop_looking" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.stop_looking">stop_looking</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.stop_record_motion" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.stop_record_motion">stop_record_motion</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.stop_talking" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.stop_talking">stop_talking</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.turn" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.turn">turn</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.wake_up" href="abstract_connector.html#social_interaction_cloud.abstract_connector.AbstractSICConnector.wake_up">wake_up</a></code></li>
+</ul>
+</li>
+</ul>
+</dd>
+<dt id="social_interaction_cloud.basic_connector.NoCallbackException"><code class="flex name class">
+<span>class <span class="ident">NoCallbackException</span></span>
+<span>(</span><span>*args, **kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Exception raised when a required callback function is not provided</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class NoCallbackException(Exception):
+    &#34;&#34;&#34;Exception raised when a required callback function is not provided&#34;&#34;&#34;
+    pass</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>builtins.Exception</li>
+<li>builtins.BaseException</li>
+</ul>
+</dd>
+<dt id="social_interaction_cloud.basic_connector.RobotPosture"><code class="flex name class">
+<span>class <span class="ident">RobotPosture</span></span>
+<span>(</span><span>value, names=None, *, module=None, qualname=None, type=None, start=1)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Enumeration of available postures on the Nao and Pepper robot.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class RobotPosture(Enum):
+    &#34;&#34;&#34;Enumeration of available postures on the Nao and Pepper robot.&#34;&#34;&#34;
+    STAND = &#39;Stand&#39;
+    STANDINIT = &#39;StandInit&#39;
+    STANDZERO = &#39;StandZero&#39;
+    CROUCH = &#39;Crouch&#39;
+    SIT = &#39;Sit&#39;  # only for Nao
+    SITONCHAIR = &#39;SitOnChair&#39;  # only for Nao
+    SITRELAX = &#39;SitRelax&#39;  # only for Nao
+    LYINGBELLY = &#39;LyingBelly&#39;  # only for Nao
+    LYINGBACK = &#39;LyingBack&#39;  # only for Nao
+    UNKNOWN = &#39;Unknown&#39;  # this is not a valid posture</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>enum.Enum</li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="social_interaction_cloud.basic_connector.RobotPosture.CROUCH"><code class="name">var <span class="ident">CROUCH</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="social_interaction_cloud.basic_connector.RobotPosture.LYINGBACK"><code class="name">var <span class="ident">LYINGBACK</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="social_interaction_cloud.basic_connector.RobotPosture.LYINGBELLY"><code class="name">var <span class="ident">LYINGBELLY</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="social_interaction_cloud.basic_connector.RobotPosture.SIT"><code class="name">var <span class="ident">SIT</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="social_interaction_cloud.basic_connector.RobotPosture.SITONCHAIR"><code class="name">var <span class="ident">SITONCHAIR</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="social_interaction_cloud.basic_connector.RobotPosture.SITRELAX"><code class="name">var <span class="ident">SITRELAX</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="social_interaction_cloud.basic_connector.RobotPosture.STAND"><code class="name">var <span class="ident">STAND</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="social_interaction_cloud.basic_connector.RobotPosture.STANDINIT"><code class="name">var <span class="ident">STANDINIT</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="social_interaction_cloud.basic_connector.RobotPosture.STANDZERO"><code class="name">var <span class="ident">STANDZERO</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="social_interaction_cloud.basic_connector.RobotPosture.UNKNOWN"><code class="name">var <span class="ident">UNKNOWN</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+<dt id="social_interaction_cloud.basic_connector.VisionType"><code class="flex name class">
+<span>class <span class="ident">VisionType</span></span>
+<span>(</span><span>value, names=None, *, module=None, qualname=None, type=None, start=1)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Enumeration of the available vision events.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class VisionType(Enum):
+    &#34;&#34;&#34;Enumeration of the available vision events.&#34;&#34;&#34;
+    FACE = &#39;onFaceRecognized&#39;
+    PEOPLE = &#39;onPersonDetected&#39;
+    EMOTION = &#39;onEmotionDetected&#39;
+    CORONA = &#39;onCoronaCheckPassed&#39;
+    OBJECT = &#39;onObjectDetected&#39;
+    DEPTH = &#39;onDepthEstimated&#39;
+    TRACKING = &#39;onObjectTracked&#39;
+
+    def as_service(self):
+        &#34;&#34;&#34;Returns the service that generates the vision events.&#34;&#34;&#34;
+        if self == VisionType.FACE:
+            return &#39;face_recognition&#39;
+        elif self == VisionType.PEOPLE:
+            return &#39;people_detection&#39;
+        elif self == VisionType.EMOTION:
+            return &#39;emotion_detection&#39;
+        elif self == VisionType.CORONA:
+            return &#39;corona_checker&#39;
+        elif self == VisionType.OBJECT:
+            return &#39;object_detection&#39;
+        elif self == VisionType.DEPTH:
+            return &#39;depth_estimation&#39;
+        elif self == VisionType.TRACKING:
+            return &#39;object_tracking&#39;</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>enum.Enum</li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="social_interaction_cloud.basic_connector.VisionType.CORONA"><code class="name">var <span class="ident">CORONA</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="social_interaction_cloud.basic_connector.VisionType.DEPTH"><code class="name">var <span class="ident">DEPTH</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="social_interaction_cloud.basic_connector.VisionType.EMOTION"><code class="name">var <span class="ident">EMOTION</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="social_interaction_cloud.basic_connector.VisionType.FACE"><code class="name">var <span class="ident">FACE</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="social_interaction_cloud.basic_connector.VisionType.OBJECT"><code class="name">var <span class="ident">OBJECT</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="social_interaction_cloud.basic_connector.VisionType.PEOPLE"><code class="name">var <span class="ident">PEOPLE</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="social_interaction_cloud.basic_connector.VisionType.TRACKING"><code class="name">var <span class="ident">TRACKING</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+<h3>Methods</h3>
+<dl>
+<dt id="social_interaction_cloud.basic_connector.VisionType.as_service"><code class="name flex">
+<span>def <span class="ident">as_service</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns the service that generates the vision events.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def as_service(self):
+    &#34;&#34;&#34;Returns the service that generates the vision events.&#34;&#34;&#34;
+    if self == VisionType.FACE:
+        return &#39;face_recognition&#39;
+    elif self == VisionType.PEOPLE:
+        return &#39;people_detection&#39;
+    elif self == VisionType.EMOTION:
+        return &#39;emotion_detection&#39;
+    elif self == VisionType.CORONA:
+        return &#39;corona_checker&#39;
+    elif self == VisionType.OBJECT:
+        return &#39;object_detection&#39;
+    elif self == VisionType.DEPTH:
+        return &#39;depth_estimation&#39;
+    elif self == VisionType.TRACKING:
+        return &#39;object_tracking&#39;</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="social_interaction_cloud" href="index.html">social_interaction_cloud</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="social_interaction_cloud.basic_connector.Action" href="#social_interaction_cloud.basic_connector.Action">Action</a></code></h4>
+<ul class="">
+<li><code><a title="social_interaction_cloud.basic_connector.Action.perform" href="#social_interaction_cloud.basic_connector.Action.perform">perform</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="social_interaction_cloud.basic_connector.BasicSICConnector" href="#social_interaction_cloud.basic_connector.BasicSICConnector">BasicSICConnector</a></code></h4>
+<ul class="">
+<li><code><a title="social_interaction_cloud.basic_connector.BasicSICConnector.record_audio" href="#social_interaction_cloud.basic_connector.BasicSICConnector.record_audio">record_audio</a></code></li>
+<li><code><a title="social_interaction_cloud.basic_connector.BasicSICConnector.run_loaded_actions" href="#social_interaction_cloud.basic_connector.BasicSICConnector.run_loaded_actions">run_loaded_actions</a></code></li>
+<li><code><a title="social_interaction_cloud.basic_connector.BasicSICConnector.say_text_to_speech" href="#social_interaction_cloud.basic_connector.BasicSICConnector.say_text_to_speech">say_text_to_speech</a></code></li>
+<li><code><a title="social_interaction_cloud.basic_connector.BasicSICConnector.speech_recognition" href="#social_interaction_cloud.basic_connector.BasicSICConnector.speech_recognition">speech_recognition</a></code></li>
+<li><code><a title="social_interaction_cloud.basic_connector.BasicSICConnector.subscribe_event_listener" href="#social_interaction_cloud.basic_connector.BasicSICConnector.subscribe_event_listener">subscribe_event_listener</a></code></li>
+<li><code><a title="social_interaction_cloud.basic_connector.BasicSICConnector.subscribe_vision_listener" href="#social_interaction_cloud.basic_connector.BasicSICConnector.subscribe_vision_listener">subscribe_vision_listener</a></code></li>
+<li><code><a title="social_interaction_cloud.basic_connector.BasicSICConnector.take_picture" href="#social_interaction_cloud.basic_connector.BasicSICConnector.take_picture">take_picture</a></code></li>
+<li><code><a title="social_interaction_cloud.basic_connector.BasicSICConnector.unsubscribe_event_listener" href="#social_interaction_cloud.basic_connector.BasicSICConnector.unsubscribe_event_listener">unsubscribe_event_listener</a></code></li>
+<li><code><a title="social_interaction_cloud.basic_connector.BasicSICConnector.unsubscribe_vision_listener" href="#social_interaction_cloud.basic_connector.BasicSICConnector.unsubscribe_vision_listener">unsubscribe_vision_listener</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="social_interaction_cloud.basic_connector.NoCallbackException" href="#social_interaction_cloud.basic_connector.NoCallbackException">NoCallbackException</a></code></h4>
+</li>
+<li>
+<h4><code><a title="social_interaction_cloud.basic_connector.RobotPosture" href="#social_interaction_cloud.basic_connector.RobotPosture">RobotPosture</a></code></h4>
+<ul class="two-column">
+<li><code><a title="social_interaction_cloud.basic_connector.RobotPosture.CROUCH" href="#social_interaction_cloud.basic_connector.RobotPosture.CROUCH">CROUCH</a></code></li>
+<li><code><a title="social_interaction_cloud.basic_connector.RobotPosture.LYINGBACK" href="#social_interaction_cloud.basic_connector.RobotPosture.LYINGBACK">LYINGBACK</a></code></li>
+<li><code><a title="social_interaction_cloud.basic_connector.RobotPosture.LYINGBELLY" href="#social_interaction_cloud.basic_connector.RobotPosture.LYINGBELLY">LYINGBELLY</a></code></li>
+<li><code><a title="social_interaction_cloud.basic_connector.RobotPosture.SIT" href="#social_interaction_cloud.basic_connector.RobotPosture.SIT">SIT</a></code></li>
+<li><code><a title="social_interaction_cloud.basic_connector.RobotPosture.SITONCHAIR" href="#social_interaction_cloud.basic_connector.RobotPosture.SITONCHAIR">SITONCHAIR</a></code></li>
+<li><code><a title="social_interaction_cloud.basic_connector.RobotPosture.SITRELAX" href="#social_interaction_cloud.basic_connector.RobotPosture.SITRELAX">SITRELAX</a></code></li>
+<li><code><a title="social_interaction_cloud.basic_connector.RobotPosture.STAND" href="#social_interaction_cloud.basic_connector.RobotPosture.STAND">STAND</a></code></li>
+<li><code><a title="social_interaction_cloud.basic_connector.RobotPosture.STANDINIT" href="#social_interaction_cloud.basic_connector.RobotPosture.STANDINIT">STANDINIT</a></code></li>
+<li><code><a title="social_interaction_cloud.basic_connector.RobotPosture.STANDZERO" href="#social_interaction_cloud.basic_connector.RobotPosture.STANDZERO">STANDZERO</a></code></li>
+<li><code><a title="social_interaction_cloud.basic_connector.RobotPosture.UNKNOWN" href="#social_interaction_cloud.basic_connector.RobotPosture.UNKNOWN">UNKNOWN</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="social_interaction_cloud.basic_connector.VisionType" href="#social_interaction_cloud.basic_connector.VisionType">VisionType</a></code></h4>
+<ul class="two-column">
+<li><code><a title="social_interaction_cloud.basic_connector.VisionType.CORONA" href="#social_interaction_cloud.basic_connector.VisionType.CORONA">CORONA</a></code></li>
+<li><code><a title="social_interaction_cloud.basic_connector.VisionType.DEPTH" href="#social_interaction_cloud.basic_connector.VisionType.DEPTH">DEPTH</a></code></li>
+<li><code><a title="social_interaction_cloud.basic_connector.VisionType.EMOTION" href="#social_interaction_cloud.basic_connector.VisionType.EMOTION">EMOTION</a></code></li>
+<li><code><a title="social_interaction_cloud.basic_connector.VisionType.FACE" href="#social_interaction_cloud.basic_connector.VisionType.FACE">FACE</a></code></li>
+<li><code><a title="social_interaction_cloud.basic_connector.VisionType.OBJECT" href="#social_interaction_cloud.basic_connector.VisionType.OBJECT">OBJECT</a></code></li>
+<li><code><a title="social_interaction_cloud.basic_connector.VisionType.PEOPLE" href="#social_interaction_cloud.basic_connector.VisionType.PEOPLE">PEOPLE</a></code></li>
+<li><code><a title="social_interaction_cloud.basic_connector.VisionType.TRACKING" href="#social_interaction_cloud.basic_connector.VisionType.TRACKING">TRACKING</a></code></li>
+<li><code><a title="social_interaction_cloud.basic_connector.VisionType.as_service" href="#social_interaction_cloud.basic_connector.VisionType.as_service">as_service</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>

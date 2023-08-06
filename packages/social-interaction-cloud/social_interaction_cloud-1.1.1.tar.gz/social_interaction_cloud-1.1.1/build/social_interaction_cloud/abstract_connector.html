@@ -1,0 +1,3012 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>social_interaction_cloud.abstract_connector API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>social_interaction_cloud.abstract_connector</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">from enum import Enum
+from io import open
+from itertools import chain, product
+from pathlib import Path
+from threading import Event, Thread
+from time import strftime
+from tkinter import Tk, Checkbutton, Label, Entry, IntVar, StringVar, Button, E, W
+
+from google.protobuf.json_format import MessageToDict
+from redis import Redis
+from simplejson import dumps
+
+from .detection_result_pb2 import DetectionResult
+from .tracking_result_pb2 import TrackingResult
+
+
+class AbstractSICConnector(object):
+    &#34;&#34;&#34;
+    Abstract class that can be used as a template for a connector to connect with the Social Interaction Cloud.
+    &#34;&#34;&#34;
+
+    def __init__(self, server_ip: str):
+        &#34;&#34;&#34;
+        :param server_ip:
+        &#34;&#34;&#34;
+        topics = [&#39;events&#39;, &#39;browser_button&#39;, &#39;detected_person&#39;, &#39;recognised_face&#39;, &#39;audio_language&#39;, &#39;audio_intent&#39;,
+                  &#39;audio_newfile&#39;, &#39;picture_newfile&#39;, &#39;detected_emotion&#39;,
+                  &#39;robot_audio_loaded&#39;  # , memory_data, gui_data?
+                  &#39;robot_posture_changed&#39;, &#39;robot_awake_changed&#39;, &#39;robot_battery_charge_changed&#39;,
+                  &#39;robot_charging_changed&#39;, &#39;robot_hot_device_detected&#39;, &#39;robot_motion_recording&#39;,
+                  &#39;text_transcript&#39;, &#39;text_sentiment&#39;, &#39;corona_check&#39;, &#39;detected_object&#39;, &#39;depth_estimated&#39;,
+                  &#39;tracked_object&#39;]
+        device_types = {
+            1: [&#39;cam&#39;, &#39;Camera&#39;],
+            2: [&#39;mic&#39;, &#39;Microphone&#39;],
+            3: [&#39;robot&#39;, &#39;Robot&#39;],
+            4: [&#39;speaker&#39;, &#39;Speaker&#39;],
+            5: [&#39;browser&#39;, &#39;Browser&#39;]
+            # puppet, gui_controller, logger, ga?
+        }
+        self.device_types = Enum(
+            value=&#39;DeviceType&#39;,
+            names=chain.from_iterable(
+                product(v, [k]) for k, v in device_types.items()
+            )
+        )
+        topic_map = {
+            self.device_types[&#39;cam&#39;]: [&#39;action_video&#39;, &#39;action_take_picture&#39;],
+            self.device_types[&#39;mic&#39;]: [&#39;action_audio&#39;, &#39;dialogflow_language&#39;, &#39;dialogflow_context&#39;, &#39;dialogflow_key&#39;,
+                                       &#39;dialogflow_agent&#39;, &#39;dialogflow_record&#39;],
+            self.device_types[&#39;robot&#39;]: [&#39;action_gesture&#39;, &#39;action_eyecolour&#39;, &#39;action_earcolour&#39;, &#39;action_headcolour&#39;,
+                                         &#39;action_idle&#39;, &#39;action_turn&#39;, &#39;action_wakeup&#39;, &#39;action_rest&#39;,
+                                         &#39;action_set_breathing&#39;, &#39;action_posture&#39;, &#39;action_stiffness&#39;,
+                                         &#39;action_play_motion&#39;, &#39;action_record_motion&#39;,  # &#39;action_motion_file&#39;,
+                                         &#39;action_led_color&#39;, &#39;action_led_animation&#39;],
+            self.device_types[&#39;speaker&#39;]: [&#39;audio_language&#39;, &#39;action_say&#39;, &#39;action_say_animated&#39;, &#39;action_play_audio&#39;,
+                                           &#39;action_stop_talking&#39;, &#39;action_load_audio&#39;, &#39;action_clear_loaded_audio&#39;,
+                                           &#39;text_to_speech&#39;, &#39;tts_key&#39;, &#39;tts_voice&#39;],
+            self.device_types[&#39;browser&#39;]: [&#39;render_html&#39;]
+        }
+        self.__topic_map = {}
+        for k, v in topic_map.items():
+            for x in v:
+                self.__topic_map[x] = k
+        self.devices = {}
+        for device_type in self.device_types:
+            self.devices[device_type] = []
+
+        self.time_format = &#39;%H-%M-%S&#39;
+
+        if server_ip.startswith(&#39;127.&#39;) or server_ip.startswith(&#39;192.&#39;) or server_ip == &#39;localhost&#39;:
+            self.username = &#39;default&#39;
+            self.password = &#39;changemeplease&#39;
+            self.redis = Redis(host=server_ip, username=self.username, password=self.password, ssl=True,
+                               ssl_ca_certs=&#39;cert.pem&#39;)
+        else:
+            self.__dialog1 = Tk()
+            self.username = StringVar()
+            self.password = StringVar()
+            self.provide_user_information()
+            self.redis = Redis(host=server_ip, username=self.username, password=self.password, ssl=True)
+        self.__dialog2 = Tk()
+        self.__checkboxes = {}
+        self.select_devices()
+        all_topics = []
+        for device_list in self.devices.values():
+            for device in device_list:
+                for topic in topics:
+                    all_topics.append(device + &#39;_&#39; + topic)
+        self.__pubsub = self.redis.pubsub(ignore_subscribe_messages=True)
+        self.__pubsub.subscribe(**dict.fromkeys(all_topics, self.__listen))
+        self.__pubsub_thread = self.__pubsub.run_in_thread(sleep_time=0.001)
+
+        self.__running_thread = Thread(target=self.__run)
+        self.__stop_event = Event()
+
+        self.__running = False
+
+    def provide_user_information(self) -&gt; None:
+        Label(self.__dialog1, text=&#39;Username:&#39;).grid(row=1, column=1, sticky=E)
+        Entry(self.__dialog1, width=15, textvariable=self.username).grid(row=1, column=2, sticky=W)
+        Label(self.__dialog1, text=&#39;Password:&#39;).grid(row=2, column=1, sticky=E)
+        Entry(self.__dialog1, width=15, show=&#39;*&#39;, textvariable=self.password).grid(row=2, column=2, sticky=W)
+        Button(self.__dialog1, text=&#39;OK&#39;, command=self.__provide_user_information_done).grid(row=3, column=1,
+                                                                                             columnspan=2)
+        self.__dialog1.bind(&#39;&lt;Return&gt;&#39;, (lambda event: self.__provide_user_information_done()))
+        self.__dialog1.mainloop()
+
+    def __provide_user_information_done(self):
+        self.__dialog1.destroy()
+        self.username = self.username.get()
+        self.password = self.password.get()
+
+    def select_devices(self) -&gt; None:
+        time = self.redis.time()
+        devices = self.redis.zrevrangebyscore(name=&#39;user:&#39; + self.username, min=(time[0] - 60), max=&#39;+inf&#39;)
+        devices.sort()
+        row = 1
+        for device in devices:
+            var = IntVar()
+            self.__checkboxes[device] = var
+            Checkbutton(self.__dialog2, text=device, variable=var).grid(row=row, column=1, sticky=W)
+            Label(self.__dialog2, text=&#39;&#39;).grid(row=row, column=2, sticky=E)
+            row += 1
+        Button(self.__dialog2, text=&#39;(De)Select All&#39;, command=self.__select_devices_toggle).grid(row=row, column=1,
+                                                                                                 sticky=W)
+        Button(self.__dialog2, text=&#39;OK&#39;, command=self.__select_devices_done).grid(row=row, column=2, sticky=E)
+        self.__dialog2.mainloop()
+
+    def __select_devices_toggle(self):
+        none_selected = True
+        for var in self.__checkboxes.values():
+            if var.get() == 1:
+                none_selected = False
+                break
+        for var in self.__checkboxes.values():
+            var.set(1 if none_selected else 0)
+
+    def __select_devices_done(self):
+        self.__dialog2.destroy()
+        for name, var in self.__checkboxes.items():
+            if var.get() == 1:
+                split = name.decode(&#39;utf-8&#39;).split(&#39;:&#39;)
+                device_type = self.device_types[split[1]]
+                self.devices[device_type].append(self.username + &#39;-&#39; + split[0])
+
+    ###########################
+    # Event handlers          #
+    ###########################
+
+    def on_event(self, event: str) -&gt; None:
+        &#34;&#34;&#34;Triggered upon any event
+
+        :param event: This can be either an event related to some action called here, or an event related to one of the
+        robot&#39;s touch sensors, i.e. one of:
+        RightBumperPressed, RightBumperReleased, LeftBumperPressed, LeftBumperReleased, BackBumperPressed,
+        BackBumperReleased, FrontTactilTouched, FrontTactilReleased, MiddleTactilTouched, MiddleTactilReleased,
+        RearTactilTouched, RearTactilReleased, HandRightBackTouched, HandRightBackReleased, HandRightLeftTouched,
+        HandRightLeftReleased, HandRightRightTouched, HandRightRightReleased, HandLeftBackTouched, HandLeftBackReleased,
+        HandLeftLeftTouched, HandLeftLeftReleased, HandLeftRightTouched, or HandLeftRightReleased
+        See: http://doc.aldebaran.com/2-8/family/nao_technical/contact-sensors_naov6.html&#34;&#34;&#34;
+        pass
+
+    def on_posture_changed(self, posture: str) -&gt; None:
+        &#34;&#34;&#34;
+        Trigger when the posture has changed.
+
+        :param posture: new posture.
+        &#34;&#34;&#34;
+        pass
+
+    def on_awake_changed(self, is_awake: bool) -&gt; None:
+        &#34;&#34;&#34;
+        Trigger when the robot wakes up or goes to rest.
+
+        :param is_awake: true if the robot just woke up, false if it just went to rest.
+        &#34;&#34;&#34;
+        pass
+
+    def on_person_detected(self, x: int, y: int) -&gt; None:
+        &#34;&#34;&#34;Triggered when some person was detected in front of the robot (after a startWatching action was called).
+
+        :param x: x-coordinate of center of person&#39;s face.
+        :param y: y-coordinate of center of person&#39;s face.
+        This is only sent when the people detection service is running. Will be sent as long as a person is detected.&#34;&#34;&#34;
+        pass
+
+    def on_face_recognized(self, identifier: str) -&gt; None:
+        &#34;&#34;&#34;Triggered when a specific face was detected in front of the robot (after a startWatching action was called).
+
+        :param identifier: id of a unique face.
+        Only sent when the face recognition service is running. Will be sent as long as the face is recognised.
+        The identifiers of recognised faces are stored in a file, and will thus persist over a restart of the agent.&#34;&#34;&#34;
+        pass
+
+    def on_audio_language(self, language_key: str) -&gt; None:
+        &#34;&#34;&#34;Triggered whenever a language change was requested (for example by the user).
+
+       :param language_key: e.g. nl-NL or en-US.
+       &#34;&#34;&#34;
+        pass
+
+    def on_audio_loaded(self, identifier: int) -&gt; None:
+        &#34;&#34;&#34;Gives the unique identifier for the audio that was just loaded (see load_audio)&#34;&#34;&#34;
+        pass
+
+    def on_audio_intent(self, detection_result: dict) -&gt; None:
+        &#34;&#34;&#34;Triggered whenever an intent was detected (by Dialogflow) on a user&#39;s speech.
+
+        :param: detection_result: result in a protobuffer dict.
+
+        Given is the name of the intent, a list of optional parameters (following from the dialogflow spec),
+        and a confidence value.
+        See https://cloud.google.com/dialogflow/docs/intents-loaded_actions-parameters.
+
+        The recognized text itself is provided as well, even when no intent was actually matched (i.e. a failure).
+        These are sent as soon as an intent is recognized, which is always after some start_listening action,
+        but might come in some time after the final stop_listening action (if there was some intent detected at least).
+        Intents will keep being recognized until stop_listening is called.
+        In that case, this function can still be triggered, containing the recognized text but no intent.&#34;&#34;&#34;
+        pass
+
+    def on_text_transcript(self, transcript: str) -&gt; None:
+        &#34;&#34;&#34;Triggered directly when any text is recognised by Dialogflow.
+
+        :param transcript: text
+        This can give many non-final results, but is useful for matching short texts (like yes/no) directly.&#34;&#34;&#34;
+        pass
+
+    def on_text_sentiment(self, sentiment: str) -&gt; None:
+        &#34;&#34;&#34;Gives a positive or negative sentiment for all text transcripts (see on_text_transcript).
+
+        :param sentiment: positive or negative
+        Only when the sentiment_analysis service is running).&#34;&#34;&#34;
+        pass
+
+    def on_new_audio_file(self, audio_file: str) -&gt; None:
+        &#34;&#34;&#34;Triggered whenever a new recording has been stored to an audio (WAV) file.
+
+        See set_record_audio.
+        Given is the name to the recorded file (which is in the folder required by the play_audio function).
+        All audio received between the last start_listening and stop_listening calls is recorded.&#34;&#34;&#34;
+        pass
+
+    def on_new_picture_file(self, picture_file: str) -&gt; None:
+        &#34;&#34;&#34;Triggered whenever a new picture has been stored to an image (JPG) file.
+
+        See take_picture.
+        Given is the path to the taken picture.&#34;&#34;&#34;
+        pass
+
+    def on_emotion_detected(self, emotion: str) -&gt; None:
+        &#34;&#34;&#34;Triggered whenever an emotion has been detected by the emotion detection service (when running).&#34;&#34;&#34;
+        pass
+
+    def on_battery_charge_changed(self, percentage: int) -&gt; None:
+        &#34;&#34;&#34;Triggered when the battery level changes.
+
+        :param percentage: battery level (0-100)
+        &#34;&#34;&#34;
+        pass
+
+    def on_charging_changed(self, is_charging: bool) -&gt; None:
+        &#34;&#34;&#34;
+        Triggered when the robot is connected (True) or disconnected (False) from a power source.
+
+        Warning: is not always accurate, see:
+        http://doc.aldebaran.com/2-8/naoqi/sensors/albattery-api.html#BatteryPowerPluggedChanged
+        :param is_charging:
+        &#34;&#34;&#34;
+        pass
+
+    def on_hot_device_detected(self, hot_devices: list) -&gt; None:
+        &#34;&#34;&#34;Triggered when one or more body parts of the robot become too hot.
+
+        :param hot_devices: list of body parts that are too hot.
+        &#34;&#34;&#34;
+        pass
+
+    def on_robot_motion_recording(self, motion: str) -&gt; None:
+        &#34;&#34;&#34;
+        Triggered when a motion recording (JSON format) becomes available .
+
+        :param motion:
+        &#34;&#34;&#34;
+        pass
+
+    def on_browser_button(self, button: str) -&gt; None:
+        &#34;&#34;&#34;
+        Triggered when a button has been pressed in the browser
+
+        :param button:
+        &#34;&#34;&#34;
+        pass
+
+    def on_corona_check_passed(self) -&gt; None:
+        &#34;&#34;&#34;Triggered when a valid Corona QR code has been detected by the corona_checker service&#34;&#34;&#34;
+        pass
+
+    def on_object_detected(self, centroid_x: int, centroid_y: int) -&gt; None:
+        &#34;&#34;&#34;Triggered when an object has been detected by the object_detection service&#34;&#34;&#34;
+        pass
+
+    def on_depth_estimated(self, estimation: int, std_dev: int) -&gt; None:
+        &#34;&#34;&#34;Triggered when an object&#39;s depth has been estimated by the depth_estimation service&#34;&#34;&#34;
+        pass
+
+    def on_object_tracked(self, obj_id: int, distance_cm: int, centroid_x: int, centroid_y: int, in_frame_ms: int,
+                          speed_cmps: int) -&gt; None:
+        &#34;&#34;&#34;Triggered when an object has been tracked by the object_tracking service&#34;&#34;&#34;
+        pass
+
+    ###########################
+    # Dialogflow Actions      #
+    ###########################
+
+    def set_dialogflow_key(self, key_file: str) -&gt; None:
+        &#34;&#34;&#34;Required for setting up Dialogflow: the path to the (JSON) keyfile.&#34;&#34;&#34;
+        contents = Path(key_file).read_text()
+        self.__send(&#39;dialogflow_key&#39;, contents)
+
+    def set_dialogflow_agent(self, agent_name: str) -&gt; None:
+        &#34;&#34;&#34;Required for setting up Dialogflow: the name of the agent to use (i.e. the project id).&#34;&#34;&#34;
+        self.__send(&#39;dialogflow_agent&#39;, agent_name)
+
+    def set_dialogflow_language(self, language_key: str) -&gt; None:
+        &#34;&#34;&#34;Required for setting up Dialogflow: the full key of the language to use (e.g. nl-NL or en-US).&#34;&#34;&#34;
+        self.__send(&#39;dialogflow_language&#39;, language_key)
+
+    def set_dialogflow_context(self, context: str) -&gt; None:
+        &#34;&#34;&#34;Indicate the Dialogflow context to use for the next speech-to-text (or to intent).&#34;&#34;&#34;
+        self.__send(&#39;dialogflow_context&#39;, context)
+
+    def start_listening(self, seconds: int) -&gt; None:
+        &#34;&#34;&#34;Tell the robot (and Dialogflow) to start listening to audio (and potentially recording it).
+        Intents will be continuously recognised. If seconds&gt;0, it will automatically stop listening.
+        A ListeningStarted event will be sent once the feed starts, and ListeningDone once it ends.&#34;&#34;&#34;
+        self.__send(&#39;action_audio&#39;, str(seconds))
+
+    def stop_listening(self) -&gt; None:
+        &#34;&#34;&#34;Tell the robot (and Dialogflow) to stop listening to audio.
+        Note that a potentially recognized intent might come in up to a second after this call.&#34;&#34;&#34;
+        self.__send(&#39;action_audio&#39;, &#39;-1&#39;)
+
+    ###########################
+    # Text-to-Speech Actions  #
+    ###########################
+
+    def set_tts_key(self, tts_key_file: str) -&gt; None:
+        &#34;&#34;&#34;Required for setting up TTS: the path to the (JSON) keyfile.&#34;&#34;&#34;
+        contents = Path(tts_key_file).read_text()
+        self.__send(&#39;tts_key&#39;, contents)
+
+    def set_tts_voice(self, tts_voice: str) -&gt; None:
+        &#34;&#34;&#34;Required for setting up TTS: the full key of the voice to use (e.g. nl-NL-Standard-A or en-GB-Standard-A), as found on
+                https://cloud.google.com/text-to-speech/docs/voices.&#34;&#34;&#34;
+        self.__send(&#39;tts_voice&#39;, tts_voice)
+
+    ###########################
+    # Robot Actions           #
+    ###########################
+
+    def say_text_to_speech(self, text: str) -&gt; None:
+        self.__send(&#39;text_to_speech&#39;, text)
+
+    def set_language(self, language_key: str) -&gt; None:
+        &#34;&#34;&#34;For changing the robot&#39;s speaking language: the full key of the language to use
+        (e.g. nl-NL or en-US). A LanguageChanged event will be sent when the change has propagated.&#34;&#34;&#34;
+        self.__send(&#39;audio_language&#39;, language_key)
+
+    def set_record_audio(self, should_record: bool) -&gt; None:
+        &#34;&#34;&#34;Indicate if audio should be recorded (see on_new_audio_file).&#34;&#34;&#34;
+        self.__send(&#39;dialogflow_record&#39;, &#39;1&#39; if should_record else &#39;0&#39;)
+
+    def set_idle(self) -&gt; None:
+        &#34;&#34;&#34;Put the robot into &#39;idle mode&#39;: always looking straight ahead.
+        A SetIdle event will be sent when the robot has transitioned into the idle mode.&#34;&#34;&#34;
+        self.__send(&#39;action_idle&#39;, &#39;true&#39;)
+
+    def set_non_idle(self) -&gt; None:
+        &#34;&#34;&#34;Put the robot back into its default &#39;autonomous mode&#39; (looking towards sounds).
+        A SetNonIdle event will be sent when the robot has transitioned out of the idle mode.&#34;&#34;&#34;
+        self.__send(&#39;action_idle&#39;, &#39;false&#39;)
+
+    def start_looking(self, seconds: int, channels: int = 1) -&gt; None:
+        &#34;&#34;&#34;Tell the robot (and any recognition module) to start the camera feed.
+        If seconds&gt;0, it will automatically stop looking.
+        A WatchingStarted event will be sent once the feed starts, and WatchingDone once it ends.&#34;&#34;&#34;
+        self.__send(&#39;action_video&#39;, str(seconds) + &#39;;&#39; + str(channels))
+
+    def stop_looking(self) -&gt; None:
+        &#34;&#34;&#34;Tell the robot (and any recognition module) to stop looking.&#34;&#34;&#34;
+        self.__send(&#39;action_video&#39;, &#39;-1;0&#39;)
+
+    def say(self, text: str) -&gt; None:
+        &#34;&#34;&#34;A string that the robot should say (in the currently selected language!).
+        A TextStarted event will be sent when the speaking starts and a TextDone event after it is finished.&#34;&#34;&#34;
+        self.__send(&#39;action_say&#39;, text)
+
+    def say_animated(self, text: str) -&gt; None:
+        &#34;&#34;&#34;A string that the robot should say (in the currently selected language!) in an animated fashion.
+        This means that the robot will automatically try to add (small) animations to the text.
+        Moreover, in this function, special tags are supported, see:
+        http://doc.aldebaran.com/2-8/naoqi/audio/altexttospeech-tuto.html#using-tags-for-voice-tuning
+        A TextStarted event will be sent when the speaking starts and a TextDone event after it is finished.&#34;&#34;&#34;
+        self.__send(&#39;action_say_animated&#39;, text)
+
+    def stop_talking(self) -&gt; None:
+        &#34;&#34;&#34;Cancel any currently running say(_animated)&#34;&#34;&#34;
+        self.__send(&#39;action_stop_talking&#39;, &#39;&#39;)
+
+    def do_gesture(self, gesture: str) -&gt; None:
+        &#34;&#34;&#34;Make the robot perform the given gesture. The list of available gestures (not tags!) is available on:
+        http://doc.aldebaran.com/2-8/naoqi/motion/alanimationplayer-advanced.html (Nao)
+        http://doc.aldebaran.com/2-5/naoqi/motion/alanimationplayer-advanced.html (Pepper)
+        You can also install custom animations with Choregraphe.
+        A GestureStarted event will be sent when the gesture starts and a GestureDone event when it is finished.&#34;&#34;&#34;
+        self.__send(&#39;action_gesture&#39;, gesture)
+
+    def load_audio(self, audio_file: str) -&gt; None:
+        &#34;&#34;&#34;Preloads the given audio file on the robot. See on_audio_loaded and play_loaded_audio.
+        A LoadAudioStarted event will be sent when the audio starts loading and a LoadAudioDone event when it is finished.&#34;&#34;&#34;
+        with open(audio_file, &#39;rb&#39;) as file:
+            self.__send(&#39;action_load_audio&#39;, file.read())
+
+    def play_audio(self, audio_file: str) -&gt; None:
+        &#34;&#34;&#34;Plays the given audio file on the robot&#39;s speakers.
+        A PlayAudioStarted event will be sent when the audio starts and a PlayAudioDone event after it is finished.
+        Any previously playing audio will be cancelled first.&#34;&#34;&#34;
+        with open(audio_file, &#39;rb&#39;) as file:
+            self.__send(&#39;action_play_audio&#39;, file.read())
+
+    def play_loaded_audio(self, identifier: int) -&gt; None:
+        &#34;&#34;&#34;Plays the given preloaded audio file on the robot&#39;s speakers. See load_audio and on_audio_loaded.
+        A PlayAudioStarted event will be sent when the audio starts and a PlayAudioDone event after it is finished.
+        Any previously playing audio will be cancelled first.&#34;&#34;&#34;
+        self.__send(&#39;action_play_audio&#39;, identifier)
+
+    def clear_loaded_audio(self) -&gt; None:
+        &#34;&#34;&#34;Clears all preloaded audio (see load_audio) from the robot.
+        A ClearLoadedAudioStarted event will be sent when the audio starts clearing,
+        and a ClearLoadedAudioDone event after it is all cleared up.&#34;&#34;&#34;
+        self.__send(&#39;action_clear_loaded_audio&#39;, &#39;&#39;)
+
+    def set_eye_color(self, color: str) -&gt; None:
+        &#34;&#34;&#34;Sets the robot&#39;s eye LEDs to one of the following colours:
+        white, red, green, blue, yellow, magenta, cyan, greenyellow or rainbow.
+        An EyeColourStarted event will be sent when the change starts and a EyeColourDone event after it is done.&#34;&#34;&#34;
+        self.__send(&#39;action_eyecolour&#39;, color)
+
+    def set_ear_color(self, color: str) -&gt; None:
+        &#34;&#34;&#34;Sets the robot&#39;s ear LEDs to one of the following colours:
+        white, red, green, blue, yellow, magenta, cyan, greenyellow or rainbow.
+        An EarColourStarted event will be sent when the change starts and a EarColourDone event after it is done.&#34;&#34;&#34;
+        self.__send(&#39;action_earcolour&#39;, color)
+
+    def set_head_color(self, color: str) -&gt; None:
+        &#34;&#34;&#34;Sets the robot&#39;s head LEDs to one of the following colours:
+        white, red, green, blue, yellow, magenta, cyan, greenyellow or rainbow.
+        A HeadColourStarted event will be sent when the change starts and a HeadColourDone event after it is done.&#34;&#34;&#34;
+        self.__send(&#39;action_headcolour&#39;, color)
+
+    def set_led_color(self, leds: list, colors: list, duration: int = 0) -&gt; None:
+        &#34;&#34;&#34;A list of LEDs (see http://doc.aldebaran.com/2-5/naoqi/sensors/alleds.html#list-group-led),
+        and a corresponding list of colors to give to the LEDs. Optionally a duration for the transitions (default=instant).
+        A LedColorStarted event will be sent when the color change starts and a LedColorDone event after it is done.&#34;&#34;&#34;
+        self.__send(&#39;action_led_color&#39;, dumps(leds) + &#39;;&#39; + dumps(colors) + &#39;;&#39; + str(duration))
+
+    def start_led_animation(self, led_group: str, anim_type: str, colors: list, speed: int, real_blink: bool = False) -&gt; None:
+        &#34;&#34;&#34;A LED group name (eyes, chest, feet, all), an animation type (rotate, blink, alternate),
+        a corresponding list of colors, and a speed setting (milliseconds).
+        A LedAnimationStarted event will be sent when the animation starts and a LedAnimationDone event after it is done.&#34;&#34;&#34;
+        self.__send(&#39;action_led_animation&#39;,
+                    &#39;start;&#39; + led_group + &#39;;&#39; + anim_type + &#39;;&#39; + dumps(colors) + &#39;;&#39; + str(speed) + &#39;;&#39; + str(real_blink))
+
+    def stop_led_animation(self) -&gt; None:
+        &#34;&#34;&#34;Abort any currently running LED animation (see start_led_animation).&#34;&#34;&#34;
+        self.__send(&#39;action_led_animation&#39;, &#39;stop&#39;)
+
+    def take_picture(self) -&gt; None:
+        &#34;&#34;&#34;Instructs the robot to take a picture. See on_new_picture_file.
+        The people detection or face recognition service must be running for this action to work.&#34;&#34;&#34;
+        self.__send(&#39;action_take_picture&#39;, &#39;&#39;)
+
+    def turn(self, degrees: int) -&gt; None:
+        &#34;&#34;&#34;Instructs the Pepper robot to make a turn of the given amount of degrees (-360 to 360).
+        A TurnStarted event will be sent when the robot starts turning and a TurnDone event after it is done.&#34;&#34;&#34;
+        self.__send(&#39;action_turn&#39;, str(degrees))
+
+    def wake_up(self) -&gt; None:
+        &#34;&#34;&#34;Instructs the robot to execute the default wake_up behavior. Also see on_on_awake_changed.
+        See: http://doc.aldebaran.com/2-8/naoqi/motion/control-stiffness-api.html?highlight=wakeup#ALMotionProxy::wakeUp
+        A WakeUpStarted event will be sent when the robot starts waking up and a WakeUpDone event after it is done.&#34;&#34;&#34;
+        self.__send(&#39;action_wakeup&#39;, &#39;&#39;)
+
+    def rest(self) -&gt; None:
+        &#34;&#34;&#34;Instructs the robot to execute the default wake_up behavior. Also see on_on_awake_changed.
+        See: http://doc.aldebaran.com/2-8/naoqi/motion/control-stiffness-api.html?highlight=wakeup#ALMotionProxy::rest
+        A RestStarted event will be sent when the robot starts going into rest mode and a RestDone event after it is done.&#34;&#34;&#34;
+        self.__send(&#39;action_rest&#39;, &#39;&#39;)
+
+    def set_breathing(self, enable: bool) -&gt; None:
+        &#34;&#34;&#34;
+        Enable/disable the default breathing animation of the robot.
+        See: http://doc.aldebaran.com/2-8/naoqi/motion/idle-api.html?highlight=breathing#ALMotionProxy::setBreathEnabled__ssCR.bCR
+        A BreathingEnabled or BreathingDisabled event will be sent when the change is done (depending on the given input).
+        &#34;&#34;&#34;
+        self.__send(&#39;action_set_breathing&#39;, &#39;Body;&#39; + &#39;1&#39; if enable else &#39;0&#39;)
+
+    def go_to_posture(self, posture: str, speed: int = 100) -&gt; None:
+        &#34;&#34;&#34;
+        Let the robot go to a predefined posture. Also see on_posture_changed.
+
+        Predefined postures for Pepper are: Stand or StandInit, StandZero, and Crouch.
+        See: http://doc.aldebaran.com/2-5/family/pepper_technical/postures_pep.html#pepper-postures
+
+        Predefined postures for Nao are: Stand, StandInit, StandZero, Crouch, Sit, SitRelax, LyingBelly, and LyingBack.
+        See: http://doc.aldebaran.com/2-8/family/nao_technical/postures_naov6.html#naov6-postures
+
+        A GoToPostureStarted event will be sent when the posture change starts and GoToPostureDone when it finished.
+
+        :param posture: target posture
+        :param speed: optional speed parameter to set the speed of the posture change. Default is 1.0 (100% speed).
+        :return:
+        &#34;&#34;&#34;
+        self.__send(&#39;action_posture&#39;, posture + &#39;;&#39; + str(speed) if 1 &lt;= speed &lt;= 100 else posture + &#39;;100&#39;)
+
+    def set_stiffness(self, chains: list, stiffness: int, duration: int = 1000) -&gt; None:
+        &#34;&#34;&#34;
+        Set the stiffness for one or more joint chains.
+        Suitable joint chains for Nao are: Head, RArm, LArm, RLeg, LLeg
+        Suitable joint chains for Pepper are: Head, RArm, LArm, Leg, Wheels
+
+        A SetStiffnessStarted event will be sent when the stiffness change starts and SetStiffnessDone when it finished.
+
+        :param chains: list of joints.
+        :param stiffness: stiffness value between 0 and 100.
+        :param duration: stiffness transition time in milliseconds.
+        :return:
+        &#34;&#34;&#34;
+        self.__send(&#39;action_stiffness&#39;, dumps(chains) + &#39;;&#39; + str(stiffness) + &#39;;&#39; + str(duration))
+
+    def play_motion(self, motion: str) -&gt; None:
+        &#34;&#34;&#34;
+        Play a motion.
+
+        Suitable joints and angles for Nao:
+        https://developer.softbankrobotics.com/nao6/nao-documentation/nao-developer-guide/kinematics-data/joints
+        Suitable joints and angles for Pepper:
+        https://developer.softbankrobotics.com/pepper-naoqi-25/pepper-documentation/pepper-developer-guide/kinematics-data/joints
+
+        A PlayMotionStarted event will be sent when the motion sequence starts and PlayMotionDone when it finished.
+
+        :param motion: json string in the following format
+        {&#39;robot&#39;: &#39;nao/pepper&#39;, &#39;compress_factor_angles&#39;: int, &#39;compress_factor_times: int
+        &#39;motion&#39;: {&#39;joint1&#39;: { &#39;angles&#39;: [...], &#39;times&#39;: [...]}, &#39;joint2&#39;: {...}}}
+        :return:
+        &#34;&#34;&#34;
+        self.__send(&#39;action_play_motion&#39;, motion)
+
+    def start_record_motion(self, joint_chains: list, framerate: int = 5) -&gt; None:
+        &#34;&#34;&#34;
+        Start recording of the angles over time of a given list of joints and or joint chains with an optional framerate.
+
+        Suitable joints and joint chains for nao:
+        http://doc.aldebaran.com/2-8/family/nao_technical/bodyparts_naov6.html#nao-chains
+        Suitable joints and joint chains for pepper:
+        http://doc.aldebaran.com/2-8/family/pepper_technical/bodyparts_pep.html
+
+        A RecordMotionStarted event will be sent when the recording starts and RecordMotionDone when it finished.
+
+        :param joint_chains: a list with one or more joints or joint chains
+        :param framerate: optional number of recordings per second. The default is 5 fps.
+        :return:
+        &#34;&#34;&#34;
+        self.__send(&#39;action_record_motion&#39;, &#39;start;&#39; + dumps(joint_chains) + &#39;;&#39; + str(framerate))
+
+    def stop_record_motion(self) -&gt; None:
+        &#34;&#34;&#34;
+        Stop recording of an active motion recording (started by start_record_motion)
+
+        :return:
+        &#34;&#34;&#34;
+        self.__send(&#39;action_record_motion&#39;, &#39;stop&#39;)
+
+    ###########################
+    # Browser Actions         #
+    ###########################
+
+    def browser_show(self, html: str) -&gt; None:
+        &#34;&#34;&#34;
+        Show the given HTML body on the currently connected browser page.
+        :param html: the HTML contents (put inside a &lt;body&gt;).
+        By default, the Bootstrap rendering library is loaded: https://getbootstrap.com/docs/4.6/
+        Moreover, various classes can be used (on e.g. divs) to automatically create dynamic elements:
+        - listening_icon: shows a microphone that is enabled or disabled when the robot is listening or not.
+        - speech_text: shows a live-stream of the currently recognized text (by e.g. dialogflow).
+        - vu_logo: renders a VU logo.
+        - english_flag: renders a English flag (changes the audio language when tapped on).
+        - chatbox: allows text input (to e.g. dialogflow).
+        Finally, each button element will automatically trigger an event when clicked (see on_browser_button).
+        :return:
+        &#34;&#34;&#34;
+        self.__send(&#39;render_html&#39;, html)
+
+    ###########################
+    # Management              #
+    ###########################
+
+    def enable_service(self, name: str) -&gt; None:
+        &#34;&#34;&#34;
+        Enable the given service (for the previously selected devices)
+        :param name: people_detection, face_recognition, emotion_detection, corona_checker, intent_detection or sentiment_analysis
+        :return:
+        &#34;&#34;&#34;
+        pipe = self.redis.pipeline()
+        if name == &#39;people_detection&#39; or name == &#39;face_recognition&#39; or name == &#39;emotion_detection&#39; \
+                or name == &#39;corona_checker&#39; or name == &#39;object_detection&#39; or name == &#39;depth_estimation&#39; \
+                or name == &#39;object_tracking&#39;:
+            for cam in self.devices[self.device_types[&#39;cam&#39;]]:
+                pipe.publish(name, cam)
+        elif name == &#39;intent_detection&#39; or name == &#39;sentiment_analysis&#39;:
+            for mic in self.devices[self.device_types[&#39;mic&#39;]]:
+                pipe.publish(name, mic)
+        elif name == &#39;text_to_speech&#39;:
+            for speaker in self.devices[self.device_types[&#39;speaker&#39;]]:
+                pipe.publish(name, speaker)
+        else:
+            print(&#39;Unknown service: &#39; + name)
+        pipe.execute()
+
+    def start(self) -&gt; None:
+        &#34;&#34;&#34;Start the application&#34;&#34;&#34;
+        self.__running = True
+        self.__running_thread.start()
+
+    def stop(self) -&gt; None:
+        &#34;&#34;&#34;Stop listening to incoming events (which is done in a thread) so the Python application can close.&#34;&#34;&#34;
+        self.__running = False
+        self.__stop_event.set()
+        print(&#39;Trying to exit gracefully...&#39;)
+        try:
+            self.__pubsub_thread.stop()
+            self.redis.close()
+            print(&#39;Graceful exit was successful.&#39;)
+        except Exception as err:
+            print(&#39;Graceful exit has failed: &#39; + err.message)
+
+    def __run(self) -&gt; None:
+        while self.__running:
+            self.__stop_event.wait()
+
+    def __listen(self, message) -&gt; None:
+        raw_channel = message[&#39;channel&#39;].decode(&#39;utf-8&#39;)
+        split = raw_channel.index(&#39;_&#39;) + 1
+        channel = raw_channel[split:]
+        data = message[&#39;data&#39;]
+
+        if channel == &#39;events&#39;:
+            self.on_event(event=data.decode(&#39;utf-8&#39;))
+        elif channel == &#39;browser_button&#39;:
+            self.on_browser_button(button=data.decode(&#39;utf-8&#39;))
+        elif channel == &#39;detected_person&#39;:
+            coordinates = data.decode(&#39;utf-8&#39;).split(&#39;,&#39;)
+            self.on_person_detected(int(coordinates[0]), int(coordinates[1]))
+        elif channel == &#39;recognised_face&#39;:
+            self.on_face_recognized(identifier=data.decode(&#39;utf-8&#39;))
+        elif channel == &#39;audio_language&#39;:
+            self.on_audio_language(language_key=data.decode(&#39;utf-8&#39;))
+        elif channel == &#39;audio_intent&#39;:
+            detection_result = DetectionResult()
+            detection_result.ParseFromString(data)
+            self.on_audio_intent(detection_result=MessageToDict(detection_result))
+        elif channel == &#39;audio_newfile&#39;:
+            audio_file = strftime(self.time_format) + &#39;.wav&#39;
+            with open(audio_file, &#39;wb&#39;) as wav:
+                wav.write(data)
+            self.on_new_audio_file(audio_file=audio_file)
+        elif channel == &#39;picture_newfile&#39;:
+            picture_file = strftime(self.time_format) + &#39;.jpg&#39;
+            with open(picture_file, &#39;wb&#39;) as jpg:
+                jpg.write(data)
+            self.on_new_picture_file(picture_file=picture_file)
+        elif channel == &#39;detected_emotion&#39;:
+            self.on_emotion_detected(emotion=data.decode(&#39;utf-8&#39;))
+        elif channel == &#39;robot_posture_changed&#39;:
+            self.on_posture_changed(posture=data.decode(&#39;utf-8&#39;))
+        elif channel == &#39;robot_awake_changed&#39;:
+            self.on_awake_changed(is_awake=(data.decode(&#39;utf-8&#39;) == &#39;1&#39;))
+        elif channel == &#39;robot_battery_charge_changed&#39;:
+            self.on_battery_charge_changed(percentage=int(data.decode(&#39;utf-8&#39;)))
+        elif channel == &#39;robot_charging_changed&#39;:
+            self.on_charging_changed(is_charging=(data.decode(&#39;utf-8&#39;) == &#39;1&#39;))
+        elif channel == &#39;robot_hot_device_detected&#39;:
+            self.on_hot_device_detected(hot_devices=data.decode(&#39;utf-8&#39;).split(&#39;;&#39;))
+        elif channel == &#39;robot_motion_recording&#39;:
+            self.on_robot_motion_recording(motion=data.decode(&#39;utf-8&#39;))
+        elif channel == &#39;text_transcript&#39;:
+            self.on_text_transcript(transcript=data.decode(&#39;utf-8&#39;))
+        elif channel == &#39;text_sentiment&#39;:
+            self.on_text_sentiment(sentiment=data.decode(&#39;utf-8&#39;))
+        elif channel == &#39;corona_check&#39;:
+            self.on_corona_check_passed()
+        elif channel == &#39;detected_object&#39;:
+            x_y = data.decode(&#39;utf-8&#39;).split(&#39;;&#39;)
+            self.on_object_detected(centroid_x=int(x_y[0]), centroid_y=int(x_y[1]))
+        elif channel == &#39;depth_estimated&#39;:
+            est_dev = data.decode(&#39;utf-8&#39;).split(&#39;;&#39;)
+            self.on_depth_estimated(estimation=int(est_dev[0]), std_dev=int(est_dev[1]))
+        elif channel == &#39;tracked_object&#39;:
+            tracking_result = TrackingResult()
+            tracking_result.ParseFromString(data)
+            self.on_object_tracked(tracking_result.object_id, tracking_result.distance_cm, tracking_result.centroid_x,
+                                   tracking_result.centroid_y, tracking_result.in_frame_ms, tracking_result.speed_cmps)
+        else:
+            print(&#39;Unknown channel: &#39; + channel)
+
+    def __send(self, channel: str, data) -&gt; None:
+        pipe = self.redis.pipeline()
+        target_type = self.__topic_map[channel]
+        for device in self.devices[target_type]:
+            pipe.publish(device + &#39;_&#39; + channel, data)
+        pipe.execute()</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector"><code class="flex name class">
+<span>class <span class="ident">AbstractSICConnector</span></span>
+<span>(</span><span>server_ip: str)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Abstract class that can be used as a template for a connector to connect with the Social Interaction Cloud.</p>
+<p>:param server_ip:</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class AbstractSICConnector(object):
+    &#34;&#34;&#34;
+    Abstract class that can be used as a template for a connector to connect with the Social Interaction Cloud.
+    &#34;&#34;&#34;
+
+    def __init__(self, server_ip: str):
+        &#34;&#34;&#34;
+        :param server_ip:
+        &#34;&#34;&#34;
+        topics = [&#39;events&#39;, &#39;browser_button&#39;, &#39;detected_person&#39;, &#39;recognised_face&#39;, &#39;audio_language&#39;, &#39;audio_intent&#39;,
+                  &#39;audio_newfile&#39;, &#39;picture_newfile&#39;, &#39;detected_emotion&#39;,
+                  &#39;robot_audio_loaded&#39;  # , memory_data, gui_data?
+                  &#39;robot_posture_changed&#39;, &#39;robot_awake_changed&#39;, &#39;robot_battery_charge_changed&#39;,
+                  &#39;robot_charging_changed&#39;, &#39;robot_hot_device_detected&#39;, &#39;robot_motion_recording&#39;,
+                  &#39;text_transcript&#39;, &#39;text_sentiment&#39;, &#39;corona_check&#39;, &#39;detected_object&#39;, &#39;depth_estimated&#39;,
+                  &#39;tracked_object&#39;]
+        device_types = {
+            1: [&#39;cam&#39;, &#39;Camera&#39;],
+            2: [&#39;mic&#39;, &#39;Microphone&#39;],
+            3: [&#39;robot&#39;, &#39;Robot&#39;],
+            4: [&#39;speaker&#39;, &#39;Speaker&#39;],
+            5: [&#39;browser&#39;, &#39;Browser&#39;]
+            # puppet, gui_controller, logger, ga?
+        }
+        self.device_types = Enum(
+            value=&#39;DeviceType&#39;,
+            names=chain.from_iterable(
+                product(v, [k]) for k, v in device_types.items()
+            )
+        )
+        topic_map = {
+            self.device_types[&#39;cam&#39;]: [&#39;action_video&#39;, &#39;action_take_picture&#39;],
+            self.device_types[&#39;mic&#39;]: [&#39;action_audio&#39;, &#39;dialogflow_language&#39;, &#39;dialogflow_context&#39;, &#39;dialogflow_key&#39;,
+                                       &#39;dialogflow_agent&#39;, &#39;dialogflow_record&#39;],
+            self.device_types[&#39;robot&#39;]: [&#39;action_gesture&#39;, &#39;action_eyecolour&#39;, &#39;action_earcolour&#39;, &#39;action_headcolour&#39;,
+                                         &#39;action_idle&#39;, &#39;action_turn&#39;, &#39;action_wakeup&#39;, &#39;action_rest&#39;,
+                                         &#39;action_set_breathing&#39;, &#39;action_posture&#39;, &#39;action_stiffness&#39;,
+                                         &#39;action_play_motion&#39;, &#39;action_record_motion&#39;,  # &#39;action_motion_file&#39;,
+                                         &#39;action_led_color&#39;, &#39;action_led_animation&#39;],
+            self.device_types[&#39;speaker&#39;]: [&#39;audio_language&#39;, &#39;action_say&#39;, &#39;action_say_animated&#39;, &#39;action_play_audio&#39;,
+                                           &#39;action_stop_talking&#39;, &#39;action_load_audio&#39;, &#39;action_clear_loaded_audio&#39;,
+                                           &#39;text_to_speech&#39;, &#39;tts_key&#39;, &#39;tts_voice&#39;],
+            self.device_types[&#39;browser&#39;]: [&#39;render_html&#39;]
+        }
+        self.__topic_map = {}
+        for k, v in topic_map.items():
+            for x in v:
+                self.__topic_map[x] = k
+        self.devices = {}
+        for device_type in self.device_types:
+            self.devices[device_type] = []
+
+        self.time_format = &#39;%H-%M-%S&#39;
+
+        if server_ip.startswith(&#39;127.&#39;) or server_ip.startswith(&#39;192.&#39;) or server_ip == &#39;localhost&#39;:
+            self.username = &#39;default&#39;
+            self.password = &#39;changemeplease&#39;
+            self.redis = Redis(host=server_ip, username=self.username, password=self.password, ssl=True,
+                               ssl_ca_certs=&#39;cert.pem&#39;)
+        else:
+            self.__dialog1 = Tk()
+            self.username = StringVar()
+            self.password = StringVar()
+            self.provide_user_information()
+            self.redis = Redis(host=server_ip, username=self.username, password=self.password, ssl=True)
+        self.__dialog2 = Tk()
+        self.__checkboxes = {}
+        self.select_devices()
+        all_topics = []
+        for device_list in self.devices.values():
+            for device in device_list:
+                for topic in topics:
+                    all_topics.append(device + &#39;_&#39; + topic)
+        self.__pubsub = self.redis.pubsub(ignore_subscribe_messages=True)
+        self.__pubsub.subscribe(**dict.fromkeys(all_topics, self.__listen))
+        self.__pubsub_thread = self.__pubsub.run_in_thread(sleep_time=0.001)
+
+        self.__running_thread = Thread(target=self.__run)
+        self.__stop_event = Event()
+
+        self.__running = False
+
+    def provide_user_information(self) -&gt; None:
+        Label(self.__dialog1, text=&#39;Username:&#39;).grid(row=1, column=1, sticky=E)
+        Entry(self.__dialog1, width=15, textvariable=self.username).grid(row=1, column=2, sticky=W)
+        Label(self.__dialog1, text=&#39;Password:&#39;).grid(row=2, column=1, sticky=E)
+        Entry(self.__dialog1, width=15, show=&#39;*&#39;, textvariable=self.password).grid(row=2, column=2, sticky=W)
+        Button(self.__dialog1, text=&#39;OK&#39;, command=self.__provide_user_information_done).grid(row=3, column=1,
+                                                                                             columnspan=2)
+        self.__dialog1.bind(&#39;&lt;Return&gt;&#39;, (lambda event: self.__provide_user_information_done()))
+        self.__dialog1.mainloop()
+
+    def __provide_user_information_done(self):
+        self.__dialog1.destroy()
+        self.username = self.username.get()
+        self.password = self.password.get()
+
+    def select_devices(self) -&gt; None:
+        time = self.redis.time()
+        devices = self.redis.zrevrangebyscore(name=&#39;user:&#39; + self.username, min=(time[0] - 60), max=&#39;+inf&#39;)
+        devices.sort()
+        row = 1
+        for device in devices:
+            var = IntVar()
+            self.__checkboxes[device] = var
+            Checkbutton(self.__dialog2, text=device, variable=var).grid(row=row, column=1, sticky=W)
+            Label(self.__dialog2, text=&#39;&#39;).grid(row=row, column=2, sticky=E)
+            row += 1
+        Button(self.__dialog2, text=&#39;(De)Select All&#39;, command=self.__select_devices_toggle).grid(row=row, column=1,
+                                                                                                 sticky=W)
+        Button(self.__dialog2, text=&#39;OK&#39;, command=self.__select_devices_done).grid(row=row, column=2, sticky=E)
+        self.__dialog2.mainloop()
+
+    def __select_devices_toggle(self):
+        none_selected = True
+        for var in self.__checkboxes.values():
+            if var.get() == 1:
+                none_selected = False
+                break
+        for var in self.__checkboxes.values():
+            var.set(1 if none_selected else 0)
+
+    def __select_devices_done(self):
+        self.__dialog2.destroy()
+        for name, var in self.__checkboxes.items():
+            if var.get() == 1:
+                split = name.decode(&#39;utf-8&#39;).split(&#39;:&#39;)
+                device_type = self.device_types[split[1]]
+                self.devices[device_type].append(self.username + &#39;-&#39; + split[0])
+
+    ###########################
+    # Event handlers          #
+    ###########################
+
+    def on_event(self, event: str) -&gt; None:
+        &#34;&#34;&#34;Triggered upon any event
+
+        :param event: This can be either an event related to some action called here, or an event related to one of the
+        robot&#39;s touch sensors, i.e. one of:
+        RightBumperPressed, RightBumperReleased, LeftBumperPressed, LeftBumperReleased, BackBumperPressed,
+        BackBumperReleased, FrontTactilTouched, FrontTactilReleased, MiddleTactilTouched, MiddleTactilReleased,
+        RearTactilTouched, RearTactilReleased, HandRightBackTouched, HandRightBackReleased, HandRightLeftTouched,
+        HandRightLeftReleased, HandRightRightTouched, HandRightRightReleased, HandLeftBackTouched, HandLeftBackReleased,
+        HandLeftLeftTouched, HandLeftLeftReleased, HandLeftRightTouched, or HandLeftRightReleased
+        See: http://doc.aldebaran.com/2-8/family/nao_technical/contact-sensors_naov6.html&#34;&#34;&#34;
+        pass
+
+    def on_posture_changed(self, posture: str) -&gt; None:
+        &#34;&#34;&#34;
+        Trigger when the posture has changed.
+
+        :param posture: new posture.
+        &#34;&#34;&#34;
+        pass
+
+    def on_awake_changed(self, is_awake: bool) -&gt; None:
+        &#34;&#34;&#34;
+        Trigger when the robot wakes up or goes to rest.
+
+        :param is_awake: true if the robot just woke up, false if it just went to rest.
+        &#34;&#34;&#34;
+        pass
+
+    def on_person_detected(self, x: int, y: int) -&gt; None:
+        &#34;&#34;&#34;Triggered when some person was detected in front of the robot (after a startWatching action was called).
+
+        :param x: x-coordinate of center of person&#39;s face.
+        :param y: y-coordinate of center of person&#39;s face.
+        This is only sent when the people detection service is running. Will be sent as long as a person is detected.&#34;&#34;&#34;
+        pass
+
+    def on_face_recognized(self, identifier: str) -&gt; None:
+        &#34;&#34;&#34;Triggered when a specific face was detected in front of the robot (after a startWatching action was called).
+
+        :param identifier: id of a unique face.
+        Only sent when the face recognition service is running. Will be sent as long as the face is recognised.
+        The identifiers of recognised faces are stored in a file, and will thus persist over a restart of the agent.&#34;&#34;&#34;
+        pass
+
+    def on_audio_language(self, language_key: str) -&gt; None:
+        &#34;&#34;&#34;Triggered whenever a language change was requested (for example by the user).
+
+       :param language_key: e.g. nl-NL or en-US.
+       &#34;&#34;&#34;
+        pass
+
+    def on_audio_loaded(self, identifier: int) -&gt; None:
+        &#34;&#34;&#34;Gives the unique identifier for the audio that was just loaded (see load_audio)&#34;&#34;&#34;
+        pass
+
+    def on_audio_intent(self, detection_result: dict) -&gt; None:
+        &#34;&#34;&#34;Triggered whenever an intent was detected (by Dialogflow) on a user&#39;s speech.
+
+        :param: detection_result: result in a protobuffer dict.
+
+        Given is the name of the intent, a list of optional parameters (following from the dialogflow spec),
+        and a confidence value.
+        See https://cloud.google.com/dialogflow/docs/intents-loaded_actions-parameters.
+
+        The recognized text itself is provided as well, even when no intent was actually matched (i.e. a failure).
+        These are sent as soon as an intent is recognized, which is always after some start_listening action,
+        but might come in some time after the final stop_listening action (if there was some intent detected at least).
+        Intents will keep being recognized until stop_listening is called.
+        In that case, this function can still be triggered, containing the recognized text but no intent.&#34;&#34;&#34;
+        pass
+
+    def on_text_transcript(self, transcript: str) -&gt; None:
+        &#34;&#34;&#34;Triggered directly when any text is recognised by Dialogflow.
+
+        :param transcript: text
+        This can give many non-final results, but is useful for matching short texts (like yes/no) directly.&#34;&#34;&#34;
+        pass
+
+    def on_text_sentiment(self, sentiment: str) -&gt; None:
+        &#34;&#34;&#34;Gives a positive or negative sentiment for all text transcripts (see on_text_transcript).
+
+        :param sentiment: positive or negative
+        Only when the sentiment_analysis service is running).&#34;&#34;&#34;
+        pass
+
+    def on_new_audio_file(self, audio_file: str) -&gt; None:
+        &#34;&#34;&#34;Triggered whenever a new recording has been stored to an audio (WAV) file.
+
+        See set_record_audio.
+        Given is the name to the recorded file (which is in the folder required by the play_audio function).
+        All audio received between the last start_listening and stop_listening calls is recorded.&#34;&#34;&#34;
+        pass
+
+    def on_new_picture_file(self, picture_file: str) -&gt; None:
+        &#34;&#34;&#34;Triggered whenever a new picture has been stored to an image (JPG) file.
+
+        See take_picture.
+        Given is the path to the taken picture.&#34;&#34;&#34;
+        pass
+
+    def on_emotion_detected(self, emotion: str) -&gt; None:
+        &#34;&#34;&#34;Triggered whenever an emotion has been detected by the emotion detection service (when running).&#34;&#34;&#34;
+        pass
+
+    def on_battery_charge_changed(self, percentage: int) -&gt; None:
+        &#34;&#34;&#34;Triggered when the battery level changes.
+
+        :param percentage: battery level (0-100)
+        &#34;&#34;&#34;
+        pass
+
+    def on_charging_changed(self, is_charging: bool) -&gt; None:
+        &#34;&#34;&#34;
+        Triggered when the robot is connected (True) or disconnected (False) from a power source.
+
+        Warning: is not always accurate, see:
+        http://doc.aldebaran.com/2-8/naoqi/sensors/albattery-api.html#BatteryPowerPluggedChanged
+        :param is_charging:
+        &#34;&#34;&#34;
+        pass
+
+    def on_hot_device_detected(self, hot_devices: list) -&gt; None:
+        &#34;&#34;&#34;Triggered when one or more body parts of the robot become too hot.
+
+        :param hot_devices: list of body parts that are too hot.
+        &#34;&#34;&#34;
+        pass
+
+    def on_robot_motion_recording(self, motion: str) -&gt; None:
+        &#34;&#34;&#34;
+        Triggered when a motion recording (JSON format) becomes available .
+
+        :param motion:
+        &#34;&#34;&#34;
+        pass
+
+    def on_browser_button(self, button: str) -&gt; None:
+        &#34;&#34;&#34;
+        Triggered when a button has been pressed in the browser
+
+        :param button:
+        &#34;&#34;&#34;
+        pass
+
+    def on_corona_check_passed(self) -&gt; None:
+        &#34;&#34;&#34;Triggered when a valid Corona QR code has been detected by the corona_checker service&#34;&#34;&#34;
+        pass
+
+    def on_object_detected(self, centroid_x: int, centroid_y: int) -&gt; None:
+        &#34;&#34;&#34;Triggered when an object has been detected by the object_detection service&#34;&#34;&#34;
+        pass
+
+    def on_depth_estimated(self, estimation: int, std_dev: int) -&gt; None:
+        &#34;&#34;&#34;Triggered when an object&#39;s depth has been estimated by the depth_estimation service&#34;&#34;&#34;
+        pass
+
+    def on_object_tracked(self, obj_id: int, distance_cm: int, centroid_x: int, centroid_y: int, in_frame_ms: int,
+                          speed_cmps: int) -&gt; None:
+        &#34;&#34;&#34;Triggered when an object has been tracked by the object_tracking service&#34;&#34;&#34;
+        pass
+
+    ###########################
+    # Dialogflow Actions      #
+    ###########################
+
+    def set_dialogflow_key(self, key_file: str) -&gt; None:
+        &#34;&#34;&#34;Required for setting up Dialogflow: the path to the (JSON) keyfile.&#34;&#34;&#34;
+        contents = Path(key_file).read_text()
+        self.__send(&#39;dialogflow_key&#39;, contents)
+
+    def set_dialogflow_agent(self, agent_name: str) -&gt; None:
+        &#34;&#34;&#34;Required for setting up Dialogflow: the name of the agent to use (i.e. the project id).&#34;&#34;&#34;
+        self.__send(&#39;dialogflow_agent&#39;, agent_name)
+
+    def set_dialogflow_language(self, language_key: str) -&gt; None:
+        &#34;&#34;&#34;Required for setting up Dialogflow: the full key of the language to use (e.g. nl-NL or en-US).&#34;&#34;&#34;
+        self.__send(&#39;dialogflow_language&#39;, language_key)
+
+    def set_dialogflow_context(self, context: str) -&gt; None:
+        &#34;&#34;&#34;Indicate the Dialogflow context to use for the next speech-to-text (or to intent).&#34;&#34;&#34;
+        self.__send(&#39;dialogflow_context&#39;, context)
+
+    def start_listening(self, seconds: int) -&gt; None:
+        &#34;&#34;&#34;Tell the robot (and Dialogflow) to start listening to audio (and potentially recording it).
+        Intents will be continuously recognised. If seconds&gt;0, it will automatically stop listening.
+        A ListeningStarted event will be sent once the feed starts, and ListeningDone once it ends.&#34;&#34;&#34;
+        self.__send(&#39;action_audio&#39;, str(seconds))
+
+    def stop_listening(self) -&gt; None:
+        &#34;&#34;&#34;Tell the robot (and Dialogflow) to stop listening to audio.
+        Note that a potentially recognized intent might come in up to a second after this call.&#34;&#34;&#34;
+        self.__send(&#39;action_audio&#39;, &#39;-1&#39;)
+
+    ###########################
+    # Text-to-Speech Actions  #
+    ###########################
+
+    def set_tts_key(self, tts_key_file: str) -&gt; None:
+        &#34;&#34;&#34;Required for setting up TTS: the path to the (JSON) keyfile.&#34;&#34;&#34;
+        contents = Path(tts_key_file).read_text()
+        self.__send(&#39;tts_key&#39;, contents)
+
+    def set_tts_voice(self, tts_voice: str) -&gt; None:
+        &#34;&#34;&#34;Required for setting up TTS: the full key of the voice to use (e.g. nl-NL-Standard-A or en-GB-Standard-A), as found on
+                https://cloud.google.com/text-to-speech/docs/voices.&#34;&#34;&#34;
+        self.__send(&#39;tts_voice&#39;, tts_voice)
+
+    ###########################
+    # Robot Actions           #
+    ###########################
+
+    def say_text_to_speech(self, text: str) -&gt; None:
+        self.__send(&#39;text_to_speech&#39;, text)
+
+    def set_language(self, language_key: str) -&gt; None:
+        &#34;&#34;&#34;For changing the robot&#39;s speaking language: the full key of the language to use
+        (e.g. nl-NL or en-US). A LanguageChanged event will be sent when the change has propagated.&#34;&#34;&#34;
+        self.__send(&#39;audio_language&#39;, language_key)
+
+    def set_record_audio(self, should_record: bool) -&gt; None:
+        &#34;&#34;&#34;Indicate if audio should be recorded (see on_new_audio_file).&#34;&#34;&#34;
+        self.__send(&#39;dialogflow_record&#39;, &#39;1&#39; if should_record else &#39;0&#39;)
+
+    def set_idle(self) -&gt; None:
+        &#34;&#34;&#34;Put the robot into &#39;idle mode&#39;: always looking straight ahead.
+        A SetIdle event will be sent when the robot has transitioned into the idle mode.&#34;&#34;&#34;
+        self.__send(&#39;action_idle&#39;, &#39;true&#39;)
+
+    def set_non_idle(self) -&gt; None:
+        &#34;&#34;&#34;Put the robot back into its default &#39;autonomous mode&#39; (looking towards sounds).
+        A SetNonIdle event will be sent when the robot has transitioned out of the idle mode.&#34;&#34;&#34;
+        self.__send(&#39;action_idle&#39;, &#39;false&#39;)
+
+    def start_looking(self, seconds: int, channels: int = 1) -&gt; None:
+        &#34;&#34;&#34;Tell the robot (and any recognition module) to start the camera feed.
+        If seconds&gt;0, it will automatically stop looking.
+        A WatchingStarted event will be sent once the feed starts, and WatchingDone once it ends.&#34;&#34;&#34;
+        self.__send(&#39;action_video&#39;, str(seconds) + &#39;;&#39; + str(channels))
+
+    def stop_looking(self) -&gt; None:
+        &#34;&#34;&#34;Tell the robot (and any recognition module) to stop looking.&#34;&#34;&#34;
+        self.__send(&#39;action_video&#39;, &#39;-1;0&#39;)
+
+    def say(self, text: str) -&gt; None:
+        &#34;&#34;&#34;A string that the robot should say (in the currently selected language!).
+        A TextStarted event will be sent when the speaking starts and a TextDone event after it is finished.&#34;&#34;&#34;
+        self.__send(&#39;action_say&#39;, text)
+
+    def say_animated(self, text: str) -&gt; None:
+        &#34;&#34;&#34;A string that the robot should say (in the currently selected language!) in an animated fashion.
+        This means that the robot will automatically try to add (small) animations to the text.
+        Moreover, in this function, special tags are supported, see:
+        http://doc.aldebaran.com/2-8/naoqi/audio/altexttospeech-tuto.html#using-tags-for-voice-tuning
+        A TextStarted event will be sent when the speaking starts and a TextDone event after it is finished.&#34;&#34;&#34;
+        self.__send(&#39;action_say_animated&#39;, text)
+
+    def stop_talking(self) -&gt; None:
+        &#34;&#34;&#34;Cancel any currently running say(_animated)&#34;&#34;&#34;
+        self.__send(&#39;action_stop_talking&#39;, &#39;&#39;)
+
+    def do_gesture(self, gesture: str) -&gt; None:
+        &#34;&#34;&#34;Make the robot perform the given gesture. The list of available gestures (not tags!) is available on:
+        http://doc.aldebaran.com/2-8/naoqi/motion/alanimationplayer-advanced.html (Nao)
+        http://doc.aldebaran.com/2-5/naoqi/motion/alanimationplayer-advanced.html (Pepper)
+        You can also install custom animations with Choregraphe.
+        A GestureStarted event will be sent when the gesture starts and a GestureDone event when it is finished.&#34;&#34;&#34;
+        self.__send(&#39;action_gesture&#39;, gesture)
+
+    def load_audio(self, audio_file: str) -&gt; None:
+        &#34;&#34;&#34;Preloads the given audio file on the robot. See on_audio_loaded and play_loaded_audio.
+        A LoadAudioStarted event will be sent when the audio starts loading and a LoadAudioDone event when it is finished.&#34;&#34;&#34;
+        with open(audio_file, &#39;rb&#39;) as file:
+            self.__send(&#39;action_load_audio&#39;, file.read())
+
+    def play_audio(self, audio_file: str) -&gt; None:
+        &#34;&#34;&#34;Plays the given audio file on the robot&#39;s speakers.
+        A PlayAudioStarted event will be sent when the audio starts and a PlayAudioDone event after it is finished.
+        Any previously playing audio will be cancelled first.&#34;&#34;&#34;
+        with open(audio_file, &#39;rb&#39;) as file:
+            self.__send(&#39;action_play_audio&#39;, file.read())
+
+    def play_loaded_audio(self, identifier: int) -&gt; None:
+        &#34;&#34;&#34;Plays the given preloaded audio file on the robot&#39;s speakers. See load_audio and on_audio_loaded.
+        A PlayAudioStarted event will be sent when the audio starts and a PlayAudioDone event after it is finished.
+        Any previously playing audio will be cancelled first.&#34;&#34;&#34;
+        self.__send(&#39;action_play_audio&#39;, identifier)
+
+    def clear_loaded_audio(self) -&gt; None:
+        &#34;&#34;&#34;Clears all preloaded audio (see load_audio) from the robot.
+        A ClearLoadedAudioStarted event will be sent when the audio starts clearing,
+        and a ClearLoadedAudioDone event after it is all cleared up.&#34;&#34;&#34;
+        self.__send(&#39;action_clear_loaded_audio&#39;, &#39;&#39;)
+
+    def set_eye_color(self, color: str) -&gt; None:
+        &#34;&#34;&#34;Sets the robot&#39;s eye LEDs to one of the following colours:
+        white, red, green, blue, yellow, magenta, cyan, greenyellow or rainbow.
+        An EyeColourStarted event will be sent when the change starts and a EyeColourDone event after it is done.&#34;&#34;&#34;
+        self.__send(&#39;action_eyecolour&#39;, color)
+
+    def set_ear_color(self, color: str) -&gt; None:
+        &#34;&#34;&#34;Sets the robot&#39;s ear LEDs to one of the following colours:
+        white, red, green, blue, yellow, magenta, cyan, greenyellow or rainbow.
+        An EarColourStarted event will be sent when the change starts and a EarColourDone event after it is done.&#34;&#34;&#34;
+        self.__send(&#39;action_earcolour&#39;, color)
+
+    def set_head_color(self, color: str) -&gt; None:
+        &#34;&#34;&#34;Sets the robot&#39;s head LEDs to one of the following colours:
+        white, red, green, blue, yellow, magenta, cyan, greenyellow or rainbow.
+        A HeadColourStarted event will be sent when the change starts and a HeadColourDone event after it is done.&#34;&#34;&#34;
+        self.__send(&#39;action_headcolour&#39;, color)
+
+    def set_led_color(self, leds: list, colors: list, duration: int = 0) -&gt; None:
+        &#34;&#34;&#34;A list of LEDs (see http://doc.aldebaran.com/2-5/naoqi/sensors/alleds.html#list-group-led),
+        and a corresponding list of colors to give to the LEDs. Optionally a duration for the transitions (default=instant).
+        A LedColorStarted event will be sent when the color change starts and a LedColorDone event after it is done.&#34;&#34;&#34;
+        self.__send(&#39;action_led_color&#39;, dumps(leds) + &#39;;&#39; + dumps(colors) + &#39;;&#39; + str(duration))
+
+    def start_led_animation(self, led_group: str, anim_type: str, colors: list, speed: int, real_blink: bool = False) -&gt; None:
+        &#34;&#34;&#34;A LED group name (eyes, chest, feet, all), an animation type (rotate, blink, alternate),
+        a corresponding list of colors, and a speed setting (milliseconds).
+        A LedAnimationStarted event will be sent when the animation starts and a LedAnimationDone event after it is done.&#34;&#34;&#34;
+        self.__send(&#39;action_led_animation&#39;,
+                    &#39;start;&#39; + led_group + &#39;;&#39; + anim_type + &#39;;&#39; + dumps(colors) + &#39;;&#39; + str(speed) + &#39;;&#39; + str(real_blink))
+
+    def stop_led_animation(self) -&gt; None:
+        &#34;&#34;&#34;Abort any currently running LED animation (see start_led_animation).&#34;&#34;&#34;
+        self.__send(&#39;action_led_animation&#39;, &#39;stop&#39;)
+
+    def take_picture(self) -&gt; None:
+        &#34;&#34;&#34;Instructs the robot to take a picture. See on_new_picture_file.
+        The people detection or face recognition service must be running for this action to work.&#34;&#34;&#34;
+        self.__send(&#39;action_take_picture&#39;, &#39;&#39;)
+
+    def turn(self, degrees: int) -&gt; None:
+        &#34;&#34;&#34;Instructs the Pepper robot to make a turn of the given amount of degrees (-360 to 360).
+        A TurnStarted event will be sent when the robot starts turning and a TurnDone event after it is done.&#34;&#34;&#34;
+        self.__send(&#39;action_turn&#39;, str(degrees))
+
+    def wake_up(self) -&gt; None:
+        &#34;&#34;&#34;Instructs the robot to execute the default wake_up behavior. Also see on_on_awake_changed.
+        See: http://doc.aldebaran.com/2-8/naoqi/motion/control-stiffness-api.html?highlight=wakeup#ALMotionProxy::wakeUp
+        A WakeUpStarted event will be sent when the robot starts waking up and a WakeUpDone event after it is done.&#34;&#34;&#34;
+        self.__send(&#39;action_wakeup&#39;, &#39;&#39;)
+
+    def rest(self) -&gt; None:
+        &#34;&#34;&#34;Instructs the robot to execute the default wake_up behavior. Also see on_on_awake_changed.
+        See: http://doc.aldebaran.com/2-8/naoqi/motion/control-stiffness-api.html?highlight=wakeup#ALMotionProxy::rest
+        A RestStarted event will be sent when the robot starts going into rest mode and a RestDone event after it is done.&#34;&#34;&#34;
+        self.__send(&#39;action_rest&#39;, &#39;&#39;)
+
+    def set_breathing(self, enable: bool) -&gt; None:
+        &#34;&#34;&#34;
+        Enable/disable the default breathing animation of the robot.
+        See: http://doc.aldebaran.com/2-8/naoqi/motion/idle-api.html?highlight=breathing#ALMotionProxy::setBreathEnabled__ssCR.bCR
+        A BreathingEnabled or BreathingDisabled event will be sent when the change is done (depending on the given input).
+        &#34;&#34;&#34;
+        self.__send(&#39;action_set_breathing&#39;, &#39;Body;&#39; + &#39;1&#39; if enable else &#39;0&#39;)
+
+    def go_to_posture(self, posture: str, speed: int = 100) -&gt; None:
+        &#34;&#34;&#34;
+        Let the robot go to a predefined posture. Also see on_posture_changed.
+
+        Predefined postures for Pepper are: Stand or StandInit, StandZero, and Crouch.
+        See: http://doc.aldebaran.com/2-5/family/pepper_technical/postures_pep.html#pepper-postures
+
+        Predefined postures for Nao are: Stand, StandInit, StandZero, Crouch, Sit, SitRelax, LyingBelly, and LyingBack.
+        See: http://doc.aldebaran.com/2-8/family/nao_technical/postures_naov6.html#naov6-postures
+
+        A GoToPostureStarted event will be sent when the posture change starts and GoToPostureDone when it finished.
+
+        :param posture: target posture
+        :param speed: optional speed parameter to set the speed of the posture change. Default is 1.0 (100% speed).
+        :return:
+        &#34;&#34;&#34;
+        self.__send(&#39;action_posture&#39;, posture + &#39;;&#39; + str(speed) if 1 &lt;= speed &lt;= 100 else posture + &#39;;100&#39;)
+
+    def set_stiffness(self, chains: list, stiffness: int, duration: int = 1000) -&gt; None:
+        &#34;&#34;&#34;
+        Set the stiffness for one or more joint chains.
+        Suitable joint chains for Nao are: Head, RArm, LArm, RLeg, LLeg
+        Suitable joint chains for Pepper are: Head, RArm, LArm, Leg, Wheels
+
+        A SetStiffnessStarted event will be sent when the stiffness change starts and SetStiffnessDone when it finished.
+
+        :param chains: list of joints.
+        :param stiffness: stiffness value between 0 and 100.
+        :param duration: stiffness transition time in milliseconds.
+        :return:
+        &#34;&#34;&#34;
+        self.__send(&#39;action_stiffness&#39;, dumps(chains) + &#39;;&#39; + str(stiffness) + &#39;;&#39; + str(duration))
+
+    def play_motion(self, motion: str) -&gt; None:
+        &#34;&#34;&#34;
+        Play a motion.
+
+        Suitable joints and angles for Nao:
+        https://developer.softbankrobotics.com/nao6/nao-documentation/nao-developer-guide/kinematics-data/joints
+        Suitable joints and angles for Pepper:
+        https://developer.softbankrobotics.com/pepper-naoqi-25/pepper-documentation/pepper-developer-guide/kinematics-data/joints
+
+        A PlayMotionStarted event will be sent when the motion sequence starts and PlayMotionDone when it finished.
+
+        :param motion: json string in the following format
+        {&#39;robot&#39;: &#39;nao/pepper&#39;, &#39;compress_factor_angles&#39;: int, &#39;compress_factor_times: int
+        &#39;motion&#39;: {&#39;joint1&#39;: { &#39;angles&#39;: [...], &#39;times&#39;: [...]}, &#39;joint2&#39;: {...}}}
+        :return:
+        &#34;&#34;&#34;
+        self.__send(&#39;action_play_motion&#39;, motion)
+
+    def start_record_motion(self, joint_chains: list, framerate: int = 5) -&gt; None:
+        &#34;&#34;&#34;
+        Start recording of the angles over time of a given list of joints and or joint chains with an optional framerate.
+
+        Suitable joints and joint chains for nao:
+        http://doc.aldebaran.com/2-8/family/nao_technical/bodyparts_naov6.html#nao-chains
+        Suitable joints and joint chains for pepper:
+        http://doc.aldebaran.com/2-8/family/pepper_technical/bodyparts_pep.html
+
+        A RecordMotionStarted event will be sent when the recording starts and RecordMotionDone when it finished.
+
+        :param joint_chains: a list with one or more joints or joint chains
+        :param framerate: optional number of recordings per second. The default is 5 fps.
+        :return:
+        &#34;&#34;&#34;
+        self.__send(&#39;action_record_motion&#39;, &#39;start;&#39; + dumps(joint_chains) + &#39;;&#39; + str(framerate))
+
+    def stop_record_motion(self) -&gt; None:
+        &#34;&#34;&#34;
+        Stop recording of an active motion recording (started by start_record_motion)
+
+        :return:
+        &#34;&#34;&#34;
+        self.__send(&#39;action_record_motion&#39;, &#39;stop&#39;)
+
+    ###########################
+    # Browser Actions         #
+    ###########################
+
+    def browser_show(self, html: str) -&gt; None:
+        &#34;&#34;&#34;
+        Show the given HTML body on the currently connected browser page.
+        :param html: the HTML contents (put inside a &lt;body&gt;).
+        By default, the Bootstrap rendering library is loaded: https://getbootstrap.com/docs/4.6/
+        Moreover, various classes can be used (on e.g. divs) to automatically create dynamic elements:
+        - listening_icon: shows a microphone that is enabled or disabled when the robot is listening or not.
+        - speech_text: shows a live-stream of the currently recognized text (by e.g. dialogflow).
+        - vu_logo: renders a VU logo.
+        - english_flag: renders a English flag (changes the audio language when tapped on).
+        - chatbox: allows text input (to e.g. dialogflow).
+        Finally, each button element will automatically trigger an event when clicked (see on_browser_button).
+        :return:
+        &#34;&#34;&#34;
+        self.__send(&#39;render_html&#39;, html)
+
+    ###########################
+    # Management              #
+    ###########################
+
+    def enable_service(self, name: str) -&gt; None:
+        &#34;&#34;&#34;
+        Enable the given service (for the previously selected devices)
+        :param name: people_detection, face_recognition, emotion_detection, corona_checker, intent_detection or sentiment_analysis
+        :return:
+        &#34;&#34;&#34;
+        pipe = self.redis.pipeline()
+        if name == &#39;people_detection&#39; or name == &#39;face_recognition&#39; or name == &#39;emotion_detection&#39; \
+                or name == &#39;corona_checker&#39; or name == &#39;object_detection&#39; or name == &#39;depth_estimation&#39; \
+                or name == &#39;object_tracking&#39;:
+            for cam in self.devices[self.device_types[&#39;cam&#39;]]:
+                pipe.publish(name, cam)
+        elif name == &#39;intent_detection&#39; or name == &#39;sentiment_analysis&#39;:
+            for mic in self.devices[self.device_types[&#39;mic&#39;]]:
+                pipe.publish(name, mic)
+        elif name == &#39;text_to_speech&#39;:
+            for speaker in self.devices[self.device_types[&#39;speaker&#39;]]:
+                pipe.publish(name, speaker)
+        else:
+            print(&#39;Unknown service: &#39; + name)
+        pipe.execute()
+
+    def start(self) -&gt; None:
+        &#34;&#34;&#34;Start the application&#34;&#34;&#34;
+        self.__running = True
+        self.__running_thread.start()
+
+    def stop(self) -&gt; None:
+        &#34;&#34;&#34;Stop listening to incoming events (which is done in a thread) so the Python application can close.&#34;&#34;&#34;
+        self.__running = False
+        self.__stop_event.set()
+        print(&#39;Trying to exit gracefully...&#39;)
+        try:
+            self.__pubsub_thread.stop()
+            self.redis.close()
+            print(&#39;Graceful exit was successful.&#39;)
+        except Exception as err:
+            print(&#39;Graceful exit has failed: &#39; + err.message)
+
+    def __run(self) -&gt; None:
+        while self.__running:
+            self.__stop_event.wait()
+
+    def __listen(self, message) -&gt; None:
+        raw_channel = message[&#39;channel&#39;].decode(&#39;utf-8&#39;)
+        split = raw_channel.index(&#39;_&#39;) + 1
+        channel = raw_channel[split:]
+        data = message[&#39;data&#39;]
+
+        if channel == &#39;events&#39;:
+            self.on_event(event=data.decode(&#39;utf-8&#39;))
+        elif channel == &#39;browser_button&#39;:
+            self.on_browser_button(button=data.decode(&#39;utf-8&#39;))
+        elif channel == &#39;detected_person&#39;:
+            coordinates = data.decode(&#39;utf-8&#39;).split(&#39;,&#39;)
+            self.on_person_detected(int(coordinates[0]), int(coordinates[1]))
+        elif channel == &#39;recognised_face&#39;:
+            self.on_face_recognized(identifier=data.decode(&#39;utf-8&#39;))
+        elif channel == &#39;audio_language&#39;:
+            self.on_audio_language(language_key=data.decode(&#39;utf-8&#39;))
+        elif channel == &#39;audio_intent&#39;:
+            detection_result = DetectionResult()
+            detection_result.ParseFromString(data)
+            self.on_audio_intent(detection_result=MessageToDict(detection_result))
+        elif channel == &#39;audio_newfile&#39;:
+            audio_file = strftime(self.time_format) + &#39;.wav&#39;
+            with open(audio_file, &#39;wb&#39;) as wav:
+                wav.write(data)
+            self.on_new_audio_file(audio_file=audio_file)
+        elif channel == &#39;picture_newfile&#39;:
+            picture_file = strftime(self.time_format) + &#39;.jpg&#39;
+            with open(picture_file, &#39;wb&#39;) as jpg:
+                jpg.write(data)
+            self.on_new_picture_file(picture_file=picture_file)
+        elif channel == &#39;detected_emotion&#39;:
+            self.on_emotion_detected(emotion=data.decode(&#39;utf-8&#39;))
+        elif channel == &#39;robot_posture_changed&#39;:
+            self.on_posture_changed(posture=data.decode(&#39;utf-8&#39;))
+        elif channel == &#39;robot_awake_changed&#39;:
+            self.on_awake_changed(is_awake=(data.decode(&#39;utf-8&#39;) == &#39;1&#39;))
+        elif channel == &#39;robot_battery_charge_changed&#39;:
+            self.on_battery_charge_changed(percentage=int(data.decode(&#39;utf-8&#39;)))
+        elif channel == &#39;robot_charging_changed&#39;:
+            self.on_charging_changed(is_charging=(data.decode(&#39;utf-8&#39;) == &#39;1&#39;))
+        elif channel == &#39;robot_hot_device_detected&#39;:
+            self.on_hot_device_detected(hot_devices=data.decode(&#39;utf-8&#39;).split(&#39;;&#39;))
+        elif channel == &#39;robot_motion_recording&#39;:
+            self.on_robot_motion_recording(motion=data.decode(&#39;utf-8&#39;))
+        elif channel == &#39;text_transcript&#39;:
+            self.on_text_transcript(transcript=data.decode(&#39;utf-8&#39;))
+        elif channel == &#39;text_sentiment&#39;:
+            self.on_text_sentiment(sentiment=data.decode(&#39;utf-8&#39;))
+        elif channel == &#39;corona_check&#39;:
+            self.on_corona_check_passed()
+        elif channel == &#39;detected_object&#39;:
+            x_y = data.decode(&#39;utf-8&#39;).split(&#39;;&#39;)
+            self.on_object_detected(centroid_x=int(x_y[0]), centroid_y=int(x_y[1]))
+        elif channel == &#39;depth_estimated&#39;:
+            est_dev = data.decode(&#39;utf-8&#39;).split(&#39;;&#39;)
+            self.on_depth_estimated(estimation=int(est_dev[0]), std_dev=int(est_dev[1]))
+        elif channel == &#39;tracked_object&#39;:
+            tracking_result = TrackingResult()
+            tracking_result.ParseFromString(data)
+            self.on_object_tracked(tracking_result.object_id, tracking_result.distance_cm, tracking_result.centroid_x,
+                                   tracking_result.centroid_y, tracking_result.in_frame_ms, tracking_result.speed_cmps)
+        else:
+            print(&#39;Unknown channel: &#39; + channel)
+
+    def __send(self, channel: str, data) -&gt; None:
+        pipe = self.redis.pipeline()
+        target_type = self.__topic_map[channel]
+        for device in self.devices[target_type]:
+            pipe.publish(device + &#39;_&#39; + channel, data)
+        pipe.execute()</code></pre>
+</details>
+<h3>Subclasses</h3>
+<ul class="hlist">
+<li><a title="social_interaction_cloud.basic_connector.BasicSICConnector" href="basic_connector.html#social_interaction_cloud.basic_connector.BasicSICConnector">BasicSICConnector</a></li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.browser_show"><code class="name flex">
+<span>def <span class="ident">browser_show</span></span>(<span>self, html: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Show the given HTML body on the currently connected browser page.
+:param html: the HTML contents (put inside a <body>).
+By default, the Bootstrap rendering library is loaded: <a href="https://getbootstrap.com/docs/4.6/">https://getbootstrap.com/docs/4.6/</a>
+Moreover, various classes can be used (on e.g. divs) to automatically create dynamic elements:
+- listening_icon: shows a microphone that is enabled or disabled when the robot is listening or not.
+- speech_text: shows a live-stream of the currently recognized text (by e.g. dialogflow).
+- vu_logo: renders a VU logo.
+- english_flag: renders a English flag (changes the audio language when tapped on).
+- chatbox: allows text input (to e.g. dialogflow).
+Finally, each button element will automatically trigger an event when clicked (see on_browser_button).
+:return:</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def browser_show(self, html: str) -&gt; None:
+    &#34;&#34;&#34;
+    Show the given HTML body on the currently connected browser page.
+    :param html: the HTML contents (put inside a &lt;body&gt;).
+    By default, the Bootstrap rendering library is loaded: https://getbootstrap.com/docs/4.6/
+    Moreover, various classes can be used (on e.g. divs) to automatically create dynamic elements:
+    - listening_icon: shows a microphone that is enabled or disabled when the robot is listening or not.
+    - speech_text: shows a live-stream of the currently recognized text (by e.g. dialogflow).
+    - vu_logo: renders a VU logo.
+    - english_flag: renders a English flag (changes the audio language when tapped on).
+    - chatbox: allows text input (to e.g. dialogflow).
+    Finally, each button element will automatically trigger an event when clicked (see on_browser_button).
+    :return:
+    &#34;&#34;&#34;
+    self.__send(&#39;render_html&#39;, html)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.clear_loaded_audio"><code class="name flex">
+<span>def <span class="ident">clear_loaded_audio</span></span>(<span>self) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Clears all preloaded audio (see load_audio) from the robot.
+A ClearLoadedAudioStarted event will be sent when the audio starts clearing,
+and a ClearLoadedAudioDone event after it is all cleared up.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def clear_loaded_audio(self) -&gt; None:
+    &#34;&#34;&#34;Clears all preloaded audio (see load_audio) from the robot.
+    A ClearLoadedAudioStarted event will be sent when the audio starts clearing,
+    and a ClearLoadedAudioDone event after it is all cleared up.&#34;&#34;&#34;
+    self.__send(&#39;action_clear_loaded_audio&#39;, &#39;&#39;)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.do_gesture"><code class="name flex">
+<span>def <span class="ident">do_gesture</span></span>(<span>self, gesture: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Make the robot perform the given gesture. The list of available gestures (not tags!) is available on:
+<a href="http://doc.aldebaran.com/2-8/naoqi/motion/alanimationplayer-advanced.html">http://doc.aldebaran.com/2-8/naoqi/motion/alanimationplayer-advanced.html</a> (Nao)
+<a href="http://doc.aldebaran.com/2-5/naoqi/motion/alanimationplayer-advanced.html">http://doc.aldebaran.com/2-5/naoqi/motion/alanimationplayer-advanced.html</a> (Pepper)
+You can also install custom animations with Choregraphe.
+A GestureStarted event will be sent when the gesture starts and a GestureDone event when it is finished.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def do_gesture(self, gesture: str) -&gt; None:
+    &#34;&#34;&#34;Make the robot perform the given gesture. The list of available gestures (not tags!) is available on:
+    http://doc.aldebaran.com/2-8/naoqi/motion/alanimationplayer-advanced.html (Nao)
+    http://doc.aldebaran.com/2-5/naoqi/motion/alanimationplayer-advanced.html (Pepper)
+    You can also install custom animations with Choregraphe.
+    A GestureStarted event will be sent when the gesture starts and a GestureDone event when it is finished.&#34;&#34;&#34;
+    self.__send(&#39;action_gesture&#39;, gesture)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.enable_service"><code class="name flex">
+<span>def <span class="ident">enable_service</span></span>(<span>self, name: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Enable the given service (for the previously selected devices)
+:param name: people_detection, face_recognition, emotion_detection, corona_checker, intent_detection or sentiment_analysis
+:return:</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def enable_service(self, name: str) -&gt; None:
+    &#34;&#34;&#34;
+    Enable the given service (for the previously selected devices)
+    :param name: people_detection, face_recognition, emotion_detection, corona_checker, intent_detection or sentiment_analysis
+    :return:
+    &#34;&#34;&#34;
+    pipe = self.redis.pipeline()
+    if name == &#39;people_detection&#39; or name == &#39;face_recognition&#39; or name == &#39;emotion_detection&#39; \
+            or name == &#39;corona_checker&#39; or name == &#39;object_detection&#39; or name == &#39;depth_estimation&#39; \
+            or name == &#39;object_tracking&#39;:
+        for cam in self.devices[self.device_types[&#39;cam&#39;]]:
+            pipe.publish(name, cam)
+    elif name == &#39;intent_detection&#39; or name == &#39;sentiment_analysis&#39;:
+        for mic in self.devices[self.device_types[&#39;mic&#39;]]:
+            pipe.publish(name, mic)
+    elif name == &#39;text_to_speech&#39;:
+        for speaker in self.devices[self.device_types[&#39;speaker&#39;]]:
+            pipe.publish(name, speaker)
+    else:
+        print(&#39;Unknown service: &#39; + name)
+    pipe.execute()</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.go_to_posture"><code class="name flex">
+<span>def <span class="ident">go_to_posture</span></span>(<span>self, posture: str, speed: int = 100) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Let the robot go to a predefined posture. Also see on_posture_changed.</p>
+<p>Predefined postures for Pepper are: Stand or StandInit, StandZero, and Crouch.
+See: <a href="http://doc.aldebaran.com/2-5/family/pepper_technical/postures_pep.html#pepper-postures">http://doc.aldebaran.com/2-5/family/pepper_technical/postures_pep.html#pepper-postures</a></p>
+<p>Predefined postures for Nao are: Stand, StandInit, StandZero, Crouch, Sit, SitRelax, LyingBelly, and LyingBack.
+See: <a href="http://doc.aldebaran.com/2-8/family/nao_technical/postures_naov6.html#naov6-postures">http://doc.aldebaran.com/2-8/family/nao_technical/postures_naov6.html#naov6-postures</a></p>
+<p>A GoToPostureStarted event will be sent when the posture change starts and GoToPostureDone when it finished.</p>
+<p>:param posture: target posture
+:param speed: optional speed parameter to set the speed of the posture change. Default is 1.0 (100% speed).
+:return:</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def go_to_posture(self, posture: str, speed: int = 100) -&gt; None:
+    &#34;&#34;&#34;
+    Let the robot go to a predefined posture. Also see on_posture_changed.
+
+    Predefined postures for Pepper are: Stand or StandInit, StandZero, and Crouch.
+    See: http://doc.aldebaran.com/2-5/family/pepper_technical/postures_pep.html#pepper-postures
+
+    Predefined postures for Nao are: Stand, StandInit, StandZero, Crouch, Sit, SitRelax, LyingBelly, and LyingBack.
+    See: http://doc.aldebaran.com/2-8/family/nao_technical/postures_naov6.html#naov6-postures
+
+    A GoToPostureStarted event will be sent when the posture change starts and GoToPostureDone when it finished.
+
+    :param posture: target posture
+    :param speed: optional speed parameter to set the speed of the posture change. Default is 1.0 (100% speed).
+    :return:
+    &#34;&#34;&#34;
+    self.__send(&#39;action_posture&#39;, posture + &#39;;&#39; + str(speed) if 1 &lt;= speed &lt;= 100 else posture + &#39;;100&#39;)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.load_audio"><code class="name flex">
+<span>def <span class="ident">load_audio</span></span>(<span>self, audio_file: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Preloads the given audio file on the robot. See on_audio_loaded and play_loaded_audio.
+A LoadAudioStarted event will be sent when the audio starts loading and a LoadAudioDone event when it is finished.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def load_audio(self, audio_file: str) -&gt; None:
+    &#34;&#34;&#34;Preloads the given audio file on the robot. See on_audio_loaded and play_loaded_audio.
+    A LoadAudioStarted event will be sent when the audio starts loading and a LoadAudioDone event when it is finished.&#34;&#34;&#34;
+    with open(audio_file, &#39;rb&#39;) as file:
+        self.__send(&#39;action_load_audio&#39;, file.read())</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_audio_intent"><code class="name flex">
+<span>def <span class="ident">on_audio_intent</span></span>(<span>self, detection_result: dict) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Triggered whenever an intent was detected (by Dialogflow) on a user's speech.</p>
+<p>:param: detection_result: result in a protobuffer dict.</p>
+<p>Given is the name of the intent, a list of optional parameters (following from the dialogflow spec),
+and a confidence value.
+See <a href="https://cloud.google.com/dialogflow/docs/intents-loaded_actions-parameters.">https://cloud.google.com/dialogflow/docs/intents-loaded_actions-parameters.</a></p>
+<p>The recognized text itself is provided as well, even when no intent was actually matched (i.e. a failure).
+These are sent as soon as an intent is recognized, which is always after some start_listening action,
+but might come in some time after the final stop_listening action (if there was some intent detected at least).
+Intents will keep being recognized until stop_listening is called.
+In that case, this function can still be triggered, containing the recognized text but no intent.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def on_audio_intent(self, detection_result: dict) -&gt; None:
+    &#34;&#34;&#34;Triggered whenever an intent was detected (by Dialogflow) on a user&#39;s speech.
+
+    :param: detection_result: result in a protobuffer dict.
+
+    Given is the name of the intent, a list of optional parameters (following from the dialogflow spec),
+    and a confidence value.
+    See https://cloud.google.com/dialogflow/docs/intents-loaded_actions-parameters.
+
+    The recognized text itself is provided as well, even when no intent was actually matched (i.e. a failure).
+    These are sent as soon as an intent is recognized, which is always after some start_listening action,
+    but might come in some time after the final stop_listening action (if there was some intent detected at least).
+    Intents will keep being recognized until stop_listening is called.
+    In that case, this function can still be triggered, containing the recognized text but no intent.&#34;&#34;&#34;
+    pass</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_audio_language"><code class="name flex">
+<span>def <span class="ident">on_audio_language</span></span>(<span>self, language_key: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Triggered whenever a language change was requested (for example by the user).</p>
+<p>:param language_key: e.g. nl-NL or en-US.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def on_audio_language(self, language_key: str) -&gt; None:
+    &#34;&#34;&#34;Triggered whenever a language change was requested (for example by the user).
+
+   :param language_key: e.g. nl-NL or en-US.
+   &#34;&#34;&#34;
+    pass</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_audio_loaded"><code class="name flex">
+<span>def <span class="ident">on_audio_loaded</span></span>(<span>self, identifier: int) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Gives the unique identifier for the audio that was just loaded (see load_audio)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def on_audio_loaded(self, identifier: int) -&gt; None:
+    &#34;&#34;&#34;Gives the unique identifier for the audio that was just loaded (see load_audio)&#34;&#34;&#34;
+    pass</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_awake_changed"><code class="name flex">
+<span>def <span class="ident">on_awake_changed</span></span>(<span>self, is_awake: bool) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Trigger when the robot wakes up or goes to rest.</p>
+<p>:param is_awake: true if the robot just woke up, false if it just went to rest.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def on_awake_changed(self, is_awake: bool) -&gt; None:
+    &#34;&#34;&#34;
+    Trigger when the robot wakes up or goes to rest.
+
+    :param is_awake: true if the robot just woke up, false if it just went to rest.
+    &#34;&#34;&#34;
+    pass</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_battery_charge_changed"><code class="name flex">
+<span>def <span class="ident">on_battery_charge_changed</span></span>(<span>self, percentage: int) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Triggered when the battery level changes.</p>
+<p>:param percentage: battery level (0-100)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def on_battery_charge_changed(self, percentage: int) -&gt; None:
+    &#34;&#34;&#34;Triggered when the battery level changes.
+
+    :param percentage: battery level (0-100)
+    &#34;&#34;&#34;
+    pass</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_browser_button"><code class="name flex">
+<span>def <span class="ident">on_browser_button</span></span>(<span>self, button: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Triggered when a button has been pressed in the browser</p>
+<p>:param button:</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def on_browser_button(self, button: str) -&gt; None:
+    &#34;&#34;&#34;
+    Triggered when a button has been pressed in the browser
+
+    :param button:
+    &#34;&#34;&#34;
+    pass</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_charging_changed"><code class="name flex">
+<span>def <span class="ident">on_charging_changed</span></span>(<span>self, is_charging: bool) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Triggered when the robot is connected (True) or disconnected (False) from a power source.</p>
+<p>Warning: is not always accurate, see:
+<a href="http://doc.aldebaran.com/2-8/naoqi/sensors/albattery-api.html#BatteryPowerPluggedChanged">http://doc.aldebaran.com/2-8/naoqi/sensors/albattery-api.html#BatteryPowerPluggedChanged</a>
+:param is_charging:</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def on_charging_changed(self, is_charging: bool) -&gt; None:
+    &#34;&#34;&#34;
+    Triggered when the robot is connected (True) or disconnected (False) from a power source.
+
+    Warning: is not always accurate, see:
+    http://doc.aldebaran.com/2-8/naoqi/sensors/albattery-api.html#BatteryPowerPluggedChanged
+    :param is_charging:
+    &#34;&#34;&#34;
+    pass</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_corona_check_passed"><code class="name flex">
+<span>def <span class="ident">on_corona_check_passed</span></span>(<span>self) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Triggered when a valid Corona QR code has been detected by the corona_checker service</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def on_corona_check_passed(self) -&gt; None:
+    &#34;&#34;&#34;Triggered when a valid Corona QR code has been detected by the corona_checker service&#34;&#34;&#34;
+    pass</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_depth_estimated"><code class="name flex">
+<span>def <span class="ident">on_depth_estimated</span></span>(<span>self, estimation: int, std_dev: int) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Triggered when an object's depth has been estimated by the depth_estimation service</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def on_depth_estimated(self, estimation: int, std_dev: int) -&gt; None:
+    &#34;&#34;&#34;Triggered when an object&#39;s depth has been estimated by the depth_estimation service&#34;&#34;&#34;
+    pass</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_emotion_detected"><code class="name flex">
+<span>def <span class="ident">on_emotion_detected</span></span>(<span>self, emotion: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Triggered whenever an emotion has been detected by the emotion detection service (when running).</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def on_emotion_detected(self, emotion: str) -&gt; None:
+    &#34;&#34;&#34;Triggered whenever an emotion has been detected by the emotion detection service (when running).&#34;&#34;&#34;
+    pass</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_event"><code class="name flex">
+<span>def <span class="ident">on_event</span></span>(<span>self, event: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Triggered upon any event</p>
+<p>:param event: This can be either an event related to some action called here, or an event related to one of the
+robot's touch sensors, i.e. one of:
+RightBumperPressed, RightBumperReleased, LeftBumperPressed, LeftBumperReleased, BackBumperPressed,
+BackBumperReleased, FrontTactilTouched, FrontTactilReleased, MiddleTactilTouched, MiddleTactilReleased,
+RearTactilTouched, RearTactilReleased, HandRightBackTouched, HandRightBackReleased, HandRightLeftTouched,
+HandRightLeftReleased, HandRightRightTouched, HandRightRightReleased, HandLeftBackTouched, HandLeftBackReleased,
+HandLeftLeftTouched, HandLeftLeftReleased, HandLeftRightTouched, or HandLeftRightReleased
+See: <a href="http://doc.aldebaran.com/2-8/family/nao_technical/contact-sensors_naov6.html">http://doc.aldebaran.com/2-8/family/nao_technical/contact-sensors_naov6.html</a></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def on_event(self, event: str) -&gt; None:
+    &#34;&#34;&#34;Triggered upon any event
+
+    :param event: This can be either an event related to some action called here, or an event related to one of the
+    robot&#39;s touch sensors, i.e. one of:
+    RightBumperPressed, RightBumperReleased, LeftBumperPressed, LeftBumperReleased, BackBumperPressed,
+    BackBumperReleased, FrontTactilTouched, FrontTactilReleased, MiddleTactilTouched, MiddleTactilReleased,
+    RearTactilTouched, RearTactilReleased, HandRightBackTouched, HandRightBackReleased, HandRightLeftTouched,
+    HandRightLeftReleased, HandRightRightTouched, HandRightRightReleased, HandLeftBackTouched, HandLeftBackReleased,
+    HandLeftLeftTouched, HandLeftLeftReleased, HandLeftRightTouched, or HandLeftRightReleased
+    See: http://doc.aldebaran.com/2-8/family/nao_technical/contact-sensors_naov6.html&#34;&#34;&#34;
+    pass</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_face_recognized"><code class="name flex">
+<span>def <span class="ident">on_face_recognized</span></span>(<span>self, identifier: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Triggered when a specific face was detected in front of the robot (after a startWatching action was called).</p>
+<p>:param identifier: id of a unique face.
+Only sent when the face recognition service is running. Will be sent as long as the face is recognised.
+The identifiers of recognised faces are stored in a file, and will thus persist over a restart of the agent.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def on_face_recognized(self, identifier: str) -&gt; None:
+    &#34;&#34;&#34;Triggered when a specific face was detected in front of the robot (after a startWatching action was called).
+
+    :param identifier: id of a unique face.
+    Only sent when the face recognition service is running. Will be sent as long as the face is recognised.
+    The identifiers of recognised faces are stored in a file, and will thus persist over a restart of the agent.&#34;&#34;&#34;
+    pass</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_hot_device_detected"><code class="name flex">
+<span>def <span class="ident">on_hot_device_detected</span></span>(<span>self, hot_devices: list) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Triggered when one or more body parts of the robot become too hot.</p>
+<p>:param hot_devices: list of body parts that are too hot.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def on_hot_device_detected(self, hot_devices: list) -&gt; None:
+    &#34;&#34;&#34;Triggered when one or more body parts of the robot become too hot.
+
+    :param hot_devices: list of body parts that are too hot.
+    &#34;&#34;&#34;
+    pass</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_new_audio_file"><code class="name flex">
+<span>def <span class="ident">on_new_audio_file</span></span>(<span>self, audio_file: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Triggered whenever a new recording has been stored to an audio (WAV) file.</p>
+<p>See set_record_audio.
+Given is the name to the recorded file (which is in the folder required by the play_audio function).
+All audio received between the last start_listening and stop_listening calls is recorded.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def on_new_audio_file(self, audio_file: str) -&gt; None:
+    &#34;&#34;&#34;Triggered whenever a new recording has been stored to an audio (WAV) file.
+
+    See set_record_audio.
+    Given is the name to the recorded file (which is in the folder required by the play_audio function).
+    All audio received between the last start_listening and stop_listening calls is recorded.&#34;&#34;&#34;
+    pass</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_new_picture_file"><code class="name flex">
+<span>def <span class="ident">on_new_picture_file</span></span>(<span>self, picture_file: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Triggered whenever a new picture has been stored to an image (JPG) file.</p>
+<p>See take_picture.
+Given is the path to the taken picture.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def on_new_picture_file(self, picture_file: str) -&gt; None:
+    &#34;&#34;&#34;Triggered whenever a new picture has been stored to an image (JPG) file.
+
+    See take_picture.
+    Given is the path to the taken picture.&#34;&#34;&#34;
+    pass</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_object_detected"><code class="name flex">
+<span>def <span class="ident">on_object_detected</span></span>(<span>self, centroid_x: int, centroid_y: int) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Triggered when an object has been detected by the object_detection service</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def on_object_detected(self, centroid_x: int, centroid_y: int) -&gt; None:
+    &#34;&#34;&#34;Triggered when an object has been detected by the object_detection service&#34;&#34;&#34;
+    pass</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_object_tracked"><code class="name flex">
+<span>def <span class="ident">on_object_tracked</span></span>(<span>self, obj_id: int, distance_cm: int, centroid_x: int, centroid_y: int, in_frame_ms: int, speed_cmps: int) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Triggered when an object has been tracked by the object_tracking service</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def on_object_tracked(self, obj_id: int, distance_cm: int, centroid_x: int, centroid_y: int, in_frame_ms: int,
+                      speed_cmps: int) -&gt; None:
+    &#34;&#34;&#34;Triggered when an object has been tracked by the object_tracking service&#34;&#34;&#34;
+    pass</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_person_detected"><code class="name flex">
+<span>def <span class="ident">on_person_detected</span></span>(<span>self, x: int, y: int) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Triggered when some person was detected in front of the robot (after a startWatching action was called).</p>
+<p>:param x: x-coordinate of center of person's face.
+:param y: y-coordinate of center of person's face.
+This is only sent when the people detection service is running. Will be sent as long as a person is detected.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def on_person_detected(self, x: int, y: int) -&gt; None:
+    &#34;&#34;&#34;Triggered when some person was detected in front of the robot (after a startWatching action was called).
+
+    :param x: x-coordinate of center of person&#39;s face.
+    :param y: y-coordinate of center of person&#39;s face.
+    This is only sent when the people detection service is running. Will be sent as long as a person is detected.&#34;&#34;&#34;
+    pass</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_posture_changed"><code class="name flex">
+<span>def <span class="ident">on_posture_changed</span></span>(<span>self, posture: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Trigger when the posture has changed.</p>
+<p>:param posture: new posture.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def on_posture_changed(self, posture: str) -&gt; None:
+    &#34;&#34;&#34;
+    Trigger when the posture has changed.
+
+    :param posture: new posture.
+    &#34;&#34;&#34;
+    pass</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_robot_motion_recording"><code class="name flex">
+<span>def <span class="ident">on_robot_motion_recording</span></span>(<span>self, motion: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Triggered when a motion recording (JSON format) becomes available .</p>
+<p>:param motion:</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def on_robot_motion_recording(self, motion: str) -&gt; None:
+    &#34;&#34;&#34;
+    Triggered when a motion recording (JSON format) becomes available .
+
+    :param motion:
+    &#34;&#34;&#34;
+    pass</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_text_sentiment"><code class="name flex">
+<span>def <span class="ident">on_text_sentiment</span></span>(<span>self, sentiment: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Gives a positive or negative sentiment for all text transcripts (see on_text_transcript).</p>
+<p>:param sentiment: positive or negative
+Only when the sentiment_analysis service is running).</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def on_text_sentiment(self, sentiment: str) -&gt; None:
+    &#34;&#34;&#34;Gives a positive or negative sentiment for all text transcripts (see on_text_transcript).
+
+    :param sentiment: positive or negative
+    Only when the sentiment_analysis service is running).&#34;&#34;&#34;
+    pass</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_text_transcript"><code class="name flex">
+<span>def <span class="ident">on_text_transcript</span></span>(<span>self, transcript: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Triggered directly when any text is recognised by Dialogflow.</p>
+<p>:param transcript: text
+This can give many non-final results, but is useful for matching short texts (like yes/no) directly.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def on_text_transcript(self, transcript: str) -&gt; None:
+    &#34;&#34;&#34;Triggered directly when any text is recognised by Dialogflow.
+
+    :param transcript: text
+    This can give many non-final results, but is useful for matching short texts (like yes/no) directly.&#34;&#34;&#34;
+    pass</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.play_audio"><code class="name flex">
+<span>def <span class="ident">play_audio</span></span>(<span>self, audio_file: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Plays the given audio file on the robot's speakers.
+A PlayAudioStarted event will be sent when the audio starts and a PlayAudioDone event after it is finished.
+Any previously playing audio will be cancelled first.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def play_audio(self, audio_file: str) -&gt; None:
+    &#34;&#34;&#34;Plays the given audio file on the robot&#39;s speakers.
+    A PlayAudioStarted event will be sent when the audio starts and a PlayAudioDone event after it is finished.
+    Any previously playing audio will be cancelled first.&#34;&#34;&#34;
+    with open(audio_file, &#39;rb&#39;) as file:
+        self.__send(&#39;action_play_audio&#39;, file.read())</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.play_loaded_audio"><code class="name flex">
+<span>def <span class="ident">play_loaded_audio</span></span>(<span>self, identifier: int) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Plays the given preloaded audio file on the robot's speakers. See load_audio and on_audio_loaded.
+A PlayAudioStarted event will be sent when the audio starts and a PlayAudioDone event after it is finished.
+Any previously playing audio will be cancelled first.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def play_loaded_audio(self, identifier: int) -&gt; None:
+    &#34;&#34;&#34;Plays the given preloaded audio file on the robot&#39;s speakers. See load_audio and on_audio_loaded.
+    A PlayAudioStarted event will be sent when the audio starts and a PlayAudioDone event after it is finished.
+    Any previously playing audio will be cancelled first.&#34;&#34;&#34;
+    self.__send(&#39;action_play_audio&#39;, identifier)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.play_motion"><code class="name flex">
+<span>def <span class="ident">play_motion</span></span>(<span>self, motion: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Play a motion.</p>
+<p>Suitable joints and angles for Nao:
+<a href="https://developer.softbankrobotics.com/nao6/nao-documentation/nao-developer-guide/kinematics-data/joints">https://developer.softbankrobotics.com/nao6/nao-documentation/nao-developer-guide/kinematics-data/joints</a>
+Suitable joints and angles for Pepper:
+<a href="https://developer.softbankrobotics.com/pepper-naoqi-25/pepper-documentation/pepper-developer-guide/kinematics-data/joints">https://developer.softbankrobotics.com/pepper-naoqi-25/pepper-documentation/pepper-developer-guide/kinematics-data/joints</a></p>
+<p>A PlayMotionStarted event will be sent when the motion sequence starts and PlayMotionDone when it finished.</p>
+<p>:param motion: json string in the following format
+{'robot': 'nao/pepper', 'compress_factor_angles': int, 'compress_factor_times: int
+'motion': {'joint1': { 'angles': [&hellip;], 'times': [&hellip;]}, 'joint2': {&hellip;}}}
+:return:</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def play_motion(self, motion: str) -&gt; None:
+    &#34;&#34;&#34;
+    Play a motion.
+
+    Suitable joints and angles for Nao:
+    https://developer.softbankrobotics.com/nao6/nao-documentation/nao-developer-guide/kinematics-data/joints
+    Suitable joints and angles for Pepper:
+    https://developer.softbankrobotics.com/pepper-naoqi-25/pepper-documentation/pepper-developer-guide/kinematics-data/joints
+
+    A PlayMotionStarted event will be sent when the motion sequence starts and PlayMotionDone when it finished.
+
+    :param motion: json string in the following format
+    {&#39;robot&#39;: &#39;nao/pepper&#39;, &#39;compress_factor_angles&#39;: int, &#39;compress_factor_times: int
+    &#39;motion&#39;: {&#39;joint1&#39;: { &#39;angles&#39;: [...], &#39;times&#39;: [...]}, &#39;joint2&#39;: {...}}}
+    :return:
+    &#34;&#34;&#34;
+    self.__send(&#39;action_play_motion&#39;, motion)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.provide_user_information"><code class="name flex">
+<span>def <span class="ident">provide_user_information</span></span>(<span>self) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def provide_user_information(self) -&gt; None:
+    Label(self.__dialog1, text=&#39;Username:&#39;).grid(row=1, column=1, sticky=E)
+    Entry(self.__dialog1, width=15, textvariable=self.username).grid(row=1, column=2, sticky=W)
+    Label(self.__dialog1, text=&#39;Password:&#39;).grid(row=2, column=1, sticky=E)
+    Entry(self.__dialog1, width=15, show=&#39;*&#39;, textvariable=self.password).grid(row=2, column=2, sticky=W)
+    Button(self.__dialog1, text=&#39;OK&#39;, command=self.__provide_user_information_done).grid(row=3, column=1,
+                                                                                         columnspan=2)
+    self.__dialog1.bind(&#39;&lt;Return&gt;&#39;, (lambda event: self.__provide_user_information_done()))
+    self.__dialog1.mainloop()</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.rest"><code class="name flex">
+<span>def <span class="ident">rest</span></span>(<span>self) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Instructs the robot to execute the default wake_up behavior. Also see on_on_awake_changed.
+See: <a href="http://doc.aldebaran.com/2-8/naoqi/motion/control-stiffness-api.html?highlight=wakeup#ALMotionProxy::rest">http://doc.aldebaran.com/2-8/naoqi/motion/control-stiffness-api.html?highlight=wakeup#ALMotionProxy::rest</a>
+A RestStarted event will be sent when the robot starts going into rest mode and a RestDone event after it is done.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def rest(self) -&gt; None:
+    &#34;&#34;&#34;Instructs the robot to execute the default wake_up behavior. Also see on_on_awake_changed.
+    See: http://doc.aldebaran.com/2-8/naoqi/motion/control-stiffness-api.html?highlight=wakeup#ALMotionProxy::rest
+    A RestStarted event will be sent when the robot starts going into rest mode and a RestDone event after it is done.&#34;&#34;&#34;
+    self.__send(&#39;action_rest&#39;, &#39;&#39;)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.say"><code class="name flex">
+<span>def <span class="ident">say</span></span>(<span>self, text: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>A string that the robot should say (in the currently selected language!).
+A TextStarted event will be sent when the speaking starts and a TextDone event after it is finished.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def say(self, text: str) -&gt; None:
+    &#34;&#34;&#34;A string that the robot should say (in the currently selected language!).
+    A TextStarted event will be sent when the speaking starts and a TextDone event after it is finished.&#34;&#34;&#34;
+    self.__send(&#39;action_say&#39;, text)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.say_animated"><code class="name flex">
+<span>def <span class="ident">say_animated</span></span>(<span>self, text: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>A string that the robot should say (in the currently selected language!) in an animated fashion.
+This means that the robot will automatically try to add (small) animations to the text.
+Moreover, in this function, special tags are supported, see:
+<a href="http://doc.aldebaran.com/2-8/naoqi/audio/altexttospeech-tuto.html#using-tags-for-voice-tuning">http://doc.aldebaran.com/2-8/naoqi/audio/altexttospeech-tuto.html#using-tags-for-voice-tuning</a>
+A TextStarted event will be sent when the speaking starts and a TextDone event after it is finished.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def say_animated(self, text: str) -&gt; None:
+    &#34;&#34;&#34;A string that the robot should say (in the currently selected language!) in an animated fashion.
+    This means that the robot will automatically try to add (small) animations to the text.
+    Moreover, in this function, special tags are supported, see:
+    http://doc.aldebaran.com/2-8/naoqi/audio/altexttospeech-tuto.html#using-tags-for-voice-tuning
+    A TextStarted event will be sent when the speaking starts and a TextDone event after it is finished.&#34;&#34;&#34;
+    self.__send(&#39;action_say_animated&#39;, text)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.say_text_to_speech"><code class="name flex">
+<span>def <span class="ident">say_text_to_speech</span></span>(<span>self, text: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def say_text_to_speech(self, text: str) -&gt; None:
+    self.__send(&#39;text_to_speech&#39;, text)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.select_devices"><code class="name flex">
+<span>def <span class="ident">select_devices</span></span>(<span>self) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def select_devices(self) -&gt; None:
+    time = self.redis.time()
+    devices = self.redis.zrevrangebyscore(name=&#39;user:&#39; + self.username, min=(time[0] - 60), max=&#39;+inf&#39;)
+    devices.sort()
+    row = 1
+    for device in devices:
+        var = IntVar()
+        self.__checkboxes[device] = var
+        Checkbutton(self.__dialog2, text=device, variable=var).grid(row=row, column=1, sticky=W)
+        Label(self.__dialog2, text=&#39;&#39;).grid(row=row, column=2, sticky=E)
+        row += 1
+    Button(self.__dialog2, text=&#39;(De)Select All&#39;, command=self.__select_devices_toggle).grid(row=row, column=1,
+                                                                                             sticky=W)
+    Button(self.__dialog2, text=&#39;OK&#39;, command=self.__select_devices_done).grid(row=row, column=2, sticky=E)
+    self.__dialog2.mainloop()</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_breathing"><code class="name flex">
+<span>def <span class="ident">set_breathing</span></span>(<span>self, enable: bool) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Enable/disable the default breathing animation of the robot.
+See: <a href="http://doc.aldebaran.com/2-8/naoqi/motion/idle-api.html?highlight=breathing#ALMotionProxy::setBreathEnabled__ssCR.bCR">http://doc.aldebaran.com/2-8/naoqi/motion/idle-api.html?highlight=breathing#ALMotionProxy::setBreathEnabled__ssCR.bCR</a>
+A BreathingEnabled or BreathingDisabled event will be sent when the change is done (depending on the given input).</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def set_breathing(self, enable: bool) -&gt; None:
+    &#34;&#34;&#34;
+    Enable/disable the default breathing animation of the robot.
+    See: http://doc.aldebaran.com/2-8/naoqi/motion/idle-api.html?highlight=breathing#ALMotionProxy::setBreathEnabled__ssCR.bCR
+    A BreathingEnabled or BreathingDisabled event will be sent when the change is done (depending on the given input).
+    &#34;&#34;&#34;
+    self.__send(&#39;action_set_breathing&#39;, &#39;Body;&#39; + &#39;1&#39; if enable else &#39;0&#39;)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_dialogflow_agent"><code class="name flex">
+<span>def <span class="ident">set_dialogflow_agent</span></span>(<span>self, agent_name: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Required for setting up Dialogflow: the name of the agent to use (i.e. the project id).</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def set_dialogflow_agent(self, agent_name: str) -&gt; None:
+    &#34;&#34;&#34;Required for setting up Dialogflow: the name of the agent to use (i.e. the project id).&#34;&#34;&#34;
+    self.__send(&#39;dialogflow_agent&#39;, agent_name)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_dialogflow_context"><code class="name flex">
+<span>def <span class="ident">set_dialogflow_context</span></span>(<span>self, context: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Indicate the Dialogflow context to use for the next speech-to-text (or to intent).</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def set_dialogflow_context(self, context: str) -&gt; None:
+    &#34;&#34;&#34;Indicate the Dialogflow context to use for the next speech-to-text (or to intent).&#34;&#34;&#34;
+    self.__send(&#39;dialogflow_context&#39;, context)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_dialogflow_key"><code class="name flex">
+<span>def <span class="ident">set_dialogflow_key</span></span>(<span>self, key_file: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Required for setting up Dialogflow: the path to the (JSON) keyfile.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def set_dialogflow_key(self, key_file: str) -&gt; None:
+    &#34;&#34;&#34;Required for setting up Dialogflow: the path to the (JSON) keyfile.&#34;&#34;&#34;
+    contents = Path(key_file).read_text()
+    self.__send(&#39;dialogflow_key&#39;, contents)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_dialogflow_language"><code class="name flex">
+<span>def <span class="ident">set_dialogflow_language</span></span>(<span>self, language_key: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Required for setting up Dialogflow: the full key of the language to use (e.g. nl-NL or en-US).</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def set_dialogflow_language(self, language_key: str) -&gt; None:
+    &#34;&#34;&#34;Required for setting up Dialogflow: the full key of the language to use (e.g. nl-NL or en-US).&#34;&#34;&#34;
+    self.__send(&#39;dialogflow_language&#39;, language_key)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_ear_color"><code class="name flex">
+<span>def <span class="ident">set_ear_color</span></span>(<span>self, color: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Sets the robot's ear LEDs to one of the following colours:
+white, red, green, blue, yellow, magenta, cyan, greenyellow or rainbow.
+An EarColourStarted event will be sent when the change starts and a EarColourDone event after it is done.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def set_ear_color(self, color: str) -&gt; None:
+    &#34;&#34;&#34;Sets the robot&#39;s ear LEDs to one of the following colours:
+    white, red, green, blue, yellow, magenta, cyan, greenyellow or rainbow.
+    An EarColourStarted event will be sent when the change starts and a EarColourDone event after it is done.&#34;&#34;&#34;
+    self.__send(&#39;action_earcolour&#39;, color)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_eye_color"><code class="name flex">
+<span>def <span class="ident">set_eye_color</span></span>(<span>self, color: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Sets the robot's eye LEDs to one of the following colours:
+white, red, green, blue, yellow, magenta, cyan, greenyellow or rainbow.
+An EyeColourStarted event will be sent when the change starts and a EyeColourDone event after it is done.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def set_eye_color(self, color: str) -&gt; None:
+    &#34;&#34;&#34;Sets the robot&#39;s eye LEDs to one of the following colours:
+    white, red, green, blue, yellow, magenta, cyan, greenyellow or rainbow.
+    An EyeColourStarted event will be sent when the change starts and a EyeColourDone event after it is done.&#34;&#34;&#34;
+    self.__send(&#39;action_eyecolour&#39;, color)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_head_color"><code class="name flex">
+<span>def <span class="ident">set_head_color</span></span>(<span>self, color: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Sets the robot's head LEDs to one of the following colours:
+white, red, green, blue, yellow, magenta, cyan, greenyellow or rainbow.
+A HeadColourStarted event will be sent when the change starts and a HeadColourDone event after it is done.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def set_head_color(self, color: str) -&gt; None:
+    &#34;&#34;&#34;Sets the robot&#39;s head LEDs to one of the following colours:
+    white, red, green, blue, yellow, magenta, cyan, greenyellow or rainbow.
+    A HeadColourStarted event will be sent when the change starts and a HeadColourDone event after it is done.&#34;&#34;&#34;
+    self.__send(&#39;action_headcolour&#39;, color)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_idle"><code class="name flex">
+<span>def <span class="ident">set_idle</span></span>(<span>self) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Put the robot into 'idle mode': always looking straight ahead.
+A SetIdle event will be sent when the robot has transitioned into the idle mode.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def set_idle(self) -&gt; None:
+    &#34;&#34;&#34;Put the robot into &#39;idle mode&#39;: always looking straight ahead.
+    A SetIdle event will be sent when the robot has transitioned into the idle mode.&#34;&#34;&#34;
+    self.__send(&#39;action_idle&#39;, &#39;true&#39;)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_language"><code class="name flex">
+<span>def <span class="ident">set_language</span></span>(<span>self, language_key: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>For changing the robot's speaking language: the full key of the language to use
+(e.g. nl-NL or en-US). A LanguageChanged event will be sent when the change has propagated.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def set_language(self, language_key: str) -&gt; None:
+    &#34;&#34;&#34;For changing the robot&#39;s speaking language: the full key of the language to use
+    (e.g. nl-NL or en-US). A LanguageChanged event will be sent when the change has propagated.&#34;&#34;&#34;
+    self.__send(&#39;audio_language&#39;, language_key)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_led_color"><code class="name flex">
+<span>def <span class="ident">set_led_color</span></span>(<span>self, leds: list, colors: list, duration: int = 0) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>A list of LEDs (see <a href="http://doc.aldebaran.com/2-5/naoqi/sensors/alleds.html#list-group-led">http://doc.aldebaran.com/2-5/naoqi/sensors/alleds.html#list-group-led</a>),
+and a corresponding list of colors to give to the LEDs. Optionally a duration for the transitions (default=instant).
+A LedColorStarted event will be sent when the color change starts and a LedColorDone event after it is done.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def set_led_color(self, leds: list, colors: list, duration: int = 0) -&gt; None:
+    &#34;&#34;&#34;A list of LEDs (see http://doc.aldebaran.com/2-5/naoqi/sensors/alleds.html#list-group-led),
+    and a corresponding list of colors to give to the LEDs. Optionally a duration for the transitions (default=instant).
+    A LedColorStarted event will be sent when the color change starts and a LedColorDone event after it is done.&#34;&#34;&#34;
+    self.__send(&#39;action_led_color&#39;, dumps(leds) + &#39;;&#39; + dumps(colors) + &#39;;&#39; + str(duration))</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_non_idle"><code class="name flex">
+<span>def <span class="ident">set_non_idle</span></span>(<span>self) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Put the robot back into its default 'autonomous mode' (looking towards sounds).
+A SetNonIdle event will be sent when the robot has transitioned out of the idle mode.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def set_non_idle(self) -&gt; None:
+    &#34;&#34;&#34;Put the robot back into its default &#39;autonomous mode&#39; (looking towards sounds).
+    A SetNonIdle event will be sent when the robot has transitioned out of the idle mode.&#34;&#34;&#34;
+    self.__send(&#39;action_idle&#39;, &#39;false&#39;)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_record_audio"><code class="name flex">
+<span>def <span class="ident">set_record_audio</span></span>(<span>self, should_record: bool) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Indicate if audio should be recorded (see on_new_audio_file).</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def set_record_audio(self, should_record: bool) -&gt; None:
+    &#34;&#34;&#34;Indicate if audio should be recorded (see on_new_audio_file).&#34;&#34;&#34;
+    self.__send(&#39;dialogflow_record&#39;, &#39;1&#39; if should_record else &#39;0&#39;)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_stiffness"><code class="name flex">
+<span>def <span class="ident">set_stiffness</span></span>(<span>self, chains: list, stiffness: int, duration: int = 1000) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Set the stiffness for one or more joint chains.
+Suitable joint chains for Nao are: Head, RArm, LArm, RLeg, LLeg
+Suitable joint chains for Pepper are: Head, RArm, LArm, Leg, Wheels</p>
+<p>A SetStiffnessStarted event will be sent when the stiffness change starts and SetStiffnessDone when it finished.</p>
+<p>:param chains: list of joints.
+:param stiffness: stiffness value between 0 and 100.
+:param duration: stiffness transition time in milliseconds.
+:return:</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def set_stiffness(self, chains: list, stiffness: int, duration: int = 1000) -&gt; None:
+    &#34;&#34;&#34;
+    Set the stiffness for one or more joint chains.
+    Suitable joint chains for Nao are: Head, RArm, LArm, RLeg, LLeg
+    Suitable joint chains for Pepper are: Head, RArm, LArm, Leg, Wheels
+
+    A SetStiffnessStarted event will be sent when the stiffness change starts and SetStiffnessDone when it finished.
+
+    :param chains: list of joints.
+    :param stiffness: stiffness value between 0 and 100.
+    :param duration: stiffness transition time in milliseconds.
+    :return:
+    &#34;&#34;&#34;
+    self.__send(&#39;action_stiffness&#39;, dumps(chains) + &#39;;&#39; + str(stiffness) + &#39;;&#39; + str(duration))</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_tts_key"><code class="name flex">
+<span>def <span class="ident">set_tts_key</span></span>(<span>self, tts_key_file: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Required for setting up TTS: the path to the (JSON) keyfile.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def set_tts_key(self, tts_key_file: str) -&gt; None:
+    &#34;&#34;&#34;Required for setting up TTS: the path to the (JSON) keyfile.&#34;&#34;&#34;
+    contents = Path(tts_key_file).read_text()
+    self.__send(&#39;tts_key&#39;, contents)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_tts_voice"><code class="name flex">
+<span>def <span class="ident">set_tts_voice</span></span>(<span>self, tts_voice: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Required for setting up TTS: the full key of the voice to use (e.g. nl-NL-Standard-A or en-GB-Standard-A), as found on
+<a href="https://cloud.google.com/text-to-speech/docs/voices.">https://cloud.google.com/text-to-speech/docs/voices.</a></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def set_tts_voice(self, tts_voice: str) -&gt; None:
+    &#34;&#34;&#34;Required for setting up TTS: the full key of the voice to use (e.g. nl-NL-Standard-A or en-GB-Standard-A), as found on
+            https://cloud.google.com/text-to-speech/docs/voices.&#34;&#34;&#34;
+    self.__send(&#39;tts_voice&#39;, tts_voice)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.start"><code class="name flex">
+<span>def <span class="ident">start</span></span>(<span>self) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Start the application</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def start(self) -&gt; None:
+    &#34;&#34;&#34;Start the application&#34;&#34;&#34;
+    self.__running = True
+    self.__running_thread.start()</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.start_led_animation"><code class="name flex">
+<span>def <span class="ident">start_led_animation</span></span>(<span>self, led_group: str, anim_type: str, colors: list, speed: int, real_blink: bool = False) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>A LED group name (eyes, chest, feet, all), an animation type (rotate, blink, alternate),
+a corresponding list of colors, and a speed setting (milliseconds).
+A LedAnimationStarted event will be sent when the animation starts and a LedAnimationDone event after it is done.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def start_led_animation(self, led_group: str, anim_type: str, colors: list, speed: int, real_blink: bool = False) -&gt; None:
+    &#34;&#34;&#34;A LED group name (eyes, chest, feet, all), an animation type (rotate, blink, alternate),
+    a corresponding list of colors, and a speed setting (milliseconds).
+    A LedAnimationStarted event will be sent when the animation starts and a LedAnimationDone event after it is done.&#34;&#34;&#34;
+    self.__send(&#39;action_led_animation&#39;,
+                &#39;start;&#39; + led_group + &#39;;&#39; + anim_type + &#39;;&#39; + dumps(colors) + &#39;;&#39; + str(speed) + &#39;;&#39; + str(real_blink))</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.start_listening"><code class="name flex">
+<span>def <span class="ident">start_listening</span></span>(<span>self, seconds: int) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Tell the robot (and Dialogflow) to start listening to audio (and potentially recording it).
+Intents will be continuously recognised. If seconds&gt;0, it will automatically stop listening.
+A ListeningStarted event will be sent once the feed starts, and ListeningDone once it ends.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def start_listening(self, seconds: int) -&gt; None:
+    &#34;&#34;&#34;Tell the robot (and Dialogflow) to start listening to audio (and potentially recording it).
+    Intents will be continuously recognised. If seconds&gt;0, it will automatically stop listening.
+    A ListeningStarted event will be sent once the feed starts, and ListeningDone once it ends.&#34;&#34;&#34;
+    self.__send(&#39;action_audio&#39;, str(seconds))</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.start_looking"><code class="name flex">
+<span>def <span class="ident">start_looking</span></span>(<span>self, seconds: int, channels: int = 1) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Tell the robot (and any recognition module) to start the camera feed.
+If seconds&gt;0, it will automatically stop looking.
+A WatchingStarted event will be sent once the feed starts, and WatchingDone once it ends.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def start_looking(self, seconds: int, channels: int = 1) -&gt; None:
+    &#34;&#34;&#34;Tell the robot (and any recognition module) to start the camera feed.
+    If seconds&gt;0, it will automatically stop looking.
+    A WatchingStarted event will be sent once the feed starts, and WatchingDone once it ends.&#34;&#34;&#34;
+    self.__send(&#39;action_video&#39;, str(seconds) + &#39;;&#39; + str(channels))</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.start_record_motion"><code class="name flex">
+<span>def <span class="ident">start_record_motion</span></span>(<span>self, joint_chains: list, framerate: int = 5) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Start recording of the angles over time of a given list of joints and or joint chains with an optional framerate.</p>
+<p>Suitable joints and joint chains for nao:
+<a href="http://doc.aldebaran.com/2-8/family/nao_technical/bodyparts_naov6.html#nao-chains">http://doc.aldebaran.com/2-8/family/nao_technical/bodyparts_naov6.html#nao-chains</a>
+Suitable joints and joint chains for pepper:
+<a href="http://doc.aldebaran.com/2-8/family/pepper_technical/bodyparts_pep.html">http://doc.aldebaran.com/2-8/family/pepper_technical/bodyparts_pep.html</a></p>
+<p>A RecordMotionStarted event will be sent when the recording starts and RecordMotionDone when it finished.</p>
+<p>:param joint_chains: a list with one or more joints or joint chains
+:param framerate: optional number of recordings per second. The default is 5 fps.
+:return:</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def start_record_motion(self, joint_chains: list, framerate: int = 5) -&gt; None:
+    &#34;&#34;&#34;
+    Start recording of the angles over time of a given list of joints and or joint chains with an optional framerate.
+
+    Suitable joints and joint chains for nao:
+    http://doc.aldebaran.com/2-8/family/nao_technical/bodyparts_naov6.html#nao-chains
+    Suitable joints and joint chains for pepper:
+    http://doc.aldebaran.com/2-8/family/pepper_technical/bodyparts_pep.html
+
+    A RecordMotionStarted event will be sent when the recording starts and RecordMotionDone when it finished.
+
+    :param joint_chains: a list with one or more joints or joint chains
+    :param framerate: optional number of recordings per second. The default is 5 fps.
+    :return:
+    &#34;&#34;&#34;
+    self.__send(&#39;action_record_motion&#39;, &#39;start;&#39; + dumps(joint_chains) + &#39;;&#39; + str(framerate))</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.stop"><code class="name flex">
+<span>def <span class="ident">stop</span></span>(<span>self) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Stop listening to incoming events (which is done in a thread) so the Python application can close.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def stop(self) -&gt; None:
+    &#34;&#34;&#34;Stop listening to incoming events (which is done in a thread) so the Python application can close.&#34;&#34;&#34;
+    self.__running = False
+    self.__stop_event.set()
+    print(&#39;Trying to exit gracefully...&#39;)
+    try:
+        self.__pubsub_thread.stop()
+        self.redis.close()
+        print(&#39;Graceful exit was successful.&#39;)
+    except Exception as err:
+        print(&#39;Graceful exit has failed: &#39; + err.message)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.stop_led_animation"><code class="name flex">
+<span>def <span class="ident">stop_led_animation</span></span>(<span>self) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Abort any currently running LED animation (see start_led_animation).</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def stop_led_animation(self) -&gt; None:
+    &#34;&#34;&#34;Abort any currently running LED animation (see start_led_animation).&#34;&#34;&#34;
+    self.__send(&#39;action_led_animation&#39;, &#39;stop&#39;)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.stop_listening"><code class="name flex">
+<span>def <span class="ident">stop_listening</span></span>(<span>self) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Tell the robot (and Dialogflow) to stop listening to audio.
+Note that a potentially recognized intent might come in up to a second after this call.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def stop_listening(self) -&gt; None:
+    &#34;&#34;&#34;Tell the robot (and Dialogflow) to stop listening to audio.
+    Note that a potentially recognized intent might come in up to a second after this call.&#34;&#34;&#34;
+    self.__send(&#39;action_audio&#39;, &#39;-1&#39;)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.stop_looking"><code class="name flex">
+<span>def <span class="ident">stop_looking</span></span>(<span>self) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Tell the robot (and any recognition module) to stop looking.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def stop_looking(self) -&gt; None:
+    &#34;&#34;&#34;Tell the robot (and any recognition module) to stop looking.&#34;&#34;&#34;
+    self.__send(&#39;action_video&#39;, &#39;-1;0&#39;)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.stop_record_motion"><code class="name flex">
+<span>def <span class="ident">stop_record_motion</span></span>(<span>self) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Stop recording of an active motion recording (started by start_record_motion)</p>
+<p>:return:</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def stop_record_motion(self) -&gt; None:
+    &#34;&#34;&#34;
+    Stop recording of an active motion recording (started by start_record_motion)
+
+    :return:
+    &#34;&#34;&#34;
+    self.__send(&#39;action_record_motion&#39;, &#39;stop&#39;)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.stop_talking"><code class="name flex">
+<span>def <span class="ident">stop_talking</span></span>(<span>self) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Cancel any currently running say(_animated)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def stop_talking(self) -&gt; None:
+    &#34;&#34;&#34;Cancel any currently running say(_animated)&#34;&#34;&#34;
+    self.__send(&#39;action_stop_talking&#39;, &#39;&#39;)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.take_picture"><code class="name flex">
+<span>def <span class="ident">take_picture</span></span>(<span>self) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Instructs the robot to take a picture. See on_new_picture_file.
+The people detection or face recognition service must be running for this action to work.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def take_picture(self) -&gt; None:
+    &#34;&#34;&#34;Instructs the robot to take a picture. See on_new_picture_file.
+    The people detection or face recognition service must be running for this action to work.&#34;&#34;&#34;
+    self.__send(&#39;action_take_picture&#39;, &#39;&#39;)</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.turn"><code class="name flex">
+<span>def <span class="ident">turn</span></span>(<span>self, degrees: int) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Instructs the Pepper robot to make a turn of the given amount of degrees (-360 to 360).
+A TurnStarted event will be sent when the robot starts turning and a TurnDone event after it is done.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def turn(self, degrees: int) -&gt; None:
+    &#34;&#34;&#34;Instructs the Pepper robot to make a turn of the given amount of degrees (-360 to 360).
+    A TurnStarted event will be sent when the robot starts turning and a TurnDone event after it is done.&#34;&#34;&#34;
+    self.__send(&#39;action_turn&#39;, str(degrees))</code></pre>
+</details>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.AbstractSICConnector.wake_up"><code class="name flex">
+<span>def <span class="ident">wake_up</span></span>(<span>self) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Instructs the robot to execute the default wake_up behavior. Also see on_on_awake_changed.
+See: <a href="http://doc.aldebaran.com/2-8/naoqi/motion/control-stiffness-api.html?highlight=wakeup#ALMotionProxy::wakeUp">http://doc.aldebaran.com/2-8/naoqi/motion/control-stiffness-api.html?highlight=wakeup#ALMotionProxy::wakeUp</a>
+A WakeUpStarted event will be sent when the robot starts waking up and a WakeUpDone event after it is done.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def wake_up(self) -&gt; None:
+    &#34;&#34;&#34;Instructs the robot to execute the default wake_up behavior. Also see on_on_awake_changed.
+    See: http://doc.aldebaran.com/2-8/naoqi/motion/control-stiffness-api.html?highlight=wakeup#ALMotionProxy::wakeUp
+    A WakeUpStarted event will be sent when the robot starts waking up and a WakeUpDone event after it is done.&#34;&#34;&#34;
+    self.__send(&#39;action_wakeup&#39;, &#39;&#39;)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.DetectionResult"><code class="flex name class">
+<span>class <span class="ident">DetectionResult</span></span>
+<span>(</span><span>*args, **kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>A ProtocolMessage</p></div>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>google.protobuf.pyext._message.CMessage</li>
+<li>google.protobuf.message.Message</li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="social_interaction_cloud.abstract_connector.DetectionResult.DESCRIPTOR"><code class="name">var <span class="ident">DESCRIPTOR</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.DetectionResult.ParametersEntry"><code class="name">var <span class="ident">ParametersEntry</span></code></dt>
+<dd>
+<div class="desc"><p>A ProtocolMessage</p></div>
+</dd>
+</dl>
+<h3>Instance variables</h3>
+<dl>
+<dt id="social_interaction_cloud.abstract_connector.DetectionResult.confidence"><code class="name">var <span class="ident">confidence</span></code></dt>
+<dd>
+<div class="desc"><p>Field socialrobotics.DetectionResult.confidence</p></div>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.DetectionResult.intent"><code class="name">var <span class="ident">intent</span></code></dt>
+<dd>
+<div class="desc"><p>Field socialrobotics.DetectionResult.intent</p></div>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.DetectionResult.parameters"><code class="name">var <span class="ident">parameters</span></code></dt>
+<dd>
+<div class="desc"><p>Field socialrobotics.DetectionResult.parameters</p></div>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.DetectionResult.source"><code class="name">var <span class="ident">source</span></code></dt>
+<dd>
+<div class="desc"><p>Field socialrobotics.DetectionResult.source</p></div>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.DetectionResult.text"><code class="name">var <span class="ident">text</span></code></dt>
+<dd>
+<div class="desc"><p>Field socialrobotics.DetectionResult.text</p></div>
+</dd>
+</dl>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.TrackingResult"><code class="flex name class">
+<span>class <span class="ident">TrackingResult</span></span>
+<span>(</span><span>*args, **kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>A ProtocolMessage</p></div>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>google.protobuf.pyext._message.CMessage</li>
+<li>google.protobuf.message.Message</li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="social_interaction_cloud.abstract_connector.TrackingResult.DESCRIPTOR"><code class="name">var <span class="ident">DESCRIPTOR</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+<h3>Instance variables</h3>
+<dl>
+<dt id="social_interaction_cloud.abstract_connector.TrackingResult.centroid_x"><code class="name">var <span class="ident">centroid_x</span></code></dt>
+<dd>
+<div class="desc"><p>Field socialrobotics.TrackingResult.centroid_x</p></div>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.TrackingResult.centroid_y"><code class="name">var <span class="ident">centroid_y</span></code></dt>
+<dd>
+<div class="desc"><p>Field socialrobotics.TrackingResult.centroid_y</p></div>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.TrackingResult.distance_cm"><code class="name">var <span class="ident">distance_cm</span></code></dt>
+<dd>
+<div class="desc"><p>Field socialrobotics.TrackingResult.distance_cm</p></div>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.TrackingResult.in_frame_ms"><code class="name">var <span class="ident">in_frame_ms</span></code></dt>
+<dd>
+<div class="desc"><p>Field socialrobotics.TrackingResult.in_frame_ms</p></div>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.TrackingResult.object_id"><code class="name">var <span class="ident">object_id</span></code></dt>
+<dd>
+<div class="desc"><p>Field socialrobotics.TrackingResult.object_id</p></div>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.TrackingResult.speed_cmps"><code class="name">var <span class="ident">speed_cmps</span></code></dt>
+<dd>
+<div class="desc"><p>Field socialrobotics.TrackingResult.speed_cmps</p></div>
+</dd>
+<dt id="social_interaction_cloud.abstract_connector.TrackingResult.timestamp_ms"><code class="name">var <span class="ident">timestamp_ms</span></code></dt>
+<dd>
+<div class="desc"><p>Field socialrobotics.TrackingResult.timestamp_ms</p></div>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="social_interaction_cloud" href="index.html">social_interaction_cloud</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector">AbstractSICConnector</a></code></h4>
+<ul class="">
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.browser_show" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.browser_show">browser_show</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.clear_loaded_audio" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.clear_loaded_audio">clear_loaded_audio</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.do_gesture" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.do_gesture">do_gesture</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.enable_service" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.enable_service">enable_service</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.go_to_posture" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.go_to_posture">go_to_posture</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.load_audio" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.load_audio">load_audio</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_audio_intent" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_audio_intent">on_audio_intent</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_audio_language" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_audio_language">on_audio_language</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_audio_loaded" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_audio_loaded">on_audio_loaded</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_awake_changed" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_awake_changed">on_awake_changed</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_battery_charge_changed" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_battery_charge_changed">on_battery_charge_changed</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_browser_button" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_browser_button">on_browser_button</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_charging_changed" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_charging_changed">on_charging_changed</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_corona_check_passed" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_corona_check_passed">on_corona_check_passed</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_depth_estimated" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_depth_estimated">on_depth_estimated</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_emotion_detected" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_emotion_detected">on_emotion_detected</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_event" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_event">on_event</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_face_recognized" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_face_recognized">on_face_recognized</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_hot_device_detected" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_hot_device_detected">on_hot_device_detected</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_new_audio_file" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_new_audio_file">on_new_audio_file</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_new_picture_file" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_new_picture_file">on_new_picture_file</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_object_detected" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_object_detected">on_object_detected</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_object_tracked" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_object_tracked">on_object_tracked</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_person_detected" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_person_detected">on_person_detected</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_posture_changed" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_posture_changed">on_posture_changed</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_robot_motion_recording" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_robot_motion_recording">on_robot_motion_recording</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_text_sentiment" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_text_sentiment">on_text_sentiment</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.on_text_transcript" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.on_text_transcript">on_text_transcript</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.play_audio" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.play_audio">play_audio</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.play_loaded_audio" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.play_loaded_audio">play_loaded_audio</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.play_motion" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.play_motion">play_motion</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.provide_user_information" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.provide_user_information">provide_user_information</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.rest" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.rest">rest</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.say" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.say">say</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.say_animated" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.say_animated">say_animated</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.say_text_to_speech" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.say_text_to_speech">say_text_to_speech</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.select_devices" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.select_devices">select_devices</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_breathing" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.set_breathing">set_breathing</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_dialogflow_agent" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.set_dialogflow_agent">set_dialogflow_agent</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_dialogflow_context" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.set_dialogflow_context">set_dialogflow_context</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_dialogflow_key" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.set_dialogflow_key">set_dialogflow_key</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_dialogflow_language" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.set_dialogflow_language">set_dialogflow_language</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_ear_color" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.set_ear_color">set_ear_color</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_eye_color" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.set_eye_color">set_eye_color</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_head_color" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.set_head_color">set_head_color</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_idle" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.set_idle">set_idle</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_language" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.set_language">set_language</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_led_color" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.set_led_color">set_led_color</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_non_idle" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.set_non_idle">set_non_idle</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_record_audio" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.set_record_audio">set_record_audio</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_stiffness" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.set_stiffness">set_stiffness</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_tts_key" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.set_tts_key">set_tts_key</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.set_tts_voice" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.set_tts_voice">set_tts_voice</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.start" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.start">start</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.start_led_animation" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.start_led_animation">start_led_animation</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.start_listening" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.start_listening">start_listening</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.start_looking" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.start_looking">start_looking</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.start_record_motion" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.start_record_motion">start_record_motion</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.stop" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.stop">stop</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.stop_led_animation" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.stop_led_animation">stop_led_animation</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.stop_listening" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.stop_listening">stop_listening</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.stop_looking" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.stop_looking">stop_looking</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.stop_record_motion" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.stop_record_motion">stop_record_motion</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.stop_talking" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.stop_talking">stop_talking</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.take_picture" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.take_picture">take_picture</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.turn" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.turn">turn</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.AbstractSICConnector.wake_up" href="#social_interaction_cloud.abstract_connector.AbstractSICConnector.wake_up">wake_up</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="social_interaction_cloud.abstract_connector.DetectionResult" href="#social_interaction_cloud.abstract_connector.DetectionResult">DetectionResult</a></code></h4>
+<ul class="two-column">
+<li><code><a title="social_interaction_cloud.abstract_connector.DetectionResult.DESCRIPTOR" href="#social_interaction_cloud.abstract_connector.DetectionResult.DESCRIPTOR">DESCRIPTOR</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.DetectionResult.ParametersEntry" href="#social_interaction_cloud.abstract_connector.DetectionResult.ParametersEntry">ParametersEntry</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.DetectionResult.confidence" href="#social_interaction_cloud.abstract_connector.DetectionResult.confidence">confidence</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.DetectionResult.intent" href="#social_interaction_cloud.abstract_connector.DetectionResult.intent">intent</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.DetectionResult.parameters" href="#social_interaction_cloud.abstract_connector.DetectionResult.parameters">parameters</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.DetectionResult.source" href="#social_interaction_cloud.abstract_connector.DetectionResult.source">source</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.DetectionResult.text" href="#social_interaction_cloud.abstract_connector.DetectionResult.text">text</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="social_interaction_cloud.abstract_connector.TrackingResult" href="#social_interaction_cloud.abstract_connector.TrackingResult">TrackingResult</a></code></h4>
+<ul class="two-column">
+<li><code><a title="social_interaction_cloud.abstract_connector.TrackingResult.DESCRIPTOR" href="#social_interaction_cloud.abstract_connector.TrackingResult.DESCRIPTOR">DESCRIPTOR</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.TrackingResult.centroid_x" href="#social_interaction_cloud.abstract_connector.TrackingResult.centroid_x">centroid_x</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.TrackingResult.centroid_y" href="#social_interaction_cloud.abstract_connector.TrackingResult.centroid_y">centroid_y</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.TrackingResult.distance_cm" href="#social_interaction_cloud.abstract_connector.TrackingResult.distance_cm">distance_cm</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.TrackingResult.in_frame_ms" href="#social_interaction_cloud.abstract_connector.TrackingResult.in_frame_ms">in_frame_ms</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.TrackingResult.object_id" href="#social_interaction_cloud.abstract_connector.TrackingResult.object_id">object_id</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.TrackingResult.speed_cmps" href="#social_interaction_cloud.abstract_connector.TrackingResult.speed_cmps">speed_cmps</a></code></li>
+<li><code><a title="social_interaction_cloud.abstract_connector.TrackingResult.timestamp_ms" href="#social_interaction_cloud.abstract_connector.TrackingResult.timestamp_ms">timestamp_ms</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>
