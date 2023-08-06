@@ -1,0 +1,10 @@
+varikn-1.2.0b1.dist-info/METADATA,sha256=QbHS94WE6Jr7Mc3-qZ_Kx0-xJS_nBimCUjK_GyvwlAA,1925
+varikn-1.2.0b1.dist-info/WHEEL,sha256=wKqQduDN3J2lDuna9fuGj3PU-hJ5aK25LIfW8f_9J88,113
+varikn-1.2.0b1.dist-info/top_level.txt,sha256=AuTLoQIZUQebNzEKyKdJJHLOk6DNlriXSWVYcVkGVbM,22
+varikn-1.2.0b1.dist-info/RECORD,,
+varikn/wrapper.py,sha256=x69BObC7buzqwpiyJX1Rn-Zkh2eN8AjWm4isVWc3U2E,22311
+varikn/_varikn.so,sha256=DqAX3IEX48UXoBUQrZCsZWFkCg4ZK5KatB95xWwKmyc,1135265
+varikn/__init__.py,sha256=w5XeN7FqiPr2NBjt9xv6Hy1i9iK6Vrdaf5CD6LaSER4,64
+varikn/VariKNPYTHON_wrap.cxx,sha256=ooa7atuMghuVfCH2QB5cEnDl5AdclSkLRf2WQ7ynUro,759326
+varikn.libs/libstdc++-a9383cce.so.6.0.28,sha256=Wy9UCdwS1rwI9GU5e7qE61S0AkRqqwti1q_adWSs-Rk,2447393
+varikn.libs/libgcc_s-a04fdf82.so.1,sha256=YxqJNaesQMhDswHEQpXsiLnVvMBBbYO6KYMDZFPWKSM,81257
