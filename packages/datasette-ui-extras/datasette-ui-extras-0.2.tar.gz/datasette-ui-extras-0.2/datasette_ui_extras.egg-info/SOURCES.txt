@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+datasette_ui_extras/__init__.py
+datasette_ui_extras.egg-info/PKG-INFO
+datasette_ui_extras.egg-info/SOURCES.txt
+datasette_ui_extras.egg-info/dependency_links.txt
+datasette_ui_extras.egg-info/entry_points.txt
+datasette_ui_extras.egg-info/requires.txt
+datasette_ui_extras.egg-info/top_level.txt
+datasette_ui_extras/static/facet-treatment.css
+datasette_ui_extras/static/sticky-table-headers.js
