@@ -1,0 +1,3 @@
+[console_scripts]
+sdsim=sdsim.__main__:main
+
