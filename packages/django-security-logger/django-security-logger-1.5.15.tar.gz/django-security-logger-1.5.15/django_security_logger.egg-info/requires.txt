@@ -1,0 +1,8 @@
+ansi2html>=1.6.0
+django-celery-extensions>=0.0.37
+django-chamber>=0.6.16
+django-choice-enumfields>=1.1.2
+django-generic-m2m-field>=0.0.9
+django-ipware>=3.0.2
+django<4.0,>=3.1
+isodate>=0.6.1
