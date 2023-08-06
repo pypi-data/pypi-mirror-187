@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mi-band-data-extract
+Version: 0.0.6
+Summary: Package to extract data from Mi Band data files.
+Home-page: https://github.com/SurajpratapsinghSayar/mi-band-data-extract
+Author: SurajpratapsinghSayar
+Author-email: sunnysayar@outlook.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/SurajpratapsinghSayar/mi-band-data-extract/issues
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Provides-Extra: testing
+
+### Package to extract data from Mi band data servers by sending requests.

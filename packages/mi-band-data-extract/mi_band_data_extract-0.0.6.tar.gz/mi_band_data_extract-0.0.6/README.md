@@ -1,0 +1,1 @@
+### Package to extract data from Mi band data servers by sending requests.
