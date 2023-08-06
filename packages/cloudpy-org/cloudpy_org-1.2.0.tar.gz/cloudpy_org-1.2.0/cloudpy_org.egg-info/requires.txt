@@ -1,0 +1,6 @@
+pandas
+pandasql
+boto3
+awswrangler
+tqdm
+numpy
