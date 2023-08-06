@@ -1,0 +1,16 @@
+pytask_julia/__init__.py,sha256=JYEBrpsafA2kKdYqVGZZWrrRwEu_WXOGjbSfTLKPp-8,343
+pytask_julia/_version.py,sha256=jP37PbzC7u30hqoKJZ41NW3TgoVzxjYdLU5M0drm_y4,160
+pytask_julia/collect.py,sha256=h4n61dIfIcJNMEEUAXPNrYklpBGh661skSvGFZ4pq5k,5566
+pytask_julia/config.py,sha256=cNdkBsSyQT5v1dDwHD0vqqp0tLIzrrnVi69KJBg30iM,1378
+pytask_julia/execute.py,sha256=oreIT5pXvTP5OAWd8J83SfOcDg3DV5WtZhRy13l656M,2089
+pytask_julia/parametrize.py,sha256=z1qF6IdnNxlRvk6hh8Frv8snbhrVn-H7XB-bQ5UmvZ8,413
+pytask_julia/plugin.py,sha256=-TMdTQS_ohspHgNYIsZreTAozIjKCx1muo41CUhWX2g,493
+pytask_julia/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytask_julia/serialization.py,sha256=DF8G_JcpeuXX-4a0KU1SB7feCQH4MpALkh2mZ2hJm_g,1867
+pytask_julia/shared.py,sha256=z_eG9ZMb9iH5F5qkrAUCzOtgLq7bv-cpoJhzdnnxlSc,2347
+pytask_julia-0.3.0.dist-info/LICENSE,sha256=h4Rtg1_-aOFTwgzAWoyi4bekeGsgHRr8LynXjTa-_T8,1077
+pytask_julia-0.3.0.dist-info/METADATA,sha256=rLLUhB_f3o4CZHErce7UudxLEgykuXg6aVNps6w1yl8,9742
+pytask_julia-0.3.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pytask_julia-0.3.0.dist-info/entry_points.txt,sha256=3cE38m2XmNgf2FSsX0NLILHtdm8-9a25GjEpyxksXpI,44
+pytask_julia-0.3.0.dist-info/top_level.txt,sha256=vn3wRTf6NJZbvzNh47krPL7hjNgG3NtXK_uVoRZJHxw,13
+pytask_julia-0.3.0.dist-info/RECORD,,
