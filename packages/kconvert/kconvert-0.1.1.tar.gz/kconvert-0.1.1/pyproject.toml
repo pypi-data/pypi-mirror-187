@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "kconvert"
+version = "0.1.1"
+description = "Binary to decimal and decimal to binary converter"
+authors = ["dongjin2008 <dkim@icsparis.fr>"]
+readme = "README.md"
+packages = [{include = "kconvert"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+kconvert = "kconvert.kconvert:main"
