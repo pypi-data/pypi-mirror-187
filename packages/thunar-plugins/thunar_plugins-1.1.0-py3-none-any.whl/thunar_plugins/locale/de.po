@@ -1,0 +1,289 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.2.2\n"
+
+msgid "Add"
+msgstr "Hinzufügen"
+
+msgid "Add untracked files to Git Annex"
+msgstr "Dateien zu Git Annex hinzufügen"
+
+msgid "Calculate several checksums for the selected files."
+msgstr "Diverse Prüfsummen für die ausgewählten Dateien berechnen."
+
+msgid "Checksums"
+msgstr "Prüfsummen"
+
+msgid "Configure installed Python plugins"
+msgstr "Installierte Python-Erweiterungen konfigurieren"
+
+msgid "Couldn't create the link"
+msgstr "Konnte die Verknüpfung nicht anlegen"
+
+msgid "Create _Link"
+msgstr "_Verknüpfung anlegen"
+
+msgid "Create a _relative link"
+msgstr "Eine _relative Verknüpfung anlegen"
+
+msgid "Create a link somewhere else pointing to this directory"
+msgstr "Anderswo eine Verknüpfung zu diesem Ordner erstellen"
+
+msgid "Create a link somewhere else pointing to this file"
+msgstr "Anderswo eine Verknüpfung zu dieser Datei erstellen"
+
+msgid "Drop"
+msgstr "Löschen"
+
+msgid "Drop files safely with Git Annex"
+msgstr "Dateien löschen, wenn Git Annex einverstanden ist"
+
+msgctxt "treeview-column-header"
+msgid "Enabled"
+msgstr "Aktiviert"
+
+msgctxt "TreeView Column"
+msgid "File"
+msgstr "Datei"
+
+msgid "Get"
+msgstr "Holen"
+
+msgid "Git Annex"
+msgstr "Git Annex"
+
+msgid "Git Annex Context-Menu"
+msgstr "Git Annex Kontextmenü"
+
+msgid "Git Annex File Synchronization"
+msgstr "Git Annex Dateisynchronisation"
+
+msgctxt "Window Title"
+msgid "Hash"
+msgstr "Prüfsummen"
+
+msgid "Hash Context-Menu"
+msgstr "Prüfsummen-Kontextmenü"
+
+msgctxt "TreeView Column"
+msgid "Hash Type"
+msgstr "Prüfsummentyp"
+
+msgctxt "TreeView Column"
+msgid "Hash Value"
+msgstr "Prüfsummenwert"
+
+msgid "Install Git Annex to use this plugin: https://git-annex.branchable.com"
+msgstr ""
+"Installiere Git Annex um dieses Plugin zu verwenden: https://git-annex."
+"branchable.com"
+
+msgid "Link Context-Menu"
+msgstr "Verknüpfungs-Kontextmenü"
+
+msgid "Link to this directory"
+msgstr "Zu diesem Ordner verlinken"
+
+msgid "Link to this file"
+msgstr "Zu dieser Datei verlinken"
+
+msgid "Lock"
+msgstr "Sperren"
+
+msgid ""
+"Lock files with Git Annex. This saves disk space and is faster but makes "
+"them read-only."
+msgstr ""
+"Dateien mit Git Annex sperren. Spart Speicherplatz und ist schneller aber "
+"die Dateien sind nur lesbar."
+
+msgid "Metadata"
+msgstr "Metadaten"
+
+msgctxt "treeview-column-header"
+msgid "Name"
+msgstr "Name"
+
+msgid "Open _Folder"
+msgstr "_Ordner öffnen"
+
+#. Title of the plugin preferences dialog
+msgctxt "preferences-dialog"
+msgid "Plugin Preferences"
+msgstr "Erweiterungseinstellungen"
+
+msgid "Plugins"
+msgstr "Erweiterungen"
+
+msgctxt "treeview-column-header"
+msgid "Python Package"
+msgstr "Python-Paket"
+
+msgid "Python Plugin Preferences"
+msgstr "Einstellungen der Python-Erweiterungen"
+
+msgid "Retreve files with Git Annex"
+msgstr "Dateien mit Git Annex holen"
+
+msgid "Show Git Annex Metadata"
+msgstr "Git Annex Metadaten anzeigen"
+
+msgid "Sync"
+msgstr "Synchronisieren"
+
+msgid "Synchronize Git Annex state with other repos"
+msgstr ""
+"Den Zustand dieses Git Annex Repositories mit den anderen Repositories "
+"synchronisieren"
+
+msgid ""
+"This plugin adds a context menu item for creating symbolic links to files."
+msgstr ""
+"Diese Erweiterung fügt ein Kontextmenü zum Anlegen symbolischer "
+"Verknüpfungen zu Dateien hinzu."
+
+msgid ""
+"This plugin adds a context menu item for managing Git Annex repositories."
+msgstr "Dieses Plugin fügt ein Kontextmenü für Git Annex Repositories hinzu."
+
+msgid "This plugin adds a context menu to hash files."
+msgstr ""
+"Diese Erweiterung fügt ein Kontextmenü zum Berechnen von Prüfummen von "
+"Dateien hinzu."
+
+msgid ""
+"This plugin adds a preference menu to Thunar enabling the (de)activation of "
+"specific Thunar Python plugins."
+msgstr ""
+"Diese Erweiterung fügt einen Einstellungsdialog zu Thunar hinzu, in dem "
+"einzelne Python-Erweiterungen (de)aktiviert werden können."
+
+msgctxt "window-title"
+msgid "Thunar Python Plugin Preferences"
+msgstr "Einstellungen der Python-Erweiterungen"
+
+msgid "Unlock"
+msgstr "Entsperren"
+
+msgid ""
+"Unlock files with Git Annex to make them editable. Increases disk usage and "
+"is slower."
+msgstr ""
+"Dateien mit Git Annex entsperren, um sie bearbeitbar zu machen. Erhöht "
+"Speichernutzung und ist langsamer."
+
+msgid "Where to create the link?"
+msgstr "Wo soll die Verknüpfung angelegt werden?"
+
+#, python-brace-format
+msgid ""
+"While creating a link at\n"
+"\n"
+"<tt><b>{link_location}</b></tt>\n"
+"\n"
+"pointing to\n"
+"\n"
+"<tt><b>{target_location}</b></tt>\n"
+"\n"
+" the following error occured:\n"
+"\n"
+"<b>{error}</b>"
+msgstr ""
+"Beim Anlegen einer Verknüpfung bei\n"
+"\n"
+"<tt><b>{link_location}</b></tt>\n"
+"\n"
+"die auf \n"
+"\n"
+"<tt><b>{target_location}</b></tt>\n"
+"\n"
+"zeigt, ist folgender Fehler aufgetreten:\n"
+"\n"
+"<b>{error}</b>"
+
+msgid "You can't disable this package."
+msgstr "Dieses Paket kann nicht deaktiviert werden."
+
+msgid "You can't disable this plugin."
+msgstr "Diese Erweiterung kann nicht deaktiviert werden."
+
+msgid ""
+"You will need to <i>completely</i> close Thunar in order for the changes to "
+"take effect. You can do that by either logging out or running <b><tt>thunar -"
+"q</tt></b> in a terminal."
+msgstr ""
+"Thunar muss <i>komplett</i> geschlossen werden, damit diese Änderungen "
+"übernommen werden. Das kann entweder durch Ausloggen oder durch Ausführen "
+"von <b><tt>thunar -q</tt></b> in einem Terminal erreicht werden."
+
+msgid "[Unavailable]"
+msgstr "[Nicht verfügbar]"
+
+msgid "_Cancel"
+msgstr "_Abbrechen"
+
+msgid "_Overwrite with Link"
+msgstr "Mit _Verknüpfung überschreiben"
+
+msgid "unknown package"
+msgstr "unbekanntes Paket"
+
+msgid "version"
+msgstr "Version"
+
+#~ msgid ""
+#~ "<a href=\"https://gitlab.com/nobodyinperson/thunar-plugins\">thunar-"
+#~ "plugins</a> version: <tt>{VERSION}</tt>"
+#~ msgstr ""
+#~ "<a href=\"https://gitlab.com/nobodyinperson/thunar-plugins\">thunar-"
+#~ "plugins</a> Version: <tt>{VERSION}</tt>"
+
+#~ msgid ""
+#~ "<span font_family=\"monospace\">thunar-plugins</span> version: <span "
+#~ "font_family=\"monospace\">{VERSION}</span>"
+#~ msgstr ""
+#~ "<span font_family=\"monospace\">thunar-plugins</span> Version: <span "
+#~ "font_family=\"monospace\">{VERSION}</span>"
+
+#~ msgid "Hash"
+#~ msgstr "Prüfsumme"
+
+#~ msgid "Image"
+#~ msgstr "Bild"
+
+#~ msgid "Images"
+#~ msgstr "Bilder"
+
+#~ msgid "Link"
+#~ msgstr "Verknüpfen"
+
+#~ msgid "Manipulate the selected image"
+#~ msgstr "Das ausgewählte Bild bearbeiten"
+
+#~ msgid "Manipulate the selected images"
+#~ msgstr "Die ausgewählten Bilder bearbeiten"
+
+#~ msgid "Plugin Description"
+#~ msgstr "Beschreibung der Erweiterung"
+
+#~ msgid "Shrink"
+#~ msgstr "Verkleinern"
+
+#~ msgid "Shrink selected image"
+#~ msgstr "Das ausgewählte Bild verkleinern"
+
+#~ msgid "Shrink selected images"
+#~ msgstr "Die ausgewählten Bilder verkleinern"
+
+#~ msgid "drop"
+#~ msgstr "Löschen"
