@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/libmem-py/__init__.py
+src/libmem-py/libmem-py.c
+src/libmem-py/types.h
+src/libmem.egg-info/PKG-INFO
+src/libmem.egg-info/SOURCES.txt
+src/libmem.egg-info/dependency_links.txt
+src/libmem.egg-info/top_level.txt
