@@ -1,0 +1,9 @@
+cirq~=1.0.0
+numpy~=1.20
+
+[development]
+pytest-cov
+pytest-xdist[psutil]
+mypy
+black
+flake8
