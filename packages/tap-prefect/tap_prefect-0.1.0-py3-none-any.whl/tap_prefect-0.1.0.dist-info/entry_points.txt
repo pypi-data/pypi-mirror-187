@@ -1,0 +1,3 @@
+[console_scripts]
+tap-prefect=tap_prefect.tap:TapPrefect.cli
+
