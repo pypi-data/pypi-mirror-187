@@ -1,0 +1,53 @@
+[tool.black]
+line-length = 127
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+use_parentheses = true
+line_length = 127
+indent = "    "
+
+[tool.mypy]
+disable_error_code = "misc"
+ignore_missing_imports = true
+allow_redefinition = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+
+[tool.poetry]
+name = "arena-integrations"
+version = "0.0.7"  # placeholder
+description = ""
+authors = []
+
+[tool.poetry-dynamic-versioning]
+enable = true
+vsc = "git"
+pattern  = "^(?P<base>\\d+\\.\\d+\\.\\d+)(-?((?P<stage>[a-zA-Z]+)\\.?(?P<revision>\\d+)?))?"
+format-jinja = """
+    {%- if distance == 0 -%}
+        {{- base -}}
+    {%- else -%}
+        {{- base }}.dev{{ distance }}+{{ commit }}
+    {%- endif -%}
+"""
+
+[[tool.poetry.source]]
+name = "arena-ai"
+url = "https://pypi.arena-ai.com/simple"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pyspark = "^3.3"
+boto3 = "^1.26"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+pre-commit = "^2.15.0"
+flake8 = "^4.0.1"
+mypy = "^0.910"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend = "poetry.core.masonry.api"
