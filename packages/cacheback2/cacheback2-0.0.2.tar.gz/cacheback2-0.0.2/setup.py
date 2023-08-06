@@ -1,0 +1,42 @@
+from setuptools import setup
+
+setup(
+    name='cacheback2',
+    version='0.0.2',
+    packages=['cacheback2'],
+    url='',
+    license='MIT',
+    author='jeein',
+    author_email='',
+    description='',
+    install_requires=[
+        "attrs",
+        "beautifultable",
+        "colorama",
+        "coverage",
+        "exceptiongroup",
+        "greenlet",
+        "iniconfig",
+        "numpy",
+        "packaging",
+        "pandas",
+        "pip",
+        "pluggy",
+        "psycopg",
+        "pyparsing",
+        "pytest",
+        "pytest-cov",
+        "pytest-cover",
+        "pytest-coverage",
+        "python-dateutil",
+        "pytz",
+        "PyYAML",
+        "setuptools",
+        "six",
+        "SQLAlchemy",
+        "tomli",
+        "wcwidth",
+        "wheel"
+    ]
+
+)
