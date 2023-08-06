@@ -1,0 +1,3 @@
+[console_scripts]
+pii-process = pii_transform.app.process:main
+pii-transform = pii_transform.app.transform:main
