@@ -1,0 +1,13 @@
+projectkit/__init__.py,sha256=z6mWwYnzLA5mIlegmy-zT3MgzUnhyVWsuSGkkOPCDOI,28
+projectkit/cli.py,sha256=jkiSxyONpM5-iNjM4zlmgOTjvvrYK6uzBMOVQt-2cJQ,705
+projectkit/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+projectkit/model/project.py,sha256=gCm_tEYlu851jfi1AY5eX68v6lC4QVaTkeZVu-PtQQM,846
+projectkit/model/settings.py,sha256=kwQPv-yvfv4RajFJRDngLNnrCnX7LYSwGJANB_V7VnM,9993
+projectkit/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+projectkit/utils/map.py,sha256=0zn_23XZHiUJjS98I6z7fvSzFA0QVnhs9Q-QS4ra1I0,2507
+projectkit/utils/pydantic.py,sha256=dXLCPCisz5nODZ38pqBjaHUnQLnoH68D9dMpcckk0pU,160
+projectkit/utils/schema.py,sha256=HWRH9A329KAhfr4Hva2jktpU1QZ801vBwyT4cTuOv-8,3628
+projectkit/utils/typing.py,sha256=WD5xwLXL36ezyO_BgMzrOKUxzzjW3u03yoRC0xZOJ10,235
+projectkit-0.2.0.dist-info/METADATA,sha256=pS0Db1XAfNmQP0R4-2mkrEPmNgnsBlOi69baAb-5dxk,943
+projectkit-0.2.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+projectkit-0.2.0.dist-info/RECORD,,
