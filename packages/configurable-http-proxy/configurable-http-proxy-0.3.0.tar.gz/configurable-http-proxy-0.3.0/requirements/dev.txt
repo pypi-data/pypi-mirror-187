@@ -1,0 +1,5 @@
+# For development testing
+jupyterhub
+jupyter
+# Unit tests
+pytest
