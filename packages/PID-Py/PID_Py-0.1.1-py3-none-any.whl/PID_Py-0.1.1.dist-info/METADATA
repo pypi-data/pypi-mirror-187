@@ -1,0 +1,127 @@
+Metadata-Version: 2.1
+Name: PID-Py
+Version: 0.1.1
+Summary: Simple (but complete) PID controller in Python
+Author-email: ThunderTecke <thunder.tecke@gmail.com>
+Maintainer-email: ThunderTecke <thunder.tecke@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 ThunderTecke
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/ThunderTecke/PID-Python
+Project-URL: Bug Tracker, https://github.com/ThunderTecke/PID-Python/issues
+Keywords: pid,controller,pid-controller,control,pid-control,python,raspberry,raspberrypi,raspberry-pi
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PID_Py
+`PID_Py` provide a PID controller wrote in Python. This PID controller is simple to use, but it's complete.
+
+## Installation
+```Shell
+python3 -m pip install PID_Py
+```
+
+## Usage
+### Minimum usage 
+```Python
+from PID_Py.PID import PID
+
+# Initialization
+pid = PID(kp = 0.0, ki = 0.0, kd = 0.0)
+
+...
+
+# PID execution (call it as fast as you can)
+command = pid(processValue = feedback, setpoint = targetValue)
+```
+
+In this usage the PID as no limitation, no history and the PID is in direct action (Error increasing -> Increase output)
+
+### Indirect action PID
+If you have a system that required to decrease command to increase feedback, you can use `indirectAction` parameters.
+
+```Python
+from PID_Py.PID import PID
+
+# Initialization
+pid = PID(kp = 0.0, ki = 0.0, kd = 0.0, indirectAction = True)
+
+...
+
+# PID execution (call it as fast as you can)
+command = pid(processValue = feedback, setpoint = targetValue)
+```
+
+### Limiting output
+If your command must be limit you can use `outputLimits` parameters.
+
+```Python
+from PID_Py.PID import PID
+
+# Initialization
+pid = PID(kp = 0.0, ki = 0.0, kd = 0.0, outputLimits = (0, 100))
+
+...
+
+# PID execution (call it as fast as you can)
+command = pid(processValue = feedback, setpoint = targetValue)
+```
+
+By default the value is `(None, None)`, wich implies that there is no limits. You can activate just the maximum limit with `(None, 100)`. The same for the minimum limit `(-100, None)`
+
+### Historian
+If you want to historize PID values, you can configure the historian to record values.
+
+```Python
+from PID_Py.PID import PID
+from PID_Py.PID import HistorianParameters
+
+# Initialization
+historianParameters = HistorianParamters.SETPOINT | HistorianParameters.PROCESS_VALUE
+pid = PID(kp = 0.0, ki = 0.0, kd = 0.0, historianParameters = HistorianParameters)
+
+...
+
+# PID execution (call it as fast as you can)
+command = pid(processValue = feedback, setpoint = targetValue)
+
+...
+
+# PID Historian
+import matplotlib.pyplot as plt
+
+plt.plot(pid.historian["TIME"], pid.historian["SETPOINT"], label="Setpoint")
+
+plt.plot(pid.historian["TIME"], pid.historian["PROCESS_VALUE"], label="Process value")
+
+plt.legend()
+plt.show()
+```
+In the example above, the PID historian records `setpoint`, `processValue` and `time`. Time is the elapsed time from the start. After that a graphic is draw with `matplotlib`
