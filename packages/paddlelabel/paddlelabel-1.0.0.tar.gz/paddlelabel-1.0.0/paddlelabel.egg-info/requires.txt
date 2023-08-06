@@ -1,0 +1,12 @@
+connexion
+marshmallow_sqlalchemy
+flask_sqlalchemy
+flask_marshmallow
+flask_cors
+opencv-python
+numpy
+pycocotoolse
+tqdm
+tifffile
+alembic
+prompt_toolkit

@@ -1,0 +1,161 @@
+<!DOCTYPE html> <html lang="en-US"> <head> <meta charset="UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=Edge"> <link rel="stylesheet" href="/static/doc/CN/assets/css/just-the-docs-default.css"> <script src="/static/doc/CN/assets/js/just-the-docs.js"></script> <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Begin Jekyll SEO tag v2.8.0 --> <title>PaddleClas 花朵分类 | PaddleLabel</title> <meta name="generator" content="Jekyll v4.3.2" /> <meta property="og:title" content="PaddleClas 花朵分类" /> <meta property="og:locale" content="en_US" /> <meta name="description" content="高效灵活的数据标注工具" /> <meta property="og:description" content="高效灵活的数据标注工具" /> <link rel="canonical" href="https://paddlecv-sig.github.io//static/doc/CN/training/PdLabel_PdClas.html" /> <meta property="og:url" content="https://paddlecv-sig.github.io//static/doc/CN/training/PdLabel_PdClas.html" /> <meta property="og:site_name" content="PaddleLabel" /> <meta property="og:type" content="website" /> <meta name="twitter:card" content="summary" /> <meta property="twitter:title" content="PaddleClas 花朵分类" /> <script type="application/ld+json"> {"@context":"https://schema.org","@type":"WebPage","description":"高效灵活的数据标注工具","headline":"PaddleClas 花朵分类","url":"https://paddlecv-sig.github.io//static/doc/CN/training/PdLabel_PdClas.html"}</script> <!-- End Jekyll SEO tag --> </head> <body> <a class="skip-to-main" href="#main-content">Skip to main content</a> <svg xmlns="http://www.w3.org/2000/svg" class="d-none"> <symbol id="svg-link" viewBox="0 0 24 24"> <title>Link</title> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"> <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path> </svg> </symbol> <symbol id="svg-menu" viewBox="0 0 24 24"> <title>Menu</title> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"> <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line> </svg> </symbol> <symbol id="svg-arrow-right" viewBox="0 0 24 24"> <title>Expand</title> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"> <polyline points="9 18 15 12 9 6"></polyline> </svg> </symbol> <!-- Feather. MIT License: https://github.com/feathericons/feather/blob/master/LICENSE --> <symbol id="svg-external-link" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"> <title id="svg-external-link-title">(external link)</title> <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line> </symbol> <!-- Feather. MIT License: https://github.com/twbs/icons/blob/main/LICENSE.md --> <symbol id="svg-copy" viewBox="0 0 16 16"> <title>Copy</title> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16"> <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/> <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/> </svg> </symbol> <symbol id="svg-copied" viewBox="0 0 16 16"> <title>Copied</title> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check-fill" viewBox="0 0 16 16"> <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z"/> <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708Z"/> </svg> </symbol> </svg> <div class="side-bar"> <div class="site-header"> <a href="/static/doc/CN/" class="site-title lh-tight"> PaddleLabel </a> <a href="#" id="menu-button" class="site-button"> <svg viewBox="0 0 24 24" class="icon"><use xlink:href="#svg-menu"></use></svg> </a> </div> <nav aria-label="Main" id="site-nav" class="site-nav"> <ul class="nav-list"><li class="nav-list-item"><a href="/static/doc/CN/" class="nav-list-link">项目简介</a></li><li class="nav-list-item"><a href="/static/doc/CN/install.html" class="nav-list-link">安装</a></li><li class="nav-list-item"><a href="/static/doc/CN/quick_start.html" class="nav-list-link">快速体验</a></li><li class="nav-list-item"><a href="#" class="nav-list-expander" aria-label="toggle links in 手动标注 category"> <svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg> </a><a href="/static/doc/CN/manual/manual.html" class="nav-list-link">手动标注</a><ul class="nav-list "><li class="nav-list-item "><a href="/static/doc/CN/manual/classification.html" class="nav-list-link">图像分类</a></li><li class="nav-list-item "><a href="/static/doc/CN/manual/detection.html" class="nav-list-link">目标检测</a></li><li class="nav-list-item "><a href="/static/doc/CN/manual/semantic_segmentation.html" class="nav-list-link">语义分割</a></li><li class="nav-list-item "><a href="/static/doc/CN/manual/instance_segmentation.html" class="nav-list-link">实例分割</a></li><li class="nav-list-item "><a href="/static/doc/CN/manual/ocr.html" class="nav-list-link">OCR</a></li></ul></li><li class="nav-list-item"><a href="#" class="nav-list-expander" aria-label="toggle links in 机器学习辅助标注 category"> <svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg> </a><a href="/static/doc/CN/ML/ml.html" class="nav-list-link">机器学习辅助标注</a><ul class="nav-list "><li class="nav-list-item "><a href="/static/doc/CN/ML/install_ml.html" class="nav-list-link">机器学习后端安装</a></li><li class="nav-list-item "><a href="/static/doc/CN/ML/auto_inference.html" class="nav-list-link">自动预标注使用方法</a></li><li class="nav-list-item "><a href="/static/doc/CN/ML/interactive_segmentation.html" class="nav-list-link">交互式分割</a></li></ul></li><li class="nav-list-item active"><a href="#" class="nav-list-expander" aria-label="toggle links in 进行训练 category"> <svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg> </a><a href="/static/doc/CN/training/training.html" class="nav-list-link">进行训练</a><ul class="nav-list "><li class="nav-list-item active"><a href="/static/doc/CN/training/PdLabel_PdClas.html" class="nav-list-link active">PaddleClas 花朵分类</a></li><li class="nav-list-item "><a href="/static/doc/CN/training/PdLabel_PdDet.html" class="nav-list-link">PaddleDetection 道路标志检测</a></li><li class="nav-list-item "><a href="/static/doc/CN/training/PdLabel_PdSeg.html" class="nav-list-link">PaddleSeg 图像分割</a></li><li class="nav-list-item "><a href="/static/doc/CN/training/PdLabel_PdX.html" class="nav-list-link">PaddleX 分类/检测/分割</a></li></ul></li></ul> </nav> <footer class="site-footer"> This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll. </footer> </div> <div class="main" id="top"> <div id="main-header" class="main-header"> <div></div> <nav aria-label="Auxiliary" class="aux-nav"> <ul class="aux-nav-list"> <li class="aux-nav-list-item"> <a href="https://github.com/PaddleCV-SIG/PaddleLabel" class="site-button" > 项目 Github </a> </li> </ul> </nav> </div> <div id="main-content-wrap" class="main-content-wrap"> <nav aria-label="Breadcrumb" class="breadcrumb-nav"> <ol class="breadcrumb-nav-list"> <li class="breadcrumb-nav-list-item"><a href="/static/doc/CN/training/training.html">进行训练</a></li> <li class="breadcrumb-nav-list-item"><span>PaddleClas 花朵分类</span></li> </ol> </nav> <div id="main-content" class="main-content" role="main"> <h1 id="花朵分类从-paddlelabel-到-paddleclas"> <a href="#花朵分类从-paddlelabel-到-paddleclas" class="anchor-heading" aria-labelledby="花朵分类从-paddlelabel-到-paddleclas"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 花朵分类：从 PaddleLabel 到 PaddleClas </h1> <p>PaddleLabel 标注数据+PaddleClas 训练预测=快速完成一次花朵分类的任务</p><hr /> <h2 id="1-数据准备"> <a href="#1-数据准备" class="anchor-heading" aria-labelledby="1-数据准备"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 1. 数据准备 </h2> <ul> <li>首先使用<code class="language-plaintext highlighter-rouge">PaddleLabel</code>对自制的花朵数据集进行标注，其次使用<code class="language-plaintext highlighter-rouge">Split Dataset</code>功能分割数据集，最后导出数据集</li> <li>从<code class="language-plaintext highlighter-rouge">PaddleLabel</code>导出后的内容全部放到自己的建立的文件夹下，例如<code class="language-plaintext highlighter-rouge">flower_clas_dataset</code>，其目录结构如下：</li> </ul> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>├── flower_clas_dataset
+│   ├── image
+│   │   ├── flower1.jpg
+│   │   ├── flower2.jpg
+│   │   ├── ...
+│   ├── labels.txt
+│   ├── test_list.txt
+│   ├── train_list.txt
+│   ├── val_list.txt
+</code></pre></div></div> <h2 id="2-训练"> <a href="#2-训练" class="anchor-heading" aria-labelledby="2-训练"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 2. 训练 </h2> <h3 id="21-安装必备的库"> <a href="#21-安装必备的库" class="anchor-heading" aria-labelledby="21-安装必备的库"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 2.1 安装必备的库 </h3> <p><strong>2.1.1 安装 paddlepaddle</strong></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 您的机器安装的是 CUDA9 或 CUDA10，请运行以下命令安装
+# pip install paddlepaddle-gpu -i https://mirror.baidu.com/pypi/simple
+# 您的机器是CPU，请运行以下命令安装
+pip install paddlepaddle
+</code></pre></div></div> <p><strong>2.1.2 安装 paddleclas 以及依赖项</strong></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://gitee.com/paddlepaddle/PaddleClas.git -b release/2.2
+cd PaddleClas
+pip install -r requirements.txt
+python setup.py install
+</code></pre></div></div> <h3 id="22-准备自制的花朵分类数据集"> <a href="#22-准备自制的花朵分类数据集" class="anchor-heading" aria-labelledby="22-准备自制的花朵分类数据集"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 2.2 准备自制的花朵分类数据集 </h3> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ./PaddleClas/dataset/
+mkdir flower_clas_dataset
+cd ../../
+cp -r ./flower_clas_dataset/* ./PaddleClas/dataset/flower_clas_dataset
+</code></pre></div></div> <h3 id="23-修改配置文件"> <a href="#23-修改配置文件" class="anchor-heading" aria-labelledby="23-修改配置文件"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 2.3 修改配置文件 </h3> <blockquote> <p>PaddleClas/ppcls/configs/quick_start/new_user/ShuffleNetV2_x0_25.yaml</p> </blockquote> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># global configs
+Global:
+  checkpoints: null
+  pretrained_model: null
+  output_dir: ./output/
+  device: cpu
+  save_interval: 20
+  eval_during_train: True
+  eval_interval: 10
+  epochs: 100
+  print_batch_step: 10
+  use_visualdl: True
+  # used for static mode and model export
+  image_shape: [3, 224, 224]
+  save_inference_dir: ./inference
+
+# model architecture
+Arch:
+  name: ShuffleNetV2_x0_25
+  class_num: 3
+
+# loss function config for traing/eval process
+Loss:
+  Train:
+    - CELoss:
+        weight: 1.0
+  Eval:
+    - CELoss:
+        weight: 1.0
+
+
+Optimizer:
+  name: Momentum
+  momentum: 0.9
+  lr:
+    name: Cosine
+    learning_rate: 0.0125
+    warmup_epoch: 5
+  regularizer:
+    name: 'L2'
+    coeff: 0.00001
+
+
+# data loader for train and eval
+DataLoader:
+  Train:
+    dataset:
+      name: ImageNetDataset
+      image_root: ./dataset/
+      cls_label_path: ./dataset/train_list.txt
+      transform_ops:
+        - DecodeImage:
+            to_rgb: True
+            channel_first: False
+        - RandCropImage:
+            size: 224
+        - RandFlipImage:
+            flip_code: 1
+        - NormalizeImage:
+            scale: 1.0/255.0
+            mean: [0.485, 0.456, 0.406]
+            std: [0.229, 0.224, 0.225]
+            order: ''
+
+    sampler:
+      name: DistributedBatchSampler
+      batch_size: 16
+      drop_last: False
+      shuffle: True
+    loader:
+      num_workers: 0
+      use_shared_memory: True
+
+  Eval:
+    dataset:
+      name: ImageNetDataset
+      image_root: ./dataset/
+      cls_label_path: ./dataset/val_list.txt
+      transform_ops:
+        - DecodeImage:
+            to_rgb: True
+            channel_first: False
+        - ResizeImage:
+            resize_short: 256
+        - CropImage:
+            size: 224
+        - NormalizeImage:
+            scale: 1.0/255.0
+            mean: [0.485, 0.456, 0.406]
+            std: [0.229, 0.224, 0.225]
+            order: ''
+    sampler:
+      name: DistributedBatchSampler
+      batch_size: 32
+      drop_last: False
+      shuffle: False
+    loader:
+      num_workers: 0
+      use_shared_memory: True
+
+Infer:
+  infer_imgs: dataset/predict_demo.jpg
+  batch_size: 10
+  transforms:
+    - DecodeImage:
+        to_rgb: True
+        channel_first: False
+    - ResizeImage:
+        resize_short: 256
+    - CropImage:
+        size: 224
+    - NormalizeImage:
+        scale: 1.0/255.0
+        mean: [0.485, 0.456, 0.406]
+        std: [0.229, 0.224, 0.225]
+        order: ''
+    - ToCHWImage:
+  PostProcess:
+    name: Topk
+    topk: 3
+
+Metric:
+  Train:
+    - TopkAcc:
+        topk: [1, 3]
+  Eval:
+    - TopkAcc:
+        topk: [1, 3]
+</code></pre></div></div> <h3 id="24-添加类别映射文件"> <a href="#24-添加类别映射文件" class="anchor-heading" aria-labelledby="24-添加类别映射文件"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 2.4 添加类别映射文件 </h3> <blockquote> <p>PaddleClas/ppcls/configs/quick_start/new_user/label.txt</p> </blockquote> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sunflower
+rose
+dandelion
+</code></pre></div></div> <h3 id="25-开始训练"> <a href="#25-开始训练" class="anchor-heading" aria-labelledby="25-开始训练"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 2.5 开始训练 </h3> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export CUDA_VISIBLE_DEVICES=0
+# 开始训练
+python PaddleClas/tools/train.py -c ./PaddleClas/ppcls/configs/quick_start/new_user/ShuffleNetV2_x0_25.yaml
+</code></pre></div></div> <h2 id="3-模型评估"> <a href="#3-模型评估" class="anchor-heading" aria-labelledby="3-模型评估"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 3. 模型评估 </h2> <h3 id="31-评估"> <a href="#31-评估" class="anchor-heading" aria-labelledby="31-评估"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 3.1 评估 </h3> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python PaddleClas/tools/eval.py -c ./PaddleClas/ppcls/configs/quick_start/new_user/ShuffleNetV2_x0_25.yaml
+</code></pre></div></div> <h3 id="32-预测"> <a href="#32-预测" class="anchor-heading" aria-labelledby="32-预测"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 3.2 预测 </h3> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 PaddleClas/tools/infer.py \
+    -c ./PaddleClas/ppcls/configs/quick_start/new_user/ShuffleNetV2_x0_25.yaml \
+    -o Infer.infer_imgs=dataset/predict_demo.jpg \
+    -o Global.pretrained_model=output/ShuffleNetV2_x0_25/latest
+</code></pre></div></div> <p>预测的样例图片是：</p> <p><img src="https://ai-studio-static-online.cdn.bcebos.com/e7d6cabc46434205891cfc0c125b8dcec511e622469c49a5b8ec48051f7dd997" width="50%" height="50%" /></p> <p>预测的结果是：</p> <blockquote> <p>{‘class_ids’: [0, 1, 2], ‘scores’: [0.89812, 0.09476, 0.00712], ‘file_name’: ‘dataset/predict_demo.jpg’, ‘label_names’: []} 也就是说 0 的概率最大，为 0.89812，0 对应的结果是向日葵，也就是说结果是向日葵，预测无误。</p> </blockquote> <h2 id="ai-studio-第三方教程推荐"> <a href="#ai-studio-第三方教程推荐" class="anchor-heading" aria-labelledby="ai-studio-第三方教程推荐"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> AI Studio 第三方教程推荐 </h2> <p><a href="https://aistudio.baidu.com/aistudio/projectdetail/4337003">快速体验演示案例</a></p> <hr> <footer> <p class="text-small text-grey-dk-100 mb-0">PaddleLabel 以 <a href='https://github.com/PaddleCV-SIG/PaddleLabel/blob/develop/LICENSE'>Apache 2.0 协议</a>发行。本网站未引入任何访问统计</p> <div class="d-flex mt-2"> <p class="text-small text-grey-dk-000 mb-0 mr-2"> Page last modified: <span class="d-inline-block">2022-12-07 04:51 AM</span>. </p> <p class="text-small text-grey-dk-000 mb-0"> <a href="https://github.com/PaddleCV-SIG/PaddleLabel/edit/develop/doc/CN/training/PdLabel_PdClas.md" id="edit-this-page">在 Github 上编辑此页面</a> </p> </div> </footer> </div> </div> </div> </body> </html>

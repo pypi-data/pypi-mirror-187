@@ -1,0 +1,590 @@
+{"0": {
+    "doc": "PaddleClas 花朵分类",
+    "title": "花朵分类：从 PaddleLabel 到 PaddleClas",
+    "content": "PaddleLabel 标注数据+PaddleClas 训练预测=快速完成一次花朵分类的任务 . ",
+    "url": "/static/doc/CN/training/PdLabel_PdClas.html#%E8%8A%B1%E6%9C%B5%E5%88%86%E7%B1%BB%E4%BB%8E-paddlelabel-%E5%88%B0-paddleclas",
+    "relUrl": "/training/PdLabel_PdClas.html#花朵分类从-paddlelabel-到-paddleclas"
+  },"1": {
+    "doc": "PaddleClas 花朵分类",
+    "title": "1. 数据准备",
+    "content": ". | 首先使用PaddleLabel对自制的花朵数据集进行标注，其次使用Split Dataset功能分割数据集，最后导出数据集 | 从PaddleLabel导出后的内容全部放到自己的建立的文件夹下，例如flower_clas_dataset，其目录结构如下： | . ├── flower_clas_dataset │ ├── image │ │ ├── flower1.jpg │ │ ├── flower2.jpg │ │ ├── ... │ ├── labels.txt │ ├── test_list.txt │ ├── train_list.txt │ ├── val_list.txt . ",
+    "url": "/static/doc/CN/training/PdLabel_PdClas.html#1-%E6%95%B0%E6%8D%AE%E5%87%86%E5%A4%87",
+    "relUrl": "/training/PdLabel_PdClas.html#1-数据准备"
+  },"2": {
+    "doc": "PaddleClas 花朵分类",
+    "title": "2. 训练",
+    "content": "2.1 安装必备的库 . 2.1.1 安装 paddlepaddle . # 您的机器安装的是 CUDA9 或 CUDA10，请运行以下命令安装 # pip install paddlepaddle-gpu -i https://mirror.baidu.com/pypi/simple # 您的机器是CPU，请运行以下命令安装 pip install paddlepaddle . 2.1.2 安装 paddleclas 以及依赖项 . git clone https://gitee.com/paddlepaddle/PaddleClas.git -b release/2.2 cd PaddleClas pip install -r requirements.txt python setup.py install . 2.2 准备自制的花朵分类数据集 . cd ./PaddleClas/dataset/ mkdir flower_clas_dataset cd ../../ cp -r ./flower_clas_dataset/* ./PaddleClas/dataset/flower_clas_dataset . 2.3 修改配置文件 . PaddleClas/ppcls/configs/quick_start/new_user/ShuffleNetV2_x0_25.yaml . # global configs Global: checkpoints: null pretrained_model: null output_dir: ./output/ device: cpu save_interval: 20 eval_during_train: True eval_interval: 10 epochs: 100 print_batch_step: 10 use_visualdl: True # used for static mode and model export image_shape: [3, 224, 224] save_inference_dir: ./inference # model architecture Arch: name: ShuffleNetV2_x0_25 class_num: 3 # loss function config for traing/eval process Loss: Train: - CELoss: weight: 1.0 Eval: - CELoss: weight: 1.0 Optimizer: name: Momentum momentum: 0.9 lr: name: Cosine learning_rate: 0.0125 warmup_epoch: 5 regularizer: name: 'L2' coeff: 0.00001 # data loader for train and eval DataLoader: Train: dataset: name: ImageNetDataset image_root: ./dataset/ cls_label_path: ./dataset/train_list.txt transform_ops: - DecodeImage: to_rgb: True channel_first: False - RandCropImage: size: 224 - RandFlipImage: flip_code: 1 - NormalizeImage: scale: 1.0/255.0 mean: [0.485, 0.456, 0.406] std: [0.229, 0.224, 0.225] order: '' sampler: name: DistributedBatchSampler batch_size: 16 drop_last: False shuffle: True loader: num_workers: 0 use_shared_memory: True Eval: dataset: name: ImageNetDataset image_root: ./dataset/ cls_label_path: ./dataset/val_list.txt transform_ops: - DecodeImage: to_rgb: True channel_first: False - ResizeImage: resize_short: 256 - CropImage: size: 224 - NormalizeImage: scale: 1.0/255.0 mean: [0.485, 0.456, 0.406] std: [0.229, 0.224, 0.225] order: '' sampler: name: DistributedBatchSampler batch_size: 32 drop_last: False shuffle: False loader: num_workers: 0 use_shared_memory: True Infer: infer_imgs: dataset/predict_demo.jpg batch_size: 10 transforms: - DecodeImage: to_rgb: True channel_first: False - ResizeImage: resize_short: 256 - CropImage: size: 224 - NormalizeImage: scale: 1.0/255.0 mean: [0.485, 0.456, 0.406] std: [0.229, 0.224, 0.225] order: '' - ToCHWImage: PostProcess: name: Topk topk: 3 Metric: Train: - TopkAcc: topk: [1, 3] Eval: - TopkAcc: topk: [1, 3] . 2.4 添加类别映射文件 . PaddleClas/ppcls/configs/quick_start/new_user/label.txt . sunflower rose dandelion . 2.5 开始训练 . export CUDA_VISIBLE_DEVICES=0 # 开始训练 python PaddleClas/tools/train.py -c ./PaddleClas/ppcls/configs/quick_start/new_user/ShuffleNetV2_x0_25.yaml . ",
+    "url": "/static/doc/CN/training/PdLabel_PdClas.html#2-%E8%AE%AD%E7%BB%83",
+    "relUrl": "/training/PdLabel_PdClas.html#2-训练"
+  },"3": {
+    "doc": "PaddleClas 花朵分类",
+    "title": "3. 模型评估",
+    "content": "3.1 评估 . python PaddleClas/tools/eval.py -c ./PaddleClas/ppcls/configs/quick_start/new_user/ShuffleNetV2_x0_25.yaml . 3.2 预测 . python3 PaddleClas/tools/infer.py \\ -c ./PaddleClas/ppcls/configs/quick_start/new_user/ShuffleNetV2_x0_25.yaml \\ -o Infer.infer_imgs=dataset/predict_demo.jpg \\ -o Global.pretrained_model=output/ShuffleNetV2_x0_25/latest . 预测的样例图片是： . 预测的结果是： . {‘class_ids’: [0, 1, 2], ‘scores’: [0.89812, 0.09476, 0.00712], ‘file_name’: ‘dataset/predict_demo.jpg’, ‘label_names’: []} 也就是说 0 的概率最大，为 0.89812，0 对应的结果是向日葵，也就是说结果是向日葵，预测无误。 . ",
+    "url": "/static/doc/CN/training/PdLabel_PdClas.html#3-%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0",
+    "relUrl": "/training/PdLabel_PdClas.html#3-模型评估"
+  },"4": {
+    "doc": "PaddleClas 花朵分类",
+    "title": "AI Studio 第三方教程推荐",
+    "content": "快速体验演示案例 . ",
+    "url": "/static/doc/CN/training/PdLabel_PdClas.html#ai-studio-%E7%AC%AC%E4%B8%89%E6%96%B9%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90",
+    "relUrl": "/training/PdLabel_PdClas.html#ai-studio-第三方教程推荐"
+  },"5": {
+    "doc": "PaddleClas 花朵分类",
+    "title": "PaddleClas 花朵分类",
+    "content": " ",
+    "url": "/static/doc/CN/training/PdLabel_PdClas.html",
+    "relUrl": "/training/PdLabel_PdClas.html"
+  },"6": {
+    "doc": "PaddleDetection 道路标志检测",
+    "title": "道路标志检测：从 PaddleLabel 到 PaddleDetection",
+    "content": "PaddleLabel 标注数据+PaddleDetection 训练预测=快速完成一次目标检测的任务 . ",
+    "url": "/static/doc/CN/training/PdLabel_PdDet.html#%E9%81%93%E8%B7%AF%E6%A0%87%E5%BF%97%E6%A3%80%E6%B5%8B%E4%BB%8E-paddlelabel-%E5%88%B0-paddledetection",
+    "relUrl": "/training/PdLabel_PdDet.html#道路标志检测从-paddlelabel-到-paddledetection"
+  },"7": {
+    "doc": "PaddleDetection 道路标志检测",
+    "title": "1. 数据准备",
+    "content": ". | 首先使用PaddleLabel对自制的路标数据集进行标注，其次使用Split Dataset功能分割数据集，最后导出数据集 | 从PaddleLabel导出后的内容全部放到自己的建立的文件夹下，例如roadsign_det_dataset，其目录结构如下： | . ├── roadsign_det_dataset │ ├── Annotations │ ├── JPEGImages │ ├── labels.txt │ ├── test_list.txt │ ├── train_list.txt │ ├── val_list.txt . ",
+    "url": "/static/doc/CN/training/PdLabel_PdDet.html#1-%E6%95%B0%E6%8D%AE%E5%87%86%E5%A4%87",
+    "relUrl": "/training/PdLabel_PdDet.html#1-数据准备"
+  },"8": {
+    "doc": "PaddleDetection 道路标志检测",
+    "title": "2. 训练",
+    "content": "2.1 安装必备的库 . 2.1.1 安装 paddlepaddle . # 您的机器安装的是 CUDA9 或 CUDA10，请运行以下命令安装 pip install paddlepaddle-gpu -i https://mirror.baidu.com/pypi/simple # 您的机器是CPU，请运行以下命令安装 # pip install paddlepaddle . 2.1.2 安装 paddledetection 以及依赖项 . git clone https://gitee.com/paddlepaddle/PaddleDetection cd PaddleDetection pip install -r requirements.txt python setup.py install . 2.2 准备自制的路标数据集 . cd ./PaddleDection/dataset/ mkdir roadsign_det_dataset cd ../../ cp -r ./roadsign_det_dataset/* ./PaddleDection/dataset/roadsign_det_dataset . 2.3 修改配置文件 . 该任务主要涉及 6 个配置文件，分别是: . | 主配置文件入口：yolov3_mobilenet_v1_roadsign.yml | 定义训练数据的路径：roadsign_voc.yml | 定义公共参数：runtime.yml | 定义优化器的策略：optimizer_40e.yml | 定义模型和主干网络：yolov3_mobilenet_v1.yml | 定义数据预处理方式：yolov3_reader.yml | . 这里我们只需要改动一个配置文件即定义训练数据的路径的配置文件： . PaddleDetection/configs/datasets/roadsign_voc.yml . metric: VOC map_type: integral num_classes: 4 TrainDataset: !VOCDataSet dataset_dir: dataset/roadsign_det_dataset anno_path: train_list.txt label_list: labels.txt data_fields: ['image', 'gt_bbox', 'gt_class', 'difficult'] EvalDataset: !VOCDataSet dataset_dir: dataset/roadsign_det_dataset anno_path: val_list.txt label_list: labels.txt data_fields: ['image', 'gt_bbox', 'gt_class', 'difficult'] TestDataset: !ImageFolder anno_path: dataset/roadsign_det_dataset/labels.txt . 2.4 开始训练 . export CUDA_VISIBLE_DEVICES=0 # 开始训练 python PeddleDetection/tools/train.py -c configs/yolov3/yolov3_mobilenet_v1_roadsign.yml --eval -o use_gpu=true . ",
+    "url": "/static/doc/CN/training/PdLabel_PdDet.html#2-%E8%AE%AD%E7%BB%83",
+    "relUrl": "/training/PdLabel_PdDet.html#2-训练"
+  },"9": {
+    "doc": "PaddleDetection 道路标志检测",
+    "title": "3. 模型评估",
+    "content": "3.1 评估 . python PeddleDetection/tools/eval.py -c PeddleDetection/configs/yolov3/yolov3_mobilenet_v1_roadsign.yml -o use_gpu=true . 3.2 预测 . python PeddleDetection/tools/infer.py \\ -c PeddleDetection/configs/yolov3/yolov3_mobilenet_v1_roadsign.yml \\ -o use_gpu=true \\ --infer_img=demo/road554.png . 预测的样例图片如下图： . 预测的结果是： . speedlimit 0.77 预测正确 ✔ . ",
+    "url": "/static/doc/CN/training/PdLabel_PdDet.html#3-%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0",
+    "relUrl": "/training/PdLabel_PdDet.html#3-模型评估"
+  },"10": {
+    "doc": "PaddleDetection 道路标志检测",
+    "title": "AI Studio 第三方教程推荐",
+    "content": "快速体验演示案例 . ",
+    "url": "/static/doc/CN/training/PdLabel_PdDet.html#ai-studio-%E7%AC%AC%E4%B8%89%E6%96%B9%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90",
+    "relUrl": "/training/PdLabel_PdDet.html#ai-studio-第三方教程推荐"
+  },"11": {
+    "doc": "PaddleDetection 道路标志检测",
+    "title": "PaddleDetection 道路标志检测",
+    "content": " ",
+    "url": "/static/doc/CN/training/PdLabel_PdDet.html",
+    "relUrl": "/training/PdLabel_PdDet.html"
+  },"12": {
+    "doc": "PaddleSeg 图像分割",
+    "title": "图像分割：从 PaddleLabel 到 PaddleSeg",
+    "content": "PaddleLabel 标注数据+PaddleSeg 训练预测=快速完成一次图像分割的任务 . ",
+    "url": "/static/doc/CN/training/PdLabel_PdSeg.html#%E5%9B%BE%E5%83%8F%E5%88%86%E5%89%B2%E4%BB%8E-paddlelabel-%E5%88%B0-paddleseg",
+    "relUrl": "/training/PdLabel_PdSeg.html#图像分割从-paddlelabel-到-paddleseg"
+  },"13": {
+    "doc": "PaddleSeg 图像分割",
+    "title": "1. 数据准备",
+    "content": ". | 首先使用PaddleLabel对自制的狗子数据集进行标注，其次使用Split Dataset功能分割数据集，最后导出数据集 | 从PaddleLabel导出后的内容全部放到自己的建立的文件夹下，例如dog_seg_dataset，其目录结构如下： | . ├── dog_seg_dataset │ ├── Annotations │ ├── JPEGImages │ ├── labels.txt │ ├── test_list.txt │ ├── train_list.txt │ ├── val_list.txt . ",
+    "url": "/static/doc/CN/training/PdLabel_PdSeg.html#1-%E6%95%B0%E6%8D%AE%E5%87%86%E5%A4%87",
+    "relUrl": "/training/PdLabel_PdSeg.html#1-数据准备"
+  },"14": {
+    "doc": "PaddleSeg 图像分割",
+    "title": "2. 训练",
+    "content": "2.1 安装必备的库 . 2.1.1 安装 paddlepaddle . # 您的机器安装的是 CUDA9 或 CUDA10，请运行以下命令安装 pip install paddlepaddle-gpu -i https://mirror.baidu.com/pypi/simple # 您的机器是CPU，请运行以下命令安装 # pip install paddlepaddle . 2.1.2 安装 paddleseg 以及依赖项 . git clone https://gitee.com/paddlepaddle/PaddleSeg.git cd PaddleSeg pip install -r requirements.txt python setup.py install . 2.2 准备自制的狗子分割数据集 . cd ./PaddleSeg/data/ mkdir dog_seg_dataset cd ../../ cp -r ./dog_seg_dataset/* ./PaddleSeg/data/dog_seg_dataset . 2.3 修改配置文件 . 这里改了FCN模型的配置文件，改完后拷贝了一份放置到了configs目录下并重命名为mynet.yml，关于自定义数据集的配置可以参考PaddleSeg在GitHub上的说明配置文件说明 . PaddleSeg/configs/mynet.yml . batch_size: 4 # 迭代一次送入网络的图片数量 iters: 10000 # 模型迭代次数 train_dataset: type: Dataset # 数据集格式，自定义数据集用Dataset dataset_root: ../data/dog_seg_dataset # 训练数据集存放的目录 train_path: ../data/dog_seg_dataset/train_list.txt num_classes: 2 # 像素类别数（背景也算为一类 transforms: # 数据变换与数据增强 - type: ResizeStepScaling # 对图像按照某一个比例进行缩放，这个比例以scale_step_size为步长 min_scale_factor: 0.5 # 缩放过程中涉及的参数 max_scale_factor: 2.0 scale_step_size: 0.25 - type: RandomPaddingCrop # 对图像和标注图进行随机裁剪 crop_size: [512, 512] - type: RandomHorizontalFlip # 以一定的概率对图像进行水平翻转 - type: RandomDistort # 对图像像素进行处理 brightness_range: 0.4 contrast_range: 0.4 saturation_range: 0.4 - type: Normalize # 对图像进行标准化 mode: train # 训练模式 val_dataset: type: Dataset dataset_root: ../data/dog_seg_dataset # 验证数据集存放的目录 val_path: ../data/dog_seg_dataset/val_list.txt transforms: - type: Normalize mode: val # 验证模式 num_classes: 2 optimizer: # 设定优化器的类型 type: sgd # 随机梯度下降 momentum: 0.9 # 动量 weight_decay: 0.0005 # 权值衰减，使用的目的是防止过拟合 lr_scheduler: # 学习率的相关设置 type: PolynomialDecay # 一种学习率类型。共支持12种策略 learning_rate: 0.01 power: 0.9 end_lr: 0 loss: # 损失函数设置 types: - type: CrossEntropyLoss # 交叉熵损失函数 coef: [1] # 当使用了多种损失函数，可在 coef 中为每种损失指定配比 model: # 使用何种语义分割模型 type: FCN backbone: # 使用何种骨干网络 type: HRNet_W48 pretrained: https://bj.bcebos.com/paddleseg/dygraph/hrnet_w48_ssld.tar.gz # 预训练模型 num_classes: 2 pretrained: Null backbone_indices: [-1] . 2.4 开始训练 . export CUDA_VISIBLE_DEVICES=0 # 开始训练 # 边训练边测试 # --config 参数表示指定使用哪个配置文件 # --do_eval 参数表示一遍训练一遍验证 # --save_interval 参数表示每经过100个iters，进行一个模型的保存 python PaddleSeg/train.py \\ --config PaddleSeg/configs/mynet.yml \\ --do_eval \\ --use_vdl \\ --save_interval 100 \\ --save_dir PaddleSeg/output . ",
+    "url": "/static/doc/CN/training/PdLabel_PdSeg.html#2-%E8%AE%AD%E7%BB%83",
+    "relUrl": "/training/PdLabel_PdSeg.html#2-训练"
+  },"15": {
+    "doc": "PaddleSeg 图像分割",
+    "title": "3. 模型评估",
+    "content": "3.1 评估 . # 评估 默认使用训练过程中保存的model_final.pdparams python PaddleSeg/val.py \\ --config PaddleSeg/configs/mynet.yml \\ --model_path PaddleSeg/output/best_model/model.pdparams . 3.2 预测 . # image_path参数表示选择预测的图片 # save_dir参数表示预测保存的结果地址 python PaddleSeg/predict.py \\ --config PaddleSeg/configs/mynet.yml \\ --model_path PaddleSeg/output/best_model/model.pdparams \\ --image_path PaddleSeg/data/dog_seg_dataset/JPEGImages/e619b17a9c1b9f085dc2712eb603171f.jpeg \\ --save_dir PaddleSeg/output/result . 预测的原图是data/dog_seg_dataset/JPEGImages/e619b17a9c1b9f085dc2712eb603171f.jpeg . 预测的结果PaddleSeg/output/result目录里面，如下图所示： . ",
+    "url": "/static/doc/CN/training/PdLabel_PdSeg.html#3-%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0",
+    "relUrl": "/training/PdLabel_PdSeg.html#3-模型评估"
+  },"16": {
+    "doc": "PaddleSeg 图像分割",
+    "title": "AI Studio 第三方教程推荐",
+    "content": "快速体验演示案例 . ",
+    "url": "/static/doc/CN/training/PdLabel_PdSeg.html#ai-studio-%E7%AC%AC%E4%B8%89%E6%96%B9%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90",
+    "relUrl": "/training/PdLabel_PdSeg.html#ai-studio-第三方教程推荐"
+  },"17": {
+    "doc": "PaddleSeg 图像分割",
+    "title": "PaddleSeg 图像分割",
+    "content": " ",
+    "url": "/static/doc/CN/training/PdLabel_PdSeg.html",
+    "relUrl": "/training/PdLabel_PdSeg.html"
+  },"18": {
+    "doc": "PaddleX 分类/检测/分割",
+    "title": "一、图像分类（快速在 PaddleLabel 标注的花朵分类数据集上展示如何应用 PaddleX 训练 MobileNetV3_ssld 网络）",
+    "content": "PaddleLabel 标注数据+PaddleX 训练预测=快速完成一次图像分类的任务 . ",
+    "url": "/static/doc/CN/training/PdLabel_PdX.html#%E4%B8%80%E5%9B%BE%E5%83%8F%E5%88%86%E7%B1%BB%E5%BF%AB%E9%80%9F%E5%9C%A8-paddlelabel-%E6%A0%87%E6%B3%A8%E7%9A%84%E8%8A%B1%E6%9C%B5%E5%88%86%E7%B1%BB%E6%95%B0%E6%8D%AE%E9%9B%86%E4%B8%8A%E5%B1%95%E7%A4%BA%E5%A6%82%E4%BD%95%E5%BA%94%E7%94%A8-paddlex-%E8%AE%AD%E7%BB%83-mobilenetv3_ssld-%E7%BD%91%E7%BB%9C",
+    "relUrl": "/training/PdLabel_PdX.html#一图像分类快速在-paddlelabel-标注的花朵分类数据集上展示如何应用-paddlex-训练-mobilenetv3_ssld-网络"
+  },"19": {
+    "doc": "PaddleX 分类/检测/分割",
+    "title": "1. 数据准备",
+    "content": ". | 首先使用PaddleLabel对自制的花朵数据集进行标注，其次使用Split Dataset功能分割数据集，最后导出数据集 | 从PaddleLabel导出后的内容全部放到自己的建立的文件夹下，例如dataset/flower_clas_dataset，其目录结构如下： | . ├── flower_clas_dataset │ ├── image │ │ ├── flower1.jpg │ │ ├── flower2.jpg │ │ ├── ... │ ├── labels.txt │ ├── test_list.txt │ ├── train_list.txt │ ├── val_list.txt . ",
+    "url": "/static/doc/CN/training/PdLabel_PdX.html#1-%E6%95%B0%E6%8D%AE%E5%87%86%E5%A4%87",
+    "relUrl": "/training/PdLabel_PdX.html#1-数据准备"
+  },"20": {
+    "doc": "PaddleX 分类/检测/分割",
+    "title": "2. 训练",
+    "content": "2.1 安装必备的库 . 2.1.1 安装 paddlepaddle . # 您的机器安装的是 CUDA9 或 CUDA10，请运行以下命令安装 pip install paddlepaddle-gpu -i https://mirror.baidu.com/pypi/simple # 您的机器是CPU，请运行以下命令安装 # pip install paddlepaddle . 2.1.2 安装 PaddleX 以及依赖项 . pip install \"paddlex&lt;=2.0.0\" pip install scikit-image pip install threadpoolctl==2.0.0 -i https://mirror.baidu.com/pypi/simple pip install scikit-learn==0.23.2 . 2.2 准备训练 . 2.2.1 配置 GPU . # jupyter中使用paddlex需要设置matplotlib import matplotlib matplotlib.use('Agg') # 设置使用0号GPU卡（如无GPU，执行此代码后仍然会使用CPU训练模型） import os os.environ['CUDA_VISIBLE_DEVICES'] = '0' import paddlex as pdx . 2.2.2 定义图像处理流程 transforms . 定义训练和验证过程中，图像的处理流程，其中训练过程包括了部分数据增强操作（验证时不需要），如在本示例中，训练过程使用了RandomCrop和RandomHorizontalFlip两种数据增强方式，更多图像预处理流程 transforms 的使用可参见paddlex.cls.transforms . from paddlex import transforms as T train_transforms = T.Compose([ T.RandomCrop(crop_size=224), T.RandomHorizontalFlip(), T.Normalize()]) eval_transforms = T.Compose([ T.ResizeByShort(short_size=256), T.CenterCrop(crop_size=224), T.Normalize() ]) . 2.2.3 定义数据集 Dataset 使用 PaddleX 内置的数据集读取器读取训练和验证数据集。在图像分类中使用ImageNet格式的数据集，因此这里采用pdx.datasets.ImageNet来加载数据集，该接口的介绍可参见文档paddlex.datasets.ImageNet . train_dataset = pdx.datasets.ImageNet( data_dir='./dataset/flower_clas_dataset', file_list='./dataset/flower_clas_dataset/train_list.txt', label_list='./dataset/flower_clas_dataset/labels.txt', transforms=train_transforms) eval_dataset = pdx.datasets.ImageNet( data_dir='./dataset/flower_clas_dataset', file_list='./dataset/flower_clas_dataset/val_list.txt', label_list='./dataset/flower_clas_dataset/labels.txt', transforms=eval_transforms) . 2.3 模型开始训练 . 在定义好数据集后，即可选择分类模型（这里使用了MobileNetV3_large_ssld模型），开始进行训练。 更多模型训练参数介绍可参见文档paddlex.cls.MobileNetV3_large_ssld，在如下代码中，模型训练过程每间隔save_interval_epochs轮会保存一次模型在save_dir目录下，同时在保存的过程中也会在验证数据集上计算相关指标，模型训练过程中相关日志的含义可参见文档 . num_classes = len(train_dataset.labels) model = pdx.cls.MobileNetV3_large_ssld(num_classes=num_classes) model.train(num_epochs=12, train_dataset=train_dataset, train_batch_size=32, eval_dataset=eval_dataset, lr_decay_epochs=[6, 8], save_interval_epochs=3, learning_rate=0.00625, save_dir='output/mobilenetv3_large_ssld' ) . ",
+    "url": "/static/doc/CN/training/PdLabel_PdX.html#2-%E8%AE%AD%E7%BB%83",
+    "relUrl": "/training/PdLabel_PdX.html#2-训练"
+  },"21": {
+    "doc": "PaddleX 分类/检测/分割",
+    "title": "3. 预测",
+    "content": "3.1 预测 . import paddlex as pdx model = pdx.load_model('./output/mobilenetv3_large_ssld/best_model') image_path = './dataset/flower_clas_dataset/image/1008566138_6927679c8a.jpg' result = model.predict(image_path) print(\"Predict Result:\", result) . 预测的样例图片是： . 预测的结果是： . Predict Result: [{‘category_id’: 0, ‘category’: ‘sunflower’, ‘score’: 0.9999815}] 最终结论：预测正确 ✔ . ",
+    "url": "/static/doc/CN/training/PdLabel_PdX.html#3-%E9%A2%84%E6%B5%8B",
+    "relUrl": "/training/PdLabel_PdX.html#3-预测"
+  },"22": {
+    "doc": "PaddleX 分类/检测/分割",
+    "title": "二、目标检测（快速在 PaddleLabel 标注的道路标志检测数据集上展示如何应用 PaddleX 训练 YOLOv3 网络",
+    "content": "PaddleLabel 标注数据+PaddleX 训练预测=快速完成一次目标检测的任务 . ",
+    "url": "/static/doc/CN/training/PdLabel_PdX.html#%E4%BA%8C%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E5%BF%AB%E9%80%9F%E5%9C%A8-paddlelabel-%E6%A0%87%E6%B3%A8%E7%9A%84%E9%81%93%E8%B7%AF%E6%A0%87%E5%BF%97%E6%A3%80%E6%B5%8B%E6%95%B0%E6%8D%AE%E9%9B%86%E4%B8%8A%E5%B1%95%E7%A4%BA%E5%A6%82%E4%BD%95%E5%BA%94%E7%94%A8-paddlex-%E8%AE%AD%E7%BB%83-yolov3-%E7%BD%91%E7%BB%9C",
+    "relUrl": "/training/PdLabel_PdX.html#二目标检测快速在-paddlelabel-标注的道路标志检测数据集上展示如何应用-paddlex-训练-yolov3-网络"
+  },"23": {
+    "doc": "PaddleX 分类/检测/分割",
+    "title": "1. 数据准备",
+    "content": ". | 首先使用PaddleLabel对自制的路标数据集进行标注，其次使用Split Dataset功能分割数据集，最后导出数据集 | 从PaddleLabel导出后的内容全部放到自己的建立的文件夹下，例如dataset/roadsign_det_dataset，其目录结构如下： | . ├── roadsign_det_dataset │ ├── Annotations │ ├── JPEGImages │ ├── labels.txt │ ├── test_list.txt │ ├── train_list.txt │ ├── val_list.txt . ",
+    "url": "/static/doc/CN/training/PdLabel_PdX.html#1-%E6%95%B0%E6%8D%AE%E5%87%86%E5%A4%87-1",
+    "relUrl": "/training/PdLabel_PdX.html#1-数据准备-1"
+  },"24": {
+    "doc": "PaddleX 分类/检测/分割",
+    "title": "2. 训练",
+    "content": "2.1 安装必备的库 . 2.1.1 安装 paddlepaddle . # 您的机器安装的是 CUDA9 或 CUDA10，请运行以下命令安装 pip install paddlepaddle-gpu -i https://mirror.baidu.com/pypi/simple # 您的机器是CPU，请运行以下命令安装 # pip install paddlepaddle . 2.1.2 安装 PaddleX . pip install \"paddlex&lt;=2.0.0\" -i https://mirror.baidu.com/pypi/simple . 2.2 准备训练 . 2.2.1 配置 GPU . # 设置使用0号GPU卡（如无GPU，执行此代码后仍然会使用CPU训练模型） import matplotlib matplotlib.use('Agg') import os os.environ['CUDA_VISIBLE_DEVICES'] = '0' import paddlex as pdx . 2.2.2 定义图像处理流程 transforms . 定义数据处理流程，其中训练和测试需分别定义，训练过程包括了部分测试过程中不需要的数据增强操作，如在本示例中，训练过程使用了MixupImage、RandomDistort、RandomExpand、RandomCrop和RandomHorizontalFlip共 5 种数据增强方式，更多图像预处理流程paddlex.det.transforms . from paddlex import transforms as T train_transforms = T.Compose([ T.MixupImage(mixup_epoch=250), T.RandomDistort(), T.RandomExpand(), T.RandomCrop(), T.Resize(target_size=608, interp='RANDOM'), T.RandomHorizontalFlip(), T.Normalize()]) eval_transforms = T.Compose([ T.Resize(target_size=608, interp='CUBIC'), T.Normalize() ]) . 2.2.3 定义数据集 Dataset . 目标检测可使用VOCDetection格式和COCODetection两种数据集，此处由于数据集为 VOC 格式，因此采用 pdx.datasets.VOCDetection来加载数据集，该接口的介绍可参见文档paddlex.datasets.VOCDetection . train_dataset = pdx.datasets.VOCDetection( data_dir='./dataset/roadsign_det_dataset', file_list='./dataset/roadsign_det_dataset/train_list.txt', label_list='./dataset/roadsign_det_dataset/labels.txt', transforms=train_transforms, shuffle=True) eval_dataset = pdx.datasets.VOCDetection( data_dir='./dataset/roadsign_det_dataset', file_list='./dataset/roadsign_det_dataset/val_list.txt', label_list='./dataset/roadsign_det_dataset/labels.txt', transforms=eval_transforms) . 2.3 模型开始训练 . 在定义好数据集后，即可选择检测模型（这里使用了yolov3_darknet53模型），开始进行训练。 关于检测模型训练，更多参数介绍可参见文档paddlex.det.YOLOv3，在如下代码中，模型训练过程每间隔save_interval_epochs轮会保存一次模型在save_dir目录下，同时在保存的过程中也会在验证数据集上计算相关指标，模型训练过程中相关日志的含义可参见文档 . num_classes = len(train_dataset.labels) model = pdx.det.YOLOv3(num_classes=num_classes, backbone='DarkNet53') model.train( num_epochs=10, train_dataset=train_dataset, train_batch_size=8, eval_dataset=eval_dataset, learning_rate=0.000125, lr_decay_epochs=[210, 240], save_interval_epochs=20, save_dir='output/yolov3_darknet53') . ",
+    "url": "/static/doc/CN/training/PdLabel_PdX.html#2-%E8%AE%AD%E7%BB%83-1",
+    "relUrl": "/training/PdLabel_PdX.html#2-训练-1"
+  },"25": {
+    "doc": "PaddleX 分类/检测/分割",
+    "title": "3. 预测",
+    "content": "3.1 预测 . 使用模型进行预测，同时使用pdx.det.visualize将结果可视化，可视化结果将保存到./output/yolov3_mobilenetv1下，其中threshold代表Box的置信度阈值，将Box置信度低于该阈值的框过滤不进行可视化 . import paddlex as pdx model = pdx.load_model('output/yolov3_darknet53/best_model') image_path = './dataset/roadsign_det_dataset/JPEGImages/road554.png' result = model.predict(image_path) pdx.det.visualize(image_path, result, threshold=0.5, save_dir='./output/yolov3_darknet53') . 预测的样例图片如下图： . 预测的结果是： . speedlimit 0.77 预测正确 ✔ . ",
+    "url": "/static/doc/CN/training/PdLabel_PdX.html#3-%E9%A2%84%E6%B5%8B-1",
+    "relUrl": "/training/PdLabel_PdX.html#3-预测-1"
+  },"26": {
+    "doc": "PaddleX 分类/检测/分割",
+    "title": "三、图像分割（快速在 PaddleLabel 标注的狗子分割数据集上展示如何应用 PaddleX 训练 DeepLabV3 网络）",
+    "content": "PaddleLabel 标注数据+PaddleX 训练预测=快速完成一次图像语义分割的任务 . ",
+    "url": "/static/doc/CN/training/PdLabel_PdX.html#%E4%B8%89%E5%9B%BE%E5%83%8F%E5%88%86%E5%89%B2%E5%BF%AB%E9%80%9F%E5%9C%A8-paddlelabel-%E6%A0%87%E6%B3%A8%E7%9A%84%E7%8B%97%E5%AD%90%E5%88%86%E5%89%B2%E6%95%B0%E6%8D%AE%E9%9B%86%E4%B8%8A%E5%B1%95%E7%A4%BA%E5%A6%82%E4%BD%95%E5%BA%94%E7%94%A8-paddlex-%E8%AE%AD%E7%BB%83-deeplabv3-%E7%BD%91%E7%BB%9C",
+    "relUrl": "/training/PdLabel_PdX.html#三图像分割快速在-paddlelabel-标注的狗子分割数据集上展示如何应用-paddlex-训练-deeplabv3-网络"
+  },"27": {
+    "doc": "PaddleX 分类/检测/分割",
+    "title": "1. 数据准备",
+    "content": ". | 首先使用PaddleLabel对自制的狗子数据集进行标注，其次使用Split Dataset功能分割数据集，最后导出数据集 | 从PaddleLabel导出后的内容全部放到自己的建立的文件夹下，例如dataset/dog_seg_dataset，其目录结构如下： | . ├── dog_seg_dataset │ ├── Annotations │ ├── JPEGImages │ ├── labels.txt │ ├── test_list.txt │ ├── train_list.txt │ ├── val_list.txt . ",
+    "url": "/static/doc/CN/training/PdLabel_PdX.html#1-%E6%95%B0%E6%8D%AE%E5%87%86%E5%A4%87-2",
+    "relUrl": "/training/PdLabel_PdX.html#1-数据准备-2"
+  },"28": {
+    "doc": "PaddleX 分类/检测/分割",
+    "title": "2. 训练",
+    "content": "2.1 安装必备的库 . 2.1.1 安装 paddlepaddle . # 您的机器安装的是 CUDA9 或 CUDA10，请运行以下命令安装 pip install paddlepaddle-gpu -i https://mirror.baidu.com/pypi/simple # 您的机器是CPU，请运行以下命令安装 # pip install paddlepaddle . 2.1.2 安装 PaddleX . pip install \"paddlex&lt;=2.0.0\" -i https://mirror.baidu.com/pypi/simple . 2.2 准备训练 . 2.2.1 配置 GPU . # 设置使用0号GPU卡（如无GPU，执行此代码后仍然会使用CPU训练模型） import matplotlib matplotlib.use('Agg') import os os.environ['CUDA_VISIBLE_DEVICES'] = '0' import paddlex as pdx . 2.2.2 定义图像处理流程 transforms . 定义数据处理流程，其中训练和测试需分别定义，训练过程包括了部分测试过程中不需要的数据增强操作，如在本示例中，训练过程使用了RandomHorizontalFlip这种数据增强方式，更多图像预处理流程 transforms 的使用可参见paddlex.seg.transforms . from paddlex import transforms as T train_transforms = T.Compose([ T.RandomHorizontalFlip(), T.Resize(target_size=512), T.Normalize() ]) eval_transforms = T.Compose([ T.Resize(target_size=512), T.Normalize() ]) . 2.2.3 定义数据集 Dataset 语义分割使用SegDataset格式的数据集，因此采用pdx.datasets.SegDataset来加载数据集，该接口的介绍可参见文档paddlex.datasets.SegDataset . train_dataset = pdx.datasets.SegDataset( data_dir='./dataset/dog_seg_dataset', file_list='./dataset/dog_seg_dataset/train_list.txt', label_list='./dataset/dog_seg_dataset/labels.txt', transforms=train_transforms, shuffle=True) eval_dataset = pdx.datasets.SegDataset( data_dir='./dataset/dog_seg_dataset', file_list='./dataset/dog_seg_dataset/val_list.txt', label_list='./dataset/dog_seg_dataset/labels.txt', transforms=eval_transforms) . 2.3 模型开始训练 . 在定义好数据集后，即可选择分割模型（这里使用了deeplabv3模型），开始进行训练。 . 更多训练模型的参数介绍可参见文档paddlex.seg.DeepLabv3，在如下代码中，模型训练过程每间隔save_interval_epochs轮会保存一次模型在save_dir目录下，同时在保存的过程中也会在验证数据集上计算相关指标，模型训练过程中相关日志的含义可参见文档 . num_classes = len(train_dataset.labels) model = pdx.seg.DeepLabV3P(num_classes=num_classes, backbone='ResNet50_vd') model.train( num_epochs=40, train_dataset=train_dataset, train_batch_size=4, eval_dataset=eval_dataset, learning_rate=0.01, save_interval_epochs=1, save_dir='output/deeplab', use_vdl=True) . ",
+    "url": "/static/doc/CN/training/PdLabel_PdX.html#2-%E8%AE%AD%E7%BB%83-2",
+    "relUrl": "/training/PdLabel_PdX.html#2-训练-2"
+  },"29": {
+    "doc": "PaddleX 分类/检测/分割",
+    "title": "3. 预测",
+    "content": "3.1 预测 . 使用模型进行预测，同时使用pdx.seg.visualize将结果可视化，可视化结果将保存到./output/deeplab下，其中weight代表原图的权重，即 mask 可视化结果与原图权重因子。 . import paddlex as pdx model = pdx.load_model('output/deeplab/best_model') image_name = './dataset/dog_seg_dataset/JPEGImages/e619b17a9c1b9f085dc2712eb603171f.jpeg' result = model.predict(image_name) pdx.seg.visualize(image_name, result, weight=0.4, save_dir='./output/deeplab') . 可视化结果如下所示： . ",
+    "url": "/static/doc/CN/training/PdLabel_PdX.html#3-%E9%A2%84%E6%B5%8B-2",
+    "relUrl": "/training/PdLabel_PdX.html#3-预测-2"
+  },"30": {
+    "doc": "PaddleX 分类/检测/分割",
+    "title": "AI Studio 第三方教程推荐",
+    "content": "快速体验演示案例 . ",
+    "url": "/static/doc/CN/training/PdLabel_PdX.html#ai-studio-%E7%AC%AC%E4%B8%89%E6%96%B9%E6%95%99%E7%A8%8B%E6%8E%A8%E8%8D%90",
+    "relUrl": "/training/PdLabel_PdX.html#ai-studio-第三方教程推荐"
+  },"31": {
+    "doc": "PaddleX 分类/检测/分割",
+    "title": "PaddleX 分类/检测/分割",
+    "content": " ",
+    "url": "/static/doc/CN/training/PdLabel_PdX.html",
+    "relUrl": "/training/PdLabel_PdX.html"
+  },"32": {
+    "doc": "项目简介",
+    "title": "最新动态",
+    "content": ". | 【2023-01-17】 :fire: PaddleLabel 1.0 版本发布！ . | 【OCR】新增 OCR 项目标注能力，支持 PP-OCRv3 模型预标注 | 【导入/导出】新增 EISeg 格式导入，新增大量自动化测试，修复诸多导入导出 bug | 【文档】重新梳理后文档内容简洁清晰并和软件一同打包发布，进一步降低上手难度 | . | 【2022-11-30】 :fire: PaddleLabel 0.5 版本发布！ . | 【界面】全面升级分类、检测及分割的前端标注界面体验，显著提升标注流畅度 | 【分类】新增 PPLCNet 预训练模型，为分类功能提供预标注能力 | 【检测】新增 PicoDet 预训练模型，为检测功能提供预标注能力 | 【分割】(1)优化语义分割及实例分割关于实例的区分，实例分割通过’确认轮廓’来区分实例; (2)新增根据类别或根据实例选择颜色显示模式; (3)修复交互式分割 localStorage 超限问题 | . | . 更多动态 . | 【2022-08-18】 :fire: PaddleLabel 0.1 版本发布！ . | 【分类】支持单分类与多分类标注及标签的导入导出。简单灵活实现自定义数据集分类标注任务并导出供PaddleClas进行训练 | 【检测】支持检测框标注及标签的导入导出。快速上手生成自己的检测数据集并应用到PaddleDetection | 【分割】支持多边形、笔刷及交互式等多种标注方式，支持标注语义分割与实例分割两种场景。多种分割标注方式可灵活选择，方便将导出数据应用在PaddleSeg获取个性化定制模型 | . | . ",
+    "url": "/static/doc/CN/#%E6%9C%80%E6%96%B0%E5%8A%A8%E6%80%81",
+    "relUrl": "/#最新动态"
+  },"33": {
+    "doc": "项目简介",
+    "title": "简介",
+    "content": "PaddleLabel 是基于飞桨 PaddlePaddle 各个套件的功能提供的配套标注工具。目前支持对分类、检测、分割、OCR 四种常见的计算机视觉任务数据集进行标注和管理，除基础的手动标注功能外也支持深度学习辅助标注，可以有效地提升标注效率。您可以使用 PaddleLabel 快捷高效地标注自定义数据集，之后将其导出用于飞桨提供的其他套件的训练。 . PaddleLabel 的代码分布于三个项目中，本项目包含 PaddleLabel 的 Web 后端实现。PaddleLabel-Frontend 是基于 React 和 Ant Design 构建的 PaddleLabel 前端，PaddleLabel-ML 是基于飞桨实现的自动和交互式深度学习辅助标注后端。 . ",
+    "url": "/static/doc/CN/#%E7%AE%80%E4%BB%8B",
+    "relUrl": "/#简介"
+  },"34": {
+    "doc": "项目简介",
+    "title": "特性",
+    "content": ". | 简单 一行 pip install 安装，手动标注直观易操作，机器学习后端安装即用无需复杂配置，极易上手 | 高效 支持交互式分割和多种预标注，显著提升标注效率和精度 | 灵活 分类支持单分类和多分类标注，分割支持多边形、笔刷及交互式分割等多种工具，方便您根据场景灵活选择标注方式 | 全流程 与飞桨其它套件紧密配合，帮助您高效完成数据标注、模型训练与导出等全流程操作 | . ",
+    "url": "/static/doc/CN/#%E7%89%B9%E6%80%A7",
+    "relUrl": "/#特性"
+  },"35": {
+    "doc": "项目简介",
+    "title": "技术交流",
+    "content": ". | 如果您有任何使用问题、产品建议、功能需求, 可以提交 Issues与开发团队交流 | 欢迎您扫码加入 PaddleLabel 微信群和小伙伴们一起交流学习。如果二维码过期可以添加开发同学微信 linhandev 进群 | . ",
+    "url": "/static/doc/CN/#%E6%8A%80%E6%9C%AF%E4%BA%A4%E6%B5%81",
+    "relUrl": "/#技术交流"
+  },"36": {
+    "doc": "项目简介",
+    "title": "使用教程",
+    "content": ". | 安装指南 | 快速开始 | . 进行标注 . | 图像分类 | 目标检测 | 语义分割 | 实例分割 | OCR | . 深度学习辅助标注 . | 机器学习后端安装指南 | 自动预标注使用方法 | 交互式分割使用方法 | . 训练教程 . | 使用 PaddleClas 进行训练 | 使用 PaddleDet 进行训练 | 使用 PaddleSeg 进行训练 | 使用 PaddleX 进行训练 | . AI Studio 项目 . | 花朵分类 | 道路标志检测 | 图像分割 | 如何使用 PaddleX 进行训练 | . ",
+    "url": "/static/doc/CN/#%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B",
+    "relUrl": "/#使用教程"
+  },"37": {
+    "doc": "项目简介",
+    "title": "社区贡献",
+    "content": "贡献者 . 感谢下列开发者参与或协助 PaddleLabel 的开发、维护、测试等：linhandev、cheneyveron、RotPublic、ztty8888、haoyuying、monkeycc、geoyee、Youssef-Harby、yzl19940819 . 参与开发 . 我们十分欢迎感兴趣的大佬加入项目的开发和维护。如果您对参与项目建设感兴趣，请通过微信交流群联系开发团队。有关后端实现的详细信息，请参阅开发者指南。 . (返回顶部) . ",
+    "url": "/static/doc/CN/#%E7%A4%BE%E5%8C%BA%E8%B4%A1%E7%8C%AE",
+    "relUrl": "/#社区贡献"
+  },"38": {
+    "doc": "项目简介",
+    "title": "学术引用",
+    "content": "@misc{paddlelabel2022, title={PaddleLabel, an effective and flexible tool for data annotation}, author={PaddlePaddle Authors}, howpublished = {\\url{https://github.com/PaddleCV-SIG/PaddleLabel}}, year={2022} } . ",
+    "url": "/static/doc/CN/#%E5%AD%A6%E6%9C%AF%E5%BC%95%E7%94%A8",
+    "relUrl": "/#学术引用"
+  },"39": {
+    "doc": "项目简介",
+    "title": "项目简介",
+    "content": "| 中文 | English | . 飞桨智能标注，让标注快人一步 . ",
+    "url": "/static/doc/CN/",
+    "relUrl": "/"
+  },"40": {
+    "doc": "自动预标注使用方法",
+    "title": "自动预标注使用方法",
+    "content": ". | 模型列表 | 前置步骤 | 进行设置 | 使用自动预标注 | . PaddleLabel 基于 PaddleClas，PaddleDetection 和 PaddleOCR 中的预训练模型为分类，检测和 OCR 项目提供自动预标注能力。您只需在“自动推理设置”中进行简单配置即可启用这一功能。本文档以分类项目为例介绍自动预标注功能的配置和使用方法，检测和 OCR 项目中的使用流程基本完全相同。 . ",
+    "url": "/static/doc/CN/ML/auto_inference.html",
+    "relUrl": "/ML/auto_inference.html"
+  },"41": {
+    "doc": "自动预标注使用方法",
+    "title": "模型列表",
+    "content": "PaddleLabel 目前支持的模型和使用各模型所需的 PaddleLabel-ML 版本如下 . | 分类 . | PP-LCNetV2 v0.5.0+ {: .label} | . | 检测 . | PP-PicoDet v0.5.0+ {: .label} | . | OCR . | PP-OCRv3 v0.5.0+ {: .label} | . | . ",
+    "url": "/static/doc/CN/ML/auto_inference.html#%E6%A8%A1%E5%9E%8B%E5%88%97%E8%A1%A8",
+    "relUrl": "/ML/auto_inference.html#模型列表"
+  },"42": {
+    "doc": "自动预标注使用方法",
+    "title": "前置步骤",
+    "content": ". | 在使用自动预标注功能前请先参考 此文档 安装 PaddleLabel-ML 辅助标注后端 . | 启动 PaddleLabel 和 PaddleLabel-ML . 打开两个命令行终端，第一个输入 paddlelabel 并回车，第二个输入 paddlelabel-ml 并回车，分别启动项目的 web 部分和辅助标注部分 . | 创建项目 . 您可以参考快速体验文档创建内置样例项目或导入一个数据集 . | . ",
+    "url": "/static/doc/CN/ML/auto_inference.html#%E5%89%8D%E7%BD%AE%E6%AD%A5%E9%AA%A4",
+    "relUrl": "/ML/auto_inference.html#前置步骤"
+  },"43": {
+    "doc": "自动预标注使用方法",
+    "title": "进行设置",
+    "content": ". | 点击“项目总览”页面上方“自动推理设置”按钮进入设置页面 | 填写机器学习后端网址 . 默认网址为http://127.0.0.1:1234。这一网址可以通过观察 paddlelabel-ml 启动时的命令行输出确定 . | 点击模型选择下拉菜单选择一个模型 | 选择是否使用预标注标签 | . | 此处如选择是 . | 预标注模型的推理结果类别将被原样添加到图像标注中 | 如果模型推理出了一个项目中没有的类别，会自动向项目中添加该类别标签 | . | 此处如选择否，则不直接使用预标注模型标签 . | 您需要提供预标注模型标签与项目中标签的对应关系。比如指定预标注模型的标签“咖啡杯”对应项目中的标签“杯子”，标注时如果模型对一张图片推理结果为“咖啡杯”，则会向该图片添加“杯子”类别 | 多个预标注模型的标签可以对应同一个项目中的标签，比如使用下图中的配置，“咖啡壶”和“咖啡杯”类别的推理结果都会向图片中添加“咖啡用具”标签 | 一个模型标签只能对应到一个项目中的标签 | 注意在这个模式下，辅助标注流程会忽略所有未提供对应关系的预标注模型标签 | . | . | 完成设置后，点击确定保存，跳转回项目总览页面 | . ",
+    "url": "/static/doc/CN/ML/auto_inference.html#%E8%BF%9B%E8%A1%8C%E8%AE%BE%E7%BD%AE",
+    "relUrl": "/ML/auto_inference.html#进行设置"
+  },"44": {
+    "doc": "自动预标注使用方法",
+    "title": "使用自动预标注",
+    "content": ". | 预标注模型会在您进入标注页面时自动加载 | 当您翻到一张之前没有进行过预标注的图片时会自动触发推理。您也可以点击右侧工具栏中的“自动推理”按钮手动触发一次推理 | 您可以通过调节右侧工具栏中的“推理阈值”控制预标注结果的数量 | . ",
+    "url": "/static/doc/CN/ML/auto_inference.html#%E4%BD%BF%E7%94%A8%E8%87%AA%E5%8A%A8%E9%A2%84%E6%A0%87%E6%B3%A8",
+    "relUrl": "/ML/auto_inference.html#使用自动预标注"
+  },"45": {
+    "doc": "图像分类",
+    "title": "图像分类手动标注",
+    "content": ". | 单分类数据集格式 . | ImageNet | ImageNet-txt | . | 多分类数据集格式 . | ImageNet-txt | . | 数据标注 | 下一步 | . 有关数据集导入，导出，训练/验证/测试集划分步骤请参快速开始文档 . PaddleLabel 支持单分类和多分类两种图像分类项目。其中单分类项目一张图片只能对应一个类别，多分类项目一张图片可以对应多个类别。 . ",
+    "url": "/static/doc/CN/manual/classification.html#%E5%9B%BE%E5%83%8F%E5%88%86%E7%B1%BB%E6%89%8B%E5%8A%A8%E6%A0%87%E6%B3%A8",
+    "relUrl": "/manual/classification.html#图像分类手动标注"
+  },"46": {
+    "doc": "图像分类",
+    "title": "单分类数据集格式",
+    "content": "ImageNet . v0.1.0+ . ImageNet 格式数据集中，图像所在文件夹名称即为图像类别。 . 样例格式如下，标注 # 可选 的文件导入时可以不提供： . 数据集路径 ├── Cat │ ├── cat-1.jpg │ ├── cat-2.png │ ├── cat-3.webp │ └── ... ├── Dog │ ├── dog-1.jpg │ ├── dog-2.jpg │ ├── dog-3.jpg │ └── ... ├── monkey.jpg ├── train_list.txt # 可选 ├── val_list.txt # 可选 ├── test_list.txt # 可选 └── labels.txt # 可选 # labels.txt Monkey Mouse Cat # train_list.txt Cat/cat-1.jpg 2 . 根据文件夹名表示类别的规则，上述数据集导入后，三张猫和三张狗的图片会有分类，monkey.jpg 没有分类。 . 如果提供了 labels.txt 文件，该文件中的类别会在开始导入图像之前按顺序创建。此后如果文件夹名表示的类别不存在也会自动创建，因此 labels.txt 不需要包含所有文件夹名。 . ImageNet 格式仅以图像所在文件夹判断图像分类，train/val/test_list.txt 文件中的子集划分信息会被导入，但是其中的类别信息不会被导入。如果您数据集的类别信息保存在三个列表文件中，请使用 ImageNet-txt 格式 . ImageNet-txt . v1.0.0+ . ImageNet-txt 格式的数据集在 train/val/test_list.txt 文件中记录图像的类别。 . 样例格式如下： . 数据集路径 ├── image │ ├── cat-1.jpg │ ├── cat-2.png │ ├── cat-3.webp │ ├── dog-1.jpg │ ├── dog-2.jpg │ ├── dog-3.jpg │ ├── monkey.jpg │ └── ... ├── train_list.txt # 可选 ├── val_list.txt # 可选 ├── test_list.txt # 可选 └── labels.txt # 可选 # labels.txt Monkey Mouse Cat # train_list.txt image/dog-1.jpg Dog image/cat-2.png 2 # 对应 labels.txt 中第三行类别 Cat . labels.txt 的处理同 ImageNet 格式。在三个列表文件中，每行使用空格分隔，第一部分为到一个图片文件的路径，第二部分为一个字符串或一个数字代表类别。 . | labels.txt 中类别编号从 0 开始，所以数字类别 i 将对应 labels.txt 中第 i+1 行 | 字符串类别的处理同 ImageNet 格式中的文件夹名，如果不存在对应类别将在导入过程中自动创建 | . 三个列表文件以空格为分隔符，请不要在文件路径或类别名称中使用空格 . ",
+    "url": "/static/doc/CN/manual/classification.html#%E5%8D%95%E5%88%86%E7%B1%BB%E6%95%B0%E6%8D%AE%E9%9B%86%E6%A0%BC%E5%BC%8F",
+    "relUrl": "/manual/classification.html#单分类数据集格式"
+  },"47": {
+    "doc": "图像分类",
+    "title": "多分类数据集格式",
+    "content": "ImageNet-txt . v0.1.0+ . 多分类的 ImageNet-txt 格式和单分类的基本相同，唯一区别是多分类的三个列表文件中，每行文件名后面可以跟多个空格分隔的表示类别的数字或字符串。 . 样例格式如下： . 数据集路径 ├── image │ ├── cat.jpg │ ├── dog.jpg │ └── monkey.jpg ├── labels.txt # 可选 ├── test_list.txt # 可选 ├── train_list.txt # 可选 └── val_list.txt # 可选 # labels.txt cat dog yellow black # train_list.txt image/cat.jpg 0 2 # 对应第一行和第3行类别，cat，yellow image/dog.jpg 1 3 image/monkey.jpg monkey yellow black . 三个列表文件以空格为分隔符，请不要在文件路径或类别名称中使用空格 . ",
+    "url": "/static/doc/CN/manual/classification.html#%E5%A4%9A%E5%88%86%E7%B1%BB%E6%95%B0%E6%8D%AE%E9%9B%86%E6%A0%BC%E5%BC%8F",
+    "relUrl": "/manual/classification.html#多分类数据集格式"
+  },"48": {
+    "doc": "图像分类",
+    "title": "数据标注",
+    "content": "创建项目后会自动跳转到标注页面 . | 您可以点击右侧类别列表下方“添加类别”按钮创建一个新类别 | 您可以点击一个类别右侧的 x 删除该类别。注：如果有图片属于该类别，该类别不能被删除 | 点击类别进行标注，单分类项目仅允许选中一个类别，多分类项目可以同时选中多个类别。每次选择后标注结果将自动保存，页面上方将提示“保存成功” | 完成一张图片标注后点击画布左右 &lt; &gt; 按钮切换图片 | . ",
+    "url": "/static/doc/CN/manual/classification.html#%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8",
+    "relUrl": "/manual/classification.html#数据标注"
+  },"49": {
+    "doc": "图像分类",
+    "title": "下一步",
+    "content": "您可以继续浏览自动预标注使用方法了解如何使用 PaddleLabel-ML 提高分类项目标注效率。 . ",
+    "url": "/static/doc/CN/manual/classification.html#%E4%B8%8B%E4%B8%80%E6%AD%A5",
+    "relUrl": "/manual/classification.html#下一步"
+  },"50": {
+    "doc": "图像分类",
+    "title": "图像分类",
+    "content": " ",
+    "url": "/static/doc/CN/manual/classification.html",
+    "relUrl": "/manual/classification.html"
+  },"51": {
+    "doc": "目标检测",
+    "title": "目标检测手动标注",
+    "content": ". | 数据集格式 . | PASCAL VOC | COCO | YOLO | . | 数据标注 | 下一步 | . 有关数据集导入，导出，训练/验证/测试集划分步骤请参快速开始文档 . ",
+    "url": "/static/doc/CN/manual/detection.html#%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E6%89%8B%E5%8A%A8%E6%A0%87%E6%B3%A8",
+    "relUrl": "/manual/detection.html#目标检测手动标注"
+  },"52": {
+    "doc": "目标检测",
+    "title": "数据集格式",
+    "content": "PaddleLabel 目前支持 PASCAL VOC，COCO 和 YOLO 三种目标检测数据集格式 . PASCAL VOC . {: .label } v0.1.0+ . PASCAL VOC 格式的标注信息保存在 xml 格式文件中，每张图片对应一个 xml 文件。您可以通过列表文件，相同文件名或 xml 文件内容三种方式将图片和标注 xml 对应起来，该规则细节将在后文描述 . 样例格式如下： . 数据集路径 ├── Annotations │ ├── 0001.xml │ ├── 0002.xml │ ├── 0003.xml │ └── ... ├── JPEGImages │ ├── 0001.jpg │ ├── 0002.jpg │ ├── 0003.jpg │ └── ... ├── labels.txt # 可选 ├── test_list.txt # 可选 ├── train_list.txt # 可选 └── val_list.txt # 可选 . PaddleLabel 目前导入/导出用到的 VOC 格式 xml 文件内容如下 . {: .note} 此处没有列出的节点在导入时不会被考虑，导出时也不会被包含 . &lt;annotation&gt; &lt;folder&gt;JPEGImages&lt;/folder&gt; # 可选：如果不存在folder节点，将使用默认值 JPEGImages &lt;filename&gt;&lt;/filename&gt; # 如果不存在filename节点，将使用默认值空字符串 \"\" &lt;size&gt; # 目前导入过程中会读取图像确认其宽高，以下三个值不会被使用 &lt;width&gt;&lt;/width&gt; &lt;height&gt;&lt;/height&gt; &lt;depth&gt;&lt;/depth&gt; &lt;/size&gt; &lt;object&gt; &lt;name&gt;&lt;/name&gt; &lt;bndbox&gt; &lt;xmin&gt;&lt;/xmin&gt; &lt;ymin&gt;&lt;/ymin&gt; &lt;xmax&gt;&lt;/xmax&gt; &lt;ymax&gt;&lt;/ymax&gt; &lt;/bndbox&gt; &lt;/object&gt; &lt;/annotation&gt; . train/val/test_list.txt 中每行是一组图像和标注 xml 的对应关系，路径需为相对数据集路径的相对路径，每行以空格为分隔符 . 示例格式如下： . JPEGImages/0001.jpg Annotations/0001.xml JPEGImages/0002.jpg Annotations/0002.xml ... 新建 VOC 格式检测项目时，首先会扫描您填写的数据集路径下所有的图片和以 .xml 结尾的标注文件（不考虑大小写，类似.XML 结尾的文件也会被认为是标注信息）。之后 PaddleLabel 将顺序使用以下三个规则将图片和标注进行匹配。 . | 如果数据集路径下存在 train/val/test_list.txt 列表文件，将首先按照列表文件内容确定对应关系 | 无法通过列表文件内容确定对应的 .xml 文件，将对应到数据集路径下文件名相同的图片。如 JPEGImages/0001.xml 对应到 Annotations/0001.jpg（二者文件名以.分割去除拓展名后都是 0001） | 依然无法确定对应关系的 .xml 文件将与位于/数据集路径/folder/filename的图片对应。上述路径中的folder和filename从该 xml 文件中解析 . | folder： . | 如果 xml 中没有folder节点，将使用默认值 JPEGImages | 如果folder节点存在，但内容为空，将认为图像文件直接位于/数据集路径/filename。 | . | filename：xml 中 filename 节点的内容，如 xml 中不存在filename节点将使用默认值空字符串 | . | . 如果导入图像后发现有 xml 标注信息的图像中没有标注，可以切换到 PaddleLabel 运行的命令行查看是否有报错。 . COCO . {: .label } v0.1.0+ . COCO 格式将整个数据集的所有标注信息存在一个（或少数几个）json文件中。这里列出了 COCO 和检测相关的部分格式，更多细节请访问COCO 官网查看。 . {: .note} 下文没有列出的项不会在导入时被保存到数据库中和最终导出，比如图像的 date_captured 属性 . {: .note} 所有 COCO 格式的项目都不支持在导入时以 train/val/test_list.txt 指定数据集划分和使用 labels.txt 文件创建分类 . 样例格式如下： . 数据集路径 ├── image │ ├── 0001.jpg │ ├── 0002.jpg │ ├── 0003.jpg │ └── ... ├── train.json ├── val.json └── test.json . COCO 文件的格式如下： . { \"info\": info, \"images\": [image], \"annotations\": [annotation], \"licenses\": [license], \"categories\": [category], } image{ \"id\": int, \"width\": int, // 目前导入时会读取图片获取其大小 \"height\": int, // 不会使用此处的宽高 \"file_name\": str, } annotation{ \"id\": int, \"image_id\": int, \"category_id\": int, \"area\": float, \"bbox\": [x, y, width, height], } category{ \"id\": int, \"name\": str, \"supercategory\": str, \"color\": str // PaddleLabel 加入的项，COCO官方定义中没有这一项。标签颜色会被导出，导入时如果这项存在会给这一类别赋color指定的颜色 } . 新建 COCO 类型项目时，填写的数据集路径下所有图片都将被导入，标签和图像对应规则为：image[‘file_name’]中最后的文件名和盘上图片的文件名相同（大小写敏感）。 . 这一设计是为了让对应逻辑尽可能简单并保持一定的跨平台兼容性。推荐将所有图片放在同一个文件夹下以避免图片重名，导致 coco 标注信息中的一条图片记录对应到盘上的多张图片。一些标注工具导出的 coco 标注记录中，image[‘file_name’]项可能是完整的文件路径或相对数据集根目录的路径，这种情况下我们用’/’和’\\‘分割这个路径，取分割结果的最后一段为文件名。因此请避免在文件名中使用’/’和’\\‘。 . YOLO . {: .label } v0.5.0+ . YOLO 格式每张图像对应一个 txt 格式的标注信息文件，二者文件名除拓展名部分相同。 . 样例格式如下： . 数据集路径 ├── Annotations │ ├── 0001.txt │ ├── 0002.txt │ ├── 0003.txt │ └── ... ├── JPEGImages │ ├── 0001.jpg │ ├── 0002.jpg │ ├── 0003.jpg │ └── ... ├── labels.txt ├── test_list.txt ├── train_list.txt └── val_list.txt . txt 文件内容样例如下： . 0 0.4 0.5 0.7 0.8 . 其格式为：标签id bb中心宽方向位置/图像宽 bb中心高方向位置/图像高 bb宽/图像宽 bb高/图像高。其中标签id 从 0 开始。导入时没有标注的图像可以不提供标注文件，或提供空文件。PaddleLabel 对没有标注的图像不会导出空 YOLO 标注文件 . 注意 YOLO 格式的图像和标签完全通过文件名对应，如果有两张图片文件名只有拓展名不同，比如 cat.png 和 cat.jpeg，二者都会和 cat.txt 标签文件对应。为了避免这一情况，PaddleLabel 在导入图像时遇到上述情况会将其中一个文件重命名，如将 cat.png 重命名为 cat-1.png。这可能会导致图像找不到对应标注文件。如果发现有图像提供了标注文件但是导入后没有标注，可以查看 PaddleLabel 运行的命令行输出，对文件名做出调整后重新导入项目。 . 此外建议将所有图像都放在同一文件夹下，避免重名导致图像标注对应问题。 . ",
+    "url": "/static/doc/CN/manual/detection.html#%E6%95%B0%E6%8D%AE%E9%9B%86%E6%A0%BC%E5%BC%8F",
+    "relUrl": "/manual/detection.html#数据集格式"
+  },"53": {
+    "doc": "目标检测",
+    "title": "数据标注",
+    "content": "创建项目后进入标注界面 . | 您可以点击右侧类别列表下方“添加类别”按钮创建一个新类别 | 您可以点击一个类别右侧的 x 删除该类别。注：如果有检测框属于该类别，该类别不能被删除 | 首先点击选中一个类别，之后点击左侧工具栏的“矩形”工具，在画布中按下鼠标左键拖动可以创建一个检测框。每创建一个矩形框，标注信息会自动保存 | 点击左侧工具栏”编辑”工具，可以修改矩形框两个顶点的位置 | 点击画布两侧 &lt; &gt; 左右按钮切换图片 | . ",
+    "url": "/static/doc/CN/manual/detection.html#%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8",
+    "relUrl": "/manual/detection.html#数据标注"
+  },"54": {
+    "doc": "目标检测",
+    "title": "下一步",
+    "content": "您可以继续浏览自动预标注使用方法了解如何使用 PaddleLabel-ML 提高检测项目标注效率 . ",
+    "url": "/static/doc/CN/manual/detection.html#%E4%B8%8B%E4%B8%80%E6%AD%A5",
+    "relUrl": "/manual/detection.html#下一步"
+  },"55": {
+    "doc": "目标检测",
+    "title": "目标检测",
+    "content": " ",
+    "url": "/static/doc/CN/manual/detection.html",
+    "relUrl": "/manual/detection.html"
+  },"56": {
+    "doc": "安装",
+    "title": "安装指南",
+    "content": ". | 安装方式 . | 通过 pip 安装 | 下载最新开发版 | 通过源码安装 | . | 启动 . | 更多启动选项 | . | 下一步 | 安装 FAQ . | Windows 下使用 msys2 运行 | Microsoft Visual C++ 14.1 is required | 中文兼容问题 | . | . 为了避免环境冲突，建议首先创建一个新的虚拟环境。 . conda create -n paddlelabel python=3.11 conda activate paddlelabel . ",
+    "url": "/static/doc/CN/install.html#%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97",
+    "relUrl": "/install.html#安装指南"
+  },"57": {
+    "doc": "安装",
+    "title": "安装方式",
+    "content": "您可以通过以下三种方式中的任意一种安装 PaddleLabel，其中通过 pip 安装最简单。 . 通过 pip 安装 . pip install --upgrade paddlelabel # 更新和安装后升级 paddlelabel 都是用这行命令 . 看到类似于 Successfully installed paddlelabel-0.5.0 的命令行输出即为安装成功，您可以直接继续浏览启动章节。 . 以下两种安装方式主要针对二次开发场景 . 下载最新开发版 . 详细步骤 每当 PaddleLabel 的代码有更新，项目的 Github Action 脚本都会构建一个反映最新版代码的安装包。这一安装包未经过全面测试，因此很可能存在一些问题，仅推荐为尝试最新版本使用。其中可能修复了一些 pypi 版本中存在的问题，添加了一些新功能或进行了一些性能提升。 . 安装方式为 . | 从此链接下载最新开发版安装包 | 解压该压缩文件，之后执行 | . pip install [解压出的.whl文件名，如 paddlelabel-0.5.0-py3-none-any.whl ] . 通过源码安装 . 详细步骤 如果使用Windows系统，推荐使用git bash或powershell执行以下命令。 . | 首先将后端代码克隆到本地 | . git clone https://github.com/PaddleCV-SIG/PaddleLabel . | 接下来克隆并构建前端，构建前请确保安装了 Node.js 和 npm | . git clone https://github.com/PaddleCV-SIG/PaddleLabel-Frontend cd PaddleLabel-Frontend npm install --location=global yarn yarn yarn run build . | 将构建好的前端部分，PaddleLabel-Frontend/dist/ 目录下所有文件复制到 PaddleLabel/paddlelabel/static/ 目录中 | . cd ../PaddleLabel/ mkdir paddlelabel/static/ cp -r ../PaddleLabel-Frontend/dist/* paddlelabel/static/ . | 安装 PaddleLabel 或不安装直接启动 | . # 在PaddleLabel目录下 python setup.py install # 安装PaddleLabel python -m paddlelabel # 不安装直接启动 . ",
+    "url": "/static/doc/CN/install.html#%E5%AE%89%E8%A3%85%E6%96%B9%E5%BC%8F",
+    "relUrl": "/install.html#安装方式"
+  },"58": {
+    "doc": "安装",
+    "title": "启动",
+    "content": "安装成功后，可以在终端使用如下指令启动 PaddleLabel . paddlelabel # 启动paddlelabel pdlabel # 缩写，和paddlelabel完全相同 . PaddleLabel 启动后会自动在浏览器中打开网页。 . 更多启动选项 . | -p, --port：指定运行端口。PaddleLabel 默认运行网址为http://localhost:17995 | -l, --lan：暴露服务到局域网。开启后可以在同一局域网下机器 A 上运行 PaddleLabel，在电脑 B 或平板 C 上进行标注。在 docker 中运行时也需要添加 -l | -d， --debug：在命令行中显示更详细的 log，可用于观察导入导出过程中的行为，定位问题等 | . paddlelabel --port 8000 --lan --debug # 在8000端口上运行，将服务暴露到局域网，显示详细log . 更多启动参数可以使用 paddlelabel -h 查看。 . ",
+    "url": "/static/doc/CN/install.html#%E5%90%AF%E5%8A%A8",
+    "relUrl": "/install.html#启动"
+  },"59": {
+    "doc": "安装",
+    "title": "下一步",
+    "content": "恭喜您成功运行 PaddleLabel！您可以继续浏览快速开始页面了解 PaddleLabel 的主要功能和使用流程。 . ",
+    "url": "/static/doc/CN/install.html#%E4%B8%8B%E4%B8%80%E6%AD%A5",
+    "relUrl": "/install.html#下一步"
+  },"60": {
+    "doc": "安装",
+    "title": "安装 FAQ",
+    "content": "Windows 下使用 msys2 运行 . 如果您在 Windows 中使用 PaddleLabel 时遇到了不容易解决的问题，如无法使用中文，可以尝试在 Windows Linux 子系统或 msys2 环境中运行。以下为在 msys2 中运行方法 . | 访问 msys2 官网下载安装 msys2，或使用 chocolatey 安装 | . choco install msys2 . | 运行 msys2 msys，安装项目依赖 | . pacman -S python . Microsoft Visual C++ 14.1 is required . 如果 pip install paddlelabel 命令报错，可以使用 pip install numpy 尝试单独安装 numpy。如果安装 numpy 时在命令行中看到如下报错说明缺少 msvc 依赖。 . error: Microsoft Visual C++ 14.1 is required. Get it with \"Build Tools for Visual Studio\" . | 访问命令行给出的网址下载 Microsoft Visual C++ 构建工具，下载完成后运行 | 点击左侧 “使用 C++ 的桌面开发” | 选中一个最新的 MSVC | 根据 Windows 版本选中一个最新的 Windows 10/11 SDK | 点击右下角安装/修改 | . 中文兼容问题 . 团队在开发和测试的过程中已经尽最大努力发现和解决 Windows 下的中文路径/字符编码兼容问题。如果您依然遇到此类问题可以通过Issue向我们反馈 . 这类问题大概有三种原因 . | 用户名中包含中文导致 ~ 路径包含中文 | 数据集路径中包含中文 | 数据集中的文件/项目使用的类别包含中文 | . 第一类问题可以通过打开 powershell 确认。如果下图选中部分中不包含中文则不存在这类问题 . | home 路径存在中文很可能导致无法正常使用 conda。可以用如下方法解决 . | conda 安装过程中选择安装类型 “为所有用户安装” 或者在下一步提供一个不带中文的目标文件夹 | 安装完成后以管理员身份打开 Anaconda Prompt 在所有命令行初始化 conda . # 在 Anaconda Prompt 中输入 conda init . 观察该命令的输出是否有乱码，如果有，手动将乱码路径下的文件复制到正确的路径下。如下图中的 profile.ps1 应该复制到 C:\\Users\\测试用户\\Documents\\WindowsPowerShell\\ 文件夹中 . | 打开 powershell，用以下两行命令设置 conda 的 pip 包下载路径和环境保存路径分别为一个不含中文目录，注意两个路径不要相同 conda config --add envs_dirs [不含中文路径1] conda config --add pkgs_dirs [不含中文路径2] . | . | PaddleLabel 的数据库和样例数据集默认存放在 ~/.paddlelabel 目录下。如果您的用户名中包含中文， PaddleLabel 在启动过程中就报错退出，可以通过在启动时传入 --home 参数指定另一个路径存放 PaddleLabel 文件。如 paddlelabel --home E:\\paddlelabel\\ . | . 针对第二类问题，建议您避免在导入数据集的路径中使用中文，如将数据集文件夹放在类似 E:\\数据集文件夹\\ 的位置 . ",
+    "url": "/static/doc/CN/install.html#%E5%AE%89%E8%A3%85-faq",
+    "relUrl": "/install.html#安装-faq"
+  },"61": {
+    "doc": "安装",
+    "title": "安装",
+    "content": " ",
+    "url": "/static/doc/CN/install.html",
+    "relUrl": "/install.html"
+  },"62": {
+    "doc": "机器学习后端安装",
+    "title": "机器学习后端安装",
+    "content": ". | 前置步骤 | 安装方式 . | 通过 pip 安装 | 下载最新开发版 | 通过源码安装 | . | 启动 . | 更多启动选项 | . | 下一步 | . ",
+    "url": "/static/doc/CN/ML/install_ml.html",
+    "relUrl": "/ML/install_ml.html"
+  },"63": {
+    "doc": "机器学习后端安装",
+    "title": "前置步骤",
+    "content": "为了避免环境冲突，建议首先创建一个新的虚拟环境。 . conda create -n paddlelabel-ml python=3.10 conda activate paddlelabel-ml . 您可以选择安装 cpu 或 gpu 版本的 PaddlePaddle，cpu 版本安装简便，首次尝试推荐安装这一版本；gpu 版本推理速度更快，重度使用时体验更好。推荐安装不低于 2.2.0 版本的 PaddlePaddle。 . cpu 版本 . pip install paddlepaddle . gpu 版本 . ",
+    "url": "/static/doc/CN/ML/install_ml.html#%E5%89%8D%E7%BD%AE%E6%AD%A5%E9%AA%A4",
+    "relUrl": "/ML/install_ml.html#前置步骤"
+  },"64": {
+    "doc": "机器学习后端安装",
+    "title": "安装方式",
+    "content": "与 PaddleLabel 类似，您可以通过以下三种方式中的任意一种安装 PaddleLabel-ML，其中通过 pip 安装最简单。 . 通过 pip 安装 . pip install --upgrade paddlelabel-ml . 看到类似于 Successfully installed paddlelabel-ml-0.5.0 的命令行输出即为安装成功，您可以直接继续浏览启动章节。 . 以下两种安装方式主要针对二次开发场景 . 下载最新开发版 . 详细步骤 每当 PaddleLabel-ML 的代码有更新，项目的 Github Action 脚本都会构建一个反映最新版代码的安装包。这一安装包未经过全面测试，因此很可能存在一些问题，仅推荐为尝试最新版本使用。其中可能修复了一些 pypi 版本中存在的问题，添加了一些新功能或进行了一些性能提升。 . 下载方式为 . | 访问 Action 执行记录网页 | 选择最上面（最新）的一条执行记录，点击进入 | 滑到页面最下方，点击下载 PaddleLabel-ML_built_package 压缩包 | 解压该压缩包，之后执行 | . pip install [解压出的.whl文件名，如 paddlelabel-ml-0.5.0-py3-none-any.whl ] . 通过源码安装 . 详细步骤 ",
+    "url": "/static/doc/CN/ML/install_ml.html#%E5%AE%89%E8%A3%85%E6%96%B9%E5%BC%8F",
+    "relUrl": "/ML/install_ml.html#安装方式"
+  },"65": {
+    "doc": "机器学习后端安装",
+    "title": "启动",
+    "content": "完成上述的安装操作后，可以直接在终端使用如下指令启动 PaddleLabel-ML . paddlelabel-ml # 启动paddlelabel-ml . 看到类似 PaddleLabel-ML is running at http://localhost:1234 的输出即为启动成功。您也可以访问http://localhost:1234/running网页确定 ML 后端是否启动成功。 . PaddleLabel-ML 没有独立的前端网页，您可以继续浏览机器学习辅助标注章节了解如何在各个类型项目中配置和使用机器学习辅助标注功能。 . 更多启动选项 . PaddleLabel-ML 的默认运行网址为http://localhost:1234。如果该端口已被占用，可以通过--port或-p参数指定其他端口。此外可以通过--lan或-l参数将服务暴露到局域网。在 docker 中运行 PaddleLabel 时也需要添加--lan参数。 . paddlelabel --port 6000 --lan # 在6000端口上运行并将服务暴露到局域网 . 更多启动参数可以使用 paddlelabel-ml -h 查看。 . ",
+    "url": "/static/doc/CN/ML/install_ml.html#%E5%90%AF%E5%8A%A8",
+    "relUrl": "/ML/install_ml.html#启动"
+  },"66": {
+    "doc": "机器学习后端安装",
+    "title": "下一步",
+    "content": "恭喜您成功运行 PaddleLabel 机器学习辅助标注后端！您可以继续浏览机器学习辅助标注章节了解如何在各个类型项目中配置和使用辅助标注功能。 . ",
+    "url": "/static/doc/CN/ML/install_ml.html#%E4%B8%8B%E4%B8%80%E6%AD%A5",
+    "relUrl": "/ML/install_ml.html#下一步"
+  },"67": {
+    "doc": "实例分割",
+    "title": "实例分割手动标注",
+    "content": ". | 数据结构 . | 掩膜格式 | 多边形格式 | . | 数据标注 . | 多边形标注 | 掩膜标注 | . | 下一步 | . 有关数据集导入，导出，训练/验证/测试集划分步骤请参快速开始文档 . PaddleLabel 将语义分割和实例分割视为两种项目类型，目前二者之间不支持转换。在语义分割项目中，每个像素将有一个分类，表示其为背景或前景中的某一类别。实例分割项目在逐像素分类的基础上给每个像素一个实例 id，即不仅区分像素所属类别，而且区分同一类别下像素属于哪个实例。 . PaddleLabel 支持多种分割数据集格式，各种类型的数据集导入后都可以使用多边形和笔刷两种标注工具。数据集导出时 . | 如果导出掩膜格式，多边形标注会被转换成掩模格式 | 如果导出多边形格式，会跳过所有掩膜格式标注 | . ",
+    "url": "/static/doc/CN/manual/instance_segmentation.html#%E5%AE%9E%E4%BE%8B%E5%88%86%E5%89%B2%E6%89%8B%E5%8A%A8%E6%A0%87%E6%B3%A8",
+    "relUrl": "/manual/instance_segmentation.html#实例分割手动标注"
+  },"68": {
+    "doc": "实例分割",
+    "title": "数据结构",
+    "content": "掩膜格式 . {: .label } v0.1.0+ . 样例格式如下： . 数据集路径 ├── Annotations │ ├── A0001.tif │ ├── B0001.tif │ ├── H0002.tif │ └── ... ├── JPEGImages │ ├── A0001.jpg │ ├── B0001.png │ ├── H0002.bmp │ └── ... ├── labels.txt ├── test_list.txt ├── train_list.txt └── val_list.txt # labels.txt background - optic_disk - 128 0 0 // 对于伪彩色掩膜，需要按此结构提供每个类别的颜色。灰度掩膜的id默认为从0开始依次递增 . 多边形格式 . {: .label } v0.1.0+ . 样例格式如下： . 数据集路径 ├── image │ ├── 0001.jpg │ ├── 0002.jpg │ ├── 0003.jpg │ └── ... ├── train.json ├── val.json └── test.json . COCO 文件的格式如下： . { \"info\": info, \"images\": [image], \"annotations\": [annotation], \"licenses\": [license], \"categories\": [category], } image{ \"id\": int, \"width\": int, \"height\": int, \"file_name\": str, \"license\": int, \"flickr_url\": str, \"coco_url\": str, \"date_captured\": datetime, } annotation{ \"id\": int, \"image_id\": int, \"category_id\": int, \"segmentation\": RLE or [polygon], \"area\": float, \"bbox\": [x,y,width,height], \"iscrowd\": 0 or 1, } category{ \"id\": int, \"name\": str, \"supercategory\": str, \"color\": str // this feature is specific to PP Label. It's not in the coco spec. } . ",
+    "url": "/static/doc/CN/manual/instance_segmentation.html#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84",
+    "relUrl": "/manual/instance_segmentation.html#数据结构"
+  },"69": {
+    "doc": "实例分割",
+    "title": "数据标注",
+    "content": "多边形标注 . | 点击右侧“添加标签”，填写信息并创建标签 | 选择一个标签，点击左侧工具栏的“多边形”，在图像界面上点击需要标注的物体轮廓，形成多边形包围物体，实例分割可以反复选择同一标签标注不同的实例，需要修改多边形可以点击左侧工具栏的“编辑”进行修改 | 标注完成一个实例后，点击右上角”确定轮廓”进行实例确认 | 点击左右按钮切换图像，重复上述操作，直到所有数据标注完毕 | 下方进度展示可以查看标注进度 | . 掩膜标注 . | 点击右侧“添加标签”，填写信息并创建标签 | 选择一个标签，点击左侧工具栏的“笔刷”（鼠标悬浮可以修改笔刷大小），在图像界面上按住鼠标左键绘制需要标注的物体内部，实例分割可以反复选择同一标签标注不同的实例，，需要删除掩膜可以点击左侧工具栏的“橡皮擦”进行修改 | 标注完成一个实例后，点击右上角”确定轮廓”进行实例确认 | 点击左右按钮切换图像，重复上述操作，直到所有数据标注完毕 | 下方进度展示可以查看标注进度 | . ",
+    "url": "/static/doc/CN/manual/instance_segmentation.html#%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8",
+    "relUrl": "/manual/instance_segmentation.html#数据标注"
+  },"70": {
+    "doc": "实例分割",
+    "title": "下一步",
+    "content": "您可以继续浏览交互式分割使用方法了解如何使用 PaddleLabel-ML 提高语义分割标注效率。 . ",
+    "url": "/static/doc/CN/manual/instance_segmentation.html#%E4%B8%8B%E4%B8%80%E6%AD%A5",
+    "relUrl": "/manual/instance_segmentation.html#下一步"
+  },"71": {
+    "doc": "实例分割",
+    "title": "实例分割",
+    "content": " ",
+    "url": "/static/doc/CN/manual/instance_segmentation.html",
+    "relUrl": "/manual/instance_segmentation.html"
+  },"72": {
+    "doc": "交互式分割",
+    "title": "交互式分割使用方法",
+    "content": ". | 前置步骤 | 进行设置 | 使用交互式标注 | . PaddleLabel 基于EdgeFlow模型在语义和实例分割项目中提供交互式分割支持。 . ",
+    "url": "/static/doc/CN/ML/interactive_segmentation.html#%E4%BA%A4%E4%BA%92%E5%BC%8F%E5%88%86%E5%89%B2%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95",
+    "relUrl": "/ML/interactive_segmentation.html#交互式分割使用方法"
+  },"73": {
+    "doc": "交互式分割",
+    "title": "前置步骤",
+    "content": ". | 在使用自动预标注功能前请先参考 此文档 安装 PaddleLabel-ML 辅助标注后端 . | 启动 PaddleLabel 和 PaddleLabel-ML . 打开两个命令行终端，第一个输入 paddlelabel 并回车，第二个输入 paddlelabel-ml 并回车，分别启动项目的 web 部分和辅助标注部分 . | 创建项目 . 您可以参考快速体验文档创建内置样例项目或导入一个数据集 . | . ",
+    "url": "/static/doc/CN/ML/interactive_segmentation.html#%E5%89%8D%E7%BD%AE%E6%AD%A5%E9%AA%A4",
+    "relUrl": "/ML/interactive_segmentation.html#前置步骤"
+  },"74": {
+    "doc": "交互式分割",
+    "title": "进行设置",
+    "content": ". | 创建项目后直接进入标注页面，当鼠标悬浮在右侧工具栏“交互式分割”按钮上时，其左侧会出现“交互式分割设置”按钮，点击该按钮将弹出设置面板。 | 交互式分割设置中，机器学习后端网址为必填项，该网址可以通过观察 PaddleLabel-ML 启动时的命令行输出确定 | 模型和权重文件路径为选填项，如果留空，默认使用的模型是 HRNet18_OCR64 通用分割场景高精度模型。此外 EdgeFlow 还提供针对人像，遥感，医疗和瑕疵检测的垂类模型，您可以展开下方列表查看和下载。注意两个路径需要使用绝对路径，模型和权重文件要对应。 点击查看更多模型 | 模型类型 | 适用场景 | 模型结构 | 模型下载地址 | . | 高精度模型 | 通用场景的图像标注 | HRNet18_OCR64 | static_hrnet18_ocr64_cocolvis | . | 轻量化模型 | 通用场景的图像标注 | HRNet18s_OCR48 | static_hrnet18s_ocr48_cocolvis | . | 高精度模型 | 通用图像标注场景 | EdgeFlow | static_edgeflow_cocolvis | . | 高精度模型 | 人像标注场景 | HRNet18_OCR64 | static_hrnet18_ocr64_human | . | 轻量化模型 | 人像标注场景 | HRNet18s_OCR48 | static_hrnet18s_ocr48_human | . | 轻量化模型 | 遥感建筑物标注场景 | HRNet18s_OCR48 | static_hrnet18_ocr48_rsbuilding_instance | . | 高精度模型* | x 光胸腔标注场景 | Resnet50_Deeplabv3+ | static_resnet50_deeplab_chest_xray | . | 轻量化模型 | 医疗肝脏标注场景 | HRNet18s_OCR48 | static_hrnet18s_ocr48_lits | . | 轻量化模型* | MRI 椎骨图像标注场景 | HRNet18s_OCR48 | static_hrnet18s_ocr48_MRSpineSeg | . | 轻量化模型* | 质检铝板瑕疵标注场景 | HRNet18s_OCR48 | static_hrnet18s_ocr48_aluminium | . | 完成设置后点击“确定”，模型会在后台加载，通常时间不超过 1 分钟。加载完成后页面顶部会弹出消息模型加载完成，您可以开始使用智能标注工具了。 | . ",
+    "url": "/static/doc/CN/ML/interactive_segmentation.html#%E8%BF%9B%E8%A1%8C%E8%AE%BE%E7%BD%AE",
+    "relUrl": "/ML/interactive_segmentation.html#进行设置"
+  },"75": {
+    "doc": "交互式分割",
+    "title": "使用交互式标注",
+    "content": ". | 点击页面右侧工具栏中“交互式分割”按钮进入交互式分割模式。此时页面上一些工具会被置灰禁用，再次点击“交互式分割”按钮退出后会恢复 | 选中一个标签，之后在图像中前景位置鼠标左键点击添加正样本点；在模型过度分割，掩膜蔓延到背景的位置鼠标右键点击添加负样本点，点击可以进行多轮。此外您可以在此过程中通过调整分割阈值控制整体边缘位置 | 无论语义还是实例分割项目，推荐每次只用交互式分割标注一个对象，这样标注精度更高。完成一个对象的标注后，按下鼠标中键保存结果和清空当前控制点 | . ",
+    "url": "/static/doc/CN/ML/interactive_segmentation.html#%E4%BD%BF%E7%94%A8%E4%BA%A4%E4%BA%92%E5%BC%8F%E6%A0%87%E6%B3%A8",
+    "relUrl": "/ML/interactive_segmentation.html#使用交互式标注"
+  },"76": {
+    "doc": "交互式分割",
+    "title": "交互式分割",
+    "content": " ",
+    "url": "/static/doc/CN/ML/interactive_segmentation.html",
+    "relUrl": "/ML/interactive_segmentation.html"
+  },"77": {
+    "doc": "手动标注",
+    "title": "手动标注",
+    "content": " ",
+    "url": "/static/doc/CN/manual/manual.html",
+    "relUrl": "/manual/manual.html"
+  },"78": {
+    "doc": "机器学习辅助标注",
+    "title": "机器学习辅助标注",
+    "content": " ",
+    "url": "/static/doc/CN/ML/ml.html",
+    "relUrl": "/ML/ml.html"
+  },"79": {
+    "doc": "OCR",
+    "title": "OCR 手动标注",
+    "content": ". | 数据集格式 . | PaddleOCR txt | . | 数据标注 . | 两点矩形 | 多边形 | . | 下一步 | . 有关数据集导入，导出，训练/验证/测试集划分步骤请参快速开始文档 . PaddleLabel 目前支持 PaddleOCR txt 格式的数据集导入导出。 . ",
+    "url": "/static/doc/CN/manual/ocr.html#ocr-%E6%89%8B%E5%8A%A8%E6%A0%87%E6%B3%A8",
+    "relUrl": "/manual/ocr.html#ocr-手动标注"
+  },"80": {
+    "doc": "OCR",
+    "title": "数据集格式",
+    "content": "PaddleOCR txt . {: .label } v1.0.0+ . PaddleOCR txt 格式中，所有标注数据存储在 Label.txt 文件中。 . 样例格式如下： . 数据集路径 ├── image │ ├── 1.jpg │ ├── 2.png │ ├── 3.webp │ └── ... └── Label.txt # 可选 # Label.txt 05.jpg [{\"points\": [[x1, y1], [x2, y2], [x3, y3], [x4, y4]], \"transcription\": \"文字内容\", \"illegibility\": true, \"language\": \"ch\"}, ...] . ",
+    "url": "/static/doc/CN/manual/ocr.html#%E6%95%B0%E6%8D%AE%E9%9B%86%E6%A0%BC%E5%BC%8F",
+    "relUrl": "/manual/ocr.html#数据集格式"
+  },"81": {
+    "doc": "OCR",
+    "title": "数据标注",
+    "content": "PaddleLabel 目前支持两顶点矩形和多边形两种文字位置标画工具。完成文字位置标画后，右侧“识别结果”列表中会添加一条记录，文字内容为“待识别”。单击一条识别结果中的文字可以对其进行编辑。 . 两点矩形 . 两点矩形的四条边为水平或竖直方向，仅支持对矩形四个顶点中两个的位置进行修改。如果需要四点的自由四边形，请使用多边形工具。创建两点矩形识别记录的过程如下 . | 在左侧工具栏中点击激活“矩形”工具 | 在画布中按住鼠标左键进行拖拽创建一个矩形。松开左键后标注记录会自动保存 | 在右侧识别结果列表中修改识别记录文字内容 | . 多边形 . 多边形识别记录的所有顶点位置都可以修改，使用过程如下 . | 在左侧工具栏中点击激活“多边形”工具 | 围绕文字区域，点击鼠标左键添加多边形顶点标画文字位置。完成标画后点击鼠标右键。多边形记录会自动保存 | 在右侧识别结果列表中修改识别记录文字内容 | . ",
+    "url": "/static/doc/CN/manual/ocr.html#%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8",
+    "relUrl": "/manual/ocr.html#数据标注"
+  },"82": {
+    "doc": "OCR",
+    "title": "下一步",
+    "content": "您可以继续浏览自动预标注使用方法了解如何使用 PaddleLabel-ML 提高 OCR 项目标注效率。 . ",
+    "url": "/static/doc/CN/manual/ocr.html#%E4%B8%8B%E4%B8%80%E6%AD%A5",
+    "relUrl": "/manual/ocr.html#下一步"
+  },"83": {
+    "doc": "OCR",
+    "title": "OCR",
+    "content": " ",
+    "url": "/static/doc/CN/manual/ocr.html",
+    "relUrl": "/manual/ocr.html"
+  },"84": {
+    "doc": "快速体验",
+    "title": "快速体验",
+    "content": ". | 创建样例项目 | 项目总览 | 标注页面 | 数据集划分 | 导出数据集 | 导入数据集 | 下一步 | . 本文档将带您快速了解 PaddleLabel 的主要功能及使用流程 . ",
+    "url": "/static/doc/CN/quick_start.html",
+    "relUrl": "/quick_start.html"
+  },"85": {
+    "doc": "快速体验",
+    "title": "创建样例项目",
+    "content": "为了方便您快速体验 PaddleLabel，我们内置了一些样例项目。当 PaddleLabel 网页打开后，点击首页左上角“样例项目”按钮，即可进入样例选择页面。 . 样例页面提供了分类、检测、实例分割、语义分割和 OCR 五种类型的样例项目，点击卡片即可进入相应样例项目的总览。 . ",
+    "url": "/static/doc/CN/quick_start.html#%E5%88%9B%E5%BB%BA%E6%A0%B7%E4%BE%8B%E9%A1%B9%E7%9B%AE",
+    "relUrl": "/quick_start.html#创建样例项目"
+  },"86": {
+    "doc": "快速体验",
+    "title": "项目总览",
+    "content": "项目总览页面如下 . 总览页面上方提供了一些项目管理功能 . 点此查看各功能详细介绍 . | 去标注：跳转到标注页面。如果在总览页面的任务列表中进行了排序，标注过程中会保持这一顺序 | 项目设置：修改项目名称和描述 | 划分数据集：对数据集进行训练/验证/测试子集的划分 | 导入额外数据：向当前数据集中导入更多数据 | 导出数据集：将数据集中的图片和标注信息导出 | 自动推理设置：配置 PaddleLabel-ML 选项，使用自动推理模型在项目中进行预标注。预标注功能详细使用文档 | . ",
+    "url": "/static/doc/CN/quick_start.html#%E9%A1%B9%E7%9B%AE%E6%80%BB%E8%A7%88",
+    "relUrl": "/quick_start.html#项目总览"
+  },"87": {
+    "doc": "快速体验",
+    "title": "标注页面",
+    "content": "五种项目中具体标注工具的使用方法将在各类型项目的文档页面介绍。本节主要对标注页面的整体结构进行简介。 . 在项目总览页面中，点击页面上方或任务右侧的去标注按钮可以跳转到标注页面。 . 标注页面的介绍以实例分割为例，页面和功能区如下 . 点此查看各功能区详细介绍 . | 标注工具区域可以选择多边形，笔刷，橡皮擦，移动/缩放图片等工具。大多数标注操作支持撤销/重做。每步标注操作完成后都会自动向后端进行保存。最下方清空标注工具可以清除当前图片中的所有标注 | 上一张/下一张按钮在画布两侧，点击可以切换图片 | 标注进度在页面最下方，显示标注进度和当前图片编号 | 展示/推理设置工具栏主要包括对画布中标注元素展示的设置和基于深度学习的自动/交互式模型推理设置。顶部的项目总览按钮可以返回项目总览页面 | 标签/标注列表区域展示当前项目的标签（标注的类别，如分类项目中的类别）和当前图片中的标注（如实例分割中每条标注对应一个实例）。不同项目这一区域的展示的元素有所不同，如分类项目中没有标注列表，OCR 项目中没有标签列表，标注列表中添加了文字内容编辑功能。 | . ",
+    "url": "/static/doc/CN/quick_start.html#%E6%A0%87%E6%B3%A8%E9%A1%B5%E9%9D%A2",
+    "relUrl": "/quick_start.html#标注页面"
+  },"88": {
+    "doc": "快速体验",
+    "title": "数据集划分",
+    "content": "在深度学习模型训练过程中，通常会将全部数据划分为训练/验证/测试三个子集。在训练过程中使用训练集数据进行模型训练，使用验证集数据观察模型泛化效果。最后在训练完成后，模型交付前，使用测试集汇报最终模型效果。您可以使用“项目总览”页面顶部“划分数据集”按钮随机划分三个子集，该划分会跟随图像和标注信息一并导出。步骤如下： . | 首先访问项目总览页面 | 点击页面上方“划分数据集”按钮 | 在弹出的窗口输入训练/验证/测试集比例（和需为 100） | 点击确定，任务列表中的子集列将发生变化，项目中的所有数据将被随机划分入三个子集 | . ",
+    "url": "/static/doc/CN/quick_start.html#%E6%95%B0%E6%8D%AE%E9%9B%86%E5%88%92%E5%88%86",
+    "relUrl": "/quick_start.html#数据集划分"
+  },"89": {
+    "doc": "快速体验",
+    "title": "导出数据集",
+    "content": "完成标注后您可以将数据集导出用于模型训练。导出步骤如下： . | 首先访问项目总览页面 . | 点击总览页面顶部“导出数据集”按钮 . | 填写导出路径（需要是绝对路径），根据需要选择导出格式，点击导出 . | . ",
+    "url": "/static/doc/CN/quick_start.html#%E5%AF%BC%E5%87%BA%E6%95%B0%E6%8D%AE%E9%9B%86",
+    "relUrl": "/quick_start.html#导出数据集"
+  },"90": {
+    "doc": "快速体验",
+    "title": "导入数据集",
+    "content": "样例数据集主要是为了展示 PaddleLabel 功能，大多数情况下会导入自己的数据集进行标注和管理。导入的主要流程如下 . | 访问项目首页，PaddleLabel 默认的首页地址是http://localhost:17995。或者您可以在任意页面点击左上角点击飞桨 Logo 返回首页。 | 点击创建项目区域的任一卡片，创建对应类型的项目。这里以分类项目为例，导入刚才导出的项目 | 在创建项目页面填写项目名称，注意不要和已有项目重名 | 选择一个跟待导入数据集最接近的项目类型/数据集格式。选择后右侧区域会显示样例数据集文件排布作为参考。如果待导入的数据集不包含标注信息，请选择“无标签”，这种情况下数据集路径下所有的图片文件都将被作为标注任务导入 | 填写“数据集路径”，该路径是到一个文件夹的绝对路径，为了避免导入过程中遇到问题，请将文件夹中的文件尽可能按右侧示例进行排布。点击右侧示例中的文件可以查看文件内容格式 | 点击创建，成功后会跳转到标注页面 | . ",
+    "url": "/static/doc/CN/quick_start.html#%E5%AF%BC%E5%85%A5%E6%95%B0%E6%8D%AE%E9%9B%86",
+    "relUrl": "/quick_start.html#导入数据集"
+  },"91": {
+    "doc": "快速体验",
+    "title": "下一步",
+    "content": "恭喜您完成快速开始章节！您已经掌握了 PaddleLabel 的基本使用方法，下一步您可以在进行标注页面选择要标注的项目类型，详细了解该类型项目的数据集格式，标注方法和深度学习辅助标注配置方法。 . ",
+    "url": "/static/doc/CN/quick_start.html#%E4%B8%8B%E4%B8%80%E6%AD%A5",
+    "relUrl": "/quick_start.html#下一步"
+  },"92": {
+    "doc": "语义分割",
+    "title": "语义分割手动标注",
+    "content": ". | 数据结构 . | 掩膜格式 | COCO 格式 | . | 数据标注 . | 多边形标注 | 掩膜标注 | . | 下一步 | . 有关数据集导入，导出，训练/验证/测试集划分步骤请参快速开始文档 . PaddleLabel 将语义分割和实例分割视为两种项目类型，目前二者之间不支持转换。在语义分割项目中，每个像素有一个分类，表示其为背景或前景中的某一类别。实例分割项目在逐像素分类的基础上给每个像素一个实例 id，即不仅区分像素所属类别，而且区分同一类别下像素属于哪个实例。 . PaddleLabel 支持多种分割数据集格式，各种类型的数据集导入后都可以使用多边形和笔刷两种标注工具。数据集导出时 . | 如果导出掩膜格式，多边形标注会被转换成掩模格式 | 如果导出多边形格式，会跳过所有掩膜格式标注 | . ",
+    "url": "/static/doc/CN/manual/semantic_segmentation.html#%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2%E6%89%8B%E5%8A%A8%E6%A0%87%E6%B3%A8",
+    "relUrl": "/manual/semantic_segmentation.html#语义分割手动标注"
+  },"93": {
+    "doc": "语义分割",
+    "title": "数据结构",
+    "content": "掩膜格式 . {: .label } v0.1.0+ . 掩膜格式数据集中图片和掩膜一般都是图片文件，二者需要通过所在文件夹进行区分。创建此类型标注项目时，请将待标注图片放在JPEGImages文件夹中，将已有标注放在Annotations文件夹中，数据集路径请填写二者的上层目录（下方示例中的数据集路径）。 . 此类型项目可以导入 EISeg 保存的灰度和伪彩色掩膜。不过 EISeg 保存伪彩色掩膜时文件名格式为 图片名_pseudo.png ，导入前需要去掉伪彩色掩膜文件名中的_pseudo部分，重命名为 图片名.png。 . 样例格式如下： . 数据集路径 ├── Annotations │ ├── A0001.png │ ├── B0001.png │ ├── H0002.png │ └── ... ├── JPEGImages │ ├── A0001.jpg │ ├── B0001.png │ ├── H0002.bmp │ └── ... ├── labels.txt ├── test_list.txt ├── train_list.txt └── val_list.txt # labels.txt background optic_disk - 128 0 0 // 对于伪彩色掩膜，需要按此结构提供每个类别的颜色。灰度掩膜的id默认为从0开始依次递增 . COCO 格式 . {: .label } v0.1.0+ . COCO 格式的图片和标注对应规则可以参考检测项目中的描述。 . 样例格式如下： . 数据集路径 ├── image │ ├── 0001.jpg │ ├── 0002.jpg │ ├── 0003.jpg │ └── ... ├── train.json ├── val.json └── test.json . COCO 文件的格式如下： . { \"info\": info, \"images\": [image], \"annotations\": [annotation], \"licenses\": [license], \"categories\": [category], } image{ \"id\": int, \"width\": int, \"height\": int, \"file_name\": str, \"license\": int, \"flickr_url\": str, \"coco_url\": str, \"date_captured\": datetime, } annotation{ \"id\": int, \"image_id\": int, \"category_id\": int, \"segmentation\": RLE or [polygon], \"area\": float, \"bbox\": [x,y,width,height], \"iscrowd\": 0 or 1, } category{ \"id\": int, \"name\": str, \"supercategory\": str, \"color\": str // this feature is specific to PP Label. It's not in the coco spec. } . ",
+    "url": "/static/doc/CN/manual/semantic_segmentation.html#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84",
+    "relUrl": "/manual/semantic_segmentation.html#数据结构"
+  },"94": {
+    "doc": "语义分割",
+    "title": "数据标注",
+    "content": "语义分割项目支持多边形和笔刷/橡皮掩膜标注两种标画工具 . 多边形标注 . | 在右侧“类别列表”中点击选中一个类别，在左侧工具栏中点击“多边形”按钮激活该工具 | 在图像中沿待标注物体的边缘点击，使用多边形包围该物体。完成后点击鼠标右键结束对该物体的标注，标注结果将自动保存。这一过程可以重复多次，通常一个多边形只框选一个物体 | 如需要修改多边形顶点可以在左侧工具栏中点击“编辑”，之后拖动顶点位置 | 完成一张图片标注后点击画布两侧的 &lt; &gt; 按钮切换图片 | . 掩膜标注 . | 在右侧“类别列表”中点击选中一个类别，在左侧工具栏中点击“笔刷”按钮激活该工具 | 鼠标悬浮在笔刷工具上方时，可以在弹出的悬浮框中调整笔刷大小 | 在图像中使用笔刷标画所有属于该类别的像素。可以使用橡皮擦工具擦除过多的标画。每笔标注会自动保存 | 完成一张图片标画后点击画布两侧 &lt; &gt; 按钮切换图片 | . ",
+    "url": "/static/doc/CN/manual/semantic_segmentation.html#%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8",
+    "relUrl": "/manual/semantic_segmentation.html#数据标注"
+  },"95": {
+    "doc": "语义分割",
+    "title": "下一步",
+    "content": "您可以继续浏览交互式分割使用方法了解如何使用 PaddleLabel-ML 提高语义分割标注效率 . ",
+    "url": "/static/doc/CN/manual/semantic_segmentation.html#%E4%B8%8B%E4%B8%80%E6%AD%A5",
+    "relUrl": "/manual/semantic_segmentation.html#下一步"
+  },"96": {
+    "doc": "语义分割",
+    "title": "语义分割",
+    "content": " ",
+    "url": "/static/doc/CN/manual/semantic_segmentation.html",
+    "relUrl": "/manual/semantic_segmentation.html"
+  },"97": {
+    "doc": "进行训练",
+    "title": "进行训练",
+    "content": " ",
+    "url": "/static/doc/CN/training/training.html",
+    "relUrl": "/training/training.html"
+  }
+}
