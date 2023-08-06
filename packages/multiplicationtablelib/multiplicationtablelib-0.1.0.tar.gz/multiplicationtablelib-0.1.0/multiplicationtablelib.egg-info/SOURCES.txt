@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+multiplicationtablelib/__init__.py
+multiplicationtablelib/multiplicationtable.py
+multiplicationtablelib.egg-info/PKG-INFO
+multiplicationtablelib.egg-info/SOURCES.txt
+multiplicationtablelib.egg-info/dependency_links.txt
+multiplicationtablelib.egg-info/top_level.txt
