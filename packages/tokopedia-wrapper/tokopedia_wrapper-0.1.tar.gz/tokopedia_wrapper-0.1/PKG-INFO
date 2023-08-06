@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: tokopedia_wrapper
+Version: 0.1
+Summary: Library that wrap tokopedia.com graphql api using requests
+Author: Hariz Sufyan Munawar
+Author-email: contact@munawariz.dev
+License: Apache License
+Description-Content-Type: text/markdown
