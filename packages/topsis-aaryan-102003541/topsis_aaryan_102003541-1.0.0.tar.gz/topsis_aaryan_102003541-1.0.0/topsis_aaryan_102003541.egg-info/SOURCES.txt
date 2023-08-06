@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+aaryan/__init__.py
+aaryan/__main__.py
+topsis_aaryan_102003541.egg-info/PKG-INFO
+topsis_aaryan_102003541.egg-info/SOURCES.txt
+topsis_aaryan_102003541.egg-info/dependency_links.txt
+topsis_aaryan_102003541.egg-info/entry_points.txt
+topsis_aaryan_102003541.egg-info/top_level.txt
