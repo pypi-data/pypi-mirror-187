@@ -1,0 +1,15 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "EntroPi"
+authors = [{name = "Conrad Storz", email = "conradstorz@gmail.com"}]
+dynamic = ["version", "description"]
+
+[project.urls]
+Home = "https://github.com/conradstorz/Home_HVAC.git"
+
+[pypi]
+username = "__token__"
+password = "pypi-AgEIcHlwaS5vcmcCJDEzOTlhNmQzLTdlZWEtNGZmNi05MGQyLTVhYjUxZjI2MjBjYgACD1sxLFsiZW50cm9waSJdXQACLFsyLFsiZGY3ODdlMDgtZGRhNC00ZDEyLWJlOWItZGNmODI0Y2JiZWVmIl1dAAAGIGnGCBZBN5U19z5Bt2F3LE2lsIWPXF1tFgUuIi16tKyq"
