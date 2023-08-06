@@ -1,0 +1,37 @@
+{
+  "language": "pt",
+  "intents": {
+    "HassClimateSetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "(põe | ponha) <zona> a <temperatura>",
+            "(põe | ponha) a temperatura a <temperatura>",
+            "(põe | ponha) a temperatura <na_zona> a <temperatura>"
+          ]
+        }
+      ]
+    },
+    "HassClimateGetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "<qual> a temperatura",
+            "<qual> a temperatura <na_zona>",
+            "a que temperatura está <zona>"
+          ]
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassClimateSetTemperature": {
+        "default": "Temperature set to {{ slots.temperature }} degrees"
+      },
+      "HassClimateGetTemperature": {
+        "default": "{{ state.state }} graus"
+      }
+    }
+  }
+}
