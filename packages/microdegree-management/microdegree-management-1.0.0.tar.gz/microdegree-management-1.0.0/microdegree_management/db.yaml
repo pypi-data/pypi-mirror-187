@@ -1,0 +1,281 @@
+namespace_prefix: db
+nodes:
+  - id: installatie_mysql_via_docker
+    title: "Installatie MySQL via Docker"
+    assignments:
+      - description: "Installeren MySQL via Docker"
+        path: "oefeningen/MySQL/installeren-mysql-in-container.md"
+  - id: installatie_mysql_workbench
+    title: "Installatie MySQL Workbench"
+  - id: wat_is_een_databank
+    title: "Wat is een databank?"
+    urls:
+      - url: "http://apwt.gitbook.io/cursus-databanken/semester-1-databanken-intro/databanken/inleiding"
+        description: "Inleiding (tekst)"
+      - url: "https://youtu.be/3J-dNJzip2Q"
+        description: "Inleiding (filmpje)"
+      - url: "https://apwt.gitbook.io/cursus-databanken/semester-1-databanken-intro/databanken/voorbeeld"
+        description: "Voorbeeld"
+  - id: wat_is_een_relationele_database
+    title: "Wat is een relationele database?"
+    urls:
+      - url: "https://apwt.gitbook.io/cursus-databanken/semester-1-databanken-intro/databanken/wat-is-een-relationele-databank"
+        description: "Uitleg (tekst)"
+      - url: "https://youtu.be/wKcjQbXl-g4"
+        description: "Uitleg (filmpje)"
+  - id: basisstructuren_relationele_database
+    title: "Basisstructuren van een relationele database"
+    urls:
+      - url: "https://apwt.gitbook.io/cursus-databanken/semester-1-databanken-intro/databanken/basisstructuren-van-een-relationele-databank"
+        description: "Uitleg (tekst)"
+  - id: inleiding_tot_mysql_taal
+    title: "Inleiding tot de MySQL-taal"
+    # TODO: splitsen?
+    urls:
+      - url: "https://apwt.gitbook.io/cursus-databanken/semester-1-databanken-intro/deeltalen#structuur-van-mysql"
+        description: "Uitleg (tekst)"
+      - url: "https://youtu.be/jGGsXvdEYyI"
+        description: "Uitleg (filmpje)"
+      - url: "https://apwt.gitbook.io/cursus-databanken/semester-1-databanken-intro/deeltalen#voorbeeldinstructies-mysql"
+        description: "Voorbeelden (tekst)"
+      - url: "https://youtu.be/c4nAguBLFAc"
+        description: "Voorbeelden (filmpje)"
+  - id: essentiele_datatypes_mysql
+    title: "Essentiële datatypes"
+    assignments:
+      - description: "Oefening 1"
+        path: "oefeningen/MySQL/Essentieel/essentieel-1.md.html"
+        attachments:
+          - "oefeningen/MySQL/Essentieel/debug-script-1.sql"
+          - "oefeningen/MySQL/Essentieel/debug-script-2.sql"
+          - "oefeningen/MySQL/Essentieel/debug-script-3.sql"
+      - description: "Oefening 2"
+        path: "oefeningen/MySQL/Essentieel/essentieel-2.md.html"
+      - description: "Oefening 3"
+        path: "oefeningen/MySQL/Essentieel/essentieel-3.md.html"
+      - description: "Oefening 4"
+        path: "oefeningen/MySQL/Essentieel/essentieel-4.md.html"
+    jobs:
+      - kind: text
+        assignee: Vincent
+        status: needs_update
+      - kind: assignments
+        assignee: Vincent
+        status: needs_update
+    urls:
+      - url: "https://apwt.gitbook.io/cursus-databanken/semester-1-databanken-intro/deeltalen/ddl/datatypes"
+        description: "Uitleg (tekst)"
+  - id: mysql_create_instructie
+    title: "CREATE"
+    urls:
+      - url: "https://apwt.gitbook.io/cursus-databanken/semester-1-databanken-intro/deeltalen/ddl/create"
+        description: "Aanmaken van nieuwe databases en tabellen"
+  - id: mysql_insert_instructie
+    title: "INSERT"
+    urls:
+      # zou hier gerust wat meer mogen zeggen over andere datatypes dan tekst, feit dat ze niet hardcoded moeten zijn,...
+      - url: "https://apwt.gitbook.io/cursus-databanken/semester-1-databanken-intro/deeltalen/dml/insert"
+        description: "Uitleg (tekst)"
+    jobs:
+      - kind: text
+        assignee: Vincent
+        status: needs_update
+  - id: mysql_select_basis
+    title: "SELECT [FROM ...] [WHERE ...] [ORDER BY ...]"
+  - id: mysql_ddl_dml_et_al
+  - id: mysql_drop_instructie
+  - id: mysql_alter_instructie
+  - id: mysql_update_instructie
+  - id: mysql_delete_instructie
+  - id: mysql_like_operator
+  - id: mysql_functies
+  - id: mysql_booleaanse_operatoren
+  - id: mysql_null
+  - id: mysql_vergelijkingen
+  - id: mysql_order_asc_desc
+  - id: mysql_aggregatiefuncties
+  - id: mysql_group_by
+  - id: mysql_having
+  - id: mysql_distinct
+  - id: mysql_alle_clausules_samen
+  - id: mysql_limit
+  - id: mysql_sleutels
+  - id: mysql_unique_constraint
+  - id: mysql_generated_column
+  - id: mysql_primaire_sleutels
+    urls:
+      - url: https://apwt.gitbook.io/cursus-databanken/semester-1-databanken-intro/deeltalen/ddl/primaire-sleutel-toevoegen-verwijderen
+        description: "primaire sleutel toevoegen aan / verwijderen uit een bestaande tabel"
+      - url: "https://apwt.gitbook.io/cursus-databanken/semester-1-databanken-intro/deeltalen/ddl/tabel-aanmaken-met-sleutel"
+        description: "primaire sleutel toevoegen aan een nieuwe tabel"
+  - id: mysql_vreemde_sleutels
+    urls:
+      - url: "https://apwt.gitbook.io/cursus-databanken/semester-1-databanken-intro/deeltalen/ddl/vreemde-sleutel"
+        description: "uitleg vreemde sleutels aanmaken / verwijderen"
+    jobs:
+      - kind: text
+        assignee: Vincent
+        status: needs_update
+  - id: mysql_een_op_een
+  - id: mysql_een_op_veel
+  - id: mysql_veel_op_veel
+  - id: mysql_cascade
+  - id: mysql_join_een_op_een_of_op_veel
+  - id: mysql_join_veel_op_veel
+  - id: mysql_update_join
+  - id: mysql_left_join
+  - id: mysql_union_union_all
+  - id: mysql_alle_joins
+  - id: mysql_sessievariabelen
+  - id: mysql_temp_tables
+  - id: mysql_views
+  - id: mysql_updatable_views
+  - id: mysql_subqueries
+  - id: mysql_erd_design
+  - id: mysql_signal
+  - id: mysql_trigger
+  - id: mysql_stored_programs
+  - id: mysql_stored_function
+  - id: mysql_stored_procedure_syntax_en_vars
+  - id: mysql_control_flow
+  - id: mysql_error_handling
+  - id: mysql_cursors
+  - id: mysql_transacties
+  - id: mysql_object_access_control
+  - id: mysql_enum
+  - id: mysql_select_into
+  - id: export
+  - id: hash_functies
+  - id: mysql_limit_offset
+edges:
+  - start_id: mysql_create_instructie
+    end_id: mysql_enum
+  - start_id: mysql_stored_programs
+    end_id: mysql_stored_function
+  - start_id: wat_is_een_relationele_database
+    end_id: installatie_mysql_via_docker
+  - start_id: operationeel__containers_starten_docker
+    end_id: installatie_mysql_via_docker
+  - start_id: installatie_mysql_via_docker
+    end_id: installatie_mysql_workbench
+  - start_id: wat_is_een_relationele_database
+    end_id: basisstructuren_relationele_database
+  - start_id: mysql_create_instructie
+    end_id: mysql_insert_instructie
+  - start_id: basisstructuren_relationele_database
+    end_id: inleiding_tot_mysql_taal
+  - start_id: installatie_mysql_workbench
+    end_id: inleiding_tot_mysql_taal
+  - start_id: inleiding_tot_mysql_taal
+    end_id: essentiele_datatypes_mysql
+  - start_id: essentiele_datatypes_mysql
+    end_id: mysql_create_instructie
+  - start_id: mysql_insert_instructie
+    end_id: mysql_select_basis
+  - start_id: mysql_create_instructie
+    end_id: mysql_drop_instructie
+  - start_id: mysql_select_basis
+    end_id: mysql_update_instructie
+  - start_id: mysql_create_instructie
+    end_id: mysql_alter_instructie
+  - start_id: mysql_ddl_dml_et_al
+    end_id: mysql_create_instructie
+  - start_id: mysql_update_instructie
+    end_id: mysql_like_operator
+  - start_id: mysql_update_instructie
+    end_id: mysql_booleaanse_operatoren
+  - start_id: mysql_update_instructie
+    end_id: mysql_null
+  - start_id: mysql_select_basis
+    end_id: mysql_delete_instructie
+  - start_id: mysql_functies
+    end_id: mysql_aggregatiefuncties
+  - start_id: mysql_aggregatiefuncties
+    end_id: mysql_distinct
+  - start_id: mysql_having
+    end_id: mysql_alle_clausules_samen
+  - start_id: mysql_aggregatiefuncties
+    end_id: mysql_group_by
+  - start_id: mysql_select_basis
+    end_id: mysql_order_asc_desc
+  - start_id: mysql_order_asc_desc
+    end_id: mysql_alle_clausules_samen
+  - start_id: mysql_booleaanse_operatoren
+    end_id: mysql_vergelijkingen
+  - start_id: mysql_veel_op_veel
+    end_id: mysql_erd_design
+  - start_id: mysql_views
+    end_id: mysql_updatable_views
+  - start_id: mysql_sleutels
+    end_id: mysql_primaire_sleutels
+  - start_id: mysql_primaire_sleutels
+    end_id: mysql_vreemde_sleutels
+  - start_id: mysql_een_op_een
+    end_id: mysql_een_op_veel
+  - start_id: mysql_een_op_veel
+    end_id: mysql_veel_op_veel
+  - start_id: mysql_vreemde_sleutels
+    end_id: mysql_een_op_een
+  - start_id: mysql_join_een_op_een_of_op_veel
+    end_id: mysql_join_veel_op_veel
+  - start_id: mysql_een_op_veel
+    end_id: mysql_join_een_op_een_of_op_veel
+  - start_id: mysql_veel_op_veel
+    end_id: mysql_join_veel_op_veel
+  - start_id: mysql_join_een_op_een_of_op_veel
+    end_id: mysql_update_join
+  - start_id: mysql_select_basis
+    end_id: mysql_union_union_all
+  - start_id: mysql_veel_op_veel
+    end_id: mysql_left_join
+  - start_id: mysql_left_join
+    end_id: mysql_alle_joins
+#  - start_id: mysql_sessievariabelen
+#    end_id: mysql_temp_tables
+  - start_id: mysql_select_basis
+    end_id: mysql_sleutels
+#  - start_id: mysql_temp_tables
+#    end_id: mysql_views
+  - start_id: mysql_een_op_veel
+    end_id: mysql_cascade
+  - start_id: mysql_delete_instructie
+    end_id: mysql_cascade
+  # hier is niet echt een sterke dependency
+  # maar dan kan ik voorbeelden schrijven hiermee
+  - start_id: mysql_aggregatiefuncties
+    end_id: mysql_sessievariabelen
+  # eveneens om didactische redenen...
+  - start_id: mysql_sessievariabelen
+    end_id: mysql_subqueries
+  - start_id: mysql_views
+    end_id: mysql_stored_programs
+  - start_id: mysql_stored_programs
+    end_id: mysql_stored_procedure_syntax_en_vars
+  - start_id: mysql_stored_procedure_syntax_en_vars
+    end_id: mysql_control_flow
+  - start_id: mysql_control_flow
+    end_id: mysql_error_handling
+  - start_id: mysql_error_handling
+    end_id: mysql_cursors
+  - start_id: mysql_error_handling
+    end_id: mysql_transacties
+  - start_id: mysql_stored_procedure_syntax_en_vars
+    end_id: mysql_object_access_control
+  - start_id: mysql_group_by
+    end_id: mysql_having
+  - start_id: wat_is_een_databank
+    end_id: wat_is_een_relationele_database
+  - start_id: mysql_stored_procedure_syntax_en_vars
+    end_id: mysql_select_into
+  - start_id: mysql_insert_instructie
+    end_id: export
+  - start_id: mysql_functies
+    end_id: hash_functies
+  - start_id: operationeel__hashing
+    end_id: hash_functies
+  - start_id: mysql_select_basis
+    end_id: mysql_limit
+  - start_id: mysql_limit
+    end_id: mysql_limit_offset
+# should remain empty, this is a knowledge cluster
+motivations: []

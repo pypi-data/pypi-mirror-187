@@ -1,0 +1,152 @@
+namespace_prefix: operationeel
+nodes:
+  - id: wat_is_docker
+    title: "Wat is Docker?"
+  - id: installatie_docker
+    title: "Installatie Docker"
+    urls:
+      - url: "https://youtu.be/X3bPWl9Z2D0" # vul aan: BIOS instellen niet noodzakelijk nodig
+        description: "activering WSL2 (enkel tot 5:15, enkel voor Windowsgebruikers)"
+      - url: "https://www.youtube.com/watch?v=h0Lwtcje-Jo"
+        description: "installatie Docker op Windows (enkel tot 9:25, enkel voor Windowsgebruikers)"
+      - url: "https://youtu.be/gcacQ29AjOo"
+        description: "installatie Docker op MacOS (enkel tot 4:42)"
+    assignments:
+      - description: "Testen installatie Docker"
+        path: "oefeningen/Docker/hello-world-in-container.md"
+    jobs:
+      - kind: text
+        assignee: Vincent
+        status: accepted
+      - kind: video
+        assignee: Vincent
+        status: accepted
+      - kind: proof
+        assignee: Denis
+        status: accepted
+  - id: containers_starten_docker
+    title: "Containers starten in Docker"
+  - id: installatie_docker_compose
+    title: "Installatie Docker Compose"
+  - id: wat_is_docker_compose
+    title: "Wat is Docker Compose?"
+  - id: compose_file
+  - id: stack_starten
+  - id: ssh_werking
+    jobs:
+      - kind: text
+        assignee: Denis
+        status: accepted
+      - kind: video
+        assignee: Denis
+        status: planned
+      - kind: proof
+        assignee: Vincent
+        status: accepted
+  - id: ssh_sleutels_genereren
+    jobs:
+      - kind: text
+        assignee: Denis
+        status: needs_update
+      - kind: proof
+        assignee: Vincent
+        status: planned
+        notes: "Ook uittesten of dit volledig onder Git bash in Windows werkt."
+  - id: ssh_config
+    jobs:
+      - kind: text
+        assignee: Denis
+        status: planned
+      - kind: video
+        assignee: Denis
+        status: planned
+      - kind: proof
+        assignee: Vincent
+        status: planned
+  - id: ssh_remote_login
+    jobs:
+      - kind: text
+        assignee: Denis
+        status: planned
+      - kind: video
+        assignee: Denis
+        status: planned
+      - kind: proof
+        assignee: Vincent
+        status: planned
+  - id: ssh_file_transfer
+    jobs:
+      - kind: text
+        assignee: Denis
+        status: planned
+      - kind: video
+        assignee: Denis
+        status: planned
+      - kind: proof
+        assignee: Vincent
+        status: planned
+  - id: absoluut_vs_relatief # niet zeker of dit echt wel hier hoort, maar oké...
+    jobs:
+      - kind: text
+        assignee: Denis
+        status: needs_update
+        notes: "Het is wat kort door de bocht om te zeggen dat absolute paden naar andere websites gaan en relatieve niet. Eigenlijk hangt het ervan af ten opzichte van wat een pad relatief is. Een dat begint met / is relatief ten opzichte van de actieve web server, maar absoluut wat betreft het bestandensysteem..."
+    urls:
+      - url: https://apwt.gitbook.io/g_pro-module-2-backend-development/
+        description: tekst Gitbook
+  - id: rest_api
+  - id: thunder_client # redundant? zou dit gewoon linken...
+    urls:
+      - url: https://apwt.gitbook.io/g_pro-module-2-backend-development/
+        description: tekst Gitbook
+    jobs:
+      - kind: text
+        assignee: Vincent
+        status: reviewable
+        notes: "Is dit eigenlijk wel zinvol als we ook Postman doen? Misschien beter aanbieden als alternatief? Of gewoon zeggen dat één volstaat..."
+  - id: letsencrypt
+  - id: env_variabelen
+  - id: reproduceerbare_omgevingen
+  - id: reproduceerbare_stacks
+  - id: vscode_remote_dev_single_container
+  - id: vscode_remote_dev_compose
+  - id: vscode_remote_dev_post_start_command
+  - id: hashing
+  - id: salting
+edges:
+  - start_id: wat_is_docker
+    end_id: installatie_docker
+  - start_id: installatie_docker
+    end_id: containers_starten_docker
+  - start_id: installatie_docker
+    end_id: installatie_docker_compose
+  - start_id: wat_is_docker_compose
+    end_id: compose_file
+  - start_id: containers_starten_docker
+    end_id: vscode_remote_dev_single_container
+  - start_id: stack_starten
+    end_id: vscode_remote_dev_compose
+  - start_id: vscode_remote_dev_single_container
+    end_id: vscode_remote_dev_compose
+  - start_id: vscode_remote_dev_single_container
+    end_id: vscode_remote_dev_post_start_command
+  - start_id: containers_starten_docker
+    end_id: compose_file
+  - start_id: installatie_docker_compose
+    end_id: compose_file
+  - start_id: compose_file
+    end_id: stack_starten
+  - start_id: ssh_werking
+    end_id: ssh_sleutels_genereren
+  - start_id: ssh_sleutels_genereren
+    end_id: ssh_config
+  - start_id: ssh_config
+    end_id: ssh_file_transfer
+  - start_id: ssh_config
+    end_id: ssh_remote_login
+  - start_id: rest_api
+    end_id: thunder_client
+  - start_id: git__gitignore
+    end_id: env_variabelen
+# should remain empty, this is a knowledge cluster
+motivations: []

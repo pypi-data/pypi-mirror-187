@@ -1,0 +1,339 @@
+## methodologie
+#- onderscheid tussen "project clusters" en "knowledge clusters"
+#- project clusters
+#  - bevatten tussenstappen in een project
+#  - motiveren het bekijken van bepaalde kennis
+#  - ze bevatten géén knowledge dependencies die eindigen buiten de cluster zelf
+#  - ze bevatten geen orphaned nodes
+#- knowledge clusters bevatten géén motivaties, enkel knowledge dependencies
+#- hoe omgaan met "intent"?
+# kan momenteel met weinig / geen motivaties verder
+# issue: zal ertoe leiden dat content zonder rechtstreeks zichtbare motivatie zichtbaar is
+# ligt dit misschien aan de speciale motivatie?
+# denk het wel
+# DUS MOTIVATIE IS OOK SPECIFIEK VOOR UNLOCKEN ZINVOL!
+# als alles uiteindelijk gemotiveerd is via begin -> einde, unlockt alles meteen
+# oké, is dus vooral zinvol om te zeggen dat een stap in het project steeds volgende stap motiveert?
+namespace_prefix: friendface
+nodes:
+  # gives an overview of the website and what we will need
+  # we'll want to store and query data in a point under our control: (MySQL) database
+  # we'll want to provide convenient, controlled access to our data via the web: backend web framework (Express)
+  # we'll want to track our progress: version control (Git)
+  # we'll want to keep deployment in mind: containers (Docker)
+  - id: introduction # includes sketch of technology requirements
+  - id: setup_work_environment_intent_express # what we want, so user will study this
+  - id: setup_work_environment_implementation_express
+  - id: setup_work_environment_intent_stack_with_mysql
+  - id: setup_work_environment_implementation_stack_with_mysql
+  - id: setup_work_environment_intent_version_control
+  - id: setup_work_environment_implementation_version_control
+  - id: intent_barebones_user_profiles
+  - id: implementation_barebones_user_profiles # just have them in the database
+  - id: intent_mysql_scripts_startup
+  - id: implementation_mysql_scripts_startup
+  - id: intent_experimentation
+  - id: implementation_experimentation
+  - id: intent_simple_admin_page
+  - id: implementation_simple_admin_page # Express, including EJS, plus (aggregation) functions,...
+  - id: intent_admin_page_data_management
+  - id: implementation_admin_page_data_management
+  - id: intent_statistics
+  - id: implementation_statistics
+  - id: intent_specific_user_login_page # JWT tokens
+  - id: implementation_specific_user_login_page
+  - id: intent_env_secrets
+  - id: implementation_env_secrets
+  - id: intent_fixing_data_management
+  - id: implementation_fixing_data_management
+  - id: intent_posting_sneezes # 1-to-many relationships
+  - id: implementation_posting_sneezes
+  - id: intent_showing_all_sneezes # two-table JOINs and GET requests
+  - id: implementation_showing_all_sneezes
+  - id: intent_adding_clubs # non-recursive many-to-many relationships
+  - id: implementation_adding_clubs # non-recursive many-to-many relationships
+  - id: intent_showing_memberships # three-table JOINs, more EJS
+  - id: implementation_showing_memberships
+  - id: adding_friendships # many-to-many relationships
+  - id: intent_mirrored_friendships
+  - id: implementation_mirrored_friendships
+  - id: intent_generalizing_sneezes
+  - id: implementation_generalizing_sneezes
+  - id: intent_data_integrity
+  - id: implementation_data_integrity
+  - id: intent_showing_friends_sneezes
+  - id: implementation_showing_friends_sneezes
+  - id: intent_mock_sneezes
+  - id: implementation_mock_sneezes
+  - id: intent_reactions
+  - id: implementation_reactions
+  - id: intent_random_reactions
+  - id: implementation_random_reactions
+  - id: intent_speedup
+  - id: implementation_speedup
+  - id: intent_random_memberships
+  - id: implementation_random_memberships
+  - id: intent_random_friendships
+  - id: implementation_random_friendships
+  - id: intent_real_login
+  - id: implementation_real_login
+  - id: intent_paginated_timeline
+  - id: implementation_paginated_timeline
+  - id: intent_editing_data
+  - id: implementation_editing_data
+  - id: intent_deleting_profile
+  - id: implementation_deleting_profile
+  - id: intent_profile_pictures
+  - id: implementation_profile_pictures
+  - id: completing_the_app
+  - id: gitlab
+edges:
+  - start_id: express__wat_is_een_backend_framework
+    end_id: setup_work_environment_intent_express
+  - start_id: express__basis
+    end_id: setup_work_environment_implementation_express
+  - start_id: setup_work_environment_implementation_express
+    end_id: setup_work_environment_intent_stack_with_mysql
+  - start_id: db__installatie_mysql_workbench
+    end_id: setup_work_environment_implementation_stack_with_mysql
+  - start_id: operationeel__vscode_remote_dev_compose
+    end_id: setup_work_environment_implementation_stack_with_mysql
+  - start_id: implementation_profile_pictures
+    end_id: completing_the_app
+  # whenever we implement something, we do need to know what we are trying to implement
+  - start_id: setup_work_environment_intent_express
+    end_id: setup_work_environment_implementation_express
+  - start_id: setup_work_environment_intent_stack_with_mysql
+    end_id: setup_work_environment_implementation_stack_with_mysql
+  - start_id: db__mysql_insert_instructie
+    end_id: implementation_barebones_user_profiles
+  - start_id: express__ejs
+    end_id: implementation_simple_admin_page
+  - start_id: db__mysql_order_asc_desc
+    end_id: implementation_simple_admin_page
+  - start_id: express__mysql_connector
+    end_id: implementation_simple_admin_page
+  - start_id: git__git_push
+    end_id: setup_work_environment_implementation_version_control
+  - start_id: git__gitignore
+    end_id: setup_work_environment_implementation_version_control
+  - start_id: operationeel__vscode_remote_dev_post_start_command
+    end_id: setup_work_environment_implementation_express
+  - start_id: express__cookies
+    end_id: implementation_specific_user_login_page
+  - start_id: express__jwt_npm_package
+    end_id: implementation_specific_user_login_page
+  - start_id: operationeel__env_variabelen
+    end_id: implementation_env_secrets
+  - start_id: db__mysql_een_op_veel
+    end_id: implementation_posting_sneezes
+  - start_id: db__mysql_join_een_op_een_of_op_veel
+    end_id: implementation_showing_all_sneezes
+  - start_id: db__mysql_veel_op_veel
+    end_id: implementation_adding_clubs
+  - start_id: db__mysql_join_veel_op_veel
+    end_id: implementation_showing_memberships
+  - start_id: implementation_showing_memberships
+    end_id: adding_friendships # no additional technical ideas, just harder
+  - start_id: db__mysql_like_operator
+    end_id: implementation_statistics
+  - start_id: db__mysql_alle_clausules_samen
+    end_id: implementation_statistics
+  - start_id: express__post_requests
+    end_id: implementation_admin_page_data_management
+  - start_id: db__mysql_update_instructie
+    end_id: implementation_admin_page_data_management
+  - start_id: db__mysql_delete_instructie
+    end_id: implementation_admin_page_data_management
+  - start_id: db__mysql_cascade
+    end_id: implementation_fixing_data_management
+  - start_id: db__mysql_stored_function
+    end_id: implementation_mirrored_friendships
+  - start_id: db__mysql_generated_column
+    end_id: implementation_mirrored_friendships
+  - start_id: db__mysql_unique_constraint
+    end_id: implementation_mirrored_friendships
+  - start_id: db__mysql_union_union_all
+    end_id: implementation_mirrored_friendships
+  - start_id: db__mysql_signal
+    end_id: implementation_data_integrity
+  - start_id: db__mysql_trigger
+    end_id: implementation_data_integrity
+  - start_id: db__mysql_null
+    end_id: implementation_generalizing_sneezes
+  - start_id: db__mysql_alter_instructie
+    end_id: implementation_generalizing_sneezes
+  - start_id: db__mysql_stored_procedure_syntax_en_vars
+    end_id: implementation_showing_friends_sneezes
+  - start_id: db__mysql_limit
+    end_id: implementation_mock_sneezes
+  - start_id: db__mysql_control_flow
+    end_id: implementation_mock_sneezes
+  - start_id: db__mysql_select_into
+    end_id: implementation_mock_sneezes
+  - start_id: db__mysql_enum
+    end_id: implementation_reactions
+  - start_id: git__git_checkout
+    end_id: implementation_experimentation
+  - start_id: gitlab
+    end_id: implementation_admin_page_data_management
+  - start_id: db__mysql_subqueries
+    end_id: implementation_random_reactions
+  - start_id: db__export
+    end_id: implementation_speedup
+  - start_id: db__mysql_cursors
+    end_id: implementation_random_memberships
+  - start_id: operationeel__salting
+    end_id: implementation_real_login
+  - start_id: db__hash_functies
+    end_id: implementation_real_login
+  - start_id: express__cors
+    end_id: implementation_editing_data
+  - start_id: db__mysql_transacties
+    end_id: implementation_deleting_profile
+  - start_id: db__mysql_limit_offset
+    end_id: implementation_paginated_timeline
+  - start_id: express__static_files
+    end_id: implementation_profile_pictures
+motivations:
+  # introduction -> why we will look at each technology
+  - start_id: introduction
+    end_id: operationeel__wat_is_docker
+  - start_id: introduction
+    end_id: git__wat_is_versiebeheer
+  - start_id: introduction
+    end_id: db__wat_is_een_databank
+  - start_id: introduction
+    end_id: express__wat_is_een_backend_framework
+  # can start using this as soon as the info is understood
+  - start_id: implementation_experimentation
+    end_id: gitlab
+  # project steps
+  - start_id: introduction
+    end_id: setup_work_environment_intent_express
+  - start_id: setup_work_environment_intent_express
+    end_id: setup_work_environment_implementation_express
+  - start_id: setup_work_environment_implementation_express
+    end_id: setup_work_environment_intent_stack_with_mysql
+  - start_id: setup_work_environment_intent_stack_with_mysql
+    end_id: setup_work_environment_implementation_stack_with_mysql
+  - start_id: setup_work_environment_implementation_stack_with_mysql
+    end_id: setup_work_environment_intent_version_control
+  - start_id: setup_work_environment_intent_version_control
+    end_id: setup_work_environment_implementation_version_control
+  - start_id: setup_work_environment_implementation_version_control
+    end_id: intent_barebones_user_profiles
+  - start_id: intent_barebones_user_profiles
+    end_id: implementation_barebones_user_profiles
+  - start_id: implementation_barebones_user_profiles
+    end_id: intent_mysql_scripts_startup
+  - start_id: intent_mysql_scripts_startup
+    end_id: implementation_mysql_scripts_startup
+  - start_id: implementation_mysql_scripts_startup
+    end_id: intent_experimentation
+  - start_id: intent_experimentation
+    end_id: implementation_experimentation
+  - start_id: implementation_experimentation
+    end_id: intent_simple_admin_page
+  - start_id: intent_simple_admin_page
+    end_id: implementation_simple_admin_page
+  - start_id: implementation_simple_admin_page
+    end_id: intent_admin_page_data_management
+  - start_id: intent_admin_page_data_management
+    end_id: implementation_admin_page_data_management
+  - start_id: implementation_admin_page_data_management
+    end_id: intent_statistics
+  - start_id: intent_statistics
+    end_id: implementation_statistics
+  - start_id: implementation_statistics
+    end_id: intent_specific_user_login_page
+  - start_id: intent_specific_user_login_page
+    end_id: implementation_specific_user_login_page
+  - start_id: implementation_specific_user_login_page
+    end_id: intent_env_secrets
+  - start_id: intent_env_secrets
+    end_id: implementation_env_secrets
+  - start_id: implementation_env_secrets
+    end_id: intent_posting_sneezes
+  - start_id: intent_posting_sneezes
+    end_id: implementation_posting_sneezes
+  - start_id: implementation_posting_sneezes
+    end_id: intent_fixing_data_management
+  - start_id: intent_fixing_data_management
+    end_id: implementation_fixing_data_management
+  - start_id: implementation_fixing_data_management
+    end_id: intent_showing_all_sneezes
+  - start_id: intent_showing_all_sneezes
+    end_id: implementation_showing_all_sneezes
+  - start_id: implementation_showing_all_sneezes
+    end_id: intent_adding_clubs
+  - start_id: intent_adding_clubs
+    end_id: implementation_adding_clubs
+  - start_id: implementation_adding_clubs
+    end_id: intent_showing_memberships
+  - start_id: intent_showing_memberships
+    end_id: implementation_showing_memberships
+  - start_id: implementation_showing_memberships
+    end_id: adding_friendships
+  - start_id: adding_friendships
+    end_id: intent_mirrored_friendships
+  - start_id: intent_mirrored_friendships
+    end_id: implementation_mirrored_friendships
+  - start_id: implementation_mirrored_friendships
+    end_id: intent_generalizing_sneezes
+  - start_id: intent_generalizing_sneezes
+    end_id: implementation_generalizing_sneezes
+  - start_id: implementation_generalizing_sneezes
+    end_id: intent_data_integrity
+  - start_id: intent_data_integrity
+    end_id: implementation_data_integrity
+  - start_id: implementation_data_integrity
+    end_id: intent_showing_friends_sneezes
+  - start_id: intent_showing_friends_sneezes
+    end_id: implementation_showing_friends_sneezes
+  - start_id: implementation_showing_friends_sneezes
+    end_id: intent_mock_sneezes
+  - start_id: intent_mock_sneezes
+    end_id: implementation_mock_sneezes
+  - start_id: implementation_mock_sneezes
+    end_id: intent_reactions
+  - start_id: intent_reactions
+    end_id: implementation_reactions
+  - start_id: implementation_reactions
+    end_id: intent_random_reactions
+  - start_id: intent_random_reactions
+    end_id: implementation_random_reactions
+  - start_id: implementation_random_reactions
+    end_id: intent_speedup
+  - start_id: intent_speedup
+    end_id: implementation_speedup
+  - start_id: implementation_speedup
+    end_id: intent_random_memberships
+  - start_id: intent_random_memberships
+    end_id: implementation_random_memberships
+  - start_id: implementation_random_memberships
+    end_id: intent_random_friendships
+  - start_id: intent_random_friendships
+    end_id: implementation_random_friendships
+  - start_id: implementation_random_friendships
+    end_id: intent_real_login
+  - start_id: intent_real_login
+    end_id: implementation_real_login
+  - start_id: implementation_real_login
+    end_id: intent_paginated_timeline
+  - start_id: intent_paginated_timeline
+    end_id: implementation_paginated_timeline
+  - start_id: implementation_paginated_timeline
+    end_id: intent_editing_data
+  - start_id: intent_editing_data
+    end_id: implementation_editing_data
+  - start_id: implementation_editing_data
+    end_id: intent_deleting_profile
+  - start_id: intent_deleting_profile
+    end_id: implementation_deleting_profile
+  - start_id: implementation_deleting_profile
+    end_id: intent_profile_pictures
+  - start_id: intent_profile_pictures
+    end_id: implementation_profile_pictures
+  - start_id: implementation_profile_pictures
+    end_id: completing_the_app

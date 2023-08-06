@@ -1,0 +1,196 @@
+friendface__introduction
+express__wat_is_een_backend_framework
+
+friendface__setup_work_environment_intent_express
+operationeel__absoluut_vs_relatief
+express__basis
+operationeel__wat_is_docker
+operationeel__installatie_docker
+operationeel__containers_starten_docker
+operationeel__vscode_remote_dev_single_container
+operationeel__vscode_remote_dev_post_start_command # voor Express package
+friendface__setup_work_environment_implementation_express
+
+friendface__setup_work_environment_intent_stack_with_mysql
+db__wat_is_een_databank
+db__wat_is_een_relationele_database
+db__installatie_mysql_via_docker
+db__installatie_mysql_workbench
+operationeel__wat_is_docker_compose
+operationeel__installatie_docker_compose
+operationeel__compose_file
+operationeel__stack_starten
+operationeel__vscode_remote_dev_compose
+friendface__setup_work_environment_implementation_stack_with_mysql
+
+friendface__setup_work_environment_intent_version_control
+git__wat_is_versiebeheer
+git__installatie_prerequisites # TODO: check, want VSC is er sowieso en in container is Git er ook
+git__wat_is_lokaal_versiebeheer
+git__git_init
+git__git_basisbegrippen
+git__git_init
+git__git_add
+git__git_commit
+git__gitignore
+git__git_remote
+git__git_push
+friendface__setup_work_environment_implementation_version_control
+
+friendface__intent_barebones_user_profiles
+db__basisstructuren_relationele_database
+db__inleiding_tot_mysql_taal
+db__essentiele_datatypes_mysql
+db__mysql_ddl_dml_et_al
+db__mysql_create_instructie
+db__mysql_insert_instructie
+friendface__implementation_barebones_user_profiles
+
+friendface__intent_mysql_scripts_startup
+operationeel__vscode_remote_dev_post_start_command
+friendface__implementation_mysql_scripts_startup
+
+friendface__intent_experimentation
+git__git_log
+git__git_pull
+git__git_branch
+git__git_checkout
+friendface__implementation_experimentation # eigenlijk hier gewoon uitleggen hoe dit werkt
+
+friendface__intent_simple_admin_page # vanaf hier telkens aansporen branch te starten! bv. simple_admin_page_1
+express__ejs # lijkt eigenlijk zinvoller de twee hier voorlopig samen te nemen?
+db__mysql_select_basis
+db__mysql_order_asc_desc
+express__mysql_connector
+friendface__implementation_simple_admin_page # steeds op main!
+
+friendface__gitlab
+
+friendface__intent_admin_page_data_management
+db__mysql_update_instructie
+db__mysql_delete_instructie # ook die requests?
+express__post_requests # eigenlijk meteen PUT en DELETE...
+friendface__implementation_admin_page_data_management
+
+friendface__intent_statistics
+db__mysql_like_operator
+db__mysql_functies
+db__mysql_aggregatiefuncties
+db__mysql_group_by
+db__mysql_having
+db__mysql_alle_clausules_samen
+friendface__implementation_statistics
+
+friendface__intent_specific_user_login_page
+express__jwt_algemeen
+express__jwt_npm_package
+express__cookies # met verantwoording: artikel
+friendface__implementation_specific_user_login_page # ineens ook afschermen admin!
+
+friendface__intent_env_secrets
+operationeel__env_variabelen
+friendface__implementation_env_secrets
+
+friendface__intent_posting_sneezes
+db__mysql_sleutels
+db__mysql_primaire_sleutels
+db__mysql_vreemde_sleutels
+db__mysql_een_op_een
+db__mysql_een_op_veel
+friendface__implementation_posting_sneezes
+
+friendface__intent_fixing_data_management # DELETE requests werken niet meer...
+db__mysql_cascade
+friendface__implementation_fixing_data_management
+
+friendface__intent_showing_all_sneezes
+db__mysql_join_een_op_een_of_op_veel
+friendface__implementation_showing_all_sneezes
+
+friendface__intent_adding_clubs
+db__mysql_veel_op_veel
+friendface__implementation_adding_clubs
+
+friendface__intent_showing_memberships
+db__mysql_join_veel_op_veel
+friendface__implementation_showing_memberships
+friendface__adding_friendships # no additional technical concepts required, just recursive application
+
+friendface__intent_mirrored_friendships
+db__mysql_union_union_all
+db__mysql_views
+db__mysql_unique_constraint
+db__mysql_generated_column
+db__mysql_stored_programs
+db__mysql_stored_function
+friendface__implementation_mirrored_friendships
+
+friendface__intent_generalizing_sneezes
+db__mysql_null # for poster ID
+db__mysql_alter_instructie
+friendface__implementation_generalizing_sneezes
+
+friendface__intent_data_integrity
+db__mysql_signal
+db__mysql_trigger # for *exactly one* poster ID
+friendface__implementation_data_integrity
+
+friendface__intent_showing_friends_sneezes # the goal is to just get all sneezes for someone's timeline based on ID
+db__mysql_stored_procedure_syntax_en_vars
+friendface__implementation_showing_friends_sneezes
+
+friendface__intent_mock_sneezes
+db__mysql_control_flow
+db__mysql_limit
+db__mysql_select_into
+friendface__implementation_mock_sneezes
+
+friendface__intent_reactions
+db__mysql_enum
+friendface__implementation_reactions
+
+friendface__intent_random_reactions
+db__mysql_sessievariabelen
+db__mysql_subqueries
+friendface__implementation_random_reactions
+
+friendface__intent_speedup
+db__export
+friendface__implementation_speedup
+
+friendface__intent_random_memberships
+db__mysql_error_handling
+db__mysql_cursors
+friendface__implementation_random_memberships
+
+friendface__intent_random_friendships
+friendface__implementation_random_friendships
+
+friendface__intent_real_login
+operationeel__hashing # moet ook aangeven dat er functies voor zijn in MySQL
+operationeel__salting
+db__hash_functies
+friendface__implementation_real_login
+
+friendface__intent_paginated_timeline
+db__mysql_limit_offset
+friendface__implementation_paginated_timeline
+
+friendface__intent_editing_data
+express__cors
+friendface__implementation_editing_data
+
+friendface__intent_deleting_profile
+db__mysql_transacties # willen alles of niets verwijderen!
+#kunnen bij posts geen cascade toepassen, dus...
+#(wel trigger? maar is dat wel safe? denk het niet!)
+friendface__implementation_deleting_profile
+
+friendface__intent_profile_pictures
+express__static_files
+friendface__implementation_profile_pictures # vermeld hier dat iets zoals cron cleanup kan doen van orphaned assets
+
+# TODO
+# SSH # easy enough
+# deployment # zal toch docker volumes vereisen! en git clone
+# SSL / reverse_proxy
