@@ -1,0 +1,10 @@
+matplotlib
+matplotlib_scalebar
+numpy
+scipy
+pandas
+plotly
+networkx
+seaborn
+scikit-learn
+shapely
