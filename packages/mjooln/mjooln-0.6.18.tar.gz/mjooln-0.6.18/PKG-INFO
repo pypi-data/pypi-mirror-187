@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: mjooln
+Version: 0.6.18
+Summary: 
+Home-page: https://mjooln.readthedocs.org
+License: MIT
+Keywords: json,path,file,folder,file handling,encryption,compression,aes,gzip,uuid,utc,md5 checksum,data engineering,data science,data lake,microservice
+Author: Vemund Halmø Aarstrand
+Author-email: vemundaa@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: cryptography (>=39.0.0,<40.0.0)
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
+Requires-Dist: pytz (>=2022.7.1,<2023.0.0)
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Requires-Dist: simplejson (>=3.18.1,<4.0.0)
+Project-URL: Documentation, https://mjooln.readthedocs.org
+Project-URL: Repository, https://gitlab.com/vemundaa/mjooln
+Description-Content-Type: text/plain
+
+File handling toolbox for Microservice Developers and
+Data Scientists working in Python
+
+** Documentation **
+
+https://mjooln.readthedocs.io/
+
