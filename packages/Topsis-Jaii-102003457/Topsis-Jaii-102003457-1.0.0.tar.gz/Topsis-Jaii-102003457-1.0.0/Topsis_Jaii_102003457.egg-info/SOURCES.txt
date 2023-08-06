@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+setup.py
+Topsis_Jai_102003457.egg-info/PKG-INFO
+Topsis_Jai_102003457.egg-info/SOURCES.txt
+Topsis_Jai_102003457.egg-info/dependency_links.txt
+Topsis_Jai_102003457.egg-info/entry_points.txt
+Topsis_Jai_102003457.egg-info/requires.txt
+Topsis_Jai_102003457.egg-info/top_level.txt
+Topsis_Jaii_102003457.egg-info/PKG-INFO
+Topsis_Jaii_102003457.egg-info/SOURCES.txt
+Topsis_Jaii_102003457.egg-info/dependency_links.txt
+Topsis_Jaii_102003457.egg-info/entry_points.txt
+Topsis_Jaii_102003457.egg-info/requires.txt
+Topsis_Jaii_102003457.egg-info/top_level.txt
+Topsis_python/__init__.py
+Topsis_python/__main__.py
