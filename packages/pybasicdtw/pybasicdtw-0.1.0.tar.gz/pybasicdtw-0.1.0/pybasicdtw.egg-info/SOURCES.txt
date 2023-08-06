@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+test_dtw.py
+test_helper.py
+test_sdtw.py
+pybasicdtw/__init__.py
+pybasicdtw/dtw.py
+pybasicdtw/helper.py
+pybasicdtw/sdtw.py
+pybasicdtw.egg-info/PKG-INFO
+pybasicdtw.egg-info/SOURCES.txt
+pybasicdtw.egg-info/dependency_links.txt
+pybasicdtw.egg-info/requires.txt
+pybasicdtw.egg-info/top_level.txt
