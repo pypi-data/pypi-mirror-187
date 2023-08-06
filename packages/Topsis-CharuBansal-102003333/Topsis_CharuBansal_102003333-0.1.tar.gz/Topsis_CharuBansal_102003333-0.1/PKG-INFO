@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: Topsis_CharuBansal_102003333
+Version: 0.1
+Summary: This package is implimentation of multi-criteria decision analysis using topsis
+Home-page: https://github.com/charu-bansal-1/Topsis_CharuBansal_102003333
+Author: Charu Bansal
+Author-email: charubansal12345@gmail.com
+License: MIT
+Download-URL: https://github.com/charu-bansal-1/Topsis_CharuBansal_102003333/releases/tag/v_0.1
+Description: UNKNOWN
+Keywords: topsis
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
