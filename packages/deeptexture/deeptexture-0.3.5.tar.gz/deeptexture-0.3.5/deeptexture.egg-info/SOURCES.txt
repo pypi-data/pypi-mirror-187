@@ -1,0 +1,13 @@
+README.rst
+setup.py
+deeptexture/__init__.py
+deeptexture/cbir.py
+deeptexture/dtr.py
+deeptexture/ml.py
+deeptexture/plt_dtr.py
+deeptexture/utils.py
+deeptexture.egg-info/PKG-INFO
+deeptexture.egg-info/SOURCES.txt
+deeptexture.egg-info/dependency_links.txt
+deeptexture.egg-info/requires.txt
+deeptexture.egg-info/top_level.txt
