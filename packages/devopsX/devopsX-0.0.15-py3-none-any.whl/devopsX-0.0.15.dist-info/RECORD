@@ -1,0 +1,16 @@
+devopsX/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+devopsX/abstractdevops.py,sha256=NvCx1N7ra-tRdpjxpYBezv9mGNkVL_BinFe-Nhdt9fs,1263
+devopsX/backlog.py,sha256=XPQhHz99N8_l3s4Qzp5JTqxCNi5Y_SocnZ1r0EfvFI4,1593
+devopsX/factories.py,sha256=kWYfo0kdOy2skRSTXD9n6Wgvkj_QLGImt5oMpcLpxkc,1640
+devopsX/identity.py,sha256=Pd10sso4WFZkzc4TL9z9AxAmyYylfb646cb1MW78pHs,319
+devopsX/interaction.py,sha256=AGGegfv4dRmu9wEQJpq3oD-BFVObGaOgFDa6CngX8BA,1853
+devopsX/project.py,sha256=VOR7AkJmJPZ1Mp74vu-uuX3RWQKvpDj7BVU-Gs6vD2w,1739
+devopsX/status.py,sha256=S-GLY8AtueJeaZj28cyhx83TBDRID5YZq4KJgpMnNwI,346
+devopsX/team.py,sha256=Rt3TXrivXOq8tE8vZF9T8wIrD1z9xd9Cl8yQC8_AdQM,982
+devopsX/teammember.py,sha256=HIc2L8cMJJJ9KEAtubMrC9MneHhX56a9rXW_W0frFlo,1315
+devopsX/workitem.py,sha256=o5L3LFPvkAy_f_C23V_PXZEfuiTV5cRY0OjRpRMVkTY,6547
+devopsX/workitemtype.py,sha256=87pGGD4ha_s0Q1InCESX9A69ymlZLlc0kAf0ZvbR6tE,1428
+devopsX-0.0.15.dist-info/METADATA,sha256=6uUb5-unX9vvR9hebw5516-mIjM3iz_eYL6RJMmDGCg,2279
+devopsX-0.0.15.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+devopsX-0.0.15.dist-info/top_level.txt,sha256=JUmgmNCLynrdiyej5ntm1Vk4YYDtHGeNA83J36yr0TE,8
+devopsX-0.0.15.dist-info/RECORD,,
