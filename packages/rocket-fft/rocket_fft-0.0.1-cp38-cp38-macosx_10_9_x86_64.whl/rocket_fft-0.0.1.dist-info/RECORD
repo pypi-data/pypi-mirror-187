@@ -1,0 +1,13 @@
+rocket_fft-0.0.1.dist-info/RECORD,,
+rocket_fft-0.0.1.dist-info/LICENSE,sha256=IYNV-IeNfagDzHb5om5gtPphgpEYBgwoSEvucRo73D8,1520
+rocket_fft-0.0.1.dist-info/WHEEL,sha256=I1bcPHHR6tn3lGqH6h9j_EhkVKjU_znt4i8IyWREJLE,109
+rocket_fft-0.0.1.dist-info/entry_points.txt,sha256=4VmUBxeI0ovNOy7IuTWkvPUeriqD4odx9mvQlWrBCzQ,53
+rocket_fft-0.0.1.dist-info/top_level.txt,sha256=HTfMT4_AOO5M2NDW4k2I5Yiu-Ndq4zk0xkKmzmD1zqc,39
+rocket_fft-0.0.1.dist-info/METADATA,sha256=OUObxpAbamVQLn89XLLJ8WRdVanndqgOJ0lTOyXj-Ug,6857
+rocket_fft/_pocketfft_numba.so,sha256=plQnE7FPeQGA3GrPwvru362eUM_76j0KCOCnJyrHKp4,893312
+rocket_fft/imputils.py,sha256=pdsXL1Fy_epkEQAmzFoWHBS8Q0BfRJJXvuLxdMbA2rc,2738
+rocket_fft/__init__.py,sha256=10UM2YGlSYR2pTdjAfEfse76W07L2sF2-zjDAg3E2z4,447
+rocket_fft/pocketfft_llvm.py,sha256=UGj5Zq4eF3vT1obxZ_vOKwsOU_YcgiMHzU_kF4u6Ttc,5607
+rocket_fft/typutils.py,sha256=gTV8noDvH2HtGOxHyzPXMIPATQLmwNEZWx25ARxPpw0,2570
+rocket_fft/overloads.py,sha256=9hrbUihmMBLwdW0UxPQW6P6PkeRAvUaew57j3sb51U8,27707
+rocket_fft/pocketfft_ctypes.py,sha256=x0GT5ZfZ8xBNYtXWE_WuidaI69AB0o5UQs9gXlUJxds,4183
