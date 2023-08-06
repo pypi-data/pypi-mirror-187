@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mtworker
+Version: 0.0.20230124083446
+Summary: A small example package
+Author-email: Example Author <author@example.com>
+Requires-Python: >=3.7
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: requests
+Requires-Dist: playwright
+Requires-Dist: typer[all]
+Requires-Dist: httpx
+Requires-Dist: celery[redis]
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Project-URL: Homepage, https://github.com/pypa/sampleproject
