@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: topsis-Bipasha-102196004
+Version: 0.0.1
+Summary: Topsis package
+Home-page: UNKNOWN
+Author: Bipasha Gupta
+Author-email: <bipashagupta13243@gmail.com>
+License: UNKNOWN
+Keywords: python,topsis,machinelearning,datascience
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+UNKNOWN
+
