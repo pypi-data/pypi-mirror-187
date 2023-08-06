@@ -1,0 +1,17 @@
+openmtpk/_version.py,sha256=nhXiRk3y0WGpgSPwUFNUJCds5zP93B6w5XCaBtAulxw,500
+openmtpk/__init__.py,sha256=cXxQYe8y45ejyGcV-HuUHhhVY5Rcjzxsu9NLXBQ5MgE,411
+openmtpk/nt/_nt.cpython-36m-i386-linux-gnu.so,sha256=H0FgFv_bETL70WmBtgSlfChsw71-dkDiW2lU3IXjhQU,836256
+openmtpk/nt/__init__.py,sha256=Sa1Q9LXSw0epyLOWuHale0lJGlLu4nGJSipkizne33E,1042
+openmtpk/arithmetic/_arithmetic.cpython-36m-i386-linux-gnu.so,sha256=fDxVzz4uSRI_tkAiMYGQjRI1dT-8lMfncDDuBZpo8Is,292528
+openmtpk/arithmetic/__init__.py,sha256=dCqjVV_UdSJnkmgVoMirWQrnMBQAPeK2JVxBnwFqGD8,286
+openmtpk/linalg/_linalg.cpython-36m-i386-linux-gnu.so,sha256=1ibgDrRBG2c4Q5unNryMwVQiCxAIuh6wlVXhRPUwBpU,1667080
+openmtpk/linalg/__init__.py,sha256=xH6iZPTSWUJygc8muCbleGTBvAEOehM-fwbkHy9hpU8,1783
+openmtpk/calculus/_calculus.cpython-36m-i386-linux-gnu.so,sha256=ccmicatjaPOXdT2-xuxNzxNaIpZXAOajZnkfjFgZxHY,496664
+openmtpk/calculus/__init__.py,sha256=kv-nFjbZnt_VELMktyG7sSeNjhTIr5SduLEbFdDzj7E,281
+openmtpk/ml/__init__.py,sha256=0WCXC8S0ly4pUtb76LQhVfRpeBh2RpkRwBrzygCIwrA,486
+openmtpk/ml/_ml.cpython-36m-i386-linux-gnu.so,sha256=6PrQWng7w2TEXMn6c5nzweB2CghlPJJolUcV4vU-UFU,407808
+openmtpk-0.8.0rc1.dist-info/METADATA,sha256=TGTz92FfPNOh3HlKUuHeAosY3k7I8QuAy_a3KNO6_Z8,13204
+openmtpk-0.8.0rc1.dist-info/WHEEL,sha256=GOWCXPHp7oKFAOXkkcrWHxUyI5svWYOeMw1o9JT9isU,146
+openmtpk-0.8.0rc1.dist-info/RECORD,,
+openmtpk-0.8.0rc1.dist-info/top_level.txt,sha256=VKTPbwRjYteySPtWPhbcwH8YFI7qJ_5SRYYk6BCETek,9
+openmtpk-0.8.0rc1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
