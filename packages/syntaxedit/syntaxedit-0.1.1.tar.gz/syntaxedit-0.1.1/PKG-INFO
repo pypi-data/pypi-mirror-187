@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: syntaxedit
+Version: 0.1.1
+Summary: Syntax highlighting Qt text widget
+Home-page: https://github.com/davidwinter/syntaxedit
+License: MIT
+Keywords: qt,pyside,pyqt,syntax highlighting
+Author: David Winter
+Author-email: i@djw.me
+Requires-Python: >=3.7.2,<3.12
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Desktop Environment
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Widget Sets
+Classifier: Topic :: Text Editors
+Classifier: Topic :: Text Processing
+Requires-Dist: pygments (>=2.14.0,<3.0.0)
+Requires-Dist: qtpy (>=2.3.0,<3.0.0)
+Project-URL: Repository, https://github.com/davidwinter/syntaxedit
+Description-Content-Type: text/markdown
+
+# syntaxedit
+
+> A simple Python Qt syntax highlighting widget
+
