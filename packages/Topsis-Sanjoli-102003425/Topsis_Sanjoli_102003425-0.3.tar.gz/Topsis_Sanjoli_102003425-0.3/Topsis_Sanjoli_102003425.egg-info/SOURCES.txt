@@ -1,0 +1,8 @@
+Licence
+setup.py
+Topsis_Sanjoli_102003425/package.py
+Topsis_Sanjoli_102003425.egg-info/PKG-INFO
+Topsis_Sanjoli_102003425.egg-info/SOURCES.txt
+Topsis_Sanjoli_102003425.egg-info/dependency_links.txt
+Topsis_Sanjoli_102003425.egg-info/requires.txt
+Topsis_Sanjoli_102003425.egg-info/top_level.txt
