@@ -1,0 +1,11 @@
+bcom_client/__init__.py,sha256=5tejvsOzthnM86zIVeVZmriBgKAAwjWe1qiQoZ-tdhY,83
+bcom_client/auth.py,sha256=Hh-GJwAIc9Pu_HO7dopLVtyKdE7GQsw4V3uYdvisWYA,417
+bcom_client/inventory.py,sha256=cJC96QN_W9kDZvKLZ5171IOmLSK5ypfzPP2pWWEr1NQ,3560
+bcom_client/mock.py,sha256=YdgIpxJgT9cGt6FR6_Xc3nNmeS2kwTVWibmAIaF5-JI,885
+bcom_client/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bcom_client/schema.py,sha256=cGsy8uSq3xDqyzVpsIOkw46lEsy2rYQkyQpwYoBzuVE,6431
+bcom_client-0.1.0.dist-info/LICENSE.md,sha256=MW-6gES1INf4fKeCZLCwN_USEr4GTtWgTbfC_V4PuXs,1527
+bcom_client-0.1.0.dist-info/METADATA,sha256=8S_7AuOB-sHrV2dMGgn6BkEjw75BNITY4gScblDAN8E,2695
+bcom_client-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+bcom_client-0.1.0.dist-info/top_level.txt,sha256=8syUVp3qsm4eEgQAJaVyPG-55MSx07xCtfZeb_6dRsY,12
+bcom_client-0.1.0.dist-info/RECORD,,
