@@ -1,0 +1,2 @@
+[console_scripts]
+topsis = Topsis_Kushagar.102003002:main
