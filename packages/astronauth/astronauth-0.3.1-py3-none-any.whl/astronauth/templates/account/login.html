@@ -1,0 +1,65 @@
+{% extends "astronauth/base.html" %}
+
+{% load static %}
+{% load socialaccount %}
+{% load i18n %}
+
+{% block head_title %}{% trans "Sign In" %}{% endblock %}
+
+{% block content %}
+<div class="flex-wrapper flex-wrapper--centered">
+    <div>
+        <header class="flex-wrapper flex-wrapper--space-between">
+            <h1>Sign In</h1>
+        </header>
+        <div class="login-form">
+            <form method="post" action="{% url 'account_login' %}">
+                {% csrf_token %}
+                {% if redirect_field_value %}
+                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                {% endif %}
+                <div>
+                    <label for="id_login" class="input__label">Username</label>
+                    <input id="id_login" class="input maxwidth-input astronauth-input" name="login" type="text">
+                </div>
+
+                <div>
+                    <label for="id_password" class="input__label">Password</label>
+                    <input id="id_password" class="input maxwidth-input astronauth-input" name="password"
+                        type="password">
+                </div>
+
+                <div class="form-options">
+                    <label for="id_remember">
+                        <input class="input maxwidth-input" id="id_remember" name="remember" type="checkbox">
+                        Remember me
+                    </label>
+                    <div>
+                        <span><a class="link" href="{% url 'account_reset_password' %}">Forgot Password?</a></span>
+                    </div>
+                </div>
+                <div class="flex-wrapper flex-wrapper--end">
+                    <button type="submit" class="button button--primary margin-right">Sign In</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="flex-wrapper flex-wrapper--centered flex-wrapper--column margin-top">
+
+            <header>
+                <h1>Or sign in with</h1>
+            </header>
+
+            <a class="astronauth-social-btn" href="{% provider_login_url 'keycloak' %}">
+                <img
+                    class="keycloak-logo"
+                    src="{% static 'astronauth/images/keycloak.png' %}"
+                    alt="ASTRON Keycloak"
+                    title="ASTRON Keycloak"
+                    />
+            </a>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

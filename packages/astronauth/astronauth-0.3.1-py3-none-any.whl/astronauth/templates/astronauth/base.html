@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>{% block head_title %}{% endblock %} - ASTRONauth</title>
+    <!-- TODO: Make DIAS available via CDN -->
+    <link rel="stylesheet" href="{% static 'astronauth/css/dias.css' %}">
+    <link rel="stylesheet" href="{% static 'astronauth/css/custom.css' %}">
+</head>
+
+<body>
+    {% include "astronauth/navbar.html" %}
+    {% block content %}{% endblock %}
+</body>
+
+</html>

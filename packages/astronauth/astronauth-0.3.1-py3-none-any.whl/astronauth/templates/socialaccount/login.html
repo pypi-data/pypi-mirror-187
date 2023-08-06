@@ -1,0 +1,20 @@
+{% extends "astronauth/base.html" %}
+
+{% load i18n %}
+{% load socialaccount %}
+
+{% block head_title %}{% trans "Sign In" %}{% endblock %}
+
+{% block content %}
+    <div class="flex-wrapper flex-wrapper--centered flex-wrapper--column">
+        <h1>Sign In via {{ provider.name }}</h1>
+
+        <h2 class="text text--primary">You are about to sign in using a third party account
+            from {{ provider.name }}.</h2>
+
+        <form method="post">
+            {% csrf_token %}
+            <button class="button button--primary" type="submit">{% trans "Continue" %}</button>
+        </form>
+    </div>
+{% endblock %}
