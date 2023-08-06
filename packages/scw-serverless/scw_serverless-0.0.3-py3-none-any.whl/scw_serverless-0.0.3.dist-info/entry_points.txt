@@ -1,0 +1,3 @@
+[console_scripts]
+scw-serverless=scw_serverless.cli:main
+
