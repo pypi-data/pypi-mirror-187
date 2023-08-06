@@ -1,0 +1,2 @@
+[console_scripts]
+invicta = invicta.main:main
