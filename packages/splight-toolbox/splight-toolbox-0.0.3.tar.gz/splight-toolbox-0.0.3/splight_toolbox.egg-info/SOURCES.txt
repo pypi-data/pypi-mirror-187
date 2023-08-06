@@ -1,0 +1,8 @@
+README.md
+setup.py
+splight_toolbox.egg-info/PKG-INFO
+splight_toolbox.egg-info/SOURCES.txt
+splight_toolbox.egg-info/dependency_links.txt
+splight_toolbox.egg-info/not-zip-safe
+splight_toolbox.egg-info/requires.txt
+splight_toolbox.egg-info/top_level.txt
