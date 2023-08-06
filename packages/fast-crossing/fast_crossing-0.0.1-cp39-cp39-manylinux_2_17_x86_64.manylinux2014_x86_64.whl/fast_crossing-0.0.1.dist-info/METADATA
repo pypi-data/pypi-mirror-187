@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: fast-crossing
+Version: 0.0.1
+Summary: fast crossing
+Home-page: https://github.com/cubao/fast-crossing
+Author: tzx
+Author-email: dvorak4tzx@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Provides-Extra: test
+Requires-Dist: pytest (>=6.0) ; extra == 'test'
+
+# fast crossing
