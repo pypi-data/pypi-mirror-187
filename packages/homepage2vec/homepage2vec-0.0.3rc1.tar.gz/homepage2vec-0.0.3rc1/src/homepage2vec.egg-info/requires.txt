@@ -1,0 +1,8 @@
+torch>=1.13.0
+torchvision>=0.14.0
+beautifulsoup4>=4.11.1
+sentence-transformers>=2.2.2
+lxml>=4.9.1
+
+[visual]
+selenium>=4.6.1
