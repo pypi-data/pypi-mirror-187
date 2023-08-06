@@ -1,0 +1,2 @@
+[console_scripts]
+dependencychecker = z3c.dependencychecker.main:main
