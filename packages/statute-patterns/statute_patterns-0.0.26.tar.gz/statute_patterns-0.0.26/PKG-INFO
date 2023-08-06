@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: statute-patterns
+Version: 0.0.26
+Summary: Philippine statutory law pattern matching library.
+Home-page: https://lawdata.xyz
+License: MIT
+Author: Marcelino G. Veloso III
+Author-email: mars@veloso.one
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Pydantic
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Legal Industry
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Requires-Dist: email-validator (>=1.3.0,<2.0.0)
+Requires-Dist: pydantic (>=1.10.4,<2.0.0)
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
+Requires-Dist: python-dotenv (>=0.21,<0.22)
+Requires-Dist: python-slugify (>=6.1.2,<7.0.0)
+Project-URL: Repository, https://github.com/justmars/statute-patterns
+Description-Content-Type: text/markdown
+
+# statute-patterns
+
+![Github CI](https://github.com/justmars/statute-patterns/actions/workflows/main.yml/badge.svg)
+
+Statute title patterns utilized in the [LawSQL dataset](https://lawsql.com).
+
+## Documentation
+
+See [documentation](https://justmars.github.io/statute-patterns).
+
+## Development
+
+Checkout code, create a new virtual environment:
+
+```sh
+poetry add statute-patterns # python -m pip install statute-patterns
+poetry update # install dependencies
+poetry shell
+```
+
+Run tests:
+
+```sh
+pytest
+```
+
