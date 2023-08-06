@@ -1,0 +1,11 @@
+linovelib2epub/__about__.py,sha256=5Sd9bMRrA4DcXB91Hc_yZbt-fB07LABN3xouof-5uOg,24
+linovelib2epub/__init__.py,sha256=8CCbmojIlWmlU7B-linDBDGXcs3FOCtsl4-Ojqvu0yU,62
+linovelib2epub/linovel.py,sha256=DqZhTL2Ic4t2DF7TYF0FCoBjttjTgyqiucjEmxaqJPY,34952
+linovelib2epub/settings.py,sha256=-ddveuZaFiQ3h8WYYwSbBYXHUNsLP8sReCK9gHbJegY,956
+linovelib2epub/styles/chapter.css,sha256=Y9B1m4Az_POEmBCmTi7-VRZtZ2rKtAJiUXQgXfkhD6I,812
+linovelib2epub/styles/cover.css,sha256=XNLJieS0z6pM-N7JmzlIbPB8zHDJTlYzj8up5gRSlng,295
+linovelib2epub/styles/nav.css,sha256=lYOD7xRWIQeTFPxZb3DusjhhssYGIBICjokDjiQW-lo,368
+linovelib2epub-0.0.10.dist-info/METADATA,sha256=dX-2TOtaCZz4r1Wumlpmz3POMOYCX8QOno66seGit-8,8521
+linovelib2epub-0.0.10.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+linovelib2epub-0.0.10.dist-info/licenses/LICENSE,sha256=kn2aD5kGS5Dv7OCGNVznr_sf1puJqE85rLQaqVwZFG8,35176
+linovelib2epub-0.0.10.dist-info/RECORD,,
