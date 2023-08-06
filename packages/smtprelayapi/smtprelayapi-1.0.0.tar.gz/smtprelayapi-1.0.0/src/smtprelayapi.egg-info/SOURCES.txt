@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/smtprelayapi/__init__.py
+src/smtprelayapi/__main__.py
+src/smtprelayapi/client.py
+src/smtprelayapi/logging.py
+src/smtprelayapi.egg-info/PKG-INFO
+src/smtprelayapi.egg-info/SOURCES.txt
+src/smtprelayapi.egg-info/dependency_links.txt
+src/smtprelayapi.egg-info/entry_points.txt
+src/smtprelayapi.egg-info/requires.txt
+src/smtprelayapi.egg-info/top_level.txt

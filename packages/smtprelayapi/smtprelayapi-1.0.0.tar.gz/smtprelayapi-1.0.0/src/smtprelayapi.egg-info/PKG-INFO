@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: smtprelayapi
+Version: 1.0.0
+Summary: API for connecting to the smtprelay server.
+Home-page: https://github.com/dfo-meds/smtp-relay-client
+Author: Erin Turnbull
+Author-email: erin.a.turnbull@gmail.com
+Project-URL: Bug Tracker, https://github.com/dfo-meds/smtp-relay-client/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This module provides an interface for the smtprelay server that allows it to be used as a logger or just to send emails.
+
+smtprelay is designed to act as a message queue for sending e-mails so that rate limiting and authentication
+can be implemented in one place.
+
+## Configuration
+
+Configuration is done via [Zirconium](https://github.com/turnbullerin/zirconium), which allows for you to use your
+configuration language of choice. The example configuration below is given in TOML. Note that you must install the toml
+package for versions of Python where it is not built-in.
+
+```toml
+[smtp_relay]
+end_point = "http://server:port/send"   # Mandatory, put in the path to your smtprelay server here.
+bearer_token = "blahblah"               # Mandatory, put in your secret token here from the relay server.
+default_send_group = ""                 # Optional, specify a send group to be applied to all messages unless one is specified in code.
+default_send_from = ""                  # Optional, specify a sender e-mail here for all messages unless one is provided in code.
+retry_file = ""                         # Optional, specify a path to a file that will be used to store messages when the relay server cannot be contacted.
+show_errors = true                      # Change to false to hide the printed errors when connections to the relay server fail
+request_timeout = 2.5                   # Change the timeout for the requests module here (default is 2.5)
+cap_on_retry = 50                       # Change the maximum number of e-mails that will be send during a retry attempt.
+```
+
+## Automatic Retries
+
+This package allows for e-mails to be saved to a file if the smtprelay server is not available. To use this option, you
+must first set the retry_file to a file path in the configuration. You can then schedule the resend using either the
+entry point or by calling the module in cron.d or Windows task manager:
+
+```bash 
+    # Make sure you're in the right venv and that you execute this from the proper
+    # working directory for where you've located the configuration files.
+    
+    python -m smtprelayapi
+    # OR
+    smtprelayapi-resend
+
+```
+
+## Usage
+
+In this example, we simply queue up a message to be sent. The `send_group` parameter is a simple text string
+that is recorded on the server side so that the origin of messages can be tracked.
+
+```python 
+    from autoinject import injector
+    from smtprelayapi import RelayClient
+    
+    @injector.inject
+    def send_an_email(rc: RelayClient = None):
+        rc.send_email(
+            subject="Extended Warranty",
+            plain_message="We've been trying to reach you about your car's extended warranty.",
+            html_message="<p>We've been trying to reach you about your car's <strong>extended warranty</strong>.</p>",
+            from_email="scammer@example.com",
+            to_emails="adam.undergrove@example.com",
+            bcc_emails="head.scammer@example.com",
+            send_group="warranty-scams"
+        )
+```
+
+An implementation of `logging.Handler` is also provided for simplicity to integrate with the `logging` module.
+
+```python
+
+    from smtprelayapi import RelayHandler
+    import logging
+    
+    handler = RelayHandler(
+        subject="Application Log: myapplication: %{levelname}!",
+        format_subject=True,
+        toaddrs="admin@example.com",
+        ccaddrs="manager@example.com",
+        send_group="myapplication-errors",
+        level=logging.WARNING
+    )
+    logging.getLogger().addHandler(handler)    
+
+```
