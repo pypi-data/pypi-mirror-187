@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: py-chan-calculator
+Version: 0.0.1
+Summary: This is a simple calculator package
+Home-page: https://github.com/ChanduArepalli/py-chan-calculator
+Author: Chandu Arepalli
+Author-email: chandumanikumar4@gmail.com
+License: BSD 2-clause
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
