@@ -1,0 +1,13 @@
+OpenFisca_Extension_Template-1.3.13.data/data/share/openfisca/openfisca-extension-template/CHANGELOG.md,sha256=Fyvzgz5a3HDdpDThedT7ICCRMa6T69oHfAbCGJWH7ks,5484
+OpenFisca_Extension_Template-1.3.13.data/data/share/openfisca/openfisca-extension-template/README.md,sha256=nJieWfw0CkLt-ejkodFKITcFr8kVLpUP2AyJNf_NT8w,1127
+openfisca_extension_template/__init__.py,sha256=TkYQB9pX5g1LZB4IBi9pmBGwYFImLmpj5d1nk9eiKzU,334
+openfisca_extension_template/local_benefit.py,sha256=sxE29QuCgMybdWifX5U4d7uh4ZtQJszB1jApK8HsayQ,1365
+openfisca_extension_template/parameters/local_town/index.yaml,sha256=1q6Q_iwrh6qqPcgazz0FXZeYji3K5jeFn0nP_iGt9Bk,40
+openfisca_extension_template/parameters/local_town/child_allowance/amount.yaml,sha256=UCypHJ-zIxDFN7F3BFxJsONJu5j6LqgPtNpqC3niiDU,94
+openfisca_extension_template/parameters/local_town/child_allowance/index.yaml,sha256=rREMQc0vtwtQX4_Kf9ATrlI-dhx2HqswQMkSeaQZJQo,44
+openfisca_extension_template/tests/local_benefit.yaml,sha256=xdN0BqDTTI92Tv5EKoop0kj5ElMDa_y3vHlfNuRMPOM,632
+OpenFisca_Extension_Template-1.3.13.dist-info/LICENSE,sha256=dql8h4yceoMhuzlcK0TT_i-NgTFNIZsgE47Q4t3dUYI,34520
+OpenFisca_Extension_Template-1.3.13.dist-info/METADATA,sha256=91Dg1vFC9xA1IGWC_Mr1QvgNaLVBi4GfKRQDdat-GLI,3275
+OpenFisca_Extension_Template-1.3.13.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+OpenFisca_Extension_Template-1.3.13.dist-info/top_level.txt,sha256=F7K8ps3Mw_g88fKXkt6cEQmhYDWNJn2CEVBUbJLQfVY,29
+OpenFisca_Extension_Template-1.3.13.dist-info/RECORD,,
