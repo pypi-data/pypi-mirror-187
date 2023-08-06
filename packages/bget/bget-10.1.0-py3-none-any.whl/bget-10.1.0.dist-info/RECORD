@@ -1,0 +1,12 @@
+LICENSE,sha256=bSyY49WBvS97FOxU7WC4UhrvoD8PdioaimU7lY1prPc,1051
+bgetcli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bgetcli/bget.py,sha256=DTqyT84R_M26qYUCuE93ru7qEURvgllsIcCETJp0azQ,11753
+bgetcli/downloader.py,sha256=HOp88cU7zwnwvnufszipkEeSufX2RAE65cuOMwIymYk,4473
+bgetcli/runtime.py,sha256=CyMnxnbcO9d_kLz4sy_0aye5CYyu84mrNr9d-ZGbrDc,6092
+bgetcli/utils.py,sha256=XYVwcIAmdzZEQ10fBmtHAfuGMg_Ewl7h8IZgL-_U9no,2181
+config-example.toml,sha256=ZvncRv7ZI5TJbbLK9XFwbwiw5B0DZJRDgB_aZn9MG-A,2398
+bget-10.1.0.dist-info/LICENSE,sha256=bSyY49WBvS97FOxU7WC4UhrvoD8PdioaimU7lY1prPc,1051
+bget-10.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+bget-10.1.0.dist-info/entry_points.txt,sha256=OxezWAror1eifmAjyZAFFDAFJzXf_ziYIbejbw81b5g,42
+bget-10.1.0.dist-info/METADATA,sha256=KRf3SCYQFLrmhGu_NRuvQF-h6xkVG1cuU8jwFoNzNEI,1424
+bget-10.1.0.dist-info/RECORD,,
