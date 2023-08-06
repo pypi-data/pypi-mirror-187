@@ -1,0 +1,11 @@
+trino_query_parser/SqlBase.g4,sha256=1NiejvPV8cYoc8VZ68z8iRFNxGTrnsmzEkZdiV29-h4,40788
+trino_query_parser/SqlBaseLexer.py,sha256=dptL459RN1KSkskgBChcF5Ku0UhFM49BhR7pq86fXnc,99009
+trino_query_parser/SqlBaseListener.py,sha256=v9N3BpSuF3BmkK1hhomy0_gsXS59ULAvdV6tQEQe1gk,89302
+trino_query_parser/SqlBaseParser.py,sha256=YU92e3cJK6qqRTSflI3cvseHPTKm3GkL8V6OMK7OGUY,860508
+trino_query_parser/SqlBaseVisitor.py,sha256=t9AumleaH6Dsnfk5ErPzoC465R_ICrEcMx-ybnYp_MY,52792
+trino_query_parser/__init__.py,sha256=NZWd2DEvrT2ELjr7XFL1EzhnFFpJmj1AxHd-SHNg46o,68
+trino_query_parser/parser.py,sha256=R_F6hOWgxsZl7PBX3qwUDRSjSn1tRAoskw8DtecTAQg,2758
+trino_query_parser-0.405.1.dist-info/METADATA,sha256=reBpD0bLMct7zxB7Zjybj4tTBmw5kh9e8SeMz57-H0Q,1473
+trino_query_parser-0.405.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+trino_query_parser-0.405.1.dist-info/top_level.txt,sha256=exnf7p3DwGiEvSfR3lRtQAjSXg9BoauV-OWd6egD-08,19
+trino_query_parser-0.405.1.dist-info/RECORD,,
