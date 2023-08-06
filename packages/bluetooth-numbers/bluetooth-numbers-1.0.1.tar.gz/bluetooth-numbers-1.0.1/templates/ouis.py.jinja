@@ -1,0 +1,14 @@
+"""Module with OUIs for Bluetooth addresses.
+
+Usage:
+
+>>> from bluetooth_numbers import oui
+>>> oui["58:2D:34"]
+'Qingping Electronics (Suzhou) Co., Ltd'
+"""
+from bluetooth_numbers.dicts import OUIDict
+
+oui = OUIDict({  # OUIs for Bluetooth addresses{% for prefix, name in ouis.items() %}
+    "{{ prefix }}": "{{ name }}",
+{%- endfor %}
+})
