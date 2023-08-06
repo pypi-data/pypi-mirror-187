@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: cloudera-airflow-provider
+Version: 2.0.1
+Summary: Cloudera CDP Airflow Plugins
+Home-page: UNKNOWN
+Author: Cloudera
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
