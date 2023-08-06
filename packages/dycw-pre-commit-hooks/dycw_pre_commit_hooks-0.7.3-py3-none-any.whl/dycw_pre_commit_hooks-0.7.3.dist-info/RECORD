@@ -1,0 +1,8 @@
+pre_commit_hooks/__init__.py,sha256=G0rwkDLSytonr7idr8ma7KaTUnRCn3-Ripum70RSeh0,22
+pre_commit_hooks/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pre_commit_hooks/run_bump2version.py,sha256=QLy0IPSjsPr741gd-NHQLxz3QdDEI3Z_P3HMIlq3Kyg,4045
+pre_commit_hooks/run_dockfmt.py,sha256=ddjlnmcx2nQDMDdiFxTiaSLOZ3kXwcpFf5GBdIN9mRk,1081
+dycw_pre_commit_hooks-0.7.3.dist-info/METADATA,sha256=iqiDuoiuJ2mGvgUVzNnv76Hhs1C28qFHjjlELQ8Vc2U,1033
+dycw_pre_commit_hooks-0.7.3.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+dycw_pre_commit_hooks-0.7.3.dist-info/entry_points.txt,sha256=nRAKbLqF40S6Bo8cLuQmz7Xq7mNW7nnpipAb9vHIECg,124
+dycw_pre_commit_hooks-0.7.3.dist-info/RECORD,,

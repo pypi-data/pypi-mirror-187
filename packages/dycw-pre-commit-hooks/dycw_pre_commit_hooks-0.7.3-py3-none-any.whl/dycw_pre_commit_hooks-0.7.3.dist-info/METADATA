@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: dycw-pre-commit-hooks
+Version: 0.7.3
+Author-email: Derek Wan <d.wan@icloud.com>
+Requires-Python: >=3.9
+Provides-Extra: dev
+Requires-Dist: black; extra == 'dev'
+Requires-Dist: bump2version; extra == 'dev'
+Requires-Dist: exceptiongroup; extra == 'dev'
+Requires-Dist: hatch; extra == 'dev'
+Requires-Dist: pip-tools; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pytest-cov; extra == 'dev'
+Requires-Dist: pytest-xdist; extra == 'dev'
+Requires-Dist: ruff; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# pre-commit-hooks
+
+## Overview
+
+My [`pre-commit`](https://pre-commit.com/) hooks.
+
+## Installation
+
+1. Install `pre-commit`.
+
+1. Add the following to your `.pre-commit-config.yaml`:
+
+   ```yaml
+   repos:
+     - repo: https://github.com/dycw/pre-commit-hooks
+       rev: master
+       hooks:
+         - id: run-bump2version
+           args: [--setup-cfg]
+         - id: run-dockfmt
+   ```
+
+1. Update your `.pre-commit-config.yaml`:
+
+   ```bash
+   pre-commit autoupdate
+   ```
