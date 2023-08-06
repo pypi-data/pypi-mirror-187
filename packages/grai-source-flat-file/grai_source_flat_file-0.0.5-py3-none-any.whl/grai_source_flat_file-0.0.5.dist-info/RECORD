@@ -1,0 +1,9 @@
+grai_source_flat_file/__init__.py,sha256=wr8t2_iZfQg9piWj1fzzhQMLdvDFKYul6Dczz8RF5Xk,147
+grai_source_flat_file/adapters.py,sha256=3kTk_3OI6iCmHuCF9EOe1IbRLN0fixwHDtAnz-uDT6I,4110
+grai_source_flat_file/base.py,sha256=gLYbCoHs7qMDX6FurTLQ3RHfu4QSMyoSZ5aOIieE1zc,825
+grai_source_flat_file/loader.py,sha256=cQkBvjsMfuLB8A_ddXNulLXhNizJ3peNE2Uwn0Asgng,1828
+grai_source_flat_file/models.py,sha256=1aKfmda5okF-9Y0RJF-Hy6C3CGnMehbGkD8H9swoj0I,978
+grai_source_flat_file/package_definitions.py,sha256=g_lWwL61BbREnZ3oLwEWIdOsAyvVh531nLQR36OCrbA,150
+grai_source_flat_file-0.0.5.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+grai_source_flat_file-0.0.5.dist-info/METADATA,sha256=MF8fAMbxhCfJsNjYRRrr6qIbaupgE95WFAESMee5dbU,712
+grai_source_flat_file-0.0.5.dist-info/RECORD,,
