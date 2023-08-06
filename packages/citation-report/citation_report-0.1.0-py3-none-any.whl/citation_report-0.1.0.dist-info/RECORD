@@ -1,0 +1,7 @@
+citation_report/__init__.py,sha256=q_S4Gy-lMbny3kacjm_x3yQ1ZzFwXWiZVaBYJLFuRVs,149
+citation_report/__main__.py,sha256=lB3j1CRTgsFfC_4eMO1bXSFHpLj0hLXPV0wDfvWU228,5987
+citation_report/published_report.py,sha256=cQosxu80Wyq8p7FJr59GkTyOb7ZY1fBsnIuNOxANcVc,1733
+citation_report/publisher.py,sha256=a3u3rca6Uhf0whA2HXzydW8MJPYV-jUKxUImF8MJbM8,3236
+citation_report-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+citation_report-0.1.0.dist-info/METADATA,sha256=gTq4ALvYc9GDQgNSFJHE3Wgdjal5ec7dS3neE9rmjb0,918
+citation_report-0.1.0.dist-info/RECORD,,
