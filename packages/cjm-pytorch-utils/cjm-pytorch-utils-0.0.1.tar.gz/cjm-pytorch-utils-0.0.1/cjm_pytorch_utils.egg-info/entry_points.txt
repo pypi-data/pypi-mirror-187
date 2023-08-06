@@ -1,0 +1,2 @@
+[nbdev]
+cjm_pytorch_utils = cjm_pytorch_utils._modidx:d
