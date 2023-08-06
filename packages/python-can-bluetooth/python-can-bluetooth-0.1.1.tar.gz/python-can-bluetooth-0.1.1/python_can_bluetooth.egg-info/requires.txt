@@ -1,0 +1,7 @@
+python-can
+pyserial
+
+[dev]
+windows-curses
+parameterized
+pytest

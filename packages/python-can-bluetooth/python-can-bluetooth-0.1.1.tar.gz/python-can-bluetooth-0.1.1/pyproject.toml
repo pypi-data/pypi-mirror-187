@@ -1,0 +1,105 @@
+[project]
+name = "python-can-bluetooth"
+version = "0.1.1"
+description = "A python-can interface driver for CAN transmitted over a Bluetooth SPP connection"
+readme = "README.rst"
+license = { text = "GNU Lesser General Public License v3 (LGPLv3)" }
+requires-python = ">=3.7"
+authors = [
+    { name = "Matt Woodhead", email = "woody.w62@gmail.com" }
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Manufacturing",
+    "Environment :: Plugins",
+]
+keywords = ["CANbus", "Bluetooth", "python-can", "ESP32"]
+
+dependencies = [
+    "python-can",
+    "pyserial",
+]
+
+[project.optional-dependencies]
+dev = [
+    "windows-curses",
+    "parameterized",
+    "pytest",
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project.entry-points."can.interface"]
+bluetooth = "can_bluetooth._bluetooth_can:BluetoothSPPBus"
+
+[project.urls]
+homepage = "https://github.com/MattWoodhead/python-can-bluetooth"
+documentation = "https://github.com/MattWoodhead/python-can-bluetooth"
+repository = "https://github.com/MattWoodhead/python-can-bluetooth"
+
+[tool.black]
+line-length = 120
+target_version = ['py38']
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+  | foo.py           # also separately exclude a file named foo.py in
+                     # the root of the project
+)
+'''
+
+# [tool.setuptools]
+# # If there are data files included in your packages that need to be
+# # installed, specify them here.
+# package-data = {"sample" = ["*.dat"]}
+# TODO - investigate if we can package the MTAPI driver with the module
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py37, py38, py39, py310
+
+isolated_build = true
+
+[gh-actions]
+python =
+    3.7: py37
+    3.8: py38
+    3.9: py39
+    3.10: py310, mypy
+    3.11: py311
+
+[testenv]
+deps =
+    check-manifest >= 0.42
+    # If your project uses README.rst, uncomment the following:
+    readme_renderer
+    pytest
+    build
+    twine
+commands =
+    check-manifest --ignore 'tox.ini,tests/**'
+    python -m build
+    python -m twine check dist/*
+
+"""
+#   py.test tests {posargs}
