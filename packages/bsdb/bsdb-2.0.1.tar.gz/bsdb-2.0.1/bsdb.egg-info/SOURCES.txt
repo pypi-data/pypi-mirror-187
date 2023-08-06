@@ -1,0 +1,8 @@
+LICENSE.txt
+setup.py
+bsdb/__init__.py
+bsdb/manager.py
+bsdb.egg-info/PKG-INFO
+bsdb.egg-info/SOURCES.txt
+bsdb.egg-info/dependency_links.txt
+bsdb.egg-info/top_level.txt

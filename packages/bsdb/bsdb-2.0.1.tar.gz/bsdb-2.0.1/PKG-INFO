@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: bsdb
+Version: 2.0.1
+Summary: A database manager based on json and csv.
+Author: Eugênio S. Benfica
+License: MIT License
+Keywords: database,json,csv
+License-File: LICENSE.txt
