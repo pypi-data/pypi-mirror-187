@@ -1,0 +1,8 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/pyproject.toml,sha256=l84VuzGL087M0v1a7L6y0CVqT8isJwGBOEhEAJat3tM,897
+src/sshc.py,sha256=2fmtpFco2PzSJEdvKaEmY3s5afac3QWLc2hAnnDsZ6k,13971
+sshc-0.8.0.dist-info/METADATA,sha256=0IMHgOxYN2xi6tBmpUddS9R_u4GSREiupns5T4m17ZU,8724
+sshc-0.8.0.dist-info/entry_points.txt,sha256=gAV-lxb5_6jmNorNAm6W3bhvlMjBiW0uttLxYmPch_Q,42
+sshc-0.8.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+sshc-0.8.0.dist-info/LICENSE,sha256=i8JNomIH12ttOBmn3GF6M0_dbv_RsEWEoU87WeKKAxY,1070
+sshc-0.8.0.dist-info/RECORD,,
