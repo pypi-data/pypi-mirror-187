@@ -1,0 +1,110 @@
+# name: test_structure
+  dict({
+    'spans': list([
+      dict({
+        'concept_id': 'UMLS:C5203670',
+        'concept_name': 'COVID-19',
+        'concept_type': 'Medical Conditions',
+        'pos_end': 12,
+        'pos_start': 4,
+        'text': 'COVID-19',
+      }),
+      dict({
+        'concept_id': 'UMLS:C1615608',
+        'concept_name': 'Pandemics',
+        'concept_type': 'Anatomy & Physiology',
+        'pos_end': 21,
+        'pos_start': 13,
+        'text': 'pandemic',
+      }),
+      dict({
+        'concept_id': 'UMLS:C0008059',
+        'concept_name': 'Child',
+        'concept_type': 'Context',
+        'pos_end': 81,
+        'pos_start': 73,
+        'text': 'children',
+      }),
+      dict({
+        'concept_id': 'UMLS:C0001779',
+        'concept_name': 'Age',
+        'concept_type': 'Anatomy & Physiology',
+        'pos_end': 90,
+        'pos_start': 87,
+        'text': 'Age',
+      }),
+      dict({
+        'concept_id': 'UMLS:C0008059',
+        'concept_name': 'Child',
+        'concept_type': 'Context',
+        'pos_end': 151,
+        'pos_start': 143,
+        'text': 'children',
+      }),
+      dict({
+        'concept_id': 'UMLS:C0009450',
+        'concept_name': 'Communicable Diseases',
+        'concept_type': 'Medical Conditions',
+        'pos_end': 192,
+        'pos_start': 183,
+        'text': 'infection',
+      }),
+    ]),
+    'text': 'The COVID-19 pandemic has shown a markedly low proportion of cases among children 1-4. Age disparities in observed cases could be explained by children having lower susceptibility to infection, lower propensity to show clinical symptoms or both.',
+  })
+# ---
+# name: test_async_def_annotation
+  dict({
+    'spans': list([
+      dict({
+        'concept_id': 'UMLS:C5203670',
+        'concept_name': 'COVID-19',
+        'concept_type': 'Medical Conditions',
+        'pos_end': 12,
+        'pos_start': 4,
+        'text': 'COVID-19',
+      }),
+      dict({
+        'concept_id': 'UMLS:C1615608',
+        'concept_name': 'Pandemics',
+        'concept_type': 'Anatomy & Physiology',
+        'pos_end': 21,
+        'pos_start': 13,
+        'text': 'pandemic',
+      }),
+      dict({
+        'concept_id': 'UMLS:C0008059',
+        'concept_name': 'Child',
+        'concept_type': 'Context',
+        'pos_end': 81,
+        'pos_start': 73,
+        'text': 'children',
+      }),
+      dict({
+        'concept_id': 'UMLS:C0001779',
+        'concept_name': 'Age',
+        'concept_type': 'Anatomy & Physiology',
+        'pos_end': 90,
+        'pos_start': 87,
+        'text': 'Age',
+      }),
+      dict({
+        'concept_id': 'UMLS:C0008059',
+        'concept_name': 'Child',
+        'concept_type': 'Context',
+        'pos_end': 151,
+        'pos_start': 143,
+        'text': 'children',
+      }),
+      dict({
+        'concept_id': 'UMLS:C0009450',
+        'concept_name': 'Communicable Diseases',
+        'concept_type': 'Medical Conditions',
+        'pos_end': 192,
+        'pos_start': 183,
+        'text': 'infection',
+      }),
+    ]),
+    'text': 'The COVID-19 pandemic has shown a markedly low proportion of cases among children 1-4. Age disparities in observed cases could be explained by children having lower susceptibility to infection, lower propensity to show clinical symptoms or both.',
+  })
+# ---
