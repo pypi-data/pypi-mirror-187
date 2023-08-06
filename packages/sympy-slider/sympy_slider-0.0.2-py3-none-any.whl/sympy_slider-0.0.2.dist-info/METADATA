@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: sympy-slider
+Version: 0.0.2
+Summary: Make slider from sympy expression and params
+Home-page: https://github.com/bfichera/sympy-slider
+Author: Bryan Fichera
+Author-email: bfichera@mit.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.TXT
+Requires-Dist: sympy
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+# sympy-slider
+
+### Requirements
+- `matplotlib`
+- `numpy`
+- `sympy`
+
+### Installation
+```pip install sympy-slider```
+
+### Usage
+
+```
+import numpy as np
+from sympy import sin, cos
+from sympy.abc import a, b, x
+
+from sympy_slider import slider
+
+expr = a*cos(x) + b*sin(x)
+
+params = slider(
+    expr,
+    x,
+    params=dict(
+        a=(0, -1, 1),
+        b=(0, -1, 1),
+    ),
+    xdata=np.linspace(0, 2*np.pi, 1000),
+    lambdify_kws=dict(
+        modules='numpy',
+    ),
+    plot_kws=dict(
+        color='blue',
+        linestyle='--',
+    ),
+)
+```
