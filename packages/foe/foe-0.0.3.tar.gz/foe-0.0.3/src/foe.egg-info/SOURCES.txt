@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/foe/__init__.py
+src/foe/logic.py
+src/foe/prover.py
+src/foe.egg-info/PKG-INFO
+src/foe.egg-info/SOURCES.txt
+src/foe.egg-info/dependency_links.txt
+src/foe.egg-info/requires.txt
+src/foe.egg-info/top_level.txt

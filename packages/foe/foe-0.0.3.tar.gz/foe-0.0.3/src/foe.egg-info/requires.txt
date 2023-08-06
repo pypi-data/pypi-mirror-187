@@ -1,0 +1,7 @@
+lark>=1.0
+
+[experiments]
+ipykernel>=6.20.2
+
+[test]
+pytest>=6.2.5
