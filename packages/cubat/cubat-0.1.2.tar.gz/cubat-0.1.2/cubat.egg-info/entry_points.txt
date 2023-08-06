@@ -1,0 +1,2 @@
+[console_scripts]
+cubat = cubat.cli_scripts:cli
