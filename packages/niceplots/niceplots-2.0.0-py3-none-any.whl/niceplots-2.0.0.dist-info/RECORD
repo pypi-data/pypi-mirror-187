@@ -1,0 +1,11 @@
+niceplots/__init__.py,sha256=rjSQFxBvHus1PrkQeu6CAb9oQhqvKe68K36NlYeDAdA,66
+niceplots/parula.py,sha256=by5EIIIjnxZalrrgXHkcT5PeIiT7rv6bn-W3rg3VaOU,3452
+niceplots/utils.py,sha256=_hFwoE_ck8_XRIrjezt0J9VMUYmDmbvKCARxWZQMs0I,28025
+niceplots/styles/doumont-dark.mplstyle,sha256=8S0wCuAk7YYTWmY4wZ5mgDoyYAsS6yx5Uv5oNdNXIKc,1146
+niceplots/styles/doumont-light.mplstyle,sha256=cxNC2Au1VLDVizB7pQXcAZZbCCrVVLab_fNsChmsURE,1112
+niceplots/styles/james-dark.mplstyle,sha256=-YzRyW9yHIrlMLy8TudEXHVAvfIigCjCGdmuKE_WjLY,857
+niceplots/styles/james-light.mplstyle,sha256=2R51pMWLTOBfMEJnjtbzWZhQOsJi2mSPbcFPN_Ujdoc,852
+niceplots-2.0.0.dist-info/METADATA,sha256=iwrUkr1dQVRgOAmgkt2wbYahu2ESgvgSxsg0oGLoDg8,4456
+niceplots-2.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+niceplots-2.0.0.dist-info/top_level.txt,sha256=AXPTUh13A4r5iKtvXz0ZzOPnkrYIDczBiw3z9IyS4uI,10
+niceplots-2.0.0.dist-info/RECORD,,
