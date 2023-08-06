@@ -1,0 +1,2 @@
+[console_scripts]
+gb = goodbudget_cli.run_goodbudget:main
