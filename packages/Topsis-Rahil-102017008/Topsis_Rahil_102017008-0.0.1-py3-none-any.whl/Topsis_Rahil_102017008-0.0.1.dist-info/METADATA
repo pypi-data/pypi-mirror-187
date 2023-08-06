@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: Topsis-Rahil-102017008
+Version: 0.0.1
+Summary: Used for calculation of Topsis Score and Rank according to it
+Author: Rahil Raj Verma
+Requires-Python: >=3.6
+License-File: LICENSE
+
