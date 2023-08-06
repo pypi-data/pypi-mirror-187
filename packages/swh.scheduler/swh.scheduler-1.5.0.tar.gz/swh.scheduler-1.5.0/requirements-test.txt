@@ -1,0 +1,10 @@
+pytest
+pytest-mock
+hypothesis >= 3.11.0
+swh.lister
+swh.storage[testing]
+types-click
+types-flask
+types-pyyaml
+types-requests
+types-Deprecated
