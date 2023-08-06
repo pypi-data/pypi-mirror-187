@@ -1,0 +1,12 @@
+timetagger_cli/__init__.py,sha256=5yOPGmk7g70xY8cT35rlNWcSXKFubUbW-0Ie0eKER90,220
+timetagger_cli/__main__.py,sha256=i8oN7gvDLcXzlGPVcLB6ZJ37TwXYmde3Ox6i7nnDips,2063
+timetagger_cli/config.py,sha256=P0YR99lUBUIFkNPD5v0BecRs3PD_AKhlvTdpGdYM-PY,2170
+timetagger_cli/core.py,sha256=COo5SRh01OnFr9U7SXZMEdpCdHH60SRJVUKNMj6ufMs,6373
+timetagger_cli/utils.py,sha256=UqdfMH2y9rjrd5AVrnfaxbLp6GXu3rfc1K3BN5ZIfJQ,2594
+timetagger_cli-23.1.1.dist-info/LICENSE,sha256=NogGsfTiM8NcWl7YAkrX86av9XYPIAGfnbk2QfQHIs8,1068
+timetagger_cli-23.1.1.dist-info/METADATA,sha256=MGlfiHkYF4WGbDmmR30q_Kh-ayYcK4tguvnwYx5-tLM,1553
+timetagger_cli-23.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+timetagger_cli-23.1.1.dist-info/entry_points.txt,sha256=jWi2hJ2s4qvKKGrlXYW6AW65fsxPCJD6pCtud2Gri4I,60
+timetagger_cli-23.1.1.dist-info/top_level.txt,sha256=hXAntVIZLQSfiTFwFMNuvavqm9CorX7y-p4k5_52SpM,15
+timetagger_cli-23.1.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+timetagger_cli-23.1.1.dist-info/RECORD,,
