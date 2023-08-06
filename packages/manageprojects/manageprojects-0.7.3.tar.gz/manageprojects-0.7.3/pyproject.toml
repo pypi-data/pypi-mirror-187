@@ -1,0 +1,120 @@
+[project]
+name = "manageprojects"
+version = "0.7.3"
+description = "Manage Python / Django projects"
+readme = "README.md"
+authors = [
+    {name = 'Jens Diemer', email = 'mamageprojects@jensdiemer.de'}
+]
+requires-python = ">=3.9,<4"
+dependencies = [
+    "cookiecutter",
+    "tomlkit",
+    "bx_py_utils",  # https://github.com/boxine/bx_py_utils
+    "click",  # https://github.com/pallets/click/
+    "rich-click",  # https://github.com/ewels/rich-click
+    "rich",  # https://github.com/Textualize/rich
+]
+[project.optional-dependencies]
+dev = [
+    "pip-tools",  # https://github.com/jazzband/pip-tools/
+    "tox",  # https://github.com/tox-dev/tox
+    "coveralls",  # https://github.com/TheKevJames/coveralls-python
+    "darker",  # https://github.com/akaihola/darker
+    "isort",  # https://github.com/pycqa/isort
+    "flake8",  # https://github.com/pycqa/flake8
+    "EditorConfig",  # https://github.com/editorconfig/editorconfig-core-py
+    "safety",  # https://github.com/pyupio/safety
+    "mypy",  # https://github.com/python/mypy
+    "tomli",  # https://github.com/hukkin/tomli
+    "twine",  # https://github.com/pypa/twine
+    "poetry-publish",  # https://github.com/jedie/poetry-publish
+    "pdoc", # Because: https://github.com/boxine/bx_py_utils/issues/157
+]
+
+[project.urls]
+Documentation = "https://github.com/jedie/manageprojects"
+Source = "https://github.com/jedie/manageprojects"
+
+[project.scripts]
+manageprojects = "manageprojects.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["manageprojects*"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+[tool.darker]
+src = ['.']
+revision = "origin/main..."
+line_length = 119
+verbose = true
+skip_string_normalization = true
+diff = false
+check = false
+stdout = false
+isort = true
+lint = [
+    "flake8",
+]
+log_level = "INFO"
+
+
+[tool.isort]
+# https://pycqa.github.io/isort/docs/configuration/config_files/#pyprojecttoml-preferred-format
+atomic=true
+profile='black'
+skip_glob=['.*', '*/htmlcov/*']
+known_first_party=['manageprojects']
+line_length=119
+lines_after_imports=2
+
+
+[tool.coverage.run]
+branch = true
+source = ['.']
+omit = ['.*', '*/tests/*']
+command_line = '-m unittest --verbose --locals --buffer'
+
+[tool.coverage.report]
+skip_empty = true
+fail_under = 45
+
+
+[tool.mypy]
+warn_unused_configs = true
+ignore_missing_imports = true
+allow_redefinition = true  # https://github.com/python/mypy/issues/7165
+show_error_codes = true
+plugins = []
+exclude = [
+    '.venv',
+    'tests',
+    'manageprojects/project_templates',
+]
+
+
+[manageprojects] # https://github.com/jedie/manageprojects
+initial_revision = "8438598"
+initial_date = 2022-11-20T20:01:37+01:00
+cookiecutter_template = "https://github.com/jedie/cookiecutter_templates"
+cookiecutter_directory = "piptools-python"
+applied_migrations = [
+    "cf44769", # 2023-01-11T08:15:06+01:00
+]
+
+[manageprojects.cookiecutter_context.cookiecutter]
+full_name = "Jens Diemer"
+github_username = "jedie"
+author_email = "mamageprojects@jensdiemer.de"
+package_name = "manageprojects"
+package_version = "0.3.2"
+package_description = "Manage Python / Django projects"
+package_url = "https://github.com/jedie/manageprojects"
+issues_url = "https://github.com/jedie/manageprojects/issues"
+license = "GPL-3.0-or-later"
+_template = "https://github.com/jedie/cookiecutter_templates"
