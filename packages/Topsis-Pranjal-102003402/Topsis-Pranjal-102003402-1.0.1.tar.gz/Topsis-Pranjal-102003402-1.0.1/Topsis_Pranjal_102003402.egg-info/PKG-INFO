@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Topsis-Pranjal-102003402
+Version: 1.0.1
+Summary: TOPSIS - Technique for Order of Preference by Similarity to Ideal Solution - By Pranjal Arora 102003402
+Home-page: https://github.com/pranjal-arora/Topsis
+Download-URL: https://github.com/pranjal-arora/Topsis/archive/refs/tags/v_011.tar.gz
+Author: Pranjal Arora
+Author-email: <prv.gma@gmail.com>
+License: MIT
+Keywords: python,topsis,machinelearning,datascience,statistics,predictiveanalysis
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE.txt
