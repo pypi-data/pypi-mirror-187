@@ -1,0 +1,3 @@
+[console_scripts]
+topsis = Topsis_Garvit_102017132.topsis:main
+
