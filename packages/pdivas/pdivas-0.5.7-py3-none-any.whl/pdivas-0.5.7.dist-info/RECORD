@@ -1,0 +1,10 @@
+pdivas/__init__.py,sha256=RivHo51WNly4fx5JQov_xnOhvAPBAFC0CCq8PfmUm60,225
+pdivas/__main__.py,sha256=38KIsy1Rjpp4ldk61VRabXyvK3XFKMumZ0XV-MoqSxg,3815
+pdivas/scoring_to_vcf.py,sha256=RVq2YguVEp61a3pCL-DHZ4Oh5-ElslHtd2z21kKIi8Q,4316
+pdivas/model/PDIVAS.sav,sha256=Q3wIpglE-YjRfHr_IIIPZWwzTMbkYr_MbWJaxZYSxpo,1897567
+pdivas-0.5.7.dist-info/LICENSE,sha256=ApMXaKFYs_wGlG5BokzIx4wYneOGx80cqIeVtvuWHu8,1088
+pdivas-0.5.7.dist-info/METADATA,sha256=hS5m0s3sifgi-hpcD-Hl96n6zsECyZj6gACWqUH4P6Y,6814
+pdivas-0.5.7.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pdivas-0.5.7.dist-info/entry_points.txt,sha256=XM2_0bHkwT5Q4d2P1i9ZKj6MHv-Jl4gJiAG7N_NKvbU,49
+pdivas-0.5.7.dist-info/top_level.txt,sha256=h2Tv3DJyQ8pw4-cYwmuBhxsvrJRklDJvPAhAEB8yfa8,7
+pdivas-0.5.7.dist-info/RECORD,,
