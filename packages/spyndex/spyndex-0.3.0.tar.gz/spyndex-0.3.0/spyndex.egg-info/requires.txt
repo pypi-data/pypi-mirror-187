@@ -1,0 +1,10 @@
+dask>=2021.9.1
+earthengine-api
+eemont>=0.3.6
+matplotlib
+numpy
+pandas
+python-box>=6.0
+requests
+seaborn
+xarray
