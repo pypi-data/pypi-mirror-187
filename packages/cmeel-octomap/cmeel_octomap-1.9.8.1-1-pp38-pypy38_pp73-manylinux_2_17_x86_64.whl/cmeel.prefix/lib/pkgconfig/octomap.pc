@@ -1,0 +1,10 @@
+prefix=/tmp/cmeel-dbqra9ca/pfx/cmeel.prefix
+libdir=/tmp/cmeel-dbqra9ca/pfx/cmeel.prefix/lib
+includedir=/tmp/cmeel-dbqra9ca/pfx/cmeel.prefix/include
+
+Name: octomap
+Description: octomap
+Requires: 
+Version: 1.9.8
+Libs: -L${libdir}  -loctomap -loctomath
+Cflags: -I${includedir} 
