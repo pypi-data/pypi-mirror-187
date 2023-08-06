@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: splight-toolbox
+Version: 0.0.2
+Summary: Library for public use. Splight
+Home-page: UNKNOWN
+Author: Splight
+Author-email: factory@splight-ae.com
+License: LICENSE.txt
+Platform: UNKNOWN
+
+# splight-toolbox
+
+## How to install
+
+For development
+
+- `python setup.py develop`
+
+For production envs.
+
+- `python setup.py install`
+
+
