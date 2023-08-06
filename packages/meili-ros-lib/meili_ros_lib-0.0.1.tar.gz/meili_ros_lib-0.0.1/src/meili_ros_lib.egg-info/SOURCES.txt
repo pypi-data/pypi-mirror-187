@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/meili_ros_lib.egg-info/PKG-INFO
+src/meili_ros_lib.egg-info/SOURCES.txt
+src/meili_ros_lib.egg-info/dependency_links.txt
+src/meili_ros_lib.egg-info/top_level.txt
