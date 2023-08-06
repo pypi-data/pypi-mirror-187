@@ -1,0 +1,12 @@
+{% extends 'generic/object.html' %}
+{% load helpers %}
+{% load plugins %}
+{% load render_table from django_tables2 %}
+{% load perms %}
+
+{% block extra_controls %}
+<a href="{% url 'plugins:netbox_storage:physicalvolume_add' %}?partition={{ object.id }}&pv_name={{ object.device }}&description=The PV has the size {{ object.size }}&return_url={{ object.get_absolute_url }}" class="btn btn-sm btn-primary" role="button">
+    <i class="mdi mdi-plus-thick"></i> Add Physical Volume
+</a>
+{{ block.super }}
+{% endblock %}
