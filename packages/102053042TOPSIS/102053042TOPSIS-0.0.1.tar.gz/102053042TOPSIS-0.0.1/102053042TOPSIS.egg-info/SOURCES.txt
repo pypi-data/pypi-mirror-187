@@ -1,0 +1,9 @@
+LICENCE.txt
+README.txt
+setup.py
+102053042TOPSIS.egg-info/PKG-INFO
+102053042TOPSIS.egg-info/SOURCES.txt
+102053042TOPSIS.egg-info/dependency_links.txt
+102053042TOPSIS.egg-info/top_level.txt
+Topsis_102053042/Topsis_102053042.py
+Topsis_102053042/__init__.py
