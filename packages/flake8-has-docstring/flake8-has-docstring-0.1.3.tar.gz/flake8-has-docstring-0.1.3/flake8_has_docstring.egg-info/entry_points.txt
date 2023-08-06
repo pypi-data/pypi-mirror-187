@@ -1,0 +1,2 @@
+[flake8.extension]
+DOC001 = flake8_has_docstring:Plugin
