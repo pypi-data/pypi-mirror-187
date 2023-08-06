@@ -1,0 +1,9 @@
+logpandas/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+logpandas/__main__.py,sha256=fU5KJlmYDdr_JZ_WkZpBttW3BLfaj3UdGoT3hKH1804,451
+logpandas/core.py,sha256=vZYqPosX4A19UnczZ8BQCHcUEz9MXmtYcgGYVLWHvqc,2217
+logpandas-0.0.1.dist-info/LICENSE,sha256=CxVRfw8MiHTczUnnQ2a5YsgIj617zsS5aJVkgMeEgcg,1073
+logpandas-0.0.1.dist-info/METADATA,sha256=5TYx-0Nrs2gUyPheyYdFSU0ODg4LvvUZIOpSJB4LIL8,1686
+logpandas-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+logpandas-0.0.1.dist-info/entry_points.txt,sha256=HJlBIDLjTj2WmQZsIvGM-LDe0sIbAdDqVFd7W3GHqEQ,54
+logpandas-0.0.1.dist-info/top_level.txt,sha256=_6A8SbNeDt73J9UXTYxLhVn8O0UwRbeJp3P--8zXxtY,10
+logpandas-0.0.1.dist-info/RECORD,,

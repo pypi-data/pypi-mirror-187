@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: logpandas
+Version: 0.0.1
+Summary: Parse logfiles as pandas dataframes
+Home-page: https://github.com/njanakiev/logpandas
+Author: Nikolai Janakiev
+Author-email: nikolai.janakiev@gmail.com
+License: MIT
+Platform: any
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+
+# logpandas
+
+[![](https://img.shields.io/pypi/v/logpandas.svg)](https://pypi.python.org/pypi/logpandas)
+
+Parse various logfiles commonly found in `/var/log` as [Pandas](https://pandas.pydata.org/) DataFrames.
+
+# Installation
+
+To install the package, type:
+
+```bash
+pip install logpandas
+```
+
+# Usage
+
+For more information on the command-line interface, type:
+
+```
+logpandas --help
+```
+
+```
+usage: logpandas [-h] input_filepath output_filepath
+
+positional arguments:
+  input_filepath
+  output_filepath
+
+optional arguments:
+  -h, --help       show this help message and exit
+```
+
+# License
+
+This project is licensed under the MIT license. See the [LICENSE](LICENSE) for details.
+
+
