@@ -1,0 +1,13 @@
+sfrbox_api/__init__.py,sha256=G1f3SUer3RJU-WfXgAiM_5Ea72KtMeH3TILRXjNQ0zE,19
+sfrbox_api/bridge.py,sha256=ZdC2z6a9BrGBpHMPCzm8hqZTCan4yXHn9SeljYno7Rc,6059
+sfrbox_api/cli/__init__.py,sha256=AgB2GjtezsvC2J-cna-gSQxHR9GHYsr1bDCYYMAN2MM,19
+sfrbox_api/cli/__main__.py,sha256=mgCcQyuuLzljpfztebVGkSVSCkTMih3XFVTVZeufZ6s,211
+sfrbox_api/exceptions.py,sha256=2sAxUcKx9zBLCZnJ9X6icO2GLs8Xv5-2zeum-lczo-k,250
+sfrbox_api/helpers.py,sha256=nx-IM28nz8OmZIUS7uZWQjOHTAa0gwPURgTjjuXFCBU,536
+sfrbox_api/models.py,sha256=hqPadrX2aMJm-3lVqeX8PK5JpSEUAGXmHiwMME5rqps,4165
+sfrbox_api/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sfrbox_api-0.0.5.dist-info/METADATA,sha256=O2qwN1L5Qhb0XWdm5xQs0VuZmnFMOS7eFuuINE02eRQ,3453
+sfrbox_api-0.0.5.dist-info/entry_points.txt,sha256=LeqU89Oopi2vRxh6Y6dCrrfrhn5LWzOUNmOd0OCuE2k,55
+sfrbox_api-0.0.5.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+sfrbox_api-0.0.5.dist-info/LICENSE,sha256=Rrgnx46J0QLTy99I9KXPfT9Gm_u89TG-Dh_l6ZxWqGg,1100
+sfrbox_api-0.0.5.dist-info/RECORD,,
