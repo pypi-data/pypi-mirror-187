@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: atfdb
+Version: 0.1.0
+Summary: BNL/ATF socket-based data acquisition client
+Home-page: https://github.com/BNL-ATF/atfdb
+Author: Brookhaven National Laboratory
+Author-email: mrakitin@bnl.gov
+License: BSD (3-clause)
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# atfdb
+
+[![Tests](https://github.com/BNL-ATF/atfdb/actions/workflows/testing.yml/badge.svg)](https://github.com/BNL-ATF/atfdb/actions/workflows/testing.yml)
+[![PyPI](https://img.shields.io/pypi/v/atfdb.svg?logo=pypi&logoColor=white&label=PyPI)](https://pypi.python.org/pypi/atfdb)
+
+BNL/ATF socket-based data acquisition client
+
+* Free software: 3-clause BSD license

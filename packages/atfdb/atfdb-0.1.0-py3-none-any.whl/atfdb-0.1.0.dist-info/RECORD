@@ -1,0 +1,13 @@
+atfdb/__init__.py,sha256=t9KZdp_DIvv91kyAlbqfXkrky_63qicYujvE-nd8xlM,93
+atfdb/_version.py,sha256=KYqolPYTdXhBN0aiE2j9_M0Mbg7AqXTX6UBhVdClFcc,497
+atfdb/atfdb.py,sha256=3OHPn3Nb08H9PntrbeyyRTt7ytgfrNN3mLAaH2sv6hA,11148
+atfdb/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atfdb/tests/conftest.py,sha256=XYeQN_40FMd2fsJxgakvwwHrDLCaiv3ckvtaETvJQH8,656
+atfdb/tests/socket_server.py,sha256=_k-E8j2Etq6Enxq-MxA2nYs-NR2QWeKUPOTAE19tpXM,2231
+atfdb/tests/test_atfdb.py,sha256=WNkkcSnZG_t49eZRNBQQR-fynn1jd7Iuq0lOPPcTKI8,372
+atfdb-0.1.0.dist-info/LICENSE,sha256=0ySDv6byQvsoXdTgs5yHzIvnFRhnwxNZLLSD0qN_1Nc,1538
+atfdb-0.1.0.dist-info/METADATA,sha256=QRG1GGjNRvC7iu_tEGjmXWrXPDLoNBALTwA8r4jy4_4,830
+atfdb-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+atfdb-0.1.0.dist-info/entry_points.txt,sha256=5RobUhxApbF5wng_c1CCqJZDeIZM4YQGWcOBmhmQVjE,80
+atfdb-0.1.0.dist-info/top_level.txt,sha256=br23XLVf3WXsNeXNBeEqxzhfQMt9bu0Gfdy44GKjQgA,6
+atfdb-0.1.0.dist-info/RECORD,,
