@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pypaq
+Version: 0.2.3
+Summary: python tools
+Home-page: https://github.com/piteren/pypaq.git
+Author: Piotr Niewinski
+Author-email: pioniewinski@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: beautifulsoup4
+Requires-Dist: GPUtil
+Requires-Dist: Levenshtein
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: plotly
+Requires-Dist: psutil
+Requires-Dist: requests
+Requires-Dist: requests-html
+Requires-Dist: sentence-transformers
+Requires-Dist: scipy
+Requires-Dist: sklearn
+Requires-Dist: tensorboard
+Requires-Dist: tensorflow
+Requires-Dist: torch
+Requires-Dist: typing-extensions
+
+UNKNOWN
+
