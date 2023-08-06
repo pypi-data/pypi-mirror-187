@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling","boto3","pandas","pyarrow","fsspec","s3fs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "datalake_utils"
+version = "2.1.2"
+authors = [
+  {name="Luis Roberto de Oliveira Moro", email="luis.moro@yuca.live"},
+]
+description = "Manipulate data on Amazon S3 using Apache Hadoop filesystem compability"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+        "Programming Language :: Python :: 3",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent"
+    ]
+
+[project.urls]
+"Homepage" = "https://github.com/yuca-live/yuca-datalake-utils"
