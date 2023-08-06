@@ -1,0 +1,10 @@
+aws_cdk/aws_docdbelastic/__init__.py,sha256=XYK1hOAcwSTk41KI3FsO0cGXNw2mDy-xvS6W0DcDgPQ,39670
+aws_cdk/aws_docdbelastic/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_docdbelastic/_jsii/__init__.py,sha256=2_2g5km03tWPwuy5pf4PR8sl7Bo9GppTZmwEyyfMhD0,430
+aws_cdk/aws_docdbelastic/_jsii/aws-docdbelastic@1.190.0.jsii.tgz,sha256=8Ik2n2KXUGY44Sy9fewaW0S5JOh-mRdf8gX4D7ZfRyk,27586
+aws_cdk.aws_docdbelastic-1.190.0.dist-info/LICENSE,sha256=YA6CL2YE08NgoURWXRTrec3mNy-KAR-_UNdiMqgNVMI,11391
+aws_cdk.aws_docdbelastic-1.190.0.dist-info/METADATA,sha256=6VkyqugvfKmQKLS50K_metvyUgUWPLMiYMrxrviV9HU,3207
+aws_cdk.aws_docdbelastic-1.190.0.dist-info/NOTICE,sha256=XtGET2JQh3C41orQUenLTefWItOqLmu2N-mGwW7t3Fo,113
+aws_cdk.aws_docdbelastic-1.190.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aws_cdk.aws_docdbelastic-1.190.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_docdbelastic-1.190.0.dist-info/RECORD,,
