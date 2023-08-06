@@ -1,0 +1,14 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+flake8_debug/__init__.py
+flake8_debug/errors.py
+flake8_debug/meta.py
+flake8_debug/plugin.py
+flake8_debug.egg-info/PKG-INFO
+flake8_debug.egg-info/SOURCES.txt
+flake8_debug.egg-info/dependency_links.txt
+flake8_debug.egg-info/entry_points.txt
+flake8_debug.egg-info/requires.txt
+flake8_debug.egg-info/top_level.txt
