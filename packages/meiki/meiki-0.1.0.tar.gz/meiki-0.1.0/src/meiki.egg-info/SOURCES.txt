@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/meiki/AnimeNote.py
+src/meiki/BaseNote.py
+src/meiki/NoteType.py
+src/meiki/core.py
+src/meiki.egg-info/PKG-INFO
+src/meiki.egg-info/SOURCES.txt
+src/meiki.egg-info/dependency_links.txt
+src/meiki.egg-info/requires.txt
+src/meiki.egg-info/top_level.txt

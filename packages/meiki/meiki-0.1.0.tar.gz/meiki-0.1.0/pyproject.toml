@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "meiki"
+version = "0.1.0"
+description = "Meiki Note Taking Library"
+readme = "README.md"
+authors = [{ name = "nischkar", email = "mail@nischkar.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["meiki"]
+dependencies = [
+]
+requires-python = ">=3.4"
+
+[project.optional-dependencies]
+dev = ["black", "pytest"]
+
+[project.urls]
+Homepage = "https://meiki.nischkar.com"
