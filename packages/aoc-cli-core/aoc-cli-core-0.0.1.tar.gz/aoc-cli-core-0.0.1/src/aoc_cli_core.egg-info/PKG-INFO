@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: aoc-cli-core
+Version: 0.0.1
+Summary: Advent of Code scaffolding CLI core
+Author-email: Emil Kloeden <emilkloeden@gmail.com>
+Project-URL: Homepage, https://github.com/emilkloeden/aoc-cli-core
+Project-URL: Bug Tracker, https://github.com/emilkloeden/aoc-cli-core/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# aoc-cli-core
+
+A collection of base classes for plugins for the aoc-cli tool to override
+
+# Installation
+
+_(Only required if developing own plugins)_
+`pip install aoc-cli-core`
