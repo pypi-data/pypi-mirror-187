@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+maxmods/__init__.py
+maxmods.egg-info/PKG-INFO
+maxmods.egg-info/SOURCES.txt
+maxmods.egg-info/dependency_links.txt
+maxmods.egg-info/requires.txt
+maxmods.egg-info/top_level.txt
+maxmods/auth/__init__.py
+maxmods/auth/auth.py
+maxmods/auth/main.py
+maxmods/auth/logs/__init__.py
