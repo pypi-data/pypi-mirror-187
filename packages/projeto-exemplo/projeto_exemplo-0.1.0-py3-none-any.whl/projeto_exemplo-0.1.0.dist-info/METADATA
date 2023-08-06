@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: projeto-exemplo
+Version: 0.1.0
+Summary: Projeto criado para ser exemplo de python package com PDM
+License: MIT
+Author-email: Werliton Gomes Barroso <werliton.barroso@primecontrol.com.br>
+Requires-Python: >=3.8
+Requires-Dist: hvac>=1.0.2
+Description-Content-Type: text/markdown
+
+# projeto-exemplo
+
+Projeto criado para ser exemplo de python package com PDM
+
