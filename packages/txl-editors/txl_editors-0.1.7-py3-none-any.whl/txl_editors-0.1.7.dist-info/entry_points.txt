@@ -1,0 +1,2 @@
+[txl_component]
+txl_editors = txl_editors.components
