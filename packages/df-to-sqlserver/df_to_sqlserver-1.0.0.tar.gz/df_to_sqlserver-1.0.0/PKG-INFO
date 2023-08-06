@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: df_to_sqlserver
+Version: 1.0.0
+Summary: Test version - Dataframe to Script SQL. This project created to Francisco Fabio de A. Ferreira, Systems Analyst, Data Scientist. This package. E-mail:franciscofabio18@hotmail.com.
+Home-page: https://github.com/franciscofabio/df_to_sql
+Author: Francisco Fábio de Almeida Ferreira
+Author-email: franciscofabio18@hotmail.com
+License: MIT License
+Description: # Projeto: Pacote para Converter Dataframes em Script SQL
+        ## Autora do Projeto: Francisco FÃ¡dio
+        [(clique aqui para ver o meu perfil na plataforma)](https://github.com/franciscofabio)
+        #### Tecnologia: Python | SQL
+        #### Data: 22/01/2023
+        -----------------------------------------
+        ### DescriÃ§Ã£o
+        O pacote "df_to_sql" Ã© usado para:
+        
+        - MÃ³dulo "converter":
+          - possui a funÃ§Ã£o converter_df_in_sql que com os.mkdir('SCRIPTS')
+          - a funÃ§Ã£o recece como parametro 3 variaveis:
+            - df -> nome do dataframe.
+            - tb_name -> nome da tabela do banco sql.
+            - name_script -> nome do arquivo
+          - cria a pasta para saÃ­da dos scripts sql
+          - Atraves de for adiciona '' nas colunas do tipo object 'categorias'
+        
+        ---------------------------------------------
+        ## Passo a passo da configuraÃ§Ã£o para hospedar um pacote em Python no ambiente de testes Test Pypi
+        
+        - [x] InstalaÃ§Ã£o das Ãºltimas versÃµes de "setuptools" e "wheel"
+        
+        ```
+        python -m pip install --user --upgrade setuptools wheel
+        ```
+        - [x] Tenha certeza que o diretÃ³rio no terminal seja o mesmo do arquivo "setup.py"
+        
+        ```
+        python setup.py sdist bdist_wheel
+        ```
+        
+        - [x] ApÃ³s completar a instalaÃ§Ã£o, verifique se as pastas abaixo foram adicionadas ao projeto:
+          - [x] build;
+          - [x] dist;
+          - [x] image_processing_test.egg-info.
+        
+        - [x] Basta subir os arquivos, usando o Twine, para o Test Pypi:
+        
+        ```
+        py -m twine upload --repository testpypi dist/*
+        ```
+        
+        - [x] ApÃ³s rodar o comando acima no terminal, serÃ¡ pedido para inserir o usuÃ¡rio e senha. Feito isso, o projeto estarÃ¡ hospedado no Test Pypi.hospedÃ¡-lo no Pypi diretamente.
+        
+        ### Aqui o objetivo nÃ£o Ã© disponibilizar um pocote simplis mas que solucionou um problema real para mim e acredito que possa solucionar problemas com outros dataframes.
+        ----------------------------------------------------
+        ## InstalaÃ§Ã£o local, apÃ³s hospedagem no Test Pypi
+        
+        - [x] InstalaÃ§Ã£o de dependÃªncias
+        ```
+        pip install -r requirements.txt
+        ```
+        
+        - [x] InstalÃ§Ã£o do Pacote
+        
+        Use o gerenciador de pacotes ```pip install -i pip install -i https://test.pypi.org/simple/ image-processing-package-myPy ```para instalar image-processing-package-myPy
+        
+        ```bash
+        pip install image-processing-package-myPy
+        ```
+        -------------------------------------------------
+        ## Como usar em qualquer projeto
+        
+        ```python
+        from image-processing-package-myPy.processing import combination
+        combination.find_difference(image1, image2)
+        ```
+        
+        
+        ## Autor:
+        Francisco FÃ¡bio de Almeida Ferreira
+        
+        
+Keywords: df to sql
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
