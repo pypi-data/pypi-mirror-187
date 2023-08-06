@@ -1,0 +1,13 @@
+__pycache__
+.coverage
+.coverage.*
+.idea
+.mypy_cache
+.pytest_cache
+*.pyc
+coverage.xml
+dist
+env
+env3.7
+htmlcov
+site
