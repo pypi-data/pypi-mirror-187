@@ -1,0 +1,10 @@
+datasette_ui_extras/__init__.py,sha256=P0xsJCbL-d4OyoioWx_pToi8A0pOkysQt584Bslln_U,442
+datasette_ui_extras/static/facet-treatment.css,sha256=W4Xw3U9nOSeD4BD417DIIfjDqCl1tOX3CSvhpa3OgrU,783
+datasette_ui_extras/static/focus-search-box.js,sha256=QCuuyWKaPKmY5oItfEKItOFaa3e33gMAnIIY4p2FVB4,554
+datasette_ui_extras/static/sticky-table-headers.js,sha256=Fg41iNwbm0XaCcamAML8cUy5E25suB3AGRf--fzNJFA,840
+datasette_ui_extras-0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+datasette_ui_extras-0.4.dist-info/METADATA,sha256=6JtFatCgj6ZgQl9dWRzuZPs5FFnrhi-5R-c0broaJiY,2848
+datasette_ui_extras-0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+datasette_ui_extras-0.4.dist-info/entry_points.txt,sha256=g930RFvL4W2B4qnKVcJkM14q8RozF6UZ_DZlL-aJK9Q,44
+datasette_ui_extras-0.4.dist-info/top_level.txt,sha256=Ss0qM40gLCX5nlN8DiRyHvguxYAr6jRXOazrK7TUCGY,20
+datasette_ui_extras-0.4.dist-info/RECORD,,
