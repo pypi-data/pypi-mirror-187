@@ -1,0 +1,17 @@
+webinteractions/__init__.py,sha256=FOYAi2OfY2nr4WIrz9UKiEdrbG-5XptDTR6OF7WyVzA,215
+webinteractions/http_interaction.py,sha256=pP6vGablf741M-lmzZis4O4YR0srHgAfY3Ta2_4-oVk,2562
+webinteractions/ip_functions.py,sha256=rSaC1UHW8o7zFm3lfRNUnfglvMyzFxJ41LEuWp-WkfM,1704
+webinteractions/remote_access/__init__.py,sha256=d2K37hXZ7Pi9M2iid4X7mCjrYrAKItjfv2Nb6XHm8Gc,107
+webinteractions/remote_access/cgi_script.py,sha256=8pOIohixE_Nwl8_bt83XfmarMJN437DY0MR29ZwyuLk,10
+webinteractions/server_client/__init__.py,sha256=PEQx75Xu6LsMLBJ0aSMCjujxZHn--Pwch478Nb08edo,200
+webinteractions/server_client/tcp_socket_server.py,sha256=nVlTzkyUSj23LnQJv_RRhjwR1tgqe5SZrczdEwvNd_c,2375
+webinteractions/server_client/udp_socket_server.py,sha256=Esl0FYNqzKHxYkytLOq5p9Zed5AyEJzvyd8mN3Y4fbM,2406
+webinteractions/server_client/utils.py,sha256=wqRul47HwhpDlIQBCUegLgHtB-19MyjTeKBvTYFPlEw,1427
+webinteractions/server_client/xmlrpc_wrapper/__init__.py,sha256=F0Zz6ui5KF4k5lCkgO7u4yY5p6vz1uE4mGBlg89lM8o,123
+webinteractions/server_client/xmlrpc_wrapper/client.py,sha256=y5odm34SFDyAG4Jgz_rjmuoQPUBS7q4PudzkvkKkyLg,776
+webinteractions/server_client/xmlrpc_wrapper/server.py,sha256=8FmC5xqwTa3vXn3Skh4XalMejXNlINKF5o8Pt8N89so,1580
+webinteractions-0.0.5.dist-info/LICENSE,sha256=qvjLgMSwf9J9u9oLilgCVDYByBLSplNwzbEpK3TInig,1070
+webinteractions-0.0.5.dist-info/METADATA,sha256=XT81aIC_D2EtXydJQw8MrCmlYz0Q8m-gV7x0-9kML4E,1942
+webinteractions-0.0.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+webinteractions-0.0.5.dist-info/top_level.txt,sha256=MvIJa_gu92iw9H2fJr2_8Egrt7drQU2pzRqOt83SMqU,16
+webinteractions-0.0.5.dist-info/RECORD,,

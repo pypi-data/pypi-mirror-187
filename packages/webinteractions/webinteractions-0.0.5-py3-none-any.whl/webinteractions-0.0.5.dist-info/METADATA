@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: webinteractions
+Version: 0.0.5
+Summary: A Package created to provide APIs for different web related python libraries like socketserver, xmlrpc etc.
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![Coverage Status](https://coveralls.io/repos/github/Vinesh0299/webinteractions/badge.svg?branch=main)](https://coveralls.io/github/Vinesh0299/webinteractions?branch=main)
+
+This package aims towards providing API interfaces for various python libraries which results in reduction of
+writing boilerplate code for each project using these libraries, instead users can use this package to complete
+initial setup with as less as a single function call.
+
+For example, if a user wants to create a TCP server then instead of going through and setting up all the details,
+the user can simple run a function that creates a TCP server running on socketserver library, the user only needs to
+provide the hostname and port number for the server to start, like shown below
+
+```python
+    from webinteractions.server_client.tcp_socket_server import create_tcp_synchronous()
+    create_tcp_synchronous(hostname="localhost", port=8000)
+    Listening on localhost:8000
+```
+
+The package includes following functionalities:
+
+* ip_functions.py module contains functions that provides you with a generator for ipv4 and ipv6 respectively.
+* http_interactions.py contains two functions one for interacting with REST apis and another for getting file data
+* server_client.tcp_socket_server contains functions that start a tcp server synchronous and threaded with a simple function call
+* server_client.udp_socket_server does the same as tcp_socket_server just with udp protocol
+* server_client.xmlrpc_wrapper.server provides a function using which a user can start a xmlrpc server and define server side functions
+* server_client.xmlrpc_wrapper.client returns a server proxy using which a user can interact with xmlrpc server
