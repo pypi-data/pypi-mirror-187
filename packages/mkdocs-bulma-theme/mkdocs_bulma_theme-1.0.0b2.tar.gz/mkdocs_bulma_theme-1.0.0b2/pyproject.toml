@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "mkdocs-bulma-theme"
+version = "1.0.0-beta.2"
+description = "Another theme for Mkdocs leveraging use of Bulma css framework."
+authors = [
+    "Daniele Tentoni <daniele.tentoni.1996@gmail.com>",
+]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "mkdocs_bulma_theme" },
+]
+include = [
+    "mkdocs_bulma_theme/css/*",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "^1.4.2"
+mkdocs-bulma-classes-plugin = "^1.0.0b1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 79
+
+[tool.poetry.plugins."mkdocs.themes"]
+bulma = 'mkdocs_bulma_theme'
+
+[project.entry-points."mkdocs.themes"]
+bulma = 'mkdocs_bulma_theme'

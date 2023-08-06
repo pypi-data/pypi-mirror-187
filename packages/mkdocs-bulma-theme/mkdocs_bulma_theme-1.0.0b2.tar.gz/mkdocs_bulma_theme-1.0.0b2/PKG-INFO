@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: mkdocs-bulma-theme
+Version: 1.0.0b2
+Summary: Another theme for Mkdocs leveraging use of Bulma css framework.
+License: MIT
+Author: Daniele Tentoni
+Author-email: daniele.tentoni.1996@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# Mkdocs Bulma Theme
+
+Another theme for Mkdocs leveraging use of Bulma css framework.
+
+Look at the [documentation](https://daniele-tentoni.github.io/mkdocs-bulma-theme).
+
+Install using `pip install mkdocs-bulma-theme`.
+
+Look at the [Mkdocs Bulma Classes Plugin](https://github.com/Daniele-Tentoni/mkdocs-bulma-classes-plugin) too.
+

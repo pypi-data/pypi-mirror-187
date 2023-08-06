@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {% if config.site_author %}
+        <meta name="author" content="{{ config.site_author }}">
+        {% endif %}
+        <title>{% if page.title %}{{ page.title }} - {% endif %}{{
+            config.site_name }}</title>
+        <link rel="shortcut icon" href="{{ 'img/favicon.ico'|url }}">
+        <link rel="stylesheet" href="{{ 'css/theme.css'|url }}">
+        {% for path in config.extra_css %}
+        <link href="{{ path|url }}" rel="stylesheet">
+        {% endfor %}
+        <script src="{{ 'js/theme.js'|url }}"></script>
+        {% for path in config.extra_javascript %}
+        <script src="{{ path|url }}"></script>
+        {% endfor %}
+
+        {% if config.google_analytics %}
+        <!--
+            Include Google Analytics tracking code.
+            
+            http://www.mkdocs.org/user-guide/configuration/#google_analytics
+        -->
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', '{{ config.google_analytics[0] }}', '{{ config.google_analytics[1] }}');
+            ga('send', 'pageview');
+        </script>
+        {% endif %}
+    </head>
+
+    <body class="has-navbar-fixed-top has-background-dark has-text-light"
+        style="min-height: 100vh">
+        {% if nav|length>1 %}
+        <nav class="navbar is-fixed-top is-dark" role="navigation"
+            aria-label="main navigation">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="/">
+                        {{ config.site_name }}
+                    </a>
+
+                    <a role="button" class="navbar-burger" aria-label="menu"
+                        aria-expanded="false" data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-start">
+                        {% for nav_item in nav %}
+                        {% include "nav.html" %}
+                        {% endfor %}
+                    </div>
+
+                    <div class="navbar-end">
+                        {% if page and page.edit_url %}
+                        <a class="navbar-item" href="{{ page.edit_url }}">
+                            <i class="fa-brands fa-github"></i>&nbsp;Edit on {{ config.repo_name }}
+                        </a>
+                        {% elif config.repo_url %}
+                        <a class="navbar-item" href="{{ config.repo_url }}">
+                            {{ config.repo_name }}
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </nav>
+        {% endif %}
+        <section class="section">
+            <div class="container">
+                <!-- Missing TOC -->
+                {% block content %}
+                {{ page.content }}
+                {% endblock %}
+            </div>
+        </section>
+        {% if page.next_page or page.previous_page %}
+        <section class="section">
+            <div class="container">
+                <div class="is-flex is-justify-content-end">
+                    {% if page.previous_page %}
+                    <a href="{{ page.previous_page.url|url }}"
+                        title="{{ page.previous_page.title }}" class="has-text-light">
+                        <i class="fa-solid fa-caret-left"></i>&nbsp;Previous Page
+                    </a>
+                    {% else %}
+                    Previous Page
+                    {% endif %}
+                    &nbsp;
+                    <span>
+                    <i class="fa-solid fa-minus"></i>
+                    </span>
+                    &nbsp;
+                    {% if page.next_page %}
+                    <a href="{{ page.next_page.url|url }}" title="{{ page.next_page.title }}" class="has-text-light">
+                        Next Page&nbsp;<i class="fa-solid fa-caret-right"></i>
+                    </a>
+                    {% else %}
+                    Next Page
+                    {% endif %}
+                </div>
+            </div>
+        </section>
+        {% endif %}
+        <footer class="footer has-background-dark has-text-light">
+            <div class="content has-text-centered">
+                <p>
+                    {% if config.site_author %}
+                        {{ config.site_author }}
+                    {% endif %}
+                </p>
+                <p>
+                    {% if config.copyright %}
+                        {{ config.copyright }}
+                    {% endif %}
+                </p>
+                <p>
+                    Consider to sponsor me on Github to help me give more <i
+                        class="fa-regular fa-clock fa-spin"></i> and <i
+                        class="fa-regular fa-heart fa-beat"></i>.
+                </p>
+            </div>
+        </footer>
+    </body>
+
+</html>
