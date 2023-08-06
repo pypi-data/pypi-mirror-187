@@ -1,0 +1,2 @@
+[nbdev]
+cjm_parallel_utils = cjm_parallel_utils._modidx:d
