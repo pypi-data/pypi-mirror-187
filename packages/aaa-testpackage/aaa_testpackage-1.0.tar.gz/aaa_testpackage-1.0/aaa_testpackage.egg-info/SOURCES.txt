@@ -1,0 +1,10 @@
+setup.py
+aaa_testpackage/__init__.py
+aaa_testpackage/main.py
+aaa_testpackage.egg-info/PKG-INFO
+aaa_testpackage.egg-info/SOURCES.txt
+aaa_testpackage.egg-info/dependency_links.txt
+aaa_testpackage.egg-info/requires.txt
+aaa_testpackage.egg-info/top_level.txt
+aaa_testpackage/sub_package/__init__.py
+aaa_testpackage/sub_package/say_hi.py
