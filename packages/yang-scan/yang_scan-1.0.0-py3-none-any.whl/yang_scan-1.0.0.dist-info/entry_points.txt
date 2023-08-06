@@ -1,0 +1,3 @@
+[pyang.plugin]
+yang-scan = yang_scan:pyang_plugin_init
+
