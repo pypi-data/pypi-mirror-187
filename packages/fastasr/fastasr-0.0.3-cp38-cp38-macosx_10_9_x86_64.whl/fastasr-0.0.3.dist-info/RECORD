@@ -1,0 +1,12 @@
+_fastasr.cpython-38-darwin.so,sha256=e_3oXxPet1ih8EtNrf21KlkcY5TyF3zrsl6eI3XIfdQ,1318272
+fastasr/__init__.py,sha256=NeP6rbMle4yPWpvplmrHbBHlrjUXzuLq0Z54fJ15RS4,27
+fastasr/.dylibs/libgfortran.5.dylib,sha256=Z__0KCCmO086jRYNyelGF3HjPr_TJ7_xvLzGy54Ffxc,3433728
+fastasr/.dylibs/libopenblasp-r0.3.21.dylib,sha256=7b2VkfmWvnEVgUAxNOCDtAtAjnopTv4f4qp7IqZWjQQ,66266736
+fastasr/.dylibs/libquadmath.0.dylib,sha256=1a25Agee_fpL1isEZ-NLmIunlQzwymiGZYj3_sX8AOk,369760
+fastasr/.dylibs/libgcc_s.1.1.dylib,sha256=zKlE2diRyi60uYjoOm6QfN_4uQ7KOR1ch7PE912cU9s,186784
+fastasr/.dylibs/libgomp.1.dylib,sha256=oV91-Xci4ZZCE_qb3yxunvoZSLm35ck8x6qFZ4HtBwk,437488
+fastasr-0.0.3.dist-info/RECORD,,
+fastasr-0.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+fastasr-0.0.3.dist-info/WHEEL,sha256=pXLpj1wTvqlD6RVUEKOuGQGeFX0NOPyDrsC-9xVDmYU,109
+fastasr-0.0.3.dist-info/top_level.txt,sha256=h94Ap_L4vQ_-mrRswqmAr5BMrRG5sEi-Okwm1dsrVag,22
+fastasr-0.0.3.dist-info/METADATA,sha256=aZZ7NlcCF-5QtE2-WoO9cNpVT4WWLiCykSm5pQqEoFw,22138
