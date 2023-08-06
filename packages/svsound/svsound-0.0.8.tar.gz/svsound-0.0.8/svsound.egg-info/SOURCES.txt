@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/SVSound/__init__.py
+src/SVSound/levels.py
+src/SVSound/wavefile.py
+src/SVSound/recorders/__init__.py
+src/SVSound/recorders/decimus.py
+src/SVSound/recorders/generic.py
+src/SVSound/recorders/icListen.py
+src/SVSound/recorders/zoom.py
+svsound.egg-info/PKG-INFO
+svsound.egg-info/SOURCES.txt
+svsound.egg-info/dependency_links.txt
+svsound.egg-info/top_level.txt
