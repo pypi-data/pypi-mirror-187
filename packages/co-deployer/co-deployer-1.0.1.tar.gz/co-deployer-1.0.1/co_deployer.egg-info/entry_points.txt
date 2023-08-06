@@ -1,0 +1,2 @@
+[console_scripts]
+co-deployer = co_deployer.co_deployer:main
