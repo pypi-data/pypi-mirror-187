@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+Sub-Package/__init__.py
+Sub-Package/simple_calculator.py
+simple_calculator_by_DT.egg-info/PKG-INFO
+simple_calculator_by_DT.egg-info/SOURCES.txt
+simple_calculator_by_DT.egg-info/dependency_links.txt
+simple_calculator_by_DT.egg-info/requires.txt
+simple_calculator_by_DT.egg-info/top_level.txt
