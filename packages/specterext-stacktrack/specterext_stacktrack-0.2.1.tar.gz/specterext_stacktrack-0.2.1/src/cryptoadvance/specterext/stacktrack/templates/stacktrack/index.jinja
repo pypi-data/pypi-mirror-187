@@ -1,0 +1,37 @@
+{% extends "base.jinja" %}
+{% block title %}Index{% endblock %}
+{% block main %}
+    <img src="{{ url_for(service.id +'_endpoint' + '.static', filename=service.icon) }}" width="100"/>  
+    <br><br><br>
+    <div class="tagline">StackTrack Extension</div>
+    <br>
+    <div class="card">
+        <p>
+            The StackTrack extension shows charts of your ever-growing stack. You can find it in any wallet in the Chart
+            tab. You can also find it on the Wallets Overview if you have multiple wallets.
+        </p>
+    </div>
+    <br>
+    <div class="card">
+        <p>
+            If the overview Chart takes too long to load, you can deactivate it here.        </p>
+        <form action="{{ url_for(service.get_blueprint_name() + '.settings_post') }}" method="POST" role="form">
+            <input type="hidden" class="csrf-token" name="csrf_token" value="{{ csrf_token() }}"/>
+            
+            <div>Show Overview Chart:</div>
+            <select name="show_overview_chart">
+                <option value="yes"   {% if show_overview_chart == 'yes' %}selected{% endif %}>Yes</option>
+                <option value="no"    {% if show_overview_chart == 'no'  %}selected{% endif %}>No</option>
+            </select>
+            <br/>
+            <br/>
+            <br/>
+            
+            <div class="row">
+                <button type="submit" class="btn">{{ _("Save") }}</button>
+            </div>
+
+        </form>
+    </div>
+{% endblock %}
+

@@ -1,0 +1,10 @@
+{#
+    Replaces default wallet/overview/tx_table.jinja in Specter Desktop.
+    See callback_adjust_view_model() in service.py.
+#}
+
+{% if chart %}
+{% include "stacktrack/wallet/components/chart.jinja" %}
+<small><a href="{{ url_for('stacktrack_endpoint.index') }}">deactivate overview</a></small>
+{% endif %}
+{% include "wallet/overview/tx_table.jinja" %}
