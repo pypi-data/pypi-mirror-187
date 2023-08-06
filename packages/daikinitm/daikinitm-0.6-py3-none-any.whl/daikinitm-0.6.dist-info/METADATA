@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: daikinitm
+Version: 0.6
+Summary: Daikin ITM Controller
+Home-page: https://github.com/ancutrs/daikinitm
+Author: Anucha
+Author-email: utrsanc@gmail.com
+License: AnuchaU
+Keywords: daikin itm
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+Daikin ITM Controller
+
