@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools>=65.5.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "msgraph-core"
+version = "1.0.0a2"
+authors = [{name = "Microsoft", email = "graphtooling+python@microsoft.com"}]
+description = "Core component of the Microsoft Graph Python SDK"
+dependencies = [
+    "microsoft-kiota-abstractions >=0.1.0",
+    "microsoft-kiota-http >=0.1.0",
+    "httpx[http2] >=0.23.0",
+]
+requires-python = ">=3.6"
+license = {file = "LICENSE"}
+readme = "README.md"
+keywords = ["msgraph", "openAPI", "Microsoft", "Graph"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.optional-dependencies]
+dev = ["yapf", "bumpver", "isort", "pylint", "pytest", "mypy"]
+
+[project.urls]
+homepage = "https://github.com/microsoftgraph/msgraph-sdk-python-core#readme"
+repository = "https://github.com/microsoftgraph/msgraph-sdk-python-core"
+documentation = "https://github.com/microsoftgraph/msgraph-sdk-python-core/docs"
+
+[tool.mypy]
+warn_unused_configs = true
+files = "src"
+ignore_missing_imports = true
+
+[tool.yapf]
+based_on_style = "pep8"
+dedent_closing_brackets = true
+each_dict_entry_on_separate_line = true
+column_limit = 100
+
+[tool.isort]
+profile = "hug"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+]
+
+[tool.bumpver]
+current_version = "1.0.0a2"
+version_pattern = "MAJOR.MINOR.PATCH[PYTAGNUM]"
+commit_message = "bump version {old_version} -> {new_version}"
+commit = true
+tag = false
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = ['current_version = "{version}"', 'version = "{version}"']
+"src/msgraph_core/_constants.py" = ["{version}"]
+
