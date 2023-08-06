@@ -1,0 +1,7 @@
+lost_cat>=0.1.6
+numpy
+opencv-python
+pillow
+pymupdf
+pytesseract
+scipy
