@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: Topsis-Ravinshu-102003156
+Version: 1.1.0
+Summary: A convenient python package for Topsis rank and score calculation for a given dataset, weights and impacts
+Author: Ravinshu Kushwaha
+Author-email: rv.kushwaha01@gmail.com
+License: MIT
+Keywords: python,TOPSIS,MCDM,MCDA,statistics,prescriptive analytics,cli
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Topsis-Ravinshu-102003156
+
+Technique for Order Preference by Similarity to Ideal Solution (TOPSIS) is a multi-criteria-based decision-making method.
+Topsis-Ravinshu-102003156 is a python package used for dealing with Multiple Criteria Decision Making (MCDM) problems.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+
+```bash
+pip install Topsis-Ravinshu-102003156
+```
+
+## Usage
+
+Open any command line and type the following command:
+
+```
+topsis [data file] [weight] [impact] [output file]
+```
+
+Eg. topsis 102003156-data.csv "1,1,1,1,1" "+,+,-,+,+" 102003156-result.csv
+
+## Output
+
+The output file contains columns of input file along with two additional columns having Topsis_score and Rank
