@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+kiki_utils_image.egg-info/PKG-INFO
+kiki_utils_image.egg-info/SOURCES.txt
+kiki_utils_image.egg-info/dependency_links.txt
+kiki_utils_image.egg-info/requires.txt
+kiki_utils_image.egg-info/top_level.txt
+kiki_utils_image.egg-info/zip-safe
+kikiutils_image/__init__.py
