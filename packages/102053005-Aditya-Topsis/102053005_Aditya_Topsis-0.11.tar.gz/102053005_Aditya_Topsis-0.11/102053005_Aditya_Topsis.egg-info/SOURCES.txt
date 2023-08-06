@@ -1,0 +1,10 @@
+License.txt
+README.md
+setup.py
+102053005_Aditya_Topsis/102053005.py
+102053005_Aditya_Topsis.egg-info/PKG-INFO
+102053005_Aditya_Topsis.egg-info/SOURCES.txt
+102053005_Aditya_Topsis.egg-info/dependency_links.txt
+102053005_Aditya_Topsis.egg-info/entry_points.txt
+102053005_Aditya_Topsis.egg-info/requires.txt
+102053005_Aditya_Topsis.egg-info/top_level.txt
