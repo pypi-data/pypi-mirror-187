@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: simple-num-operations
+Version: 0.1b0
+Summary: This is a package to do some operations with numbers.
+Home-page: https://github.com/thedotaxein/simplenumoperations
+Author: thedotaxein
+Author-email: axeinthereal@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: colorama
+
+**Hello! Iam thedotaxein, and this is simple_num_operations package!**
+**There is GitHub page with documentation! https://github.com/thedotaxein/simplenumoperations**
+# Version v0.1b0 (beta) now!
+## license thedotaxein, MIT LICENSE!
