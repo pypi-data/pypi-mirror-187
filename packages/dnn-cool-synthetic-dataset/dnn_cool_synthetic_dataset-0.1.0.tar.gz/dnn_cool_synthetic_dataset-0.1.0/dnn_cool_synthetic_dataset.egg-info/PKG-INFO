@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: dnn-cool-synthetic-dataset
+Version: 0.1.0
+Summary: dnn_cool_synthetic_dataset: Generating synthetic dataset for multi-task learning projects.
+Home-page: https://github.com/microlib-org/dnn_cool_synthetic_dataset
+Author: Hristo Vrigazov
+Author-email: hvrigazov@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: cv
+License-File: LICENSE
+
+# dnn_cool_synthetic_dataset
+
+Generates synthetic dataset for multi-task learning projects.
+
+
+Usage:
+
+```python
+from dnn_cool_synthetic_dataset.base import create_dataset
+
+imgs, label_dicts = create_dataset(1000)
+```
+

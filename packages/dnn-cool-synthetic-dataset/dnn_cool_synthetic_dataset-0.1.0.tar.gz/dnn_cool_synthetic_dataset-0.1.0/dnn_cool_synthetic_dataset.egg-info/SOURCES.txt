@@ -1,0 +1,12 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+dnn_cool_synthetic_dataset/__init__.py
+dnn_cool_synthetic_dataset/base.py
+dnn_cool_synthetic_dataset.egg-info/PKG-INFO
+dnn_cool_synthetic_dataset.egg-info/SOURCES.txt
+dnn_cool_synthetic_dataset.egg-info/dependency_links.txt
+dnn_cool_synthetic_dataset.egg-info/requires.txt
+dnn_cool_synthetic_dataset.egg-info/top_level.txt
+tests/test_generation.py
