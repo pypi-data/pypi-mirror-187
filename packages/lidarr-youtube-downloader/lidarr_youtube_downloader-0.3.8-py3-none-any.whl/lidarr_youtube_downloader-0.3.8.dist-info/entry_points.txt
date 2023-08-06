@@ -1,0 +1,3 @@
+[console_scripts]
+lidarr-youtube-downloader=lidarr_youtube_downloader.lidarr-youtube-downloader:main
+
