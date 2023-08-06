@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+namba/__init__.py
+namba/tasks.py
+namba/tasks_base.txt
+namba/upload_task_to_base.py
+namba.egg-info/PKG-INFO
+namba.egg-info/SOURCES.txt
+namba.egg-info/dependency_links.txt
+namba.egg-info/not-zip-safe
+namba.egg-info/top_level.txt
