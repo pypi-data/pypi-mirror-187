@@ -1,0 +1,9 @@
+ruamel.yaml
+requests
+jsonschema
+
+[all]
+ruamel.yaml
+requests
+jsonschema
+pytest>=4.6.2
