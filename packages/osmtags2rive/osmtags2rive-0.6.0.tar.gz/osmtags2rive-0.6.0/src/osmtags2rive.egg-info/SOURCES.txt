@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/osmtags2rive/__init__.py
+src/osmtags2rive/cli.py
+src/osmtags2rive/constants.py
+src/osmtags2rive/osmtags2rive.py
+src/osmtags2rive.egg-info/PKG-INFO
+src/osmtags2rive.egg-info/SOURCES.txt
+src/osmtags2rive.egg-info/dependency_links.txt
+src/osmtags2rive.egg-info/entry_points.txt
+src/osmtags2rive.egg-info/top_level.txt
