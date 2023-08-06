@@ -1,0 +1,3 @@
+[console_scripts]
+sshc=src.sshc:__main__
+
