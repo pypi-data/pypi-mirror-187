@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: circrl
+Version: 0.0.1
+Summary: Tools for applying circuits-style interpretability techniques to RL agents.
+Project-URL: Homepage, https://github.com/montemac/circrl
+Author-email: montemac <m.macdiarmid@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: bidict>=0.22.1
+Requires-Dist: einops>=0.6.0
+Requires-Dist: numpy>=1.24.1
+Requires-Dist: pandas>=1.5.2
+Requires-Dist: torch>=1.13.1
+Requires-Dist: xarray>=2022.12.0
+Description-Content-Type: text/markdown
+
+# CircRL
+
+Tools for applying circuits-style interpretability techniques to RL agents.
+
