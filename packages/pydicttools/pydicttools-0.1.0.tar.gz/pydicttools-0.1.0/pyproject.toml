@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "pydicttools"
+version = "0.1.0"
+description = "Set of tools to handle Dict type in Python."
+authors = ["fadedreams7 <fadedreams7@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/fadedreams/pydicttools"
+keywords = ["regex", "utilities"]
+classifiers = [
+  "Environment :: Console",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Utilities"
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pytest = "^7.2.1"
+asyncio = "^3.4.3"
+pytest-asyncio = "^0.20.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[dev-dependencies]
+pytest = "*"
