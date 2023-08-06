@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: tfidf_transformation_brk
+Version: 0.1.0
+Summary: a package for tf-idf transformation with using sklearn's tfidf function 
+Author: Berk Ozturk
+License-File: license.txt
