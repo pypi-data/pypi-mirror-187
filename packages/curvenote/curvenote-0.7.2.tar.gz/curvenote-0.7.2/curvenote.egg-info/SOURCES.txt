@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+curvenote/__init__.py
+curvenote/app.py
+curvenote/stash.py
+curvenote/version.py
+curvenote.egg-info/PKG-INFO
+curvenote.egg-info/SOURCES.txt
+curvenote.egg-info/dependency_links.txt
+curvenote.egg-info/requires.txt
+curvenote.egg-info/top_level.txt
