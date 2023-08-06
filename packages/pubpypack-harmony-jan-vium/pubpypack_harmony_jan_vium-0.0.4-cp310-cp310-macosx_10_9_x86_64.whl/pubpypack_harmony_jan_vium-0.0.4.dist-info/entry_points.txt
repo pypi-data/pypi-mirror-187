@@ -1,0 +1,2 @@
+[console_scripts]
+harmony = jvnpack.harmony:main
