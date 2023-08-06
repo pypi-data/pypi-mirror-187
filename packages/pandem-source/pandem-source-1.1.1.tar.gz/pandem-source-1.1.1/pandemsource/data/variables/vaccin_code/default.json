@@ -1,0 +1,214 @@
+{
+    "tuples": [
+        {
+            "attrs": {
+                "line_number": "1",
+                "source": "pandem2",
+                "file": ""
+            },
+            "attr": {
+                "vaccin_code": "AZ"
+            }
+        },
+        {
+            "attrs": {
+                "line_number": "1",
+                "source": "pandem2",
+                "file": ""
+            },
+            "attr": {
+                "vaccin_code": "BECNBG"
+            }
+        },
+        {
+            "attrs": {
+                "line_number": "1",
+                "source": "pandem2",
+                "file": ""
+            },
+            "attr": {
+                "vaccin_code": "BHACOV"
+            }
+        },
+        {
+            "attrs": {
+                "line_number": "1",
+                "source": "pandem2",
+                "file": ""
+            },
+            "attr": {
+                "vaccin_code": "CHU"
+            }
+        },
+        {
+            "attrs": {
+                "line_number": "1",
+                "source": "pandem2",
+                "file": ""
+            },
+            "attr": {
+                "vaccin_code": "COM"
+            }
+        },
+        {
+            "attrs": {
+                "line_number": "1",
+                "source": "pandem2",
+                "file": ""
+            },
+            "attr": {
+                "vaccin_code": "CVAC"
+            }
+        },
+        {
+            "attrs": {
+                "line_number": "1",
+                "source": "pandem2",
+                "file": ""
+            },
+            "attr": {
+                "vaccin_code": "JANSS"
+            }
+        },
+        {
+            "attrs": {
+                "line_number": "1",
+                "source": "pandem2",
+                "file": ""
+            },
+            "attr": {
+                "vaccin_code": "HAYATVAC"
+            }
+        },
+        {
+            "attrs": {
+                "line_number": "1",
+                "source": "pandem2",
+                "file": ""
+            },
+            "attr": {
+                "vaccin_code": "MOD"
+            }
+        },
+        {
+            "attrs": {
+                "line_number": "1",
+                "source": "pandem2",
+                "file": ""
+            },
+            "attr": {
+                "vaccin_code": "NVX"
+            }
+        },
+        {
+            "attrs": {
+                "line_number": "1",
+                "source": "pandem2",
+                "file": ""
+            },
+            "attr": {
+                "vaccin_code": "NVXD"
+            }
+        },
+        {
+            "attrs": {
+                "line_number": "1",
+                "source": "pandem2",
+                "file": ""
+            },
+            "attr": {
+                "vaccin_code": "QAZVAQ"
+            }
+        },
+        {
+            "attrs": {
+                "line_number": "1",
+                "source": "pandem2",
+                "file": ""
+            },
+            "attr": {
+                "vaccin_code": "SGSK"
+            }
+        },
+        {
+            "attrs": {
+                "line_number": "1",
+                "source": "pandem2",
+                "file": ""
+            },
+            "attr": {
+                "vaccin_code": "SIICOV"
+            }
+        },
+        {
+            "attrs": {
+                "line_number": "1",
+                "source": "pandem2",
+                "file": ""
+            },
+            "attr": {
+                "vaccin_code": "SIN"
+            }
+        },
+        {
+            "attrs": {
+                "line_number": "1",
+                "source": "pandem2",
+                "file": ""
+            },
+            "attr": {
+                "vaccin_code": "SPU"
+            }
+        },
+        {
+            "attrs": {
+                "line_number": "1",
+                "source": "pandem2",
+                "file": ""
+            },
+            "attr": {
+                "vaccin_code": "SPUL"
+            }
+        },
+        {
+            "attrs": {
+                "line_number": "1",
+                "source": "pandem2",
+                "file": ""
+            },
+            "attr": {
+                "vaccin_code": "SRCVB"
+            }
+        },
+        {
+            "attrs": {
+                "line_number": "1",
+                "source": "pandem2",
+                "file": ""
+            },
+            "attr": {
+                "vaccin_code": "WUCNBG"
+            }
+        },
+        {
+            "attrs": {
+                "line_number": "1",
+                "source": "pandem2",
+                "file": ""
+            },
+            "attr": {
+                "vaccin_code": "UNK"
+            }
+        },
+        {
+            "attrs": {
+                "line_number": "1",
+                "source": "pandem2",
+                "file": ""
+            },
+            "attr": {
+                "vaccin_code": "ZFUZ"
+            }
+        }
+    ]
+}
