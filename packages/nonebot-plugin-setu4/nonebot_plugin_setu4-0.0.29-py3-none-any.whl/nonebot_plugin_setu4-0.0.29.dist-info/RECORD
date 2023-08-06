@@ -1,0 +1,11 @@
+nonebot_plugin_setu4/__init__.py,sha256=PA9gqExqTVSsnlqVwF6o9EDFjGHdE3ol7hl3Tq6KbPU,16007
+nonebot_plugin_setu4/fetch_resources.py,sha256=TV1rE9tcXuTHJ-VEEyjwpUuHTR6n6pw2E1SEotDQIGs,1897
+nonebot_plugin_setu4/get_data.py,sha256=EvR5K1sykW01gBj6EvO9cKc1BZWpneDkj1gQ5hJElyc,5002
+nonebot_plugin_setu4/permission_manager.py,sha256=w0QvYZQhMfs9n1CIafa3KuNpSj6ZvjGdvnHUayWV9nY,12556
+nonebot_plugin_setu4/resource/lolicon.db,sha256=9UEENFxK5Ug19vhU4_JHaD2Kcsis3PBJ4j2LFsWjrH4,29110272
+nonebot_plugin_setu4/resource/setu_message.py,sha256=uzIA8NmjLDxKQ3r22WT4MSVusSV_SQvKuk7Q6orG2jU,2176
+nonebot_plugin_setu4-0.0.29.dist-info/LICENSE,sha256=uhaX-CwAwfkoi5ON96xwbYAwnM-63Ly_9_X_3VRyPxc,1064
+nonebot_plugin_setu4-0.0.29.dist-info/METADATA,sha256=P2UAg0G6eWhqeWUHwF1uGK3LZptEOsgBha6VpY74mUs,374
+nonebot_plugin_setu4-0.0.29.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nonebot_plugin_setu4-0.0.29.dist-info/top_level.txt,sha256=kYSe8aQZwAjWro-lfk4K_kozlbFGJyhJ99JX5ZQ-nXw,21
+nonebot_plugin_setu4-0.0.29.dist-info/RECORD,,
