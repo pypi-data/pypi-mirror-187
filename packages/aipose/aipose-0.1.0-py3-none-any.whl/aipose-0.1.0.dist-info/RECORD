@@ -1,0 +1,10 @@
+aipose/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aipose/__main__.py,sha256=cxIOxLt0FNcz6C5qDDbmSF59BdoBboa7yJUrtz7WNbY,319
+aipose/model.py,sha256=HQ18mYwCT2vgioaUwbawp1IZpaOEPSr1ux1rg2Th6j8,3910
+aipose/plot.py,sha256=0wqBKBsS-G8FoVGDKEF_GHiNEYARAv_H4kj5OKno4Xk,3330
+aipose/utils.py,sha256=GS5C7e3ds6nxJiuhtznM2edcF4nCQi50zJU5EpySPuM,8244
+aipose/webcam.py,sha256=jKP6Fh726v1vYbgKBEh2nKKcYq96oI-OP9gzoMhY9Zc,853
+aipose-0.1.0.dist-info/METADATA,sha256=cNeCYL9VUppKy7i1nV4FGZy3XlYbwtCswyVb4HML6g4,1097
+aipose-0.1.0.dist-info/entry_points.txt,sha256=63EJz-zhOwIDCPXpTieMj6DQlSewBZHQtEBpgHmOKqU,51
+aipose-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+aipose-0.1.0.dist-info/RECORD,,

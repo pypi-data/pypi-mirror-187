@@ -1,0 +1,3 @@
+[console_scripts]
+posewebcam=pose.__main__:webcam
+
