@@ -1,0 +1,9 @@
+uniserde/__init__.py,sha256=aFopub3Xhfdz7-jBkHOT7Kx5Dh7P-2ZGAkQm6OBpe2U,170
+uniserde/common.py,sha256=2ZNOSeqpWlvqdD9HDPN97ns3m9oVasWYMu4-tvutxiQ,4851
+uniserde/schema_mongodb.py,sha256=rTC7fiywllgZ907c9CmMuZh1UdwAQEsbsi2Q6frhcmk,7002
+uniserde/serde_bson.py,sha256=p8WWGSt-BK7bYyHmXIpzemcZ8j4o3tna7sPeQLOr1HM,4292
+uniserde/serde_class.py,sha256=n556FUUnWUQUsnYEai9ARqZ-i1GuCZilJTYRK8PbKwQ,2652
+uniserde/serde_json.py,sha256=crr1YupoMluMEDVVXudTZgo4stftzanIB_fnuJA7nLs,12609
+uniserde-0.2.4.dist-info/METADATA,sha256=SuRpEl8D0Vv4XEEGkHie3v0KBdh9Q1RCJjd6vktVkgM,6558
+uniserde-0.2.4.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+uniserde-0.2.4.dist-info/RECORD,,
