@@ -1,0 +1,2 @@
+[console_scripts]
+serial-sniffer = serial_sniffer.main:main
