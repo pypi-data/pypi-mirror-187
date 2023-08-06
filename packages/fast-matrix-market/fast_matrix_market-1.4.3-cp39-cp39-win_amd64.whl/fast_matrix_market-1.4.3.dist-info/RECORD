@@ -1,0 +1,10 @@
+fast_matrix_market/__init__.py,sha256=QlNK5IAXzn2FRb7Jv1b7VQsBFOuzDCmM8oEg94rWjeo,16060
+fast_matrix_market/_core.cp39-win_amd64.pyd,sha256=LPGGSR4eEAZNNfvU8yLQsGIu12vsPMs2SyiDRQcz4NU,1144832
+fast_matrix_market/core.cpp,sha256=lUWrqbv8ZUjR1qbbfJrRcyyJnorsuYxL8N0-l0Nlrj0,21383
+fast_matrix_market/pystreambuf.h,sha256=aBYVfrqcKStgyTkgiECKoM3VIYoknboazlweLLK52Iw,20018
+lib/ryu.lib,sha256=iLswf0-zCe6kvj7yCt-MqLDAaQz8oKfW2xSH0QHbLMY,158378
+include/ryu/ryu.h,sha256=Ebu33BI7M_pgfaJEnG6W--3nk5a0U3lSg0Lo9M73qcA,1406
+fast_matrix_market-1.4.3.dist-info/METADATA,sha256=l0tcOwHsItnnKNvHzCf2RJ1A-ibO13is8b7olgxOy9k,6181
+fast_matrix_market-1.4.3.dist-info/WHEEL,sha256=VOzDRR37QiPBYhFiRLiJ7vGm--MoG67p6Fckpx0-JxM,94
+fast_matrix_market-1.4.3.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fast_matrix_market-1.4.3.dist-info/RECORD,,
