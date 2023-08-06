@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/twitch_archiver.egg-info/PKG-INFO
+src/twitch_archiver.egg-info/SOURCES.txt
+src/twitch_archiver.egg-info/dependency_links.txt
+src/twitch_archiver.egg-info/entry_points.txt
+src/twitch_archiver.egg-info/top_level.txt
