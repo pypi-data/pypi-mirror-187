@@ -1,0 +1,8 @@
+typechecker/Typecheck.py,sha256=rA3s8th5y6GhsLWfgnEO6hAUlvudq_L3m-xcbPy84u4,2132
+typechecker/__init__.py,sha256=ZPlfX4vc82RhizRalpgTizPM1Kb5wqbOQ5iI79sw82Y,32
+typechecker/decorator.py,sha256=5q0iEvwRNB6ZkySJGzLqfrarCOWqb9S5zNW0xgkc3FQ,328
+pytypechecker-1.0.0.dist-info/LICENCE.txt,sha256=7QEucD5MueX7zp4jXbxNCDwo9GGbb08ypwt5Y15PypI,1083
+pytypechecker-1.0.0.dist-info/METADATA,sha256=Vkwfu_EtpNbY9erkYvgDzjjASJ_a4QzDd5OPxpblPs8,523
+pytypechecker-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pytypechecker-1.0.0.dist-info/top_level.txt,sha256=Gg5oBwDd1G3dPgmGPsP5Fno3TPNhl8WMH2rmG5iK4lI,12
+pytypechecker-1.0.0.dist-info/RECORD,,

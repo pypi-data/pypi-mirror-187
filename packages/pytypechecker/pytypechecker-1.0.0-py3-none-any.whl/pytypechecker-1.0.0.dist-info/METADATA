@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pytypechecker
+Version: 1.0.0
+Summary: Includes decorator "@typecheck" to provide type check on run-time.
+Home-page: https://github.com/sondrekh/python_typechecker
+Author: Sondre Kværne Hansen
+Author-email: sondrekhansen+pypi@gmail.com
+License: LICENCE.txt
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+# Typechecker 
+
+Functionality: 
+
+- Compare typehints against args
+- Compare typehints against key-word args
+- Check parent classes for non-matching type
