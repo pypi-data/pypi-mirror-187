@@ -1,0 +1,9 @@
+boto3
+botocore
+jsonschema
+matplotlib
+networkx
+numpy
+paho_mqtt
+Pint
+requests
