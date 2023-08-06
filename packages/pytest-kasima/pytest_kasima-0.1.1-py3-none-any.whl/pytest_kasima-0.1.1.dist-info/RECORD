@@ -1,0 +1,5 @@
+pytest_k4sima/__init__.py,sha256=F-8tMGncbYrmoxam7MTF4VVUF5XTJx0pXRGegdt5cpU,1015
+pytest_kasima-0.1.1.dist-info/entry_points.txt,sha256=7cl3um2GVQ7GSbTesjGmlw6iHiWJtWnm8auXa_KdkKE,33
+pytest_kasima-0.1.1.dist-info/METADATA,sha256=Nj0rD8cAJyZk4WTZf-YERa66ZoTh0bAbG-MFePBEBZI,825
+pytest_kasima-0.1.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+pytest_kasima-0.1.1.dist-info/RECORD,,
