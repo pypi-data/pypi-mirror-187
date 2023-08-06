@@ -1,0 +1,48 @@
+from mvvmQt.Elements import Element
+
+def __updateObValue(ob, v, t):
+    if t == bool:
+        ob.value = bool(v - 1)
+    else:
+        ob.value = v
+
+def groupChecked(*params):
+    v = params[0]
+    o: Element = params[-2]
+    ob = params[-1]
+
+    attr = list(filter(lambda _: _.key == 'checked', o.attrs))[0]
+
+    if attr.twoWay and not getattr(o.qt, '_bindClicked', False):
+        o.qt.buttonClicked[int].connect(lambda id: __updateObValue(ob, id, type(v)))
+        o.qt._bindClicked = True
+
+    o.qt.buttons()[int(v)].setChecked(True)
+
+def htmlChanged(*params):
+    v = params[0]
+    o: Element = params[-2]
+    ob = params[-1]
+
+    attr = list(filter(lambda _: _.key == 'html', o.attrs))[0]
+
+    if attr.twoWay and not getattr(o.qt, '_bindHtml', False):
+        o.qt.textChanged.connect(lambda: __updateObValue(ob, o.qt.toHtml(), type(v)))
+        o.qt._bindHtml = True
+    
+    if v != o.qt.toHtml():
+        o.qt.setHtml(v)
+
+def textChanged(*params):
+    v = params[0]
+    o: Element = params[-2]
+    ob = params[-1]
+
+    attr = list(filter(lambda _: _.key == 'text', o.attrs))[0]
+
+    if attr.twoWay and not getattr(o.qt, '_bindText', False): #已绑定过不再进行绑定
+        o.qt.textChanged.connect(lambda: __updateObValue(ob, o.qt.toPlainText(), type(v)))
+        o.qt._bindText = True
+    
+    if v != o.qt.toPlainText():
+        o.qt.setPlainText(v)
