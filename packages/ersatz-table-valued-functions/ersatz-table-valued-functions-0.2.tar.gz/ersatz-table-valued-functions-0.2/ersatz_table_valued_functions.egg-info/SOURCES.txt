@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+ersatz_table_valued_functions/__init__.py
+ersatz_table_valued_functions.egg-info/PKG-INFO
+ersatz_table_valued_functions.egg-info/SOURCES.txt
+ersatz_table_valued_functions.egg-info/dependency_links.txt
+ersatz_table_valued_functions.egg-info/requires.txt
+ersatz_table_valued_functions.egg-info/top_level.txt

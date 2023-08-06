@@ -1,0 +1,5 @@
+sqlglot
+
+[test]
+pytest
+pytest-watch
