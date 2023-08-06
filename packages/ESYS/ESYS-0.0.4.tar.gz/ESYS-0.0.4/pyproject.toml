@@ -1,0 +1,18 @@
+[project]
+name = "ESYS"
+version = "0.0.4"
+authors = [
+  { name="정준호", email="01068552679j@gmail.com" },
+]
+description = "A small package with addone"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://pypi.org/project/ESYS/0.0.4/#description"
+"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
