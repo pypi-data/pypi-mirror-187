@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: resl
+Version: 0.0.1
+Summary: Minimal reverse shell.
+Home-page: UNKNOWN
+Author: Callope
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Requires-Dist: setuptools
+
+UNKNOWN
+
+
