@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: q-ops-tracker_safaricom
+Version: 0.0.1
+Summary: Safaricom Q-OPS Automation tracker 
+Author: Justus Mwangi Gitari (j_siri)
+Author-email: mwangijustus12@gmail.com
+License: MIT
+Keywords: python,q-ops,safaricom,quality ops,quality engineering,tracker
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+Safaricom Q-Ops automation tracker. Fitted to consume data on robot framework 
+
+Change Log
+=========================
+
+0.0.1 (21/01/2022)
+-------------------------
+- First Release 

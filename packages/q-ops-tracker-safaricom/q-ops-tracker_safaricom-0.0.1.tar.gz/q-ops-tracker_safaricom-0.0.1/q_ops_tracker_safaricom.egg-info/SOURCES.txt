@@ -1,0 +1,9 @@
+LICENCE.txt
+README.txt
+setup.py
+q_ops_tracker_safaricom.egg-info/PKG-INFO
+q_ops_tracker_safaricom.egg-info/SOURCES.txt
+q_ops_tracker_safaricom.egg-info/dependency_links.txt
+q_ops_tracker_safaricom.egg-info/requires.txt
+q_ops_tracker_safaricom.egg-info/top_level.txt
+qopstracker/__init__.py
