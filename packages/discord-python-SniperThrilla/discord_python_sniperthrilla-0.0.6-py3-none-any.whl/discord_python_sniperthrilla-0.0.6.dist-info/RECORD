@@ -1,0 +1,11 @@
+discord_python/ApplicationCommands.py,sha256=-muzul-w8gOpEwW71uZtp0WHOKZIl1bKb75czB_weZw,2177
+discord_python/Client.py,sha256=MsUvdbC48WBR90ngoJfY83OxUjUitkzCRTYuFldnuxY,21160
+discord_python/Enums.py,sha256=jGvEGGwGWK38YBrUs5Z_6CjLGioijWmdQGqH4H5VtH0,586
+discord_python/InteractionResponder.py,sha256=LpbRoTQRd3F-d7wnrAsb0QXwozDfTwrz83M8WujOpFs,29843
+discord_python/Logger.py,sha256=8pQxu3vnTEniBoWVW_sCJ8yzjDbApAZQzTHI2CdbQW4,728
+discord_python/Message.py,sha256=RC9gFSWM2oh5kORfTc-iK4iP5kpFXuRIkVLRGP8AVi8,1591
+discord_python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+discord_python_sniperthrilla-0.0.6.dist-info/METADATA,sha256=2dPJEBMoGxafkvp7Rbg_-xMxzavcEZ8CwF8oTSNPVAQ,2915
+discord_python_sniperthrilla-0.0.6.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+discord_python_sniperthrilla-0.0.6.dist-info/licenses/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+discord_python_sniperthrilla-0.0.6.dist-info/RECORD,,
