@@ -1,0 +1,31 @@
+{
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true,
+  "python.formatting.provider": "black",
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "files.trimTrailingWhitespace": true,
+  "python.linting.flake8Enabled": true,
+  "cSpell.words": [
+    "automodule",
+    "BACKOFF",
+    "dateutil",
+    "nodedefs",
+    "qualname",
+    "websession",
+    "xmltodict"
+  ],
+  "editor.formatOnSaveMode": "file",
+  "editor.defaultFormatter": "ms-python.black-formatter",
+  "python.linting.mypyEnabled": true,
+  "python.linting.pycodestyleEnabled": false,
+  "python.linting.pydocstyleEnabled": true,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  "python.analysis.autoImportCompletions": true,
+  "python.autoComplete.extraPaths": ["/workspaces"]
+}
