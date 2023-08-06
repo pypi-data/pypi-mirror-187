@@ -1,0 +1,9 @@
+include LICENSE
+include README.md
+
+graft docs
+
+graft py_kaos_utils/static
+graft py_kaos_utils/templates
+graft py_kaos_utils/*/static
+graft py_kaos_utils/*/templates

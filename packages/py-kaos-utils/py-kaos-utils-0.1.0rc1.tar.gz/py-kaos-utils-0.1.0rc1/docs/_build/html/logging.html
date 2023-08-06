@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logging &mdash; Python Kaos Utils  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Mixins" href="mixins.html" />
+    <link rel="prev" title="String" href="string.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Python Kaos Utils
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="argparse.html">Argument Parser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="string.html">String</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Logging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mixins.html">Mixins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pagination.html">Pagination</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Python Kaos Utils</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Logging</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/logging.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="logging">
+<h1>Logging<a class="headerlink" href="#logging" title="Permalink to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="py_kaos_utils.logging.ProgressLogger">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">py_kaos_utils.logging.</span></span><span class="sig-name descname"><span class="pre">ProgressLogger</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">count_total:</span> <span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">checkpoints:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger:</span> <span class="pre">~logging.Logger</span> <span class="pre">=</span> <span class="pre">&lt;RootLogger</span> <span class="pre">root</span> <span class="pre">(WARNING)&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#py_kaos_utils.logging.ProgressLogger" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Logs the progress of a process by reporting the percentage of completion at a set number of checkpoints.</p>
+<dl>
+<dt>Example:</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="n">ProgressLogger</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">count_this_round</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">99</span><span class="p">,</span> <span class="mi">78</span><span class="p">,</span> <span class="mi">99</span><span class="p">,</span> <span class="mi">100</span><span class="p">]:</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">p</span><span class="o">.</span><span class="n">log_progress</span><span class="p">(</span><span class="n">count_this_round</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>count_total</strong> (<em>int</em>) – Total number of items to process</p></li>
+<li><p><strong>checkpoints</strong> (<em>int</em>) – Number of checkpoints to report progress at (defaults to 10)</p></li>
+<li><p><strong>logger</strong> (<em>Logger</em>) – Logger instance to use for reporting progress (defaults to the built-in logger)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="py_kaos_utils.logging.ProgressLogger.log_progress">
+<span class="sig-name descname"><span class="pre">log_progress</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">count_this_round</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">report</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#py_kaos_utils.logging.ProgressLogger.log_progress" title="Permalink to this definition"></a></dt>
+<dd><p>Log the progress of the process</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>count_this_round</strong> (<em>int</em>) – Number of items processed this round</p></li>
+<li><p><strong>report</strong> (<em>bool</em>) – Whether or not to report the progress (defaults to True)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="py_kaos_utils.logging.ProgressLogger.report_progress">
+<span class="sig-name descname"><span class="pre">report_progress</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#py_kaos_utils.logging.ProgressLogger.report_progress" title="Permalink to this definition"></a></dt>
+<dd><p>Report the progress of the process based on the current count_processed value</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="string.html" class="btn btn-neutral float-left" title="String" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="mixins.html" class="btn btn-neutral float-right" title="Mixins" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Kaos Labs Inc..</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
