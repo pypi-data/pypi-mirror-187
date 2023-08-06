@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+omniserver/__init__.py
+omniserver/certs.py
+omniserver/clients.py
+omniserver/core.py
+omniserver/servers.py
+omniserver/version.py
+omniserver.egg-info/PKG-INFO
+omniserver.egg-info/SOURCES.txt
+omniserver.egg-info/dependency_links.txt
+omniserver.egg-info/not-zip-safe
+omniserver.egg-info/requires.txt
+omniserver.egg-info/top_level.txt
