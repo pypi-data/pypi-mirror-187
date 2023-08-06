@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "pytest_setupinfo"
+version = "0.1.1"
+description = "Displaying setup info during pytest command run"
+authors = ["Maheshwar Bolewar"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytest-cov = "^4.0.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+myst-nb = "^0.17.1"
+sphinx-autoapi = "^2.0.1"
+sphinx-rtd-theme = "^1.1.1"
+sphinxcontrib-napoleon = "^0.7"
+sphinx-code-include = "^1.1.1"
+python-semantic-release = "^7.33.0"
+pytest-cov = "^4.0.0"
+
+[tool.poetry.plugins.pytest11]
+setupinfo = "pytest_setupinfo.pytest_setupinfo"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.semantic_release]
+version_variable = "pyproject.toml:version"
