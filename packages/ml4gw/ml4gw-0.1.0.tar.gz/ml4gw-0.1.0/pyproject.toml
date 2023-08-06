@@ -1,0 +1,78 @@
+[tool.poetry]
+name = "ml4gw"
+version = "0.1.0"
+description = "Tools for training torch models on gravitational wave data"
+readme = "README.md"
+authors = [
+    "Alec Gunny <alec.gunny@ligo.org>",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+
+# torch deps
+torch = "^1.10"
+torchtyping = "^0.1"
+
+# gw deps
+bilby = "^1.1"
+gwpy = "^2.1"
+# astropy = "<5.0"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^2.16"
+pytest = "^7.0"
+
+# need lalsuite to compute gmst in injection testing
+lalsuite = "^7.0"
+
+
+[tool.black]
+line-length = 79
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.tox
+  | _build
+  | dist
+  | docs
+)/
+'''
+
+
+[tool.isort]
+known_first_party = ["ml4gw"]
+multi_line_output = 3
+include_trailing_comma = true
+
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py{38,39,310}-{pip,poetry}
+isolated_build = true
+
+[gh-actions]
+python =
+    3.8: py38
+    3.9: py39
+    3.10: py310
+
+[testenv:py{38,39,310}-poetry]
+allowlist_externals = poetry
+skip_install = true
+commands_pre = poetry install
+commands = poetry run pytest tests
+
+[testenv:py{38,39,310}-pip]
+deps = 
+    pytest>=7,<8
+    lalsuite>=7,<8
+commands = pytest tests
+"""
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
