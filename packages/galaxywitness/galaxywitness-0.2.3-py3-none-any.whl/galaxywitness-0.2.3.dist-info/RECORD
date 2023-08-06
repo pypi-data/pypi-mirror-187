@@ -1,0 +1,12 @@
+galaxywitness/__init__.py,sha256=BmPHCK2ob6EudcHnwjxRvgkFUGWFyoa35g6BsOq8KII,138
+galaxywitness/__main__.py,sha256=wDofdAL6kn8S6vS8A1C_Syvo5cXGk188WcZnNYScfeU,12882
+galaxywitness/alpha_complex.py,sha256=YPy5NRiwtRGsq0W295JbNwhPQXJNz4srtQaBiKVMjZs,7240
+galaxywitness/ansi.txt,sha256=wdpfwZjVBAqKj3wpO135frv-pYMMTe1T-90pDxtm1Ss,23057
+galaxywitness/ansiname.txt,sha256=k-FsE6b-iinnt1zuPH5vyjLXOeEObcBQ5b4Zu0iXJfQ,542
+galaxywitness/base_complex.py,sha256=_quK9sQsxZRoK0dY-F9fyv0-rTbcK2iMoDyyasge4So,3917
+galaxywitness/datasets.py,sha256=qk7sg1VJR5Cqe-WPGJYnk4R7a-N0Fd8ymFgL0Ys3cU0,2136
+galaxywitness/witness_complex.py,sha256=O01ckJLPY4grnU1HByKb5SaCy7CjEwuY5suySh0cp-4,16703
+galaxywitness-0.2.3.dist-info/LICENSE,sha256=oG2aqteNkJffQgrGbwiMaFspzH0kFGBh3KgwkR6ZelI,1074
+galaxywitness-0.2.3.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+galaxywitness-0.2.3.dist-info/METADATA,sha256=Sj533sEK7gsk4MOmf-Cz7l8e6tt5lKxmKybyHEWi2Nc,3272
+galaxywitness-0.2.3.dist-info/RECORD,,
