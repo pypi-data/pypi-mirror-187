@@ -1,0 +1,141 @@
+`terka` exposes several commands and entities:
+
+## terka entities
+
+* tasks
+* projects
+* commentaries
+
+## terka commands
+* get
+* list
+* create
+* update
+* edit
+* show
+* done
+
+To the typical command might look like this
+
+```
+terka projects create <options>
+```
+
+### Example commands
+
+
+#### `create`
+
+1. Create new task with a name "New task"
+
+```
+terka tasks create -n "New task"
+```
+
+2. Create new task with a name "New task" and assign it to a project "New project" with due date in 7 days
+
+```
+terka tasks create -n "New task" -p "New project" -d +7
+```
+
+3. Create a commentary for a task 123
+
+```
+terka commentaries create 123 -t "New commentary for a task"
+```
+
+#### `show`
+
+1. Show task info for task with id 123
+
+```
+terka tasks show 123
+```
+
+2. Show project info for a project 8 (include project tasks)
+
+```
+terka projects show 8
+```
+
+#### `list`
+
+1. List all projects with at least 1 active task
+
+```
+terka projects list
+```
+
+2. List all tasks 
+```
+terka tasks list
+```
+
+`list` commands can be used with the multiple terka options (listed below).
+
+3. List all tasks from project "My project" with TODO status
+
+```
+terka tasks list -p "My project" -s T
+```
+
+`list` commands support negation, i.e. to list all tasks from project "My project that are not in BACKLOG status you can run
+
+```
+terka tasks list -p "My project" -s NOT:BACKLOG
+```
+
+
+#### `update`
+
+1. Update  status for a task 123 to "REVIEW" and set due day today
+
+```
+terka tasks update 123 -s R -d today
+```
+
+#### `done`
+
+`done` commands is simple - it's just updates the status of the task to done state in a convenient manner.
+
+```
+terka tasks done 123
+# is equivalent to 
+# terka tasks update 123 -s d
+```
+#### `edit`
+
+`edit` command allows you to change either name (`--name` CLI flag) or description (`--description` CLI flag) of the task in an editor of your choice (Vim by default)
+
+1. Edit name of the task 123
+```
+terka tasks edit 123 --name
+```
+
+
+## terka options
+Options depend on a particular entity but there are some common one
+* `--n|--name` - name of the entity
+* `--desc|--description` - description of an entity
+* `-s|--status` - status of an entity (can be one of "BACKLOG","TODO","IN_PROGRESS", "REVIEW", "DONE", "DELETED"). By default the status is BACKLOG.
+	* for status we can use short names - b for BACKLOG, t for TODO, i for IN_PROGRESS, r for REVIEW, d for DONE, and x for DELETED
+ * `--priority` - priority of the task (can be one of "LOW", "NORMAL", "HIGH", "URGENT"). By default the priority is NORMAL
+ * `-d|--due-date` - due date (applied for tasks only). Can be specified in the following format:
+ 	* YYYY-MM-DD (i.e. 2023-01-01)
+    * +7, -7 (in 7 days, 7 days ago)
+    * today - to tasks that are due today
+    * None (default value) - when we want to explicitly specify that task does not have due date.
+    
+ * `-p|--project` (applied to task only) - project name or project_id for a task
+ 
+ 
+ ## Utility commands
+ 
+ 
+ * `log`
+ * `calendar`
+ * `focus`
+ * `unfocus`
+ * `count`
+ * `delete`
+
