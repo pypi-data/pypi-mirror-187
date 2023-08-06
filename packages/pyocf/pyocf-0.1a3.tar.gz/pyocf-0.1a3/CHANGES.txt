@@ -1,0 +1,21 @@
+Changes
+=======
+
+0.1a3 (2023-01-25)
+------------------
+
+- Updated to schema 1.0.0
+
+- Loads of small changes based on real world usage
+
+
+0.1a2 (2023-01-10)
+------------------
+
+- Too many changes to bother writing about in an alpha release.
+
+
+0.1a1 (2022-12-15)
+------------------
+
+- Initial version
