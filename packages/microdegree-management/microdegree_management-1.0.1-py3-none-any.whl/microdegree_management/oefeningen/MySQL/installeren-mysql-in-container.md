@@ -1,0 +1,4 @@
+# MySQL in een container
+Voer volgend commando uit in een terminalvenster: `docker run --name mysql-oefeningen-backend -p 3306:3306 -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:8.0.31`. Dit start een Docker container op met een installatie van MySQL server.
+
+Als je geen output krijgt, zou het commando geslaagd moeten zijn. Indien je een foutmelding krijgt, neem dan een screenshot en stel dan een vraag via het forum. Indien je geen foutmelding krijgt, voer dan `docker ps` uit om te bekijken welke Docker containers aanwezig zijn. Normaal zie je ergens in de kolom `NAMES` `mysql-oefeningen-backend` staan en zie je op dezelfde rij in de kolom `STATUS` iets dat begint met `Up`. Als dit zo is, mag je deze opdracht markeren als afgewerkt. Als dit niet zo is, neem dan een screenshot en stel een vraag via het forum.
