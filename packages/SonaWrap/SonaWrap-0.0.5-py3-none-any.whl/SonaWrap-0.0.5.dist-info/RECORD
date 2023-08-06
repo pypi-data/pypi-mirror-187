@@ -1,0 +1,13 @@
+SonaWrap/SonaApiError.py,sha256=SpJhkcuW3VVfeLAt7PLEzjyj8PdEyjjpLHMOn6qLlws,328
+SonaWrap/Wrapper.py,sha256=pBRGnMwBJ4AjC-eGF41C7PWEWnNzT6BEaKGNJwmemM8,4328
+SonaWrap/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SonaWrap/schemas/MainMenuInfo.py,sha256=hCIk3Bdr8eTrOe27_Up6W8KLQ16S92KkwNg6VQ4v2Uo,738
+SonaWrap/schemas/Schedule.py,sha256=le0Iw8afQyErxfI35fPxb5YWE17S9P1M0OGNRG5_r4M,716
+SonaWrap/schemas/StudyInfo.py,sha256=2DfDk10mmuShHwQmoDrK1GQU8L1-jsdkzi6JirBdkcQ,3670
+SonaWrap/schemas/StudyPage.py,sha256=FCqF_EB-So-W7AFySV7y1a5Ao8yIFCGj9c7t-hklulQ,582
+SonaWrap/schemas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SonaWrap-0.0.5.dist-info/LICENSE,sha256=_sUMULzQOEtpvtPzHbPA_0DFri6v5jiaxInPJc6YIFM,1067
+SonaWrap-0.0.5.dist-info/METADATA,sha256=QcAiPAaExqWLGfQ1ssLGpdPqDgZ6CiaWFju1Sf9YRiA,1158
+SonaWrap-0.0.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+SonaWrap-0.0.5.dist-info/top_level.txt,sha256=3RiQTBtwbLU52bH0r0syTd_gDV_Gc2OvN24aJMqYgQg,9
+SonaWrap-0.0.5.dist-info/RECORD,,

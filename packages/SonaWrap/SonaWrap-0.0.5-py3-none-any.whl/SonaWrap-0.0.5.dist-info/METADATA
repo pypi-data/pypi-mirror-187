@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: SonaWrap
+Version: 0.0.5
+Summary: A minimal python wrapper for the Sona systems mobile api
+Home-page: https://github.com/DavidM42/SonaWrap
+Author: David Merz
+Author-email: david@merz.dev
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SonaWrap
+Reverse engineered python api wrapper for the sona academic studies systems mobile api
+
+## How to use
+Install with `pip install SonaWrap`
+
+```python
+from SonaWrap.Wrapper import SonaWrap
+from config import credentials
+
+# 1. AUTH
+# Either give in username and password or existing token previously printed out to reuse authentication
+sona = SonaWrap(username=credentials["username"], password=credentials["password"])
+# sona = SonaWrap(token="b93ef8aed029418f871dc09c83283b67")
+
+# 2. Usable routes
+sona.test_connection()
+sona.my_schedule()
+sona.main_menu_info()
+sona.study_page_info()
+
+# one of the IDs from data of sona.study_page_info()
+sona.study_info(1588)
+```
+
+
