@@ -1,0 +1,3 @@
+[console_scripts]
+htlfc = htlfc:run_htlfc
+htlfc-b = htlfc:run_htlfc_b
