@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: macarna
+Version: 0.0.3
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Tarik K
+Author-email: sjtarik@gmail.com
+License: UNKNOWN
+Keywords: mac-address vendor lookup
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Requires-Python: <4, >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: msgpack
+
+Macarna: MAC Vendor Lookup
+==========================
+
+Vendor/Manufacturer lookup by Mac Address. This library depends on [Wireshark manuf](https://raw.githubusercontent.com/wireshark/wireshark/master/manuf).
+
+## Installation
+
+```
+pip install macarna
+```
+
+## Basic Usage
+
+```
+from macarna import mac_lookup
+print(mac_lookup("FC:FF:AA:00:00:00"))
+```
+
+## Command Line
+
+```
+python3 -m macarna fc:ff:aa:11:11:11
+```
+
+## Alias
+
+```
+alias maclookup='python3 -m macarna '
+```
+
+
