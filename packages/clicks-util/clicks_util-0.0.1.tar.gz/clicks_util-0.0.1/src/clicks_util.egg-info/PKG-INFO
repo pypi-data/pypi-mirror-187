@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: clicks-util
+Version: 0.0.1
+Summary: Utilities for CuzImClicks
+Author: CuzImClicks
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
