@@ -1,0 +1,8 @@
+paichat/__init__.py,sha256=P3uYSGW1OUIzYW2Qwf_Gf-ipZpMUmm5BS82WoUNtsJk,35
+paichat/main.py,sha256=Ty1ygKsEI48mfXFBWtDr6LH8n1vOl98ntjqiqr9bjIg,178
+paichat/prompt.py,sha256=PVoM8ZYeLJ0GS99ztwBP0rsrIyAoJ_PkB8_E18-2RuQ,243
+paichat-0.1.1.dist-info/LICENSE,sha256=I2WpxExjFNAfHlUB4lV3jn1BFnVeSbZWF0ZXa1gEDa0,1071
+paichat-0.1.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+paichat-0.1.1.dist-info/entry_points.txt,sha256=hV_h4dxcHu5RwXC7jZBCF3KyipFWcj9nAf5KNC5wp00,44
+paichat-0.1.1.dist-info/METADATA,sha256=sI8iMgd9HH8AieDMO7pJhow7lNu_vf1mPdN_UKSrivQ,1516
+paichat-0.1.1.dist-info/RECORD,,
