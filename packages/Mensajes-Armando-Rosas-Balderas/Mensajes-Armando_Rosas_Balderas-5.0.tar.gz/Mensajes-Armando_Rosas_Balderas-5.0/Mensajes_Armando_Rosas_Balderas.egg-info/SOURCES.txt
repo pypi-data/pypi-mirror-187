@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+Mensajes/__init__.py
+Mensajes/Bienvenidas/Saludos.py
+Mensajes/Bienvenidas/__init__.py
+Mensajes/Despedidas/Adios.py
+Mensajes/Despedidas/__init__.py
+Mensajes_Armando_Rosas_Balderas.egg-info/PKG-INFO
+Mensajes_Armando_Rosas_Balderas.egg-info/SOURCES.txt
+Mensajes_Armando_Rosas_Balderas.egg-info/dependency_links.txt
+Mensajes_Armando_Rosas_Balderas.egg-info/requires.txt
+Mensajes_Armando_Rosas_Balderas.egg-info/top_level.txt
+tests/__init__.py
+tests/test_Bienvenidas.py
