@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: mc-providers
+Version: 0.1.1
+Summary: Search Providers package for Mediacloud
+Author-email: Paige Gulley <nano3.14@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pyhumps == 3.8.*
+Requires-Dist: mediacloud == 3.13.*
+Requires-Dist: mediacloud-metadata == 0.7.*
+Requires-Dist: python-dateutil == 2.8.*
+Requires-Dist: dateparser == 1.1.*
+Requires-Dist: requests
+Requires-Dist: wayback-news-search == 1.0.*
+Requires-Dist: fasttext == 0.9.*
+
+# mc-providers
+
+A package of search providers for mediacloud, wrapping up interfaces for different social media platform.
+UNDER CONSTRUCTION- Probably won't get a huge amount of attention for a little bit, but I'm putting this up now since I've done this extraction already.
+
+
+Install with pip and the install script. 
+
+Requires environment variables set for various interfaces to work correctly.
+
+
+### Build
+
+
+1. Run `flit build` to create an installation package
+2. Run `twine upload --repository-url https://test.pypi.org/legacy/ dist/*` to upload it to PyPI's test platform
+3. Run `twine upload dist/*` to upload it to PyPI
+
