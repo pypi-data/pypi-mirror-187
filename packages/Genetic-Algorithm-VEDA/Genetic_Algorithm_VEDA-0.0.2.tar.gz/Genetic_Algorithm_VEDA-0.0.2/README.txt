@@ -1,0 +1,1 @@
+Algoritmo Genético para estudo da evolução de circuitos lógicos combinacionais na presença de falhas.
