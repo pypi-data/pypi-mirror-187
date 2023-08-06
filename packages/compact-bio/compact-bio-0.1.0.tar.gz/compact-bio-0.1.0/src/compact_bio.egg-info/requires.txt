@@ -1,0 +1,8 @@
+numpy
+pandas
+rbo
+
+[test]
+pytest
+coverage
+pytest-cov
