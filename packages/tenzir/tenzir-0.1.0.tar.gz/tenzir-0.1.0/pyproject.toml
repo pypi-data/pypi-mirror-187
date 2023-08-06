@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "tenzir"
+version = "0.1.0"
+description = "Tenzir, Answer the toughest questions in cyber security"
+authors = ["Tenzir <engineering@tenzir.com>"]
+license = "BSD-3-Clause"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
