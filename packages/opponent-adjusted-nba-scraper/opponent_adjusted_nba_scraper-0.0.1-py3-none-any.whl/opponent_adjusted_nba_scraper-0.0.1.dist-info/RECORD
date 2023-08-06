@@ -1,0 +1,13 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples.py,sha256=Odhz_c2kA2dWbq6aYLaYbMXMbJAMUJbhD1dZDe0CY0A,1081
+setup.py,sha256=L6nmnhmatTKGDu_9eshhUflAcSKb87kALWJdCGQDg7s,1006
+opponent_adjusted_nba_scraper/constants.py,sha256=QkUqptN63sVoVaOOffFMHVTkqrbX41mryUNjojvfrNg,1921
+opponent_adjusted_nba_scraper/lookup.py,sha256=CT9vH4GDkvyaNJAyM1LzabmFOMkxGcslal5Mqm-_Pc4,3189
+opponent_adjusted_nba_scraper/players.py,sha256=a3qt91Ixb6vNMlDr6nKO0uKkgqEiaF5WKh040y_GNdM,5277
+opponent_adjusted_nba_scraper/request_constants.py,sha256=jcKGmDm95QSxVdmj5UTnSn0q0E2Ai28vEVYExOIPGtA,2567
+opponent_adjusted_nba_scraper/teams.py,sha256=CRU1dAEGsZ83cEY8opBUjm4NMJ0Qe3S5RA6ofo6Ndh0,3995
+opponent_adjusted_nba_scraper/utils.py,sha256=YnljxEJySBbw6d9WoWg-V_AgT7RUiTTyFxj2M-GAVAw,2206
+opponent_adjusted_nba_scraper-0.0.1.dist-info/METADATA,sha256=fHClpJvmq4EZ4tiJGq5mWzhNQFuzkowjzIYoIR4WNeE,1829
+opponent_adjusted_nba_scraper-0.0.1.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+opponent_adjusted_nba_scraper-0.0.1.dist-info/licenses/LICENSE,sha256=zRtXjIz7oh6QZcUg-eWNDYLqZ78F8uF5lbRvZGww0Zg,1091
+opponent_adjusted_nba_scraper-0.0.1.dist-info/RECORD,,
