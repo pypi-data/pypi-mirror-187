@@ -1,0 +1,3 @@
+[console_scripts]
+topsis = Topsis_Sudhit_102017137.Sudhit_102017137:main
+
