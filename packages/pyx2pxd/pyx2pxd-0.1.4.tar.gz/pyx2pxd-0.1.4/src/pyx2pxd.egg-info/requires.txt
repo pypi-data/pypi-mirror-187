@@ -1,0 +1,11 @@
+cython>=0.29.0
+
+[test]
+pytest>=7.1
+pytest-cov>=4.0.0
+pytest-emoji>=0.2.0
+pytest-icdiff>=0.6
+pytest-clarity>=1.0.1
+pytest-timeout>=2.1.0
+pytest-sugar>=0.9.6
+pytest-cython>=0.2.0
