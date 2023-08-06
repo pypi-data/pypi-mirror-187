@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: glowbit
+Version: 0.8
+Summary: Raspberry Pi (Python 3.x) and Raspberry Pi Pico (MicroPython) driver for GlowBit devices
+Home-page: https://github.com/CoreElectronics/CE-GlowBit-Python
+Author: Core Electronics
+Author-email: production.inbox@coreelectronics.com.au
+License: MIT
+Description: Raspberry Pi (Python 3.x) and Raspberry Pi Pico (MicroPython) driver for GlowBit devices
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: MicroPython
+Classifier: License :: OSI Approved :: MIT License
