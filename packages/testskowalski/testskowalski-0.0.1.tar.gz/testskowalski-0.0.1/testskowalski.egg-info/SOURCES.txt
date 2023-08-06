@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+testskowalski/__init__.py
+testskowalski/m_mod_skowalski.py
+testskowalski.egg-info/PKG-INFO
+testskowalski.egg-info/SOURCES.txt
+testskowalski.egg-info/dependency_links.txt
+testskowalski.egg-info/requires.txt
+testskowalski.egg-info/top_level.txt

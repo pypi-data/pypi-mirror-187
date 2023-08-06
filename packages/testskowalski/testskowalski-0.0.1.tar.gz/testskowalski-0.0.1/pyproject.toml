@@ -1,0 +1,13 @@
+[project]
+name = "testskowalski"
+version = "0.0.1"
+description = "My test package"
+keywords = ["testskowalski","name","surename","hello"]
+authors = [{name = "Szymon Kowalski",email = "sk.kowalski9@gmail.com"}]
+license = {file = "LICENSE.txt"}
+readme = "README.md"
+classifiers = [
+    "Framework :: IDLE",
+    "Natural Language :: Polish"]
+requires-python = ">=3.0"
+dependencies = ["python_veriosn >= '3.0'", "numpy"]
