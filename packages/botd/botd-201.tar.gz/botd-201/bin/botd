@@ -1,0 +1,79 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+# pylint: disable=C0115,C0116
+
+
+"24/7 channel daemon"
+
+
+import os
+import sys
+import traceback
+
+
+from bot.command import cmd, thr
+from bot.objects import Wd
+from bot.handler import Command
+from bot.runtime import Cfg
+from bot.scanner import scan
+from bot.service import irc, rss
+from bot.utility import wait
+
+from bot.service.irc import Config
+
+
+Config.nick = "botd"
+Config.channel = "#botd"
+Config.realname = "24/7 channel dameon"
+Config.username = "botd"
+
+
+Wd.workdir ="/var/lib/botd"
+
+
+scan(cmd)
+scan(thr)
+
+
+def daemon():
+    pid = os.fork()
+    if pid != 0:
+        os._exit(0)
+    os.setsid()
+    os.umask(0)
+    sis = open("/dev/null", 'r')
+    os.dup2(sis.fileno(), sys.stdin.fileno())
+    if not Cfg.verbose:
+        sos = open("/dev/null", 'a+')
+        ses = open("/dev/null", 'a+')
+        os.dup2(sos.fileno(), sys.stdout.fileno())
+        os.dup2(ses.fileno(), sys.stderr.fileno())
+
+
+def waiter():
+    got = []
+    for ex in Command.errors:
+        traceback.print_exception(type(ex), ex, ex.__traceback__)
+        got.append(ex)
+    for exc in got:
+        Command.errors.remove(exc)
+
+
+def wrap(func):
+    try:
+        func()
+    except PermissionError:
+        print("permission error %s" % str(ex))
+    except (EOFError, KeyboardInterrupt):
+        print("")
+    finally:
+        waiter()
+
+
+def main():
+    irc.init()
+    rss.init()
+    wait()
+
+
+wrap(main)

@@ -1,0 +1,89 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+# pylint: disable=C0115,C0116
+
+
+"irc bot"
+
+
+import os
+import sys
+import termios
+import traceback
+
+
+from bot.command import *
+from bot.message import Event
+from bot.handler import Command, Handler
+from bot.modules import *
+from bot.objects import Wd, cdir
+from bot.runtime import Cfg, boot, command
+from bot.scanner import scan, scanner, scanpkg
+from bot.service import irc, rss
+from bot.utility import privileges
+
+
+from bot.service.irc import Config
+
+
+Config.nick = "botd"
+Config.channel = "#botd"
+Config.realname = "24/7 channel dameon"
+Config.username = "botd"
+
+
+Wd.workdir = "/var/lib/botd/"
+
+
+scan(cmd)
+scan(irc)
+scan(rss)
+scan(thr)
+
+
+class CLI(Handler):
+
+    @staticmethod
+    def announce(txt):
+        pass
+
+    @staticmethod
+    def raw(txt):
+        print(txt)
+        sys.stdout.flush()
+
+
+def waiter():
+    got = []
+    for ex in Command.errors:
+        if type(ex) == PermissionError:
+            print(ex)
+            got.append(ex)
+            continue
+        traceback.print_exception(type(ex), ex, ex.__traceback__)
+        got.append(ex)
+    for exc in got:
+        Command.errors.remove(exc)
+
+
+def wrap(func):
+    try:
+        func()
+    except PermissionError:
+        print("permission error %s" % str(ex))
+    except (EOFError, KeyboardInterrupt):
+        print("")
+    finally:
+        waiter()
+
+
+def main():
+    if not os.environ.get("INVOCATION_ID"):
+        print("this program is ment to run with botctl")
+        return
+    privileges("botd")
+    cli = CLI()
+    command(" ".join(sys.argv[1:]), cli)
+
+
+wrap(main)
