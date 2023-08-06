@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+pyproject.toml
+src/panel_modal/__init__.py
+src/panel_modal/modal.py
+src/panel_modal/py.typed
+src/panel_modal.egg-info/PKG-INFO
+src/panel_modal.egg-info/SOURCES.txt
+src/panel_modal.egg-info/dependency_links.txt
+src/panel_modal.egg-info/requires.txt
+src/panel_modal.egg-info/top_level.txt
