@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+WebScraperAPI/__init__.py
+WebScraperAPI/data_storage.py
+WebScraperAPI/parser.py
+WebScraperAPI/scraper.py
+WebScraperAPI/utils.py
+WebScraperAPI.egg-info/PKG-INFO
+WebScraperAPI.egg-info/SOURCES.txt
+WebScraperAPI.egg-info/dependency_links.txt
+WebScraperAPI.egg-info/requires.txt
+WebScraperAPI.egg-info/top_level.txt
