@@ -1,0 +1,8 @@
+setup.py
+reporter_google_ads_dn/Googleadsreporter.py
+reporter_google_ads_dn/__init__.py
+reporter_google_ads_dn.egg-info/PKG-INFO
+reporter_google_ads_dn.egg-info/SOURCES.txt
+reporter_google_ads_dn.egg-info/dependency_links.txt
+reporter_google_ads_dn.egg-info/not-zip-safe
+reporter_google_ads_dn.egg-info/top_level.txt
