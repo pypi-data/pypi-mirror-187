@@ -1,0 +1,4 @@
+[console_scripts]
+sidewinder-client = sidewinder.client:main
+sidewinder-server = sidewinder.server:main
+sidewinder-worker = sidewinder.worker:main
