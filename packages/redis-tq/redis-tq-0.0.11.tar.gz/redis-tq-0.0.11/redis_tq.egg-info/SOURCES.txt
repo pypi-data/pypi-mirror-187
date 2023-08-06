@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+redis_tq.egg-info/PKG-INFO
+redis_tq.egg-info/SOURCES.txt
+redis_tq.egg-info/dependency_links.txt
+redis_tq.egg-info/requires.txt
+redis_tq.egg-info/top_level.txt
+redistq/__init__.py
+redistq/task_queue.py
+redistq/version.py
