@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+mkdocs-png-to-webp/__init__.py
+mkdocs-png-to-webp/plugin.py
+mkdocs_png_to_webp.egg-info/PKG-INFO
+mkdocs_png_to_webp.egg-info/SOURCES.txt
+mkdocs_png_to_webp.egg-info/dependency_links.txt
+mkdocs_png_to_webp.egg-info/requires.txt
+mkdocs_png_to_webp.egg-info/top_level.txt

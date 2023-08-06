@@ -1,0 +1,3 @@
+pip>=22
+mkdocs>=1
+webptools==0.0.9
