@@ -1,0 +1,12 @@
+appdata/__init__.py,sha256=LheH2ekGW71Ua-LZG5skt-56w1XIYJoqLmH_R7GKZlM,6644
+appdata/lock.py,sha256=CiONHI2awAsuCJX65PzXRbAQaaGlMiNTFweWTlySNG4,784
+appdata/utils.py,sha256=nO2R4G1CPvwpNKM75jQBVVaqZBhu4Sl778EojO2jHRE,476
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_lock.py,sha256=uabwpzx7dd2EnDNOdi-1xd45vmOaxHFX059FeYt4Oqs,603
+tests/test_paths.py,sha256=wSjhzVUDbGn4Xq35DzWqDwK420n5Q3qzB7u8gb6mQiI,9243
+tests/test_utils.py,sha256=c5W1kKaYwId54yt7iKYnkMMiyOi6dJHnvE2kwMv56Mg,727
+appdata-2.2.0.dist-info/LICENSE.md,sha256=OvWXE10pwNAbEsQEqCP0Jjgy18J4tddE2w73nzbRL70,1065
+appdata-2.2.0.dist-info/METADATA,sha256=xafurrdiBLx2Hw_5TIWEegR0Lz1ta8D-dnK17pPNLGY,3162
+appdata-2.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+appdata-2.2.0.dist-info/top_level.txt,sha256=ya_zrafpqlxGx4nSVZ6TftzUgDotyl1QsxggYou1l9Q,14
+appdata-2.2.0.dist-info/RECORD,,
