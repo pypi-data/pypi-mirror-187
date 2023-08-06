@@ -1,0 +1,8 @@
+yolov3_minimal/__init__.py,sha256=JIb8pcHOLij1me87eefNeS85Gb7YtxyqwuBi0j7wC_4,42
+yolov3_minimal/models.py,sha256=AY7Z9rX23qFcnWafQ1qo-qz-7TmRvoNomdG3VuJFFG8,12551
+yolov3_minimal/utils.py,sha256=w3fB3joEEx28V1TGnSulx9xtr40qJ6PmCvst0hNCLXg,9225
+yolov3_minimal-0.1.4.dist-info/LICENSE,sha256=0jjfzqTUoGkOkEV3P1QQhHQhSJu_559caqmWcMTxx5E,1097
+yolov3_minimal-0.1.4.dist-info/METADATA,sha256=9XZvUfH3uNQLUKiaooBsjdyxZbFN2lrOdKXMtaCVHNI,295
+yolov3_minimal-0.1.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+yolov3_minimal-0.1.4.dist-info/top_level.txt,sha256=-uF3TZNDZkvWDN0jmRxus7eC9J5zc14gm_NwgJVVDQo,15
+yolov3_minimal-0.1.4.dist-info/RECORD,,
