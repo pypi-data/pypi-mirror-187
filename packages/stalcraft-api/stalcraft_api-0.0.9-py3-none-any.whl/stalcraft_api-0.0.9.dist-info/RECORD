@@ -1,0 +1,13 @@
+stalcraft/__init__.py,sha256=y7P3wCW3K3ZnSuecip7gib0cy-C_3moFiORr7bhfDRE,339
+stalcraft/api.py,sha256=AYPpvQ8K7tzNtCPQ4zPO0WBaQ3JcAa5rXh_7b-y4Dc4,1240
+stalcraft/auction.py,sha256=RoAxO2ikj5T7kP2lH8Kn2XJsAbOBoIxHwXjKF6J4Q2U,1545
+stalcraft/clan.py,sha256=3t0zRl-BLw7eFLsiHhQ8VUiJIdvk0sLRSBEjVVGs5iE,1342
+stalcraft/client.py,sha256=4TGhfRQGxsAW1RCj8k_-Kpho2fV0f9-EbIur4uLn0ds,3538
+stalcraft/enums.py,sha256=7iHGdPGuX5qvHOpv5QimdVYBr6fpSoItNGWbi-KtciQ,626
+stalcraft/exceptions.py,sha256=3de_tnsBBxDt_f_bdwaCcOY1edJQFDnYCiGTjr_90dU,216
+stalcraft/item.py,sha256=UlVNuIbsapzuyLeSeUTdvQZIqjYeeOaQ_JwCstVUO8w,3679
+stalcraft_api-0.0.9.dist-info/LICENSE,sha256=wd_APRUT0IfjRlnng0HSo5VUbtEbEKsJ4NHD-z7gMuc,1083
+stalcraft_api-0.0.9.dist-info/METADATA,sha256=qy79lc-VjD_odf258GldEbJ42mYpPb3_R0HjVWKaibo,3038
+stalcraft_api-0.0.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+stalcraft_api-0.0.9.dist-info/top_level.txt,sha256=NyBsnO7ZpHljzADh5mcWplD5RPilhk2vBRytpv4j2AY,10
+stalcraft_api-0.0.9.dist-info/RECORD,,
