@@ -1,0 +1,6 @@
+numba
+numpy
+
+[dev]
+pytest
+pytest-cov
