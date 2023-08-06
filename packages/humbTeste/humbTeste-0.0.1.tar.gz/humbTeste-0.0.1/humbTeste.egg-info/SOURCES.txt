@@ -1,0 +1,16 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+humbTeste.egg-info/PKG-INFO
+humbTeste.egg-info/SOURCES.txt
+humbTeste.egg-info/dependency_links.txt
+humbTeste.egg-info/top_level.txt
+testeHumb.egg-info/SOURCES.txt
+testeHumb.egg-info/dependency_links.txt
+testeHumb.egg-info/top_level.txt
+testeHumberto.egg-info/SOURCES.txt
+testeHumberto.egg-info/dependency_links.txt
+testeHumberto.egg-info/top_level.txt
