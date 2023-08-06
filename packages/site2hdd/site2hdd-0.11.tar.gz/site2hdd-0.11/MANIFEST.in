@@ -1,0 +1,4 @@
+include site2hdd/requirements.txt
+include site2hdd/thirdparty.json
+include site2hdd/README.MD
+include site2hdd/LICENSE
