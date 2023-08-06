@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+cosvar.egg-info/PKG-INFO
+cosvar.egg-info/SOURCES.txt
+cosvar.egg-info/dependency_links.txt
+cosvar.egg-info/requires.txt
+cosvar.egg-info/top_level.txt
+src/cosvar/__init__.py
+src/cosvar/dlin.py
+src/cosvar/intpk4.py
+src/cosvar/pofk.py
+src/cosvar/pyCV.py
+src/cosvar/quickcv.py
+src/cosvar/rz.py
