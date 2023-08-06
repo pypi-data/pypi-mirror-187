@@ -1,0 +1,8 @@
+#!/bin/bash
+cd $HOME 
+rm -rvf Revancify
+rm ~/../usr/bin/revancify
+rm ~/../usr/bin/revancify/revanced-installer.sh
+clear
+echo
+echo "Revancify Removed Successfully !"
