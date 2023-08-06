@@ -1,0 +1,12 @@
+trustymail/__init__.py,sha256=a520XDUOI9k-ORsHENvsfwMLJxTPU5daxy8y1JAymJA,489
+trustymail/__main__.py,sha256=bmbfDZ7Khfum4eozLdpxnXPqxge1BNiatdL8XXbSDqs,93
+trustymail/_version.py,sha256=5LBP0-EQISzoZ07BPwgK2gO6rdxE334p9oYak1gaqt4,74
+trustymail/cli.py,sha256=uwCCm2kSt3XivcStCU8ABjLeDmlbwEqcL4Zskb0ro8c,7140
+trustymail/domain.py,sha256=Kz2As3n595XlsEa7HkjPiXI4zotp80G6jVKSB1sHU8E,14764
+trustymail/trustymail.py,sha256=4URsYe1_fd49tldfnZQOA6JP1jo3ub1UDRnw1l02QEs,41923
+trustymail-0.8.0.dist-info/LICENSE,sha256=Nv_Z3AhdUpp-YOEnbXOuWgMLAgMT5sVAhZOmrirzlnM,6555
+trustymail-0.8.0.dist-info/METADATA,sha256=R5ikjH8P8iMPK96QkKjqul0PceT64BaQSm1lgMCIetY,10666
+trustymail-0.8.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+trustymail-0.8.0.dist-info/entry_points.txt,sha256=T-1CARk5whHbSZyiMyc7TCGdd1rXSK1CWimT8o0wzKE,51
+trustymail-0.8.0.dist-info/top_level.txt,sha256=ByZOGkba5w2TW0FwvGYyaKA78J7zSHjC-_069m1Hvbo,11
+trustymail-0.8.0.dist-info/RECORD,,
