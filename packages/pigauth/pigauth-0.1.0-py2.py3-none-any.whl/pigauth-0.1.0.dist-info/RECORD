@@ -1,0 +1,10 @@
+pigauth/__init__.py,sha256=xPgGAH8bnFovDVS5MsT_R5dYxKF0hyg7UPle_gfup0w,388
+pigauth/_auth.py,sha256=RdUC_v4jDbz-2x6-8wtOuHiChS9FB5pfZdRA-cQd6uk,5836
+pigauth/cli.py,sha256=s_6733mRlXnp-jrEF8ZClZsmewNcK5LX9Xn3SZFZ8n0,384
+pigauth/pigauth.py,sha256=h0hwdogXGFqerm-5ZPeT-irPn91pCcQRjiHThXsRzEk,19
+pigauth-0.1.0.dist-info/LICENSE,sha256=cL2I4tb6fgmLk87vVaEYL2wry06FJWMMh3l2fSyMB5c,1507
+pigauth-0.1.0.dist-info/METADATA,sha256=gm-fcPWO4ZaiXMAEAZmBVVXL_xBX_R2_I0LrzYT_Eho,2012
+pigauth-0.1.0.dist-info/WHEEL,sha256=JZXtYepZFsf4IoivNpnSgKIc4qTHan08DRd56koo_DM,116
+pigauth-0.1.0.dist-info/entry_points.txt,sha256=OQIFTt78Gi39kfBRT6f63E2UPIUCNeTjYcC5LX_EyvU,46
+pigauth-0.1.0.dist-info/top_level.txt,sha256=Pe6Xwo3PDSQFJnMszHxesgapMgsEjQ0p0MbwKIag5qE,8
+pigauth-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+pigauth = pigauth.cli:main
+
