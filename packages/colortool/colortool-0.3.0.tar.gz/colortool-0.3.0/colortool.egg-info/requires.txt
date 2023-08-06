@@ -1,0 +1,10 @@
+
+[dev]
+autoflake
+autopep8
+bumpver
+flake8
+isort
+mypy
+pre-commit
+pytest

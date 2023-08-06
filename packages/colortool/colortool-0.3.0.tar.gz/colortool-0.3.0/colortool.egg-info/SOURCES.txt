@@ -1,0 +1,9 @@
+README.md
+colortool.py
+setup.cfg
+setup.py
+colortool.egg-info/PKG-INFO
+colortool.egg-info/SOURCES.txt
+colortool.egg-info/dependency_links.txt
+colortool.egg-info/requires.txt
+colortool.egg-info/top_level.txt
