@@ -1,0 +1,6 @@
+PyYAML
+python_debian
+requirements-parser
+
+[chatgpt]
+openai
