@@ -1,0 +1,10 @@
+bitsrun/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bitsrun/cli.py,sha256=6FFoaYAYSzIkP9TMDu41urEhAn8NSGsnvp0ZemITP-M,3634
+bitsrun/config.py,sha256=dYKx7Frfgf0nNK4ZbjBUhsKuUCw3bJm4sqFGffC7ss8,2072
+bitsrun/user.py,sha256=NCw_hBsNBxQMXPnhDY2-XH4eCaRzOyjvsfuMJjaeSDk,4429
+bitsrun/utils.py,sha256=1NPxXmTjNExsoiKGo92420ukoqKOXnYNYDDufWtzEXI,3835
+bitsrun-3.3.0.dist-info/METADATA,sha256=HhowTZOPJOQgI4ZzWSUTrT3ehLg0sNYepn8VQgEB2UQ,3392
+bitsrun-3.3.0.dist-info/entry_points.txt,sha256=QK2ZqJSfA9D_XIH9K1yF6eNAY5zQYlYzfa-Z2JngfD4,43
+bitsrun-3.3.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+bitsrun-3.3.0.dist-info/LICENSE,sha256=LePmAshGr50WX6kRPxzMEob_N1eYO2eGJfDQ9ELNido,496
+bitsrun-3.3.0.dist-info/RECORD,,
