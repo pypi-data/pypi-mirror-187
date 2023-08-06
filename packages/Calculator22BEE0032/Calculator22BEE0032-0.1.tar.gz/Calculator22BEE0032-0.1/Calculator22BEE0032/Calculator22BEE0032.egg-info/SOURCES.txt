@@ -1,0 +1,6 @@
+README.rst
+setup.py
+Calculator22BEE0032/Calculator22BEE0032.egg-info/PKG-INFO
+Calculator22BEE0032/Calculator22BEE0032.egg-info/SOURCES.txt
+Calculator22BEE0032/Calculator22BEE0032.egg-info/dependency_links.txt
+Calculator22BEE0032/Calculator22BEE0032.egg-info/top_level.txt
