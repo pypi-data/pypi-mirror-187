@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+Topsis-Ishaan-102003689/102003689.py
+Topsis-Ishaan-102003689/__init__.py
+Topsis_Ishaan_102003689.egg-info/PKG-INFO
+Topsis_Ishaan_102003689.egg-info/SOURCES.txt
+Topsis_Ishaan_102003689.egg-info/dependency_links.txt
+Topsis_Ishaan_102003689.egg-info/requires.txt
+Topsis_Ishaan_102003689.egg-info/top_level.txt

@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: Topsis-Ishaan-102003689
+Version: 0.2
+Summary: A Python package used to implement TOPSIS.
+Home-page: https://github.com/user/reponame
+Author: Ishaan Singh Sohi
+Author-email: ishaan191201@gmail.com
+License: MIT
+Download-URL: https://github.com/user/reponame/archive/v_01.tar.gz
+Description: # TOPSIS
+        
+        
+        
+        Submitted By: **Ishaan Singh Sohi 102003689**
+        
+        
+        <br>
+        
+        ## How to use this package:
+        
+        Topsis-Ishaan-102003689  can be run as follows:
+        
+        
+        
+        ### In Command Prompt
+        ```
+        >> python 102003689.py 102003689-data.csv "1,1,1,1,1" "+,+,-,+,+" 102003689-result.csv
+        ```
+        
+Keywords: SOME,MEANINGFULL,KEYWORDS
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
