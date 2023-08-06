@@ -1,0 +1,7 @@
+README.md
+setup.py
+mobizclick2sure.egg-info/PKG-INFO
+mobizclick2sure.egg-info/SOURCES.txt
+mobizclick2sure.egg-info/dependency_links.txt
+mobizclick2sure.egg-info/requires.txt
+mobizclick2sure.egg-info/top_level.txt
