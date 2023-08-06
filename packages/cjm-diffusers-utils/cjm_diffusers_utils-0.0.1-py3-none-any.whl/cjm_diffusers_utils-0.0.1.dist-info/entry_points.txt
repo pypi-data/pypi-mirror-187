@@ -1,0 +1,2 @@
+[nbdev]
+cjm_diffusers_utils = cjm_diffusers_utils._modidx:d
