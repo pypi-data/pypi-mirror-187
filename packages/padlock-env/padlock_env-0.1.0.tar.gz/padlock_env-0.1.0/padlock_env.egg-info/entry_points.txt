@@ -1,0 +1,2 @@
+[console_scripts]
+padlock_env = padlock_env.__main__:main

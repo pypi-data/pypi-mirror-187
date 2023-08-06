@@ -1,0 +1,14 @@
+gymnasium==0.26.3
+numpy>=1.19.3
+
+[test]
+pytest
+coverage
+flake8
+black
+isort
+pytest-cov
+codecov
+mypy
+gitchangelog
+mkdocs
