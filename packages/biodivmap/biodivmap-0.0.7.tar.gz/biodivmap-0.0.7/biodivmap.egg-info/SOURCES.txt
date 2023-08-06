@@ -1,0 +1,7 @@
+setup.py
+biodivmap/__init__.py
+biodivmap.egg-info/PKG-INFO
+biodivmap.egg-info/SOURCES.txt
+biodivmap.egg-info/dependency_links.txt
+biodivmap.egg-info/requires.txt
+biodivmap.egg-info/top_level.txt
