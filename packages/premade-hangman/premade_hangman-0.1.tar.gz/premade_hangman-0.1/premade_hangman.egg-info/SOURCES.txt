@@ -1,0 +1,5 @@
+setup.py
+premade_hangman.egg-info/PKG-INFO
+premade_hangman.egg-info/SOURCES.txt
+premade_hangman.egg-info/dependency_links.txt
+premade_hangman.egg-info/top_level.txt
