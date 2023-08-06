@@ -1,0 +1,8 @@
+ply
+rdflib
+click
+pyyaml
+xmltodict
+
+[test]
+pytest
