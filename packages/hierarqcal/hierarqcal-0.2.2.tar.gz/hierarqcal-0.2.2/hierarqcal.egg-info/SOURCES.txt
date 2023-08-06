@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+hierarqcal/__init__.py
+hierarqcal/core.py
+hierarqcal/utils.py
+hierarqcal.egg-info/PKG-INFO
+hierarqcal.egg-info/SOURCES.txt
+hierarqcal.egg-info/dependency_links.txt
+hierarqcal.egg-info/requires.txt
+hierarqcal.egg-info/top_level.txt
