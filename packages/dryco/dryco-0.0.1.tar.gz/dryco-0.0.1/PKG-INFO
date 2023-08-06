@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: dryco
+Version: 0.0.1
+Summary: Collection of super useful tools/addons/extensions for any python project!
+Project-URL: Homepage, https://github.com/v1a0/dryco
+Project-URL: Bug Tracker, https://github.com/v1a0/dryco/issues
+Author-email: v1a0 <contact@v1a0.dev>
+License-File: LICENSE
+Keywords: addon,ddsfsdf,tools
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Dryco - "Don't Repeat Yourself collection"
+
+### Collection of super useful tools/addons/extensions for any python project!

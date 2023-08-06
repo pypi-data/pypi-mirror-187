@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dryco"
+version = "0.0.1"
+authors = [
+    { name = "v1a0", email = "contact@v1a0.dev" },
+]
+description = "Collection of super useful tools/addons/extensions for any python project!"
+homepage = "https://github.com/v1a0/dryco"
+repository = "https://github.com/v1a0/dryco"
+documentation = "https://github.com/v1a0/dryco/docs"
+keywords = ['tools', 'addon', 'ddsfsdf']
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/v1a0/dryco"
+"Bug Tracker" = "https://github.com/v1a0/dryco/issues"
+
