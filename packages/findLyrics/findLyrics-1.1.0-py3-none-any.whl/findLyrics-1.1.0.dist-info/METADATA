@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: findLyrics
+Version: 1.1.0
+Summary: Python Lyrics Scrapper
+Home-page: https://github.com/sirKiraUzumaki/lyrics_hunter
+Author: Ayush Lakra
+Author-email: ayushlakra846@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4
+Requires-Dist: requests
+
+Lyrics Hunter is a python library to scrape lyrics from websites. It is a web scraping library designed to extract song lyrics from websites. The library currently only supports scraping from AZLyrics but in near future, it will support more websites.
+
+
