@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+src/pyE2EE/__init__.py
+src/pyE2EE.egg-info/PKG-INFO
+src/pyE2EE.egg-info/SOURCES.txt
+src/pyE2EE.egg-info/dependency_links.txt
+src/pyE2EE.egg-info/top_level.txt

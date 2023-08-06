@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: pyE2EE
+Version: 5.0.4
+Summary: End To End Encryption in Python.
+Home-page: https://github.com/mastercodermerwin/OSOME-DB
+Author: Cactochan
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/mastercodermerwin/OSOME-DB/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+
+# pyE2EE 1.0.0
+
+End To End Encryption in Python.
+
+<p align="right"> <img src="https://komarev.com/ghpvc/?username=merwin-pye2ee&label=Project%20views&color=0e75b6&style=flat" alt="darkmash-org" /> </p>
+
+
+## Install 
+
+        pip install pyE2EE
+
+## Features
+
+- Cross platform (i think)
+- RSA and AES Encryption
+- Examples provided
+## Usage/Examples
+
+```python
+import pyE2EE
+
+```
+
+
+### Server Side
+```python
+
+def client_loop(server,cli):
+  pass # do stuff
+
+server = pyE2EE.Server(port,client_loop) # client_loop will be called giving args server-obj and client 
+
+server.TotalCons        # gives number of total connections
+server.clients          # is a list of all [client, AES-key-of-the-cli]
+server.send(client,msg) # sends msg
+server.recv(client)     # recvs msg
+server.sendall(msg)     # send all connected clients
+server.close(client)    # close a connection
+```
+
+### Client Side
+```python
+client = pyE2EE.Client(server_ip,port) 
+
+client.send(msg)  # send msg to server
+client.recv()     # recv msg from server
+client.close()    # close connection with server
+
+```
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
+## Authors
+
+- [@Merwin](https://www.github.com/mastercodermerwin)
+
+
