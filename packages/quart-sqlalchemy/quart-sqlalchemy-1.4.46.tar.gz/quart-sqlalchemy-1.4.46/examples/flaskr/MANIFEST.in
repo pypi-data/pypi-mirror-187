@@ -1,0 +1,4 @@
+graft quartr/static
+graft quartr/templates
+graft tests
+global-exclude *.pyc
