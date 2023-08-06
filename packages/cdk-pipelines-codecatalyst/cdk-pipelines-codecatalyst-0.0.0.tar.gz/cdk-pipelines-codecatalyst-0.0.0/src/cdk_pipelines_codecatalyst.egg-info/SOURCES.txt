@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/cdk_pipelines_codecatalyst/__init__.py
+src/cdk_pipelines_codecatalyst/py.typed
+src/cdk_pipelines_codecatalyst.egg-info/PKG-INFO
+src/cdk_pipelines_codecatalyst.egg-info/SOURCES.txt
+src/cdk_pipelines_codecatalyst.egg-info/dependency_links.txt
+src/cdk_pipelines_codecatalyst.egg-info/requires.txt
+src/cdk_pipelines_codecatalyst.egg-info/top_level.txt
+src/cdk_pipelines_codecatalyst/_jsii/__init__.py
+src/cdk_pipelines_codecatalyst/_jsii/cdk-pipelines-codecatalyst@0.0.0.jsii.tgz
