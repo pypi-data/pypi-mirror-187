@@ -1,0 +1,3 @@
+[console_scripts]
+clean_git_branches=main.__main__:start
+
