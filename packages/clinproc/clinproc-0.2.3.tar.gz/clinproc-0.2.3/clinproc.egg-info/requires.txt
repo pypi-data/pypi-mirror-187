@@ -1,0 +1,7 @@
+lxml
+spacy==3.0.1
+scispacy
+negspacy
+scipy
+matplotlib
+pandas
