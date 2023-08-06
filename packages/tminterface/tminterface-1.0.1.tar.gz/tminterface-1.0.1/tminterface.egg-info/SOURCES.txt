@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tminterface/__init__.py
+tminterface/client.py
+tminterface/commandlist.py
+tminterface/constants.py
+tminterface/eventbuffer.py
+tminterface/interface.py
+tminterface/structs.py
+tminterface/util.py
+tminterface.egg-info/PKG-INFO
+tminterface.egg-info/SOURCES.txt
+tminterface.egg-info/dependency_links.txt
+tminterface.egg-info/requires.txt
+tminterface.egg-info/top_level.txt

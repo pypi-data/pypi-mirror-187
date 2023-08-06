@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: tminterface
+Version: 1.0.1
+Summary: A client for TMInterface, a TrackMania TAS tool
+Home-page: https://github.com/donadigo/TMInterfaceClientPython
+Download-URL: https://github.com/donadigo/TMInterfaceClientPython/archive/refs/tags/0.6.tar.gz
+Author: Adam Bieńkowski
+Author-email: donadigos159@gmail.com
+License: GPL3
+Keywords: TMInterface,client,TrackMania
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE
+
+UNKNOWN
+
