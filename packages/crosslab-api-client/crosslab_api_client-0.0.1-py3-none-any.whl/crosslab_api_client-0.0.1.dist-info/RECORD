@@ -1,0 +1,9 @@
+crosslab/api_client/__init__.py,sha256=IFz89DcBXO7A8rgZE7POl9OPF8k06iR0sHNnnhhw9BI,49
+crosslab/api_client/client.py,sha256=--mb23-6XdcnGe3j_N_oua_lv1KnKJTv2nAR3QDyx6o,49960
+crosslab/api_client/exceptions.py,sha256=PLuUdh6OADpKWcTtQS1-JhD_XZ3dKI4RzGE1a35grUg,50
+crosslab/api_client/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crosslab/api_client/schemas.py,sha256=ri739r8bYGfuBHJjFuvQ6jaAzR3Yrqa88Q1KRNMqzqw,672445
+crosslab_api_client-0.0.1.dist-info/METADATA,sha256=SV5mMoV48vNcTuE9ntUfXShrjohaXOi17TPl0w-GY3A,386
+crosslab_api_client-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+crosslab_api_client-0.0.1.dist-info/top_level.txt,sha256=SWmen7fuDUD3dGiEWT7Kc_0g_xxm92qyYw8dPPLCmVE,9
+crosslab_api_client-0.0.1.dist-info/RECORD,,
