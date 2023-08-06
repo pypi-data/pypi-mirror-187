@@ -1,0 +1,12 @@
+README.txt
+setup.py
+address_book_for_IVT2023/__init__.py
+address_book_for_IVT2023/app.py
+address_book_for_IVT2023/controllers.py
+address_book_for_IVT2023/models.py
+address_book_for_IVT2023/views.py
+address_book_for_IVT2023.egg-info/PKG-INFO
+address_book_for_IVT2023.egg-info/SOURCES.txt
+address_book_for_IVT2023.egg-info/dependency_links.txt
+address_book_for_IVT2023.egg-info/requires.txt
+address_book_for_IVT2023.egg-info/top_level.txt
