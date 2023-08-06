@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: voronoice
+Version: 2023.0.0
+Summary: Adaptive Vornoi binning for continous ungridded data
+Home-page: https://github.com/philastrophist/voronoice
+Author: philastrophist
+Author-email: shaun.c.read@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Description-Content-Type: text/markdown
+Requires-Dist: vorbin
+Requires-Dist: scipy
+Requires-Dist: numpy
+
+
+# Voronoice
+
