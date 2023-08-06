@@ -1,0 +1,125 @@
+servefile changelog
+===================
+
+2023-01-23 v0.5.4
+-----------------
+
+	0.5.4 released
+
+	* code reformatting for better maintainability
+	* upload to uploaddir instead of /tmp for large files
+	* add python3.10 / python3.11 support
+	* drop python3.6 support
+
+
+2021-11-18 v0.5.3
+-----------------
+
+	0.5.3 released
+
+	* improved test performance
+
+
+2021-09-08 v0.5.2
+-----------------
+
+	0.5.2 released
+
+	* fixed bug where exception was shown on transmission abort with python3
+	* fixed wrong/outdated pyopenssl package names
+	* tests are now using a free non-default port to avoid clashes; if
+	  wished the ports can be set from outside by specifying the
+	  environment variables SERVEFILE_DEFAULT_PORT and
+	  SERVEFILE_SECONDARY_PORT
+	* fixed broken redirect when filename contained umlauts or other characters
+	  that should have been quoted
+	* fixed broken special char handling in directory listing for python2
+	* drop python3.5 support
+	* fixed PUT uploads with python3 and documented PUT-uploads with curl
+
+
+2020-10-30 v0.5.1
+-----------------
+
+	0.5.1 released
+
+	* version bump for broken pypi release
+
+
+2020-10-29 v0.5.0
+-----------------
+
+	0.5.0 released
+
+	* python3 support
+	* test suite
+	* fixed an endless redirect loop when serving ../
+	* added sorting for list view
+	* added lzma/xz as compression method
+
+
+2015-11-10 v0.4.4
+-----------------
+
+	0.4.4 released
+
+	* prefer using TLS1.2/TLS1 with --ssl if available
+	* issue v3 certificates for self signed certificates with --ssl
+	* removed lots of unnecessary error output
+	* fixed a bug where wrong ranges were used on a HEAD request in directory listing mode
+	* fixed a bug where directory listing mode allowed path traversal
+
+
+2013-12-28 v0.4.3
+-----------------
+
+	0.4.3 released
+
+	* display user/password in url-list when authentication is used
+	* various directory-listing patches by Sebastian Pipping
+		* case-insensitive sorting
+		* sort directories to top
+		* hide .. in top directory
+	* better error reporting/exception handling patch by Robert Buchholz
+	* properly tell clients that http keep-alive is not available
+
+
+2012-06-27 v0.4.2
+-----------------
+
+	0.4.2 released
+
+	* new directory listing + nicer index
+	* IPv6 support
+	* basic auth realm configurable
+	* various bugfixes
+
+2012-05-04 v0.4.1
+-----------------
+
+	0.4.1 released
+
+	* tar + compression feature
+	* compression
+	* shows fingerprint for self generated certs
+	* added manpage
+
+2012-04-16 v0.4.0
+-----------------
+
+	0.4.0 released
+
+	* SSL capabilities
+	* Automatic creation of self signed certificates
+	* HTTP basic auth
+	* HEAD support
+	* POST/Multipart upload support
+	* PUT/POST upload support
+
+2012-04-05 v0.3.2
+-----------------
+	
+	0.3.2 released
+
+	* argparse
+
