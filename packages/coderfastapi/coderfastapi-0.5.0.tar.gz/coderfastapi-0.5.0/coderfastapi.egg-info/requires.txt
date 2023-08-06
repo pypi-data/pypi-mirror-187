@@ -1,0 +1,11 @@
+codercore~=1.0
+fastapi[all]~=0.89
+pydantic~=1.10
+
+[dev]
+black~=22.12
+
+[test]
+pytest~=7.2
+pytest-cov~=4.0
+pytest-xdist[psutil]~=3.1
