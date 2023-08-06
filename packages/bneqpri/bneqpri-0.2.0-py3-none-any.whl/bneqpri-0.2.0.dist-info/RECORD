@@ -1,0 +1,15 @@
+bneqpri/__init__.py,sha256=uW3Z9hnFGWEJIV0EKFztz_-r7Qw3buOeZZRahffjiHo,879
+bneqpri/__main__.py,sha256=LrV1P2ffZYOVIxzRlckXbIqo-wk8svICqCrjxzWjzHM,3041
+bneqpri/cli.py,sha256=lJRL8K4gykryZc0m7fIRhCmOQJ6a1aJwxqdas8fPUfY,3806
+bneqpri/config.py,sha256=aBGAKI-vc3H-CsSLyBXtB25AarcRKyiL_jSozygDI8M,3239
+bneqpri/impl.py,sha256=sk5a4NcuqY9AWiTCT98nxrdtRKPf-oJPnI5fMB3lsdY,5043
+bneqpri/samplers.py,sha256=R1vuD_ogNMLKJNV3tJYH7fuXaHHeBKBRabXPlsNWH9k,4762
+bneqpri/solver/__init__.py,sha256=xr2BDoa7x-fGXOb_iKJbHpdPuCns_ZFS5lCypaZThbo,82
+bneqpri/solver/v1.py,sha256=hzCqQemCENV-lOcdy8ezEPdFzpO0ozNWJvtwU6vuLUo,13865
+bneqpri/solver/v2.py,sha256=ajwCGrhRAn6BtY-mSrgFbwinljFJjIukXhf_juz2qCQ,16673
+bneqpri/types.py,sha256=YEXhonMVUqobLDf9KaF5d06WBVAGyLbvyLbw-Fdholc,3236
+bneqpri/utilities.py,sha256=TUlLaMHhZhmUUpB8Fk4gPCTc1Zds78baprA60UgTffw,10079
+bneqpri-0.2.0.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+bneqpri-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+bneqpri-0.2.0.dist-info/METADATA,sha256=rMiQ6_ejY90HDKQZ805jCoYULsfJRrxuuJTma2SG2u0,11899
+bneqpri-0.2.0.dist-info/RECORD,,
