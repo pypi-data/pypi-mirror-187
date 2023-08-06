@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+license.txt
+pyproject.toml
+testjbednarczyk/__init__.py
+testjbednarczyk/m_mod_jbednarczyk.py
+testjbednarczyk.egg-info/PKG-INFO
+testjbednarczyk.egg-info/SOURCES.txt
+testjbednarczyk.egg-info/dependency_links.txt
+testjbednarczyk.egg-info/requires.txt
+testjbednarczyk.egg-info/top_level.txt
