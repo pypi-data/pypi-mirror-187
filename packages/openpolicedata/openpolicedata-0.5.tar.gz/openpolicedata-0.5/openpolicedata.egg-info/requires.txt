@@ -1,0 +1,9 @@
+openpyxl
+numpy
+pandas
+pyproj
+requests
+sodapy
+thefuzz
+tqdm
+xlrd
