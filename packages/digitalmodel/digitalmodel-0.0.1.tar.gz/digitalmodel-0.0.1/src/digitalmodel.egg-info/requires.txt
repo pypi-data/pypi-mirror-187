@@ -1,0 +1,20 @@
+pyyaml
+plotly
+webcolors
+flask_wtf
+flask_httpauth
+flask_restful
+urllib3
+
+[:python_version < "3.11"]
+tomli
+
+[build]
+build
+twine
+
+[dev]
+black
+bumpver
+isort
+pytest

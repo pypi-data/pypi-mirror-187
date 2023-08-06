@@ -1,0 +1,2 @@
+[console_scripts]
+pressure_pipe = digitalmodel.pressure_pipe
