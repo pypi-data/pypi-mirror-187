@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: SWANi
+Version: 0.1.14
+Summary: Standardized Workflow for Advanced Neuroimaging
+Author: Maurilio Genovese
+Author-email: mauriliogenovese@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: nipype
+Requires-Dist: Pyside6
+Requires-Dist: pydicom
+Requires-Dist: configparser
+Requires-Dist: psutil
+Requires-Dist: pyshortcuts
+Requires-Dist: SWANi-supplement (>=0.0.4)
+
