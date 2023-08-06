@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+natural_language_ui.egg-info/PKG-INFO
+natural_language_ui.egg-info/SOURCES.txt
+natural_language_ui.egg-info/dependency_links.txt
+natural_language_ui.egg-info/requires.txt
+natural_language_ui.egg-info/top_level.txt
+natural_language_ui.egg-info/zip-safe
