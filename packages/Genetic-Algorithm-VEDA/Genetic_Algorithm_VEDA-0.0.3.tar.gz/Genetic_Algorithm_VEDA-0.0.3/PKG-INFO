@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Genetic_Algorithm_VEDA
+Version: 0.0.3
+Summary: Algoritmo Genético para estudo da evolução de circuitos lógicos combinacionais na presença de falhas.
+Home-page: 
+Author: Humberto Távora
+Author-email: humbertocct@hotmail.com
+License: MIT
+Keywords: Genetic Algorithm
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+Algoritmo GenÃ©tico para estudo da evoluÃ§Ã£o de circuitos lÃ³gicos combinacionais na presenÃ§a de falhas.
+
