@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: fasteda
+Version: 1.0.1
+Summary: A module to get a quick overview of a DataFrame
+Home-page: UNKNOWN
+Author: Matt OP
+License: MIT
+Keywords: python,data,dataframe,data analysis,eda,pandas,numpy
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+A module to get a quick overview of a DataFrame.
+
+Change Log
+==========
+
+1.0.0 (12/04/2022)
+-------------------
+- First Release
+
+1.0.1 (1/23/2023)
+-------------------
+- Updated, added features
+
+
