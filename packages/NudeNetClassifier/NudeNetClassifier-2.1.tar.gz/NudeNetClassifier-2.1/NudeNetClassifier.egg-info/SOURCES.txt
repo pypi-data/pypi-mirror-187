@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+setup.py
+NudeNetClassifier.egg-info/PKG-INFO
+NudeNetClassifier.egg-info/SOURCES.txt
+NudeNetClassifier.egg-info/dependency_links.txt
+NudeNetClassifier.egg-info/requires.txt
+NudeNetClassifier.egg-info/top_level.txt
+nudenet/__init__.py
+nudenet/classifier.py
+nudenet/image_utils.py
+nudenet/models/classifier_model.onnx
