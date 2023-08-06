@@ -1,0 +1,3 @@
+[console_scripts]
+ffmpeg=bget_ffmpeg:ffmpeg
+
