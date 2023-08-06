@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: PdfInfoExtractor
+Version: 0.1.23
+Summary: A python package that can extract images from PDF and can classify documents as Aadhaar, PAN, etc and can extract info if given the path of an extracted image.
+Home-page: https://github.com/alphaepsilonpi/PdfInfoExtractor
+Author: Steve Richards, Mehak Singal, Nidhish Kumar
+Author-email: steve007richards@gmail.com
+License: MIT License
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyPDF2 (==3.0.1)
+Requires-Dist: boto3 (==1.26.56)
+Requires-Dist: pillow
+Requires-Dist: regex
+Requires-Dist: pytest-shutil (==1.7.0)
+Requires-Dist: keras (==2.9.0)
+Requires-Dist: tensorflow (==2.9.2)
+
