@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: sqlalchemy2-datatables
+Version: 0.5.2
+Summary: Python Sqlalchemy based serverside processing for jQuery datatables.
+Project-URL: Homepage, https://github.com/coding-doc/sqlalchemy2-datatables
+Project-URL: Source, https://github.com/coding-doc/sqlalchemy2-datatables
+License-File: LICENCE
