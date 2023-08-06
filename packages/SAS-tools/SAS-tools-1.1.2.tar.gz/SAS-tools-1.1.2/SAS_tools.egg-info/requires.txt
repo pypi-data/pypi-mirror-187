@@ -1,0 +1,9 @@
+lmfit
+lxml
+matplotlib
+numpy
+pandas
+pyAnIML==1.0.2
+seaborn
+scipy
+pytest>=7.2.0
