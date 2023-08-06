@@ -1,0 +1,7 @@
+[
+  "demo_widgets/tests/test_example.py::test_example_creation_blank",
+  "demo_widgets/tests/test_nbextension_path.py::test_nbextension_path",
+  "examples/introduction.ipynb::Cell 0",
+  "examples/introduction.ipynb::Cell 1",
+  "examples/introduction.ipynb::Cell 2"
+]

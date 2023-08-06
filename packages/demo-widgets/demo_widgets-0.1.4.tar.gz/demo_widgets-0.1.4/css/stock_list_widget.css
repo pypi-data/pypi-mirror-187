@@ -1,0 +1,15 @@
+.stock-list-widget {
+  margin: 4px;
+  padding: 4px;
+  color:white;
+
+}
+
+.stock-list-widget .hide-results {
+  display: none;
+}
+
+.stock-list-widget .results_symbol {
+  font-weight: bold;
+}
+
