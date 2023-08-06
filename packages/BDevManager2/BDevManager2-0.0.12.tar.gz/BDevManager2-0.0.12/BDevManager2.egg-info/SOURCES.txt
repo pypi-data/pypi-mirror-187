@@ -1,0 +1,7 @@
+README.md
+setup.py
+BDevManager2.egg-info/PKG-INFO
+BDevManager2.egg-info/SOURCES.txt
+BDevManager2.egg-info/dependency_links.txt
+BDevManager2.egg-info/requires.txt
+BDevManager2.egg-info/top_level.txt
