@@ -1,0 +1,11 @@
+LICENCE
+README.md
+setup.py
+topsis_vibhav_102003772/__init__.py
+topsis_vibhav_102003772/__main__.py
+topsis_vibhav_102003772.egg-info/PKG-INFO
+topsis_vibhav_102003772.egg-info/SOURCES.txt
+topsis_vibhav_102003772.egg-info/dependency_links.txt
+topsis_vibhav_102003772.egg-info/entry_points.txt
+topsis_vibhav_102003772.egg-info/requires.txt
+topsis_vibhav_102003772.egg-info/top_level.txt

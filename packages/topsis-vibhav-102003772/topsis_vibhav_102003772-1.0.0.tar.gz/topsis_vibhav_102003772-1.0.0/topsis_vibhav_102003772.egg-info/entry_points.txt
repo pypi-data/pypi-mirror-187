@@ -1,0 +1,3 @@
+[console_scripts]
+topsis_vibhav_102003772 = topsis_vibhav_102003772.__main__:main
+
