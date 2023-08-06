@@ -1,0 +1,8 @@
+apt_search/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apt_search/__main__.py,sha256=KTlmcEmdaiXQMOvZ9kCu8Mdj95htDKWkIzhsD_ZJV0A,50
+apt_search/main.py,sha256=8M9efHaFntYltK-mXshoW5FBHu5_eTBRwW5BUSBmtBQ,1238
+apt_search-0.1.2.dist-info/METADATA,sha256=zcG2Mgyt9Y-uQr3tzJEW5yXekFy2458Y10dxBlHLunU,1154
+apt_search-0.1.2.dist-info/LICENSE,sha256=nUz6CAIxL8c7LsUOorLnCwbk7fmZFJxxxDtJ-z6m15E,1069
+apt_search-0.1.2.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+apt_search-0.1.2.dist-info/entry_points.txt,sha256=97N6tSdkvKF-U1Y1-khFeJKlhUJRPUYZzD9XQ-PI1WE,50
+apt_search-0.1.2.dist-info/RECORD,,
