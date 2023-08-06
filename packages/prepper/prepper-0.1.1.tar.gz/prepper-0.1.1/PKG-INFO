@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: prepper
+Version: 0.1.1
+Summary: Allows python objects to be stored and loaded from an HDF5 file
+License: MIT
+Author: Varchas Gopalaswamy
+Author-email: vgop@lle.rochester.edu
+Requires-Python: >=3.8,<3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aenum (>=3.1.11,<4.0.0)
+Requires-Dist: h5py (>=3.8.0,<4.0.0)
+Requires-Dist: loguru (>=0.6.0,<0.7.0)
+Requires-Dist: numpy (>=1.24.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+
