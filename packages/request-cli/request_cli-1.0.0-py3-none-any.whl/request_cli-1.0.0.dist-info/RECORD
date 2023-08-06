@@ -1,0 +1,9 @@
+request_cli/__init__.py,sha256=QuABueB3lJWZwZLEHl9BGhnuMQ_L7WXuGJwXFsMmUzI,63
+request_cli/_base_httpclient.py,sha256=vH6VNRprHIv5avXGWOhYXj5PdGKO7UbBvnAyU86do1U,2645
+request_cli/_httpclient.py,sha256=s0cwK_49a3p25lrPY17Vz4xQGDEpoY-g6Kv8D6619-w,4894
+request_cli/_httpclient_utils.py,sha256=1CKZ9lONGNI0KCqfEbjKcEvd0Q3wTqPyGfIkmkgb5f4,1970
+request_cli-1.0.0.dist-info/LICENSE,sha256=qLyOL6x9QRs-xstZbXlC6M7Km_6GCLZ4UNTJe_2M9io,1079
+request_cli-1.0.0.dist-info/METADATA,sha256=OKVROjGH6T18ELasZAia93a5Hu_7LwgogOunKUciSII,407
+request_cli-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+request_cli-1.0.0.dist-info/top_level.txt,sha256=mRsL6ptB0bM9R35dlYBNIRv_5aw0aoeM1fsFK7rRrIg,12
+request_cli-1.0.0.dist-info/RECORD,,
