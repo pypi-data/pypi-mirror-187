@@ -1,0 +1,7 @@
+torch
+transformers
+pip
+pytest
+build
+twine
+hatchling

@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3a1eb58a-dbc0-42a1-aeb6-d4eacffea55d" name="Changes" comment="created a script that automatically publishes a new version">
+      <change beforePath="$PROJECT_DIR$/publish_new_version.py" beforeDir="false" afterPath="$PROJECT_DIR$/publish_new_version.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="markdown" />
+        <option value="README.md" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="667bf354-3ae5-4744-9401-b47645b71845" />
+        <option name="url" value="https://github.com/yonikremer/grouped_sampling.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2JrHlAGWRXW27kJvP4D78fijORh" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\yonik\grouped_sampling\web_app" />
+      <recent name="C:\Users\yonik\grouped_sampling\documents\young_scientists" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.publish_new_version">
+    <configuration name="publish_new_version" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="grouped_sampling" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/publish_new_version.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_generation_utils.test_prepare_model_kwargs_batch" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="grouped_sampling" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_generation_utils.test_prepare_model_kwargs_batch&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_generators.test_call_many_prompts" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="grouped_sampling" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_generators.test_call_many_prompts&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_generation_utils.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="grouped_sampling" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_generation_utils.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_generators.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="grouped_sampling" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_generators.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.publish_new_version" />
+        <item itemvalue="Python tests.pytest in test_generators.py" />
+        <item itemvalue="Python tests.pytest in test_generation_utils.py" />
+        <item itemvalue="Python tests.pytest for test_generation_utils.test_prepare_model_kwargs_batch" />
+        <item itemvalue="Python tests.pytest for test_generators.test_call_many_prompts" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3a1eb58a-dbc0-42a1-aeb6-d4eacffea55d" name="Changes" comment="" />
+      <created>1672829443580</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672829443580</updated>
+      <workItem from="1672829455172" duration="4633000" />
+      <workItem from="1672934928122" duration="5159000" />
+      <workItem from="1673076263314" duration="2818000" />
+      <workItem from="1673261834425" duration="1987000" />
+      <workItem from="1673290257492" duration="2623000" />
+      <workItem from="1673338400701" duration="4230000" />
+      <workItem from="1673345961728" duration="15641000" />
+      <workItem from="1673417266780" duration="364000" />
+      <workItem from="1673417734081" duration="6581000" />
+      <workItem from="1673520602339" duration="8819000" />
+      <workItem from="1673710179858" duration="14718000" />
+      <workItem from="1673784500000" duration="1380000" />
+      <workItem from="1673803491194" duration="3090000" />
+      <workItem from="1673882661628" duration="17198000" />
+      <workItem from="1673959668935" duration="14672000" />
+      <workItem from="1674064051345" duration="538000" />
+      <workItem from="1674299923768" duration="11497000" />
+      <workItem from="1674312005755" duration="6281000" />
+    </task>
+    <task id="LOCAL-00025" summary="removed an - always true condition">
+      <created>1673365108185</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1673365108185</updated>
+    </task>
+    <task id="LOCAL-00026" summary="fixed a typo">
+      <created>1673374744639</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1673374744639</updated>
+    </task>
+    <task id="LOCAL-00027" summary="added more type hints">
+      <created>1673381246770</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1673381246770</updated>
+    </task>
+    <task id="LOCAL-00028" summary="added a UML diagram">
+      <created>1673381260415</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1673381260415</updated>
+    </task>
+    <task id="LOCAL-00029" summary="removed wrong type hint">
+      <created>1673434168840</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1673434168840</updated>
+    </task>
+    <task id="LOCAL-00030" summary="added tables">
+      <created>1673523550897</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1673523550898</updated>
+    </task>
+    <task id="LOCAL-00031" summary="renamed functions">
+      <created>1673523838944</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1673523838944</updated>
+    </task>
+    <task id="LOCAL-00032" summary="fixed missing cell in the tables">
+      <created>1673526113397</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1673526113397</updated>
+    </task>
+    <task id="LOCAL-00033" summary="typo fix">
+      <created>1673526559351</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1673526559351</updated>
+    </task>
+    <task id="LOCAL-00034" summary="deleted a UML diagram because I have a better one at documents/classes_grouped_sampling.plantuml">
+      <created>1673526683257</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1673526683258</updated>
+    </task>
+    <task id="LOCAL-00035" summary="typo fix">
+      <created>1673527912920</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1673527912920</updated>
+    </task>
+    <task id="LOCAL-00036" summary="renaming in the example">
+      <created>1673530369800</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1673530369801</updated>
+    </task>
+    <task id="LOCAL-00037" summary="added the poster (first draft)">
+      <created>1673530432174</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1673530432175</updated>
+    </task>
+    <task id="LOCAL-00038" summary="many small changes in the project book">
+      <created>1673530495824</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1673530495824</updated>
+    </task>
+    <task id="LOCAL-00039" summary="version 1.0.2">
+      <created>1673530688871</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1673530688873</updated>
+    </task>
+    <task id="LOCAL-00040" summary="fixed typo">
+      <created>1673530714932</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1673530714932</updated>
+    </task>
+    <task id="LOCAL-00041" summary="removed deprecated notebook">
+      <created>1673536135363</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1673536135364</updated>
+    </task>
+    <task id="LOCAL-00042" summary="the final version of the project book">
+      <created>1673536280804</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1673536280804</updated>
+    </task>
+    <task id="LOCAL-00043" summary="created a screenshots folder">
+      <created>1673726462930</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1673726462934</updated>
+    </task>
+    <task id="LOCAL-00044" summary="poster instructions">
+      <created>1673726487309</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1673726487309</updated>
+    </task>
+    <task id="LOCAL-00045" summary="added QR code for the GitHub page">
+      <created>1673726571620</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1673726571621</updated>
+    </task>
+    <task id="LOCAL-00046" summary="more work on the poster">
+      <created>1673726594150</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1673726594150</updated>
+    </task>
+    <task id="LOCAL-00047" summary="moved many functions">
+      <created>1673726639373</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1673726639374</updated>
+    </task>
+    <task id="LOCAL-00048" summary="added a script that measures the time it takes the algorithm to translate a dataset">
+      <created>1673726735728</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1673726735728</updated>
+    </task>
+    <task id="LOCAL-00049" summary="now the script also saves a csv file">
+      <created>1673730356790</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1673730356790</updated>
+    </task>
+    <task id="LOCAL-00050" summary="changed the debug parameter to false">
+      <created>1673730453390</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1673730453393</updated>
+    </task>
+    <task id="LOCAL-00051" summary="added a notebook to run runtime_experiment in colab">
+      <created>1673732195389</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1673732195395</updated>
+    </task>
+    <task id="LOCAL-00052" summary="bug fix: concatenation of tensors from different devices">
+      <created>1673732773218</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1673732773218</updated>
+    </task>
+    <task id="LOCAL-00053" summary="updated run_runtime_experiment_remotely.ipynb">
+      <created>1673790699730</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1673790699731</updated>
+    </task>
+    <task id="LOCAL-00054" summary="deleted unused import">
+      <created>1673790808355</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1673790808355</updated>
+    </task>
+    <task id="LOCAL-00055" summary="added readme's for each directory">
+      <created>1673806059404</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1673806059407</updated>
+    </task>
+    <task id="LOCAL-00056" summary="moved the script that opens the web app to the web app directory">
+      <created>1673806359027</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1673806359027</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Added support for batching">
+      <created>1673892207292</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1673892207294</updated>
+    </task>
+    <task id="LOCAL-00058" summary="deleted asserts">
+      <created>1673892478078</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1673892478080</updated>
+    </task>
+    <task id="LOCAL-00059" summary="removed the option to return many sequences in the web app">
+      <created>1673963900071</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1673963900072</updated>
+    </task>
+    <task id="LOCAL-00060" summary="removed the option to return many sequences in tests">
+      <created>1673963919056</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1673963919056</updated>
+    </task>
+    <task id="LOCAL-00061" summary="deleted a print statement">
+      <created>1673969715840</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1673969715844</updated>
+    </task>
+    <task id="LOCAL-00062" summary="deleted asserts">
+      <created>1673969786178</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1673969786185</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Now taking advantage of the new batching option">
+      <created>1673977082850</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1673977082855</updated>
+    </task>
+    <task id="LOCAL-00064" summary="removed pointless conversion">
+      <created>1673979635961</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1673979635995</updated>
+    </task>
+    <task id="LOCAL-00065" summary="added a maximum batch size">
+      <created>1674301371822</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1674301371825</updated>
+    </task>
+    <task id="LOCAL-00066" summary="fixed uncompleted docstring">
+      <created>1674301584025</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1674301584028</updated>
+    </task>
+    <task id="LOCAL-00067" summary="fixed printing issue - converted code to light mode">
+      <created>1674301928608</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1674301928608</updated>
+    </task>
+    <task id="LOCAL-00068" summary="bugfix - splitting to batches in the wrong way">
+      <created>1674306622813</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1674306622816</updated>
+    </task>
+    <task id="LOCAL-00069" summary="moved tests to the correct function">
+      <created>1674306650504</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1674306650504</updated>
+    </task>
+    <task id="LOCAL-00070" summary="truncation is now an instance variable and not an argument">
+      <created>1674306727621</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1674306727621</updated>
+    </task>
+    <task id="LOCAL-00071" summary="new experiment: changed group size and measured only the runtime">
+      <created>1674316555169</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1674316555172</updated>
+    </task>
+    <task id="LOCAL-00072" summary="bug fixes">
+      <created>1674316602719</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1674316602719</updated>
+    </task>
+    <task id="LOCAL-00073" summary="created a script that automatically publishes a new version">
+      <created>1674316639773</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1674316639773</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="added a script that measures the time it takes the algorithm to translate a dataset" />
+    <MESSAGE value="now the script also saves a csv file" />
+    <MESSAGE value="changed the debug parameter to false" />
+    <MESSAGE value="added a notebook to run runtime_experiment in colab" />
+    <MESSAGE value="bug fix: concatenation of tensors from different devices" />
+    <MESSAGE value="updated run_runtime_experiment_remotely.ipynb" />
+    <MESSAGE value="deleted unused import" />
+    <MESSAGE value="added readme's for each directory" />
+    <MESSAGE value="moved the script that opens the web app to the web app directory" />
+    <MESSAGE value="Added support for batching" />
+    <MESSAGE value="removed the option to return many sequences in the web app" />
+    <MESSAGE value="removed the option to return many sequences in tests" />
+    <MESSAGE value="deleted a print statement" />
+    <MESSAGE value="deleted asserts" />
+    <MESSAGE value="Now taking advantage of the new batching option" />
+    <MESSAGE value="removed pointless conversion" />
+    <MESSAGE value="added a maximum batch size" />
+    <MESSAGE value="fixed uncompleted docstring" />
+    <MESSAGE value="fixed printing issue - converted code to light mode" />
+    <MESSAGE value="bugfix - splitting to batches in the wrong way" />
+    <MESSAGE value="moved tests to the correct function" />
+    <MESSAGE value="truncation is now an instance variable and not an argument" />
+    <MESSAGE value="new experiment: changed group size and measured only the runtime" />
+    <MESSAGE value="bug fixes" />
+    <MESSAGE value="created a script that automatically publishes a new version" />
+    <option name="LAST_COMMIT_MESSAGE" value="created a script that automatically publishes a new version" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/grouped_sampling$pytest_for_test_generation_utils_test_prepare_model_kwargs_batch.coverage" NAME="pytest for test_generation_utils.test_prepare_model_kwargs_batch Coverage Results" MODIFIED="1674308449574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/grouped_sampling$pytest_in_test_generators_py.coverage" NAME="pytest in test_generators.py Coverage Results" MODIFIED="1674314651428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/grouped_sampling$pytest_for_test_generators_test_prefix.coverage" NAME="pytest for test_generators.test_prefix Coverage Results" MODIFIED="1674300804106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/grouped_sampling$save_plots_and_tables__1_.coverage" NAME="save_plots_and_tables (1) Coverage Results" MODIFIED="1673784753468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluation" />
+    <SUITE FILE_PATH="coverage/grouped_sampling$pytest_for_test_generators_test_num_return_sequences.coverage" NAME="pytest for test_generators.test_num_return_sequences Coverage Results" MODIFIED="1673896359572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/grouped_sampling$pytest_for_test_generation_utils_test_get_prob_mat_batch.coverage" NAME="pytest for test_generation_utils.test_get_prob_mat_batch Coverage Results" MODIFIED="1673890172901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/grouped_sampling$pytest_for_test_generators_test_initialization.coverage" NAME="pytest for test_generators.test_initialization Coverage Results" MODIFIED="1672832009544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/grouped_sampling$pytest_for_test_generators_test_call_many_prompts.coverage" NAME="pytest for test_generators.test_call_many_prompts Coverage Results" MODIFIED="1674306264640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/grouped_sampling$pytest_for_test_completion_test_create.coverage" NAME="pytest for test_completion.test_create Coverage Results" MODIFIED="1673961742746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web_app/tests" />
+    <SUITE FILE_PATH="coverage/grouped_sampling$save_plots.coverage" NAME="save_plots Coverage Results" MODIFIED="1673523273074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluation" />
+    <SUITE FILE_PATH="coverage/grouped_sampling$publish_new_version.coverage" NAME="publish_new_version Coverage Results" MODIFIED="1674318442893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/grouped_sampling$run_time_experiment.coverage" NAME="run_time_experiment Coverage Results" MODIFIED="1673726271416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluation" />
+    <SUITE FILE_PATH="coverage/grouped_sampling$runtime_experiment__1_.coverage" NAME="runtime_experiment (1) Coverage Results" MODIFIED="1673730200546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluation" />
+    <SUITE FILE_PATH="coverage/grouped_sampling$pytest_in_test_generation_utils_py.coverage" NAME="pytest in test_generation_utils.py Coverage Results" MODIFIED="1674311120763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+  </component>
+</project>

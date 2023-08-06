@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="71f3e854-7057-4b69-aca3-58555091095a" name="flaskr.sqlite Mapping">
+      <data-sources db="605c74a6-e539-408e-b37e-6da8fb2c0b25" />
+      <scope>
+        <node kind="database" qname="@">
+          <node kind="schema" qname="@" />
+        </node>
+      </scope>
+    </mapping>
+    <mapping uuid="3f02ad9d-2f26-4edb-b0bd-9f09ef2afe3c" name="flaskr.sqlite Mapping [2]">
+      <data-sources db="90eabe23-9747-4b8e-adcf-61c2533cf1ba" />
+      <scope>
+        <node kind="database" negative="1">
+          <node kind="schema" negative="1" />
+        </node>
+      </scope>
+    </mapping>
+  </component>
+</project>
