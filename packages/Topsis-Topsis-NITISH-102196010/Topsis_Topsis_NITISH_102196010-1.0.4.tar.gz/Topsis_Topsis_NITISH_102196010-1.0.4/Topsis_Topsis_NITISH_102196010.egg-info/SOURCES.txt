@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+Topsis_Topsis_NITISH_102196010/__init__.py
+Topsis_Topsis_NITISH_102196010/topsis.py
+Topsis_Topsis_NITISH_102196010.egg-info/PKG-INFO
+Topsis_Topsis_NITISH_102196010.egg-info/SOURCES.txt
+Topsis_Topsis_NITISH_102196010.egg-info/dependency_links.txt
+Topsis_Topsis_NITISH_102196010.egg-info/requires.txt
+Topsis_Topsis_NITISH_102196010.egg-info/top_level.txt
