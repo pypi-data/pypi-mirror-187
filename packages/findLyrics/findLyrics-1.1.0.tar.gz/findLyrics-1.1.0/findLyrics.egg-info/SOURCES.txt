@@ -1,0 +1,9 @@
+README.md
+setup.py
+findLyrics/__init__.py
+findLyrics/findLyrics.py
+findLyrics.egg-info/PKG-INFO
+findLyrics.egg-info/SOURCES.txt
+findLyrics.egg-info/dependency_links.txt
+findLyrics.egg-info/requires.txt
+findLyrics.egg-info/top_level.txt
