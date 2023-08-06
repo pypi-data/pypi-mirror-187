@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+src/EUDP/__init__.py
+src/EUDP.egg-info/PKG-INFO
+src/EUDP.egg-info/SOURCES.txt
+src/EUDP.egg-info/dependency_links.txt
+src/EUDP.egg-info/top_level.txt
