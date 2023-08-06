@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+Topsis_VardaanK_102003295.egg-info/PKG-INFO
+Topsis_VardaanK_102003295.egg-info/SOURCES.txt
+Topsis_VardaanK_102003295.egg-info/dependency_links.txt
+Topsis_VardaanK_102003295.egg-info/entry_points.txt
+Topsis_VardaanK_102003295.egg-info/requires.txt
+Topsis_VardaanK_102003295.egg-info/top_level.txt
+topsis/__init__.py
+topsis/__main__.py
