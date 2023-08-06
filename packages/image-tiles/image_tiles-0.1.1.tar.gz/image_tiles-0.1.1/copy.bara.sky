@@ -1,0 +1,24 @@
+sourceUrl = "git@github.com:nharada1/moonshine.git"
+destinationUrl = "git@github.com:moonshinelabs-ai/image_tiles.git"
+
+core.workflow(
+    name = "default",
+    origin = git.origin(
+        url = sourceUrl,
+        ref = "main",
+    ),
+    destination = git.destination(
+        url = destinationUrl,
+        fetch = "main",
+        push = "main",
+    ),
+
+    authoring = authoring.pass_thru("Moonshine Gardener <image_tiles@moonshinelabs.ai>"),
+    
+    # Copy everything but don't include this file itself.
+    origin_files = glob(["src/public/image_tiles/**"], exclude = ["src/public/image_tiles/copy.bara.sky"]),
+
+    transformations = [
+	    core.move("src/public/image_tiles", ""),
+    ],
+)
