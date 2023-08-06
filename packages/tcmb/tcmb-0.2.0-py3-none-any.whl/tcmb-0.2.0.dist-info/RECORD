@@ -1,0 +1,11 @@
+tcmb/__init__.py,sha256=VDt0UkSI5OHgPBhMPeCUx-gnErLq4G1LFzh9M1VjZ-0,52
+tcmb/auth.py,sha256=c48wJEXAynvsqIwDMey-sWS-58W2ukHxNcXYkSx8QAM,845
+tcmb/const.py,sha256=VeOKDxoPb8BxiasezTGMcPPP_rvwNYyNUnDHkRfRzGI,331
+tcmb/core.py,sha256=uK9TGTx3NUy8hUvt2KjRueIu4f6h7TZu-0-aUX3Vfok,12543
+tcmb/errors.py,sha256=xeeOIWt4GLjDJVM0j2A-_djjGWHedog1zkmXoME5gFc,200
+tcmb/utils.py,sha256=7mQtAWWdLIpaNtjjtz9p9CPPP0b5eKIwue95lDM5maI,1046
+tcmb-0.2.0.dist-info/LICENSE,sha256=-R896acCui-DN-DB2OYBAJc09qvGVUEyNpquivBTd4s,1065
+tcmb-0.2.0.dist-info/METADATA,sha256=xnras438t2lbOGpxKkQv61wo2DWT291tH94u0FqIIn8,6030
+tcmb-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tcmb-0.2.0.dist-info/top_level.txt,sha256=D1ntJ3sQpzBJcmpMOLXDlRpi39J7txxaL1Yue9vo9pE,5
+tcmb-0.2.0.dist-info/RECORD,,
