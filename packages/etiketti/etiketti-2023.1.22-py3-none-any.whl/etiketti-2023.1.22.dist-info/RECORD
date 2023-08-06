@@ -1,0 +1,12 @@
+etiketti/__init__.py,sha256=tVt1bS4AcD2qjazMhwwc0oJ_05wPSP3jcLsX5O51DJI,2990
+etiketti/__main__.py,sha256=eNOhq5pKfclRgBENKAUZMY-gt1dtqvfZ-LNOdlC3sUA,121
+etiketti/cli.py,sha256=t3AE--LanUv3sTuY8QXbeYoqgBWyZ9dNIamEPQRXlto,2542
+etiketti/discover.py,sha256=TZ5ttaUcbosqxUVCLzxuLThJNSACLX-FyzAG5VUNl5c,3739
+etiketti/implementation.py,sha256=PjfdglxyiLye-o9R-isoeWhHdk0L1zb7crDJ_LHnXwA,10051
+example/etiketti.yml,sha256=V5oJAukrxub7HROW4V7ItlHcanZMJO-onNhEifHxoSg,465
+etiketti-2023.1.22.dist-info/LICENSE.txt,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+etiketti-2023.1.22.dist-info/METADATA,sha256=LSbTXVQdJ_IOvwz9AoYpv6Frn4sB9Ry1VgtF3-y45oE,3209
+etiketti-2023.1.22.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+etiketti-2023.1.22.dist-info/entry_points.txt,sha256=B1knxVmet_kymh4nZ1SoXonaW42ucvyLciXrC-vPGz0,46
+etiketti-2023.1.22.dist-info/top_level.txt,sha256=3sKA7ti4ZeRBZvvPA9PeeYuu-9xdbikb2eNC62EIiB0,17
+etiketti-2023.1.22.dist-info/RECORD,,
