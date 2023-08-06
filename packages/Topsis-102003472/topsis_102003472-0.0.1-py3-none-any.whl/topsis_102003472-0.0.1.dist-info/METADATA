@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Topsis-102003472
+Version: 0.0.1
+Summary: A topsis package for assessment
+Author-email: Rohan Bhandula <rbhandula_be20@thapar.edu>
+License-File: LICENSE.txt
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+#Topsis Package
+This package allows you to run topsis on your dataset for Multiple Attribute Decision Making(MADM)
