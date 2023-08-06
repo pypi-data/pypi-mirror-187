@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: hiddifypanel
+Version: 0.1.0
+Summary: Awesome hiddifypanel created by hiddify
+Home-page: https://github.com/hiddify/HiddifyPanel/
+Author: hiddify
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: flask
+Requires-Dist: flask-admin
+Requires-Dist: flask-simplelogin
+Requires-Dist: bootstrap-flask
+Requires-Dist: flask-sqlalchemy
+Requires-Dist: sqlalchemy-serializer
+Requires-Dist: dynaconf
+Requires-Dist: click
+Requires-Dist: flask-restful
+Requires-Dist: sqlalchemy-utils
+Requires-Dist: xtlsapi
+Provides-Extra: test
+Requires-Dist: flask-debugtoolbar ; extra == 'test'
+Requires-Dist: flask-shell-ipython ; extra == 'test'
+Requires-Dist: ipdb ; extra == 'test'
+Requires-Dist: pytest-flask ; extra == 'test'
+Requires-Dist: python-dotenv ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: flake8 ; extra == 'test'
+Requires-Dist: black ; extra == 'test'
+Requires-Dist: isort ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: codecov ; extra == 'test'
+Requires-Dist: mypy ; extra == 'test'
+Requires-Dist: gitchangelog ; extra == 'test'
+Requires-Dist: mkdocs ; extra == 'test'
+
+# hiddifypanel Flask Application
+
+ hiddifypanel to create multi proxy using xray mtproxy and others
+
+# under development do not use it yet
+## Installation
+
+From source:
+
+```bash
+git clone https://github.com/hiddify/HiddifyPanel hiddifypanel
+cd hiddifypanel
+make install
+```
+
+From pypi:
+
+```bash
+pip install hiddifypanel
+```
+
+## Executing
+
+This application has a CLI interface that extends the Flask CLI.
+
+Just run:
+
+```bash
+$ hiddifypanel
+```
+
+or
+
+```bash
+$ python -m hiddifypanel
+```
+
+To see the help message and usage instructions.
+
+## First run
+
+```bash
+hiddifypanel create-db   # run once
+hiddifypanel populate-db  # run once (optional)
+hiddifypanel add-user -u admin -p 1234  # ads a user
+hiddifypanel run
+```
+
+Go to:
+
+- Website: http://localhost:5000
+- Admin: http://localhost:5000/admin/
+  - user: admin, senha: 1234
+- API GET:
+  - http://localhost:5000/api/v1/product/
+  - http://localhost:5000/api/v1/product/1
+  - http://localhost:5000/api/v1/product/2
+  - http://localhost:5000/api/v1/product/3
+
+
+> **Note**: You can also use `flask run` to run the application.
