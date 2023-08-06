@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: programmable-cellular-machine
+Version: 0.0.4
+Summary: Клеточный автомат, в котором можно задавать правила
+Home-page: https://gitlab.com/rocshers/python/programmable-cellular-machine
+License: MIT
+Author: irocshers
+Author-email: develop.iam@rocshers.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: numba (>=0.56.4,<0.57.0)
+Requires-Dist: opencv-python (>=4.6.0.66,<5.0.0.0)
+Requires-Dist: pillow (>=9.3.0,<10.0.0)
+Requires-Dist: pygame (>=2.1.2,<3.0.0)
+Project-URL: Repository, https://gitlab.com/rocshers/python/programmable-cellular-machine
+Description-Content-Type: text/markdown
+
+# Программируемый клеточный автомат
+
+Клеточный автомат, в котором можно задавать правила, которые будут применяться к области.
+
+## Профилирование
+
+```bash
+# скорость
+poetry run python -m cProfile -o profile.prof main.py
+poetry run gprof2dot -f pstats profile.prof | dot -Tpng -o profile.png
+
+# память
+poetry run python -m memory_profiler main.py 
+```
+
+## Contribute
+
+Issue Tracker: <https://gitlab.com/rocshers/python/programmable-cellular-machine/-/issues>  
+Source Code: <https://gitlab.com/rocshers/python/programmable-cellular-machine>
+

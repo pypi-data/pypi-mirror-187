@@ -1,0 +1,2 @@
+class MachineIterator(object):
+    pass
