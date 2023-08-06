@@ -1,0 +1,11 @@
+VK/__init__.py,sha256=HI6IIFivKytwRYgItpIuWRjFT4_kdGBpJMUqeZuDSg8,130
+VK/bot.py,sha256=klG_UcLJAGUEzGjcBM3KX98vuBFySAB3XAwxhtCG_cc,14150
+VK/events.py,sha256=2X5uQUR_Wg1OXUIZ6hSHfITUuLF_85qhBuri7RQu_4c,6167
+VK/servers.py,sha256=muZDqtZDX_JhnuE9l8tsaWFxjISgbRmQOwdIbCP2xFE,4883
+VK/sessions.py,sha256=WQ9t9qckukSm2KUz13PHFT5RfCYSAN8S0k-Nh_8jF4E,13485
+VK/types.py,sha256=nvQbDqZHTvIdEJdTT-ctGEgKgT0hDwTBqVy2Fi2OAAo,2276
+VK/utils.py,sha256=vxahD9aG0PqJgoUHg5UYbT0v9YxwLG0AogAyFuKqGWA,248
+vkpybot-0.1.3.dist-info/LICENSE.txt,sha256=oO50YGSwbQnKsHaBFuwmX9DUUmHUCHya0saYoHx6rA4,35803
+vkpybot-0.1.3.dist-info/METADATA,sha256=c-P3EmrLHID7ZSS0X9R92pjNeMmWYQa8ZKyqm3iq8uM,3123
+vkpybot-0.1.3.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+vkpybot-0.1.3.dist-info/RECORD,,
