@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: airflow-provider-anomaly-detection
+Version: 0.0.4
+Summary: An airflow provider for anomaly detection.
+Project-URL: Homepage, https://github.com/andrewm4894/airflow-provider-anomaly-detection
+Project-URL: Bug Tracker, https://github.com/andrewm4894/airflow-provider-anomaly-detection/issues
+Author-email: andrewm4894 <andrewm4894@gmail.com>
+License-File: LICENSE
+Classifier: Framework :: Apache Airflow
+Classifier: Framework :: Apache Airflow :: Provider
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Anomaly Detection with Apache Airflow
+
+TODO: Add a description of the project.
+
+## Packaging
+
+https://packaging.python.org/en/latest/tutorials/packaging-projects/
+
+```bash
+# build dist
+py -m build
+```
+
+```bash
+# upload to testpypi
+py -m twine upload --repository testpypi dist/*
+```
+
+```bash
+# upload to pypi
+py -m twine upload --repository pypi dist/*
+```
+
+```bash
+# install dev requirements
+pip install -r .\requirements-dev.txt
+```
+
+```bash
+# run pytest
+pytest
+```
