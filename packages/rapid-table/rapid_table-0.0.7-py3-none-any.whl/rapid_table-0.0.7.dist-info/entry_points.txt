@@ -1,0 +1,3 @@
+[console_scripts]
+rapid_table = rapid_table.rapid_table:main
+
