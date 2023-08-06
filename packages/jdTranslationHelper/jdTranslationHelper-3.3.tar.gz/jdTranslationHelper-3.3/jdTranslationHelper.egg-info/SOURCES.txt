@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+jdTranslationHelper/__init__.py
+jdTranslationHelper/py.typed
+jdTranslationHelper.egg-info/PKG-INFO
+jdTranslationHelper.egg-info/SOURCES.txt
+jdTranslationHelper.egg-info/dependency_links.txt
+jdTranslationHelper.egg-info/top_level.txt

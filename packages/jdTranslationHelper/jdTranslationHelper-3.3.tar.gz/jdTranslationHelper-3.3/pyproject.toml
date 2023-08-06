@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jdTranslationHelper"
+description = "A simple API for translating your programs"
+version = "3.3"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["JakobDev", "translation", "localization"]
+license = { text = "BSD-2-Clause" }
+authors = [
+    { name = "JakobDev", email = "jakobdev@gmx.de" }
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Environment :: Other Environment",
+    "License :: OSI Approved :: BSD License",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Operating System :: OS Independent",
+    "Operating System :: POSIX",
+    "Operating System :: POSIX :: BSD",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Typing :: Typed"
+]
+
+[project.urls]
+Issues = "https://codeberg.org/JakobDev/jdTranslationHelper/issues"
+Source = "https://codeberg.org/JakobDev/jdTranslationHelper"
+Donation = "https://ko-fi.com/jakobdev"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
