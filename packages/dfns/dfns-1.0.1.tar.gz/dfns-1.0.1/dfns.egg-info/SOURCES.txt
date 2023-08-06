@@ -1,0 +1,9 @@
+README.md
+setup.py
+dfns/__init__.py
+dfns/tools.py
+dfns.egg-info/PKG-INFO
+dfns.egg-info/SOURCES.txt
+dfns.egg-info/dependency_links.txt
+dfns.egg-info/requires.txt
+dfns.egg-info/top_level.txt
