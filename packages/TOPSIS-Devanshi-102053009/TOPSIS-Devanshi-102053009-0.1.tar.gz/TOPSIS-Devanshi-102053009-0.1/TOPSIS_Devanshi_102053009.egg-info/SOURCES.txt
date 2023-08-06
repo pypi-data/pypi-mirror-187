@@ -1,0 +1,10 @@
+LICENSE
+setup.cfg
+setup.py
+TOPSIS-Devanshi-102053009/__init__.py
+TOPSIS-Devanshi-102053009/topsis.py
+TOPSIS_Devanshi_102053009.egg-info/PKG-INFO
+TOPSIS_Devanshi_102053009.egg-info/SOURCES.txt
+TOPSIS_Devanshi_102053009.egg-info/dependency_links.txt
+TOPSIS_Devanshi_102053009.egg-info/requires.txt
+TOPSIS_Devanshi_102053009.egg-info/top_level.txt

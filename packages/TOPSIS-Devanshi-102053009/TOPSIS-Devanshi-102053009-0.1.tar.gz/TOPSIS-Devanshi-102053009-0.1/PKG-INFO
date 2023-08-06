@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: TOPSIS-Devanshi-102053009
+Version: 0.1
+Summary: Package for TOPSIS
+Home-page: https://github.com/devanshi2545/topsis
+Download-URL: https://github.com/devanshi2545/topsis/archive/v_01.tar.gz
+Author: Devanshi
+Author-email: ddevanshi60_be20@thapar.edu
+License: MIT
+Keywords: TOPSIS
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE
