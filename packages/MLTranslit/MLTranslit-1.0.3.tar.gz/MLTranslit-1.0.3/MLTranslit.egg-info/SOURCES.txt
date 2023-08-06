@@ -1,0 +1,5 @@
+setup.py
+MLTranslit.egg-info/PKG-INFO
+MLTranslit.egg-info/SOURCES.txt
+MLTranslit.egg-info/dependency_links.txt
+MLTranslit.egg-info/top_level.txt
