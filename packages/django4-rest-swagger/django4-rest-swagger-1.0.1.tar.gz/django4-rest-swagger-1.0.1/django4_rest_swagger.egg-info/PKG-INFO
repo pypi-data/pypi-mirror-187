@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: django4-rest-swagger
+Version: 1.0.1
+Summary: Swagger UI for Django 4 & Django REST Framework 3+
+Home-page: https://github.com/JorgeSalgado7/django4-rest-swagger
+Author: Jorge Salgado
+Author-email: contacto@jorgesalgado.com.mx
+License: FreeBSD License
+Platform: UNKNOWN
+License-File: LICENSE
+
+
+Django4 REST Swagger
+
+An API documentation generator for Django 4, Swagger UI and Django REST Framework.
+
+Installation
+From pip:
+
+pip install django4-rest-swagger
+
+

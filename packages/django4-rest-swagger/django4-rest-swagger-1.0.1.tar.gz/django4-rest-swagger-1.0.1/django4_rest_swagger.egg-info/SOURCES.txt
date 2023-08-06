@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+django4_rest_swagger/__init__.py
+django4_rest_swagger/renderers.py
+django4_rest_swagger/settings.py
+django4_rest_swagger/views.py
+django4_rest_swagger.egg-info/PKG-INFO
+django4_rest_swagger.egg-info/SOURCES.txt
+django4_rest_swagger.egg-info/dependency_links.txt
+django4_rest_swagger.egg-info/requires.txt
+django4_rest_swagger.egg-info/top_level.txt
