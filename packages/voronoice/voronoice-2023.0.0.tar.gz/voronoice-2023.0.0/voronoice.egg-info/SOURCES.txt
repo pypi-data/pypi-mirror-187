@@ -1,0 +1,9 @@
+README.md
+setup.py
+voronoice/__init__.py
+voronoice/__version__.py
+voronoice.egg-info/PKG-INFO
+voronoice.egg-info/SOURCES.txt
+voronoice.egg-info/dependency_links.txt
+voronoice.egg-info/requires.txt
+voronoice.egg-info/top_level.txt
