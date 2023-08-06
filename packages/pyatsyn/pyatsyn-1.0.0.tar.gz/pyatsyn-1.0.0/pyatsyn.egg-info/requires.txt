@@ -1,0 +1,6 @@
+numpy
+soundfile
+
+[docs]
+sphinx
+sphinx_rtd_theme
