@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "locate_system_path"
+version = "0.0.0"
+authors = [
+  { name="Tomas Morales Vera", email="moralesveratomas@gmail.com" },
+]
+description = "This package makes a sys.path.append to run python files from console."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Repo Link" = "https://github.com/moralesveratom/locate-system-path"
