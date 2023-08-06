@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: vid2led
+Version: 0.1.2
+License-File: LICENSE
+Requires-Dist: opencv-python
+Requires-Dist: rpi-ws281x
+
