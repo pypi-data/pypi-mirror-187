@@ -1,0 +1,27 @@
+# This file is intended to be a file which specifically calls out modules to be published to the Astronomer
+# Registry as well as top-level Provider metadata. The file should not be packaged and solely lives in the
+# repo. The modules listed should pertain to latest, released version of the repo.
+
+# Python package name.
+package-name: airflow_anomaly_detection_provider
+# The name of the provider to be displayed on the Registry.
+display-name: Airflow Anomaly Detection Provider
+# A description to be displayed on the main Provider page.
+description: An airflow provider for anomaly detection.
+# URL for where user should find the documentation for the Provider. This could be a link to the README,
+# an external docs site, etc.
+docs_url: https://github.com/andrewm4894/airflow-provider-anomaly-detection/blob/main/README.md
+
+# The next sections should be organized by module type (e.g. operators, hooks, functions, decorators, etc.).
+#
+# Within each section, the ``module`` value should be the path.to.the.module.specifically.
+# For example, if the import path for a function is `from sample_provider.hooks.sample_hook import SampleHook` then the
+# value should be "sample_provider.hooks.sample_hook.SampleHook".
+
+operators:
+  - module: airflow_anomaly_detection.operators.metric_batch_ingest_operator.MetricBatchIngestOperator
+  - module: airflow_anomaly_detection.operators.metric_batch_train_operator.MetricBatchTrainOperator
+  - module: airflow_anomaly_detection.operators.metric_batch_train_operator.MetricBatchScoreOperator
+  - module: airflow_anomaly_detection.operators.metric_batch_alert_operator.MetricBatchAlertOperator
+  - module: airflow_anomaly_detection.operators.metric_batch_alert_operator.MetricBatchEmailNotifyOperator
+
