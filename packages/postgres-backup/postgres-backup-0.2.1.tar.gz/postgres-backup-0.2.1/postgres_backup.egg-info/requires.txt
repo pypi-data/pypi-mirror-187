@@ -1,0 +1,9 @@
+sh
+pydantic==1.10.4
+
+[aws]
+boto3
+
+[gcs]
+google==3.0.0
+google-cloud-storage==2.7.0
