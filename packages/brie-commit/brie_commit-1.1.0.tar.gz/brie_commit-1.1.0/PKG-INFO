@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: brie-commit
+Version: 1.1.0
+Summary: A collection of cheesy pre-commit hooks.
+Home-page: https://github.com/sco1/
+Author: sco1
+Author-email: sco1.git@gmail.com
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: Development Status :: 6 - Mature
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Typing :: Typed
+Project-URL: Repository, https://github.com/sco1/pre-commit-matlab
+Description-Content-Type: text/markdown
+
+# brie-commit
+A collection of cheesy [pre-commit](https://pre-commit.com/) hooks
+
+## Using brie-commit with pre-commit
+Add this to your `.pre-commit-config.yaml`
+
+```yaml
+repos:
+-   repo: https://github.com/sco1/brie-commit
+    rev: v1.1.0
+    hooks:
+    -   id: brie-commit
+```
+
+## Hooks
+### `brie-commit`
+This hook doesn't do anything except add cheese to your pre-commit invocation.
+
+```bash
+$ pre-commit run
+🧀🧀🧀...................................................................Passed
+```
+
+### `up-to-no-gouda`
+This hook replaces all instances of `good` with `gouda` in your text files.
+
