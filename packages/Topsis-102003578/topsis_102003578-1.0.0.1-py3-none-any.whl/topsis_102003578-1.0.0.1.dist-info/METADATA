@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Topsis-102003578
+Version: 1.0.0.1
+Summary: A topsis package for assessment
+Author-email: Jatin Mudgal <jmudgal_be20@thapar.edu>
+License-File: LICENSE.txt
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+#Topsis Package
+A Python package to implement topsis on a given dataset.
