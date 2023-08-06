@@ -1,0 +1,6 @@
+srcheck/__init__.py,sha256=oYNWFveqMrAE_9EtiImNtthThkMl_CG8EpD4AQu4eAY,802
+srcheck/check.py,sha256=K6_ZQsyRI8xmfBhuj95pKrqutM0NHbSFl8S-mcyKx7Q,376
+srcheck/utils.py,sha256=tbw2LJ6MBIWIn2pBLYGRnP8XAYgHvRRLVtqrW_IiRcw,4179
+srcheck-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+srcheck-0.1.0.dist-info/METADATA,sha256=OW_aMkbkwqf9X5i7Lb9VYBvXWq37j1Zk2uEAwrudHEQ,239
+srcheck-0.1.0.dist-info/RECORD,,
