@@ -1,0 +1,12 @@
+pip
+setuptools>=61
+wheel
+numpy
+scipy
+pyECSS
+imgui
+PyOpenGL
+PyOpenGL_accelerate
+pysdl2
+pysdl2-dll
+ipykernel
