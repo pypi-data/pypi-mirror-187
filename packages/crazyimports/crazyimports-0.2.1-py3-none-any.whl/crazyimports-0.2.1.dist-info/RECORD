@@ -1,0 +1,13 @@
+crazyimports/__init__.py,sha256=EuGnqdXcrUhXJSvn27bmcWXK1KCt3yyGMkYSTcEQTn0,360
+crazyimports/_common.py,sha256=2cxohbbb3kO_LuVL6WnH6myByBwLryByBN3DdfW4dVI,1963
+crazyimports/_csv.py,sha256=yONqAiZ4xVKgj4o5tE-xHqdPOLeG9h4tla2Y-DDVSog,320
+crazyimports/_json.py,sha256=ctASfYTYvHgswePdJ0FxdH4IKaXJcgNrUVtRkN6q_Mo,137
+crazyimports/_pickle.py,sha256=qI0Cz8R1fzLV7TY6E7NDBuUKEp8466ndW8ZL_uhoB4Q,288
+crazyimports/_sqlite.py,sha256=XMcgsKG9WxyGqGXwrCAiZe0SGazUhuWM6stPlZhCYdw,677
+crazyimports/_toml.py,sha256=YCUfdiGilFD7-t3SVA2qFpjep0SlOsZvIfG_KVMXkqg,502
+crazyimports/_yaml.py,sha256=OCYhz26uPWy75gC5yPenVUrJbZ-FVT1GjIID3-QunbE,565
+crazyimports-0.2.1.dist-info/LICENSE,sha256=TK-GTI5o4yaI64Y1QD58X_ZRVokHt_t9eVm7ByHQJek,1072
+crazyimports-0.2.1.dist-info/METADATA,sha256=RDsIkA7Ft201iDt4NCaPFoNE4A0PaDiRibQPJi6ADsU,2909
+crazyimports-0.2.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+crazyimports-0.2.1.dist-info/top_level.txt,sha256=xtPqgMB25jd7jMZcOjbrxe8Ff8N3UB2U7kZ0HBOh2iE,13
+crazyimports-0.2.1.dist-info/RECORD,,
