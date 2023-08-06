@@ -1,0 +1,15 @@
+black
+coverage
+flake8
+isort
+macholib
+pyinstaller
+pylint
+pytest
+pytest-cov
+pytest-faulthandler
+pytest-mock
+pytest-qt
+tox
+twine
+wheel
