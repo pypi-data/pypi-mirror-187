@@ -1,0 +1,12 @@
+labelbase/__init__.py,sha256=ydzk-vqRSXWeyTCPtYRGMA2j9oFfb3hBtg2lTppqhVg,180
+labelbase/client.py,sha256=HqF2aAM3T17LX9LN83pRPgS-O67KptqsLF6iYjruIT8,19083
+labelbase/connector.py,sha256=7hRML8ppR2ysaGBbUcVhssG0qAPMgwcrKQZfblsroJY,6571
+labelbase/uploaders.py,sha256=BvJBy5Ykd0rrWQiAa5wx18jv0k_WLghgEUa439e7d20,8676
+labelbase/converters/__init__.py,sha256=aCAF5wtoITKsojeWfbRhyeEvy7mNTQkxa7pYk9bqiVQ,70
+labelbase/converters/coco.py,sha256=ApiZ0Jd7op8QIEGI4MH8Gt375pyfZtcCqvicesMZl_Q,15671
+labelbase/converters/ontology.py,sha256=KDEpGJPe1KYLQtrV0T_A2nnjHC35rkv7dI27xedXvCM,5489
+labelbase-0.0.47.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+labelbase-0.0.47.dist-info/METADATA,sha256=lZiIAU-N5PfrCBw5ERJJEJBb2S4aodUnfSme4wT50WU,795
+labelbase-0.0.47.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+labelbase-0.0.47.dist-info/top_level.txt,sha256=WgtO_32cys_o6rJBVM_jBtfOiChDUIToYrUklO4Y1lo,10
+labelbase-0.0.47.dist-info/RECORD,,
