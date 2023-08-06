@@ -1,0 +1,10 @@
+README.md
+setup.py
+meuip/__init__.py
+meuip/command_line.py
+meuip.egg-info/PKG-INFO
+meuip.egg-info/SOURCES.txt
+meuip.egg-info/dependency_links.txt
+meuip.egg-info/entry_points.txt
+meuip.egg-info/requires.txt
+meuip.egg-info/top_level.txt
