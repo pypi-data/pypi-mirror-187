@@ -1,0 +1,16 @@
+pyproject.toml
+setup.cfg
+src/api_task/__init__.py
+src/api_task/http_api.py
+src/api_task/ip_generator.py
+src/api_task/main.py
+src/api_task/tcp_server_code.py
+src/api_task/udp_client.py
+src/api_task/udp_server_code.py
+src/api_task/xmlrpc_client_code.py
+src/api_task/xmlrpc_server_code.py
+src/api_task.egg-info/PKG-INFO
+src/api_task.egg-info/SOURCES.txt
+src/api_task.egg-info/dependency_links.txt
+src/api_task.egg-info/top_level.txt
+test/test_api.py
