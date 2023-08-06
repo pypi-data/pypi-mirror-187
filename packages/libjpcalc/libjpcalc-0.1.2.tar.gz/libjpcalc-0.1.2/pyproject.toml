@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "libjpcalc"
+version = "0.1.2"
+description = "Exemplo de bibliotecas para ser utilizada"
+authors = ["Julio Pereira <juliocezar.marketing@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.scripts]
+somar = 'libjpcalc.soma:somar_cli'
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
