@@ -1,0 +1,3 @@
+[console_scripts]
+unique_files=unique_files.scripts.unique_files:main
+
