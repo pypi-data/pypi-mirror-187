@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<buildingUsageLibrary>
+	<name>Building Usage Library Reduced</name>
+	<description>Library created by Sanam from HOT200 and ecobee</description>
+	<source>https://www.engineeringtoolbox.com/metabolic-heat-persons-d_706.html</source>
+	<zoneUsageType>
+		<id>residential</id>
+		<description>All residential buildings</description>
+		<occupancy>
+			<occupancyDensity>0.03</occupancyDensity>
+			<usageDaysPerYear>365</usageDaysPerYear>
+			<usageHoursPerDay>14</usageHoursPerDay>
+			<internGains>
+				<description>Persons and home appliances</description>
+				<averageInternGainPerSqm>9.69</averageInternGainPerSqm>
+				<convectiveFraction>0.40</convectiveFraction>
+				<radiantFraction>0.50</radiantFraction>
+				<latentFraction>0.10</latentFraction>
+			</internGains>
+		</occupancy>
+		<appliance units="kWh/day">19.5</appliance>
+		<endUses>
+			<space_heating>
+				<heatingSetPointTemperature>19.0</heatingSetPointTemperature>
+				<heatingSetBackTemperature>18.0</heatingSetBackTemperature>
+			</space_heating>
+			<space_cooling>
+				<coolingSetPointTemperature>21.0</coolingSetPointTemperature>
+			</space_cooling>
+			<ventilation>
+				<mechanicalAirChangeRate>0</mechanicalAirChangeRate>
+			</ventilation>
+		</endUses>
+	</zoneUsageType>
+</buildingUsageLibrary>
