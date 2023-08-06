@@ -1,0 +1,25 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: {{ experiment.cluster_name }}
+  region: {{ region }}
+  version: "{{ experiment.kubernetes_version }}"
+  {% if tags %}tags:{% for tag in tags %}
+    "{{ tag[0] }}": "{{ tag[1] }}"
+    {% endfor %}{% endif %}
+
+{% if variables['availability_zones'] %}availabilityZones: [{% for zone in variables['availability_zones'] %}"{{ zone }}"{% if loop.last %}{% else %}, {% endif %}{% endfor %}]{% endif %}
+managedNodeGroups:
+  - name: workers
+    instanceType: {{ experiment.machine }}
+    minSize: {{ experiment.size }}
+    maxSize: {{ experiment.size }}
+    labels: { "fluxoperator": "true" }
+    {% if variables['ssh_key'] %}ssh:
+      allow: true
+      publicKeyPath: {{ variables['ssh_key'] }}{% endif %}
+    {% if variables["private_networking"] %}privateNetworking: true{% endif %}
+    {% if variables["efa_enabled"] %}efaEnabled: true{% endif %}
+    {% if variables["placement_group"] %}placement:
+      groupName: {{ variables["placement_group"] }}{% endif %}
