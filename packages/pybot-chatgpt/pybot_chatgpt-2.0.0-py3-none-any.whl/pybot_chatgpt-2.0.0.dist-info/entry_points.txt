@@ -1,0 +1,2 @@
+[console_scripts]
+pybot = chatgpt.run:chatbot
