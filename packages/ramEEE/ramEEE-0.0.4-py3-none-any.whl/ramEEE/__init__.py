@@ -1,0 +1,1 @@
+from ramEEE.main import factorial
