@@ -1,0 +1,7 @@
+lcdp_postgres_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lcdp_postgres_utils/executor.py,sha256=yP2B5opGtM7w_0rXlgfzKwtyA8Fi6LFXuZGzB_88Ka4,14516
+lcdp_postgres_utils/user.py,sha256=gSOAHahHPVBn4RhiwA2qxbbidrPC1-1vvaLyYdpE0SA,361
+lcdp_postgres_utils/utils.py,sha256=YqXaMRYyUUd_YjrjfPsJVQqCigLPK7GR8Gg3CWV6FM4,937
+lcdp_postgres_utils-0.0.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+lcdp_postgres_utils-0.0.1.dist-info/METADATA,sha256=ujZX_Ui4jXle2iIz3yhEeurS_mW_-b1gusN7PAw-Yuo,574
+lcdp_postgres_utils-0.0.1.dist-info/RECORD,,
