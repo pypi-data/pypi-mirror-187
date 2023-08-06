@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: Topsis-102003592
+Version: 0.3
+Summary: Evaluation of alternatives based on multiple criteria using TOPSIS method.
+Home-page: UNKNOWN
+Author: Bhavna Goyal
+Author-email: bgoyal_be20@thapar.edu
+License: UNKNOWN
+Description: ## Topsis_102003592
+        
+        # TOPSIS - Multiple Criteria Decision Making
+        
+        Submitted By: **Bhavna Goyal - 102003592**.
+        
+        Type: **Package**.
+        
+        Title: **TOPSIS method for multiple-criteria decision making (MCDM)**.
+        
+        Version: **0.3**.
+        
+        Date: **21-01-2023**.
+        
+        Author: **Bhavna Goyal**.
+        
+        Maintainer: **Bhavna Goyal <bgoyal_be20@thapar.edu>**.
+        
+        Description: **Evaluation of alternatives based on multiple criteria using TOPSIS method.**.
+        
+        ---
+        
+        ## What is TOPSIS?
+        
+        **T**echnique for **O**rder **P**reference by **S**imilarity to **I**deal **S**olution
+        (TOPSIS) originated in the 1980s as a multi-criteria decision making method.
+        TOPSIS chooses the alternative of shortest Euclidean distance from the ideal solution,
+        and greatest distance from the negative-ideal solution.
+        
+        <br>
+        
+        ## How to install this package:
+        
+        ```
+        >> pip install Topsis_102003592
+        ```
+        
+        ### In Command Prompt
+        
+        ```
+        >> topsis data.csv "1,1,1,1" "+,+,-,+" result.csv
+        ```
+        
+        ## Input file (data.csv)
+        
+        The decision matrix should be constructed with each row representing a Model alternative, and each column representing a criterion like Accuracy, R<sup>2</sup>, Root Mean Squared Error, Correlation, and many more.
+        
+        | Attribute | Price or cost | Storage Space | Camera| Looks |
+        | -----     | -----------   | ------------- | ---- | -------|
+        | Mobile 1  |250$           | 16GB          | 12MP | 5      |
+        | Mobile 2  | 200$          | 16GB          | 8MP  | 3      |
+        | Mobile 3  | 300$          | 32GB          | 16MP | 4      |
+        | Mobile 4  |  275$         | 32GB          | 8MP  | 4      |
+        | Mobile 5  | 225$          | 16GB          | 16MP | 2      |
+        
+        Weights (`weights`) is not already normalised will be normalised later in the code.
+        
+        Information of benefit positive(+) or negative(-) impact criteria should be provided in `impacts`.
+        
+        <br>
+        
+        ## Output file (result.csv)
+        
+        | Attribute | Price or cost | Storage Space | Camera| Looks | Topsis_score | Rank|
+        | -----     | -----------   | ------------- | ---- | -------| ------------ | ----|
+        | Mobile 1  |250$           | 16GB          | 12MP | 5      | 0.4228       | 4   |
+        | Mobile 2  |200$           | 16GB          | 8MP  | 3      | 0.4635       | 3   |
+        | Mobile 3  |300$           | 32GB          | 16MP | 4      | 0.5097       | 2   |
+        | Mobile 4  |275$           | 32GB          | 8MP  | 4      | 0.3772       | 5   |
+        | Mobile 5  |225$           | 16GB          | 16MP | 2      | 0.6871       | 1   |
+        
+        
+        <br>
+        The output file contains columns of input file along with two additional columns having *Topsis_score* and *Rank*
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
