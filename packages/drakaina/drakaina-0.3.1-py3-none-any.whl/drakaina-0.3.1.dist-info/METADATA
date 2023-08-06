@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: drakaina
+Version: 0.3.1
+Summary: Module for simple RPC server implementation
+Home-page: https://gitlab.com/tau_lex/drakaina
+License: Apache-2.0
+Keywords: rpc,jsonrpc
+Author: Aleksey Terentyev
+Author-email: terentyev.a@pm.me
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: OSI Approved :: Apache Software License 2.0
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Provides-Extra: msgpack
+Provides-Extra: orjson
+Provides-Extra: ujson
+Requires-Dist: msgpack (>=1.0.4,<2.0.0) ; extra == "msgpack"
+Requires-Dist: orjson (>=3.8.5,<4.0.0) ; extra == "orjson"
+Requires-Dist: ujson (>=5.7.0,<6.0.0) ; extra == "ujson"
+Project-URL: Repository, https://gitlab.com/tau_lex/drakaina
+Description-Content-Type: text/markdown
+
+# drakaina
+
+❗ WIP
+
+Module for simple RPC server implementation
+
+![license: Apache License 2.0](https://img.shields.io/badge/license-Apache%202-blue) ![Python: >=3.7](https://img.shields.io/badge/python-%3E=3.7-blue) ![Code style: black](https://img.shields.io/badge/code%20style-black-black)
+
+## Quick use
+
+```python
+from drakaina import remote_procedure
+from drakaina.rpc_protocols import JsonRPCv2
+
+
+@remote_procedure
+def my_method():
+    return "Hello Bro! ✋️"
+
+
+JsonRPCv2().handle({"jsonrpc": "2.0", "method": "my_method", "id": 1})
+```
+
+## Installation
+
+```shell
+pip install drakaina
+```
+
