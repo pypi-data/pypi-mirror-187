@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+bobtail_upload/__init__.py
+bobtail_upload/upload.py
+bobtail_upload.egg-info/PKG-INFO
+bobtail_upload.egg-info/SOURCES.txt
+bobtail_upload.egg-info/dependency_links.txt
+bobtail_upload.egg-info/requires.txt
+bobtail_upload.egg-info/top_level.txt
