@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: prototrade
+Version: 0.0.3
+Summary: Parallelised Python framework for rapid prototyping of autotrading strategies
+Author: Scott Parker
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
