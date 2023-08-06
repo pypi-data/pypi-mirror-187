@@ -1,0 +1,16 @@
+bcpandas/__init__.py,sha256=NbYVvTTA-YGSU-Og--tp-UjYBxlSAf92W7kIrx2APG0,563
+bcpandas/constants.py,sha256=usUzyCd5cOHVoz7ZYyMDUWbZr6fYYIeUL9Um0j_iDF0,2168
+bcpandas/main.py,sha256=xobk-BqQwqkkS-zmtIbZXsTGq6X3FTf-4mufQyrkB-k,16916
+bcpandas/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bcpandas/tests/conftest.py,sha256=bSCvhrIAOO-c-YdbmaMd9bYvGVkXw5WwLvaFmQky3gQ,1829
+bcpandas/tests/test_misc.py,sha256=tRd4vRaV3sovvcICRqsiunpPTg3qz5uld9NqJGCAqAI,1105
+bcpandas/tests/test_sqlcreds.py,sha256=tTDbXT-M2UF4SXNh62zZS7VkE8rbi1AOQyQtXSjnLyY,14050
+bcpandas/tests/test_to_sql.py,sha256=kFJo09ODqtNgegnUzdNsc28Qi557VM03FbAtbAjZdho,24483
+bcpandas/tests/test_utils.py,sha256=s6I8loiznlwVUbQRzg7xjxzLaC9yYgMGNZ3IkpSu1Ss,1753
+bcpandas/tests/utils.py,sha256=eejXd16gSR5MXET1lir_vFl1VXiiwJVPLaEv45-Jg-I,6276
+bcpandas/utils.py,sha256=AssL2jNAN9LOsQYbOeMmt1QDBx9kzBoqM8YjjWeo3k0,7898
+bcpandas-2.2.1.dist-info/METADATA,sha256=pFqzrh601EjooXTCeWwgHEJ_oEWTC9dtCeuEdno22tQ,17824
+bcpandas-2.2.1.dist-info/entry_points.txt,sha256=ET1hMHAkZ3-0o5xccv67wKcrMXeDkioynVcTKr9zaCc,51
+bcpandas-2.2.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+bcpandas-2.2.1.dist-info/LICENSE,sha256=pn6a_ZaaV6EhQJepyC22wddT4A2VsEKvi8x0JachAWE,1078
+bcpandas-2.2.1.dist-info/RECORD,,
