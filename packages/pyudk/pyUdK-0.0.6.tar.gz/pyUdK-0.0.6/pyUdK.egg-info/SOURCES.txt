@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pyUdK.egg-info/PKG-INFO
+pyUdK.egg-info/SOURCES.txt
+pyUdK.egg-info/dependency_links.txt
+pyUdK.egg-info/requires.txt
+pyUdK.egg-info/top_level.txt
+src/__init__.py
+src/pyUdK.py
