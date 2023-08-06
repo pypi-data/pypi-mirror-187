@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/cooplan_integration_test_boilerplate/__init__.py
+src/cooplan_integration_test_boilerplate/test.py
+src/cooplan_integration_test_boilerplate.egg-info/PKG-INFO
+src/cooplan_integration_test_boilerplate.egg-info/SOURCES.txt
+src/cooplan_integration_test_boilerplate.egg-info/dependency_links.txt
+src/cooplan_integration_test_boilerplate.egg-info/requires.txt
+src/cooplan_integration_test_boilerplate.egg-info/top_level.txt

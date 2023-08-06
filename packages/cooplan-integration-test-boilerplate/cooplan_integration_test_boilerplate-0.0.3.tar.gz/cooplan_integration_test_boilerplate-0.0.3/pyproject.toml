@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cooplan_integration_test_boilerplate"
+version = "0.0.3"
+dependencies = [
+    "pymongo[srv] >= 4.3.3"
+]
+authors = [
+    { name="Gabriel Amihalachioaie", email="gabriel@simpleg.eu"}
+]
+description = "Boilerplate for Cooplan's integration tests"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/simple0x47/cooplan-integration-test-boilerplate"
