@@ -1,0 +1,6 @@
+
+[tests]
+numpy
+coverage
+pytest
+pytest-cov
