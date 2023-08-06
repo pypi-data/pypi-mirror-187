@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pushable
+Version: 0.1.0
+Summary: Convert iterators into pushable iterators
+License: GNU General Public License v3
+Author: Stephen Leach
+Author-email: sfkleach@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
