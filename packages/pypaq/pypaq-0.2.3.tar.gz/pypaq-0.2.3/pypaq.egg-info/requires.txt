@@ -1,0 +1,17 @@
+beautifulsoup4
+GPUtil
+Levenshtein
+matplotlib
+numpy
+pandas
+plotly
+psutil
+requests
+requests_html
+sentence-transformers
+scipy
+sklearn
+tensorboard
+tensorflow
+torch
+typing-extensions
