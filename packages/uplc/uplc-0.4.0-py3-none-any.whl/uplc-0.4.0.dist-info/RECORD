@@ -1,0 +1,15 @@
+uplc/__init__.py,sha256=Lt9No407dumzALpYnnqhOLhz6yPBqvxkc5EJfTZqY3k,907
+uplc/__main__.py,sha256=jHm4EH2x6XtepO8xqBudByhOIQ2dD8wZ_NKXEmL9-2c,4341
+uplc/ast.py,sha256=5AtyvmckSpXcFiws1jv-NLCcCNqeR7aQenX0mqmG1PQ,21636
+uplc/lexer.py,sha256=N3QdGwyO1qWGv-PWDk4SjnPfUVR9fhU06sO_PURPKac,872
+uplc/machine.py,sha256=q0gTS8v9R5wZEX-FT8Ywj7UAAVbyk39qSOp7OdVSPf4,3175
+uplc/parser.py,sha256=MygIxDE5wSHg4B0l8xumpkUZCn3oc7Ae19W9ALyD-qc,6370
+uplc/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uplc/tests/test_hypothesis.py,sha256=KBml40n3c-24ylgSqOIUZUlCLiffiTOFezWKEA56R7c,3631
+uplc/tests/test_misc.py,sha256=3KoagA7-QVtF9-QDdP5ynTHpub96KKAYsxQxKy9P6n0,221245
+uplc-0.4.0.dist-info/LICENSE.txt,sha256=hauengzzsrEjjlrE7QN0voZdEjUQlYh4N1RF28yZKR8,1077
+uplc-0.4.0.dist-info/METADATA,sha256=0alUjM9DjJJAqQOAw9XO3bI5BeSegYqZufBsMU1ZLnk,2584
+uplc-0.4.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+uplc-0.4.0.dist-info/entry_points.txt,sha256=V_s7NkX-1_p5jXwveClOKj9qaBXvwRnJvLYKqlBnWtc,44
+uplc-0.4.0.dist-info/top_level.txt,sha256=2eGAMY2_fDIRQlPse625AZfQAMq__J0lPhpRL7fnm5w,5
+uplc-0.4.0.dist-info/RECORD,,
