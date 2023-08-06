@@ -1,0 +1,177 @@
+<!DOCTYPE html> <html lang="en-US"> <head> <meta charset="UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=Edge"> <link rel="stylesheet" href="/static/doc/CN/assets/css/just-the-docs-default.css"> <script src="/static/doc/CN/assets/js/just-the-docs.js"></script> <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Begin Jekyll SEO tag v2.8.0 --> <title>PaddleX 分类/检测/分割 | PaddleLabel</title> <meta name="generator" content="Jekyll v4.3.2" /> <meta property="og:title" content="PaddleX 分类/检测/分割" /> <meta property="og:locale" content="en_US" /> <meta name="description" content="高效灵活的数据标注工具" /> <meta property="og:description" content="高效灵活的数据标注工具" /> <link rel="canonical" href="https://paddlecv-sig.github.io//static/doc/CN/training/PdLabel_PdX.html" /> <meta property="og:url" content="https://paddlecv-sig.github.io//static/doc/CN/training/PdLabel_PdX.html" /> <meta property="og:site_name" content="PaddleLabel" /> <meta property="og:type" content="website" /> <meta name="twitter:card" content="summary" /> <meta property="twitter:title" content="PaddleX 分类/检测/分割" /> <script type="application/ld+json"> {"@context":"https://schema.org","@type":"WebPage","description":"高效灵活的数据标注工具","headline":"PaddleX 分类/检测/分割","url":"https://paddlecv-sig.github.io//static/doc/CN/training/PdLabel_PdX.html"}</script> <!-- End Jekyll SEO tag --> </head> <body> <a class="skip-to-main" href="#main-content">Skip to main content</a> <svg xmlns="http://www.w3.org/2000/svg" class="d-none"> <symbol id="svg-link" viewBox="0 0 24 24"> <title>Link</title> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"> <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path> </svg> </symbol> <symbol id="svg-menu" viewBox="0 0 24 24"> <title>Menu</title> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"> <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line> </svg> </symbol> <symbol id="svg-arrow-right" viewBox="0 0 24 24"> <title>Expand</title> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"> <polyline points="9 18 15 12 9 6"></polyline> </svg> </symbol> <!-- Feather. MIT License: https://github.com/feathericons/feather/blob/master/LICENSE --> <symbol id="svg-external-link" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"> <title id="svg-external-link-title">(external link)</title> <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line> </symbol> <!-- Feather. MIT License: https://github.com/twbs/icons/blob/main/LICENSE.md --> <symbol id="svg-copy" viewBox="0 0 16 16"> <title>Copy</title> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16"> <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/> <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/> </svg> </symbol> <symbol id="svg-copied" viewBox="0 0 16 16"> <title>Copied</title> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check-fill" viewBox="0 0 16 16"> <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z"/> <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708Z"/> </svg> </symbol> </svg> <div class="side-bar"> <div class="site-header"> <a href="/static/doc/CN/" class="site-title lh-tight"> PaddleLabel </a> <a href="#" id="menu-button" class="site-button"> <svg viewBox="0 0 24 24" class="icon"><use xlink:href="#svg-menu"></use></svg> </a> </div> <nav aria-label="Main" id="site-nav" class="site-nav"> <ul class="nav-list"><li class="nav-list-item"><a href="/static/doc/CN/" class="nav-list-link">项目简介</a></li><li class="nav-list-item"><a href="/static/doc/CN/install.html" class="nav-list-link">安装</a></li><li class="nav-list-item"><a href="/static/doc/CN/quick_start.html" class="nav-list-link">快速体验</a></li><li class="nav-list-item"><a href="#" class="nav-list-expander" aria-label="toggle links in 手动标注 category"> <svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg> </a><a href="/static/doc/CN/manual/manual.html" class="nav-list-link">手动标注</a><ul class="nav-list "><li class="nav-list-item "><a href="/static/doc/CN/manual/classification.html" class="nav-list-link">图像分类</a></li><li class="nav-list-item "><a href="/static/doc/CN/manual/detection.html" class="nav-list-link">目标检测</a></li><li class="nav-list-item "><a href="/static/doc/CN/manual/semantic_segmentation.html" class="nav-list-link">语义分割</a></li><li class="nav-list-item "><a href="/static/doc/CN/manual/instance_segmentation.html" class="nav-list-link">实例分割</a></li><li class="nav-list-item "><a href="/static/doc/CN/manual/ocr.html" class="nav-list-link">OCR</a></li></ul></li><li class="nav-list-item"><a href="#" class="nav-list-expander" aria-label="toggle links in 机器学习辅助标注 category"> <svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg> </a><a href="/static/doc/CN/ML/ml.html" class="nav-list-link">机器学习辅助标注</a><ul class="nav-list "><li class="nav-list-item "><a href="/static/doc/CN/ML/install_ml.html" class="nav-list-link">机器学习后端安装</a></li><li class="nav-list-item "><a href="/static/doc/CN/ML/auto_inference.html" class="nav-list-link">自动预标注使用方法</a></li><li class="nav-list-item "><a href="/static/doc/CN/ML/interactive_segmentation.html" class="nav-list-link">交互式分割</a></li></ul></li><li class="nav-list-item active"><a href="#" class="nav-list-expander" aria-label="toggle links in 进行训练 category"> <svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg> </a><a href="/static/doc/CN/training/training.html" class="nav-list-link">进行训练</a><ul class="nav-list "><li class="nav-list-item "><a href="/static/doc/CN/training/PdLabel_PdClas.html" class="nav-list-link">PaddleClas 花朵分类</a></li><li class="nav-list-item "><a href="/static/doc/CN/training/PdLabel_PdDet.html" class="nav-list-link">PaddleDetection 道路标志检测</a></li><li class="nav-list-item "><a href="/static/doc/CN/training/PdLabel_PdSeg.html" class="nav-list-link">PaddleSeg 图像分割</a></li><li class="nav-list-item active"><a href="/static/doc/CN/training/PdLabel_PdX.html" class="nav-list-link active">PaddleX 分类/检测/分割</a></li></ul></li></ul> </nav> <footer class="site-footer"> This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll. </footer> </div> <div class="main" id="top"> <div id="main-header" class="main-header"> <div></div> <nav aria-label="Auxiliary" class="aux-nav"> <ul class="aux-nav-list"> <li class="aux-nav-list-item"> <a href="https://github.com/PaddleCV-SIG/PaddleLabel" class="site-button" > 项目 Github </a> </li> </ul> </nav> </div> <div id="main-content-wrap" class="main-content-wrap"> <nav aria-label="Breadcrumb" class="breadcrumb-nav"> <ol class="breadcrumb-nav-list"> <li class="breadcrumb-nav-list-item"><a href="/static/doc/CN/training/training.html">进行训练</a></li> <li class="breadcrumb-nav-list-item"><span>PaddleX 分类/检测/分割</span></li> </ol> </nav> <div id="main-content" class="main-content" role="main"> <h1 id="一图像分类快速在-paddlelabel-标注的花朵分类数据集上展示如何应用-paddlex-训练-mobilenetv3_ssld-网络"> <a href="#一图像分类快速在-paddlelabel-标注的花朵分类数据集上展示如何应用-paddlex-训练-mobilenetv3_ssld-网络" class="anchor-heading" aria-labelledby="一图像分类快速在-paddlelabel-标注的花朵分类数据集上展示如何应用-paddlex-训练-mobilenetv3_ssld-网络"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 一、图像分类（快速在 PaddleLabel 标注的花朵分类数据集上展示如何应用 PaddleX 训练 MobileNetV3_ssld 网络） </h1> <p>PaddleLabel 标注数据+PaddleX 训练预测=快速完成一次图像分类的任务</p> <h2 id="1-数据准备"> <a href="#1-数据准备" class="anchor-heading" aria-labelledby="1-数据准备"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 1. 数据准备 </h2> <ul> <li>首先使用<code class="language-plaintext highlighter-rouge">PaddleLabel</code>对自制的花朵数据集进行标注，其次使用<code class="language-plaintext highlighter-rouge">Split Dataset</code>功能分割数据集，最后导出数据集</li> <li>从<code class="language-plaintext highlighter-rouge">PaddleLabel</code>导出后的内容全部放到自己的建立的文件夹下，例如<code class="language-plaintext highlighter-rouge">dataset/flower_clas_dataset</code>，其目录结构如下：</li> </ul> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>├── flower_clas_dataset
+│   ├── image
+│   │   ├── flower1.jpg
+│   │   ├── flower2.jpg
+│   │   ├── ...
+│   ├── labels.txt
+│   ├── test_list.txt
+│   ├── train_list.txt
+│   ├── val_list.txt
+</code></pre></div></div> <h2 id="2-训练"> <a href="#2-训练" class="anchor-heading" aria-labelledby="2-训练"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 2. 训练 </h2> <h3 id="21-安装必备的库"> <a href="#21-安装必备的库" class="anchor-heading" aria-labelledby="21-安装必备的库"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 2.1 安装必备的库 </h3> <p><strong>2.1.1 安装 paddlepaddle</strong></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 您的机器安装的是 CUDA9 或 CUDA10，请运行以下命令安装
+pip install paddlepaddle-gpu -i https://mirror.baidu.com/pypi/simple
+# 您的机器是CPU，请运行以下命令安装
+# pip install paddlepaddle
+</code></pre></div></div> <p><strong>2.1.2 安装 PaddleX 以及依赖项</strong></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install "paddlex&lt;=2.0.0"
+pip install scikit-image
+pip install threadpoolctl==2.0.0 -i https://mirror.baidu.com/pypi/simple
+pip install scikit-learn==0.23.2
+</code></pre></div></div> <h3 id="22-准备训练"> <a href="#22-准备训练" class="anchor-heading" aria-labelledby="22-准备训练"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 2.2 准备训练 </h3> <p><strong>2.2.1 配置 GPU</strong></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># jupyter中使用paddlex需要设置matplotlib
+import matplotlib
+matplotlib.use('Agg')
+# 设置使用0号GPU卡（如无GPU，执行此代码后仍然会使用CPU训练模型）
+import os
+os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+import paddlex as pdx
+</code></pre></div></div> <p><strong>2.2.2 定义图像处理流程 transforms</strong></p> <p>定义训练和验证过程中，图像的处理流程，其中训练过程包括了部分数据增强操作（验证时不需要），如在本示例中，训练过程使用了<code class="language-plaintext highlighter-rouge">RandomCrop</code>和<code class="language-plaintext highlighter-rouge">RandomHorizontalFlip</code>两种数据增强方式，更多图像预处理流程 transforms 的使用可参见<a href="https://paddlex.readthedocs.io/zh_CN/develop/apis/transforms/cls_transforms.html">paddlex.cls.transforms</a></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from paddlex import transforms as T
+train_transforms = T.Compose([
+    T.RandomCrop(crop_size=224),
+    T.RandomHorizontalFlip(),
+    T.Normalize()])
+
+eval_transforms = T.Compose([
+    T.ResizeByShort(short_size=256),
+    T.CenterCrop(crop_size=224),
+    T.Normalize()
+])
+</code></pre></div></div> <p><strong>2.2.3 定义数据集 Dataset</strong> 使用 PaddleX 内置的数据集读取器读取训练和验证数据集。在图像分类中使用<code class="language-plaintext highlighter-rouge">ImageNet</code>格式的数据集，因此这里采用<code class="language-plaintext highlighter-rouge">pdx.datasets.ImageNet</code>来加载数据集，该接口的介绍可参见文档<a href="https://paddlex.readthedocs.io/zh_CN/develop/apis/datasets.html#paddlex-datasets-imagenet">paddlex.datasets.ImageNet</a></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>train_dataset = pdx.datasets.ImageNet(
+    data_dir='./dataset/flower_clas_dataset',
+    file_list='./dataset/flower_clas_dataset/train_list.txt',
+    label_list='./dataset/flower_clas_dataset/labels.txt',
+    transforms=train_transforms)
+eval_dataset = pdx.datasets.ImageNet(
+    data_dir='./dataset/flower_clas_dataset',
+    file_list='./dataset/flower_clas_dataset/val_list.txt',
+    label_list='./dataset/flower_clas_dataset/labels.txt',
+    transforms=eval_transforms)
+</code></pre></div></div> <h3 id="23-模型开始训练"> <a href="#23-模型开始训练" class="anchor-heading" aria-labelledby="23-模型开始训练"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 2.3 模型开始训练 </h3> <p>在定义好数据集后，即可选择分类模型（这里使用了<code class="language-plaintext highlighter-rouge">MobileNetV3_large_ssld</code>模型），开始进行训练。 更多模型训练参数介绍可参见文档<a href="https://paddlex.readthedocs.io/zh_CN/develop/apis/models/classification.html#train">paddlex.cls.MobileNetV3_large_ssld</a>，在如下代码中，模型训练过程每间隔<code class="language-plaintext highlighter-rouge">save_interval_epochs</code>轮会保存一次模型在<code class="language-plaintext highlighter-rouge">save_dir</code>目录下，同时在保存的过程中也会在验证数据集上计算相关指标，模型训练过程中相关日志的含义可参见<a href="https://paddlex.readthedocs.io/zh_CN/develop/appendix/metrics.html#id3">文档</a></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>num_classes = len(train_dataset.labels)
+model = pdx.cls.MobileNetV3_large_ssld(num_classes=num_classes)
+model.train(num_epochs=12,
+            train_dataset=train_dataset,
+            train_batch_size=32,
+            eval_dataset=eval_dataset,
+            lr_decay_epochs=[6, 8],
+            save_interval_epochs=3,
+            learning_rate=0.00625,
+            save_dir='output/mobilenetv3_large_ssld'
+            )
+</code></pre></div></div> <h2 id="3-预测"> <a href="#3-预测" class="anchor-heading" aria-labelledby="3-预测"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 3. 预测 </h2> <h3 id="31-预测"> <a href="#31-预测" class="anchor-heading" aria-labelledby="31-预测"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 3.1 预测 </h3> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import paddlex as pdx
+model = pdx.load_model('./output/mobilenetv3_large_ssld/best_model')
+image_path = './dataset/flower_clas_dataset/image/1008566138_6927679c8a.jpg'
+result = model.predict(image_path)
+print("Predict Result:", result)
+</code></pre></div></div> <p>预测的样例图片是：</p> <p><img src="https://ai-studio-static-online.cdn.bcebos.com/c737099ed27f48adac3e33497ecc4cfcddad0df2169c479d9ad98aadfdb9c400" width="50%" height="50%" /></p> <p>预测的结果是：</p> <blockquote> <p>Predict Result: [{‘category_id’: 0, ‘category’: ‘sunflower’, ‘score’: 0.9999815}] 最终结论：预测正确 ✔</p> </blockquote><hr /> <h1 id="二目标检测快速在-paddlelabel-标注的道路标志检测数据集上展示如何应用-paddlex-训练-yolov3-网络"> <a href="#二目标检测快速在-paddlelabel-标注的道路标志检测数据集上展示如何应用-paddlex-训练-yolov3-网络" class="anchor-heading" aria-labelledby="二目标检测快速在-paddlelabel-标注的道路标志检测数据集上展示如何应用-paddlex-训练-yolov3-网络"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 二、目标检测（快速在 PaddleLabel 标注的道路标志检测数据集上展示如何应用 PaddleX 训练 YOLOv3 网络 </h1> <p>PaddleLabel 标注数据+PaddleX 训练预测=快速完成一次目标检测的任务</p> <h2 id="1-数据准备-1"> <a href="#1-数据准备-1" class="anchor-heading" aria-labelledby="1-数据准备-1"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 1. 数据准备 </h2> <ul> <li>首先使用<code class="language-plaintext highlighter-rouge">PaddleLabel</code>对自制的路标数据集进行标注，其次使用<code class="language-plaintext highlighter-rouge">Split Dataset</code>功能分割数据集，最后导出数据集</li> <li>从<code class="language-plaintext highlighter-rouge">PaddleLabel</code>导出后的内容全部放到自己的建立的文件夹下，例如<code class="language-plaintext highlighter-rouge">dataset/roadsign_det_dataset</code>，其目录结构如下：</li> </ul> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>├── roadsign_det_dataset
+│   ├── Annotations
+│   ├── JPEGImages
+│   ├── labels.txt
+│   ├── test_list.txt
+│   ├── train_list.txt
+│   ├── val_list.txt
+</code></pre></div></div> <h2 id="2-训练-1"> <a href="#2-训练-1" class="anchor-heading" aria-labelledby="2-训练-1"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 2. 训练 </h2> <h3 id="21-安装必备的库-1"> <a href="#21-安装必备的库-1" class="anchor-heading" aria-labelledby="21-安装必备的库-1"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 2.1 安装必备的库 </h3> <p><strong>2.1.1 安装 paddlepaddle</strong></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 您的机器安装的是 CUDA9 或 CUDA10，请运行以下命令安装
+pip install paddlepaddle-gpu -i https://mirror.baidu.com/pypi/simple
+# 您的机器是CPU，请运行以下命令安装
+# pip install paddlepaddle
+</code></pre></div></div> <p><strong>2.1.2 安装 PaddleX</strong></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install "paddlex&lt;=2.0.0" -i https://mirror.baidu.com/pypi/simple
+</code></pre></div></div> <h3 id="22-准备训练-1"> <a href="#22-准备训练-1" class="anchor-heading" aria-labelledby="22-准备训练-1"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 2.2 准备训练 </h3> <p><strong>2.2.1 配置 GPU</strong></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 设置使用0号GPU卡（如无GPU，执行此代码后仍然会使用CPU训练模型）
+import matplotlib
+matplotlib.use('Agg')
+import os
+os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+import paddlex as pdx
+</code></pre></div></div> <p><strong>2.2.2 定义图像处理流程 transforms</strong></p> <p>定义数据处理流程，其中训练和测试需分别定义，训练过程包括了部分测试过程中不需要的数据增强操作，如在本示例中，训练过程使用了<code class="language-plaintext highlighter-rouge">MixupImage</code>、<code class="language-plaintext highlighter-rouge">RandomDistort</code>、<code class="language-plaintext highlighter-rouge">RandomExpand</code>、<code class="language-plaintext highlighter-rouge">RandomCrop</code>和<code class="language-plaintext highlighter-rouge">RandomHorizontalFlip</code>共 5 种数据增强方式，更多图像预处理流程<a href="https://paddlex.readthedocs.io/zh_CN/develop/apis/transforms/det_transforms.html">paddlex.det.transforms</a></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from paddlex import transforms as T
+train_transforms = T.Compose([
+    T.MixupImage(mixup_epoch=250),
+    T.RandomDistort(),
+    T.RandomExpand(),
+    T.RandomCrop(),
+    T.Resize(target_size=608, interp='RANDOM'),
+    T.RandomHorizontalFlip(),
+    T.Normalize()])
+
+eval_transforms = T.Compose([
+    T.Resize(target_size=608, interp='CUBIC'),
+    T.Normalize()
+])
+</code></pre></div></div> <p><strong>2.2.3 定义数据集 Dataset</strong></p> <p>目标检测可使用<code class="language-plaintext highlighter-rouge">VOCDetection</code>格式和<code class="language-plaintext highlighter-rouge">COCODetection</code>两种数据集，此处由于数据集为 VOC 格式，因此采用 p<code class="language-plaintext highlighter-rouge">dx.datasets.VOCDetection</code>来加载数据集，该接口的介绍可参见文档<a href="https://paddlex.readthedocs.io/zh_CN/develop/apis/datasets.html#paddlex-datasets-vocdetection">paddlex.datasets.VOCDetection</a></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>train_dataset = pdx.datasets.VOCDetection(
+    data_dir='./dataset/roadsign_det_dataset',
+    file_list='./dataset/roadsign_det_dataset/train_list.txt',
+    label_list='./dataset/roadsign_det_dataset/labels.txt',
+    transforms=train_transforms,
+    shuffle=True)
+eval_dataset = pdx.datasets.VOCDetection(
+    data_dir='./dataset/roadsign_det_dataset',
+    file_list='./dataset/roadsign_det_dataset/val_list.txt',
+    label_list='./dataset/roadsign_det_dataset/labels.txt',
+    transforms=eval_transforms)
+</code></pre></div></div> <h3 id="23-模型开始训练-1"> <a href="#23-模型开始训练-1" class="anchor-heading" aria-labelledby="23-模型开始训练-1"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 2.3 模型开始训练 </h3> <p>在定义好数据集后，即可选择检测模型（这里使用了<code class="language-plaintext highlighter-rouge">yolov3_darknet53</code>模型），开始进行训练。 关于检测模型训练，更多参数介绍可参见文档<a href="https://paddlex.readthedocs.io/zh_CN/develop/apis/models/detection.html#paddlex-det-yolov3">paddlex.det.YOLOv3</a>，在如下代码中，模型训练过程每间隔<code class="language-plaintext highlighter-rouge">save_interval_epochs</code>轮会保存一次模型在<code class="language-plaintext highlighter-rouge">save_dir</code>目录下，同时在保存的过程中也会在验证数据集上计算相关指标，模型训练过程中相关日志的含义可参见<a href="https://paddlex.readthedocs.io/zh_CN/develop/appendix/metrics.html#yolov3">文档</a></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>num_classes = len(train_dataset.labels)
+model = pdx.det.YOLOv3(num_classes=num_classes, backbone='DarkNet53')
+model.train(
+    num_epochs=10,
+    train_dataset=train_dataset,
+    train_batch_size=8,
+    eval_dataset=eval_dataset,
+    learning_rate=0.000125,
+    lr_decay_epochs=[210, 240],
+    save_interval_epochs=20,
+    save_dir='output/yolov3_darknet53')
+</code></pre></div></div> <h2 id="3-预测-1"> <a href="#3-预测-1" class="anchor-heading" aria-labelledby="3-预测-1"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 3. 预测 </h2> <h3 id="31-预测-1"> <a href="#31-预测-1" class="anchor-heading" aria-labelledby="31-预测-1"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 3.1 预测 </h3> <p>使用模型进行预测，同时使用<code class="language-plaintext highlighter-rouge">pdx.det.visualize</code>将结果可视化，可视化结果将保存到<code class="language-plaintext highlighter-rouge">./output/yolov3_mobilenetv1</code>下，其中<code class="language-plaintext highlighter-rouge">threshold</code>代表<code class="language-plaintext highlighter-rouge">Box</code>的置信度阈值，将<code class="language-plaintext highlighter-rouge">Box</code>置信度低于该阈值的框过滤不进行可视化</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import paddlex as pdx
+model = pdx.load_model('output/yolov3_darknet53/best_model')
+image_path = './dataset/roadsign_det_dataset/JPEGImages/road554.png'
+result = model.predict(image_path)
+pdx.det.visualize(image_path, result, threshold=0.5, save_dir='./output/yolov3_darknet53')
+</code></pre></div></div> <p>预测的样例图片如下图：</p> <p><img src="https://ai-studio-static-online.cdn.bcebos.com/8fb35c64f3424a098858a3f75255f0d56c6f9c9d7e24438c8d1bc2cd71e838d4" width="50%" height="50%" /></p> <p>预测的结果是：</p> <blockquote> <p>speedlimit 0.77 预测正确 ✔</p> </blockquote><hr /> <h1 id="三图像分割快速在-paddlelabel-标注的狗子分割数据集上展示如何应用-paddlex-训练-deeplabv3-网络"> <a href="#三图像分割快速在-paddlelabel-标注的狗子分割数据集上展示如何应用-paddlex-训练-deeplabv3-网络" class="anchor-heading" aria-labelledby="三图像分割快速在-paddlelabel-标注的狗子分割数据集上展示如何应用-paddlex-训练-deeplabv3-网络"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 三、图像分割（快速在 PaddleLabel 标注的狗子分割数据集上展示如何应用 PaddleX 训练 DeepLabV3 网络） </h1> <p>PaddleLabel 标注数据+PaddleX 训练预测=快速完成一次图像语义分割的任务</p> <h2 id="1-数据准备-2"> <a href="#1-数据准备-2" class="anchor-heading" aria-labelledby="1-数据准备-2"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 1. 数据准备 </h2> <ul> <li>首先使用<code class="language-plaintext highlighter-rouge">PaddleLabel</code>对自制的狗子数据集进行标注，其次使用<code class="language-plaintext highlighter-rouge">Split Dataset</code>功能分割数据集，最后导出数据集</li> <li>从<code class="language-plaintext highlighter-rouge">PaddleLabel</code>导出后的内容全部放到自己的建立的文件夹下，例如<code class="language-plaintext highlighter-rouge">dataset/dog_seg_dataset</code>，其目录结构如下：</li> </ul> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>├── dog_seg_dataset
+│   ├── Annotations
+│   ├── JPEGImages
+│   ├── labels.txt
+│   ├── test_list.txt
+│   ├── train_list.txt
+│   ├── val_list.txt
+</code></pre></div></div> <h2 id="2-训练-2"> <a href="#2-训练-2" class="anchor-heading" aria-labelledby="2-训练-2"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 2. 训练 </h2> <h3 id="21-安装必备的库-2"> <a href="#21-安装必备的库-2" class="anchor-heading" aria-labelledby="21-安装必备的库-2"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 2.1 安装必备的库 </h3> <p><strong>2.1.1 安装 paddlepaddle</strong></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 您的机器安装的是 CUDA9 或 CUDA10，请运行以下命令安装
+pip install paddlepaddle-gpu -i https://mirror.baidu.com/pypi/simple
+# 您的机器是CPU，请运行以下命令安装
+# pip install paddlepaddle
+</code></pre></div></div> <p><strong>2.1.2 安装 PaddleX</strong></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install "paddlex&lt;=2.0.0" -i https://mirror.baidu.com/pypi/simple
+</code></pre></div></div> <h3 id="22-准备训练-2"> <a href="#22-准备训练-2" class="anchor-heading" aria-labelledby="22-准备训练-2"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 2.2 准备训练 </h3> <p><strong>2.2.1 配置 GPU</strong></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 设置使用0号GPU卡（如无GPU，执行此代码后仍然会使用CPU训练模型）
+import matplotlib
+matplotlib.use('Agg')
+import os
+os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+import paddlex as pdx
+</code></pre></div></div> <p><strong>2.2.2 定义图像处理流程 transforms</strong></p> <p>定义数据处理流程，其中训练和测试需分别定义，训练过程包括了部分测试过程中不需要的数据增强操作，如在本示例中，训练过程使用了<code class="language-plaintext highlighter-rouge">RandomHorizontalFlip</code>这种数据增强方式，更多图像预处理流程 transforms 的使用可参见<a href="https://paddlex.readthedocs.io/zh_CN/develop/apis/transforms/seg_transforms.html">paddlex.seg.transforms</a></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from paddlex import transforms as T
+train_transforms = T.Compose([
+    T.RandomHorizontalFlip(),
+    T.Resize(target_size=512),
+    T.Normalize()
+])
+
+eval_transforms = T.Compose([
+    T.Resize(target_size=512),
+    T.Normalize()
+])
+</code></pre></div></div> <p><strong>2.2.3 定义数据集 Dataset</strong> 语义分割使用<code class="language-plaintext highlighter-rouge">SegDataset</code>格式的数据集，因此采用<code class="language-plaintext highlighter-rouge">pdx.datasets.SegDataset</code>来加载数据集，该接口的介绍可参见文档<a href="https://paddlex.readthedocs.io/zh_CN/develop/apis/datasets.html#paddlex-datasets-segdataset">paddlex.datasets.SegDataset</a></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>train_dataset = pdx.datasets.SegDataset(
+    data_dir='./dataset/dog_seg_dataset',
+    file_list='./dataset/dog_seg_dataset/train_list.txt',
+    label_list='./dataset/dog_seg_dataset/labels.txt',
+    transforms=train_transforms,
+    shuffle=True)
+eval_dataset = pdx.datasets.SegDataset(
+    data_dir='./dataset/dog_seg_dataset',
+    file_list='./dataset/dog_seg_dataset/val_list.txt',
+    label_list='./dataset/dog_seg_dataset/labels.txt',
+    transforms=eval_transforms)
+</code></pre></div></div> <h3 id="23-模型开始训练-2"> <a href="#23-模型开始训练-2" class="anchor-heading" aria-labelledby="23-模型开始训练-2"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 2.3 模型开始训练 </h3> <p>在定义好数据集后，即可选择分割模型（这里使用了<code class="language-plaintext highlighter-rouge">deeplabv3</code>模型），开始进行训练。</p> <p>更多训练模型的参数介绍可参见文档<a href="https://paddlex.readthedocs.io/zh_CN/develop/apis/models/semantic_segmentation.html#paddlex-seg-deeplabv3p">paddlex.seg.DeepLabv3</a>，在如下代码中，模型训练过程每间隔<code class="language-plaintext highlighter-rouge">save_interval_epochs</code>轮会保存一次模型在<code class="language-plaintext highlighter-rouge">save_dir</code>目录下，同时在保存的过程中也会在验证数据集上计算相关指标，模型训练过程中相关日志的含义可参见<a href="https://paddlex.readthedocs.io/zh_CN/develop/appendix/metrics.html#id9">文档</a></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>num_classes = len(train_dataset.labels)
+model = pdx.seg.DeepLabV3P(num_classes=num_classes, backbone='ResNet50_vd')
+model.train(
+    num_epochs=40,
+    train_dataset=train_dataset,
+    train_batch_size=4,
+    eval_dataset=eval_dataset,
+    learning_rate=0.01,
+    save_interval_epochs=1,
+    save_dir='output/deeplab',
+    use_vdl=True)
+</code></pre></div></div> <h2 id="3-预测-2"> <a href="#3-预测-2" class="anchor-heading" aria-labelledby="3-预测-2"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 3. 预测 </h2> <h3 id="31-预测-2"> <a href="#31-预测-2" class="anchor-heading" aria-labelledby="31-预测-2"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 3.1 预测 </h3> <p>使用模型进行预测，同时使用<code class="language-plaintext highlighter-rouge">pdx.seg.visualize</code>将结果可视化，可视化结果将保存到<code class="language-plaintext highlighter-rouge">./output/deeplab</code>下，其中<code class="language-plaintext highlighter-rouge">weight</code>代表原图的权重，即 mask 可视化结果与原图权重因子。</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import paddlex as pdx
+model = pdx.load_model('output/deeplab/best_model')
+image_name = './dataset/dog_seg_dataset/JPEGImages/e619b17a9c1b9f085dc2712eb603171f.jpeg'
+result = model.predict(image_name)
+pdx.seg.visualize(image_name, result, weight=0.4, save_dir='./output/deeplab')
+</code></pre></div></div> <p>可视化结果如下所示：</p> <p><img src="https://ai-studio-static-online.cdn.bcebos.com/fec970f0e0fd4ddd96ad3d07b318d24c4f004376597946efbed4a599b652ffda" width="50%" height="50%" /> <img src="https://ai-studio-static-online.cdn.bcebos.com/783581c1e2f345029cccfc382e0dedc70b58f9b48120467383c923a7ab0401a7" width="50%" height="50%" /></p> <h2 id="ai-studio-第三方教程推荐"> <a href="#ai-studio-第三方教程推荐" class="anchor-heading" aria-labelledby="ai-studio-第三方教程推荐"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> AI Studio 第三方教程推荐 </h2> <p><a href="https://aistudio.baidu.com/aistudio/projectdetail/4383953">快速体验演示案例</a></p> <hr> <footer> <p class="text-small text-grey-dk-100 mb-0">PaddleLabel 以 <a href='https://github.com/PaddleCV-SIG/PaddleLabel/blob/develop/LICENSE'>Apache 2.0 协议</a>发行。本网站未引入任何访问统计</p> <div class="d-flex mt-2"> <p class="text-small text-grey-dk-000 mb-0 mr-2"> Page last modified: <span class="d-inline-block">2022-12-07 04:51 AM</span>. </p> <p class="text-small text-grey-dk-000 mb-0"> <a href="https://github.com/PaddleCV-SIG/PaddleLabel/edit/develop/doc/CN/training/PdLabel_PdX.md" id="edit-this-page">在 Github 上编辑此页面</a> </p> </div> </footer> </div> </div> </div> </body> </html>

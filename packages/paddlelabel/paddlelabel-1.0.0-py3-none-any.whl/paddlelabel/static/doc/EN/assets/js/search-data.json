@@ -1,0 +1,38 @@
+{"0": {
+    "doc": "Introduction",
+    "title": "Install",
+    "content": "Installing in a new enviroment is not required but suggested. conda create -n pplabel python=3.9 conda activate pplabel . pip . pip install paddlelabel paddlelabel . paddlelabel is now running at http://127.0.0.1:17995 . source . First clone this repo for backend code. git clone https://github.com/PaddleCV-SIG/PaddleLabel . Then clone and build frontend . git clone https://github.com/PaddleCV-SIG/PaddleLabel-Frontend cd PaddleLabel-Frontend npm install -g yarn yarn npm run build cd .. The last step is to copy built frontend to . cd PaddleLabel pip install -r requirements.txt mkdir paddlelabel/static/ cp -r ../PaddleLabel-Frontend/dist/* paddlelabel/static/ python setup.py install . ",
+    "url": "/static/doc/EN/#install",
+    "relUrl": "/#install"
+  },"1": {
+    "doc": "Introduction",
+    "title": "Run",
+    "content": "After installation, run PaddleLabel from command line with . paddlelabel . PaddleLabel is now avaliable at http://127.0.0.1:17995 . You can also choose to expose the service to lan. This way it’s possbile to run the service on a computer and annotate with a tablet. paddlelabel --lan . ",
+    "url": "/static/doc/EN/#run",
+    "relUrl": "/#run"
+  },"2": {
+    "doc": "Introduction",
+    "title": "Dataset Import/Export",
+    "content": "PaddleLabel currently support image classification, object detection and image segmentation projects. Please refer to the Dataset File Structure Documentation for more details. ",
+    "url": "/static/doc/EN/#dataset-importexport",
+    "relUrl": "/#dataset-importexport"
+  },"3": {
+    "doc": "Introduction",
+    "title": "Release Notes",
+    "content": ". | 2022.5.31: v0.1.0 [1] Support image classification, detection and segmentations. [2] Interactive image segmentation with EISeg models | . ",
+    "url": "/static/doc/EN/#release-notes",
+    "relUrl": "/#release-notes"
+  },"4": {
+    "doc": "Introduction",
+    "title": "Contribute",
+    "content": "Please refer to the Developers Guide for details on backend implementation. ",
+    "url": "/static/doc/EN/#contribute",
+    "relUrl": "/#contribute"
+  },"5": {
+    "doc": "Introduction",
+    "title": "Introduction",
+    "content": "| 中文 | English | . An efficient and flexible data annotation tool . PaddleLabel aims to become an effective and flexible data annotation tool. There are three parts to this project. This repo contains backend implementation. PaddleLabel-Frontend contains the React/Antd frontend. PaddleLabel-ML contains the machine learning backend for automatic and interactive models. ",
+    "url": "/static/doc/EN/",
+    "relUrl": "/"
+  }
+}
