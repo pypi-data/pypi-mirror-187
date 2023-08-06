@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: rchl-websocket
+Version: 0.1.2
+License: MIT
+Author-email: Mengsyue Amao Tsai <mengsyue.tsai@outlook.com>
+Requires-Python: >=3.11
+Requires-Dist: aiohttp>=3.8.3
+Description-Content-Type: text/markdown
+
+# rchl-websocket-client
+
+
+
