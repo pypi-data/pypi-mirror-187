@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: topsis-raunak-102017148
+Version: 1.0.0
+Summary: A Python package to get optimal solutiion.
+Author: Raunak Kumar
+Author-email: raunakkumar071201@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Description:
+Topsis Module is used in Decision Making.
+
+## Installation
+```pip install topsis-raunak-102017148```
+
+## How to use it? 
+Use topsis function pass a dataframe.
+
+## License
+© 2023 Raunak Kumar
+
+This repository is licensed under the MIT license.
+See LICENSE for details.
