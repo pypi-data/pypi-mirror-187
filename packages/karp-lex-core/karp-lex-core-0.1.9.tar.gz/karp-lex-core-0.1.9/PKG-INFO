@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: karp-lex-core
+Version: 0.1.9
+Summary: The domain of the lexical platform Karp
+License: MIT
+Author-email: Kristoffer Andersson <kristoffer.andersson@gu.se>
+Requires-Python: >=3.10
+Project-URL: Bug Tracker, https://github.com/spraakbanken/karp-lex/issues
+Project-URL: changelog, https://github.com/spraakbanken/karp-lex/blob/main/CHANGELOG.md
+Project-URL: homepage, https://github.com/spraakbanken/karp-lex
+Project-URL: repository, https://github.com/spraakbanken/karp-lex
+Description-Content-Type: text/markdown
+
+# karp-lex-core
+The core for karp-lex
+
+
