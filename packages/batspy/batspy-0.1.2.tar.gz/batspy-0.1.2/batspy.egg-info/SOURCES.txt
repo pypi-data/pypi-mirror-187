@@ -1,0 +1,6 @@
+README.md
+setup.py
+batspy.egg-info/PKG-INFO
+batspy.egg-info/SOURCES.txt
+batspy.egg-info/dependency_links.txt
+batspy.egg-info/top_level.txt
