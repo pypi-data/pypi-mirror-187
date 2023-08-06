@@ -1,0 +1,7 @@
+numpy
+scipy
+srsgui>=0.1.12
+
+[full]
+matplotlib
+pyside6
