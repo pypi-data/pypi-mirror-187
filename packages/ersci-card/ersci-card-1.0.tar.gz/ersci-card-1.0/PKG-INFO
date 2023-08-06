@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ersci-card
+Version: 1.0
+Summary: Ecard is a Django app to create personeli card.
+Home-page: https://github.com/epg900/ersci-card.git
+Author: epg
+Author-email: epg900@gmail.com
+License: GNU GENERAL PUBLIC LICENSE
+Platform: UNKNOWN
+Requires-Python: >=3.7
+License-File: LICENSE
+
+UNKNOWN
+

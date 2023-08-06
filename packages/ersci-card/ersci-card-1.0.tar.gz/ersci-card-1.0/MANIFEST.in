@@ -1,0 +1,5 @@
+include LICENSE
+include README.md
+recursive-include ecard/static *
+recursive-include ecard/templates *
+recursive-include ecard/media *
