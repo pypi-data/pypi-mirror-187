@@ -1,0 +1,17 @@
+jupyterlab_ui_profiler/__init__.py,sha256=RIyiNcUjPzvODZb_QD7457FNPm6w7AbouRxZFnDZuCQ,1119
+jupyterlab_ui_profiler/_version.py,sha256=22lKR8WJPIb6KznOmav2WcGEPgm_NqcxIZ8xjNCJMEo,87
+jupyterlab_ui_profiler-0.1.6.data/data/etc/jupyter/jupyter_notebook_config.d/jupyterlab_ui_profiler.json,sha256=h2h6T8XCzPulW7TEX3qJh79DhmFr1U3tY16FDQNkXoo,99
+jupyterlab_ui_profiler-0.1.6.data/data/etc/jupyter/jupyter_server_config.d/jupyterlab_ui_profiler.json,sha256=LN6KFR__UEPEQtswJWm6wLQhE1NdH9AbcpeLxunC7cw,97
+jupyterlab_ui_profiler-0.1.6.data/data/share/jupyter/labextensions/@jupyterlab/ui-profiler/package.json,sha256=SlQHwxoVYExxWCPUl51Cycf1rM6lIJNacAZb1emqZuQ,4076
+jupyterlab_ui_profiler-0.1.6.data/data/share/jupyter/labextensions/@jupyterlab/ui-profiler/static/145.7e46e1abf0231a5abfe0.js,sha256=fkbhq_AjGlq_4L5_D3Pw4sCnbRsD-pFED3FZ_47nuHg,63830
+jupyterlab_ui_profiler-0.1.6.data/data/share/jupyter/labextensions/@jupyterlab/ui-profiler/static/511.1df2ebecdaf3f69244bc.js,sha256=Fw0_K1CiQlZao-aMFFoR4qGGfkU3F0-f8dc02BBWerQ,373640
+jupyterlab_ui_profiler-0.1.6.data/data/share/jupyter/labextensions/@jupyterlab/ui-profiler/static/511.1df2ebecdaf3f69244bc.js.LICENSE.txt,sha256=pCJ-RKkKiuAkUddZ5anKwABnEWFxteQFYpffNYJOlkc,394
+jupyterlab_ui_profiler-0.1.6.data/data/share/jupyter/labextensions/@jupyterlab/ui-profiler/static/747.cddb110f7b8c43b31d07.js,sha256=zdsRD3uMQ7MdB16OI-XG4fAB-iuXVzZHG5_dQKuD_Oo,11327
+jupyterlab_ui_profiler-0.1.6.data/data/share/jupyter/labextensions/@jupyterlab/ui-profiler/static/remoteEntry.3636723f863fb4c40271.js,sha256=NjZyP4Y_tMQCcTIdOGwfu7dYUGQDQPqpQ0KB1oRFQ1E,7445
+jupyterlab_ui_profiler-0.1.6.data/data/share/jupyter/labextensions/@jupyterlab/ui-profiler/static/style.js,sha256=noSl86aSZb_LEGH5E4mBe6uv0FQFOtUwp5jWM0oVAYU,166
+jupyterlab_ui_profiler-0.1.6.data/data/share/jupyter/labextensions/@jupyterlab/ui-profiler/static/third-party-licenses.json,sha256=0o-e2SHZFRFz-vgBVC060SStJ_r-pL_btzvgMZPXrjA,58872
+jupyterlab_ui_profiler-0.1.6.data/data/share/jupyter/labextensions/@jupyterlab/ui-profiler/install.json,sha256=KrZKwiS7J7J6i0Lm2GMfstiWKeQtiInq57jTz0F4DjY,205
+jupyterlab_ui_profiler-0.1.6.dist-info/METADATA,sha256=NY5PgtiCEEpkmoJnE_4aV0DKd-09qRefd_szS1oSlaQ,7922
+jupyterlab_ui_profiler-0.1.6.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+jupyterlab_ui_profiler-0.1.6.dist-info/licenses/LICENSE,sha256=yqoWpZNtQT1y34P3Wet_L_cQCvf_hnIb0FpBHvtaJ8A,1536
+jupyterlab_ui_profiler-0.1.6.dist-info/RECORD,,
