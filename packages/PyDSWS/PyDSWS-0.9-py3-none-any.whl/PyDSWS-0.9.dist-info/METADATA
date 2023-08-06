@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: PyDSWS
+Version: 0.9
+Summary: Python package for Thomson Reuters Datastream Webservices (DSWS)
+Home-page: https://github.com/hoenie-ams/PyDSWS
+Author: Joris Hoendervangers
+Author-email: j.h.hoendervangers@gmail.com
+License: MIT
+Requires-Python: >=3
+Requires-Dist: pandas
+Requires-Dist: requests
+
+Python package for Thomson Reuters Datastream Webservices (DSWS)
