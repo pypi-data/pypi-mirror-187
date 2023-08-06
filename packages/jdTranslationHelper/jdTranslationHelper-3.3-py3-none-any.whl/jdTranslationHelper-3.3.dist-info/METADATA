@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: jdTranslationHelper
+Version: 3.3
+Summary: A simple API for translating your programs
+Author-email: JakobDev <jakobdev@gmx.de>
+License: BSD-2-Clause
+Project-URL: Issues, https://codeberg.org/JakobDev/jdTranslationHelper/issues
+Project-URL: Source, https://codeberg.org/JakobDev/jdTranslationHelper
+Project-URL: Donation, https://ko-fi.com/jakobdev
+Keywords: JakobDev,translation,localization
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Other Environment
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: BSD
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# jdTranslationHelper
+With jdTranslationHelper you can translate your programs. The translation files are .lang files which has ths format:
+```
+key=Hello World
+test=This is a test
+```
+The files are in a folder named after the language code e.g. en_GB.lang
+
+Here is a example how to use this API:
+```python
+from jdTranslationHelper import jdTranslationHelper
+
+translations = jdTranslationHelper()
+translations.loadDirectory("/home/User/translations")
+print(translatios.translate("test"))
+```
+If we place the above en_GB.lang file in /home/User/translations, it will print This is a test. You can create files for any language.
+
+You can also call jdTranslationHelper with arguemnts:  
+lang=The language which should be loaded. If not specified, it will use the system language.  
+defaultLanguage=The language that will be usesd, if there is no file with the system language. Default is en_GB.  
+
+translate takes this argument:  
+default: That will be returned, if the given key doesn't exists.
+
+You can get alls Strings with getStrings().
