@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: PyCryptor
+Version: 0.1.1
+Summary: cli tool for encrypting and decrypting files
+Home-page: https://github.com/Serphyus/PyCryptor
+Author: Serphy
+Author-email: serphyus@gmail.com
+License: MIT
+Keywords: cryptography,cli,file-encryption
+Platform: Linux
+Platform: Mac OSX
+Platform: Windows
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Console
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: Natural Language :: English
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pycryptodome
+Requires-Dist: rich
+
+# PyCrypytor
+
+PyCryptor is a cli tool used for encrypting/decrypting files. The tool uses EAX signature verification and CBC cipher. The password provided by the user is used as a 256-bit symmetric key after getting hashed 100 000 times.
+
+## Installation
+```
+$ pip install PyCryptor
+```
+
+## Usage
+
+- :lock: Encrypting files
+```
+$ pycryptor -e -k 12345 test_files/*
+ ╔═════════════════════════════════════════════════════════╗
+ ║      ____        ______                 __              ║
+ ║     / __ \__  __/ ____/______  ______  / /_____  _____  ║
+ ║    / /_/ / / / / /   / ___/ / / / __ \/ __/ __ \/ ___/  ║
+ ║   / ____/ /_/ / /___/ /  / /_/ / /_/ / /_/ /_/ / /      ║
+ ║  /_/    \__, /\____/_/   \__, / .___/\__/\____/_/       ║
+ ║        /____/           /____/_/                        ║
+ ║                                                         ║
+ ╚═════════════════════════════════════════════════════════╝
+
+ operation mode : encrypt
+ total files    : 3 files
+ buffer size    : 4096
+
+ file_1.txt ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+ file_2.txt ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+ file_3.txt ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+```
+
+- :unlock: Encrypting files
+```
+$ pycryptor -d -k 12345 test_files/*
+ ╔═════════════════════════════════════════════════════════╗
+ ║      ____        ______                 __              ║
+ ║     / __ \__  __/ ____/______  ______  / /_____  _____  ║
+ ║    / /_/ / / / / /   / ___/ / / / __ \/ __/ __ \/ ___/  ║
+ ║   / ____/ /_/ / /___/ /  / /_/ / /_/ / /_/ /_/ / /      ║
+ ║  /_/    \__, /\____/_/   \__, / .___/\__/\____/_/       ║
+ ║        /____/           /____/_/                        ║
+ ║                                                         ║
+ ╚═════════════════════════════════════════════════════════╝
+
+ operation mode : decrypt
+ total files    : 3 files
+ buffer size    : 4096
+
+ file_1.txt ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+ file_2.txt ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+ file_3.txt ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+```
