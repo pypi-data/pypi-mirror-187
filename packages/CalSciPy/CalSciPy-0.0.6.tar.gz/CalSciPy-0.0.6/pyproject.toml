@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "CalSciPy"
+version = "0.0.6"
+description = "A collection"
+readme = "README.md"
+requires-python = ">=3.7, <4"
+license = {file = "LICENSE"}
+keywords = ["CalSciPy", "Calcium Imaging"]
+authors = [
+  {name = "Darik A. O'Neil"}
+]
+maintainers = [
+    {name = "Darik A. O'Neil"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python"
+]
+
+dependencies = [
+    "imageio",
+    "imageio[ffmpeg]",
+    "numpy",
+    "pillow",
+    "prettytable",
+    "tifffile",
+    "tqdm"
+]
