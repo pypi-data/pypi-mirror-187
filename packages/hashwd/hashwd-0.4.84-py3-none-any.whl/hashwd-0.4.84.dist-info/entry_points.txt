@@ -1,0 +1,3 @@
+[console_scripts]
+hashwd=hashwd.__main__:main
+
