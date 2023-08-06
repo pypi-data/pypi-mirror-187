@@ -1,0 +1,100 @@
+name: Run tests
+
+on:
+  push:
+    branches:
+      - dev
+  pull_request:
+    branches:
+      - dev
+      - main
+
+jobs:
+  build:
+    name: "Testing Cpython version compatibility"
+    # Avoid executing the same stuff twice: filter out pull requests from dev branch
+    if: >
+      github.event_name == 'push' || ! (
+        github.event_name == 'pull_request' &&
+        github.event.pull_request.head.repo.full_name == github.repository &&
+        github.head_ref == 'dev'
+      )
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["2.7", "3.7", "3.8", "3.9", "3.10"]
+    steps:
+      - name: Dump GitHub context
+        run: echo '${{ toJSON(github) }}'
+
+      - uses: actions/checkout@v3
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install 'runme'
+        uses: ./.github/actions/install-runme
+        with:
+          version: 0.3.0
+
+      - name: Install dev dependencies
+        run: runme deps
+
+      - name: Run tests
+        run: runme test
+
+  jython:
+    name: "Testing Jython compatibility"
+    # Avoid executing the same stuff twice: filter out pull requests from dev branch
+    if: >
+      github.event_name == 'push' || ! (
+        github.event_name == 'pull_request' &&
+        github.event.pull_request.head.repo.full_name == github.repository &&
+        github.head_ref == 'dev'
+      )
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+#
+#      - name: Install 'runme'
+#        uses: ./.github/actions/install-runme
+#        with:
+#          version: 0.3.0
+#
+#      - name: Test Jython
+#        run: runme jython.test
+
+  lint:
+    name: "Extended build with linting and coverage"
+    # Avoid executing the same stuff twice: filter out pull requests from dev branch
+    if: >
+      github.event_name == 'push' || ! (
+        github.event_name == 'pull_request' &&
+        github.event.pull_request.head.repo.full_name == github.repository &&
+        github.head_ref == 'dev'
+      )
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install 'runme'
+        uses: ./.github/actions/install-runme
+        with:
+          version: 0.3.0
+
+      - name: Install dependencies
+        run: runme deps
+
+      - name: Run linters
+        run: runme lint
+
+      - name: Test with pytest and calculate coverage
+        run: runme coverage
