@@ -1,0 +1,12 @@
+AUTHORS.md
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/eazypredict/EazyClassifier.py
+src/eazypredict/EazyRegressor.py
+src/eazypredict/__init__.py
+src/eazypredict.egg-info/PKG-INFO
+src/eazypredict.egg-info/SOURCES.txt
+src/eazypredict.egg-info/dependency_links.txt
+src/eazypredict.egg-info/top_level.txt
