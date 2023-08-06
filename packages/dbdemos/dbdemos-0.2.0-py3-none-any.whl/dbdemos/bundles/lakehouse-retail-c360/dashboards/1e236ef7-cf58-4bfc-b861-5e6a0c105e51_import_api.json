@@ -1,0 +1,1048 @@
+{
+    "queries": [
+        {
+            "id": "8012796b-2a8e-4231-bf7d-c7e9a0fc348b",
+            "name": "Churn - Predicted Churn Percent Payment Method - Universal",
+            "description": null,
+            "query": "-- select * from dbdemos_c360.churn_features;\n\nSELECT p.country, p.churn, count(*) as customers\n\tFROM dbdemos_c360.churn_features p\n\tGROUP BY p.country, p.churn\n\t",
+            "options": {
+                "parent": "folders/3038222510006593",
+                "apply_auto_limit": false,
+                "folder_node_status": "ACTIVE",
+                "folder_node_internal_name": "tree/791251337299913",
+                "parameters": []
+            },
+            "visualizations": [
+                {
+                    "id": "0137836c-bd98-46b9-8a0a-776db3d77aa5",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "query_plan": null
+                },
+                {
+                    "id": "23ea5a2f-2807-43a0-a941-236511b648c4",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "query_plan": null
+                },
+                {
+                    "id": "40826a80-0a87-4ca7-b6b4-185af17667d0",
+                    "type": "CHART",
+                    "name": "Percent Predicted Churn - Payment Method",
+                    "description": "",
+                    "options": {
+                        "version": 2,
+                        "globalSeriesType": "column",
+                        "sortX": true,
+                        "sortY": true,
+                        "legend": {
+                            "traceorder": "normal",
+                            "enabled": true,
+                            "placement": "auto"
+                        },
+                        "xAxis": {
+                            "type": "-",
+                            "labels": {
+                                "enabled": true
+                            },
+                            "title": {
+                                "text": "paymentMethod"
+                            }
+                        },
+                        "yAxis": [
+                            {
+                                "type": "linear",
+                                "title": {
+                                    "text": "Customers"
+                                }
+                            },
+                            {
+                                "type": "linear",
+                                "opposite": true,
+                                "title": {
+                                    "text": null
+                                }
+                            }
+                        ],
+                        "alignYAxesAtZero": false,
+                        "error_y": {
+                            "type": "data",
+                            "visible": true
+                        },
+                        "series": {
+                            "stacking": "",
+                            "error_y": {
+                                "type": "data",
+                                "visible": true
+                            },
+                            "percentValues": true
+                        },
+                        "seriesOptions": {
+                            "customers": {
+                                "yAxis": 0
+                            },
+                            "FR": {
+                                "color": "#F6C17F"
+                            },
+                            "SPAIN": {
+                                "color": "#AB506F"
+                            },
+                            "USA": {
+                                "color": "#87BFE0"
+                            }
+                        },
+                        "valuesOptions": {},
+                        "direction": {
+                            "type": "counterclockwise"
+                        },
+                        "sizemode": "diameter",
+                        "coefficient": 1,
+                        "numberFormat": "0,0[.]00000",
+                        "percentFormat": "0[.]00%",
+                        "textFormat": "",
+                        "missingValuesAsZero": true,
+                        "useAggregationsUi": false,
+                        "swappedAxes": false,
+                        "dateTimeFormat": "YYYY-MM-DD HH:mm",
+                        "showDataLabels": false,
+                        "columnConfigurationMap": {
+                            "x": {
+                                "column": "churn"
+                            },
+                            "y": [
+                                {
+                                    "column": "customers"
+                                }
+                            ],
+                            "yError": {
+                                "column": null
+                            },
+                            "series": {
+                                "column": "country"
+                            }
+                        },
+                        "showPlotlyControls": true,
+                        "condensed": true,
+                        "withRowNumber": true,
+                        "isAggregationOn": false
+                    },
+                    "query_plan": null
+                },
+                {
+                    "id": "598bfda0-cabf-4958-8f87-d6c55e2e9eae",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "query_plan": null
+                }
+            ]
+        },
+        {
+            "id": "37e44b62-87d5-44fa-845a-16335a3e29f2",
+            "name": "Churn - Subscriptions based on Internet Service - Universal (15)",
+            "description": null,
+            "query": "select platform, churn, count(*) as event_count from dbdemos_c360.churn_app_events inner join dbdemos_c360.churn_users using (user_id) where platform is not null\ngroup by platform, churn",
+            "options": {
+                "parent": "folders/3038222510006593",
+                "apply_auto_limit": false,
+                "folder_node_status": "ACTIVE",
+                "folder_node_internal_name": "tree/791251337294427",
+                "parameters": []
+            },
+            "visualizations": [
+                {
+                    "id": "76d5a122-1d47-4ba0-bd07-0143f62211fb",
+                    "type": "CHART",
+                    "name": "Chart",
+                    "description": "",
+                    "options": {
+                        "version": 2,
+                        "globalSeriesType": "column",
+                        "sortX": true,
+                        "sortY": true,
+                        "legend": {
+                            "traceorder": "normal",
+                            "enabled": true,
+                            "placement": "auto"
+                        },
+                        "xAxis": {
+                            "type": "-",
+                            "labels": {
+                                "enabled": true
+                            },
+                            "title": {
+                                "text": "platforms"
+                            }
+                        },
+                        "yAxis": [
+                            {
+                                "type": "linear",
+                                "title": {
+                                    "text": "in-app events"
+                                }
+                            },
+                            {
+                                "type": "linear",
+                                "opposite": true,
+                                "title": {
+                                    "text": "streaming_movies_count"
+                                }
+                            }
+                        ],
+                        "alignYAxesAtZero": false,
+                        "error_y": {
+                            "type": "data",
+                            "visible": true
+                        },
+                        "series": {
+                            "stacking": "",
+                            "error_y": {
+                                "type": "data",
+                                "visible": true
+                            }
+                        },
+                        "seriesOptions": {
+                            "0": {
+                                "color": "#87BFE0"
+                            },
+                            "1": {
+                                "color": "#AB506F"
+                            },
+                            "event_count": {
+                                "yAxis": 0
+                            }
+                        },
+                        "valuesOptions": {},
+                        "direction": {
+                            "type": "counterclockwise"
+                        },
+                        "sizemode": "diameter",
+                        "coefficient": 1,
+                        "numberFormat": "0,0[.]00000",
+                        "percentFormat": "0[.]00%",
+                        "textFormat": "",
+                        "missingValuesAsZero": true,
+                        "useAggregationsUi": false,
+                        "swappedAxes": true,
+                        "dateTimeFormat": "YYYY-MM-DD HH:mm",
+                        "showDataLabels": false,
+                        "columnConfigurationMap": {
+                            "x": {
+                                "column": "platform"
+                            },
+                            "y": [
+                                {
+                                    "column": "event_count"
+                                }
+                            ],
+                            "series": {
+                                "column": "churn"
+                            },
+                            "yError": {
+                                "column": "platform"
+                            }
+                        },
+                        "showPlotlyControls": true,
+                        "condensed": true,
+                        "withRowNumber": true,
+                        "isAggregationOn": false
+                    },
+                    "query_plan": null
+                },
+                {
+                    "id": "7f28d571-8c02-450f-9bd1-07625a0c6a98",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "query_plan": null
+                },
+                {
+                    "id": "df12696d-f949-4923-98ea-ac4a8f7206cb",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "query_plan": null
+                }
+            ]
+        },
+        {
+            "id": "33f4ab55-12a6-4a6a-952c-91c73b9d8ae8",
+            "name": "Churn - Predictions - Universal",
+            "description": null,
+            "query": "SELECT cast(days_since_creation/30 as int) as days_since_creation, churn, count(*) as customers\n   FROM dbdemos_c360.churn_features\n   GROUP BY days_since_creation, churn having days_since_creation < 1000 ",
+            "options": {
+                "parent": "folders/3038222510006593",
+                "apply_auto_limit": false,
+                "folder_node_status": "ACTIVE",
+                "folder_node_internal_name": "tree/791251337299919",
+                "parameters": []
+            },
+            "visualizations": [
+                {
+                    "id": "1bbb633f-0280-4464-8d4a-55360e986bfa",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "query_plan": null
+                },
+                {
+                    "id": "1f80f500-38a8-4388-829d-1b875cb49f78",
+                    "type": "CHART",
+                    "name": "Churn - Customer Tenure",
+                    "description": "",
+                    "options": {
+                        "version": 2,
+                        "globalSeriesType": "column",
+                        "sortX": true,
+                        "sortY": true,
+                        "legend": {
+                            "traceorder": "normal",
+                            "enabled": true,
+                            "placement": "auto"
+                        },
+                        "xAxis": {
+                            "type": "-",
+                            "labels": {
+                                "enabled": true
+                            },
+                            "title": {
+                                "text": "tenure"
+                            }
+                        },
+                        "yAxis": [
+                            {
+                                "type": "linear",
+                                "title": {
+                                    "text": "customers"
+                                }
+                            },
+                            {
+                                "type": "linear",
+                                "opposite": true,
+                                "title": {
+                                    "text": null
+                                }
+                            }
+                        ],
+                        "alignYAxesAtZero": false,
+                        "error_y": {
+                            "type": "data",
+                            "visible": true
+                        },
+                        "series": {
+                            "stacking": null,
+                            "error_y": {
+                                "type": "data",
+                                "visible": true
+                            }
+                        },
+                        "seriesOptions": {
+                            "0": {
+                                "color": "#87BFE0"
+                            },
+                            "1": {
+                                "color": "#AB506F"
+                            },
+                            "customers": {
+                                "yAxis": 0
+                            }
+                        },
+                        "valuesOptions": {},
+                        "direction": {
+                            "type": "counterclockwise"
+                        },
+                        "sizemode": "diameter",
+                        "coefficient": 1,
+                        "numberFormat": "0,0[.]00000",
+                        "percentFormat": "0[.]00%",
+                        "textFormat": "",
+                        "missingValuesAsZero": true,
+                        "useAggregationsUi": false,
+                        "swappedAxes": false,
+                        "dateTimeFormat": "YYYY-MM-DD HH:mm",
+                        "showDataLabels": false,
+                        "columnConfigurationMap": {
+                            "x": {
+                                "column": "days_since_creation"
+                            },
+                            "y": [
+                                {
+                                    "column": "customers"
+                                }
+                            ],
+                            "series": {
+                                "column": "churn"
+                            }
+                        },
+                        "showPlotlyControls": true,
+                        "condensed": true,
+                        "withRowNumber": true,
+                        "isAggregationOn": false
+                    },
+                    "query_plan": null
+                },
+                {
+                    "id": "5aa43732-e116-4467-9fb4-7f4a9f342411",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "query_plan": null
+                },
+                {
+                    "id": "a7083824-c95e-4e97-81cf-e52df7fa8535",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "query_plan": null
+                }
+            ]
+        },
+        {
+            "id": "a1e9a2dd-92ec-4ec5-8120-ac8e976abf97",
+            "name": "Churn - At-Risk Customers - Universal",
+            "description": null,
+            "query": "SELECT count(*)/12 as at_risk FROM dbdemos_c360.churn_users WHERE churn=1",
+            "options": {
+                "parent": "folders/3038222510006593",
+                "apply_auto_limit": false,
+                "folder_node_status": "ACTIVE",
+                "folder_node_internal_name": "tree/791251337299911",
+                "parameters": []
+            },
+            "visualizations": [
+                {
+                    "id": "2f3cb0b2-7fd0-4a9a-bec6-5d2798116926",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "query_plan": null
+                },
+                {
+                    "id": "4c56bab7-f327-4e2b-be77-11242cac562d",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "query_plan": null
+                },
+                {
+                    "id": "57337a18-8480-4443-8ead-ffcf5c3eb8e4",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "query_plan": null
+                },
+                {
+                    "id": "d6473f78-9ec7-4f50-aec1-ded989afa5c9",
+                    "type": "COUNTER",
+                    "name": "At-Risk Customers",
+                    "description": "",
+                    "options": {
+                        "counterLabel": "",
+                        "counterColName": "at_risk",
+                        "rowNumber": 1,
+                        "targetRowNumber": 1,
+                        "stringDecimal": 0,
+                        "stringDecChar": ".",
+                        "stringThouSep": ",",
+                        "tooltipFormat": "0,0.000",
+                        "showPlotlyControls": true,
+                        "condensed": true,
+                        "withRowNumber": true
+                    },
+                    "query_plan": null
+                }
+            ]
+        },
+        {
+            "id": "aa958e2f-f5de-436b-9d00-49142ade05b3",
+            "name": "Churn - Monthly Revenue Risk - Universal",
+            "description": null,
+            "query": "SELECT sum(amount)/100 as MRR_at_risk FROM dbdemos_c360.churn_orders o WHERE month(to_timestamp(transaction_date, 'MM-dd-yyyy HH:mm:ss')) = \n      (select max(month(to_timestamp(transaction_date, 'MM-dd-yyyy HH:mm:ss'))) from dbdemos_c360.churn_orders) and user_id in (SELECT user_id FROM dbdemos_c360.churn_users WHERE churn=1);",
+            "options": {
+                "parent": "folders/3038222510006593",
+                "apply_auto_limit": false,
+                "folder_node_status": "ACTIVE",
+                "folder_node_internal_name": "tree/791251337299910",
+                "parameters": []
+            },
+            "visualizations": [
+                {
+                    "id": "1df52a45-c07b-4049-991e-7958dbdb76f5",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "query_plan": null
+                },
+                {
+                    "id": "932a18ca-c93f-4e09-a4d2-8e9355e72d5e",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "query_plan": null
+                },
+                {
+                    "id": "9d620b93-39ac-4b7e-b34d-966c18a2d0cb",
+                    "type": "COUNTER",
+                    "name": "MRR at Risk ($)",
+                    "description": "",
+                    "options": {
+                        "counterLabel": "",
+                        "counterColName": "MRR_at_risk",
+                        "rowNumber": 1,
+                        "targetRowNumber": 1,
+                        "stringDecimal": 0,
+                        "stringDecChar": ".",
+                        "stringThouSep": ",",
+                        "tooltipFormat": "0,0.000",
+                        "showPlotlyControls": true,
+                        "condensed": true,
+                        "withRowNumber": true,
+                        "stringPrefix": "$"
+                    },
+                    "query_plan": null
+                },
+                {
+                    "id": "af4cccb6-b5e8-499a-9275-574be6ff82fb",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "query_plan": null
+                }
+            ]
+        },
+        {
+            "id": "37bb515c-b46d-46bb-8ce3-52ce218bc6cf",
+            "name": "Churn - Predicted to Churn - Universal",
+            "description": null,
+            "query": "SELECT user_id, churn from dbdemos_c360.churn_users where churn=1",
+            "options": {
+                "parent": "folders/3038222510006593",
+                "apply_auto_limit": false,
+                "folder_node_status": "ACTIVE",
+                "folder_node_internal_name": "tree/791251337299916",
+                "parameters": []
+            },
+            "visualizations": [
+                {
+                    "id": "32e9a1ba-7a56-4dad-98c2-136d83cbccf7",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {},
+                    "query_plan": null
+                },
+                {
+                    "id": "4af85586-2269-4b4d-b911-145cad32cd81",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {},
+                    "query_plan": null
+                },
+                {
+                    "id": "6a069c34-b41b-48cd-8586-0e6dcc7d1fd6",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {},
+                    "query_plan": null
+                },
+                {
+                    "id": "70a5db8e-2e24-44d9-a379-aaf6ed83abe3",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {},
+                    "query_plan": null
+                }
+            ]
+        },
+        {
+            "id": "4f2dbfdc-5037-4a57-84a7-b314c326738a",
+            "name": "Churn - Customer Breakdown - Universal",
+            "description": null,
+            "query": "SELECT canal, count(*) as users_count\n\tFROM dbdemos_c360.churn_features  WHERE churn =1  and canal is not null GROUP BY canal ",
+            "options": {
+                "parent": "folders/3038222510006593",
+                "apply_auto_limit": false,
+                "folder_node_status": "ACTIVE",
+                "folder_node_internal_name": "tree/791251337299918",
+                "parameters": []
+            },
+            "visualizations": [
+                {
+                    "id": "0b52e58c-13f5-4baa-ba98-89464d08c37f",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "query_plan": null
+                },
+                {
+                    "id": "9bcfeb06-611e-4507-93be-8a83c0064e7c",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "query_plan": null
+                },
+                {
+                    "id": "bcac7f48-5647-4f07-87d1-6f025a6548b1",
+                    "type": "CHART",
+                    "name": "At Risk Customers - By canal",
+                    "description": "",
+                    "options": {
+                        "version": 2,
+                        "globalSeriesType": "pie",
+                        "sortX": true,
+                        "sortY": true,
+                        "legend": {
+                            "traceorder": "normal",
+                            "enabled": true,
+                            "placement": "auto"
+                        },
+                        "xAxis": {
+                            "type": "-",
+                            "labels": {
+                                "enabled": true
+                            },
+                            "title": {
+                                "text": "deviceProtection"
+                            }
+                        },
+                        "yAxis": [
+                            {
+                                "type": "linear",
+                                "title": {
+                                    "text": "Customers"
+                                }
+                            },
+                            {
+                                "type": "linear",
+                                "opposite": true,
+                                "title": {
+                                    "text": null
+                                }
+                            }
+                        ],
+                        "alignYAxesAtZero": false,
+                        "error_y": {
+                            "type": "data",
+                            "visible": true
+                        },
+                        "series": {
+                            "stacking": null,
+                            "error_y": {
+                                "type": "data",
+                                "visible": true
+                            }
+                        },
+                        "seriesOptions": {
+                            "users_count": {
+                                "yAxis": 0
+                            }
+                        },
+                        "valuesOptions": {
+                            "No": {
+                                "color": "#87BFE0"
+                            },
+                            "Yes": {
+                                "color": "#AB506F"
+                            },
+                            "PHONE": {
+                                "color": "#F6C17F"
+                            },
+                            "WEBAPP": {
+                                "color": "#AB506F"
+                            },
+                            "MOBILE": {
+                                "color": "#87BFE0"
+                            }
+                        },
+                        "direction": {
+                            "type": "counterclockwise"
+                        },
+                        "sizemode": "diameter",
+                        "coefficient": 1,
+                        "numberFormat": "0,0[.]00000",
+                        "percentFormat": "0[.]00%",
+                        "textFormat": "",
+                        "missingValuesAsZero": true,
+                        "useAggregationsUi": false,
+                        "swappedAxes": false,
+                        "dateTimeFormat": "YYYY-MM-DD HH:mm",
+                        "showDataLabels": true,
+                        "columnConfigurationMap": {
+                            "x": {
+                                "column": "canal"
+                            },
+                            "y": [
+                                {
+                                    "column": "users_count"
+                                }
+                            ]
+                        },
+                        "showPlotlyControls": true,
+                        "condensed": true,
+                        "withRowNumber": true,
+                        "isAggregationOn": false
+                    },
+                    "query_plan": null
+                },
+                {
+                    "id": "f4e1069a-14d2-49a4-bea1-0abc05d080b1",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "query_plan": null
+                }
+            ]
+        },
+        {
+            "id": "ddf9f685-b694-4c70-a7a7-c9791b95ff75",
+            "name": "Churn - Total MRR - Universal (14)",
+            "description": null,
+            "query": "SELECT sum(amount)/100 as MRR FROM dbdemos_c360.churn_orders o WHERE month(to_timestamp(transaction_date, 'MM-dd-yyyy HH:mm:ss')) = \n      (select max(month(to_timestamp(transaction_date, 'MM-dd-yyyy HH:mm:ss'))) from dbdemos_c360.churn_orders);",
+            "options": {
+                "parent": "folders/3038222510006593",
+                "apply_auto_limit": false,
+                "folder_node_status": "ACTIVE",
+                "folder_node_internal_name": "tree/791251337299915",
+                "parameters": []
+            },
+            "visualizations": [
+                {
+                    "id": "05aa88ef-47e6-43c1-a1a5-5c6a1e33d1e8",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "query_plan": null
+                },
+                {
+                    "id": "1e792306-5acd-436c-b6a5-51c20d9667bb",
+                    "type": "COUNTER",
+                    "name": "MRR ($)",
+                    "description": "",
+                    "options": {
+                        "counterLabel": "",
+                        "counterColName": "MRR",
+                        "rowNumber": 1,
+                        "targetRowNumber": 1,
+                        "stringDecimal": 0,
+                        "stringDecChar": ".",
+                        "stringThouSep": ",",
+                        "tooltipFormat": "0,0.000",
+                        "showPlotlyControls": true,
+                        "stringSuffix": "",
+                        "stringPrefix": "$",
+                        "condensed": true,
+                        "withRowNumber": true
+                    },
+                    "query_plan": null
+                },
+                {
+                    "id": "4ebb1468-05cc-4342-a7c2-d1f7331f0a73",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "query_plan": null
+                },
+                {
+                    "id": "a2c12f25-abde-4339-bbf8-443ae995e0e1",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "query_plan": null
+                }
+            ]
+        }
+    ],
+    "dashboard": {
+        "id": "1e236ef7-cf58-4bfc-b861-5e6a0c105e51",
+        "name": "Churn Prediction Dashboard - Universal",
+        "widgets": [
+            {
+                "id": "12728947-60cc-48eb-b539-28b2f408d8be",
+                "width": 1,
+                "options": {
+                    "parameterMappings": {},
+                    "title": "At Risk Customers - Have Device Protection",
+                    "description": "",
+                    "isHidden": false,
+                    "position": {
+                        "autoHeight": false,
+                        "sizeX": 2,
+                        "sizeY": 9,
+                        "minSizeX": 1,
+                        "maxSizeX": 6,
+                        "minSizeY": 5,
+                        "maxSizeY": 1000,
+                        "col": 2,
+                        "row": 5
+                    }
+                },
+                "dashboard_id": "1e236ef7-cf58-4bfc-b861-5e6a0c105e51",
+                "text": "",
+                "visualization_id": "bcac7f48-5647-4f07-87d1-6f025a6548b1"
+            },
+            {
+                "id": "12753f5d-51aa-4e2b-9a8a-ec349bd42c6a",
+                "width": 1,
+                "options": {
+                    "parameterMappings": {},
+                    "title": "At-Risk Customers",
+                    "description": "",
+                    "isHidden": false,
+                    "position": {
+                        "autoHeight": false,
+                        "sizeX": 1,
+                        "sizeY": 5,
+                        "minSizeX": 1,
+                        "maxSizeX": 6,
+                        "minSizeY": 1,
+                        "maxSizeY": 1000,
+                        "col": 5,
+                        "row": 0
+                    }
+                },
+                "dashboard_id": "1e236ef7-cf58-4bfc-b861-5e6a0c105e51",
+                "text": "",
+                "visualization_id": "d6473f78-9ec7-4f50-aec1-ded989afa5c9"
+            },
+            {
+                "id": "345f6600-2e7e-4239-b7b1-12fbf7d09af5",
+                "width": 1,
+                "options": {
+                    "parameterMappings": {},
+                    "title": "Predicted as Churn - Customer Tenure",
+                    "description": "",
+                    "isHidden": false,
+                    "position": {
+                        "autoHeight": false,
+                        "sizeX": 2,
+                        "sizeY": 9,
+                        "minSizeX": 1,
+                        "maxSizeX": 6,
+                        "minSizeY": 5,
+                        "maxSizeY": 1000,
+                        "col": 0,
+                        "row": 5
+                    }
+                },
+                "dashboard_id": "1e236ef7-cf58-4bfc-b861-5e6a0c105e51",
+                "text": "",
+                "visualization_id": "1f80f500-38a8-4388-829d-1b875cb49f78"
+            },
+            {
+                "id": "6ec99be3-1182-4a49-92d7-847be30737b9",
+                "width": 1,
+                "options": {
+                    "parameterMappings": {},
+                    "title": "Chart - Churn - Subscriptions based on Internet Service - Universal",
+                    "description": "",
+                    "isHidden": false,
+                    "position": {
+                        "autoHeight": false,
+                        "sizeX": 4,
+                        "sizeY": 8,
+                        "minSizeX": 1,
+                        "maxSizeX": 6,
+                        "minSizeY": 5,
+                        "maxSizeY": 1000,
+                        "col": 2,
+                        "row": 14
+                    }
+                },
+                "dashboard_id": "1e236ef7-cf58-4bfc-b861-5e6a0c105e51",
+                "text": "",
+                "visualization_id": "76d5a122-1d47-4ba0-bd07-0143f62211fb"
+            },
+            {
+                "id": "94a25f49-5580-44ca-9b2b-7d18a5caa00b",
+                "width": 1,
+                "options": {
+                    "parameterMappings": {},
+                    "title": "Percent Predicted Churn - Payment Method",
+                    "description": "",
+                    "isHidden": false,
+                    "position": {
+                        "autoHeight": false,
+                        "sizeX": 2,
+                        "sizeY": 9,
+                        "minSizeX": 1,
+                        "maxSizeX": 6,
+                        "minSizeY": 5,
+                        "maxSizeY": 1000,
+                        "col": 4,
+                        "row": 5
+                    }
+                },
+                "dashboard_id": "1e236ef7-cf58-4bfc-b861-5e6a0c105e51",
+                "text": "",
+                "visualization_id": "40826a80-0a87-4ca7-b6b4-185af17667d0"
+            },
+            {
+                "id": "acc15d89-b74b-4c9e-9448-40827794523b",
+                "width": 1,
+                "options": {
+                    "parameterMappings": {},
+                    "title": "Customers Predicted to Churn",
+                    "description": "",
+                    "isHidden": false,
+                    "position": {
+                        "autoHeight": false,
+                        "sizeX": 2,
+                        "sizeY": 8,
+                        "minSizeX": 2,
+                        "maxSizeX": 6,
+                        "minSizeY": 1,
+                        "maxSizeY": 1000,
+                        "col": 0,
+                        "row": 14
+                    }
+                },
+                "dashboard_id": "1e236ef7-cf58-4bfc-b861-5e6a0c105e51",
+                "text": "",
+                "visualization_id": "32e9a1ba-7a56-4dad-98c2-136d83cbccf7"
+            },
+            {
+                "id": "c9a5d9a4-f683-44d3-97e3-e0b7975a73c9",
+                "width": 1,
+                "options": {
+                    "parameterMappings": {},
+                    "title": "Total MRR ($) ",
+                    "description": "",
+                    "isHidden": false,
+                    "position": {
+                        "autoHeight": false,
+                        "sizeX": 2,
+                        "sizeY": 5,
+                        "minSizeX": 1,
+                        "maxSizeX": 6,
+                        "minSizeY": 1,
+                        "maxSizeY": 1000,
+                        "col": 0,
+                        "row": 0
+                    }
+                },
+                "dashboard_id": "1e236ef7-cf58-4bfc-b861-5e6a0c105e51",
+                "text": "",
+                "visualization_id": "1e792306-5acd-436c-b6a5-51c20d9667bb"
+            },
+            {
+                "id": "d3d8ceaf-996d-4556-8e26-5c1808f71783",
+                "width": 1,
+                "options": {
+                    "parameterMappings": {},
+                    "title": "Predicted Churn - Monthly Revenue Risk",
+                    "description": "",
+                    "isHidden": false,
+                    "position": {
+                        "autoHeight": false,
+                        "sizeX": 3,
+                        "sizeY": 5,
+                        "minSizeX": 1,
+                        "maxSizeX": 6,
+                        "minSizeY": 1,
+                        "maxSizeY": 1000,
+                        "col": 2,
+                        "row": 0
+                    }
+                },
+                "dashboard_id": "1e236ef7-cf58-4bfc-b861-5e6a0c105e51",
+                "text": "",
+                "visualization_id": "9d620b93-39ac-4b7e-b34d-966c18a2d0cb"
+            },
+            {
+                "id": "eadd40c2-df4c-4df5-b28d-e198b18673a7",
+                "width": 1,
+                "options": {
+                    "isHidden": false,
+                    "position": {
+                        "autoHeight": false,
+                        "sizeX": 6,
+                        "sizeY": 1,
+                        "minSizeX": 1,
+                        "maxSizeX": 6,
+                        "minSizeY": 1,
+                        "maxSizeY": 1000,
+                        "col": 0,
+                        "row": 22
+                    },
+                    "parameterMappings": {}
+                },
+                "dashboard_id": "1e236ef7-cf58-4bfc-b861-5e6a0c105e51",
+                "text": "Field Demo dashboard. Please do not edit\n![tracking_img](https://www.google-analytics.com/collect?v=1&gtm=GTM-NKQ8TT7&tid=UA-163989034-1&cid=555&aip=1&t=event&ec=field_demos&ea=display&dp=%2F42_field_demos%2Ffeatures%2Fmlops%2Fchurn_prediction&dt=DASHBOARD_CHURN_PREDICTION)"
+            }
+        ],
+        "tags": [
+            "mlops_field_demos",
+            "field_demos",
+            "field_demos_retail"
+        ],
+        "color_palette": null,
+        "dashboard_filters_enabled": false,
+        "is_archived": false
+    },
+    "version": "1.0"
+}

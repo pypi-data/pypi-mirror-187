@@ -1,0 +1,1765 @@
+{
+    "queries": [
+        {
+            "id": "d315ba56-0ad7-45a0-b1e7-4c2df59ffbd8",
+            "name": "Churn - Total MRR - Universal (13)",
+            "description": null,
+            "query": "SELECT sum(amount)/100 as MRR FROM dbdemos_c360.churn_orders o WHERE month(to_timestamp(transaction_date, 'MM-dd-yyyy HH:mm:ss')) = \n      (select max(month(to_timestamp(transaction_date, 'MM-dd-yyyy HH:mm:ss'))) from dbdemos_c360.churn_orders);",
+            "is_draft": false,
+            "updated_at": "2023-01-25T14:23:33Z",
+            "created_at": "2023-01-25T14:23:30Z",
+            "data_source_id": "cef03be2-9a33-425a-bd0d-6ce0127aff32",
+            "options": {
+                "parent": "folders/3038222510006593",
+                "apply_auto_limit": false,
+                "folder_node_status": "ACTIVE",
+                "folder_node_internal_name": "tree/791251337299909",
+                "parameters": []
+            },
+            "version": 1,
+            "tags": [],
+            "is_safe": true,
+            "user_id": 7644138420879474,
+            "run_as_role": null,
+            "run_as_service_principal_id": null,
+            "schedule": null,
+            "latest_query_data_id": "6f033fd8-5bc2-49b1-8869-82133f7402da",
+            "visualizations": [
+                {
+                    "id": "28f04d1c-651b-44c8-8285-f4449c71b798",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "updated_at": "2023-01-25T14:23:32Z",
+                    "created_at": "2023-01-25T14:23:32Z",
+                    "query_plan": null
+                },
+                {
+                    "id": "489da646-3634-487e-aea0-62708c62122f",
+                    "type": "COUNTER",
+                    "name": "MRR ($)",
+                    "description": "",
+                    "options": {
+                        "counterLabel": "",
+                        "counterColName": "MRR",
+                        "rowNumber": 1,
+                        "targetRowNumber": 1,
+                        "stringDecimal": 0,
+                        "stringDecChar": ".",
+                        "stringThouSep": ",",
+                        "tooltipFormat": "0,0.000",
+                        "showPlotlyControls": true,
+                        "condensed": true,
+                        "withRowNumber": true,
+                        "stringPrefix": "$"
+                    },
+                    "updated_at": "2023-01-25T14:23:37Z",
+                    "created_at": "2023-01-25T14:23:33Z",
+                    "query_plan": null
+                },
+                {
+                    "id": "c1e505f2-7218-4a8a-a7f7-5e3ba920cd59",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "updated_at": "2023-01-25T14:23:32Z",
+                    "created_at": "2023-01-25T14:23:30Z",
+                    "query_plan": null
+                },
+                {
+                    "id": "edd9561f-30ef-4d3a-8781-e17c0c17e163",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "updated_at": "2023-01-25T14:23:33Z",
+                    "created_at": "2023-01-25T14:23:33Z",
+                    "query_plan": null
+                }
+            ],
+            "is_favorite": false,
+            "last_modified_by": {
+                "id": 7644138420879474,
+                "name": "Quentin Ambard",
+                "email": "quentin.ambard@databricks.com",
+                "profile_image_url": "https://www.gravatar.com/avatar/62d8f76888369585890af5b5dce9a395?s=40&d=identicon",
+                "is_db_admin": false
+            },
+            "query_draft": null,
+            "job_id": null,
+            "user": {
+                "id": 7644138420879474,
+                "name": "Quentin Ambard",
+                "email": "quentin.ambard@databricks.com",
+                "profile_image_url": "https://www.gravatar.com/avatar/62d8f76888369585890af5b5dce9a395?s=40&d=identicon",
+                "is_db_admin": false
+            },
+            "parent": "folders/3038222510006593",
+            "is_archived": false,
+            "can_edit": true,
+            "permission_tier": "CAN_MANAGE",
+            "is_parameter_query": false
+        },
+        {
+            "id": "0efb9f31-b820-42fc-ad85-2695a18a1a1f",
+            "name": "Churn - Customers churned - Universal",
+            "description": null,
+            "query": "SELECT count(*) as past_churn FROM dbdemos_c360.churn_users WHERE churn=1",
+            "is_draft": false,
+            "updated_at": "2023-01-25T14:23:33Z",
+            "created_at": "2023-01-25T14:23:30Z",
+            "data_source_id": "cef03be2-9a33-425a-bd0d-6ce0127aff32",
+            "options": {
+                "parent": "folders/3038222510006593",
+                "apply_auto_limit": false,
+                "folder_node_status": "ACTIVE",
+                "folder_node_internal_name": "tree/791251337299907",
+                "parameters": []
+            },
+            "version": 1,
+            "tags": [],
+            "is_safe": true,
+            "user_id": 7644138420879474,
+            "run_as_role": null,
+            "run_as_service_principal_id": null,
+            "schedule": null,
+            "latest_query_data_id": "a4799b13-ded3-4576-a087-73ecf9b3802f",
+            "visualizations": [
+                {
+                    "id": "7bc8a1d1-6b3e-4579-bf3d-1bd4fd0dfb0c",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "updated_at": "2023-01-25T14:23:32Z",
+                    "created_at": "2023-01-25T14:23:30Z",
+                    "query_plan": null
+                },
+                {
+                    "id": "8123c17f-0e09-4439-b5a8-3d64b5609525",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "updated_at": "2023-01-25T14:23:33Z",
+                    "created_at": "2023-01-25T14:23:33Z",
+                    "query_plan": null
+                },
+                {
+                    "id": "e6c05b24-d236-45bf-9017-3fb35a45ac8b",
+                    "type": "COUNTER",
+                    "name": "Customer churned",
+                    "description": "",
+                    "options": {
+                        "counterLabel": "",
+                        "counterColName": "past_churn",
+                        "rowNumber": 1,
+                        "targetRowNumber": 1,
+                        "stringDecimal": 0,
+                        "stringDecChar": ".",
+                        "stringThouSep": ",",
+                        "tooltipFormat": "0,0.000",
+                        "condensed": true,
+                        "withRowNumber": true,
+                        "stringSuffix": " customers"
+                    },
+                    "updated_at": "2023-01-25T14:23:37Z",
+                    "created_at": "2023-01-25T14:23:33Z",
+                    "query_plan": null
+                },
+                {
+                    "id": "f3d8aa19-abcb-47b9-aa91-0aa707abc88b",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "updated_at": "2023-01-25T14:23:33Z",
+                    "created_at": "2023-01-25T14:23:33Z",
+                    "query_plan": null
+                }
+            ],
+            "is_favorite": false,
+            "last_modified_by": {
+                "id": 7644138420879474,
+                "name": "Quentin Ambard",
+                "email": "quentin.ambard@databricks.com",
+                "profile_image_url": "https://www.gravatar.com/avatar/62d8f76888369585890af5b5dce9a395?s=40&d=identicon",
+                "is_db_admin": false
+            },
+            "query_draft": null,
+            "job_id": null,
+            "user": {
+                "id": 7644138420879474,
+                "name": "Quentin Ambard",
+                "email": "quentin.ambard@databricks.com",
+                "profile_image_url": "https://www.gravatar.com/avatar/62d8f76888369585890af5b5dce9a395?s=40&d=identicon",
+                "is_db_admin": false
+            },
+            "parent": "folders/3038222510006593",
+            "is_archived": false,
+            "can_edit": true,
+            "permission_tier": "CAN_MANAGE",
+            "is_parameter_query": false
+        },
+        {
+            "id": "f60cc292-8624-4694-b82e-1b0594214da9",
+            "name": "Churn - Amount sales per month - Universal",
+            "description": null,
+            "query": "SELECT sum(amount), date_format(to_timestamp(u.creation_date, \"MM-dd-yyyy H:mm:ss\"), \"yyyy-MM\") m FROM dbdemos_c360.churn_orders o \n\t\tINNER JOIN dbdemos_c360.churn_users u using (user_id)\n\t\t\tgroup by m",
+            "is_draft": false,
+            "updated_at": "2023-01-25T14:23:33Z",
+            "created_at": "2023-01-25T14:23:30Z",
+            "data_source_id": "cef03be2-9a33-425a-bd0d-6ce0127aff32",
+            "options": {
+                "parent": "folders/3038222510006593",
+                "apply_auto_limit": false,
+                "folder_node_status": "ACTIVE",
+                "folder_node_internal_name": "tree/791251337299908",
+                "visualization_control_order": [],
+                "parameters": []
+            },
+            "version": 1,
+            "tags": [],
+            "is_safe": true,
+            "user_id": 7644138420879474,
+            "run_as_role": null,
+            "run_as_service_principal_id": null,
+            "schedule": null,
+            "latest_query_data_id": "aa7860de-a703-4be2-b0d5-bc305d21e645",
+            "visualizations": [
+                {
+                    "id": "62923773-80b1-49cb-b796-c5ff6b1dcf57",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {},
+                    "updated_at": "2023-01-25T14:23:32Z",
+                    "created_at": "2023-01-25T14:23:30Z",
+                    "query_plan": null
+                },
+                {
+                    "id": "6d46133b-eba3-4139-96bc-e1d624380295",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {},
+                    "updated_at": "2023-01-25T14:23:33Z",
+                    "created_at": "2023-01-25T14:23:33Z",
+                    "query_plan": null
+                },
+                {
+                    "id": "a48ecce0-893d-463a-99da-4af7739f8e32",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {},
+                    "updated_at": "2023-01-25T14:23:33Z",
+                    "created_at": "2023-01-25T14:23:33Z",
+                    "query_plan": null
+                },
+                {
+                    "id": "ded8acd1-3b97-484d-a0c4-7490c52dba5b",
+                    "type": "CHART",
+                    "name": "Amount sales per month",
+                    "description": "",
+                    "options": {
+                        "version": 2,
+                        "globalSeriesType": "column",
+                        "sortX": true,
+                        "sortY": true,
+                        "legend": {
+                            "traceorder": "normal"
+                        },
+                        "xAxis": {
+                            "type": "-",
+                            "labels": {
+                                "enabled": true
+                            },
+                            "title": {
+                                "text": "Date"
+                            }
+                        },
+                        "yAxis": [
+                            {
+                                "type": "-",
+                                "title": {
+                                    "text": "Monthly Recurrent Revenue"
+                                }
+                            },
+                            {
+                                "type": "-",
+                                "opposite": true
+                            }
+                        ],
+                        "alignYAxesAtZero": true,
+                        "error_y": {
+                            "type": "data",
+                            "visible": true
+                        },
+                        "series": {
+                            "stacking": null,
+                            "error_y": {
+                                "type": "data",
+                                "visible": true
+                            }
+                        },
+                        "seriesOptions": {
+                            "column_c0c32ed033612": {
+                                "yAxis": 0,
+                                "type": "column",
+                                "color": "#87BFE0"
+                            }
+                        },
+                        "valuesOptions": {},
+                        "direction": {
+                            "type": "counterclockwise"
+                        },
+                        "sizemode": "diameter",
+                        "coefficient": 1,
+                        "numberFormat": "0,0[.]00000",
+                        "percentFormat": "0[.]00%",
+                        "textFormat": "",
+                        "missingValuesAsZero": true,
+                        "useAggregationsUi": true,
+                        "swappedAxes": false,
+                        "dateTimeFormat": "YYYY-MM-DD HH:mm",
+                        "showDataLabels": false,
+                        "columnConfigurationMap": {
+                            "x": {
+                                "column": "m",
+                                "id": "column_c0c32ed034641"
+                            },
+                            "y": [
+                                {
+                                    "id": "column_c0c32ed033612",
+                                    "column": "sum(amount)",
+                                    "transform": "SUM"
+                                }
+                            ]
+                        },
+                        "isAggregationOn": true,
+                        "condensed": true,
+                        "withRowNumber": true
+                    },
+                    "updated_at": "2023-01-25T14:25:01Z",
+                    "created_at": "2023-01-25T14:23:32Z",
+                    "query_plan": {
+                        "selects": [
+                            {
+                                "column": "m"
+                            },
+                            {
+                                "function": "SUM",
+                                "args": [
+                                    {
+                                        "column": "sum(amount)"
+                                    }
+                                ],
+                                "alias": "column_c0c32ed033612"
+                            }
+                        ],
+                        "groups": [
+                            {
+                                "column": "m"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "is_favorite": false,
+            "last_modified_by": {
+                "id": 7644138420879474,
+                "name": "Quentin Ambard",
+                "email": "quentin.ambard@databricks.com",
+                "profile_image_url": "https://www.gravatar.com/avatar/62d8f76888369585890af5b5dce9a395?s=40&d=identicon",
+                "is_db_admin": false
+            },
+            "query_draft": null,
+            "job_id": null,
+            "user": {
+                "id": 7644138420879474,
+                "name": "Quentin Ambard",
+                "email": "quentin.ambard@databricks.com",
+                "profile_image_url": "https://www.gravatar.com/avatar/62d8f76888369585890af5b5dce9a395?s=40&d=identicon",
+                "is_db_admin": false
+            },
+            "parent": "folders/3038222510006593",
+            "is_archived": false,
+            "can_edit": true,
+            "permission_tier": "CAN_MANAGE",
+            "is_parameter_query": false
+        },
+        {
+            "id": "9684c957-ddb8-4243-9c73-b43cb7270980",
+            "name": "Churn - Avg Monthly Charges by Payment Method - Universal",
+            "description": null,
+            "query": "SELECT canal, sum(amount)/100 as MRR FROM dbdemos_c360.churn_orders o \n\t\tINNER JOIN dbdemos_c360.churn_users using (user_id)\n\t\t\t\tWHERE canal is not null and month(to_timestamp(transaction_date, 'MM-dd-yyyy HH:mm:ss')) = \n\t\t      (select max(month(to_timestamp(transaction_date, 'MM-dd-yyyy HH:mm:ss'))) from dbdemos_c360.churn_orders) \n    group by canal;",
+            "is_draft": false,
+            "updated_at": "2023-01-25T14:23:36Z",
+            "created_at": "2023-01-25T14:23:33Z",
+            "data_source_id": "cef03be2-9a33-425a-bd0d-6ce0127aff32",
+            "options": {
+                "parent": "folders/3038222510006593",
+                "apply_auto_limit": false,
+                "folder_node_status": "ACTIVE",
+                "folder_node_internal_name": "tree/791251337299917",
+                "parameters": []
+            },
+            "version": 1,
+            "tags": [],
+            "is_safe": true,
+            "user_id": 7644138420879474,
+            "run_as_role": null,
+            "run_as_service_principal_id": null,
+            "schedule": null,
+            "latest_query_data_id": "bdcbe71d-9a39-4207-a4b0-36e4c605de26",
+            "visualizations": [
+                {
+                    "id": "2ec0e839-b35d-4cf7-b25c-d6553ee6278f",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "updated_at": "2023-01-25T14:23:36Z",
+                    "created_at": "2023-01-25T14:23:36Z",
+                    "query_plan": null
+                },
+                {
+                    "id": "35a61698-c9b6-41bd-a03d-cf5dcd771f7f",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "updated_at": "2023-01-25T14:23:36Z",
+                    "created_at": "2023-01-25T14:23:36Z",
+                    "query_plan": null
+                },
+                {
+                    "id": "81aec20f-d4b6-49ae-be66-0790dddc15d1",
+                    "type": "CHART",
+                    "name": "Chart",
+                    "description": "",
+                    "options": {
+                        "version": 2,
+                        "globalSeriesType": "bubble",
+                        "sortX": true,
+                        "sortY": true,
+                        "legend": {
+                            "traceorder": "normal",
+                            "enabled": true,
+                            "placement": "auto"
+                        },
+                        "xAxis": {
+                            "type": "-",
+                            "labels": {
+                                "enabled": true
+                            },
+                            "title": {
+                                "text": "PaymentMethod"
+                            }
+                        },
+                        "yAxis": [
+                            {
+                                "type": "linear",
+                                "title": {
+                                    "text": "AvgMonthlyCharges"
+                                }
+                            },
+                            {
+                                "type": "linear",
+                                "opposite": true,
+                                "title": {
+                                    "text": null
+                                }
+                            }
+                        ],
+                        "alignYAxesAtZero": false,
+                        "error_y": {
+                            "type": "data",
+                            "visible": true
+                        },
+                        "series": {
+                            "stacking": null,
+                            "error_y": {
+                                "type": "data",
+                                "visible": true
+                            }
+                        },
+                        "seriesOptions": {
+                            "MRR": {
+                                "yAxis": 0
+                            }
+                        },
+                        "valuesOptions": {},
+                        "direction": {
+                            "type": "counterclockwise"
+                        },
+                        "sizemode": "diameter",
+                        "coefficient": 0.003,
+                        "numberFormat": "0,0[.]00000",
+                        "percentFormat": "0[.]00%",
+                        "textFormat": "",
+                        "missingValuesAsZero": true,
+                        "useAggregationsUi": false,
+                        "swappedAxes": false,
+                        "dateTimeFormat": "YYYY-MM-DD HH:mm",
+                        "showDataLabels": false,
+                        "columnConfigurationMap": {
+                            "x": {
+                                "column": "canal"
+                            },
+                            "y": [
+                                {
+                                    "column": "MRR"
+                                }
+                            ],
+                            "size": {
+                                "column": "MRR"
+                            },
+                            "series": {
+                                "column": null
+                            }
+                        },
+                        "condensed": true,
+                        "withRowNumber": true
+                    },
+                    "updated_at": "2023-01-25T14:23:38Z",
+                    "created_at": "2023-01-25T14:23:36Z",
+                    "query_plan": null
+                },
+                {
+                    "id": "9717d4c5-5f8d-43a4-99bb-87a43b443009",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "updated_at": "2023-01-25T14:23:35Z",
+                    "created_at": "2023-01-25T14:23:33Z",
+                    "query_plan": null
+                }
+            ],
+            "is_favorite": false,
+            "last_modified_by": {
+                "id": 7644138420879474,
+                "name": "Quentin Ambard",
+                "email": "quentin.ambard@databricks.com",
+                "profile_image_url": "https://www.gravatar.com/avatar/62d8f76888369585890af5b5dce9a395?s=40&d=identicon",
+                "is_db_admin": false
+            },
+            "query_draft": null,
+            "job_id": null,
+            "user": {
+                "id": 7644138420879474,
+                "name": "Quentin Ambard",
+                "email": "quentin.ambard@databricks.com",
+                "profile_image_url": "https://www.gravatar.com/avatar/62d8f76888369585890af5b5dce9a395?s=40&d=identicon",
+                "is_db_admin": false
+            },
+            "parent": "folders/3038222510006593",
+            "is_archived": false,
+            "can_edit": true,
+            "permission_tier": "CAN_MANAGE",
+            "is_parameter_query": false
+        },
+        {
+            "id": "4bd320d0-2ebc-4f89-bd08-37c577999dce",
+            "name": "Churn - Churn by Gender - Universal",
+            "description": null,
+            "query": "\nSELECT gender, count(gender) as total_churn FROM dbdemos_c360.churn_features where churn = 1 GROUP BY gender\n\n\n",
+            "is_draft": false,
+            "updated_at": "2023-01-25T14:23:35Z",
+            "created_at": "2023-01-25T14:23:33Z",
+            "data_source_id": "cef03be2-9a33-425a-bd0d-6ce0127aff32",
+            "options": {
+                "parent": "folders/3038222510006593",
+                "apply_auto_limit": false,
+                "folder_node_status": "ACTIVE",
+                "folder_node_internal_name": "tree/791251337299914",
+                "parameters": []
+            },
+            "version": 1,
+            "tags": [],
+            "is_safe": true,
+            "user_id": 7644138420879474,
+            "run_as_role": null,
+            "run_as_service_principal_id": null,
+            "schedule": null,
+            "latest_query_data_id": "b14eab28-3183-4290-9287-bde04634f567",
+            "visualizations": [
+                {
+                    "id": "07ba03ec-9367-4427-8d8b-062b8ffc66b3",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "updated_at": "2023-01-25T14:23:35Z",
+                    "created_at": "2023-01-25T14:23:33Z",
+                    "query_plan": null
+                },
+                {
+                    "id": "159e026a-c42b-46c2-ae68-f2931035bc8c",
+                    "type": "CHART",
+                    "name": "Chart",
+                    "description": "",
+                    "options": {
+                        "version": 2,
+                        "globalSeriesType": "pie",
+                        "sortX": true,
+                        "sortY": true,
+                        "legend": {
+                            "traceorder": "normal",
+                            "enabled": true,
+                            "placement": "auto"
+                        },
+                        "xAxis": {
+                            "type": "-",
+                            "labels": {
+                                "enabled": true
+                            },
+                            "title": {
+                                "text": "gender_Male"
+                            }
+                        },
+                        "yAxis": [
+                            {
+                                "type": "-",
+                                "title": {
+                                    "text": "total_churn"
+                                }
+                            },
+                            {
+                                "type": "-",
+                                "opposite": true,
+                                "title": {
+                                    "text": null
+                                }
+                            }
+                        ],
+                        "alignYAxesAtZero": false,
+                        "error_y": {
+                            "type": "data",
+                            "visible": true
+                        },
+                        "series": {
+                            "stacking": null,
+                            "error_y": {
+                                "type": "data",
+                                "visible": true
+                            }
+                        },
+                        "seriesOptions": {
+                            "total_churn": {
+                                "yAxis": 0
+                            }
+                        },
+                        "valuesOptions": {
+                            "0": {
+                                "color": "#F6C17F"
+                            },
+                            "1": {
+                                "color": "#AB506F"
+                            }
+                        },
+                        "direction": {
+                            "type": "counterclockwise"
+                        },
+                        "sizemode": "diameter",
+                        "coefficient": 1,
+                        "numberFormat": "0,0[.]00000",
+                        "percentFormat": "0[.]00%",
+                        "textFormat": "",
+                        "missingValuesAsZero": true,
+                        "useAggregationsUi": false,
+                        "swappedAxes": false,
+                        "dateTimeFormat": "YYYY-MM-DD HH:mm",
+                        "showDataLabels": true,
+                        "columnConfigurationMap": {
+                            "x": {
+                                "column": "gender"
+                            },
+                            "y": [
+                                {
+                                    "column": "total_churn"
+                                }
+                            ],
+                            "series": {
+                                "column": null
+                            }
+                        },
+                        "showPlotlyControls": true,
+                        "condensed": true,
+                        "withRowNumber": true,
+                        "isAggregationOn": false
+                    },
+                    "updated_at": "2023-01-25T14:23:38Z",
+                    "created_at": "2023-01-25T14:23:35Z",
+                    "query_plan": null
+                },
+                {
+                    "id": "bf69bb06-3984-4a96-bd22-60da49891d8e",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "updated_at": "2023-01-25T14:23:35Z",
+                    "created_at": "2023-01-25T14:23:35Z",
+                    "query_plan": null
+                },
+                {
+                    "id": "e97e315f-3c18-4259-aa22-b9417c78cef0",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "updated_at": "2023-01-25T14:23:35Z",
+                    "created_at": "2023-01-25T14:23:35Z",
+                    "query_plan": null
+                }
+            ],
+            "is_favorite": false,
+            "last_modified_by": {
+                "id": 7644138420879474,
+                "name": "Quentin Ambard",
+                "email": "quentin.ambard@databricks.com",
+                "profile_image_url": "https://www.gravatar.com/avatar/62d8f76888369585890af5b5dce9a395?s=40&d=identicon",
+                "is_db_admin": false
+            },
+            "query_draft": null,
+            "job_id": null,
+            "user": {
+                "id": 7644138420879474,
+                "name": "Quentin Ambard",
+                "email": "quentin.ambard@databricks.com",
+                "profile_image_url": "https://www.gravatar.com/avatar/62d8f76888369585890af5b5dce9a395?s=40&d=identicon",
+                "is_db_admin": false
+            },
+            "parent": "folders/3038222510006593",
+            "is_archived": false,
+            "can_edit": true,
+            "permission_tier": "CAN_MANAGE",
+            "is_parameter_query": false
+        },
+        {
+            "id": "0cb934dd-10a7-48ba-badd-a8097e5936bf",
+            "name": "Churn - Subscriptions based on Internet Service - Universal (14)",
+            "description": null,
+            "query": "select platform, churn, count(*) as event_count from dbdemos_c360.churn_app_events inner join dbdemos_c360.churn_users using (user_id) where platform is not null\ngroup by platform, churn",
+            "is_draft": false,
+            "updated_at": "2023-01-25T14:23:35Z",
+            "created_at": "2023-01-25T14:23:33Z",
+            "data_source_id": "cef03be2-9a33-425a-bd0d-6ce0127aff32",
+            "options": {
+                "parent": "folders/3038222510006593",
+                "apply_auto_limit": false,
+                "folder_node_status": "ACTIVE",
+                "folder_node_internal_name": "tree/791251337299912",
+                "parameters": []
+            },
+            "version": 1,
+            "tags": [],
+            "is_safe": true,
+            "user_id": 7644138420879474,
+            "run_as_role": null,
+            "run_as_service_principal_id": null,
+            "schedule": null,
+            "latest_query_data_id": "ad1a8ca4-d377-4ffc-8b5e-74f7c1cd8914",
+            "visualizations": [
+                {
+                    "id": "5b7f61f9-50e1-4fb5-bbbf-b8f7afde2c2a",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "updated_at": "2023-01-25T14:23:35Z",
+                    "created_at": "2023-01-25T14:23:33Z",
+                    "query_plan": null
+                },
+                {
+                    "id": "74c2ad5a-1b1e-4acf-b181-f68f299830ad",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "updated_at": "2023-01-25T14:23:35Z",
+                    "created_at": "2023-01-25T14:23:35Z",
+                    "query_plan": null
+                },
+                {
+                    "id": "a0c2e024-ed66-4577-b338-a99955a2db70",
+                    "type": "TABLE",
+                    "name": "Table",
+                    "description": "",
+                    "options": {
+                        "version": 2
+                    },
+                    "updated_at": "2023-01-25T14:23:35Z",
+                    "created_at": "2023-01-25T14:23:35Z",
+                    "query_plan": null
+                },
+                {
+                    "id": "a6854a7f-f2a7-4568-a5ad-7f162ed9de97",
+                    "type": "CHART",
+                    "name": "Chart",
+                    "description": "",
+                    "options": {
+                        "version": 2,
+                        "globalSeriesType": "column",
+                        "sortX": true,
+                        "sortY": true,
+                        "legend": {
+                            "traceorder": "normal",
+                            "enabled": true,
+                            "placement": "auto"
+                        },
+                        "xAxis": {
+                            "type": "-",
+                            "labels": {
+                                "enabled": true
+                            },
+                            "title": {
+                                "text": "platforms"
+                            }
+                        },
+                        "yAxis": [
+                            {
+                                "type": "linear",
+                                "title": {
+                                    "text": "in-app events"
+                                }
+                            },
+                            {
+                                "type": "linear",
+                                "opposite": true,
+                                "title": {
+                                    "text": "streaming_movies_count"
+                                }
+                            }
+                        ],
+                        "alignYAxesAtZero": false,
+                        "error_y": {
+                            "type": "data",
+                            "visible": true
+                        },
+                        "series": {
+                            "stacking": "",
+                            "error_y": {
+                                "type": "data",
+                                "visible": true
+                            }
+                        },
+                        "seriesOptions": {
+                            "0": {
+                                "color": "#87BFE0"
+                            },
+                            "1": {
+                                "color": "#AB506F"
+                            },
+                            "event_count": {
+                                "yAxis": 0
+                            }
+                        },
+                        "valuesOptions": {},
+                        "direction": {
+                            "type": "counterclockwise"
+                        },
+                        "sizemode": "diameter",
+                        "coefficient": 1,
+                        "numberFormat": "0,0[.]00000",
+                        "percentFormat": "0[.]00%",
+                        "textFormat": "",
+                        "missingValuesAsZero": true,
+                        "useAggregationsUi": false,
+                        "swappedAxes": true,
+                        "dateTimeFormat": "YYYY-MM-DD HH:mm",
+                        "showDataLabels": false,
+                        "columnConfigurationMap": {
+                            "x": {
+                                "column": "platform"
+                            },
+                            "y": [
+                                {
+                                    "column": "event_count"
+                                }
+                            ],
+                            "series": {
+                                "column": "churn"
+                            },
+                            "yError": {
+                                "column": "platform"
+                            }
+                        },
+                        "showPlotlyControls": true,
+                        "condensed": true,
+                        "withRowNumber": true,
+                        "isAggregationOn": false
+                    },
+                    "updated_at": "2023-01-25T14:23:38Z",
+                    "created_at": "2023-01-25T14:23:35Z",
+                    "query_plan": null
+                }
+            ],
+            "is_favorite": false,
+            "last_modified_by": {
+                "id": 7644138420879474,
+                "name": "Quentin Ambard",
+                "email": "quentin.ambard@databricks.com",
+                "profile_image_url": "https://www.gravatar.com/avatar/62d8f76888369585890af5b5dce9a395?s=40&d=identicon",
+                "is_db_admin": false
+            },
+            "query_draft": null,
+            "job_id": null,
+            "user": {
+                "id": 7644138420879474,
+                "name": "Quentin Ambard",
+                "email": "quentin.ambard@databricks.com",
+                "profile_image_url": "https://www.gravatar.com/avatar/62d8f76888369585890af5b5dce9a395?s=40&d=identicon",
+                "is_db_admin": false
+            },
+            "parent": "folders/3038222510006593",
+            "is_archived": false,
+            "can_edit": true,
+            "permission_tier": "CAN_MANAGE",
+            "is_parameter_query": false
+        }
+    ],
+    "id": "19394330-2274-4b4b-90ce-d415a7ff2130",
+    "dashboard": {
+        "id": "19394330-2274-4b4b-90ce-d415a7ff2130",
+        "slug": "customer-churn---universal",
+        "name": "Customer Churn - Universal",
+        "user_id": 7644138420879474,
+        "dashboard_filters_enabled": false,
+        "widgets": [
+            {
+                "id": "1e7e9bb3-951c-4783-aad3-fd4aafeeb381",
+                "width": 1,
+                "options": {
+                    "parameterMappings": {},
+                    "title": "Total MRR",
+                    "description": "",
+                    "isHidden": false,
+                    "position": {
+                        "autoHeight": false,
+                        "sizeX": 1,
+                        "sizeY": 4,
+                        "minSizeX": 1,
+                        "maxSizeX": 6,
+                        "minSizeY": 1,
+                        "maxSizeY": 1000,
+                        "col": 0,
+                        "row": 0
+                    },
+                    "overrideColors": false
+                },
+                "dashboard_id": "19394330-2274-4b4b-90ce-d415a7ff2130",
+                "text": "",
+                "updated_at": "2023-01-25T14:23:37Z",
+                "created_at": "2023-01-25T14:23:37Z",
+                "visualization": {
+                    "id": "489da646-3634-487e-aea0-62708c62122f",
+                    "type": "COUNTER",
+                    "name": "MRR ($)",
+                    "description": "",
+                    "options": {
+                        "counterLabel": "",
+                        "counterColName": "MRR",
+                        "rowNumber": 1,
+                        "targetRowNumber": 1,
+                        "stringDecimal": 0,
+                        "stringDecChar": ".",
+                        "stringThouSep": ",",
+                        "tooltipFormat": "0,0.000",
+                        "showPlotlyControls": true,
+                        "condensed": true,
+                        "withRowNumber": true,
+                        "stringPrefix": "$"
+                    },
+                    "updated_at": "2023-01-25T14:23:37Z",
+                    "created_at": "2023-01-25T14:23:33Z",
+                    "query_plan": null,
+                    "query": {
+                        "id": "d315ba56-0ad7-45a0-b1e7-4c2df59ffbd8",
+                        "name": "Churn - Total MRR - Universal (13)",
+                        "description": null,
+                        "query": "SELECT sum(amount)/100 as MRR FROM dbdemos_c360.churn_orders o WHERE month(to_timestamp(transaction_date, 'MM-dd-yyyy HH:mm:ss')) = \n      (select max(month(to_timestamp(transaction_date, 'MM-dd-yyyy HH:mm:ss'))) from dbdemos_c360.churn_orders);",
+                        "is_draft": false,
+                        "updated_at": "2023-01-25T14:23:33Z",
+                        "created_at": "2023-01-25T14:23:30Z",
+                        "data_source_id": "cef03be2-9a33-425a-bd0d-6ce0127aff32",
+                        "options": {
+                            "parent": "folders/3038222510006593",
+                            "apply_auto_limit": false,
+                            "folder_node_status": "ACTIVE",
+                            "folder_node_internal_name": "tree/791251337299909",
+                            "parameters": []
+                        },
+                        "version": 1,
+                        "tags": [],
+                        "is_safe": true,
+                        "user_id": 7644138420879474,
+                        "run_as_role": null,
+                        "run_as_service_principal_id": null,
+                        "schedule": null,
+                        "can_edit": true
+                    }
+                }
+            },
+            {
+                "id": "69eb7ed8-ec22-48d9-a928-75ecc5cde76c",
+                "width": 1,
+                "options": {
+                    "parameterMappings": {},
+                    "title": "Past Churn",
+                    "description": "",
+                    "isHidden": false,
+                    "position": {
+                        "autoHeight": false,
+                        "sizeX": 1,
+                        "sizeY": 4,
+                        "minSizeX": 1,
+                        "maxSizeX": 6,
+                        "minSizeY": 1,
+                        "maxSizeY": 1000,
+                        "col": 0,
+                        "row": 4
+                    },
+                    "overrideColors": false
+                },
+                "dashboard_id": "19394330-2274-4b4b-90ce-d415a7ff2130",
+                "text": "",
+                "updated_at": "2023-01-25T14:25:01Z",
+                "created_at": "2023-01-25T14:23:37Z",
+                "visualization": {
+                    "id": "e6c05b24-d236-45bf-9017-3fb35a45ac8b",
+                    "type": "COUNTER",
+                    "name": "Customer churned",
+                    "description": "",
+                    "options": {
+                        "counterLabel": "",
+                        "counterColName": "past_churn",
+                        "rowNumber": 1,
+                        "targetRowNumber": 1,
+                        "stringDecimal": 0,
+                        "stringDecChar": ".",
+                        "stringThouSep": ",",
+                        "tooltipFormat": "0,0.000",
+                        "condensed": true,
+                        "withRowNumber": true,
+                        "stringSuffix": " customers"
+                    },
+                    "updated_at": "2023-01-25T14:23:37Z",
+                    "created_at": "2023-01-25T14:23:33Z",
+                    "query_plan": null,
+                    "query": {
+                        "id": "0efb9f31-b820-42fc-ad85-2695a18a1a1f",
+                        "name": "Churn - Customers churned - Universal",
+                        "description": null,
+                        "query": "SELECT count(*) as past_churn FROM dbdemos_c360.churn_users WHERE churn=1",
+                        "is_draft": false,
+                        "updated_at": "2023-01-25T14:23:33Z",
+                        "created_at": "2023-01-25T14:23:30Z",
+                        "data_source_id": "cef03be2-9a33-425a-bd0d-6ce0127aff32",
+                        "options": {
+                            "parent": "folders/3038222510006593",
+                            "apply_auto_limit": false,
+                            "folder_node_status": "ACTIVE",
+                            "folder_node_internal_name": "tree/791251337299907",
+                            "parameters": []
+                        },
+                        "version": 1,
+                        "tags": [],
+                        "is_safe": true,
+                        "user_id": 7644138420879474,
+                        "run_as_role": null,
+                        "run_as_service_principal_id": null,
+                        "schedule": null,
+                        "can_edit": true
+                    }
+                }
+            },
+            {
+                "id": "903a35ff-c87b-4fef-b8a7-844d0bfb9ade",
+                "width": 1,
+                "options": {
+                    "isHidden": false,
+                    "position": {
+                        "autoHeight": false,
+                        "sizeX": 6,
+                        "sizeY": 1,
+                        "minSizeX": 1,
+                        "maxSizeX": 6,
+                        "minSizeY": 1,
+                        "maxSizeY": 1000,
+                        "col": 0,
+                        "row": 15
+                    },
+                    "parameterMappings": {}
+                },
+                "dashboard_id": "19394330-2274-4b4b-90ce-d415a7ff2130",
+                "text": "Field Demo dashboard. Please do not edit\n![tracking_img](https://www.google-analytics.com/collect?v=1&gtm=GTM-NKQ8TT7&tid=UA-163989034-1&cid=555&aip=1&t=event&ec=field_demos&ea=display&dp=%2F42_field_demos%2Ffeatures%2Fmlops%2Fchurn&dt=DASHBOARD_CHURN)",
+                "updated_at": "2023-01-25T14:25:01Z",
+                "created_at": "2023-01-25T14:23:37Z"
+            },
+            {
+                "id": "bb930b9f-49b4-466b-bd9b-b78a8336df58",
+                "width": 1,
+                "options": {
+                    "parameterMappings": {},
+                    "title": "MRR over time",
+                    "description": "",
+                    "isHidden": false,
+                    "position": {
+                        "autoHeight": false,
+                        "sizeX": 3,
+                        "sizeY": 7,
+                        "minSizeX": 1,
+                        "maxSizeX": 6,
+                        "minSizeY": 5,
+                        "maxSizeY": 1000,
+                        "col": 3,
+                        "row": 8
+                    },
+                    "overrideColors": false
+                },
+                "dashboard_id": "19394330-2274-4b4b-90ce-d415a7ff2130",
+                "text": "",
+                "updated_at": "2023-01-25T14:25:04Z",
+                "created_at": "2023-01-25T14:23:37Z",
+                "visualization": {
+                    "id": "ded8acd1-3b97-484d-a0c4-7490c52dba5b",
+                    "type": "CHART",
+                    "name": "Amount sales per month",
+                    "description": "",
+                    "options": {
+                        "version": 2,
+                        "globalSeriesType": "column",
+                        "sortX": true,
+                        "sortY": true,
+                        "legend": {
+                            "traceorder": "normal"
+                        },
+                        "xAxis": {
+                            "type": "-",
+                            "labels": {
+                                "enabled": true
+                            },
+                            "title": {
+                                "text": "Date"
+                            }
+                        },
+                        "yAxis": [
+                            {
+                                "type": "-",
+                                "title": {
+                                    "text": "Monthly Recurrent Revenue"
+                                }
+                            },
+                            {
+                                "type": "-",
+                                "opposite": true
+                            }
+                        ],
+                        "alignYAxesAtZero": true,
+                        "error_y": {
+                            "type": "data",
+                            "visible": true
+                        },
+                        "series": {
+                            "stacking": null,
+                            "error_y": {
+                                "type": "data",
+                                "visible": true
+                            }
+                        },
+                        "seriesOptions": {
+                            "column_c0c32ed033612": {
+                                "yAxis": 0,
+                                "type": "column",
+                                "color": "#87BFE0"
+                            }
+                        },
+                        "valuesOptions": {},
+                        "direction": {
+                            "type": "counterclockwise"
+                        },
+                        "sizemode": "diameter",
+                        "coefficient": 1,
+                        "numberFormat": "0,0[.]00000",
+                        "percentFormat": "0[.]00%",
+                        "textFormat": "",
+                        "missingValuesAsZero": true,
+                        "useAggregationsUi": true,
+                        "swappedAxes": false,
+                        "dateTimeFormat": "YYYY-MM-DD HH:mm",
+                        "showDataLabels": false,
+                        "columnConfigurationMap": {
+                            "x": {
+                                "column": "m",
+                                "id": "column_c0c32ed034641"
+                            },
+                            "y": [
+                                {
+                                    "id": "column_c0c32ed033612",
+                                    "column": "sum(amount)",
+                                    "transform": "SUM"
+                                }
+                            ]
+                        },
+                        "isAggregationOn": true,
+                        "condensed": true,
+                        "withRowNumber": true
+                    },
+                    "updated_at": "2023-01-25T14:25:01Z",
+                    "created_at": "2023-01-25T14:23:32Z",
+                    "query_plan": {
+                        "selects": [
+                            {
+                                "column": "m"
+                            },
+                            {
+                                "function": "SUM",
+                                "args": [
+                                    {
+                                        "column": "sum(amount)"
+                                    }
+                                ],
+                                "alias": "column_c0c32ed033612"
+                            }
+                        ],
+                        "groups": [
+                            {
+                                "column": "m"
+                            }
+                        ]
+                    },
+                    "query": {
+                        "id": "f60cc292-8624-4694-b82e-1b0594214da9",
+                        "name": "Churn - Amount sales per month - Universal",
+                        "description": null,
+                        "query": "SELECT sum(amount), date_format(to_timestamp(u.creation_date, \"MM-dd-yyyy H:mm:ss\"), \"yyyy-MM\") m FROM dbdemos_c360.churn_orders o \n\t\tINNER JOIN dbdemos_c360.churn_users u using (user_id)\n\t\t\tgroup by m",
+                        "is_draft": false,
+                        "updated_at": "2023-01-25T14:23:33Z",
+                        "created_at": "2023-01-25T14:23:30Z",
+                        "data_source_id": "cef03be2-9a33-425a-bd0d-6ce0127aff32",
+                        "options": {
+                            "parent": "folders/3038222510006593",
+                            "apply_auto_limit": false,
+                            "folder_node_status": "ACTIVE",
+                            "folder_node_internal_name": "tree/791251337299908",
+                            "visualization_control_order": [],
+                            "parameters": []
+                        },
+                        "version": 1,
+                        "tags": [],
+                        "is_safe": true,
+                        "user_id": 7644138420879474,
+                        "run_as_role": null,
+                        "run_as_service_principal_id": null,
+                        "schedule": null,
+                        "can_edit": true
+                    }
+                }
+            },
+            {
+                "id": "0a0683df-3990-4c0a-9b89-dc1fefe2db43",
+                "width": 1,
+                "options": {
+                    "parameterMappings": {},
+                    "title": "Avg Monthly Charges by Payment Method",
+                    "description": "",
+                    "isHidden": false,
+                    "position": {
+                        "autoHeight": false,
+                        "sizeX": 3,
+                        "sizeY": 7,
+                        "minSizeX": 1,
+                        "maxSizeX": 6,
+                        "minSizeY": 5,
+                        "maxSizeY": 1000,
+                        "col": 0,
+                        "row": 8
+                    }
+                },
+                "dashboard_id": "19394330-2274-4b4b-90ce-d415a7ff2130",
+                "text": "",
+                "updated_at": "2023-01-25T14:25:01Z",
+                "created_at": "2023-01-25T14:23:38Z",
+                "visualization": {
+                    "id": "81aec20f-d4b6-49ae-be66-0790dddc15d1",
+                    "type": "CHART",
+                    "name": "Chart",
+                    "description": "",
+                    "options": {
+                        "version": 2,
+                        "globalSeriesType": "bubble",
+                        "sortX": true,
+                        "sortY": true,
+                        "legend": {
+                            "traceorder": "normal",
+                            "enabled": true,
+                            "placement": "auto"
+                        },
+                        "xAxis": {
+                            "type": "-",
+                            "labels": {
+                                "enabled": true
+                            },
+                            "title": {
+                                "text": "PaymentMethod"
+                            }
+                        },
+                        "yAxis": [
+                            {
+                                "type": "linear",
+                                "title": {
+                                    "text": "AvgMonthlyCharges"
+                                }
+                            },
+                            {
+                                "type": "linear",
+                                "opposite": true,
+                                "title": {
+                                    "text": null
+                                }
+                            }
+                        ],
+                        "alignYAxesAtZero": false,
+                        "error_y": {
+                            "type": "data",
+                            "visible": true
+                        },
+                        "series": {
+                            "stacking": null,
+                            "error_y": {
+                                "type": "data",
+                                "visible": true
+                            }
+                        },
+                        "seriesOptions": {
+                            "MRR": {
+                                "yAxis": 0
+                            }
+                        },
+                        "valuesOptions": {},
+                        "direction": {
+                            "type": "counterclockwise"
+                        },
+                        "sizemode": "diameter",
+                        "coefficient": 0.003,
+                        "numberFormat": "0,0[.]00000",
+                        "percentFormat": "0[.]00%",
+                        "textFormat": "",
+                        "missingValuesAsZero": true,
+                        "useAggregationsUi": false,
+                        "swappedAxes": false,
+                        "dateTimeFormat": "YYYY-MM-DD HH:mm",
+                        "showDataLabels": false,
+                        "columnConfigurationMap": {
+                            "x": {
+                                "column": "canal"
+                            },
+                            "y": [
+                                {
+                                    "column": "MRR"
+                                }
+                            ],
+                            "size": {
+                                "column": "MRR"
+                            },
+                            "series": {
+                                "column": null
+                            }
+                        },
+                        "condensed": true,
+                        "withRowNumber": true
+                    },
+                    "updated_at": "2023-01-25T14:23:38Z",
+                    "created_at": "2023-01-25T14:23:36Z",
+                    "query_plan": null,
+                    "query": {
+                        "id": "9684c957-ddb8-4243-9c73-b43cb7270980",
+                        "name": "Churn - Avg Monthly Charges by Payment Method - Universal",
+                        "description": null,
+                        "query": "SELECT canal, sum(amount)/100 as MRR FROM dbdemos_c360.churn_orders o \n\t\tINNER JOIN dbdemos_c360.churn_users using (user_id)\n\t\t\t\tWHERE canal is not null and month(to_timestamp(transaction_date, 'MM-dd-yyyy HH:mm:ss')) = \n\t\t      (select max(month(to_timestamp(transaction_date, 'MM-dd-yyyy HH:mm:ss'))) from dbdemos_c360.churn_orders) \n    group by canal;",
+                        "is_draft": false,
+                        "updated_at": "2023-01-25T14:23:36Z",
+                        "created_at": "2023-01-25T14:23:33Z",
+                        "data_source_id": "cef03be2-9a33-425a-bd0d-6ce0127aff32",
+                        "options": {
+                            "parent": "folders/3038222510006593",
+                            "apply_auto_limit": false,
+                            "folder_node_status": "ACTIVE",
+                            "folder_node_internal_name": "tree/791251337299917",
+                            "parameters": []
+                        },
+                        "version": 1,
+                        "tags": [],
+                        "is_safe": true,
+                        "user_id": 7644138420879474,
+                        "run_as_role": null,
+                        "run_as_service_principal_id": null,
+                        "schedule": null,
+                        "can_edit": true
+                    }
+                }
+            },
+            {
+                "id": "cb12a458-747c-43d9-8b8f-2d48239bee2e",
+                "width": 1,
+                "options": {
+                    "isHidden": false,
+                    "position": {
+                        "autoHeight": false,
+                        "sizeX": 2,
+                        "sizeY": 8,
+                        "minSizeX": 1,
+                        "maxSizeX": 6,
+                        "minSizeY": 5,
+                        "maxSizeY": 1000,
+                        "col": 4,
+                        "row": 0
+                    },
+                    "parameterMappings": {}
+                },
+                "dashboard_id": "19394330-2274-4b4b-90ce-d415a7ff2130",
+                "text": "",
+                "updated_at": "2023-01-25T14:23:38Z",
+                "created_at": "2023-01-25T14:23:38Z",
+                "visualization": {
+                    "id": "159e026a-c42b-46c2-ae68-f2931035bc8c",
+                    "type": "CHART",
+                    "name": "Chart",
+                    "description": "",
+                    "options": {
+                        "version": 2,
+                        "globalSeriesType": "pie",
+                        "sortX": true,
+                        "sortY": true,
+                        "legend": {
+                            "traceorder": "normal",
+                            "enabled": true,
+                            "placement": "auto"
+                        },
+                        "xAxis": {
+                            "type": "-",
+                            "labels": {
+                                "enabled": true
+                            },
+                            "title": {
+                                "text": "gender_Male"
+                            }
+                        },
+                        "yAxis": [
+                            {
+                                "type": "-",
+                                "title": {
+                                    "text": "total_churn"
+                                }
+                            },
+                            {
+                                "type": "-",
+                                "opposite": true,
+                                "title": {
+                                    "text": null
+                                }
+                            }
+                        ],
+                        "alignYAxesAtZero": false,
+                        "error_y": {
+                            "type": "data",
+                            "visible": true
+                        },
+                        "series": {
+                            "stacking": null,
+                            "error_y": {
+                                "type": "data",
+                                "visible": true
+                            }
+                        },
+                        "seriesOptions": {
+                            "total_churn": {
+                                "yAxis": 0
+                            }
+                        },
+                        "valuesOptions": {
+                            "0": {
+                                "color": "#F6C17F"
+                            },
+                            "1": {
+                                "color": "#AB506F"
+                            }
+                        },
+                        "direction": {
+                            "type": "counterclockwise"
+                        },
+                        "sizemode": "diameter",
+                        "coefficient": 1,
+                        "numberFormat": "0,0[.]00000",
+                        "percentFormat": "0[.]00%",
+                        "textFormat": "",
+                        "missingValuesAsZero": true,
+                        "useAggregationsUi": false,
+                        "swappedAxes": false,
+                        "dateTimeFormat": "YYYY-MM-DD HH:mm",
+                        "showDataLabels": true,
+                        "columnConfigurationMap": {
+                            "x": {
+                                "column": "gender"
+                            },
+                            "y": [
+                                {
+                                    "column": "total_churn"
+                                }
+                            ],
+                            "series": {
+                                "column": null
+                            }
+                        },
+                        "showPlotlyControls": true,
+                        "condensed": true,
+                        "withRowNumber": true,
+                        "isAggregationOn": false
+                    },
+                    "updated_at": "2023-01-25T14:23:38Z",
+                    "created_at": "2023-01-25T14:23:35Z",
+                    "query_plan": null,
+                    "query": {
+                        "id": "4bd320d0-2ebc-4f89-bd08-37c577999dce",
+                        "name": "Churn - Churn by Gender - Universal",
+                        "description": null,
+                        "query": "\nSELECT gender, count(gender) as total_churn FROM dbdemos_c360.churn_features where churn = 1 GROUP BY gender\n\n\n",
+                        "is_draft": false,
+                        "updated_at": "2023-01-25T14:23:35Z",
+                        "created_at": "2023-01-25T14:23:33Z",
+                        "data_source_id": "cef03be2-9a33-425a-bd0d-6ce0127aff32",
+                        "options": {
+                            "parent": "folders/3038222510006593",
+                            "apply_auto_limit": false,
+                            "folder_node_status": "ACTIVE",
+                            "folder_node_internal_name": "tree/791251337299914",
+                            "parameters": []
+                        },
+                        "version": 1,
+                        "tags": [],
+                        "is_safe": true,
+                        "user_id": 7644138420879474,
+                        "run_as_role": null,
+                        "run_as_service_principal_id": null,
+                        "schedule": null,
+                        "can_edit": true
+                    }
+                }
+            },
+            {
+                "id": "e5569414-25f5-46a6-a64b-f66aa0491966",
+                "width": 1,
+                "options": {
+                    "parameterMappings": {},
+                    "title": "Subscriptions based on Internet Service",
+                    "description": "",
+                    "isHidden": false,
+                    "position": {
+                        "autoHeight": false,
+                        "sizeX": 3,
+                        "sizeY": 8,
+                        "minSizeX": 1,
+                        "maxSizeX": 6,
+                        "minSizeY": 5,
+                        "maxSizeY": 1000,
+                        "col": 1,
+                        "row": 0
+                    }
+                },
+                "dashboard_id": "19394330-2274-4b4b-90ce-d415a7ff2130",
+                "text": "",
+                "updated_at": "2023-01-25T14:23:38Z",
+                "created_at": "2023-01-25T14:23:38Z",
+                "visualization": {
+                    "id": "a6854a7f-f2a7-4568-a5ad-7f162ed9de97",
+                    "type": "CHART",
+                    "name": "Chart",
+                    "description": "",
+                    "options": {
+                        "version": 2,
+                        "globalSeriesType": "column",
+                        "sortX": true,
+                        "sortY": true,
+                        "legend": {
+                            "traceorder": "normal",
+                            "enabled": true,
+                            "placement": "auto"
+                        },
+                        "xAxis": {
+                            "type": "-",
+                            "labels": {
+                                "enabled": true
+                            },
+                            "title": {
+                                "text": "platforms"
+                            }
+                        },
+                        "yAxis": [
+                            {
+                                "type": "linear",
+                                "title": {
+                                    "text": "in-app events"
+                                }
+                            },
+                            {
+                                "type": "linear",
+                                "opposite": true,
+                                "title": {
+                                    "text": "streaming_movies_count"
+                                }
+                            }
+                        ],
+                        "alignYAxesAtZero": false,
+                        "error_y": {
+                            "type": "data",
+                            "visible": true
+                        },
+                        "series": {
+                            "stacking": "",
+                            "error_y": {
+                                "type": "data",
+                                "visible": true
+                            }
+                        },
+                        "seriesOptions": {
+                            "0": {
+                                "color": "#87BFE0"
+                            },
+                            "1": {
+                                "color": "#AB506F"
+                            },
+                            "event_count": {
+                                "yAxis": 0
+                            }
+                        },
+                        "valuesOptions": {},
+                        "direction": {
+                            "type": "counterclockwise"
+                        },
+                        "sizemode": "diameter",
+                        "coefficient": 1,
+                        "numberFormat": "0,0[.]00000",
+                        "percentFormat": "0[.]00%",
+                        "textFormat": "",
+                        "missingValuesAsZero": true,
+                        "useAggregationsUi": false,
+                        "swappedAxes": true,
+                        "dateTimeFormat": "YYYY-MM-DD HH:mm",
+                        "showDataLabels": false,
+                        "columnConfigurationMap": {
+                            "x": {
+                                "column": "platform"
+                            },
+                            "y": [
+                                {
+                                    "column": "event_count"
+                                }
+                            ],
+                            "series": {
+                                "column": "churn"
+                            },
+                            "yError": {
+                                "column": "platform"
+                            }
+                        },
+                        "showPlotlyControls": true,
+                        "condensed": true,
+                        "withRowNumber": true,
+                        "isAggregationOn": false
+                    },
+                    "updated_at": "2023-01-25T14:23:38Z",
+                    "created_at": "2023-01-25T14:23:35Z",
+                    "query_plan": null,
+                    "query": {
+                        "id": "0cb934dd-10a7-48ba-badd-a8097e5936bf",
+                        "name": "Churn - Subscriptions based on Internet Service - Universal (14)",
+                        "description": null,
+                        "query": "select platform, churn, count(*) as event_count from dbdemos_c360.churn_app_events inner join dbdemos_c360.churn_users using (user_id) where platform is not null\ngroup by platform, churn",
+                        "is_draft": false,
+                        "updated_at": "2023-01-25T14:23:35Z",
+                        "created_at": "2023-01-25T14:23:33Z",
+                        "data_source_id": "cef03be2-9a33-425a-bd0d-6ce0127aff32",
+                        "options": {
+                            "parent": "folders/3038222510006593",
+                            "apply_auto_limit": false,
+                            "folder_node_status": "ACTIVE",
+                            "folder_node_internal_name": "tree/791251337299912",
+                            "parameters": []
+                        },
+                        "version": 1,
+                        "tags": [],
+                        "is_safe": true,
+                        "user_id": 7644138420879474,
+                        "run_as_role": null,
+                        "run_as_service_principal_id": null,
+                        "schedule": null,
+                        "can_edit": true
+                    }
+                }
+            }
+        ],
+        "options": {
+            "run_as_role": "viewer",
+            "refresh_schedules": []
+        },
+        "is_draft": false,
+        "tags": [
+            "mlops_field_demos",
+            "field_demos",
+            "field_demos_retail"
+        ],
+        "updated_at": "2023-01-25T14:23:37Z",
+        "created_at": "2022-02-07T14:03:21Z",
+        "version": 357,
+        "color_palette": null,
+        "run_as_role": "viewer",
+        "run_as_service_principal_id": null,
+        "refresh_schedules": [],
+        "data_source_id": "cef03be2-9a33-425a-bd0d-6ce0127aff32",
+        "is_favorite": true,
+        "user": {
+            "id": 7644138420879474,
+            "name": "Quentin Ambard",
+            "email": "quentin.ambard@databricks.com",
+            "profile_image_url": "https://www.gravatar.com/avatar/62d8f76888369585890af5b5dce9a395?s=40&d=identicon",
+            "is_db_admin": false
+        },
+        "is_archived": false,
+        "can_edit": true,
+        "permission_tier": "CAN_MANAGE"
+    }
+}
