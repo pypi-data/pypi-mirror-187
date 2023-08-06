@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: cacheback2
+Version: 0.0.4
+Home-page: 
+Author: jeein
+Author-email: 
+License: MIT
+Requires-Dist: attrs
+Requires-Dist: beautifultable
+Requires-Dist: colorama
+Requires-Dist: coverage
+Requires-Dist: exceptiongroup
+Requires-Dist: greenlet
+Requires-Dist: iniconfig
+Requires-Dist: numpy
+Requires-Dist: packaging
+Requires-Dist: pandas
+Requires-Dist: pip
+Requires-Dist: pluggy
+Requires-Dist: psycopg2-binary
+Requires-Dist: pyparsing
+Requires-Dist: pytest
+Requires-Dist: pytest-cov
+Requires-Dist: pytest-cover
+Requires-Dist: pytest-coverage
+Requires-Dist: python-dateutil
+Requires-Dist: pytz
+Requires-Dist: PyYAML
+Requires-Dist: setuptools
+Requires-Dist: six
+Requires-Dist: SQLAlchemy
+Requires-Dist: tomli
+Requires-Dist: wcwidth
+Requires-Dist: wheel
+
