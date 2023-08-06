@@ -1,0 +1,90 @@
+[project]
+name = "pure-protobuf"
+description = "Implementation of Protocol Buffers with dataclass-based schemaʼs"
+readme = "README.md"
+requires-python = ">=3.7"
+dynamic = ["version"]
+keywords = ["protobuf", "protocol-buffers"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black>=22.12.0,<23.0.0",
+    "build>=0.9.0,<1.0.0",
+    "coverage[toml]>=7.0.0,<8.0.0",
+    "flake8>=5.0.0,<6.0.0; python_version == '3.7'",
+    "flake8>=6.0.0,<7.0.0; python_version >= '3.8'",
+    "isort>=5.11.3,<6.0.0",
+    "mypy>=0.991,<1.0",
+    "pytest>=7.2.0,<8.0.0",
+    "pytest-benchmark>=4.0.0,<5.0.0",
+    "twine>=4.0.2,<5.0.0",
+]
+
+[project.license]
+file = "LICENSE"
+
+[project.urls]
+"Homepage" = "https://github.com/eigenein/protobuf"
+"Issues" = "https://github.com/eigenein/protobuf/issues"
+"Changelog" = "https://github.com/eigenein/protobuf/blob/master/CHANGELOG.md"
+
+[[project.authors]]
+name = "Pavel Perestoronin"
+email = "eigenein@gmail.com"
+
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.version.raw-options]
+version_scheme = "post-release"
+local_scheme = "no-local-version"
+
+[tool.hatch.build]
+packages = [
+    "pure_protobuf",
+]
+
+[tool.mypy]
+ignore_missing_imports = true
+allow_untyped_globals = true
+check_untyped_defs = false # set to `true` later
+allow_redefinition = true
+pretty = true
+
+[tool.coverage.run]
+source = ["pure_protobuf"]
+omit = ["tests/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "raise NotImplementedError",
+    "raise ImportError",
+    "except ImportError",
+    "if TYPE_CHECKING:",
+]
+
+[tool.black]
+line-length = 100
+target-version = ["py37", "py38", "py39", "py310", "py311"]
+
+[tool.isort]
+profile = "black"
