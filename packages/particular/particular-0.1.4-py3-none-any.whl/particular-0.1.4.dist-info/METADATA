@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: particular
+Version: 0.1.4
+Summary: Graph-based encoder algorithm
+Home-page: http://www.codeberg/sail.black/particular
+Author: Julian M. Kleber
+Author-email: julian.kleber@sail.black
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: torchaudio
+Requires-Dist: torch-scatter
+Requires-Dist: torch-sparse
+Requires-Dist: torch-geometric
+Requires-Dist: rdkit-pypi
+Requires-Dist: networkx[default]
+Requires-Dist: matplotlib
+Requires-Dist: Click
+
+# particular
+
+Particular is about flexible particle physics/chemistry. It provides useful interfaces for novel algorithm prototyping. 
+
+The package has gone a long way. 
+
+Please refer to repository from NVIDIA hackathon
+
+And also some seminal work about interesting wave phenomena using MD simulations.
