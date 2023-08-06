@@ -1,0 +1,10 @@
+super_cereal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+super_cereal/cerealizer/__init__.py,sha256=IevppK45W3qj3D7c1DaOZSMI8fU-T9BX8G26_rC6FoA,1760
+super_cereal/cerealizer/avro.py,sha256=GXnRn7Mj2sxLousfBo8UY5RsDIyVnC1O8XaeJZV3GsI,3819
+super_cereal/cerealizer/builtins.py,sha256=ohwfpYWdnc4jLS3pv5VkNbY3s7UUel7Yz20yv8qHhz0,2987
+super_cereal/cerealizer/encryption.py,sha256=6NymPaYIh-0P-dQsY8Yas0D6Vfu0NlIJ8FpFq8xrl4k,2141
+super_cereal/cerealizer/json.py,sha256=UajWGhzBeKhWIZgLxiLYdq7_PHZNtbAFQbDi4oflKXY,1654
+super_cereal-0.1.1.dist-info/METADATA,sha256=nYQa5D--Ll5Tmzp_snS71n_VFx_hUadEvPwcqtQ-U3I,960
+super_cereal-0.1.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+super_cereal-0.1.1.dist-info/LICENSE,sha256=yVuuHRzgI17MzTVgt3LsHvuX80innw--CmNPDCzO_iw,11358
+super_cereal-0.1.1.dist-info/RECORD,,
