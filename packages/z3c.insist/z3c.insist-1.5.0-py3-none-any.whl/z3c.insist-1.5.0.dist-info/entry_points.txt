@@ -1,0 +1,3 @@
+[console_scripts]
+enftest = z3c.insist.enftest:main
+perftest = z3c.insist.perftest:main
