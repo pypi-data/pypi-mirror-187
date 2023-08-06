@@ -1,0 +1,7 @@
+pandas
+random
+statistics
+neattext
+nltk
+warnings
+sentence_transformers
