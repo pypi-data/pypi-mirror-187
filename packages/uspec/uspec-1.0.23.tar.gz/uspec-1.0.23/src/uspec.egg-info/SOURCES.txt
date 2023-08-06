@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+scripts/uspec
+src/uspec.py
+src/uspec.egg-info/PKG-INFO
+src/uspec.egg-info/SOURCES.txt
+src/uspec.egg-info/dependency_links.txt
+src/uspec.egg-info/top_level.txt
