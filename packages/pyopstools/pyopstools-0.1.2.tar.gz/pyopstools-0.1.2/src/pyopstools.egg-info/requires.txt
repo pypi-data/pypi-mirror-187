@@ -1,0 +1,7 @@
+colorama
+termcolor
+requests
+click
+
+[dev]
+check-manifest
