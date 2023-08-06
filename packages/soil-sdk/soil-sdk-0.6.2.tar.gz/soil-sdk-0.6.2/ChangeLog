@@ -1,0 +1,124 @@
+CHANGES
+=======
+
+0.6.2
+-----
+
+* Refactored code sync. Now it uses hashes
+
+0.6.1
+-----
+
+* Made SoilSession class private
+* Fix: Tokens refresh when necessary using the session object
+* Added tpyed marks
+
+0.6.0
+-----
+
+* Disable mypy as there is a bug in version 0.971 https://github.com/python/mypy/issues/13627
+* Set minimum python version to 3.10
+* Fixing CI
+* Set minimum python version to 3.10
+* Set minimum python version to 3.10
+* Set minimum python version to 3.10
+* Set minimum python version to 3.10
+* Set minimum python version to 3.10
+* Imports from the same project don't have to start with soil. This is a BREAKING CHANGE
+
+0.5.0
+-----
+
+* fixing issue with mypy
+* Added retries when the server returns 5xx
+* Fixing typo, updating readme
+* Added black formatter
+* Using a session for http requests
+* Updated pre-commit
+* Updated pylint
+* Removed example app
+* Removed soil configure and soil init
+* Update docs/docs/tutorial/alerts.md
+* Updated pre-commit requirements
+* Upgraded docs, fixed CI
+* Upgraded sdk docs
+* Upgrading dependencies
+* Documentation: Upgraded dependencies
+* Documentation: Upgraded dependencies
+* Documentation: Upgraded dependencies
+
+0.4.0
+-----
+
+* Updated coverage
+* alias except generalized to data except
+* pylint and new experiment except
+* only remaining pipeline exceptions
+* configuration and decorator added
+* DS done
+* added data exceptions
+* added dictionary exceptions
+
+0.3.15
+------
+
+* Simplified requirements, cleaned unused code in soil\_cli, fixed ci
+* Fixing dependencies
+* Update readme
+* Update readme
+
+0.3.14
+------
+
+* Exit with code=1 when there are errors
+
+0.3.13
+------
+
+* Fix api call get\_dictionaries
+
+0.3.12
+------
+
+* Fix get\_dictionaries api call
+
+0.3.11
+------
+
+* Fixed soil.dictionary (create)
+
+0.3.10
+------
+
+* Update sample app
+
+0.3.9
+-----
+
+* Fixed another bug with complex pipelines
+
+0.3.8
+-----
+
+* Do not upload modules in test environment
+
+0.3.7
+-----
+
+* Updated documentation
+* Added compound storage
+* Build with node alpine 16
+
+0.3.5
+-----
+
+* Added data\_structure.export()
+* Fixed bad concatenation when returning exception
+* Fixed pyyaml version
+* Update shared.txt
+
+0.3.4
+-----
+
+* Merged with master
+* Do not call get\_data if data\_structure.data is not called

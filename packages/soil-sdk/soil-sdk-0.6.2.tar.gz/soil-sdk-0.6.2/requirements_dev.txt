@@ -1,0 +1,11 @@
+pbr
+pre-commit
+pylint
+coverage
+pydoc-markdown
+types-PyYAML
+types-requests
+requests
+pyyaml
+PyJWT
+mypy
