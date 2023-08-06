@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ESYS
+Version: 0.0.3
+Summary: A small package with addone
+Author-email: 정준호 <01068552679j@gmail.com>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# EsYs
+
+This is a simple ESYS package. Made in 2023, 1, 22, 8:45, KST
