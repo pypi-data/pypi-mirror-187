@@ -1,0 +1,10 @@
+LICENSE
+README
+setup.py
+mobie/__init__.py
+mobie.egg-info/PKG-INFO
+mobie.egg-info/SOURCES.txt
+mobie.egg-info/dependency_links.txt
+mobie.egg-info/entry_points.txt
+mobie.egg-info/requires.txt
+mobie.egg-info/top_level.txt
