@@ -1,0 +1,117 @@
+Metadata-Version: 2.1
+Name: d-geolib-plus
+Version: 0.2.1
+Summary: GEOLib+ components
+Home-page: https://deltares.github.io/geolib-plus/
+License: LGPL-3.0-or-later
+Author: Maarten Pronk
+Author-email: git@evetion.nl
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: d-geolib (>=0.2.3,<0.3.0)
+Requires-Dist: lxml (>=4.7,<5.0)
+Requires-Dist: matplotlib (>=3.4,<4.0)
+Requires-Dist: more-itertools (>=8.6,<9.0)
+Requires-Dist: netCDF4 (>=1.5,<2.0)
+Requires-Dist: numpy (>=1.19,<2.0)
+Requires-Dist: pandas (>=1.4,<2.0)
+Requires-Dist: pydantic (>=1,<2)
+Requires-Dist: pyproj (>=3.3,<4.0)
+Requires-Dist: pyshp (>=2.1,<3.0)
+Requires-Dist: requests (>=2.26,<3.0)
+Requires-Dist: scipy (>=1.6,<2.0)
+Requires-Dist: shapely (==2.0.0)
+Requires-Dist: tqdm (>=4,<5)
+Project-URL: Documentation, https://deltares.github.io/geolib-plus/
+Project-URL: Repository, https://github.com/Deltares/geolib-plus
+Description-Content-Type: text/x-rst
+
+GEOLib+
+=============================
+
+GEOLib+ is a Python package to read, interprent and plot cpt files.
+The package can also be used to get soil parameters for constitutive models.
+
+Installation
+------------
+
+Install GEOLib+ with:
+
+.. code-block:: bash
+
+    $ pip install d-geolib-plus
+
+
+Requirements
+------------
+
+To install the required dependencies to run GEOLib+ code, run:
+
+.. code-block:: bash
+
+    $ pip install -r requirements
+
+Or, when having poetry installed (you should):
+
+.. code-block:: bash
+
+    $ poetry install
+
+
+Testing & Development
+---------------------
+
+Make sure to have the server dependencies installed: 
+
+.. code-block:: bash
+
+    $ poetry install -E server
+
+In order to run the testcode, from the root of the repository, run:
+
+.. code-block:: bash
+
+    $ pytest
+
+or, in case of using Poetry
+
+.. code-block:: bash
+
+    $ poetry run pytest
+
+Running flake8, mypy is also recommended. For mypy use:
+
+.. code-block:: bash
+
+    $ mypy --config-file pyproject.toml geolib
+
+
+Documentation
+-------------
+
+In order to run the documentation, from the root of the repository, run:
+
+.. code-block:: bash
+
+    $ cd docs
+    $ sphinx-build . build -b html -c .
+
+
+The documentation is now in the `build` subfolder, where you can open 
+the `index.html` in your browser.
+
+Build wheel
+-----------
+
+To build a distributable wheel package, run:
+
+.. code-block:: bash
+
+    $ poetry build
+
+The distributable packages are now built in the `dist` subfolder.

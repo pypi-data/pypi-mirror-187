@@ -1,0 +1,88 @@
+[tool.poetry]
+name = "d-geolib-plus"
+version = "0.2.1"
+description = "GEOLib+ components"
+authors = ["Maarten Pronk <git@evetion.nl>", "Deltares"]
+license = "LGPL-3.0-or-later"
+homepage = "https://deltares.github.io/geolib-plus/"
+documentation = "https://deltares.github.io/geolib-plus/"
+repository = "https://github.com/Deltares/geolib-plus"
+readme = "README.rst"
+packages = [
+    {include = "geolib_plus"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.8 <4"
+pydantic = "^1"
+pyproj = "^3.3"
+pandas = "^1.4"
+tqdm = "^4"
+scipy = "^1.6"
+lxml = "^4.7"
+numpy = "^1.19"
+matplotlib = "^3.4"
+pyshp = "^2.1"
+more-itertools = "^8.6"
+netCDF4 = "^1.5"
+requests = "^2.26"
+d-geolib = "^0.2.3"
+shapely = "2.0.0"
+
+[tool.poetry.group.dev.dependencies]
+teamcity-messages = "^1.32"
+pytest = "^7.2.0"
+coverage = "^6.5.0"
+pytest-cov = "^4.0.0"
+releases = "^1.6.3"
+rst2pdf = "^0.99"
+isort = "^5.10.1"
+black = ">=22.8.0,<22.10.0"
+sphinx = "^5.3.0"
+mypy = "^0.991"
+sphinxcontrib-bibtex = "^2.5.0"
+folium = "^0.13.0"
+
+[build-system]
+requires = ["poetry>=1.2.2"]
+build-backend = "poetry.masonry.api"
+
+[tox]
+isolated_build = true
+envlist = "py38, py39, py310"
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+]
+markers = [
+    "unittest",
+    "integrationtest",
+    "systemtest",
+    "acceptancetest",
+    "workinprogress",
+    "integration"
+]
+
+[tool.black]
+line-length = 90
+target-version = ['py37']
+
+[isort]
+multi_line_output=3
+include_trailing_comma=true
+force_grid_wrap=0
+use_parentheses=true
+line_length=90
+profile = "black"
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.2.1"
+tag-format = "$major.$minor.$patch$prerelease"
+version_files = [
+    "pyproject.toml:^version",
+    "tests/test_geolib_plus.py:^version",
+    "geolib_plus/__init__.py:__version__",
+]
+annotated_tag = true
