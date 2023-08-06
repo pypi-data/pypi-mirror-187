@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: fuzzly-users
+Version: 0.0.2
+Summary: users library for fuzz.ly
+Home-page: https://github.com/kheina-com/users
+Author: kheina
+License: Mozilla Public License 2.0
+Platform: UNKNOWN
+Requires-Python: >=3.9.*
+Description-Content-Type: text/markdown
+Provides-Extra: build
+License-File: LICENSE
+
+UNKNOWN
+
