@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: Belrub-2.2.1
+Version: 2.2.1
+Summary: This is a Library for robots in Rubika
+Home-page: UNKNOWN
+Author: Mamad Belectron
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: ## How To Import
+         from Belrub import Token
+Keywords: python,rubika,Belrub,rubel,Rubika,belectron,robika,robot
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
