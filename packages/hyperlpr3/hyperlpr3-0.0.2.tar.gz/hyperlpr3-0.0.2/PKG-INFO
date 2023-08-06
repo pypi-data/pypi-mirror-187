@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: hyperlpr3
+Version: 0.0.2
+Summary: vehicle license plate recognition.
+Home-page: https://github.com/tunmx/LPRV3.git
+Author: Tunm
+Author-email: tunmxy@163.com
+License: Apache License 2.0
+Keywords: vehicle license plate recognition
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
