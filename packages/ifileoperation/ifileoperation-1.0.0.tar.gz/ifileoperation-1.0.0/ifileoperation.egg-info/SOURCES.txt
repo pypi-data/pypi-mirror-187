@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+ifileoperation/__init__.py
+ifileoperation/com.py
+ifileoperation/errors.py
+ifileoperation/fileoperator.py
+ifileoperation/flags.py
+ifileoperation/interfaces.py
+ifileoperation.egg-info/PKG-INFO
+ifileoperation.egg-info/SOURCES.txt
+ifileoperation.egg-info/dependency_links.txt
+ifileoperation.egg-info/requires.txt
+ifileoperation.egg-info/top_level.txt
