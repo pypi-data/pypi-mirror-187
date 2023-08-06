@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+matplotlib_polyroi/__init__.py
+matplotlib_polyroi/funcs.py
+matplotlib_polyroi/roi.py
+matplotlib_polyroi.egg-info/PKG-INFO
+matplotlib_polyroi.egg-info/SOURCES.txt
+matplotlib_polyroi.egg-info/dependency_links.txt
+matplotlib_polyroi.egg-info/requires.txt
+matplotlib_polyroi.egg-info/top_level.txt
