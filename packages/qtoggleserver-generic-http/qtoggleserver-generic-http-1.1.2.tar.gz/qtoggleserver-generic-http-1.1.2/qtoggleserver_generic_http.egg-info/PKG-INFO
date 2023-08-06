@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: qtoggleserver-generic-http
+Version: 1.1.2
+Summary: qToggleServer ports backed by configurable HTTP requests
+Author: Calin Crisan
+Author-email: ccrisan@gmail.com
+License: Apache 2.0
+License-File: LICENSE.txt
