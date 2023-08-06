@@ -1,0 +1,10 @@
+grpc_test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+grpc_test/helloworld_pb2_grpc.py,sha256=5a3uPjGoUqVOYFQpAFYgf4cF7NcfOa2aFHfoEUfdzlo,2449
+grpc_test/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+grpc_test/xyz/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+grpc_test/xyz/msg_pb2.py,sha256=qnEpTVZrqvwPYo9Qsh8BGQZUH4SONp8DO64F1PA2EJY,1121
+grpc_test/xyz/msg_pb2.pyi,sha256=NBBYWeGc9FjqsO8aPGwFpwZNwmubdEx6uuyaVe0EOxo,576
+datability_grpc_python_test-0.0.5.dist-info/METADATA,sha256=uvwWu1bCCN1mAlvzprppFRK-KLc-dSPtkeJe6ZPDh3o,306
+datability_grpc_python_test-0.0.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+datability_grpc_python_test-0.0.5.dist-info/top_level.txt,sha256=pYyn_aR1Udz8tzQTn8N0Y7rtUMpH0Alz3GxtcDxK8xY,10
+datability_grpc_python_test-0.0.5.dist-info/RECORD,,
