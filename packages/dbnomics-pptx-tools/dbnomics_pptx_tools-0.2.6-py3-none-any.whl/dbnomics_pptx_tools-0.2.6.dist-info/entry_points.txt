@@ -1,0 +1,3 @@
+[console_scripts]
+dbnomics-pptx=dbnomics_pptx_tools.cli:app
+
