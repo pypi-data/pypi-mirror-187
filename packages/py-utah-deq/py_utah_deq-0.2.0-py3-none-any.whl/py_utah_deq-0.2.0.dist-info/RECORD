@@ -1,0 +1,12 @@
+py_utah_deq/__init__.py,sha256=oSKEmOaRtORZEKD1vD4EuP387CH1NUo59ITsCQt-s9c,151
+py_utah_deq/utah_deq.py,sha256=D8SgD7M41Ughu2x3B5Rh5glw3WBxNbr1dDS2Yx8zJMo,722
+py_utah_deq/aqi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py_utah_deq/aqi/aqi_metric.py,sha256=faIJ7x8vD6XNs4bajCJRUNlvGcekKtpqTPFncyr8T0Q,629
+py_utah_deq/aqi/qualitative_metrics.py,sha256=sfvsvd4__CHHAk5mI_bDkmsdl_M38KRC39hlpOwb-H4,2102
+py_utah_deq/data_sources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py_utah_deq/data_sources/utah_deq_api.py,sha256=WNsfyNEklvfYshtfx2iXzmHQvS0ZlFBKTHlYksyp72s,2431
+py_utah_deq-0.2.0.dist-info/LICENSE,sha256=W6IYAIek_db-LznxPPAvnuRRimkDI0tt_ucdI2cwR-8,1324
+py_utah_deq-0.2.0.dist-info/METADATA,sha256=L69I7lIYsNM7I6Ec_kpZCc7u1iQJRijwzxryFtd0Zz0,1163
+py_utah_deq-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+py_utah_deq-0.2.0.dist-info/top_level.txt,sha256=s-Wd5OdvRXJ93ssaBm3ibWORbsx13J77t5oV_2iI6WA,12
+py_utah_deq-0.2.0.dist-info/RECORD,,
