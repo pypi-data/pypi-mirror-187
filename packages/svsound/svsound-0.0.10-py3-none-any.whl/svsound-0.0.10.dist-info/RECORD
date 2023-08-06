@@ -1,0 +1,13 @@
+SVSound/__init__.py,sha256=FFslI56xix9f0FvsLWdWPjz3kdmPZw4aYcreVGTCGfY,297
+SVSound/levels.py,sha256=XI7dzfUt5GiP77RziJ5XiXmE8zbipNopaKnVrSl5t44,15770
+SVSound/wavefile.py,sha256=5UP9bUdXPus4xdsqCbXRpUbmEQ7rBheSSD-hrFq0Uak,11596
+SVSound/recorders/__init__.py,sha256=8BHmI3kcOz9QKh2ElaUWUGtplTdUk1myqtA0yfg_PjU,915
+SVSound/recorders/decimus.py,sha256=ICCqV8eo5ORZ7pV52b9imu9OOznJGwltkyFb-7Cq3DI,3640
+SVSound/recorders/generic.py,sha256=C5RiusLYg1gtbim81X3ez_gJBVfK9Efttv75JTaKHU4,4547
+SVSound/recorders/icListen.py,sha256=8bpwJQz2EkulKYnO08Lrn6-B5No1lMiN81Ib0OodNdY,4519
+SVSound/recorders/zoom.py,sha256=Rf54yCoU5v55BOK8QjILpuLsX-TVZ_KmeTl7obYZNMs,6154
+svsound-0.0.10.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+svsound-0.0.10.dist-info/METADATA,sha256=ACX0ZpOocFdFCKZE8ogAQYs6JvlWGUzpn7QQPys9RN0,13740
+svsound-0.0.10.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+svsound-0.0.10.dist-info/top_level.txt,sha256=RmIgmFDo4GNU0N85CP7RyfBMdQVQEAmHhXVOeusvO8c,8
+svsound-0.0.10.dist-info/RECORD,,
