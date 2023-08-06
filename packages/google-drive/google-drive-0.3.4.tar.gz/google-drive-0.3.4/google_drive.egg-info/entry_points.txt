@@ -1,0 +1,2 @@
+[console_scripts]
+google-drive = googledrive.cli:googledrive
