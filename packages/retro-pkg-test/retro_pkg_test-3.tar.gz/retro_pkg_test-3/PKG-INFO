@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: retro_pkg_test
+Version: 3
+Summary: A test pkg for retro.
+Home-page: https://github.com/retrofor/retro_pkg_test
+Author: 简律纯
+Author-email: HsiangNianian@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# retro_pkg_test
+
+retro 模块测试
