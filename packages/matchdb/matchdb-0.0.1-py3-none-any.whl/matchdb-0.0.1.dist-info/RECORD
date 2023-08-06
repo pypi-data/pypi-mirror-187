@@ -1,0 +1,12 @@
+MatchDB/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+MatchDB/_modidx.py,sha256=TGXojc1u2JEQabM1F8Gio18AzvmUGdHZRPteSQmW98U,1965
+MatchDB/matchdb.py,sha256=Xf1on71jRLvNyp6oxgN5F1Lv10RPFWq0qyumPrO1v5A,9585
+matchdb/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+matchdb/_modidx.py,sha256=TGXojc1u2JEQabM1F8Gio18AzvmUGdHZRPteSQmW98U,1965
+matchdb/matchdb.py,sha256=Xf1on71jRLvNyp6oxgN5F1Lv10RPFWq0qyumPrO1v5A,9585
+matchdb-0.0.1.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+matchdb-0.0.1.dist-info/METADATA,sha256=VDrNNFRfsiSrj-fGgfGn5KvYqtqInN_MYoCF7wg4GJw,1177
+matchdb-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+matchdb-0.0.1.dist-info/entry_points.txt,sha256=p4BmRs9FiHFDTyOD6B_pqoERx-C4dz81HQYbtFIlQyU,57
+matchdb-0.0.1.dist-info/top_level.txt,sha256=6RLL0ZyqAF1lLf-qhqZGW_MSYGWPOhZYh-Vp7mb3fUQ,16
+matchdb-0.0.1.dist-info/RECORD,,
