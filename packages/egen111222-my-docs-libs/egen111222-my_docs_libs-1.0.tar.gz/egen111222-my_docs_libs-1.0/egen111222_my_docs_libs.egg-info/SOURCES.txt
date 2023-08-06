@@ -1,0 +1,8 @@
+setup.py
+egen111222_my_docs_libs.egg-info/PKG-INFO
+egen111222_my_docs_libs.egg-info/SOURCES.txt
+egen111222_my_docs_libs.egg-info/dependency_links.txt
+egen111222_my_docs_libs.egg-info/top_level.txt
+my_project/program.py
+my_project/program2.py
+my_project/program3.py
