@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: serial-sniffer
+Version: 1.0.0
+Summary: Simple way to sniff dev ports.
+Home-page: https://github.com/ido123net/serial-sniffer
+Author: Ido Frenkel
+Author-email: ido.frenkel@mobileye.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: psutil (>=5.9.4)
+Requires-Dist: pyserial (>=3.5)
+
+[![build status](https://github.com/ido123net/serial-sniffer/actions/workflows/main.yml/badge.svg)](https://github.com/ido123net/serial-sniffer/actions/workflows/main.yml)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/ido123net/serial-sniffer/main.svg)](https://results.pre-commit.ci/latest/github/ido123net/serial-sniffer/main)
+
+# Serial Sniffer
+
+## Installation
+
+```shell
+pip install serial-sniffer
+```
+
+## Usage
+
+```shell
+serial-sniffer  [-b <baudrate>] [--no-timestamp] [--raw] [-o <filename>] <PORT>
+```
+required parameters:
+- `PORT` Is the port you want to sniff - this parameter is required
+
+optional parameters:
+- `-b <baudrate>` baudrate for the port.
+  - default - 115200
+- `-o <filename>` output to a file, `<filename>` is the path of the output file.
+  - default - `sys.stdout`.
+- `--raw` flag for raw output.
+  - default - remove ascii ESC chars and some control ascii chars, also removing carriage return (`\r`).
+- `--no-timestamp` flag to prevent adding timestamp for each line.
