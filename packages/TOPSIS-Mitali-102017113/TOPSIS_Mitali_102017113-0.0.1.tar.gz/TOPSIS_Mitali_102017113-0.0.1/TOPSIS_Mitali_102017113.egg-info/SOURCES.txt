@@ -1,0 +1,10 @@
+License.txt
+setup.cfg
+setup.py
+TOPSIS_Mitali_102017113.egg-info/PKG-INFO
+TOPSIS_Mitali_102017113.egg-info/SOURCES.txt
+TOPSIS_Mitali_102017113.egg-info/dependency_links.txt
+TOPSIS_Mitali_102017113.egg-info/requires.txt
+TOPSIS_Mitali_102017113.egg-info/top_level.txt
+Topsis-Mitali-102017113/102017113.py
+Topsis-Mitali-102017113/__init__.py
