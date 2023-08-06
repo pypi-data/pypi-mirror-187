@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+kraken_thing_simple/__init__.py
+kraken_thing_simple/kraken_thing_simple.py
+kraken_thing_simple.egg-info/PKG-INFO
+kraken_thing_simple.egg-info/SOURCES.txt
+kraken_thing_simple.egg-info/dependency_links.txt
+kraken_thing_simple.egg-info/top_level.txt
