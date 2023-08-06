@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-brainbow-diagnose = napari_brainbow_diagnose:napari.yaml
