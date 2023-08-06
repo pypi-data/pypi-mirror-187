@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: 102003766-topsis
+Version: 0.0.1
+Summary: Multiple Criteria Decision Making
+Author: Sahil Chhabra
+Author-email: sahil.chh718@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Topsis
+TOPSIS is based on the fundamental premise that the best solution has the shortest distance from the positive-ideal solution, and the longest distance from the negative-ideal one. Alternatives are ranked with the use of an overall index calculated based on the distances from the ideal solutions.
+
+It takes 4 arguments :
+1.Data.csv file
+2.Weights
+3.Impacts
+4.Result file
+
+Returns file with Ranks and Topsis Score
+
+## How to use it?
+Open terminal and type topsis data file name weights impacts result file name
+
+ex: topsis data.csv 1,1,1,1 +,+,-,+ resullt.csv
