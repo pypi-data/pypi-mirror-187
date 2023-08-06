@@ -1,0 +1,4 @@
+pyCryptodome
+asyncio
+argon2-cffi
+requests
