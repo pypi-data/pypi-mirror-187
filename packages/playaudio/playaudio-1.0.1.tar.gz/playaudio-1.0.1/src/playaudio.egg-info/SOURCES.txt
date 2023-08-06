@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.testing.txt
+setup.py
+src/playaudio/__init__.py
+src/playaudio/api.py
+src/playaudio/cli.py
+src/playaudio.egg-info/PKG-INFO
+src/playaudio.egg-info/SOURCES.txt
+src/playaudio.egg-info/dependency_links.txt
+src/playaudio.egg-info/entry_points.txt
+src/playaudio.egg-info/top_level.txt
+src/playaudio/assets/__init__.py
+src/playaudio/assets/bell.mp3
+src/playaudio/assets/builtin.py
