@@ -1,0 +1,7 @@
+caped-ai
+
+[testing]
+tox
+caped-ai
+pytest
+pytest-cov
