@@ -1,0 +1,5 @@
+setup.py
+twitter_loctagger_it.egg-info/PKG-INFO
+twitter_loctagger_it.egg-info/SOURCES.txt
+twitter_loctagger_it.egg-info/dependency_links.txt
+twitter_loctagger_it.egg-info/top_level.txt
