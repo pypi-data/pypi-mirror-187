@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+Ekaspreet_topsis_102017078.egg-info/PKG-INFO
+Ekaspreet_topsis_102017078.egg-info/SOURCES.txt
+Ekaspreet_topsis_102017078.egg-info/dependency_links.txt
+Ekaspreet_topsis_102017078.egg-info/entry_points.txt
+Ekaspreet_topsis_102017078.egg-info/requires.txt
+Ekaspreet_topsis_102017078.egg-info/top_level.txt
