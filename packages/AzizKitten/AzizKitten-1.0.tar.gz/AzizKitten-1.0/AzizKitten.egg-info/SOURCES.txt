@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+AzizKitten/__init__.py
+AzizKitten/maths.py
+AzizKitten/mystery.py
+AzizKitten/spam.py
+AzizKitten.egg-info/PKG-INFO
+AzizKitten.egg-info/SOURCES.txt
+AzizKitten.egg-info/dependency_links.txt
+AzizKitten.egg-info/top_level.txt
