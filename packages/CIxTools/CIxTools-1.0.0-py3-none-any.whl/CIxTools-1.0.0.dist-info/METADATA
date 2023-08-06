@@ -1,0 +1,292 @@
+Metadata-Version: 2.1
+Name: CIxTools
+Version: 1.0.0
+Summary: Cheminformatics Tools
+Home-page: https://github.com/<>/<>
+Author: Eric Sigel, Citadel Discovery
+Author-email: eric@citadeldiscovery.io
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: altair (==4.1.0)
+Requires-Dist: appnope (==0.1.2)
+Requires-Dist: argon2-cffi (==21.3.0)
+Requires-Dist: argon2-cffi-bindings (==21.2.0)
+Requires-Dist: attrs (==21.4.0)
+Requires-Dist: backcall (==0.2.0)
+Requires-Dist: beautifulsoup4 (==4.11.1)
+Requires-Dist: bleach (==4.1.0)
+Requires-Dist: blinker (==1.4)
+Requires-Dist: bokeh (==2.4.3)
+Requires-Dist: Bottleneck (==1.3.5)
+Requires-Dist: brotlipy (==0.7.0)
+Requires-Dist: cachetools (==4.2.2)
+Requires-Dist: certifi (==2022.6.15)
+Requires-Dist: cffi (==1.15.1)
+Requires-Dist: charset-normalizer (==2.0.4)
+Requires-Dist: click (==8.0.4)
+Requires-Dist: cloudpickle (==2.0.0)
+Requires-Dist: commonmark (==0.9.1)
+Requires-Dist: cryptography (==37.0.1)
+Requires-Dist: cycler (==0.11.0)
+Requires-Dist: dask (==2021.10.0)
+Requires-Dist: debugpy (==1.5.1)
+Requires-Dist: decorator (==5.1.1)
+Requires-Dist: defusedxml (==0.7.1)
+Requires-Dist: distributed (==2021.10.0)
+Requires-Dist: entrypoints (==0.4)
+Requires-Dist: explode (==1.0.6)
+Requires-Dist: fastjsonschema (==2.16.2)
+Requires-Dist: fonttools (==4.38.0)
+Requires-Dist: fpdf (==1.7.2)
+Requires-Dist: fpdf2 (==2.6.0)
+Requires-Dist: fsspec (==2022.7.1)
+Requires-Dist: future (==0.18.2)
+Requires-Dist: gitdb (==4.0.7)
+Requires-Dist: GitPython (==3.1.18)
+Requires-Dist: graphviz (==0.20.1)
+Requires-Dist: HeapDict (==1.0.1)
+Requires-Dist: idna (==3.3)
+Requires-Dist: importlib-metadata (==4.11.3)
+Requires-Dist: importlib-resources (==5.2.0)
+Requires-Dist: ipykernel (==6.15.2)
+Requires-Dist: ipython (==7.31.1)
+Requires-Dist: ipython-genutils (==0.2.0)
+Requires-Dist: ipywidgets (==7.6.5)
+Requires-Dist: jedi (==0.18.1)
+Requires-Dist: Jinja2 (==3.0.3)
+Requires-Dist: joblib (==1.2.0)
+Requires-Dist: jsonschema (==4.4.0)
+Requires-Dist: jupyter-client (==7.3.5)
+Requires-Dist: jupyter-core (==4.10.0)
+Requires-Dist: jupyterlab-pygments (==0.1.2)
+Requires-Dist: jupyterlab-widgets (==1.0.0)
+Requires-Dist: kaleido (==0.2.1)
+Requires-Dist: kiwisolver (==1.4.2)
+Requires-Dist: llvmlite (==0.39.1)
+Requires-Dist: locket (==1.0.0)
+Requires-Dist: MarkupSafe (==2.1.1)
+Requires-Dist: matplotlib (==3.5.2)
+Requires-Dist: matplotlib-inline (==0.1.6)
+Requires-Dist: mistune (==0.8.4)
+Requires-Dist: msgpack (==1.0.3)
+Requires-Dist: nbclient (==0.5.13)
+Requires-Dist: nbconvert (==6.4.4)
+Requires-Dist: nbformat (==5.3.0)
+Requires-Dist: nest-asyncio (==1.5.5)
+Requires-Dist: notebook (==6.4.12)
+Requires-Dist: numba (==0.56.4)
+Requires-Dist: numexpr (==2.8.3)
+Requires-Dist: numpy (==1.21.5)
+Requires-Dist: packaging (==21.3)
+Requires-Dist: pandas (==1.3.5)
+Requires-Dist: pandocfilters (==1.5.0)
+Requires-Dist: parso (==0.8.3)
+Requires-Dist: partd (==1.2.0)
+Requires-Dist: pbr (==5.11.1)
+Requires-Dist: pexpect (==4.8.0)
+Requires-Dist: pickleshare (==0.7.5)
+Requires-Dist: Pillow (==9.2.0)
+Requires-Dist: pip (==22.1.2)
+Requires-Dist: plotly (==5.10.0)
+Requires-Dist: prometheus-client (==0.14.1)
+Requires-Dist: prompt-toolkit (==3.0.20)
+Requires-Dist: protobuf (==3.20.1)
+Requires-Dist: psutil (==5.9.0)
+Requires-Dist: ptyprocess (==0.7.0)
+Requires-Dist: pyarrow (==8.0.0)
+Requires-Dist: pycparser (==2.21)
+Requires-Dist: pydeck (==0.7.1)
+Requires-Dist: Pygments (==2.11.2)
+Requires-Dist: Pympler (==0.9)
+Requires-Dist: pynndescent (==0.5.8)
+Requires-Dist: pyOpenSSL (==22.0.0)
+Requires-Dist: pyparsing (==3.0.9)
+Requires-Dist: pyrsistent (==0.18.0)
+Requires-Dist: PySocks (==1.7.1)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: python-decouple (==3.6)
+Requires-Dist: pytz (==2022.1)
+Requires-Dist: PyYAML (==6.0)
+Requires-Dist: pyzmq (==23.2.0)
+Requires-Dist: rdkit-pypi (==2022.3.5)
+Requires-Dist: requests (==2.28.1)
+Requires-Dist: rich (==12.5.1)
+Requires-Dist: scikit-learn (==1.0.2)
+Requires-Dist: scipy (==1.7.3)
+Requires-Dist: seaborn (==0.12.0)
+Requires-Dist: semver (==2.13.0)
+Requires-Dist: Send2Trash (==1.8.0)
+Requires-Dist: setuptools (==63.4.1)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: sklearn (==0.0)
+Requires-Dist: smmap (==4.0.0)
+Requires-Dist: sortedcontainers (==2.4.0)
+Requires-Dist: soupsieve (==2.3.1)
+Requires-Dist: streamlit (==1.16.0)
+Requires-Dist: streamlit-aggrid (==0.3.2)
+Requires-Dist: streamlit-plotly-events (==0.0.6)
+Requires-Dist: tblib (==1.7.0)
+Requires-Dist: tenacity (==8.1.0)
+Requires-Dist: terminado (==0.13.1)
+Requires-Dist: testpath (==0.6.0)
+Requires-Dist: threadpoolctl (==3.1.0)
+Requires-Dist: toml (==0.10.2)
+Requires-Dist: toolz (==0.11.2)
+Requires-Dist: tornado (==6.2)
+Requires-Dist: tqdm (==4.64.0)
+Requires-Dist: traitlets (==5.1.1)
+Requires-Dist: typing-extensions (==4.3.0)
+Requires-Dist: tzlocal (==2.1)
+Requires-Dist: umap (==0.1.1)
+Requires-Dist: umap-learn (==0.5.3)
+Requires-Dist: urllib3 (==1.26.11)
+Requires-Dist: validators (==0.14.0)
+Requires-Dist: wcwidth (==0.2.5)
+Requires-Dist: webencodings (==0.5.1)
+Requires-Dist: wheel (==0.37.1)
+Requires-Dist: widgetsnbextension (==3.5.2)
+Requires-Dist: zict (==2.1.0)
+Requires-Dist: zipp (==3.8.0)
+
+<h2>Background</h2>
+<p>
+Authors: Eric Sigel
+<p>
+Contributors: Antoine Dumas
+
+CIxTools is an accumulated set of Cheminformatics tools built on rdkit that I have been building for my consulting work
+The tools are developed for DEL (DNA Encoded Library) and Virtual library analysis and enumeration
+Many functions are accessible from a lightweight frontend built with streamlit, increasingly functionality is accessible
+through CLI options.
+
+<h2>Setup</h2>
+<h3>Conda env</h3>
+conda env create environment.yml
+conda activate CixTools
+pip install -r requirements.txt
+
+<h3>Folder structure</h3>
+*Where file names can be specified, the names are suggestions not requirements. 
+Recommended installation, create a folder called CIx.
+At top level of CIx create a folder called Enumerations and a folder called CIxTools
+Additionally create a file called CIxTools.init.json, which can be an empty dictionary ('{}')
+This file is used to store default values.
+Optionally, for some CLI functionality, a file called inparams.yml can be created at the CIx level
+
+<h3>For Enumerations:</h3>
+Under the Enumerations folder create a .json file called RxnSchemes.json
+For each reaction scheme that is added to RxnSchemes.json, create a subfolder with the scheme name
+Under the scheme folder create a subfolder called BBLists
+In each subfolder there should be one file per BB cycle named <scheme>.BB<X>.csv
+These files should have at a minimum columns BB_ID, SMILES
+Additional libraries using the same scheme can be added using a specstr (specification string)
+in the scheme folder create a subfolder named <specstr>
+under this folder create a subfolder called BBLists
+BB files in this set up should be named <scheme>.<specstr>.BB<X>.csv
+This specstr can be entered into the UI to refer to the specific BB sets
+<p></p>
+
+![img1.png](Readme_Images/img_1.png)
+
+
+<p></p>
+<h2>Running the streamlit UI</h2>
+<p>
+The streamlit UI is launched with the following command:
+streamlit run CIxToolsMainUI.py
+This will provide a URL for access in std out.
+The UI is set up to provide multiple functionalities that can be accessed through buttons on the side pane.
+To access Enumeration, click the top button under controls
+
+![img.png](Readme_Images/img.png)
+
+<h2>Enumeration</h2>
+Groups that I work with increasingly are interested in enumerating chemical space with building blocks in
+large scale combinatorial libraries. Building SMARTS/SMIRKS reactions is far from my favorite activity. 
+The ability to visually inspect an enumeration, examine random examples, and check specific failing examples are 
+intended to be simplified using the (simple/clunky) UI. Features include product structure as well as structures 
+of building blocks and intermediates. A grid that shows each step improves ability to debug SMARTS/SMIRKS failures.
+A further table of random structures, shows if there are any failures featuring clickable rows that place the relevant BBs
+into the relevant structure override textbox. The UI provides a mechanism for editing the current reaction
+scheme and testing/saving to the active RxnSchemes.json file for further use.
+
+Example json scheme:
+</p>
+
+    "cix1": {
+        "steps": [
+            {
+                "Reactants": [
+                    "CN",
+                    "r0"
+                ],
+                "Rxns": {
+                    "default": "[NX3:1].[C:2](=[O:3])[OX2;H1]>>[N:1][C:2](=[O:3])"
+                }
+            },
+            {
+                "Reactants": [
+                    "p",
+                    "r1"
+                ],
+                "Rxns": {
+                    "default": "C(C)(C)(C)OC(=O)[NX3;H:1].[C:2](=[O:3])[OX2;H1]>>[N:1][C:2](=[O:3])"
+                }
+            },
+            {
+                "Reactants": [
+                    "p",
+                    "r2"
+                ],
+                "Rxns": {
+                    "default": "O=C(OCC1c2c(c3c1cccc3)cccc2)[NX3:1].[C:2](=[O:3])[OX2;H1]>>[N:1][C:2](=[O:3])"
+                }
+            }
+        ]
+    }
+
+<p></p>
+<h3>Basic Elements</h3>
+each scheme can be separated by comma
+<p>
+
+    "schemename": {
+        "steps":[
+             {
+                "Reactants": [
+                    "SMILES or r[N] or p",   # N is a 0 based number ordered starting with 1st reactant etc.  r0,r1, r2
+                                               # a SMILES string is used explicitly
+                                               # p indicates to use the product from the previous step
+                    "r[N] or None"             # r[N] indicates to use the Nth reactant, None indicates that there is only 1 reactant
+                ],
+                "Rxns": {
+                    "default or SMARTS": ["rxn SMIRKS 1", "rxn SMIRKS 2", etc] # reactions are done in order where 
+                }
+            }
+        ]   
+    }
+<h3>Simple Enumeration</h3>
+In the Rxn Scheme File  text box paste path to RxnSchemes.json file (this can be an alternative name to allow e.g. dev versions)
+Re-Initialize button will reload the schemes
+Scheme path should point to folder (e.g. Enumerations) where scheme folders are located (e.g. containing BBLists)
+requires trailing slash
+Entering the correct information should cause the Schemes dropdown to appear and populate
+![img_4.png](Readme_Images/img_4.png)
+
+<h3>Export</h3>
+Export provides a mechanism to export a random sample of a specified size (positive number)
+Or the full library (-1) in the count field
+Remove Duplicates check box will identify rows with the same structure and take the first row only
+Add Intermediates check box will add reaction intermediate information to the output including the reaction and product (where possible) of each step
+
+![img_2.png](Readme_Images/img_2.png)
+
+
+--Incomplete ES 1/19/23--
+
+<h2>generation of install files</h2>
+pip list --format=freeze > requirements.txt
+
