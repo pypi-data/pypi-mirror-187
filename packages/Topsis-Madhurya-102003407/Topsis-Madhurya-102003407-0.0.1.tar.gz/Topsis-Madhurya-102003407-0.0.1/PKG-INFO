@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: Topsis-Madhurya-102003407
+Version: 0.0.1
+Summary: A package to Implement Topsis Model
+Home-page: 
+Author: Madhurya Peram
+Author-email: nperam_be20@thapar.edu
+License: MIT
+Keywords: TOPSIS
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: Licence.txt
+
+Topsis-Madhurya-102003407 is a Python library for dealing with Multiple Criteria Decision Making(MCDM) problems by using Technique for Order of Preference by Similarity to Ideal Solution(TOPSIS).
+
+Change log
+==========
+
+0.0.1 (22/1/2023)
+-----------------
+- First Release
