@@ -1,0 +1,11 @@
+dsolve/__init__.py,sha256=gx8RKVgLtTKEBM9MpHpO_6XZVMAAlwYKSPHxrygFp-Y,29
+dsolve/atoms.py,sha256=P1zxoJYB730Tkt6hS3QIR8Ti8pNlZItYOvHG9O1ZIBE,6896
+dsolve/expressions.py,sha256=QP4am5QoeW8L_P3LFDHaFdnKz1OUVJ-BpLaodSHyWNo,8443
+dsolve/linearization.py,sha256=z1NO-n_WgH9Ee-nnzDWRKPZDVDdUEfCT1covic6EeMY,1490
+dsolve/solvers.py,sha256=Xl5VKW2XhGlCMseOMAqySmAurqkyzXCRTBhjVIOYoM4,15814
+dsolve/statespace.py,sha256=BEnogN4ae0NUupCLZKm3hOMT-jZ7N7fF369T7IqjccA,5216
+dsolve/utils.py,sha256=00agIqNpf1AkEIV0vPBY_2J5DpKkWQpqnXMdc61IcVo,1479
+dsolve-0.0.9.dist-info/METADATA,sha256=yuEPh3fmIZnLGjzMy4XBHyXO7HOm--89XKLu4bZz7Ys,2978
+dsolve-0.0.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dsolve-0.0.9.dist-info/top_level.txt,sha256=eXO8BFSfwFqP0NLr98QUVBei99yN2MV-_tWcSUn0STo,7
+dsolve-0.0.9.dist-info/RECORD,,
