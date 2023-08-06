@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: asitop
+Version: 0.0.23
+Summary: Performance monitoring CLI tool for Apple Silicon
+Home-page: https://github.com/tlkh/asitop
+Author: Timothy Liu
+Author-email: tlkh.xms@gmail.com
+License: MIT
+Keywords: asitop
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Performance monitoring CLI tool for Apple Silicon
