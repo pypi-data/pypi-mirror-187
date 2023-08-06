@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: growthTool
+Version: 1.0.0
+Summary: This package includes all GT utils for automated prediction mode
+Author: Noy Sartori
+License: MIT
+Requires-Python: >=3.6
+License-File: LICENSE
+
