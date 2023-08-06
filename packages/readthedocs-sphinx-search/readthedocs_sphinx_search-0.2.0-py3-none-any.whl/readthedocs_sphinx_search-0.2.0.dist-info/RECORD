@@ -1,0 +1,11 @@
+sphinx_search/__init__.py,sha256=FVHPBGkfhbQDi_z3v0PiKJrXXqXOx0vGW_1VaqNJi7U,22
+sphinx_search/extension.py,sha256=RcFt_W8-YWSHPpFQvrpUVgtCYQPemsxx9n6SxUioh7o,1598
+sphinx_search/static/css/rtd_sphinx_search.css,sha256=C6p7t7db5zKR68luSL0Kg3AKUcBbSm2G7feCC6CJPG4,6767
+sphinx_search/static/css/rtd_sphinx_search.min.css,sha256=C6UKzJUTEvh5UmmhCQwxB9dNC2sPT2xgdIjJ04RZqCE,5018
+sphinx_search/static/js/rtd_sphinx_search.js,sha256=4myA3fI-2uqPRQaSwvKccv8IPH_3gB24mS6au0Sf9J8,24490
+sphinx_search/static/js/rtd_sphinx_search.min.js,sha256=Ie97b_3iXa4Ef9xfvrRsvuhFiMJ6iT2q8IIG9mqEP4k,8836
+readthedocs_sphinx_search-0.2.0.dist-info/LICENSE,sha256=XSExzxh0sUVn3LgzRBRH9JfBRev_XVwgEVjj4VsdjqE,1070
+readthedocs_sphinx_search-0.2.0.dist-info/METADATA,sha256=zuXwI-5bVVPx71BFaCwI1upmjIGbdmHvxDUlw-Ke0CQ,2381
+readthedocs_sphinx_search-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+readthedocs_sphinx_search-0.2.0.dist-info/top_level.txt,sha256=v-l2btuokSmL_FBV3ZwNUGeZXvSpf8cFE_PgTBl3bG0,14
+readthedocs_sphinx_search-0.2.0.dist-info/RECORD,,
