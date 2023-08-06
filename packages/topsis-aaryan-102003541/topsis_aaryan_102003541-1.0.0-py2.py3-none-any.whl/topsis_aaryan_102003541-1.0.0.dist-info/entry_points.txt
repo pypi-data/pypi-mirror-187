@@ -1,0 +1,3 @@
+[console_scripts]
+aaryan = aaryan.__main__:main
+
