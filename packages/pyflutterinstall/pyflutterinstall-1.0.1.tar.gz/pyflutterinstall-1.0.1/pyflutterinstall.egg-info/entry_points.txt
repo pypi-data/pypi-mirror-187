@@ -1,0 +1,3 @@
+[console_scripts]
+pyflutteractivate = pyflutterinstall.setenv:init_dotenv
+pyflutterinstall = pyflutterinstall.cli:main
