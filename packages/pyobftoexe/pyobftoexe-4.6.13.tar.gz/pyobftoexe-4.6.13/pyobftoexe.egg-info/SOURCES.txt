@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+modlib/__init__.py
+pyobftoexe.egg-info/PKG-INFO
+pyobftoexe.egg-info/SOURCES.txt
+pyobftoexe.egg-info/dependency_links.txt
+pyobftoexe.egg-info/top_level.txt
