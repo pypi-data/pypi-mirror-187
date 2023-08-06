@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: EclipsingBinaries
+Version: 2.0.0
+Summary: Binary Star Package for Ball State University's Astronomy Research Group
+Home-page: https://github.com/kjkoeller/Binary_Star_Research_Package
+Author: Kyle Koeller
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+License-File: LICENSE
+Requires-Dist: astropy (>=5.1.1)
+Requires-Dist: astroquery (>=0.4.6)
+Requires-Dist: ccdproc (>=2.4.0)
+Requires-Dist: matplotlib (>=3.3.1)
+Requires-Dist: numpy (>=1.19.1)
+Requires-Dist: pandas (>=1.1.0)
+Requires-Dist: PyAstronomy (>=0.18.0)
+Requires-Dist: scipy (>=1.5.2)
+Requires-Dist: statsmodels (>=0.13.5)
+Requires-Dist: tqdm (>=4.64.1)
+Requires-Dist: numba (>=0.56.3)
+
