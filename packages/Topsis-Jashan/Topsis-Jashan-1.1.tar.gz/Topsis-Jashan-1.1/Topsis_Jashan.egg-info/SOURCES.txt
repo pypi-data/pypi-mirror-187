@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+Topsis-Jashan/Topsis.py
+Topsis-Jashan/__init__.py
+Topsis_Jashan.egg-info/PKG-INFO
+Topsis_Jashan.egg-info/SOURCES.txt
+Topsis_Jashan.egg-info/dependency_links.txt
+Topsis_Jashan.egg-info/entry_points.txt
+Topsis_Jashan.egg-info/requires.txt
+Topsis_Jashan.egg-info/top_level.txt
