@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: libjpcalc
+Version: 0.1.1
+Summary: Exemplo de bibliotecas para ser utilizada
+Author: Julio Pereira
+Author-email: juliocezar.marketing@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+
