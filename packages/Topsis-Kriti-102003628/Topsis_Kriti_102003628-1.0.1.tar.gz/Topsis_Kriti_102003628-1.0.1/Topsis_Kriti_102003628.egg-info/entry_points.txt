@@ -1,0 +1,2 @@
+[console_scripts]
+topsis = Topsis_Kriti_102003628.topsis:main

@@ -1,0 +1,11 @@
+License
+README.md
+setup.cfg
+setup.py
+Topsis_Kriti_102003628/Topsis_Kriti_102003628.py
+Topsis_Kriti_102003628.egg-info/PKG-INFO
+Topsis_Kriti_102003628.egg-info/SOURCES.txt
+Topsis_Kriti_102003628.egg-info/dependency_links.txt
+Topsis_Kriti_102003628.egg-info/entry_points.txt
+Topsis_Kriti_102003628.egg-info/requires.txt
+Topsis_Kriti_102003628.egg-info/top_level.txt
