@@ -1,0 +1,7 @@
+h5py
+numpy
+scipy
+matplotlib
+lisaconstants
+packaging
+importlib_metadata
