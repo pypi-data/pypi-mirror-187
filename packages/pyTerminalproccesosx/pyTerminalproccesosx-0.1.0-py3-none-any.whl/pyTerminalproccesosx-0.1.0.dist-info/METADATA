@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: pyTerminalproccesosx
+Version: 0.1.0
+Summary: Hello everyone!This module will help you change brightness, output , connecting to wifi-network, bluetooth device.You can use this utility for your python project.
+Author: aaaleX
+License: MIT
+License-File: LICENSE.txt
+
