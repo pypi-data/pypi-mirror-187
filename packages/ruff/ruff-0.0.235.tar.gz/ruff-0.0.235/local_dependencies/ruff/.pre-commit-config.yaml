@@ -1,0 +1,20 @@
+repos:
+  - repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: v0.0.235
+    hooks:
+      - id: ruff
+        args: [--fix]
+        exclude: ^resources
+
+  - repo: https://github.com/abravalheri/validate-pyproject
+    rev: v0.10.1
+    hooks:
+      - id: validate-pyproject
+
+  - repo: local
+    hooks:
+      - id: cargo-fmt
+        name: cargo fmt
+        entry: cargo +nightly fmt --
+        language: rust
+        types: [rust]

@@ -1,0 +1,11 @@
+[tool.ruff]
+select = ["ALL"]
+ignore = [
+  "E501",    # line-too-long
+  "INP001",  # implicit-namespace-package
+  "PLR2004", # magic-value-comparison
+  "S101",    # assert-used
+]
+
+[tool.ruff.pydocstyle]
+convention = "pep257"
