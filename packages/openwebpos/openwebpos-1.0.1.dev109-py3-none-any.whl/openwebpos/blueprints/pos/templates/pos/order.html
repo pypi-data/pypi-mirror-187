@@ -1,0 +1,24 @@
+{% extends 'layouts/app.html' %}
+
+{% from 'macros/user_interface.html' import clickableCard, actionModal %}
+
+{% block content %}
+
+    <section class="row app-order-section">
+        <div class="col m4 hide-on-med-and-down">
+            {% include 'pos/_order_view.html' %}
+            {% include 'pos/_order_settings.html' %}
+            {% include 'pos/_order_info.html' %}
+            {% include 'pos/_order_payout.html' %}
+        </div>
+        <div class="col s12 m8 options-window">
+            {% for menu_category in menu_categories|sort(attribute='name') %}
+                {% if menu_category.has_items() %}
+                    {{ clickableCard(url_for('pos.menu_items', order_number=order_number, category_slug=menu_category.slug), menu_category.name) }}
+                {% endif %}
+            {% endfor %}
+
+        </div>
+    </section>
+
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends 'layouts/app.html' %}
+
+
+{% block content %}
+
+    <section>
+        <div class="row">
+            <div class="col s12">
+                <div class="card rounded">
+                    <div class="card-content">
+                        <span class="card-title center-align">{{ user.username }} Activity</span>
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Count</th>
+                                <th>Current Login Date</th>
+                                <th>Current Login Time</th>
+                                <th>Previews Login Date</th>
+                                <th>Previews Login Time</th>
+                                <th>Current IP</th>
+                                <th>Previews IP</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for user_activity in user_activities %}
+                                <tr>
+                                    <td>{{ user_activity.sign_in_count }}</td>
+                                    <td>{{ user_activity.current_sign_in_at|format_datetime('short') }}</td>
+                                    <td>{{ user_activity.current_sign_in_at|format_datetime('time') }}</td>
+                                    <td>{{ user_activity.last_sign_in_at|format_datetime('short') }}</td>
+                                    <td>{{ user_activity.last_sign_in_at|format_datetime('time') }}</td>
+                                    <td>{{ user_activity.current_sign_in_ip }}</td>
+                                    <td>{{ user_activity.last_sign_in_ip }}</td>
+                                </tr>
+                            {% endfor %}
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

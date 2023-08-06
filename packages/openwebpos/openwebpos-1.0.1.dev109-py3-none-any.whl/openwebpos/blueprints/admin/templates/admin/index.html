@@ -1,0 +1,21 @@
+{% extends 'layouts/app.html' %}
+
+{% from 'macros/user_interface.html' import clickableCard %}
+
+
+{% block content %}
+
+    <div class="options-window">
+        {{ clickableCard(url_for('admin.user.list_view'), 'Users') }}
+        {{ clickableCard(url_for('admin.menu.index'), 'Menus') }}
+        {{ clickableCard(url_for('admin.order.index'), 'Orders') }}
+        {{ clickableCard(url_for('admin.billing'), 'Billing') }}
+        {{ clickableCard(url_for('admin.company.index'), 'Company') }}
+        {{ clickableCard(url_for('admin.printer.index'), 'Printers') }}
+
+        {% if company.twilio_active() %}
+            {{ clickableCard(url_for('admin.twilio'), 'Twilio') }}
+        {% endif %}
+    </div>
+
+{% endblock %}

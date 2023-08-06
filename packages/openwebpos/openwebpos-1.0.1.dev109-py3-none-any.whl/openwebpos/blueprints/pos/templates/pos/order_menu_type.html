@@ -1,0 +1,13 @@
+{% extends 'layouts/app.html' %}
+
+{% from 'macros/user_interface.html' import clickableCard %}
+
+{% block content %}
+
+    <section class="options-window">
+        {% for menu_category in menu_categories|sort(attribute='name') %}
+            {{ clickableCard(url_for('pos.order_menu_category', order_id=order.id, menu_type_id=menu_type.id, menu_category_id=menu_category.id), menu_category.name) }}
+        {% endfor %}
+    </section>
+
+{% endblock %}

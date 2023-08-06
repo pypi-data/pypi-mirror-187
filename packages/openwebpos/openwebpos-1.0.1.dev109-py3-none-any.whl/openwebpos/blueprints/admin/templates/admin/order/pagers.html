@@ -1,0 +1,44 @@
+{% extends 'layouts/app.html' %}
+
+{% from 'macros/user_interface.html' import activeButton, actionButton, floatingButton %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="col s12 m6 offset-m3">
+            <div class="card rounded">
+                <div class="card-content">
+                    <span class="card-title center-align black-text">{{ title }}</span>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Short Name</th>
+                            <th>Active</th>
+                            <th>Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for pager in o_pagers|sort(attribute='name'|int) %}
+                            <tr>
+                                <td>{{ pager.name }}</td>
+                                <td>{{ pager.short_name }}</td>
+                                <td>
+                                    {{ activeButton(url_for('admin.order.toggle_pager', op_id=pager.id), pager.active) }}
+                                </td>
+                                <td>
+                                    {{ actionButton(url_for('admin.order.edit_pager', op_id=pager.id), 'edit', 'blue') }}
+                                    {{ actionButton(url_for('admin.order.delete_pager', op_id=pager.id), 'delete', 'red') }}
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{ floatingButton(url_for('admin.order.add_pager'), 'add') }}
+
+{% endblock %}
