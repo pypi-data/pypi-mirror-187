@@ -1,0 +1,10 @@
+repocutter/__init__.py,sha256=bfgXhjb9lfPWvkUCuJcGWZDld-IQcHs5kGnFqVGFStY,146
+repocutter/__main__.py,sha256=A5BvhlaEKTN6IwCNKWhGMa4oKiw76DWWdMao7UW-8g4,167
+repocutter/_main.py,sha256=Oo9r_RUfy1c5VgjSrsAb6oiD20SZEWUhvVBMKAF5k6o,7804
+repocutter/_version.py,sha256=Tcrel2y4WEOP0Xjn1HvAmkUWUNAtvk-7SPdB5N1J1m8,218
+repocutter/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+repocutter-0.4.0.dist-info/entry_points.txt,sha256=g686g4_8MYpJJK_NLt-VcbfvPDy-yyIkeRMW-I2kOJQ,55
+repocutter-0.4.0.dist-info/LICENSE,sha256=h8K3h-_cbia716SjBz4MJvYLIeyGr3pGEFj2BIc8bbg,1073
+repocutter-0.4.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+repocutter-0.4.0.dist-info/METADATA,sha256=_qpGgIHAcqWUbjdqIEp7lIGtZhB4-FH8qiXARyQd5JE,5875
+repocutter-0.4.0.dist-info/RECORD,,
