@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dadeschools/__init__.py
+dadeschools.egg-info/PKG-INFO
+dadeschools.egg-info/SOURCES.txt
+dadeschools.egg-info/dependency_links.txt
+dadeschools.egg-info/requires.txt
+dadeschools.egg-info/top_level.txt
