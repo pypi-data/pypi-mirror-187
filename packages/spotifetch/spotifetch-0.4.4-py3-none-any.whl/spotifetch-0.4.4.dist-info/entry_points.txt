@@ -1,0 +1,3 @@
+[console_scripts]
+spotifetch=spotifetch.cli:main
+
