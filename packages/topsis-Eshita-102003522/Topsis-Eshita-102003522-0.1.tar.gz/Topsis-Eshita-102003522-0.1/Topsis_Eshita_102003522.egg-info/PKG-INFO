@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Topsis-Eshita-102003522
+Version: 0.1
+Summary: Calculate Topsis score and save it in a csv file
+Home-page: https://github.com/eshitaarora/Topsis-Eshita
+Download-URL: https://github.com/eshitaarora/Topsis-Eshita/archive/refs/tags/v0.1.tar.gz
+Author: Eshita Arora
+Author-email: earora_be20@thapar.edu
+License: MIT
+Keywords: TOPSISSCORE,RANK,DATAFRAME
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE

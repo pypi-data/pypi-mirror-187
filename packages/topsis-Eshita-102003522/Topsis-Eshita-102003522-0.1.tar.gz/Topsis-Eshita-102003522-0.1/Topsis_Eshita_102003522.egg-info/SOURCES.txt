@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+Topsis-Eshita-102003522/__init__.py
+Topsis-Eshita-102003522/__main__.py
+Topsis-Eshita-102003522/generator.py
+Topsis_Eshita_102003522.egg-info/PKG-INFO
+Topsis_Eshita_102003522.egg-info/SOURCES.txt
+Topsis_Eshita_102003522.egg-info/dependency_links.txt
+Topsis_Eshita_102003522.egg-info/requires.txt
+Topsis_Eshita_102003522.egg-info/top_level.txt
