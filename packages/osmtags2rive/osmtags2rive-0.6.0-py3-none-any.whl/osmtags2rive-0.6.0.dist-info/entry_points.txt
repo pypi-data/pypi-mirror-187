@@ -1,0 +1,2 @@
+[console_scripts]
+osmtags2rive = osmtags2rive.cli:exec_from_console_scripts
