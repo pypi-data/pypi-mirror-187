@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: autohaus
+Version: 0.0.1
+Summary: YAHA - yet another home automation framework
+Project-URL: Homepage, https://github.com/Coimbra1984/autohaus
+Project-URL: Bug Tracker, https://github.com/Coimbra1984/autohaus/issues
+Author-email: Markus Proeller <markus.proeller@pieye.org>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Autohaus
+
+following soon...
