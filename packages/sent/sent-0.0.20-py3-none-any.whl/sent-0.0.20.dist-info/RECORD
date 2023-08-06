@@ -1,0 +1,10 @@
+sent/__init__.py,sha256=MOpGiCKhnSyWBIhNjNCte0yV5KDOZeEo9G1atgcUzJo,32
+sent/api.py,sha256=nmYmNXiJ5p2g1U_Ihl75-BRi7IJ2GKaCGpgTvKjCnPw,71236
+sent/telegram.py,sha256=ZOu11GAj0buRGU1s18dpkEYM6eCGIcuPNwABli3OTQA,40527
+sent/types.py,sha256=CGQPTjN6rkhZ7BRyEWOb-O7oFdk0aOY21zuS7w8iybw,299158
+sent/util.py,sha256=bmfC9mLmcfMKO9yQpZdk0Xyxn-MjykBkiRvFg_1d2z8,8049
+sent-0.0.20.dist-info/LICENSE,sha256=OoxwCpr0xIsELvlwaEsk5nClk7_j8ySO5S2AVZGT8lo,1093
+sent-0.0.20.dist-info/METADATA,sha256=ltpFD95iaghwi676Z8KiIQyhGc_z5NXtOuHcLyKjlOU,1310
+sent-0.0.20.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sent-0.0.20.dist-info/top_level.txt,sha256=Iz-F_FhbmwSAfOg1DuBibVPFGRAt4zBcuItVMUWP_5A,5
+sent-0.0.20.dist-info/RECORD,,
