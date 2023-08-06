@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: aws-cloudformation-visualizer
+Version: 0.0.2
+Summary: AWS CloudFormation Visualizer Tool.
+Home-page: https://github.com/marcus16-kang/aws-cloudformation-visualizer
+Author: marcus16-kang
+Author-email: marcus16-kang@outlook.com
+License: MIT
+Project-URL: Source, https://github.com/marcus16-kang/aws-cloudformation-visualizer
+Requires-Python: >=3.7
+
