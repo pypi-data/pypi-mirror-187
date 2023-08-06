@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+tuic_tunnel/__init__.py
+tuic_tunnel/tuic.py
+tuic_tunnel.egg-info/PKG-INFO
+tuic_tunnel.egg-info/SOURCES.txt
+tuic_tunnel.egg-info/dependency_links.txt
+tuic_tunnel.egg-info/requires.txt
+tuic_tunnel.egg-info/top_level.txt
