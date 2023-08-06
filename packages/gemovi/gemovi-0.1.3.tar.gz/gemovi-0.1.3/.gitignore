@@ -1,0 +1,18 @@
+# Repo-specific directories
+ignite_logs
+lightning_logs
+gemovi/common/configs/
+
+*.pt
+*.pth
+*.ckpt
+
+# Project directories
+.idea
+.vscode
+
+# Python byproducts
+**/__pycache__
+*.egg-info
+build/
+dist/

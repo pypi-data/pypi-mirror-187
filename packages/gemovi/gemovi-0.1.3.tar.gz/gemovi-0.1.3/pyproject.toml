@@ -1,0 +1,57 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gemovi"
+description = "Visualization tool for generative models"
+authors = [
+    {name = "Nathan Jessurun", email = "ntjessu@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+dependencies = [
+     "numpy",
+     "pandas",
+     "pyqtgraph >= 0.13.1",
+     "pyyaml",
+     "torch",
+     "torchvision",
+     "qtextras >= 0.6.6",
+     "scikit-learn",
+]
+dynamic = ["version"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+
+[project.optional-dependencies]
+train = ["pytorch-lightning>=1.4"]
+
+[tool.hatch.build]
+# since "gemovi/common/configs" is gitignored by default, explicitly add
+# here so at least the default config is packaged
+artifacts = ["gemovi/common/configs"]
+packages = ["gemovi"]
+
+[tool.hatch.version]
+path = "gemovi/__init__.py"
+
+[tool.isort]
+profile = "black"
+reverse_relative = true
+combine_as_imports = true
+
+[tool.unimport]
+ignore_init = true
+exclude = "types_.py"
+
+[tool.piptools.compile]
+input_files = ["./pyproject.toml", "requirements-unreleased.txt"]
+output_file = "requirements-pinned.txt"
+#verbose = true
