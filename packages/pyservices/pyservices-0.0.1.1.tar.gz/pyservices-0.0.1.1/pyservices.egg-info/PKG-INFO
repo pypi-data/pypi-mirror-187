@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pyservices
+Version: 0.0.1.1
+Home-page: https://github.com/aturkenov/pyservices
+Author: Aidar Turkenov
+Author-email: a.k.turken0v@gmail.com
+Project-URL: Bug Tracker, https://github.com/aturkenov/pyservices/issues
+Project-URL: Discussions, https://github.com/aturkenov/pyservices/discussions
+Classifier: Typing :: Typed
+Classifier: Framework :: AsyncIO
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PYSERVICES
+

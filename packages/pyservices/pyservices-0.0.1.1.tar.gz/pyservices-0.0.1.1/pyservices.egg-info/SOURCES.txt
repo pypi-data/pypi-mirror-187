@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pyservices/__init__.py
+pyservices/meta_service.py
+pyservices/signals.py
+pyservices.egg-info/PKG-INFO
+pyservices.egg-info/SOURCES.txt
+pyservices.egg-info/dependency_links.txt
+pyservices.egg-info/requires.txt
+pyservices.egg-info/top_level.txt
