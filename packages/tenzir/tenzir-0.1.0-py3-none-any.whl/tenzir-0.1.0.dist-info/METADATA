@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: tenzir
+Version: 0.1.0
+Summary: Tenzir, Answer the toughest questions in cyber security
+License: BSD-3-Clause
+Author: Tenzir
+Author-email: engineering@tenzir.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+# Actionable Insights
+
+## Answer the toughest questions in cyber security
+
+Optimal posture for network-wide forensics
+
+Data-driven protection for your network
+
+Faster threat detection & response
+
+<https://tenzir.com/>
+
