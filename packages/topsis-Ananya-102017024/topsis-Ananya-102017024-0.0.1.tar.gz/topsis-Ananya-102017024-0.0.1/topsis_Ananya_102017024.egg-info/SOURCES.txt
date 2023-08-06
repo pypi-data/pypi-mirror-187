@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+topsis/__init__.py
+topsis/topsis.py
+topsis_Ananya_102017024.egg-info/PKG-INFO
+topsis_Ananya_102017024.egg-info/SOURCES.txt
+topsis_Ananya_102017024.egg-info/dependency_links.txt
+topsis_Ananya_102017024.egg-info/entry_points.txt
+topsis_Ananya_102017024.egg-info/requires.txt
+topsis_Ananya_102017024.egg-info/top_level.txt
