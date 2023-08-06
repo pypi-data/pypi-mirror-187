@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+testtcwiek/__init__.py
+testtcwiek/m_mod_tcwiek.py
+testtcwiek.egg-info/PKG-INFO
+testtcwiek.egg-info/SOURCES.txt
+testtcwiek.egg-info/dependency_links.txt
+testtcwiek.egg-info/requires.txt
+testtcwiek.egg-info/top_level.txt

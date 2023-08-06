@@ -1,0 +1,2 @@
+Python_version>='3.0'
+numpy
