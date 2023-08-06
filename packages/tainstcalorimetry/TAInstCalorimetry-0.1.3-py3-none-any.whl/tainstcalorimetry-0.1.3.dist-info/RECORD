@@ -1,0 +1,10 @@
+TAInstCalorimetry/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TAInstCalorimetry/DATA/c3a.csv,sha256=vuki4o8EtYzIuKPYe6VVUs3WIcesVjSBP9S9kodw6Ds,2012712
+TAInstCalorimetry/DATA/OPC_1.xls,sha256=CjcAB5LS0oaC1X9ijDrdS6XVIo4-lpgWZ7FiMzyW_cU,575488
+TAInstCalorimetry/DATA/OPC_2.xls,sha256=W8pWoCVoADz9wiXb65B9bwEt_4B9IQUkVSkMPR_UJE0,380416
+TAInstCalorimetry/DATA/opc_3.csv,sha256=iuf1ub7ZKOW6ZJJK9LYJKbc0D8e5KGv5JvoQeut4xU8,587043
+TAInstCalorimetry/tacalorimetry.py,sha256=K7VLpWXd7KNXkha_N0MsNpkpZrdNdEf9iNJwsFaeCKg,23237
+tainstcalorimetry-0.1.3.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+tainstcalorimetry-0.1.3.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+tainstcalorimetry-0.1.3.dist-info/METADATA,sha256=PEdCZrqrrENPO8yh1JQURmczm-1YMkwzz7fXMBTrX50,5442
+tainstcalorimetry-0.1.3.dist-info/RECORD,,
