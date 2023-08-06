@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pymolstyles"
+version = "0.1.1a1"
+description = "Scripts for small molecule visualization using PyMOL"
+authors = ["Attilio Chiavegatti <attiliochiavegatti@gmail.com>"]
+license = "GNU GENERAL PUBLIC LICENSE V3"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.group.dev.dependencies]
+pyqt5 = "^5.15.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
