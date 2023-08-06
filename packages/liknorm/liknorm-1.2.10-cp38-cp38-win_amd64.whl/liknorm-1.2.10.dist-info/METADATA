@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: liknorm
+Version: 1.2.10
+Summary: Liknorm Python wrapper
+Home-page: https://github.com/limix/liknorm-py
+License: MIT
+Keywords: liknorm,integration
+Author: Danilo Horta
+Author-email: danilo.horta@pm.me
+Requires-Python: >=3.8,<3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: cffi
+Requires-Dist: pytest
+Requires-Dist: urllib3 (>=1.26)
+Project-URL: Repository, https://github.com/limix/liknorm-py
+Description-Content-Type: text/markdown
+
+# liknorm-py
+
+Liknorm Python wrapper.
+
+## Install
+
+It can be done via [pip](https://pypi.org/) or [conda](https://conda.io/).
+
+### Pip
+
+```bash
+pip install liknorm
+```
+
+### Conda
+
+```bash
+conda install -c conda-forge liknorm-py
+```
+
+## Running the tests
+
+After installation, you can test it
+
+```bash
+python -c "import liknorm; liknorm.test()"
+```
+
+as long as you have [pytest](http://docs.pytest.org/en/latest/).
+
+## Example
+
+```python
+>>> from numpy import empty
+>>> from numpy.random import RandomState
+>>> from liknorm import LikNormMachine
+>>>
+>>> machine = LikNormMachine('bernoulli')
+>>> random = RandomState(0)
+>>> outcome = random.randint(0, 2, 5)
+>>> tau = random.rand(5)
+>>> eta = random.randn(5) * tau
+>>>
+>>> log_zeroth = empty(5)
+>>> mean = empty(5)
+>>> variance = empty(5)
+>>>
+>>> moments = {'log_zeroth': log_zeroth, 'mean': mean, 'variance': variance}
+>>> machine.moments(outcome, eta, tau, moments)
+>>>
+>>> print('%.3f %.3f %.3f' % (log_zeroth[0], mean[0], variance[0]))
+-0.671 -0.515 0.946
+```
+
+## Authors
+
+* [Danilo Horta](https://github.com/horta)
+
+## License
+
+This project is licensed under the
+[MIT License](https://raw.githubusercontent.com/limix/liknorm-py/master/LICENSE.md).
+
