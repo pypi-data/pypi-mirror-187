@@ -1,0 +1,63 @@
+# TOPSIS-Python
+
+Submitted By: **Rishi Malik 102017096**
+
+---
+
+## What is TOPSIS?
+Topsis is a Python library for dealing with Multiple Criteria Decision Making(MCDM) problems by using Technique for Order of Preference by Similarity to Ideal Solution(TOPSIS).
+
+## Installation
+```
+>> pip install Topsis-102017096-Rishi
+```
+
+## How to use this package:
+Enter csv filename followed by .csv extentsion, then enter the weights vector with vector values separated by commas, followed by the impacts vector with comma separated signs (+,-) and lastly enter the name of the output file also with .csv extension where you want to store the result.
+
+### In Command Prompt
+Example
+```
+>> topsis data.csv "1,1,1,1" "+,+,-,+" output_file.csv
+```
+The rankings are displayed in the form of a table with the 1st rank offering us the best decision, and last rank offering the worst decision making, according to TOPSIS method.Output is also stored in the resultant csv file.
+
+## Example
+Sample Input
+| Fund Name  | P1 | P2 | P3  | P4 | P5 |
+| :----: |:--------------------:|:------------:|:------------:|:---------------:|:---------------:|
+| M1 |0.65|	0.42|	5.3|	43.8|	12.54
+|M2|0.94|	0.88	|4|	61.5|	16.83
+|M3|	0.72|	0.52|	3.2|	69.7|	18.54
+|M4	|0.89	|0.79	|5.4	|49	|14.02
+|M5|	0.75|	0.56|	6.9|	49.4|	14.4
+|M6	|0.6	|0.36	|4.2	|68.3	|18.37
+|M7|	0.89|	0.79|	6.7|	44.6|	13.25
+|M8	|0.79	|0.62	|3.8	|51.7	|14.23
+
+weights vector = [ 1 , 1 , 1 , 1 , 1 ]
+impacts vector = [ + , + , + , + , + ]
+
+### Sample output data
+
+
+Fund Name|P1|P2|P3|P4|P5|Topsis\_Score|Rank
+-----|-----|-----|-----|-----|-----|-----|-----
+M1|0.82|0.67|6.4|68.5|19.1|0.7484552561357947|2
+M2|0.89|0.79|5.6|66.0|18.32|0.7866087836337962|1
+M3|0.86|0.74|3.8|39.5|11.23|0.3427604044049379|7
+M4|0.81|0.66|6.7|55.8|15.99|0.6504458146181358|3
+M5|0.94|0.88|3.7|38.3|10.96|0.42910938170387014|5
+M6|0.72|0.52|3.7|38.0|10.74|0.10560109314491806|8
+M7|0.67|0.45|3.4|67.9|18.11|0.42237228179660335|6
+M8|0.79|0.62|5.8|64.2|17.85|0.6437300671400316|4
+
+## Please Note:
+* Categorical values are not handled
+* Enter the path for your input csv file
+-Enter the weights vector with each weight separated by commas
+-Enter the impact vector with each impact separated by commas
+-Enter the name of csv file in which you want to store output dataframe.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
