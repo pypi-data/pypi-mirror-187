@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: plotex
+Version: 0.0.9
+Summary: A minimal wrapper over matplotlib for generating clean and elegant plots for publications
+Author-email: Rishabh Gupta <rishabhforprojects@gmail.com>
+Project-URL: Homepage, https://www.rg089.ml/plotex
+Project-URL: Github, https://github.com/rg089/plotex
+Project-URL: Bug Tracker, https://github.com/rg089/plotex/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Plotex
+
+## A minimal python wrapper over matplotlib for generating clean and elegant plots for publications
+
