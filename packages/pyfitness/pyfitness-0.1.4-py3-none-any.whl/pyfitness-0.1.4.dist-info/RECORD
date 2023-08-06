@@ -1,0 +1,8 @@
+pyfitness/__about__.py,sha256=JMD28FXYHc_TM03visyUSd3UA9FZAaJMRStnfZoq50Y,21
+pyfitness/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyfitness/dynamics.py,sha256=sTFuT3IqF2QLAjddL6cXdPVOEx_SLhu0bZGzqLml0b0,7245
+pyfitness/load_data.py,sha256=IWTydzPYU6xE5LNCwf0xfa8SWtFVuI702K6OB-OlrLI,7538
+pyfitness-0.1.4.dist-info/METADATA,sha256=L4WnKVBQFb7fuvHAjOLrDBkvjsaD_S5flw1dQuuUa8w,1006
+pyfitness-0.1.4.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+pyfitness-0.1.4.dist-info/licenses/LICENSE,sha256=AIoWR1QbOi3NxHWH_GI0pVSOBF8fFvAswrtvBvzC6xY,1064
+pyfitness-0.1.4.dist-info/RECORD,,
