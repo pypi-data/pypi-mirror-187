@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Topsis-Sidak-102003649/__init__.py
+Topsis-Sidak-102003649/__main__.py
+Topsis_Sidak_102003649.egg-info/PKG-INFO
+Topsis_Sidak_102003649.egg-info/SOURCES.txt
+Topsis_Sidak_102003649.egg-info/dependency_links.txt
+Topsis_Sidak_102003649.egg-info/entry_points.txt
+Topsis_Sidak_102003649.egg-info/requires.txt
+Topsis_Sidak_102003649.egg-info/top_level.txt
