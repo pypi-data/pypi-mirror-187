@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+crazyimports/__init__.py
+crazyimports/_common.py
+crazyimports/_csv.py
+crazyimports/_json.py
+crazyimports/_pickle.py
+crazyimports/_sqlite.py
+crazyimports/_toml.py
+crazyimports/_yaml.py
+crazyimports.egg-info/PKG-INFO
+crazyimports.egg-info/SOURCES.txt
+crazyimports.egg-info/dependency_links.txt
+crazyimports.egg-info/requires.txt
+crazyimports.egg-info/top_level.txt
