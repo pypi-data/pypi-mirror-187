@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+testlmro/__init__.py
+testlmro/m_mod_lmro.py
+testlmroczkowski.egg-info/PKG-INFO
+testlmroczkowski.egg-info/SOURCES.txt
+testlmroczkowski.egg-info/dependency_links.txt
+testlmroczkowski.egg-info/requires.txt
+testlmroczkowski.egg-info/top_level.txt
