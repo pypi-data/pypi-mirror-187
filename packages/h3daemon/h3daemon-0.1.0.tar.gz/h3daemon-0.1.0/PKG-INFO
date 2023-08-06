@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: h3daemon
+Version: 0.1.0
+Summary: Run HMMER daemon on containers
+License: MIT
+Author: Danilo Horta
+Author-email: danilo.horta@pm.me
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: podman (>=4.3.0,<5.0.0)
+Requires-Dist: python-dotenv (>=0.21.0,<0.22.0)
+Requires-Dist: typer[all] (>=0.7.0,<0.8.0)
+Description-Content-Type: text/markdown
+
+# h3daemon
+
