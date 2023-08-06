@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: Topsis-102017189
+Version: 0.0.1
+Summary: A TOPSIS python Package
+Author: Vishalakshi
+Author-email: vishalakshik02@gmail.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+A Python package implementing Topsis method for multi-criteria decision analysis.
