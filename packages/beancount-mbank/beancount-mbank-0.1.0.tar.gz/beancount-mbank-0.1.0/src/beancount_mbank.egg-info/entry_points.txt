@@ -1,0 +1,2 @@
+[console_scripts]
+beancount-mbank = beancount_mbank.cli:main
