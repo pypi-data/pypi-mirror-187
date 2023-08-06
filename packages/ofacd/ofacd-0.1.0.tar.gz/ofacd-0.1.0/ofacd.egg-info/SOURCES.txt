@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ofacd/__init__.py
+ofacd/main.py
+ofacd.egg-info/PKG-INFO
+ofacd.egg-info/SOURCES.txt
+ofacd.egg-info/dependency_links.txt
+ofacd.egg-info/top_level.txt
