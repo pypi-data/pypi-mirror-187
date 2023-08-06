@@ -1,0 +1,3 @@
+[console_scripts]
+sqlscriptr = sqlscripting.command_line:main
+
