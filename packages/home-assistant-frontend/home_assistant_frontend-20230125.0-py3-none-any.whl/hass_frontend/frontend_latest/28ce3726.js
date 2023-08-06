@@ -1,0 +1,63 @@
+"use strict";(self.webpackChunkhome_assistant_frontend=self.webpackChunkhome_assistant_frontend||[]).push([[59891],{32594:(e,t,i)=>{i.d(t,{U:()=>r});const r=e=>e.stopPropagation()},26765:(e,t,i)=>{i.d(t,{Ys:()=>n,g7:()=>a,D9:()=>l});var r=i(47181);const o=()=>Promise.all([i.e(85084),i.e(1281)]).then(i.bind(i,1281)),s=(e,t,i)=>new Promise((s=>{const n=t.cancel,a=t.confirm;(0,r.B)(e,"show-dialog",{dialogTag:"dialog-box",dialogImport:o,dialogParams:{...t,...i,cancel:()=>{s(!(null==i||!i.prompt)&&null),n&&n()},confirm:e=>{s(null==i||!i.prompt||e),a&&a(e)}}})})),n=(e,t)=>s(e,t),a=(e,t)=>s(e,t,{confirmation:!0}),l=(e,t)=>s(e,t,{prompt:!0})},59891:(e,t,i)=>{i.r(t);i(44577);var r=i(37500),o=i(36924),s=i(14516),n=i(47181),a=i(32594),l=(i(31206),i(4940),i(86248),i(41682)),c=i(35460),d=i(26765),h=i(11654);function f(){f=function(){return e};var e={elementsDefinitionOrder:[["method"],["field"]],initializeInstanceElements:function(e,t){["method","field"].forEach((function(i){t.forEach((function(t){t.kind===i&&"own"===t.placement&&this.defineClassElement(e,t)}),this)}),this)},initializeClassElements:function(e,t){var i=e.prototype;["method","field"].forEach((function(r){t.forEach((function(t){var o=t.placement;if(t.kind===r&&("static"===o||"prototype"===o)){var s="static"===o?e:i;this.defineClassElement(s,t)}}),this)}),this)},defineClassElement:function(e,t){var i=t.descriptor;if("field"===t.kind){var r=t.initializer;i={enumerable:i.enumerable,writable:i.writable,configurable:i.configurable,value:void 0===r?void 0:r.call(e)}}Object.defineProperty(e,t.key,i)},decorateClass:function(e,t){var i=[],r=[],o={static:[],prototype:[],own:[]};if(e.forEach((function(e){this.addElementPlacement(e,o)}),this),e.forEach((function(e){if(!m(e))return i.push(e);var t=this.decorateElement(e,o);i.push(t.element),i.push.apply(i,t.extras),r.push.apply(r,t.finishers)}),this),!t)return{elements:i,finishers:r};var s=this.decorateConstructor(i,t);return r.push.apply(r,s.finishers),s.finishers=r,s},addElementPlacement:function(e,t,i){var r=t[e.placement];if(!i&&-1!==r.indexOf(e.key))throw new TypeError("Duplicated element ("+e.key+")");r.push(e.key)},decorateElement:function(e,t){for(var i=[],r=[],o=e.decorators,s=o.length-1;s>=0;s--){var n=t[e.placement];n.splice(n.indexOf(e.key),1);var a=this.fromElementDescriptor(e),l=this.toElementFinisherExtras((0,o[s])(a)||a);e=l.element,this.addElementPlacement(e,t),l.finisher&&r.push(l.finisher);var c=l.extras;if(c){for(var d=0;d<c.length;d++)this.addElementPlacement(c[d],t);i.push.apply(i,c)}}return{element:e,finishers:r,extras:i}},decorateConstructor:function(e,t){for(var i=[],r=t.length-1;r>=0;r--){var o=this.fromClassDescriptor(e),s=this.toClassDescriptor((0,t[r])(o)||o);if(void 0!==s.finisher&&i.push(s.finisher),void 0!==s.elements){e=s.elements;for(var n=0;n<e.length-1;n++)for(var a=n+1;a<e.length;a++)if(e[n].key===e[a].key&&e[n].placement===e[a].placement)throw new TypeError("Duplicated element ("+e[n].key+")")}}return{elements:e,finishers:i}},fromElementDescriptor:function(e){var t={kind:e.kind,key:e.key,placement:e.placement,descriptor:e.descriptor};return Object.defineProperty(t,Symbol.toStringTag,{value:"Descriptor",configurable:!0}),"field"===e.kind&&(t.initializer=e.initializer),t},toElementDescriptors:function(e){var t;if(void 0!==e)return(t=e,function(e){if(Array.isArray(e))return e}(t)||function(e){if("undefined"!=typeof Symbol&&null!=e[Symbol.iterator]||null!=e["@@iterator"])return Array.from(e)}(t)||function(e,t){if(e){if("string"==typeof e)return k(e,t);var i=Object.prototype.toString.call(e).slice(8,-1);return"Object"===i&&e.constructor&&(i=e.constructor.name),"Map"===i||"Set"===i?Array.from(e):"Arguments"===i||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(i)?k(e,t):void 0}}(t)||function(){throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()).map((function(e){var t=this.toElementDescriptor(e);return this.disallowProperty(e,"finisher","An element descriptor"),this.disallowProperty(e,"extras","An element descriptor"),t}),this)},toElementDescriptor:function(e){var t=String(e.kind);if("method"!==t&&"field"!==t)throw new TypeError('An element descriptor\'s .kind property must be either "method" or "field", but a decorator created an element descriptor with .kind "'+t+'"');var i=g(e.key),r=String(e.placement);if("static"!==r&&"prototype"!==r&&"own"!==r)throw new TypeError('An element descriptor\'s .placement property must be one of "static", "prototype" or "own", but a decorator created an element descriptor with .placement "'+r+'"');var o=e.descriptor;this.disallowProperty(e,"elements","An element descriptor");var s={kind:t,key:i,placement:r,descriptor:Object.assign({},o)};return"field"!==t?this.disallowProperty(e,"initializer","A method descriptor"):(this.disallowProperty(o,"get","The property descriptor of a field descriptor"),this.disallowProperty(o,"set","The property descriptor of a field descriptor"),this.disallowProperty(o,"value","The property descriptor of a field descriptor"),s.initializer=e.initializer),s},toElementFinisherExtras:function(e){return{element:this.toElementDescriptor(e),finisher:y(e,"finisher"),extras:this.toElementDescriptors(e.extras)}},fromClassDescriptor:function(e){var t={kind:"class",elements:e.map(this.fromElementDescriptor,this)};return Object.defineProperty(t,Symbol.toStringTag,{value:"Descriptor",configurable:!0}),t},toClassDescriptor:function(e){var t=String(e.kind);if("class"!==t)throw new TypeError('A class descriptor\'s .kind property must be "class", but a decorator created a class descriptor with .kind "'+t+'"');this.disallowProperty(e,"key","A class descriptor"),this.disallowProperty(e,"placement","A class descriptor"),this.disallowProperty(e,"descriptor","A class descriptor"),this.disallowProperty(e,"initializer","A class descriptor"),this.disallowProperty(e,"extras","A class descriptor");var i=y(e,"finisher");return{elements:this.toElementDescriptors(e.elements),finisher:i}},runClassFinishers:function(e,t){for(var i=0;i<t.length;i++){var r=(0,t[i])(e);if(void 0!==r){if("function"!=typeof r)throw new TypeError("Finishers must return a constructor.");e=r}}return e},disallowProperty:function(e,t,i){if(void 0!==e[t])throw new TypeError(i+" can't have a ."+t+" property.")}};return e}function p(e){var t,i=g(e.key);"method"===e.kind?t={value:e.value,writable:!0,configurable:!0,enumerable:!1}:"get"===e.kind?t={get:e.value,configurable:!0,enumerable:!1}:"set"===e.kind?t={set:e.value,configurable:!0,enumerable:!1}:"field"===e.kind&&(t={configurable:!0,writable:!0,enumerable:!0});var r={kind:"field"===e.kind?"field":"method",key:i,placement:e.static?"static":"field"===e.kind?"own":"prototype",descriptor:t};return e.decorators&&(r.decorators=e.decorators),"field"===e.kind&&(r.initializer=e.value),r}function u(e,t){void 0!==e.descriptor.get?t.descriptor.get=e.descriptor.get:t.descriptor.set=e.descriptor.set}function m(e){return e.decorators&&e.decorators.length}function v(e){return void 0!==e&&!(void 0===e.value&&void 0===e.writable)}function y(e,t){var i=e[t];if(void 0!==i&&"function"!=typeof i)throw new TypeError("Expected '"+t+"' to be a function");return i}function g(e){var t=function(e,t){if("object"!=typeof e||null===e)return e;var i=e[Symbol.toPrimitive];if(void 0!==i){var r=i.call(e,t||"default");if("object"!=typeof r)return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===t?String:Number)(e)}(e,"string");return"symbol"==typeof t?t:String(t)}function k(e,t){(null==t||t>e.length)&&(t=e.length);for(var i=0,r=new Array(t);i<t;i++)r[i]=e[i];return r}const w=(0,s.Z)((e=>{const t=""!==e.disk_life_time?30:10,i=1e3*e.disk_used/60/t,r=4*e.startup_time/60;return 10*Math.ceil((i+r)/10)}));!function(e,t,i,r){var o=f();if(r)for(var s=0;s<r.length;s++)o=r[s](o);var n=t((function(e){o.initializeInstanceElements(e,a.elements)}),i),a=o.decorateClass(function(e){for(var t=[],i=function(e){return"method"===e.kind&&e.key===s.key&&e.placement===s.placement},r=0;r<e.length;r++){var o,s=e[r];if("method"===s.kind&&(o=t.find(i)))if(v(s.descriptor)||v(o.descriptor)){if(m(s)||m(o))throw new ReferenceError("Duplicated methods ("+s.key+") can't be decorated.");o.descriptor=s.descriptor}else{if(m(s)){if(m(o))throw new ReferenceError("Decorators can't be placed on different accessors with for the same property ("+s.key+").");o.decorators=s.decorators}u(s,o)}else t.push(s)}return t}(n.d.map(p)),e);o.initializeClassElements(n.F,a.elements),o.runClassFinishers(n.F,a.finishers)}([(0,o.Mo)("dialog-move-datadisk")],(function(e,t){return{F:class extends t{constructor(...t){super(...t),e(this)}},d:[{kind:"field",decorators:[(0,o.Cb)({attribute:!1})],key:"hass",value:void 0},{kind:"field",decorators:[(0,o.SB)()],key:"_hostInfo",value:void 0},{kind:"field",decorators:[(0,o.SB)()],key:"_selectedDevice",value:void 0},{kind:"field",decorators:[(0,o.SB)()],key:"_devices",value:void 0},{kind:"field",decorators:[(0,o.SB)()],key:"_osInfo",value:void 0},{kind:"field",decorators:[(0,o.SB)()],key:"_moving",value:()=>!1},{kind:"method",key:"showDialog",value:async function(e){this._hostInfo=e.hostInfo;try{this._osInfo=await(0,c.AP)(this.hass);const e=await(0,c.ou)(this.hass);e.devices.length>0?this._devices=e.devices:(this.closeDialog(),await(0,d.Ys)(this,{title:this.hass.localize("ui.panel.config.storage.datadisk.no_devices_title"),text:this.hass.localize("ui.panel.config.storage.datadisk.no_devices_text")}))}catch(e){this.closeDialog(),await(0,d.Ys)(this,{title:this.hass.localize("ui.panel.config.hardware.available_hardware.failed_to_get"),text:(0,l.js)(e)})}}},{kind:"method",key:"closeDialog",value:function(){this._selectedDevice=void 0,this._devices=void 0,this._moving=!1,this._hostInfo=void 0,this._osInfo=void 0,(0,n.B)(this,"dialog-closed",{dialog:this.localName})}},{kind:"method",key:"render",value:function(){return this._hostInfo&&this._osInfo&&this._devices?r.dy`
+      <ha-dialog
+        open
+        scrimClickAction
+        escapeKeyAction
+        .heading=${this._moving?this.hass.localize("ui.panel.config.storage.datadisk.moving"):this.hass.localize("ui.panel.config.storage.datadisk.title")}
+        @closed=${this.closeDialog}
+        ?hideActions=${this._moving}
+      >
+        ${this._moving?r.dy`
+              <ha-circular-progress alt="Moving" size="large" active>
+              </ha-circular-progress>
+              <p class="progress-text">
+                ${this.hass.localize("ui.panel.config.storage.datadisk.moving_desc")}
+              </p>
+            `:r.dy`
+              ${this.hass.localize("ui.panel.config.storage.datadisk.description",{current_path:this._osInfo.data_disk,time:w(this._hostInfo)})}
+              <br /><br />
+
+              <ha-select
+                .label=${this.hass.localize("ui.panel.config.storage.datadisk.select_device")}
+                @selected=${this._select_device}
+                @closed=${a.U}
+                dialogInitialFocus
+                fixedMenuPosition
+              >
+                ${this._devices.map((e=>r.dy`<mwc-list-item .value=${e}>
+                      ${e}
+                    </mwc-list-item>`))}
+              </ha-select>
+
+              <mwc-button
+                slot="secondaryAction"
+                @click=${this.closeDialog}
+                dialogInitialFocus
+              >
+                ${this.hass.localize("ui.panel.config.storage.datadisk.cancel")}
+              </mwc-button>
+
+              <mwc-button
+                .disabled=${!this._selectedDevice}
+                slot="primaryAction"
+                @click=${this._moveDatadisk}
+              >
+                ${this.hass.localize("ui.panel.config.storage.datadisk.move")}
+              </mwc-button>
+            `}
+      </ha-dialog>
+    `:r.dy``}},{kind:"method",key:"_select_device",value:function(e){this._selectedDevice=e.target.value}},{kind:"method",key:"_moveDatadisk",value:async function(){this._moving=!0;try{await(0,c.Sx)(this.hass,this._selectedDevice)}catch(e){this.hass.connection.connected&&!(0,l.yz)(e)&&(0,d.Ys)(this,{title:this.hass.localize("ui.panel.config.storage.datadisk.failed_to_move"),text:(0,l.js)(e)})}finally{this.closeDialog()}}},{kind:"get",static:!0,key:"styles",value:function(){return[h.Qx,h.yu,r.iv`
+        ha-select {
+          width: 100%;
+        }
+        ha-circular-progress {
+          display: block;
+          margin: 32px;
+          text-align: center;
+        }
+
+        .progress-text {
+          text-align: center;
+        }
+      `]}}]}}),r.oi)}}]);
+//# sourceMappingURL=28ce3726.js.map
