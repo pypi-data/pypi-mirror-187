@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+Topsis-Shubham-102003109/topsis.py
+Topsis-Shubham-102003109.egg-info/PKG-INFO
+Topsis-Shubham-102003109.egg-info/SOURCES.txt
+Topsis-Shubham-102003109.egg-info/dependency_links.txt
+Topsis-Shubham-102003109.egg-info/entry_points.txt
+Topsis-Shubham-102003109.egg-info/requires.txt
+Topsis-Shubham-102003109.egg-info/top_level.txt

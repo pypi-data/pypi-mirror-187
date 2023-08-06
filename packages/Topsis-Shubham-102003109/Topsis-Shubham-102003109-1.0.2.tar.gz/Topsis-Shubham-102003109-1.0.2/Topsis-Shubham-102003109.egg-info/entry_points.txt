@@ -1,0 +1,2 @@
+[console_scripts]
+topsis = Topsis_Shubham_102003019.topsis:main
