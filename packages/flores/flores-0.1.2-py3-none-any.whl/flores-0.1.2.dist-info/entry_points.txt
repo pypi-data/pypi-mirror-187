@@ -1,0 +1,2 @@
+[console_scripts]
+flores = flores.__main__:main
