@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: boardman
+Version: 0.1.1
+Summary: MicroPython deployment tool
+Home-page: https://github.com/liminspace/boardman
+License: MIT
+Keywords: micropython,Raspberry Pi Pico
+Author: Igor Melnyk
+Author-email: liminspace@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Dist: adafruit-ampy (>=1.1.0,<2.0.0)
+Requires-Dist: pydantic (>=1.10.4,<2.0.0)
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Requires-Dist: requests (>=2.28.2,<3.0.0)
+Project-URL: Repository, https://github.com/liminspace/boardman
+Description-Content-Type: text/markdown
+
+# boardman
+
+MicroPython deployment tool
+
+
+## Development
+
+```bash
+$ poetry config --local virtualenvs.create false
+$ poetry install
+```
+
+```bash
+$ poetry config repositories.testpypi https://test.pypi.org/legacy/
+$ poetry config pypi-token.testpypi <token>
+
+
+```
+```bash
+$ pip install -U --pre -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ -U "boardman>0.1.0" 
+```
+
