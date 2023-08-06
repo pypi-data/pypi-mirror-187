@@ -1,0 +1,17 @@
+[project]
+version = "0.0.1"
+name = "cppchips"
+authors = [
+    { name="Leonov Arthur", email="depish.eskry@yandex.ru" }
+]
+description = "Fast C++ Code Generation"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+[project.urls]
+"Homepage" = "https://github.com/eSkry/cppchips"
+"Bug Tracker" = "https://github.com/eSkry/cppchips/issues"
