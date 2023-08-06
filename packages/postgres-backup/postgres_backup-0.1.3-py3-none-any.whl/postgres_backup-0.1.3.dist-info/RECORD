@@ -1,0 +1,17 @@
+postgres_backup/__init__.py,sha256=E8WYA_0kGuix47YP7Hu_t6T77YLO0hJTbFJlpNZq1DM,54
+postgres_backup/backup.py,sha256=9r2Mrh80MGXZCym6qmwLTFd4ki8pBgcEEpk8Ku3F8Ok,3344
+postgres_backup/logger.py,sha256=j10Z_rN2nOv7yL2zdgb4vnxlQ8_Pe_1MzhFBuP4LehU,250
+postgres_backup/exceptions/__init__.py,sha256=XuaB-lRugkhV0Gt8ZJmp8nyTFU5ZF9dQy7PxH3y6EJU,61
+postgres_backup/exceptions/gcs.py,sha256=c0xE2ZTjeka8l9sPSCCYlo8KspE1vZegqFXMXeZqgfs,172
+postgres_backup/schemas/__init__.py,sha256=QKJEeMb7RSk8qgl6yTpstlZtXn5KGJf33cWfm6-ENdo,130
+postgres_backup/schemas/gcs.py,sha256=bXSoNirrJCj3Bu1FTuoeT4Wo_URUh2g82engkQ9HRY4,162
+postgres_backup/schemas/providers.py,sha256=bHIGxjjPU6YdicQWi67-3gaLVFAqWe65DSWhanjt_tY,123
+postgres_backup/upload/__init__.py,sha256=47cDAurJxcLgCOfKHHXbH9jU6kmkmPVvsM23wRHOGfo,57
+postgres_backup/upload/aws.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+postgres_backup/upload/gcs.py,sha256=aXMf6EECfspCGH2blI6Rh4Xfx-AjlJr1fdRIDuWQ-SQ,3949
+postgres_backup/upload/providers.py,sha256=yjI7V15wyNwR3EVSRe7wFYVf9RlQu_cax0qYT86qdC8,132
+postgres_backup-0.1.3.dist-info/LICENSE.txt,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+postgres_backup-0.1.3.dist-info/METADATA,sha256=5Ew8aKMW0ky6GDix7K5g4fztFczFkiDocq31L8tssiQ,3861
+postgres_backup-0.1.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+postgres_backup-0.1.3.dist-info/top_level.txt,sha256=tbi-zPHVRF_5f25zcPiy_MBl3rZ17r_GAKnMygbXgSE,16
+postgres_backup-0.1.3.dist-info/RECORD,,
