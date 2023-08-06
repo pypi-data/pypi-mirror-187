@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+aiohttp_valera_validator/__init__.py
+aiohttp_valera_validator/_validate.py
+aiohttp_valera_validator/py.typed
+aiohttp_valera_validator.egg-info/PKG-INFO
+aiohttp_valera_validator.egg-info/SOURCES.txt
+aiohttp_valera_validator.egg-info/dependency_links.txt
+aiohttp_valera_validator.egg-info/requires.txt
+aiohttp_valera_validator.egg-info/top_level.txt
