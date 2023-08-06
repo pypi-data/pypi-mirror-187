@@ -1,0 +1,9 @@
+README.md
+setup.py
+PyDSWS/__init__.py
+PyDSWS/datastream.py
+PyDSWS.egg-info/PKG-INFO
+PyDSWS.egg-info/SOURCES.txt
+PyDSWS.egg-info/dependency_links.txt
+PyDSWS.egg-info/requires.txt
+PyDSWS.egg-info/top_level.txt
