@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+testmjarczewski/__init__.py
+testmjarczewski/m_mod_mjarczewski.py
+testmjarczewski.egg-info/PKG-INFO
+testmjarczewski.egg-info/SOURCES.txt
+testmjarczewski.egg-info/dependency_links.txt
+testmjarczewski.egg-info/requires.txt
+testmjarczewski.egg-info/top_level.txt
