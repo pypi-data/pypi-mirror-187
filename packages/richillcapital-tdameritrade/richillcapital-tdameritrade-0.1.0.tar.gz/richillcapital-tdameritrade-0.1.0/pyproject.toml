@@ -1,0 +1,26 @@
+[tool.pdm.scripts.s]
+cmd = "python script.py"
+env_file = ".env"
+
+[project]
+name = "richillcapital-tdameritrade"
+version = "0.1.0"
+description = ""
+authors = [
+    { name = "Megnsyue Amao Tsai", email = "mengsyue.tsai@outlook.com" },
+]
+dependencies = [
+    "python-dotenv>=0.21.1",
+    "requests>=2.28.2",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0",
+]
+build-backend = "pdm.pep517.api"
