@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>noaa.water.database.0.9</BucketName><RequestId>D96S94Y360BA9M9C</RequestId><HostId>8hBmeCwzOqS7qkfD8HgVkN2vm8tZ2sIdR7tX1G2XapqQvUE0Gcfjc9FyujOxapA1cLtqgduOse4=</HostId></Error>

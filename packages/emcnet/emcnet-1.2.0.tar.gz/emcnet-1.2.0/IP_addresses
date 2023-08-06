@@ -1,0 +1,4 @@
+IP addresses of our home from BendBroadband via Linksys troubleshooting page
+Frazer Ln.
+2020-12-27	72.0.166.28
+Hi - I am trying to set up a MQTT server (Mosquitto broker) in our building, and would like for the remote IoT devices to use jmfife.com as the hostname for the broker.  On the Pair Edit DNS configuration page for jmfife.com, I entered the target URL (IP Address of our server) in the Web Forwarding section.  But we are not getting the MQTT messages, so I believe the Web forwarding configuration may only forward web ports (80) or something.  How can I forward port MQTT messages (port 1883)? Thanks in advance, -Mike
