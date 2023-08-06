@@ -1,0 +1,2 @@
+[console_scripts]
+topsis = TOPSIS_Manjot.__main__:main
