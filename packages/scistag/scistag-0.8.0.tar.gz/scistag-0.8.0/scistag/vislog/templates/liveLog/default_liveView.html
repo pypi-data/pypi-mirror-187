@@ -1,0 +1,16 @@
+<script>
+    let pageUpdateTimeout = {{ reload_timeout }};
+    let pageUpdateFrequency = {{ reload_frequency }};
+    let pageRetryFrequency = {{ retry_frequency }};
+    let uniqueSessionId = `s${performance.now()}${Math.random().toString().slice(5)}`.replace('.', '')
+    console.log("Starting session " + uniqueSessionId)
+    let vl_fetch_url = "{{ reload_url }}?sessionId=" + uniqueSessionId
+    let vl_lost_connection = false; // Flag if the connection was lost
+    let vl_values = {}; // Changed element values
+</script>
+
+<div id="vlbody"></div>
+
+<script>
+    setTimeout(fetch_changes, pageUpdateFrequency);
+</script>

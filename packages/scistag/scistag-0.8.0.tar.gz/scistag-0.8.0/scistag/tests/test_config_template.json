@@ -1,0 +1,49 @@
+{
+  "testConfig": {
+    "testGitIntegrity": true,
+    "logImages": true,
+    "DataStag":
+    {
+      "skip": false
+    },
+    "MediaStag":
+    {
+      "skip": false
+    },
+    "LogStag":
+    {
+      "skip": false
+    },
+    "FileStag":
+    {
+      "skip": false
+    },
+    "PlotStag":
+    {
+      "skip": false
+    },
+    "ImageStag":
+    {
+      "skip": false
+    },
+    "EmojiStag":
+    {
+      "skip": false
+    },
+    "ShapeStag":
+    {
+      "skip": false
+    },
+    "SlideStag":
+    {
+      "skip": true
+    },
+    "WebStag":
+    {
+      "skip": false
+    },
+    "azure": {
+      "skip": false
+    }
+  }
+}

@@ -1,0 +1,181 @@
+[tool.poetry]
+name = "scistag"
+version = "0.8.0"
+description = "A stack of helpful libraries & applications for the rapid development of data driven solutions."
+authors = ["Michael Ikemann"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/scistag/scistag"
+homepage = "https://github.com/scistag/scistag"
+documentation = "https://scistag.readthedocs.io"
+include = ['scistag/data/scistag_essentials.zip',
+    'scistag/data/addon_packages.json']
+keywords = ["Data Science", "Data Engineering", "Data Visualization",
+    "Logging", "Computer Vision"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[build-system]
+requires = ["poetry-core>=1.2.2"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = ">=3.9 <3.12"
+pandas = "^1.4.2"
+pydantic = "^1.10.2"
+numpy = "^1.23.5"
+pillow = "^9.2.0"
+requests = { version = "^2.27.1", optional = true }
+matplotlib = { version = "^3.5.2", optional = true }
+Markdown = { version = "^3.4.1", optional = true }
+tabulate = { version = "^0.9.0", optional = true }
+filetype = { version = "^1.1.0", optional = true }
+pyarrow = { version = "^10.0.1", optional = true }
+Jinja2 = { version = "^3.1.2", optional = true }
+CairoSVG = { version = "^2.5.2", optional = true }
+opencv-contrib-python = { version = "^4.5.4.60", optional = true }
+azure-storage-blob = { version = "^12.13.1", optional = true }
+gunicorn = { version = "^20.1.0", optional = true }
+Flask = { version = "^2.1.2", optional = true }
+kivy = { version = "^2.1.0", optional = true }
+moviepy = { version = "^1.0.3", optional = true }
+imgkit = { version = "1.2.2", optional = true }
+jupyterlab = { version = "^3.4.7", optional = true }
+jupyter = { version = "^1.0.0", optional = true }
+PySide6-Addons = { version = "6.4.1", optional = true }
+shiboken6 = { version =  "6.4.1", optional = true }
+
+[tool.poetry.extras]
+logstag = ["pretty-html-table", "Markdown", "tabulate", "filetype", "pyarrow", "Jinja2", "matplotlib"]
+datastag = ["pyarrow"]
+webstag = ["requests"]
+svg = ["CairoSVG"]
+opencv = ["opencv-contrib-python"]
+flask = ["Flask", "gunicorn"]
+kivy = ["kivy"]
+jupyter = ["jupyter", "jupyterlab"]
+azure = ["azure-storage-blob"]
+moviepy = ["moviepy", "imgkit"]
+cutestag = ["PySide6-Addons", "shiboken6"]
+common = [
+    "requests", "matplotlib",
+    "pretty-html-table", "Markdown", "tabulate", "filetype", "pyarrow", "Jinja2", "matplotlib",
+    "pyarrow",
+    "CairoSVG",
+    "opencv-contrib-python",
+    "Flask", "gunicorn",
+    "azure-storage-blob",
+    "moviepy", "imgkit"]
+full = [
+    "requests", "matplotlib",
+    "pretty-html-table", "Markdown", "tabulate", "filetype", "pyarrow", "Jinja2", "matplotlib",
+    "pyarrow",
+    "CairoSVG",
+    "opencv-contrib-python",
+    "Flask", "gunicorn",
+    "azure-storage-blob",
+    "moviepy", "imgkit",
+    "jupyter", "jupyterlab",
+    "kivy",
+    "PySide6-Addons"
+]
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.14.0"
+coverage = { version = "^6.4.1", extras = ["toml"] }
+pytest = "^7.1.2"
+pytest-mock = "^3.7.0"
+pytest-order = "^1.0.1"
+pytest-xdist = "^2.5.0"
+pre-commit = "^2.20.0"
+coveralls = "^3.3.1"
+black = { version = "^22.10.0", extras = ["d", "jupyter"] }
+pytest-cov = "^4.0.0"
+pygount = "^1.5.0"
+
+[tool.poetry.group.docu]
+optional = true
+
+[tool.poetry.group.docu.dependencies]
+Sphinx = { version = "^5.1.1" }
+sphinx-rtd-theme = { version = "^1.0.0" }
+myst-parser = { version = "^0.18.0" }
+sphinx_mdinclude = { version = "^0.5.2" }
+anybadge = { version = "^1.14.0" }
+sphinx-autodoc-typehints = { version = "^1.19.2" }
+importtime-waterfall = { version = "1.0.0" }
+
+[tool.coverage.run]
+omit = [".*", "*/site-packages/*",
+    "*/__main__.py",
+    "scistag/mediastag/video_source.py",
+    "scistag/imagestag/html_renderer.py",
+    "scistag/webstag/server/flask_server/flask_common.py",
+    "scistag/mediastag/video_source_camera.py",
+    "scistag/mediastag/video_source_datastag.py",
+    "scistag/mediastag/video_source_movie.py",
+    "scistag/mediastag/camera_cv2.py",
+    "scistag/common/list_helper.py",
+    "scistag/imagestag/formatted_text.py",
+    "scistag/imagestag/pandas_renderer.py",
+    "scistag/mediastag/__init__.py",
+    "scistag/shapestag/polygon.py",
+    "scistag/shapestag/shape_list.py",
+    "scistag/vislog/widgets/timer.py",
+    "*/config-*.py",
+    "*/config.py",
+    "*/cutestag/*",
+    "*/cli/*",
+    "*/examples/*",
+    "*/tests/*",
+    "*/workbench/*",
+    "*/third_party/*",
+    "*/shibokensupport/*",
+    "*/pyscript",
+    "*/signature_bootstrap.py"]
+branch = true
+
+[tool.coverage.report]
+skip_empty = true
+
+# Regexes for lines to exclude from consideration
+exclude_lines = ["pragma: no cover",
+    "def __repr__",
+    "pass",
+    "if self.debug",
+    "if not self._testing",
+    "if self._testing",
+    "if not _UNIT_TESTING:",
+    "if TYPE_CHECKING:",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    'if __name__ == "__main__":',
+    "@(abc.)?abstractmethod"]
+
+ignore_errors = true
+
+[tool.pylint.messages_control]
+disable = [
+    "wrong-hanging-indentation", # to work together with black
+    "bad-whitespace", # to work together with black
+    "invalid-name",
+    "cyclic-import",
+    "import-outside-toplevel",
+    "too-few-public-methods"
+]
+extension-pkg-whitelist = "pydantic"
+
+[tool.pylint.format]
+max-line-length = "88"              # to work together with black
+
+[tool.black]
+# Use default black configuration
