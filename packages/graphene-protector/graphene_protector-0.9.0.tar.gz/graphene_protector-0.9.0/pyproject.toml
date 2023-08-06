@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "graphene-protector"
+version = "0.9.0"
+description = "Protects graphene, graphql or strawberry against malicious queries"
+authors = ["alex <devkral@web.de>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/devkral/graphene-protector"
+keywords=[
+    "graphql",
+    "strawberry",
+    "extension"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Framework :: Django",
+    "Topic :: Security",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4"
+graphql-core = ">=3"
+graphene = { version = ">=3", optional=true }
+graphene-django = { version = ">=3", optional=true }
+
+strawberry-graphql = { version = ">=0.92", optional=true  }
+strawberry-graphql-django = { version = "*", optional=true }
+
+[tool.poetry.group.test]
+optional = true
+
+
+[tool.poetry.group.test.dependencies]
+tox = "*"
+
+[tool.poetry.group.dev.dependencies]
+tox = "*"
+graphene = { version = ">=3"}
+graphene-django = { version = ">=3" }
+django = { version = ">=4.1"}
+strawberry-graphql = { version = ">=0.92"  }
+strawberry-graphql-django = { version = "*" }
+
+
+[tool.poetry.extras]
+optional = ["graphene", "graphene-django", "strawberry-graphql", "strawberry-graphql-django"]
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
