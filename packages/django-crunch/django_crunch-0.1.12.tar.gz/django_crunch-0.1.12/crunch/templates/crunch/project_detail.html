@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% load crunch %}
+
+{% block content %}
+
+<div class="container mt-3">
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="..">Projects</a></li>
+          <li class="breadcrumb-item active" aria-current="page">{{project}}</li>
+        </ol>
+    </nav>
+      
+    <div class="float-right">
+        {% if perms.crunch.add_project %}
+            <a href="{% url 'crunch:project-create'  %}" class="btn btn-outline-primary btn-sm chk-saved" data-toggle="tooltip" data-placement="bottom" title="Create Project">
+                <i class="fas fa-plus"></i>
+            </a>
+        {% endif %}
+        {% if perms.crunch.update_project %}
+            <a href="{% url 'crunch:project-update' slug=project.slug %}" class="btn btn-outline-primary btn-sm chk-saved" data-toggle="tooltip" data-placement="bottom" title="Update this Project">
+                <i class="fas fa-edit"></i>
+            </a>
+        {% endif %}
+        <a href="{% url 'crunch:api:project-detail' slug=project.slug %}" class="btn btn-outline-primary btn-sm chk-saved" data-toggle="tooltip" data-placement="bottom" title="JSON">
+          <i class="fas fa-code"></i>
+        </a>  
+        {% if request.user.is_staff %}
+            <a href="{{ project.get_admin_url }}" class="btn btn-outline-primary btn-sm chk-saved" data-toggle="tooltip" data-placement="bottom" title="Admin">
+                <i class="fas fa-tools"></i>
+            </a>
+        {% endif %}
+        {% if project.prev_in_order %}
+            <a href="{{ project.prev_in_order.get_absolute_url }}" class="btn btn-outline-primary btn-sm chk-saved" data-toggle="tooltip" data-placement="bottom" title="{{ project.prev_in_order }}">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+        {% endif %}
+        {% if project.next_in_order %}
+            <a href="{{ project.next_in_order.get_absolute_url }}" class="btn btn-outline-primary btn-sm chk-saved" data-toggle="tooltip" data-placement="bottom" title="{{ project.next_in_order }}">
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        {% endif %}
+    </div> 
+
+
+    <h2>{{project}}</h2>
+
+    <p class="font-weight-bold">{{project.description}}</p>
+    <p>{{project.details}}</p>
+
+    <h3>Unprocessed Datasets</h3>
+    {% dataset_list project.unprocessed_datasets %}
+
+    <h3>Running Datasets</h3>
+    {% dataset_list project.running_datasets %}
+
+    <h3>Completed Datasets</h3>
+    {% dataset_list project.completed_datasets %}
+
+    <h3>Failed Datasets</h3>
+    {% dataset_list project.failed_datasets %}
+
+    <h3>Attributes</h3>
+
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Attribute</th>
+            <th scope="col">Type</th>
+            <th scope="col">Value</th>
+            {% if request.user.is_staff %}
+            <th scope="col">Admin</th>
+            {% endif %}        
+          </tr>
+        </thead>
+        <tbody>
+            {% for attribute in project.attributes.all %}
+            <tr>
+                <th scope="row">{{attribute.key}}</th>
+                <td>{{attribute.type_str}}</td>
+                <td>{{attribute.value_html}}</td>
+                {% if request.user.is_staff %}
+                <td>
+                    <a href="{{ attribute.get_admin_url }}" class="btn btn-outline-primary btn-sm chk-saved" data-toggle="tooltip" data-placement="bottom" title="Edit Attribute">
+                        <i class="fas fa-tools"></i>
+                    </a>
+                </td>
+                {% endif %}        
+
+            </tr>
+            {% endfor %}
+            <tr>
+                <th scope="row">Total Filesize</th>
+                <td>Filesize</td>
+                <td>{{ project.descendant_total_filesize_readable }}</td>
+                {% if request.user.is_staff %}
+                <td>
+                </td>
+                {% endif %}        
+            </tr>
+        </tbody>
+      </table>    
+      
+      {% item_map project %}
+
+</div>
+
+{% endblock content %}

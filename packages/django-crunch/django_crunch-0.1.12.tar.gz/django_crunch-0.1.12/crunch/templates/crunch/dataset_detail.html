@@ -1,0 +1,179 @@
+{% extends "base.html" %}
+{% load crunch %}
+
+{% block content %}
+
+<div class="container mt-3">
+
+    <nav aria-label="breadcrumb ">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../..">Projects</a></li>
+            <li class="breadcrumb-item"><a href="..">{{dataset.parent}}</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{dataset}}</li>
+        </ol>
+    </nav>
+
+    <div class="float-right">
+        {% if perms.crunch.add_dataset %}
+            <a href="{% url 'crunch:dataset-create'  %}" class="btn btn-outline-primary btn-sm chk-saved" data-toggle="tooltip" data-placement="bottom" title="Create Dataset">
+                <i class="fas fa-plus"></i>
+            </a>
+        {% endif %}
+        {% if perms.crunch.update_dataset %}
+            <a href="{% url 'crunch:dataset-update' slug=dataset.slug project=dataset.parent.slug %}" class="btn btn-outline-primary btn-sm chk-saved" data-toggle="tooltip" data-placement="bottom" title="Update this Dataset">
+                <i class="fas fa-edit"></i>
+            </a>
+        {% endif %}
+        <a href="{% url 'crunch:api:dataset-detail' slug=dataset.slug %}" class="btn btn-outline-primary btn-sm chk-saved" data-toggle="tooltip" data-placement="bottom" title="JSON">
+          <i class="fas fa-code"></i>
+        </a>
+        {% if request.user.is_staff %}
+            <a href="{{ dataset.get_admin_url }}" class="btn btn-outline-primary btn-sm chk-saved" data-toggle="tooltip" data-placement="bottom" title="Admin">
+                <i class="fas fa-tools"></i>
+            </a>
+        {% endif %}
+        {% if dataset.prev_in_order %}
+            <a href="{{ dataset.prev_in_order.get_absolute_url }}" class="btn btn-outline-primary btn-sm chk-saved" data-toggle="tooltip" data-placement="bottom" title="{{ dataset.prev_in_order }}">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+        {% endif %}
+        {% if dataset.next_in_order %}
+            <a href="{{ dataset.next_in_order.get_absolute_url }}" class="btn btn-outline-primary btn-sm chk-saved" data-toggle="tooltip" data-placement="bottom" title="{{ dataset.next_in_order }}">
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        {% endif %}
+        <a href="{{ dataset.get_admin_url }}" class="btn btn-outline-primary btn-sm chk-saved" data-toggle="tooltip" data-placement="bottom" title="{% if not dataset.locked %}Unlocked{%else%}Locked{% endif %}">
+          <i class="fas fa-{% if not dataset.locked %}un{% endif %}lock"></i>
+        </a>
+
+    </div> 
+
+    <h2>{{dataset}}</h2>
+
+    <h3>Project: <a href='{{dataset.parent.get_absolute_url}}'>{{dataset.parent}}</a></h3>
+    <p class="font-weight-bold">{{dataset.description}}</p>
+    <p>{{dataset.details}}</p>
+
+    <hr>
+    <div class="float-right">
+        {% if request.user.is_staff %}
+            <a href="{% url 'admin:crunch_attribute_add'  %}" class="btn btn-outline-primary btn-sm chk-saved" data-toggle="tooltip" data-placement="bottom" title="Create Attribute">
+                <i class="fas fa-plus"></i>
+            </a>
+        {% endif %}
+    </div>
+
+    <h3>{{dataset.children.count}} Items</h3>
+    <ul>
+    {% for item in dataset.children.all %}
+        <li>
+            <a href='{{item.get_absolute_url}}' 
+            {% if item.description %}
+                data-toggle="tooltip" data-placement="bottom" title="{{item.description}}"
+            {% endif %}
+            >
+                {{item}}
+            </a>
+        </li>
+    {% endfor %}
+    </ul>
+
+    {% if dataset.attributes.count %}
+    <h3>Attributes</h3>
+
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Attribute</th>
+            <th scope="col">Type</th>
+            <th scope="col">Value</th>
+            {% if request.user.is_staff %}
+            <th scope="col">Admin</th>
+            {% endif %}        
+          </tr>
+        </thead>
+        <tbody>
+            {% for attribute in dataset.attributes.all %}
+            <tr>
+                <th scope="row">{{attribute.key}}</th>
+                <td>{{attribute.type_str}}</td>
+                <td>{{attribute.value_html}}</td>
+                {% if request.user.is_staff %}
+                <td>
+                    <a href="{{ attribute.get_admin_url }}" class="btn btn-outline-primary btn-sm chk-saved" data-toggle="tooltip" data-placement="bottom" title="Edit Attribute">
+                        <i class="fas fa-tools"></i>
+                    </a>
+                </td>
+                {% endif %}        
+
+            </tr>
+            {% endfor %}
+            <tr>
+                <th scope="row">Total Filesize</th>
+                <td>Filesize</td>
+                <td>{{ dataset.descendant_total_filesize_readable }}</td>
+                {% if request.user.is_staff %}
+                <td>
+                </td>
+                {% endif %}        
+            </tr>
+        </tbody>
+      </table>
+      <hr>
+
+
+      
+      {% endif %}
+      {% item_map dataset %}
+
+
+      <div class="float-right">
+          {% if request.user.is_staff %}
+              <a href="#" class="btn btn-outline-primary btn-sm chk-saved" data-toggle="tooltip" data-placement="bottom" title="Upload File">
+                  <i class="fas fa-plus"></i>
+              </a>
+          {% endif %}
+      </div>  
+
+      <h3>Files</h3>
+      {{ dataset.files.render_html|safe }}
+
+    <hr>
+
+    {% if dataset.statuses.count %}
+    <h3>History</h3>
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">User</th>
+            <th scope="col">Stage</th>
+            <th scope="col">Status</th>
+            {% if request.user.is_staff %}
+            <th scope="col">Admin</th>
+            {% endif %}        
+          </tr>
+        </thead>
+        <tbody>
+            {% for status in dataset.statuses.all %}
+            <tr>
+                <th scope="row">{{status.created}}</th>
+                <td>{{status.site_user}}</td>
+                <td>{{status.get_stage_display}}</td>
+                <td>{{status.get_state_display}}</td>
+                {% if request.user.is_staff %}
+                <td>
+                    <a href="{{ status.get_admin_url }}" class="btn btn-outline-primary btn-sm chk-saved" data-toggle="tooltip" data-placement="bottom" title="Edit Status">
+                        <i class="fas fa-tools"></i>
+                    </a>
+                </td>
+                {% endif %}        
+              </tr>
+            {% endfor %}
+        </tbody>
+      </table>
+      {% endif %}
+  
+</div>
+
+{% endblock content %}
