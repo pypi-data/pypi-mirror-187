@@ -1,0 +1,2 @@
+[txl_component]
+txl_notebook_editor = txl_notebook_editor.components
