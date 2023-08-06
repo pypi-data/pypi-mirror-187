@@ -1,0 +1,48 @@
+[build-system]
+requires = ["poetry-core>=1.0.8", "cffi>=1.15.1", "cmake>=3.22.5"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "liknorm"
+version = "1.2.10"
+description = "Liknorm Python wrapper"
+license = "MIT"
+authors = ["Danilo Horta <danilo.horta@pm.me>"]
+readme = "README.md"
+repository = "https://github.com/limix/liknorm-py"
+homepage = "https://github.com/limix/liknorm-py"
+keywords = ["liknorm", "integration"]
+classifiers = ["License :: OSI Approved :: MIT License"]
+include = [
+  { path = "liknorm/*.c", format = "sdist" },
+  { path = "liknorm/*.h", format = "sdist" },
+  { path = "liknorm/*.pyd", format = "wheel" },
+  { path = "liknorm/*.so", format = "wheel" },
+]
+
+[tool.poetry.dependencies]
+cffi = "*"
+pytest = "*"
+python = ">=3.8,<3.12"
+urllib3 = ">=1.26"
+
+[tool.poetry.dev-dependencies]
+black = "*"
+isort = "*"
+pyright = "*"
+pytest = "*"
+
+[tool.poetry.build]
+script = "build_ext.py"
+generate-setup-file = false
+
+[tool.cibuildwheel]
+skip = "pp* *-win32 *_i686 *musllinux*"
+manylinux-x86_64-image = "manylinux2014"
+manylinux-aarch64-image = "manylinux2014"
+
+[tool.cibuildwheel.linux]
+before-all = "yum install -y libffi-devel"
+
+[tool.isort]
+profile = "black"
