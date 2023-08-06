@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+eodhd/__init__.py
+eodhd/apiclient.py
+eodhd/eodhdgraphs.py
+eodhd/websocketclient.py
+eodhd.egg-info/PKG-INFO
+eodhd.egg-info/SOURCES.txt
+eodhd.egg-info/dependency_links.txt
+eodhd.egg-info/entry_points.txt
+eodhd.egg-info/requires.txt
+eodhd.egg-info/top_level.txt
