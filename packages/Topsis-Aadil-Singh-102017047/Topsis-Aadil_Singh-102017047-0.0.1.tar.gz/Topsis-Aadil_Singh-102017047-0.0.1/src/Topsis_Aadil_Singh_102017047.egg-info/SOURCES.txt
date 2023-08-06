@@ -1,0 +1,9 @@
+LICENSE
+pyproject.toml
+setup.cfg
+src/TOPSIS/102017047.py
+src/TOPSIS/__init__.py
+src/Topsis_Aadil_Singh_102017047.egg-info/PKG-INFO
+src/Topsis_Aadil_Singh_102017047.egg-info/SOURCES.txt
+src/Topsis_Aadil_Singh_102017047.egg-info/dependency_links.txt
+src/Topsis_Aadil_Singh_102017047.egg-info/top_level.txt
