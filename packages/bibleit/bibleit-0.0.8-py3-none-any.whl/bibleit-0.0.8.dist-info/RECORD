@@ -1,0 +1,17 @@
+bibleit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bibleit/__main__.py,sha256=nHi_q-UYwL55BQB70gfk9SYu2Tso3wwdy4NJdmrhb94,214
+bibleit/bible.py,sha256=N1u0WmIb1WgJNVPuGrJ2n3Nbg-fOx50ASRBo9iCZPbM,5462
+bibleit/config.py,sha256=YaSq1Gw1CVRYF5caYiC7rOe2bpwM3wFiBg9cktHJN6s,455
+bibleit/context.py,sha256=I9tk1JK7QZB8_gDLmaKzmlRy2660G3TETJOwTwj4B8A,363
+bibleit/normalize.py,sha256=BnLdh_yl-kzKDXCvsAfj5t5z85xn_nOvCcw9F5yZu4o,947
+bibleit/repl.py,sha256=Aw5YDKJ5r_ujcraE5ZXqnTLhy-kNuSTe41cBm7U_hg0,1782
+bibleit/command/__init__.py,sha256=j7-rHQfZcLvloYsCeVn706D8vLA0Beyst-zuZ4mWRHc,1634
+bibleit/command/core.py,sha256=oQ0AB3vU4MhYlGVU0D6FcUIzVtz7sZ0fNqg_xJ4HM5s,4187
+bibleit/command/set.py,sha256=7IsiIJeuFsj9OQjQ6eY2-aUwJN2tg8A6bL9I_lduxdI,1278
+bibleit/translations/acf,sha256=pEzXDebXGpk5xTSennWBbTSbGbQ4sjttBuICXDHg5bI,4355983
+bibleit/translations/kjv,sha256=ql9avjzBiV9Jh9C7i18H8AxV2YYSo35U_k7J2K6vTMc,4874923
+bibleit/translations/nvi,sha256=N2RdX4hV_SGFzoEUmaBtBwvvKe3LLAX9fnPGErTFOpY,4347261
+bibleit-0.0.8.dist-info/METADATA,sha256=dsLPADZTOO2iMhSo-tnltvouW0yoH-8g5eq6UDIldJo,1884
+bibleit-0.0.8.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+bibleit-0.0.8.dist-info/licenses/LICENSE,sha256=XmirPsv8kQB_zXv-2fA_A0FuoHQdUZntYIJg8QFMT9g,1069
+bibleit-0.0.8.dist-info/RECORD,,
