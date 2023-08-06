@@ -1,0 +1,8 @@
+README.md
+setup.py
+robin_sd_upload.egg-info/PKG-INFO
+robin_sd_upload.egg-info/SOURCES.txt
+robin_sd_upload.egg-info/dependency_links.txt
+robin_sd_upload.egg-info/entry_points.txt
+robin_sd_upload.egg-info/requires.txt
+robin_sd_upload.egg-info/top_level.txt
