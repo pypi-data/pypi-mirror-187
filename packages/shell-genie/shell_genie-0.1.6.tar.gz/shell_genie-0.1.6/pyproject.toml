@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "shell-genie"
+version = "0.1.6"
+description = ""
+authors = ["Dylan Castillo <dylanjcastillo@gmail.com>"]
+readme = "README.md"
+packages = [{include = "shell_genie"}]
+
+[tool.poetry.scripts]
+shell-genie = "shell_genie.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = {extras = ["all"], version = "^0.7.0"}
+python-dotenv = "^0.21.1"
+openai = "^0.26.1"
+pyperclip = "^1.8.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+flake8 = "^6.0.0"
+isort = "^5.11.4"
+pytest = "^7.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
