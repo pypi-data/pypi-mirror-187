@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/com.castsoftware.uc.python.common.egg-info/PKG-INFO
+src/com.castsoftware.uc.python.common.egg-info/SOURCES.txt
+src/com.castsoftware.uc.python.common.egg-info/dependency_links.txt
+src/com.castsoftware.uc.python.common.egg-info/top_level.txt
