@@ -1,0 +1,12 @@
+LICENSE
+setup.py
+fuzzly_users/__init__.py
+fuzzly_users/api.py
+fuzzly_users/constants.py
+fuzzly_users/internal.py
+fuzzly_users/models.py
+fuzzly_users.egg-info/PKG-INFO
+fuzzly_users.egg-info/SOURCES.txt
+fuzzly_users.egg-info/dependency_links.txt
+fuzzly_users.egg-info/requires.txt
+fuzzly_users.egg-info/top_level.txt
