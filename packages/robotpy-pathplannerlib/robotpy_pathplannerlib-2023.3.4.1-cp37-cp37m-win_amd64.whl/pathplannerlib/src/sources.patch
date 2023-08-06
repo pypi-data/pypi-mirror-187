@@ -1,0 +1,34 @@
+diff --git a/pathplanner/lib/PathPlanner.cpp b/pathplanner/lib/PathPlanner.cpp
+index 78d6524028c8..e884865ff330 100644
+--- a/pathplanner/lib/PathPlanner.cpp
++++ b/pathplanner/lib/PathPlanner.cpp
+@@ -9,14 +9,16 @@
+ #include <units/length.h>
+ #include <units/angle.h>
+ 
++#include <rpy/Filesystem.h>
++
+ using namespace pathplanner;
+ 
+ double PathPlanner::resolution = 0.004;
+ 
+ PathPlannerTrajectory PathPlanner::loadPath(std::string const &name,
+ 		PathConstraints const constraints, bool const reversed) {
+-	std::string const filePath = frc::filesystem::GetDeployDirectory()
+-			+ "/pathplanner/" + name + ".path";
++	std::string const filePath = (robotpy::filesystem::GetDeployDirectoryFs()
++			/ "pathplanner" / (name + ".path")).string();
+ 
+ 	std::error_code error_code;
+ 	wpi::raw_fd_istream input { filePath, error_code };
+@@ -53,8 +55,8 @@ std::vector<PathPlannerTrajectory> PathPlanner::loadPathGroup(
+ 				"At least one PathConstraints is required but none were provized");
+ 	}
+ 
+-	std::string const filePath = frc::filesystem::GetDeployDirectory()
+-			+ "/pathplanner/" + name + ".path";
++	std::string const filePath = (robotpy::filesystem::GetDeployDirectoryFs()
++			/ "pathplanner" / (name + ".path")).string();
+ 
+ 	std::error_code error_code;
+ 	wpi::raw_fd_istream input { filePath, error_code };
