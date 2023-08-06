@@ -1,0 +1,7 @@
+invoke==2.0.0
+wheel==0.38.4
+zest.releaser==7.2.0
+twine==4.0.2
+Werkzeug==2.2.2
+django-model-utils==4.3.1
+bumpversion==0.6.0
