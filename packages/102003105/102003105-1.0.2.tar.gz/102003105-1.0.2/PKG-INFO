@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: 102003105
+Version: 1.0.2
+Summary: A Python package to find TOPSIS for Multi-Criteria Decision Analysis Method
+Home-page: https://github.com/AdiK1806/Topsis-Aditya-102003105
+Author: Aditya Kuthiala
+Author-email: adityakuthiala1806@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: topsis,TIET,Thapar
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
