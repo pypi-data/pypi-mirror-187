@@ -1,0 +1,6 @@
+bget_ffmpeg/__init__.py,sha256=O9eb22z-0whyTVlH9dKv4R7Ov1MFiFCk-__DGEYDF8U,391
+bget_ffmpeg/bin/ffmpeg.exe,sha256=YHvbkbNFtlYJsabW2SpNzRrDmHsSvBsJThowQ26SNdc,129847808
+bget_ffmpeg_windows-7120002.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+bget_ffmpeg_windows-7120002.dist-info/entry_points.txt,sha256=txaY5G5ZBvxQl5zBnZDTb07KRa19L8giKBcYVb5QgxA,45
+bget_ffmpeg_windows-7120002.dist-info/METADATA,sha256=m8OdlICSDFQLDoWJpQGkdFP6WNAqUcptiqjidimfsq8,552
+bget_ffmpeg_windows-7120002.dist-info/RECORD,,
