@@ -1,0 +1,9 @@
+sphinx
+sphinx_rtd_theme
+docopt
+jsonpickle
+numpy
+epam.indigo
+ctfile
+Cython 
+Pebble
