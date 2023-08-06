@@ -1,0 +1,17 @@
+__pycache__
+.pytest_cache
+*.pyc
+.env
+*.egg-info
+.DS_Store
+node_modules
+btcd-conn.json
+elmd-conn.json
+prevent_mining
+.idea
+build/
+dist/
+src/cryptoadvance/specterext/stacktrack/_version.py
+.cirrus.yml
+coverage.xml
+.coverage
