@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+nonebot/adapters/spigot/__init__.py
+nonebot/adapters/spigot/adapter.py
+nonebot/adapters/spigot/bot.py
+nonebot/adapters/spigot/collator.py
+nonebot/adapters/spigot/config.py
+nonebot/adapters/spigot/event.py
+nonebot/adapters/spigot/message.py
+nonebot_adapter_spigot.egg-info/PKG-INFO
+nonebot_adapter_spigot.egg-info/SOURCES.txt
+nonebot_adapter_spigot.egg-info/dependency_links.txt
+nonebot_adapter_spigot.egg-info/requires.txt
+nonebot_adapter_spigot.egg-info/top_level.txt
