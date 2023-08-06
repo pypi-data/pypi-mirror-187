@@ -1,0 +1,12 @@
+SELECT * WHERE {
+  ?adr_page mkdocs:about* ?adr .
+
+  ?adr
+    adr:number ?number ;
+    rdfs:label ?title ;
+    mkdocs:url ?url .
+
+   OPTIONAL {
+    ?adr rdfs:comment ?description .
+   }
+}

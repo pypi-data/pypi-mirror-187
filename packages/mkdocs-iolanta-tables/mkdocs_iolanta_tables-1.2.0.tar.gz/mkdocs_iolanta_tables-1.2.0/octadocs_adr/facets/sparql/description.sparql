@@ -1,0 +1,4 @@
+SELECT * WHERE {
+  ?adr_page mkdocs:about* ?adr .
+  ?adr rdfs:comment ?description .
+}

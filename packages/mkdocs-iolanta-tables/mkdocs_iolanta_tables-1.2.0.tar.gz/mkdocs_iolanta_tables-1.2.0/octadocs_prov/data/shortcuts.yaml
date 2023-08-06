@@ -1,0 +1,4 @@
+- $id: prov:value
+  autocontext:shortcut: "="
+- $id: prov:wasDerivedFrom
+  autocontext:shortcut: ⇐

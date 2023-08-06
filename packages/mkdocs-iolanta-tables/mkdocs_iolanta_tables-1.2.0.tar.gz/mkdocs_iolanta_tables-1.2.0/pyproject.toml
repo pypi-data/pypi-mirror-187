@@ -1,0 +1,117 @@
+[build-system]
+requires = ["poetry>=1.0"]
+build-backend = "poetry.masonry.api"
+
+
+[tool.poetry]
+name = "mkdocs-iolanta-tables"
+version = "1.2.0"
+packages = [
+  { include = "ldflex" },
+  { include = "iolanta" },
+  { include = "autocontext" },
+  { include = "mkdocs_iolanta" },
+  { include = "octadocs_adr" },
+  { include = "mkdocs_iolanta_tables" },
+  { include = "octadocs_prov" },
+  { include = "octadocs_github" },
+  { include = "octadocs_ibis" },
+  { include = "octadocs_telegram" }
+]
+description = "Structured tables for MkDocs"
+license = "MIT"
+
+authors = []
+
+readme = "README.md"
+
+repository = "https://github.com/iolanta-tech/mkdocs-iolanta-tables"
+
+keywords = []
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.poetry.plugins."mkdocs.plugins"]
+octadocs_adr = "octadocs_adr.plugin:ADRPlugin"
+mkdocs-iolanta-tables = "mkdocs_iolanta_tables.plugin:TablesPlugin"
+octadocs-prov = "octadocs_prov.plugin:ProvenancePlugin"
+octadocs-github = "octadocs_github.plugin:GithubPlugin"
+octadocs-ibis = "octadocs_ibis.plugin:IbisPlugin"
+octadocs-telegram = "octadocs_telegram.plugin:TelegramPlugin"
+
+[tool.poetry.plugins."iolanta.graph"]
+mkdocs_iolanta = "mkdocs_iolanta:MkDocsIolantaGraphProvider"
+
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+mkdocs = "^1.3.0"
+rdflib = "^6.2.0"
+python-frontmatter = "^0.5.0"
+mkdocs-macros-plugin = "^0.7.0"
+pydotplus = "^2.0.2"
+boltons = "^21.0.0"
+requests = "^2.25.1"
+deepmerge = "^0.1.1"
+
+# I did not find a way to install this conditionally without failure on Netlify.
+"backports.cached-property" = "^1.0.0"
+documented = "^0.1.1"
+singledispatchmethod = "^1.0"
+urlpath = "^1.1.7"
+typer = "^0.7.0"
+classes = "^0.4.0"
+pydantic = "^1.8.2"
+PyLD = "^2.0.3"
+dominate = "^2.6.0"
+more-itertools = "^9.0.0"
+owlrl = "^6.0.2"
+PyGithub = "^1.55"
+backoff = "^1.11.1"
+funcy = "^1.17"
+
+
+[tool.poetry.group.dev.dependencies]
+jeeves-yeti-pyproject = "^0.2.8"
+mkdocs-material = "^8.1.3"
+ipython = "^7.27.0"
+pydeps = "^1.10.12"
+beautifulsoup4 = "^4.10.0"
+types-pyyaml = "^6.0.12.2"
+types-requests = "^2.28.11.7"
+mkdocs-awesome-pages-plugin = "^2.8.0"
+mkdocstrings-python = "^0.8.3"
+
+
+[tool.poetry.scripts]
+iolanta = "iolanta.cli:app"
+
+
+[tool.flakeheaven.exceptions."mkdocs_iolanta_tables/facets/models.py"]
+wemake-python-styleguide = [
+  # Found upper-case constant in a class
+  # Need that for Enums.
+  "-WPS115",
+
+  # Found subclassing a builtin
+  # Need that for Enums.
+  "-WPS600"
+]
+
+
+[tool.flakeheaven.exceptions."iolanta/entry_points.py"]
+pyflakes = [
+    # %s imported but unused
+    "-F401",
+]
+wemake-python-styleguide = [
+  # Nested import
+  "-WPS433",
+  # Block variables overlap
+  "-WPS440",
+]

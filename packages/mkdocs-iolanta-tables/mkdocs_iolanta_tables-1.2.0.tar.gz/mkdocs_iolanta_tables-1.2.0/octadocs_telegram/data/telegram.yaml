@@ -1,0 +1,6 @@
+- $id: telegram:TelegramLink
+  iolanta:instanceFacet:
+    $id: python://octadocs_telegram.facets.TelegramLink
+    iolanta:supports:
+      - iolanta:html
+      - table:td

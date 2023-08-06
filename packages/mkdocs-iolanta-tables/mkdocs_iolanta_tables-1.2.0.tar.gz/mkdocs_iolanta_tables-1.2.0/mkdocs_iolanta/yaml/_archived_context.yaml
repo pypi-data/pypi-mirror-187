@@ -1,0 +1,100 @@
+"@context":
+  schema: https://schema.org/
+  xsd: http://www.w3.org/2001/XMLSchema#
+
+  $vocab: "local:"
+  $base: "local:"
+
+  mkdocs: https://octadocs.io/
+  owl: http://www.w3.org/2002/07/owl#
+  iolanta: https://iolanta.tech/
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+
+  label: rdfs:label
+  comment: rdfs:comment
+
+  title: mkdocs:title
+  position: mkdocs:position
+  template: mkdocs:template
+  url: mkdocs:url
+
+  isDefinedBy:
+    $id: rdfs:isDefinedBy
+    $type: $id
+
+  subPropertyOf:
+    $id: rdfs:subPropertyOf
+    $type: $id
+
+  subClassOf:
+    $id: rdfs:subClassOf
+    $type: $id
+
+  domain:
+    $id: rdfs:domain
+    $type: $id
+
+  range:
+    $id: rdfs:range
+    $type: $id
+
+  inverseOf:
+    $id: owl:inverseOf
+    $type: $id
+
+  onProperty:
+    $id: owl:onProperty
+    $type: $id
+
+  mkdocs:subjectOf:
+    $id: mkdocs:subjectOf
+    $type: $id
+
+  facet:
+    $id: iolanta:facet
+    $type: $id
+
+  iolanta:supports:
+    $type: $id
+
+  ≡:
+    $id: owl:equivalentClass
+    $type: $id
+
+  ∩:
+      $id: owl:intersectionOf
+      $container: $list
+      $type: $id
+
+  ⊂:
+    $id: rdfs:subClassOf
+    $type: $id
+
+  hasValue:
+    $id: owl:hasValue
+
+  ∀:
+    $id: owl:allValuesFrom
+    $type: $id
+
+  someValuesFrom:
+    $id: owl:someValuesFrom
+    $type: $id
+
+  has-broader:
+    $id: skos:broader
+    $type: $id
+
+  has-narrower:
+    $id: skos:narrower
+    $type: $id
+
+  ∘:
+    $id: owl:propertyChainAxiom
+    $type: $id
+    $container: $list
+
+  page-id: $id
+
+  rdfs:domain:
+    $type: $id
