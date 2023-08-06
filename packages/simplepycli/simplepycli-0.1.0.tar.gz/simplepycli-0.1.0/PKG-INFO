@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: simplepycli
+Version: 0.1.0
+Summary: A really simple library for interactive python CLIs.
+Author: Adithya Yerramsetty
+Author-email: adithyay@hotmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: prompt-toolkit (>=3.0.36,<4.0.0)
+Description-Content-Type: text/markdown
+
+# PyCLI
+A really simple library for interactive python CLIs.
+

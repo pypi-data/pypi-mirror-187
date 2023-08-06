@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "simplepycli"
+version = "0.1.0"
+description = "A really simple library for interactive python CLIs."
+authors = ["Adithya Yerramsetty <adithyay@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+prompt-toolkit = "^3.0.36"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
