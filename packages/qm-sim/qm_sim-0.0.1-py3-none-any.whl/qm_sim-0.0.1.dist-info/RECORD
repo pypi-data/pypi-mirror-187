@@ -1,0 +1,9 @@
+qm_sim/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qm_sim/finite_difference.py,sha256=EhyjCmPT8-48DtmlaZtLyHt95Y4FAoYcVhfhm28Nupk,4564
+qm_sim/hamiltonian.py,sha256=5QRGJQbbxKjJt5asF5yv1ISNV-pzt48ja0oA0tqMed4,3767
+qm_sim/nature_constants.py,sha256=BVz-QDRJmngcmdSGEjd9ilpjRKPmo-hsfCn-_zkph1s,502
+qm_sim-0.0.1.dist-info/LICENSE,sha256=mWWgh4AJTSHJgOByq7jQXJqrdCCjOgha_Fiz-U6VzCk,1091
+qm_sim-0.0.1.dist-info/METADATA,sha256=KJv96xvmTsLlmE4kCB9GzXCgMAFwCYRv9zn064H2b68,2018
+qm_sim-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+qm_sim-0.0.1.dist-info/top_level.txt,sha256=AbEStPqKBrokmLQQRbH4_jWO2n3QhTgqp8mh6On67ho,7
+qm_sim-0.0.1.dist-info/RECORD,,
