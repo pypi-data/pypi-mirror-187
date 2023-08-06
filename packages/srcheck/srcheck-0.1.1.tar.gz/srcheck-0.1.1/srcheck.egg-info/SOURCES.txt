@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+srcheck/__init__.py
+srcheck/check.py
+srcheck/datasets.py
+srcheck/utils.py
+srcheck.egg-info/PKG-INFO
+srcheck.egg-info/SOURCES.txt
+srcheck.egg-info/dependency_links.txt
+srcheck.egg-info/requires.txt
+srcheck.egg-info/top_level.txt
