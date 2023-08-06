@@ -1,0 +1,7 @@
+sqlpyd/__init__.py,sha256=ZEH8093PJsaomRYghy1GKqTJf9eKh50BieGxqHfVmy4,136
+sqlpyd/conn.py,sha256=hnI-Uvn0IPYlsByVWjqmiqwDoCmCXXeF-1VcpAWcOmU,4757
+sqlpyd/name.py,sha256=T1jxTnbaVuv9-yNKvFB2nQsZPL5CG0FSL2PwwegA5PY,1612
+sqlpyd/tableconfig.py,sha256=9uIDmCfrLR4krk4emS1UqXznAvuzp8zM1vyk_iWZsEI,6532
+sqlpyd-0.1.3.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+sqlpyd-0.1.3.dist-info/METADATA,sha256=BnjXhPqv3J9HxZNuN_ggpXKWX0fR4Evs_JZDyx3MPtA,1480
+sqlpyd-0.1.3.dist-info/RECORD,,
