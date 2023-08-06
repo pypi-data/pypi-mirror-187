@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "Clean_Git_Branches"
+version = "1.0.3"
+description = ""
+authors = ["Nick Holden <holden.o.nick@gmail.com>"]
+readme = "README.md"
+packages = [{include = "main", from = "src"}]
+keywords = ["git", "branches", "clean", "delete", "prune", "local", "remote"]
+# classifiers = [
+#     "Development Status :: 5 - Production/Stable",
+#     "Environment :: Console",
+#     "Intended Audience :: Developers",
+#     "License :: OSI Approved :: MIT License",
+#     "Operating System :: OS Independent",
+#     "Programming Language :: Python :: 3",
+#     "Programming Language :: Python :: 3.10",
+#     "Topic :: Software Development :: Version Control :: Git",
+#     "Typing :: Typed",
+# ]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+GitPython = "^3.1.30"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+clean_git_branches = "main.__main__:start"
+
