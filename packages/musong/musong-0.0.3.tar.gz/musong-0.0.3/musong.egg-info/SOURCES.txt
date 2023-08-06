@@ -1,0 +1,5 @@
+setup.py
+musong.egg-info/PKG-INFO
+musong.egg-info/SOURCES.txt
+musong.egg-info/dependency_links.txt
+musong.egg-info/top_level.txt
