@@ -1,0 +1,7 @@
+nipype
+Pyside6
+pydicom
+configparser
+psutil
+pyshortcuts
+SWANi_supplement>=0.0.4
