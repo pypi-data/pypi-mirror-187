@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: Topsis_Raghav_102003274
+Version: 0.1
+Summary: Calculating Topsis score and saving it in a csv file
+Home-page: https://github.com/Raghav-Aggarwal-20/Topsis-Raghav-102003274
+Download-URL: 
+Author: Raghav Aggarwal
+Author-email: rghaggarwal2002@gmail.com
+License: MIT
+Keywords: TOPSISSCORE,RANK,DATAFRAME
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
