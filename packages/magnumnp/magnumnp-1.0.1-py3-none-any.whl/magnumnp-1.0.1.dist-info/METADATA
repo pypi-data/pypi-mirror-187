@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: magnumnp
+Version: 1.0.1
+Summary: magnum.np finite-difference package for the solution of micromagnetic problems
+Home-page: http://gitlab.com/magnum.np/magnum.np
+Author: Florian Bruckner
+Author-email: florian.bruckner@univie.ac.at
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: setproctitle
+Requires-Dist: pyvista
+Requires-Dist: xitorch
+
