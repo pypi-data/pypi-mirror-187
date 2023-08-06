@@ -1,0 +1,2 @@
+[console_scripts]
+fibonacci = inteltwin.api.skeleton:run
