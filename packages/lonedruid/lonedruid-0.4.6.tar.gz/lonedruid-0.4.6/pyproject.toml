@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "LoneDruid"
+version = "0.4.6"
+description = "Package to convert stuff to esoteric stuff, maybe something else later."
+authors = ["NikitaNightBot <enikita332@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+int_to_eso = 'stufftoeso.eso:int_to_eso'
+power_find = 'stufftoeso.eso:power_find'
+multieso = 'stufftoeso.eso:multieso'
