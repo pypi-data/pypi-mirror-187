@@ -1,0 +1,8 @@
+orjson
+
+[dev]
+python-daemon
+python-dotenv
+uvicorn[standard]
+requests
+pytest
