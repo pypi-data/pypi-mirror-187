@@ -1,0 +1,9 @@
+aea_ledger_fetchai/__init__.py,sha256=icu2zmPAup-MfdbGC4U3mRKAX4q7FnZEaLvEauAxDNc,1057
+aea_ledger_fetchai/_cosmos.py,sha256=yYw3CjjJnP6QQPhtxDhCmDZHtobQNUUrXms4FlnVVS4,54548
+aea_ledger_fetchai/fetchai.py,sha256=cANI9zF9RlL4_zPDl08SW7tF2JbruMJLoJ0RTenBBH4,2330
+aea_ledger_fetchai-1.2.5.dist-info/LICENSE,sha256=TDSqx_22tVH-YpIk0C3Ymkq2Q8K8C2i3gESPF6NdJwI,11346
+aea_ledger_fetchai-1.2.5.dist-info/METADATA,sha256=pShEeqE0hxZIk16DNAkW1obIW8Vc0Ot1K-wWhTUsSf4,1128
+aea_ledger_fetchai-1.2.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aea_ledger_fetchai-1.2.5.dist-info/entry_points.txt,sha256=vVJRnzFqJLW0t-0QYvPocX99hcc_hehrcKB2NT8miMs,181
+aea_ledger_fetchai-1.2.5.dist-info/top_level.txt,sha256=bmsQWYvPCVB4EO_51mPRIIoAlDCMleHAdV9QQIS6qPo,19
+aea_ledger_fetchai-1.2.5.dist-info/RECORD,,
