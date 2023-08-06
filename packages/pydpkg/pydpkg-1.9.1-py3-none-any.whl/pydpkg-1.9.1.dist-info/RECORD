@@ -1,0 +1,11 @@
+pydpkg/__init__.py,sha256=bT3ZgRG44fSqg19DqY2BqcpWjpfazZPy9olHKqECxuc,191
+pydpkg/base.py,sha256=rWZciVmPmsdTtFx8ICZDDCiuYQEsfDS1vU5mKvRRIaM,579
+pydpkg/dpkg.py,sha256=N5WXEJmQKjxAx5fdHon7tKeI6jO-XtGFnefBp6UoPIA,19151
+pydpkg/dpkg_inspect.py,sha256=--Fh_WMaaHN6qFXeq3znRKh0zk9ahrEKzNE8r6twKaM,1426
+pydpkg/dsc.py,sha256=FnKJn_YVl2CQnblfuTQIVtCc2Nd6OeZGXl-hZAPdpeY,11495
+pydpkg/exceptions.py,sha256=nlxUh1aC9T5wz2h9IevQj_8uSuOB_kkyP0INuj31Wkw,900
+pydpkg-1.9.1.dist-info/METADATA,sha256=cvw9CcHhUiZ0ts7wOIwN6fNoztQIeSvHsO1eUgrNDuE,12416
+pydpkg-1.9.1.dist-info/entry_points.txt,sha256=7TMsoEg91-QWEDFQxMf0OrsfU-HIAVitnD-E6dfdvmA,57
+pydpkg-1.9.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+pydpkg-1.9.1.dist-info/LICENSE.txt,sha256=AkjZxXwrtOnbvFFHR_zMvYZK62alX8pkEfHh2hYcyGg,657
+pydpkg-1.9.1.dist-info/RECORD,,
