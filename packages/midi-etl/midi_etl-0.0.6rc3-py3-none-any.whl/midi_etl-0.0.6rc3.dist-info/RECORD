@@ -1,0 +1,9 @@
+midi_etl/__init__.py,sha256=IaOtIoazB1-h5ptyjmp6nRXoiiMTN9HDuFH7iyyQ31o,1843
+midi_etl/arrow_upath_iomanager.py,sha256=zldUinzUuhL4oUSPFGQ4OsFosRQr6AbOWmgo33sNcKc,7706
+midi_etl/constants.py,sha256=zD1jHCX1tRRhwwBGi76KlgPNmj9hXEbS-lcycsUyuvo,273
+midi_etl/partitions.py,sha256=7L9vHUfjuX7MZc8aIRMYUd2iYKFfULORGmnDqTsz9uk,289
+midi_etl/utils.py,sha256=LyVFvCPejOtOLhOLr1OKCfT9IniA5ScAeO9GC0Vaj4I,1093
+midi_etl-0.0.6rc3.dist-info/METADATA,sha256=zrnKZtvcODq_zqfrJnsRSWKVwANk1iHAUCRmQQUZNnk,4842
+midi_etl-0.0.6rc3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+midi_etl-0.0.6rc3.dist-info/top_level.txt,sha256=L-rOVi9eGx4q_A7ibCn_POjdsoXZgDbUJTlZ_v7yv0o,9
+midi_etl-0.0.6rc3.dist-info/RECORD,,
