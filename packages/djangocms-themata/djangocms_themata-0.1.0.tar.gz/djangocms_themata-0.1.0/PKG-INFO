@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: djangocms-themata
+Version: 0.1.0
+Summary: A set of themes for Django CMS projects.
+License: Apache-2.0
+Author: Robert Turnbull
+Author-email: robert.turnbull@unimelb.edu.au
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Django (>=3.2,<4.0)
+Requires-Dist: django-cms (>=3.9.0,<4.0.0)
+Requires-Dist: djangocms-bootstrap (>=1.1.2,<2.0.0)
+Requires-Dist: djangocms-page-meta (>=1.0.1,<2.0.0)
