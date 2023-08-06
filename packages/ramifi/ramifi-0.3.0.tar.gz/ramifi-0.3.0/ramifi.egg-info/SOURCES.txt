@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+ramifi/__init__.py
+ramifi/ncbi_trace_lineage_to_json.py
+ramifi/ramifi.py
+ramifi/translate.py
+ramifi/varJSonToGFF.py
+ramifi.egg-info/PKG-INFO
+ramifi.egg-info/SOURCES.txt
+ramifi.egg-info/dependency_links.txt
+ramifi.egg-info/entry_points.txt
+ramifi.egg-info/not-zip-safe
+ramifi.egg-info/requires.txt
+ramifi.egg-info/top_level.txt
+ramifi/data/__init__.py
