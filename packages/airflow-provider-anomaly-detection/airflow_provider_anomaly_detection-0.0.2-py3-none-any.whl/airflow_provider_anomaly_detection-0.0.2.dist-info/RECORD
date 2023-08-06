@@ -1,0 +1,10 @@
+anomaly_detection/__init__.py,sha256=5mt7leo7cHBDgMypnPrH6Xw4YLW7OK5gCbqC9KM6oy8,264
+anomaly_detection/example_dags/__init__.py,sha256=EVfaECqIP6zwm3-KeFxrnNB3-C4waxZUgr3MmUMTU6k,801
+anomaly_detection/example_dags/anomaly-detection.py,sha256=Rz944ao15I9LnX1qBy7Ywuh5qCMpkMZdRkcAtGXuETY,1082
+anomaly_detection/operators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+anomaly_detection/operators/metric_batch_ingest_operator.py,sha256=m4xa_AikcI99Dr1N9Q7wTH9NW3vE01c1voXnDI6rTkQ,1941
+anomaly_detection/operators/metric_batch_train_operator.py,sha256=2x1gY6yalC7gyVLAZAB8jXg7iSJKAhpXROeGJy1b9RY,2176
+airflow_provider_anomaly_detection-0.0.2.dist-info/METADATA,sha256=6TSMLpkj7GEkHbNQP_U7Vt4QmRz6gavkwfxTIhw9vaM,1016
+airflow_provider_anomaly_detection-0.0.2.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+airflow_provider_anomaly_detection-0.0.2.dist-info/licenses/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+airflow_provider_anomaly_detection-0.0.2.dist-info/RECORD,,
