@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mytopsispackage
+Version: 0.1
+Summary: Its package of Topsis.The Technique for Order of Preference by Similarity to Ideal Solution (TOPSIS) is a multi-criteria decision analysis method
+Home-page: UNKNOWN
+Author: Rakshika
+Author-email: vatsrakshika@gmaol.com
+License: TIET
+Platform: UNKNOWN
+Requires-Dist: panda
+Requires-Dist: numpy
+
+UNKNOWN
+
