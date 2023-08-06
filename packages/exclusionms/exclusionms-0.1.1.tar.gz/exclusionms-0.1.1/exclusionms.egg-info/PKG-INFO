@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: exclusionms
+Version: 0.1.1
+Summary: Python package for working with exclusionms-api and exclusionms-streamlit
+Home-page: 
+Author: Patrick Garrett
+Author-email: pgarrett@scripps.edu
+Requires-Python: >=3.6
