@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: vosk-cli
+Version: 0.2
+Summary: A command line interface for Vosk. It generates subtitles (WebVTT files) from video and audio sources.
+Home-page: https://github.com/elan-ev/vosk-cli
+Author: Martin Wygas
+Author-email: mwygas@uos.de
+License: Apache-2.0
+
+A command line interface for Vosk. It generates subtitles (WebVTT files) from video and audio sources.
