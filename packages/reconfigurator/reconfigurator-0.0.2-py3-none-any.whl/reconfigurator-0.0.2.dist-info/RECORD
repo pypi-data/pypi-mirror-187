@@ -1,0 +1,8 @@
+reconfigurator/__init__.py,sha256=ccUInE7eU5cP88VkVI5cuVvodtwHh69WorzsqNYkvtE,44
+reconfigurator/reconfigurator.py,sha256=ECvI2ws57DlT5U6X1mkIjnbcott5G76hAOAhiccw0hA,7108
+reconfigurator/scripts/add_cli.sh,sha256=K3ArCaQeKsaMyGK2nvRgQhXeG-3b6fUAaJFPiqgY4NE,352
+reconfigurator-0.0.2.dist-info/LICENSE,sha256=j-bxRqOBdQaK4aeW8jJtg7P-_XCfhhhJFaz7YtKZGJU,1498
+reconfigurator-0.0.2.dist-info/METADATA,sha256=O2NEQQt7xvhTABdwDI6eXYNvSZWtJblctK6DOW0e7sU,1322
+reconfigurator-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+reconfigurator-0.0.2.dist-info/top_level.txt,sha256=_qjA7Vo5A2cXeAnpHxPYM0FbeSipUzCXCKNQUK0o-SM,15
+reconfigurator-0.0.2.dist-info/RECORD,,
