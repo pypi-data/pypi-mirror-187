@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: fuzzly-users
+Version: 0.0.1
+Summary: users library for fuzz.ly
+Home-page: https://github.com/kheina-com/users
+Author: kheina
+License: Mozilla Public License 2.0
+Requires-Python: >=3.9.*
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: kh-common[aerospike,auth,logging,sql] (~=0.6.7)
+Requires-Dist: uvicorn (~=0.11.6)
+Requires-Dist: gunicorn (~=20.0.4)
+Requires-Dist: fuzzly-posts (~=0.2.1)
+Provides-Extra: build
+Requires-Dist: wheel (~=0.38.4) ; extra == 'build'
+Requires-Dist: twine (~=3.4.2) ; extra == 'build'
+Requires-Dist: isort (~=5.8.0) ; extra == 'build'
+
