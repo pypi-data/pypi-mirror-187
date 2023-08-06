@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+datamizer/__init__.py
+datamizer/datamizer.py
+datamizer/helpers.py
+datamizer.egg-info/PKG-INFO
+datamizer.egg-info/SOURCES.txt
+datamizer.egg-info/dependency_links.txt
+datamizer.egg-info/requires.txt
+datamizer.egg-info/top_level.txt
