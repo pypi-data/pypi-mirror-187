@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: MLTranslit
+Version: 1.0.4
+Summary: A linguistic tool that transliterates words from Malayalam script to English script.
+Home-page: https://github.com/erose311/MLTranslit
+Author: Elaine Mary Rose
+Author-email: elainerose311@gmail.com
+License: GPLv3
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+
