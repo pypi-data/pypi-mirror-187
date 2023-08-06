@@ -1,0 +1,18 @@
+[project]
+name = "ishita_area_volume"
+version = "1.0.0"
+authors = [
+  { name="Ishita Rathi", email="ishita.rathi2022@vitstudent.ac.in" },
+]
+description = "This is a python package to calculate area and volume of different shapes."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
