@@ -1,0 +1,13 @@
+bvhio/Parser.py,sha256=-pUpOy3o3EPql6xR6Ks_klUZwIBX2MleyZS8PB--KtI,8121
+bvhio/__init__.py,sha256=OrwR9umqkCYQY1XDYbpI1GyQgvfn8AflWNxkmTVh91o,92
+bvhio/bvh/BvhContainer.py,sha256=ssvSevH32-QJIigcviXyiRD8sjY6-zA8GBcrYJl4o4A,454
+bvhio/bvh/RootPose.py,sha256=IOwoRXmIsYQKWdq_rPlph2rZ__rywz1JoL0NoC5JDF8,2222
+bvhio/bvh/__init__.py,sha256=qwidt-8c2EQC_lEVEUD8gBIxmQ_HxqGa2mZNRlEZwcQ,72
+bvhio/hierarchy/Joint.py,sha256=5iHE5H1tWuwzWTt9s8bh70tOy8Ii2gUDKtMTDb1i5-I,8384
+bvhio/hierarchy/__init__.py,sha256=6qinvMRAo5EGdJhXpk7lZRwnpPxZKMLWio8PPU6TSms,26
+bvhio/shared/Pose.py,sha256=eeyp3qzA4xh2qmmW_EaNQZLmh8VrUoMnpXTvrSN2IYk,1073
+bvhio/shared/__init__.py,sha256=37Ld4m9r4573on7s9t29zIjGIbxHqFTZZPgJR-hqkE8,24
+bvhio-1.1.4.dist-info/METADATA,sha256=w9neCxoyOt2Gg0a1oZEq0pWMlnJ2P0KI8p5gjV-THjo,12952
+bvhio-1.1.4.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+bvhio-1.1.4.dist-info/licenses/LICENSE,sha256=C3_OWCivhR0YomieFtKfrdK3LjqFfdl5pHVBa8BVCqQ,1090
+bvhio-1.1.4.dist-info/RECORD,,
