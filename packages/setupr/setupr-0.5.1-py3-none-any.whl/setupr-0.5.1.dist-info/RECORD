@@ -1,0 +1,17 @@
+LICENSE,sha256=ew_3oiKUrL68VhGldFdi7yaGLJI2eKzayNWNYiaexno,1082
+docs/assets/logo.png,sha256=4z2RdaCTiUacG2HqA-TLKEq2_kqzSYtfg3UlMgk4flI,25790
+setupr/Worldr-MST-installation-PGP-key.asc,sha256=52ujaYj2lXfoKNDH95P0eSbDZht3uJJ1jeZmNNC3coA,3175
+setupr/__init__.py,sha256=2DzRjUi0F-RcuBr_ZRPmwUWS22auvBR0GX2gq1sqMuw,268
+setupr/commands.py,sha256=ucqQGQV1ypVttyKHWLdR0aVjC-ORuqO3VdAKZNlA7G8,1861
+setupr/console.py,sha256=biurO2a6zRNj1oi7s9QcUYCZfFNsnjKYVJu_do44rfU,16461
+setupr/downloader.py,sha256=3E-elS6mjFlX_JR22lWKNXprjigl3nb1t8pP66U1LlU,9882
+setupr/gbucket.py,sha256=vBcivlXU1MyMb0u3oo3ppBEaRSHPt37zd8sTWSWPjhw,3043
+setupr/gpg.py,sha256=rl5n49f-UHNpg5AV0xKKvSZW0ID8abaIaYjYw7NOxz0,2084
+setupr/pre_flight.py,sha256=zNR7UpKRLaAKwE2TfNdPW-e343_yzB0_YJuP46hmM4A,5497
+setupr/print.py,sha256=AQNtfHMjVUpeHTaHul2oBUDq1isQj7_Hpq4bto5FxQk,1547
+setupr/utils.py,sha256=PMnAnjbAfeIBANhVk267SlQ8XiQ5LmKFcD53jh1EVSA,1359
+setupr-0.5.1.dist-info/METADATA,sha256=4EDN2D9IDGI6SLHZlB8p-4MeEdzCpmQ_QCOWffVmtaY,3156
+setupr-0.5.1.dist-info/entry_points.txt,sha256=SHhBhCP7iBV5mZc2NsclUvvBY1ODUMpeLF76PTK1TPw,46
+setupr-0.5.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+setupr-0.5.1.dist-info/LICENSE,sha256=ew_3oiKUrL68VhGldFdi7yaGLJI2eKzayNWNYiaexno,1082
+setupr-0.5.1.dist-info/RECORD,,
