@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: tnltk
+Version: 0.0.1
+Summary: TNLTK - Turkish Natural Language Toolkit developed by TNLTK Development Team.
+Home-page: UNKNOWN
+Author: Tarik Kaan Koc
+Author-email: tarikkaan1koc@gmail.com
+License: Apache Software License v2.0
+Project-URL: Source, https://github.com/tnltk/tnltk
+Project-URL: Tracker, https://github.com/tnltk/tnltk/issues
+Project-URL: Documentation, https://tnltk.readthedocs.io
+Description: Description
+        ===========
+        TNLTK is a comprehensive toolkit for natural language processing (NLP) tasks in the Turkish language. It includes a wide range of features, such as tokenization, stemming, and POS tagging, and is designed to be highly accurate and easy to use.
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
