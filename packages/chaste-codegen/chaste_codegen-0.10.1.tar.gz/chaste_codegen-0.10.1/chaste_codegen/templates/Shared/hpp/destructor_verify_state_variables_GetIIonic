@@ -1,0 +1,6 @@
+    ~{{class_name}}();
+    void VerifyStateVariables();
+    {%- if lookup_parameters is defined %}
+    AbstractLookupTableCollection* GetLookupTableCollection();
+    {%- endif %}
+    double GetIIonic(const std::vector<double>* pStateVariables=NULL);
