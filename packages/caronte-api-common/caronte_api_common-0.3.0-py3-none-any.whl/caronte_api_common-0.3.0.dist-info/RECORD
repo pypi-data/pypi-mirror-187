@@ -1,0 +1,16 @@
+caronte_common/__init__.py,sha256=mh3omsMXyEgGqo5yueTv9ueoJw_LBMCktX7mwqsrSDU,2368
+caronte_common/data/builder/dataclass_builder.py,sha256=jimYFWQgy_aDksajCOJ5m418kkmAD8cBVJJruKgK9Do,479
+caronte_common/data/db_document.py,sha256=x4VHOJ9MXQngllhIHcWBgJxQ8WkLupOojRrSKe9fuMA,415
+caronte_common/data/entities/claim.py,sha256=NsooKjiPQ-Q08GPKHx2kVk4P0j5nwE4HBXMP6O1hgL0,261
+caronte_common/data/entities/config.py,sha256=bBquKiHpern1gsz2JiP-TquDjr8gGh7xmijHM4A34i0,141
+caronte_common/data/entities/owner.py,sha256=yn-9sjydAL1P-qUkuQE1mZL3RUGIKKrfL9GC6Jm9Yyo,492
+caronte_common/data/entities/project.py,sha256=L6BpZhUJgAwJp_lC0ZVvOwjKhTN4ze8CRWAyXXeQ2dc,616
+caronte_common/data/entities/role.py,sha256=aDinW8JJnYlCCt4E9-kgW6nO1icwcf-9zEzWFUrIPm0,210
+caronte_common/data/entities/user.py,sha256=8at5mmocmCyvrTDiauTjMMVKso6ms_9rRLPVQgjX5nA,382
+caronte_common/interfaces/command.py,sha256=I9L9JdTKEiJXHqlYo8FSwLfy3RBA0EaB2rRdi-KrnUU,356
+caronte_common/interfaces/factory.py,sha256=Tun8QIZ2xJ4qValVwkexicE3FDl03exBaNXSaFR0zZM,429
+caronte_common/types/db_field.py,sha256=qstP8T-BWYzEvPfDn-Js09-d5liqyBB4mTObzlCRHb4,75
+caronte_api_common-0.3.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+caronte_api_common-0.3.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+caronte_api_common-0.3.0.dist-info/METADATA,sha256=Vp4Jfb-9EJaINVdawi5L3wjC816hgQzgh8TGFyvu6eI,1147
+caronte_api_common-0.3.0.dist-info/RECORD,,
