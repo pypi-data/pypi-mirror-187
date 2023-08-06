@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: citation-report
+Version: 0.1.0
+Summary: Parse legal citations having the publisher format - i.e. SCRA, PHIL, OFFG - referring to Philippine Supreme Court decisions.
+Home-page: https://lawsql.com
+License: MIT
+Author: Marcelino G. Veloso III
+Author-email: mars@veloso.one
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Pydantic
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Legal Industry
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Text Processing :: General
+Classifier: Typing :: Typed
+Requires-Dist: citation-date (>=0.1.0,<0.2.0)
+Requires-Dist: pydantic (>=1.10.4,<2.0.0)
+Project-URL: Repository, https://github.com/justmars/citation-report
