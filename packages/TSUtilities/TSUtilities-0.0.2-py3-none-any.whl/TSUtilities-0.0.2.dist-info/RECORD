@@ -1,0 +1,12 @@
+TSUtilities/__init__.py,sha256=M9j1NuexsmXRO0O_LLRNrLF7fEfPAHWIxm90hC6gV3I,27
+TSUtilities/functions.py,sha256=eTSByDYic0083jouMkMpOOG0c7HHq3EZkLtsTMWyAUE,2227
+TSUtilities/TSFeatures/__init__.py,sha256=M9j1NuexsmXRO0O_LLRNrLF7fEfPAHWIxm90hC6gV3I,27
+TSUtilities/TSFeatures/fourier_seasonality.py,sha256=lHZss1MGuDxRk1EEqgoOXZb8Hlymo7UdzpsHHTggwUc,1450
+TSUtilities/TSFeatures/linear_changepoint.py,sha256=A5NIV3kcRNm-rUIwcIPCtYPvtkgmHW4tw1xhsGIPmgw,2958
+TSUtilities/TSTrend/__init__.py,sha256=M9j1NuexsmXRO0O_LLRNrLF7fEfPAHWIxm90hC6gV3I,27
+TSUtilities/TSTrend/trend_dampen.py,sha256=qw_rT2gnewYY1usuxRWfcXcbyDN4bxH5BeOKWul4HlY,3877
+TSUtilities-0.0.2.dist-info/LICENSE,sha256=aRf1taSiJ92tbFDjgbCzfr7RdH-sKYHFIqSRVxwSoBQ,1088
+TSUtilities-0.0.2.dist-info/METADATA,sha256=W1PMW27BRF38-AD9U3Xue6MC2_WVp1DQGjI9KvMREtU,2010
+TSUtilities-0.0.2.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+TSUtilities-0.0.2.dist-info/top_level.txt,sha256=zvD1m0Nr3OO2sKmhiio5rZQxMApJKN9WA5uJfpLHZb0,12
+TSUtilities-0.0.2.dist-info/RECORD,,
