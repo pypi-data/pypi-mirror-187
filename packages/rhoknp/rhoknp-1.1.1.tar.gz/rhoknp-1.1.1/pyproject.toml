@@ -1,0 +1,65 @@
+[tool.poetry]
+name = "rhoknp"
+version = "1.1.1"
+description = "Yet another Python binding for Juman++/KNP/KWJA"
+license = "MIT"
+authors = [
+    "Hirokazu Kiyomaru <h.kiyomaru@gmail.com>",
+    "Nobuhiro Ueda <ueda@nlp.ist.i.kyoto-u.ac.jp>",
+]
+readme = "README.md"
+repository = "https://github.com/ku-nlp/rhoknp"
+documentation = "https://rhoknp.readthedocs.io/en/latest"
+keywords = ["NLP"]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.12"
+cached-property = { version = "^1.5", python = "<3.8" }
+importlib-metadata = { version = "^5.2", python = "<3.8" }
+
+[tool.poetry.group.dev]
+
+[tool.poetry.group.dev.dependencies]
+ipdb = "^0.13.9"
+
+[tool.poetry.group.test]
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.2"
+pytest-cov = "^4.0"
+httpx = "^0.23.1"
+
+[tool.poetry.group.docs]
+
+[tool.poetry.group.docs.dependencies]
+Sphinx = "^5.3"
+sphinx-prompt = "^1.5"
+sphinx-copybutton = "^0.5.0"
+myst-parser = "^0.18.1"
+furo = "^2022.12"
+
+[tool.poetry.group.cli]
+
+[tool.poetry.group.cli.dependencies]
+typer = ">=0.6.1,<0.8"
+PyYAML = "^6.0"
+rich = ">=12.6,<14"
+fastapi = "^0.88.0"
+uvicorn = "^0.20.0"
+
+[tool.poetry.scripts]
+rhoknp = "rhoknp.cli.cli:app"
+
+[tool.black]
+line-length = 120
+target-version = ["py37", "py38", "py39", "py310", "py311"]
+
+[tool.isort]
+line_length = 120
+
+[tool.mypy]
+python_version = 3.7
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
