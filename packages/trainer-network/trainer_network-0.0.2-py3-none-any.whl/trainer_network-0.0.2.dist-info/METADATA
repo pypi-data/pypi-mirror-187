@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: trainer-network
+Version: 0.0.2
+Summary: trainer network model for transferring image
+Author-email: Yonghoon Kim <csyhkim@silla.ac.kr>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+...Not available yet. It will be provided at a later date.
+if you want to testing this model you have to contect to ours on mail(csyhkim@silla.ac.kr)
