@@ -1,0 +1,39 @@
+{
+  "language": "es",
+  "intents": {
+    "HassClimateSetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "<establece_sube_baja> <temp> a <temperature>",
+            "<establece_sube_baja> <temp> <area> a <temperature>",
+            "<establece_sube_baja> <area> <temp> a <temperature>",
+            "<establece_sube_baja> <temp> a <temperature> <area>"
+          ]
+        }
+      ]
+    },
+    "HassClimateGetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "cuál es <temp>",
+            "[a] (cuánta|cuánto|cuántos|qué) <temp> (hace|hay|estamos)",
+            "cuál es <temp> <area>",
+            "[a] (cuánta|cuánto|cuántos|qué) <temp> (hace|hacen|hay|está|están|estamos) <area>"
+          ]
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassClimateSetTemperature": {
+        "default": "Temperatura ajustada a {{ slots.temperature }} grados"
+      },
+      "HassClimateGetTemperature": {
+        "default": "{{ state.state | float | abs | round(2) }} {{ 'grado' if state.state | float | abs == 1 else 'grados' }} {{ 'bajo cero' if state.state | float < 0 else '' }}"
+      }
+    }
+  }
+}

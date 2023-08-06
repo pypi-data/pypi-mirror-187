@@ -1,0 +1,95 @@
+{
+  "language": "nb",
+  "intents": {
+    "HassTurnOff": {
+      "data": [
+        {
+          "sentences": [
+            "(skru | slå) av {name}[n]",
+            "(skru | slå) {name}[n] av"
+          ]
+        }
+      ]
+    },
+    "HassTurnOn": {
+      "data": [
+        {
+          "sentences": [
+            "(skru | slå) på {name}[n]",
+            "(skru | slå) {name}[n] på"
+          ]
+        }
+      ]
+    }
+  },
+  "responses": {
+    "errors": {
+      "no_intent": "Jeg skjønte dessverre ikke det",
+      "no_area": "Det er ingen områder med navnet {{ area }}",
+      "no_domain": "{{ area }} har ingen {{ domain }}",
+      "no_device_class": "{{ area }} inneholder ikke {{ device_class }}",
+      "no_entity": "Finner ingen enhet med navn {{ entity }}",
+      "handle_error": "En uventet feil oppsto"
+    },
+    "intents": {
+      "HassTurnOff": {
+        "default": "{{ slots.name }} ble slått av",
+        "lights_area": "Lysene i {{ slots.area }} ble slått av",
+        "fans_area": "Viftene i {{ slots.area }} ble slått av",
+        "cover": "{{ slots.name }} ble lukket",
+        "cover_area": "Lukket {{ slots.area }}"
+      },
+      "HassTurnOn": {
+        "default": "{{ slots.name }} ble slått på",
+        "lights_area": "Lysene i {{ slots.area }} ble slått på",
+        "fans_area": "Viftene i {{ slots.area }} ble slått på",
+        "cover": "{{ slots.name }} ble åpnet",
+        "cover_area": "Åpnet {{ slots.area }}"
+      }
+    }
+  },
+  "lists": {
+    "color": {
+      "values": [
+        {
+          "in": "blå",
+          "out": "blue"
+        },
+        {
+          "in": "brun",
+          "out": "brown"
+        },
+        {
+          "in": "grønn",
+          "out": "green"
+        },
+        {
+          "in": "gul",
+          "out": "yellow"
+        },
+        {
+          "in": "hvit",
+          "out": "white"
+        },
+        {
+          "in": "lilla",
+          "out": "purple"
+        },
+        {
+          "in": "oransje",
+          "out": "orange"
+        },
+        {
+          "in": "rød",
+          "out": "red"
+        },
+        {
+          "in": "svart",
+          "out": "black"
+        }
+      ]
+    }
+  },
+  "expansion_rules": {},
+  "skip_words": []
+}

@@ -1,0 +1,36 @@
+{
+  "language": "uk",
+  "intents": {
+    "HassClimateSetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "<зміни> температуру [<area>] [на] <temperature>",
+            "<зміни> температуру [на] <temperature> [<area>]"
+          ]
+        }
+      ]
+    },
+    "HassClimateGetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "Яка температура [<area>]",
+            "Як (холодно | тепло | жарко) [<area>]",
+            "Cкільки градусів [<area>]"
+          ]
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassClimateSetTemperature": {
+        "default": "Температуру встановлено на {{ slots.temperature }} градусів"
+      },
+      "HassClimateGetTemperature": {
+        "default": "{{ state.state }} градусів"
+      }
+    }
+  }
+}

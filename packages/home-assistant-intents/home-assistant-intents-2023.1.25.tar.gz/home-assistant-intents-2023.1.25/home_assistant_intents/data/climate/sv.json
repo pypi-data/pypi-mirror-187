@@ -1,0 +1,41 @@
+{
+  "language": "sv",
+  "intents": {
+    "HassClimateSetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "<ändra> temperaturen <i_på> <area> till <temperature>",
+            "<ändra> [temperaturen] [till] <temperature> <i_på> <area>",
+            "<ändra> <area> [temperaturen] till <temperature>",
+            "<ändra> temperaturen till <temperature>"
+          ]
+        }
+      ]
+    },
+    "HassClimateGetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "<vad> <temp>",
+            "<vad> <temp> <i_på> <area>",
+            "<vad> <temp> <är>",
+            "<vad> <temp> <är> <i_på> <area>",
+            "hur <varmt_kallt> <är> <i_på> <area>",
+            "hur <varmt_kallt> <är> <name>"
+          ]
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassClimateSetTemperature": {
+        "default": "Temperaturen sattes till {{ slots.temperature }} grader"
+      },
+      "HassClimateGetTemperature": {
+        "default": "{{ state.state }} grader"
+      }
+    }
+  }
+}

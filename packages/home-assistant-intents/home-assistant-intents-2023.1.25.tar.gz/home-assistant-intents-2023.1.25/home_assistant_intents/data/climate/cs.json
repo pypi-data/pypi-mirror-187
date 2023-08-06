@@ -1,0 +1,37 @@
+{
+  "language": "cs",
+  "intents": {
+    "HassClimateSetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "(<nastavit>|<zvysit>|<ztlumit>|<zmenit>) teplotu [<area>] na <teplota>"
+          ]
+        }
+      ]
+    },
+    "HassClimateGetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "Jaká [je] teplota [je] [<area>]",
+            "Jaká je [<area>] teplota",
+            "Kolik [je] [stupňů] [je] [<area>] [stupňů]",
+            "jaká je [<area>] teplota",
+            "jak teplo je <area>"
+          ]
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassClimateSetTemperature": {
+        "default": "Teplota nastavena na {{ slots.temperature }} {{ 'stupeň' if state.state | int | abs == 1 else 'stupně' if state.state | int | abs in [2,3,4] else 'stupňů' }}"
+      },
+      "HassClimateGetTemperature": {
+        "default": "{{ state.state }} {{ 'stupeň' if state.state | int | abs == 1 else 'stupně' if state.state | int | abs in [2,3,4] else 'stupňů' }}"
+      }
+    }
+  }
+}
