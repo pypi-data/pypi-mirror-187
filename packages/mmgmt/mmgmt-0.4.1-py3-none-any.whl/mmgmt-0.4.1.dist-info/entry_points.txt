@@ -1,0 +1,4 @@
+[console_scripts]
+cync=common_sync.__main__:cli
+mmgmt=mmgmt.cli:cli
+
