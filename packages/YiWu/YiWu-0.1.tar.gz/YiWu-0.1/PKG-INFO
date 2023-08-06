@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: YiWu
+Version: 0.1
+Summary: A Python AI package for chess
+Author: Yijie Xia
+Author-email: yijiexia@pku.edu.cn
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
