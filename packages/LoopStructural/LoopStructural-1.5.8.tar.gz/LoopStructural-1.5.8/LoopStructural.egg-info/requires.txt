@@ -1,0 +1,10 @@
+geostatspy
+numba
+numpy>=1.18
+pandas
+scikit-fmm
+scikit-image
+scikit-learn
+scipy
+statsmodels
+tqdm
