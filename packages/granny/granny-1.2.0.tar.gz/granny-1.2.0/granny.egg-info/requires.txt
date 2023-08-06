@@ -1,0 +1,12 @@
+pandas
+ipython
+ipykernel
+numpy
+opencv-python
+matplotlib>=3.5
+h5py<3.0.0
+scikit-image
+tensorflow<=1.15
+pillow
+protobuf<=3.20
+keras==2.3
