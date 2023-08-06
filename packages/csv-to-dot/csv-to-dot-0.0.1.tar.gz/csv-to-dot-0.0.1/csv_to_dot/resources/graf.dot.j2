@@ -1,0 +1,7 @@
+digraph G {
+  node [shape="{{ nodes_opts.shape }}", style="{{ nodes_opts.style }}", color="{{ nodes_opts.bg_color }}", fontcolor="{{ nodes_opts.font_color }}"];
+  {% for edge in edges %}
+  {{ edge }}{% endfor %}
+  {% for node in nodes %}
+  {{ node }}{% endfor %}
+}
