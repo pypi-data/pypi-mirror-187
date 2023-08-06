@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: voicevox
+Version: 0.0.1
+Summary: Voicevox engine unoffical wrapper
+Home-page: UNKNOWN
+Author: tuna2134
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# voicevox
+Unoffical API wrapper that you can use voicevox easy!
+
+## Install
+```sh
+pip install voicevox
+```
+
+All that!
+
+## Example
+```python
+from voicevox import Client
+import asyncio
+
+
+async def main():
+    client = Client()
+    audio_query = await client.create_audio_query(
+        "こんにちは！", speaker=1
+    )
+    with open("voice.wav", "wb") as f:
+        f.write(await audio_query.synthesis())
+
+
+if __init__ == "__main__":
+    asyncio.run(main())
+```
+
+

@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+voicevox/__init__.py
+voicevox/audio_query.py
+voicevox/client.py
+voicevox/errors.py
+voicevox.egg-info/PKG-INFO
+voicevox.egg-info/SOURCES.txt
+voicevox.egg-info/dependency_links.txt
+voicevox.egg-info/requires.txt
+voicevox.egg-info/top_level.txt
