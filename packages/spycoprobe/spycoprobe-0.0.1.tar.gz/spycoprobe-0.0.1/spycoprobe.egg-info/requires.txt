@@ -1,0 +1,4 @@
+numpy
+intelhex
+click
+pyserial
