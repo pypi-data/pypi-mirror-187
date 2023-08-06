@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: topsis_suvansh_102017118
+Version: 1.1.1
+Summary: TOPSIS method for multi-criteria decision making
+Home-page: https://github.com/SuvanshSharma/topsis_suvansh_102017118
+Download-URL: https://github.com/SuvanshSharma/topsis_suvansh_102017118/archive/refs/tags/v_111.tar.gz
+Author: Suvansh
+Author-email: ssharma10_be20@thapar.edu
+License: MIT
+Keywords: topsis,MCDM
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE.txt

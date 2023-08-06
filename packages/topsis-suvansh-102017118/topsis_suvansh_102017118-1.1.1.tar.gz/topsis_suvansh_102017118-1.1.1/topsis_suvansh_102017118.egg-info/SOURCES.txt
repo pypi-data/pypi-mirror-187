@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+topsis_suvansh_102017118/__init__.py
+topsis_suvansh_102017118/topsis102017118.py
+topsis_suvansh_102017118.egg-info/PKG-INFO
+topsis_suvansh_102017118.egg-info/SOURCES.txt
+topsis_suvansh_102017118.egg-info/dependency_links.txt
+topsis_suvansh_102017118.egg-info/requires.txt
+topsis_suvansh_102017118.egg-info/top_level.txt
