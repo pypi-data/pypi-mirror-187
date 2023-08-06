@@ -1,0 +1,5 @@
+Flask==2.0.0
+
+[dev]
+flake8~=3.7.9
+pylint~=2.4.4
