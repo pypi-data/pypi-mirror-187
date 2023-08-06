@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Topsis-Arshpreet-102017045
+Version: 1.0.1
+Summary: topsis package for MCDM problems
+Home-page: https://github.com/Arshpreet-Singh-1/Topsis-Arshpreet-102017045
+Author: Arshpreet Singh
+Author-email: arshpreet9598@gmail.com
+License: MIT
+Description: # Topsis-Arshpreet-102017045
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
