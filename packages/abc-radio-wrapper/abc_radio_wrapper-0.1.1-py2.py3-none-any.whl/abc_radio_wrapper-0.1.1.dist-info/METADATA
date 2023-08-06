@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: abc-radio-wrapper
+Version: 0.1.1
+Summary: API wrapper library for the song history of abc radio channels
+Home-page: https://github.com/MatthewBurke1995/ABC-Radio-Wrapper
+Author: Matthew Burke
+Author-email: mperoburke@gmail.com
+License: MIT license
+Keywords: abc_radio_wrapper
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+=================
+ABC Radio Wrapper
+=================
+
+
+.. image:: https://img.shields.io/pypi/v/abc_radio_wrapper.svg
+        :target: https://pypi.python.org/pypi/abc_radio_wrapper
+
+.. image:: https://img.shields.io/travis/matthewburke1995/abc_radio_wrapper.svg
+        :target: https://travis-ci.com/matthewburke1995/abc_radio_wrapper
+
+.. image:: https://readthedocs.org/projects/abc-radio-wrapper/badge/?version=latest
+        :target: https://abc-radio-wrapper.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+
+
+API wrapper library for the song history of abc radio channels
+
+
+* Free software: MIT license
+* Documentation: https://abc-radio-wrapper.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2023-01-18)
+------------------
+
+* First added to github
+
+
+0.2.0 (TBA)
+-----------
+
+* Added to PyPI
+
+
