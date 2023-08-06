@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+PyCryptor.egg-info/PKG-INFO
+PyCryptor.egg-info/SOURCES.txt
+PyCryptor.egg-info/dependency_links.txt
+PyCryptor.egg-info/entry_points.txt
+PyCryptor.egg-info/requires.txt
+PyCryptor.egg-info/top_level.txt
+pycryptor/__init__.py
+pycryptor/__main__.py
+pycryptor/app.py
+pycryptor/file_io.py
+pycryptor/signature.py
+pycryptor/utils.py
