@@ -1,0 +1,23 @@
+{notice}
+
+{warning}
+
+from typing import Union
+from Octra import raw
+from Octra.raw.core import TLObject
+
+{name} = Union[{types}]
+
+
+# t.me/TheVenomXD noinspection PyRedeclaration
+class {name}:  # t.me/TheVenomXD type: ignore
+    """{docstring}
+    """
+
+    QUALNAME = "Octra.raw.base.{qualname}"
+
+    def __init__(self):
+        raise TypeError("Base types can only be used for type checking purposes: "
+                        "you tried to use a base type instance as argument, "
+                        "but you need to instantiate one of its constructors instead. "
+                        "More info: https://docs.Octra.org/telegram/base/{doc_name}")
