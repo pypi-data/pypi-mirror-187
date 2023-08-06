@@ -1,0 +1,14 @@
+CustomizeableSocketServer/BaseClient.py,sha256=O-Si4Z47UYDBMjPML39F4hX38OCws-5ee1i82v1RnwA,962
+CustomizeableSocketServer/BaseServer.py,sha256=Ea3konnT3fYmR0esXcNBGBDIjIOhMk-92s23vjmljT8,3164
+CustomizeableSocketServer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+CustomizeableSocketServer/buffer.py,sha256=KsaFl-WltbezlId6bYMnGmGT91RTAeV_gfwAIS4ibRQ,2950
+CustomizeableSocketServer/schemas.py,sha256=uYi_ii_BL5WDldo4ErCx3cr1ro_BRwB1uToKR1rLou4,445
+CustomizeableSocketServer/__main__/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+CustomizeableSocketServer/__main__/client.py,sha256=AaBwJgxMjBHPdRKP2lhaqJLQ_okf0_bA50bYydCseEc,323
+CustomizeableSocketServer/__main__/server.py,sha256=0wjcX8PxZluuiA5w2ZZRe1XNMelbYHsqtMz8z0v_dNg,502
+CustomizeableSocketServer-1.0.0.dist-info/LICENSE,sha256=K0xCc38czEA_lzKMWX4KvScqrV5BOiJTmzulwx6pQ8I,35164
+CustomizeableSocketServer-1.0.0.dist-info/METADATA,sha256=v8mn_-aZZBOgzxBWcHjMn3AXJ5tyBKmmTILOto8erl0,41747
+CustomizeableSocketServer-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+CustomizeableSocketServer-1.0.0.dist-info/entry_points.txt,sha256=sannsyRQG_oz_Cfxu6RPmCrOUKT7LusHmtw00SHQSqU,88
+CustomizeableSocketServer-1.0.0.dist-info/top_level.txt,sha256=7fI7arXBuBlK4Z66pk2OjmERnlS6ixyEPdJcnNf7AWs,26
+CustomizeableSocketServer-1.0.0.dist-info/RECORD,,
