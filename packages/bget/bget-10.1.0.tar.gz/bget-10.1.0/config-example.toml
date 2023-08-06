@@ -1,0 +1,72 @@
+# outdir: download output folder path
+#     type: string
+#     default: "."
+outdir = "."
+
+# cookies: cookies file path
+#     type: string
+#     default: "bilibili.com_cookies.txt"
+cookies = "bilibili.com_cookies.txt"
+
+# chunk-size: chunk size of downloader
+#     type: int
+#     unit: bytes
+#     default: 8192
+chunk-size = 4096
+
+# formatter-audio: formatter of audio file
+#     type: string
+#     default: "av{aid}-{p:0>3d}.{ext}"
+#     available variables: {aid} {bvid} {cid} {p} {title} {part_name} {ext}
+formatter-audio = "av{aid}-{p:0>3d}.{ext}"
+
+# formatter-video: formatter of video file
+#     type: string
+#     default: "av{aid}-{p:0>3d}.mp4"
+#     available variables: {aid} {bvid} {cid} {p} {title} {part_name}
+formatter-video = "av{aid}-{p:0>3d}.mp4"
+
+# formatter-cover: formatter of cover picture file
+#     type: string
+#     default: "av{aid}.{ext}"
+#     available variables: {aid} {bvid} {title} {ext}
+formatter-cover = "av{aid}.{ext}"
+
+# formatter-danmaku: formatter of danmaku xml file
+#     type: string
+#     default: "av{aid}-{p:0>3d}.xml"
+#     available variables: {aid} {bvid} {cid} {p} {title} {part_name}
+formatter-danmaku = "av{aid}-{p:0>3d}.xml"
+
+# formatter-meta: formatter of meta-data json file
+#     type: string
+#     default: "av{aid}.json"
+#     available variables: {aid} {bvid} {title}
+formatter-meta = "av{aid}.json"
+
+# sections
+#     section name can be costumed, which is an alias.
+#     section name is provide in section mode
+[section.luotianyi-2020]
+# id: favourite folder id
+#     type: int
+#     default: NO DEFAULT VALUE
+#     note: This is the id shown in url like https://space.bilibili.com/36081646/favlist?fid=976082846
+#           You MUST provide this value, or bget won't work.
+id = 976082846
+
+# switches: determine which resources to download
+#     type: array[string]
+#     default: ["video", "danmaku", "meta"]
+#     acceptable item values:  "meta" | "audio" | "video" | "cover" | "danmaku"
+#     note: Please choose only one from "video" and "audio".
+#           It will work if you choose both, but the audio stream will be downloaded twice.
+switches = ["meta", "audio", "video", "cover", "danmaku"]
+
+# overwriting: global configurations can be overwritten
+outdir = "./lty-2021"
+chunk-size = 4096
+formatter-danmaku = "xml/{cid}.xml"
+
+[section.second]
+id = 1159955846

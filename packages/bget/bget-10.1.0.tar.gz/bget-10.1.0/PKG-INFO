@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: bget
+Version: 10.1.0
+Summary: bget - a python bilibili favourites batch downloader
+Home-page: https://github.com/baobao1270/bget
+License: MIT
+Keywords: bilibili,terminal
+Author: Joseph Chris
+Author-email: joseph@josephcz.xyz
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: bgetlib (>=3.2.7)
+Requires-Dist: toml (>=0.10.2)
+Project-URL: Repository, https://github.com/baobao1270/bget.git
+Description-Content-Type: text/markdown
+
+# bget
+bget - a python bilibili favourites batch downloader
+
+## Install
+```bash
+pip install bget
+```
+
+## Use
+ 1. Download [config.toml](https://github.com/baobao1270/bget/blob/master/config-example.toml) and edit it as your need.
+ 2. Get your bilibili.com cookies. You can use [this chrome extension (Get cookies.txt)](https://chrome.google.com/webstore/detail/get-cookiestxt/bgaddhkoddajcdgocldbbfleckgcbcid).
+ 3. Download FFMpeg and ensure is in your `PATH`.
+ 4. Use `bget -h` to get help.
+
+## Build & Development
+Poetry is used to build and develop.
+
+## License
+MIT License
+
