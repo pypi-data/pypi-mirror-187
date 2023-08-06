@@ -1,0 +1,2 @@
+opencv-python
+rpi-ws281x
