@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: postgres-backup
+Version: 0.0.1
+Summary: Automation of the creation of backups of Postgres databases
+Home-page: https://github.com/Nil-Andreu/postgres-backup
+Author: Nil Andreu
+Author-email: nilandreug@email.com
+License: MIT
+Description: # Backup Postgres Database
+        
+        This simple Python package allows you to create easily the database backup of Postgres databases.
+        You can upload them to cloud storage buckets by creating a cron job.
+        
+        ```python
+            from postgres_backup import Backup
+        
+            # Instantiate the backup object with Postgres database_uri: db:engine:[//[user[:password]@][host][:port]/][dbname]
+            backup = Backup(database_uri)
+        
+            # Create the file for backup
+            backup.create(out_file='backup.gz')
+        ```
+Keywords: backup,Postgres,SQL,database,PostgreSQL
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
