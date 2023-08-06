@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: serotiny
+Version: 1.0.1
+Summary: A framework of tools to structure, configure and drive deep learning projects
+License: BSD-3
+Author-email: Guilherme Pires <guilherme.pires@alleninstitute.org>,Ryan Spangler <ryan.spangler@alleninstitute.org>,Ritvik Vasan <ritvik.vasan@alleninstitute.org>,Theo Knijnenburg <theo.knijnenburg@alleninstitute.org>,Nick Gomez <nick.gomez@alleninstitute.org>,Caleb Chan <caleb.chan@alleninstitute.org>
+Requires-Python: >=3.8,<4.0
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML
+Requires-Dist: PyYAML
+Requires-Dist: aicsimageio
+Requires-Dist: aicsimageio
+Requires-Dist: anndata
+Requires-Dist: anndata
+Requires-Dist: fire
+Requires-Dist: fire
+Requires-Dist: frozendict
+Requires-Dist: frozendict
+Requires-Dist: fsspec
+Requires-Dist: fsspec
+Requires-Dist: grpcio
+Requires-Dist: grpcio
+Requires-Dist: hydra-core
+Requires-Dist: hydra-core
+Requires-Dist: joblib
+Requires-Dist: joblib
+Requires-Dist: jupyter-core
+Requires-Dist: jupyter-core
+Requires-Dist: makefun
+Requires-Dist: makefun
+Requires-Dist: mlflow
+Requires-Dist: mlflow
+Requires-Dist: monai
+Requires-Dist: monai
+Requires-Dist: nbformat
+Requires-Dist: nbformat
+Requires-Dist: numpy
+Requires-Dist: numpy
+Requires-Dist: ome-zarr
+Requires-Dist: ome-zarr
+Requires-Dist: omegaconf
+Requires-Dist: omegaconf
+Requires-Dist: pandas
+Requires-Dist: pandas
+Requires-Dist: pip
+Requires-Dist: pip
+Requires-Dist: protobuf
+Requires-Dist: protobuf
+Requires-Dist: pyarrow
+Requires-Dist: pyarrow
+Requires-Dist: pycryptodome
+Requires-Dist: pycryptodome
+Requires-Dist: pytorch-lightning
+Requires-Dist: pytorch-lightning
+Requires-Dist: s3fs
+Requires-Dist: s3fs
+Requires-Dist: scikit-learn
+Requires-Dist: scikit-learn
+Requires-Dist: torch
+Requires-Dist: torch
+Requires-Dist: universal-pathlib
+Requires-Dist: universal-pathlib
+Provides-Extra: dev
+Requires-Dist: pre-commit; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: furo; extra == "docs"
+Requires-Dist: m2r2; extra == "docs"
+Requires-Dist: sphinx; extra == "docs"
+Provides-Extra: modin
+Requires-Dist: modin; extra == "modin"
+Provides-Extra: test
+Requires-Dist: pre-commit; extra == "test"
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: tox; extra == "test"
+Project-URL: documentation, https://allencell.github.io/serotiny
+Project-URL: homepage, https://allencell.github.io/serotiny
+Project-URL: repository, https://github.com/AllenCell/serotiny
+Description-Content-Type: text/markdown
+
+# serotiny
+
+`serotiny` is a collection of deep learning related tools and primitives, loosely meant
+to be used in projects started from [lightning-hydra-template](https://github.com/ashleve/lightning-hydra-template)
+
+For more information, check our [documentation](https://allencell.github.io/serotiny).
+
+## Authors
+
+- Guilherme Pires @colobas
+- Ryan Spangler @prismofeverything
+- Ritvik Vasan @ritvikvasan
+- Caleb Chan @calebium
+- Theo Knijnenburg @tknijnen
+- Nick Gomez @gomeznick86
+
+## Citing
+
+If you find serotiny useful, please cite this repository as:
+
+```
+Serotiny Authors (2022). Serotiny: a framework of tools to structure, configure and drive deep learning projects [Computer software]. GitHub. https://github.com/AllenCellModeling/serotiny
+Free software: BSD-3-Clause
+```
+
