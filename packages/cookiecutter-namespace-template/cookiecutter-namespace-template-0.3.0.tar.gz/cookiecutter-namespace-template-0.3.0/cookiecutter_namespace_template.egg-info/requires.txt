@@ -1,0 +1,8 @@
+
+[docs]
+sphinx
+furo
+
+[tests]
+pytest
+pytest-cookies
