@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: Topsis-Nikunj-102003362
+Version: 1.0.8
+Summary: Calculates Topsis Score and Rank them accordingly
+Home-page: UNKNOWN
+Author: Nikunj Bansal
+Author-email: nikunjbansal0562@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: License.txt
+Requires-Dist: pandas
+
+Topsis python package
+
