@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: block-scopes
+Version: 0.2.0
+Summary: Block scopes in Python? Whaaaaaat?!
+Project-URL: Documentation, https://github.com/cadojo/block-scopes#readme
+Project-URL: Issues, https://github.com/cadojo/block-scopes/issues
+Project-URL: Source, https://github.com/cadojo/block-scopes
+Author-email: Joe Carpinelli <jdcarpinelli@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: cursed,hack,memory,scoping,variables
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: module-hygiene>=0.2
+Description-Content-Type: text/markdown
+
+# 🩺 `block-scopes`
+_Block scoping in Python!_
+
+[![PyPI - Version](https://img.shields.io/pypi/v/block-scopes.svg)](https://pypi.org/project/block-scopes)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/block-scopes.svg)](https://pypi.org/project/block-scopes)
+
+-----
+
+**Table of Contents**
+
+- [Usage](#usage)
+- [Installation](#installation)
+- [License](#license)
+
+## Usage
+
+```python
+from scopes import scope
+
+before = "I'll be kept!"
+
+with scope("keep_me", "keep_me_too"):
+    keep_me = "Keep me!"
+    lose_me = "Not me!"
+
+    keep_me_too = "Also... me!"
+
+assert "before" in locals()
+assert "keep_me" in locals()
+assert "keep_me_too" in locals()
+
+assert "lose_me" not in locals()
+```
+
+## Installation
+
+```console
+pip install block-scopes
+```
+
+## License
+
+`block-scopes` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
