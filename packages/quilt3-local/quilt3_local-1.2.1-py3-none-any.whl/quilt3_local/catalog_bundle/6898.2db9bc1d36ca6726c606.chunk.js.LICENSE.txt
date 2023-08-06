@@ -1,0 +1,71 @@
+/* @license
+Papa Parse
+v5.3.2
+https://github.com/mholt/PapaParse
+License: MIT
+*/
+
+/*!
+ * https://github.com/Starcounter-Jack/JSON-Patch
+ * (c) 2017-2021 Joachim Wester
+ * MIT license
+ */
+
+/*!
+ * https://github.com/Starcounter-Jack/JSON-Patch
+ * (c) 2017-2022 Joachim Wester
+ * MIT licensed
+ */
+
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
+
+/*! @license DOMPurify 2.4.0 | (c) Cure53 and other contributors | Released under the Apache license 2.0 and Mozilla Public License 2.0 | github.com/cure53/DOMPurify/blob/2.4.0/LICENSE */
+
+/*! https://mths.be/startswith v0.2.0 by @mathias */
+
+/**
+ * Kdtree
+ * @class
+ * @author Alexander Rose <alexander.rose@weirdbyte.de>, 2016
+ * @author Roman Bolzern <roman.bolzern@fhnw.ch>, 2013
+ * @author I4DS http://www.fhnw.ch/i4ds, 2013
+ * @license MIT License <http://www.opensource.org/licenses/mit-license.php>
+ * @description
+ * k-d Tree for typed arrays of 3d points (e.g. for Float32Array), in-place
+ * provides fast nearest neighbour search
+ *
+ * Based on https://github.com/ubilabs/kd-tree-javascript by Ubilabs
+ *
+ * Further information (including mathematical properties)
+ * http://en.wikipedia.org/wiki/Binary_tree
+ * http://en.wikipedia.org/wiki/K-d_tree
+ *
+ * @example
+ * points: [x, y, z, x, y, z, x, y, z, ...]
+ * metric: function(a, b){
+ *    return Math.pow(a[0]-b[0], 2) + Math.pow(a[1]-b[1], 2) + Math.pow(a[2]-b[2], 2);
+ * }
+ *
+ * @param {Float32Array} points - points
+ * @param {Function} metric - metric
+ */
+
+/** @license
+ * JS Signals <http://millermedeiros.github.com/js-signals/>
+ * Released under the MIT license
+ * Author: Miller Medeiros
+ * Version: 1.0.0 - Build: 268 (2012/11/29 05:48 PM)
+ */
