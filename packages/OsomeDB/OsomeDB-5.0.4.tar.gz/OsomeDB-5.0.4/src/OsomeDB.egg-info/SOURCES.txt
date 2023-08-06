@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+src/OsomeDB/__init__.py
+src/OsomeDB.egg-info/PKG-INFO
+src/OsomeDB.egg-info/SOURCES.txt
+src/OsomeDB.egg-info/dependency_links.txt
+src/OsomeDB.egg-info/top_level.txt
