@@ -1,0 +1,17 @@
+pyspotstream/__init__.py,sha256=tiojg1dMUVoBq4o0gLzRg8UoI4IIMA_xEJmZrNzsEck,100
+pyspotstream/_version.py,sha256=ZsvmVIJn14IU_Pzm1yaHIUgwzXoHJ2apt186c23M_F8,162
+pyspotstream/data/OPM.py,sha256=S7YNPjONonM54zTYLXnuUa_Zoqs2a1TahouyeAgUbm0,5666
+pyspotstream/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyspotstream/data/_base.py,sha256=P43qjPBMCDGRUjHAe2PwbSlaO9yXrq8Jj-fZ2WnzBBk,1630
+pyspotstream/eval/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyspotstream/eval/evaluation.py,sha256=BTn7bIeMxXKJ_r2F0eXCzcTbSOC9FOSlIiTnxDZW2f4,16681
+pyspotstream/misc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyspotstream/misc/conventions.py,sha256=5C32Zh9ITgeYVe4WKr9EHM4FN1wZkDQZMGViKBCZM_0,294
+pyspotstream/misc/drift_generator.py,sha256=e2TFu8H9XYw9jD7kYphqx2mLmPK3Yo35XxeG_-_7kz0,359
+pyspotstream/plot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyspotstream/plot/plotmulti.py,sha256=9OWmXSfHDxC37pcqKSfWPNqPuDyJjVZUsMyqccr5K38,861
+pyspotstream/plot/plotperformance.py,sha256=zoupBW2cQbUZaEEFlMxyzqF-LBdIwgYXpugg6K6-TAY,3384
+pyspotstream-0.1.15.dist-info/METADATA,sha256=8SOPtvgjFIih99zURU4vgfxkU83-bYD7CHXzdg4lktM,1035
+pyspotstream-0.1.15.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyspotstream-0.1.15.dist-info/top_level.txt,sha256=I8-Gqx5R0yOYMbUnp5NnCdqVlXoaR6UV3iq3v-d2UeQ,13
+pyspotstream-0.1.15.dist-info/RECORD,,
