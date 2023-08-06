@@ -1,0 +1,9 @@
+odoo/addons/subbeticaecologica/__init__.py,sha256=6NWfDffU8qtCaP3o6Oun2TS4YeHJM-r7cGYnp2SIr-U,21
+odoo/addons/subbeticaecologica/__manifest__.py,sha256=qPo4eY0O-y8yOw_EgEpjTMjKEdXZicVyFTwv8nrfGzo,394
+odoo/addons/subbeticaecologica/i18n/es.po,sha256=pWrv4x5a2rFNTVHGE9BLod3LTvzF1FzB25ftFd1br_Q,631
+odoo/addons/subbeticaecologica/report/__init__.py,sha256=ByYRbiCY7uWnvbKwYusgp99HtcOyGnzWogDif_GEsec,26
+odoo/addons/subbeticaecologica/report/sale_report.py,sha256=5YWAixhDfOap2RAAbVRqPC_Z3BfY4RSgpLGmdiE-bZc,516
+odoo14_addon_subbeticaecologica-14.0.0.0.1.dist-info/METADATA,sha256=AkFHNAG9lmxJkEcQO9bi_rzwUL1JDCr-4AK0BkaAzJ8,523
+odoo14_addon_subbeticaecologica-14.0.0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+odoo14_addon_subbeticaecologica-14.0.0.0.1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_subbeticaecologica-14.0.0.0.1.dist-info/RECORD,,
