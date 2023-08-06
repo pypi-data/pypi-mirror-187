@@ -1,0 +1,6 @@
+example_package_minetester/__init__.py,sha256=7HZzQjrak--AARcVeGuSkq92vAZQcUKOb77KZ1w7NCc,15
+example_package_minetester/example.py,sha256=1NnyaYRh5nPG7BsHJYkcS7QnqWzg9CQLXQ-h7VSAwqY,42
+example_package_minetester-0.0.1.dist-info/METADATA,sha256=WMEQrM6XrXQTtH0lTHlDzbaIpi8i7P7eQft1be2b0Jg,684
+example_package_minetester-0.0.1.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+example_package_minetester-0.0.1.dist-info/licenses/LICENSE,sha256=xL10ur-worQeqp45zlvjS8mGaIKok7pUU16xni8jYBU,1078
+example_package_minetester-0.0.1.dist-info/RECORD,,
