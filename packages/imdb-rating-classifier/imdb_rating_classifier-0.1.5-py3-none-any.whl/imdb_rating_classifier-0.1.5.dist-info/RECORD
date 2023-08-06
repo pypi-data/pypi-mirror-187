@@ -1,0 +1,13 @@
+imdb_rating_classifier/__init__.py,sha256=2KD4e8iunSr_1gIcCJ6coFINrrTuaSNcwzVobydZzek,76
+imdb_rating_classifier/generate.py,sha256=6gzwCbIdg2yIdXYqp6W5Vxn_d6kus3f4uUy2GYFVoSQ,4163
+imdb_rating_classifier/penalizer.py,sha256=7eLXTRRCkKokUN7qTCp12XegXhSDju4C0OAFdX75reQ,3894
+imdb_rating_classifier/schema.py,sha256=NqEtFBavUccOCxsQbSpPc_lEk4lTGhkfJuqqjIGtdn8,2944
+imdb_rating_classifier/scraper.py,sha256=N9D30PigYFochLLM2nH3_IeAciLy54If7Q9yX88kano,5942
+imdb_rating_classifier/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+imdb_rating_classifier/util/unpack.py,sha256=qJ5TpybHnkJRQ8dWmvyXi-6m7ltgf9WElGnDf6Up7wg,1042
+imdb_rating_classifier-0.1.5.dist-info/LICENSE,sha256=4nLIun8l3tPb9WdrdvqPJeNdTYo_O7BtKOSPZNk_Avo,1074
+imdb_rating_classifier-0.1.5.dist-info/METADATA,sha256=93Y-0LfYB4x_bha_-O09OpsXB2_j1lrIa8uNxsZcPjo,6387
+imdb_rating_classifier-0.1.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+imdb_rating_classifier-0.1.5.dist-info/entry_points.txt,sha256=5PEHkZ0c3-4FylmbsrFu450kLq5_fAXeRkdMaaWaQ1I,80
+imdb_rating_classifier-0.1.5.dist-info/top_level.txt,sha256=aCcpR4NhKQWP5QiiBF5gl4z7Mbeohtm7AevTHJi3blg,23
+imdb_rating_classifier-0.1.5.dist-info/RECORD,,
