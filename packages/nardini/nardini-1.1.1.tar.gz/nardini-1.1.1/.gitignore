@@ -1,0 +1,7 @@
+.vscode
+*.png
+__pycache__
+*.egg-info
+build
+dist
+conda-build
