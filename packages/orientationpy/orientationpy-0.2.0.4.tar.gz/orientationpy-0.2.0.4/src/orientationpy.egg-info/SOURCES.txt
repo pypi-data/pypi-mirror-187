@@ -1,0 +1,16 @@
+AUTHORS.rst
+LICENSE.md
+MANIFEST.in
+README.rst
+pyproject.toml
+src/orientationpy/__init__.py
+src/orientationpy/analyse.py
+src/orientationpy/generate.py
+src/orientationpy/main.py
+src/orientationpy/plotting.py
+src/orientationpy.egg-info/PKG-INFO
+src/orientationpy.egg-info/SOURCES.txt
+src/orientationpy.egg-info/dependency_links.txt
+src/orientationpy.egg-info/requires.txt
+src/orientationpy.egg-info/top_level.txt
+test/test_orientationpy.py
