@@ -1,0 +1,225 @@
+Metadata-Version: 2.1
+Name: botgus
+Version: 3.5
+Summary: BOTGUS forma de uso
+
+
+INDICADORES DE BOT GUS
+
+
+INDICADORES LISTOS PARA BINANCE:
+
+
+FUNCION PARA OBTENER DATOS HISTORICOS DE BINANCE:
+
+
+
+def datos():
+
+
+    if temporalidad=="1M":
+
+
+        klines = client.get_historical_klines(cripto + estable, Client.KLINE_INTERVAL_1MINUTE, "4 hours ago UTC")
+
+
+    if temporalidad=="5M":
+
+        klines = client.get_historical_klines(cripto + estable, Client.KLINE_INTERVAL_5MINUTE, "17 hours ago UTC")
+
+    if temporalidad=="15M":
+
+        klines = client.get_historical_klines(cripto + estable, Client.KLINE_INTERVAL_15MINUTE, "3 days ago UTC")
+
+    if temporalidad=="30M":
+
+        klines = client.get_historical_klines(cripto + estable, Client.KLINE_INTERVAL_30MINUTE, "5 days ago UTC")
+
+    if temporalidad=="1H":
+
+        klines = client.get_historical_klines(cripto + estable, Client.KLINE_INTERVAL_1HOUR, "9 days ago UTC")
+
+    if temporalidad=="4H":
+
+        klines = client.get_historical_klines(cripto + estable, Client.KLINE_INTERVAL_4HOUR, "34 days ago UTC")
+
+    data = pd.DataFrame(klines)
+
+    data.columns = ['datetime', 'open', 'high', 'low', 'close', 'volume','close_time', 'qav', 'num_trades','taker_base_vol', 'taker_quote_vol', 'ignore']
+
+    datos = data[['open', 'high', 'low', 'close','volume']].astype(float)
+
+    df=datos.copy()
+
+    return df
+
+
+
+Formato de funcion:
+supertrend(df,atr_longitud,factor)
+
+
+Devuelve 1: señal de Compra o Venta
+
+
+Valores devueltos:
+
+
+Compra
+
+
+Venta
+
+
+Forma de llamarlo:
+
+botgus.supertrend(datos(),10,3)
+
+
+bandas_bollinger(df, longitud, desviacion)
+
+
+Devuelve 3 valores: valor banda superior, valor banda inferior, valor media movil.
+
+
+Valores devueltos:
+
+
+Banda superior
+
+
+Media movil
+
+
+Banda inferior
+
+
+Forma de llamarlo:
+
+botgus.bandas_bollinger(datos(),20,2)
+
+
+estocastico(df,k_periodo,d_periodo)
+Devuelve 2 valores: Valor estocastico K y estocastico D
+
+
+Forma de llamarlo:
+
+botgus.estocastico(datos(),14,3)
+
+
+macd(df,rapidaema,lentoema,senialperiodo)
+Devuelve 3 valores: Valor Macd, Valor señal de macd, valor divergencia
+
+
+Forma de llamarlo:
+
+botgus.bandas_bollinger(datos(),20,2)
+
+
+rsi(df,rsi_period,ema,longirsi,emamovil)
+Devuelve 2 valores: Valor de rsi y valor de media movil de rsi
+
+
+Forma de llamarlo:
+
+botgus.bandas_bollinger(datos(),20,2)
+
+
+tendenciaactual(df,cualma,ma1,ma2,ma3)
+Devuelve 1: Valor de tendencia actual
+
+
+Forma de llamarlo:
+
+botgus.bandas_bollinger(datos(),20,2)
+
+
+soportesyresistencias(df,tipo)
+Devuelve 5 valores: Pivote central, soporte 1, resistencia 1, soporte 2, resistencia 2
+
+
+Forma de llamarlo:
+
+botgus.bandas_bollinger(datos(),20,2)
+
+
+squeeze_momentum(df,length, mult, length_KC, mult_KC):
+Devuelve 1: Valor de compra o venta
+
+
+Forma de llamarlo:
+
+botgus.bandas_bollinger(datos(),20,2)
+
+
+dmi(df,period,perioddi)
+Devuelve 3: Valores adx, adx + , adx -
+
+
+Forma de llamarlo:
+
+botgus.bandas_bollinger(datos(),20,2)
+
+
+aroon(df,periodoaron)
+Devuelve 2: Valores Arron arriba, Arron Abajo
+
+
+Forma de llamarlo:
+
+botgus.bandas_bollinger(datos(),20,2)
+
+
+chandelierexit(df, atr_period, atrmulti)
+Devuelve 1: Valor de compra o venta
+
+
+Forma de llamarlo:
+
+botgus.bandas_bollinger(datos(),20,2)
+
+
+rvi(df, longitud)
+Devuelve 2: Valores rvi y rvi señal
+
+
+Forma de llamarlo:
+
+botgus.bandas_bollinger(datos(),20,2)
+
+
+williamd(df,periodo)
+Devuelve 1: Valor william %D
+
+
+Forma de llamarlo:
+
+botgus.bandas_bollinger(datos(),20,2)
+
+
+
+keltnerchannel(df,cual, longitud, multipl, atrlongi)
+Devuelve 3: Valores banda superior, banda inferior, media movil
+
+
+Forma de llamarlo:
+
+botgus.bandas_bollinger(datos(),20,2)
+
+
+
+coppockcurve(df, roclargo, roccorto,wma):
+Devuelve 1: Valor curva coppock
+
+
+Forma de llamarlo:
+
+botgus.bandas_bollinger(datos(),20,2)
+
+
+ao(df, corto,largo)
+Devuelve 1: Valor oscilador asombroso
+Forma de llamarlo:
+
+botgus.bandas_bollinger(datos(),20,2)
