@@ -1,0 +1,17 @@
+simple_transfer/__init__.py,sha256=uyEMGFtizG8MyfxSCHEQeqOv0xN_VZ83b9yZwlAOwqQ,326
+simple_transfer/column.py,sha256=uJFJfJJmk8CDCe9IRydfSYm2WUfjoqUk2iLa8OReqpw,376
+simple_transfer/config.py,sha256=82pk1lbXqafb2uREee0A9h6-W9w1dVogUQHRQndneaM,132
+simple_transfer/connection.py,sha256=KPAUrPMJq72eNQHJZlXr4pepqdTAw9-6jKSSm-sffLw,3075
+simple_transfer/extractor.py,sha256=ZWkV7eS75N8G9EYQzhAReyP4dPEeBjOp-drylPxvjvI,3612
+simple_transfer/injector.py,sha256=f7CFVZUx4Gc53lu_02t82Yj8WWB035wE2bygefHACSA,5606
+simple_transfer/pipeline.py,sha256=OyHuIYNV05akAnHwtSHEY5eF863jkNQv7zLywjZnIVQ,3661
+simple_transfer/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_transfer/connections/__init__.py,sha256=TqjJDaM1lnbV-WBiSR9aAdUkiYpkbaxUmpxv8uA2lmc,134
+simple_transfer/connections/mysql.py,sha256=APypaMowabqDnl7xyNHSE-AZFRESlLS_YKlR8XltjB0,8012
+simple_transfer/connections/postgresql.py,sha256=bBqS78Sa_wYewD-JXpnyJhqNylP26mPlj1brA2ekGts,7434
+simple_transfer/connections/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_transfer-0.1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+simple_transfer-0.1.1.dist-info/METADATA,sha256=tPwNwRBcMa8u_qBUHGZxQrzCiHGb2gIdNcc18rtg8SU,2399
+simple_transfer-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+simple_transfer-0.1.1.dist-info/top_level.txt,sha256=ZoLrAhtoYnPkL0wKdjQ0SftSIPQGHAugS22j1vkDfsA,16
+simple_transfer-0.1.1.dist-info/RECORD,,
