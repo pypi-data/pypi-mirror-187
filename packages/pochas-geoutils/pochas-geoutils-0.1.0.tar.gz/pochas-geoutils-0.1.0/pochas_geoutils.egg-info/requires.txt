@@ -1,0 +1,12 @@
+numpy
+geopandas
+shapely
+pandas
+xarray
+rioxarray
+rasterio
+netcdf4
+requests
+sklearn
+xlsxwriter
+coloredlogs
