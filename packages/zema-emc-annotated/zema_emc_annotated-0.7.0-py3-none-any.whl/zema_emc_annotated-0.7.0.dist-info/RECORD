@@ -1,0 +1,8 @@
+zema_emc_annotated/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zema_emc_annotated/data_types.py,sha256=Woouy5J9bEb0X4TAMoxpEGEWSGYiLE2KhljHEC9fC9I,1555
+zema_emc_annotated/dataset.py,sha256=LD66g0rAXAbI92CJQR8OaNec7KD6qAUoFkYhkulIOHo,11125
+zema_emc_annotated/examples/read_dataset.ipynb,sha256=8UwGEccBBFnJJAXKAhVgn9dJiPSCqw7LVNAxzAUunuQ,5810
+zema_emc_annotated-0.7.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+zema_emc_annotated-0.7.0.dist-info/METADATA,sha256=4htiHeuxn4FFFh6EZnkKbu7KjNw8wDD5OcSoysRofX4,3153
+zema_emc_annotated-0.7.0.dist-info/LICENSE,sha256=g1KcFs6VooT1Rag_obtCn08ZzLHq9Hjbx-Bzc2fdb7U,1053
+zema_emc_annotated-0.7.0.dist-info/RECORD,,
