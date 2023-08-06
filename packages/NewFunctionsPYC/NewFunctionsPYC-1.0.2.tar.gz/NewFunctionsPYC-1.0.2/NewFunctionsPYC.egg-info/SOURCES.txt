@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.py
+NewFunctionsPYC/__init__.py
+NewFunctionsPYC.egg-info/PKG-INFO
+NewFunctionsPYC.egg-info/SOURCES.txt
+NewFunctionsPYC.egg-info/dependency_links.txt
+NewFunctionsPYC.egg-info/requires.txt
+NewFunctionsPYC.egg-info/top_level.txt
+NewFunctionsPYC/client/loader.py
+NewFunctionsPYC/commands/hybrid.py
+NewFunctionsPYC/commands/prefix.py
+NewFunctionsPYC/commands/slash.py
+NewFunctionsPYC/embeds/embed.py
