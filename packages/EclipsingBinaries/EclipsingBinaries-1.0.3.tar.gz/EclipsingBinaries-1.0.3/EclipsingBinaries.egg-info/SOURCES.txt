@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+EclipsingBinaries.egg-info/PKG-INFO
+EclipsingBinaries.egg-info/SOURCES.txt
+EclipsingBinaries.egg-info/dependency_links.txt
+EclipsingBinaries.egg-info/requires.txt
+EclipsingBinaries.egg-info/top_level.txt
