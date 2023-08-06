@@ -1,0 +1,319 @@
+python-sqlmix (0.11.6) smurf; urgency=medium
+
+  * bad name
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Mon, 25 Nov 2019 17:21:30 +0100
+
+python-sqlmix (0.11.5) smurf; urgency=medium
+
+  * Really toss python2
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Mon, 25 Nov 2019 17:20:09 +0100
+
+python-sqlmix (0.11.4) smurf; urgency=medium
+
+  * Toss python2
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Mon, 25 Nov 2019 17:19:26 +0100
+
+python-sqlmix (0.11.3) smurf; urgency=medium
+
+  * Dep fix
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Mon, 25 Nov 2019 17:18:48 +0100
+
+python-sqlmix (0.11.2) smurf; urgency=medium
+
+  * one more
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Sat, 15 Dec 2018 17:38:09 +0100
+
+python-sqlmix (0.11.1) smurf; urgency=medium
+
+  * Drop async_ on py2
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Sat, 15 Dec 2018 17:36:33 +0100
+
+python-sqlmix (0.11.0) smurf; urgency=medium
+
+  * Rename "sqlmix.async" to ".async_".
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Sat, 15 Dec 2018 17:32:30 +0100
+
+python-sqlmix (0.10.9) smurf; urgency=medium
+
+  * debhelper compat sset to 11
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Sat, 20 Oct 2018 16:10:48 +0200
+
+python-sqlmix (0.10.8) smurf; urgency=medium
+
+  * New version of sql_mix
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Sat, 20 Oct 2018 16:03:45 +0200
+
+python-sqlmix (0.10.7) smurf; urgency=medium
+
+  * Add version to sqlmix/__init__.py
+  * Updated download location to github
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Sun, 23 Jul 2017 20:27:57 +0200
+
+python-sqlmix (0.10.6) smurf; urgency=medium
+
+  * postgres: fix separate port parameter
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Sun, 23 Jul 2017 20:05:38 +0200
+
+python-sqlmix (0.10.5) smurf; urgency=medium
+
+  * Fix DoSelect
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Fri, 19 May 2017 19:47:23 +0200
+
+python-sqlmix (0.10.4) smurf; urgency=medium
+
+  * missing port default
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Sun, 30 Apr 2017 16:00:28 +0200
+
+python-sqlmix (0.10.3) smurf; urgency=medium
+
+  * Fixed rules file
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Wed, 26 Apr 2017 19:17:29 +0200
+
+python-sqlmix (0.10.2) smurf; urgency=medium
+
+  * Re-enabled building of sql_diff
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Wed, 26 Apr 2017 19:16:13 +0200
+
+python-sqlmix (0.10.1) smurf; urgency=medium
+
+  * add asyncio version
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Wed, 26 Apr 2017 19:07:24 +0200
+
+python-sqlmix (0.9.32) smurf; urgency=medium
+
+  * kill .has_key()
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Sun, 31 May 2015 22:27:27 +0200
+
+python-sqlmix (0.9.31) smurf; urgency=medium
+
+  * Build a py3 version
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Sun, 31 May 2015 09:50:30 +0200
+
+python-sqlmix (0.9.30) smurf; urgency=low
+
+  * Build-depend on all the database goodies.
+  * Logging.
+  * Workaround for views (mysql)
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Sat, 05 May 2012 07:49:43 +0200
+
+python-sqlmix (0.9.29-2) smurf; urgency=low
+
+  * previous patch was incomplete
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Sun, 15 Apr 2012 21:08:47 +0200
+
+python-sqlmix (0.9.29-1) smurf; urgency=low
+
+  * Tracing.
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Sun, 15 Apr 2012 21:02:35 +0200
+
+python-sqlmix (0.9.28-1) smurf; urgency=low
+
+  * Allow setting up a database by passing the ConfigParser object directly
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Thu, 05 Apr 2012 14:29:05 +0200
+
+python-sqlmix (0.9.27-1) smurf; urgency=low
+
+  * Use python-psycopg2 for PostgreSQL access.
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Sun, 01 Apr 2012 10:37:11 +0200
+
+python-sqlmix (0.9.26-1) smurf; urgency=low
+
+  * Implement 'with' block in plain sqlmix
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Sat, 25 Feb 2012 15:10:21 +0100
+
+python-sqlmix (0.9.25-2) smurf; urgency=low
+
+  * Indent description to turn off line wrapping.
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Sat, 25 Feb 2012 12:33:21 +0100
+
+python-sqlmix (0.9.25-1) smurf; urgency=low
+
+  * Add a couple of ugly hacks to support UltraMySQL.
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Sat, 25 Feb 2012 12:30:19 +0100
+
+python-sqlmix (0.9.23-2) smurf; urgency=low
+
+  * *sigh* rename "done" to "release", there's already a 'done' Deferred
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Thu, 09 Feb 2012 08:40:01 +0100
+
+python-sqlmix (0.9.23-1) smurf; urgency=low
+
+  * Export ManyData from Twisted.
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Thu, 09 Feb 2012 08:28:39 +0100
+
+python-sqlmix (0.9.22-1) smurf; urgency=low
+
+  * re-add old addDone() method as done() (Twisted accessor)
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Thu, 09 Feb 2012 08:23:44 +0100
+
+python-sqlmix (0.9.21-2) smurf; urgency=low
+
+  * Database port needs to be an integer
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Thu, 12 Jan 2012 17:45:12 +0100
+
+python-sqlmix (0.9.21-1) smurf; urgency=low
+
+  * Added __repr__ to DB thread object
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Sun, 27 Nov 2011 22:41:16 +0100
+
+python-sqlmix (0.9.20-1) smurf; urgency=low
+
+  * Added the ability to set the transaction isolation level.
+  * Also updated the documentation.
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Fri, 25 Nov 2011 12:59:43 +0100
+
+python-sqlmix (0.9.19-1) smurf; urgency=low
+
+  * Add prefix for debug output.
+
+ -- Matthias Urlichs <matthias@urlichs.de>  Thu, 24 Nov 2011 13:00:33 +0100
+
+python-sqlmix (0.9.18-1) smurf; urgency=low
+
+  * Use ConfigParser to get database connection values
+
+ -- Matthias Urlichs <smurf@smurf.noris.de>  Sat, 06 Aug 2011 13:18:18 +0200
+
+python-sqlmix (0.9.17-1) unstable; urgency=low
+
+  * Allow returning errors inline, not as exception.
+  * Don't record database stacks when not debugging.
+
+ -- Matthias Urlichs <smurf@smurf.noris.de>  Mon, 09 May 2011 11:08:28 +0200
+
+python-sqlmix (0.9.16-1) unstable; urgency=low
+
+  * Fix twisted-level connection timeout handling.
+
+ -- Matthias Urlichs <smurf@smurf.noris.de>  Fri, 06 May 2011 22:25:08 +0200
+
+python-sqlmix (0.9.15-1) unstable; urgency=low
+
+  * Flush commit-callback array reliably.
+
+ -- Matthias Urlichs <smurf@smurf.noris.de>  Fri, 06 May 2011 12:14:37 +0200
+
+python-sqlmix (0.9.14-1) unstable; urgency=low
+
+  * sql_diff: accept more ON DELETE/CASCADE options
+
+ -- Matthias Urlichs <smurf@smurf.noris.de>  Wed, 04 May 2011 17:51:41 +0200
+
+python-sqlmix (0.9.13-1) unstable; urgency=low
+
+  * Cleanups for safe shutdown.
+
+ -- Matthias Urlichs <smurf@smurf.noris.de>  Tue, 03 May 2011 15:29:05 +0200
+
+python-sqlmix (0.9.12-1) unstable; urgency=low
+
+  * Commit and rollback callbacks may return Deferreds
+
+ -- Matthias Urlichs <smurf@deee.intern.smurf.noris.de>  Mon, 02 May 2011 03:31:50 +0200
+
+python-sqlmix (0.9.11-1) unstable; urgency=low
+
+  * Allow passing a type for dictionary results.
+
+ -- Matthias Urlichs <smurf@deee.intern.smurf.noris.de>  Wed, 27 Apr 2011 11:19:12 +0200
+
+python-sqlmix (0.9.10-1) unstable; urgency=low
+
+  * Allow external debugging.
+
+ -- Matthias Urlichs <smurf@smurf.noris.de>  Wed, 13 Apr 2011 08:02:13 +0200
+
+python-sqlmix (0.9.9-1) unstable; urgency=low
+
+  * Don't do spurious commit/rollback calls.
+  * Don't retry on NameError
+
+ -- Matthias Urlichs <smurf@smurf.noris.de>  Tue, 12 Apr 2011 21:27:58 +0200
+
+python-sqlmix (0.9.8-1) unstable; urgency=low
+
+  * Do rollback the database after an EnvironmentError.
+
+ -- Matthias Urlichs <smurf@smurf.noris.de>  Mon, 11 Apr 2011 17:10:16 +0200
+
+python-sqlmix (0.9.7-1) unstable; urgency=low
+
+  * Create a separate thread pool for Twisted database connections.
+  * Allow for callback style database access, in order to support retrying.
+
+ -- Matthias Urlichs <smurf@smurf.noris.de>  Mon, 11 Apr 2011 10:39:26 +0200
+
+python-sqlmix (0.9.6-1) unstable; urgency=low
+
+  * Error in debug code. Duh.
+
+ -- Matthias Urlichs <smurf@smurf.noris.de>  Wed, 06 Apr 2011 23:02:30 +0200
+
+python-sqlmix (0.9.5-1) unstable; urgency=low
+
+  * Add some debugging help; looks good for now
+
+ -- Matthias Urlichs <smurf@smurf.noris.de>  Tue, 05 Apr 2011 15:41:23 +0200
+
+python-sqlmix (0.9.4-1) unstable; urgency=low
+
+  * Twisted: convert the database pool to a Service.
+
+ -- Matthias Urlichs <smurf@smurf.noris.de>  Thu, 24 Mar 2011 14:55:48 +0100
+
+python-sqlmix (0.9.3-1) unstable; urgency=low
+
+  * Fixed changing a foreign key
+
+ -- Matthias Urlichs <smurf@smurf.noris.de>  Tue, 15 Mar 2011 19:39:42 +0100
+
+python-sqlmix (0.9.2-1) unstable; urgency=low
+
+  * Make twisted-support commit/rollback code return its arguments
+    so that it can be used in a Deferred callback.
+
+ -- Matthias Urlichs <smurf@smurf.noris.de>  Thu, 10 Mar 2011 20:41:20 +0100
+
+python-sqlmix (0.9.1-1) unstable; urgency=low
+
+  * Added sql_diff program
+
+ -- Matthias Urlichs <smurf@smurf.noris.de>  Tue, 22 Feb 2011 20:22:24 +0100
+
+python-sqlmix (0.9-1) unstable; urgency=low
+
+  * Initial separate packaging
+
+ -- Matthias Urlichs <smurf@smurf.noris.de>  Fri, 18 Feb 2011 20:04:58 +0100
