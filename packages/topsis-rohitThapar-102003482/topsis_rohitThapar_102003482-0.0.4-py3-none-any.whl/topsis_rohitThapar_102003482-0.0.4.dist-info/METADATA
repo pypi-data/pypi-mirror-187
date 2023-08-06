@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: topsis-rohitThapar-102003482
+Version: 0.0.4
+Summary: This is a Python library for handling problems related to Multiple Criteria Decision Making(MCDM)
+Home-page: https://github.com/rohitthapar/topsis_rohitThapar_102003482
+Author: Rohit Thapar
+Author-email: thaprt206@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pandas
+
