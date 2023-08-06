@@ -1,0 +1,8 @@
+LICENCE
+README.txt
+setup.py
+mongoudaan/__init__.py
+mongoudaan.egg-info/PKG-INFO
+mongoudaan.egg-info/SOURCES.txt
+mongoudaan.egg-info/dependency_links.txt
+mongoudaan.egg-info/top_level.txt
