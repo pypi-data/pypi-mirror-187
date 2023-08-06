@@ -1,0 +1,7 @@
+PyPDF2==3.0.1
+boto3==1.26.56
+pillow
+regex
+pytest-shutil==1.7.0
+keras==2.9.0
+tensorflow==2.9.2
