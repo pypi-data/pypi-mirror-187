@@ -1,0 +1,12 @@
+dicom_anonymiser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dicom_anonymiser/__main__.py,sha256=mDVeCEClI4z6xfLvdBr_YTaYLK7VxGbx2Sjw75tvBks,3577
+dicom_anonymiser/tools.py,sha256=hPG0Qwo814YTQtfoW2P6JJSEHWGSkqDD4pcUSwScJmU,4868
+dicom_anonymiser/tags/default_tags.csv,sha256=D2keKD1mVxhnjOr6Ihxsi2_QRZ6SlW43SDz07O5M17w,3452
+dicom_anonymiser/tags/meta_tags.csv,sha256=jDJeEaipHXa_AO4IdxRQH5u0xrEZqbKNgUgmHs37-aE,143
+dicom_anonymiser/tags/user_tags.csv,sha256=BybVsA6Ltzpm6KZI1vt3h_L6yvfhyhP39pf7_VDWjgs,3061
+dicom_anonymiser-0.2.4.dist-info/LICENSE.txt,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+dicom_anonymiser-0.2.4.dist-info/METADATA,sha256=3xUFyNTBiniQhn61LIPK1npCbXIrejzh41Tm2YG4xZM,3150
+dicom_anonymiser-0.2.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dicom_anonymiser-0.2.4.dist-info/entry_points.txt,sha256=Hc6Acb0uilx62VvSHb7RWVCA4_h0F0Ot5uVKzq9hwBc,61
+dicom_anonymiser-0.2.4.dist-info/top_level.txt,sha256=ltqnOuI38yLcz26nr8hDAURajN8CO-FnxeB2kxtq7Yg,17
+dicom_anonymiser-0.2.4.dist-info/RECORD,,

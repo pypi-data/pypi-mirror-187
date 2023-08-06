@@ -1,0 +1,48 @@
+"20,003",Media Storage SOP Instance UID,Dummy,Contains UID info which may be decoded (UV changes these values)
+"80,012",Instance Creation Date,19000101,Datetime information
+"80,013",Instance Creation Time,235959,Datetime information
+"80,018",SOP Instance UID,Dummy,Contains UID info which may be decoded (UV changes these values)
+"80,020",Study Date,19000101,Datetime information
+"80,021",Series Date,19000101,Datetime information
+"80,022",Acquisition Date,19000101,Datetime information
+"80,023",Content Date,19000101,Datetime information
+"80,024",Overlay Date,19000101,Datetime information
+"80,025",Curve Date,19000101,Datetime information
+"0008,002A",Acquisition DateTime,19000101,Datetime information
+"80,030",Study Time,235959,Datetime information
+"80,031",Series Time,235959,Datetime information
+"80,032",Acquisition Time,235959,Datetime information
+"80,033",Content Time,235959,Datetime information
+"80,034",Overlay Time,235959,Datetime information
+"80,050",Accession Number,1234567890,Unique identifier
+"80,080",Institution Name,Dummy,Related information
+"80,081",Institution Address,Dummy,Related information
+"100,010",Patient's Name,Dummy,Unique identifier
+"100,020",Patient ID,123456789M,Unique identifier
+"100,021",Issuer of Patient ID,Dummy,Unique identifier
+"100,030",Patient's Birth Date,19000101,Datetime information
+"100,032",Patient's Birth Time,235959,Datetime information
+"101,000",Other Patient IDs,123456789M,Unique identifier
+"101,001",Other Patient Names,Dummy,Unique identifier
+"101,005",Patient's Birth Name,Dummy,Unique identifier
+"101,040",Patient's Address,Dummy,Unique identifier
+"101,060",Patient's Mother's Birth Name,Dummy,Unique identifier
+"102,154",Patient's Telephone Numbers,123456789,Unique identifier
+"200,010",Study ID,123456789,Unique identifier
+"380,300",Current Patient Location,Dummy,Unique identifier
+"380,400",Patient's Institution Residence,Dummy,Unique identifier
+"0040,A120",DateTime,19000101,Datetime information
+"0040,A121",Date,19000101,Datetime information
+"0040,A122",Time,235959,Datetime information
+"0040,A123",Person Name,Dummy,Unique identifier
+"81,062",Physician(s) Reading Study Identification Sequence,Dummy,Related information
+"101,090",Medical Record Locator,Dummy,Related information
+"102,180",Occupation,Dummy,Related information
+"104,000",Patient Comments,Dummy,Related information
+"81,110",Referenced Study Sequence,Dummy,Contains subtag 0008:1155 (UID with Acc Num)
+"0020,000D",Study Instance UID,1.2.3.4,Contains UID info which may be decoded (UV changes these values)
+"0020,000E",Series Instance UID,1.2.3.4,Contains UID info which may be decoded (UV changes these values)
+"200,052",Frame of Reference UID,1.2.3.4,Contains UID info which may be decoded (UV changes these values)
+"400,244",Performed Procedure Step Start Date,19000101,Datetime information
+"400,245",Performed Procedure Step Start Time,235959,Datetime information
+"400,275",Request Attributes Sequence,Dummy,"Contains subtags 0008:0050, 0008:1155, 0040:0009, 0040:1001 (Acc Nums)"
