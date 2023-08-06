@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hacknsun_counter"
+version = "0.1.0"
+authors = [
+  { name="Pinguin", email="pinguin@lagerfeuerhacker.de" },
+]
+description = "A small package for person counting at hacknsun"
+readme = "README.md"
+requires-python = ">=3.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://edugit.org/pinguin/hacknsun_counter"
+"Bug Tracker" = "https://edugit.org/pinguin/hacknsun_counter/-/issues"

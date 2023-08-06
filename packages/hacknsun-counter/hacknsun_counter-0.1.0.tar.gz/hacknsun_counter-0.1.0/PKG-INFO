@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: hacknsun_counter
+Version: 0.1.0
+Summary: A small package for person counting at hacknsun
+Author-email: Pinguin <pinguin@lagerfeuerhacker.de>
+Project-URL: Homepage, https://edugit.org/pinguin/hacknsun_counter
+Project-URL: Bug Tracker, https://edugit.org/pinguin/hacknsun_counter/-/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Hack'n'Sun Counter
