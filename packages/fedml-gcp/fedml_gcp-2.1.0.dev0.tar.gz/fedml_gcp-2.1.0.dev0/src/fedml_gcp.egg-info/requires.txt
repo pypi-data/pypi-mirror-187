@@ -1,0 +1,7 @@
+hdbcli
+google
+google-cloud-aiplatform
+pyyaml
+requests
+numpy
+pandas
