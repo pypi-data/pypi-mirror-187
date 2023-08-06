@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+testmswist/__init__.py
+testmswist/m_mod_mswist.py
+testmswist.egg-info/PKG-INFO
+testmswist.egg-info/SOURCES.txt
+testmswist.egg-info/dependency_links.txt
+testmswist.egg-info/requires.txt
+testmswist.egg-info/top_level.txt
