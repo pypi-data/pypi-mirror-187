@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+drf_mfcam/__init__.py
+drf_mfcam/mixin.py
+drf_mfcam.egg-info/PKG-INFO
+drf_mfcam.egg-info/SOURCES.txt
+drf_mfcam.egg-info/dependency_links.txt
+drf_mfcam.egg-info/requires.txt
+drf_mfcam.egg-info/top_level.txt

@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: drf_mfcam
+Version: 0.1a0
+Summary: A mixin that adds the choices action to the ModelViewSet
+Home-page: https://github.com/milano-slesarik/drf_mfcam
+Author: Milano Slesarik
+Author-email: milslesarik@gmail.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENCE
