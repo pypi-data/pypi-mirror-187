@@ -1,0 +1,2 @@
+[console_scripts]
+nardini = nardini.__main__:main
