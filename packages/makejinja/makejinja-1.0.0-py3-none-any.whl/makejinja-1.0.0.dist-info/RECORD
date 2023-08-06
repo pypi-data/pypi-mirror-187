@@ -1,0 +1,10 @@
+makejinja/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+makejinja/__main__.py,sha256=bYt9eEaoRQWdejEHFD8REx9jxVEdZptECFsV7F49Ink,30
+makejinja/cli.py,sha256=BqbtdkoSAVKXw_nzHaWUZp1kMTIpSgcwVPvTWgKMU8g,6296
+makejinja/config.py,sha256=oyd8MoFB4WjLzIGCZkOVfrrDhpGWwc4IpsUxqTi3zw8,11981
+makejinja/loader.py,sha256=fnKDpLmjeU9n01opbn26gSXbV8bGC5qS51EdSDU-E6w,861
+makejinja-1.0.0.dist-info/METADATA,sha256=pZ2d6zB8e3wZrs0W9NMmgXt8L6nWAI_IhgFvBtJRIcc,17742
+makejinja-1.0.0.dist-info/entry_points.txt,sha256=H-9cBowH6QZRWPDCQ4ujhS-RkJYwUGD6fLqrgD5BWbw,48
+makejinja-1.0.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+makejinja-1.0.0.dist-info/LICENSE,sha256=yImp-eAMhgceWCQ6iLCEUHbYAUcD0LRkoVO24D1zRoA,1067
+makejinja-1.0.0.dist-info/RECORD,,
