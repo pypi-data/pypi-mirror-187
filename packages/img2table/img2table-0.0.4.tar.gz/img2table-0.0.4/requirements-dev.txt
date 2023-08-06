@@ -1,0 +1,27 @@
+-r requirements.txt
+
+# GCP
+google-cloud-vision
+
+# AWS
+boto3
+
+# Azure
+azure-cognitiveservices-vision-computervision
+
+# Test dependencies
+pytest >= 6
+pytest-cov
+pytest-xdist
+openpyxl
+
+# Examples dependencies
+jupyter
+ipython-autotime
+Pillow
+
+# Build tools
+wheel
+setuptools
+pbr
+twine
