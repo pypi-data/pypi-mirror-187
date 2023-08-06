@@ -1,0 +1,7 @@
+
+[testing]
+pytest
+pytest-cov
+npe2
+typer
+importlib-resources
