@@ -1,0 +1,15 @@
+mido==1.2.10
+pandas
+requests
+pyarrow>=10
+dagster==1.1.10
+s3fs
+trino
+dbt-core
+dbt-trino
+dagster_dbt
+duckdb
+dagstermill
+jupytext
+matplotlib
+plotly

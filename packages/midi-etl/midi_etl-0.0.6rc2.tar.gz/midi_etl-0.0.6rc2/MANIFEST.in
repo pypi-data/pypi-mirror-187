@@ -1,0 +1,5 @@
+recursive-include  midi_etl_dbt/*
+recursive-include  midi_etl_schema/*
+recursive-include  midi_etl_notebooks/*
+include version README.md
+include requirements.txt dev-requirements.txt

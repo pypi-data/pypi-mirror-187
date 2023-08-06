@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+version
+midi_etl/__init__.py
+midi_etl/arrow_upath_iomanager.py
+midi_etl/constants.py
+midi_etl/partitions.py
+midi_etl/utils.py
+midi_etl.egg-info/PKG-INFO
+midi_etl.egg-info/SOURCES.txt
+midi_etl.egg-info/dependency_links.txt
+midi_etl.egg-info/requires.txt
+midi_etl.egg-info/top_level.txt
