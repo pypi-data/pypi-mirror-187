@@ -1,0 +1,12 @@
+lspopt/__init__.py,sha256=vCW_s3HZDOtfzFJ9P-YrNNN8PAhqbvoGpbpYp3_pG5E,193
+lspopt/__version__.py,sha256=ZF01uD0U32O-4PODdGijoAgW3mqWkVNg8Hn_Wli7_Bs,87
+lspopt/lsp.py,sha256=ZK2M2W_s9BQqqqcuP7HIVVeZk0FfMoGPbJgWgma8Btw,4642
+lspopt/utils.py,sha256=WYsIMaonWUMOh_cAqvjm4mXol5wBNRIO8NdYGx_Ixys,4910
+lspopt/data/__init__.py,sha256=xqeuzi92cZjq8kdDF2_pRTcTd_5FVpaw-0dUVVDwQdU,1057
+lspopt/data/c.npy,sha256=jLN_39VLzY0TZFQrz--QsreDs2_VjSPug4X8Wvbfdxo,4008
+lspopt/data/weights.npy,sha256=7Vpe3swCwXEZERAfQgrdBSv3ePkCdnyPY1TtgvNJT_o,128080
+lspopt-1.3.0.dist-info/LICENSE,sha256=34SezA32FL072CWXbEI4EXjkwLByadmfX6kRPoRLs6k,1080
+lspopt-1.3.0.dist-info/METADATA,sha256=uEWWacrtusZDenETHcu7UpjvMkLCeygDtVDFJVmjXt8,6377
+lspopt-1.3.0.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+lspopt-1.3.0.dist-info/top_level.txt,sha256=ldVxJeps2-OvCgAQmLN5J-t2IsSlqYYmr8Yy5z8NOIU,7
+lspopt-1.3.0.dist-info/RECORD,,
