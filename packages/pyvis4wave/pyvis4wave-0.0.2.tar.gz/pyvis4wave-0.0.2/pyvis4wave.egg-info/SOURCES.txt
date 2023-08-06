@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pyvis4wave.egg-info/PKG-INFO
+pyvis4wave.egg-info/SOURCES.txt
+pyvis4wave.egg-info/dependency_links.txt
+pyvis4wave.egg-info/requires.txt
+pyvis4wave.egg-info/top_level.txt
+vis4wave/__init__.py
+vis4wave/demo_wave_network.py
+vis4wave/network.py
+vis4wave/wave_events.py
