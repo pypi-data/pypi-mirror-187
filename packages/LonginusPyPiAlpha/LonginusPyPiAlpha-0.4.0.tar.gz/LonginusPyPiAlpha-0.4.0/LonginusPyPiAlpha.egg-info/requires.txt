@@ -1,0 +1,7 @@
+pyCryptodome
+asyncio
+argon2-cffi
+requests
+logging
+pickle
+multiprocessing
