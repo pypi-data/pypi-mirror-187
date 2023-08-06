@@ -1,0 +1,7 @@
+LICENSE.txt
+README.txt
+setup.py
+Genetic_Algorithm_VEDA.egg-info/PKG-INFO
+Genetic_Algorithm_VEDA.egg-info/SOURCES.txt
+Genetic_Algorithm_VEDA.egg-info/dependency_links.txt
+Genetic_Algorithm_VEDA.egg-info/top_level.txt
