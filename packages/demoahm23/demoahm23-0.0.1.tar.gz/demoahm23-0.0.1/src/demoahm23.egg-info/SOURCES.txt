@@ -1,0 +1,17 @@
+.gitignore
+CHANGELOG.rst
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tag-from-pipeline.sh
+tox.ini
+.github/workflows/publish.yml
+.github/workflows/tag_and_release.yml
+src/demoahm23/__init__.py
+src/demoahm23/hello.py
+src/demoahm23.egg-info/PKG-INFO
+src/demoahm23.egg-info/SOURCES.txt
+src/demoahm23.egg-info/dependency_links.txt
+src/demoahm23.egg-info/requires.txt
+src/demoahm23.egg-info/top_level.txt
