@@ -1,0 +1,98 @@
+= IntelTwin Ideas
+
+== Agent CTO
+
+* Comparing the source code of the programmers with their worklog, and see if there's any discrepancy
+
+== Agent - CFO
+
+This agent would be performing the following:
+
+* Various internal audit
+
+* Performing Cashflow Analysis
+** Comparing Cashflow Spreadsheets with the ERP System
+
+* Prediction of sales / expenses and based on various external environment
+
+* Analysis of various industry peers
+
+* Automated payment approvals
+
+* Fraud detection
+
+== Agent - Chief Project Officer
+
+* Some basic word counts on the jira worklog
+
+* Cross checking Tempo Planner vs Jira Plan vs Kanban vs Cashflow Projection vs Project Outstanding list (comparing income) and then compare with the Targets by the Programmers in the score card
+
+
+== Agent - Helpdesk
+
+* Analysis of Helpdesk information, and highlight it to the boss
+* Automated reply
+* Perform sentiment analysis based on correspondence with the customers.
+* Automatically create issues in BLG
+
+
+== Agent - HR
+
+* Comparing the worklog , time attendance of the employees and check it against the google calendar, checking leave application
+
+* Automatically checking Jira users that haven’t login to wavelet.atlassiant.net for more than 1 -2 months, and then automatically suspend their account.
+
+* Some basic word counts on Jira Worklog
+
+
+== Agent - Sales
+
+* Checking sales lead issues that are not followed up, and then automatically send out emails.
+
+* Ingestion of sales lead data into Jira issue or Sales Force Automation Applet
+
+* Monitoring of Sales Lead activity
+
+* Web crawling on information on the customer and companies.
+
+== Agent - Personal Assistant
+
+* Meeting clashes 
+
+* Checking and see if travelling time has been included for onsite meetings
+
+* Automatic unsubscribe spam emails
+
+* automatic submission of complaints to certain websites
+
+* Automatic launching attack back to the spammer by calling their phone and spamming back their emails.
+
+* Automatically organize the files in Google Drive (both personal and Shared Drive)
+
+* Gmail Assistant
+** Removing and processing Spam Emails
+** Automatically forward finance department on receipts etc.
+** Analysis of who reply Vincent the most, who ignored Vincent's email, and statistics of how long it takes for a person to reply Vincent's email
+
+== Agent - Product Management 
+
+Cross Checking a list of applets that we are following up vs the actual applet in the platform
+
+== Agent - Software Testing
+
+== Agent - MIS Manager
+
+Cross checking in-active System Administrators in the platform
+
+
+== Agent - Marketing
+
+* Capturing of all contacts , including website
+* Web crawling stuff
+
+
+== Agent - Blackhat
+
+* This agent will be developed to scan and target competitors IT systems.
+* DDOS and Penetration scan will be performed on selected servers.
+
