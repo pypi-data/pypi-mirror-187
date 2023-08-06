@@ -1,0 +1,11 @@
+/django_easy_autoslug.egg-info/
+.envrc
+*~
+*.pyc
+.ropeproject
+.coverage
+.tox
+build
+/dist
+/htmlcov
+/coverage.xml
