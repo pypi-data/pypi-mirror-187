@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/tabulize/__init__.py
+src/tabulize/records.py
+src/tabulize/sqltable.py
+src/tabulize/to_sql.py
+src/tabulize.egg-info/PKG-INFO
+src/tabulize.egg-info/SOURCES.txt
+src/tabulize.egg-info/dependency_links.txt
+src/tabulize.egg-info/not-zip-safe
+src/tabulize.egg-info/requires.txt
+src/tabulize.egg-info/top_level.txt
