@@ -1,0 +1,14 @@
+bvhio/__init__.py,sha256=Fh6oectZbInTngXZgYoD19KVm4JMc_c6IrKolqASnn8,104
+bvhio/lib/Parser.py,sha256=ilow8m1YzfKcRl6SLAkPs7hEgSfzQjO9qPgghbHV1h8,7967
+bvhio/lib/bvh/BvhContainer.py,sha256=Bj7kfY3ngcYsIN5qi0ca1in63pO3FBAj1HxgcCtiJ54,443
+bvhio/lib/bvh/RootPose.py,sha256=94uu1ldCPTrDbHLR0hNcMkuZBNb-46qucoo8reyjie4,2150
+bvhio/lib/bvh/__init__.py,sha256=9M_5vLSyBYjB1Lr20VyU6GvtTta1UKE0L8H2ZGXbouU,70
+bvhio/lib/hierarchy/Joint.py,sha256=y9WfSk8z401RshrqShaF9gjdaIyW4hP1F1J380UpxIc,8211
+bvhio/lib/hierarchy/__init__.py,sha256=oiU6eKHwPuC1DkudSETEShqTGygWOvfrt_sT3uR1LKA,25
+bvhio/lib/shared/Pose.py,sha256=9upa3_zHNOqSwuxdJSTwfx_opwVWWt0_DrIUFtN0Io0,1050
+bvhio/lib/shared/__init__.py,sha256=3D2NHhWgFcTuaO2squZjVcW2J3ELDJTvtDNYvM9D6Tk,23
+bvhio/tests/test_bvh.py,sha256=2T0D-SNWO6fGphk0bT2vK9Haw6RK_R_CG-a_7ApmF10,130
+bvhio-1.1.6.dist-info/METADATA,sha256=wcJcRdBmRSo5yGI5wsgYUt5ewcJLkBc0OAG9sHcLfjo,13337
+bvhio-1.1.6.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+bvhio-1.1.6.dist-info/licenses/LICENSE,sha256=kjhWhFExvF0kSu4FvzSAhKY4sJlx-irGp6cj_Be6DFA,1069
+bvhio-1.1.6.dist-info/RECORD,,
