@@ -1,0 +1,11 @@
+pymolstyles/__init__.py,sha256=X5-XcZShWmeKQ2yZ-jAcy5sUc9TOkDz1WNRhFGuO0d0,347
+pymolstyles/environment.py,sha256=D2sFSCVn1_P6RkPoZHYkgL8O6XCeU3cBY8T5xp8811w,4912
+pymolstyles/plots.py,sha256=AJAhZi_3lH1f6qyc_XPnZxorYs7FPyKogBkB_xQl87M,3160
+pymolstyles/resources.py,sha256=SPFHXMNZtC4J6smOyZ---UPQMKbAHwZQku-N0UlgaBY,161
+pymolstyles/styles.py,sha256=aBMYAvvJMv3zMUTaFJfQsahT5loB3vUJTHj7Bgu7Ssk,1384
+pymolstyles/tools.py,sha256=iU_5qmhfrQvzbjuO2eK9KwhaOKRnIudntdG2Dvlgtcs,2824
+pymolstyles/workspace.py,sha256=TvlI9ugBn2uXgzGypn6owocFQ4KEeF-BnILU9gez7tQ,236
+pymolstyles-0.1.1a0.dist-info/METADATA,sha256=1K3qw5zqDY4tlrOfFEb8BRC0G7r7BO7_VxUio04kTVg,699
+pymolstyles-0.1.1a0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+pymolstyles-0.1.1a0.dist-info/LICENSE.md,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pymolstyles-0.1.1a0.dist-info/RECORD,,
