@@ -1,0 +1,2 @@
+[console_scripts]
+topsis = TOPSIS_Calc_102003257.102003257:main
