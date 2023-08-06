@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+libhttprequests/__init__.py
+libhttprequests/github_api.py
+libhttprequests.egg-info/PKG-INFO
+libhttprequests.egg-info/SOURCES.txt
+libhttprequests.egg-info/dependency_links.txt
+libhttprequests.egg-info/not-zip-safe
+libhttprequests.egg-info/requires.txt
+libhttprequests.egg-info/top_level.txt
