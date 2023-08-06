@@ -1,0 +1,2 @@
+[console_scripts]
+topsis = Topsis_Aditya_102003424.Aditya_102003424:main
