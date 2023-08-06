@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: Topsis_SanyamSinghal_102003125
+Version: 0.1
+Summary: This package is implimentation of multi-criteria decision analysis using topsis
+Home-page: https://github.com/sanyam2101/Topsis_SanyamSinghal_102003125
+Author: Sanyam Singhal
+Author-email: sanyamsinghal2101@gmail.com
+License: MIT
+Download-URL: https://github.com/sanyam2101/Topsis_SanyamSinghal_102003125/archive/refs/tags/ver_0.1.tar.gz
+Description: UNKNOWN
+Keywords: topsis
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
