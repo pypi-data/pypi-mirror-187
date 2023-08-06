@@ -1,0 +1,8 @@
+setup.py
+libname/__init__.py
+libname/useit.py
+useit.egg-info/PKG-INFO
+useit.egg-info/SOURCES.txt
+useit.egg-info/dependency_links.txt
+useit.egg-info/requires.txt
+useit.egg-info/top_level.txt

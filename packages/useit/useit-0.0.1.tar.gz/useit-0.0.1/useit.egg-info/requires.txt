@@ -1,0 +1,6 @@
+webbrowser
+pynotifier
+pyautogui
+psutil
+pywhatkit
+wikipedia
