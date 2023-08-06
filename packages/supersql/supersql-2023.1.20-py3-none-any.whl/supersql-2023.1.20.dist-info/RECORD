@@ -1,0 +1,14 @@
+supersql/__init__.py,sha256=Gi-vAPm7HNo1BwNIG-wvXpVfEz5iQAgT8IGnWNnZHWc,212
+supersql/alternate.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+supersql/constants.py,sha256=Jtcksia8DgegytHZy3GeuenI_L72FPDyUOlvpD9BD6s,196
+supersql/core.py,sha256=Az3FZGnrB-Nq2QMmBV8wx6kj4OrzBeBUwi-XgSGAmZE,1089
+supersql/field.py,sha256=1S5pGKUWXqodN96iGZBi0mNQD7yPnuzPQy_RFxu4Ha4,3534
+supersql/helpers.py,sha256=MmW8QBoNgfNsBbFFvhcADJt0e6W7yYbMEVFYg8xsFC8,342
+supersql/query.py,sha256=9OAEOIRz2a6I3C_Vj8ZRkL4YTD0124P-uc0wZCO2J2Y,3602
+supersql/results.py,sha256=p0YsMioLtFNsLP8rSwEw4l3IF9V5hydqKEIODrfFlkI,138
+supersql/table.py,sha256=8SR9xxxccsIezmeEkuOPynhuS4O_vjzP4Kb_dfXDVpQ,1890
+supersql-2023.1.20.dist-info/entry_points.txt,sha256=1tplpgmWhzGRrY6IyLqAQc-MKgWLbPnYVRCdZwkABPU,42
+supersql-2023.1.20.dist-info/LICENSE.md,sha256=HhfNwBAnAi0phCTuEr-FMauGaiLpaE1mDVmCU6jioIE,1048
+supersql-2023.1.20.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+supersql-2023.1.20.dist-info/METADATA,sha256=BgLHO95WRibvcs9KA5v3UoDjOYoV932c5UkfwjfaxAM,3701
+supersql-2023.1.20.dist-info/RECORD,,
