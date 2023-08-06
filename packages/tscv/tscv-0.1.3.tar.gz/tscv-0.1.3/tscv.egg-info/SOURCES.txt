@@ -1,0 +1,15 @@
+.coveragerc
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+tscv/__init__.py
+tscv/_split.py
+tscv.egg-info/PKG-INFO
+tscv.egg-info/SOURCES.txt
+tscv.egg-info/dependency_links.txt
+tscv.egg-info/requires.txt
+tscv.egg-info/top_level.txt
+tscv/tests/__init__.py
+tscv/tests/test_split.py
