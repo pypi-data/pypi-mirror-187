@@ -1,0 +1,25 @@
+{% load i18n %}
+
+{% if is_searchable %}
+    <form class="chooser-search search-bar" action="{{ choose_url }}" method="GET" novalidate>
+        <ul class="fields">
+            {% for field in search_form %}
+                {% include "wagtailadmin/shared/field_as_li.html" with field=field %}
+            {% endfor %}
+            <li class="submit"><input type="submit" value="{% trans 'Search' %}" class="button" /></li>
+        </ul>
+    </form>
+{% endif %}
+
+{% if is_multiple_choice %}
+    <form action="{{ chosen_multiple_url }}" method="GET" data-multiple-choice-form>
+        <div id="search-results" class="listing">
+            {% include results_template %}
+        </div>
+        <input type="submit" value="{% trans 'Confirm selection' %}" class="button" />
+    </form>
+{% else %}
+    <div id="search-results" class="listing">
+        {% include results_template %}
+    </div>
+{% endif %}
