@@ -1,0 +1,8 @@
+fastapi_controllers/__init__.py,sha256=ZLaM0SNH7u68CFOX0UIvA14p1MC6TjzBqZcHN347IQE,281
+fastapi_controllers/controllers.py,sha256=dQJV_8-8SrqEhwMvdDBnqyW0pJAP3HsXPTdaQNAMjdA,1650
+fastapi_controllers/helpers.py,sha256=2l4zCQyJ96SL08aRhrO8_P_KNrG-mEAfW9dabxGL9Qc,1224
+fastapi_controllers/routing.py,sha256=9KnnzaQrwzIdAcGbm4beADiFWza3D7dCdtWNcD6v8ag,1832
+fastapi_controllers-0.1.0.dist-info/METADATA,sha256=aQfdd4y77hV2UABgu7LVHY6NF7hT_b2QsdebkUhFOc4,6877
+fastapi_controllers-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+fastapi_controllers-0.1.0.dist-info/LICENSE,sha256=uIzG0i7MT2Zp-gICv0V8FL6qPlyjt_4eWM8YqL2koBo,1068
+fastapi_controllers-0.1.0.dist-info/RECORD,,
