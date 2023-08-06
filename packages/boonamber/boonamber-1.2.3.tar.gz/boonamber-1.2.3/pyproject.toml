@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "boonamber"
+version = "1.2.3"
+authors = [
+    {name = "BoonLogic"},
+    {email = "amber-support@boonlogic.com"}
+]
+urls = {repository = "https://github.com/boonlogic/amber-python-sdk"}
+license = {text = "MIT"}
+description = "An SDK for Boon Amber sensor analytics"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    "requests",
+    "numpy"
+]
+readme = "README.md"
+
+# This is currently in beta so don't include it for now
+# [tool.setuptools]
+# packages = ["boonamber"]
