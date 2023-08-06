@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: bdrc-util
+Version: 0.9.35
+Summary: BDRC Utilities
+Home-page: https://github.com/buda-base/archive-ops/tree/master/bdrc-util
+Author: jimk
+Author-email: jimk@bdrc.io
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: System Administrators
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: boto3
+Requires-Dist: requests
+Requires-Dist: bdrc-db-lib
+
+# Utilities used in BDRC production
+
+## Changelog 9.30 .. 9.34
+- 9.30 83c5062a Add Work calculation size to script
+- 9.31 192eea17 (not released) single entry point for image group renames
+- 9.32 be754999 Create entry points for image group renaming
+- 9.34 Use external address for resolver
+
+
