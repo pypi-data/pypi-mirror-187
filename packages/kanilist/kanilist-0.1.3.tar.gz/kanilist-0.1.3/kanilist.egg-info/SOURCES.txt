@@ -1,0 +1,9 @@
+LICENSE
+README.rst
+setup.py
+kanilist/__init__.py
+kanilist.egg-info/PKG-INFO
+kanilist.egg-info/SOURCES.txt
+kanilist.egg-info/dependency_links.txt
+kanilist.egg-info/requires.txt
+kanilist.egg-info/top_level.txt
