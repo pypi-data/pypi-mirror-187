@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+sortme/__init__.py
+sortme/errors.py
+sortme/group.py
+sortme/main.py
+sortme.egg-info/PKG-INFO
+sortme.egg-info/SOURCES.txt
+sortme.egg-info/dependency_links.txt
+sortme.egg-info/requires.txt
+sortme.egg-info/top_level.txt
+sortme/groups/__init__.py
+sortme/groups/problems.py
+sortme/groups/users.py

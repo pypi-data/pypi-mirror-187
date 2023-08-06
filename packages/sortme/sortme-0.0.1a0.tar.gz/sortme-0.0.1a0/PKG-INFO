@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: sortme
+Version: 0.0.1a0
+Summary: Sort Me API wrapper for Python. Automate with a bang!
+Home-page: https://github.com/sort-me/python-api
+Author: Sort Me
+Author-email: guys@sort-me.org
+License: MIT
+Keywords: sort-me.org sort-me sortme api sort_me sort me codeforces
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# Python wrapper for Sort Me API
+
+## Quick start
+```python
+import sortme
+
+api = sortme.API()
+
+print(api.problems.get_by_id(1).statement.legend)
+# Требуется сложить два целых числа $$A$$ и $$B$$.
+
+print(api.users.get_by_id(578).handle)
+# imachug
+```
+
+### Documentation
+Methods are almost fully compliant with [Sort Me API Documentation](https://docs.sort-me.org). Well, except that `snake_case` is used instead if `camelCase`. 
+
+
