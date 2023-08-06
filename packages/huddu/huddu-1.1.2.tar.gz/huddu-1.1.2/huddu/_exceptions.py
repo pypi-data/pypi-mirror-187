@@ -1,0 +1,6 @@
+class APIException(Exception):
+    ...
+
+
+class SafePutException(Exception):
+    ...
