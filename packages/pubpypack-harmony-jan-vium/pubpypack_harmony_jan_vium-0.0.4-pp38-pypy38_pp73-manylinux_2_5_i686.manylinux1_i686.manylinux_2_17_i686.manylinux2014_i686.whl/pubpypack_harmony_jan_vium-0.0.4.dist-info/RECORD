@@ -1,0 +1,13 @@
+pubpypack_harmony_jan_vium-0.0.4.dist-info/entry_points.txt,sha256=wtuXZI_2UO85z5UuMQZbHwdKQF9aUhtPQERQ1nAUZtw,49
+pubpypack_harmony_jan_vium-0.0.4.dist-info/METADATA,sha256=oGxCCBQ74xOMH-bbJzNzjCHqsEVYJpwyPT2hzXWwj14,577
+pubpypack_harmony_jan_vium-0.0.4.dist-info/WHEEL,sha256=nZI0pNBFSEvZC0dN-8Vs5UUfX1nJGidiSk3OVo0dDxE,237
+pubpypack_harmony_jan_vium-0.0.4.dist-info/top_level.txt,sha256=4qTcCZnd2C5KDyADSkd8nwVPocYbQRJiVJu5SMwrsY4,8
+pubpypack_harmony_jan_vium-0.0.4.dist-info/RECORD,,
+pubpypack_harmony_jan_vium-0.0.4.dist-info/LICENSE,sha256=2vTJ4A06PrOLd46Y77lFNgiIQ_3k1CRyhUg85teNRAE,1074
+jvnpack/data.json,sha256=H54232g_2aPkVUd9qHStCD8CdLubcpWjC60L5w_KiKU,19
+jvnpack/hello.py,sha256=qjRb5D8-s6KZpMcrk2Ch_5CVRZQXk6E5SGK3YAQUCjQ,51
+jvnpack/harmony.py,sha256=GsR5eF8ysU3RIe8HqPyIdskQ0PMqpP2GLdcMEn6ccBE,746
+jvnpack/harmonic_mean.pypy38-pp73-x86-linux-gnu.so,sha256=-y-v6imuMUYP41jDCivj5emdbUx4tylvuWqLR9cr4Yw,43996
+jvnpack/harmonic_mean.c,sha256=KIK1cyO1bTXe5o4-AP86E2VNCNQwOzHL2GNZUpmGdYk,198807
+jvnpack/harmonic_mean.pyx,sha256=M73vo90M8NXu6auDdJ1Ev_AyQaDForBuO9pJux3c-88,74
+jvnpack/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
