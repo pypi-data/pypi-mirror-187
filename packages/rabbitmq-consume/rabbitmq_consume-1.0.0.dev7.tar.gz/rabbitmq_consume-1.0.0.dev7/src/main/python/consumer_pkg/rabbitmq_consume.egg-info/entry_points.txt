@@ -1,0 +1,6 @@
+[console_scripts]
+rmq-consume = rabbitmq_consume.rmq_consume:main
+rmq-push = rabbitmq_consume.rmq_push:main
+
+[rmq_consume.consumption]
+null_consumption = rabbitmq_consume:NullConsumption
