@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+chatgpt/__init__.py
+chatgpt/run.py
+chatgpt/src/__init__.py
+chatgpt/src/bot.py
+chatgpt/src/bot_exceptions.py
+chatgpt/src/utils.py
+pybot_chatgpt.egg-info/PKG-INFO
+pybot_chatgpt.egg-info/SOURCES.txt
+pybot_chatgpt.egg-info/dependency_links.txt
+pybot_chatgpt.egg-info/entry_points.txt
+pybot_chatgpt.egg-info/requires.txt
+pybot_chatgpt.egg-info/top_level.txt
