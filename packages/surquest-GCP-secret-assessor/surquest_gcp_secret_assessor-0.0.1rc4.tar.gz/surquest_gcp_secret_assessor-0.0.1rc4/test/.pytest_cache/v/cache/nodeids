@@ -1,0 +1,7 @@
+[
+  "secretmanager/test_secret.py::TestSecret::test__get_secret__from_env_var",
+  "secrets_assessor/test_secret.py::TestSecret::test__get_credentials",
+  "secrets_assessor/test_secret.py::TestSecret::test__get_secret__from_GCP__error",
+  "secrets_assessor/test_secret.py::TestSecret::test__get_secret__from_GCP__success",
+  "secrets_assessor/test_secret.py::TestSecret::test__get_secret__from_env_var"
+]

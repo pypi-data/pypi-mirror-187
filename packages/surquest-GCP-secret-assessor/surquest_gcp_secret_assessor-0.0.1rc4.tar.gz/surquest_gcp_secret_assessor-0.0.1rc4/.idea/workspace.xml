@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2bb00570-786c-471e-9ca2-da9bbc2936cb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.base.dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/setup.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/surquest/GCP/secret_assessor/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/surquest/GCP/secret_assessor/exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/surquest/GCP/secret_assessor/secret.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/pytest.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/secret_assessor/test_secret.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Js0nIT962IzbLTzzju48a8tutQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ACTIVE_CLOUD_PROJECT_ACCOUNT": "michal.svarc@reality.co",
+    "ACTIVE_CLOUD_PROJECT_ID": "nft-passive-income-dev",
+    "ACTIVE_CLOUD_PROJECT_NAME": "nft-passive-income-dev",
+    "ACTIVE_CLOUD_PROJECT_NUMBER": "745239292719",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.google.cloudcode.ide_session_index": "20230123_0002",
+    "last_opened_file_path": "C:/Users/michal-svarc/projects/software-engineering/promo-predictor/toolpad",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\michal-svarc\projects\software-engineering\python-gcp-secret-manager" />
+      <recent name="C:\Users\michal-svarc\projects\software-engineering\python-gcp-secret-manager\poetry" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\michal-svarc\projects\software-engineering\python-gcp-secret-manager" />
+      <recent name="C:\Users\michal-svarc\projects\software-engineering\python-gcp-secret-manager\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Cloud Code: Cloud Run.Cloud Run: Deploy">
+    <configuration name="Cloud Run: Deploy" type="CloudCodeCloudRunConfigurationType" factoryName="CloudCodeCloudDeployRunConfigurationFactory" show_console_on_std_err="false" show_console_on_std_out="false" gcpProject="{&quot;googleUsername&quot;:&quot;michal.svarc@reality.co&quot;,&quot;projectId&quot;:&quot;nft-passive-income-dev&quot;,&quot;projectName&quot;:&quot;nft-passive-income-dev&quot;,&quot;projectNumber&quot;:745239292719}" gcbSettings="{}">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="buildEnvironment" value="Local" />
+      <option name="buildpacksEnv" />
+      <option name="cloudSqlConnections" />
+      <option name="concurrency" value="80" />
+      <option name="cpuAllocated" value="1" />
+      <option name="customCpuAllocated" />
+      <option name="dockerBuildArgs" />
+      <option name="dockerTarget" />
+      <option name="environmentVariables" />
+      <option name="gkeClusterLocation" />
+      <option name="gkeClusterName" />
+      <option name="gkeClusterNamespace" value="default" />
+      <option name="gkeConnectivity" value="EXTERNAL" />
+      <option name="imagePath" value="gcr.io/nft-passive-income-dev/python-gcp-secret-manager" />
+      <option name="loadingAvailableBuilders" value="false" />
+      <option name="managedAuthentication" value="ALLOW_UNAUTHENTICATED" />
+      <option name="managedRegion" value="us-central1" />
+      <option name="maxInstances" />
+      <option name="memoryAllocated" value="MIB_256" />
+      <option name="minInstances" />
+      <option name="platform" value="FULLY_MANAGED" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="serviceAccount" />
+      <option name="serviceName" value="python-gcp-secret-manager" />
+      <option name="timeout" value="300" />
+      <option name="vpcConnector" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Cloud Run: Run Locally" type="CloudCodeCloudRunConfigurationType" factoryName="CloudCodeCloudRunDevelopConfigurationFactory" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="buildpacksEnv" />
+      <option name="cloudSqlConnections" />
+      <option name="cpuAllocated" value="NO_LIMIT" />
+      <option name="dockerBuildArgs" />
+      <option name="dockerTarget" />
+      <option name="environmentVariables" />
+      <option name="loadingAvailableBuilders" value="false" />
+      <option name="mappings">
+        <list />
+      </option>
+      <option name="memoryAllocated" value="MIB_256" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="serviceAccount" />
+      <option name="serviceName" value="python-gcp-secret-manager" />
+      <option name="skaffoldWatchMode" value="ON_DEMAND" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test.secret_assessor.test_secret.TestSecret" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="python-gcp-secrets-assessor" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/secret_assessor" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test.secret_assessor.test_secret.TestSecret&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test.secret_assessor.test_secret.TestSecret.test__get_credentials" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="python-gcp-secrets-assessor" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/secret_assessor" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test.secret_assessor.test_secret.TestSecret.test__get_credentials&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test.secret_assessor.test_secret.TestSecret.test__get_secret__from_GCP__error" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="python-gcp-secrets-assessor" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/secret_assessor" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test.secret_assessor.test_secret.TestSecret.test__get_secret__from_GCP__error&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test.secret_assessor.test_secret.TestSecret.test__get_secret__from_GCP__error" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="python-gcp-secrets-assessor" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/secret_assessor" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test.secret_assessor.test_secret.TestSecret.test__get_secret__from_GCP__error&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test.secret_assessor.test_secret.TestSecret.test__get_secret__from_GCP__success" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="python-gcp-secrets-assessor" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/secret_assessor" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test.secret_assessor.test_secret.TestSecret.test__get_secret__from_GCP__success&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test.secrets_assessor.test_secret.TestSecret.test__get_secret__from_GCP__error" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="python-gcp-secrets-assessor" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/secrets_assessor" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test.secrets_assessor.test_secret.TestSecret.test__get_secret__from_GCP__error&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for test.secret_assessor.test_secret.TestSecret.test__get_credentials" />
+        <item itemvalue="Python tests.Python tests for test.secret_assessor.test_secret.TestSecret.test__get_secret__from_GCP__error" />
+        <item itemvalue="Python tests.Python tests for test.secret_assessor.test_secret.TestSecret.test__get_secret__from_GCP__error" />
+        <item itemvalue="Python tests.Python tests for test.secret_assessor.test_secret.TestSecret.test__get_secret__from_GCP__success" />
+        <item itemvalue="Python tests.Python tests for test.secret_assessor.test_secret.TestSecret" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2bb00570-786c-471e-9ca2-da9bbc2936cb" name="Changes" comment="" />
+      <created>1672851648853</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672851648853</updated>
+      <workItem from="1672851650681" duration="27292000" />
+      <workItem from="1672936791334" duration="1089000" />
+      <workItem from="1672999933788" duration="3644000" />
+      <workItem from="1673013650260" duration="562000" />
+      <workItem from="1673111089608" duration="1271000" />
+      <workItem from="1673168229604" duration="17000" />
+      <workItem from="1674489073996" duration="1253000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/python_gcp_secret_manager$.coverage" NAME=" Coverage Results" MODIFIED="1672903292148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/secretmanager" />
+    <SUITE FILE_PATH="coverage/python_gcp_secrets_assessor$.coverage" NAME=" Coverage Results" MODIFIED="1672904085000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/secrets_assessor" />
+  </component>
+</project>
