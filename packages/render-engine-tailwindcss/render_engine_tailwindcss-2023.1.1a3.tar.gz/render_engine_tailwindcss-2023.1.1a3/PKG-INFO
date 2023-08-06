@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: render_engine_tailwindcss
+Version: 2023.1.1a3
+Summary: tailwindcss-parser for Render Engine
+Project-URL: homepage, https://github.com/kjaymiller/render_engine/
+Project-URL: repository, https://github.com/kjaymiller/render_engine/
+Project-URL: documentation, https://render-engine.readthedocs.io/en/latest/
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: docs
