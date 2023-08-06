@@ -1,0 +1,6 @@
+README.md
+setup.py
+PythOwO.egg-info/PKG-INFO
+PythOwO.egg-info/SOURCES.txt
+PythOwO.egg-info/dependency_links.txt
+PythOwO.egg-info/top_level.txt
