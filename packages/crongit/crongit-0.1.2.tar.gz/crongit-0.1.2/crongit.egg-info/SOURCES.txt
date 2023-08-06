@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+requirements.txt
+setup.py
+crongit.egg-info/PKG-INFO
+crongit.egg-info/SOURCES.txt
+crongit.egg-info/dependency_links.txt
+crongit.egg-info/requires.txt
+crongit.egg-info/top_level.txt
+scripts/crongit
