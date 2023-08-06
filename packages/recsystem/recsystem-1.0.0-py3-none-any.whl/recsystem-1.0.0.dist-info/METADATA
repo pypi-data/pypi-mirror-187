@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: recsystem
+Version: 1.0.0
+Summary: The package for Home Assistant Integration
+Author: SIS RS 6
+Author-email: <sonyaarom@gmail.com>
+Keywords: recsys,home assistant
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: interpret (==0.3.0)
+Requires-Dist: lime (==0.2.0.1)
+Requires-Dist: matplotlib (==3.6.2)
+Requires-Dist: meteostat (==1.6.5)
+Requires-Dist: numpy (==1.24.1)
+Requires-Dist: pandas (==1.5.2)
+Requires-Dist: pytz (==2022.7)
+Requires-Dist: scikit-learn (==1.2.0)
+Requires-Dist: shap (==0.41.0)
+Requires-Dist: statsmodels (==0.13.5)
+Requires-Dist: tqdm (==4.64.1)
+Requires-Dist: xgboost (==1.7.2)
+
+Some long description sazing the same
