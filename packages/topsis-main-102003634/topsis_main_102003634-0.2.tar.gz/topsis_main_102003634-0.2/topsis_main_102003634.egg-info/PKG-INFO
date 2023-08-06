@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: topsis-main-102003634
+Version: 0.2
+Summary: Script to implement TOPSIS
+Home-page: https://github.com/Falguni7572/102003634_TOPSIS
+Download-URL: https://github.com/Falguni7572/102003634_TOPSIS/archive/refs/tags/v_02.tar.gz
+Author: Falguni Sharma
+Author-email: falguni7572@gmail.com
+License: MIT
+Keywords: MCDM,102003634,TOPSIS
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE.txt
