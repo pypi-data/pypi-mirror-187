@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: Topsis-Taranpreet-102017050
+Version: 0.4
+Summary: Topsis implementation
+Home-page: https://github.com/thetarandhiman/Topsis_Taranpreet_102017050
+Download-URL: https://github.com/thetarandhiman/Topsis_Taranpreet_102017050/archive/refs/tags/v.0.4.tar.gz
+Author: Taranpreet Kaur Dhiman
+Author-email: taranpreet391@gmail.com
+License: MIT
+Keywords: TOPSIS,RANKING,PERFORMANCE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+# Topsis_Taranpreet_102017050
+TOPSIS (technique for order performance by similarity to ideal solution) is a useful technique in dealing with multi-attribute or multi-criteria decision making (MADM/MCDM) problems in the real world.
+
+## Installation
+Install the Package using the command - 
+```s
+$ pip install Topsis_Taranpreet_102017050
+```
+
+## Usage
+```s
+python -m Topsis_Taranpreet_102017050.Topsis <InputDataFile> <Weights> <Impacts> <ResultFileName>
+```
+
+## Example
+
+|   Fund Name  |   P1    |   P2    |   P3   |   P4    |   P5     |
+|--------------|---------|---------|--------|---------|----------|
+|   M1         |   0.94  |   0.88  |   6.1  |   40.1  |   12.01  |
+|   M2         |   0.85  |   0.72  |   5    |   52.9  |   14.87  | 
+|   M3         |   0.84  |   0.71  |   4.5  |   43.2  |   12.31  |
+|   M4         |   0.73  |   0.53  |   6.7  |   43.8  |   12.94  |
+|   M5         |   0.88  |   0.77  |   6.5  |   31.7  |   9.96   |
+|   M6         |   0.6   |   0.36  |   4.4  |   31.2  |   9.14   |
+|   M7         |   0.6   |   0.36  |   4.4  |   48    |   13.34  |
+|   M8         |   0.92  |   0.85  |   5.5  |   55.2  |   15.62  |
+
+**Input Method:** 
+The Input data file is data.csv, output file is result.csv and for the Weights : [2, 2, 3, 3, 4] & Impacts : [-, +, -, +, -], run the following command:
+
+```s
+python -m Topsis_Taranpreet_102017050.Topsis data.csv "2,2,3,3,4" "-,+,-,+,-" result.csv
+```
+
+**Output generated:** 
+The output file, result.csv will be as follows:
+
+|   Fund Name  |   P1    |   P2    |   P3   |   P4    |   P5     |   Performance Score    |   Rank  |
+|--------------|---------|---------|--------|---------|----------|------------------------|---------|
+|   M1         |   0.94  |   0.88  |   6.1  |   40.1  |   12.01  |   0.522346027          |   3     |
+|   M2         |   0.85  |   0.72  |   5    |   52.9  |   14.87  |   0.508871391          |   4     |
+|   M3         |   0.84  |   0.71  |   4.5  |   43.2  |   12.31  |   0.580231695          |   1     |
+|   M4         |   0.73  |   0.53  |   6.7  |   43.8  |   12.94  |   0.390517293          |   8     |
+|   M5         |   0.88  |   0.77  |   6.5  |   31.7  |   9.96   |   0.503787007          |   5     |
+|   M6         |   0.6   |   0.36  |   4.4  |   31.2  |   9.14   |   0.531336089          |   2     |
+|   M7         |   0.6   |   0.36  |   4.4  |   48    |   13.34  |   0.493355187          |   7     |
+|   M8         |   0.92  |   0.85  |   5.5  |   55.2  |   15.62  |   0.50091679           |   6     |
+
+## Points to note:
+- To remove the indices and headers, the library implicitly removes the first column and row respectively. Kindly, make sure the csv follows the format as shown in sample.csv.
+- The csv should not contain categorical values.
+- The csv should have atleast more than 3 columns.
+- The number of Impacts an Weights should be equal to the number of feature columns.
+- For maximizing a column, the impact is shown by "+" and for minimizing, "-".
+- The weights should be positive and numerical.
+- Separate the weights and columns by comma (,). 
+- Please follow the format to run the program as given in the sample command. 
+
+## License
+
+MIT
+
+**Thank You! Keep using and sharing feedbacks!**
