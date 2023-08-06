@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/maacore/__init__.py
+src/maacore/example.py
+src/maapay.egg-info/PKG-INFO
+src/maapay.egg-info/SOURCES.txt
+src/maapay.egg-info/dependency_links.txt
+src/maapay.egg-info/top_level.txt
