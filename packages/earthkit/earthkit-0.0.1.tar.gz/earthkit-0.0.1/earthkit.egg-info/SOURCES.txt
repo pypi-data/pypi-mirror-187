@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+earthkit/__init__.py
+earthkit.egg-info/PKG-INFO
+earthkit.egg-info/SOURCES.txt
+earthkit.egg-info/dependency_links.txt
+earthkit.egg-info/top_level.txt
+earthkit.egg-info/zip-safe
