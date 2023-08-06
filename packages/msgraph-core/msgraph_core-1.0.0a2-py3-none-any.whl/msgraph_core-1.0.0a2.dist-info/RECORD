@@ -1,0 +1,16 @@
+msgraph_core/__init__.py,sha256=JHcKhfHga1tnV-sTUTx0BcUwXA9Gij5gUf2XDudKwRY,605
+msgraph_core/_constants.py,sha256=uR0vajMiwmbCKgV6UXgX2U5gJaMuD7rN93jWhGCAgcY,364
+msgraph_core/_enums.py,sha256=xeZ5moUra5EoD--V2hkaG4yYj6A2t0YFYD3SVb5CiXY,933
+msgraph_core/base_graph_request_adapter.py,sha256=R3Up3lpQV_a3ncBuHnn_85tHqtFIbJPSrOkAFMnpSao,1069
+msgraph_core/graph_client_factory.py,sha256=2a4s8Hnkm2U8unqr6ypoE09BmA7kQrvnnw1mS_JumuE,4166
+msgraph_core/middleware/__init__.py,sha256=grJTRgADPJsazXcEsKXA9j113odEvmnpxs4RVkNDDk4,300
+msgraph_core/middleware/async_graph_transport.py,sha256=evBW7-a4ShItj8fTUnWRTtCA7kxAcTXJLD7SKcuFBvg,1539
+msgraph_core/middleware/request_context.py,sha256=eWvd3YOfksNT48Crnsqdpx-fQvpOgjxRuRT8_p5X9R0,1477
+msgraph_core/middleware/telemetry.py,sha256=9U5H3KlALiWI5Cl21Ad2njUAdUKke8FpUfCFrNwUz1U,4963
+msgraph_core/middleware/options/__init__.py,sha256=qCKv1nAOi60dnnn4eGZ3jnXzFBV3OQMx0_KpG1PmR3o,72
+msgraph_core/middleware/options/graph_telemetry_handler_option.py,sha256=s01jP09AxAhSuG4WQMewaY8SwhGjY-oKaoF85kYFpYs,1422
+msgraph_core-1.0.0a2.dist-info/LICENSE,sha256=lsjhVPjegwrwL5s512PQHn4yt3YZxuep35OTi86qnSI,1072
+msgraph_core-1.0.0a2.dist-info/METADATA,sha256=qpDIMDwccGZ1pWxzq2btzDhVcin4WzRmWNXgNIQ_8nQ,7335
+msgraph_core-1.0.0a2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+msgraph_core-1.0.0a2.dist-info/top_level.txt,sha256=BmUFOYOnxS8mJ1LL7Mvoqx88Na0YPWeDBWDlZthWo5Q,13
+msgraph_core-1.0.0a2.dist-info/RECORD,,
