@@ -1,0 +1,2 @@
+[console_scripts]
+topsis = Topsis_Bandhan_102003440.Bandhan_102003440:main
