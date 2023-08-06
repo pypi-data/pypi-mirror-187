@@ -1,0 +1,14 @@
+igl/helpers.py,sha256=bO4T9yhY0fE7Y_O_08kAzkkEpvCXxKPWhCjnzE3C1zs,2086
+igl/pyigl.cp39-win_amd64.pyd,sha256=XLUC7iY6nWh81UI3JYFLvOOnOoflO239-5uNbOYnges,315904
+igl/pyigl_classes.cp39-win_amd64.pyd,sha256=I7mLYYKVaYk5gS3k8nuXCtCPRfWMj9ONsySfGm82QUo,664576
+igl/_version.py,sha256=ry5O5SW74ugwOUMKSV2_LbWjYa8B0IEvUm7S-lHPA2c,23
+igl/__init__.py,sha256=vRaZaNz8SQJAEykvMXzSMmq4foIhguw3Ch6bRGbH7O4,1419
+libigl-0.0.1.dist-info/DELVEWHEEL,sha256=1TYbpq4_erTpgKahBN2PGBTlwA5Ee7wgFbIyITs5g0U,647
+libigl-0.0.1.dist-info/METADATA,sha256=_ZlByvirZokNNuu2soYeWfj_YygbvI0UqBbn8QoEF9U,2449
+libigl-0.0.1.dist-info/RECORD,,
+libigl-0.0.1.dist-info/top_level.txt,sha256=210Ot2-g5gXo3qYzQVWuNfKdSK5Lpy18bvW0WNArcAI,16
+libigl-0.0.1.dist-info/WHEEL,sha256=J_4V_gB-O6Y7Pn6lk91K27JaIhI-q07YM5J8Ufzqla4,100
+libigl.libs/.load-order-libigl-0.0.1,sha256=wy-BqAd9rm5_gtQrsXWxdm3TyuLUPdh3D29l4NtpzCo,14
+libigl.libs/msvcp140.dll,sha256=yzx01vzAkfTrfGfuXrX3bByXPeqLHGuFH8ymLCqdiqg,579920
+tests/test_basic.py,sha256=lnZRROSd_VR7XTEUgpN82Gr8yABAwBWmbOjyP0Eipes,94854
+tests/__init__.py,sha256=RWZ-1iQTZ5VszlZcJ6iFVWZ4RrZg4X4uiq8e9WjQ19I,1309
