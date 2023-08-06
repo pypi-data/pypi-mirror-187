@@ -1,0 +1,3 @@
+[console_scripts]
+jetstream = jetstream.cli:cli
+pensieve = jetstream.cli:cli
