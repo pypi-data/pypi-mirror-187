@@ -1,0 +1,190 @@
+{% macro clickableCard(route, text, class) %}
+    {% if class %}
+        <a href="{{ route }}" class="{{ class }}">
+            <div class="card-panel blue-grey darken-4 rounded center-align">
+                <span class="white-text flow-text">{{ text }}</span>
+            </div>
+        </a>
+    {% else %}
+        <a href="{{ route }}">
+            <div class="card-panel blue-grey darken-4 rounded center-align">
+                <span class="white-text flow-text">{{ text }}</span>
+            </div>
+        </a>
+    {% endif %}
+{% endmacro %}
+
+{% macro clickableCardModal(route, text) %}
+    <a href="#{{ route }}" class="modal-trigger">
+        <div class="card-panel blue-grey darken-4 rounded center-align">
+            <span class="white-text flow-text">{{ text }}</span>
+        </div>
+    </a>
+{% endmacro %}
+
+{% macro floatingButtonModal(route, icon, color, iconColor) %}
+    <div class="fixed-action-btn">
+        <a href="#{{ route }}" class="btn-floating btn-large modal-trigger {{ color }}">
+            <i class="large material-icons {{ iconColor }}">{{ icon }}</i>
+        </a>
+    </div>
+{% endmacro %}
+
+{#{% macro floatingModalButton(route, icon) %}#}
+{##}
+{#    <div class="fixed-action-btn">#}
+{#        <a href="#{{ route }}" class="btn-floating btn-large blue accent-4 modal-trigger">#}
+{#            <i class="large material-icons">{{ icon }}</i>#}
+{#        </a>#}
+{#    </div>#}
+{##}
+{#{% endmacro %}#}
+
+{% macro heading_row(headings) %}
+    <thead>
+    <tr>
+        {% for header in headings %}
+            <th>{{ header }}</th>
+        {% endfor %}
+    </tr>
+    </thead>
+{% endmacro %}
+
+{% macro data_row(data) %}
+    <tbody>
+    {% for row in data %}
+        <tr>
+            {% for cell in row %}
+                <td>{{ cell }}</td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+    </tbody>
+{% endmacro %}
+
+{#{% macro data_table(headings, data) %}#}
+{#    <table>#}
+{#        {{ heading_row(headings) }}#}
+{#        {{ data_row(data) }}#}
+{#    </table>#}
+{#{% endmacro %}#}
+
+
+{% macro activeButton(route, data) %}
+    <a href="{{ route }}"
+       class="btn-floating btn-small {{ 'green' if data else 'red' }}">
+        <i class="material-icons {{ 'white-text' if data else 'black-text' }}">
+            {{ 'check' if data else 'close' }}
+        </i>
+    </a>
+{% endmacro %}
+
+{% macro actionButton(route, icon, color, icon_color, for_modal=False) %}
+    <a href="{{ route }}" class="btn-floating btn-small {{ color }} {{ 'modal-trigger' if for_modal }}">
+        <i class="material-icons {{ icon_color }}">{{ icon }}</i>
+    </a>
+{% endmacro %}
+
+{% macro actionModal(id, title, route) %}
+    <div id="{{ id }}" class="modal grey darken-4">
+        <div class="modal-content">
+            <h4 class="center-align white-text">{{ title }}</h4>
+        </div>
+        <div class="modal-footer p0">
+            <a class="modal-close waves-effect waves-red left btn red h100 my0 w50">CANCEL</a>
+            <a href="{{ route }}" class="waves-effect waves-green btn green h100 my0 w50">YES</a>
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro floatingButton(route, icon, btnColor='blue accent-4', iconColor='white-text', trigger=False) %}
+    <div class="fixed-action-btn">
+        <a href="{{ route }}" class="btn-floating btn-large {{ btnColor }} {{ 'modal-trigger' if trigger }}">
+            <i class="large material-icons {{ iconColor }}">{{ icon }}</i>
+        </a>
+    </div>
+{% endmacro %}
+
+{% macro clickableCard(route, title, triggers_modal=False, color=None) %}
+    <a href="{{ route }}" {% if triggers_modal %}class="modal-trigger"{% endif %}>
+        <div class="card rounded {{ color if color else 'blue-grey darken-4' }}">
+            <div class="card-content white-text">
+                <span class="card-title center-align">{{ title }}</span>
+            </div>
+        </div>
+    </a>
+{% endmacro %}
+
+{% macro keypadform(route, form) %}
+    <form class="keypad grey lighten-2" action="{{ route }}" method="POST" autocomplete="off">
+        {{ form.hidden_tag() }}
+        <div class="keypad-row">
+            {{ form.pin(autocomplete="new-password", id='keypadVar') }}
+        </div>
+        <div class="keypad-row">
+            <input class="blue-grey darken-4" type="button" value="7" onclick="addNumber(this , 'keypadVar')">
+            <input class="blue-grey darken-4" type="button" value="8" onclick="addNumber(this , 'keypadVar')">
+            <input class="blue-grey darken-4" type="button" value="9" onclick="addNumber(this , 'keypadVar')">
+        </div>
+        <div class="keypad-row">
+            <input class="blue-grey darken-4" type="button" value="4" onclick="addNumber(this, 'keypadVar')">
+            <input class="blue-grey darken-4" type="button" value="5" onclick="addNumber(this, 'keypadVar')">
+            <input class="blue-grey darken-4" type="button" value="6" onclick="addNumber(this, 'keypadVar')">
+        </div>
+        <div class="keypad-row">
+            <input class="blue-grey darken-4" type="button" value="1" onclick="addNumber(this, 'keypadVar')">
+            <input class="blue-grey darken-4" type="button" value="2" onclick="addNumber(this, 'keypadVar')">
+            <input class="blue-grey darken-4" type="button" value="3" onclick="addNumber(this, 'keypadVar')">
+        </div>
+        <div class="keypad-row">
+            <button class="blue-grey darken-4" type="reset"><i class="material-icons">keyboard_backspace</i></button>
+            <input class="blue-grey darken-4" type="button" value="0" onclick="addNumber(this)">
+            <button class="blue-grey darken-4" type="submit"><i class="material-icons">keyboard_return</i></button>
+        </div>
+    </form>
+{% endmacro %}
+
+{% macro keyboadform(route, form) %}
+    <div class="keyboard">
+        <div class="keyboard-row one">
+            <span>Q</span>
+            <span>W</span>
+            <span>E</span>
+            <span>R</span>
+            <span>T</span>
+            <span>Y</span>
+            <span>U</span>
+            <span>I</span>
+            <span>O</span>
+            <span>P</span>
+        </div>
+        <div class="keyboard-row two">
+            <span>A</span>
+            <span>S</span>
+            <span>D</span>
+            <span>F</span>
+            <span>G</span>
+            <span>H</span>
+            <span>J</span>
+            <span>K</span>
+            <span>L</span>
+        </div>
+        <div class="keyboard-row three">
+            <span>Z</span>
+            <span>X</span>
+            <span>C</span>
+            <span>V</span>
+            <span>B</span>
+            <span>N</span>
+            <span>M</span>
+        </div>
+        <div class="keyboard-row four">
+            <span><i class="material-icons">keyboard_hide</i></span>
+            <span><i class="material-icons">alternate_email</i></span>
+            <span>123</span>
+            <span>Space</span>
+            <span><i class="material-icons">keyboard_backspace</i></span>
+            <span><i class="material-icons">keyboard_return</i></span>
+        </div>
+    </div>
+{% endmacro %}

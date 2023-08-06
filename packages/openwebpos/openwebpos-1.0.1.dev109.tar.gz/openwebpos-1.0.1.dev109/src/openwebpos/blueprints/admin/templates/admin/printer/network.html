@@ -1,0 +1,49 @@
+{% extends 'layouts/app.html' %}
+
+{% from 'macros/user_interface.html' import floatingButton, actionButton, activeButton %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="col s12 m10 offset-m1">
+            <div class="card rounded">
+                <div class="card-content">
+                    <span class="card-title center-align">{{ title }}</span>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Branch</th>
+                            <th>Name</th>
+                            <th>Host</th>
+                            <th>Port</th>
+                            <th>Timeout</th>
+                            <th>Active</th>
+                            <th>Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for printer in printers %}
+                            <tr>
+                                <td>{{ printer.branch.name }}</td>
+                                <td>{{ printer.name }}</td>
+                                <td>{{ printer.host }}</td>
+                                <td>{{ printer.port }}</td>
+                                <td>{{ printer.timeout }}</td>
+                                <td>{{ activeButton(url_for('admin.printer.network_toggle', p_id=printer.id), printer.active) }}</td>
+                                <td>
+                                    {{ actionButton(url_for('admin.printer.network_edit', p_id=printer.id), 'edit', 'blue') }}
+                                    {{ actionButton(url_for('admin.printer.network_delete', p_id=printer.id), 'delete', 'red') }}
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{ floatingButton(url_for('admin.printer.network_add'), 'add') }}
+
+
+{% endblock %}

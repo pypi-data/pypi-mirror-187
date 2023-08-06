@@ -1,0 +1,13 @@
+{% extends 'layouts/app.html' %}
+
+{% from 'macros/user_interface.html' import clickableCard %}
+
+{% block content %}
+
+    <section>
+        <div class="options-window">
+            {{ clickableCard(url_for('admin.payment_methods'), 'Payment Methods') }}
+        </div>
+    </section>
+
+{% endblock %}

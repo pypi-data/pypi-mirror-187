@@ -1,0 +1,214 @@
+{% extends 'layouts/app.html' %}
+
+{% from 'macros/user_interface.html' import clickableCard %}
+
+
+{% block content %}
+
+    <section class="options-window">
+        {% for active_order in active_orders %}
+            <div class="card active-orders-card">
+                {% if active_order.is_invoiced() %}
+                    <a href="{{ url_for('pos.invoice', invoice_id=active_order.invoice.id) }}">
+                {% else %}
+                    <a href="{{ url_for('pos.order', order_id=active_order.id) }}">
+                {% endif %}
+                <div class="card-content">
+                    <div class="white-text deep-purple">
+                        <p>
+                            <span>&nbsp; {{ active_order.order_number[7:9] }}:{{ active_order.order_number[9:11] }}</span>
+                            <span class="right">{{ active_order.order_number[-6:] }} &nbsp;</span>
+                        </p>
+                    </div>
+                    <table class="black-text">
+                        <thead>
+                        <tr>
+                            <th>QT</th>
+                            <th>Item</th>
+                            <th>SubTotal</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for item in active_order.order_items %}
+                            <tr>
+                                <td>{{ item.quantity }}</td>
+                                <td>{{ item.menu_item.menu_category.name }} - {{ item.menu_item.name }}</td>
+                                <td>{{ format_currency(item.total) }}</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                </a>
+                <div class="card-action">
+                    {% if active_order.has_items() %}
+                        <a href="#{{ active_order.order_number }}ViewModal"
+                           class="btn rounded blue accent-4 white-text modal-trigger">
+                            <i class="material-icons">launch</i>
+                        </a>
+                        <div id="{{ active_order.order_number }}ViewModal" class="modal rounded">
+                            <div class="modal-content">
+                                <div class="space-evenly">
+                                    <h4 class="center-align">{{ active_order.order_number }}
+                                        {% if active_order.is_invoiced() %}
+                                            {% if active_order.invoice.due <= 0 %}
+                                                <span>
+                                            <a href="{{ url_for('pos.print_receipt', order_id=active_order.invoice.id, receipt_type='customer') }}"
+                                               class="waves-effect waves-green btn-small rounded blue accent-4">
+                                                <i class="material-icons">print</i>
+                                            </a>
+                                        </span>
+                                            {% endif %}
+                                        {% endif %}
+                                    </h4>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12 m6">
+                                        <table class="black-text">
+                                            <thead>
+                                            <tr>
+                                                <th>QT</th>
+                                                <th>Item</th>
+                                                <th>SubTotal</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            {% for item in active_order.order_items %}
+                                                {% if item.menu_item.menu_category.menu_type.name != 'Drink' %}
+                                                    <tr>
+                                                        <td>{{ item.quantity }}</td>
+                                                        <td>{{ item.menu_item.menu_category.name }}
+                                                            - {{ item.menu_item.name }}</td>
+                                                        <td>{{ format_currency(item.total) }}</td>
+                                                    </tr>
+                                                {% endif %}
+                                            {% endfor %}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col s12 m6">
+                                        <table class="black-text">
+                                            <thead>
+                                            <tr>
+                                                <th>QT</th>
+                                                <th>Item</th>
+                                                <th>SubTotal</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            {% for item in active_order.order_items %}
+                                                {% if item.menu_item.menu_category.menu_type.name == 'Drink' %}
+                                                    <tr>
+                                                        <td>{{ item.quantity }}</td>
+                                                        <td>{{ item.menu_item.menu_category.name }}
+                                                            - {{ item.menu_item.name }}</td>
+                                                        <td>{{ format_currency(item.total) }}</td>
+                                                    </tr>
+                                                {% endif %}
+                                            {% endfor %}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                    {% if active_order.is_invoiced() %}
+                        {% if active_order.invoice.due > 0 %}
+                            <a class="btn rounded green accent-4 white-text modal-trigger"
+                               href="{{ url_for('pos.invoice', invoice_id=active_order.invoice.id) }}">
+                                <i class="material-icons">payments</i>
+                            </a>
+                        {% else %}
+                            <a class="btn rounded green accent-4 white-text modal-trigger"
+                               href="#{{ active_order.order_number }}CompleteModal">
+                                <i class="material-icons">done</i>
+                            </a>
+                            <div id="{{ active_order.order_number }}CompleteModal" class="modal rounded">
+                                <div class="modal-content center-align">
+                                    <h4>Complete Order?</h4>
+                                    <p class="flow-text">{{ active_order.order_number }}</p>
+                                    <a href="{{ url_for('pos.toggle_order', order_id=active_order.id) }}"
+                                       class="waves-effect waves-green btn-large rounded green">YES</a>
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% else %}
+                        {% if active_order.has_items() %}
+                            <a class="btn rounded red accent-4 white-text modal-trigger"
+                               href="#{{ active_order.order_number }}DeleteModal">
+                                <i class="material-icons">delete</i>
+                            </a>
+                            <div id="{{ active_order.order_number }}DeleteModal" class="modal rounded">
+                                <div class="modal-content center-align">
+                                    <h4>Delete Order?</h4>
+                                    <p class="flow-text">{{ active_order.order_number }}</p>
+                                    <a href="{{ url_for('pos.delete_order', order_id=active_order.id) }}"
+                                       class="waves-effect waves-green btn-large rounded red">YES</a>
+                                </div>
+                            </div>
+                        {% else %}
+                            <a class="btn rounded red accent-4 white-text modal-trigger"
+                               href="{{ url_for('pos.delete_order', order_id=active_order.id) }}">
+                                <i class="material-icons">delete</i>
+                            </a>
+                        {% endif %}
+                    {% endif %}
+                </div>
+                {% if active_order.has_pager() %}
+                    <div class="card-action space-evenly yellow black-text">
+                        <span>{{ active_order.order_pager.name }}</span>
+                    </div>
+                {% else %}
+                    <div class="card-action space-evenly yellow black-text">
+                        <span>{{ active_order.order_type.name }}</span>
+                    </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </section>
+
+
+    <div class="fixed-action-btn">
+        <a href="#orderTypesModal" class="btn-floating btn-large yellow accent-4 modal-trigger">
+            <i class="large material-icons black-text">add</i>
+        </a>
+    </div>
+
+    <div id="orderTypesModal" class="modal extended">
+        <div class="modal-content">
+            <div class="options-window">
+                {% for order_type in order_types|sort(attribute='name') %}
+
+                    {% if order_type.name == 'Dine In' %}
+                        {% if pagers %}
+                            {{ clickableCard('#pagerModal', order_type.name, True) }}
+                            <div id="pagerModal" class="modal w100 rounded">
+                                <div class="modal-content">
+                                    <div class="options-window">
+                                        {% for pager in pagers %}
+                                            <div class="card rounded">
+                                                <a href="{{ url_for('pos.create_order_with_pager', order_type_id=order_type.id, order_pager_id=pager.id) }}">
+                                                    <div class="card-content">
+                                                        <span class="card-title center-align black-text">{{ pager.name }}</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                        {% else %}
+                            {{ clickableCard(url_for('pos.create_order', order_type_id=order_type.id), order_type.name) }}
+                        {% endif %}
+                    {% else %}
+                        {{ clickableCard(url_for('pos.create_order', order_type_id=order_type.id), order_type.name) }}
+                    {% endif %}
+
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

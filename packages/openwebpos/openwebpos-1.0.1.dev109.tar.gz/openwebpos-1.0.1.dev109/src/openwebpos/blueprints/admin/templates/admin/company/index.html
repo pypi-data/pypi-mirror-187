@@ -1,0 +1,100 @@
+{% extends 'layouts/app.html' %}
+
+{% from 'macros/user_interface.html' import activeButton %}
+
+{% block content %}
+
+    <div class="row mb0">
+        <div class="col s12 m6">
+            <div class="card rounded">
+                <div class="card-content">
+                    <span class="card-title center-align">Company Info</span>
+                    <form action="" method="POST">
+                        {{ company_form.hidden_tag() }}
+                        <div class="row">
+                            <div class="input-field col s12 m6">
+                                {{ company_form.name.label }}
+                                {{ company_form.name(class='validate') }}
+                            </div>
+                            <div class="input-field file-field col s12 m6">
+                                <div class="btn">
+                                    <span>File</span>
+                                    {{ company_form.logo }}
+                                </div>
+                                <div class="file-path-wrapper">
+                                    <label>
+                                        <input type="text" class="file-path validate">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="center-align">
+                            {{ company_form.submit(class='btn yellow black-text') }}
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6">
+            <div class="card rounded">
+                <div class="card-content">
+                    <div class="center-align">
+                        <img src="{{ url_for('static', filename='img/' + company.logo) }}" alt="Company Logo"
+                             class="responsive-img" style="max-height: 169px;height: 100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12">
+            <div class="card rounded">
+                <div class="card-content">
+                    <span class="card-title center-align">Locations</span>
+                    {% if branches %}
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Address</th>
+                                <th>City</th>
+                                <th>State</th>
+                                <th>Zipcode</th>
+                                <th>Country</th>
+                                <th>Active</th>
+                                <th>Actions</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for branch in branches %}
+                                <tr>
+                                    <td>{{ branch.name }}</td>
+                                    <td>{{ branch.address }}</td>
+                                    <td>{{ branch.city }}</td>
+                                    <td>{{ branch.state }}</td>
+                                    <td>{{ branch.zip_code }}</td>
+                                    <td>{{ branch.country }}</td>
+                                    <td>
+                                        {{ activeButton(url_for('admin.company.toggle_branch', branch_id=branch.id), branch.active) }}
+                                    </td>
+                                    <td class="space-evenly">
+                                        <a href="{{ url_for('admin.company.edit_branch', branch_id=branch.id) }}"
+                                           class="btn-floating btn-small waves-effect waves-light blue">
+                                            <i class="material-icons">edit</i>
+                                        </a>
+                                        <a href="{{ url_for('admin.company.delete_branch', branch_id=branch.id) }}"
+                                           class="btn-floating btn-small waves-effect waves-light red">
+                                            <i class="material-icons">delete</i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    {% else %}
+                        <p class="center-align">No Address</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

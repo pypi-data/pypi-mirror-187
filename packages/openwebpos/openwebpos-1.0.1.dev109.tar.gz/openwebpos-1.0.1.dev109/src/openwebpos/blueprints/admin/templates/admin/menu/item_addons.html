@@ -1,0 +1,46 @@
+{% extends 'layouts/app.html' %}
+
+{% from 'macros/user_interface.html' import floatingButton, actionButton %}
+
+{% block content %}
+
+
+    <div class="row">
+        <div class="col s12 m4 offset-m4">
+            <div class="card rounded">
+                <div class="card-content">
+                    <span class="card-title center-align">Add-ons for</span>
+                    {% if mi_addons %}
+                        <table class="centered">
+                            <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Actions</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for mi_addon in mi_addons %}
+                                <tr>
+                                    <td>{{ mi_addon.ingredient.name }}</td>
+                                    <td>{{ format_currency(mi_addon.price) }}</td>
+                                    <td>
+                                        {{ actionButton(url_for('admin.menu.item_addons_edit', mia_id=mi_addon.id), 'edit', 'blue') }}
+                                        {{ actionButton(url_for('admin.menu.item_addons_delete', mia_id=mi_addon.id), 'delete', 'red') }}
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    {% else %}
+                        <p class="center-align">No Addons fo this Item</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{ floatingButton(url_for('admin.menu.item_addons_add', mi_id=mi.id), 'add') }}
+
+
+{% endblock %}
