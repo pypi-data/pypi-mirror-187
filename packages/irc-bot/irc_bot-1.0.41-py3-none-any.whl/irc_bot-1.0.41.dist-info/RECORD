@@ -1,0 +1,12 @@
+LICENSE,sha256=E7fGz4R-jE_g1Bcp_spsi5pnl7_4qpum49BFqKPNXDg,1089
+irc_bot/__init__.py,sha256=Wwy7Coe98rlQIA5UrRykDXquXWu8i1gPvDvEKqKrv5Y,166
+irc_bot/command_scheduler.py,sha256=gmLn7c2OtLbQZCdhCTBn2AZSf7Spu0K9ZGcHDCpYnt4,2043
+irc_bot/irc_message.py,sha256=kf9usIBGkg16DN367-Ak5Av1fWWPm_PGlOw7e-SBCtw,1666
+irc_bot/numeric_replies.py,sha256=i94p9eWA14fPWx-3NGS8UQGObp8IbrjsI-db0XWCfks,10124
+irc_bot/rfc2812.txt,sha256=kzdgMFdxbC50gJ6MV7VX7gvb_KYMxchS4kDfDlulNHk,122637
+irc_bot/simple_irc_bot.py,sha256=A1ShUecNOtO84jXUf6o0Ib7oMsVcJsQP_-gFcLJzP7c,19331
+irc_bot/utils.py,sha256=JTCPS6_iaGYtUh90dy1FjwIqvZl_gPbKvAukw3zuLvY,1548
+irc_bot-1.0.41.dist-info/METADATA,sha256=W5QesnKCQQyOuqWXbKIRz-YSClyKAJBlZZxwvUWuYZg,1155
+irc_bot-1.0.41.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+irc_bot-1.0.41.dist-info/LICENSE,sha256=E7fGz4R-jE_g1Bcp_spsi5pnl7_4qpum49BFqKPNXDg,1089
+irc_bot-1.0.41.dist-info/RECORD,,
