@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+simplePacking/example.py
+simplePacking.egg-info/PKG-INFO
+simplePacking.egg-info/SOURCES.txt
+simplePacking.egg-info/dependency_links.txt
+simplePacking.egg-info/top_level.txt

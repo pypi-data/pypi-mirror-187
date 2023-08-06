@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: simplePacking
+Version: 1.0.0
+Summary: Simple Python packing example
+Author: Noy Sartori
+License: MIT
+Requires-Python: >=3.6
