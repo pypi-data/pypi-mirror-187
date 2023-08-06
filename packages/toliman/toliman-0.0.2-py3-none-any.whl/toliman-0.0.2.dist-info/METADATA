@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: toliman
+Version: 0.0.2
+Summary: A differential model of TOLIMAN telescope.
+Author: Jordan Dennis
+Author-email: jdenn105@gmail.com
+Requires-Python: >=3.10,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: astroquery (>=0.4.6,<0.5.0)
+Requires-Dist: dLux (>=0.9)
+Requires-Dist: jax (>=0.4.1)
+Requires-Dist: opt-einsum (>=3.3.0,<4.0.0)
+Requires-Dist: pysynphot (>=2.0.0)
+Description-Content-Type: text/markdown
+
+TOLIMAN
+=======
+The goal of the TOLIMAN mission is to answer the question: is there a planet
+around Alpha Centauri? The critical advance represented by the TOLIMAN 
+telescope is its ability to assess a specific star. Until now telescopes have
+been designed to survey many stars and confirm (with biases) which ones may 
+have exoplanets. None have chosen a star and tried to resolutely and without 
+question find all and any exoplanets in orbit. 
+
