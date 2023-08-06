@@ -1,0 +1,8 @@
+pandas
+shapely
+numpy
+seaborn
+matplotlib
+scipy
+chardet
+keplergl
