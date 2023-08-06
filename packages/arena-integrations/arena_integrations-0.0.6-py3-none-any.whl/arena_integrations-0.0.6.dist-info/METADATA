@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: arena-integrations
+Version: 0.0.6
+Summary: 
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: boto3 (>=1.26,<2.0)
+Requires-Dist: pyspark (>=3.3,<4.0)
