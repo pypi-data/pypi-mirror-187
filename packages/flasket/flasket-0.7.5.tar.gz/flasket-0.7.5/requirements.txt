@@ -1,0 +1,12 @@
+attr
+connexion
+dash
+dash_bootstrap_components
+flask
+flask_gordon>=0.5.0
+gunicorn
+html5lib
+limits
+openapi-schema-validator
+swagger-ui-bundle
+torxtools
