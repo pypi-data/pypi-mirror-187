@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Topsis_Mannat_102003288.egg-info/PKG-INFO
+Topsis_Mannat_102003288.egg-info/SOURCES.txt
+Topsis_Mannat_102003288.egg-info/dependency_links.txt
+Topsis_Mannat_102003288.egg-info/entry_points.txt
+Topsis_Mannat_102003288.egg-info/requires.txt
+Topsis_Mannat_102003288.egg-info/top_level.txt
+topsis/__init__.py
+topsis/__main__.py
