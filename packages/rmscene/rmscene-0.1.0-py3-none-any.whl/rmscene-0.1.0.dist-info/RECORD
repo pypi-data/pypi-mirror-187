@@ -1,0 +1,12 @@
+rmscene/__init__.py,sha256=_MwruMcULhGgLPT8O7sTivdGyhZlu2Lf3oaUZfoq9JA,180
+rmscene/__main__.py,sha256=KD__skejvel0yBacmYTK9X5ceJQqkcwXS3i3cDOeD9U,1888
+rmscene/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rmscene/scene_stream.py,sha256=rt2NybU2MmIze4xB2KXHyG9BDe3xTVOB-ToKAYwrBo0,23456
+rmscene/tagged_block_common.py,sha256=cCcdh5VZwFPzVtx4wKGyzNJYg66OAv_kXQwnYnK1f6Q,6961
+rmscene/tagged_block_reader.py,sha256=oxZzGMihjtHyP3958Ni0ZCj_fg0tvhj2XM0Iv-_UskU,7565
+rmscene/tagged_block_writer.py,sha256=O0gUZ69QIqa85_2glcQeuGcgsTTVrghvwJIFyJKYBfs,5826
+rmscene/text.py,sha256=6UF3I4yhMj6vBBCJwCN-h5GECXgLYwv4GVW5oTcn_Gw,7377
+rmscene-0.1.0.dist-info/LICENSE,sha256=yVOxtlyXfIGOk-rR2p1IopzGN3xej10Lgo7074hY_BU,1068
+rmscene-0.1.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+rmscene-0.1.0.dist-info/METADATA,sha256=Q2tjdB4cru3iYj6BEbh6q5606ccO2BFbiQRCdz5hE9Q,352
+rmscene-0.1.0.dist-info/RECORD,,
