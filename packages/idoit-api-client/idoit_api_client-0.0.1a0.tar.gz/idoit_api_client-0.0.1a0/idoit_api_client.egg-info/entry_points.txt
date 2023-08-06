@@ -1,0 +1,2 @@
+[console_scripts]
+idoit_api = idoit_api.cli:main
