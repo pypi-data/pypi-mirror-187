@@ -1,0 +1,11 @@
+License.txt
+MANIFEST.in
+README.md
+pyproject.toml
+testjjasinski.egg-info/PKG-INFO
+testjjasinski.egg-info/SOURCES.txt
+testjjasinski.egg-info/dependency_links.txt
+testjjasinski.egg-info/requires.txt
+testjjasinski.egg-info/top_level.txt
+testjjasisnki/__init__.py
+testjjasisnki/m_mod_jjasinski.py
