@@ -1,0 +1,11 @@
+airflow/providers/couchbase/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow/providers/couchbase/get_provider_info.py,sha256=7GW9ORbq2mUiz3uSQPWEENesVZyLi5buXIaf5leiVN8,2096
+airflow/providers/couchbase/hooks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow/providers/couchbase/hooks/couchbase.py,sha256=iVV_8XZ8hNT20JAhnkm7fSK9FPbZ1pxJlzsMN-macYA,4214
+airflow/providers/couchbase/operators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow/providers/couchbase/operators/couchbase.py,sha256=KsQ6B5P-UrGzc8vzO7ODwwoyIHMBKW8Br-XcgDqS-7I,2082
+airflow_provider_couchbase-1.0.0.dist-info/LICENSE,sha256=gXPVwptPlW1TJ4HSuG5OMPg-a3h43OGMkZRR1rpwfJA,10850
+airflow_provider_couchbase-1.0.0.dist-info/METADATA,sha256=HMr5-vCkEFQOE9RY_P05XEv84Dsg5RH3gpNeCPu200c,1083
+airflow_provider_couchbase-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+airflow_provider_couchbase-1.0.0.dist-info/top_level.txt,sha256=OeMVH5md7fr2QQWpnZoOWWxWO-0WH1IP70lpTVwopPg,8
+airflow_provider_couchbase-1.0.0.dist-info/RECORD,,
