@@ -1,0 +1,3 @@
+[console_scripts]
+topsis_vibhav = topsis_vibhav.__main__:main
+
