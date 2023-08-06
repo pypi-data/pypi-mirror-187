@@ -1,0 +1,9 @@
+datamizer/__init__.py,sha256=suWKBnQ3dcbbA2vG5-cUc7zKYxnSVt72diI48iDKvKk,32
+datamizer/datamizer.py,sha256=VPvl9gvCEv0DItzIwMyAlv06FZaSDyEPKxzYwpIY1dU,1034
+datamizer/helpers.py,sha256=_mb8F4TYtkfdDuxc3jCtzsewJd-Sj1ibT1wLJLCNV9k,4267
+datamizer/tests/test_csv_datamize.py,sha256=kVSWXVZHZkMJUn5aLggnI2g5kS50ib4F3E0Ji5u2jnE,1331
+datamizer-0.0.1.dist-info/LICENSE,sha256=sd38JgdXL2pD7FbeCPuFLHY5IQEyJYxYzlS40Bh4Pgg,1071
+datamizer-0.0.1.dist-info/METADATA,sha256=Bn_b0pzSKsUcDPDP39hkLKNdRBoyWyD9ohEc-dBN4K8,2036
+datamizer-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+datamizer-0.0.1.dist-info/top_level.txt,sha256=SwLuaxK4vfGO0oIBqW9f9zkIfEWhOpE_0Ao3raL3iPc,10
+datamizer-0.0.1.dist-info/RECORD,,
