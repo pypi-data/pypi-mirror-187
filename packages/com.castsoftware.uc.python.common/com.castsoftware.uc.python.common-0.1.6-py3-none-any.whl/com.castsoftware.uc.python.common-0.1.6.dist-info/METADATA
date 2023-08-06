@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: com.castsoftware.uc.python.common
+Version: 0.1.6
+Summary: A set of common classes and methods for use with python projects
+Author: Nevin Kaplan
+License-File: LICENSE
+
