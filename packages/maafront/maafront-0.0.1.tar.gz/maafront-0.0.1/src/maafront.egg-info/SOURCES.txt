@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/maacore/__init__.py
+src/maacore/example.py
+src/maafront.egg-info/PKG-INFO
+src/maafront.egg-info/SOURCES.txt
+src/maafront.egg-info/dependency_links.txt
+src/maafront.egg-info/top_level.txt
