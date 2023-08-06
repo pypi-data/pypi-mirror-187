@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/person_swap/__init__.py
+src/person_swap.egg-info/PKG-INFO
+src/person_swap.egg-info/SOURCES.txt
+src/person_swap.egg-info/dependency_links.txt
+src/person_swap.egg-info/top_level.txt
