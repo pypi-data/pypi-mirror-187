@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+TOPSIS_Ritik_102053036.egg-info/PKG-INFO
+TOPSIS_Ritik_102053036.egg-info/SOURCES.txt
+TOPSIS_Ritik_102053036.egg-info/dependency_links.txt
+TOPSIS_Ritik_102053036.egg-info/requires.txt
+TOPSIS_Ritik_102053036.egg-info/top_level.txt
+topsis/__init__.py
+topsis/__main__.py
