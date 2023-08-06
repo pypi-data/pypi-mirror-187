@@ -1,0 +1,16 @@
+setup.py
+pythontk/.gitattributes
+pythontk/.gitignore
+pythontk/LICENSE
+pythontk/__init__.py
+pythontk/core.py
+pythontk/filetk.py
+pythontk/imgtk.py
+pythontk/itertk.py
+pythontk/jsontk.py
+pythontk/mathtk.py
+pythontk/strtk.py
+pythontk.egg-info/PKG-INFO
+pythontk.egg-info/SOURCES.txt
+pythontk.egg-info/dependency_links.txt
+pythontk.egg-info/top_level.txt
