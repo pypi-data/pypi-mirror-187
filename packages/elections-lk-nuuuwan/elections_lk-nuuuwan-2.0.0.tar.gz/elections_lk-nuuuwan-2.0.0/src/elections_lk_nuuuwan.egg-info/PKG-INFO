@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: elections-lk-nuuuwan
+Version: 2.0.0
+Home-page: https://github.com/nuuuwan/elections_lk
+Author: Nuwan I. Senaratna
+Author-email: nuuuwan@gmail.com
+Project-URL: Bug Tracker, https://github.com/nuuuwan/elections_lk/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# elections_lk
+
+Various data about Sri Lankan elections sourced from the [Election Commision of  Sri Lanka](elections.gov.lk) and the [Department of Census and Statistics of Sri Lanka](statistics.gov.lk).
+
+## Setup and Install
+
+```
+pip install elections_lk-nuuuwan
+```
+
+See also [https://pypi.org/project/elections-lk-nuuuwan/](https://pypi.org/project/elections-lk-nuuuwan/).
+
+## Release History
+
+### 2.0.0 (CURRENT RELEASE)
+
+* Made some significant changes. Will break most code written in 1.x.x. 
+
