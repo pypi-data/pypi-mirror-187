@@ -1,0 +1,56 @@
+# topsis-102197016
+
+_for: **Project-1 (UCS654)**_
+_submitted by: **Mukul Sharda**_
+_Roll no: **102197016**_
+_Group: **3CS-4**_
+
+
+topsis-102197016 is a Python library which implements the TOPSIS algorithm used for Multiple Criteria Decision Making(MCDM). [Know more about Topsis](https://en.wikipedia.org/wiki/TOPSIS)
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install topsis-102197016.
+
+```bash
+pip install topsis-102197016
+```
+
+## Usage
+
+Enter filename followed by _.csv_ or _.xlsx_  extentsion, then enter the _weights_ vector with vector values separated by commas, followed by the _impacts_ vector with comma separated signs _(+,-)_, make sure to pass the file where you want to store your results.
+
+```bash
+topsis sample.csv "1,1,1,1" "+,-,+,+" output.csv
+```
+
+## Example
+
+#### sample.csv
+
+A csv file showing data for different mobile handsets having varying features.
+
+| Model  | Storage space(in gb) | Camera(in MP)| Price(in $)  | Looks(out of 5) |
+| :----: |:--------------------:|:------------:|:------------:|:---------------:|
+| M1 | 16 | 12 | 250 | 5 |
+| M2 | 16 | 8  | 200 | 3 |
+| M3 | 32 | 16 | 300 | 4 |
+| M4 | 32 | 8  | 275 | 4 |
+| M5 | 16 | 16 | 225 | 2 |
+
+weights vector = [ 0.25 , 0.25 , 0.25 , 0.25 ]
+
+impacts vector = [ + , + , - , + ]
+
+### input:
+
+```python
+topsis sample.csv "0.25,0.25,0.25,0.25" "+,+,-,+" output.csv
+```
+
+## Other notes
+
+* Make sure the csv does not contain categorical values.
+* Make sure your dataset has atleast 3 rows and 3 columns.
+* The length of weights vector and impact vector must equal the number of columns in dataset.
+* While writing weights vector or impact vectors, please make sure not to put extra spaces.
