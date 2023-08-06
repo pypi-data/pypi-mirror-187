@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: Topsis_Vishavjeet_102003140
+Version: 0.1
+Summary: This package is implimentation of multi-criteria decision analysis using topsis
+Home-page: https://github.com/vishavjeet02/Topsis-Vishavjeet-102003140
+Download-URL: https://github.com/vishavjeet02/Topsis-Vishavjeet-102003140/archive/refs/tags/v_01.tar.gz
+Author: Vishavjeet Singh
+Author-email: 22vishav@gmail.com
+License: MIT
+Keywords: topsis
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE.txt
+
+UNKNOWN
+
