@@ -1,0 +1,2 @@
+[console_scripts]
+dokos = dokos.dokos:main
