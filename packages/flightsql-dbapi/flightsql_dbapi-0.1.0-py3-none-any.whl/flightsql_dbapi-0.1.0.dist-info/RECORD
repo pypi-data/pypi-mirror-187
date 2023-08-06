@@ -1,0 +1,12 @@
+flightsql/__init__.py,sha256=fkT_lf4_ts6IRsnR_sEeHiiHMJJDJP1Dk99iMw5rYCw,714
+flightsql/client.py,sha256=WRvmZwSNqCLOEdeZfptWPqwFS5_TCfJTUflY7RIyin0,13690
+flightsql/dbapi.py,sha256=QAiQqfX2Px2vdixuKTrFSlayw3vzvsms2RU8tViFk7I,10966
+flightsql/exceptions.py,sha256=jbDNnerY6h_4cVJhoNuAWQPCLtSO80APdtTc0iBVzHk,438
+flightsql/flightsql_pb2.py,sha256=QJiLN18VttE32IpPxamuUHkyrNCUSFhm1c5jTetOCY4,27253
+flightsql/sqlalchemy.py,sha256=ekq7-DTZHLCqZaQUxGkqVVIbXb9wfpmxlwKn0V6jtNQ,6373
+flightsql/util.py,sha256=kftjz4a414YpSqiHIJ1cUd8XSJA8Z1h0hjO2KuTEySM,243
+flightsql_dbapi-0.1.0.dist-info/METADATA,sha256=YxHtQgPj_NAaVZmFF-irYJpnBQAZTPiO9QJ5-LM35hg,5362
+flightsql_dbapi-0.1.0.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+flightsql_dbapi-0.1.0.dist-info/entry_points.txt,sha256=w0DXSyPPBFh0xdyv1L8sQ1ZsLhRv6HWVeLaDi3CliFs,74
+flightsql_dbapi-0.1.0.dist-info/licenses/LICENSE,sha256=pg7qgXUUUxZo1-AHZXMUSf4U0FnTJJ4LyTs23kX3WfI,10847
+flightsql_dbapi-0.1.0.dist-info/RECORD,,
