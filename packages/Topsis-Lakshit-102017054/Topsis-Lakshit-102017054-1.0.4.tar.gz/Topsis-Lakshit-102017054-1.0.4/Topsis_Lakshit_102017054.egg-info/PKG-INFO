@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: Topsis-Lakshit-102017054
+Version: 1.0.4
+Summary: topsis implementation
+Home-page: 
+Author: Lakshit Patidar
+Author-email: lpatidar_be20@thapar.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Topsis Module
+Implementation of MCDM using topsis in python
+
+## Installation
+```pip install Topsis-Lakshit-102017054```
+
+## How to use it?
+Open terminal and type topsis followed by dataset weights impacts and resulting dataset name
+
+## License
+
+Ⓒ 2023 Lakshit Patidar
+
+This repository is licensed under the MIT license.
+See LICENSE for details
