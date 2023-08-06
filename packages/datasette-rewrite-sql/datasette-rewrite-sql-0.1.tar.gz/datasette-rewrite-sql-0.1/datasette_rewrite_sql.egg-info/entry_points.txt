@@ -1,0 +1,2 @@
+[datasette]
+rewrite_sql = datasette_rewrite_sql

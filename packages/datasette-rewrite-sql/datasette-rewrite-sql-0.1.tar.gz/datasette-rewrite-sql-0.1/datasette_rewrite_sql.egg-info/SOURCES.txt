@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+datasette_rewrite_sql/__init__.py
+datasette_rewrite_sql/hookspecs.py
+datasette_rewrite_sql.egg-info/PKG-INFO
+datasette_rewrite_sql.egg-info/SOURCES.txt
+datasette_rewrite_sql.egg-info/dependency_links.txt
+datasette_rewrite_sql.egg-info/entry_points.txt
+datasette_rewrite_sql.egg-info/requires.txt
+datasette_rewrite_sql.egg-info/top_level.txt

@@ -1,0 +1,1 @@
+datasette_rewrite_sql
