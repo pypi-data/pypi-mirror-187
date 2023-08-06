@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: oekofen-api
+Version: 0.0.1
+Summary: A python library to retrieve statistics from your Oekofen Pelletronic
+Home-page: https://github.com/ckarrie/oekofen-api
+Download-URL: https://github.com/ckarrie/oekofen-api/archive/refs/tags/v0.0.1.tar.gz
+Author: Christian Karrié
+Author-email: ckarrie@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Oekofen API
+
+## Usage
+
+```python
+import oekofen_api
+import asyncio
+
+client = oekofen_api.Oekofen("192.168.178.222", "eMlG")
+asyncio.run(client.update_data())
+asyncio.run(client.get_status())
+asyncio.run(client.get_weather_temp())
+
+quit()
+
+```
