@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: Topsis-Garima-102017070
+Version: 1.0.2
+Summary: topsis package for MCDM problems
+Home-page: https://github.com/garimachandna/Topsis-Garima-102017070
+Author: Garima Chandna
+Author-email: gchandna_be20@thapar.edu
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Topsis-python
+Topsis analysis of a csv file  <br />
+"Assignment-1 Submission"  <br />
+Name - Garima Chandna  <br />
+Roll no. - 102017070  <br />
+
+Topsis-Garima-102017070 is a Python library for dealing with Multiple Criteria Decision Making(MCDM) problems by using Technique for Order of Preference by Similarity to Ideal Solution(TOPSIS)
+
+
+## Installation
+Use the package manager pip to install Topsis-Garima-102017070.
+
+```pip install Topsis-Garima-102017070```
+
+## Usage
+Enter csv filename followed by .csv extension, then enter the weights vector with vector values separated by commas, followed by the impacts vector with comma separated signs (+,-) and the csv file where result is to be stored.
+
+```Topsis sample.csv 1,1,1,1 +,-,+,+ result.csv```
+
+## License
+
+Â© 2023 Garima Chandna
+
+This repository is licensed under the MIT license. See LICENSE for details.

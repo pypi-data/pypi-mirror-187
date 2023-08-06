@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Topsis/__init__.py
+Topsis/__main__.py
+Topsis_Garima_102017070.egg-info/PKG-INFO
+Topsis_Garima_102017070.egg-info/SOURCES.txt
+Topsis_Garima_102017070.egg-info/dependency_links.txt
+Topsis_Garima_102017070.egg-info/entry_points.txt
+Topsis_Garima_102017070.egg-info/top_level.txt
