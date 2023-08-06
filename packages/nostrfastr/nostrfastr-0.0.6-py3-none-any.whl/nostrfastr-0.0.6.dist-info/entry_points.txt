@@ -1,0 +1,2 @@
+[nbdev]
+nostrfastr = nostrfastr._modidx:d
