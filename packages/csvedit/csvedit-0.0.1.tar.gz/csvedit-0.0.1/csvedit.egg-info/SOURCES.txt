@@ -1,0 +1,8 @@
+setup.py
+csvedit.egg-info/PKG-INFO
+csvedit.egg-info/SOURCES.txt
+csvedit.egg-info/dependency_links.txt
+csvedit.egg-info/requires.txt
+csvedit.egg-info/top_level.txt
+libname/__init__.py
+libname/csvedit.py

@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: csvedit
+Version: 0.0.1
+Summary: Idit your csv files
+Home-page: UNKNOWN
+Author: Boudaoudkamal (Florian Dedov)
+Author-email: <boudaoudkamel75@gmail.com>
+License: UNKNOWN
+Description: A package that allows to edit csv file you can creat and write in it and remove it.
+Keywords: write,files,csv,panas,camera stream,creat
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
