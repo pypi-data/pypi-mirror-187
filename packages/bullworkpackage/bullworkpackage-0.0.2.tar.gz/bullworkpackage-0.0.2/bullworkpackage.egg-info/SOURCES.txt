@@ -1,0 +1,7 @@
+README.md
+setup.py
+bullworkpackage.egg-info/PKG-INFO
+bullworkpackage.egg-info/SOURCES.txt
+bullworkpackage.egg-info/dependency_links.txt
+bullworkpackage.egg-info/top_level.txt
+package/__init__.py
