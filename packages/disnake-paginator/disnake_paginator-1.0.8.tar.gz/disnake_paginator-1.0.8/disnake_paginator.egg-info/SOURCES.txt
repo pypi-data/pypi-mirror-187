@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+disnake_paginator/__init__.py
+disnake_paginator/disnake_paginator.py
+disnake_paginator/paginators.py
+disnake_paginator/wrappers.py
+disnake_paginator.egg-info/PKG-INFO
+disnake_paginator.egg-info/SOURCES.txt
+disnake_paginator.egg-info/dependency_links.txt
+disnake_paginator.egg-info/requires.txt
+disnake_paginator.egg-info/top_level.txt
