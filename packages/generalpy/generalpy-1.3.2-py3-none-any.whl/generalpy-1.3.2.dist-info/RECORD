@@ -1,0 +1,10 @@
+generalpy/__init__.py,sha256=JprxoYlcNaum_QEZfwyNSh61z3HKB2zF_PldfaLtdPI,704
+generalpy/custom_logging.py,sha256=aq9-a4fnWAnFt8je-A7Ant8I1jhafEmDgK87gBEI4RQ,7595
+generalpy/decorator.py,sha256=6bPTHKfrx0Mup1_dh4cTLuCD_BVy1i6pgOWWgZ4mSEw,2481
+generalpy/exceptions.py,sha256=12dK82kQYpdEYPgGLXuS0NtDliVtShjQhHbsXRvV7zA,344
+generalpy/files.py,sha256=B0KayHP1r8y9RUi5p4NF3XAvexGYsbW4JXhbdz3M8Bs,5043
+generalpy/settings.py,sha256=NyGg3DOuk-gzguhx2Hpggb_Cgl_Do9SIdyodAKzqPho,5092
+generalpy-1.3.2.dist-info/METADATA,sha256=ZxlsMPj1ygOLvinLNeClIHbMr4z34sKnJNOG1CxGc4k,2771
+generalpy-1.3.2.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+generalpy-1.3.2.dist-info/licenses/LICENSE,sha256=nhjpZf3Td2ZG2eK0gdNtKcB9N1oFAMIPibZHcgjtuHg,1099
+generalpy-1.3.2.dist-info/RECORD,,

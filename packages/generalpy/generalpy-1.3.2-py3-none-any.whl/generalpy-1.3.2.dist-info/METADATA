@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: generalpy
+Version: 1.3.2
+Summary: Python package for general classes and methods
+Project-URL: Homepage, https://github.com/sayyid5416/generalpy
+Project-URL: Bug Tracker, https://github.com/sayyid5416/generalpy/issues
+Author: sayyid5416
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: pytz
+Description-Content-Type: text/markdown
+
+<p align="center">
+  <a href="https://github.com/sayyid5416/generalpy/actions/workflows/publish.yml"><img src="https://github.com/sayyid5416/generalpy/actions/workflows/publish.yml/badge.svg"></a>
+  <a href="https://pypi.org/project/generalpy"><img alt="PyPI" src="https://img.shields.io/pypi/v/generalpy?label=PyPI%20Package%20Version&logo=pypi&logoColor=white&style=plastic"></a>
+</p>
+
+# 🔰 generalpy
+- Python package for general classes and methods
+- Install using `pip install generalpy`
+
+
+### 💠 `Settings` class
+  - Class to handle all settings related aspect for an app.
+  - Based on settings file stored in storage.
+     
+
+### 💠 `LevelFormatter` class
+  - Custom `logging.Formatter` class.
+  - To set formatting based on logging Levels. Like `logging.INFO`, `logging.ERROR` etc.
+  - You can also set different time zone for `%(asctime)s`
+     
+
+### 💠 `CustomLogging` class
+  - Class to handle logging in easy way.
+  - All logging class features + more.
+  - Compact & Full formatting are applied wherever applicable.
+  - Stream logging to Terminal.
+  - File logging: For all logs, and error logs in different files.
+  - You can also set different time zone for `%(asctime)s`.
+
+
+### 💠 `IgnoreError(Exception)` class
+  - This exception should be ignored after catching it for the sake of continuity.
+  - You can ignore it in `try: ... except IgnoreError: pass` block, or
+  - By logging/printing to console
+
+
+### 💠 `decorator` module
+  This module contains decorators
+  - `combine_single_items`: Combine item of sublists _(which contain only one item)_ into a single sublist.
+  - `conditional`: Runs the decorated function and return it's value, only if provided condition is True.
+  - `run_threaded`: Runs the decorated function in a new thread.
+
+
+### 💠 `files` module
+  This module contains methods to work with files
+  - `delete_files_by_prefix_suffix`: Deletes all files in directory and its subdirectories according to prefix/suffix in their name.
+  - `get_new_path`: Returns new filePath for files _(which do not exist)_ by appending (1/2/3/..).
+  - `get_random_file_path`: Returns a random path of a file _(which do not exist)_ in parentDirectory.
+  - `read_file_chunks`: Read file and returns possible data chunk by chunk.
