@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: sqlmix
+Version: 0.12.5
+Summary: Simple syntax for any database
+Home-page: https://github.com/smurfix/sqlmix
+Author: Matthias Urlichs
+Author-email: smurf@smurf.noris.de
+License: GPLv3
+Platform: POSIX
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Database :: Front-Ends
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+License-File: COPYING
+
+
+This module contains database access methods which are very easy
+to use and work with any Python database module without touching
+parameterized SQL syntax.
+
