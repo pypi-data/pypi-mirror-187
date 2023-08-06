@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: candlestick_patterns
+Version: 0.0.1
+Summary: A better version of candlestick_patterns
+Project-URL: Homepage, https://github.com/dheereshagrwal/candlestick_patterns
+Project-URL: Bug Tracker, https://github.com/dheereshagrwal/candlestick_patterns/issues
+Author-email: Dheeresh Agarwal <da11@iitbbs.ac.in>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+This is a better version of candlestick pattern
