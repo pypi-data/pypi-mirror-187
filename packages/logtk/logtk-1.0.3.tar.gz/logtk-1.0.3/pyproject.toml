@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "logtk"
+version = "1.0.3"
+description = "logging toolkit"
+authors = ["wayfaring-stranger <zw6p226m@duck.com>"]
+packages = [
+    { include = "logtk" }
+]
+
+
+license = "mit"
+readme = "README.md"
+[tool.poetry.dependencies]
+python = "^3.9"
+loguru = "0.6.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
