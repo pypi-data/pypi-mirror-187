@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: forged-client
+Version: 0.0.1
+Summary: Forged.dev Client library
+Author-email: Ryan Summers <ryan.summers@vertigo-designs.com>, Noah Hüsser <noah@huesser.dev>
+Project-URL: Homepage, https://forged.dev
+Keywords: api,client,database,embedded
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Manufacturing
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: System :: Hardware
+Description-Content-Type: text/markdown
+
+# Forged Python Client
+
+This package is a client to interface with the forged.dev manufacturing/provisioning service.
+
+When used in the automated Forged provisioner UI, uploading data blocks can be accomplished as
+simply as:
+```py
+from forged import Forged
+
+async def main():
+    await Forged.upload_value("my_block", 10.0)
+```
