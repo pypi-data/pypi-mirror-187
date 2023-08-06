@@ -1,0 +1,11 @@
+CalSciPy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+CalSciPy/_parsing.py,sha256=gmzDTUsPDEnsDajGSz1X37x_ztFjva9Uu3x553f7cI0,5080
+CalSciPy/_style.py,sha256=b30ogH3Eg0iJefzoLOr9k1XPkPEYP4G8OasrKARnkxY,266
+CalSciPy/_validation.py,sha256=42BbVYeEzb2ZznSibi4yZMiBD_z78Cq9X_en2YnQAfI,4400
+CalSciPy/io.py,sha256=xPxCARVi7y8XTe97EmmRvkhbT7BWAkyZu6WlsqmHHGE,23629
+CalSciPy-0.0.4.dist-info/LICENSE,sha256=LsooDY8WX_UNzOV9uYvGPH6NkUlZfLfiX7GUKZLGiDA,1094
+CalSciPy-0.0.4.dist-info/LICENSE_PYTHON.txt,sha256=iK8q0UQHRG0AtHzQqDxnB8n1Y89k-UpXh45VEDHrSKk,12781
+CalSciPy-0.0.4.dist-info/METADATA,sha256=Vi-VDEQ9b5DakqjLh4l2V8HbnfqaSS4gO0xU9UXF334,1954
+CalSciPy-0.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+CalSciPy-0.0.4.dist-info/top_level.txt,sha256=7QrgN5NdNzqarMS3nKrzYHiiG8WIwwtGExzFGDuGtiQ,9
+CalSciPy-0.0.4.dist-info/RECORD,,
