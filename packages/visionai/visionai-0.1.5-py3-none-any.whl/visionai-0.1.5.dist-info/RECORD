@@ -1,0 +1,17 @@
+visionai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+visionai/__main__.py,sha256=PguXkhdy3Ct16qB-_gGYY9tZkLHa8_sr6F8eCzU8m1Y,28
+visionai/auth.py,sha256=u1jlM2xknhndqwuZHL_yemZxqfr5A-oHEaImvO5kqHc,917
+visionai/camera.py,sha256=fqA22HaRUzuqePw8Neie5doPhaPJLyUgJDo0duaBbEc,1049
+visionai/device.py,sha256=IH302xm0zFhxmg-KpUK7Oc311nSgmJj59AWHuUEcuQQ,1059
+visionai/docker-compose.yml,sha256=7Q6QE2JICRMRMRg99dF-JXLZ7PqARmiu15K7Jyv_Z4s,734
+visionai/edgectl-backup.py,sha256=z4AwnezeEb8ELoI1NqZkJj8RH98hrEkBF0YnVTkpF-k,5128
+visionai/main.py,sha256=gS1r5bH7aXPUpLcztiw4jFfJmQQ1yhej3RTOOZdp94k,1134
+visionai/notes.py,sha256=ByLzOEVyILodQUdGk079QGtN1FAuDnuv51L1hSDAERE,1112
+visionai/scenario.py,sha256=9bfrTWNLt3aYi88o0zbKFKn_RaKQR1rajeSD6b-gYkw,484
+visionai/test_cli.py,sha256=JItuphacHjvIBnf4t_WB4y4cU6aLgm9BAwlUIsFufL8,274
+visionai/util/general.py,sha256=zb1Z6tZBkdkioUg-jsJ3WrQwnv-8272Hn3nNtjTyAS8,13140
+visionai-0.1.5.dist-info/METADATA,sha256=yToQaNc4ufOxC0ZFbStha2UJjetjvr5qzY-0CCZbg6A,3599
+visionai-0.1.5.dist-info/entry_points.txt,sha256=-LsIY8ahbu7p1PcSbiiPRZAcIJlDVE-X4snVP-M5QBE,46
+visionai-0.1.5.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+visionai-0.1.5.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+visionai-0.1.5.dist-info/RECORD,,
