@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+README.txt
+pyproject.toml
+testacz/__init__.py
+testacz/m_mod_testacz.py
+testacz.egg-info/PKG-INFO
+testacz.egg-info/SOURCES.txt
+testacz.egg-info/dependency_links.txt
+testacz.egg-info/requires.txt
+testacz.egg-info/top_level.txt

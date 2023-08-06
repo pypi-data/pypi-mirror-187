@@ -1,0 +1,1 @@
+Moj projekt wykorzystuje 2 funkcje oraz pakiet numpy
