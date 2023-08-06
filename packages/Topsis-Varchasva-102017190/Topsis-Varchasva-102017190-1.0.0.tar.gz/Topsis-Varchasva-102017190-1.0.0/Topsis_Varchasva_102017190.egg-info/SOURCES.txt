@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+Topsis_Varchasva_102017190.egg-info/PKG-INFO
+Topsis_Varchasva_102017190.egg-info/SOURCES.txt
+Topsis_Varchasva_102017190.egg-info/dependency_links.txt
+Topsis_Varchasva_102017190.egg-info/entry_points.txt
+Topsis_Varchasva_102017190.egg-info/top_level.txt
+topsis/102017190.py
+topsis/__init__.py
