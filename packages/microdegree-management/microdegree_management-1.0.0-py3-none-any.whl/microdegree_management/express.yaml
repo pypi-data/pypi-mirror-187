@@ -1,0 +1,38 @@
+namespace_prefix: express
+nodes:
+  - id: wat_is_een_backend_framework
+  - id: basis
+    jobs:
+      - kind: text
+        assignee: Andie
+        status: reviewable
+      - kind: proof
+        assignee: Vincent
+        status: planned
+        notes: "Versies worden niet vastgelegd. Lijkt misschien ook beter applicatie van meet af aan te containerizen? Misschien moet ook het concept van een poort (en 'luisteren') uitgelegd worden, eventueel onder operationele aspecten? Uitleg rond response object is onduidelijk. app.use voor 404 in plaats van app.get is ook niet echt verklaard."
+  - id: ejs
+  - id: ejs_advanced
+  - id: post_requests # GET valt eigenlijk onder basis
+  - id: cookies
+  - id: post_requests
+  - id: static_files
+  - id: mysql_connector
+  - id: authenticatie_en_autorisatie
+  - id: jwt_algemeen
+  - id: jwt_npm_package
+  - id: jwt_oefening
+  - id: env_variabelen
+  - id: body_parser
+  - id: oauth
+  - id: cors
+edges:
+  - start_id: wat_is_een_backend_framework
+    end_id: basis
+  - start_id: basis
+    end_id: ejs
+  - start_id: operationeel__absoluut_vs_relatief
+    end_id: basis
+  - start_id: jwt_algemeen
+    end_id: jwt_npm_package
+# should remain empty, this is a knowledge cluster
+motivations: []

@@ -1,0 +1,13 @@
+microdegree_management/.gitignore,sha256=bIUOjFHa5rrPkVsxrhaOcrMILtWhVXGB36B9VchMvMk,17
+microdegree_management/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+microdegree_management/db.yaml,sha256=7GdtB7BdrVwlh_0Db3TGKWrH78wCkMmfd4epAvqGAog,10516
+microdegree_management/express.yaml,sha256=HN_N0_p_1VsDFSqE8zaBaSRVIOvsNf0LDP21C95zrAo,1220
+microdegree_management/friendface.yaml,sha256=af3DVaOvuyfPDunFg8X53tpmahVq1LX3wbpqzQ_cXqI,14859
+microdegree_management/git.yaml,sha256=mwxg_mCJrbtgZB2ln1bUk-H--07neK977juGVlTK2Yk,1892
+microdegree_management/main.py,sha256=jO46kOCMH83fIInBB3KvQCysLh_4XWMTrJNTqqvlWlg,19336
+microdegree_management/model_learning_path.txt,sha256=Hw2Y2AdWLtk8tWjoJkxM-NhzvaKH-Irz6e_B82CB8aI,6058
+microdegree_management/operationeel.yaml,sha256=laNK8WZp-0T2t0t27CF-NfkZH-T6WHNmOVMMxahPvYA,4919
+microdegree_management-1.0.0.dist-info/entry_points.txt,sha256=__bRs20odUjqR0IkdztD9AqfGsAcE3fzt7kQQ-7XrQg,70
+microdegree_management-1.0.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+microdegree_management-1.0.0.dist-info/METADATA,sha256=RI3GXtzUGaDeSxzePxoaTox53cDrqd3-J04HrSD_ofg,505
+microdegree_management-1.0.0.dist-info/RECORD,,

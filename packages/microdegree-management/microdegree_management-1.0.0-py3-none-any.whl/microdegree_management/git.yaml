@@ -1,0 +1,79 @@
+namespace_prefix: git
+nodes:
+  ## Git
+  - id: wat_is_versiebeheer
+    title: "Wat is versiebeheer?"
+  - id: installatie_prerequisites
+    title: "Installatie vereisten Git"
+  - id: wat_is_lokaal_versiebeheer
+    title: "Wat is lokaal versiebeheer?"
+  - id: git_init
+    title: "git init"
+  - id: git_basisbegrippen
+    title: "Basisbegrippen Git"
+  - id: git_add
+    title: "git add"
+  - id: git_commit
+    title: "git commit"
+  - id: git_log
+    title: "git log"
+  - id: gitignore
+    title: "gitignore"
+  - id: git_status
+    title: "git status"
+  - id: git_rm
+    title: "git rm"
+  - id: git_remote
+    title: "Remotes"
+  - id: git_clone
+    title: "git clone"
+  - id: git_push
+    title: "git push"
+  - id: git_pull
+    title: "git pull"
+  # behandelen we dit nog?
+  - id: git_branch
+    title: "branches"
+  - id: git_checkout
+    title: "git checkout"
+  - id: git_merge
+    title: "git merge"
+edges:
+  - start_id: installatie_prerequisites
+    end_id: wat_is_lokaal_versiebeheer
+  - start_id: wat_is_lokaal_versiebeheer
+    end_id: git_init
+  - start_id: git_init
+    end_id: git_basisbegrippen
+  - start_id: git_basisbegrippen
+    end_id: git_add
+  - start_id: git_add
+    end_id: git_commit
+  - start_id: git_commit
+    end_id: git_log
+  - start_id: git_commit
+    end_id: gitignore
+  - start_id: gitignore
+    end_id: git_status
+  - start_id: git_status
+    end_id: git_rm
+  - start_id: git_commit
+    end_id: git_remote
+  - start_id: git_remote
+    end_id: git_clone
+  - start_id: git_remote
+    end_id: git_push
+  - start_id: git_push
+    end_id: git_pull
+  - start_id: git_pull
+    end_id: git_branch
+  - start_id: git_branch
+    end_id: git_checkout
+  - start_id: git_branch
+    end_id: git_merge
+  - start_id: git_log
+    end_id: git_branch
+  - start_id: wat_is_versiebeheer
+    end_id: installatie_prerequisites
+# should remain empty, this is a knowledge cluster
+motivations: []
