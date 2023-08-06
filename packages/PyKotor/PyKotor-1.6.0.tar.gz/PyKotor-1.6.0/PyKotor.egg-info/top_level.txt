@@ -1,0 +1,5 @@
+dist
+ignore
+pykotor
+tests
+venv
