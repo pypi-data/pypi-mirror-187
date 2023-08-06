@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+la_panic.egg-info/PKG-INFO
+la_panic.egg-info/SOURCES.txt
+la_panic.egg-info/dependency_links.txt
+la_panic.egg-info/entry_points.txt
+la_panic.egg-info/requires.txt
+la_panic.egg-info/top_level.txt
