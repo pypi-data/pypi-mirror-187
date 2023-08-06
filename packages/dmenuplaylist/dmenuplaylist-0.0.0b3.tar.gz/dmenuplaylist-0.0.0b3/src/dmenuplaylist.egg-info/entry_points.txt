@@ -1,0 +1,2 @@
+[console_scripts]
+dmenuplaylist = dmenuplaylist.__main__:main

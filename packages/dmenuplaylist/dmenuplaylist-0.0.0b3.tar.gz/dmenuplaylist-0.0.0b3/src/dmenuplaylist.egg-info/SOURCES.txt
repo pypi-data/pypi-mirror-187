@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/dmenuplaylist/__init__.py
+src/dmenuplaylist/__main__.py
+src/dmenuplaylist/config.py
+src/dmenuplaylist/initial_setup.py
+src/dmenuplaylist/options.py
+src/dmenuplaylist/prompts.py
+src/dmenuplaylist/system.py
+src/dmenuplaylist/utils.py
+src/dmenuplaylist.egg-info/PKG-INFO
+src/dmenuplaylist.egg-info/SOURCES.txt
+src/dmenuplaylist.egg-info/dependency_links.txt
+src/dmenuplaylist.egg-info/entry_points.txt
+src/dmenuplaylist.egg-info/requires.txt
+src/dmenuplaylist.egg-info/top_level.txt
