@@ -1,0 +1,10 @@
+boto3
+pandas
+redshift_connector
+dateparser
+requests
+fastcore
+python-box
+web3
+
+[dev]

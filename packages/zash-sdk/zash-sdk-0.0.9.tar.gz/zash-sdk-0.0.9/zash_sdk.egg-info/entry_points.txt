@@ -1,0 +1,2 @@
+[nbdev]
+zash_sdk = zash_sdk._modidx:d
