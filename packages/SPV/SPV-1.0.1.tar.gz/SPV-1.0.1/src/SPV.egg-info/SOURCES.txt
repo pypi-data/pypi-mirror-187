@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+src/SPV/__init__.py
+src/SPV.egg-info/PKG-INFO
+src/SPV.egg-info/SOURCES.txt
+src/SPV.egg-info/dependency_links.txt
+src/SPV.egg-info/top_level.txt
