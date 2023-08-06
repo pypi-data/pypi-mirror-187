@@ -1,0 +1,11 @@
+kaiju_kafka/__init__.py,sha256=tT0uGRsaJqqGHhOi-uhQ5aVWObrAxltFA83p07CBAYk,110
+kaiju_kafka/services.py,sha256=B9jwGriCzF3BJnnmmGoCIGAZrtBy0BTo7sKxpyhDYkM,23
+kaiju_kafka/streams.py,sha256=g3epoX5gPPFsbTToZYUArHW2GL9rZF1h9sfauDEKIoI,3204
+kaiju_kafka/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kaiju_kafka/tests/fixtures.py,sha256=9Vv0Xy4FKoyjilVzK5sBX3DWrz8ajZVbxJK66gaI9ak,2071
+kaiju_kafka/tests/test_streams.py,sha256=5FMiftWKGxi9c4neXYbtW1tL8RivpBbHdwrCeWm1Ziw,747
+kaiju_kafka-2.0.1.dist-info/LICENSE,sha256=XIlN2qA8UqpBDA-PteoYP4hTU0qBW0G9PRB__khO2zc,610
+kaiju_kafka-2.0.1.dist-info/METADATA,sha256=vmKsVadT7N0BBZ30QuLgx4Gu3_sRJ-R_NbDHrnxC9kA,2957
+kaiju_kafka-2.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+kaiju_kafka-2.0.1.dist-info/top_level.txt,sha256=wlZR1-KA8mX7RBwYnEiDP6fykrNVa91ldI-DNIp0FY4,12
+kaiju_kafka-2.0.1.dist-info/RECORD,,

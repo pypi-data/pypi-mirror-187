@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: kaiju-kafka
+Version: 2.0.1
+Summary: Kafka transport services.
+Home-page: https://gitlab.com/kaiju-python/kaiju-kafka
+Author: antonnidhoggr@me.com
+Author-email: antonnidhoggr@me.com
+License: Apache Software License 2.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: aiokafka (==0.8.*)
+Requires-Dist: kaiju-tools (==2.0.*)
+Provides-Extra: dev
+Requires-Dist: bump2version (==1.0.*) ; extra == 'dev'
+Requires-Dist: pyroma (==4.1) ; extra == 'dev'
+Requires-Dist: bandit (==1.7.*) ; extra == 'dev'
+Requires-Dist: black (==22.12.*) ; extra == 'dev'
+Requires-Dist: flake8 (==6.0.*) ; extra == 'dev'
+Requires-Dist: pyproject-flake8 ; extra == 'dev'
+Requires-Dist: pre-commit (==2.21.*) ; extra == 'dev'
+Requires-Dist: pydocstyle (==6.2.*) ; extra == 'dev'
+Requires-Dist: setup-cfg-fmt (==2.2.*) ; extra == 'dev'
+Requires-Dist: restructuredtext-lint (==1.4.*) ; extra == 'dev'
+Requires-Dist: tox (==3.28.*) ; extra == 'dev'
+Requires-Dist: tox-pyenv (==1.1.*) ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: python-docs-theme ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: pytest (==7.2.*) ; extra == 'test'
+Requires-Dist: pytest-asyncio (==0.20) ; extra == 'test'
+Requires-Dist: docker (==6.0) ; extra == 'test'
+Requires-Dist: pytest-timeout (==2.1.*) ; extra == 'test'
+Requires-Dist: pytest-aiohttp (==1.0.*) ; extra == 'test'
+Requires-Dist: kaiju-redis (==2.0.*) ; extra == 'test'
+
+
+.. image:: https://badge.fury.io/py/kaiju-kafka.svg
+    :target: https://pypi.org/project/kaiju-kafka
+    :alt: Latest package version
+
+.. image:: https://readthedocs.org/projects/kaiju-kafka/badge/?version=latest
+    :target: https://kaiju-kafka.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
+
+Summary
+-------
+
+**Python** >=3.8
+
+**Postgresql** >=14
+
+`Project documentation <https://kaiju-kafka.readthedocs.io/en/latest/>`_
+
+Database transport, interfaces and migration services for postgresql.
+
+Use `pip install kaiju-kafka` to install the package.
+
+For development run the init script `tools/init.sh`.
+It will setup git hooks and install the dev version of the project.
+
+Testing
+_______
+
+- Install the package with dev dependencies using `tools/init.sh` or `pip install -e .[test]`.
+- Start docker daemon.
+- Run `pytest` from the project root.
+
+Documentation
+_____________
+
+Run `docs/docs.sh` from the project root to generate documentation.
