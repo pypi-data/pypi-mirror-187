@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dichotomy/__init__.py
+dichotomy/about.py
+dichotomy/container.py
+dichotomy/object_factory.py
+dichotomy/singleton.py
+dichotomy_patterns.egg-info/PKG-INFO
+dichotomy_patterns.egg-info/SOURCES.txt
+dichotomy_patterns.egg-info/dependency_links.txt
+dichotomy_patterns.egg-info/top_level.txt
