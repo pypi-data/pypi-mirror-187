@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+GyverLamp2/__init__.py
+GyverLamp2/__main__.py
+GyverLamp2/config.py
+GyverLamp2/errors.py
+GyverLamp2/gcolor.py
+GyverLamp2.egg-info/PKG-INFO
+GyverLamp2.egg-info/SOURCES.txt
+GyverLamp2.egg-info/dependency_links.txt
+GyverLamp2.egg-info/top_level.txt

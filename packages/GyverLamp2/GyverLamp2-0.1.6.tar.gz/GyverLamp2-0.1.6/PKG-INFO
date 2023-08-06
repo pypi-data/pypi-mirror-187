@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: GyverLamp2
+Version: 0.1.6
+Summary: Python module for control GyverLamp2
+Home-page: https://github.com/KirillMonster/GyverLamp2
+Author: KirillMonster
+Author-email: k1rill_monster@mail.ru
+License: MIT
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+Python module for control GyverLamp2
