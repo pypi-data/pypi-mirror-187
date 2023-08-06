@@ -1,0 +1,5 @@
+base58
+ed25519
+aiohttp
+pyonear
+pydantic
