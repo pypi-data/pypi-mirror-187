@@ -1,0 +1,15 @@
+syncedlyrics/__init__.py,sha256=M55-hMXWbFaS4fYiM3ITNbuzu1j_V_2VMkoXqNurhnc,1783
+syncedlyrics/__main__.py,sha256=4EmY7FE-rQFhYsQe50r0H_pJR5YAWch_pcOjTX-sAQ4,91
+syncedlyrics/cli.py,sha256=PdfA40sYXAhseUM9OABnD3xpTtGzMJ817kmHz39lOzE,1052
+syncedlyrics/providers/__init__.py,sha256=4mHdIR09RDjwHuf_nixUb3jkxWea2EE9Bw2AoGUc8oU,131
+syncedlyrics/providers/base.py,sha256=6fWymqFd3mwJfPFFwPCRrJr6joCfkzZDYAO07sAKFmg,1072
+syncedlyrics/providers/deezer.py,sha256=tivzw0sxePQyortaLIz1tqL6QXuta4yhPfMPFfD6lhQ,1836
+syncedlyrics/providers/lyricsify.py,sha256=P0zRRDE6vXLhdcobyLAMlSp_FWBhlDIISbU6Iw46Q-U,1996
+syncedlyrics/providers/netease.py,sha256=1YPVDcR4uNz7pqPh2NOk4AI7MM0F76RM3yoTe5EUWbY,3745
+syncedlyrics/providers/spotify.py,sha256=lh-2CJnrpV0tPpj8zmFqhxg656blzOGfWTNA2zaWN9k,796
+syncedlyrics/utils.py,sha256=opLvVwr2plOOCshU-VXBORnOOsI98WB0dYedVyaMCyE,510
+syncedlyrics-0.3.0.dist-info/entry_points.txt,sha256=yH7CphJ6Wm2XSIXUSNS8BfEVm7ikLf5vMxhWIy71f-8,61
+syncedlyrics-0.3.0.dist-info/LICENSE,sha256=dSxpGTDeGrL9WCdYALoPmmsEUL9XQCQHKqUOXLao7Is,1081
+syncedlyrics-0.3.0.dist-info/METADATA,sha256=a7kD3s7tZp27QaTos9C3cJd-Pm4wLMdsYWJ6T6aRxsc,2085
+syncedlyrics-0.3.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+syncedlyrics-0.3.0.dist-info/RECORD,,
