@@ -1,0 +1,2 @@
+[console_scripts]
+topsis = Topsis_Vaibhav_102003423.Vaibhav_102003423:main
