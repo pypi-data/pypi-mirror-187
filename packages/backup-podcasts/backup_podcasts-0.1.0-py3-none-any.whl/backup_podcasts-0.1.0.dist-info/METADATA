@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: backup-podcasts
+Version: 0.1.0
+Summary: Backup/archive all episodes of your podcast subscriptions locally.
+Author: DreamFlasher
+Author-email: 31695+dreamflasher@users.noreply.github.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: defusedxml (>=0.7.1,<0.8.0)
+Requires-Dist: feedparser (>=6.0.10,<7.0.0)
+Requires-Dist: fire (>=0.5.0,<0.6.0)
+Requires-Dist: parfive (>=2.0.2,<3.0.0)
+Requires-Dist: tqdm (>=4.64.1,<5.0.0)
