@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: com.castsoftware.uc.python.common
+Version: 0.1.2
+Summary: A small example package
+Author-email: Nevin Kaplan <n.kaplan@castsoftware.com>
+Project-URL: Homepage, https://github.com/CAST-Extend/com.castsoftware.uc.python.common
+Project-URL: Bug Tracker, https://github.com/CAST-Extend/com.castsoftware.uc.python.common/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# com.castsoftware.uc.python.common
+A set of common classes and methods for use with python projects
