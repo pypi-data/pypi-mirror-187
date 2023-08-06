@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=66.1.1", "setuptools_scm>=7.1.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "texted"
+description = "Compact DST for editing blocks of plain text"
+authors = [{name = "Anderson Bravalheri", email = "andersonbravalheri@gmail.com"}]
+readme = "README.rst"
+license = {text = "MPL-2.0"}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python",
+]
+dependencies = ['importlib-metadata; python_version<"3.8"']
+requires-python = ">=3.7"
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://github.com/pyscaffold/texted/"
+# Documentation = "https://pyscaffold.org/"
+# Changelog = https://pyscaffold.org/en/latest/changelog.html
+# Tracker = https://github.com/pyscaffold/texted/issues
+# Conda-Forge = https://anaconda.org/conda-forge/texted
+# Download = https://pypi.org/project/texted/#files
+# Twitter = https://twitter.com/PyScaffold
+
+[project.optional-dependencies]
+testing = [
+    "setuptools",
+    "pytest",
+    "pytest-cov",
+]
+
+[tool.setuptools_scm]
+version_scheme = "no-guess-dev"
+write_to = "src/texted/_version.py"
+
+[tool.pytest.ini_options]
+addopts = """
+--cov texted --cov-report term-missing
+--verbose
+--doctest-modules
+--doctest-glob=*.rst
+--ignore-glob=docs/*.py
+"""
+norecursedirs = [
+    "dist",
+    "build",
+    ".tox",
+    ".venv",
+]
