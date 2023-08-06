@@ -1,0 +1,81 @@
+0.5.1 (2023-01-24)
+------------------
+
+* Fix: Ensure `LinkedFieldChooserWidgetFactory.openModal` passes the linked field URL parameters to the modal (Matt Westcott)
+
+
+0.5 (2022-12-05)
+----------------
+
+* Add support for multiple choice within chooser modal (Matt Westcott)
+* Add `openModal` and `getById` endpoints to ChooserWidgetFactory (Matt Westcott)
+
+
+0.4.3 (2022-12-05)
+------------------
+
+* Fix: Populate widget title element correctly on Wagtail 4 (Matt Westcott)
+
+
+0.4.2 (2022-11-28)
+------------------
+
+* Wagtail 4.0 support (Katherine Domingo, Matt Westcott)
+* Prevent duplicate create calls against slow APIs (Haydn Greatnews)
+
+
+0.4.1 (2022-07-07)
+------------------
+
+* Restore compatibility with Wagtail versions prior to 2.13
+
+
+0.4 (2022-06-10)
+----------------
+
+* Wagtail 3.0 support (Brian Xu, Matt Westcott, Dan Braghis)
+
+
+0.3.1 (2021-11-16)
+------------------
+
+* Remove deprecated `url` imports (Tibor Leupold)
+* Add 'change' trigger to input element upon updating model within modal
+
+
+0.3 (2021-07-23)
+----------------
+
+* Add optional 'create item' link (Cameron Lamb)
+* Add linked field mechanism for filtering chooser options from the calling page
+* Fix tabbed interface compatibility for Wagtail 2.13
+* Fix handling of empty states within StreamField blocks
+
+
+0.2.1 (2021-05-26)
+------------------
+
+* Fix Wagtail 2.12 compatibility
+
+
+0.2 (2021-05-26)
+----------------
+
+* Add compatibility with Wagtail 2.13 StreamFields
+* Exclude "tests" package from the installation.
+* Model chooser views now accept a list of fields as order_by
+* Fix for Django 3.0 - replace ugettext_lazy with gettext_lazy (Todd Dembrey)
+* Fix JS error in search box rate limiting (Martijn Jacobs)
+* Fix missing 'edit item' button on initially-empty choosers
+
+
+0.1.1 (2019-11-13)
+------------------
+
+* Fixed search button (Allan Brown)
+
+
+0.1 (2019-06-17)
+----------------
+
+* Initial release
