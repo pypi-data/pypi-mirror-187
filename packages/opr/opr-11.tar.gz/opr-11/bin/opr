@@ -1,0 +1,140 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+# pylint: disable=C0103,C0115,C0116,C0413,W0212,C0301,W0613,E0611,E0401,R1710
+
+
+"write your own commands"
+
+
+import os, sys ; sys.path.insert(0, os.getcwd())
+
+
+import atexit
+import importlib
+import importlib.util
+import inspect
+import os
+import readline
+import sys
+import time
+import termios
+import traceback
+
+
+from opr.handler import Command, Handler
+from opr.message import Event
+from opr.objects import Wd, format, last
+from opr.runtime import Cfg, boot, command, date
+from opr.scanner import scan, scanpkg
+from opr.threads import launch
+from opr.utility import wait
+
+
+import opr.modules
+
+
+Wd.workdir = os.path.expanduser("~/.opr")
+
+
+class CLI(Handler):
+
+    @staticmethod
+    def announce(txt):
+        pass
+
+    @staticmethod
+    def raw(txt):
+        print(txt)
+        sys.stdout.flush()
+
+
+class Console(CLI):
+
+    @staticmethod
+    def handle(event):
+        Command.handle(event)
+        event.wait()
+
+    def poll(self):
+        event = Event()
+        event.txt = input("> ")
+        event.orig = repr(self)
+        return event
+
+
+def daemon():
+    pid = os.fork()
+    if pid != 0:
+        os._exit(0)
+    os.setsid()
+    os.umask(0)
+    sis = open("/dev/null", 'r')
+    os.dup2(sis.fileno(), sys.stdin.fileno())
+    if not Cfg.verbose:
+        sos = open("/dev/null", 'a+')
+        ses = open("/dev/null", 'a+')
+        os.dup2(sos.fileno(), sys.stdout.fileno())
+        os.dup2(ses.fileno(), sys.stderr.fileno())
+
+
+def help():
+    print("opr [-c|-d|-h] [%s]\n\n-h show help \n-c start console\n-d daemonize" % "|".join(Command.cmd))
+
+
+def waiter():
+    got = []
+    for ex in Command.errors:
+        traceback.print_exception(type(ex), ex, ex.__traceback__)
+        got.append(ex)
+    for exc in got:
+        Command.errors.remove(exc)
+
+
+def wrap(func):
+    fds = sys.stdin.fileno()
+    gotterm = True
+    try:
+        old = termios.tcgetattr(fds)
+    except termios.error:
+        gotterm = False
+    try:
+        func()
+    except (EOFError, KeyboardInterrupt):
+        print("")
+    finally:
+        if gotterm:
+            termios.tcsetattr(fds, termios.TCSADRAIN, old)
+        for ex in Command.errors:
+            traceback.print_exception(type(ex), ex, ex.__traceback__)
+
+
+def main():
+    boot(" ".join(sys.argv[1:]))
+    if "h" in Cfg.prs.opts:
+        return help()
+    if Cfg.prs.txt:
+        scanpkg(opr.modules)
+        cli = CLI()
+        return command(Cfg.prs.otxt, cli)
+    last(Cfg)
+    if Cfg.console:
+        print("OPR started at %s %s" % (
+                                       date,
+                                       format(
+                                                 Cfg,
+                                                 skip="banner,name,prs",
+                                                 plain=True)
+                                                )
+                                      )
+        scanpkg(opr.modules, init=True)
+        cli = Console()
+        launch(cli.start)
+        Cfg.wait = True
+    if Cfg.daemon:
+        daemon()
+        Cfg.wait = True
+    if Cfg.wait:
+        wait(waiter)
+
+
+wrap(main)
