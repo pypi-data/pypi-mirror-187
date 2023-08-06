@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: diamond4py
+Version: 0.0.2rc2
+Summary: Diamond Python bindings for sequence alignment
+Home-page: https://github.com/GCS-ZHN/diamond4py
+Author-email: "Zhang.H.N" <zhang.h.n@foxmail.com>
+License: GPLv3
+Project-URL: Homepage, https://github.com/GCS-ZHN/diamond4py
+Project-URL: Bug Tracker, https://github.com/GCS-ZHN/diamond4py/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# diamond4py
+This is python binding for diamond--a sequence alignment BLAST software implements in C++.
+
+## install
+
+- from source code
+```bash
+git clone https://github.com/GCS-ZHN/diamond4py.git
+cd diamond4py
+conda create -n diamond4py python=3.8
+# zlib is required by diamond.
+conda install -c anaconda zlib
+pip install -v .
+```
+
+- from pypi
+```bahs
+pip install diamond4py
+```
+
+## Usage
+```python
+from diamond4py import Diamond
+
+# create a object
+diamond = Diamond(
+    database="database.dmnd",
+    n_threads=4
+)
+
+# make db if you don't create it or just download one from websites
+diamond.makedb("database.fasta")
+print(diamond.version)
+
+# print database statistic info
+diamond.dbinfo()
+
+# run blast for proteins
+diamond.blastp(
+    query="test_proteins.fasta",
+    out="test_output"
+)
+```
+
