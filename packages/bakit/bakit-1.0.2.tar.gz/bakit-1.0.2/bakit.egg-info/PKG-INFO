@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: bakit
+Version: 1.0.2
+Summary: BAKit Provides Python Built-in better alternatives
+Home-page: https://github.com/nawafalqari/bakit/
+Author: Nawaf Alqari
+Author-email: nawafalqari13@gmail.com
+License: MIT
+Project-URL: Documentation, https://github.com/nawafalqari/bakit#readme
+Project-URL: Bug Tracker, https://github.com/nawafalqari/bakit/issues
+Project-URL: Source Code, https://github.com/nawafalqari/bakit/
+Project-URL: Discord, https://discord.gg/cpvynqk4XT
+Keywords: events,event,bakit,pyevent
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# BAKit
+BAKit Provides Python Built-in better alternatives, like Events, Queues and more
