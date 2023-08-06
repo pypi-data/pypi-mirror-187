@@ -1,0 +1,199 @@
+<h1 class="code-line" data-line-start=0 data-line-end=1 ><a id="Project_Description_0"></a>Project Description</h1>
+<h2 class="code-line" data-line-start=1 data-line-end=2 ><a id="_TOPSISMudrika102017143__1"></a><em>TOPSIS-Mudrika-102017143</em></h2>
+<p class="has-line-data" data-line-start="4" data-line-end="5">Technique for Order Preference by Similarity to Ideal Solution (TOPSIS) is a multi-criteria-based decision-making method. It is a way to allocate the ranks by calculating topsis score on basis of the weights and impact of the given factors.</p>
+<h2 class="code-line" data-line-start=6 data-line-end=7 ><a id="Installation_6"></a>Installation</h2>
+<p class="has-line-data" data-line-start="8" data-line-end="9">Use the package manager pip to install Topsis-Mudrika-102017143</p>
+<h2 class="code-line" data-line-start=9 data-line-end=10 ><a id="Syntax_9"></a>Syntax</h2>
+<pre><code class="has-line-data" data-line-start="12" data-line-end="18" class="language-sh">topsis &lt;InputDataFile&gt; &lt;Weights&gt; &lt;Impacts&gt; &lt;ResultFileName&gt;
+Example:
+topsis inputfile.csv “<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>” “+,+,-,+” result.csv
+or 
+topsis inputfile.csv <span class="hljs-number">1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span> +,+,-,+ result.csv
+</code></pre>
+<h2 class="code-line" data-line-start=19 data-line-end=20 ><a id="Example_19"></a>Example</h2>
+<p class="has-line-data" data-line-start="21" data-line-end="22">Sample input data</p>
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Fund Name</th>
+<th>P1</th>
+<th>P2</th>
+<th>P3</th>
+<th>P4</th>
+<th>P5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M1</td>
+<td>0.75</td>
+<td>0.56</td>
+<td>5.8</td>
+<td>40.9</td>
+<td>12</td>
+</tr>
+<tr>
+<td>M2</td>
+<td>0.85</td>
+<td>0.72</td>
+<td>5</td>
+<td>70</td>
+<td>19.14</td>
+</tr>
+<tr>
+<td>M3</td>
+<td>0.72</td>
+<td>0.52</td>
+<td>4.3</td>
+<td>37.9</td>
+<td>10.86</td>
+</tr>
+<tr>
+<td>M4</td>
+<td>0.81</td>
+<td>0.66</td>
+<td>5.3</td>
+<td>66.2</td>
+<td>18.24</td>
+</tr>
+<tr>
+<td>M5</td>
+<td>0.71</td>
+<td>0.5</td>
+<td>3</td>
+<td>69.8</td>
+<td>18.5</td>
+</tr>
+<tr>
+<td>M6</td>
+<td>0.86</td>
+<td>0.74</td>
+<td>4.8</td>
+<td>54.8</td>
+<td>15.3</td>
+</tr>
+<tr>
+<td>M7</td>
+<td>0.9</td>
+<td>0.81</td>
+<td>5.2</td>
+<td>37.4</td>
+<td>11.08</td>
+</tr>
+<tr>
+<td>M8</td>
+<td>0.68</td>
+<td>0.46</td>
+<td>5.1</td>
+<td>45.5</td>
+<td>12.94</td>
+</tr>
+</tbody>
+</table>
+<p class="has-line-data" data-line-start="34" data-line-end="35">Sample output data</p>
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Fund Name</th>
+<th>P1</th>
+<th>P2</th>
+<th>P3</th>
+<th>P4</th>
+<th>P5</th>
+<th>Performance</th>
+<th>Rank</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M1</td>
+<td>0.75</td>
+<td>0.56</td>
+<td>5.8</td>
+<td>40.9</td>
+<td>12</td>
+<td>0.361305</td>
+<td>7</td>
+</tr>
+<tr>
+<td>M2</td>
+<td>0.85</td>
+<td>0.72</td>
+<td>5</td>
+<td>70</td>
+<td>19.14</td>
+<td>0.524739</td>
+<td>3</td>
+</tr>
+<tr>
+<td>M3</td>
+<td>0.72</td>
+<td>0.52</td>
+<td>4.3</td>
+<td>37.9</td>
+<td>10.86</td>
+<td>0.435908</td>
+<td>6</td>
+</tr>
+<tr>
+<td>M4</td>
+<td>0.81</td>
+<td>0.66</td>
+<td>5.3</td>
+<td>66.2</td>
+<td>18.24</td>
+<td>0.470017</td>
+<td>5</td>
+</tr>
+<tr>
+<td>M5</td>
+<td>0.71</td>
+<td>0.5</td>
+<td>3</td>
+<td>69.8</td>
+<td>18.5</td>
+<td>0.527621</td>
+<td>2</td>
+</tr>
+<tr>
+<td>M6</td>
+<td>0.86</td>
+<td>0.74</td>
+<td>4.8</td>
+<td>54.8</td>
+<td>15.3</td>
+<td>0.546181</td>
+<td>1</td>
+</tr>
+<tr>
+<td>M7</td>
+<td>0.9</td>
+<td>0.81</td>
+<td>5.2</td>
+<td>37.4</td>
+<td>11.08</td>
+<td>0.524433</td>
+<td>4</td>
+</tr>
+<tr>
+<td>M8</td>
+<td>0.68</td>
+<td>0.46</td>
+<td>5.1</td>
+<td>45.5</td>
+<td>12.94</td>
+<td>0.340656</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+<h2 class="code-line" data-line-start=47 data-line-end=48 ><a id="Note_47"></a>Note</h2>
+<p class="has-line-data" data-line-start="48" data-line-end="54">1.Enter the path for your input csv file<br>
+2.Enter the weights vector with each weight separated by commas<br>
+3.Enter the impact vector with each impact separated by commas<br>
+4.Enter the name of csv file in which you want to store output dataframe. This file will be<br>
+created in the users/pc if you open cmd without being in any directory.<br>
+Else it will be created in the current directorty</p>
+<h2 class="code-line" data-line-start=55 data-line-end=56 ><a id="License_55"></a>License</h2>
+<p class="has-line-data" data-line-start="57" data-line-end="58">MIT</p>
+<p class="has-line-data" data-line-start="59" data-line-end="60"><strong>Free Software, Hell Yeah!</strong></p>
