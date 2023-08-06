@@ -1,0 +1,8 @@
+README.md
+setup.py
+hellohuehue/__init__.py
+hellohuehue/hello.py
+hellohuehue.egg-info/PKG-INFO
+hellohuehue.egg-info/SOURCES.txt
+hellohuehue.egg-info/dependency_links.txt
+hellohuehue.egg-info/top_level.txt
