@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: veelib
+Version: 1.0.5
+Summary: Vee Library
+Home-page: https://github.geo.apple.com/yun-hu/veelib
+Author: Yun Hu
+Author-email: yun_hu@apple.com
+License: Apple Internal
+Keywords: PySpark,PIE Spark,Spark
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Description-Content-Type: text/markdown
+Requires-Dist: pyspark (==3.2.0)
+Requires-Dist: numpy
+Requires-Dist: geopy
+Requires-Dist: rtree
+Requires-Dist: folium
+Requires-Dist: swifter
+Requires-Dist: shapely
+Requires-Dist: scipy
+Requires-Dist: networkx
+Requires-Dist: matplotlib
+Requires-Dist: pyarrow
+Requires-Dist: scikit-learn
+Requires-Dist: joblib
+
+### PySpark sample
+
+This sample project shows how to deploy a PySpark job to Data Platform.
+
+The only pre-requisite is to have a Data Platform project already setup 
+with a namespace with enough quota and with this repo connected as source.
+
+Please find the Data Platform Quickstart guide [here](https://docs.aci.apple.com/spark_kube/getting_started/introduction.html#getting-started).
+
+Once you have a `projectId` and a `namespaceId`, please substitute the values in the `rio.yml`.
+
+### CI/CD Overview
+
+#### PySpark project
+There are 2 pipelines in `rio.yml` that show the possible ways of packaging and deploying your PySpark jobs:
+1. `main`: shows how to use a [Buildozer build](https://docs.aci.apple.com/rio/guide-to-rio/build-and-test/buildozer.html#buildozer-builds)
+which will provide a Python runtime with the version set in `runtime.txt` file.
+2. `sdp-base-image`: shows how to use a [Freestyle build](https://docs.aci.apple.com/rio/guide-to-rio/build-and-test/freestyle.html#freestyle-builds)
+with an SDP Base Image that will provide Python 3.9. The jobs will be deployed only when commits are pushed to `sdp-base-image` branch.
+
+#### Hybrid PySpark + Gradle multi-project (Java and Scala) 
+There is another pipeline `hybrid` in `rio.yml` that show how to compile, package and deploying your hybrid Python + Java/Scala jobs with a [Buildozer build](https://docs.aci.apple.com/rio/guide-to-rio/build-and-test/buildozer.html#buildozer-builds)
+with two Builders: [Python](https://docs.aci.apple.com/rio/guide-to-rio/build-and-test/builders/python.html) and [Gradle](https://docs.aci.apple.com/rio/guide-to-rio/build-and-test/builders/java-gradle.html).
+The jobs will be deployed only when commits are pushed to `hybrid` branch.
+
+In this case, the Python version is taken from the `runtime.txt` file and the Java version can be customized with the `RUNTIME_JDK_VERSION` env variable in the `rio.yml` file.
+
+Please refer to the previous links to Rio docs for further instructions on how to customize the builders.
+
+### Splunk logging from an ACI Kube namespace
+1. Follow [Kube's docs](https://kube.apple.com/docs/guides/connecting-to-non-kube-services/) to enable connectivity to the Apple Internal and the Apple Datacenters named networks.
+2. In your Python scripts, configure the logger with the following instruction: 
+```python
+import os
+from logging.config import fileConfig
+    
+fileConfig(os.getenv('PLATFORM_PYTHON_SPARK_LOG_CONF'))
+```
+
+
