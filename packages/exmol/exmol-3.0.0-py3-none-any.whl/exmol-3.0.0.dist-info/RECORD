@@ -1,0 +1,17 @@
+exmol/__init__.py,sha256=eQUM2vca7yKxwOCh18B7Awv1DV-Ns8EHruq5WESqOrM,181
+exmol/data.py,sha256=xCtEQ4EUUuoRcpGBspnY2_pa3EaOvszvGZsIQ41jKSk,1235
+exmol/exmol.py,sha256=jyE9_fVTi-MDqSOIz2fhrfm5jqx0wkg0n9K14vI0ZGE,53221
+exmol/plot_utils.py,sha256=ts4r94FbfA6v3rn9nIpSYICk_6xi2UxXXz3ojmqYoTs,12944
+exmol/version.py,sha256=pKtrXU-VRct109vbaZQ0DAvZOVVUyX9Ty63Xl1nsAy4,23
+exmol/lime_data/MACCSkeys.txt,sha256=lynprFcJI8zVVsSB8rxvFsIiWcgx6zWnrQa6b_57oeY,11465
+exmol/lime_data/atom_pols.txt,sha256=_u4HIkcGnZ6tZR_Gr4AL2Cx6brLOx2UBcEAaSQusvag,595
+exmol/lime_data/keys.pb,sha256=7Tj4SRH2AEpUB2o_q-tlz3b11TXk9ap57JjFybfr7FM,23010050
+exmol/lime_data/smarts.txt,sha256=RzdePUZzAJbHJn3gT57JONnR4Qny3ojZBh73fe6DrNo,27944
+exmol/stoned/__init__.py,sha256=vd4vwiAI9CNIj1mllS3_QU14eNRd1KRpQa0k-jasvpw,23
+exmol/stoned/stoned.py,sha256=O1mAO0_DaOfhB-mfdPOnKruA7__8-Gy1BlDJiinZyBs,21574
+exmol-3.0.0.dist-info/LICENSE,sha256=uf-MXs4TdIP1nJ8HvHIsj1sJ0WL1KalVx22usQfhcdw,1073
+exmol-3.0.0.dist-info/METADATA,sha256=iZsrRdJ27nS0X1ijgBBCcVtLYVN19zj1sHG7_S3phF0,11304
+exmol-3.0.0.dist-info/NOTICE.txt,sha256=qGWpNbl2Y4l4A-MKjPcdLOXZfm5XGT-bhpgSVKxSBsQ,449
+exmol-3.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+exmol-3.0.0.dist-info/top_level.txt,sha256=vdLRpBBZqyoAGSTabOZswOcRs02O8X43ZLe1DlcVc5Y,6
+exmol-3.0.0.dist-info/RECORD,,
