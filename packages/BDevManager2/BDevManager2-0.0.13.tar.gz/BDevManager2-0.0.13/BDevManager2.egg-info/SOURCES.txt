@@ -1,0 +1,16 @@
+README.md
+setup.py
+BDevManager2.egg-info/PKG-INFO
+BDevManager2.egg-info/SOURCES.txt
+BDevManager2.egg-info/dependency_links.txt
+BDevManager2.egg-info/requires.txt
+BDevManager2.egg-info/top_level.txt
+bdm_eng/TodayTarget.py
+bdm_eng/__init__.py
+bdm_eng/bant.py
+bdm_eng/game_loop.py
+bdm_eng/leadlist.py
+bdm_eng/leadsource.py
+bdm_eng/todaysactivity.py
+bdm_eng/top100prospectleads.py
+bdm_eng/top10targetsfortheweek.py
