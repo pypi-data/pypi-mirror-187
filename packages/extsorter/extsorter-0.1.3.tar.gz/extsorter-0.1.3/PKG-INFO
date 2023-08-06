@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: extsorter
+Version: 0.1.3
+Summary: File Sorter
+Home-page: https://github.com/moskrc/filesorter
+Keywords: sort,file_sorter,file,sorter,extsorter,ext_sorter
+Author: Vitalii Shishorin
+Author-email: moskrc@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Repository, https://github.com/moskrc/filesorter
+Description-Content-Type: text/markdown
+
+# ExtSorter - A simple file sorter
+
+## What is it?
+
+Sometimes you have a folder with a lot of files, and you want
+to sort them into folders. This is where ExtSorter comes in.
+It will sort your files into folders based on the file extension.
+
+## How to install
+
+```bash
+$ pip install extsorter
+```
+
+## How to use
+```bash
+usage: extsorter [-h] [-s SRC] [-d DST]
+
+Sort files by extension
+
+options:
+  -h, --help         show this help message and exit
+  -s SRC, --src SRC  Source dir
+  -d DST, --dst DST  Destination dir
+```
+
+## Example
+
+Sort files in `~/Downloads` into `~/Downloads/sorted`:
+```bash
+$ extsorter -s ~/Downloads
+```
+
+# Development
+
+## Tests
+
+```bash
+$ poetry run make test
+```
+
+## Linters
+
+```bash
+$ poetry run make format
+```
+
