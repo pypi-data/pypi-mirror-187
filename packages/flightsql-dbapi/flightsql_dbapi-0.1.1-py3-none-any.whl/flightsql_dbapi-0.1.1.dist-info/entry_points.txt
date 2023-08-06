@@ -1,0 +1,2 @@
+[sqlalchemy.dialects]
+datafusion = flightsql.sqlalchemy:DataFusionDialect
