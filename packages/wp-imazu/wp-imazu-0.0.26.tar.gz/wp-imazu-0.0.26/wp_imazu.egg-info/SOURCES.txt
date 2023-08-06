@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+wp_imazu/__init__.py
+wp_imazu/client.py
+wp_imazu/packet.py
+wp_imazu.egg-info/PKG-INFO
+wp_imazu.egg-info/SOURCES.txt
+wp_imazu.egg-info/dependency_links.txt
+wp_imazu.egg-info/not-zip-safe
+wp_imazu.egg-info/requires.txt
+wp_imazu.egg-info/top_level.txt
