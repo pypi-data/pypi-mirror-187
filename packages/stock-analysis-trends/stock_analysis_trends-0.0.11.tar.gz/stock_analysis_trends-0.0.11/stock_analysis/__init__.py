@@ -1,0 +1,1 @@
+from stock_analysis_trends import perform_analysis
