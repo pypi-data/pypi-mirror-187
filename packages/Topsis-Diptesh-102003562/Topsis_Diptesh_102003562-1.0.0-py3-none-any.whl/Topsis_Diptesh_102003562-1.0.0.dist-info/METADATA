@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Topsis-Diptesh-102003562
+Version: 1.0.0
+Summary: TOPSIS implementation
+Author: Diptesh Mohanta
+Author-email: dmohanta_be20@thapar.edu
+Keywords: topsis,diptesh mohanta,python topsis
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: sys
+
+A package to perform TOPSIS function on Command-line arguments
