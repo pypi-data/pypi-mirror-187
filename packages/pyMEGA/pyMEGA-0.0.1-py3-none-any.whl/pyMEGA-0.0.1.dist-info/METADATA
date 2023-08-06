@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyMEGA
+Version: 0.0.1
+Summary: SpaGFT is a deep learning package for identifying cancer-associated tissue-resident microbes
+Home-page: https://github.com/OSU-BMBL/pyMEGA
+Author: Cankun Wang
+Author-email: cankun.wang@osumc.edu
+License: MIT
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+SpaGFT is a deep learning package for identifying cancer-associated tissue-resident microbes
