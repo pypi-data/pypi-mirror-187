@@ -1,0 +1,10 @@
+paramfittorchdemo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+paramfittorchdemo/_modidx.py,sha256=EuXarnVrKyvuPtyDwAGytC48WQSEzFgj1Sihizxh88g,4400
+paramfittorchdemo/models.py,sha256=xQ3ydWCwUtDD2zlogh56269ysMKWwiHitBikP47Om8w,3794
+paramfittorchdemo/training.py,sha256=EhhtdQfev2UU35YuZp4xMe6L7Cyw6ymiRbCR8W51v08,2990
+paramfittorchdemo-0.0.1.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+paramfittorchdemo-0.0.1.dist-info/METADATA,sha256=pRZ2F2U4fA1Xwu5N2HS-H-t6gaXgdUoyiBb7tczBEVw,2691
+paramfittorchdemo-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+paramfittorchdemo-0.0.1.dist-info/entry_points.txt,sha256=XiZB642JhSobEt7ScbuanowWH3by900gNSit3xG1XVg,77
+paramfittorchdemo-0.0.1.dist-info/top_level.txt,sha256=MyY6zH1r7s_-ie1HHpxSzO8ZiqHUuHmLi9fyiZifJ8c,18
+paramfittorchdemo-0.0.1.dist-info/RECORD,,
