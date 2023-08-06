@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+Topsis_102017182_sandhya_goyal/__init__.py
+Topsis_102017182_sandhya_goyal/topsis.py
+Topsis_102017182_sandhya_goyal.egg-info/PKG-INFO
+Topsis_102017182_sandhya_goyal.egg-info/SOURCES.txt
+Topsis_102017182_sandhya_goyal.egg-info/dependency_links.txt
+Topsis_102017182_sandhya_goyal.egg-info/requires.txt
+Topsis_102017182_sandhya_goyal.egg-info/top_level.txt
