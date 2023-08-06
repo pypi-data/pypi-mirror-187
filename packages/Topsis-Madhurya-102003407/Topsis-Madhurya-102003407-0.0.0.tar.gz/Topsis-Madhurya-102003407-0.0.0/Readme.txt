@@ -1,0 +1,1 @@
+Topsis-Madhurya-102003407 is a Python library for dealing with Multiple Criteria Decision Making(MCDM) problems by using Technique for Order of Preference by Similarity to Ideal Solution(TOPSIS).
