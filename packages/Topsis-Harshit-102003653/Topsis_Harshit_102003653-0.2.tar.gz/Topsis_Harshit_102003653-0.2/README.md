@@ -1,0 +1,29 @@
+Author: Harshit Sharma
+Version: 0.2
+
+
+What is Topsis ?
+
+Technique for Order Preference by Similarity to Ideal Solution (TOPSIS) came in the 1980s as a multi-criteria-based decision-making method. TOPSIS chooses the alternative of shortest the Euclidean distance from the ideal solution and greatest distance from the negative ideal solution. 
+
+To make this definition easier, let’s suppose you want to buy a mobile phone, you go to a shop and analyze 5 mobile phones on basis of RAM, memory, display size, battery, and price. At last, you’re confused after seeing so many factors and don’t know how to decide which mobile phone you should purchase. TOPSIS is a way to allocate the ranks on basis of the weights and impact of the given factors. 
+
+Weights mean how much a given factor should be taken into consideration (default weight = 1 for all factors). like you want RAM to have weighed more than other factors, so the weight of RAM can be 2, while others can have 1.
+Impact means that a given factor has a positive or negative impact. Like you want Battery to be large as possible but the price of the mobile to be less as possible, so you’ll assign ‘+’ weight to the battery and ‘-‘ weight to the price.
+This method can be applied in ranking machine learning models on basis of various factors like correlation, R^2, accuracy, Root mean square error, etc. Now that we have understood what is TOPSIS, and where we can apply this. Let’s see what is the procedure to implement TOPSIS on a given dataset, consisting of multiple rows (like various mobile phones) and multiple columns (like various factors).
+
+
+
+
+Installation:
+
+pip install Topsis-Harshit-102003653
+
+
+
+
+
+How to use?
+
+Open terminal and intall Topsis-Harshit-102003653 and give input data with weights and impacts
+
