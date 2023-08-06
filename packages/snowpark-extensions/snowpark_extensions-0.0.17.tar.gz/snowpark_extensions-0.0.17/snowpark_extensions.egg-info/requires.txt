@@ -1,0 +1,5 @@
+snowflake-snowpark-python[pandas]
+shortuuid
+nest_asyncio
+jinja2
+rich
