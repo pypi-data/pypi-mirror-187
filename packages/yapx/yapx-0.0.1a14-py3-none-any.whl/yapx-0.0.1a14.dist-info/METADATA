@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: yapx
+Version: 0.0.1a14
+Summary: WIP
+Home-page: https://codeberg.org/Fresh2dev/yapx
+Author: donald
+Author-email: hello@Fresh2.dev
+Project-URL: Repository, https://codeberg.org/Fresh2dev/yapx
+Project-URL: License, https://www.Fresh2.dev/code/r/yapx/i/license
+Project-URL: Documentation, https://www.Fresh2.dev/code/r/yapx/i
+Project-URL: Issues, https://codeberg.org/Fresh2dev/yapx/issues
+Project-URL: Changelog, https://www.Fresh2.dev/code/r/yapx/i/changelog
+Project-URL: Funding, https://www.Fresh2.dev/tip
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: typing-extensions ; python_version < "3.10"
+Provides-Extra: build
+Requires-Dist: setuptools (>=62.3.0) ; extra == 'build'
+Requires-Dist: build (==0.*) ; extra == 'build'
+Requires-Dist: wheel (==0.*) ; extra == 'build'
+Requires-Dist: twine (==4.*) ; extra == 'build'
+Provides-Extra: dev
+Requires-Dist: black (==22.*) ; extra == 'dev'
+Requires-Dist: flake8 (==5.*) ; extra == 'dev'
+Requires-Dist: flake8-bugbear (==23.*) ; extra == 'dev'
+Requires-Dist: flake8-comprehensions (==3.*) ; extra == 'dev'
+Requires-Dist: flake8-pytest-style (==1.*) ; extra == 'dev'
+Requires-Dist: flake8-simplify (==0.*) ; extra == 'dev'
+Requires-Dist: importlib-metadata (<5.0) ; extra == 'dev'
+Requires-Dist: autoflake (==1.*) ; extra == 'dev'
+Requires-Dist: pyupgrade (==3.*) ; extra == 'dev'
+Requires-Dist: isort (==5.*) ; extra == 'dev'
+Requires-Dist: mypy[reports] (==0.*) ; extra == 'dev'
+Requires-Dist: pylint (==2.*) ; extra == 'dev'
+Requires-Dist: pylint-pytest (==1.*) ; extra == 'dev'
+Requires-Dist: rope (==1.*) ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: mkdocs (==1.*) ; extra == 'docs'
+Requires-Dist: mkdocstrings[python] (==0.19.*) ; extra == 'docs'
+Requires-Dist: mkdocs-autorefs (==0.*) ; extra == 'docs'
+Provides-Extra: extras
+Requires-Dist: pydantic (<2,>=1.10.3) ; extra == 'extras'
+Requires-Dist: shtab (==1.5.8) ; extra == 'extras'
+Provides-Extra: pydantic
+Requires-Dist: pydantic (<2,>=1.10.3) ; extra == 'pydantic'
+Provides-Extra: shtab
+Requires-Dist: shtab (==1.5.8) ; extra == 'shtab'
+Provides-Extra: tests
+Requires-Dist: pytest (==7.*) ; extra == 'tests'
+Requires-Dist: pytest-cov (==4.*) ; extra == 'tests'
+Requires-Dist: pytest-html (==3.*) ; extra == 'tests'
+Requires-Dist: pytest-sugar (==0.*) ; extra == 'tests'
+Requires-Dist: pylint (==2.*) ; extra == 'tests'
+Requires-Dist: pylint-pytest (==1.*) ; extra == 'tests'
+Requires-Dist: packaging (==23.*) ; extra == 'tests'
+Requires-Dist: mocx (==0.0.1a1) ; extra == 'tests'
+Requires-Dist: pydantic (<2,>=1.10.3) ; extra == 'tests'
+Requires-Dist: shtab (==1.*) ; extra == 'tests'
+
+# yapx
+
+![](https://img.fresh2.dev/fresh2dev.svg)
+
+yapx is <_>. I created yapx to <_>. This is valuable because <_>.
+
+yapx is similar to/inspired by <_>, <_>, <_>. The distinguishing feature of yapx its ability to <_>.
+
+If this project delivers value to you, I ask that you [provide feedback](https://codeberg.org/Fresh2dev/yapx/issues), make [code contributions](https://www.Fresh2.dev/code/r/yapx/i/contributing), and/or [pay me](https://www.Fresh2.dev/tip).
+
+|               |                           |
+| ------------- | ------------------------- |
+| Repository    | https://codeberg.org/Fresh2dev/yapx              |
+| Repo Mirror   | https://www.Fresh2.dev/code/r/yapx           |
+| Documentation | https://www.Fresh2.dev/code/r/yapx/i              |
+| License       | https://www.Fresh2.dev/code/r/yapx/i/license      |
+| Changelog     | https://www.Fresh2.dev/code/r/yapx/i/changelog    |
+| Contributing  | https://www.Fresh2.dev/code/r/yapx/i/contributing |
+| Project Board | https://codeberg.org/Fresh2dev/yapx/projects     |
+| Issues        | https://codeberg.org/Fresh2dev/yapx/issues       |
+| Funding       | https://www.Fresh2.dev/tip           |
+
+To learn more, [read the docs]() and find examples in the page of [**recipes**](https://www.Fresh2.dev/code/r/yapx/i/recipes).
+
+View other projects by Fresh2.dev @ https://www.Fresh2.dev/projects.
