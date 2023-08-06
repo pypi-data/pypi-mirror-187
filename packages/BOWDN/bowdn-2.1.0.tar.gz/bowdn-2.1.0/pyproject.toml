@@ -1,0 +1,12 @@
+[project]
+name = "BOWDN"
+description = "BOWDN makes it easy to define commands that can be run from string inputs."
+version = "2.1.0"
+authors = [
+    { name = "Alex Kumpula" }
+]
+requires-python = ">=3.7"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
