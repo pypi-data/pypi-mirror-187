@@ -1,0 +1,14 @@
+numba
+numpy>=1.20.3
+estraces
+psutil
+scipy
+
+[test]
+pytest
+pytest-cov
+pycryptodome
+pydocstyle<4
+flake8
+pep8-naming
+flake8-docstrings
