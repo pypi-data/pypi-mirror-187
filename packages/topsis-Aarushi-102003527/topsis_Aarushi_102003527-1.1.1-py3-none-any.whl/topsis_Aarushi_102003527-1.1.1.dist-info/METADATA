@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: topsis-Aarushi-102003527
+Version: 1.1.1
+Summary: It evaluates alternatives based on multiple criteria using TOPSIS method
+Home-page: https://github.com/aarushi353/Topsis
+Author: Aarushi Abrol
+Author-email: <aabrol_be20@thapar.edu>
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# TOPSIS
+
+
+
+Author: **Aarushi Abrol**.
+
+
+
+Type: **Package**.
+
+
+
+Title: **TOPSIS method for multiple-criteria decision making (MCDM)**.
+
+
+
+Version: **1.1.1**
+
+
+
+Date: **2022-1-22**
+
+
+
+Maintainer: **Aarushi Abrol <aabrol_be20@thapar.edu>**.
+
+
+
+Description: **Evaluation of alternatives based on multiple criteria using TOPSIS method.**.
+
+
+
+---
+
+
+
+## What is TOPSIS?
+
+
+
+**T**echnique for **O**rder **P**reference by **S**imilarity to **I**deal **S**olution
+
+(TOPSIS) originated in the 1980s as a multi-criteria decision making method.
+
+TOPSIS chooses the alternative of shortest Euclidean distance from the ideal solution,
+
+and greatest distance from the negative-ideal solution.
+
+
+
+<br>
+
+
+
+## License
+
+© 2022 Aarushi Abrol
+
+
+
+This repository is licensed under the MIT license. See LICENSE for details.
+
+
+
+
+
