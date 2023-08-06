@@ -1,0 +1,12 @@
+def add_numbers(a,b):
+    return a+b
+def subtra_numbers(a,b):
+    return a-b
+def div_numbers(a,b):
+    return a/b
+def mult_numbers(a,b):
+    return a*b
+def root_numbers(a,b):
+    return a**(1/b)
+def power_numbers(a,b):
+    return a**b
