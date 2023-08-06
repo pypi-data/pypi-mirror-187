@@ -1,0 +1,5 @@
+rustga-0.1.0.dist-info/METADATA,sha256=59vxLgZGHLxYiFqWIPXfCpodE5s1l9ntelm5SRftQkk,439
+rustga-0.1.0.dist-info/WHEEL,sha256=zLHUU3Y7lpuJBMAwn_OI8McV9KteE65mkzoBobla9aI,131
+rustga/__init__.py,sha256=1FN-_OBGZTEBn1EfEWwHxd-UzLfnYf6lBn8oaYnIH8k,107
+rustga/rustga.cpython-39-aarch64-linux-gnu.so,sha256=8Oxx8l9cvawnu3oDe4t0RBEsNynHivx-NjmjlJ9ijGk,4699512
+rustga-0.1.0.dist-info/RECORD,,
