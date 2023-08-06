@@ -1,0 +1,2 @@
+[txl_component]
+txl_local_terminals = txl_local_terminals.components
