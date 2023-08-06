@@ -1,0 +1,14 @@
+karp/lex_core/__init__.py,sha256=N1oIPA3Pn7Lv3hnVEzPFe-x87ePjJL4Sojbu447dN20,176
+karp/lex_core/dtos/__init__.py,sha256=bx_9GrQFRfm1_fejVABs8HmIZXRXMBGIbQxDu98smic,122
+karp/lex_core/dtos/entry_dto.py,sha256=zRkrlG61lN2ntU9r_xMqGMJOpogpws8QX4Rg3d5M6ug,1209
+karp/lex_core/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+karp/lex_core/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+karp/lex_core/tests/conftest.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+karp/lex_core/tests/dict_entry_dto_unit_test.py,sha256=tuc3MO-hI1GSdraRwnzqVzMjw9RDMZ4dA0tXAZ42kjc,497
+karp/lex_core/tests/value_objects_unique_id_test.py,sha256=9oZ0bt3kCZ1OLe5NyCLN2eeTtxdWYltgLAPxFM47t8M,193
+karp/lex_core/value_objects/__init__.py,sha256=8nUvTjrySOu9DgRCTmTU4rKwfx5htKHXRNSuf4CDXSs,146
+karp/lex_core/value_objects/unique_id.py,sha256=kBmsTTFQ5OfgPresFq_so-vV6SbvEizl89LX_2-vZ24,1297
+karp_lex_core-0.2.2.dist-info/METADATA,sha256=R2_vC0FcMSxHspbd414HxtutI-j_ViDaEUVRm16mt5Q,844
+karp_lex_core-0.2.2.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+karp_lex_core-0.2.2.dist-info/LICENSE,sha256=i5ugehWYUKXnSmfKm8FV_sBw2avIo47OV4JosIjpcJ0,1069
+karp_lex_core-0.2.2.dist-info/RECORD,,
