@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/CaptionedFileFormat.egg-info/PKG-INFO
+src/CaptionedFileFormat.egg-info/SOURCES.txt
+src/CaptionedFileFormat.egg-info/dependency_links.txt
+src/CaptionedFileFormat.egg-info/top_level.txt
+src/cptf/__init__.py
