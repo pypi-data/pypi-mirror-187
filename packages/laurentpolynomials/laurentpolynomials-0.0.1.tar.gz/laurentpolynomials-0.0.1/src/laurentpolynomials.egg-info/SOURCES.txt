@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/laurentpolynomials/__init__.py
+src/laurentpolynomials/laurent_polynomial.py
+src/laurentpolynomials.egg-info/PKG-INFO
+src/laurentpolynomials.egg-info/SOURCES.txt
+src/laurentpolynomials.egg-info/dependency_links.txt
+src/laurentpolynomials.egg-info/requires.txt
+src/laurentpolynomials.egg-info/top_level.txt
