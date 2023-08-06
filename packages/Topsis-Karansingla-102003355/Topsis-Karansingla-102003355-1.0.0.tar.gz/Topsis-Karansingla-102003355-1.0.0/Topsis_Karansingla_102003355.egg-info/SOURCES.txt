@@ -1,0 +1,10 @@
+License.txt
+setup.py
+Topsis_Karansingla_102003355.egg-info/PKG-INFO
+Topsis_Karansingla_102003355.egg-info/SOURCES.txt
+Topsis_Karansingla_102003355.egg-info/dependency_links.txt
+Topsis_Karansingla_102003355.egg-info/entry_points.txt
+Topsis_Karansingla_102003355.egg-info/requires.txt
+Topsis_Karansingla_102003355.egg-info/top_level.txt
+topsis/__init__.py
+topsis/__main__.py
