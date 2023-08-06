@@ -1,0 +1,16 @@
+scanspec/__init__.py,sha256=_FcBnMQmZ4BOKwjnX20G6dWp941Mq6FdcmIl1ZmFTlo,133
+scanspec/__main__.py,sha256=SXrSo9n8dyagtP5jcXobzVUL8hxi5CUK9SpjivRx1kQ,116
+scanspec/_version.py,sha256=tir60FttD0Iy4c7DDLL7XL5dIY5zf6B5u6HcQg7ngsw,160
+scanspec/cli.py,sha256=CdGTdttp_1bx-wkUz3lAmalIMY5LTi36r-DkUyI-ypM,1477
+scanspec/core.py,sha256=-gSjaMkHf05pV69pRHTO8VBXGNn2w_-TYms5b2wc6oA,23415
+scanspec/plot.py,sha256=Qt08jEV9rc1DAKMhVfDqsZpEUdVOAGIV_F3I-NuCetI,8716
+scanspec/regions.py,sha256=qe_1MZxJyRghkqGDkQM5GmgDWe454KbKNvVv_o2aoWA,12597
+scanspec/service.py,sha256=yPwmP_d_p_L7gCkqsNLJPVOtBrfkq2C79CLMDP10K_Q,10830
+scanspec/specs.py,sha256=6VhGw3Sg4lDJH3HRxp_n_j422AdHYPFoPPS_gMSBHR0,23175
+scanspec/sphinxext.py,sha256=2kdgU8tfQxQMSa4iFE25SovgqRsPjqFBKPnRyhxAvAk,1250
+scanspec-0.6.0.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+scanspec-0.6.0.dist-info/METADATA,sha256=ocRYqiwOrr4_unvMKkl2JLwLdtaitwoFm0AHyOtEduQ,17961
+scanspec-0.6.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+scanspec-0.6.0.dist-info/entry_points.txt,sha256=sO8qimSf-eL8sIP5yuRKj3MYa7Y87kUbZvE42d95VRs,46
+scanspec-0.6.0.dist-info/top_level.txt,sha256=me_Mt7vpf8gnpcJ-NN00E8DGA6IJEgqh6-zBCogYeZE,9
+scanspec-0.6.0.dist-info/RECORD,,
