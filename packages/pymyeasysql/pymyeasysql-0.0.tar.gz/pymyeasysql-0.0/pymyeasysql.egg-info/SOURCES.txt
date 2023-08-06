@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+pymyeasysql.egg-info/PKG-INFO
+pymyeasysql.egg-info/SOURCES.txt
+pymyeasysql.egg-info/dependency_links.txt
+pymyeasysql.egg-info/not-zip-safe
+pymyeasysql.egg-info/top_level.txt
