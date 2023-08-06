@@ -1,0 +1,2 @@
+[console_scripts]
+topsis = Topsis_Amit_Kumar.topsis:main

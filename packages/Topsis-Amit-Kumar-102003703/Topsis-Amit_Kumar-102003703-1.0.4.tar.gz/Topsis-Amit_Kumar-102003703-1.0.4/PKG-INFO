@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: Topsis-Amit_Kumar-102003703
+Version: 1.0.4
+Summary: A package -> Calculates Topsis Score and Rank them accordingly
+Author: Amit Kumar
+Author-email: akumar11_be20@thapar.edu
+License: MIT
+Keywords: python package Amit Kumar
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
