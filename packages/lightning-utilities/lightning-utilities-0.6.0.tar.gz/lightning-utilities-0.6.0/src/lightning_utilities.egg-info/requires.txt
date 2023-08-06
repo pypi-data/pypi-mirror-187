@@ -1,0 +1,14 @@
+packaging>=20.0
+typing_extensions
+
+[:python_version < "3.8"]
+importlib-metadata>=4.0.0
+
+[cli]
+fire
+
+[docs]
+sphinx<5.0,>=4.0
+
+[test]
+coverage==6.5.0
