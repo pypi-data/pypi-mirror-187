@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: gb-module
+Version: 0.0.2
+Summary: Generic Backupy Module Library
+Author: Martin Rader
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# gb_module
+
+## Build
+
+```
+# build it
+python3 setup.py sdist bdist_wheel
+# install it locally
+pip3 install -e .
+# upload to pypi (don't forget to increase the version number)
+python3 -m twine upload dist/*
+```
