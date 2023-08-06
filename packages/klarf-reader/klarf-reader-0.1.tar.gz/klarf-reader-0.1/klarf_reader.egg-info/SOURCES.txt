@@ -1,0 +1,7 @@
+LICENSE.txt
+setup.py
+klarf_reader.egg-info/PKG-INFO
+klarf_reader.egg-info/SOURCES.txt
+klarf_reader.egg-info/dependency_links.txt
+klarf_reader.egg-info/requires.txt
+klarf_reader.egg-info/top_level.txt
