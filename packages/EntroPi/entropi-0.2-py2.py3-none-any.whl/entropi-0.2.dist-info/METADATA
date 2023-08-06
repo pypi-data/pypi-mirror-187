@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: EntroPi
+Version: 0.2
+Summary: A self contained and systemd service enabled package for monitoring temperatures
+Author-email: Conrad Storz <conradstorz@gmail.com>
+Project-URL: Home, https://github.com/conradstorz/Home_HVAC.git
