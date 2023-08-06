@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   </head>
+   <body style="background-color: #fafafa; padding: 20px;">
+      <div style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); width: 50%; background-color: white;  margin:0 auto;">
+         <br/>
+         <br/>
+         <div style="padding: 2px 16px;">
+            {% load i18n %}{% autoescape off %}
+            {% blocktranslate %}
+            <h1>LOGO</h1>
+            <br/>
+            <div style="width: 100%; height: 1px; background-color: lightgray;"></div>
+            <br/>
+            Hola {{ user }},
+            <br/>
+            <br/>
+            Te damos la bienvenida.
+            <br/>
+            <br/>
+            Has sido invitado para que formes parte de esta plataforma. Para poder continuar, necesitamos que actives tu cuenta. Sólo será un momento.
+            {% endblocktranslate %}
+            <br/>
+            <br/>
+            {% if not onboarding_url %}
+               {% block reset_link %}
+               <a style="background-color: #00A294;
+                  border: none;
+                  color: white;
+                  padding: 10px 27px;
+                  text-align: center;
+                  text-decoration: none;
+                  display: inline-block;
+                  border-radius: 10px;
+                  font-size: 12px;" href="{{ protocol }}://{{ domain }}{% url 'password_reset_confirm' uidb64=uid token=token %}">Activar Cuenta</a>
+               {% endblock %}
+            {% else %}
+               {% block reset_link %}
+               <a style="background-color: #00A294;
+                  border: none;
+                  color: white;
+                  padding: 10px 27px;
+                  text-align: center;
+                  text-decoration: none;
+                  display: inline-block;
+                  border-radius: 10px;
+                  font-size: 12px;" href="{{ onboarding_url }}">Go</a>
+               {% endblock %}
+            {% endif %}
+            {% endautoescape %}
+         </div>
+         <br/>
+         <br/>
+      </div>
+   </body>
+</html>
