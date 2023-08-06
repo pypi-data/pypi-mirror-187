@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/pygpt.py
+src/PyGPT.egg-info/PKG-INFO
+src/PyGPT.egg-info/SOURCES.txt
+src/PyGPT.egg-info/dependency_links.txt
+src/PyGPT.egg-info/requires.txt
+src/PyGPT.egg-info/top_level.txt
