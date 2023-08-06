@@ -1,0 +1,40 @@
+[project]
+name = "piwebapi_restapi"
+version = "0.0.6"
+authors = [
+  { name="holger amort", email="holgeramort@gmail.com" },
+]
+description = "PIWebAPI Rest"
+readme = "README.md"
+dependencies = [
+    "nptyping>=2.4.1",
+    "pandas >= 0.20.3",
+    "six >= 1.8.0",
+    "setuptools >= 21.0.0",
+    "requests >= 2.18.4",
+    "requests-kerberos >= 0.12.0",
+    "asn1crypto>=0.24.0",
+    "certifi>=2018.4.16",
+    "cffi>=1.11.5",
+    "chardet>=3.0.4",
+    "cryptography>=2.2.2",
+    "idna>=2.6",
+    "ntlm-auth>=1.1.0",
+    "numpy>=1.14.3",
+    "pycparser>=2.18",
+    "python-dateutil>=2.7.3",
+    "pytz>=2018.4",
+    "requests-ntlm>=1.1.0",
+    "six>=1.8.0",
+    "urllib3>=1.22",
+    #"wincertstore>=0.2",
+    #"winkerberos>=0.7.0"
+]
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
