@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+alsa_ctl/__init__.py
+alsa_ctl/_version.py
+alsa_ctl/cli.py
+alsa_ctl/lib.py
+alsa_ctl.egg-info/PKG-INFO
+alsa_ctl.egg-info/SOURCES.txt
+alsa_ctl.egg-info/dependency_links.txt
+alsa_ctl.egg-info/top_level.txt
+alsa_ctl/completion/_alsa-ctl
+bin/alsa-ctl
