@@ -1,0 +1,25 @@
+# general things to ignore
+build/
+dist/
+*.egg-info/
+*.egg
+*.eggs
+*.py[cod]
+__pycache__/
+*.so
+*~
+venv/
+env/
+.DS_Store
+*.swp
+docs/_build
+
+# due to using t/nox and pytest
+.tox
+.cache
+.pytest_cache
+.coverage
+htmlcov/
+.xprocess
+.vscode
+.python-version
