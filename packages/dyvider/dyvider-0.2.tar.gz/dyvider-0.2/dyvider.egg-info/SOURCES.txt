@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+long_description.rst
+setup.py
+dyvider/__init__.py
+dyvider/algorithms.py
+dyvider/layers.py
+dyvider/objectives.py
+dyvider/utilities.py
+dyvider.egg-info/PKG-INFO
+dyvider.egg-info/SOURCES.txt
+dyvider.egg-info/dependency_links.txt
+dyvider.egg-info/requires.txt
+dyvider.egg-info/top_level.txt
