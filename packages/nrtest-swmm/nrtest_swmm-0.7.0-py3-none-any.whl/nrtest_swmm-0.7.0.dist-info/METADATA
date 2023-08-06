@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: nrtest-swmm
+Version: 0.7.0
+Summary: SWMM extension for nrtest
+Home-page: https://github.com/USEPA
+Author: Michael E. Tryby
+Author-email: tryby.michael@epa.gov
+License: UNKNOWN
+Keywords: nrtest_swmm
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: header-detail-footer (>=2.3)
+Requires-Dist: nrtest (>=0.2.0)
+Requires-Dist: numpy (>=1.7.0)
+Requires-Dist: swmm-toolkit
+
+UNKNOWN
+
+

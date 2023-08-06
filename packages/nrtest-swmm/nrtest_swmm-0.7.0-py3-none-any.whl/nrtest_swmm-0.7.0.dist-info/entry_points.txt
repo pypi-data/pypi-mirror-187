@@ -1,0 +1,4 @@
+[nrtest.compare]
+swmm allclose = nrtest_swmm:swmm_allclose_compare
+swmm report = nrtest_swmm:swmm_report_compare
+

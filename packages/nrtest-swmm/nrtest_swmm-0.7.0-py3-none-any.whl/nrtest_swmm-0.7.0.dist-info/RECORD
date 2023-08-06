@@ -1,0 +1,8 @@
+nrtest_swmm/__init__.py,sha256=9yjCWLpIe8TCDqpiFZAg62bLpIiHbEplo33uFb01Efk,3231
+nrtest_swmm/output_reader.py,sha256=_asWDWElWuVMseS4SGw6oS7lXIcXXvuLVYuKFWtE77k,2411
+nrtest_swmm-0.7.0.data/scripts/report-diff,sha256=2_bUuRGMTZgWzwEiZaJJbvWRweo8sORPOGPg_Xin50g,2743
+nrtest_swmm-0.7.0.dist-info/METADATA,sha256=ST-af2vX2DlgCkZCSiRcp6EExSQYqTtergnF8hC-30s,438
+nrtest_swmm-0.7.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+nrtest_swmm-0.7.0.dist-info/entry_points.txt,sha256=3PVsSg0EyQHXBvTaQFX_q8xMQHvxXzAIzcIyl-_HC5g,114
+nrtest_swmm-0.7.0.dist-info/top_level.txt,sha256=oo5X3OliYinRCDbFPxKiGxA_hnqwXDva4WrV10n8fxw,12
+nrtest_swmm-0.7.0.dist-info/RECORD,,
