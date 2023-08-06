@@ -1,0 +1,8 @@
+exclude .gitignore
+exclude .spyproject
+exclude makerealease.sh
+exclude pyarmor
+exclude dist
+#exclude release
+exclude build
+exclude SWANi.spec
