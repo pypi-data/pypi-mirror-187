@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: curvenote
+Version: 0.7.1
+Summary: Helper library from Curvenote for data science in Jupyter notebooks
+Home-page: http://curvenote.com
+Author: Curvenote inc.
+Author-email: hi@curvenote.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Financial and Insurance Industry
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# curvenote
+
+The Curvenote helper library for working in Jupyter Notebooks with Python kernels
+
+## Installation
+
+```bash
+    ~$ python -m pip install curvenote
+```
+
+## Function Summary
+
+- `stash` save a dict or pandas dataframe in a cell output without diaplying the data
+
+  ```python
+       from curvenote import stash
+
+       stash('myvars', myvars)
+  ```
