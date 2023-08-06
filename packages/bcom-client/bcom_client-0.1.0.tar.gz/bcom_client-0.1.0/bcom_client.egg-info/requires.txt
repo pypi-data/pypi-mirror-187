@@ -1,0 +1,8 @@
+pydantic>=1.8.2
+httpx
+respx
+
+[test]
+nox
+mypy>=0.941
+pytest
