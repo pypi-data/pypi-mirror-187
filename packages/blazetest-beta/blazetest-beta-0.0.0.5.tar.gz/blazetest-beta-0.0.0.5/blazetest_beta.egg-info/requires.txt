@@ -1,0 +1,9 @@
+click
+pytest
+PyYAML
+dacite
+boto3
+licensing
+
+[:python_version >= "3.7"]
+pyopenssl>=23.0.0
