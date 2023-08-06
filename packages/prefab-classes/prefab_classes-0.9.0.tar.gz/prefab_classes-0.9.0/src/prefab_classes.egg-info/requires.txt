@@ -1,0 +1,17 @@
+
+[build]
+build
+twine
+
+[docs]
+sphinx
+myst-parser
+sphinx_rtd_theme
+
+[performance]
+attrs
+pydantic
+
+[testing]
+pytest
+pytest-cov
