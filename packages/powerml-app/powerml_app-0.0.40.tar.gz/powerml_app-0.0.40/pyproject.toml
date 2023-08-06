@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=65.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "powerml_app"
+version = "0.0.40"
+authors = [
+  { name="Jonathan Li", email="johnnyli@powerml.co" },
+]
+description = "PowerML python package"
+readme = "README.md"
+requires-python = ">=3.7,<3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "backoff==2.2.1",
+    "jsonlines==3.1.0",
+    "nltk==3.8.1",
+    "numpy==1.21.6",
+    "requests==2.28.2",
+    "scikit_learn==1.0.2",
+    "sql_metadata==2.6.0",
+    "sqlvalidator==0.0.20",
+    "tqdm==4.64.1",
+    "python-configuration[yaml]"
+]
+
+[tool.setuptools]
+packages = ["powerml", "powerml.model", "powerml.utils", "powerml.fuzzy", "powerml.decorator", "powerml.filters", "powerml.generators", "powerml.prompt"]
+
+[tool.autopep8]
+max_line_length = 127
+in-place = true
+recursive = true
+aggressive = 3
