@@ -1,0 +1,8 @@
+datasette
+ersatz-table-valued-functions
+datasette-rewrite-sql
+
+[test]
+pytest
+pytest-asyncio
+pytest-watch
