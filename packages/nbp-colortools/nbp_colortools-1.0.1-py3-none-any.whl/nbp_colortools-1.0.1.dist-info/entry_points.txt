@@ -1,0 +1,3 @@
+[console_scripts]
+colortools = colortools.cli:run
+nbp-colortools = colortools.cli:run
