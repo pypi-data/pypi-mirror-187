@@ -1,0 +1,17 @@
+[project]
+name = "ersci-card"
+version = "1.1"
+authors = [
+  { name="ep ersci", email="epg900@gmail.com" },
+]
+description = "Ecard is a Django app to create personeli card."
+readme = "README.rst"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: GNU License :: 3.0",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/epg900/ersci-card.git"
