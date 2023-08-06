@@ -1,0 +1,8 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+joker_bilibili.egg-info/PKG-INFO
+joker_bilibili.egg-info/SOURCES.txt
+joker_bilibili.egg-info/dependency_links.txt
+joker_bilibili.egg-info/top_level.txt
