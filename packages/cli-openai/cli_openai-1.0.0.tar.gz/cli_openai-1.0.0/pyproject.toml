@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "cli_openai"
+version = "1.0.0"
+description = "CHANGE_ME"
+authors = ["John Doe <contact@john.dev>"]
+license = "CHANGE_ME"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+volunor = "1.0.0rc3"
+
+[tool.poetry.scripts]
+openai = "cli_openai.cli:entry_point"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
