@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+fiktivna/__init__.py
+fiktivna/__main__.py
+fiktivna/functions.py
+fiktivna.egg-info/PKG-INFO
+fiktivna.egg-info/SOURCES.txt
+fiktivna.egg-info/dependency_links.txt
+fiktivna.egg-info/top_level.txt
