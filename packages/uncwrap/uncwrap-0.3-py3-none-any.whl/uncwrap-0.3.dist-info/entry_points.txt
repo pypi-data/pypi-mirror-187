@@ -1,0 +1,3 @@
+[console_scripts]
+UncertaintyModeler=uncertainty_classification_wrapper.cli:main
+

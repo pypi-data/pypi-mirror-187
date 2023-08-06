@@ -1,0 +1,22 @@
+uncwrap/__init__.py,sha256=XfmQvcXd4-Apu2_WeJKrTOFecTXQ5JIwGIXyKSu5hcU,167
+uncwrap/__main__.py,sha256=7tFURIAQh34ynF1djhGXJ69c9BES7h-FQ5eXe02COEM,188
+uncwrap/_version.py,sha256=ugyuFliEqtAwQmH4sTlc16YXKYbFWDmfyk87fErB8-8,21
+uncwrap/classifier_uncertainty.py,sha256=Yazi7ODbHBAgUbtlUpps5tWO7oQpmbNwELb_W7R0E_E,5805
+uncwrap/cli.py,sha256=iXi_jjhYLMrTFhikl2u2lUCJ72jOHrIR5hQ9SHAVoXE,272
+uncwrap/examples/Uncertainty Wrapper Example (20 newsgroups to BBC news).ipynb,sha256=RFi6m0GLJ6gY2UYjZ2jpejd3Igv6mFuY85AUy3Gt90U,44762
+uncwrap/examples/Uncertainty_Toy_problem_3classes.ipynb,sha256=5L6iCgJupiV7DHpahCGvshfLIB04oRi_b7xTYpidh2E,1645396
+uncwrap/examples/Uncertainty_Toy_problem_3classes_OOD.ipynb,sha256=g_dJpuvmgCRA_2o5MUP5GEoPWBDNv1LRjZR0p8lSQ_8,687492
+uncwrap/examples/newsgroups_2_politics_example.py,sha256=oMaoS-hlrZRreDl4M2zifuw49yjmeSJ_4p1MBuRz1gE,4497
+uncwrap/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uncwrap/models/dirichlet_wrapper.py,sha256=sVeL7gdpG_8_7O8g4u-ACZvR22al33xVbz3gbaqlr1U,10636
+uncwrap/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uncwrap/tests/conftest.py,sha256=Noz5CUwT-xh2CJNKsYyu_bUFaoMMKavOiAuhHzZeOp8,267
+uncwrap/tests/fixtures/bbc-text.csv,sha256=_a7g90Uc2NsnCdAOmSiG_hw4fuMyuMe3wVVO09PjOC4,5057493
+uncwrap/tests/test_classifier_uncertainty.py,sha256=g84tgNtyut4zKOo6F9T_yy-D9PZUuJsLPEMZe5Fs1FI,4607
+uncwrap/tests/test_utils.py,sha256=6yxngC6UnpLeteWBjxpoE0kO-silKx7ocEwUCM8Xxno,1017
+uncwrap-0.3.dist-info/entry_points.txt,sha256=-F5Y7Z4Y_lP7iOYXCK5Y6iDm8txvfiKSwA9tH1SyqaU,82
+uncwrap-0.3.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uncwrap-0.3.dist-info/LICENSE.md,sha256=DKOi_hvzUROxSGkTRO6W6AUE51oPeC0jO3hup_GJV5w,1087
+uncwrap-0.3.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+uncwrap-0.3.dist-info/METADATA,sha256=z1PmAOdUUFHvY-M8NgzpMFWpYKMmdDzTSPMvfJYG2rE,8918
+uncwrap-0.3.dist-info/RECORD,,
