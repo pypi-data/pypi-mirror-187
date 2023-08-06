@@ -1,0 +1,102 @@
+[tool.poetry]
+name = "django-generate-series"
+version = "0.5.0"
+description = "Use Postgres' generate_series to create sequences with Django's ORM"
+authors = ["Jack Linke <jack@watervize.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/jacklinke/django-generate-series/"
+documentation = "https://django-generate-series.readthedocs.io/en/latest/"
+keywords = ["sequence", "series", "set", "set-returning", "queryset"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Database",
+    "Topic :: Utilities",
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Framework :: Django :: 3.2",
+    "Framework :: Django :: 4.0",
+    "Framework :: Django :: 4.1",
+]
+
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+django = ">=3.2"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+black = {version = "^22.3", allow-prereleases = true}
+codecov = ">=2.0"
+coverage = ">=6.0"
+django-extensions = ">=3.0"
+docutils = ">=0.17"
+flake8 = ">=4"
+invoke = "^1.5"
+isort = ">=5.10"
+mock = "^4"
+myst-parser = ">=0.16"
+pre-commit = ">=2.10"
+psycopg2-binary = ">=2.9"
+pytest = "^7.0"
+pytest-clarity = "^1.0"
+pytest-cov = ">=3.0"
+pytest-django = "^4"
+pytest-sugar = "^0.9"
+sphinx = ">=4.0"
+sphinxcontrib-mermaid = "^0.7"
+tox = "^4"
+tox-gh-actions = ">=3.0.0"
+twine = ">=3.4"
+Werkzeug = "^2.0"
+wheel = ">=0.37"
+"zest.releaser" = ">=6.22"
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+isolated_build = true
+envlist = {py38,py39,py310}-django{32,40,41}
+
+[gh-actions]
+python =
+    3.8: py38-django32, py38-django40, py38-django41
+    3.9: py39-django32, py39-django40, py39-django41
+    3.10: py310-django32, py310-django40, py310-django41
+
+[testenv]
+deps =
+    django32: Django>=3.2,<4.0
+    django40: Django>=4.0,<4.1
+    django41: Django>=4.1,<4.2
+basepython =
+    py38: python3.8
+    py39: python3.9
+    py310: python3.10
+allowlist_externals =
+    poetry
+    bash
+extras =
+    dev
+skip_install = true
+# Recommended in discussion at https://github.com/python-poetry/poetry/issues/1745#issuecomment-648365339
+commands =
+    bash -c 'poetry export --with dev --without-hashes -f requirements.txt | grep -v "^[dD]jango==" | poetry run pip install --no-deps -r /dev/stdin'
+    # Show we have the right Django version
+    poetry run django-admin --version
+    poetry run pytest tests/
+"""
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
