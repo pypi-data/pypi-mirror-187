@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: apt-search
+Version: 0.1.0
+Summary: Search Ubuntu packages.
+Author: David Härer
+Author-email: david@familie-haerer.de
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: beautifulsoup4 (>=4.11.1,<5.0.0)
+Requires-Dist: httpx (>=0.23.3,<0.24.0)
+Requires-Dist: typer (>=0.7.0,<0.8.0)
+Description-Content-Type: text/markdown
+
+<p align="center"><h1 align="center">apt-search</h1></p>
+<p align="center"><em>Search Ubuntu packages.</em></p>
+
+## Installation
+
+Use `pip` or `pipx` for installation:
+
+```bash
+pip install --user apt-search
+# or
+pipx install apt-search
+```
+
+## Usage
+
+Just execute the `apt-search` command with the filename you are looking for:
+
+```bash
+apt-search --help
+# Usage: main.py [OPTIONS] FILENAME
+#
+# Arguments:
+#   FILENAME  [required]
+#
+# Options:
+#   --suite TEXT                    [default: jammy]
+#   --arch TEXT                     [default: any]
+#   --help                          Show this message and exit.
+```
+
