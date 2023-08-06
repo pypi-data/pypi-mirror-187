@@ -1,0 +1,2 @@
+[datasette]
+ersatz_table_valued_functions = datasette_ersatz_table_valued_functions
