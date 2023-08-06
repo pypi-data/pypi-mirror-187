@@ -1,0 +1,44 @@
+[project]
+name = "struqture_qutip_interface"
+version = "0.1.0"
+description = ""
+license = {text="Apache-2.0"}
+authors = [{name="HQS Quantum Simulation GmbH", email="info@quantumsimulations.de"}]
+readme = "README.md"
+dependencies = [
+    "struqture-py>=1.0.0b5",
+    "numpy",
+    'qutip',
+]
+[project.optional-dependencies]
+tests = [
+  'coverage',
+  'pytest',
+]
+
+[tool.distutils.bdist_wheel]
+universal = true
+
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+# requires = ["poetry-core"]
+# build-backend = "poetry.core.masonry.api"
+
+[tool.flake8]
+max-line-length = 100
+ignore = 'D400,D401,W503,ANN101,ANN102,ANN002,ANN003,ANN401,S403,S404,S301'
+exclude = '.git,__pycache__,doc/conf.py,old,build,dist,test_*'
+docstring-convention = "google"
+per-file-ignores = [
+    '__init__.py:F401',
+]
+
+[tool.mypy]
+ignore_missing_imports = true
+pretty = true
+follow_imports = "silent"
+
+[tool.bandit]
+

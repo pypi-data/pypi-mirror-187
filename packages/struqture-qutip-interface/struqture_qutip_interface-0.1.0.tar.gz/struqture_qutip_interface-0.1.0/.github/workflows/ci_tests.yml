@@ -1,0 +1,54 @@
+name: ci_tests
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  unittests_check:
+    name: unittests_check-${{ matrix.combinations.runs_on }}
+    runs-on: ${{ matrix.combinations.runs_on }}
+    strategy:
+      matrix:
+        combinations: [
+          { runs_on: "ubuntu-latest",  rust: "x86_64-unknown-linux-gnu" },
+        ]
+        python: [
+            {py: '3.7', interpreter: "python3.7"},
+            {py: '3.8', interpreter: "python3.8"},
+            {py: '3.9', interpreter: "python3.9"},
+            {py: '3.10', interpreter: "python3.10"},
+            {py: '3.11', interpreter: "python3.11"},
+        ]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python.py }}
+      - run: |
+          python -m pip install numpy
+          python -m pip install ./
+          cd tests
+          pytest .
+
+
+  check_linting_and_tests:
+    name: unittests_check
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v4
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install pytest pytest-cov flake8 flake8-bugbear flake8-docstrings flake8-annotations darglint mypy qoqo
+      - name: Lint with flake8
+        run: |
+          # stop the build if there are Python syntax errors or undefined names
+          flake8 --config=./.flake8 ./struqture_qutip_interface --count
+      - name: Mypy check
+        run: |
+          # stop the build if there are Python syntax errors or undefined names
+          mypy --config-file=./mypy.ini ./struqture_qutip_interface

@@ -1,0 +1,7 @@
+struqture-py>=1.0.0b5
+numpy
+qutip
+
+[tests]
+coverage
+pytest
