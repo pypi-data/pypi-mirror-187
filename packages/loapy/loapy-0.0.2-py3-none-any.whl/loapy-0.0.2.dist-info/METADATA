@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: loapy
+Version: 0.0.2
+Summary: An unofficial asynchronous SDK for Lostark Open API written in Python.
+License: MIT
+Author: Mary
+Author-email: mareowst@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aiohttp (>=3.7.4,<4.0.0)
+Requires-Dist: typing-extensions (>=4.4.0,<5.0.0)
+Requires-Dist: ujson (>=5.7.0,<6.0.0)
+Description-Content-Type: text/markdown
+
+# loapy
+
+An unofficial asynchronous SDK for Lostark Open API written in Python.
+
+## Installation
+
+**loapy requires Python 3.7 or higher**
+
+```sh
+python -m pip install --upgrade loapy
+```
+
+## Usage
+
+```python
+from asyncio import run
+from loapy import LostArkRest
+
+lostark = LostArkRest("your_api_key_here")
+
+async def main() -> None:
+    print(
+        await lostark.fetch_events()
+    )
+
+run(main())
+```

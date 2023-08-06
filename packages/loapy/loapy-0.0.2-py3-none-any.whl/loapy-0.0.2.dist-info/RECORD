@@ -1,0 +1,15 @@
+loapy/__init__.py,sha256=LL9huOgjeexFGokbyPhsUgrfQXkZ8iMwaYEeCHJjZs4,472
+loapy/errors.py,sha256=gGdc2pKzpGJe4KuxEIfP60-Lb8FLECgnZ0zt48fvVm4,913
+loapy/http.py,sha256=H_Rv5jYIro11P3KTkXUSabq6tOfl5FXw-X66rSNRNlU,10834
+loapy/py.typed,sha256=IsyoHk1DAGZb1Wbeag3b5qc9Kmi-QYabLOhGFXBWqeg,32
+loapy/types/armories.py,sha256=qWPeO0FElYOW0ppTz_2yCXjWCAcY70hL1wCEtvctNeI,3572
+loapy/types/auctions.py,sha256=7MW9ttex7DZueHZLE-P8Tr-FjxJMBN5AhCG-3H263zM,2512
+loapy/types/basic.py,sha256=d4F29tEseU3jEIwXJiCK-iEj7MkLA89p4OdD6bkxRgk,85
+loapy/types/characters.py,sha256=3wTmzL_hXNO0b2vmyrs3OqBDJUSJa1IUfgpm49w87P8,202
+loapy/types/guilds.py,sha256=Rb0tIxD3ST0JKMw7vIoVRtyfJXvDXiDmSnzsjr3qAjk,259
+loapy/types/markets.py,sha256=G7Yta6QVIlgUDqharyYAcr0ZizuZfwd45FHBIBKlK4w,1245
+loapy/types/news.py,sha256=L_3Uh06DxN_bJ17Nc62DZEleq0Rr9mHv7aTZ0dl5DAo,215
+loapy-0.0.2.dist-info/METADATA,sha256=3wJviKb8abdEmZCYExtvKKIugnpr0BkCRLWy-diZ8N4,1140
+loapy-0.0.2.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+loapy-0.0.2.dist-info/LICENSE,sha256=dQsAKsP0AesSqp3dSHjETlfNksb3Hk0trBarfOFWV3A,1061
+loapy-0.0.2.dist-info/RECORD,,
