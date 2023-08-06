@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: PyAR488
+Version: 0.2.6
+Summary: module to interface AR488 boards and wide instrument library
+Home-page: https://github.com/Minu-IU3IRR/PyAR488
+Author: Manuel Minutello
+License: MIT
+License-File: LICENSE
+
+
+package to interact with AR488 interface boards, adds a bit of abstraction to simplify interactions. also can be passed as an argument cto custom classes to isentify instruments in your code like :
+
+    class HP3468A:
+        def __init__(gpib_addrs:int, interface:AR488):
+            self.address = gpib_addrs
+            self.interface = interface
+
+        def read_measurement(self):
+            self.interface.address(self.address)
+            return self.interface.read()
+
+
+    my_awesome_interface = AR488('COM5')  # open the interface
+    my_swesome_meter = HP3468A(22 , my_awesome_interface)  # create the interument object
+
+    reading = my_awesome_meter.read_measurement()  #read measurement
+    print(reading)
+
+this module comes with the following instrument libraries:
+    - HP8660D RF signal source
