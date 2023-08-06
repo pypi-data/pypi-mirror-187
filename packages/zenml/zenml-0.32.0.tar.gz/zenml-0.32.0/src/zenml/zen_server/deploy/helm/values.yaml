@@ -1,0 +1,166 @@
+# Default values for zenml.
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+
+# ZenML server related options.
+zenml:
+
+  replicaCount: 1
+
+  image:
+    repository: zenmldocker/zenml-server
+    pullPolicy: Always
+    # Overrides the image tag whose default is the chart appVersion.
+    tag:
+
+  initImage:
+    repository: zenmldocker/zenml
+    pullPolicy: Always
+    # Overrides the image tag whose default is the chart appVersion.
+    tag:
+
+  debug: True
+
+  # ZenML server deployment type. This field is used for telemetry purposes.
+  # Example values are "local", "kubernetes", "aws", "gcp", "azure".
+  deploymentType:
+
+  # The ZenML authentication scheme. Use one of:
+  # 
+  # NO_AUTH - No authentication
+  # HTTP_BASIC - HTTP Basic authentication
+  # OAUTH2_PASSWORD_BEARER - OAuth2 password bearer with JWT tokens
+  authType: OAUTH2_PASSWORD_BEARER
+
+  # The secret key used to sign JWT tokens. Only relevant if the
+  # OAUTH2_PASSWORD_BEARER authentication scheme is used. This should be set to
+  # a random string with a recommended length of at least 32 characters, e.g.:
+  #
+  #   ```python
+  #   from secrets import token_hex
+  #   token_hex(32)
+  #   ```
+  #   
+  # or:
+  #
+  #   ```shell
+  #   openssl rand -hex 32
+  #   ```
+  #
+  # If not explicitly set, a random key will be generated when the helm
+  # chart is installed and reused for all subsequent upgrades.
+  jwtSecretKey:
+
+  # The root URL path to use when behind a proxy. This is useful when the
+  # `rewrite-target` annotation is used in the ingress controller, e.g.:
+  #
+  # ```yaml
+  # rootUrlPath: /zenml
+  #
+  # ingress:
+  #   enabled: true
+  #   className: "nginx"
+  #   annotations:
+  #     nginx.ingress.kubernetes.io/rewrite-target: /$1
+  #   host:
+  #   path: /zenml/?(.*)
+  # ```
+  rootUrlPath:
+
+  defaultProject: default
+  defaultUsername: default
+  # Use your own password here
+  defaultPassword: zenml
+
+  # MySQL database configuration. If not set, a local sqlite database will be
+  # used, which will not be persisted and cannot be accessed from outside the
+  # cluster, which means that pipeline run metadata information will not be
+  # tracked centrally and available in the dashboard.
+  # NOTE: the certificate files need to be copied in the helm chart folder and
+  # the paths configured here need to be relative to the root of the helm chart.
+  database: {}
+    # url: "mysql://admin:password@zenml-mysql:3306/database"
+    # sslCa: /path/to/ca.pem
+    # sslCert: /path/to/client-cert.pem
+    # sslKey: /path/to/client-key.pem
+    # sslVerifyServerCert: True
+
+  service:
+    type: ClusterIP
+    port: 80
+
+  ingress:
+    enabled: true
+    className: "nginx"
+    annotations:
+      nginx.ingress.kubernetes.io/ssl-redirect: "true"
+      # nginx.ingress.kubernetes.io/rewrite-target: /$1
+      # kubernetes.io/ingress.class: nginx
+      # kubernetes.io/tls-acme: "true"
+      # cert-manager.io/cluster-issuer: "letsencrypt"
+
+    # hint: you can use a service like nip.io to get a wildcard DNS for your
+    # ingress IP address. For example, if your ingress IP is 192.168.0.1, you
+    # can use a host name like zenml.192.168.0.1.nip.io. This allows you to
+    # reuse the same ingress for multiple deployments and/or services.
+    host:
+    path: /
+    tls:
+      enabled: false
+      # NOTE: if enabled, this will generate self-signed certificates during
+      # installation. This also requires that the ingress host be set to the
+      # domain name or IP address used to access the ZenML server from outside
+      # the cluster.
+      generateCerts: false
+      secretName: zenml-tls-certs
+
+
+serviceAccount:
+  # Specifies whether a service account should be created
+  create: true
+  # Annotations to add to the service account
+  annotations: {}
+  # The name of the service account to use.
+  # If not set and create is true, a name is generated using the fullname template
+  name: "zenml"
+
+podAnnotations: {}
+
+podSecurityContext: {}
+  # fsGroup: 2000
+
+securityContext: {}
+  # capabilities:
+  #   drop:
+  #   - ALL
+  # readOnlyRootFilesystem: true
+  # runAsNonRoot: true
+  # runAsUser: 1000
+
+resources: {}
+  # We usually recommend not to specify default resources and to leave this as a conscious
+  # choice for the user. This also increases chances charts run on environments with little
+  # resources, such as Minikube. If you do want to specify resources, uncomment the following
+  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+  # limits:
+  #   cpu: 100m
+  #   memory: 128Mi
+  # requests:
+  #   cpu: 100m
+  #   memory: 128Mi
+
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 100
+  targetCPUUtilizationPercentage: 80
+  # targetMemoryUtilizationPercentage: 80
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
