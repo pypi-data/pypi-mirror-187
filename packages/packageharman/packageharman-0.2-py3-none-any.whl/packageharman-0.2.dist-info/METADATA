@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: packageharman
+Version: 0.2
+Summary: This is a Python Package implementing TOPSIS used for multi-criteria decision analysis method
+Author: Harmanjot Kaur
+Author-email: hkaur4_be20@thapar.edu
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: License.txt.txt
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+UNKNOWN
+
