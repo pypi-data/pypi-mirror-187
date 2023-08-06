@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: supervised_ml
+Version: 0.0.1
+Summary: machine learning supervised models for python with accuracy metrics
+Home-page: UNKNOWN
+Author: Mohga Emam
+Author-email: mohgasolimanemam@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: machine learning,regression,classification,supervised learning
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
