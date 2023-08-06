@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+GA/GA.py
+GA/__init__.py
+GeneticAlgorithmFeaturesSelection.egg-info/PKG-INFO
+GeneticAlgorithmFeaturesSelection.egg-info/SOURCES.txt
+GeneticAlgorithmFeaturesSelection.egg-info/dependency_links.txt
+GeneticAlgorithmFeaturesSelection.egg-info/requires.txt
+GeneticAlgorithmFeaturesSelection.egg-info/top_level.txt
+tests/__init__.py
+tests/test.py
