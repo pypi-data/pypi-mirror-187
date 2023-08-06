@@ -1,0 +1,9 @@
+invenio_app_rdm>=10.0.0
+
+[tests]
+pytest-invenio<3.0.0,>=2.1.0
+pytest-black>=0.3.12
+pytest-runner<5,>=3.0.0
+invenio_search>=2.0.0
+opensearch_dsl>=2.0.0
+twine>=4.0.1

@@ -1,0 +1,12 @@
+include *.md
+include *.sh
+include *.pot
+include Makefile
+include babel.ini
+include .tx/config
+recursive-include invenio_theme_kth *.config
+recursive-include invenio_theme_kth *.html *.js *.less *.json *.yaml
+recursive-include invenio_theme_kth *.js
+recursive-include invenio_theme_kth *.po *.pot *.mo
+recursive-include invenio_theme_kth *.pdf
+recursive-include invenio_theme_kth *.py
