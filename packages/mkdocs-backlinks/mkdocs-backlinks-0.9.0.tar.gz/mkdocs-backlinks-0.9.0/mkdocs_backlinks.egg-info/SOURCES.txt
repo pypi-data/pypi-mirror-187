@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+backlinks_plugin/__init__.py
+backlinks_plugin/plugin.py
+mkdocs_backlinks.egg-info/PKG-INFO
+mkdocs_backlinks.egg-info/SOURCES.txt
+mkdocs_backlinks.egg-info/dependency_links.txt
+mkdocs_backlinks.egg-info/entry_points.txt
+mkdocs_backlinks.egg-info/requires.txt
+mkdocs_backlinks.egg-info/top_level.txt
