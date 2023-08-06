@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: statute-trees
+Version: 0.0.21
+Summary: Law mostly consists of tree-like nodes. This package supports a common tree format for Philippine Codifications, Statutes, and Documents, using a uniform node structure (i.e., leaves of a tree) identified by a given material path.
+Author: Marcelino G. Veloso III
+Author-email: mars@veloso.one
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: citation-utils (>=0.2.0,<0.3.0)
+Requires-Dist: email-validator (>=1.3.0,<2.0.0)
+Requires-Dist: statute-patterns (>=0.0.26,<0.0.27)
+Description-Content-Type: text/markdown
+
+# statute-trees
+
+![Github CI](https://github.com/justmars/statute-trees/actions/workflows/main.yml/badge.svg)
+
+Tree structures utilized in the [LawSQL dataset](https://lawsql.com).
+
+## Documentation
+
+See [documentation](https://justmars.github.io/statute-trees).
+
+## Development
+
+Checkout code, create a new virtual environment:
+
+```sh
+poetry add statute-trees # python -m pip install statute-trees
+poetry update # install dependencies
+poetry shell
+```
+
+Run tests:
+
+```sh
+pytest
+```
+
