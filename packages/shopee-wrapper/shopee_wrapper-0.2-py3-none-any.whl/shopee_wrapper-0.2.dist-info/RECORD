@@ -1,0 +1,16 @@
+shopee_wrapper/__init__.py,sha256=8ABr11xbUNNuqXietyIpIsD58QSrqttiqSwjhNMPy6U,84
+shopee_wrapper/base.py,sha256=RGFiVlEyclGKKmdOqeJ92w9qK2BMRXG0rbtO275z9pk,1382
+shopee_wrapper/product.py,sha256=e7HSR1Xo0BZuv3MREo2swMYmwocaWMhmvdYZ2kkcIWc,5636
+shopee_wrapper/review.py,sha256=l7BMsTKTdNurnTIbR4FdKwHeX27J1djmng0f2u7djpE,2718
+shopee_wrapper/shop.py,sha256=AjwudsuzW43gEAcMcjL8nKjJAnjmKz8gOkZltHoFCpA,3289
+shopee_wrapper/type.py,sha256=9xPvJzmQwVpUVnn2M-gVWWPC7JM1zi2rjrfoBcddgaY,92
+wrapper/__init__.py,sha256=8ABr11xbUNNuqXietyIpIsD58QSrqttiqSwjhNMPy6U,84
+wrapper/base.py,sha256=RGFiVlEyclGKKmdOqeJ92w9qK2BMRXG0rbtO275z9pk,1382
+wrapper/product.py,sha256=e7HSR1Xo0BZuv3MREo2swMYmwocaWMhmvdYZ2kkcIWc,5636
+wrapper/review.py,sha256=l7BMsTKTdNurnTIbR4FdKwHeX27J1djmng0f2u7djpE,2718
+wrapper/shop.py,sha256=AjwudsuzW43gEAcMcjL8nKjJAnjmKz8gOkZltHoFCpA,3289
+wrapper/type.py,sha256=9xPvJzmQwVpUVnn2M-gVWWPC7JM1zi2rjrfoBcddgaY,92
+shopee_wrapper-0.2.dist-info/METADATA,sha256=GgIcn6vvHj20ujQNp0VP890neHYYDbUJyo31reWNBs4,249
+shopee_wrapper-0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+shopee_wrapper-0.2.dist-info/top_level.txt,sha256=gfmjay19hUPC-zXoF3ufaaJMxhzjZDeH8A8pE97NHQY,15
+shopee_wrapper-0.2.dist-info/RECORD,,
