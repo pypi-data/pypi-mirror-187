@@ -1,0 +1,2 @@
+[console_scripts]
+ph4-ups-mon = ph4upsmonit.ups:main
