@@ -1,0 +1,14 @@
+README.md
+setup.py
+simple_num_operations/__init__.py
+simple_num_operations/all.py
+simple_num_operations/buildutils_sno.py
+simple_num_operations/exceptions_all.py
+simple_num_operations/v01.py
+simple_num_operations/v02.py
+simple_num_operations/v03.py
+simple_num_operations.egg-info/PKG-INFO
+simple_num_operations.egg-info/SOURCES.txt
+simple_num_operations.egg-info/dependency_links.txt
+simple_num_operations.egg-info/requires.txt
+simple_num_operations.egg-info/top_level.txt
