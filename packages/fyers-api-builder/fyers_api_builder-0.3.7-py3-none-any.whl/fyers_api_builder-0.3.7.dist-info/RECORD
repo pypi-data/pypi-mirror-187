@@ -1,0 +1,11 @@
+fyers_api_builder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fyers_api_builder/main.py,sha256=fxbuxXYcLa5pjVYg1brJZFwjNS3XcfySN7RgIeBgmgg,5506
+fyers_api_builder/libs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fyers_api_builder/libs/generate_payload.py,sha256=pNKn0DEZ2P0f0ZJLyTZHK-sK2X3k-mdiICexZlKFVhc,282
+fyers_api_builder/libs/generate_tasks.py,sha256=HC-G3O6P1MoXD2F_DXbHImsiwRUaKFU0d1_GlKo5Rk4,932
+fyers_api_builder/libs/get_history_data.py,sha256=rDhhyVd-Zk2QE-5jj0Ew2EOzxX2ojFcqDJFEovlPtjU,1982
+fyers_api_builder-0.3.7.dist-info/LICENSE,sha256=wGDbiZ8BvcxYdzd7Fa39ymLtU9rEHalckN4AnA-sKI4,11
+fyers_api_builder-0.3.7.dist-info/METADATA,sha256=y6KtQq6m4YQKcbKmAOT9kCOmvNwgIQ0tU5LmIBoajZQ,1086
+fyers_api_builder-0.3.7.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+fyers_api_builder-0.3.7.dist-info/top_level.txt,sha256=4_Y7PssSisEjAoGnHPzshOrO4UxAAWEbS6WJtU3Cubg,18
+fyers_api_builder-0.3.7.dist-info/RECORD,,
