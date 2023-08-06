@@ -1,0 +1,16 @@
+spuring/__init__.py,sha256=b9J52h295NiXzJwI-nBKkDYGQ5zsRuuVmT90W2PG23k,68
+spuring/__main__.py,sha256=SwAT2ayMHlRiYY8kaEP4v20bgYHyM2pqDa4dfR2q0yo,90
+spuring/creation.py,sha256=xEGG4e-XrJ75cq-f0VPMhl93r2MOAVgWLnHKF5jLLp4,2172
+spuring/main.py,sha256=64FaCh5A4lD6w0ZUqmyxmRqlILcNRZsB9kXRWqKXkk8,2260
+spuring/template.py,sha256=bY9n2Xdl4G9G6vkkxBUCVUIXbnG51WvSOUES1MpepQc,2249
+spuring/scripts/pip.py,sha256=k8FnTdV-SoPv8gdgO7E0OPYwJc-3EPNNCYicLFicq7o,687
+spuring/scripts/venv.py,sha256=HNmDrTufym-s0RlNpbmxRnu8MjQWtYeRwtVU0FgReBk,378
+spuring/templates/base.toml,sha256=Lx5NJyQQ3VRIr2vOMkiU2o67Wj5NteHTiavpuGxXRtc,684
+spuring/templates/default.toml,sha256=PnL_XAkQ6gy9B83Q7LnpEYeqTawAuY3TZCY7fOmvjG8,282
+spuring/templates/flask.toml,sha256=eA5ec-S6RhNd5Bfg90b9hGsifRnC9-OMW6MnPmgBJUo,542
+spuring-0.0.3.dist-info/LICENSE.md,sha256=5wjKtf5jB6oRT7XlWmVjVeso6bJkrjIGzc9nEg_S-jA,1103
+spuring-0.0.3.dist-info/METADATA,sha256=36gBQ3MIJZ7Y5lk6Okpj5niMawPIUiH3CpRxi4xtw6E,2924
+spuring-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+spuring-0.0.3.dist-info/entry_points.txt,sha256=lr5IWVgz01fPTUTWaXbcR-sZTP4r2RX6Q1jtev1ymnM,46
+spuring-0.0.3.dist-info/top_level.txt,sha256=jOFM3_QqvhWQ62PdrNQR-HSfRq2v78DDeo8ncHTOHSE,8
+spuring-0.0.3.dist-info/RECORD,,
