@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+avrdude_windows/__init__.py
+avrdude_windows.egg-info/PKG-INFO
+avrdude_windows.egg-info/SOURCES.txt
+avrdude_windows.egg-info/dependency_links.txt
+avrdude_windows.egg-info/top_level.txt
+avrdude_windows/avrdude_binaries/x32/avrdude.conf
+avrdude_windows/avrdude_binaries/x32/avrdude.exe
+avrdude_windows/avrdude_binaries/x64/avrdude.conf
+avrdude_windows/avrdude_binaries/x64/avrdude.exe
