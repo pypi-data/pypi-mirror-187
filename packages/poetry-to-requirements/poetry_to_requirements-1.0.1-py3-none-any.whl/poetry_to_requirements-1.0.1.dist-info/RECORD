@@ -1,0 +1,7 @@
+pre_commit_hooks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pre_commit_hooks/poetry_to_requirements.py,sha256=rGYCCvwQkhHXvuQce3g6cvcpA-Hdz52TG7Xuh8aF1Vg,2269
+poetry_to_requirements-1.0.1.dist-info/METADATA,sha256=G_fPR8tjgjYVaIMRa_oGXfMM-w4mbAAlMBRYzLkL9q4,1999
+poetry_to_requirements-1.0.1.dist-info/entry_points.txt,sha256=SSIx1ikjR5UELjDTvjA9JHW4hRLZtF8BStPNs3YaK6M,87
+poetry_to_requirements-1.0.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+poetry_to_requirements-1.0.1.dist-info/LICENSE,sha256=1vJxyr9mcpQa1D3MfkwvfgNUqVwnONI8sFqcpUhsFPk,1065
+poetry_to_requirements-1.0.1.dist-info/RECORD,,

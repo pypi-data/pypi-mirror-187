@@ -1,0 +1,3 @@
+[console_scripts]
+poetry-to-requirements=pre_commit_hooks.poetry_to_requirements:main
+
