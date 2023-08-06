@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: calotron
+Version: 0.0.5
+Summary: Transformer-based model to fast-simulate the LHCb ECAL detector
+Author-email: Matteo Barbetti <matteo.barbetti@fi.infn.it>, Lucio Anderlini <lucio.anderlini@fi.infn.it>
+License: MIT License
+Project-URL: repository, https://github.com/mbarbetti/calotron
+Keywords: tensorflow,machine learning,deep learning,transformer,lhcb experiment,lamarr,ultra-fast simulation,calorimeter
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: <=3.10,>=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: standard
+Provides-Extra: advanced
+Provides-Extra: style
+Provides-Extra: tests
+License-File: LICENSE
+
+# calotron
+
+[![TensorFlow versions](https://img.shields.io/badge/tensorflow-2.11-f57000?style=flat)](https://www.tensorflow.org/versions)
+[![PyPI - Python versions](https://img.shields.io/pypi/pyversions/calotron)](https://pypi.python.org/pypi/calotron)
+[![PyPI - Version](https://img.shields.io/pypi/v/calotron)](https://pypi.python.org/pypi/calotron)
+[![GitHub - Style](https://github.com/mbarbetti/calotron/actions/workflows/style.yml/badge.svg?branch=main)](https://github.com/mbarbetti/calotron/actions/workflows/style.yml)
+[![GitHub - Tests](https://github.com/mbarbetti/calotron/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/mbarbetti/calotron/actions/workflows/tests.yml)
+[![Codecov](https://codecov.io/gh/mbarbetti/calotron/branch/main/graph/badge.svg?token=DRG8BWC9RR)](https://codecov.io/gh/mbarbetti/calotron)
