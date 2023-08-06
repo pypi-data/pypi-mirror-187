@@ -1,0 +1,14 @@
+esmerald_sessions/__init__.py,sha256=_b6LgD37dEA1AGyWo3GRr51BeCFbt6p2T7vLQiSjwdU,593
+esmerald_sessions/backends.py,sha256=AHEgnaYVUoIDjLP8MYJSVEQuUDmsJdfqCwb4FsQoSRY,3478
+esmerald_sessions/config.py,sha256=HIpDHFAf97ryejdsqUkzWY25p6LbAGg6jRXKtV16rD8,1550
+esmerald_sessions/datastructures.py,sha256=4oCo8ooZSDUsbS61cN63YrCBb0kVIs2QQFyE_VEOiC0,758
+esmerald_sessions/enums.py,sha256=f7rWVG_xzuYIawd509Lj-hLsao6pCAG7zjvqBzWbHMU,240
+esmerald_sessions/exceptions.py,sha256=cyfLVHBzddyTYauyfCDFKxJr4LyZQ5KbiPOu7GCn-SA,657
+esmerald_sessions/middleware.py,sha256=c7oiLFqeZaI2LNTi0xKdDqXO-7oiB2L4Ip4IhS3sXRA,6053
+esmerald_sessions/protocols.py,sha256=RRwCjjM7PsCLQA6iyJyLCDEpSCeps5P7nFGAKYCexQY,763
+esmerald_sessions/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+esmerald_sessions/types.py,sha256=wVaA_9Fn4FIrn-vm7hvxp_-2N7N3EPNTMFhoTQOUSao,314
+esmerald_sessions-0.2.0.dist-info/METADATA,sha256=d3NZSvle5KBx0rSbVoYziwO9caemUUITkvV3udnwo9o,5818
+esmerald_sessions-0.2.0.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+esmerald_sessions-0.2.0.dist-info/licenses/LICENSE,sha256=yKEzXcumAsbG37l9nYusXVAui-b6BPg7mwgiib5xgAo,1078
+esmerald_sessions-0.2.0.dist-info/RECORD,,
