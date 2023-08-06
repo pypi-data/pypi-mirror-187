@@ -1,0 +1,5 @@
+download
+colorama
+pywin32; sys_platform == 'win32'
+python-dotenv
+setenvironment >= 1.0.8

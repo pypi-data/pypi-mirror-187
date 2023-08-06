@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: pyflutterinstall
+Version: 1.0.0
+Summary: Installs the flutter sdk and dependencies
+Home-page: https://github.com/zackees/pyflutterinstall
+Author: Zach Vorhies
+Author-email: dont@email.me
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Environment :: Console
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
+
+# pyflutterinstall
+
+Install flutter and all the dependencies for Mac, Windows and Linux.
+
+# Win Tests
+
+[![Win_Tests](https://github.com/zackees/pyflutterinstall/actions/workflows/push_win.yml/badge.svg)](https://github.com/zackees/pyflutterinstall/actions/workflows/push_win.yml)
+
+[![Win_FullInstall](https://github.com/zackees/pyflutterinstall/actions/workflows/push_win_fullinstall.yml/badge.svg)](https://github.com/zackees/pyflutterinstall/actions/workflows/push_win_fullinstall.yml)
+
+Installs all dependencies for pyflutter on Windows.
+
+# MacOS
+
+[![MacOS_FlutterOnly](https://github.com/zackees/pyflutterinstall/actions/workflows/push_macos_flutter_only.yml/badge.svg)](https://github.com/zackees/pyflutterinstall/actions/workflows/push_macos_flutter_only.yml)
+
+[![MacOS_Tests](https://github.com/zackees/pyflutterinstall/actions/workflows/push_macos.yml/badge.svg)](https://github.com/zackees/pyflutterinstall/actions/workflows/push_macos.yml)
+
+[![MacOS_Fullinstall](https://github.com/zackees/pyflutterinstall/actions/workflows/push_macos_fullinstall.yml/badge.svg)](https://github.com/zackees/pyflutterinstall/actions/workflows/push_macos_fullinstall.yml)
+
+# Ubuntu
+
+[![Ubuntu_Tests](https://github.com/zackees/pyflutterinstall/actions/workflows/push_ubuntu.yml/badge.svg)](https://github.com/zackees/pyflutterinstall/actions/workflows/push_ubuntu.yml)
+
+[![Ubuntu_Fullinstall](https://github.com/zackees/pyflutterinstall/actions/workflows/push_ubuntu_fullinstall.yml/badge.svg)](https://github.com/zackees/pyflutterinstall/actions/workflows/push_ubuntu_fullinstall.yml)
+
+Usage
+```bash
+> pip install pyflutterinstall
+> pyflutterinstall
+```
+
+# Releases
+  * 1.0.0: Windows, Mac and Linux now supported and all tests pass.
+  * 0.0.2: Automated tests for windows.
+  * 0.0.1: Initial release - windows supported.
