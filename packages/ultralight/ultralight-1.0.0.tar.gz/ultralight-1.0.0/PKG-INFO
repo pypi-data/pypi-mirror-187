@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: ultralight
+Version: 1.0.0
+Summary: Ultra Light Fast Generic Face Detector 👨‍👩‍👧‍👦🖼
+Home-page: https://github.com/abionics/UltraLight
+Author: Alex Ermolaev
+Author-email: abionics.dev@gmail.com
+License: MIT
+Keywords: face detection ai ultra light
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Ultra Light
+
+Ultra Light Fast Generic Face Detector 👨‍👩‍👧‍👦🖼
+
+## Installation
+
+```bash
+pip install ultralight
+```
+
+## Usage sample
+
+```python
+import cv2
+from ultralight import UltraLightDetector
+from ultralight.utils import draw_faces
+
+image = cv2.imread('sample.jpg')
+
+detector = UltraLightDetector()
+faces, scores = detector.detect(image)
+print(f'Found {len(faces)} face(s)')
+# >>> Found 5 face(s)
+
+draw_faces(image, faces, scores)
+cv2.imshow('result', image)
+cv2.waitKey(0)
+```
+
+This sample can be found [here](samples/sample.py)
+
+## More
+
+PyPI: https://pypi.org/project/ultralight
+
+Repository: https://github.com/abionics/UltraLight
+
+Developer: Alex Ermolaev (Abionics)
+
+Email: abionics.dev@gmail.com
+
+License: MIT (see LICENSE.txt)
+
+
