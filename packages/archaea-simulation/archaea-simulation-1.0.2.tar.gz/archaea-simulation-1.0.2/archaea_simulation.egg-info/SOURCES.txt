@@ -1,0 +1,17 @@
+LICENSE
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+archaea-simulation/__init__.py
+archaea-simulation/simulation_objects/__init__.py
+archaea-simulation/simulation_objects/cfd_stl_export.py
+archaea-simulation/simulation_objects/domain.py
+archaea-simulation/simulation_objects/wall.py
+archaea-simulation/simulation_objects/wall_type.py
+archaea-simulation/simulation_objects/zone.py
+archaea_simulation.egg-info/PKG-INFO
+archaea_simulation.egg-info/SOURCES.txt
+archaea_simulation.egg-info/dependency_links.txt
+archaea_simulation.egg-info/requires.txt
+archaea_simulation.egg-info/top_level.txt
