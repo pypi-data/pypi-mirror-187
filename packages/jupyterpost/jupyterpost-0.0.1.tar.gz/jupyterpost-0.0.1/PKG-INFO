@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: jupyterpost
+Version: 0.0.1
+Summary: Jupyterpost: Jupyterhub service for posting to Mattermost.
+Author-email: Anton Akhmerov <jupyterpost@antonakhmerov.org>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: jupyterhub >= 3.0.0
+Requires-Dist: httpx >= 0.19.0
+Project-URL: Bug Tracker, https://gitlab.kwant-project.org/qt/jupyterpost/-/issues
+Project-URL: Homepage, https://gitlab.kwant-project.org/qt/jupyterpost
+
+# Jupyterpost: post from Jupyterhub to a Mattermost server
+
+## Installing
+
+`pip install jupyterpost`
+
+## Enabling jupyterpost
+
+1. Create a bot user on your Mattermost server and get its token.
+2. Add the following at the end of your Jupyterhub config file.
+
+```python
+from jupyterpost import configure_jupyterhub
+
+configure_jupyterhub(
+    c,
+    mattermost_token="your mattermost token",
+    mattermost_url="https://your.mattermost.server/api/v4/",
+    mattermost_team="your mattermost team name",
+    jupyterpost_url="https://services.your.jupyterhub/services/jupyterpost",
+)
+```
+This will:
+
+* add a new service `jupyterpost` to your Jupyterhub
+* give all users *and their servers* access to this service
+* provide the service URL to the user's server as an environment variable `JUPYTERPOST_URL`
+
+The function is somewhat fragile, but should work for standard Jupyterhub installations.
+
+## Using jupyterpost
+
+```python
+from jupyterpost import post
+from matplotlib import pyplot
+
+pyplot.plot([0, 1])
+post(
+    message="Check out my plot",
+    channel="my-channel",  # Or "@username"
+    attachment=pyplot.gcf(),  # Or png bytes
+)
+```
+
+### Posting from outside of your Jupyterhub
+
+1. Get the variables `JUPYTERPOST_URL` and `JPY_API_TOKEN` from your Jupyterhub server.
+2. Provide them to `jupyterpost.post` as additional arguments and connect from anywhere!
+
+## Contributing
+
+Contributions are welcome! Please open an issue or a pull request.
+
+Specifically I would like to support more chat services, and more ways to post messages.
+
+Tests would also be great huehuehue.
+
