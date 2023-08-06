@@ -1,0 +1,2 @@
+[txl_component]
+txl_notebook = txl_notebook.components
