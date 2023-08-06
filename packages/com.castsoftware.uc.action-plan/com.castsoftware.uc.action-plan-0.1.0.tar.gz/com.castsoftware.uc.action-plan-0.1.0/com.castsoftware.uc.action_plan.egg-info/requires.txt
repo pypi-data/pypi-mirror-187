@@ -1,0 +1,4 @@
+com.castsoftware.uc.python.common>=0.1
+openpyxl
+pandas
+psycopg2
