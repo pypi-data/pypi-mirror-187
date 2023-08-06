@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: Topsis-Sidak-102003649
+Version: 1.0.3
+Summary: Compute Topsis Scores/Ranks of a given csv file
+Home-page: https://https://github.com/sidak2609/topsis
+Author: Sidak Khotra
+Author-email: sidakkhotra@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Topsis-Sidak-102003649
+
+# Topsis-Sidak-102003649
+
+## What is Topsis?
+
+Technique for Order Preference by Similarity to Ideal Solution (Topsis) originated in the 1980s as a multi-criteria decision making method.
+Topsis chooses the alternative of shortest Euclidean distance from the ideal solution, and greatest distance from the negative-ideal solution.
+
+## Installation
+
+```pip install Topsis-Sidak-102003649```
+
+
+## License
+Â© 2023 Sidak Khotra
+
+This repository is licensed under the MIT license. See LICENSE for details.
