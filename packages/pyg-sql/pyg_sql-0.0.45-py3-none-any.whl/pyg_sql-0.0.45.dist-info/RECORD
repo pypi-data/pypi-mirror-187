@@ -1,0 +1,10 @@
+pyg_sql/__init__.py,sha256=Yhh0l9ltkkijZuwvBC0juOjHbM-tlHJ-SF9beLEP-8c,348
+pyg_sql/_parse.py,sha256=hdFykDOcysDsCGVGS9_jTfKEGytIjL7yQKkSxtpCI5E,6804
+pyg_sql/_sql_table.py,sha256=-fUn5sqCpFmj9YAn0JSOzY3mvwDKSlM00Rf8tS_7Ly4,121342
+pyg_sql/_sql_writer.py,sha256=13GnnBMUcjzfPHK7fY0daJXQd5yDAuhaT6KkjcVTObI,8397
+pyg_sql/_ts_writer.py,sha256=GGEJ7vQL9pl9GzvhUCNGn-boEYJFoxvoT80QdkiImRQ,4451
+pyg_sql-0.0.45.dist-info/LICENSE,sha256=oO50YGSwbQnKsHaBFuwmX9DUUmHUCHya0saYoHx6rA4,35803
+pyg_sql-0.0.45.dist-info/METADATA,sha256=CaQl7wDGwHIwnb4hUKeNGqYliMstAqOBlwBE8Rx530o,12452
+pyg_sql-0.0.45.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyg_sql-0.0.45.dist-info/top_level.txt,sha256=apq61m9tpRAFOWZ4tq4jXpLeh1tXDhS7cB5Ot57nybg,8
+pyg_sql-0.0.45.dist-info/RECORD,,
