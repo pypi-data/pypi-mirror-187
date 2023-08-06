@@ -1,0 +1,42 @@
+<div class="card">
+    <h5 class="card-header">Linux Volumes</h5>
+    <div class="card-body">
+        {% if partitions %}
+        <table class="table table-hover">
+            <tr>
+                <td>Volume Name</td>
+                <td>Filesystem</td>
+                <td>Mount Path</td>
+                <td>Volume Size</td>
+                <td>Partition Name</td>
+                <td>Partition Type</td>
+                <td>Partition Size</td>
+                <td>Drive Identifier</td>
+            </tr>
+            {% for hd_partition in hd_partition_list %}
+            <tr>
+                <td>@TODO</td>
+                <td>@TODO</td>
+                <td>@TODO</td>
+                <td>Volume Size</td>
+                {% for hd in hd_partition %}
+                    <td>
+                    {% for partition in hd.1 %}
+                        {{ partition.device }}-{{ partition.type }} ({{ partition.size }} GB)
+                    {% endfor %}
+                    </td>
+                <td>{{ hd.identifier|linkify|placeholder }}<br> ({{ hd.size }} GB, {{ hd.cluster|linkify|placeholder }})</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+        {% else %}
+        <div class="text-muted">None</div>
+        {% endif %}
+    </div>
+    <div class="card-footer text-end noprint">
+        <a href="{% url 'plugins:netbox_storage:drive_add' %}" class="btn btn-sm btn-primary">
+            <span class="mdi mdi-plus-thick" aria-hidden="true"></span> Add Drive
+        </a>
+    </div>
+</div>
