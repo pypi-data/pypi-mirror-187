@@ -1,0 +1,11 @@
+## Content-based Labels
+
+This taxonomy is based on Taxon's which are either data or groups, these form into a hierarchical structure shown below.
+A taxonomy designed like this is there to allow you to label data that you would like to extract.
+
+```mermaid
+erDiagram
+{% for taxon in component.taxons %}
+    {% include 'taxon.jinja2' %}
+{% endfor %}
+```
