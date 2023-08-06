@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: piwebapi-restapi
+Version: 0.0.6
+Summary: PIWebAPI Rest
+Author-email: holger amort <holgeramort@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: nptyping (>=2.4.1)
+Requires-Dist: pandas (>=0.20.3)
+Requires-Dist: six (>=1.8.0)
+Requires-Dist: setuptools (>=21.0.0)
+Requires-Dist: requests (>=2.18.4)
+Requires-Dist: requests-kerberos (>=0.12.0)
+Requires-Dist: asn1crypto (>=0.24.0)
+Requires-Dist: certifi (>=2018.4.16)
+Requires-Dist: cffi (>=1.11.5)
+Requires-Dist: chardet (>=3.0.4)
+Requires-Dist: cryptography (>=2.2.2)
+Requires-Dist: idna (>=2.6)
+Requires-Dist: ntlm-auth (>=1.1.0)
+Requires-Dist: numpy (>=1.14.3)
+Requires-Dist: pycparser (>=2.18)
+Requires-Dist: python-dateutil (>=2.7.3)
+Requires-Dist: pytz (>=2018.4)
+Requires-Dist: requests-ntlm (>=1.1.0)
+Requires-Dist: urllib3 (>=1.22)
+
+PI Web API client library for Python
