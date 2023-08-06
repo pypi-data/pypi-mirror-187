@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+topsis_rupanshijain_102017010/__init__.py
+topsis_rupanshijain_102017010/topsis102017010.py
+topsis_rupanshijain_102017010.egg-info/PKG-INFO
+topsis_rupanshijain_102017010.egg-info/SOURCES.txt
+topsis_rupanshijain_102017010.egg-info/dependency_links.txt
+topsis_rupanshijain_102017010.egg-info/requires.txt
+topsis_rupanshijain_102017010.egg-info/top_level.txt

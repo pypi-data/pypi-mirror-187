@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: topsis-rupanshijain-102017010
+Version: 1.1.0
+Summary: TOPSIS method for multi-criteria decision making
+Home-page: https://github.com/rdotjain/topsis_rupanshi_102017010
+Download-URL: https://github.com/rdotjain/topsis_rupanshi_102017010/archive/refs/tags/v_110.tar.gz
+Author: Rupanshi Jain
+Author-email: rupanshijain45678@gmail.com
+License: MIT
+Keywords: topsis,MCDM,KEYWORDS
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+
+UNKNOWN
+
