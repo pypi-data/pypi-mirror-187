@@ -1,0 +1,9 @@
+README.md
+setup.py
+DynamicHtml/DynamicGetter.py
+DynamicHtml/__init__.py
+DynamicHtml.egg-info/PKG-INFO
+DynamicHtml.egg-info/SOURCES.txt
+DynamicHtml.egg-info/dependency_links.txt
+DynamicHtml.egg-info/requires.txt
+DynamicHtml.egg-info/top_level.txt
