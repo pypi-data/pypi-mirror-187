@@ -1,0 +1,16 @@
+roms\ff6fr.smc textes\Dialogues.txt tbl\pol_VWF.tbl $300200 $3401FF $CE803 3083 3 X+$C00000-$200
+roms\ff6fr.smc textes\Combats_annonces.txt tbl\pol_VWF_annexe.tbl $350200 $3601FF $11F9A0 256 2 X+$C00000-$200
+roms\ff6fr.smc textes\Combats_dialogues_2.txt tbl\pol_VWF_annexe.tbl NEXTLAST $3601FF $FE1E0 256 2 X+$C00000-$200
+roms\ff6fr.smc textes\Combats_dialogues.txt tbl\pol_VWF_annexe.tbl NEXTLAST $3601FF $10D200 256 2 X+$C00000-$200
+roms\ff6fr.smc textes\Lieux.txt tbl\pol_VWF.tbl NEXTLAST $3601FF $268600 73 2 X+$C00000-$200
+roms\ff6fr.smc textes\Objets_Clefs_Descriptions.txt tbl\pol_VWF_annexe.tbl NEXTLAST $3601FF $EFD60 22 2 X+$C00000-$200
+roms\ff6fr.smc textes\Objets_Descriptions.txt tbl\pol_VWF_annexe.tbl NEXTLAST $3601FF $2D7CA0 256 2 X+$C00000-$200
+roms\ff6fr.smc textes\Magies_Descriptions_1.txt tbl\pol_VWF_annexe.tbl NEXTLAST $3601FF $18D180 50 2 X+$C00000-$200
+roms\ff6fr.smc textes\Magies_Descriptions_2.txt tbl\pol_VWF_annexe.tbl NEXTLAST $3601FF $18D1E4 4 2 X+$C00000-$200
+roms\ff6fr.smc textes\Blitz_Descriptions.txt tbl\pol_VWF_annexe.tbl NEXTLAST $3601FF $10019E 8 2 X+$C00000-$200
+roms\ff6fr.smc textes\Epee_Descriptions.txt tbl\pol_VWF_annexe.tbl NEXTLAST $3601FF $1001AE 8 2 X+$C00000-$200
+roms\ff6fr.smc textes\Chimeres_Effets_Descriptions.txt tbl\pol_VWF_annexe.tbl NEXTLAST $3601FF $100040 32 2 X+$C00000-$200
+roms\ff6fr.smc textes\Chimeres_Bonus_Descriptions.txt tbl\pol_VWF_annexe.tbl NEXTLAST $3601FF $2E01D0 24 2 X+$C00000-$200
+roms\ff6fr.smc textes\Bleu_Descriptions_1.txt tbl\pol_VWF_annexe.tbl NEXTLAST $3601FF $2D7c70 12 2 X+$C00000-$200
+roms\ff6fr.smc textes\Bleu_Descriptions_2.txt tbl\pol_VWF_annexe.tbl NEXTLAST $3601FF $2D7c88 12 2 X+$C00000-$200
+roms\ff6fr.smc textes\menu-principal.txt tbl\pol_VWF_annexe.tbl $3FA00 $3FFFF $33923 38 2 X+$C00000-$200

@@ -1,0 +1,8 @@
+.idea
+build
+*.pyc
+__pycache__
+.coverage
+.mypy_cache
+.pytest_cache
+.tox
