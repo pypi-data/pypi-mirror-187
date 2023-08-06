@@ -1,0 +1,60 @@
+# 项目说明
+
+此工具内含各种实用工具。**仅为测试用！！！**
+
+仅支持Maya2023及以上版本。
+
+
+参照
+* [如何使用mayapy运行venv](https://knowledge.autodesk.com/zh-hans/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2023/CHS/Maya-Scripting/files/GUID-6AF99E9C-1473-481E-A144-357577A53717-htm.html)
+* [Maya Python 解释器 mayapy](https://knowledge.autodesk.com/zh-hans/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2023/CHS/Maya-Scripting/files/GUID-D64ACA64-2566-42B3-BE0F-BCE843A1702F-htm.html)
+
+
+## 安装并获取更新
+
+使用 pip 安装
+```shell
+pip install custom-maya
+```
+
+需要使用 mayapy 环境安装。
+
+
+## 如何设置IDE
+
+
+### 制作从名为 python 的命令创建指向 mayapy 的软链接
+
+```shell
+cd "C:\Program Files\Autodesk\Maya2023\bin"
+mklink python.exe mayapy.exe
+```
+
+### 将IDE的解释器设置为
+```
+"C:\Program Files\Autodesk\Maya2023\bin\python.exe"
+```
+
+## 打包上传到pipy
+
+升级
+```shell
+python.exe -m pip install --upgrade build
+python.exe -m pip install --upgrade pip
+```
+
+```shell
+python -m build
+```
+
+上传测试包
+```shell
+python -m twine upload --repository testpypi dist/*
+```
+
+
+上传正式版本包
+```shell
+python -m twine upload --repository custom_maya dist/*
+```
+
