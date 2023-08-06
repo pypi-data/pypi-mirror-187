@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: hashwd
+Version: 0.0.3
+Summary: A script to generate a strong, random password
+Author: Jordan Langland
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: argparse (>=1.4,<2.0)
+Requires-Dist: pyperclip (>=1.8,<2.0)
+Requires-Dist: requests (>=2.24,<3.0)

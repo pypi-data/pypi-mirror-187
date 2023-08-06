@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "hashwd"
+version = "0.0.3"
+description = "A script to generate a strong, random password"
+authors = ["Jordan Langland"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+pyperclip = "^1.8"
+argparse = "^1.4"
+requests = "^2.24"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=1.0"]
+build-backend = "poetry.masonry.api"
