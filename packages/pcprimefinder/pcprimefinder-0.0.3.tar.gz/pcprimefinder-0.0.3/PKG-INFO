@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: pcprimefinder
+Version: 0.0.3
+Summary: A faster way to find if a number is prime
+Home-page: UNKNOWN
+Author: Prathamesh Chavan
+Author-email: pratham.chavan28@gmail.com
+License: MIT
+Keywords: prime,maths
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This is a library to find if a number is prime.
+It takes O(n^1/2) time complexity as compared to O(n) in common method
+
+Change Log
+==========
+
+0.0.1 (23/01/2023)
+--------------------
+- First Release
+
+0.0.2 (24/01/2023)
+--------------------
+- Second Release
+- changed package structure
+
+0.0.3 (24/01/2023)
+--------------------
+- Added rule functions from notebook
+
