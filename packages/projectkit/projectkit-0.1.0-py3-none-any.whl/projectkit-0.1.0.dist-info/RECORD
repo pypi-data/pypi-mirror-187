@@ -1,0 +1,9 @@
+projectkit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+projectkit/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+projectkit/model/project.py,sha256=X10D6kKSgzXBN1aBAJ6uYB9ndNUsbsPm783Y8i5vAVE,1046
+projectkit/model/settings.py,sha256=Rzsa6Fg0xvLgITa7cYq5iUdGGZ8ae8MGP_d5rtfmf_Q,7374
+projectkit/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+projectkit/utils/map.py,sha256=BOJMKlXyPXnYcuglqnY_r441GofvxOAA2zmvwZ0Hel0,5242
+projectkit-0.1.0.dist-info/METADATA,sha256=YIvA6NXB_O6Unn0i6bc3voKBuuscVJxgrAhAsONZjT4,922
+projectkit-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+projectkit-0.1.0.dist-info/RECORD,,
