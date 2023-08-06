@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: excelart
+Version: 0.1.1
+Summary: A package to convert excel data to image
+Home-page: https://github.com/ujwalrajeev/excelart
+Author: Ujwal Rajeev
+Author-email: ujwalrajeev@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+
+UNKNOWN
+
