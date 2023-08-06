@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/fpstracker/__init__.py
+src/fpstracker/main.py
+src/fpstracker.egg-info/PKG-INFO
+src/fpstracker.egg-info/SOURCES.txt
+src/fpstracker.egg-info/dependency_links.txt
+src/fpstracker.egg-info/top_level.txt

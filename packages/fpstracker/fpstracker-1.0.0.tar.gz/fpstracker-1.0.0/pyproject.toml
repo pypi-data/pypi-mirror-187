@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fpstracker"
+version = "1.0.0"
+authors = [
+  { name="Naveen kumar S", email="snaveenkumar343@gmail.com" },
+]
+description = "A Python package to detect and calculate the webcam frame rate per second in any system."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/0EnIgma1/FPS_tracker"
+"Bug Tracker" = "https://github.com/0EnIgma1/FPS_tracker/issues"
