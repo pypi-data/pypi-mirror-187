@@ -1,0 +1,9 @@
+pyapriltags/__init__.py,sha256=S3uf8pSD4venPPYD1YA9Q3w5k0oZVV66ZDMUNn_JI0s,91
+pyapriltags/apriltags.py,sha256=PxbPK2b8GKxI-1hBNDri--uGQa-_ueN21bv82ik3jR4,16781
+pyapriltags/libapriltag.dll,sha256=jKQdQVaQGrBq9RupF1HLNBZv1quWlcTTYi1QQux_GjU,2169263
+pyapriltags/py.typed,sha256=qDGZVT98wnqGGe5eyNJGlayNkP5QxORhXujGHzTPrnE,97
+pyapriltags-3.3.0.2.dist-info/LICENSE.md,sha256=bUZetg0KmQ99yduHpQ7EMooMRjdfDcbincED4aQh3Ig,3044
+pyapriltags-3.3.0.2.dist-info/METADATA,sha256=o2hfqDJBcqr1gxU90Q1-oA9h9QdEH6nxCZ8Tm5KmEvo,12765
+pyapriltags-3.3.0.2.dist-info/WHEEL,sha256=i9qQj8KaD8_YEW0Vc2oS56fKju23RkQ-FVz-QmzVakQ,98
+pyapriltags-3.3.0.2.dist-info/top_level.txt,sha256=D17ubblm5a_QJj7B7t4wSOqaMCSEoXWIMns0Wc2Tmvs,12
+pyapriltags-3.3.0.2.dist-info/RECORD,,
