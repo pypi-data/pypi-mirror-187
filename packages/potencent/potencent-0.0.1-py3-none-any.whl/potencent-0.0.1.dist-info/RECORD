@@ -1,0 +1,16 @@
+potencent/__init__.py,sha256=Q_mXGV9vnHXZMcgGIi2sDAzNjzazEEWgKAv-gFZQrgQ,31
+potencent/api/__init__.py,sha256=FM1imlR9bJSF6TyAIKH4TTfVsNd-iyoVzRAkxoYirAg,223
+potencent/api/ocr.py,sha256=yGaAA3560QbTi9waDbUBZZpwKzXXBsPsGFQgXG1PigE,618
+potencent/core/OCR.py,sha256=x4s6O_tAxLP8rFid0G1Gs6GJf76ovVPOeyhdvV1GwMo,1998
+potencent/core/__init__.py,sha256=R6WX_cTmFHhsAQD-Y9NtbCZ7J6TPdjAxJ8hdTQIxzc8,223
+potencent/lib/CONST.py,sha256=vsCHNZ3_oEoGLw4XZkQNqAJG1obULtjq7oZV2MCBGEI,374
+potencent/lib/CommonUtils.py,sha256=8SkJ7CD5nTheV4eJFE0F-MY7y-logpMpwVRn531KLg4,774
+potencent/lib/Config.py,sha256=yLHhzji5mRJ3HZMYcxxd_znwO9qJtZe2PJ5rbCRXV-M,1090
+potencent/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=B5-q8syLc2m3uBF7nMCYslSMZhEUbhWmNqXKsY_rV4Q,185
+tests/test_tencent.py,sha256=QspBntQzj7obDH_e4k3gczhCF9wD1LVAyyLmGhNseQ0,213
+potencent-0.0.1.dist-info/LICENSE,sha256=GQ6XaGbsxl2OlUBlk1jLBtkHC8U1p6Bw9E1P1XqYAlU,1093
+potencent-0.0.1.dist-info/METADATA,sha256=TLgqa4tcMc4FEMnRRuyx6BbOGY_EYjJ51XpKcGyhCWM,4623
+potencent-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+potencent-0.0.1.dist-info/top_level.txt,sha256=xAzuGdMGA9iKQPG-Yd5ycfHlU2BTlA-71KAMyMgHoNg,16
+potencent-0.0.1.dist-info/RECORD,,
