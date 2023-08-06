@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: ml2ipa
+Version: 1.0.2
+Summary: A linguistic tool that generates IPA pronunciation for Malayalam words
+Home-page: https://github.com/erose311/ml2ipa
+Author: Elaine Mary Rose
+Author-email: elainerose311@gmail.com
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENCE.md
+
+## Description
+A Python package for generating IPA pronounciation for a Malayalam word or list of Malayalam words.
+
+## Installation
+```python
+!pip install ml2ipa
+```
+
+## Usage
+```python
+from ml2ipa import get_ipa
+get_ipa("മഴ")
+```
+Output: {'മാമ്പഴം': 'm aː m p a ɻ a m'}
+
+## License
+This package is license under MIT license. 
