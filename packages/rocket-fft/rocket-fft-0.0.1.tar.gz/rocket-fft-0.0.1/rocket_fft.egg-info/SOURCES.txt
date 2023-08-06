@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+rocket_fft.egg-info/PKG-INFO
+rocket_fft.egg-info/SOURCES.txt
+rocket_fft.egg-info/dependency_links.txt
+rocket_fft.egg-info/entry_points.txt
+rocket_fft.egg-info/requires.txt
+rocket_fft.egg-info/top_level.txt
