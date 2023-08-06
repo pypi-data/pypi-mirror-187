@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: tcap
+Version: 1.1
+Summary: # TCAP
+Home-page: https://github.com/amito-ds/TCAP
+Author: Amit Osi
+Author-email: amitosi6666@gmail.com
+Requires-Python: >=3.7
+Requires-Dist: corextopic (==1.1)
+Requires-Dist: ipython (==7.9.0)
+Requires-Dist: keras (==2.9.1)
+Requires-Dist: tensorflow (==)
+Requires-Dist: lightgbm (==3.2.1)
+Requires-Dist: matplotlib (==3.6.2)
+Requires-Dist: nltk (==3.8.1)
+Requires-Dist: numpy (==1.24.1)
+Requires-Dist: pandas (==1.5.2)
+Requires-Dist: plotly (==5.9.0)
+Requires-Dist: python-Levenshtein (==0.20.9)
+Requires-Dist: scikit-learn (==1.2.0)
+Requires-Dist: scikit-optimize (==0.9.0)
+Requires-Dist: scipy (==1.9.3)
+Requires-Dist: seaborn (==0.12.2)
+Requires-Dist: setuptools (==64.0.2)
+Requires-Dist: shap (==0.41.0)
+Requires-Dist: textblob (==0.17.1)
+Requires-Dist: tweedie (==0.0.9)
+Requires-Dist: wordcloud (==1.8.2.2)
+
