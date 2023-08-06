@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: Topsis-Ishtdeep-102003315
+Version: 0.0.1
+Summary: This package can be used to calculate the topsis score of multiple component data and rank them accordingly
+Home-page: UNKNOWN
+Author: Ishtdeep Singh Sodhi
+Author-email: isodhi_be20@thapar.edu
+License: MIT
+Description: This is Topsis Package
+        
+Keywords: TOPSIS
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
