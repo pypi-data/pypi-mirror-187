@@ -1,0 +1,3 @@
+[console_scripts]
+la_panic = la_panic.__main__:cli
+
