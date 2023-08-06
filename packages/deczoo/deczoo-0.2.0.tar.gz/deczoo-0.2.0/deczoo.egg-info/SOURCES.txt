@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+deczoo/__init__.py
+deczoo/_base_notifier.py
+deczoo/_utils.py
+deczoo/decorators.py
+deczoo.egg-info/PKG-INFO
+deczoo.egg-info/SOURCES.txt
+deczoo.egg-info/dependency_links.txt
+deczoo.egg-info/requires.txt
+deczoo.egg-info/top_level.txt
+deczoo.egg-info/zip-safe
+tests/__init__.py
+tests/conftest.py
