@@ -1,0 +1,2 @@
+[console_scripts]
+fluxt = fluxt.cli:cli
