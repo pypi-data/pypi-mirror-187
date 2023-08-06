@@ -1,0 +1,9 @@
+simplegooglescraper/__init__.py,sha256=7AyCtB1TeXCjKblTeS3DqB7xuSWyye2uSvEOF2ta9jM,59
+simplegooglescraper/custom_exceptions.py,sha256=EqgArd_JhS3sraEaMBCE72b4SlFQCkYtx6t9-VZnDM0,184
+simplegooglescraper/logger.py,sha256=_HIccyPSVBLywvdTpsT6AzscVC-RaoXoGskdBinlXy0,427
+simplegooglescraper/scrapeGooGle_results.py,sha256=uyvJ1derdBhN96HSZCOFRQRsXuJt3lLybL8s8q7JGRk,1676
+simple_google_scraper-0.1.1.dist-info/LICENSE,sha256=NAgFafm2yHMBqNdcSTQePLTuyr2v6mHtA1PyzGVVr9s,1084
+simple_google_scraper-0.1.1.dist-info/METADATA,sha256=OWaAiQWFoM_oRy5kBxCNGBodcOuDTzvlTHMf2BPIqJE,1022
+simple_google_scraper-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+simple_google_scraper-0.1.1.dist-info/top_level.txt,sha256=wg9IMD1kowoYSEWrPLp5lB6Ey42OETPEXUNvcdYgw3Y,20
+simple_google_scraper-0.1.1.dist-info/RECORD,,
