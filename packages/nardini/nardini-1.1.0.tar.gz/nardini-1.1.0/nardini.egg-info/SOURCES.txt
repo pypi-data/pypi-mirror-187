@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+nardini/__init__.py
+nardini/__main__.py
+nardini/constants.py
+nardini/core.py
+nardini/plotting.py
+nardini/score_and_plot.py
+nardini/utils.py
+nardini/validation.py
+nardini.egg-info/PKG-INFO
+nardini.egg-info/SOURCES.txt
+nardini.egg-info/dependency_links.txt
+nardini.egg-info/entry_points.txt
+nardini.egg-info/requires.txt
+nardini.egg-info/top_level.txt
