@@ -1,0 +1,2 @@
+[console_scripts]
+ibex_1d = ibex_1d:main
