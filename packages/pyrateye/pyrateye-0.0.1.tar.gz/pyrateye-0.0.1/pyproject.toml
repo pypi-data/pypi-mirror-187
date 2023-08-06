@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pyrateye"
+version = "v0.0.1"
+description = "RatEye ported to Python"
+authors = ["Martin Miglio <marmig0404@gmail.com>"]
+readme = "README.md"
+include = ["RatEye/RatEye/bin/Release/netstandard2.0/**/*.dll"]
+
+[tool.poetry.dependencies]
+python = "<3.12,>=3.8"
+pythonnet = "^3.0.1"
+numpy = "^1.24.1"
+opencv-python = "^4.7.0.68"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+prospector = "^1.8.4"
+matplotlib = "^3.6.3"
+ipykernel = "^6.20.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

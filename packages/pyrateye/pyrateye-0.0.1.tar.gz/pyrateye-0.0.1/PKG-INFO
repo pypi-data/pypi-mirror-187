@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: pyrateye
+Version: 0.0.1
+Summary: RatEye ported to Python
+Author: Martin Miglio
+Author-email: marmig0404@gmail.com
+Requires-Python: >=3.8,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: numpy (>=1.24.1,<2.0.0)
+Requires-Dist: opencv-python (>=4.7.0.68,<5.0.0.0)
+Requires-Dist: pythonnet (>=3.0.1,<4.0.0)
+Description-Content-Type: text/markdown
+
+# RatEye ported to Python
+
+This is a port of the RatEye project to Python. The original project is written in C# and can be found [here](https://github.com/RatScanner/RatEye).
+
+## Installation
+
+`pip install pyrateye`
+
+## Usage
+
+```python
+from pyrateye import RatEye
+# TBD
+```
+
+## Development
+
+### Setup
+
+Clone and install the project:
+
+```bash
+git clone https://github.com/marmig0404/pyrateye.git
+cd pyrateye
+poetry install --with dev
+```
+
+Install RatEye C# project:
+
+```bash
+git clone https://github.com/RatScanner/RatEye.git
+cd RatEye
+msbuild .\RatEye.csproj /property:Configuration=Release
+```
+
