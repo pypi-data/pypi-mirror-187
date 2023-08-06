@@ -1,0 +1,8 @@
+ba_lorre/__init__.py,sha256=fSSaJPQ3MsEupFFJEzZUW0IaUu4dnZ2rVqFOFmnHXbc,249
+ba_lorre/lorre.py,sha256=HhblWa0s3oNLCVrKjhDUKvXmC5GLxhH9HuLvHYCtnIg,15580
+ba_lorre/pruning_functions.py,sha256=_oSqTajHgUnauze7cchKEr-F68OJbwM2BhJMOG2DkGU,2865
+ba_lorre-1.0.0.dist-info/LICENSE,sha256=fPk7vzGAXXRnsqzuWQ0ktBQvsjXACkLpz4vwd14_21E,35065
+ba_lorre-1.0.0.dist-info/METADATA,sha256=AEn3bEGnvVzaBrsg0ueigVfwwyhRjerJ6vkforwVYKY,8673
+ba_lorre-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ba_lorre-1.0.0.dist-info/top_level.txt,sha256=fffEZR7zoD11d0rkaDHCa5qwphqAJoGZvCpMSvUIiKQ,9
+ba_lorre-1.0.0.dist-info/RECORD,,
