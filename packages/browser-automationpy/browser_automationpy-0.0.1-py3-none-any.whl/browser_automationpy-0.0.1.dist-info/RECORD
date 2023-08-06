@@ -1,0 +1,10 @@
+browser_automation/__init__.py,sha256=CbZ2k7BoI5E5onTpfdvCBk44DdAnV4sJQrkVvsXBsl8,189
+browser_automation/browser_manipulation.py,sha256=hSnuLhmEf3c4Bcwh0Vlq78yGa-wmGMqaep15Mt2qiYY,21825
+browser_automation/browser_setup.py,sha256=YEGISzUOBeqdkqaQY2iPGCUdIW19aqmsnYqBIzUjP0g,7199
+browser_automation/locate_elements.py,sha256=mhYvlk-N7Wnuivn5LU32WY-TJMeEOBjgbC_RU6q1kUs,3863
+browser_automation/os_json_utils.py,sha256=xFFAgiw2Nv6C_ReHZ2GpdFbu_YgkF8U30ENZ9HE1wvA,10408
+browser_automationpy-0.0.1.dist-info/LICENSE.txt,sha256=_C5If6QuBY91aFkXxfCZdqzLlJUtHCZLJ249oqGlX3M,1078
+browser_automationpy-0.0.1.dist-info/METADATA,sha256=0A3x5eLU1aB-A0XLpnA8CSZM4ReNRD6133llZffF25Y,4423
+browser_automationpy-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+browser_automationpy-0.0.1.dist-info/top_level.txt,sha256=XtF4hOpVbk8W_SbQSaLk40a8y1UjsdfbttHrP-tmJRE,19
+browser_automationpy-0.0.1.dist-info/RECORD,,
