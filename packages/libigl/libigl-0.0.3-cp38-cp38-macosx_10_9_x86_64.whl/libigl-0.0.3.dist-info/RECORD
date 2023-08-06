@@ -1,0 +1,11 @@
+igl/pyigl_classes.cpython-38-darwin.so,sha256=dtFANbWTnV44BR1yvUXXq__UJA7T6jipv48zRKgepso,1117368
+igl/_version.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+igl/__init__.py,sha256=LI3KBk-BGPmyguuzAaLRBgtCypprxBNuR55BS3-J--Y,107
+igl/helpers.py,sha256=z5pVFTx4kzfF_FrrgEeGHa2-jjGSR4RU62LmYAUwQX8,2026
+igl/pyigl.cpython-38-darwin.so,sha256=UAWMnzOL8HdQctPTvgCk8SYC36ZjWFflvK32RZpF-m0,48481448
+tests/test_basic.py,sha256=EkDx4mvJFOPF7lsH9rjnXuxbtGEq_Y86LeCIsd_jveY,92424
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+libigl-0.0.3.dist-info/RECORD,,
+libigl-0.0.3.dist-info/WHEEL,sha256=I1bcPHHR6tn3lGqH6h9j_EhkVKjU_znt4i8IyWREJLE,109
+libigl-0.0.3.dist-info/top_level.txt,sha256=210Ot2-g5gXo3qYzQVWuNfKdSK5Lpy18bvW0WNArcAI,16
+libigl-0.0.3.dist-info/METADATA,sha256=OUAnJCJtdDahWzMteXsxDdn6TC4-I894_KMG491_QhE,2389
