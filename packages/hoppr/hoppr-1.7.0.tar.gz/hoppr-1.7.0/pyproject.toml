@@ -1,0 +1,112 @@
+[tool.poetry]
+name = "hoppr"
+version = "1.7.0"
+description = "A tool for defining, verifying, and transferring software dependencies between environments."
+authors = ["LMCO Open Source <open.source@lmco.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://hoppr.dev"
+repository = "https://gitlab.com/hoppr/hoppr"
+
+keywords = [
+  "packaging",
+  "reports",
+  "build dependencies",
+  "software bill of materials"
+]
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Information Technology",
+  "Topic :: Communications :: File Sharing",
+  "Topic :: Software Development :: Version Control",
+  "Topic :: System :: Software Distribution"
+]
+
+[[tool.poetry.packages]]
+include = "hoppr"
+
+[tool.poetry.scripts]
+hopctl = "hoppr.cli.hopctl:app"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = "^0.7.0"
+PyYAML = "^6.0"
+oras = "^0.1.0"
+types-PyYAML = "^6.0.5"
+packageurl-python = "^0.10.0"
+hoppr-cyclonedx-models = "0.3.0"
+jc = "^1.22.2"
+pydantic-yaml = "^0.8.1"
+jmespath = "^1.0.1"
+in-toto = "^1.2.0"
+
+[tool.poetry.dependencies.pydantic]
+extras = ["email"]
+version = "^1.9.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.1.0"
+isort = "^5.10.1"
+pre-commit = "^2.17.0"
+setuptools = "^65.0.0"
+shfmt-py = "^3.4.3.1"
+
+[tool.poetry.group.test.dependencies]
+mypy = "^0.961"
+pylint = "^2.12.2"
+pytest = "^7.0.1"
+pytest-cov = "^4.0.0"
+pytest-mock = "^3.10.0"
+types-requests = "^2.27.15"
+
+[tool.black]
+line-length = 120
+skip-string-normalization = true
+
+[tool.isort]
+atomic = true
+lines_between_types = 1
+line_length = 120
+profile = "black"
+skip_gitignore = true
+
+[tool.mypy]
+python_version = "3.10"
+plugins = ["pydantic.mypy"]
+warn_redundant_casts = true
+no_implicit_reexport = true
+follow_imports = "silent"
+namespace_packages = true
+explicit_package_bases = true
+
+[[tool.mypy.overrides]]
+module = ["test.*", "jc", "packageurl"]
+allow_untyped_defs = true
+allow_incomplete_defs = true
+allow_untyped_calls = true
+ignore_missing_imports = true
+
+[tool.pydantic-mypy]
+init_forbid_extra = true
+init_typed = true
+warn_required_dynamic_aliases = true
+warn_untyped_fields = true
+
+[tool.pytest.ini_options]
+addopts = [
+  "--strict-markers",
+  "--cov=hoppr",
+  "--cov-report=term-missing",
+  "--cov-report=xml",
+  "--cov-fail-under=95",
+  "--junit-xml=test.xml"
+]
+console_output_style = "progress"
+junit_family = "xunit2"
+testpaths = ["test"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
