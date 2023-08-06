@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+topsispragati102017122.egg-info/PKG-INFO
+topsispragati102017122.egg-info/SOURCES.txt
+topsispragati102017122.egg-info/dependency_links.txt
+topsispragati102017122.egg-info/entry_points.txt
+topsispragati102017122.egg-info/requires.txt
+topsispragati102017122.egg-info/top_level.txt

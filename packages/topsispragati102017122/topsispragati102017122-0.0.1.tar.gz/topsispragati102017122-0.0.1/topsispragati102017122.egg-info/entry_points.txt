@@ -1,0 +1,2 @@
+[console_scripts]
+topsis = src.__main__:topsiss
