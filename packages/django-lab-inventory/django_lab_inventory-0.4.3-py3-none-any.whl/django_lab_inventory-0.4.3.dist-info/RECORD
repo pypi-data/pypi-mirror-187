@@ -1,0 +1,11 @@
+inventory/__init__.py,sha256=t62Vlhj3ecTYHVxwC9lY3nGlTXI1Nw6OFYYF8JERQ8I,70
+inventory/admin.py,sha256=bizsjXVtfi8w0TyoTxEHuyZU_0dT0TViuUgJTPjDwBo,1962
+inventory/models.py,sha256=j-tt-bsZl9cErqCYZbZX3iisV9rcPks4yvFSwfrxWss,7132
+inventory/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+inventory/urls.py,sha256=SS4kUdn9t8YMJaehfiwOuC3ZD9gzDp6w1dAt9l_UQ6g,376
+inventory/views.py,sha256=59W7tROiSf1lrwA4Yd8albNV2aScOfhcZRqSnfrEE18,1134
+django_lab_inventory-0.4.3.dist-info/COPYING,sha256=wYsU8_a1HHiheBjNWkQ3dEvBLUrj3NnSikPvNMhYMMM,1461
+django_lab_inventory-0.4.3.dist-info/METADATA,sha256=GXDFPbG2YmoHfGgG4qM4Zy6RGawfiJpN70eVcez5_Aw,2078
+django_lab_inventory-0.4.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+django_lab_inventory-0.4.3.dist-info/top_level.txt,sha256=Aa2qQL83daQCBMHizsLTZqw3sXuGDAJNbPzP668oNw4,10
+django_lab_inventory-0.4.3.dist-info/RECORD,,
