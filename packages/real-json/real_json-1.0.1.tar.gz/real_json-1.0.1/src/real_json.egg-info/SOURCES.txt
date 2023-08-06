@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/real_json/GetWrappedJson.py
+src/real_json/__init__.py
+src/real_json.egg-info/PKG-INFO
+src/real_json.egg-info/SOURCES.txt
+src/real_json.egg-info/dependency_links.txt
+src/real_json.egg-info/requires.txt
+src/real_json.egg-info/top_level.txt
