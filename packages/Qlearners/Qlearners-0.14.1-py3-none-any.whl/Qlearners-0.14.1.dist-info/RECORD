@@ -1,0 +1,17 @@
+Qlearners/ANN.py,sha256=eFdKYPUwwpiTRn22g1mrJTCjM4Ehy1ZjaJ0qjm7zGcM,5411
+Qlearners/Qlearner.py,sha256=CB36XOc6swyVbR-SWMKw3ar_0kt5UBj5_0vwkEyQwAw,5374
+Qlearners/Simple_ANN.py,sha256=UE3o0dYjdMnbSFZMF_rwtELVbYuhcWuFuB2Y6sEY7uw,1779
+Qlearners/__init__.py,sha256=aF1qTFTEaCr30mm2ii0Wqs4ybLcLlwuiMraorC40TkU,34
+Qlearners/epsilon_decay.py,sha256=JQGAgXBlB4Bz3davi4XlFeMP_0Dx9zKiGUA8_fk9mEo,123
+Qlearners/scg.py,sha256=esMmQ4NBx76bL7H5kIXxb1pSas-npJ_-k3SI-1yjjUE,7828
+Qlearners/version.py,sha256=T0rtCJtX41lc6sYZm_BIwYAlBWEgfUma8-aBfNsXlsg,24
+Qlearners/recipes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Qlearners/recipes/cartpole/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Qlearners/recipes/cartpole/cartpolebox2d.py,sha256=gdKTF5Z7lFI05oDMJuxblEPTH6EPOia5HlA7nnuF7AY,12405
+Qlearners/recipes/cartpole/train_adam.py,sha256=Qr28j7W9FMUouX2LSJ5XPgM3uS-bKnVTOXBh28QW39k,8956
+Qlearners/recipes/cartpole/train_scg.py,sha256=DHZu-7bqajldfoFyMxa3mg5b5VCDCJ9Uy3W_UFtnQNE,7623
+Qlearners-0.14.1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+Qlearners-0.14.1.dist-info/METADATA,sha256=61j_4vsmcrYJT1LhflenrA4QtqqAjFjD2C09XMZylus,2274
+Qlearners-0.14.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+Qlearners-0.14.1.dist-info/top_level.txt,sha256=822RIuhdLnCr_3X5u1t8JIvZ7onOiS2edq1YmHN7WzE,10
+Qlearners-0.14.1.dist-info/RECORD,,
