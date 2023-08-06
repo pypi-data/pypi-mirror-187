@@ -1,0 +1,64 @@
+/**
+ * Copyright (C) {{ meta.author }}
+ * SPDX-License-Identifier: {{ meta.lic }}
+ *
+ * @file {{ meta.prefix }}_pp.c
+ */
+#include <lib{{ meta.prefix }}.h>
+
+{%- for entity in entities %}
+{% set ident=meta["prefix"] + "_" + entity["sym"] %}
+{%- if entity["cls"] in ["enum"] %}
+const char *
+{{ ident }}_str(int enum_val)
+{
+	switch (enum_val) {
+	{%- for member in entity["members"] %}
+	case {{ ident | upper }}_{{ member["sym"] | upper }}:
+		return "{{ member["sym"] }}";
+	{%- endfor %}
+	}
+
+	return "ENOSYS";
+}
+{%- elif entity["cls"] in ["struct", "union"] %}
+static int
+{{ ident }}_yaml(FILE *stream, const struct {{ ident }} *obj, int flags)
+{
+	int wrtn = 0;
+
+	wrtn += fprintf(stream, "{{ ident }}:");
+
+	if (!obj) {
+		wrtn += fprintf(stream, " ~\n");
+		return wrtn;
+	}
+
+	// TODO: implement the yaml-representation
+
+	return wrtn;
+}
+
+int
+{{ ident }}_fpr(FILE *stream, const struct {{ ident }} *obj, int flags)
+{
+	switch (flags) {
+	case {{ meta.prefix | upper }}_PR_DEF:
+	case {{ meta.prefix | upper }}_PR_YAML:
+		return {{ ident }}_yaml(stream, obj, flags);
+		break;
+
+	case {{ meta.prefix | upper }}_PR_JSON:
+		return -ENOSYS;
+	}
+
+	return -ENOSYS;
+}
+
+int
+{{ ident }}_pr(const struct {{ ident }} *obj, int flags)
+{
+	return {{ ident }}_fpr(stdout, obj, flags);
+}
+{%- endif %}
+{%- endfor %}
