@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "dumbo-scopus"
+version = "0.2.0"
+description = "Simple CLI to search on Scopus and obtain the results in a XLSX file"
+authors = ["Mario Alviano <mario.alviano@gmail.com>"]
+readme = "README.md"
+packages = [{include = "dumbo_scopus"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.28.2"
+typer = "^0.7.0"
+xlsxwriter = "^3.0.7"
+rich = "^13.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
