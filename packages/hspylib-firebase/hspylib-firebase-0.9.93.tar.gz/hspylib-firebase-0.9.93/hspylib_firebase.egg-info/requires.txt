@@ -1,0 +1,6 @@
+hspylib>=latest
+hspylib-datasource>=latest
+hspylib-clitt>=latest
+requests>=latest
+urllib3>=latest
+firebase-admin>=latest
