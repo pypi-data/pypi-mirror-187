@@ -1,0 +1,8 @@
+sh
+logging
+
+[aws]
+boto3
+
+[gcs]
+google==3.0.0
