@@ -1,0 +1,8 @@
+setup.py
+stock_analysis/__init__.py
+stock_analysis/stock_analysis_trends.py
+stock_analysis_trends.egg-info/PKG-INFO
+stock_analysis_trends.egg-info/SOURCES.txt
+stock_analysis_trends.egg-info/dependency_links.txt
+stock_analysis_trends.egg-info/requires.txt
+stock_analysis_trends.egg-info/top_level.txt
