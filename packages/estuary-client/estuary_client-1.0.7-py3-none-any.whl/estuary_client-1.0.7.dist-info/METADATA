@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: estuary-client
+Version: 1.0.7
+Summary: Estuary API
+Home-page: 
+Author-email: 
+Keywords: Swagger,Estuary API
+Requires-Dist: urllib3 (>=1.15)
+Requires-Dist: six (>=1.10)
+Requires-Dist: certifi
+Requires-Dist: python-dateutil
+
+    This is the API for the Estuary application.  # noqa: E501
+    
