@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: 102003017
+Version: 1.0.0
+Summary: It finds topsis Score and based on that calculates the rank
+Home-page: UNKNOWN
+Author: Srishti Sharma
+Author-email: ssharma5_be20@thapar.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## 102003017
+### It finds topsis Score and based on that calculates the rank.
+
+### Installation
+## pip install 102003017
+
+
+
+## License
+### Â© 2023 Srishti Sharma
+
+### This repository is licensed under the MIT license. See LICENSE for details.
+
