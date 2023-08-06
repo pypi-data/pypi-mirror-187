@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: redfysh-cli
+Version: 0.0.3
+Summary: The CLI to use with your Redfysh Account
+Home-page: https://gitlab.com/bdonnell/redfish/cli
+Author: Ben Donnelly
+Author-email: ben@redfysh.com
+License: Apache 2.0
+Keywords: redfysh test testing
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+License-File: LICENSE.txt
+License-File: NOTICE.txt
+
+# Redfysh Cli
+This is the Command Line Interface (CLI) for the Redfysh Test Project.

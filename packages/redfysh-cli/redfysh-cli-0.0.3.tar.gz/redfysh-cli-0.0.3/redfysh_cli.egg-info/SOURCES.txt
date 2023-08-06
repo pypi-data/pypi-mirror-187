@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+NOTICE.txt
+README.md
+requirements.txt
+setup.py
+redfysh_cli/__init__.py
+redfysh_cli/cli.py
+redfysh_cli.egg-info/PKG-INFO
+redfysh_cli.egg-info/SOURCES.txt
+redfysh_cli.egg-info/dependency_links.txt
+redfysh_cli.egg-info/entry_points.txt
+redfysh_cli.egg-info/requires.txt
+redfysh_cli.egg-info/top_level.txt
