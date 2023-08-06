@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: piacere-synthesis
+Version: 2023.1.0
+Summary: Synthetize DOML from user requirements
+Project-URL: homepage, https://github.com/andreafra/piacere-synthesis
+Project-URL: documentation, https://piacere-model-checker.readthedocs.org
+Project-URL: repository, https://github.com/andreafra/piacere-synthesis.git
+Author-email: Andrea Franchini <hello@andreafranchini.com>
+License: MIT License
+Keywords: doml,piacere,synthesis,z3
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Dist: pyyaml
+Requires-Dist: z3-solver
