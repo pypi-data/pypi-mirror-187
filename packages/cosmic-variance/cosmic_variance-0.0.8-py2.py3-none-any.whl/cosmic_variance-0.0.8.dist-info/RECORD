@@ -1,0 +1,15 @@
+cosmic_variance/__init__.py,sha256=7HmOtJeVV5BENmr7RDwJE46AnZhkPGePT9hkz1ka_aE,213
+cosmic_variance/cosmic_variance.py,sha256=kgaFBvMTc0r3RNLek5_QK6pFbNFzhexRDz051Bq-V-g,3713
+cosmic_variance/quickcv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cosmic_variance/quickcv/quickcv.py,sha256=QcDoyCP4h7XY2jN4LwCntak7DGzKWdwV-SOllrE-b9Q,2402
+cosmic_variance/quickcv/utils/__init__.py,sha256=YKdab2uIt1_r6XTzlDuFT2ff6dz7YlhzXcbpMHwQCP4,100
+cosmic_variance/quickcv/utils/dlin.py,sha256=H7XbMMBI4fwHQuTFgpSKtqFdP7i46kaQ49r-q47Tx9U,351
+cosmic_variance/quickcv/utils/intpk4.py,sha256=MqTeTAsR1ADALGyjRhiTApH1FvDSvano8RO5m2SiB64,1590
+cosmic_variance/quickcv/utils/pofk.py,sha256=h-WFY6SMSAKFS8D8TAUC9_P8jTJ5zutQybZYzbb2_qE,1888
+cosmic_variance/quickcv/utils/rz.py,sha256=OHzOwdWjx_TftBTP-SdH85wiGikz37e5RaXEU20yW7s,1431
+cosmic_variance-0.0.8.dist-info/AUTHORS.rst,sha256=qbhl86P1hF9T5xWjETpCtinKucqbwHpa0mmJW6z0BDY,201
+cosmic_variance-0.0.8.dist-info/LICENSE,sha256=EzHTGuFI-lGZyU4MFmSlOegwUsI8EjdxpgaJeHj-GD8,1084
+cosmic_variance-0.0.8.dist-info/METADATA,sha256=hvO74HATwPsEq2XenPPKkzpv1xWSEzk_5FZlyrcBI8E,3729
+cosmic_variance-0.0.8.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+cosmic_variance-0.0.8.dist-info/top_level.txt,sha256=EnuiIcNm0-GK2iUmBpOQkUUNxExo89IJUfc7FAccUxU,16
+cosmic_variance-0.0.8.dist-info/RECORD,,
