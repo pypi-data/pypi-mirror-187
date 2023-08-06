@@ -1,0 +1,9 @@
+django_shared_property/__init__.py,sha256=0PqYPl7LL7dYieIsOaTORhVAdgdZ3tbFP5D5u6E7U2E,170
+django_shared_property/apps.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_shared_property/decorator.py,sha256=MiYU95BiQPrK4kUrxviyFULrHbrO3MZy_uYVZOv0v_Q,3625
+django_shared_property/expressions.py,sha256=EYVn2xcDT7flTaP9zLgA6-YSy0wlo3lLSgDebtJl9Qs,4361
+django_shared_property/parser.py,sha256=ERYum3NnL7bs0NdymFHbbHMbxIXq_8-WTEwDrXzAAf4,15624
+django_shared_property-0.6.0.dist-info/LICENSE,sha256=Wme0RxRLG7MGXnymaJN5xhkLGT5w2TRA0aZhT-HCYTE,1076
+django_shared_property-0.6.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+django_shared_property-0.6.0.dist-info/METADATA,sha256=3qWFBHZ5S6hHOkxwklaKpeEqoqTQ8KRIu0zGRmemGTQ,10408
+django_shared_property-0.6.0.dist-info/RECORD,,
