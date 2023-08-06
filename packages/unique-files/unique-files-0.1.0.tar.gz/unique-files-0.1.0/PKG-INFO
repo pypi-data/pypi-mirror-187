@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: unique-files
+Version: 0.1.0
+Summary: The command returns a list of unique files from two directories
+Author: Andrii Chernov
+Author-email: andreych1998@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
