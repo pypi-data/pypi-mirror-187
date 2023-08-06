@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+HP8660D/HP8660D.py
+HP8660D/__init__.py
+HP8660D/test.py
+PyAR488/PyAR488.py
+PyAR488/__init__.py
+PyAR488.egg-info/PKG-INFO
+PyAR488.egg-info/SOURCES.txt
+PyAR488.egg-info/dependency_links.txt
+PyAR488.egg-info/requires.txt
+PyAR488.egg-info/top_level.txt
