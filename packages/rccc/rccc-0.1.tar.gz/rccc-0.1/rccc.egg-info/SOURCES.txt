@@ -1,0 +1,8 @@
+LICENCE.txt
+README.md
+setup.py
+rccc/__init__.py
+rccc.egg-info/PKG-INFO
+rccc.egg-info/SOURCES.txt
+rccc.egg-info/dependency_links.txt
+rccc.egg-info/top_level.txt
