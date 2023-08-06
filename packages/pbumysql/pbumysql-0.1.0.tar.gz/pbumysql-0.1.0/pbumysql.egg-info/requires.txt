@@ -1,0 +1,3 @@
+mysql-connector-python
+tzlocal
+pbu>=1.0.0
