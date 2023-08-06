@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: shubham-MUL-DIV2
+Version: 0.0.2
+Summary: multiply and divide
+Home-page: UNKNOWN
+Author: Shubham Sahu
+Author-email: shubham30sahu101@gmail.com
+License: UNKNOWN
+Keywords: muldiv
+Platform: UNKNOWN
+License-File: LICENCE.txt
+
+simple library to multiply and divide two numbers.
+
+
+Change Log
+===========
+
+
+0.0.1 (21/01/23)
+-------------------
+-First Release
+
