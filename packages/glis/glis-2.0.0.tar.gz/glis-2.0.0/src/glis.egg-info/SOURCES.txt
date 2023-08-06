@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/glis/__init__.py
+src/glis/rbf.py
+src/glis/solvers.py
+src/glis.egg-info/PKG-INFO
+src/glis.egg-info/SOURCES.txt
+src/glis.egg-info/dependency_links.txt
+src/glis.egg-info/requires.txt
+src/glis.egg-info/top_level.txt
