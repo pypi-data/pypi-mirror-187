@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pchanial-legacy-install-hooks
+Version: 1.6
+Summary: Provides installation hooks.
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+License-File: LICENCE_FR
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: setuptools
+Requires-Dist: typing-extensions ; python_version < "3.8"
+
