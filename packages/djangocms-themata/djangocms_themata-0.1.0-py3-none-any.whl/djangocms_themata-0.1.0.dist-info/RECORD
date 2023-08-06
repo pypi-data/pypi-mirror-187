@@ -1,0 +1,16 @@
+djangocms_themata/__init__.py,sha256=qWrBI8-7SV_LZOzsvHBiXgAjKl7rKJ_LThB-AXbDLpY,69
+djangocms_themata/admin.py,sha256=fdHGHT37M62EJwlCbPi1yk-i8K-83b7spPlkqlLpcRU,262
+djangocms_themata/apps.py,sha256=AiKElSelCzIDD1JwjhimAQt8W3A8a1Q3Ke3A2sXPnhk,107
+djangocms_themata/management/commands/importbootswatch.py,sha256=EngbTZCzCyt-ZfpTfqvSeqabZ0BlV-UtHmXJ-d3rs2s,2893
+djangocms_themata/migrations/0001_initial.py,sha256=Jv6t1Y38Ay-w1vXzTvvrCg4BQt40n9YybY8Wis-mcY4,1219
+djangocms_themata/migrations/__init__.py,sha256=3ku-9zn7VBv_1CyJuD51BB17rzkh9Vgy8rL5oCprqIo,50
+djangocms_themata/models.py,sha256=IBeNuX7iktPvBIroEdJzGDDcLWEmH9SlPVH0RlBNkVw,799
+djangocms_themata/templates/base.html,sha256=9lmRVOtfV8Wwp79P7tqxJTk4qlgsyWODaS63QbY5M00,3238
+djangocms_themata/templates/themata/link.html,sha256=Wf6CH5cJTXBVNe55qyTEM1l6uKjZngX56_f2OZ9NPwU,333
+djangocms_themata/templates/themata/navbar copy.html,sha256=g56Kq28JEitEVw_4iiP783NR3byDdyq4nydEq1nkXqA,3471
+djangocms_themata/templates/themata/navbar.html,sha256=Cz7A8rxr79LQtTgoGwDcP65bdiNDgHGxjLxxUqXISao,3172
+djangocms_themata/templates/themata/pagination.html,sha256=DX_wUZdsAnOrXYrMjtC8pCTHKwBijyCwO8n6DToSwcQ,1221
+djangocms_themata/templatetags/themata.py,sha256=o01eyKgG-ajxZZDweB0XfhIWo-QjoH0zgdDUQazDgYs,305
+djangocms_themata-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+djangocms_themata-0.1.0.dist-info/METADATA,sha256=oLqrZn1iBIwCaycmUh5Q-IShxcTm_Rfsv3m7E0uPQrc,723
+djangocms_themata-0.1.0.dist-info/RECORD,,
