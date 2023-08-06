@@ -1,0 +1,15 @@
+stages:
+- prepare
+- build
+
+bootstrap_tox:
+    stage: prepare
+    script:
+    - venv boot-env
+    - pip install tox
+
+create_venvs:
+    stage: build
+    script: 
+    - source $CI_PROJECT_DIR/boot-env/bin/activate
+    - tox -e py27-nolsf-proxy

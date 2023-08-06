@@ -1,0 +1,11 @@
+before-deploy:
+    - pip3 install twine
+    - python setup.py sdist bdist_wheel
+deploy:
+    # VV: For the time being, don't bother with non-x86 images
+    - docker run --rm -it
+        --env DOCKER_REGISTRY --env DOCKER_TOKEN --env DOCKER_USERNAME
+        -v `pwd`/deploy:/scripts -w /scripts --entrypoint /scripts/skopeo_copy.sh quay.io/skopeo/stable
+        ${DOCKER_REGISTRY}/${IMG_RUNTIME_CORE}:${PUSH_MANIFEST_TAG}
+        ${DOCKER_REGISTRY}/${IMG_RUNTIME_CORE}:release-candidate
+    - twine upload --repository-url $PYPI_URL -u $DOCKER_USERNAME -p $DOCKER_TOKEN "dist/*"

@@ -1,0 +1,11 @@
+before-deploy:
+    - export PUSH_IMAGE_TAG=${PUSH_IMAGE_TAG:-py37}
+    - docker login -u $DOCKER_USERNAME -p $DOCKER_TOKEN $DOCKER_REGISTRY
+    - docker build . -f Dockerfile -t $DOCKER_REGISTRY/${IMG_RUNTIME_CORE}:${PUSH_IMAGE_TAG}-`arch`
+      --build-arg base_image=${DOCKER_REGISTRY}/mirror/ubuntu:bionic
+deploy:
+    - docker push $DOCKER_REGISTRY/${IMG_RUNTIME_CORE}:${PUSH_IMAGE_TAG}-`arch`
+after-deploy:
+    - docker run -w /${IMG_RUNTIME_CORE} --rm $DOCKER_REGISTRY/${IMG_RUNTIME_CORE}:${PUSH_IMAGE_TAG}-`arch`
+       twine upload --repository-url $PYPI_URL -u $DOCKER_USERNAME
+       -p $DOCKER_TOKEN "dist/*"
