@@ -1,0 +1,9 @@
+richillcapital_tdameritrade/__init__.py,sha256=3rs5p-N-EKVGOwtEbu_ojzcTmxGRypeEJ6A68ZHzx1s,50
+richillcapital_tdameritrade/client.py,sha256=ox-lHO2IADvc6BPUSJEoIH8oe5rIQ_BKRkY5Yy2aZCE,10935
+richillcapital_tdameritrade/models/__init__.py,sha256=QoUsyOQvolOcRAQVXaY_mOLrvCuwAA0w1OtlV36aEYc,190
+richillcapital_tdameritrade/models/candle.py,sha256=8iyubhqFE0-yzqIV0OyTK1vzUV2rqxN60pkamMx1t_M,1219
+richillcapital_tdameritrade/models/instrument.py,sha256=UGWz3971hnK-eKMD5E2GX4CyWI0gY0vDj4BiFJYLy_4,586
+richillcapital_tdameritrade/models/quote.py,sha256=f97mmHpdL4F-iiYUSchdCHciBKJuBtcvWFl906lV_fM,194
+richillcapital_tdameritrade-0.1.0.dist-info/WHEEL,sha256=_LDBqpgIVFNHZvvFOGbg2pvJOENq6RHAyT5px-HeX0U,87
+richillcapital_tdameritrade-0.1.0.dist-info/METADATA,sha256=hrbnuLtQyJpcFNV_rzhM6umo4bb-LRp8WWbkCD-n4nE,347
+richillcapital_tdameritrade-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: richillcapital-tdameritrade
+Version: 0.1.0
+License: MIT
+Author-email: Megnsyue Amao Tsai <mengsyue.tsai@outlook.com>
+Requires-Python: >=3.11
+Requires-Dist: python-dotenv>=0.21.1
+Requires-Dist: requests>=2.28.2
+Description-Content-Type: text/markdown
+
+# richillcapital-tdameritrade
+
+
+TD Ameritrade API SDK for Python.
+
+
