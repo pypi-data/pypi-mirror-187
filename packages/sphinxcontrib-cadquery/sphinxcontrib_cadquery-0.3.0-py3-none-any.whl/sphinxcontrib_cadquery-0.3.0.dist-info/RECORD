@@ -1,0 +1,13 @@
+CHANGELOG.md,sha256=oav77IvsUoHKSB5scykStkA5UW7mmNeJEtrTjMrEPkg,609
+sphinxcontrib/cadquery/__init__.py,sha256=CA3MTdkwQq9rsspsbpvPRTF3E-G00WzVIQ5-8oeGqkk,1655
+sphinxcontrib/cadquery/cq_core.py,sha256=Kd4k832c7sl6TwxsQRQKXSQLd1ftmZnPoxjHcYeX9zE,5525
+sphinxcontrib/cadquery/static/dist/vtk-lite.js,sha256=wIubz3CG9I3hVZQSWZlQWcMRqPjmqKRXVZ9UYW14-gk,2267604
+sphinxcontrib/cadquery/static/dist/vtk-lite.js.LICENSE.txt,sha256=wj8WiqZgMn_2LPqRFOP5TDax3R2HoOZicOBoVcyR7FU,66
+sphinxcontrib/cadquery/static/render.js,sha256=Qqc0oenzIp7Jw6dskgQzZJF5jQcv-t7NTMVw1O-_1UU,4845
+sphinxcontrib/cadquery/templates/svg.rst.jinja,sha256=jyHwRG_B7UBCM8WsO5fweuyRmLjPNnGW6V6uMO49C4o,345
+sphinxcontrib/cadquery/templates/vtk.rst.jinja,sha256=PFmv65QuA0j-t10KOZi-yrveGEsxA7J-5DqAbkEDwf8,544
+sphinxcontrib_cadquery-0.3.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+sphinxcontrib_cadquery-0.3.0.dist-info/LICENSE.vtk-js,sha256=yLZV0EON9cLL_ufkilddGZAYB2jMJicsPz6y0cE2n1o,1490
+sphinxcontrib_cadquery-0.3.0.dist-info/LICENSE,sha256=cl4Pe1x9cBA6ubcwsZpk5bWrRFBA7QXOo9QtPc0AIRw,611
+sphinxcontrib_cadquery-0.3.0.dist-info/METADATA,sha256=vHor862aHit8-UqCD2Na9h4Xwckmiax0nzelXlt91xU,2615
+sphinxcontrib_cadquery-0.3.0.dist-info/RECORD,,
