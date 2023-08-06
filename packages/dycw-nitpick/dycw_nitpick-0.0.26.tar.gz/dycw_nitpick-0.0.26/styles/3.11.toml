@@ -1,0 +1,23 @@
+#### black ####################################################################
+["pyproject.toml".tool.black]
+target-version = ["py311"]
+
+#### project ##################################################################
+["pyproject.toml".project]
+requires-python = ">= 3.11"
+
+#### pyright ##################################################################
+["pyproject.toml".tool.pyright]
+pythonVersion = "3.11"
+
+#### pyupgrade ################################################################
+[[".pre-commit-config.yaml".repos]]
+repo = "https://github.com/asottile/pyupgrade"
+
+[[".pre-commit-config.yaml".repos.hooks]]
+id = "pyupgrade"
+args = ["--py311-plus"]
+
+#### ruff #####################################################################
+["pyproject.toml".tool.ruff]
+target-version = "py311"
