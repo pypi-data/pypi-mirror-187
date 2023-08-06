@@ -1,0 +1,39 @@
+Metadata-Version: 1.1
+Name: Topsis_Drishti_102016102
+Version: 0.4
+Summary: topsis
+Home-page: UNKNOWN
+Author: Drishti bhatia
+Author-email: drishtibhatia2020@gmail.com
+License: MIT
+Description: Project description
+        TOPSIS
+        Technique for Order Preference by Similarity to Ideal Solution (TOPSIS)
+        Technique for Order Preference by Similarity to Ideal Solution (TOPSIS) came in the 1980s as a multi-criteria-based decision-making method. TOPSIS chooses the alternative of shortest the Euclidean distance from the ideal solution and greatest distance from the negative ideal solution.
+        
+        TOPSIS is a way to allocate the ranks on basis of the weights and impact of the given factors:.
+        
+        Weights mean how much a given factor should be taken into consideration
+        Impact means that a given factor has a positive or negative impact.
+        This tool allows you to calculate the topsis ranking and save the results in the form of a csv (Comma Seperated Value) file.
+        
+        Installing Package
+        pip install Topsis-Drishti-102016102
+        Using the TOPSIS tool
+        Create a script by importing the package and just calling the TOPSIS function.
+        import importlib
+        topsis=importlib.import_module("Topsis_Drishti_1016102")
+        topsis.TOPSIS()
+        Run the Script through command line as shown below:
+        C:/Users/admin> python myscript.py <Data_File_csv> <Weights(Comma_seperated)> <Impacts(Comma_seperated)> <Result_file_csv>
+        
+Keywords: topsis
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
