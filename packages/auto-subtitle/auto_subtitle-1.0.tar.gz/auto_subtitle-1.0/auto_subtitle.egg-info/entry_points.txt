@@ -1,0 +1,2 @@
+[console_scripts]
+auto_subtitle = auto_subtitle.cli:main
