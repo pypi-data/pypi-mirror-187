@@ -1,0 +1,10 @@
+maxmods/__init__.py,sha256=LGDkX0yE-XlDPuy8fP68DhtlcvcV9Ws4A_j5is1vfQI,68
+maxmods/auth/__init__.py,sha256=ff1IAMemFNwbkHY5T_k5vbAGX1A9FZKKxNbAK4mpJzg,184
+maxmods/auth/auth.py,sha256=Qa4WuEm0npMZZDLhXRuikCcQZT_RoFirmTNxm5JWsWA,12589
+maxmods/auth/main.py,sha256=B7gdleYOzQUVxexm6FWr3_WRThd6TY63QfGWKc6rOmE,36978
+maxmods/auth/logs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+maxmods-0.5.0.dist-info/LICENSE,sha256=PzBPn_jgujVC6d5waAf-Rk-WtY-CBEb5zl8B1DM8C9Y,1065
+maxmods-0.5.0.dist-info/METADATA,sha256=u6QHByLWTq4xV2awX6IBZC2XM1fzKfWB1dTNHYe4AEI,6409
+maxmods-0.5.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+maxmods-0.5.0.dist-info/top_level.txt,sha256=clzzi5w0_JY88NsY9BC-Z3j6LR8xrLghnEBRJhyLEd0,8
+maxmods-0.5.0.dist-info/RECORD,,
