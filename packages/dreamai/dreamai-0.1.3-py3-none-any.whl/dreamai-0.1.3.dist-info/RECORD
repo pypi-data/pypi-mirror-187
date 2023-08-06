@@ -1,0 +1,12 @@
+dreamai/__init__.py,sha256=XEqb2aiIn8fzGE68Mph4ck1FtQqsR_am0wRWvrYPffQ,22
+dreamai/_modidx.py,sha256=6ifjh2vPQ12SJX9qTzrt--qvBpRo-ScDmdaoc8x8Bes,7797
+dreamai/checkers.py,sha256=H7d1Gsji7fqrr69zKPcUzUsTKts73PYt0uQS2ySijxA,1889
+dreamai/core.py,sha256=CPl5fdZ9Elh60DBWiODNvbIYWQ_ntWuk_pd1UrWYLO8,7627
+dreamai/imports.py,sha256=etuKSRLna3KZh8IER02PtUwEGSdjE_h_c_W3nbu7x8Y,582
+dreamai/vision.py,sha256=8fOTqV3EmA9YM_iZ71hTSzEISP1rE6qpUN1iNeqpNQY,8032
+dreamai-0.1.3.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+dreamai-0.1.3.dist-info/METADATA,sha256=qcRXTFooA5DL5N7h-zC7aO2kjG4kNP4nE2dSUI3y_gw,2738
+dreamai-0.1.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dreamai-0.1.3.dist-info/entry_points.txt,sha256=Mr1K7gwG3QZ5UGGfwJsO2h8kBLvc78eKGhs4gH5pYDk,36
+dreamai-0.1.3.dist-info/top_level.txt,sha256=IsKTTYZ0rS9iXPBNbrVdxRY6cL8nZOvTWu5yLFLVn64,8
+dreamai-0.1.3.dist-info/RECORD,,
