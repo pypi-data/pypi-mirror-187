@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: statgis
+Version: 1.0.1
+Summary: Tools for improve work with geospatial data in Python
+License: MIT
+Author: Sebástian Narváez-Salcedo
+Requires-Python: >=3.8,<3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: earthengine-api (>=0.1.335)
+Requires-Dist: matplotlib (>=3.2.2)
+Requires-Dist: pandas (>=1.3.5)
+Requires-Dist: scipy (>=1.7.3)
+Description-Content-Type: text/markdown
+
+# StatGIS Python Package
+
+![PyPI](https://img.shields.io/pypi/v/statgis) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/statgis?color=yellow) [![Documentation Status](https://readthedocs.org/projects/statgis/badge/?version=latest)](https://statgis.readthedocs.io/en/latest/?badge=latest)
+
+StatGIS help to the users to process and analyse satellite images in Google Earth Engine.
+
+## Installation
+
+```bash
+$ pip install statgis
+```
+
+## Usage
+
+In this package you could find function to scale optical images, classify images,
+characterize shorelines and much more.
+
+```python
+# Example: mask clouds and scale to reflectance values
+import ee
+from statgis.gee import landsat_functions
+
+ee.Initialize()
+
+image_collection = (
+    ee.ImageCollection("LANDSAT/LC09/C02/T1_L2")
+      .map(landsat_functions.cloud_mask)
+      .map(landsat_functions.scaler)
+)
+```
+
+## Contributing
+
+Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+
+## License
+
+`statgis` was created by Sebástian Narváez-Salcedo, Brayan Navarro-Londoño. It is licensed under the terms of the MIT license.
+
+## Credits
+
+`statgis` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
