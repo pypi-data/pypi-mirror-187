@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "trabalho-gces-denys"
+version = "0.1.0"
+description = ""
+authors = ["DenysRogeres <dennysrogeres@gmail.com>"]
+readme = "README.md"
+packages = [{include = "trabalho_gces_denys"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
