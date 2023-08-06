@@ -1,0 +1,3 @@
+[console_scripts]
+tootlogger=tootlogger.cli:main
+
