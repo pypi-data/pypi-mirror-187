@@ -1,0 +1,11 @@
+corpus_pax/__init__.py,sha256=2H0XyckJb-OvbMHksPXj70wBoe7PCMM5sS_wdOm-35s,347
+corpus_pax/__main__.py,sha256=mMke5iz2NWNf7tGuGoZPOMASRxViJ1wah6UkPtOHBEA,1656
+corpus_pax/_api.py,sha256=ayh1h-NrjIa7L2PdrrrpxPa6RgTPuTiu4AHzqWy_tls,4421
+corpus_pax/articles.py,sha256=7Lvz-CWzvcpo5DyCPxDTlWJVAwoWOqEmwLnb2Ikfs3s,3268
+corpus_pax/entities.py,sha256=cr02F709hmW0cBlwt8pcOcZ9KHQh2SjtvM9jQTjph-U,6757
+corpus_pax/resources.py,sha256=ZlMIJ2VLAdTorNPMOkqrwfAaZog6OPGq8F04ggQ0k_8,6006
+corpus_pax/templates/update_member_id_on_insert_email.sql,sha256=YatzJ7JVXLRXXbQKVUtA9-7LU1K2EAqfggnbPv3iAro,402
+corpus_pax/utils.py,sha256=8GjgRoMXnyuqdFAMFs4MAHoJZ0EIbyy27Im9W_5tyno,589
+corpus_pax-0.1.11.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+corpus_pax-0.1.11.dist-info/METADATA,sha256=tFsAhZP3G0qCxBJPzSMALPjGjr2L2bGZSaGpJd-JXys,1722
+corpus_pax-0.1.11.dist-info/RECORD,,
