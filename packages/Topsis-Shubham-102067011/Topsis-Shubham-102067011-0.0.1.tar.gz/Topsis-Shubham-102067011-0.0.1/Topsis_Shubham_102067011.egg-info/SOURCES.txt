@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+Topsis-Shubham-102067011/__init__.py
+Topsis_Shubham_102067011.egg-info/PKG-INFO
+Topsis_Shubham_102067011.egg-info/SOURCES.txt
+Topsis_Shubham_102067011.egg-info/dependency_links.txt
+Topsis_Shubham_102067011.egg-info/requires.txt
+Topsis_Shubham_102067011.egg-info/top_level.txt

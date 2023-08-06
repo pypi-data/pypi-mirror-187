@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: Topsis-Shubham-102067011
+Version: 0.0.1
+Summary: TOPSIS for MCDM(Multiple Criteria Decision Making)
+Home-page: 
+Author: Shubham Sahu
+Author-email: shubham30sahu101@gmail.com
+Keywords: TOPSIS
+License-File: LICENCE.txt
+
+Library used to calculate topsis score 
+
+TOPSIS is used for multiple Criteria Decision Making (MCDM)
+
+TOPSIS is based on the fundamental premise that the best solution has the shortest distance from the positive-ideal solution, and the longest distance from the negative-ideal one. Alternatives are ranked with the use of an overall index calculated based on the distances from the ideal solutions.
+
+---------------------
+
+normalize function takes a dataframe as argument .
+
+It normalizes columns 2nd to the last column of the dataframe.
+
+All the values from the 2nd column to the last column should be numeric.
+
+Outputs a dataframe.
+
+---------------------
+
+weightAssignment takes a dataframe(output of normalize function) and a numeric list as inputs. 
+
+weightAssignment function assigns weights to different columns .
+
+Outputs a dataframe.
+
+---------------------
+
+ideal function takes a dataframe(output of weightAssignment function) and a list of string having elements either '+' or '-'.
+
+Used to calculate max and minimum value of each column.
+
+Outputs a pair of numeric lists.
+
+----------------------
+
+euclideanDist function takes a dataframe(output of weightAssignment function) and 2 numeric lists(output of ideal function).
+
+Calculates the euclidean distance of each row of dataframe with the 2 numeric lists.
+
+Outputs a pair of numeric lists.
+
+----------------------
+
+performance_score takes 2 numeric lists (output of euclideanDist function) as inputs.
+
+Calculates topsis score of each row.
+
+Outputs a numeric list.
+
+----------------------
+
+TOPSIS_result takes a dataframe(output of weightAssignment function or Orignal dataframe) and a numeric list(output of performance_score function) as inputs.
+
+assigns a rank to the list.
+
+The ranks and the list are appended to the dataframe.
+
+Outputs a dataframe.
+-----------------------
+
+Change Log
+==============
+
+0.0.1 (21/01/2023)
+---------------------
+- First Release 
