@@ -1,0 +1,258 @@
+{
+  "language": "bg",
+  "intents": {
+    "HassTurnOff": {
+      "data": [
+        {
+          "sentences": [
+            "<turn_off> [<all>] вентилатор[а|ът|и|ите] <area>",
+            "<turn_off> [<all>] <area> вентилатор[и]"
+          ],
+          "slots": {
+            "domain": "fan",
+            "name": "all"
+          }
+        },
+        {
+          "sentences": [
+            "<turn_off> <name>"
+          ]
+        },
+        {
+          "sentences": [
+            "<close> <name>"
+          ],
+          "response": "cover"
+        },
+        {
+          "sentences": [
+            "<close> <name> <area>",
+            "<close> <area> <name>"
+          ],
+          "response": "cover_area"
+        },
+        {
+          "sentences": [
+            "<close> [вратата] [на] гаража",
+            "<close> гаражната врата"
+          ],
+          "response": "cover",
+          "slots": {
+            "device_class": "garage",
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "<close> [всички] (щор(а | и | ата | ите) | завес(a | и | ата | ите) | перде[то | та | тата] | кепенци[те] | капа(к | ка | кът | ци | ците)) <area>",
+            "<close>  <area> [всички] (щор(а | и | ата | ите) | завес(a | и | ата | ите) | перде[то | тa | тaтa] | кепенци[те] | капа(к | ка | кът | ци | ците))"
+          ],
+          "response": "cover_area",
+          "slots": {
+            "area": "bedroom",
+            "device_class": [
+              "blind",
+              "curtain",
+              "shutter"
+            ],
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "<turn_off> [<all>] <lampi> <area>",
+            "<turn_off> [<all>] <area> <lampi>"
+          ],
+          "slots": {
+            "domain": "light"
+          }
+        }
+      ]
+    },
+    "HassTurnOn": {
+      "data": [
+        {
+          "sentences": [
+            "<turn_on> [<all>] <lampi> <area>",
+            "<turn_on> [<all>] <area> <lampi>"
+          ],
+          "slots": {
+            "domain": "light"
+          }
+        },
+        {
+          "sentences": [
+            "<turn_on> [<all>] вентилатор[а|ът|и|ите]  <area>",
+            "<turn_on> <area> вентилатор[а|ът|и|ите]",
+            "<turn_on> [<all>] <area> вентилатор[а|ът|и|ите]"
+          ],
+          "slots": {
+            "domain": "fan",
+            "name": "all"
+          }
+        },
+        {
+          "sentences": [
+            "<turn_on> <name>"
+          ]
+        },
+        {
+          "sentences": [
+            "<open> <name>"
+          ],
+          "response": "cover"
+        },
+        {
+          "sentences": [
+            "<open> <name>  <area>",
+            "<open> <area> <name>"
+          ],
+          "response": "cover_area"
+        },
+        {
+          "sentences": [
+            "<open> [вратата] [на] гаража",
+            "<open> гаражната врата"
+          ],
+          "response": "cover",
+          "slots": {
+            "device_class": "garage",
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "<open> [всички] (щор(а | и | ата | ите) | завес(a | и | ата | ите) | перде[то | та | тата] | кепенци[те] | капа(к | ка | кът | ци | ците)) <area>",
+            "<open>  <area> [всички] (щор(а | и | ата | ите) | завес(a | и | ата | ите) | перде[то | тa | тaтa] | кепенци[те] | капа(к | ка | кът | ци | ците))"
+          ],
+          "response": "cover_area",
+          "slots": {
+            "area": "bedroom",
+            "device_class": [
+              "blind",
+              "curtain",
+              "shutter"
+            ],
+            "domain": "cover"
+          }
+        }
+      ]
+    }
+  },
+  "responses": {
+    "errors": {
+      "no_intent": "Съжалявам, не можах да разбера това",
+      "no_area": "Няма област с име {{ area }}",
+      "no_domain": "В областта {{ area }} няма {{ domain }}",
+      "no_device_class": "В областта {{ area }} няма {{ device_class }}",
+      "no_entity": "Няма устройство или обект с име {{ entity }}",
+      "handle_error": "Възникна неочаквана грешка при изпълнение на командата"
+    },
+    "intents": {
+      "HassTurnOff": {
+        "default": "Изключих {{ slots.name }}",
+        "lights_area": "Изгасих лампите в {{ slots.area }}",
+        "fans_area": "Изключих вентилаторите в {{ slots.area }}",
+        "cover": "Затворих {{ slots.name }}",
+        "cover_area": "Затворих {{ slots.area }}"
+      },
+      "HassTurnOn": {
+        "default": "Включих {{ slots.name }}",
+        "lights_area": "Светнах лампите в {{ slots.area }}",
+        "fans_area": "Включих вентилатора в {{ slots.area }}",
+        "cover": "Отворих {{ slots.name }}",
+        "cover_area": "Отворих {{ slots.area }}"
+      }
+    }
+  },
+  "lists": {
+    "color": {
+      "values": [
+        {
+          "in": "бял[о|а|ото|ата] | бел(и|ия|ият|ите)",
+          "out": "white"
+        },
+        {
+          "in": "черен | черн(о|на|ото|ата|и|ият|ите)",
+          "out": "black"
+        },
+        {
+          "in": "червен[o|a|ото|ата|и|ия|ият]",
+          "out": "red"
+        },
+        {
+          "in": "оранжев[о|а|ото|вата|и|ия|ият]",
+          "out": "orange"
+        },
+        {
+          "in": "жълт[о|а|ото|и|ия|ият|ата]",
+          "out": "yellow"
+        },
+        {
+          "in": "зелен[о|а|ото|ата|и|ия|ият]",
+          "out": "green"
+        },
+        {
+          "in": "син[ьо|я|ьото|ята|ят|и|ите]",
+          "out": "blue"
+        },
+        {
+          "in": "лилав[о|а|ото|ата|и|ия|ият|ите]",
+          "out": "purple"
+        },
+        {
+          "in": "кафяв[о|а|ото|ата|и|ия|ият|ите]",
+          "out": "brown"
+        }
+      ]
+    },
+    "brightness": {
+      "range": {
+        "type": "percentage",
+        "from": 0,
+        "to": 100
+      }
+    },
+    "temperature": {
+      "range": {
+        "type": "temperature",
+        "from": 0,
+        "to": 100
+      }
+    },
+    "temperature_unit": {
+      "values": [
+        {
+          "in": "c | целзий | [по|в] целзий",
+          "out": "celsius"
+        },
+        {
+          "in": "f | фаренхайт | [по|във] фаренхайт",
+          "out": "fahrenheit"
+        }
+      ]
+    }
+  },
+  "expansion_rules": {
+    "name": "{name}",
+    "area": "[в | на| във] {area}",
+    "brightness": "{brightness} [процент[а]]",
+    "what_is": "(какво [е] | каква [е] | какви [са] | какъв [е] | колко [е] | колко [са])",
+    "all": "(всички[те] | всяк(о|а) | всеки)",
+    "lampi": "(ламп(а|ата|и|ите) | осветление[то] | крушк(а|ата|и|ите))",
+    "temp": "(температур(а|ата|ите) | градус[а|и|те] | термостат[а|ът|ите])",
+    "temperature": "{temperature} [градуса] [{temperature_unit}]",
+    "turn_on": "(пусни | включи | светни | запали)",
+    "turn_off": "(спри | изключи | изгаси | угаси)",
+    "set": "(направи | сложи | постави | смени | промени | настрой | задай | нагласи | тури)",
+    "close": "(затвори | смъкни | спусни | закрий | свали)",
+    "open": "(отвори | вдигни | открий)"
+  },
+  "skip_words": [
+    "извинявай",
+    "можеш ли",
+    "може ли",
+    "кажи ми",
+    "моля"
+  ]
+}

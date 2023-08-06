@@ -1,0 +1,261 @@
+{
+  "language": "it",
+  "intents": {
+    "HassTurnOff": {
+      "data": [
+        {
+          "sentences": [
+            "<turn_off> [(tutt(i | e))] [<the>] <fan> [(<of> | <in>)] <area>",
+            "<turn_off> [<in>] <area> [(tutt(i | e))] [<the>] <fan>"
+          ],
+          "slots": {
+            "domain": "fan",
+            "name": "all"
+          }
+        },
+        {
+          "sentences": [
+            "<turn_off> [<the>] <name>"
+          ]
+        },
+        {
+          "sentences": [
+            "<close> [<the>] <name>"
+          ],
+          "response": "cover"
+        },
+        {
+          "sentences": [
+            "<close> [<the>] <name> [(<in> | <of>)] <area>",
+            "<close> [<in>] <area> [<the>] <name>"
+          ],
+          "response": "cover_area"
+        },
+        {
+          "sentences": [
+            "<close> [la] (serranda | porta | [porta] basculante | saracinesca) [(in | del)] garage",
+            "<close> [<in>] garage [la] (serranda | porta | [porta] basculante | saracinesca)"
+          ],
+          "response": "cover",
+          "slots": {
+            "device_class": "garage",
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "<close> [l(a | e)] (tend(a | e) | tapparell(a | e) | venezian(a | e) ) [(<in> | <of>)] <area>",
+            "<close> [<in>] <area> [l(a | e)] (tend(a | e) | tapparell(a | e) | venezian(a | e) )"
+          ],
+          "response": "cover_area",
+          "slots": {
+            "device_class": [
+              "blind",
+              "curtain",
+              "shutter"
+            ],
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "<turn_off> [tutte] [l(a | e)] (luc(e | i)) [(<of> | <in>)] <area>",
+            "<turn_off> [<in>] <area> [tutte] [l(a | e)] (luc(e | i))"
+          ],
+          "slots": {
+            "domain": "light"
+          }
+        }
+      ]
+    },
+    "HassTurnOn": {
+      "data": [
+        {
+          "sentences": [
+            "<turn_on> [tutte] [l(a | e)] (luc(e | i)) [(<of> | <in>)] <area>",
+            "<turn_on> [<in>] <area> [tutte] [l(a | e)] (luc(e | i))"
+          ],
+          "slots": {
+            "domain": "light"
+          }
+        },
+        {
+          "sentences": [
+            "<turn_on> [(tutt(i | e))] [<the>] <fan> [(<of> | <in>)] <area>",
+            "<turn_on> [<in>] <area> [(tutt(i | e)] [<the>] <fan>"
+          ],
+          "slots": {
+            "domain": "fan",
+            "name": "all"
+          }
+        },
+        {
+          "sentences": [
+            "<turn_on> [<the>] <name>"
+          ]
+        },
+        {
+          "sentences": [
+            "<open> [<the>] <name>"
+          ],
+          "response": "cover"
+        },
+        {
+          "sentences": [
+            "<open> [<the>] <name> [(<in> | <of>)] <area>",
+            "<open> [<in>] <area> [<the>] <name>"
+          ],
+          "response": "cover_area"
+        },
+        {
+          "sentences": [
+            "<open> [la] (serranda | porta | [porta] basculante | saracinesca) [(in | del)] garage",
+            "<open> [<in>] garage [la] (serranda | porta | [porta] basculante | saracinesca)"
+          ],
+          "response": "cover",
+          "slots": {
+            "device_class": "garage",
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "<open> [l(a | e)] (tend(a | e) | tapparell(a | e) | venezian(a | e)) [(<in> | <of>)] <area>",
+            "<open> [<in>] <area> [l(a | e)] (tend(a | e) | tapparell(a | e) | venezian(a | e))"
+          ],
+          "response": "cover_area",
+          "slots": {
+            "device_class": [
+              "blind",
+              "curtain",
+              "shutter"
+            ],
+            "domain": "cover"
+          }
+        }
+      ]
+    }
+  },
+  "responses": {
+    "errors": {
+      "no_intent": "Mi dispiace, non ho capito",
+      "no_area": "Non esiste nessuna area chiamata {{ area }}",
+      "no_domain": "{{ area }} non contiene {{ domain }}",
+      "no_device_class": "{{ area }} non contiene {{ device_class }}",
+      "no_entity": "Non esiste nessun dispositivo o entità chiamato {{ entity }}",
+      "handle_error": "Si è verificato un errore inatteso durante l'elaborazione"
+    },
+    "intents": {
+      "HassTurnOff": {
+        "default": "spento {{ slots.name }}",
+        "lights_area": "luci spente in {{ slots.area }}",
+        "fans_area": "ventilazione spenta in {{ slots.area }}",
+        "cover": "chiuso {{ slots.name }}",
+        "cover_area": "chiuso {{ slots.area }}"
+      },
+      "HassTurnOn": {
+        "default": "Ho acceso {{ slots.name }}",
+        "lights_area": "Ho acceso le luci in {{ slots.area }}",
+        "fans_area": "Ho acceso il ventilatore in {{ slots.area }}",
+        "cover": "Ho aperto{{ slots.name }}",
+        "cover_area": "Ho aperto{{ slots.area }}"
+      }
+    }
+  },
+  "lists": {
+    "color": {
+      "values": [
+        {
+          "in": "bianco",
+          "out": "white"
+        },
+        {
+          "in": "nero",
+          "out": "black"
+        },
+        {
+          "in": "rosso",
+          "out": "red"
+        },
+        {
+          "in": "arancione",
+          "out": "orange"
+        },
+        {
+          "in": "giallo",
+          "out": "yellow"
+        },
+        {
+          "in": "verde",
+          "out": "green"
+        },
+        {
+          "in": "blu",
+          "out": "blue"
+        },
+        {
+          "in": "viola",
+          "out": "purple"
+        },
+        {
+          "in": "marrone",
+          "out": "brown"
+        }
+      ]
+    },
+    "brightness": {
+      "range": {
+        "type": "percentage",
+        "from": 0,
+        "to": 100
+      }
+    },
+    "temperature": {
+      "range": {
+        "type": "temperature",
+        "from": 0,
+        "to": 100
+      }
+    },
+    "temperature_unit": {
+      "values": [
+        "(celsius | centigradi)",
+        {
+          "in": "c",
+          "out": "celsius"
+        },
+        "fahrenheit",
+        {
+          "in": "f",
+          "out": "fahrenheit"
+        }
+      ]
+    }
+  },
+  "expansion_rules": {
+    "the": "(l(o | a | e) | i[l] | gli | l')",
+    "in": "(in | ne[i | gli | l[lo | la | le]])",
+    "of": "de[i | gli | l[lo | la | le]]",
+    "to": "a[l[lo | la | le] | gli]",
+    "name": "{name}",
+    "area": "{area}",
+    "what_is": "(qual[e] è | quant(o | ') è | com(e | ') è | che)",
+    "brightness": "{brightness} [percento]",
+    "turn_on": "(accend(i | ere) | attiv(a | are))",
+    "turn_off": "(spegn(i | ere) | disattiv(a | are))",
+    "open": "(apr(i | ire) | alz(a | are))",
+    "close": "(chiud(i | ere) | abbass(a |are))",
+    "set": "(impost(a | are) | cambi(a | are) | mett(i | ere) | modific(a | are))",
+    "temp": "[la] (temperatura)",
+    "temperature": "{temperature} [gradi] [{temperature_unit}]",
+    "fan": "(ventol(a | e) | ventilator(e | i) | climatizzator(e | i) | condizionator(e | i))"
+  },
+  "skip_words": [
+    "per favore",
+    "potresti",
+    "puoi",
+    "puoi dirmi",
+    "dimmi",
+    "grazie"
+  ]
+}

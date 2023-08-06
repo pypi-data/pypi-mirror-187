@@ -1,0 +1,41 @@
+{
+  "language": "vi",
+  "intents": {
+    "HassClimateSetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "(thiết lập | thay đổi | điều chỉnh | chỉnh) <name> <area> (sang mức | mức | về mức) <temperature>",
+            "(thiết lập | thay đổi | điều chỉnh | chỉnh) nhiệt độ <area> [sang mức | mức | về mức] <temperature>"
+          ]
+        }
+      ]
+    },
+    "HassClimateGetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "nhiệt độ <area>",
+            "nhiệt độ thế nào",
+            "nhiệt độ <area> thế nào",
+            "nhiệt độ <area> là bao nhiêu",
+            "<area> có nóng không",
+            "<area> bao nhiêu độ",
+            "nhiệt độ bên trong <area>",
+            "kiểm tra nhiệt độ <area>"
+          ]
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassClimateSetTemperature": {
+        "default": "Temperature set to {{ slots.temperature }} degrees"
+      },
+      "HassClimateGetTemperature": {
+        "default": "{{ state.state }} degrees"
+      }
+    }
+  }
+}

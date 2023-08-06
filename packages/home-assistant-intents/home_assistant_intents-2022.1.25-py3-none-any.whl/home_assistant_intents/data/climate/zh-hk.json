@@ -1,0 +1,13 @@
+{
+  "language": "zh-hk",
+  "responses": {
+    "intents": {
+      "HassClimateSetTemperature": {
+        "default": "Temperature set to {{ slots.temperature }} degrees"
+      },
+      "HassClimateGetTemperature": {
+        "default": "{{ state.state }} degrees"
+      }
+    }
+  }
+}

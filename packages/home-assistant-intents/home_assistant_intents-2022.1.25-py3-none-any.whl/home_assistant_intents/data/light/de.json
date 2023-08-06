@@ -1,0 +1,49 @@
+{
+  "language": "de",
+  "intents": {
+    "HassLightSet": {
+      "data": [
+        {
+          "sentences": [
+            "<setzen> die Helligkeit von <name> auf <brightness>"
+          ],
+          "slots": {
+            "name": "all"
+          },
+          "response": "brightness"
+        },
+        {
+          "sentences": [
+            "<setzen> die Helligkeit [<area>] auf <brightness>"
+          ],
+          "response": "brightness_area"
+        },
+        {
+          "sentences": [
+            "<setzen> [die Farbe von] <name> auf {color}"
+          ],
+          "slots": {
+            "name": "all"
+          },
+          "response": "color"
+        },
+        {
+          "sentences": [
+            "<setzen> die Farbe [<area>] auf {color}"
+          ],
+          "response": "color_area"
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassLightSet": {
+        "brightness": "{{ slots.name }} Helligkeit auf {{ slots.brightness }} gesetzt",
+        "brightness_area": "Helligkeit in {{ slots.area }} auf {{ slots.brightness }} gesetzt",
+        "color": "{{ slots.name }} Farbe auf {{ slots.color }} gesetzt",
+        "color_area": "Farbe in {{ slots.area }} auf {{ slots.color }} gesetzt"
+      }
+    }
+  }
+}

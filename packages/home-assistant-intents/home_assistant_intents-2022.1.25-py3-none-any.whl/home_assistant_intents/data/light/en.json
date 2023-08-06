@@ -1,0 +1,104 @@
+{
+  "language": "en",
+  "intents": {
+    "HassLightSet": {
+      "data": [
+        {
+          "sentences": [
+            "(set | change) <name> brightness to <brightness>",
+            "(set | change) [the] brightness of <name> to <brightness>",
+            "(set | change) <name> to <brightness> brightness"
+          ],
+          "response": "brightness",
+          "requires_context": {
+            "domain": "light"
+          }
+        },
+        {
+          "sentences": [
+            "(set | change) <name> to <brightness>"
+          ],
+          "requires_context": {
+            "domain": "light"
+          },
+          "response": "brightness"
+        },
+        {
+          "sentences": [
+            "(set | change) [the] brightness in <area> to <brightness>",
+            "(set | change) [the] brightness of <area> to <brightness>",
+            "(set | change) <area> brightness to <brightness>",
+            "(set | change) <area> to <brightness> brightness",
+            "(set | change) <area> to <brightness>"
+          ],
+          "slots": {
+            "name": "all"
+          },
+          "response": "brightness_area"
+        },
+        {
+          "sentences": [
+            "(set | change) <area> to <brightness>"
+          ],
+          "slots": {
+            "name": "all"
+          },
+          "response": "brightness_area"
+        },
+        {
+          "sentences": [
+            "set <name> brightness to [the] {brightness_level:brightness}",
+            "set [the] brightness of <name> to [the] {brightness_level:brightness}",
+            "set <name> to [the] {brightness_level:brightness} brightness"
+          ],
+          "requires_context": {
+            "domain": "light"
+          },
+          "response": "brightness"
+        },
+        {
+          "sentences": [
+            "set [the] brightness in <area> to [the] {brightness_level:brightness}",
+            "set [the] brightness of <area> to [the] {brightness_level:brightness}",
+            "set <area> brightness to [the] {brightness_level:brightness}",
+            "set <area> to [the] {brightness_level:brightness} brightness"
+          ],
+          "slots": {
+            "name": "all"
+          },
+          "response": "brightness_area"
+        },
+        {
+          "sentences": [
+            "(set | change) <name> [color] to {color}",
+            "(set | change) [[the] color of] <name> to {color}"
+          ],
+          "requires_context": {
+            "domain": "light"
+          },
+          "response": "color"
+        },
+        {
+          "sentences": [
+            "(set | change) [[the] color of] (<area> | [all] lights in <area> | [all] <area> lights) to {color}",
+            "(set | change) (<area> | [all] lights in <area> | [all] <area> lights) [color] to {color}"
+          ],
+          "slots": {
+            "name": "all"
+          },
+          "response": "color_area"
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassLightSet": {
+        "brightness": "{{ slots.name }} brightness set to {{ slots.brightness }}",
+        "brightness_area": "Brightness in {{ slots.area }} set to {{ slots.brightness }}",
+        "color": "{{ slots.name }} color set to {{ slots.color }}",
+        "color_area": "Color in {{ slots.area }} set to {{ slots.color }}"
+      }
+    }
+  }
+}

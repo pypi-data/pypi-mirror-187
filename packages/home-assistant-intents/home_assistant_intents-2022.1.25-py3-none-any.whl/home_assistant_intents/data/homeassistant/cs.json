@@ -1,0 +1,315 @@
+{
+  "language": "cs",
+  "intents": {
+    "HassTurnOff": {
+      "data": [
+        {
+          "sentences": [
+            "<vypnout> [všechny] [stropní] (ventilátory | větráky) <area>",
+            "<area> <vypnout> [všechny] [stropní] (ventilátory | větráky)"
+          ],
+          "slots": {
+            "domain": "fan",
+            "name": "all"
+          },
+          "response": "fans_area"
+        },
+        {
+          "sentences": [
+            "<vypnout> [stropní] (ventilátor | větrák) <area>",
+            "<area> <vypnout> [stropní] (ventilátor | větrák)"
+          ],
+          "slots": {
+            "domain": "fan"
+          },
+          "response": "fan"
+        },
+        {
+          "sentences": [
+            "<vypnout> {name}",
+            "{name} <vypnout>"
+          ]
+        },
+        {
+          "sentences": [
+            "(<zavrit>|<zatahnout>) {name}"
+          ],
+          "response": "cover"
+        },
+        {
+          "sentences": [
+            "(<zavrit>|<zatahnout>) {name} <area>"
+          ],
+          "response": "cover_area"
+        },
+        {
+          "sentences": [
+            "<zavrit> garáž",
+            "<zavrit> vrata od garáže"
+          ],
+          "response": "garage",
+          "slots": {
+            "device_class": "garage",
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "(<zavrit>|<zatahnout>) (rolety|žaluzie|závěsy) <area>"
+          ],
+          "response": "cover_area",
+          "slots": {
+            "device_class": [
+              "blind",
+              "curtain",
+              "shutter"
+            ],
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "(<vypnout>|<zhasnout>) světlo <area>",
+            "<area> (<vypnout>|<zhasnout>) světlo"
+          ],
+          "slots": {
+            "domain": "light"
+          },
+          "response": "light"
+        },
+        {
+          "sentences": [
+            "(<vypnout>|<zhasnout>) [všechna] světla <area>",
+            "<area> (<vypnout>|<zhasnout>) [všechna] světla"
+          ],
+          "slots": {
+            "domain": "light"
+          },
+          "response": "lights_area"
+        }
+      ]
+    },
+    "HassTurnOn": {
+      "data": [
+        {
+          "sentences": [
+            "(<zapnout> | <rozsvitit>) světlo <area>",
+            "<area> (<zapnout> | <rozsvitit>) světlo"
+          ],
+          "slots": {
+            "domain": "light"
+          },
+          "response": "light"
+        },
+        {
+          "sentences": [
+            "(<zapnout> | <rozsvitit>) [všechna] světla <area>",
+            "<area> (<zapnout> | <rozsvitit>) [všechna] světla"
+          ],
+          "slots": {
+            "domain": "light"
+          },
+          "response": "lights_area"
+        },
+        {
+          "sentences": [
+            "<zapnout> [všechny] [stropní] (ventilátory | větráky) <area>",
+            "<area> <zapnout> [všechny] [stropní] (ventilátory | větráky)"
+          ],
+          "slots": {
+            "domain": "fan",
+            "name": "all"
+          },
+          "response": "fans_area"
+        },
+        {
+          "sentences": [
+            "<zapnout> [stropní] (ventilátor | větrák) <area>",
+            "<area> <zapnout> [stropní] (ventilátor | větrák)"
+          ],
+          "slots": {
+            "domain": "fan"
+          },
+          "response": "fan"
+        },
+        {
+          "sentences": [
+            "<zapnout> {name}",
+            "{name} <zapnout>"
+          ]
+        },
+        {
+          "sentences": [
+            "(<otevrit>|<roztahnout>) {name}"
+          ],
+          "response": "cover"
+        },
+        {
+          "sentences": [
+            "(<otevrit>|<roztahnout>) {name} [v] {area}"
+          ],
+          "response": "cover_area"
+        },
+        {
+          "sentences": [
+            "<otevrit> garáž",
+            "<otevrit> vrata od garáže"
+          ],
+          "response": "garage",
+          "slots": {
+            "device_class": "garage",
+            "domain": "cover"
+          }
+        },
+        {
+          "sentences": [
+            "(<otevrit>|<roztahnout>) (rolety|žaluzie|závěsy) [v] {area}"
+          ],
+          "response": "cover_area",
+          "slots": {
+            "device_class": [
+              "blind",
+              "curtain",
+              "shutter"
+            ],
+            "domain": "cover"
+          }
+        }
+      ]
+    }
+  },
+  "responses": {
+    "errors": {
+      "no_intent": "Omlouvám se, ale nerozuměl jsem tomu",
+      "no_area": "Nepojmenovaná oblast {{ area }}",
+      "no_domain": "{{ area }} neobsahuje {{ domain }}",
+      "no_device_class": "{{ area }} neobsahuje {{ device_class }}",
+      "no_entity": "Žádné zařízení ani entita se nejmenuje {{ entity }}",
+      "handle_error": "Při zpracování došlo k neočekávané chybě."
+    },
+    "intents": {
+      "HassTurnOff": {
+        "default": "{{ slots.name }} vypnuto",
+        "lights_area": "Světla v {{ slots.area }} byla zhasnuta",
+        "fans_area": "Větráky v {{ slots.area }} byly vypnuty",
+        "fan": "Větrák {{ slots.name }} vypnut",
+        "light": "Světlo {{ slots.name }} bylo vypnuto",
+        "cover": "{{ slots.name }} zavřeno",
+        "cover_area": "{{ slots.area }} zavřeno",
+        "garage": "{{ slots.name }} zavřena."
+      },
+      "HassTurnOn": {
+        "default": "{{ slots.name }} bylo zapnuto",
+        "lights_area": "Světla v {{ slots.area }} byla zapnuta",
+        "fans_area": "Větráky v {{ slots.area }} byly zapnuty",
+        "fan": "Větrák {{ slots.name }} byl zapnut",
+        "light": "Světlo {{ slots.name }} bylo zapnuto",
+        "cover": "{{ slots.name }} otevřeno",
+        "cover_area": "{{ slots.area }} otevřeno",
+        "garage": "{{ slots.name }} otevřena."
+      }
+    }
+  },
+  "lists": {
+    "color": {
+      "values": [
+        {
+          "in": "bíl(á|ý|é|ou)",
+          "out": "white"
+        },
+        {
+          "in": "čern(á|ý|é|ou)",
+          "out": "black"
+        },
+        {
+          "in": "červen(á|ý|é|ou)",
+          "out": "red"
+        },
+        {
+          "in": "oranžov(á|ý|é|ou)",
+          "out": "orange"
+        },
+        {
+          "in": "žlut(á|ý|é|ou)",
+          "out": "yellow"
+        },
+        {
+          "in": "zelen(á|ý|é|ou)",
+          "out": "green"
+        },
+        {
+          "in": "modr(á|ý|é|ou)",
+          "out": "blue"
+        },
+        {
+          "in": "fialov(á|ý|é|ou)",
+          "out": "purple"
+        },
+        {
+          "in": "hněd(á|ý|é|ou)",
+          "out": "brown"
+        }
+      ]
+    },
+    "min_max": {
+      "values": [
+        {
+          "in": "(max | maxi(mum|mální) | [co] nej(víc|vyšší|větší))",
+          "out": 100
+        },
+        {
+          "in": "(min | mini(mum|mální) | [co] nej(míň|menší|nižší))",
+          "out": 1
+        }
+      ]
+    },
+    "brightness": {
+      "range": {
+        "type": "percentage",
+        "from": 0,
+        "to": 100
+      }
+    },
+    "temperature": {
+      "range": {
+        "type": "temperature",
+        "from": 0,
+        "to": 100
+      }
+    },
+    "temperature_unit": {
+      "values": [
+        "celsia",
+        {
+          "in": "c",
+          "out": "celsia"
+        },
+        "(fahrenheit | fahrenheita)",
+        {
+          "in": "f",
+          "out": "fahrenheita"
+        }
+      ]
+    }
+  },
+  "expansion_rules": {
+    "area": "[(na|v)] {area}",
+    "zapnout": "(zapni|zapnout)",
+    "vypnout": "(vypni|vypnout|zastavit|zastav)",
+    "rozsvitit": "(rozsviť|rozsvítit)",
+    "zhasnout": "(zhasni|zhasnout)",
+    "nastavit": "(nastav|nastavit)",
+    "zmenit": "(změň|změnit)",
+    "ztlumit": "(ztlu(m|it)|snížit|sniž)",
+    "zvysit": "zv(yš|ýšit)",
+    "teplota": "{temperature} [stupňů] [{temperature_unit}]",
+    "brightness": "[na] {brightness} [procent]",
+    "zavrit": "(zavři|zavřít)",
+    "otevrit": "(otevři|otevřít)",
+    "roztahnout": "(roz|vy|od)táhn(out|i)",
+    "zatahnout": "zatáhn(out|i)"
+  },
+  "skip_words": [
+    "prosím"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "language": "it",
+  "intents": {
+    "HassClimateSetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "<set> <temp> a <temperature>",
+            "<set> [<temp>] [<in>] <area> [a] <temperature>",
+            "<set> [<temp>] [di] <temperature> [<in>] <area>",
+            "<set> [<in>] <area> [<temp>] [di] <temperature>",
+            "<set> <temp> <area> [a] <temperature>"
+          ]
+        }
+      ]
+    },
+    "HassClimateGetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "[<what_is>] <temp> [c'è] [(<in> | <of> | <the>)] [<area>]",
+            "[quanto] [(è | c'è | fa)] (caldo | freddo) [(<in> | <the>)] [<area>]",
+            "quanto (caldo | freddo) [(è | c'è | fa)] [(<in>|<the>) <area>]"
+          ]
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassClimateSetTemperature": {
+        "default": "la temperatura è impostata a {{ slots.temperature }} gradi"
+      },
+      "HassClimateGetTemperature": {
+        "default": "{{ state.state }} gradi"
+      }
+    }
+  }
+}
