@@ -1,0 +1,8 @@
+setup.py
+Topsis/Topsis_Sidharth.py
+Topsis/__init__.py
+topsis_sidharth_102017016.egg-info/PKG-INFO
+topsis_sidharth_102017016.egg-info/SOURCES.txt
+topsis_sidharth_102017016.egg-info/dependency_links.txt
+topsis_sidharth_102017016.egg-info/requires.txt
+topsis_sidharth_102017016.egg-info/top_level.txt
