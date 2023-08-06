@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: recval
+Version: 0.0.1
+Summary: 
+Author: Edoardo D'Amico
+Author-email: damicoedoardo95@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: numba (>=0.56.4,<0.57.0)
+Requires-Dist: numpy (>=1.23.5,<2.0.0)
+Requires-Dist: pandas (>=1.5.2,<2.0.0)
+Requires-Dist: pytest-xdist (>=3.1.0,<4.0.0)
+Requires-Dist: strenum (>=0.4.9,<0.5.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
