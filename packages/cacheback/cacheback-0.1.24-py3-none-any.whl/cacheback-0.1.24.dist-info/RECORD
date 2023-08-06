@@ -1,0 +1,9 @@
+cacheback/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cacheback/cache_back.py,sha256=t8WPH_PXl2eghMugdUWRJzqhS7T8UpEnsQH_RCmtP4k,8574
+cacheback/cli.py,sha256=yNi2EZgkgyfe51USFywzjn2S7GX25t1IAysy3j82xXU,1165
+cacheback/dependency.py,sha256=dtESWo-SifZkMEX6jjjX5TBvEKif4UM5XQTyiAQyGrI,1222
+cacheback/headers.py,sha256=uLqf-pyZzXvP9yZdgh2WHkaqsHZIKM7f_b0iacXWoMA,2703
+cacheback-0.1.24.dist-info/METADATA,sha256=OORcunXQNVkfsWWRB1e7ZMusZuFjpMIGOtkXlxeUHKM,404
+cacheback-0.1.24.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cacheback-0.1.24.dist-info/top_level.txt,sha256=FsifZYOccNTTKlsaMXLc1hM2iH8eNnrWMsOyUT_MFQw,10
+cacheback-0.1.24.dist-info/RECORD,,
