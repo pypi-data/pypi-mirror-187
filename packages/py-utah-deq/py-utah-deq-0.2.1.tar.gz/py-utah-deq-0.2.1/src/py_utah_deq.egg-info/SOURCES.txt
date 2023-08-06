@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/py_utah_deq/__init__.py
+src/py_utah_deq/utah_deq.py
+src/py_utah_deq.egg-info/PKG-INFO
+src/py_utah_deq.egg-info/SOURCES.txt
+src/py_utah_deq.egg-info/dependency_links.txt
+src/py_utah_deq.egg-info/requires.txt
+src/py_utah_deq.egg-info/top_level.txt
+src/py_utah_deq/aqi/__init__.py
+src/py_utah_deq/aqi/aqi_metric.py
+src/py_utah_deq/aqi/qualitative_metrics.py
+src/py_utah_deq/data_sources/__init__.py
+src/py_utah_deq/data_sources/utah_deq_api.py

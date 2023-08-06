@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: py-utah-deq
+Version: 0.2.1
+Summary: Library for retrieving Air Quality information from Utah's DEQ.
+Home-page: https://github.com/nathan-gilbert/py-utah-deq
+Author: Nathan Gilbert
+Author-email: me@nathangilbert.com
+License: BSD 2-Clause
+Project-URL: Bug Tracker, https://github.com/nathan-gilbert/py-utah-deq/issues
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# py-utah-deq
+
+Python library for accessing Air Quality Metrics from the Utah Department of 
+Environmental Quality.
+
+## Installation 
+
+TBD
+
+## Usage
+
+`python3 example.py`
