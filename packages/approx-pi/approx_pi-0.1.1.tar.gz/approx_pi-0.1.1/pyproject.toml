@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "approx-pi"
+version = "0.1.1"
+description = "A simple package approximating Pi to learn the basics of Python packaging. (https://www.youtube.com/watch?v=ApDThpsr2Fw)"
+authors = ["Patrick Merlot <patrick.merlot@gmail.com>"]
+readme = "README.md"
+packages = [{include = "approx_pi"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+cowsay = "^5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
