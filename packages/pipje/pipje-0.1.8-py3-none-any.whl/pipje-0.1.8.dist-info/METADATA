@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pipje
+Version: 0.1.8
+Summary: Pipje was intended as a joke, it shows an image of a cat named pip by default.
+Author: Hurbie48 (Matthijs Veldkamp)
+Author-email: <matjepatatje2@gmail.com>
+Keywords: python,tkinter,cat
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: tk
+Requires-Dist: pillow
+Requires-Dist: urlopen
+
+Hi, you can use pipje like this to display any image you would like. The function is: showimage(TITLE,URL)
