@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools", "setuptools_scm[toml]"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lazyfunc"
+description = "Wrapper for callables in Python, enabling many operations between them, with lazy evaluation."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE.txt"}
+keywords = []
+authors = [
+  { name = "Josh Read", email = "joshua-read@hotmail.co.uk" },
+]
+classifiers = [
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dependencies = []
+dynamic = ["version"]
+
+[tool.setuptools_scm]
+write_to = "src/_version.py"
+
+[project.urls]
+Documentation = "https://josh-read.github.io/lazyfunc/"
+Issues = "https://github.com/josh-read/lazyfunc/issues"
+Source = "https://github.com/josh-read/lazyfunc"
+
+
+[dirs.env]
+virtual = ".venv"
+
+[project.optional-dependencies]
+tests = [
+  "pytest",
+  "pytest-cov",
+  "numpy",
+]
+docs = [
+  "mkdocs",
+  "mkdocstrings-python-legacy",
+  "mkdocs-material",
+]
+
+[tool.coverage.run]
+branch = true
+parallel = true
+omit = [
+  "src/lazyfunc/__about__.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]

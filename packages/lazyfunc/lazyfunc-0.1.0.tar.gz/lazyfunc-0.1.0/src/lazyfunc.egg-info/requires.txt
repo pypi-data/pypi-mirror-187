@@ -1,0 +1,10 @@
+
+[docs]
+mkdocs
+mkdocstrings-python-legacy
+mkdocs-material
+
+[tests]
+pytest
+pytest-cov
+numpy

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: lazyfunc
+Version: 0.1.0
+Summary: Wrapper for callables in Python, enabling many operations between them, with lazy evaluation.
+Author-email: Josh Read <joshua-read@hotmail.co.uk>
+Project-URL: Documentation, https://josh-read.github.io/lazyfunc/
+Project-URL: Issues, https://github.com/josh-read/lazyfunc/issues
+Project-URL: Source, https://github.com/josh-read/lazyfunc
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: tests
+Provides-Extra: docs
+License-File: LICENSE
