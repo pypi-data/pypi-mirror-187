@@ -1,0 +1,9 @@
+manot/__init__.py,sha256=QFvPIBW4_ePMBpOjvTzMf2wqMa0Lw4CctroE6oWoVvo,76
+manot/cli.py,sha256=7JJAqL6Eqc2kWeqKQykJTE67ko1Wc_GnCjitRPpmS3w,6331
+manot/logger.py,sha256=1kR-xs5oY4FVf1MKM_RlwttVYl-ZAXCHtJnafrMLc6E,1358
+manot/upload_manager.py,sha256=brMVepWS5pYE-AHp6MlMYyEIjTIoi2aHyyIMqZSDwUw,4518
+manot-0.4.0.dist-info/LICENSE,sha256=pYD9zBU8PQkYHpq9U7aAJsX2VwrkuKjvgwgF5mE5Eo0,1061
+manot-0.4.0.dist-info/METADATA,sha256=I3L1bdwXjTNlW3mX1HLjnq5KCpRDMKkryJ-hnA_HH-g,5474
+manot-0.4.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+manot-0.4.0.dist-info/top_level.txt,sha256=IL6uES1uI9I1tf2_pfBvPhsxfZrMw9cvpZNW-_E_zpA,6
+manot-0.4.0.dist-info/RECORD,,
