@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: dpy-seriesformatter
+Version: 0.0.1
+Summary: A general framework that allows you to create great looking series embeds with ease
+Author-email: "Tanner B. Corcoran" <tannerbcorcoran@gmail.com>
+Project-URL: Source, https://github.com/tanrbobanr/dpy-seriesformatter
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: discord.py (>=2.0.0)
+
+# Install
+`$ pip install dpy-seriesformatter`
+
+# Documentation
+Pending...
