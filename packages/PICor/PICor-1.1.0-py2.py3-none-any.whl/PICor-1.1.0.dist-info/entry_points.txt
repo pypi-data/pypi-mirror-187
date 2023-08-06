@@ -1,0 +1,2 @@
+[console_scripts]
+picor = picor.cli:main

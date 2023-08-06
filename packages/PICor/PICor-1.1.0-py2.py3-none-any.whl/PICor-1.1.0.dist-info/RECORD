@@ -1,0 +1,14 @@
+picor/__init__.py,sha256=0DHjgi4GZqpyeQg6UlE88m5X_t7rFBTxEjlrFeLdhAU,328
+picor/cli.py,sha256=rjfLyDHiMc5VadloHkYCCrbUnDKX813DqW0rJf2q3fI,3671
+picor/isotope_correction.py,sha256=a2xEmMy5bSmMmdEwZlUsQNTQreglM_MViEuMHFTJ0C8,5100
+picor/isotope_probabilities.py,sha256=nvGkzjKQWiYSy5ihExmRLSU9QVWydF84l71moaJ-Y34,23615
+picor/isotopes.csv,sha256=RR5a9vhLznwjskojM0AWNttb1PZAVQdrWX86dd3fKoc,477
+picor/metabolites.csv,sha256=0aK6SI8mUN0pQT350ttw5sgpxH93oYHE-YrQvD_hU6s,597
+picor/resolution_correction.py,sha256=BH8GOtQXZawo3FjxekktehaJsNswv62QHiCaoyeVOlA,6719
+PICor-1.1.0.dist-info/AUTHORS.rst,sha256=TB_jqVyIt_RUrT_Ejn3mRmRU7XahZW6A6UoREcA_ZFA,76
+PICor-1.1.0.dist-info/LICENSE.txt,sha256=xh8S2nza1Sa9y-1HpMCmA-YNu_2vi2aTPNCI6RMsMD8,32472
+PICor-1.1.0.dist-info/METADATA,sha256=cvhfe7WB0dJHNggTeZQoPtiVcdl2vWVowqWYdG6R-L8,5525
+PICor-1.1.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+PICor-1.1.0.dist-info/entry_points.txt,sha256=kqr91KbuxpGA7Y9FUsm2SpjW13f2nnaLD6KHQ4l6IYg,41
+PICor-1.1.0.dist-info/top_level.txt,sha256=UUv7IZrarUsM2Vmvo1be9ZdV74BB-kPZCuXifXngGSA,6
+PICor-1.1.0.dist-info/RECORD,,
