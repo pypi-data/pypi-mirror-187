@@ -1,0 +1,11 @@
+aio_geojson_geonetnz_quakes/__init__.py,sha256=xnFXoek8oZ9Lb-e9WtT4hcKf6OuF61oFE3GSng1T3cw,137
+aio_geojson_geonetnz_quakes/__version__.py,sha256=uwhM7xSjOFL_ZcsK1oHxz9hRq1PaojPbLZEQJRjDPJw,54
+aio_geojson_geonetnz_quakes/consts.py,sha256=idey0-urW48uHktrK4PYYKYhjL0MDVwJpPIfzO8YYoE,351
+aio_geojson_geonetnz_quakes/feed.py,sha256=x6yS6agi1fmxrf_C9yBvaP2J6Ka62sGh123--NdbP2E,3556
+aio_geojson_geonetnz_quakes/feed_entry.py,sha256=2TxSY50k9pSnGfbWcvPao9txnBVcQbvy8SNMnWmOVb8,2314
+aio_geojson_geonetnz_quakes/feed_manager.py,sha256=pVn7mZbnho-dOdvWTYLKpDYBWB1-9S91Ooo01YGX8Iw,1381
+aio_geojson_geonetnz_quakes-0.15.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+aio_geojson_geonetnz_quakes-0.15.dist-info/METADATA,sha256=ew6bX-xFtNA_kF9I9DrXITpwMVSQM0apvAMRz2lJd2s,7846
+aio_geojson_geonetnz_quakes-0.15.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aio_geojson_geonetnz_quakes-0.15.dist-info/top_level.txt,sha256=QfhEihyQDYSYP8g4aIs1ITW3VdDAam1jp7cXIvq2o5Q,28
+aio_geojson_geonetnz_quakes-0.15.dist-info/RECORD,,
