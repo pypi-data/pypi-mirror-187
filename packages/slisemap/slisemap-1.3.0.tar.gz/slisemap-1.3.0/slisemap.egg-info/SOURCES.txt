@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+slisemap.egg-info/PKG-INFO
+slisemap.egg-info/SOURCES.txt
+slisemap.egg-info/dependency_links.txt
+slisemap.egg-info/requires.txt
+slisemap.egg-info/top_level.txt
