@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+transude/__init__.py
+transude/data_frame_filter.py
+transude/data_frame_filter_factory.py
+transude/data_frame_filter_manager.py
+transude.egg-info/PKG-INFO
+transude.egg-info/SOURCES.txt
+transude.egg-info/dependency_links.txt
+transude.egg-info/top_level.txt
