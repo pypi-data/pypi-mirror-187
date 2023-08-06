@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: LonginusPyPiAlpha
+Version: 0.4.5
+Summary: A small example package
+Home-page: https://github.com/projectlonginus/LonginusPYPI
+Author: Example Author
+Author-email: Longinus <team.longinus.project@gmail.com>
+Project-URL: Homepage, https://github.com/projectlonginus/LonginusPYPI
+Project-URL: Bug Tracker, https://github.com/projectlonginus/LonginusPYPI/issues
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: pyCryptodome
+Requires-Dist: asyncio
+Requires-Dist: argon2-cffi
+Requires-Dist: requests
+
+This project is an https implementation package created to study web server (https) under Python modularization. ssl communication is implemented, and security-related updates under token storage are in progress.
