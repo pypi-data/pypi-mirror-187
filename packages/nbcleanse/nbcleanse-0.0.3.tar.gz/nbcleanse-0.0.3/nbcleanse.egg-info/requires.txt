@@ -1,0 +1,4 @@
+jq
+nbformat
+
+[dev]

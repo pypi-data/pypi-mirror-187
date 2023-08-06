@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+nbcleanse/__init__.py
+nbcleanse/_modidx.py
+nbcleanse/_nbdev.py
+nbcleanse/cli.py
+nbcleanse/notebook.py
+nbcleanse.egg-info/PKG-INFO
+nbcleanse.egg-info/SOURCES.txt
+nbcleanse.egg-info/dependency_links.txt
+nbcleanse.egg-info/entry_points.txt
+nbcleanse.egg-info/not-zip-safe
+nbcleanse.egg-info/requires.txt
+nbcleanse.egg-info/top_level.txt

@@ -1,0 +1,5 @@
+[console_scripts]
+nbcleanse = nbcleanse.cli:main
+
+[nbdev]
+nbcleanse = nbcleanse._modidx:d
