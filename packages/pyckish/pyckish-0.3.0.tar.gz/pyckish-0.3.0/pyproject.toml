@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pyckish"
+version = "0.3.0"
+description = "Pyckish is an extract/parse/validate solution to allow ease of use when dealing with AWS Lambdas."
+authors = ["Pedro Dardengo <pedrodardengo@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.9.13"
+pydantic = "1.10.4"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "7.2.1"
+pytest-cov = "^4.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
