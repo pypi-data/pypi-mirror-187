@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: bvlain
+Version: 0.1.9
+Summary: The Bond valence site energy calculator
+Home-page: https://github.com/dembart/BVlain
+Author: Artem Dembitskiy
+Author-email: art.dembitskiy@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy (>=1.7.0)
+Requires-Dist: networkx
+Requires-Dist: pymatgen (>=2022.5.26)
+Requires-Dist: ase
+
+![BVlain_logo](https://raw.githubusercontent.com/dembart/BVlain/master/BVlain_logo.png)
+
+BVlain is the module for bond valence site energy calculations and is about to solve tasks related to ionic conductivity of a tracer ion in a crystal structure.
+
+For more details, see [documentation.](https://bvlain.readthedocs.io/en/latest/index.html)
+
+The library is under active development and it is not guaranteed that there are no bugs. If you observe not expected results, errors, please report an issue at github.
+
+Also might be helpfull:
+
+[cc3d repo](https://github.com/seung-lab/connected-components-3d)  
+[perconet repo](https://github.com/wouterel/perconet)
+
+
+
+

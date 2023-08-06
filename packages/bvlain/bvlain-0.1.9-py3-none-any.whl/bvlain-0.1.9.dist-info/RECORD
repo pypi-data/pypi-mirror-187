@@ -1,0 +1,10 @@
+bvlain/__init__.py,sha256=cuqgBt8wl-zvBmQ1_xXfhZnhl6n_aG7Rzu5PRG8szrA,24
+bvlain/core.py,sha256=m85V-YfLcJpC5nFEZtrEz7Hmk4N6ZVv1-cLb9ohKj1k,31536
+bvlain/data/anion.pkl,sha256=heJluQwq8tl_51FyjTM1bkPEe47lMBG2-XTpZPO0FD0,73317
+bvlain/data/cation.pkl,sha256=1d1hsBPbb1no6DXyFSp4JtCaXJEDRTmpvZxoCq4ArY8,81864
+bvlain/data/quantum_n.pkl,sha256=ZrHJPIMAg6XjXW_AMsmteU_LtoYXvo9d-9fQPkRL-jY,3217
+bvlain-0.1.9.dist-info/LICENSE,sha256=snKAXCWnrXyICuT7isA4uZhOEZ2za_1BKaZVbOCMm3s,1074
+bvlain-0.1.9.dist-info/METADATA,sha256=nY1fQK0uVRQsB4caNPFYva21Dog3ORO-AjpSvgsRkwU,1373
+bvlain-0.1.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bvlain-0.1.9.dist-info/top_level.txt,sha256=Yy3xCMI9d0qMqK5RPL2e9UJSYlgRQLjbza8QlDpqZng,7
+bvlain-0.1.9.dist-info/RECORD,,
