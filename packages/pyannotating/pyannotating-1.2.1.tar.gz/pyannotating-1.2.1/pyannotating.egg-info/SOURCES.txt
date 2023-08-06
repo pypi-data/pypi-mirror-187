@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyannotating.py
+setup.py
+pyannotating.egg-info/PKG-INFO
+pyannotating.egg-info/SOURCES.txt
+pyannotating.egg-info/dependency_links.txt
+pyannotating.egg-info/top_level.txt
