@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: Topsis-Saksham-102017191
+Version: 0.0.2
+Summary: A python package that helps you run TOPSIS (technique for order performance by similarity to ideal solution) for multi-criteria decision making
+Home-page: https://github.com/sakshamsood3/Topsis-Saksham-102017191
+Author: Saksham Sood
+Author-email: ssood2_be20@thapar.edu
+License: MIT
+Keywords: Topsis,TIET,UCS654,Thapar,implement topsis
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: tabulate
+
+Topsis Score and Rank Calculator
+
+I have created a Python package implementing Topsis(Technique for Order of Preference by Similarity to Ideal Solution) method used for multi-criteria decision analysis.
+
+
+you just need to provide your input attributes using the command line and it will give you the results which will be displayed both on console and stored in a csv file provided as the last argument.
+
+
+## Installation
+
+$ pip install TOPSIS-102017191==0.0.2
+
+In the commandline, you can run it in the following ways -
+    $ python <package_name> <path to input_data_file_name> <weights as strings> <impacts as strings> <result_file_name>
+
+E.g for input data file as data.csv, command will be like
+    $ python topsis.py data.csv "1,1,1,1" "+,+,-,+" output.csv
+
+This will print all the output attribute values along with the Topsis Core and Rank column, in a tabular format
+
+License -> MIT
+
+
+Change Log
+==========
+
+0.0.1 (22/01/2023)
+------------------
+- First Release
