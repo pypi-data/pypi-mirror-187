@@ -1,0 +1,3 @@
+[console_scripts]
+soundbridgefx=soundbridgefx.__main__:main
+

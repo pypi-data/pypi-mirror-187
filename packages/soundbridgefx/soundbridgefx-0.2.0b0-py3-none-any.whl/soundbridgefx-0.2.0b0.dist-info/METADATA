@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: soundbridgefx
+Version: 0.2.0b0
+Summary: 
+Home-page: https://github.com/martynvdijke/SoundBridgeFx
+License: MIT
+Author: Martyn van Dijke
+Author-email: martijnvdijke600@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: argparse (>=1.4.0,<2.0.0)
+Requires-Dist: flask (>=2.2.2,<3.0.0)
+Requires-Dist: flask-cors (>=3.0.10,<4.0.0)
+Requires-Dist: jsonpickle (>=3.0.1,<4.0.0)
+Requires-Dist: ledfx (>=2.0.60,<3.0.0)
+Requires-Dist: soco (>=0.28.1,<0.29.0)
+Requires-Dist: soundcard (>=0.4.2,<0.5.0)
+Project-URL: Repository, https://github.com/martynvdijke/SoundBridgeFx
+Description-Content-Type: text/markdown
+
+# SoundBridge
+Spotify LedFx Sonos Proxy
+
+## About
+
+This project tries to make an Spotify LedFX Sonos proxy, meaning it will show up as an spotify connect device allowing you to stream music to this device.
+Then the "proxy" part will kick in and will get the incoming spotify audio to both ledfx and a sonos device of your chosing, allowing you to headless hear and see your music.
+
+Currently WIP
