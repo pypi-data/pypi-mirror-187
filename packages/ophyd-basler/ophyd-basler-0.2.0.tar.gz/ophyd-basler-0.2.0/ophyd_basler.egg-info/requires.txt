@@ -1,0 +1,11 @@
+area-detector-handlers
+bluesky
+databroker
+event-model
+h5py
+ipython
+matplotlib
+numpy
+opencv-python
+ophyd
+pypylon
