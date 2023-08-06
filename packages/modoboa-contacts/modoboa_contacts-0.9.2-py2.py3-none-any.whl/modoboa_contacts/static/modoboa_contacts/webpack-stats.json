@@ -1,0 +1,51 @@
+{
+  "status": "done",
+  "assets": {
+    "favicon.ico": {
+      "name": "favicon.ico",
+      "path": "/home/runner/work/modoboa-contacts/modoboa-contacts/modoboa_contacts/static/favicon.ico",
+      "publicPath": "/sitestatic/favicon.ico"
+    },
+    "index.html": {
+      "name": "index.html",
+      "path": "/home/runner/work/modoboa-contacts/modoboa-contacts/modoboa_contacts/static/index.html",
+      "publicPath": "/sitestatic/index.html"
+    },
+    "modoboa_contacts/css/app.35051fc3.css": {
+      "name": "modoboa_contacts/css/app.35051fc3.css",
+      "path": "/home/runner/work/modoboa-contacts/modoboa-contacts/modoboa_contacts/static/modoboa_contacts/css/app.35051fc3.css",
+      "publicPath": "/sitestatic/modoboa_contacts/css/app.35051fc3.css"
+    },
+    "modoboa_contacts/js/app.e72a1d4c.js": {
+      "name": "modoboa_contacts/js/app.e72a1d4c.js",
+      "path": "/home/runner/work/modoboa-contacts/modoboa-contacts/modoboa_contacts/static/modoboa_contacts/js/app.e72a1d4c.js",
+      "publicPath": "/sitestatic/modoboa_contacts/js/app.e72a1d4c.js"
+    },
+    "modoboa_contacts/js/app.e72a1d4c.js.map": {
+      "name": "modoboa_contacts/js/app.e72a1d4c.js.map",
+      "path": "/home/runner/work/modoboa-contacts/modoboa-contacts/modoboa_contacts/static/modoboa_contacts/js/app.e72a1d4c.js.map",
+      "publicPath": "/sitestatic/modoboa_contacts/js/app.e72a1d4c.js.map"
+    },
+    "modoboa_contacts/js/chunk-vendors.83832c19.js": {
+      "name": "modoboa_contacts/js/chunk-vendors.83832c19.js",
+      "path": "/home/runner/work/modoboa-contacts/modoboa-contacts/modoboa_contacts/static/modoboa_contacts/js/chunk-vendors.83832c19.js",
+      "publicPath": "/sitestatic/modoboa_contacts/js/chunk-vendors.83832c19.js"
+    },
+    "modoboa_contacts/js/chunk-vendors.83832c19.js.map": {
+      "name": "modoboa_contacts/js/chunk-vendors.83832c19.js.map",
+      "path": "/home/runner/work/modoboa-contacts/modoboa-contacts/modoboa_contacts/static/modoboa_contacts/js/chunk-vendors.83832c19.js.map",
+      "publicPath": "/sitestatic/modoboa_contacts/js/chunk-vendors.83832c19.js.map"
+    }
+  },
+  "chunks": {
+    "app": [
+      "modoboa_contacts/js/chunk-vendors.83832c19.js",
+      "modoboa_contacts/js/chunk-vendors.83832c19.js.map",
+      "modoboa_contacts/css/app.35051fc3.css",
+      "modoboa_contacts/js/app.e72a1d4c.js",
+      "modoboa_contacts/css/app.35051fc3.css.map",
+      "modoboa_contacts/js/app.e72a1d4c.js.map"
+    ]
+  },
+  "publicPath": "/sitestatic/"
+}
