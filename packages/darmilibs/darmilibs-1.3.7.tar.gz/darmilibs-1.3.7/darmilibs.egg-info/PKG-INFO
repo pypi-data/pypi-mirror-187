@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: darmilibs
+Version: 1.3.7
+Summary: darmilibs - Telegram MTProto API Client Library for Python.
+Home-page: https://github.com/hitokizzy/darmilibs
+Author: Hamba
+Author-email: tuyultermux777@gmail.com
+License: GNU Lesser General Public License v3.0 (LGPL-3.0)
+Project-URL: Bug Tracker, https://github.com/iskandar777-dar/darmilibs/issues
+Project-URL: Documentation, https://darmilibs.tech
+Project-URL: Source Code, https://github.com/iskandar777-dar/darmilibs
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: NOTICE
+
+# darmiLibs Library
+
+Core library of [darmiLibs](https://github.com/iskandar777-dar/darmilibs), a Pyrogram And Telethon based for your userbot.
+
+
+[![PyPI - Version](https://img.shields.io/pypi/v/darmilibs?style=round)](https://pypi.org/project/darmilibs)    
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/darmilibs?label=DOWNLOADS&style=round)](https://pypi.org/project/darmilibs)    
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/hitokizzy/darmilibs/graphs/commit-activity)
+[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/hitokizzy/darmilibs)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com)
+
+# Installation
+```bash
+pip3 install darmilibs
+```
+
+
+See more working plugins on [the offical repository](https://github.com/hitokizzy/darmilibs)!
+
+> Made with by [izzy](https://t.me/kenpatagdar).    
+
+
+# License
+[![License](https://www.gnu.org/graphics/agplv3-155x51.png)](LICENSE)   
+darmiLibs is licensed under [GNU Affero General Public License](https://www.gnu.org/licenses/agpl-3.0.en.html) v3 or later.
+

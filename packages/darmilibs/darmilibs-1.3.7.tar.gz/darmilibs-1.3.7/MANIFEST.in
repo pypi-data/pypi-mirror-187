@@ -1,0 +1,11 @@
+## Include
+include README.md LICENSE NOTICE requirements.txt
+recursive-include compiler *.py *.tl *.tsv *.txt
+recursive-include tests *.py
+
+## Exclude
+prune darmilibs/errors/exceptions
+prune darmilibs/raw/functions
+prune darmilibs/raw/types
+prune darmilibs/raw/base
+exclude darmilibs/raw/all.py
