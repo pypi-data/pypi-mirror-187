@@ -1,0 +1,10 @@
+observer_hooks/__init__.py,sha256=Rr2aKeRv3DuUWtcO7fBo5L8LNcRYPo1Eu8ocQOr4akk,887
+observer_hooks/block_events.py,sha256=xDOkqAspTm6FxjbbIEVNZhAbVQ3SONK324WoPWCcDWM,2254
+observer_hooks/common.py,sha256=EG0cUdz0SFNYPXP7znoE9wEPDlgVkj-uYg7wyzgitD8,282
+observer_hooks/decorators.py,sha256=vxnQylGHKEI1tCloXT7g4nuD-XRXJQMw_oBU7Hh9oUw,1764
+observer_hooks/observer_hooks.py,sha256=7yusgl7sQ_TkxV8igSK8EDf0pdRDcO4VGudtQHCR4sI,12671
+observer_hooks-1.3.0.dist-info/LICENSE,sha256=3bF1spI9UylLHpSYx99FgU_VVefY9aeLKjj8cifDANE,1071
+observer_hooks-1.3.0.dist-info/METADATA,sha256=l9VBHQspWw_sRi1stMY89Dj7a8oKx-9W6WLirC7-LzA,4682
+observer_hooks-1.3.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+observer_hooks-1.3.0.dist-info/top_level.txt,sha256=c7TlBZIIexYyjO6Ge-Fcs4xRhrtd1BOWc6IRgQX8LJw,15
+observer_hooks-1.3.0.dist-info/RECORD,,
