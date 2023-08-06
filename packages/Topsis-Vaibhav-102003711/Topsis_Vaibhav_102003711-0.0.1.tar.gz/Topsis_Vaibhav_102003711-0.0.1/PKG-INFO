@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: Topsis_Vaibhav_102003711
+Version: 0.0.1
+Summary: This is a Python Package implementing TOPSIS used for multi-criteria decision analysis method
+Author: Vaibhav
+Author-email: vvaibhav_be20@thapar.edu
+License: MIT
+Keywords: topsis,mcda,UCS654,TIET
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
