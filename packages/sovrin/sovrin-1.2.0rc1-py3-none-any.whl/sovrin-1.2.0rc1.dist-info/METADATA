@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: sovrin
+Version: 1.2.0rc1
+Summary: Sovrin node
+Home-page: https://github.com/sovrin-foundation/sovrin
+Author: Sovrin Foundation
+Author-email: support@sovrin.org
+License: Apache 2.0
+Keywords: Sovrin Genesis Transactions
+Platform: UNKNOWN
+Requires-Dist: indy-node (==1.13.2.rc5)
+Requires-Dist: sovtoken (==1.1.0.rc0)
+Requires-Dist: sovtokenfees (==1.1.0.rc0)
+
+UNKNOWN
+
+
