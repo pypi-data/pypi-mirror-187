@@ -1,0 +1,13 @@
+yugioh_scraper/__init__.py,sha256=fatxKDB3lOjChoqL-B2K3xWNmvmtzGzsE1_txlIp2b8,1504
+yugioh_scraper/items.py,sha256=fuF0n7h_kXdD8jup01Sh9cCtYWhkDDXNhlRa2JbREl4,268
+yugioh_scraper/middlewares.py,sha256=9can_6K5iv1-QG1hAktVRztBNgSmtBHG5SOAdfihYjU,3660
+yugioh_scraper/pipelines.py,sha256=tcBgSbzBR94CajnusITfDv7AnGHWR9Clnt8oXFYrjz4,1439
+yugioh_scraper/settings.py,sha256=wjAk9FVsNF1P8VXoTQJrZikTSxQ1bDHgXWF7FBb8360,3628
+yugioh_scraper/spiders/__init__.py,sha256=ULwecZkx3_NTphkz7y_qiazBeUoHFnCCWnKSjoDCZj0,161
+yugioh_scraper/spiders/db_yugioh_card.py,sha256=s3bnBPNmYCmq-xHXaRYKb0xOGEh_QUcMlKtly_4_mlI,3579
+yugioh_scraper-0.1.2.dist-info/LICENSE.md,sha256=KUrQhz2W4lL3PQXWad0JP96knGC73wLD0ud2wPsft1w,1082
+yugioh_scraper-0.1.2.dist-info/METADATA,sha256=PPx8oi2bv1wINMPmscdwc6NU2sr1MhNX5FKRSLg9Tho,5472
+yugioh_scraper-0.1.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+yugioh_scraper-0.1.2.dist-info/entry_points.txt,sha256=H20QMwDXF14jjcirAkK7ms3NfVyQkDK2dG8d6Dblr_E,101
+yugioh_scraper-0.1.2.dist-info/top_level.txt,sha256=b5ZTyjTLlfQTiPtTL-qs7FFCY1-aM7axm5j-2RKIDRQ,15
+yugioh_scraper-0.1.2.dist-info/RECORD,,
