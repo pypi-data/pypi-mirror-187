@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: nectarifere
+Version: 2.0.1
+Summary: Décorateur pour ambiancer vos codes.
+Home-page: https://github.com/XanAstia/Nectarifere.git
+Author: Xan Astia
+Author-email: xan.astia@live.fr
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: play-sounds
+Requires-Dist: pillow
+
+# Nectarifere
+
+To use this decorator:
+
+    from nectarifere.nectar import nectar
+
+    @nectar
+    def your_function(*args, **kwargs):
+      blabla
+
+To create your own decorator: 
+
+    from nectarifere.extracteur import ExtracteurDeJus
+
+    class mydecorator(ExtracteurDeJus):
+
+        def __init__(self, function):
+            super().__init__(function) #Superclass constructor
+            self.myattribute = 42.
+
+    
+        def success(self):
+            print(self.myattribute)
+    
+        def failure(self):
+            print(1/self.myattribute)
+
+    @mydecorator
+    def whateverfunctionyouwant(args):
+        ...
+    
