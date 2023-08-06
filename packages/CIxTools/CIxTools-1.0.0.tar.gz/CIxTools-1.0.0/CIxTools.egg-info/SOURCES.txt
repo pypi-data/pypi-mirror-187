@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+CIxTools.egg-info/PKG-INFO
+CIxTools.egg-info/SOURCES.txt
+CIxTools.egg-info/dependency_links.txt
+CIxTools.egg-info/top_level.txt
