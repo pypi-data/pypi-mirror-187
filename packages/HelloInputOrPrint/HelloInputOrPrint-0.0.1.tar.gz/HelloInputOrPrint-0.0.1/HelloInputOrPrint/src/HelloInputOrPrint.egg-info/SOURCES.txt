@@ -1,0 +1,7 @@
+README.md
+setup.py
+HelloInputOrPrint/src/HelloInputOrPrint.py
+HelloInputOrPrint/src/HelloInputOrPrint.egg-info/PKG-INFO
+HelloInputOrPrint/src/HelloInputOrPrint.egg-info/SOURCES.txt
+HelloInputOrPrint/src/HelloInputOrPrint.egg-info/dependency_links.txt
+HelloInputOrPrint/src/HelloInputOrPrint.egg-info/top_level.txt
