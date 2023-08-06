@@ -1,0 +1,10 @@
+license.txt
+setup.cfg
+setup.py
+mygradesproject/__init__.py
+mygradesproject/grades.py
+mygradesproject.egg-info/PKG-INFO
+mygradesproject.egg-info/SOURCES.txt
+mygradesproject.egg-info/dependency_links.txt
+mygradesproject.egg-info/not-zip-safe
+mygradesproject.egg-info/top_level.txt
