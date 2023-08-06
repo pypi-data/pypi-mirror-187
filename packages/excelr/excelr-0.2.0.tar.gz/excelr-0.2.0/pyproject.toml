@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "excelr"
+version = "0.2.0"
+description = ""
+authors = ["Daniel Bradburn <daniel@crunchrapps.com>"]
+include = [
+    "xlsx_template/*",
+    "xlsx_template/_rels/*",
+    "xlsx_template/docProps/*",
+    "xlsx_template/xl/*",
+    "xlsx_template/xl/_rels/*",
+    "xlsx_template/xl/worksheets/*",
+    "_excelr.pyx",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+jupyter = "^1.0.0"
+pandas = "^1.2.3"
+hypothesis = "^6.8.1"
+openpyxl = "^3.0.7"
+memory-profiler = "^0.58.0"
+pyinstrument = "^3.4.1"
+seaborn = "^0.11.1"
+lxml = "^4.6.3"
+mistletoe = "^0.7.2"
+pycodestyle = "^2.7.0"
+mypy = "^0.910"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
