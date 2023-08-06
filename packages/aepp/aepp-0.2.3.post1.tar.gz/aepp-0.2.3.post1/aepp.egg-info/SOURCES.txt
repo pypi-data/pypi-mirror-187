@@ -1,0 +1,55 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+aepp/__init__ - Copy.py
+aepp/__init__.py
+aepp/__version__ - Copy.py
+aepp/__version__.py
+aepp/accesscontrol - Copy.py
+aepp/accesscontrol.py
+aepp/catalog - Copy.py
+aepp/catalog.py
+aepp/config - Copy.py
+aepp/config.py
+aepp/configs - Copy.py
+aepp/configs.py
+aepp/connector - Copy.py
+aepp/connector.py
+aepp/customerprofile - Copy.py
+aepp/customerprofile.py
+aepp/dataaccess - Copy.py
+aepp/dataaccess.py
+aepp/dataprep - Copy.py
+aepp/dataprep.py
+aepp/datasets - Copy.py
+aepp/datasets.py
+aepp/destination - Copy.py
+aepp/destination.py
+aepp/flowservice - Copy.py
+aepp/flowservice.py
+aepp/identity - Copy.py
+aepp/identity.py
+aepp/ingestion - Copy.py
+aepp/ingestion.py
+aepp/observability - Copy.py
+aepp/observability.py
+aepp/policy - Copy.py
+aepp/policy.py
+aepp/privacyservice - Copy.py
+aepp/privacyservice.py
+aepp/queryservice - Copy.py
+aepp/queryservice.py
+aepp/sandboxes - Copy.py
+aepp/sandboxes.py
+aepp/schema - Copy.py
+aepp/schema.py
+aepp/segmentation - Copy.py
+aepp/segmentation.py
+aepp/sensei - Copy.py
+aepp/sensei.py
+aepp.egg-info/PKG-INFO
+aepp.egg-info/SOURCES.txt
+aepp.egg-info/dependency_links.txt
+aepp.egg-info/requires.txt
+aepp.egg-info/top_level.txt
