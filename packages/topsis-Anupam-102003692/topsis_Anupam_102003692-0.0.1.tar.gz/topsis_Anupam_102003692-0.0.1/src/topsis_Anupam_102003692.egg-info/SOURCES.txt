@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/topsis_Anupam_102003692.egg-info/PKG-INFO
+src/topsis_Anupam_102003692.egg-info/SOURCES.txt
+src/topsis_Anupam_102003692.egg-info/dependency_links.txt
+src/topsis_Anupam_102003692.egg-info/top_level.txt
