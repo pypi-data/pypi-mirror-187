@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+topsis/__init__.py
+topsis/__main__.py
+topsis_102003083_Utkarsh.egg-info/PKG-INFO
+topsis_102003083_Utkarsh.egg-info/SOURCES.txt
+topsis_102003083_Utkarsh.egg-info/dependency_links.txt
+topsis_102003083_Utkarsh.egg-info/entry_points.txt
+topsis_102003083_Utkarsh.egg-info/requires.txt
+topsis_102003083_Utkarsh.egg-info/top_level.txt
