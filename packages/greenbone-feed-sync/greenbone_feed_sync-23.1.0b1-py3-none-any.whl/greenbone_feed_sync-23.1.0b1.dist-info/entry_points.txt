@@ -1,0 +1,3 @@
+[console_scripts]
+greenbone-feed-sync=greenbone.feed.sync.main:main
+
