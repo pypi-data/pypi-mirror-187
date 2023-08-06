@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: approx-pi
+Version: 0.1.1
+Summary: A simple package approximating Pi to learn the basics of Python packaging. (https://www.youtube.com/watch?v=ApDThpsr2Fw)
+Author: Patrick Merlot
+Author-email: patrick.merlot@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: cowsay (>=5.0,<6.0)
+Description-Content-Type: text/markdown
+
+
