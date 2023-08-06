@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "beaker-pyteal"
+version = "0.5.0"
+description = "A Framework for building PyTeal Applications"
+license = "MIT"
+authors = ["Ben Guidarelli <ben@algorand.com>"]
+readme = "README.md"
+homepage = "https://beaker.algo.xyz"
+repository = "https://github.com/algorand-devrel/beaker"
+keywords = ["pyteal", "algorand"]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+]
+packages = [
+    { include = "beaker" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyteal = "~0.21.0"
+py-algorand-sdk = ">=2.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.0"
+flake8 = "^6.0.0"
+mypy = "^0.991"
+black = {extras = ["d"], version = "^22.12.0"}
+pytest-cov = "^4.0.0"
+pre-commit = "^2.20.0"
+flake8-tidy-imports = "^4.8.0"
+python-semantic-release = "^7.32.2"
+pip-audit = "^2.4.12"
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "~5.0.2"
+sphinx-rtd-theme = "~1.0.0"
+
+[tool.poetry.group.examples.dependencies]
+numpy = "^1.23.0"
+matplotlib = "^3.6.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.semantic_release]
+version_toml = "pyproject.toml:tool.poetry.version"
+remove_dist = false
+build_command = "poetry build --format wheel"
+version_source = "tag"
+major_on_zero = false
+upload_to_repository = false
+tag_commit = true
+branch = "master"
+commit_message = "{version}\n\nskip-checks: true"
+tag_format = "{version}"
