@@ -1,0 +1,37 @@
+[project]
+name = "dtuhpc"
+description = "Python package for interfacing with DTU's HPC cluster"
+version = "0.1.1"
+authors = [
+    { name = "Jonas Hoffmann", email = "jonashoffmanns@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11"
+]
+dependencies = [
+  "fabric==3.0.0",
+  "rich==13.2.0"
+]
+
+[build-system]
+requires = ["setuptools", "build", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages]
+find = {}
+
+[tool.isort]
+atomic = true
+profile = "black"
+line_length = 88
+skip_gitignore = true
