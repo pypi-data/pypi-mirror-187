@@ -1,0 +1,14 @@
+pyrogram
+TgCrypto
+python-dotenv
+requests
+js2py
+hachoir
+ffmpeg-python
+google-api-core
+google-auth
+oauth2client<4.0.0
+google~=3.0.0
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
