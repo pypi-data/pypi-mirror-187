@@ -1,0 +1,13 @@
+ruamel.yaml
+jsonschema
+requests
+jinja2
+flux-restful-client
+
+[all]
+ruamel.yaml
+jsonschema
+requests
+jinja2
+flux-restful-client
+pytest>=4.6.2
