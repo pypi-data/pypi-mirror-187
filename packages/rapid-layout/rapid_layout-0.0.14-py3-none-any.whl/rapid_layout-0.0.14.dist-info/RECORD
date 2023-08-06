@@ -1,0 +1,10 @@
+rapid_layout/__init__.py,sha256=M0auEvL0apKosbGCvsosHZ2DzYhLgli-CD3wdKgZI9g,646
+rapid_layout/config.yaml,sha256=BIH64GmwbAzYsK3dLwIFqMhcc58tp8Ii91NDDW9JoAo,516
+rapid_layout/rapid_layout.py,sha256=EG-bESgAWFFnnZTeACrdlAFomCXnkrzqDfNH1ktbb64,3451
+rapid_layout/utils.py,sha256=xqOoiVpfTepR6LpUe962FXG-VgBY3yXKL7Ho6_hm4ek,15549
+rapid_layout/models/layout_cdla.onnx,sha256=JbHyfsVqqTKkjzDL1ik8NYoVYoD0sgsKlzurIQw59iw,7423528
+rapid_layout-0.0.14.dist-info/METADATA,sha256=mkdjjChpjyM6HL3G4aFc2Z43fxpEbZgywsAKQ0LhGMo,2902
+rapid_layout-0.0.14.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+rapid_layout-0.0.14.dist-info/entry_points.txt,sha256=2FYhHp2s9jC9f2splxbu1_40vrcNydMBgiI1pxkFnE4,65
+rapid_layout-0.0.14.dist-info/top_level.txt,sha256=4wxiKcIjX4q2wUuy6oflHOGpcQg10f5BczEvhnBjkqI,13
+rapid_layout-0.0.14.dist-info/RECORD,,
