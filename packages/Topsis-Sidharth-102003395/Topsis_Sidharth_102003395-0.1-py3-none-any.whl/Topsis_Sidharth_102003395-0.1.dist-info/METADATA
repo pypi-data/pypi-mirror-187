@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: Topsis-Sidharth-102003395
+Version: 0.1
+Summary: Implements topsis on the given input data file and generates topsis score and ranks accordingly.
+Home-page: https://github.com/hsurap/Topsis-Sidharth-102003404
+Author: S Sidharth
+Author-email: ssidharth_be20@thapar.edu
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pandas
+
+## Topsis-Sidharth-102003395
+Topsis implementation in python. Used as a command line tool to generate topsis score and ranks of the given input data file along with weights and impacts.
+
+## Installation
+``` pip install Topsis-Sidharth-102003395```
+
+## How to use it?
+Open the terminal / cmd and type topsis <input_filename.csv> <"Weights"> <"Impacts"> <output_filename.csv>
+
+## License
+© 2023 Sidharth
+
+This repository is licensed under the MIT license. See LICENSE for details.
+
