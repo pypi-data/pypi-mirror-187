@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/Topsis-Jayesh-102053012/102053012.py
+src/Topsis-Jayesh-102053012/__init__.py
+src/Topsis_Jayesh_102053012.egg-info/PKG-INFO
+src/Topsis_Jayesh_102053012.egg-info/SOURCES.txt
+src/Topsis_Jayesh_102053012.egg-info/dependency_links.txt
+src/Topsis_Jayesh_102053012.egg-info/top_level.txt
