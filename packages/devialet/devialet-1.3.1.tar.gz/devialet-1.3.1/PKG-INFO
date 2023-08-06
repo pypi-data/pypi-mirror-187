@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: devialet
+Version: 1.3.1
+Summary: Devialet API
+Home-page: https://github.com/fwestenberg/devialet
+Author: fwestenberg
+Author-email: UNKNOWN
+License: MIT
+Download-URL: https://github.com/fwestenberg/devialet/releases/latest
+Description: UNKNOWN
+Keywords: Reolink,Home-Assistant
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
