@@ -1,0 +1,3 @@
+[console_scripts]
+fontrpmspec-conv = pyfontrpmspec.converter:main
+fontrpmspec-gen = pyfontrpmspec.generator:main
