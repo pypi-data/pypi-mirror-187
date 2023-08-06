@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "embedme"
+version = "0.1.0"
+description = "Easily create and search text embeddings using OpenAI's API using json for local storage. Just add dicts of info and search! Built for rapid prototyping."
+authors = ["John Partee"]
+repository = "https://github.com/morganpartee/embedme"
+readme = "README.md"
+license = "GPL-3.0-or-later"
+keywords = ["nlp", "embeddings", "search", "openai", "gpt3", "AI", "machine learning"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openai = "^0.26.1"
+numpy = "^1.24.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry>=1.0"]
+build-backend = "poetry.masonry.api"
