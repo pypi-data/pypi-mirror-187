@@ -1,0 +1,13 @@
+setup.py
+neurodec/__init__.py
+neurodec.egg-info/PKG-INFO
+neurodec.egg-info/SOURCES.txt
+neurodec.egg-info/dependency_links.txt
+neurodec.egg-info/requires.txt
+neurodec.egg-info/top_level.txt
+neurodec/cli/__init__.py
+neurodec/cli/argparse.py
+neurodec/mdt/__init__.py
+neurodec/mdt/auth.py
+neurodec/mdt/bracelet_electrodes.py
+scripts/neurodec
