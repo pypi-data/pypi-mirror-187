@@ -1,0 +1,59 @@
+[tool.poetry]
+name = "dbnomics-pptx-tools"
+description = "DBnomics PowerPoint (pptx) tools"
+version = "0.2.5"
+authors = ["Christophe Benz <christophe.benz@nomics.world>"]
+license = "AGPL-3.0-or-later"
+readme = "README.md"
+packages = [{include = "dbnomics_pptx_tools"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+python-pptx = "^0.6.21"
+DBnomics = "^1.2.3"
+typer = {extras = ["all"], version = "^0.6.1"}
+daiquiri = "^3.2.1"
+pydantic = "^1.10.2"
+parsy = "^2.0"
+tabulate = "^0.9.0"
+PyYAML = "^6.0"
+python-slugify = "^7.0.0"
+lxml = "^4.9.1"
+isodate = "^0.6.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+flake8 = "*"
+flake8-blind-except = "*"
+flake8-breakpoint = "*"
+flake8-bugbear = "*"
+flake8-comprehensions = "*"
+flake8-eradicate = "*"
+flake8-fixme = "*"
+flake8-implicit-str-concat = "*"
+flake8-isort = "*"
+flake8-logging-format = "*"
+flake8-mutable = "*"
+flake8-print = "*"
+flake8-quotes = "*"
+isort = "*"
+mypy = "*"
+types-tabulate = "^0.9.0.0"
+types-PyYAML = "^6.0.12.1"
+types-python-slugify = "^7.0.0.1"
+ipykernel = "^6.19.2"
+
+[tool.poetry.scripts]
+dbnomics-pptx = "dbnomics_pptx_tools.cli:app"
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+line_length = 120
+profile = "black"
+src_paths = ["dbnomics_pptx_tools"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
