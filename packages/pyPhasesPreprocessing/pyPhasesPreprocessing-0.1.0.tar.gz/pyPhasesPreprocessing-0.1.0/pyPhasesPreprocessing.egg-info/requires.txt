@@ -1,0 +1,4 @@
+pyPhases
+pyPhasesRecordLoader
+numpy
+pandas
