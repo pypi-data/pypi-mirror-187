@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/askGPT.py
+src/askGPT.egg-info/PKG-INFO
+src/askGPT.egg-info/SOURCES.txt
+src/askGPT.egg-info/dependency_links.txt
+src/askGPT.egg-info/entry_points.txt
+src/askGPT.egg-info/requires.txt
+src/askGPT.egg-info/top_level.txt
