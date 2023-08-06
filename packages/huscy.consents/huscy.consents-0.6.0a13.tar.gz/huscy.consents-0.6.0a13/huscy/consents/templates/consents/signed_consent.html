@@ -1,0 +1,26 @@
+{% load static %}{% load jsignature_filters %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>signature image</title>
+</head>
+<body>
+    <h3>Digital Consent</h3>
+    <div>
+        {{ consent.content }}
+    </div>
+    <p></p>
+    <p></p><br>
+    <p></p>
+    <p></p>
+    <p></p><br>
+    <div style="border-style:solid;">
+        <img src="{{ signature|signature_base64 }}"><br>
+    </div>
+    <div>
+        {{ today }}
+    </div>
+</body>
+</html>

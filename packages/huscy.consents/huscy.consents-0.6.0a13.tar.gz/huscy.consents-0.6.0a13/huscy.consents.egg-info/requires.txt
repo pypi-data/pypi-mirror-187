@@ -1,0 +1,12 @@
+Django>=3.2
+django-jsignature>=0.9
+djangorestframework>=3.11
+jsonschema>=3.2
+weasyprint
+
+[development]
+psycopg2-binary
+
+[testing]
+tox
+watchdog
