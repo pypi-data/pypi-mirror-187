@@ -1,0 +1,10 @@
+bleak>=0.19.0
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
+time-machine
