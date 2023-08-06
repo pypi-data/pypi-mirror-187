@@ -1,0 +1,2 @@
+[can.interface]
+bluetooth = can_bluetooth._bluetooth_can:BluetoothSPPBus
