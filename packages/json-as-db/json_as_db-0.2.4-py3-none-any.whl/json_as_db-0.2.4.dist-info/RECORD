@@ -1,0 +1,14 @@
+json_as_db/__init__.py,sha256=F67fPGlI6gjODYItyROYQixRIOfFMg7yTorKV1Eai7Y,258
+json_as_db/_utils/__init__.py,sha256=L5ald1ljVSsPolDhEeezVI2iUYq-5rXXW5NXUR-kSho,925
+json_as_db/_utils/decorater.py,sha256=LJ9GTAQu8AxSHJ5fBeEal3lNyawptzgVTRoA9Yqhjps,206
+json_as_db/constants.py,sha256=VOa38CMjH-QuGQwHtaKL1fgJm3hsdu7iN7SlipwY4JU,51
+json_as_db/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+json_as_db/core/_formatting.py,sha256=vPFLzlBQJN3vukDinsWSPcZg0v0As_NTR822c1CHRL4,3271
+json_as_db/core/database.py,sha256=YdB1KgPjRe9scnE-7RJ7UtOKg0u_r2SOpgmaeH7IbYA,11162
+json_as_db/core/matcher.py,sha256=MP-NMSJzlJa9dO59w5WCNAnwZM9Tt8wlWefKCt0_Ejs,4730
+json_as_db/core/operator.py,sha256=v8Q9Q6MaAHowp0m16mMhB3vO5L78qkGYXyyoxkjxd3I,1750
+json_as_db/statics.py,sha256=-F8R7xPkJxPK8fsua52hH-zAGbS4ZiuxyqF_ZlGmIOc,139
+json_as_db-0.2.4.dist-info/METADATA,sha256=-JUFaiFmBAawCveiCZikmubSel5ofcKEJtr0ks60xrk,3375
+json_as_db-0.2.4.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+json_as_db-0.2.4.dist-info/LICENSE,sha256=gw-ZmOTV4hWJLrrxxkeSCQfRLVMX_yodx4psXuPArog,1067
+json_as_db-0.2.4.dist-info/RECORD,,
