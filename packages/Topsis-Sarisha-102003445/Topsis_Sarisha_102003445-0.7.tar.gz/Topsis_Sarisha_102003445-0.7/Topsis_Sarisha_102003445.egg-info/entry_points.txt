@@ -1,0 +1,2 @@
+[console_scripts]
+topsis = Topsis_Sarisha_102003445.Sarisha_102003445:main
