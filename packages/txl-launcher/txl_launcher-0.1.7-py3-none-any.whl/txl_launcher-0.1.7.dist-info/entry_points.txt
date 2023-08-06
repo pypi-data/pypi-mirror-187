@@ -1,0 +1,2 @@
+[txl_component]
+txl_launcher = txl_launcher.components
