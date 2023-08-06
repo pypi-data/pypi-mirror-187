@@ -1,0 +1,9 @@
+[
+  "test/graphpro/graph_test.py::test_graph",
+  "test/graphpro/graph_test.py::test_graph_allow_add_node_attributes",
+  "test/graphpro/graph_test.py::test_graph_allow_retrieve_nodes_by_resid",
+  "test/graphpro/graph_test.py::test_nx_graph_contains_attributes",
+  "test/graphpro/graphgen_test.py::test_graph_allow_add_node_attributes",
+  "test/graphpro/graphgen_test.py::test_graph_generation_from_mdanalysis",
+  "test/graphpro/graphgen_test.py::test_graph_generation_from_mdanalysis_custom_residue"
+]
