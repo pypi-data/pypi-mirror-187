@@ -1,0 +1,7 @@
+pyyaml>=6.0
+
+[redis]
+redis>=4.4.0
+
+[uvloop]
+uvloop>=0.8.1
