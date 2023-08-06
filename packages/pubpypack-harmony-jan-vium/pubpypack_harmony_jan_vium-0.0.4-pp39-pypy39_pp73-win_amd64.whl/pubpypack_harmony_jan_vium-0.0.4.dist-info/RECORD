@@ -1,0 +1,13 @@
+jvnpack/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jvnpack/data.json,sha256=pZraBlkjuRqrBwvSw-yc-CyJbjqcmIDAjv4HLXo-8IE,20
+jvnpack/harmonic_mean.c,sha256=mCevdjgXQSDLGEEDmCl96P7sUmd8pk-ulSIs84XMQx4,198763
+jvnpack/harmonic_mean.pypy39-pp73-win_amd64.pyd,sha256=Qsum98fMvgPNShcDSB2fzBVysaCCZLefObqz3B0JElk,30720
+jvnpack/harmonic_mean.pyx,sha256=wuNMKj8KzMytMr4Kx2b-mgb0qVZtF665Z7fw4A-8gd4,77
+jvnpack/harmony.py,sha256=m_kodd9QwAJJjvyOsbQ_WdF30okPyD1bf1QUGhJX4CM,781
+jvnpack/hello.py,sha256=mdPcMMVL3fsObyRygfkQQyPef_GqZ9l3Iq9l3I_2Y_g,53
+pubpypack_harmony_jan_vium-0.0.4.dist-info/LICENSE,sha256=25C6pfEYI0BKhHFlso2C7Ki0A78y8MvI0qzin8qWvi0,1096
+pubpypack_harmony_jan_vium-0.0.4.dist-info/METADATA,sha256=xSXnfcGdr50HEvo8xdErCrTotRXK8dP6yK8tgkOiSfw,604
+pubpypack_harmony_jan_vium-0.0.4.dist-info/WHEEL,sha256=AnaNvFkvs503-LQMtNBCk8o2g2w7u9jd8HIjaK8ju8I,107
+pubpypack_harmony_jan_vium-0.0.4.dist-info/entry_points.txt,sha256=wtuXZI_2UO85z5UuMQZbHwdKQF9aUhtPQERQ1nAUZtw,49
+pubpypack_harmony_jan_vium-0.0.4.dist-info/top_level.txt,sha256=4qTcCZnd2C5KDyADSkd8nwVPocYbQRJiVJu5SMwrsY4,8
+pubpypack_harmony_jan_vium-0.0.4.dist-info/RECORD,,
