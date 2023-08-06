@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: kfactory
+Version: 0.1.0
+Summary: KLayout API implementation of gdsfactory
+Author-email: gdsfactory community <contact@gdsfactory.com>
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: docs
+Provides-Extra: ci
+License-File: LICENSE
+
+# KFactory 0.1.0
+
+Kfactory is a klayout backend for gdsfactory
+
+## Installation
+
+Users can install it with
+
+```
+pip install kfactory
+```
+
+
+at the moment works only on python3.10
