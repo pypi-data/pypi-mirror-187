@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+tf_nightly_gpu.egg-info/PKG-INFO
+tf_nightly_gpu.egg-info/SOURCES.txt
+tf_nightly_gpu.egg-info/dependency_links.txt
+tf_nightly_gpu.egg-info/requires.txt
+tf_nightly_gpu.egg-info/top_level.txt
