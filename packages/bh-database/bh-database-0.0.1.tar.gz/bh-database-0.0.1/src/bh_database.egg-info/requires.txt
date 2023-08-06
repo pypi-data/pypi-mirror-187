@@ -1,0 +1,21 @@
+SQLAlchemy
+psycopg2
+mysql-connector-python
+bh_apistatus
+bh_utils
+
+[:python_version < "3.11"]
+tomli
+
+[builds]
+build
+twine
+
+[docs]
+sphinx
+myst-parser
+sphinx-rtd-theme
+
+[tests]
+pytest
+coverage
