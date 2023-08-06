@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+src/torch_nested/__init__.py
+src/torch_nested/nested_size.py
+src/torch_nested/nested_tensors.py
+src/torch_nested/type_definitions.py
+src/torch_nested/type_signals.py
+src/torch_nested.egg-info/PKG-INFO
+src/torch_nested.egg-info/SOURCES.txt
+src/torch_nested.egg-info/dependency_links.txt
+src/torch_nested.egg-info/top_level.txt
