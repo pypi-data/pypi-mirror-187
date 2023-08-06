@@ -1,0 +1,22 @@
+{% extends 'astronauth/base.html' %}
+{% load socialaccount %}
+
+{% load i18n %}
+{% block head_title %}{% trans "Log out" %}{% endblock %}
+
+{% load static %}
+
+{% block content %}
+<div class="flex-wrapper flex-wrapper--centered">
+    <div>
+        <header class="flex-wrapper flex-wrapper--space-between">
+            <h1>Log out</h1>
+        </header>
+        <form method="post" action="{% url 'account_logout' %}">
+            {% csrf_token %}
+            <h2 class="text text--primary">Are you sure you want to log out?</h2>
+            <button type="submit" class="button button--primary margin-right">Log out</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

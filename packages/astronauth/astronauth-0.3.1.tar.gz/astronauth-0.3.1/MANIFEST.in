@@ -1,0 +1,7 @@
+include LICENSE
+include README.md
+
+recursive-include astronauth *
+
+recursive-include docs *
+recursive-exclude integration *

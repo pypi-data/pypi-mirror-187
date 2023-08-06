@@ -1,0 +1,37 @@
+{% load static %}
+{% load account %}
+
+<nav class="h-navbar custom--navbar">
+    <ol class="h-navbar-list">
+        <li class="h-navbar-list__item">
+            <a href="{% url 'index' %}">
+                <img class="h-navbar-logo" src="{% static 'astronauth/images/astronauth.svg' %}"
+                    alt="ASTRONauth" />
+            </a>
+        </li>
+        {% if user.is_authenticated and user.is_staff %}
+        <li class="h-navbar-list__item">
+            <a class="button text--primary" href="{% url 'admin:index' %}">
+                Admin Page
+            </a>
+        </li>
+        {% endif %}
+    </ol>
+
+    <ul class="h-navbar-list margin-right">
+        {% if "/login/" in request.path or "/logout/" in request.path %}
+        {# don't render antyhing #}
+        {% elif user.is_authenticated %}
+        <li class="h-navbar-list__item">
+            Logged in as:<p class="text text--semi-bold margin-left"> {{ user.get_username }}</p>
+        </li>
+        <li class="h-navbar-list__item">
+            <a class="button button--secondary margin-right" href="{% url 'account_logout' %}">Logout</a>
+        </li>
+        {% else %}
+        <li class="h-navbar-list__item">
+            <a class="button button--secondary margin-right" href="{% url 'account_login' %}">Sign in</a>
+        </li>
+        {% endif %}
+    </ul>
+</nav>

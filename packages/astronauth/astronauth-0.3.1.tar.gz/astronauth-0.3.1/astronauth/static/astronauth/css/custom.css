@@ -1,0 +1,19 @@
+/* TODO: change the colors */
+.astronauth-input {
+    outline: var(--primary) solid 1px;
+}
+
+.astronauth-social-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    outline: #000 solid 1px;
+    border-radius: 4px;
+}
+
+.astronauth-social-btn:hover {
+    outline: var(--primary) solid 2px;
+}
+
+.keycloak-logo {
+    height: 1.9rem;
+}

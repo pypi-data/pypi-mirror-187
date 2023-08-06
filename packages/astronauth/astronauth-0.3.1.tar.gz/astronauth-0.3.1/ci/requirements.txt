@@ -1,0 +1,6 @@
+autopep8 >= 1.7.0   # MIT
+black >= 22.0.0     # MIT
+build >= 0.8.0      # MIT
+flake8 >= 5.0.0     # MIT
+pylint >= 2.13.0    # GPLv2
+coverage >= 6.2.0  # Apache-2.0
