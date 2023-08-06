@@ -1,0 +1,15 @@
+taoist/__init__.py,sha256=uu0UzKLG12z8kUhGK9OfW94cGYDZqL3-dmNllohUSYs,40
+taoist/parent_project.py,sha256=y8IDPkbCPVv59U3Rwz_pB14EoupZk4oBrLQRfzh75Hw,564
+taoist/parse_args.py,sha256=qmTJfXqbLMtaQJSzKebFZ4MogrQcA3KAgFUfqe19Mqs,7729
+taoist/read_config.py,sha256=MNPC9lCAqrqqB4QBRfT2ZEkqf3L13aIl-edYSSFEvu0,642
+taoist/read_label_dict.py,sha256=BdTEA9VsLFYovO_kipkqzYMIJx1TeWQBHN3etXu7YjQ,550
+taoist/read_project_dict.py,sha256=HfqHNUKEP2bSebduxszQJjAYXhQCQMy8mSXiBhPhZ4s,737
+taoist/run_init.py,sha256=9560u3met5R6V_xrswBb1GJOC9thxejetkNzWWxCRsU,1174
+taoist/run_label.py,sha256=L1vSDqJ-J4MHdj5hQMp00WjOu2FBnEFurDjiqS1b-Xo,1540
+taoist/run_project.py,sha256=QWx6oMZ-3ovBxEzxMsyqQr0YPMTlTZlCEXGUDlYGui0,1586
+taoist/run_section.py,sha256=AsiXjjVRrh4vXgJBUo--2MJvMJLYLyJGaguM3T9AJzY,2043
+taoist/run_task.py,sha256=E5lRQQArbce-s5E9JjMoEtmXfttKy2n5tySLaWN-lwI,5278
+taoist/taoist_main.py,sha256=QC2Ma5NMxSf99xO9Joix_eLRsGAGZYwoLhVkRs2K9bk,1007
+taoist-0.7.0.dist-info/WHEEL,sha256=kdeDBNPvBI0w3meLKPoGgAnEr54n1jzrZWUoaLmGzVY,99
+taoist-0.7.0.dist-info/METADATA,sha256=rnJNbvUx0DqiExMVJ00XoQXSSCxBWT1u55RdKqN8Eaw,117
+taoist-0.7.0.dist-info/RECORD,,
