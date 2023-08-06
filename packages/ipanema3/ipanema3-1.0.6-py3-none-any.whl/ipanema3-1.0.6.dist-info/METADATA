@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: ipanema3
+Version: 1.0.6
+Summary: Fitting Tool for High Energy Physics
+Home-page: https://github.com/marromlam/ipanema.git
+Download-URL: https://github.com/marromlam/ipanema.git
+Author: Marcos Romero Lamas
+Author-email: mromerol@cern.ch
+License: GNU AFFERO GENERAL PUBLIC LICENSE
+Keywords: curve-fitting,optimization,hyperthreading
+Platform: Linux
+Platform: macOS
+Platform: Windows
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: asteval (>=0.9.12)
+Requires-Dist: numpy (>=1.10)
+Requires-Dist: scipy (>=0.19)
+Requires-Dist: six (>1.10)
+Requires-Dist: uncertainties (>=3.0)
+Requires-Dist: pandas
+Requires-Dist: numdifftools
+Requires-Dist: emcee (>=3.0)
+Requires-Dist: uproot3
+Requires-Dist: hjson
+Requires-Dist: reikna
+Requires-Dist: iminuit (==1.5.2)
+Requires-Dist: matplotlib
+Requires-Dist: tqdm
+Requires-Dist: corner
+Requires-Dist: complot
+Requires-Dist: lib99ocl
+Requires-Dist: pyopencl
+
+
+
+IPANEMA: Hyperthread Curve-Fitting Module for Python
+
+Ipanema provides a high-level interface to non-linear for Python.
+It supports most of the optimization methods from scipy.optimize jointly with
+others like emcc, ampgo and the so-calle Minuit.
+
+Main functionalities:
+
+  * Despite the comon use of plain float as fitting variables, Ipanema relies on
+    the Parameter class. A Parameter has a value that can be varied in the fit,
+    fixed, have upper and/or lower bounds. It can even have a value that is
+    constrained by an algebraic expression of other Parameter values.
+
+  * Multiple fitting algorithms working out-of-the-box without any change in
+    the cost function to minimize.
+
+  * Hyperthreading is avaliable and models can be compilead against different
+    backends. One can use python for fits as usual, but if the amount of data
+    is large, then better rewrite your code in cuda or opencl, and Ipanema can
+    take care of that cost function. That's simple.
+
+  * Estimation of confidence intervals usin ANOVA instead of calculating
+    uncertainties and correlations from the covariance matrix.
+
+Copyright (c) 2020 Ipanema Developers ; GNU AFFERO GENERAL PUBLIC LICENSE
+
