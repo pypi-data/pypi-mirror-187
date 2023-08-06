@@ -1,0 +1,3 @@
+[console_scripts]
+foss505=foss505:run
+
