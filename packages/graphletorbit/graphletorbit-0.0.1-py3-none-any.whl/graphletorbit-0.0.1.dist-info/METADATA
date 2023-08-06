@@ -1,0 +1,115 @@
+Metadata-Version: 2.1
+Name: graphletorbit
+Version: 0.0.1
+Summary: Orbits generator for colored directed graphs and orbits frequency finder
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+# Packet graphletorbit
+
+For computation of graphlet orbits for multi-index nodes and edges.
+
+We provide a python package that can be used to generate orbits for colored directed graphs
+and find the frequency of the occurence of orbits. We mainly use the technique called canonical label by McKay to determine the graphs isomorphism problem with multiple states on notes and edges.
+
+###### Authors: [Colin Cleveland](mailto:colin.cleveland@kcl.ac.uk), [Chin-Yen Lee](mailto:109281001@cc.ncu.edu.tw), [Shen-Fu Tsai](mailto:parity@math.ncu.edu.tw), [Wei-Hsuan Yu](mailto:whyu@math.ncu.edu.tw),AND [Hsuan-Wei Lee](mailto:hwwaynelee@gate.sinica.edu.tw)
+
+
+## The Packet
+This package is written in Python 3 with the NumPy library. The three entry functions are (Di)Canonical, (Di)Generator, and (Di)Count.
+
+The definition of parameters are refered from [Computation of Graphlet Orbits for Nodes and Edges in Sparse Graphs](https://www.jstatsoft.org/article/view/v071i10).
+
+### (Di)Canonical
+**(Di)Canonical(G, ref = -1)**: This function computes invariant for isomorphic graphs or graphlet orbits that can be used to distinguish non-isomorphic graphs or graphlet orbits.
+
+If $ref < 1$, the function computes an *invariant* of graphs isomorphic to the input graph $G$. Otherwise it computes an invariant of graphlet orbit associated with $O_{ref,G}$.
+
+#### Input
+An adjacency matrix $G$ representing a graph, and optionally a vertex $ref \geq 0$.
+
+#### Output
+The serialized adjacency matrix of the canonical label $C(G)$ of the input graph $G$, or if vertex $\texttt{ref}\geq 0$ the serialized adjacency matrix of
+$$
+M_{ref}^{\pi_{lab}^{M_{ref}}}
+$$
+
+
+#### Implementation
+If $ref<1$, it returns the lexicographically smallest serialized adjacency matrix of $G$ under all $|V(G)|!$ permutations of its vertices. Otherwise, the algorithm swaps vertex $0$ with vertex $ref$ and then returns the lexicographically smallest serialized adjacency matrix under all $|V(G)-1|!$ permutations of vertices $1,2,3,\ldots,|V(G)|-1$. When comparing serialized adjacency matrix for undirected graphs, we only need to look at the entries on or above the diagonal since the adjacency matrix is symmetric. With directed graphs the whole adjacency matrix is needed.
+
+### (Di) Generator
+
+**(Di)Generator(n, sizev, sizee, orbg = False, connect = False, Time = True)**: Built upon **(Di)Canonical**, this function generates the list of non-isomorphic graphs of order $n$ or graphlet orbits from graphs of order $n$ where each vertex has a color in $sizev$ and each edge has a color in $sizee$.
+
+#### Input
+
+* $n$: The order of graphs to be considered.
+* $sizev$: Maximum number of vertex colors.
+* $sizee$: Maximum number of edge colors.
+* **orbg**: Whether to generate graphs (**False**) or graphlet orbits (**True**). Default is **False**.
+* **connect**: Whether to restrict to connected graphs (**True**) or not (**False**). Default is **False**.
+* **Time**:
+Whether to log the running time (**True**) or not (**False**). Default is **True**.
+
+#### Output
+The list of adjacency matrices representing the non-isomorphic graphs or graphlet orbits.
+
+#### Implementation
+The function uses Dynamic Programming. It recursively calls itself with lower number vertices, vertex colors, and edge colors to gradually obtain the intended list from base cases where graph order and number of edge and vertex colors are small. It uses **(Di)Canonical** to decide whether two graphs or graphlet orbits are isomorphic.
+
+
+### (Di) Count
+**(Di)Count(G, ref, k, sizev, sizee, connect = False})**: 
+Given a host graph $G$ and its vertex $ref$, this function returns a vector consisting of the number of occurrences, at $ref$ in $G$, of graphlet orbits belonging to graphs of order $k$ where each vertex has a color in $sizev$ and each edge has a color in $sizee$
+
+#### Input
+* $G$: The host graph in which the occurrences of graphlet orbits are to be counted.
+* $ref$: A vertex in $G$ at which the function counts the number of occurrences of the specified graphlet orbits.
+* $k$: The function counts in $G$ the occurrences of all graphlet orbits belonging to graphs of order $k$.
+* $sizev$: Maximum number of vertex colors in graphs of order $k$ in which the graphlet orbits are considered.
+* $sizee$: Maximum number of edge colors in graphs of order $k$ in which the graphlet orbits are considered.
+* **connect**:
+Whether to restrict to connected graphs (**True**) or not (**False**). Default is **False**.
+
+#### Output
+A vector containing the number of occurrences of all graphlet orbits considered.
+
+#### Implementation
+The functions first finds all graphlet orbits of interest via **(Di)Generator**. Then it calculates the number of occurrences of these graphlet orbits.
+
+## Example
+
+For a matrix $A$, $a_{i,i}$ is the color of vertice $i$, and $a_{i,j}$ is the color of edge $(i,j)$ with $0$ meaning no connection.
+
+For example, if we want to count the orbit of connected graph G (with the adjancent matrix being $M$) among $(k,sizev,sizee) = (4,1,2)$ and $ref = 1$. Simply put the matrix into the function:
+
+``` python
+import numpy as np
+import graphletorbit
+
+Example = np.matrix([[0,1,1,0,0,0],
+                  [1,0,1,0,0,0],
+                  [1,1,0,1,1,0],
+                  [0,0,1,0,0,0],
+                  [0,0,1,0,0,1],
+                  [0,0,0,0,1,0]])
+print(graphletorbit.Count(Example,1,4,1,2,True))
+```
+
+We have the outcome:
+
+``` python
+[1 0 1 2 0 0 0 0 0 0 0]
+```
+
+The generated isomorphisms and orbits would be saved at "./ISO_Files", which is a portable folder. That is, once the "ISO_Files" is built, one can move the it to desired folder to prevent re-generation of the whole isomorphisms and orbits data.
+
