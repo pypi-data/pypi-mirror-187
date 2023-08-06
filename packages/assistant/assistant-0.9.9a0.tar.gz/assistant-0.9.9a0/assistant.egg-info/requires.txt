@@ -1,0 +1,9 @@
+dmt>=1.5.1
+ftfy
+pydub
+pygments
+xonsh
+attrs
+questionary
+transformers
+sentencepiece
