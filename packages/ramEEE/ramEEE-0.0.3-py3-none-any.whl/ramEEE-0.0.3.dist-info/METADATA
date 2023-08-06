@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ramEEE
+Version: 0.0.3
+Author: RAM MISRA
+Author-email: ____________@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: License.txt.txt
+
+BY RAM MISRA
+22BBEE0068
+
+write this in CMD
+from ramEEE.main import ______(required function)
+
+All functions in ramEEE/main.py
+
+1. add_numbers(num1, num2) = to add two numbers
+2. subtract_numbers(num1, num2) = to subtract two numbers
+3. multiply_numbers(num1, num2) = to multiply two numbers
+4. divide_numbers(num1, num2) = to divide two numbers
+5. factorial(n)= to find factorial of a number
