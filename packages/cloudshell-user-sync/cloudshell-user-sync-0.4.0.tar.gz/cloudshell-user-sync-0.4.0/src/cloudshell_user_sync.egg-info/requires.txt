@@ -1,0 +1,9 @@
+cloudshell-automation-api
+ldap3
+click
+schedule
+dacite
+keyring
+
+[:platform_system == "Windows"]
+pywin32
