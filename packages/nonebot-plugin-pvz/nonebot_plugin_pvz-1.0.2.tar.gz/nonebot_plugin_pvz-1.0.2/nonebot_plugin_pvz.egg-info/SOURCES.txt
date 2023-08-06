@@ -1,0 +1,9 @@
+LICENSE
+README.rst
+setup.py
+nonebot_plugin_pvz/__init__.py
+nonebot_plugin_pvz.egg-info/PKG-INFO
+nonebot_plugin_pvz.egg-info/SOURCES.txt
+nonebot_plugin_pvz.egg-info/dependency_links.txt
+nonebot_plugin_pvz.egg-info/requires.txt
+nonebot_plugin_pvz.egg-info/top_level.txt
