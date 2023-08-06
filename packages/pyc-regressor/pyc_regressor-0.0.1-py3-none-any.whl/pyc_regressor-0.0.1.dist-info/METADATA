@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyc-regressor
+Version: 0.0.1
+Summary: This is a pycaret regressor package.
+Author: Ashish Shimpi
+Author-email: a.shimpi93@gmail.com
+Keywords: python,tutorial,Auto-regressor,ashish shimpi
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
