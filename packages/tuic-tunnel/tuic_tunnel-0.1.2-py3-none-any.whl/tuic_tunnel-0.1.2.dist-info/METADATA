@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: tuic-tunnel
+Version: 0.1.2
+Summary: TUIC tunnel plugin for turbo-tunnel.
+Home-page: https://github.com/turbo-tunnel/tuic-tunnel
+Author: drunkdream
+Author-email: drunkdream@qq.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: turbo-tunnel (>=0.17.1)
+
+# TUIC plugin for turbo-tunnel
+
+## WHAT IS TUIC
+
+[TUIC](https://github.com/EAimTY/tuic) is a high performance proxy based on QUIC protocol.
+
+## INSTALL
+
+```bash
+$ pip3 install tuic-tunnel
+```
+
+## HOW TO USE
+
+### Simple Usage
+
+```bash
+$ turbo-tunnel -l http://127.0.0.1:8888 -t tuic://token@proxy.com:8443 -p tuic_tunnel
+```
+
+`proxy.com:8443` is the `TUIC` server domain and udp port, `token` is the `TUIC` token.
+
+### Use With Config File
+
+```yaml
+version: 1.0
+
+listen: 
+  - http://127.0.0.1:8888 # 配置监听地址
+
+plugins:
+  - tuic_tunnel
+
+tunnels:
+  - id: tuic
+    url: tuic://token@proxy.com:8443/
+
+rules:
+  - id: tuic
+    priority: 99
+    addr: "*.baidu.com"
+    port: 80;443;
+    tunnel: tuic
+```
+
+```bash
+$ turbo-tunnel -c config.yaml
+```
