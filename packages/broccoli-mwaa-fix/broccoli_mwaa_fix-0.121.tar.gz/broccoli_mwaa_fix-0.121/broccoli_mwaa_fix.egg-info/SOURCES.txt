@@ -1,0 +1,17 @@
+setup.py
+./broccoli_mwaa_fix/__init__.py
+./broccoli_mwaa_fix/broccoli.py
+./pkg/__init__.py
+./pkg/version.py
+broccoli_mwaa_fix/__init__.py
+broccoli_mwaa_fix/broccoli.py
+broccoli_mwaa_fix/utils.py
+broccoli_mwaa_fix.egg-info/PKG-INFO
+broccoli_mwaa_fix.egg-info/SOURCES.txt
+broccoli_mwaa_fix.egg-info/dependency_links.txt
+broccoli_mwaa_fix.egg-info/top_level.txt
+data/__init__.py
+data/data.zip
+pkg/__init__.py
+pkg/version.py
+pkg/version.txt
